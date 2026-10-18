@@ -8,16 +8,16 @@ tags:
   - ai
   - cli
 categories:
-  - AI
+  - IA
 intro: |
-  [Grok CLI](https://www.grokcli.dev/docs/) is a conversational AI terminal tool powered by X.AI's Grok models, with file operations, code analysis, Plan Mode, and MCP support.
+  [Grok CLI](https://www.grokcli.dev/docs/) é uma ferramenta de terminal com IA conversacional alimentada pelos modelos Grok da X.AI, com operações de arquivos, análise de código, Plan Mode e suporte a MCP.
 plugins:
   - copyCode
 ---
 
-## Getting Started {.cols-3}
+## Primeiros passos {.cols-3}
 
-### Quick Start {.row-span-2}
+### Início rápido {.row-span-2}
 
 ```bash
 # Run immediately (no install)
@@ -45,73 +45,73 @@ $ grok -d /path/to/project
 $ grok --max-tool-rounds 100 "rewrite the API"
 ```
 
-### Authentication
+### Autenticação
 
-| Method        | How                                               |
-| ------------- | ------------------------------------------------- |
-| Env variable  | `export GROK_API_KEY=your_key`                    |
+| Método        | Como                                               |
+| ------------- | -------------------------------------------------- |
+| Variável de ambiente | `export GROK_API_KEY=your_key`             |
 | Inline (npx)  | `GROK_API_KEY=key npx grok-cli-hurry-mode@latest` |
-| CLI flag      | `grok --api-key your_key`                         |
-| Settings file | Set `apiKey` in `~/.grok/user-settings.json`      |
+| Flag da CLI   | `grok --api-key your_key`                         |
+| Arquivo de configurações | Defina `apiKey` em `~/.grok/user-settings.json` |
 
-Get your API key from [console.x.ai](https://console.x.ai).
+Obtenha sua API key em [console.x.ai](https://console.x.ai).
 
-Persist in shell profile:
+Persista no perfil do shell:
 
 ```bash
 echo 'export GROK_API_KEY=your_key' >> ~/.zshrc
 source ~/.zshrc
 ```
 
-### Installation Methods
+### Métodos de instalação
 
-| Method            | Command                                                                                               |
+| Método            | Comando                                                                                               |
 | ----------------- | ----------------------------------------------------------------------------------------------------- |
-| npm (recommended) | `npm install -g grok-cli-hurry-mode@latest`                                                           |
-| npx (no install)  | `npx grok-cli-hurry-mode@latest`                                                                      |
+| npm (recomendado) | `npm install -g grok-cli-hurry-mode@latest`                                                           |
+| npx (sem instalar) | `npx grok-cli-hurry-mode@latest`                                                                     |
 | yarn              | `yarn global add grok-cli-hurry-mode@latest`                                                          |
 | pnpm              | `pnpm add -g grok-cli-hurry-mode@latest`                                                              |
 | bun               | `bun add -g grok-cli-hurry-mode@latest`                                                               |
-| Auto script       | `curl -fsSL https://raw.githubusercontent.com/hinetapora/grok-cli-hurry-mode/main/install.sh \| bash` |
+| Script automático | `curl -fsSL https://raw.githubusercontent.com/hinetapora/grok-cli-hurry-mode/main/install.sh \| bash` |
 
-**Requirements:** Node.js (latest LTS), npm/yarn/pnpm, internet connection.
+**Requisitos:** Node.js (último LTS), npm/yarn/pnpm, conexão com a internet.
 
-### AI Models
+### Modelos de IA
 
-| Model              | Description                   |
+| Modelo             | Descrição                     |
 | ------------------ | ----------------------------- |
-| `grok-code-fast-1` | Default — optimized for code  |
-| `grok-4-latest`    | Latest, enhanced capabilities |
-| `grok-3-fast`      | Fast, general-purpose         |
+| `grok-code-fast-1` | Padrão — otimizado para código |
+| `grok-4-latest`    | Mais recente, recursos aprimorados |
+| `grok-3-fast`      | Rápido, uso geral             |
 
-Override with `-m`, `GROK_MODEL` env var, or `~/.grok/user-settings.json`.
+Substitua com `-m`, a env var `GROK_MODEL` ou `~/.grok/user-settings.json`.
 
-Custom base URL: `-u https://api.x.ai/v1` or `GROK_BASE_URL`.
+Base URL personalizada: `-u https://api.x.ai/v1` ou `GROK_BASE_URL`.
 
-## CLI Options {.cols-2}
+## Opções da CLI {.cols-2}
 
-### All Options {.row-span-2}
+### Todas as opções {.row-span-2}
 
-| Option                  | Alias | Description                    |
+| Opção                   | Alias | Descrição                      |
 | ----------------------- | ----- | ------------------------------ |
-| `--api-key <key>`       | `-k`  | Grok API key                   |
-| `--base-url <url>`      | `-u`  | API base URL                   |
-| `--model <model>`       | `-m`  | Model to use                   |
-| `--prompt <text>`       | `-p`  | Headless mode prompt           |
-| `--directory <dir>`     | `-d`  | Set working directory          |
-| `--max-tool-rounds <n>` |       | Max tool rounds (default: 400) |
-| `--version`             | `-V`  | Show version                   |
-| `--help`                | `-h`  | Show help                      |
+| `--api-key <key>`       | `-k`  | API key do Grok                |
+| `--base-url <url>`      | `-u`  | URL base da API                |
+| `--model <model>`       | `-m`  | Modelo a usar                  |
+| `--prompt <text>`       | `-p`  | Prompt do modo headless        |
+| `--directory <dir>`     | `-d`  | Define o diretório de trabalho |
+| `--max-tool-rounds <n>` |       | Máximo de rodadas de ferramentas (padrão: 400) |
+| `--version`             | `-V`  | Mostra a versão                |
+| `--help`                | `-h`  | Mostra a ajuda                 |
 
-**Environment variables:**
+**Variáveis de ambiente:**
 
-| Variable        | Purpose             |
+| Variável        | Finalidade          |
 | --------------- | ------------------- |
-| `GROK_API_KEY`  | API key (required)  |
-| `GROK_MODEL`    | Default model       |
-| `GROK_BASE_URL` | Custom API endpoint |
+| `GROK_API_KEY`  | API key (obrigatória) |
+| `GROK_MODEL`    | Modelo padrão       |
+| `GROK_BASE_URL` | Endpoint personalizado da API |
 
-### Subcommands
+### Subcomandos
 
 ```bash
 # AI-generated git commit and push
@@ -127,56 +127,56 @@ $ grok mcp list
 $ grok mcp test <name>
 ```
 
-`git commit-and-push` accepts the same `-d`, `-k`, `-u`, `-m`, `--max-tool-rounds` flags as the main command.
+`git commit-and-push` aceita as mesmas flags `-d`, `-k`, `-u`, `-m`, `--max-tool-rounds` do comando principal.
 
-## Interactive Mode {.cols-3}
+## Modo interativo {.cols-3}
 
-### Keyboard Shortcuts {.row-span-2}
+### Atalhos de teclado {.row-span-2}
 
-| Key               | Action                           |
+| Tecla             | Ação                             |
 | ----------------- | -------------------------------- |
-| `Shift+Tab` twice | Enter Plan Mode                  |
-| `Shift+Tab`       | Toggle auto-edit mode            |
-| `Ctrl+I`          | Context tooltip (workspace info) |
-| `Ctrl+C`          | Clear current input              |
-| `Esc`             | Interrupt current operation      |
-| `↑` / `↓`         | Browse input history             |
+| `Shift+Tab` twice | Entra no Plan Mode               |
+| `Shift+Tab`       | Alterna o modo de edição automática |
+| `Ctrl+I`          | Tooltip de contexto (informações do workspace) |
+| `Ctrl+C`          | Limpa a entrada atual            |
+| `Esc`             | Interrompe a operação atual      |
+| `↑` / `↓`         | Navega no histórico de entrada   |
 
 {.shortcuts}
 
-**Auto-edit mode:** Hands-free file editing — the AI edits files without confirmation prompts.
+**Modo de edição automática:** edição de arquivos sem as mãos — a IA edita arquivos sem prompts de confirmação.
 
-**Context tooltip (`Ctrl+I`):** Shows project stats, git branch, memory pressure, and session info.
+**Tooltip de contexto (`Ctrl+I`):** mostra estatísticas do projeto, branch git, pressão de memória e informações da sessão.
 
-### Slash Commands
+### Slash commands
 
-| Command              | Description                   |
+| Comando              | Descrição                     |
 | -------------------- | ----------------------------- |
-| `/help`              | Show available commands       |
-| `/clear`             | Clear terminal screen         |
-| `/models`            | List available models         |
-| `/exit`              | Quit the application          |
-| `/compact`           | Compress conversation context |
-| `/commit-and-push`   | AI commit message and push    |
-| `/init-agent`        | Initialize agent docs         |
-| `/docs`              | Open documentation            |
-| `/readme`            | Generate README               |
-| `/api-docs`          | Generate API docs             |
-| `/changelog`         | Generate changelog            |
-| `/comments`          | Add code comments             |
-| `/update-agent-docs` | Update agent docs             |
-| `/heal`              | Self-healing system check     |
-| `/guardrails`        | Show guardrails status        |
+| `/help`              | Mostra os comandos disponíveis |
+| `/clear`             | Limpa a tela do terminal      |
+| `/models`            | Lista os modelos disponíveis  |
+| `/exit`              | Encerra a aplicação           |
+| `/compact`           | Comprime o contexto da conversa |
+| `/commit-and-push`   | Mensagem de commit por IA e push |
+| `/init-agent`        | Inicializa a documentação do agente |
+| `/docs`              | Abre a documentação           |
+| `/readme`            | Gera o README                 |
+| `/api-docs`          | Gera a documentação da API    |
+| `/changelog`         | Gera o changelog              |
+| `/comments`          | Adiciona comentários ao código |
+| `/update-agent-docs` | Atualiza a documentação do agente |
+| `/heal`              | Verificação de autocorreção do sistema |
+| `/guardrails`        | Mostra o status dos guardrails |
 
-### Config Files
+### Arquivos de configuração
 
-| File                         | Purpose                |
+| Arquivo                      | Finalidade             |
 | ---------------------------- | ---------------------- |
-| `~/.grok/user-settings.json` | Global user settings   |
-| `.grok/settings.json`        | Project-level settings |
-| `.grok/GROK.md`              | Project context for AI |
+| `~/.grok/user-settings.json` | Configurações globais do usuário |
+| `.grok/settings.json`        | Configurações no nível do projeto |
+| `.grok/GROK.md`              | Contexto do projeto para a IA |
 
-**user-settings.json example:**
+**Exemplo de user-settings.json:**
 
 ```json
 {
@@ -186,7 +186,7 @@ $ grok mcp test <name>
 }
 ```
 
-**Create project context:**
+**Crie o contexto do projeto:**
 
 ```bash
 # Add custom context for Plan Mode
@@ -194,133 +194,133 @@ $ mkdir -p .grok
 $ echo "# Project Rules" > .grok/GROK.md
 ```
 
-## Tools {.cols-3}
+## Ferramentas {.cols-3}
 
-### Core Tools {.row-span-2}
+### Ferramentas principais {.row-span-2}
 
-| Tool      | Purpose                                    |
-| --------- | ------------------------------------------ |
-| **Read**  | Read files — text, images, PDFs, notebooks |
-| **Write** | Create or overwrite files                  |
-| **Edit**  | Precise string find-and-replace            |
-| **Bash**  | Execute shell commands                     |
-| **Grep**  | Regex search via ripgrep                   |
-| **Glob**  | File pattern matching                      |
-| **LS**    | Directory listing                          |
+| Ferramenta | Finalidade                                 |
+| ---------- | ------------------------------------------ |
+| **Read**  | Lê arquivos — texto, imagens, PDFs, notebooks |
+| **Write** | Cria ou sobrescreve arquivos               |
+| **Edit**  | Localização e substituição precisa de strings |
+| **Bash**  | Executa comandos de shell                  |
+| **Grep**  | Busca com regex via ripgrep                |
+| **Glob**  | Correspondência de padrões de arquivos     |
+| **LS**    | Listagem de diretórios                     |
 
-**Read** supports line offset/limit for large files and displays images visually.
+**Read** oferece suporte a offset/limit de linhas para arquivos grandes e exibe imagens visualmente.
 
-**Edit** supports:
+**Edit** oferece suporte a:
 
-- Exact string replacement
-- Regex patterns
-- Single or all-occurrence replacement
+- Substituição exata de string
+- Padrões regex
+- Substituição única ou de todas as ocorrências
 
-**Bash** supports:
+**Bash** oferece suporte a:
 
-- stdout/stderr capture
-- Background processes
-- Timeout management
-- Environment variable handling
+- Captura de stdout/stderr
+- Processos em segundo plano
+- Gerenciamento de timeout
+- Tratamento de variáveis de ambiente
 
-### Advanced Tools
+### Ferramentas avançadas
 
-| Tool          | Purpose                               |
+| Ferramenta    | Finalidade                            |
 | ------------- | ------------------------------------- |
-| **MultiEdit** | Atomic multi-file edits with rollback |
-| **WebFetch**  | Retrieve and parse web content        |
-| **WebSearch** | Real-time web search                  |
-| **Task**      | Delegate to specialized sub-agents    |
-| **TodoWrite** | Task tracking and progress            |
+| **MultiEdit** | Edições atômicas em vários arquivos com rollback |
+| **WebFetch**  | Recupera e interpreta conteúdo web    |
+| **WebSearch** | Busca na web em tempo real            |
+| **Task**      | Delega para subagentes especializados |
+| **TodoWrite** | Acompanhamento de tarefas e progresso |
 
-**MultiEdit** operations: create, edit, delete, rename, move — all in one atomic transaction.
+Operações do **MultiEdit**: create, edit, delete, rename, move — todas em uma única transação atômica.
 
-**Task** (sub-agent delegation):
+**Task** (delegação para subagentes):
 
-- Token-optimized processing
-- Complex research and analysis
-- Autonomous completion with report
+- Processamento otimizado para tokens
+- Pesquisa e análise complexas
+- Conclusão autônoma com relatório
 
-**WebFetch:** HTML → Markdown conversion with AI content extraction and caching.
+**WebFetch:** conversão de HTML → Markdown com extração de conteúdo por IA e cache.
 
-### IDE Tools
+### Ferramentas de IDE
 
-| Tool             | Purpose                          |
-| ---------------- | -------------------------------- |
-| **NotebookEdit** | Edit Jupyter notebook cells      |
-| **BashOutput**   | Stream background process output |
-| **KillBash**     | Terminate background processes   |
+| Ferramenta       | Finalidade                      |
+| ---------------- | ------------------------------- |
+| **NotebookEdit** | Edita células de notebooks Jupyter |
+| **BashOutput**   | Transmite a saída de processos em segundo plano |
+| **KillBash**     | Encerra processos em segundo plano |
 
-The AI **automatically selects** the right tool combination for your request — no manual invocation needed.
+A IA **seleciona automaticamente** a combinação certa de ferramentas para sua solicitação — sem necessidade de invocação manual.
 
 ## Plan Mode {.cols-3}
 
-### Activating Plan Mode {.row-span-2}
+### Ativando o Plan Mode {.row-span-2}
 
-Press **`Shift+Tab` twice** in quick succession:
+Pressione **`Shift+Tab` duas vezes** em rápida sucessão:
 
 ```
 🎯 Plan Mode: Analysis
 📊 Exploring codebase and gathering insights...
 ```
 
-**Or use headless mode:**
+**Ou use o modo headless:**
 
 ```bash {.wrap}
 $ grok -p "analyze changes in this PR and create plan"
 $ grok -p "check if changes follow architecture guidelines"
 ```
 
-**What is blocked in Plan Mode:**
+**O que é bloqueado no Plan Mode:**
 
-- All file write/edit operations
-- Destructive bash commands
-- Any state-modifying operations
+- Todas as operações de escrita/edição de arquivos
+- Comandos bash destrutivos
+- Qualquer operação que altere estado
 
-**What is allowed:**
+**O que é permitido:**
 
-- Reading files (`ls`, `cat`, `grep`)
-- Web search and fetch
-- Project structure analysis
-- Plan generation (writes only to plan output)
+- Ler arquivos (`ls`, `cat`, `grep`)
+- Busca e fetch na web
+- Análise da estrutura do projeto
+- Geração de plano (grava apenas na saída do plano)
 
-**Exit Plan Mode:**
+**Sair do Plan Mode:**
 
-- `Enter` — confirm and execute the plan
-- `Esc` — exit without executing
+- `Enter` — confirma e executa o plano
+- `Esc` — sai sem executar
 
-### Plan Mode Phases
+### Fases do Plan Mode
 
-| Phase           | Duration        | What Happens                     |
+| Fase            | Duração         | O que acontece                   |
 | --------------- | --------------- | -------------------------------- |
-| 🔍 Analysis     | 1–5 sec         | Project type, structure, deps    |
-| 🧠 Strategy     | 5–15 sec        | AI generates implementation plan |
-| 📋 Presentation | 1–2 sec         | Format plan for review           |
-| ✅ Approval     | User-controlled | Review, confirm, or refine       |
+| 🔍 Analysis     | 1–5 sec         | Tipo de projeto, estrutura, deps |
+| 🧠 Strategy     | 5–15 sec        | A IA gera o plano de implementação |
+| 📋 Presentation | 1–2 sec         | Formata o plano para revisão     |
+| ✅ Approval     | User-controlled | Revisa, confirma ou refina       |
 
 {.show-header}
 
-Plan Mode analyzes: project type (Node/Python/React/etc.), directory structure, key components, dependencies, entry points, modules, and architectural patterns.
+O Plan Mode analisa: tipo de projeto (Node/Python/React/etc.), estrutura de diretórios, componentes principais, dependências, entry points, módulos e padrões arquiteturais.
 
-### Plan Mode Tips
+### Dicas do Plan Mode
 
-Use Plan Mode for:
+Use o Plan Mode para:
 
-- Complex multi-file features
-- Large-scale refactoring
-- Exploring unfamiliar codebases
-- Risk assessment before changes
+- Features complexas que envolvem vários arquivos
+- Refatoração em larga escala
+- Explorar codebases desconhecidos
+- Avaliação de riscos antes de mudanças
 
-**Tips:**
+**Dicas:**
 
-- Be specific about what you want
-- Review the plan before approving
-- Use `/heal` if something breaks
-- Create `.grok/GROK.md` for custom context
+- Seja específico sobre o que você quer
+- Revise o plano antes de aprovar
+- Use `/heal` se algo quebrar
+- Crie `.grok/GROK.md` para contexto personalizado
 
-## MCP Servers {.cols-2}
+## Servidores MCP {.cols-2}
 
-### Managing MCP Servers {.row-span-2}
+### Gerenciando servidores MCP {.row-span-2}
 
 ```bash
 # Add stdio server
@@ -355,9 +355,9 @@ $ grok mcp test myserver
 $ grok mcp remove myserver
 ```
 
-### MCP Config Schema
+### Schema de configuração do MCP
 
-**In `.grok/settings.json`:**
+**Em `.grok/settings.json`:**
 
 ```json
 {
@@ -383,31 +383,31 @@ $ grok mcp remove myserver
 }
 ```
 
-**Transport types:**
+**Tipos de transporte:**
 
-| Type              | When to Use                |
-| ----------------- | -------------------------- |
-| `stdio`           | Local subprocess (default) |
-| `http`            | Remote HTTP endpoint       |
-| `sse`             | Server-Sent Events         |
-| `streamable_http` | Streaming HTTP             |
+| Tipo              | Quando usar               |
+| ----------------- | ------------------------- |
+| `stdio`           | Subprocesso local (padrão) |
+| `http`            | Endpoint HTTP remoto      |
+| `sse`             | Server-Sent Events        |
+| `streamable_http` | HTTP em streaming         |
 
-### Add Server Options
+### Opções de add server
 
-| Option               | Alias | Description                          |
+| Opção                | Alias | Descrição                            |
 | -------------------- | ----- | ------------------------------------ |
 | `--transport <type>` | `-t`  | stdio / http / sse / streamable_http |
-| `--command <cmd>`    | `-c`  | Executable (stdio only)              |
-| `--args [args...]`   | `-a`  | Command arguments (stdio only)       |
-| `--url <url>`        | `-u`  | Server URL (http/sse)                |
-| `--headers [kv...]`  | `-h`  | HTTP headers (`key=value`)           |
+| `--command <cmd>`    | `-c`  | Executável (apenas stdio)            |
+| `--args [args...]`   | `-a`  | Argumentos do comando (apenas stdio) |
+| `--url <url>`        | `-u`  | URL do servidor (http/sse)           |
+| `--headers [kv...]`  | `-h`  | Headers HTTP (`key=value`)           |
 | `--env [kv...]`      | `-e`  | Env vars (`key=value`)               |
 
-## Troubleshooting {.cols-3}
+## Solução de problemas {.cols-3}
 
-### Common Issues {.row-span-2}
+### Problemas comuns {.row-span-2}
 
-**API key not found:**
+**API key não encontrada:**
 
 ```bash
 # Verify env var is set
@@ -417,7 +417,7 @@ $ echo $GROK_API_KEY
 $ GROK_API_KEY=key grok "hello"
 ```
 
-**Command not found after install:**
+**Comando não encontrado após a instalação:**
 
 ```bash {.wrap}
 # Add npm global bin to PATH
@@ -426,7 +426,7 @@ $ source ~/.zshrc
 $ which grok
 ```
 
-**Permission errors on install:**
+**Erros de permissão na instalação:**
 
 ```bash
 # Use sudo (not recommended) or node version manager
@@ -437,7 +437,7 @@ $ nvm use --lts
 $ npm install -g grok-cli-hurry-mode
 ```
 
-**Stuck / cached installation:**
+**Instalação travada / em cache:**
 
 ```bash
 $ pkill -f grok
@@ -446,19 +446,19 @@ $ npm cache clean --force
 $ npm install -g grok-cli-hurry-mode@latest
 ```
 
-### Useful Env Vars
+### Env vars úteis
 
-| Variable        | Description            |
+| Variável        | Descrição              |
 | --------------- | ---------------------- |
-| `GROK_API_KEY`  | API key (required)     |
-| `GROK_MODEL`    | Override default model |
-| `GROK_BASE_URL` | Custom API endpoint    |
+| `GROK_API_KEY`  | API key (obrigatória)  |
+| `GROK_MODEL`    | Substitui o modelo padrão |
+| `GROK_BASE_URL` | Endpoint personalizado da API |
 
-**Default API endpoint:** `https://api.x.ai/v1`
+**API endpoint padrão:** `https://api.x.ai/v1`
 
 ### Git Smart Push
 
-The automated release system creates version bump commits, so always use smart push to avoid conflicts:
+O sistema de release automatizado cria commits de version bump, então sempre use o smart push para evitar conflitos:
 
 ```bash
 # Correct — handles auto version bumps
@@ -469,11 +469,11 @@ $ git pushup
 $ git push origin main
 ```
 
-## Also see {.cols-1}
+## Veja também {.cols-1}
 
-- [Official Documentation](https://www.grokcli.dev/docs/) _(grokcli.dev)_
-- [Plan Mode Guide](https://www.grokcli.dev/docs/guides/plan-mode) _(grokcli.dev)_
-- [Tools Overview](https://www.grokcli.dev/docs/tools/overview) _(grokcli.dev)_
-- [Architecture Overview](https://www.grokcli.dev/docs/architecture/overview) _(grokcli.dev)_
-- [GitHub Repository](https://github.com/hinetapora/grok-cli-hurry-mode) _(github.com)_
-- [xAI API Console](https://console.x.ai) _(console.x.ai)_
+- [Documentação oficial](https://www.grokcli.dev/docs/) _(grokcli.dev)_
+- [Guia do Plan Mode](https://www.grokcli.dev/docs/guides/plan-mode) _(grokcli.dev)_
+- [Visão geral das ferramentas](https://www.grokcli.dev/docs/tools/overview) _(grokcli.dev)_
+- [Visão geral da arquitetura](https://www.grokcli.dev/docs/architecture/overview) _(grokcli.dev)_
+- [Repositório no GitHub](https://github.com/hinetapora/grok-cli-hurry-mode) _(github.com)_
+- [Console da API xAI](https://console.x.ai) _(console.x.ai)_

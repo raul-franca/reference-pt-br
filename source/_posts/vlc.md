@@ -7,116 +7,116 @@ tags:
   -
   -
 categories:
-  - Keyboard Shortcuts
+  - Atalhos de Teclado
 intro: |
-  A visual cheat-sheet for the 82 keyboard shortcuts found in VLC Player
+  Um cheat sheet visual dos 82 atalhos de teclado encontrados no VLC Player
 ---
 
-## Keyboard Shortcuts
+## Atalhos de teclado
 
-### General I
+### Geral I
 
-| Shortcut             | Action                    |
-| -------------------- | ------------------------- |
-| `F`                  | Fullscreen                |
-| `Esc`                | Leave fullscreen          |
-| `Space`              | Play/Pause                |
-| `]`                  | Pause only                |
-| `[`                  | Play only                 |
-| `+`                  | Faster                    |
-| `-`                  | Slower                    |
-| `=`                  | Normal rate               |
-| `N`                  | Next                      |
-| `P`                  | Previous                  |
-| `S`                  | Stop                      |
-| `T`                  | Position                  |
-| `Shift` `Left`       | Very short backwards jump |
-| `Shift` `Right`      | Very short forwards jump  |
-| `Alt` `Left`         | Short backwards jump      |
-| `Alt` `Right`        | Short forwards jump       |
-| `Ctrl` `Left`        | Medium backwards jump     |
-| `Ctrl` `Right`       | Medium forwards jump      |
-| `Ctrl` `Alt` `Left`  | Long backwards jump       |
-| `Ctrl` `Alt` `Right` | Long forwards jump        |
-| `E`                  | Next frame                |
-| `Enter`              | Activate                  |
-| `Up`                 | Navigate up               |
-| `Down`               | Navigate down             |
-| `Left`               | Navigate left             |
-| `Right`              | Navigate right            |
-| `Shift` `M`          | Go to the DVD menu        |
-| `Shift` `O`          | Select previous DVD title |
-
-{.shortcuts}
-
-### General II
-
-| Shortcut          | Action                         |
-| ----------------- | ------------------------------ |
-| `Shift` `B`       | Select next DVD title          |
-| `Shift` `P`       | Select previous DVD chapter    |
-| `Shift` `N`       | Select next DVD chapter        |
-| `Ctrl` `Q`        | Quit                           |
-| `Ctrl` `Up`       | Volume up                      |
-| `Ctrl` `Down`     | Volume down                    |
-| `M`               | Mute                           |
-| `H`               | Subtitle delay up              |
-| `G`               | Subtitle delay down            |
-| `K`               | Audio delay up                 |
-| `J`               | Audio delay down               |
-| `B`               | Cycle audio track              |
-| `Shift` `A`       | Cycle through audio devices    |
-| `V`               | Cycle subtitle track           |
-| `A`               | Cycle source aspect ratio      |
-| `C`               | Cycle video crop               |
-| `O`               | Toggle autoscaling             |
-| `Alt` `O`         | Increase scale factor          |
-| `Shift` `Alt` `O` | Decrease scale factor          |
-| `D`               | Cycle deinterlace modes        |
-| `I`               | Show interface                 |
-| `Shift` `I`       | Hide interface                 |
-| `Shift` `S`       | Take video snapshot            |
-| `Shift` `G`       | Go back in browsing history    |
-| `Shift` `H`       | Go forward in browsing history |
-| `Shift` `R`       | Record                         |
-| `Shift` `D`       | Dump                           |
-| `Z`               | Zoom                           |
+| Atalho               | Ação                            |
+| -------------------- | ------------------------------- |
+| `F`                  | Tela cheia                      |
+| `Esc`                | Sair da tela cheia              |
+| `Space`              | Reproduzir/Pausar               |
+| `]`                  | Apenas pausar                   |
+| `[`                  | Apenas reproduzir               |
+| `+`                  | Mais rápido                     |
+| `-`                  | Mais lento                      |
+| `=`                  | Velocidade normal               |
+| `N`                  | Próximo                         |
+| `P`                  | Anterior                        |
+| `S`                  | Parar                           |
+| `T`                  | Posição                         |
+| `Shift` `Left`       | Salto muito curto para trás     |
+| `Shift` `Right`      | Salto muito curto para frente   |
+| `Alt` `Left`         | Salto curto para trás           |
+| `Alt` `Right`        | Salto curto para frente         |
+| `Ctrl` `Left`        | Salto médio para trás           |
+| `Ctrl` `Right`       | Salto médio para frente         |
+| `Ctrl` `Alt` `Left`  | Salto longo para trás           |
+| `Ctrl` `Alt` `Right` | Salto longo para frente         |
+| `E`                  | Próximo quadro                  |
+| `Enter`              | Ativar                          |
+| `Up`                 | Navegar para cima               |
+| `Down`               | Navegar para baixo              |
+| `Left`               | Navegar para a esquerda         |
+| `Right`              | Navegar para a direita          |
+| `Shift` `M`          | Ir para o menu do DVD           |
+| `Shift` `O`          | Selecionar o título anterior do DVD |
 
 {.shortcuts}
 
-### General III
+### Geral II
 
-| Shortcut              | Action                           |
+| Atalho            | Ação                              |
+| ----------------- | --------------------------------- |
+| `Shift` `B`       | Selecionar o próximo título do DVD |
+| `Shift` `P`       | Selecionar o capítulo anterior do DVD |
+| `Shift` `N`       | Selecionar o próximo capítulo do DVD |
+| `Ctrl` `Q`        | Sair                              |
+| `Ctrl` `Up`       | Aumentar volume                   |
+| `Ctrl` `Down`     | Diminuir volume                   |
+| `M`               | Silenciar                         |
+| `H`               | Aumentar o atraso da legenda      |
+| `G`               | Diminuir o atraso da legenda      |
+| `K`               | Aumentar o atraso do áudio        |
+| `J`               | Diminuir o atraso do áudio        |
+| `B`               | Alternar faixa de áudio           |
+| `Shift` `A`       | Alternar entre os dispositivos de áudio |
+| `V`               | Alternar faixa de legenda         |
+| `A`               | Alternar proporção de aspecto da fonte |
+| `C`               | Alternar corte de vídeo           |
+| `O`               | Alternar redimensionamento automático |
+| `Alt` `O`         | Aumentar o fator de escala        |
+| `Shift` `Alt` `O` | Diminuir o fator de escala        |
+| `D`               | Alternar modos de desentrelaçamento |
+| `I`               | Mostrar interface                 |
+| `Shift` `I`       | Ocultar interface                 |
+| `Shift` `S`       | Tirar snapshot do vídeo           |
+| `Shift` `G`       | Voltar no histórico de navegação  |
+| `Shift` `H`       | Avançar no histórico de navegação |
+| `Shift` `R`       | Gravar                            |
+| `Shift` `D`       | Despejar                          |
+| `Z`               | Zoom                              |
+
+{.shortcuts}
+
+### Geral III
+
+| Atalho                | Ação                             |
 | --------------------- | -------------------------------- |
-| `Shift` `Z`           | Un-Zoom                          |
-| `W`                   | Toggle wallpaper mode            |
-| `Alt` `Shift` `M`     | Display OSD menu on top          |
-| `Alt` `Ctrl` `M`      | Do not display OSD menu          |
-| `Alt` `Shift` `Right` | Highlight widget on the right    |
-| `Alt` `Shift` `Left`  | Highlight widget on the left     |
-| `Alt` `Shift` `Up`    | Highlight widget on top          |
-| `Alt` `Shift` `Down`  | Highlight widget on bottom       |
-| `Alt` `Shift` `Enter` | Select current widget            |
-| `Alt` `R`             | Crop one pixel from the top      |
-| `Alt` `Shift` `R`     | Uncrop one pixel from the top    |
-| `Alt` `D`             | Crop one pixel from the left     |
-| `Alt` `Shift` `D`     | Uncrop one pixel from the left   |
-| `Alt` `C`             | Crop one pixel from the bottom   |
-| `Alt` `Shift` `C`     | Uncrop one pixel from the bottom |
-| `Alt` `F`             | Crop one pixel from the right    |
-| `Alt` `Shift` `F`     | Uncrop one pixel from the right  |
-| `R`                   | Random                           |
-| `L`                   | Normal/Repeat/Loop               |
-| `Ctrl` `1`            | 1:4 Quarter                      |
-| `Ctrl` `2`            | 1:2 Half                         |
+| `Shift` `Z`           | Remover zoom                     |
+| `W`                   | Alternar modo papel de parede    |
+| `Alt` `Shift` `M`     | Exibir menu OSD no topo          |
+| `Alt` `Ctrl` `M`      | Não exibir menu OSD              |
+| `Alt` `Shift` `Right` | Destacar widget à direita        |
+| `Alt` `Shift` `Left`  | Destacar widget à esquerda       |
+| `Alt` `Shift` `Up`    | Destacar widget no topo          |
+| `Alt` `Shift` `Down`  | Destacar widget na parte inferior |
+| `Alt` `Shift` `Enter` | Selecionar o widget atual        |
+| `Alt` `R`             | Cortar um pixel do topo          |
+| `Alt` `Shift` `R`     | Desfazer o corte de um pixel do topo |
+| `Alt` `D`             | Cortar um pixel da esquerda      |
+| `Alt` `Shift` `D`     | Desfazer o corte de um pixel da esquerda |
+| `Alt` `C`             | Cortar um pixel da parte inferior |
+| `Alt` `Shift` `C`     | Desfazer o corte de um pixel da parte inferior |
+| `Alt` `F`             | Cortar um pixel da direita       |
+| `Alt` `Shift` `F`     | Desfazer o corte de um pixel da direita |
+| `R`                   | Aleatório                        |
+| `L`                   | Normal/Repetir/Loop              |
+| `Ctrl` `1`            | 1:4 Um quarto                    |
+| `Ctrl` `2`            | 1:2 Metade                       |
 | `Ctrl` `3`            | 1:1 Original                     |
-| `Ctrl` `4`            | 2:1 Double                       |
-| `3`                   | Very short jump length (integer) |
-| `Ctrl` `F1-F10`       | Set playlist bookmark 1-10       |
-| `F1-F10`              | Play playlist bookmark 1-10      |
+| `Ctrl` `4`            | 2:1 Dobro                        |
+| `3`                   | Duração do salto muito curto (inteiro) |
+| `Ctrl` `F1-F10`       | Definir marcador da playlist 1-10 |
+| `F1-F10`              | Reproduzir marcador da playlist 1-10 |
 
 {.shortcuts}
 
-## Also see
+## Veja também
 
-- [Keyboard shortcuts for VLC](https://wiki.videolan.org/hotkeys_table/) _(wiki.videolan.org)_
+- [Atalhos de teclado do VLC](https://wiki.videolan.org/hotkeys_table/) _(wiki.videolan.org)_

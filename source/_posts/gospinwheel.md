@@ -7,99 +7,99 @@ tags:
   - Productivity
   - Streaming
 categories:
-  - Other
-intro: Quick-reference cheatsheet for GoSpinWheel — a modern random wheel spinner, name picker, and decision maker.
+  - Outros
+intro: Cheat sheet de referência rápida para o GoSpinWheel — um moderno sorteador de roleta aleatória, seletor de nomes e ferramenta de decisão.
 plugins:
   - copyCode
 ---
 
-## Essentials
+## Essenciais
 
-### What is GoSpinWheel?
+### O que é o GoSpinWheel?
 
-**[GoSpinWheel random wheel spinner](https://gospinwheel.com)** is a free, modern online tool for random selection and decision making. It’s a privacy-focused alternative to older “wheel spinner” sites, with a clean UI made for everyday use.
+**[GoSpinWheel random wheel spinner](https://gospinwheel.com)** é uma ferramenta online gratuita e moderna para seleção aleatória e tomada de decisões. É uma alternativa focada em privacidade aos sites antigos de “wheel spinner”, com uma interface limpa feita para o uso cotidiano.
 
-- **Core use cases**: Giveaways, classroom name picking, party games, quick decisions.
-- **Login**: Not required (uses local browser storage).
-- **Cost**: Free to use.
+- **Casos de uso principais**: sorteios, escolha de nomes em sala de aula, jogos de festa, decisões rápidas.
+- **Login**: não é necessário (usa o armazenamento local do navegador).
+- **Custo**: gratuito para usar.
 
-### Unique Features {.col-span-2}
+### Recursos exclusivos {.col-span-2}
 
-| Feature              | Description                                                                            |
-| :------------------- | :------------------------------------------------------------------------------------- |
-| **Multi-Wheel Sync** | Run up to 6 wheels at once (e.g., one for names, one for prizes).                      |
-| **True Randomness**  | Uses `crypto.getRandomValues()` instead of `Math.random()` for cryptographic fairness. |
-| **Elimination Mode** | Option to temporarily remove a winner from the wheel after they are picked.            |
-| **Share Links**      | Generate a shareable link to publish a wheel and send it to friends.                   |
-| **Auto-Save & Sync** | Auto-saves to Local Storage and keeps your wheel state in sync on the same device.     |
-| **Import / Export**  | Export wheel configurations for backup, then import them later to restore.             |
-| **Streamer Mode**    | Optimized for OBS/Zoom with a clean UI and fullscreen capabilities.                    |
-| **Privacy**          | Data is stored locally in your browser, not on external servers.                       |
+| Recurso                                   | Descrição                                                                                             |
+| :---                                      | :---                                                                                                  |
+| **Sincronização de várias roletas**       | Executa até 6 roletas ao mesmo tempo (por exemplo, uma para nomes, outra para prêmios).               |
+| **Aleatoriedade real**                    | Usa `crypto.getRandomValues()` em vez de `Math.random()` para imparcialidade criptográfica.           |
+| **Modo eliminação**                       | Opção de remover temporariamente um vencedor da roleta depois que ele é sorteado.                     |
+| **Links de compartilhamento**             | Gere um link compartilhável para publicar uma roleta e enviá-lo aos amigos.                           |
+| **Salvamento automático e sincronização** | Salva automaticamente no Local Storage e mantém o estado da roleta sincronizado no mesmo dispositivo. |
+| **Importar / exportar**                   | Exporte configurações de roleta para backup e importe-as depois para restaurar.                       |
+| **Modo streamer**                         | Otimizado para OBS/Zoom, com interface limpa e recursos de tela cheia.                                |
+| **Privacidade**                           | Os dados ficam armazenados localmente no seu navegador, não em servidores externos.                   |
 
-## Controls & Fairness
+## Controles e imparcialidade
 
-### Shortcuts & Actions
+### Atalhos e ações
 
-| Action    | Description    |
-| :-------- | :------------- |
-| `Space`   | Start spinning |
-| `Cmd` `K` | Search wheels  |
+| Ação      | Descrição       |
+| :---      | :---            |
+| `Space`   | Começar a girar |
+| `Cmd` `K` | Buscar roletas  |
 
 {.shortcuts}
 
-### Customization Options
+### Opções de personalização
 
-- **Entries**: Add bulk names/items via the right panel.
-- **Weight**: Adjust probability for specific items (advanced).
-- **Themes**: Switch between light/dark, or custom color palettes.
-- **Sound**: Toggle spin sounds and winning fanfares.
+- **Entradas**: adicione nomes/itens em massa pelo painel direito.
+- **Peso**: ajuste a probabilidade de itens específicos (avançado).
+- **Temas**: alterne entre claro/escuro ou paletas de cores personalizadas.
+- **Som**: ative ou desative os sons de giro e as fanfarras de vitória.
 
-### Sharing & Backup
+### Compartilhamento e backup
 
-- **Share publicly**: Generate a share link and send it to friends (great for games, raffles, or classroom use).
-- **Local Storage sync**: Changes are auto-saved and stay consistent on the same device/browser.
-- **Export / import**: Save your wheel configuration locally (backup/transfer), then import it back anytime.
+- **Compartilhar publicamente**: gere um link de compartilhamento e envie aos amigos (ótimo para jogos, sorteios ou uso em sala de aula).
+- **Sincronização com Local Storage**: as alterações são salvas automaticamente e permanecem consistentes no mesmo dispositivo/navegador.
+- **Exportar / importar**: salve a configuração da sua roleta localmente (backup/transferência) e importe-a novamente quando quiser.
 
-### Randomness Audit
+### Auditoria de aleatoriedade
 
-**Fairness Tech**: Uses `crypto.getRandomValues()` (CSPRNG) instead of predictable `Math.random()`.
+**Tecnologia de imparcialidade**: usa `crypto.getRandomValues()` (CSPRNG) em vez do previsível `Math.random()`.
 
-**Verification**:
+**Verificação**:
 
-- Visit the [GoSpinWheel randomness audit tool](https://gospinwheel.com/randomness-audit).
-- Use the **Audit Tool** to run 10,000+ simulations.
-- Verify the deviation is statistically insignificant.
+- Acesse a [ferramenta de auditoria de aleatoriedade do GoSpinWheel](https://gospinwheel.com/randomness-audit).
+- Use a **Ferramenta de auditoria** para executar mais de 10.000 simulações.
+- Verifique se o desvio é estatisticamente insignificante.
 
-## Popular Templates
+## Templates populares
 
-### Party Games
+### Jogos de festa
 
-- **[Truth or Dare](https://gospinwheel.com/truth-or-dare)**: Dual-wheel spinner for players and actions. Spice up the party.
-- **[Who Pays?](https://gospinwheel.com/who-pays-for-dinner)**: Left wheel decides "What to eat", right wheel decides "Who pays".
-- **[Love Calculator](https://gospinwheel.com/love-calculator)**: Will they text back? Ask the universe with this fun calculator.
-- **[Rock Paper Scissors](https://gospinwheel.com/rock-paper-scissors)**: Need an impartial referee? Let the wheel throw for you.
+- **[Verdade ou Desafio](https://gospinwheel.com/truth-or-dare)**: roleta dupla para jogadores e ações. Anime a festa.
+- **[Quem paga?](https://gospinwheel.com/who-pays-for-dinner)**: a roleta da esquerda decide “O que comer”, a da direita decide “Quem paga”.
+- **[Calculadora do amor](https://gospinwheel.com/love-calculator)**: será que a pessoa vai responder? Pergunte ao universo com esta calculadora divertida.
+- **[Pedra, papel e tesoura](https://gospinwheel.com/rock-paper-scissors)**: precisa de um juiz imparcial? Deixe a roleta jogar por você.
 
-### Utility Tools
+### Ferramentas utilitárias
 
-- **[Name Picker](https://gospinwheel.com/name-picker)**: Pick winners fairly with weighted entries. Perfect for raffles and teams.
-- **[Student Picker](https://gospinwheel.com/student-picker)**: The essential classroom tool. Pick students fairly for questions or tasks.
+- **[Seletor de nomes](https://gospinwheel.com/name-picker)**: escolha vencedores de forma justa com entradas ponderadas. Perfeito para sorteios e times.
+- **[Seletor de alunos](https://gospinwheel.com/student-picker)**: a ferramenta essencial para a sala de aula. Escolha alunos de forma justa para perguntas ou tarefas.
 
-### Decision Making
+### Tomada de decisão
 
-- **[Yes or No](https://gospinwheel.com/yes-or-no)**: The fastest way to make a decision. Yes, No, or Maybe?
-- **[What to Eat](https://gospinwheel.com/what-to-eat)**: Solve the "What should we eat?" debate instantly.
-- **[Movie Picker](https://gospinwheel.com/movie-picker)**: Cure Netflix "doom scrolling" and pick a film for movie night.
+- **[Sim ou não](https://gospinwheel.com/yes-or-no)**: a maneira mais rápida de tomar uma decisão. Sim, não ou talvez?
+- **[O que comer](https://gospinwheel.com/what-to-eat)**: resolva na hora o debate “O que vamos comer?”.
+- **[Seletor de filmes](https://gospinwheel.com/movie-picker)**: cure a “rolagem sem fim” da Netflix e escolha um filme para a noite de cinema.
 
-## Comparison
+## Comparação
 
-### vs. Competitors {.col-span-3}
+### vs. Concorrentes {.col-span-3}
 
-| Feature         |      GoSpinWheel      | Wheel of Names | Picker Wheel  |
-| :-------------- | :-------------------: | :------------: | :-----------: |
-| **Randomness**  | **Crypto** (Verified) | Math.random()  | Math.random() |
-| **Ads**         |  **Minimal / None**   |      High      |     High      |
-| **Multi-Wheel** |    **Yes (Sync)**     |       No       |      No       |
-| **UI/UX**       |    **Modern 2024**    |     Dated      |     Dated     |
-| **Speed**       |       **Fast**        |    Average     |    Average    |
+| Recurso           | GoSpinWheel             | Wheel of Names | Picker Wheel  |
+| :---              | :---:                   | :---:          | :---:         |
+| **Aleatoriedade** | **Crypto** (verificado) | Math.random()  | Math.random() |
+| **Anúncios**      | **Mínimos / nenhum**    | Alto           | Alto          |
+| **Multi-roleta**  | **Sim (sincronizado)**  | Não            | Não           |
+| **UI/UX**         | **Moderno 2024**        | Ultrapassado   | Ultrapassado  |
+| **Velocidade**    | **Rápido**              | Médio          | Médio         |
 
 {.show-header}

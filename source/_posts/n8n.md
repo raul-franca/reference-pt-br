@@ -8,13 +8,13 @@ tags:
   - nocode
   - lowcode
 categories:
-  - Other
-intro: A quick reference for n8n workflow automation, covering expressions, built-in variables, core nodes, Code node patterns, error handling, and the CLI.
+  - Outros
+intro: Uma referência rápida para automação de workflow no n8n, cobrindo expressões, variáveis embutidas, nodes principais, padrões do Code node, tratamento de erros e a CLI.
 ---
 
-## Getting Started
+## Primeiros passos
 
-### Installation {.col-span-2}
+### Instalação {.col-span-2}
 
 #### npm (global)
 
@@ -51,26 +51,26 @@ services:
       - WEBHOOK_URL=https://your-domain.com/
 ```
 
-### Core Concepts
+### Conceitos principais
 
-| Term           | Description                                    |
-| -------------- | ---------------------------------------------- |
-| **Workflow**   | A collection of connected nodes                |
-| **Node**       | A single step or action                        |
-| **Trigger**    | Node that starts a workflow                    |
-| **Execution**  | One run of a workflow                          |
-| **Item**       | A single JSON data object passed between nodes |
-| **Connection** | Link between two nodes                         |
-| **Credential** | Stored auth config for a service               |
-| **Expression** | Dynamic value using `{{ }}` syntax             |
+| Termo          | Descrição                                            |
+| -------------- | ---------------------------------------------------- |
+| **Workflow**   | Uma coleção de nodes conectados                      |
+| **Node**       | Um único passo ou ação                               |
+| **Trigger**    | Node que inicia um workflow                          |
+| **Execution**  | Uma execução de um workflow                          |
+| **Item**       | Um único objeto de dados JSON passado entre nodes    |
+| **Connection** | Link entre dois nodes                                |
+| **Credential** | Configuração de autenticação armazenada para um serviço |
+| **Expression** | Valor dinâmico usando a sintaxe `{{ }}`              |
 
 {.show-header}
 
-## Expressions {.cols-2}
+## Expressões {.cols-2}
 
-### Syntax Basics
+### Noções básicas de sintaxe
 
-Access current item fields:
+Acesse os campos do item atual:
 
 ```js
 {
@@ -95,7 +95,7 @@ Access current item fields:
 }
 ```
 
-Math and string:
+Matemática e strings:
 
 ```js
 {
@@ -120,7 +120,7 @@ Math and string:
 }
 ```
 
-Ternary conditional:
+Condicional ternário:
 
 ```js
 {
@@ -135,9 +135,9 @@ Ternary conditional:
 }
 ```
 
-### Reference Other Nodes
+### Referenciar outros nodes
 
-Get a specific node's output:
+Obtenha a saída de um node específico:
 
 ```js
 {
@@ -152,7 +152,7 @@ Get a specific node's output:
 }
 ```
 
-Get all items from a node:
+Obtenha todos os itens de um node:
 
 ```js
 {
@@ -167,7 +167,7 @@ Get all items from a node:
 }
 ```
 
-Check item count:
+Verifique a quantidade de itens:
 
 ```js
 {
@@ -177,24 +177,24 @@ Check item count:
 }
 ```
 
-## Built-in Variables
+## Variáveis embutidas
 
-### Execution & Workflow {.col-span-2}
+### Execução e workflow {.col-span-2}
 
-| Variable               | Type    | Description                       |
-| ---------------------- | ------- | --------------------------------- |
-| `$execution.id`        | string  | Current execution ID              |
-| `$execution.mode`      | string  | `manual`, `trigger`, or `webhook` |
-| `$execution.resumeUrl` | string  | URL to resume a waiting execution |
-| `$workflow.id`         | string  | Workflow ID                       |
-| `$workflow.name`       | string  | Workflow name                     |
-| `$workflow.active`     | boolean | Whether the workflow is active    |
-| `$runIndex`            | number  | Loop iteration index (0-based)    |
-| `$itemIndex`           | number  | Current item index in the batch   |
+| Variável               | Tipo    | Descrição                                  |
+| ---------------------- | ------- | ------------------------------------------ |
+| `$execution.id`        | string  | ID da execução atual                       |
+| `$execution.mode`      | string  | `manual`, `trigger` ou `webhook`           |
+| `$execution.resumeUrl` | string  | URL para retomar uma execução em espera    |
+| `$workflow.id`         | string  | ID do workflow                             |
+| `$workflow.name`       | string  | Nome do workflow                           |
+| `$workflow.active`     | boolean | Se o workflow está ativo                   |
+| `$runIndex`            | number  | Índice da iteração do loop (base 0)        |
+| `$itemIndex`           | number  | Índice do item atual no batch              |
 
 {.show-header}
 
-### Date & Time (Luxon)
+### Data e hora (Luxon)
 
 ```js
 // Current datetime as Luxon object
@@ -244,7 +244,7 @@ Check item count:
 }
 ```
 
-### Environment & Secrets
+### Ambiente e segredos
 
 ```js
 // Environment variables (set in .env or n8n settings)
@@ -274,9 +274,9 @@ Check item count:
 }
 ```
 
-## Built-in Methods {.cols-2}
+## Métodos embutidos {.cols-2}
 
-### Logic & Validation
+### Lógica e validação
 
 ```js
 // Conditional value
@@ -306,7 +306,7 @@ Check item count:
 }
 ```
 
-### Array Helpers
+### Auxiliares de array
 
 ```js
 // Aggregate methods — called ON the array
@@ -353,14 +353,14 @@ Check item count:
 
 ## Triggers {.cols-3}
 
-### Schedule Trigger
+### Trigger de agendamento
 
-Configure via UI with:
+Configure pela UI com:
 
-- Interval: every N minutes/hours/days
-- Custom cron expression
+- Intervalo: a cada N minutos/horas/dias
+- Expressão cron personalizada
 
-Common cron patterns:
+Padrões cron comuns:
 
 ```
 */15 * * * *    Every 15 minutes
@@ -370,7 +370,7 @@ Common cron patterns:
 0 8,17 * * *    At 8 AM and 5 PM
 ```
 
-### Webhook Trigger
+### Trigger de webhook
 
 ```
 # Test URL (manual execution only)
@@ -380,35 +380,35 @@ https://your-n8n.com/webhook-test/{id}
 https://your-n8n.com/webhook/{id}
 ```
 
-Supports `GET`, `POST`, `PUT`, `PATCH`, `DELETE`. Access data via:
+Suporta `GET`, `POST`, `PUT`, `PATCH`, `DELETE`. Acesse os dados via:
 
 - Body → `$json`
 - Query params → `$json.query`
 - Headers → `$request.headers`
 
-### App / Event Triggers
+### Triggers de app / evento
 
-Common instant triggers:
+Triggers instantâneos comuns:
 
-- Gmail / Outlook — new email
-- Slack — new message
-- GitHub — push, PR, issue event
-- Airtable — new/updated record
-- Typeform — new submission
-- Stripe — payment event
+- Gmail / Outlook — novo e-mail
+- Slack — nova mensagem
+- GitHub — push, PR, evento de issue
+- Airtable — registro novo/atualizado
+- Typeform — nova submissão
+- Stripe — evento de pagamento
 
-Use **polling** (interval-based) or **instant** triggers where the service pushes via webhook.
+Use triggers de **polling** (baseados em intervalo) ou **instantâneos**, em que o serviço envia via webhook.
 
-## Core Nodes {.cols-3}
+## Nodes principais {.cols-3}
 
 ### HTTP Request
 
-Send requests to any REST API.
+Envie requests para qualquer API REST.
 
-Key settings:
+Configurações principais:
 
 - **Method**: GET, POST, PUT, PATCH, DELETE
-- **URL**: supports `{{ }}` expressions
+- **URL**: suporta expressões `{{ }}`
 - **Authentication**: None, Bearer, Basic, OAuth2, API Key
 - **Body**: JSON, Form Data, Raw, Binary
 
@@ -420,23 +420,23 @@ https://api.example.com/users/{{ $json.userId }}
 Authorization: Bearer {{ $env.API_TOKEN }}
 ```
 
-### IF Node
+### Node IF
 
-Routes items to a `true` or `false` output branch based on a condition.
+Encaminha itens para uma ramificação de saída `true` ou `false` com base em uma condição.
 
-Supported types:
+Tipos suportados:
 
-- String: equals, contains, starts/ends with, regex
+- String: igual, contém, começa/termina com, regex
 - Number: =, ≠, >, <, ≥, ≤
-- Boolean: is true/false
-- Array: contains item
-- DateTime: before/after
+- Boolean: é true/false
+- Array: contém item
+- DateTime: antes/depois
 
-Combine with **AND** / **OR** logic.
+Combine com lógica **AND** / **OR**.
 
-### Switch Node
+### Node Switch
 
-Routes items to one of multiple named branches based on a value. Use when you need more than 2 paths.
+Encaminha itens para uma entre várias ramificações nomeadas com base em um valor. Use quando precisar de mais de 2 caminhos.
 
 ```
 Value:    {{ $json.status }}
@@ -447,9 +447,9 @@ Case 2  → "closed"
 Default → (anything else)
 ```
 
-### Set Node
+### Node Set
 
-Add, modify, or remove fields on items.
+Adiciona, modifica ou remove campos dos itens.
 
 ```js
 // Add or overwrite a field
@@ -463,35 +463,35 @@ Value:       {{ $json.id }}
 // Enable "Keep Only Set" to strip all other fields
 ```
 
-### Merge Node
+### Node Merge
 
-Combines items from two input branches.
+Combina itens de duas ramificações de entrada.
 
-| Mode                | Description                             |
-| ------------------- | --------------------------------------- |
-| Append              | All items from both branches            |
-| Combine by Position | Merge item[0]+item[0], etc.             |
-| Combine by Fields   | Join on a shared key (like SQL JOIN)    |
-| Keep Matches        | Inner join — only matching items        |
-| Keep Non-Matches    | Items with no match in the other branch |
+| Modo                | Descrição                                      |
+| ------------------- | ---------------------------------------------- |
+| Append              | Todos os itens das duas ramificações           |
+| Combine by Position | Combina item[0]+item[0], etc.                  |
+| Combine by Fields   | Join por uma chave compartilhada (como SQL JOIN) |
+| Keep Matches        | Inner join — apenas itens que correspondem     |
+| Keep Non-Matches    | Itens sem correspondência na outra ramificação |
 
 {.show-header}
 
 ### Split in Batches
 
-Process a large item list in chunks to avoid timeouts.
+Processa uma lista grande de itens em partes para evitar timeouts.
 
 ```
 Batch Size: 10
 ```
 
-The node loops back automatically. Use `$runIndex` to track which batch you're on. Connect the `done` output to continue after all batches.
+O node volta ao início automaticamente. Use `$runIndex` para acompanhar em qual batch você está. Conecte a saída `done` para continuar depois de todos os batches.
 
-## Code Node {.cols-2}
+## Code node {.cols-2}
 
-### Run Once per Item
+### Executar uma vez por item
 
-Executes once for each incoming item. Return one item object:
+Executa uma vez para cada item de entrada. Retorne um objeto de item:
 
 ```js
 // Modify and return current item
@@ -501,7 +501,7 @@ item.json.ts = new Date().toISOString();
 return item;
 ```
 
-Return a completely new item:
+Retorne um item totalmente novo:
 
 ```js
 return {
@@ -513,9 +513,9 @@ return {
 };
 ```
 
-### Run Once for All Items
+### Executar uma vez para todos os itens
 
-Executes once with the full list. Return an array:
+Executa uma vez com a lista completa. Retorne um array:
 
 ```js
 // Transform all items
@@ -527,15 +527,15 @@ return $input.all().map((item) => ({
 }));
 ```
 
-Filter items:
+Filtre itens:
 
 ```js
 return $input.all().filter((item) => item.json.score >= 50);
 ```
 
-### Common Code Patterns {.col-span-2}
+### Padrões de código comuns {.col-span-2}
 
-Group items by a field:
+Agrupe itens por um campo:
 
 ```js
 const groups = {};
@@ -549,7 +549,7 @@ return Object.entries(groups).map(([key, items]) => ({
 }));
 ```
 
-Flatten nested array into separate items:
+Achate um array aninhado em itens separados:
 
 ```js
 const result = [];
@@ -561,7 +561,7 @@ for (const item of $input.all()) {
 return result;
 ```
 
-HTTP call inside Code node:
+Chamada HTTP dentro do Code node:
 
 ```js
 const response = await $http.request({
@@ -571,21 +571,21 @@ const response = await $http.request({
 return [{ json: response }];
 ```
 
-## Error Handling {.cols-2}
+## Tratamento de erros {.cols-2}
 
-### Node-level: Continue on Error
+### No nível do node: continuar em caso de erro
 
-On any node → **Settings** → **On Error**
+Em qualquer node → **Settings** → **On Error**
 
-| Option                    | Behavior                               |
-| ------------------------- | -------------------------------------- |
-| Stop Workflow             | Default — halts on error               |
-| Continue (regular output) | Passes error info as item to next node |
-| Continue (error output)   | Routes error to a separate branch      |
+| Opção                     | Comportamento                             |
+| ------------------------- | ----------------------------------------- |
+| Stop Workflow             | Padrão — interrompe em caso de erro       |
+| Continue (regular output) | Passa as informações do erro como item para o próximo node |
+| Continue (error output)   | Encaminha o erro para uma ramificação separada |
 
 {.show-header}
 
-Access error details downstream:
+Acesse os detalhes do erro adiante no fluxo:
 
 ```js
 {
@@ -605,13 +605,13 @@ Access error details downstream:
 }
 ```
 
-### Workflow-level: Error Workflow
+### No nível do workflow: workflow de erro
 
-1. Create a dedicated "Error Handler" workflow
-2. Use **Error Trigger** as the first node
-3. In your main workflow → **Settings** → **Error Workflow** → select it
+1. Crie um workflow dedicado de "Error Handler"
+2. Use o **Error Trigger** como primeiro node
+3. No seu workflow principal → **Settings** → **Error Workflow** → selecione-o
 
-Available variables in the error workflow:
+Variáveis disponíveis no workflow de erro:
 
 ```js
 {
@@ -646,11 +646,11 @@ Available variables in the error workflow:
 }
 ```
 
-Use this to send Slack alerts, log to a DB, or create a Jira ticket on failure.
+Use isso para enviar alertas no Slack, registrar em um banco de dados ou criar um ticket no Jira em caso de falha.
 
-## CLI Reference {.cols-2}
+## Referência da CLI {.cols-2}
 
-### Common Commands
+### Comandos comuns
 
 ```bash
 # Start n8n
@@ -681,7 +681,7 @@ n8n export:credentials --all --output=./creds/
 n8n import:credentials --input=./creds/
 ```
 
-### Key Environment Variables
+### Principais variáveis de ambiente
 
 ```bash
 # Server
@@ -710,61 +710,61 @@ N8N_BASIC_AUTH_PASSWORD=secret
 N8N_DIAGNOSTICS_ENABLED=false
 ```
 
-## Advanced Workflows {.cols-2}
+## Workflows avançados {.cols-2}
 
-### Sub-Workflows
+### Sub-workflows
 
-Break large processes into reusable components using the **Execute Workflow** node.
+Divida processos grandes em componentes reutilizáveis usando o node **Execute Workflow**.
 
-- **Parent**: Sends items to the sub-workflow.
-- **Child**: Starts with an **Execute Workflow Trigger**.
-- **Return**: Data from the child's final node is sent back to the parent.
+- **Parent**: envia itens para o sub-workflow.
+- **Child**: começa com um **Execute Workflow Trigger**.
+- **Return**: os dados do node final do filho são enviados de volta ao pai.
 
-### Community Nodes
+### Community nodes
 
-Extend n8n with community-built nodes directly from the UI.
+Estenda o n8n com nodes criados pela comunidade diretamente pela UI.
 
-1. Go to **Settings** → **Community Nodes**.
-2. Enter the npm package name (e.g., `n8n-nodes-browserless`).
-3. Click **Install**.
+1. Vá em **Settings** → **Community Nodes**.
+2. Digite o nome do pacote npm (por exemplo, `n8n-nodes-browserless`).
+3. Clique em **Install**.
 
-### Pagination
+### Paginação
 
-Many API nodes have built-in pagination. For custom HTTP requests:
+Muitos nodes de API têm paginação embutida. Para requests HTTP personalizados:
 
-1. Enable **Pagination** in the HTTP Request node settings.
-2. Select the strategy (e.g., Header Link, Response body, Offset/Limit).
-3. n8n will automatically fetch all pages and output a single stream of items.
+1. Ative **Pagination** nas configurações do node HTTP Request.
+2. Selecione a estratégia (por exemplo, Header Link, Response body, Offset/Limit).
+3. O n8n busca todas as páginas automaticamente e gera um único stream de itens.
 
-## Keyboard Shortcuts {.cols-2}
+## Atalhos de teclado {.cols-2}
 
-### Canvas Actions
+### Ações no canvas
 
-| Shortcut            | Action                 |
+| Atalho              | Ação                   |
 | ------------------- | ---------------------- |
-| `Ctrl` `S`          | Save workflow          |
-| `Ctrl` `Enter`      | Execute workflow       |
-| `Ctrl` `Z`          | Undo                   |
-| `Ctrl` `Shift` `Z`  | Redo                   |
-| `Ctrl` `A`          | Select all nodes       |
-| `Ctrl` `C`          | Copy selected node(s)  |
-| `Ctrl` `V`          | Paste node(s)          |
-| `Del` / `Backspace` | Delete selected node   |
-| `F2`                | Rename node            |
-| `Esc`               | Deselect / close panel |
+| `Ctrl` `S`          | Salvar workflow        |
+| `Ctrl` `Enter`      | Executar workflow      |
+| `Ctrl` `Z`          | Desfazer               |
+| `Ctrl` `Shift` `Z`  | Refazer                |
+| `Ctrl` `A`          | Selecionar todos os nodes |
+| `Ctrl` `C`          | Copiar node(s) selecionado(s) |
+| `Ctrl` `V`          | Colar node(s)          |
+| `Del` / `Backspace` | Excluir node selecionado |
+| `F2`                | Renomear node          |
+| `Esc`               | Desmarcar / fechar painel |
 
 {.shortcuts}
 
-### Navigation
+### Navegação
 
-| Shortcut           | Action                   |
+| Atalho             | Ação                     |
 | ------------------ | ------------------------ |
-| `Ctrl` `+`         | Zoom in                  |
-| `Ctrl` `-`         | Zoom out                 |
-| `Ctrl` `0`         | Reset zoom to 100%       |
-| `Ctrl` `Shift` `F` | Fit workflow to screen   |
-| `Ctrl` `F`         | Search / find node       |
-| `Tab`              | Open node selector panel |
-| `Space` `+` drag   | Pan the canvas           |
+| `Ctrl` `+`         | Aumentar o zoom          |
+| `Ctrl` `-`         | Diminuir o zoom          |
+| `Ctrl` `0`         | Redefinir o zoom para 100% |
+| `Ctrl` `Shift` `F` | Ajustar o workflow à tela |
+| `Ctrl` `F`         | Buscar / localizar node  |
+| `Tab`              | Abrir o painel seletor de nodes |
+| `Space` `+` drag   | Mover o canvas           |
 
 {.shortcuts}

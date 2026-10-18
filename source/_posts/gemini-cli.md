@@ -8,16 +8,16 @@ tags:
   - cli
   - google
 categories:
-  - AI
+  - IA
 intro: |
-  [Gemini CLI](https://geminicli.com/docs/) brings Google Gemini models directly into your terminal for code understanding, task automation, and workflow building.
+  [Gemini CLI](https://geminicli.com/docs/) traz os modelos Google Gemini diretamente para o seu terminal para compreensão de código, automação de tarefas e criação de workflows.
 plugins:
   - copyCode
 ---
 
-## Getting Started {.cols-3}
+## Primeiros passos {.cols-3}
 
-### Quick Start {.row-span-2}
+### Início rápido {.row-span-2}
 
 ```bash
 # Install globally
@@ -48,82 +48,82 @@ $ gemini -r latest
 $ gemini -r latest "check for type errors"
 ```
 
-### Authentication
+### Autenticação
 
-| Method          | How                                        |
-| --------------- | ------------------------------------------ |
-| Google Account  | Run `gemini`, select "Sign in with Google" |
-| API Key         | Set `GEMINI_API_KEY` env var               |
-| Vertex AI (ADC) | `gcloud auth application-default login`    |
-| Vertex AI (SA)  | Set `GOOGLE_APPLICATION_CREDENTIALS`       |
+| Método          | Como                                               |
+| --------------- | -------------------------------------------------- |
+| Google Account  | Execute `gemini` e selecione "Sign in with Google" |
+| API Key         | Defina a variável de ambiente `GEMINI_API_KEY`     |
+| Vertex AI (ADC) | `gcloud auth application-default login`            |
+| Vertex AI (SA)  | Defina `GOOGLE_APPLICATION_CREDENTIALS`            |
 
-Vertex AI also requires `GOOGLE_CLOUD_PROJECT` and `GOOGLE_CLOUD_LOCATION`.
+O Vertex AI também exige `GOOGLE_CLOUD_PROJECT` e `GOOGLE_CLOUD_LOCATION`.
 
-### Installation Methods
+### Métodos de instalação
 
-| Method           | Command                             |
-| ---------------- | ----------------------------------- |
-| npm              | `npm install -g @google/gemini-cli` |
-| Homebrew         | `brew install gemini-cli`           |
-| MacPorts         | `sudo port install gemini-cli`      |
-| npx (no install) | `npx @google/gemini-cli`            |
+| Método             | Comando                             |
+| ------------------ | ----------------------------------- |
+| npm                | `npm install -g @google/gemini-cli` |
+| Homebrew           | `brew install gemini-cli`           |
+| MacPorts           | `sudo port install gemini-cli`      |
+| npx (sem instalar) | `npx @google/gemini-cli`            |
 
-**System requirements:** Node.js 20+, macOS 15+, Windows 11 24H2+, or Ubuntu 20.04+
+**Requisitos de sistema:** Node.js 20+, macOS 15+, Windows 11 24H2+ ou Ubuntu 20.04+
 
-### Model Aliases
+### Aliases de modelo
 
-| Alias        | Model                         | Use For           |
-| ------------ | ----------------------------- | ----------------- |
-| `auto`       | gemini-2.5-pro / gemini-3-pro | Default, balanced |
-| `pro`        | gemini-2.5-pro / gemini-3-pro | Complex reasoning |
-| `flash`      | gemini-2.5-flash              | Fast, balanced    |
-| `flash-lite` | gemini-2.5-flash-lite         | Simple, fastest   |
+| Alias        | Modelo                        | Usar para            |
+| ------------ | ----------------------------- | -------------------- |
+| `auto`       | gemini-2.5-pro / gemini-3-pro | Padrão, equilibrado  |
+| `pro`        | gemini-2.5-pro / gemini-3-pro | Raciocínio complexo  |
+| `flash`      | gemini-2.5-flash              | Rápido, equilibrado  |
+| `flash-lite` | gemini-2.5-flash-lite         | Simples, mais rápido |
 
 {.show-header}
 
-Set with `-m flash` or `GEMINI_MODEL` env var.
+Defina com `-m flash` ou com a variável de ambiente `GEMINI_MODEL`.
 
-### Key Concepts
+### Conceitos principais
 
-| Concept     | Description                                     |
-| ----------- | ----------------------------------------------- |
-| `GEMINI.md` | Project context file loaded automatically       |
-| Skills      | On-demand expertise loaded via `activate_skill` |
-| Extensions  | Bundles of prompts, MCP servers, tools          |
-| MCP Servers | External tools via Model Context Protocol       |
-| Plan Mode   | Read-only mode for planning before coding       |
-| Hooks       | Scripts that run at key agent lifecycle points  |
-| Headless    | Non-interactive mode via `-p` flag              |
-| Sessions    | Saved conversation history, resumable           |
+| Conceito    | Descrição                                                     |
+| ----------- | ------------------------------------------------------------- |
+| `GEMINI.md` | Arquivo de contexto do projeto carregado automaticamente      |
+| Skills      | Especialidade sob demanda carregada via `activate_skill`      |
+| Extensions  | Pacotes de prompts, servidores MCP e ferramentas              |
+| MCP Servers | Ferramentas externas via Model Context Protocol               |
+| Plan Mode   | Modo somente leitura para planejar antes de codar             |
+| Hooks       | Scripts executados em pontos-chave do ciclo de vida do agente |
+| Headless    | Modo não interativo via flag `-p`                             |
+| Sessions    | Histórico de conversas salvo e retomável                      |
 
-## CLI Options {.cols-2}
+## Opções da CLI {.cols-2}
 
-### Core Options {.row-span-2}
+### Opções principais {.row-span-2}
 
-| Option                       | Alias | Description                                               |
-| ---------------------------- | ----- | --------------------------------------------------------- |
-| `--prompt <text>`            | `-p`  | Non-interactive prompt                                    |
-| `--prompt-interactive`       | `-i`  | Prompt then continue                                      |
-| `--model <name>`             | `-m`  | Model to use                                              |
-| `--worktree [name]`          | `-w`  | Start in new git worktree                                 |
-| `--sandbox`                  | `-s`  | Enable sandboxed execution                                |
-| `--approval-mode <mode>`     |       | default / auto_edit / yolo / plan                         |
-| `--yolo`                     | `-y`  | Auto-approve all (deprecated, use `--approval-mode=yolo`) |
-| `--resume <id>`              | `-r`  | Resume session by ID or `latest`                          |
-| `--list-sessions`            |       | List sessions and exit                                    |
-| `--delete-session <n>`       |       | Delete session by index                                   |
-| `--output-format <fmt>`      | `-o`  | text / json / stream-json                                 |
-| `--extensions <list>`        | `-e`  | Extensions to load                                        |
-| `--list-extensions`          | `-l`  | List extensions and exit                                  |
-| `--include-directories`      |       | Additional workspace dirs                                 |
-| `--allowed-mcp-server-names` |       | Restrict MCP server names                                 |
-| `--screen-reader`            |       | Enable accessibility mode                                 |
-| `--acp`                      |       | Start in ACP (Agent Code Pilot) mode                      |
-| `--debug`                    | `-d`  | Verbose debug logging                                     |
-| `--version`                  | `-v`  | Show version                                              |
-| `--help`                     | `-h`  | Show help                                                 |
+| Opção                        | Alias | Descrição                                                               |
+| ---------------------------- | ----- | ----------------------------------------------------------------------- |
+| `--prompt <text>`            | `-p`  | Prompt não interativo                                                   |
+| `--prompt-interactive`       | `-i`  | Envia o prompt e continua                                               |
+| `--model <name>`             | `-m`  | Modelo a usar                                                           |
+| `--worktree [name]`          | `-w`  | Inicia em um novo worktree do git                                       |
+| `--sandbox`                  | `-s`  | Ativa a execução em sandbox                                             |
+| `--approval-mode <mode>`     |       | default / auto_edit / yolo / plan                                       |
+| `--yolo`                     | `-y`  | Aprova tudo automaticamente (descontinuado, use `--approval-mode=yolo`) |
+| `--resume <id>`              | `-r`  | Retoma a sessão por ID ou `latest`                                      |
+| `--list-sessions`            |       | Lista as sessões e sai                                                  |
+| `--delete-session <n>`       |       | Exclui a sessão por índice                                              |
+| `--output-format <fmt>`      | `-o`  | text / json / stream-json                                               |
+| `--extensions <list>`        | `-e`  | Extensões a carregar                                                    |
+| `--list-extensions`          | `-l`  | Lista as extensões e sai                                                |
+| `--include-directories`      |       | Diretórios adicionais do workspace                                      |
+| `--allowed-mcp-server-names` |       | Restringe os nomes de servidores MCP                                    |
+| `--screen-reader`            |       | Ativa o modo de acessibilidade                                          |
+| `--acp`                      |       | Inicia no modo ACP (Agent Code Pilot)                                   |
+| `--debug`                    | `-d`  | Log de depuração detalhado                                              |
+| `--version`                  | `-v`  | Mostra a versão                                                         |
+| `--help`                     | `-h`  | Mostra a ajuda                                                          |
 
-### Subcommands
+### Subcomandos
 
 ```bash
 # MCP server management
@@ -153,63 +153,63 @@ $ gemini skills enable/disable <name>
 $ gemini hooks migrate
 ```
 
-### Headless Output Formats
+### Formatos de saída headless
 
-| Format        | Description                                                                 |
+| Formato       | Descrição                                                                   |
 | ------------- | --------------------------------------------------------------------------- |
-| `text`        | Plain text (default)                                                        |
-| `json`        | Single JSON object with `response` and `stats`                              |
+| `text`        | Texto simples (padrão)                                                      |
+| `json`        | Objeto JSON único com `response` e `stats`                                  |
 | `stream-json` | JSONL: `init` · `message` · `tool_use` · `tool_result` · `error` · `result` |
 
-**Exit codes:** `0` Success · `1` Error · `42` Bad input · `53` Turn limit exceeded
+**Códigos de saída:** `0` Sucesso · `1` Erro · `42` Entrada inválida · `53` Limite de turnos excedido
 
-## Interactive Commands {.cols-3}
+## Comandos interativos {.cols-3}
 
-### Slash Commands `/` {.row-span-3}
+### Slash commands `/` {.row-span-3}
 
-| Command              | Description                     |
-| -------------------- | ------------------------------- |
-| `/help`              | Show all commands               |
-| `/quit` `/exit`      | Exit Gemini CLI                 |
-| `/clear`             | Clear terminal screen           |
-| `/about`             | Show version info               |
-| `/auth`              | Change authentication           |
-| `/model`             | Set / manage model              |
-| `/settings`          | Open settings editor            |
-| `/theme`             | Change visual theme             |
-| `/vim`               | Toggle vim mode                 |
-| `/plan [goal]`       | Enter Plan Mode                 |
-| `/compress`          | Compress chat context           |
-| `/copy`              | Copy last output to clipboard   |
-| `/init`              | Generate GEMINI.md for project  |
-| `/docs`              | Open documentation              |
-| `/bug`               | File a GitHub issue             |
-| `/stats`             | Session / model / tools stats   |
-| `/tools`             | List available tools            |
-| `/memory show`       | Show all context files          |
-| `/memory add <text>` | Add to global GEMINI.md         |
-| `/memory reload`     | Reload context files            |
-| `/resume`            | Browse & resume sessions        |
-| `/rewind`            | Rewind conversation history     |
-| `/restore`           | Restore pre-tool file state     |
-| `/hooks list`        | List configured hooks           |
-| `/mcp list`          | List MCP servers                |
-| `/mcp reload`        | Restart MCP servers             |
-| `/skills list`       | List available skills           |
-| `/extensions list`   | List extensions                 |
-| `/permissions trust` | Trust current folder            |
-| `/policies list`     | List active policies            |
-| `/directory add`     | Add workspace directory         |
-| `/ide status`        | IDE integration status          |
-| `/shells`            | Toggle background shells        |
-| `/terminal-setup`    | Configure multiline keybindings |
-| `/setup-github`      | Setup GitHub Actions            |
+| Comando              | Descrição                                            |
+| -------------------- | ---------------------------------------------------- |
+| `/help`              | Mostra todos os comandos                             |
+| `/quit` `/exit`      | Sai do Gemini CLI                                    |
+| `/clear`             | Limpa a tela do terminal                             |
+| `/about`             | Mostra informações da versão                         |
+| `/auth`              | Altera a autenticação                                |
+| `/model`             | Define / gerencia o modelo                           |
+| `/settings`          | Abre o editor de configurações                       |
+| `/theme`             | Altera o tema visual                                 |
+| `/vim`               | Ativa/desativa o modo vim                            |
+| `/plan [goal]`       | Entra no Plan Mode                                   |
+| `/compress`          | Comprime o contexto do chat                          |
+| `/copy`              | Copia a última saída para a área de transferência    |
+| `/init`              | Gera o GEMINI.md do projeto                          |
+| `/docs`              | Abre a documentação                                  |
+| `/bug`               | Abre uma issue no GitHub                             |
+| `/stats`             | Estatísticas da sessão / modelo / ferramentas        |
+| `/tools`             | Lista as ferramentas disponíveis                     |
+| `/memory show`       | Mostra todos os arquivos de contexto                 |
+| `/memory add <text>` | Adiciona ao GEMINI.md global                         |
+| `/memory reload`     | Recarrega os arquivos de contexto                    |
+| `/resume`            | Navega e retoma sessões                              |
+| `/rewind`            | Retrocede o histórico da conversa                    |
+| `/restore`           | Restaura o estado dos arquivos anterior à ferramenta |
+| `/hooks list`        | Lista os hooks configurados                          |
+| `/mcp list`          | Lista os servidores MCP                              |
+| `/mcp reload`        | Reinicia os servidores MCP                           |
+| `/skills list`       | Lista as skills disponíveis                          |
+| `/extensions list`   | Lista as extensões                                   |
+| `/permissions trust` | Confia na pasta atual                                |
+| `/policies list`     | Lista as políticas ativas                            |
+| `/directory add`     | Adiciona um diretório ao workspace                   |
+| `/ide status`        | Status da integração com a IDE                       |
+| `/shells`            | Ativa/desativa os shells em segundo plano            |
+| `/terminal-setup`    | Configura os atalhos de várias linhas                |
+| `/setup-github`      | Configura o GitHub Actions                           |
 
-Reload commands: `/skills reload`, `/agents reload`, `/commands reload`, `/memory reload`, `/mcp reload`, `/extensions reload`
+Comandos de recarga: `/skills reload`, `/agents reload`, `/commands reload`, `/memory reload`, `/mcp reload`, `/extensions reload`
 
-### At Commands `@`
+### Comandos At `@`
 
-Include file or directory content in your prompt:
+Inclua o conteúdo de um arquivo ou diretório no seu prompt:
 
 ```bash
 # Include a file
@@ -222,9 +222,9 @@ Include file or directory content in your prompt:
 @package.json @src/ audit dependencies
 ```
 
-Git-aware: respects `.gitignore` for directory inclusion.
+Consciente do Git: respeita o `.gitignore` na inclusão de diretórios.
 
-### Shell Mode `!`
+### Modo shell `!`
 
 ```bash
 # Run a single shell command
@@ -237,64 +237,64 @@ Git-aware: respects `.gitignore` for directory inclusion.
 !git diff HEAD~1
 ```
 
-`GEMINI_CLI=1` is set in all shell subprocesses.
+`GEMINI_CLI=1` é definido em todos os subprocessos de shell.
 
-## Keyboard Shortcuts {.cols-3}
+## Atalhos de teclado {.cols-3}
 
-### Cursor & Editing {.row-span-2}
+### Cursor e edição {.row-span-2}
 
-| Key                   | Action                  |
-| --------------------- | ----------------------- |
-| `Ctrl+A` / `Home`     | Move to line start      |
-| `Ctrl+E` / `End`      | Move to line end        |
-| `Ctrl+←` / `Alt+B`    | Move word left          |
-| `Ctrl+→` / `Alt+F`    | Move word right         |
-| `Ctrl+K`              | Delete to end of line   |
-| `Ctrl+U`              | Delete to start of line |
-| `Ctrl+W` / `Alt+Bksp` | Delete word left        |
-| `Alt+D`               | Delete word right       |
-| `Backspace`           | Delete left             |
-| `Delete` / `Ctrl+D`   | Delete right            |
-| `Cmd+Z`               | Undo                    |
-| `Ctrl+Shift+Z`        | Redo                    |
-
-{.shortcuts}
-
-### Text Input
-
-| Key              | Action                 |
-| ---------------- | ---------------------- |
-| `Enter`          | Submit message         |
-| `Ctrl/Cmd+Enter` | Insert newline         |
-| `Tab`            | Queue message          |
-| `Ctrl+X`         | Open external editor   |
-| `Ctrl+V`         | Paste                  |
-| `Ctrl+R`         | Reverse history search |
-| `Ctrl+P`         | Previous history entry |
-| `Ctrl+N`         | Next history entry     |
+| Tecla                 | Ação                             |
+| --------------------- | -------------------------------- |
+| `Ctrl+A` / `Home`     | Move para o início da linha      |
+| `Ctrl+E` / `End`      | Move para o fim da linha         |
+| `Ctrl+←` / `Alt+B`    | Move uma palavra para a esquerda |
+| `Ctrl+→` / `Alt+F`    | Move uma palavra para a direita  |
+| `Ctrl+K`              | Exclui até o fim da linha        |
+| `Ctrl+U`              | Exclui até o início da linha     |
+| `Ctrl+W` / `Alt+Bksp` | Exclui a palavra à esquerda      |
+| `Alt+D`               | Exclui a palavra à direita       |
+| `Backspace`           | Exclui à esquerda                |
+| `Delete` / `Ctrl+D`   | Exclui à direita                 |
+| `Cmd+Z`               | Desfazer                         |
+| `Ctrl+Shift+Z`        | Refazer                          |
 
 {.shortcuts}
 
-### App Controls
+### Entrada de texto
 
-| Key         | Action                    |
-| ----------- | ------------------------- |
-| `Shift+Tab` | Cycle approval modes      |
-| `Ctrl+T`    | Toggle todos panel        |
-| `Alt+M`     | Toggle markdown rendering |
-| `Ctrl+Y`    | Toggle YOLO mode          |
-| `Ctrl+L`    | Clear screen              |
-| `Ctrl+Z`    | Suspend process           |
-| `F12`       | Show error details        |
-| `Esc` twice | Open rewind dialog        |
-| `Ctrl+C`    | Cancel / quit             |
-| `Ctrl+D`    | Exit                      |
+| Tecla            | Ação                          |
+| ---------------- | ----------------------------- |
+| `Enter`          | Envia a mensagem              |
+| `Ctrl/Cmd+Enter` | Insere uma nova linha         |
+| `Tab`            | Enfileira a mensagem          |
+| `Ctrl+X`         | Abre o editor externo         |
+| `Ctrl+V`         | Colar                         |
+| `Ctrl+R`         | Busca reversa no histórico    |
+| `Ctrl+P`         | Entrada anterior do histórico |
+| `Ctrl+N`         | Próxima entrada do histórico  |
 
 {.shortcuts}
 
-## Sessions & History {.cols-3}
+### Controles do app
 
-### Session Management {.row-span-2}
+| Tecla       | Ação                                      |
+| ----------- | ----------------------------------------- |
+| `Shift+Tab` | Alterna entre os modos de aprovação       |
+| `Ctrl+T`    | Ativa/desativa o painel de todos          |
+| `Alt+M`     | Ativa/desativa a renderização de markdown |
+| `Ctrl+Y`    | Ativa/desativa o modo YOLO                |
+| `Ctrl+L`    | Limpa a tela                              |
+| `Ctrl+Z`    | Suspende o processo                       |
+| `F12`       | Mostra os detalhes do erro                |
+| `Esc` twice | Abre a caixa de diálogo de rewind         |
+| `Ctrl+C`    | Cancela / sai                             |
+| `Ctrl+D`    | Sai                                       |
+
+{.shortcuts}
+
+## Sessões e histórico {.cols-3}
+
+### Gerenciamento de sessões {.row-span-2}
 
 ```bash
 # List all sessions
@@ -310,29 +310,29 @@ $ gemini -r <session-id>
 $ gemini --delete-session 3
 ```
 
-**Inside the `/resume` browser:**
+**Dentro do navegador do `/resume`:**
 
-- `↑↓` to navigate sessions
-- `Enter` to resume selected session
-- `x` to delete a session
-- Search by typing
+- `↑↓` para navegar pelas sessões
+- `Enter` para retomar a sessão selecionada
+- `x` para excluir uma sessão
+- Busque digitando
 
-### Rewind Workflow
+### Fluxo do rewind
 
-`/rewind` or press `Esc` twice to open the rewind dialog:
+`/rewind` ou pressione `Esc` duas vezes para abrir a caixa de diálogo de rewind:
 
-| Option          | Effect                              |
-| --------------- | ----------------------------------- |
-| Rewind + Revert | Reset chat history AND file changes |
-| Rewind only     | Reset chat history, keep files      |
-| Revert only     | Restore files, keep chat history    |
-| Do nothing      | Cancel (Esc)                        |
+| Opção             | Efeito                                                    |
+| ----------------- | --------------------------------------------------------- |
+| Rewind + Reverter | Redefine o histórico do chat E as alterações nos arquivos |
+| Somente rewind    | Redefine o histórico do chat, mantém os arquivos          |
+| Somente reverter  | Restaura os arquivos, mantém o histórico do chat          |
+| Não fazer nada    | Cancela (Esc)                                             |
 
-Applies only to AI-made file changes, not manual edits or `!` shell commands.
+Aplica-se apenas a alterações de arquivos feitas pela IA, não a edições manuais ou comandos de shell com `!`.
 
-### Fork a Conversation
+### Fazer fork de uma conversa
 
-Save and restore named checkpoints to explore multiple approaches:
+Salve e restaure checkpoints nomeados para explorar várias abordagens:
 
 ```bash
 # 1. Save current state
@@ -346,18 +346,18 @@ Save and restore named checkpoints to explore multiple approaches:
 # 4. Try approach B...
 ```
 
-## Context & Memory {.cols-3}
+## Contexto e memória {.cols-3}
 
-### GEMINI.md Hierarchy {.row-span-2}
+### Hierarquia do GEMINI.md {.row-span-2}
 
-Context files are loaded in this order (all merged):
+Os arquivos de contexto são carregados nesta ordem (todos mesclados):
 
-| Priority           | Location                       |
-| ------------------ | ------------------------------ |
-| 1. Global          | `~/.gemini/GEMINI.md`          |
-| 2. Parent dirs     | Scanned up from workspace      |
-| 3. Workspace       | `.gemini/GEMINI.md`            |
-| 4. JIT (on-demand) | Scanned when tools access dirs |
+| Prioridade           | Local                                                |
+| -------------------- | ---------------------------------------------------- |
+| 1. Global            | `~/.gemini/GEMINI.md`                                |
+| 2. Diretórios pai    | Verificados subindo a partir do workspace            |
+| 3. Workspace         | `.gemini/GEMINI.md`                                  |
+| 4. JIT (sob demanda) | Verificados quando as ferramentas acessam diretórios |
 
 ```markdown
 # Importing other files inside GEMINI.md
@@ -366,9 +366,9 @@ Context files are loaded in this order (all merged):
 @./docs/conventions.md
 ```
 
-Customize the filename via `context.fileName` in `settings.json` (can be an array: `["AGENTS.md", "GEMINI.md"]`).
+Personalize o nome do arquivo via `context.fileName` em `settings.json` (pode ser um array: `["AGENTS.md", "GEMINI.md"]`).
 
-### Memory Commands
+### Comandos de memória
 
 ```bash
 # Show all loaded context
@@ -384,9 +384,9 @@ Customize the filename via `context.fileName` in `settings.json` (can be an arra
 /init
 ```
 
-### Ignoring Files
+### Ignorar arquivos
 
-Create `.geminiignore` in project root (follows `.gitignore` syntax):
+Crie um `.geminiignore` na raiz do projeto (segue a sintaxe do `.gitignore`):
 
 ```gitignore
 # Exclude a directory
@@ -401,11 +401,11 @@ apikeys.txt
 !README.md
 ```
 
-Files are hidden from CLI tools but remain visible to Git and other services.
+Os arquivos ficam ocultos das ferramentas da CLI, mas continuam visíveis para o Git e outros serviços.
 
-## MCP Servers {.cols-2}
+## Servidores MCP {.cols-2}
 
-### MCP Config {.row-span-2}
+### Configuração do MCP {.row-span-2}
 
 ```json
 {
@@ -427,11 +427,11 @@ Files are hidden from CLI tools but remain visible to Git and other services.
 }
 ```
 
-Env vars support `$VAR`, `${VAR}`, and `%VAR%` (Windows) expansion.
+As variáveis de ambiente suportam expansão de `$VAR`, `${VAR}` e `%VAR%` (Windows).
 
-Tool FQN pattern: `mcp_{serverName}_{toolName}`
+Padrão de FQN da ferramenta: `mcp_{serverName}_{toolName}`
 
-### Managing Servers
+### Gerenciar servidores
 
 ```bash {.wrap}
 # Add stdio server
@@ -454,24 +454,24 @@ $ gemini mcp enable myserver
 $ gemini mcp disable myserver --session
 ```
 
-### MCP Server Config Fields
+### Campos de configuração do servidor MCP
 
-| Field          | Description                             |
-| -------------- | --------------------------------------- |
-| `command`      | Executable for stdio transport          |
-| `args`         | Arguments array                         |
-| `url`          | URL for SSE transport                   |
-| `httpUrl`      | URL for Streamable HTTP                 |
-| `env`          | Environment variables                   |
-| `cwd`          | Working directory                       |
-| `timeout`      | Connection timeout (ms, default 600000) |
-| `trust`        | Skip confirmation for all tools         |
-| `includeTools` | Whitelist specific tools                |
-| `excludeTools` | Blacklist specific tools                |
+| Campo          | Descrição                                     |
+| -------------- | --------------------------------------------- |
+| `command`      | Executável para o transporte stdio            |
+| `args`         | Array de argumentos                           |
+| `url`          | URL para o transporte SSE                     |
+| `httpUrl`      | URL para Streamable HTTP                      |
+| `env`          | Variáveis de ambiente                         |
+| `cwd`          | Diretório de trabalho                         |
+| `timeout`      | Timeout de conexão (ms, padrão 600000)        |
+| `trust`        | Pula a confirmação para todas as ferramentas  |
+| `includeTools` | Lista de permissão de ferramentas específicas |
+| `excludeTools` | Lista de bloqueio de ferramentas específicas  |
 
-### MCP Resources
+### Recursos MCP
 
-Reference MCP resources in prompts:
+Referencie recursos MCP nos prompts:
 
 ```bash
 # Reference a resource
@@ -481,9 +481,9 @@ Reference MCP resources in prompts:
 /prompt-name --arg=value
 ```
 
-## Extensions & Skills {.cols-3}
+## Extensões e skills {.cols-3}
 
-### Managing Extensions {.row-span-2}
+### Gerenciar extensões {.row-span-2}
 
 ```bash
 # Install from GitHub
@@ -515,19 +515,19 @@ $ gemini extensions new ./my-new-ext
 $ gemini extensions validate ./my-ext
 ```
 
-Extensions bundle: prompts, MCP servers, custom commands, themes, hooks, subagents, and skills.
+As extensões agrupam: prompts, servidores MCP, comandos personalizados, temas, hooks, subagentes e skills.
 
-### Agent Skills
+### Skills de agente
 
-Skills provide on-demand expertise — loaded only when `activate_skill` is called.
+Skills fornecem conhecimento sob demanda — carregadas apenas quando `activate_skill` é chamado.
 
-**Discovery locations (precedence):**
+**Locais de descoberta (precedência):**
 
-| Tier      | Path                                       |
+| Nível     | Caminho                                    |
 | --------- | ------------------------------------------ |
-| Workspace | `.gemini/skills/` or `.agents/skills/`     |
-| User      | `~/.gemini/skills/` or `~/.agents/skills/` |
-| Extension | Bundled within extension                   |
+| Workspace | `.gemini/skills/` ou `.agents/skills/`     |
+| Usuário   | `~/.gemini/skills/` ou `~/.agents/skills/` |
+| Extensão  | Incluída na própria extensão               |
 
 ```bash
 # List all skills
@@ -545,14 +545,14 @@ $ gemini skills enable my-skill
 $ gemini skills disable my-skill
 ```
 
-### Custom Commands
+### Comandos personalizados
 
-Save reusable prompts as slash commands.
+Salve prompts reutilizáveis como slash commands.
 
-**File locations:**
+**Locais dos arquivos:**
 
-- User: `~/.gemini/commands/`
-- Project: `.gemini/commands/`
+- Usuário: `~/.gemini/commands/`
+- Projeto: `.gemini/commands/`
 
 ```toml
 # .gemini/commands/git/commit.toml
@@ -566,18 +566,18 @@ Generate a conventional commit message for:
 """
 ```
 
-Command becomes `/git:commit`. Subdirectory `/` → `:` namespace.
+O comando vira `/git:commit`. Subdiretório `/` → namespace `:`.
 
 **Placeholders:**
-| Placeholder | Meaning |
-|---|---|
-| `{{args}}` | Inject user arguments |
-| `!{cmd}` | Execute shell, inject output |
-| `@{path}` | Embed file content |
+| Placeholder | Significado                      |
+| ----------- | -------------------------------- |
+| `{{args}}`  | Injeta os argumentos do usuário  |
+| `!{cmd}`    | Executa o shell e injeta a saída |
+| `@{path}`   | Incorpora o conteúdo do arquivo  |
 
 ## Plan Mode {.cols-3}
 
-### Enabling Plan Mode {.row-span-2}
+### Ativar o Plan Mode {.row-span-2}
 
 ```bash
 # One-time via flag
@@ -592,7 +592,7 @@ $ gemini --approval-mode=plan
 # Cycle modes with Shift+Tab during session
 ```
 
-Set as default in `settings.json`:
+Defina como padrão em `settings.json`:
 
 ```json
 {
@@ -602,25 +602,25 @@ Set as default in `settings.json`:
 }
 ```
 
-### Plan Mode Tools
+### Ferramentas do Plan Mode
 
-**Read-only (always available):**
+**Somente leitura (sempre disponíveis):**
 
 - `read_file`, `list_directory`, `glob`
 - `grep_search`, `google_web_search`
-- `web_fetch` (with confirmation)
+- `web_fetch` (com confirmação)
 - `codebase_investigator`, `cli_help`
 - `ask_user`
 
-**Write (restricted):**
+**Escrita (restrita):**
 
-- `write_file`, `replace` — only for `.md` files inside plans directory
+- `write_file`, `replace` — apenas para arquivos `.md` dentro do diretório de planos
 
-**Memory:**
+**Memória:**
 
 - `save_memory`, `activate_skill`
 
-### Plan Mode Workflow
+### Fluxo do Plan Mode
 
 ```
 1. Set goal
@@ -638,26 +638,26 @@ Set as default in `settings.json`:
 5. Switch to YOLO/auto_edit to implement
 ```
 
-Auto model routing: Pro during planning → Flash during implementation.
+Roteamento automático de modelo: Pro durante o planejamento → Flash durante a implementação.
 
-## Configuration {.cols-2}
+## Configuração {.cols-2}
 
-### Settings File Locations {.row-span-2}
+### Locais dos arquivos de configuração {.row-span-2}
 
-| Scope            | Path                                      |
-| ---------------- | ----------------------------------------- |
-| User             | `~/.gemini/settings.json`                 |
-| Project          | `.gemini/settings.json`                   |
-| System (Linux)   | `/etc/gemini-cli/settings.json`           |
-| System (macOS)   | `/Library/Application Support/GeminiCli/` |
-| System (Windows) | `C:\ProgramData\gemini-cli\settings.json` |
+| Escopo            | Caminho                                   |
+| ----------------- | ----------------------------------------- |
+| Usuário           | `~/.gemini/settings.json`                 |
+| Projeto           | `.gemini/settings.json`                   |
+| Sistema (Linux)   | `/etc/gemini-cli/settings.json`           |
+| Sistema (macOS)   | `/Library/Application Support/GeminiCli/` |
+| Sistema (Windows) | `C:\ProgramData\gemini-cli\settings.json` |
 
 {.no-wrap}
 
-**Precedence (highest wins):**
-CLI args → env vars → system settings → project settings → user settings → system defaults
+**Precedência (o mais alto vence):**
+argumentos da CLI → variáveis de ambiente → configurações do sistema → configurações do projeto → configurações do usuário → padrões do sistema
 
-**Common settings:**
+**Configurações comuns:**
 
 ```json
 {
@@ -677,59 +677,59 @@ CLI args → env vars → system settings → project settings → user settings
 }
 ```
 
-Open the visual editor with `/settings`.
+Abra o editor visual com `/settings`.
 
-### Key Environment Variables
+### Principais variáveis de ambiente
 
-| Variable                         | Purpose                                           |
-| -------------------------------- | ------------------------------------------------- |
-| `GEMINI_API_KEY`                 | Gemini API authentication                         |
-| `GEMINI_MODEL`                   | Default model override                            |
-| `GEMINI_CLI_HOME`                | Override config directory                         |
-| `GOOGLE_CLOUD_PROJECT`           | Vertex AI project                                 |
-| `GOOGLE_CLOUD_LOCATION`          | Vertex AI region                                  |
-| `GOOGLE_APPLICATION_CREDENTIALS` | Service account JSON path                         |
-| `GOOGLE_API_KEY`                 | Google Cloud API key                              |
-| `GEMINI_SANDBOX`                 | Sandbox type: `true`, `docker`, `podman`, `runsc` |
-| `GEMINI_SYSTEM_MD`               | Path to system prompt file                        |
-| `NO_COLOR`                       | Disable colored output                            |
-| `CLI_TITLE`                      | Override terminal window title                    |
+| Variável                         | Finalidade                                           |
+| -------------------------------- | ---------------------------------------------------- |
+| `GEMINI_API_KEY`                 | Autenticação da API do Gemini                        |
+| `GEMINI_MODEL`                   | Substituição do modelo padrão                        |
+| `GEMINI_CLI_HOME`                | Substitui o diretório de configuração                |
+| `GOOGLE_CLOUD_PROJECT`           | Projeto do Vertex AI                                 |
+| `GOOGLE_CLOUD_LOCATION`          | Região do Vertex AI                                  |
+| `GOOGLE_APPLICATION_CREDENTIALS` | Caminho do JSON da conta de serviço                  |
+| `GOOGLE_API_KEY`                 | Chave de API do Google Cloud                         |
+| `GEMINI_SANDBOX`                 | Tipo de sandbox: `true`, `docker`, `podman`, `runsc` |
+| `GEMINI_SYSTEM_MD`               | Caminho do arquivo de system prompt                  |
+| `NO_COLOR`                       | Desativa a saída colorida                            |
+| `CLI_TITLE`                      | Substitui o título da janela do terminal             |
 
-Persist in `~/.bashrc`, `~/.zshrc`, or `.gemini/.env`.
+Persista em `~/.bashrc`, `~/.zshrc` ou `.gemini/.env`.
 
-### Sandboxing Options
+### Opções de sandbox
 
-| Method          | Platform           | How to Enable                          |
+| Método          | Plataforma         | Como ativar                            |
 | --------------- | ------------------ | -------------------------------------- |
-| macOS Seatbelt  | macOS only         | `GEMINI_SANDBOX=sandbox-exec`          |
-| Docker/Podman   | Cross-platform     | `--sandbox` or `GEMINI_SANDBOX=docker` |
-| gVisor (runsc)  | Linux only         | `GEMINI_SANDBOX=runsc`                 |
+| macOS Seatbelt  | Somente macOS      | `GEMINI_SANDBOX=sandbox-exec`          |
+| Docker/Podman   | Multiplataforma    | `--sandbox` ou `GEMINI_SANDBOX=docker` |
+| gVisor (runsc)  | Somente Linux      | `GEMINI_SANDBOX=runsc`                 |
 | LXC/LXD         | Linux experimental | `GEMINI_SANDBOX=lxc`                   |
-| Windows Sandbox | Windows only       | `GEMINI_SANDBOX=true`                  |
+| Windows Sandbox | Somente Windows    | `GEMINI_SANDBOX=true`                  |
 
 {.show-header}
 
 ## Hooks {.cols-2}
 
-### Hook Events {.row-span-3}
+### Eventos de hook {.row-span-3}
 
-| Event                 | When                   | Can Block?        |
-| --------------------- | ---------------------- | ----------------- |
-| `SessionStart`        | Session begins         | No (advisory)     |
-| `SessionEnd`          | Session ends           | No (best effort)  |
-| `BeforeAgent`         | Before planning starts | Yes (exit 2)      |
-| `AfterAgent`          | Agent loop ends        | Yes (force retry) |
-| `BeforeModel`         | Before LLM call        | Yes (exit 2)      |
-| `AfterModel`          | After each LLM chunk   | Yes (exit 2)      |
-| `BeforeToolSelection` | Before tool choice     | Filter tools      |
-| `BeforeTool`          | Before tool runs       | Yes (exit 2)      |
-| `AfterTool`           | After tool runs        | Yes (hide result) |
-| `PreCompress`         | Before compression     | No (advisory)     |
-| `Notification`        | System notifications   | No                |
+| Evento                | Quando                          | Pode bloquear?             |
+| --------------------- | ------------------------------- | -------------------------- |
+| `SessionStart`        | A sessão começa                 | Não (informativo)          |
+| `SessionEnd`          | A sessão termina                | Não (melhor esforço)       |
+| `BeforeAgent`         | Antes de o planejamento começar | Sim (exit 2)               |
+| `AfterAgent`          | O loop do agente termina        | Sim (força nova tentativa) |
+| `BeforeModel`         | Antes da chamada ao LLM         | Sim (exit 2)               |
+| `AfterModel`          | Após cada chunk do LLM          | Sim (exit 2)               |
+| `BeforeToolSelection` | Antes da escolha da ferramenta  | Filtra ferramentas         |
+| `BeforeTool`          | Antes da execução da ferramenta | Sim (exit 2)               |
+| `AfterTool`           | Após a execução da ferramenta   | Sim (oculta o resultado)   |
+| `PreCompress`         | Antes da compressão             | Não (informativo)          |
+| `Notification`        | Notificações do sistema         | Não                        |
 
-**Exit codes:** `0` = success · `2` = block/critical · other = warning
+**Códigos de saída:** `0` = sucesso · `2` = bloqueio/crítico · outro = aviso
 
-**Hook config in `settings.json`:**
+**Configuração de hooks em `settings.json`:**
 
 ```json
 {
@@ -752,9 +752,9 @@ Persist in `~/.bashrc`, `~/.zshrc`, or `.gemini/.env`.
 }
 ```
 
-### Hook I/O Protocol
+### Protocolo de I/O dos hooks
 
-All hooks receive JSON via **stdin**:
+Todos os hooks recebem JSON via **stdin**:
 
 ```json
 {
@@ -766,30 +766,30 @@ All hooks receive JSON via **stdin**:
 }
 ```
 
-Respond with JSON on **stdout**:
+Responda com JSON em **stdout**:
 
-| Field            | Description             |
-| ---------------- | ----------------------- |
-| `decision`       | `"allow"` or `"deny"`   |
-| `reason`         | Shown to user on denial |
-| `systemMessage`  | Injected into context   |
-| `suppressOutput` | Hide hook output        |
-| `continue`       | `false` to halt agent   |
+| Campo            | Descrição                         |
+| ---------------- | --------------------------------- |
+| `decision`       | `"allow"` ou `"deny"`             |
+| `reason`         | Mostrado ao usuário quando negado |
+| `systemMessage`  | Injetado no contexto              |
+| `suppressOutput` | Oculta a saída do hook            |
+| `continue`       | `false` para interromper o agente |
 
-**BeforeTool** extra: `hookSpecificOutput.tool_input` overrides args.
+**BeforeTool** extra: `hookSpecificOutput.tool_input` substitui os args.
 
-**AfterTool** extra: `hookSpecificOutput.additionalContext` appended to result.
+**AfterTool** extra: `hookSpecificOutput.additionalContext` anexado ao resultado.
 
-**BeforeAgent** extra: `hookSpecificOutput.additionalContext` appended to prompt.
+**BeforeAgent** extra: `hookSpecificOutput.additionalContext` anexado ao prompt.
 
-**Environment vars available:**
+**Variáveis de ambiente disponíveis:**
 `GEMINI_PROJECT_DIR`, `GEMINI_SESSION_ID`, `GEMINI_CWD`
 
-## Also see {.cols-1}
+## Veja também {.cols-1}
 
-- [Official Documentation](https://geminicli.com/docs/) _(geminicli.com)_
-- [CLI Cheatsheet](https://geminicli.com/docs/cli/cli-reference) _(geminicli.com)_
-- [Keyboard Shortcuts Reference](https://geminicli.com/docs/reference/keyboard-shortcuts) _(geminicli.com)_
-- [Configuration Reference](https://geminicli.com/docs/reference/configuration) _(geminicli.com)_
-- [Hooks Reference](https://geminicli.com/docs/hooks/reference) _(geminicli.com)_
-- [GitHub Repository](https://github.com/google-gemini/gemini-cli) _(github.com)_
+- [Documentação oficial](https://geminicli.com/docs/) _(geminicli.com)_
+- [Cheat sheet da CLI](https://geminicli.com/docs/cli/cli-reference) _(geminicli.com)_
+- [Referência de atalhos de teclado](https://geminicli.com/docs/reference/keyboard-shortcuts) _(geminicli.com)_
+- [Referência de configuração](https://geminicli.com/docs/reference/configuration) _(geminicli.com)_
+- [Referência de hooks](https://geminicli.com/docs/hooks/reference) _(geminicli.com)_
+- [Repositório no GitHub](https://github.com/google-gemini/gemini-cli) _(github.com)_

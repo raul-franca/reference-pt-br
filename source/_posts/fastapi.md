@@ -7,16 +7,16 @@ tags:
   - python
   - backend
 categories:
-  - Programming
+  - Programação
 intro: |
-  A concise cheatsheet for FastAPI, a fast and modern web framework for building APIs with Python 3.7+.
+  Um cheat sheet conciso do FastAPI, um framework web moderno e rápido para criar APIs com Python 3.7+.
 plugins:
   - copyCode
 ---
 
-## Getting Started {.cols-3}
+## Primeiros passos {.cols-3}
 
-### Install & Run
+### Instalar e executar
 
 ```bash
 pip install fastapi uvicorn
@@ -34,15 +34,15 @@ def root():
     return {"message": "Hello FastAPI"}
 ```
 
-### CLI Run Hint
+### Dica de execução pela CLI
 
 ```bash
 uvicorn main:app --reload
 ```
 
-## Routing & Parameters {.cols-3}
+## Rotas e parâmetros {.cols-3}
 
-### Path Parameter
+### Parâmetro de path
 
 ```python
 @app.get("/items/{id}")
@@ -50,7 +50,7 @@ def read(id: int):
     return {"id": id}
 ```
 
-### Query Parameter
+### Parâmetro de query
 
 ```python
 @app.get("/search")
@@ -58,7 +58,7 @@ def find(q: str = "default"):
     return {"q": q}
 ```
 
-### Optional Query
+### Query opcional
 
 ```python
 @app.get("/filter")
@@ -66,9 +66,9 @@ def filter_data(limit: int = 10, active: bool = True):
     return {"limit": limit, "active": active}
 ```
 
-## Request Body & Validation {.cols-3}
+## Corpo do request e validação {.cols-3}
 
-### Using Pydantic
+### Usar Pydantic
 
 ```python
 from pydantic import BaseModel
@@ -78,7 +78,7 @@ class Item(BaseModel):
     price: float
 ```
 
-### JSON Body
+### Corpo JSON
 
 ```python
 @app.post("/items/")
@@ -86,7 +86,7 @@ def create(item: Item):
     return item
 ```
 
-### Response Model
+### Modelo de response
 
 ```python
 @app.post("/items/", response_model=Item)
@@ -94,9 +94,9 @@ def create(item: Item):
     return item
 ```
 
-## Forms, Files, Headers {.cols-3}
+## Formulários, arquivos e headers {.cols-3}
 
-### Form Input
+### Entrada de formulário
 
 ```python
 from fastapi import Form
@@ -106,7 +106,7 @@ def login(user: str = Form(...)):
     return {"user": user}
 ```
 
-### File Upload
+### Upload de arquivo
 
 ```python
 from fastapi import UploadFile, File
@@ -116,7 +116,7 @@ def upload(f: UploadFile = File(...)):
     return {"filename": f.filename}
 ```
 
-### Headers / Cookies
+### Headers / cookies
 
 ```python
 from fastapi import Header, Cookie
@@ -126,7 +126,7 @@ def info(ua: str = Header(None)):
     return {"UA": ua}
 ```
 
-## Middleware & Dependency {.cols-2}
+## Middleware e dependências {.cols-2}
 
 ### Middleware
 
@@ -137,7 +137,7 @@ async def log_req(req, call_next):
     return res
 ```
 
-### Dependency
+### Dependência
 
 ```python
 from fastapi import Depends
@@ -151,9 +151,9 @@ def secure(_: bool = Depends(auth)):
     return {"secure": True}
 ```
 
-## Errors & JSON API {.cols-2}
+## Erros e API JSON {.cols-2}
 
-### HTTP Error
+### Erro HTTP
 
 ```python
 from fastapi import HTTPException
@@ -163,7 +163,7 @@ def error():
     raise HTTPException(404, "Not Found")
 ```
 
-### JSON API
+### API JSON
 
 ```python
 from fastapi import FastAPI
@@ -173,25 +173,25 @@ def get_data():
     return {"status": "ok"}
 ```
 
-## Templates & Static {.cols-2}
+## Templates e arquivos estáticos {.cols-2}
 
-### Mount Static
+### Montar arquivos estáticos
 
 ```python
 from fastapi.staticfiles import StaticFiles
 app.mount("/static", StaticFiles(directory="static"), name="static")
 ```
 
-### Jinja2 Support
+### Suporte ao Jinja2
 
 ```python
 from fastapi.templating import Jinja2Templates
 templates = Jinja2Templates("templates")
 ```
 
-## Routers & Structure {.cols-2}
+## Routers e estrutura {.cols-2}
 
-### Routers (Blueprints)
+### Routers (blueprints)
 
 ```python
 from fastapi import APIRouter
@@ -204,7 +204,7 @@ def admin():
 app.include_router(router, prefix="/admin")
 ```
 
-### Folder Layout
+### Layout de pastas
 
 ```bash
 project/
@@ -216,14 +216,14 @@ project/
 └── models/
 ```
 
-## Docs & Status {.cols-2}
+## Documentação e status {.cols-2}
 
-### Built-in Docs
+### Documentação integrada
 
 - Swagger: `/docs`
 - ReDoc: `/redoc`
 
-### Custom Status Code
+### Código de status personalizado
 
 ```python
 from fastapi import status

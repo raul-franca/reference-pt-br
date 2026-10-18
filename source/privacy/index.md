@@ -1,6 +1,6 @@
 ---
-title: Privacy policy
+title: Política de privacidade
 date: 2020-03-26 20:46:04
 ---
 
-Coming soon~
+Em breve~

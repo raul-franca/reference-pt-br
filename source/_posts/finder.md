@@ -7,82 +7,82 @@ tags:
   -
   - mac
 categories:
-  - Keyboard Shortcuts
+  - Atalhos de Teclado
 intro: |
-  A visual cheat-sheet for the 55 keyboard shortcuts found in Finder. This application is part of MacOS.
+  Um cheat sheet visual dos 55 atalhos de teclado encontrados no Finder. Este aplicativo faz parte do MacOS.
 ---
 
-## Keyboard Shortcuts {.cols-2}
+## Atalhos de teclado {.cols-2}
 
-### Finder Shortcuts
+### Atalhos do Finder
 
-| Shortcut                 | Action                                                                             |
+| Atalho                   | Ação                                                                               |
 | ------------------------ | ---------------------------------------------------------------------------------- |
-| `Cmd` `D`                | Duplicate the selected files                                                       |
-| `Cmd` `E`                | Eject the selected disk or volume                                                  |
-| `Cmd` `F`                | Start a Spotlight search in the Finder window                                      |
-| `Cmd` `I`                | Show the get info window for a selected file                                       |
-| `Cmd` `R`                | When an alias is selected in the Finder, show original file for the selected alias |
-| `Cmd` `Shift` `C`        | Open the Computer window                                                           |
-| `Cmd` `Shift` `D`        | Open the desktop folder                                                            |
-| `Cmd` `Shift` `F`        | Open the Recents window, showing all files you viewed or changed recently          |
-| `Cmd` `Shift` `G`        | Open a Go to Folder window                                                         |
-| `Cmd` `Shift` `H`        | Open the Home folder of the current MacOS user account                             |
-| `Cmd` `Shift` `I`        | Open the iCloud drive                                                              |
-| `Cmd` `Shift` `K`        | Open the Network window                                                            |
-| `Cmd` `Opt` `L`          | Open the Downloads folder                                                          |
-| `Cmd` `Shift` `N`        | Create a new folder                                                                |
-| `Cmd` `Shift` `O`        | Open the Documents folder                                                          |
-| `Cmd` `Shift` `P`        | Show or hide the Preview pane in Finder windows                                    |
-| `Cmd` `Shift` `R`        | Open the AirDrop window                                                            |
-| `Cmd` `Shift` `T`        | Show or hide the tab bar in Finder windows                                         |
-| `Ctrl` `Cmd` `Shift` `T` | Add selected Finder items to the Dock                                              |
-| `Cmd` `Shift` `U`        | Open the Utilities folder                                                          |
-| `Cmd` `Opt` `D`          | Show or hide the Dock                                                              |
-| `Cmd` `Ctrl` `T`         | Add the selected item to the sidebar                                               |
-| `Cmd` `Opt` `P`          | Hide or show the path bar in Finder windows                                        |
-| `Cmd` `Opt` `S`          | Hide or show the Sidebar in Finder windows                                         |
-| `Cmd` `/`                | Hide or show the status bar in Finder windows                                      |
-| `Cmd` `J`                | Show view options                                                                  |
-| `Cmd` `K`                | Open the Connect to Server window                                                  |
+| `Cmd` `D`                | Duplicar os arquivos selecionados                                                  |
+| `Cmd` `E`                | Ejetar o disco ou volume selecionado                                               |
+| `Cmd` `F`                | Iniciar uma busca do Spotlight na janela do Finder                                 |
+| `Cmd` `I`                | Mostrar a janela de informações do arquivo selecionado                             |
+| `Cmd` `R`                | Quando um alias estiver selecionado no Finder, mostrar o arquivo original do alias |
+| `Cmd` `Shift` `C`        | Abrir a janela do Computador                                                       |
+| `Cmd` `Shift` `D`        | Abrir a pasta Área de Trabalho                                                     |
+| `Cmd` `Shift` `F`        | Abrir a janela Recentes, mostrando todos os arquivos que você visualizou ou alterou recentemente |
+| `Cmd` `Shift` `G`        | Abrir a janela Ir para a Pasta                                                     |
+| `Cmd` `Shift` `H`        | Abrir a pasta Pessoal da conta de usuário atual do MacOS                           |
+| `Cmd` `Shift` `I`        | Abrir o iCloud Drive                                                               |
+| `Cmd` `Shift` `K`        | Abrir a janela Rede                                                                |
+| `Cmd` `Opt` `L`          | Abrir a pasta Downloads                                                            |
+| `Cmd` `Shift` `N`        | Criar uma nova pasta                                                               |
+| `Cmd` `Shift` `O`        | Abrir a pasta Documentos                                                           |
+| `Cmd` `Shift` `P`        | Mostrar ou ocultar o painel de visualização nas janelas do Finder                  |
+| `Cmd` `Shift` `R`        | Abrir a janela AirDrop                                                             |
+| `Cmd` `Shift` `T`        | Mostrar ou ocultar a barra de abas nas janelas do Finder                           |
+| `Ctrl` `Cmd` `Shift` `T` | Adicionar os itens selecionados do Finder ao Dock                                  |
+| `Cmd` `Shift` `U`        | Abrir a pasta Utilitários                                                          |
+| `Cmd` `Opt` `D`          | Mostrar ou ocultar o Dock                                                          |
+| `Cmd` `Ctrl` `T`         | Adicionar o item selecionado à barra lateral                                       |
+| `Cmd` `Opt` `P`          | Ocultar ou mostrar a barra de caminho nas janelas do Finder                        |
+| `Cmd` `Opt` `S`          | Ocultar ou mostrar a barra lateral nas janelas do Finder                           |
+| `Cmd` `/`                | Ocultar ou mostrar a barra de status nas janelas do Finder                         |
+| `Cmd` `J`                | Mostrar opções de visualização                                                     |
+| `Cmd` `K`                | Abrir a janela Conectar ao servidor                                                |
 
 {.shortcuts}
 
-### Finder Shortcuts
+### Atalhos do Finder
 
-| Shortcut                  | Action                                                                               |
+| Atalho                    | Ação                                                                                 |
 | ------------------------- | ------------------------------------------------------------------------------------ |
-| `Cmd` `Ctrl` `A`          | Make an alias of the selected item                                                   |
-| `Cmd` `N`                 | Open a new Finder window                                                             |
-| `Cmd` `Opt` `N`           | Create a new Smart Folder                                                            |
-| `Cmd` `T`                 | Show or hide the tab bar when a single tab is open in the current Finder window      |
-| `Cmd` `Opt` `T`           | Show or hide the toolbar when a single tab is open in the current Finder window      |
-| `Cmd` `Opt` `V`           | Move the files in the Clipboard from their original location to the current location |
-| `Cmd` `Y`                 | Use Quick Look to preview the selected files                                         |
-| `Cmd` `Opt` `Y`           | View a Quick Look slideshow of the selected files                                    |
-| `Cmd` `1`                 | View the items in the Finder window as icons                                         |
-| `Cmd` `2`                 | View the items in a Finder window as a list                                          |
-| `Cmd` `3`                 | View the items in a Finder window in columns                                         |
-| `Cmd` `4`                 | View the items in a Finder window in a gallery                                       |
-| `Cmd` `[`                 | Go to the previous folder                                                            |
-| `Cmd` `]`                 | Go to the next folder                                                                |
-| `Cmd` `Up`                | Open the folder that contains the current folder                                     |
-| `Cmd` `Ctrl` `Up`         | Open the folder that contains the current folder, in a new window                    |
-| `Cmd` `Down`              | Open the selected item                                                               |
-| `Right`                   | Open the selected folder, this only works when in list view                          |
-| `Left`                    | Close the selected folder, this only works when in list view                         |
-| `Cmd` `Del`               | Move the selected item to the trash                                                  |
-| `Cmd` `Shift` `Del`       | Empty the trash                                                                      |
-| `Cmd` `Opt` `Shift` `Del` | Empty the trash without the confirmation dialogue                                    |
-| `Cmd` `Bright-Down`       | Turn video mirroring on or off when your Mac is connected to more than one display   |
-| `Cmd` `Bright-Up`         | Open Displays preferences                                                            |
-| `Ctrl` `Bright`           | Change the brightness of your external display, if supported                         |
-| `Opt` `Shift` `Bright`    | Adjust the display brightness in smaller steps                                       |
-| `Ctrl` `Down`             | Show all windows of the front app                                                    |
-| `Opt` `Vol`               | Open Sound preferences                                                               |
+| `Cmd` `Ctrl` `A`          | Criar um alias do item selecionado                                                   |
+| `Cmd` `N`                 | Abrir uma nova janela do Finder                                                      |
+| `Cmd` `Opt` `N`           | Criar uma nova Pasta Inteligente                                                     |
+| `Cmd` `T`                 | Mostrar ou ocultar a barra de abas quando houver apenas uma aba aberta na janela atual do Finder |
+| `Cmd` `Opt` `T`           | Mostrar ou ocultar a barra de ferramentas quando houver apenas uma aba aberta na janela atual do Finder |
+| `Cmd` `Opt` `V`           | Mover os arquivos da Área de Transferência do local original para o local atual      |
+| `Cmd` `Y`                 | Usar o Quick Look para visualizar os arquivos selecionados                           |
+| `Cmd` `Opt` `Y`           | Ver uma apresentação de slides do Quick Look com os arquivos selecionados            |
+| `Cmd` `1`                 | Ver os itens da janela do Finder como ícones                                         |
+| `Cmd` `2`                 | Ver os itens de uma janela do Finder como lista                                      |
+| `Cmd` `3`                 | Ver os itens de uma janela do Finder em colunas                                      |
+| `Cmd` `4`                 | Ver os itens de uma janela do Finder em uma galeria                                  |
+| `Cmd` `[`                 | Ir para a pasta anterior                                                             |
+| `Cmd` `]`                 | Ir para a próxima pasta                                                              |
+| `Cmd` `Up`                | Abrir a pasta que contém a pasta atual                                               |
+| `Cmd` `Ctrl` `Up`         | Abrir a pasta que contém a pasta atual, em uma nova janela                           |
+| `Cmd` `Down`              | Abrir o item selecionado                                                             |
+| `Right`                   | Abrir a pasta selecionada; isso só funciona na exibição em lista                     |
+| `Left`                    | Fechar a pasta selecionada; isso só funciona na exibição em lista                    |
+| `Cmd` `Del`               | Mover o item selecionado para o lixo                                                 |
+| `Cmd` `Shift` `Del`       | Esvaziar o lixo                                                                      |
+| `Cmd` `Opt` `Shift` `Del` | Esvaziar o lixo sem o diálogo de confirmação                                         |
+| `Cmd` `Bright-Down`       | Ativar ou desativar o espelhamento de vídeo quando o Mac estiver conectado a mais de um monitor |
+| `Cmd` `Bright-Up`         | Abrir as preferências de Monitores                                                   |
+| `Ctrl` `Bright`           | Alterar o brilho do monitor externo, se houver suporte                               |
+| `Opt` `Shift` `Bright`    | Ajustar o brilho do monitor em passos menores                                        |
+| `Ctrl` `Down`             | Mostrar todas as janelas do app em primeiro plano                                    |
+| `Opt` `Vol`               | Abrir as preferências de Som                                                         |
 
 {.shortcuts}
 
-## Also see
+## Veja também
 
-- [Keyboard shortcuts for MacOS Finder](https://support.apple.com/en-us/HT201236) _(support.apple.com)_
+- [Atalhos de teclado do Finder do MacOS](https://support.apple.com/en-us/HT201236) _(support.apple.com)_

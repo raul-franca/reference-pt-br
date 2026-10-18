@@ -58,7 +58,7 @@ const Utils = (function () {
   };
 })();
 
-// Simple Timeline TOC - Direct Implementation
+// Índice simples em linha do tempo - implementação direta
 (function () {
   function initTOC() {
     const tocContainer = document.getElementById('toc-container');
@@ -73,7 +73,7 @@ const Utils = (function () {
       return;
     }
 
-    // Generate TOC
+    // Gera o índice
     tocList.innerHTML = '';
     headings.forEach((heading, index) => {
       let text = heading.textContent.trim().replace(/^#+\s*/, '');
@@ -109,7 +109,7 @@ const Utils = (function () {
       tocList.appendChild(tocItem);
     });
 
-    // Update active heading and progress
+    // Atualiza o heading ativo e o progresso
     function updateActiveHeading() {
       const tocLinks = document.querySelectorAll('.toc-link');
       let activeIndex = -1;
@@ -135,7 +135,7 @@ const Utils = (function () {
         tocLinks[activeIndex].classList.add('active');
       }
 
-      // Update progress
+      // Atualiza o progresso
       let progressPercent = 0;
       if (activeIndex >= 0) {
         progressPercent = ((activeIndex + 1) / headings.length) * 100;
@@ -164,12 +164,12 @@ const Utils = (function () {
       const containerRect = tocContainer.getBoundingClientRect();
       const containerHeight = containerRect.height;
 
-      // Calculate which heading should be active based on touch position
+      // Calcula qual heading deve estar ativo com base na posição do toque
       const relativeY = (currentY - containerRect.top) / containerHeight;
       const targetIndex = Math.floor(relativeY * headings.length);
       const clampedIndex = Math.max(0, Math.min(targetIndex, headings.length - 1));
 
-      // Update visual feedback
+      // Atualiza o feedback visual
       const tocLinks = document.querySelectorAll('.toc-link');
       tocLinks.forEach((link, index) => {
         link.classList.remove('active');
@@ -194,12 +194,12 @@ const Utils = (function () {
       const containerRect = tocContainer.getBoundingClientRect();
       const containerHeight = containerRect.height;
 
-      // Calculate target heading
+      // Calcula o heading de destino
       const relativeY = (currentY - containerRect.top) / containerHeight;
       const targetIndex = Math.floor(relativeY * headings.length);
       const clampedIndex = Math.max(0, Math.min(targetIndex, headings.length - 1));
 
-      // Navigate to the target heading
+      // Navega até o heading de destino
       if (headings[clampedIndex]) {
         const targetHeading = headings[clampedIndex];
         const elementTop = targetHeading.getBoundingClientRect().top + window.pageYOffset;
@@ -216,20 +216,20 @@ const Utils = (function () {
       }
     }
 
-    // Add touch event listeners
+    // Adiciona os listeners de eventos de toque
     tocContainer.addEventListener('touchstart', handleTouchStart, { passive: false });
     tocContainer.addEventListener('touchmove', handleTouchMove, { passive: false });
     tocContainer.addEventListener('touchend', handleTouchEnd, { passive: false });
 
-    // Event listeners
+    // Listeners de eventos
     window.addEventListener('scroll', updateActiveHeading, { passive: true });
     window.addEventListener('hashchange', updateActiveHeading);
 
-    // Initial update
+    // Atualização inicial
     updateActiveHeading();
   }
 
-  // Run immediately if DOM is ready, otherwise wait
+  // Executa imediatamente se o DOM estiver pronto; caso contrário, aguarda
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', initTOC);
   } else {
@@ -237,7 +237,7 @@ const Utils = (function () {
   }
 })();
 
-// Share Dropdown Functionality with Portal Positioning
+// Funcionalidade do menu de compartilhamento com posicionamento via portal
 function initShareDropdown() {
   const shareDropdown = document.getElementById('share-dropdown');
   const shareTrigger = document.getElementById('share-trigger');
@@ -245,7 +245,7 @@ function initShareDropdown() {
 
   if (!shareDropdown || !shareTrigger || !shareMenu) return;
 
-  // Toggle dropdown
+  // Alterna o menu suspenso
   shareTrigger.addEventListener('click', (e) => {
     e.preventDefault();
     e.stopPropagation();
@@ -259,21 +259,21 @@ function initShareDropdown() {
     }
   });
 
-  // Close dropdown when clicking outside
+  // Fecha o menu ao clicar fora
   document.addEventListener('click', (e) => {
     if (!shareDropdown.contains(e.target) && !shareMenu.contains(e.target)) {
       closeShareDropdown();
     }
   });
 
-  // Close dropdown on escape key
+  // Fecha o menu com a tecla Escape
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
       closeShareDropdown();
     }
   });
 
-  // Update position on scroll and resize
+  // Atualiza a posição ao rolar e redimensionar
   function updatePosition() {
     if (shareTrigger.getAttribute('aria-expanded') === 'true') {
       positionDropdown();
@@ -288,11 +288,11 @@ function initShareDropdown() {
     const menuWidth = 224; // w-56 = 14rem = 224px
     const spacing = 8; // mt-2 = 0.5rem = 8px
 
-    // Calculate position
+    // Calcula a posição
     let left = triggerRect.right - menuWidth;
     let top = triggerRect.bottom + spacing;
 
-    // Ensure menu doesn't go off screen
+    // Garante que o menu não saia da tela
     const viewportWidth = window.innerWidth;
     const viewportHeight = window.innerHeight;
 
@@ -303,9 +303,9 @@ function initShareDropdown() {
       left = viewportWidth - menuWidth - 8;
     }
 
-    // Check if there's enough space below, otherwise show above
+    // Verifica se há espaço suficiente abaixo; caso contrário, exibe acima
     if (top + 300 > viewportHeight) {
-      // Approximate menu height
+      // Altura aproximada do menu
       top = triggerRect.top - 300 - spacing;
     }
 
@@ -316,10 +316,10 @@ function initShareDropdown() {
   function openShareDropdown() {
     shareTrigger.setAttribute('aria-expanded', 'true');
 
-    // Position the dropdown
+    // Posiciona o menu suspenso
     positionDropdown();
 
-    // Enable pointer events and show menu
+    // Ativa os eventos de ponteiro e exibe o menu
     shareMenu.style.pointerEvents = 'auto';
     shareMenu.classList.remove('opacity-0', 'invisible', 'scale-95');
     shareMenu.classList.add('opacity-100', 'visible', 'scale-100');
@@ -333,7 +333,7 @@ function initShareDropdown() {
   }
 }
 
-// Share Functions
+// Funções de compartilhamento
 function shareOnX() {
   const url = encodeURIComponent(window.location.href);
   const text = encodeURIComponent(document.title);
@@ -385,7 +385,7 @@ function copyToClipboard() {
     navigator.clipboard
       .writeText(url)
       .then(() => {
-        showCopyNotification('Link copied to clipboard!');
+        showCopyNotification('Link copiado para a área de transferência!');
       })
       .catch(() => {
         fallbackCopyToClipboard(url);
@@ -407,16 +407,16 @@ function fallbackCopyToClipboard(text) {
 
   try {
     document.execCommand('copy');
-    showCopyNotification('Link copied to clipboard!');
+    showCopyNotification('Link copiado para a área de transferência!');
   } catch (err) {
-    showCopyNotification('Failed to copy link');
+    showCopyNotification('Falha ao copiar o link');
   }
 
   document.body.removeChild(textArea);
 }
 
 function showCopyNotification(message) {
-  // Create notification element
+  // Cria o elemento de notificação
   const notification = document.createElement('div');
   notification.className =
     'fixed top-4 right-4 bg-green-500 text-white px-4 py-2 rounded-lg shadow-lg z-50 transform translate-x-full transition-transform duration-300';
@@ -424,12 +424,12 @@ function showCopyNotification(message) {
 
   document.body.appendChild(notification);
 
-  // Animate in
+  // Anima a entrada
   setTimeout(() => {
     notification.classList.remove('translate-x-full');
   }, 100);
 
-  // Animate out and remove
+  // Anima a saída e remove
   setTimeout(() => {
     notification.classList.add('translate-x-full');
     setTimeout(() => {
@@ -438,19 +438,19 @@ function showCopyNotification(message) {
   }, 2000);
 }
 
-// GitHub Stars Functionality
+// Funcionalidade de estrelas do GitHub
 async function fetchGitHubStars() {
-  // Find all GitHub stars elements (support multiple variants)
+  // Encontra todos os elementos de estrelas do GitHub (suporta várias variantes)
   const starsElements = document.querySelectorAll('[id^="github-stars"]');
   if (starsElements.length === 0) return;
 
   try {
-    // Try to get from cache first
+    // Tenta obter do cache primeiro
     const cached = localStorage.getItem('github-stars');
     const cacheTime = localStorage.getItem('github-stars-time');
     const now = Date.now();
 
-    // Use cache if it's less than 5 minutes old
+    // Usa o cache se tiver menos de 5 minutos
     if (cached && cacheTime && now - parseInt(cacheTime) < 5 * 60 * 1000) {
       starsElements.forEach((element) => {
         element.innerHTML = formatStarCount(parseInt(cached));
@@ -458,18 +458,18 @@ async function fetchGitHubStars() {
       return;
     }
 
-    // Fetch from GitHub API
+    // Busca da API do GitHub
     const response = await fetch('https://api.github.com/repos/Fechin/reference');
-    if (!response.ok) throw new Error('Failed to fetch');
+    if (!response.ok) throw new Error('Falha na requisição');
 
     const data = await response.json();
     const stars = data.stargazers_count;
 
-    // Cache the result
+    // Armazena o resultado em cache
     localStorage.setItem('github-stars', stars.toString());
     localStorage.setItem('github-stars-time', now.toString());
 
-    // Update UI with animation
+    // Atualiza a UI com animação
     starsElements.forEach((element) => {
       element.innerHTML = formatStarCount(stars);
       element.classList.add('animate-pulse');
@@ -478,8 +478,8 @@ async function fetchGitHubStars() {
       }, 1000);
     });
   } catch (error) {
-    console.warn('Failed to fetch GitHub stars:', error);
-    // Fallback to cached value or default
+    console.warn('Falha ao buscar as estrelas do GitHub:', error);
+    // Usa o valor em cache ou o padrão como fallback
     const cached = localStorage.getItem('github-stars');
     const fallbackValue = cached ? formatStarCount(parseInt(cached)) : '6.5k';
 
@@ -497,10 +497,10 @@ function formatStarCount(count) {
 }
 
 window.addEventListener('load', () => {
-  // Initialize share dropdown
+  // Inicializa o menu de compartilhamento
   initShareDropdown();
 
-  // Fetch GitHub stars
+  // Busca as estrelas do GitHub
   fetchGitHubStars();
 
   // Dark mode functionality
@@ -511,7 +511,7 @@ window.addEventListener('load', () => {
     localStorage.theme = isDarkMode ? 'dark' : '';
   });
 
-  /******** List Collapsible ***********/
+  /******** Lista recolhível ***********/
   document.querySelectorAll('ul.collapsible > li > strong').forEach((strong) => {
     const li = strong.parentElement;
     li.classList.add('active');
@@ -522,7 +522,7 @@ window.addEventListener('load', () => {
     });
   });
 
-  /******** Remove bottom border noise ********/
+  /******** Remove a borda inferior indesejada ********/
   document.querySelectorAll('.h3-wrap ul').forEach((ul) => {
     const length = ul.querySelectorAll('li').length;
     const matches = ul.className.match('cols-([0-9]+)');
@@ -536,7 +536,7 @@ window.addEventListener('load', () => {
     }
   });
 
-  /******** h3-wrap blink ***********/
+  /******** Piscar do h3-wrap ***********/
   function blinkSection() {
     const hash = window.location.hash;
     const anchor = document.querySelector(`a[class="h-anchor"][href="${hash}"]`);
@@ -555,7 +555,7 @@ window.addEventListener('load', () => {
   blinkSection();
   window.addEventListener('popstate', blinkSection);
 
-  /******** Search ***********/
+  /******** Busca ***********/
   function SearchEngine(options) {
     const settings = options ? options : {};
     const defaultOptions = {
@@ -577,7 +577,7 @@ window.addEventListener('load', () => {
     start() {
       const _this = this;
 
-      _this.fetchData(); // Prepare search data
+      _this.fetchData(); // Prepara os dados de busca
       this.search = document.querySelector(this.container);
       this.box = document.querySelector('#mysearch-box');
       this.input = document.querySelector('#mysearch-input');
@@ -586,19 +586,19 @@ window.addEventListener('load', () => {
 
       this.detectModal();
 
-      // Cancel button
+      // Botão de cancelar
       const cancel = document.querySelector('.cancel');
       cancel.addEventListener('click', () => {
         _this.closeModal(true);
       });
 
-      // Clear button
+      // Botão de limpar
       const clear = document.querySelector('#mysearch-clear');
       clear.addEventListener('click', () => {
         _this.doSearch('', true).then();
       });
 
-      // Search trigger
+      // Gatilho da busca
       const trigger = document.querySelector(_this.trigger);
       trigger.addEventListener('click', () => {
         _this.openModal(true);
@@ -612,7 +612,7 @@ window.addEventListener('load', () => {
         }
       });
 
-      // Search input event
+      // Evento do campo de busca
       this.input.addEventListener('keyup', () => {
         const value = _this.input.value;
         if (value === _this.lastSearch.query) {
@@ -789,7 +789,7 @@ window.addEventListener('load', () => {
     mark(text, matches) {
       const result = [];
       let pair = matches.shift();
-      // Build the formatted string
+      // Monta a string formatada
       for (let i = 0; i < text.length; i++) {
         const char = text.charAt(i);
         if (pair && i === pair[0]) {
@@ -920,16 +920,16 @@ window.addEventListener('load', () => {
     }
   };
 
-  // Start search
+  // Inicia a busca
   Utils.externalLibrary(Utils.LIBRARY.fuse)
     .then((Fuse) => {
       if (typeof Fuse === 'undefined') {
-        console.error('Fuse.js library failed to load');
+        console.error('Falha ao carregar a biblioteca Fuse.js');
         return;
       }
       new SearchEngine().start();
     })
     .catch((error) => {
-      console.error('Failed to load search library:', error);
+      console.error('Falha ao carregar a biblioteca de busca:', error);
     });
 });

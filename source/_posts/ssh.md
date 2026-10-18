@@ -8,134 +8,134 @@ tags:
   - network
   - 22
 categories:
-  - Linux Command
+  - Comandos Linux
 intro: |
-  This quick reference cheat sheet provides various for using SSH.
+  Este cheat sheet de referência rápida apresenta várias formas de usar o SSH.
 plugins:
   - copyCode
 ---
 
-## Getting Started
+## Primeiros passos
 
-### Connecting
+### Conexão
 
-Connect to a server (default port 22)
+Conecte-se a um servidor (porta padrão 22)
 
 ```shell script
 $ ssh root@192.168.1.5
 ```
 
-Connect on a specific port
+Conecte-se em uma porta específica
 
 ```shell script
 $ ssh root@192.168.1.5 -p 6222
 ```
 
-Connect via pem file (0400 permissions)
+Conecte-se via arquivo pem (permissões 0400)
 
 ```shell script
 $ ssh -i /path/file.pem root@192.168.1.5
 ```
 
-See: [SSH Permissions](/chmod#ssh-permissions)
+Veja: [Permissões do SSH](/chmod#ssh-permissions)
 
-### Executing
+### Executando
 
-Executes remote command
+Executa um comando remoto
 
 ```shell script
 $ ssh root@192.168.1.5 'ls -l'
 ```
 
-Invoke a local script
+Invoque um script local
 
 ```shell script
 $ ssh root@192.168.1.5 bash < script.sh
 ```
 
-Compresses and downloads from a server
+Compacta e baixa de um servidor
 
 ```shell script {.wrap}
 $ ssh root@192.168.1.5 "tar cvzf - ~/source" > output.tgz
 ```
 
-### Public IP
+### IP público
 
-Check this machine's public IP
+Verifique o IP público desta máquina
 
 ```shell script
 $ curl myip.dog
 ```
 
-Check a remote server's public IP (requires curl on the server)
+Verifique o IP público de um servidor remoto (requer curl no servidor)
 
 ```shell script
 $ ssh user@server 'curl myip.dog'
 ```
 
-More IP tools: [myip.dog](https://myip.dog/)
+Mais ferramentas de IP: [myip.dog](https://myip.dog/)
 
 ### SCP {.row-span-2}
 
-Copies from remote to local
+Copia do remoto para o local
 
 ```shell script
 $ scp user@server:/dir/file.ext dest/
 ```
 
-Copies between two servers
+Copia entre dois servidores
 
 ```shell script
 $ scp user@server:/file user@server:/dir
 ```
 
-Copies from local to remote
+Copia do local para o remoto
 
 ```shell script
 $ scp dest/file.ext user@server:/dir
 ```
 
-Copies a whole folder
+Copia uma pasta inteira
 
 ```shell script
 $ scp -r user@server:/dir dest/
 ```
 
-Copies all files from a folder
+Copia todos os arquivos de uma pasta
 
 ```shell script
 $ scp user@server:/dir/* dest/
 ```
 
-Copies from a server folder to the current folder
+Copia de uma pasta do servidor para a pasta atual
 
 ```shell script
 $ scp user@server:/dir/* .
 ```
 
-### Config location
+### Localização da configuração
 
-| File Path                | Description          |
-| ------------------------ | -------------------- |
-| `/etc/ssh/ssh_config`    | System-wide config   |
-| `~/.ssh/config`          | User-specific config |
-| `~/.ssh/id_{type}`       | Private key          |
-| `~/.ssh/id_{type}.pub`   | Public key           |
-| `~/.ssh/known_hosts`     | Known Servers        |
-| `~/.ssh/authorized_keys` | Authorized login key |
+| Caminho do arquivo       | Descrição                          |
+| ------------------------ | ---------------------------------- |
+| `/etc/ssh/ssh_config`    | Configuração global do sistema     |
+| `~/.ssh/config`          | Configuração específica do usuário |
+| `~/.ssh/id_{type}`       | Chave privada                      |
+| `~/.ssh/id_{type}.pub`   | Chave pública                      |
+| `~/.ssh/known_hosts`     | Servidores conhecidos              |
+| `~/.ssh/authorized_keys` | Chave de login autorizada          |
 
-### SCP Options
+### Opções do SCP
 
-| Options       | Description                                    |
-| ------------- | ---------------------------------------------- |
-| scp `-r`      | <yel>R</yel>ecursively copy entire directories |
-| scp `-C`      | <yel>C</yel>ompresses data                     |
-| scp `-v`      | Prints <yel>v</yel>erbose info                 |
-| scp `-P` 8080 | Uses a specific <yel>P</yel>ort                |
-| scp `-B`      | <yel>B</yel>atch mode _(Prevents password)_    |
-| scp `-p`      | <yel>P</yel>reserves times and modes           |
+| Opções        | Descrição                                           |
+| ------------- | --------------------------------------------------- |
+| scp `-r`      | Copia <yel>r</yel>ecursivamente diretórios inteiros |
+| scp `-C`      | <yel>C</yel>ompacta os dados                        |
+| scp `-v`      | Exibe saída <yel>v</yel>erbosa                      |
+| scp `-P` 8080 | Usa uma <yel>p</yel>orta específica                 |
+| scp `-B`      | Modo <yel>b</yel>atch _(evita a senha)_             |
+| scp `-p`      | <yel>p</yel>reserva tempos e modos                  |
 
-### Config sample
+### Exemplo de configuração
 
 ```toml
 Host server1
@@ -145,13 +145,13 @@ Host server1
     IdentityFile ~/.ssh/server1.key
 ```
 
-Launch by alias
+Inicie pelo alias
 
 ```shell script
 $ ssh server1
 ```
 
-See: Full [Config Options](https://linux.die.net/man/5/ssh_config)
+Veja: todas as [opções de configuração](https://linux.die.net/man/5/ssh_config)
 
 ### ProxyJump
 
@@ -163,7 +163,7 @@ $ ssh -J proxy_host1 remote_host2
 $ ssh -J user@proxy_host1 user@remote_host2
 ```
 
-Multiple jumps
+Vários saltos
 
 ```shell script {.wrap}
 $ ssh -J user@proxy_host1:port1,user@proxy_host2:port2 user@remote_host3
@@ -175,13 +175,13 @@ $ ssh -J user@proxy_host1:port1,user@proxy_host2:port2 user@remote_host3
 $ ssh-copy-id user@server
 ```
 
-Copy to alias server
+Copia para o servidor de alias
 
 ```shell script {.wrap}
 $ ssh-copy-id server1
 ```
 
-Copy specific key
+Copia uma chave específica
 
 ```shell script {.wrap}
 $ ssh-copy-id -i ~/.ssh/id_rsa.pub user@server
@@ -197,49 +197,49 @@ $ ssh-keygen -t rsa -b 4096 -C "your@mail.com"
 
 ---
 
-| -   | -    | -                             |
-| --- | ---- | ----------------------------- |
-|     | `-t` | [Type](#key-type) of key      |
-|     | `-b` | The number of bits in the key |
-|     | `-C` | Provides a new comment        |
+| --- | ---- | -------------------------- |
+| --- | ---- | -------------------------- |
+|     | `-t` | [Tipo](#key-type) da chave |
+|     | `-b` | O número de bits da chave  |
+|     | `-C` | Fornece um novo comentário |
 
 {.left-text}
 
-Generate an RSA 4096 bit key with email as a comment, or use [SSH Key Generator](https://sshkeygenerator.com/) online
+Gere uma chave RSA de 4096 bits com o e-mail como comentário, ou use o [SSH Key Generator](https://sshkeygenerator.com/) online
 
-### Generate {.col-span-2 .row-span-2}
+### Gerar {.col-span-2 .row-span-2}
 
-Generate a key interactively
+Gere uma chave de forma interativa
 
 ```shell script
 $ ssh-keygen
 ```
 
-Specify filename
+Especifique o nome do arquivo
 
 ```shell script
 $ ssh-keygen -f ~/.ssh/filename
 ```
 
-Generate public key from private key
+Gere a chave pública a partir da chave privada
 
 ```shell script
 $ ssh-keygen -y -f private.key > public.pub
 ```
 
-Change comment
+Altere o comentário
 
 ```shell script
 $ ssh-keygen -c -f ~/.ssh/id_rsa
 ```
 
-Change private key passphrase
+Altere a passphrase da chave privada
 
 ```shell script
 $ ssh-keygen -p -f ~/.ssh/id_rsa
 ```
 
-### Key type
+### Tipo de chave
 
 - rsa
 - ed25519
@@ -248,41 +248,41 @@ $ ssh-keygen -p -f ~/.ssh/id_rsa
 
 ### known_hosts {.col-span-2}
 
-Search from known_hosts
+Pesquise em known_hosts
 
 ```shell script
 $ ssh-keygen -F <ip/hostname>
 ```
 
-Remove from known_hosts
+Remova de known_hosts
 
 ```shell script
 $ ssh-keygen -R <ip/hostname>
 ```
 
-### Key format
+### Formato da chave
 
 - PEM
 - PKCS8
 
-## SSH Tunneling
+## Túneis SSH
 
-### SSH Tunnel Options {.row-span-2}
+### Opções de túnel SSH {.row-span-2}
 
-| Option | Description                                            |
-| ------ | :----------------------------------------------------- |
-| `-L`   | Local port forwarding                                  |
-| `-R`   | Remote port forwarding                                 |
-| `-D`   | Dynamic port forwarding                                |
-| `-f`   | Run in background                                      |
-| `-N`   | Do not execute a remote command                        |
-| `-g`   | Allow remote hosts to connect to local forwarded ports |
+| Opção | Descrição                                                           |
+| ----- | ------------------------------------------------------------------- |
+| `-L`  | Encaminhamento de porta local                                       |
+| `-R`  | Encaminhamento de porta remota                                      |
+| `-D`  | Encaminhamento de porta dinâmico                                    |
+| `-f`  | Executa em segundo plano                                            |
+| `-N`  | Não executa um comando remoto                                       |
+| `-g`  | Permite que hosts remotos se conectem às portas locais encaminhadas |
 
 {.left-text}
 
-more details on flag above with `man ssh`
+mais detalhes sobre as flags acima com `man ssh`
 
-### Local Port Forwarding {.col-span-2}
+### Encaminhamento de porta local {.col-span-2}
 
 ```bash
 # Forward a local port to a remote server
@@ -292,7 +292,7 @@ ssh -L local_port:remote_host:remote_port user@ssh_server
 ssh -L 8080:example.com:80 user@ssh_server
 ```
 
-### Dynamic Port Forwarding {.col-span-2}
+### Encaminhamento de porta dinâmico {.col-span-2}
 
 ```bash
 # Create a SOCKS proxy on a local port
@@ -302,29 +302,29 @@ ssh -D local_port user@ssh_server
 ssh -f -N -D 1080 user@ssh_server
 ```
 
-### Background Tunnel {.col-span-3}
+### Túnel em segundo plano {.col-span-3}
 
 ```bash
 # Create a local port forwarding tunnel in the background
 ssh -f -N -L local_port:remote_host:remote_port user@ssh_server
 ```
 
-### Multiple Tunnels {.col-span-3}
+### Vários túneis {.col-span-3}
 
 ```bash
 # Create multiple tunnels in a single SSH command
 ssh -L 8080:example.com:80 -L 3306:db.example.com:3306 user@ssh_server
 ```
 
-### Combining Options {.col-span-3}
+### Combinando opções {.col-span-3}
 
 ```bash
 # In background, no command, allow remote host, local port forward, identity_file
 ssh -f -N -g -L 8080:example.com:80 -i ~/.ssh/custom_key user@ssh_server
 ```
 
-## Also see
+## Veja também
 
-- [OpenSSH Config File Examples](https://www.cyberciti.biz/faq/create-ssh-config-file-on-linux-unix/) _(cyberciti.biz)_
+- [Exemplos de arquivo de configuração do OpenSSH](https://www.cyberciti.biz/faq/create-ssh-config-file-on-linux-unix/) _(cyberciti.biz)_
 - [ssh_config](https://linux.die.net/man/5/ssh_config) _(linux.die.net)_
 - [man-ssh](https://man7.org/linux/man-pages/man1/ssh.1.html)

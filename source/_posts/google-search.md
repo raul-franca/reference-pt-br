@@ -4,153 +4,153 @@ date: 2023-01-10 09:51:44
 background: bg-[#d3594a]
 tags:
 categories:
-  - Other
+  - Outros
 intro: |
-  This quick reference cheat sheet lists of Google advanced search operators.
+  Este cheat sheet de referência rápida lista os operadores de busca avançada do Google.
 ---
 
-## Getting Started {.cols-2}
+## Primeiros passos {.cols-2}
 
-### Google Advanced Search Operators
+### Operadores de busca avançada do Google
 
-| Operator    | Description                                                                                                                                                                                   | Category   |
+| Operador    | Descrição                                                                                                                                                                                   | Categoria   |
 | ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
-| `""`        | Allows searching for a specific phrase - exact match search. Individual word prevents synonyms                                                                                                | Basic,Mail |
-| `OR`/`AND`  | Boolean search function for OR searches as Google defaults to AND between words - must be all caps                                                                                            | Basic,Mail |
-| `\`         | Implements OR                                                                                                                                                                                 | Basic      |
-| `()`        | Allows grouping of operators and helps dictate order                                                                                                                                          | Basic,Mail |
-| `-`         | Excludes a word from results                                                                                                                                                                  | Basic,Mail |
-| `*`         | Acts as a wildcard and will match any word or phrase                                                                                                                                          | Basic      |
-| `#..#`      | # represents a number in this instance. Use to find numbers in a series.                                                                                                                      | Basic      |
-| `$`         | Allows for search of USD                                                                                                                                                                      | Basic      |
-| `€`         | Allows for search of Euro                                                                                                                                                                     | Basic      |
-| `in`        | Allows searches for unit conversion (currency, unit or measure)                                                                                                                               | Basic      |
-| `~`         | Prefix - Include synonyms (potentially defunct)                                                                                                                                               | Basic      |
-| `+`         | Prefix - Force exact match on single phrase                                                                                                                                                   | Basic,Mail |
-| `AROUND(X)` | This is sandwiched between two words and the X declares how many words they must be mentioned between. I.e. if it’s (4) then the two keywords must be mentioned within 4 words of each other. | Advanced   |
-| `_`         | Acts as wildcard for autocomplete                                                                                                                                                             | Advanced   |
+| `""`        | Permite buscar uma frase específica — pesquisa por correspondência exata. Palavra individual impede sinônimos                                                                                 | Basic,Mail |
+| `OR`/`AND`  | Função de busca booleana para buscas OR, já que o Google usa AND por padrão entre as palavras — precisa estar tudo em maiúsculas                                                              | Basic,Mail |
+| `\`         | Implementa OR                                                                                                                                                                                 | Basic      |
+| `()`        | Permite agrupar operadores e ajuda a definir a ordem                                                                                                                                          | Basic,Mail |
+| `-`         | Exclui uma palavra dos resultados                                                                                                                                                             | Basic,Mail |
+| `*`         | Funciona como curinga e corresponde a qualquer palavra ou frase                                                                                                                               | Basic      |
+| `#..#`      | O # representa um número neste caso. Use para encontrar números em uma sequência.                                                                                                             | Basic      |
+| `$`         | Permite buscar por USD                                                                                                                                                                        | Basic      |
+| `€`         | Permite buscar por Euro                                                                                                                                                                       | Basic      |
+| `in`        | Permite buscas de conversão de unidades (moeda, unidade ou medida)                                                                                                                             | Basic      |
+| `~`         | Prefixo — inclui sinônimos (possivelmente obsoleto)                                                                                                                                           | Basic      |
+| `+`         | Prefixo — força correspondência exata em uma única frase                                                                                                                                      | Basic,Mail |
+| `AROUND(X)` | Fica entre duas palavras e o X declara quantas palavras podem existir entre elas. Ou seja, se for (4), as duas palavras-chave devem aparecer em um intervalo de 4 palavras.                   | Advanced   |
+| `_`         | Funciona como curinga para autocomplete                                                                                                                                                       | Advanced   |
 
-### Search with url
+### Busca por URL
 
-| Operator    | Description                                                                                                                                | Category |
+| Operador    | Descrição                                                                                                                                  | Categoria |
 | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------ | -------- |
-| `inurl:`    | Only returns results where the queried keyword(s) is present in the URL                                                                    | Advanced |
-| `allinurl:` | As above but only containing all of the specified words in the URL                                                                         | Advanced |
-| `blogurl:`  | Find blog URLs under a specific domain. This was used in Google blog search, but I’ve found it does return some results in regular search. | Advanced |
-| `site:`     | Limit results to those from one site                                                                                                       | Advanced |
-| `related:`  | Find similar domains to the queried domain                                                                                                 | Advanced |
+| `inurl:`    | Retorna apenas resultados em que a(s) palavra(s)-chave consultada(s) está(ão) presente(s) na URL                                            | Advanced |
+| `allinurl:` | Como acima, mas contendo apenas todas as palavras especificadas na URL                                                                      | Advanced |
+| `blogurl:`  | Encontra URLs de blogs sob um domínio específico. Isso era usado na busca de blogs do Google, mas notei que ainda retorna alguns resultados na busca comum. | Advanced |
+| `site:`     | Limita os resultados aos de um site                                                                                                        | Advanced |
+| `related:`  | Encontra domínios similares ao domínio consultado                                                                                          | Advanced |
 
-### Search with dates
+### Busca por datas
 
-| Operator     | Description                                                                                          | Category   |
+| Operador     | Descrição                                                                                            | Categoria   |
 | ------------ | ---------------------------------------------------------------------------------------------------- | ---------- |
-| `daterange:` | Return results in a specified range (requires julian dates)                                          | Advanced   |
-| `after:`     | Allows you to search drive or mail for files modified or mail sent/received anytime after a set date | Drive,Mail |
-| `before:`    | Allows you to search drive or mail for files modified or mail sent/received before a certain date    | Drive,Mail |
-| `older:`     | Search for messages older than a certain date                                                        | Mail       |
-| `newer:`     | Search for messages newer than a certain date                                                        | Mail       |
+| `daterange:` | Retorna resultados em um intervalo especificado (requer datas julianas)                              | Advanced   |
+| `after:`     | Permite buscar no drive ou no mail arquivos modificados ou mensagens enviadas/recebidas a qualquer momento após uma data definida | Drive,Mail |
+| `before:`    | Permite buscar no drive ou no mail arquivos modificados ou mensagens enviadas/recebidas antes de uma determinada data | Drive,Mail |
+| `older:`     | Busca mensagens mais antigas que uma determinada data                                                | Mail       |
+| `newer:`     | Busca mensagens mais novas que uma determinada data                                                  | Mail       |
 
-### Search files
+### Busca por arquivos
 
-| Operator        | Description                                                                                          | Category   |
+| Operador        | Descrição                                                                                            | Categoria   |
 | --------------- | ---------------------------------------------------------------------------------------------------- | ---------- |
-| `filename:`     | Search for messages with a particular type of file attached, or the exact name of a file             | Mail       |
-| `type:`         | Allows you to search drive by file type                                                              | Drive      |
-| `owner:`        | Allows you to search drive by owner of file or folder                                                | Drive      |
-| `to:`           | Allows you to search drive for files shared with a specific person                                   | Drive      |
-| `title:`        | Searches drive for files with the keyword in their title alone                                       | Drive      |
-| `source:domain` | Allows you to search for files or folders shared with everyone in your business                      | Drive      |
-| `filetype:`     | Returns only files of a particular type associated with the keyword searched                         | Advanced   |
-| `ext:`          | As above, based on extension                                                                         | Advanced   |
-| `after:`        | Allows you to search drive or mail for files modified or mail sent/received anytime after a set date | Drive,Mail |
-| `before:`       | Allows you to search drive or mail for files modified or mail sent/received before a certain date    | Drive,Mail |
-| `is:trashed`    | Searches for the item in the Drive bin                                                               | Drive      |
+| `filename:`     | Busca mensagens com um tipo específico de arquivo anexado, ou o nome exato de um arquivo             | Mail       |
+| `type:`         | Permite buscar no drive por tipo de arquivo                                                          | Drive      |
+| `owner:`        | Permite buscar no drive pelo proprietário do arquivo ou pasta                                        | Drive      |
+| `to:`           | Permite buscar no drive arquivos compartilhados com uma pessoa específica                            | Drive      |
+| `title:`        | Busca no drive arquivos com a palavra-chave apenas no título                                         | Drive      |
+| `source:domain` | Permite buscar arquivos ou pastas compartilhados com todos na sua empresa                            | Drive      |
+| `filetype:`     | Retorna apenas arquivos de um tipo específico associados à palavra-chave buscada                     | Advanced   |
+| `ext:`          | Como acima, baseado na extensão                                                                      | Advanced   |
+| `after:`        | Permite buscar no drive ou no mail arquivos modificados ou mensagens enviadas/recebidas a qualquer momento após uma data definida | Drive,Mail |
+| `before:`       | Permite buscar no drive ou no mail arquivos modificados ou mensagens enviadas/recebidas antes de uma determinada data | Drive,Mail |
+| `is:trashed`    | Busca o item na lixeira do Drive                                                                     | Drive      |
 
-### Search with page content
+### Busca por conteúdo da página
 
-| Operator       | Description                                                                                                         | Category |
+| Operador       | Descrição                                                                                                           | Categoria |
 | -------------- | ------------------------------------------------------------------------------------------------------------------- | -------- |
-| `link:`        | Find pages that link to the target domain                                                                           | Advanced |
-| `inanchor:`    | Find pages linked to with the specified anchor text/ phrase. Data is heavily sampled.                               | Advanced |
-| `allinanchor:` | Find pages with all individual terms after "inanchor:" in the inbound anchor text.                                  | Advanced |
-| `intitle:`     | Returns pages based on the searched query appearing in their title                                                  | Advanced |
-| `allintitle:`  | Similar to intitle: but only returns titles where all the words in the title match                                  | Advanced |
-| `inposttile:`  | Finds pages with keywords in their post titles (i.e. for researching blogs)                                         | &nbsp;   |
-| `intext:`      | Finds pages where the keyword(s) are mentioned within the page content.                                             | Advanced |
-| `allintext:`   | Similar to “intext,” but only results containing all of the specified words somewhere on the page will be returned. | Advanced |
+| `link:`        | Encontra páginas que apontam para o domínio de destino                                                              | Advanced |
+| `inanchor:`    | Encontra páginas linkadas com o texto âncora/frase especificado. Os dados são fortemente amostrados.                | Advanced |
+| `allinanchor:` | Encontra páginas com todos os termos individuais após "inanchor:" no texto âncora de entrada.                       | Advanced |
+| `intitle:`     | Retorna páginas com base na consulta buscada aparecendo no título                                                   | Advanced |
+| `allintitle:`  | Semelhante a intitle:, mas retorna apenas títulos em que todas as palavras do título correspondem                   | Advanced |
+| `inposttile:`  | Encontra páginas com palavras-chave nos títulos dos posts (por exemplo, para pesquisar blogs)                       | &nbsp;   |
+| `intext:`      | Encontra páginas em que a(s) palavra(s)-chave é(são) mencionada(s) no conteúdo da página.                           | Advanced |
+| `allintext:`   | Semelhante a "intext", mas só retorna resultados que contêm todas as palavras especificadas em algum lugar da página. | Advanced |
 
-### Keywords
+### Palavras-chave
 
-| Operator          | Description                                                                                      | Category |
+| Operador          | Descrição                                                                                        | Categoria |
 | ----------------- | ------------------------------------------------------------------------------------------------ | -------- |
-| `Business`        | type E.g. cafe, restaurant, bar etc will return a selection of appropriate businesses in the are | Maps     |
-| `Petrol/Charging` | Station EV near me or perol station near me returns                                              | Maps     |
-| `Search`          | for a message with a google sheet attached                                                       | Mail     |
-| `Search`          | for a message with a google presentation attached                                                | Mail     |
+| `Business`        | tipo Ex.: cafe, restaurante, bar etc. retornará uma seleção de empresas apropriadas na área      | Maps     |
+| `Petrol/Charging` | Station EV near me ou perol station near me retorna                                              | Maps     |
+| `Search`          | por uma mensagem com uma planilha do Google anexada                                              | Mail     |
+| `Search`          | por uma mensagem com uma apresentação do Google anexada                                          | Mail     |
 
-### Search on emails
+### Busca em e-mails
 
-| Operator           | Description                                                                                           | Category   |
+| Operador           | Descrição                                                                                             | Categoria   |
 | ------------------ | ----------------------------------------------------------------------------------------------------- | ---------- |
-| `+`                | Prefix - Force exact match on single phrase                                                           | Basic,Mail |
-| `()`               | Allows grouping of operators and helps dictate order                                                  | Basic,Mail |
-| `-`                | Excludes a word from results                                                                          | Basic,Mail |
-| `""`               | Allows searching for a specific phrase - exact match search. Individual word prevents synonyms        | Basic,Mail |
-| `OR`/`AND`         | Boolean search function for OR searches as Google defaults to AND between words - must be all caps    | Basic,Mail |
-| `after:`           | Allows you to search drive or mail for files modified or mail sent/received anytime after a set date  | Drive,Mail |
-| `before:`          | Allows you to search drive or mail for files modified or mail sent/received before a certain date     | Drive,Mail |
-| `is:starred`       | Searches only items that have been starred in drive                                                   | Drive,Mail |
-| `from:`            | Specify the sender in google mail                                                                     | Mail       |
-| `to:`              | Specify the recipient in google mail                                                                  | Mail       |
-| `cc:`              | Search by a recipient that was copied into an email                                                   | Mail       |
-| `bcc:`             | Search by a recipient that was blind copied into an email                                             | Mail       |
-| `older:`           | Search for messages older than a certain date                                                         | Mail       |
-| `newer:`           | Search for messages newer than a certain date                                                         | Mail       |
-| `Search`           | for a message with a google sheet attached                                                            | Mail       |
-| `Search`           | for a message with a google presentation attached                                                     | Mail       |
-| `AROUND`           | Similar to the normal google search function, allows you to search for keywords near each other.      | Mail       |
-| `subject:`         | Search by keywords featured in the subject line                                                       | Mail       |
-| `{}`               | Use for OR in mail instead of the OR function                                                         | Mail       |
-| `label:`           | Search for messages that have a certain label                                                         | Mail       |
-| `has:attachment`   | Search for messages that have an item attached                                                        | Mail       |
-| `has:drive`        | Search for messages with a google drive attached                                                      | Mail       |
-| `has:document`     | Search for messages with a google doc attached                                                        | Mail       |
-| `has:youtube`      | Search for a message containing a youtube video                                                       | Mail       |
-| `list:`            | Search for all messages from a particular mailing list                                                | Mail       |
-| `in:anywhere`      | Includes all folders in your search, including spam and bin                                           | Mail       |
-| `is:important`     | Search for messages that have been marked as important                                                | Mail       |
-| `label:important`  | Same as is:important                                                                                  | Mail       |
-| `is:snoozed`       | Searches for messages that have been snoozed                                                          | Mail       |
-| `is:unread`        | Searches for unread messages                                                                          | Mail       |
-| `is:read`          | searches for read messages only                                                                       | Mail       |
-| `has:yellow-star`  | Searches for messages with coloured star icon                                                         | Mail       |
-| `has:blue-info`    | Searches for messages with colourd icon                                                               | Mail       |
-| `is:chat`          | Searches for messagse from chat                                                                       | Mail       |
-| `deliveredto:`     | Search by email address for delivered messages                                                        | Mail       |
-| `category:`        | Searches by messages based on category. Follow the colon with the categoy name, i.e. category:primary | Mail       |
-| `size:`            | Messages larger than a certain size in bytes                                                          | Mail       |
-| `larger:`          | Messages larger than a certain size in bytes                                                          | Mail       |
-| `smaller:`         | Messages smaller than a certain size in bytes                                                         | Mail       |
-| `has:userlabels`   | Search for messages that have custom user labels                                                      | Mail       |
-| `has:nouserlabels` | Search for messages that have no custom user labels                                                   | Mail       |
+| `+`                | Prefixo — força correspondência exata em uma única frase                                              | Basic,Mail |
+| `()`               | Permite agrupar operadores e ajuda a definir a ordem                                                  | Basic,Mail |
+| `-`                | Exclui uma palavra dos resultados                                                                     | Basic,Mail |
+| `""`               | Permite buscar uma frase específica — pesquisa por correspondência exata. Palavra individual impede sinônimos | Basic,Mail |
+| `OR`/`AND`         | Função de busca booleana para buscas OR, já que o Google usa AND por padrão entre as palavras — precisa estar tudo em maiúsculas | Basic,Mail |
+| `after:`           | Permite buscar no drive ou no mail arquivos modificados ou mensagens enviadas/recebidas a qualquer momento após uma data definida | Drive,Mail |
+| `before:`          | Permite buscar no drive ou no mail arquivos modificados ou mensagens enviadas/recebidas antes de uma determinada data | Drive,Mail |
+| `is:starred`       | Busca apenas itens que foram marcados com estrela no drive                                            | Drive,Mail |
+| `from:`            | Especifica o remetente no Google Mail                                                                 | Mail       |
+| `to:`              | Especifica o destinatário no Google Mail                                                              | Mail       |
+| `cc:`              | Busca por um destinatário que recebeu cópia no e-mail                                                 | Mail       |
+| `bcc:`             | Busca por um destinatário que recebeu cópia oculta no e-mail                                          | Mail       |
+| `older:`           | Busca mensagens mais antigas que uma determinada data                                                 | Mail       |
+| `newer:`           | Busca mensagens mais novas que uma determinada data                                                   | Mail       |
+| `Search`           | por uma mensagem com uma planilha do Google anexada                                                   | Mail       |
+| `Search`           | por uma mensagem com uma apresentação do Google anexada                                               | Mail       |
+| `AROUND`           | Semelhante à função de busca normal do Google, permite buscar palavras-chave próximas umas das outras. | Mail       |
+| `subject:`         | Busca por palavras-chave presentes na linha de assunto                                                | Mail       |
+| `{}`               | Use para OR no mail em vez da função OR                                                               | Mail       |
+| `label:`           | Busca mensagens que têm um determinado rótulo                                                         | Mail       |
+| `has:attachment`   | Busca mensagens que têm um item anexado                                                               | Mail       |
+| `has:drive`        | Busca mensagens com um Google Drive anexado                                                           | Mail       |
+| `has:document`     | Busca mensagens com um Google Doc anexado                                                             | Mail       |
+| `has:youtube`      | Busca uma mensagem contendo um vídeo do YouTube                                                       | Mail       |
+| `list:`            | Busca todas as mensagens de uma lista de discussão específica                                         | Mail       |
+| `in:anywhere`      | Inclui todas as pastas na busca, incluindo spam e lixeira                                             | Mail       |
+| `is:important`     | Busca mensagens marcadas como importantes                                                              | Mail       |
+| `label:important`  | O mesmo que is:important                                                                              | Mail       |
+| `is:snoozed`       | Busca mensagens que foram adiadas (snoozed)                                                           | Mail       |
+| `is:unread`        | Busca mensagens não lidas                                                                             | Mail       |
+| `is:read`          | Busca apenas mensagens lidas                                                                          | Mail       |
+| `has:yellow-star`  | Busca mensagens com ícone de estrela colorida                                                         | Mail       |
+| `has:blue-info`    | Busca mensagens com ícone colorido                                                                    | Mail       |
+| `is:chat`          | Busca mensagens do chat                                                                               | Mail       |
+| `deliveredto:`     | Busca por endereço de e-mail em mensagens entregues                                                   | Mail       |
+| `category:`        | Busca mensagens por categoria. Siga os dois-pontos com o nome da categoria, ex.: category:primary     | Mail       |
+| `size:`            | Mensagens maiores que um determinado tamanho em bytes                                                 | Mail       |
+| `larger:`          | Mensagens maiores que um determinado tamanho em bytes                                                 | Mail       |
+| `smaller:`         | Mensagens menores que um determinado tamanho em bytes                                                 | Mail       |
+| `has:userlabels`   | Busca mensagens que têm rótulos personalizados do usuário                                             | Mail       |
+| `has:nouserlabels` | Busca mensagens que não têm rótulos personalizados do usuário                                         | Mail       |
 
-### Some other useful search operators
+### Outros operadores de busca úteis
 
-| Operator    | Description                                                                                                                                                            | Category |
+| Operador    | Descrição                                                                                                                                                              | Categoria |
 | ----------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
-| `define:`   | Pulls a card response from Google displaying the dictionary definition of the word or phrase                                                                           | Advanced |
-| `cache:`    | Returns the most up to date cache of an indexed web page                                                                                                               | Advanced |
-| `weather:`  | Brings up the featured snipped for weather for that location                                                                                                           | Advanced |
-| `stocks:`   | Returns stock information for the specified ticker                                                                                                                     | Advanced |
-| `map:`      | Force google map results for a particular query                                                                                                                        | Advanced |
-| `movie:`    | Find information for the specified movie (particularly useful when that movie has an ambiguous name). If the movie is still in theatres it’ll also return screen times | Advanced |
-| `source:`   | Use in google news, returns results from the specified source                                                                                                          | Advanced |
-| `loc:`      | Returns results for a specific location                                                                                                                                | Advanced |
-| `location:` | As above but with Google news                                                                                                                                          | Advanced |
-| `info:`     | Returns information related to a domain (pages with domain text, similar on-site pages, cache etc)                                                                     | Advanced |
-| `near`      | Part of the google maps lazy searches e.g. book shops near work                                                                                                        | Maps     |
+| `define:`   | Traz um card de resposta do Google exibindo a definição de dicionário da palavra ou frase                                                                             | Advanced |
+| `cache:`    | Retorna o cache mais atualizado de uma página web indexada                                                                                                             | Advanced |
+| `weather:`  | Mostra o featured snippet de previsão do tempo para aquele local                                                                                                       | Advanced |
+| `stocks:`   | Retorna informações de ações para o ticker especificado                                                                                                                | Advanced |
+| `map:`      | Força resultados do Google Maps para uma consulta específica                                                                                                           | Advanced |
+| `movie:`    | Encontra informações do filme especificado (especialmente útil quando o filme tem nome ambíguo). Se o filme ainda estiver em cartaz, também retorna os horários das sessões | Advanced |
+| `source:`   | Use no Google News; retorna resultados da fonte especificada                                                                                                           | Advanced |
+| `loc:`      | Retorna resultados para um local específico                                                                                                                            | Advanced |
+| `location:` | Como acima, mas com o Google News                                                                                                                                      | Advanced |
+| `info:`     | Retorna informações relacionadas a um domínio (páginas com texto do domínio, páginas similares no site, cache etc.)                                                    | Advanced |
+| `near`      | Parte das buscas preguiçosas do Google Maps, ex.: livrarias perto do trabalho                                                                                          | Maps     |
 
-## Also see
+## Veja também
 
-- [Google Search Operators Cheat Sheet](https://static.semrush.com/blog/uploads/files/39/12/39121580a18160d3587274faed6323e2.pdf)
+- [Cheat sheet de operadores de busca do Google](https://static.semrush.com/blog/uploads/files/39/12/39121580a18160d3587274faed6323e2.pdf)
   _(static.semrush.com)_

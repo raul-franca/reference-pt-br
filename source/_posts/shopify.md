@@ -7,99 +7,99 @@ tags:
   -
   -
 categories:
-  - Keyboard Shortcuts
+  - Atalhos de Teclado
 intro: |
-  A visual cheat-sheet for the 50 keyboard shortcuts found on the Shopify website
+  Um cheat sheet visual para os 50 atalhos de teclado do site da Shopify
 ---
 
-## Keyboard Shortcuts
+## Atalhos de Teclado
 
-### General Shortcuts
+### Atalhos gerais
 
-| Shortcut    | Action                  |
+| Atalho      | Ação                    |
 | ----------- | ----------------------- |
-| `?`         | Keyboard help           |
-| `S`         | Focus search bar        |
-| `F`         | Focus filter bar        |
-| `B` `Y` `E` | Log out                 |
-| `M` `E`     | Your profile            |
-| `O` `S`     | Open the store switcher |
+| `?`         | Ajuda de teclado        |
+| `S`         | Foca a barra de pesquisa |
+| `F`         | Foca a barra de filtros |
+| `B` `Y` `E` | Sai da conta            |
+| `M` `E`     | Seu perfil              |
+| `O` `S`     | Abre o seletor de lojas |
 
 {.shortcuts}
 
-### Adding Items
+### Adicionando itens
 
-| Shortcut | Action         |
-| -------- | -------------- |
-| `A` `P`  | Add product    |
-| `A` `C`  | Add collection |
-| `A` `D`  | Add discount   |
-| `A` `O`  | Add order      |
-| `A` `U`  | Add customer   |
-| `A` `B`  | Add blog post  |
-| `A` `L`  | Add blog       |
-| `A` `G`  | Add page       |
-
-{.shortcuts}
-
-### Admin Panel I
-
-| Shortcut    | Action                         |
-| ----------- | ------------------------------ |
-| `G` `H`     | Go to home                     |
-| `G` `P` `P` | Go to products                 |
-| `G` `N`     | Go to analytics                |
-| `G` `D`     | Go to discounts                |
-| `G` `A`     | Go to apps                     |
-| `G` `B` `C` | Go to abandoned checkouts      |
-| `G` `P` `I` | Go to products, inventory      |
-| `G` `P` `G` | Go to products, gift cards     |
-| `G` `W` `B` | Go to online store, blog posts |
-| `G` `W` `T` | Go to online store, themes     |
-| `G` `W` `D` | Go to online store, domains    |
-| `G` `T` `L` | Go to settings, locations      |
+| Atalho   | Ação              |
+| -------- | ----------------- |
+| `A` `P`  | Adiciona produto  |
+| `A` `C`  | Adiciona coleção  |
+| `A` `D`  | Adiciona desconto |
+| `A` `O`  | Adiciona pedido   |
+| `A` `U`  | Adiciona cliente  |
+| `A` `B`  | Adiciona post do blog |
+| `A` `L`  | Adiciona blog     |
+| `A` `G`  | Adiciona página   |
 
 {.shortcuts}
 
-### Admin Panel II
+### Painel administrativo I
 
-| Shortcut    | Action                         |
-| ----------- | ------------------------------ |
-| `G` `S` `P` | Go to settings, payments       |
-| `G` `S` `S` | Go to settings, shipping       |
-| `G` `S` `N` | Go to settings, notifications  |
-| `G` `S` `F` | Go to settings, files          |
-| `G` `S` `W` | Go to settings, online store   |
-| `G` `S` `L` | Go to settings, sales channels |
-| `G` `O`     | Go to orders                   |
-| `G` `C`     | Go to customers                |
-| `G` `M`     | Go to marketing                |
-| `G` `L`     | Go to sales channels           |
-| `G` `S`     | Go to settings                 |
-| `G` `P` `T` | Go to products, transfers      |
-| `G` `P` `C` | Go to products, collections    |
+| Atalho      | Ação                            |
+| ----------- | ------------------------------- |
+| `G` `H`     | Vai para a página inicial       |
+| `G` `P` `P` | Vai para produtos               |
+| `G` `N`     | Vai para análises               |
+| `G` `D`     | Vai para descontos              |
+| `G` `A`     | Vai para apps                   |
+| `G` `B` `C` | Vai para checkouts abandonados  |
+| `G` `P` `I` | Vai para produtos, inventário   |
+| `G` `P` `G` | Vai para produtos, vales-presente |
+| `G` `W` `B` | Vai para loja online, posts do blog |
+| `G` `W` `T` | Vai para loja online, temas     |
+| `G` `W` `D` | Vai para loja online, domínios  |
+| `G` `T` `L` | Vai para configurações, locais  |
 
 {.shortcuts}
 
-### Admin Panel III
+### Painel administrativo II
 
-| Shortcut    | Action                        |
+| Atalho      | Ação                            |
+| ----------- | ------------------------------- |
+| `G` `S` `P` | Vai para configurações, pagamentos |
+| `G` `S` `S` | Vai para configurações, envio   |
+| `G` `S` `N` | Vai para configurações, notificações |
+| `G` `S` `F` | Vai para configurações, arquivos |
+| `G` `S` `W` | Vai para configurações, loja online |
+| `G` `S` `L` | Vai para configurações, canais de vendas |
+| `G` `O`     | Vai para pedidos                |
+| `G` `C`     | Vai para clientes               |
+| `G` `M`     | Vai para marketing              |
+| `G` `L`     | Vai para canais de vendas       |
+| `G` `S`     | Vai para configurações          |
+| `G` `P` `T` | Vai para produtos, transferências |
+| `G` `P` `C` | Vai para produtos, coleções     |
+
+{.shortcuts}
+
+### Painel administrativo III
+
+| Atalho      | Ação                          |
 | ----------- | ----------------------------- |
-| `G` `W` `O` | Go to online store, overview  |
-| `G` `W` `P` | Go to online store, pages     |
-| `G` `W` `N` | Go to line store, navigation  |
-| `G` `T` `O` | Go to point of sale, overview |
-| `G` `S` `G` | Go to settings, general       |
-| `G` `S` `C` | Go to settings, checkout      |
-| `G` `S` `X` | Go to settings, taxes         |
-| `G` `S` `I` | Go to settings, gift cards    |
-| `G` `S` `A` | Go to settings, account       |
-| `G` `S` `T` | Go to settings, point of sale |
-| `G` `S` `B` | Go to settings, billing       |
+| `G` `W` `O` | Vai para loja online, visão geral |
+| `G` `W` `P` | Vai para loja online, páginas |
+| `G` `W` `N` | Vai para loja online, navegação |
+| `G` `T` `O` | Vai para ponto de venda, visão geral |
+| `G` `S` `G` | Vai para configurações, geral |
+| `G` `S` `C` | Vai para configurações, checkout |
+| `G` `S` `X` | Vai para configurações, impostos |
+| `G` `S` `I` | Vai para configurações, vales-presente |
+| `G` `S` `A` | Vai para configurações, conta |
+| `G` `S` `T` | Vai para configurações, ponto de venda |
+| `G` `S` `B` | Vai para configurações, cobrança |
 
 {.shortcuts}
 
-## Also see
+## Veja também
 
-- [Keyboard shortcuts for Shopify](https://help.shopify.com/en/manual/productivity-tools/keyboard-shortcuts)
+- [Atalhos de teclado da Shopify](https://help.shopify.com/en/manual/productivity-tools/keyboard-shortcuts)
   _(help.shopify.com)_

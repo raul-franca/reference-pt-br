@@ -10,36 +10,36 @@ tags:
   - cheats
   - game
 categories:
-  - Game
-intro: A comprehensive reference for Minecraft Java Edition (1.20.x) commands.
+  - Jogos
+intro: Uma referência completa dos comandos do Minecraft Java Edition (1.20.x).
 ---
 
-## Target Selectors
+## Seletores de alvo
 
-| Selector | Description |
+| Seletor | Descrição |
 | :--- | :--- |
-| `@p` | Nearest player |
-| `@r` | Random player |
-| `@a` | All players |
-| `@e` | All entities (includes mobs, items, etc.) |
-| `@s` | The entity executing the command (Self) |
+| `@p` | Jogador mais próximo |
+| `@r` | Jogador aleatório |
+| `@a` | Todos os jogadores |
+| `@e` | Todas as entidades (inclui mobs, itens etc.) |
+| `@s` | A entidade que executa o comando (Self) |
 
-### Selector Arguments
+### Argumentos do seletor
 
-| Argument | Example | Description |
+| Argumento | Exemplo | Descrição |
 | :--- | :--- | :--- |
-| `type` | `@e[type=skeleton]` | Selects entities of a specific type |
-| `distance` | `@a[distance=..10]` | Selects within a radius (10 blocks) |
-| `limit` | `@e[limit=1]` | Limits the number of targets selected |
-| `sort` | `@a[sort=nearest]` | Sorts selection (nearest, furthest, random, arbitrary) |
-| `gamemode` | `@a[gamemode=creative]` | Selects players in a specific gamemode |
-| `level` | `@a[level=30..]` | Selects players with XP level 30 or higher |
+| `type` | `@e[type=skeleton]` | Seleciona entidades de um tipo específico |
+| `distance` | `@a[distance=..10]` | Seleciona dentro de um raio (10 blocos) |
+| `limit` | `@e[limit=1]` | Limita o número de alvos selecionados |
+| `sort` | `@a[sort=nearest]` | Ordena a seleção (nearest, furthest, random, arbitrary) |
+| `gamemode` | `@a[gamemode=creative]` | Seleciona jogadores em um modo de jogo específico |
+| `level` | `@a[level=30..]` | Seleciona jogadores com nível de XP 30 ou superior |
 
-## Core Commands
+## Comandos principais
 
 ### Teleport (/tp)
 
-Used to teleport entities to specific locations or other entities.
+Usado para teleportar entidades para locais específicos ou para outras entidades.
 
 ```mcfunction
 # Teleport yourself to coordinates
@@ -58,9 +58,9 @@ Used to teleport entities to specific locations or other entities.
 /tp @s ~ ~ ~ 90 0 (Faces South)
 ```
 
-### Game Mode (/gamemode)
+### Modo de jogo (/gamemode)
 
-Changes the player's game mode.
+Altera o modo de jogo do jogador.
 
 ```mcfunction
 # Survival Mode
@@ -79,9 +79,9 @@ Changes the player's game mode.
 /gamemode creative @a[distance=..20]
 ```
 
-### Give Items (/give)
+### Dar itens (/give)
 
-Gives items to players.
+Dá itens aos jogadores.
 
 ```mcfunction
 # Give a diamond sword
@@ -94,9 +94,9 @@ Gives items to players.
 /give @s diamond_pickaxe{Unbreakable:1b}
 ```
 
-### Experience (/xp or /experience)
+### Experiência (/xp ou /experience)
 
-Adds or removes experience points/levels.
+Adiciona ou remove pontos de experiência/níveis.
 
 ```mcfunction
 # Add 5 levels
@@ -109,11 +109,11 @@ Adds or removes experience points/levels.
 /xp query @s levels
 ```
 
-## World Management
+## Gerenciamento do mundo
 
-### Time (/time)
+### Tempo (/time)
 
-Sets or queries the world time.
+Define ou consulta o tempo do mundo.
 
 ```mcfunction
 # Set to day (1000 ticks)
@@ -132,9 +132,9 @@ Sets or queries the world time.
 /time add 5000
 ```
 
-### Weather (/weather)
+### Clima (/weather)
 
-Changes the weather.
+Altera o clima.
 
 ```mcfunction
 # Clear weather
@@ -150,18 +150,18 @@ Changes the weather.
 /weather clear 600
 ```
 
-### Gamerules (/gamerule)
+### Regras de jogo (/gamerule)
 
-Sets various rules for the world.
+Define várias regras para o mundo.
 
-| Rule | Description |
+| Regra | Descrição |
 | :--- | :--- |
-| `keepInventory` | If true, players keep items on death |
-| `doDaylightCycle` | If false, time is frozen |
-| `doMobSpawning` | If false, mobs won't spawn naturally |
-| `mobGriefing` | If false, creepers/endermen won't destroy blocks |
-| `doWeatherCycle` | If false, weather never changes |
-| `commandBlockOutput` | If false, command blocks don't spam chat |
+| `keepInventory` | Se verdadeiro, os jogadores mantêm os itens ao morrer |
+| `doDaylightCycle` | Se falso, o tempo fica congelado |
+| `doMobSpawning` | Se falso, os mobs não surgem naturalmente |
+| `mobGriefing` | Se falso, creepers/endermen não destroem blocos |
+| `doWeatherCycle` | Se falso, o clima nunca muda |
+| `commandBlockOutput` | Se falso, command blocks não floodam o chat |
 
 ```mcfunction
 # Enable keep inventory
@@ -171,11 +171,11 @@ Sets various rules for the world.
 /gamerule doInsomnia false
 ```
 
-## Entity & Block Manipulation
+## Manipulação de entidades e blocos
 
-### Effect (/effect)
+### Efeito (/effect)
 
-Manages status effects on entities.
+Gerencia efeitos de status em entidades.
 
 ```mcfunction
 # Give Speed II for 30 seconds
@@ -188,9 +188,9 @@ Manages status effects on entities.
 /effect clear @s
 ```
 
-### Fill (/fill)
+### Preencher (/fill)
 
-Fills a region with a specific block.
+Preenche uma região com um bloco específico.
 
 ```mcfunction
 # Fill a 10x10x10 cube with stone
@@ -203,9 +203,9 @@ Fills a region with a specific block.
 /fill ~ ~ ~ ~5 ~5 ~5 glass outline
 ```
 
-### Setblock (/setblock)
+### Definir bloco (/setblock)
 
-Changes a single block.
+Altera um único bloco.
 
 ```mcfunction
 # Place a torch at current location
@@ -215,9 +215,9 @@ Changes a single block.
 /setblock ~ ~-1 ~ stone destroy
 ```
 
-### Enchant (/enchant)
+### Encantar (/enchant)
 
-Enchants the item currently held.
+Encanta o item segurado no momento.
 
 ```mcfunction
 # Add Sharpness V
@@ -227,11 +227,11 @@ Enchants the item currently held.
 /enchant @s fortune 3
 ```
 
-## Utility Commands
+## Comandos utilitários
 
-### Locate (/locate)
+### Localizar (/locate)
 
-Finds the nearest structure or biome.
+Encontra a estrutura ou o bioma mais próximo.
 
 ```mcfunction
 # Find nearest village
@@ -241,9 +241,9 @@ Finds the nearest structure or biome.
 /locate biome cherry_grove
 ```
 
-### Kill (/kill)
+### Matar (/kill)
 
-Removes entities.
+Remove entidades.
 
 ```mcfunction
 # Kill yourself
@@ -258,7 +258,7 @@ Removes entities.
 
 ### Seed (/seed)
 
-Displays the world seed.
+Exibe a seed do mundo.
 
 ```mcfunction
 /seed

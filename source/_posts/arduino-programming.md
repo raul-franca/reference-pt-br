@@ -5,48 +5,48 @@ background: bg-[#387f83]
 label:
 tags: -cpp -I/O
 categories:
-  - Programming
+  - Programação
 intro: |
-  Ardunio programming cheat-sheet for I/O programming and  ardunio board programming.
+  Cheat sheet de programação do Arduino para programação de I/O e das placas Arduino.
 
 plugins:
   - copyCode
 ---
 
-## Getting Started
+## Primeiros passos
 
-### Gather Necessary Materials
+### Reúna os materiais necessários
 
-- Arduino Board: Any model, such as Arduino Uno, Mega, Nano, etc.
-- USB Cable: Compatible with your Arduino board (commonly USB Type-A to Type-B for Uno).
-- Computer: Windows, macOS, or Linux.
+- Placa Arduino: qualquer modelo, como Arduino Uno, Mega, Nano etc.
+- Cabo USB: compatível com sua placa Arduino (geralmente USB Type-A para Type-B no Uno).
+- Computador: Windows, macOS ou Linux.
 
-### Install the Arduino IDE
+### Instale a Arduino IDE
 
 - windows/mac/linux
-- Go to the Arduino Software page.
-- Download the os installer.
-- Run the installer and follow the instructions.
+- Acesse a página do Arduino Software.
+- Baixe o instalador do sistema operacional.
+- Execute o instalador e siga as instruções.
 
-### Connect Your Arduino Board
+### Conecte sua placa Arduino
 
-- Connect the Arduino board to your computer using the USB cable.
-- The power LED on the Arduino should light up, indicating it’s receiving power.
+- Conecte a placa Arduino ao computador usando o cabo USB.
+- O LED de alimentação do Arduino deve acender, indicando que ele está recebendo energia.
 
-### Configure the Arduino IDE
+### Configure a Arduino IDE
 
-- Open the Arduino IDE.
-- Select Your Board:
-- Go to Tools > Board and select the model of your Arduino board (e.g., Arduino Uno).
+- Abra a Arduino IDE.
+- Selecione sua placa:
+- Vá em Tools > Board e selecione o modelo da sua placa Arduino (ex.: Arduino Uno).
 
-- Select the Port:
+- Selecione a porta:
 
-- Go to Tools > Port and select the port that the Arduino is connected to (it usually shows as COMx on Windows,
-  /dev/cu.usbmodemxxxx on macOS, and /dev/ttyUSBx on Linux).
+- Vá em Tools > Port e selecione a porta à qual o Arduino está conectado (normalmente aparece como COMx no Windows,
+  /dev/cu.usbmodemxxxx no macOS e /dev/ttyUSBx no Linux).
 
-## Basic Structure
+## Estrutura básica
 
-### Setup and Loop
+### Setup e Loop
 
 ```cpp
 void setup() {
@@ -58,7 +58,7 @@ void loop() {
 }
 ```
 
-### Comment
+### Comentários
 
 ```cpp
 // Single-line comment
@@ -69,7 +69,7 @@ comment
 */
 ```
 
-### Variable
+### Variáveis
 
 ```cpp
 int ledPin = 13; // Integer
@@ -78,13 +78,13 @@ char letter = 'A'; // Character
 String text = "Hello"; // String
 ```
 
-### Pin Modes
+### Modos de pin
 
 ```cpp
 pinMode(pin, mode);
 ```
 
-### Digital I/O
+### I/O digital
 
 ```cpp
 digitalWrite(pin, value);
@@ -92,7 +92,7 @@ int value = digitalRead(pin);
 
 ```
 
-### Analog I/O
+### I/O analógico
 
 ```cpp
 analogWrite(pin, value);
@@ -100,22 +100,22 @@ int value = analogRead(pin);
 
 ```
 
-## Serial Communication
+## Comunicação serial
 
-### Begin Serial Communication
+### Iniciar a comunicação serial
 
 ```cpp
 Serial.begin(baudRate);
 ```
 
-### Print to Serial Monitor
+### Imprimir no monitor serial
 
 ```cpp
 Serial.print(data);
 Serial.println(data);
 ```
 
-### Read from Serial Monitor
+### Ler do monitor serial
 
 ```cpp
 if (Serial.available()) {
@@ -123,9 +123,9 @@ if (Serial.available()) {
 }
 ```
 
-## Control Structures
+## Estruturas de controle
 
-### If Statement
+### Instrução if
 
 ```cpp
 if (condition) {
@@ -135,7 +135,7 @@ if (condition) {
 }
 ```
 
-### For Loop
+### Laço for
 
 ```cpp
 for (initialization; condition; increment) {
@@ -143,7 +143,7 @@ for (initialization; condition; increment) {
 }
 ```
 
-### While Loop
+### Loop while
 
 ```cpp
 while (condition) {
@@ -151,7 +151,7 @@ while (condition) {
 }
 ```
 
-### Functions
+### Funções
 
 ```cpp
 returnType functionName(parameters) {
@@ -160,15 +160,15 @@ returnType functionName(parameters) {
 }
 ```
 
-## Libraries
+## Bibliotecas
 
-### Include a Library
+### Incluir uma biblioteca
 
 ```cpp
 #include <LibraryName.h>
 ```
 
-### Using a Library
+### Usando uma biblioteca
 
 ```cpp
 #include <Servo.h>
@@ -187,7 +187,7 @@ void loop() {
 }
 ```
 
-## Common Functions
+## Funções comuns
 
 ### Delay
 
@@ -225,9 +225,9 @@ randomSeed(analogRead(0)); // Seed from analog pin 0
 
 ```
 
-## Sensors and Modules
+## Sensores e módulos
 
-### Reading Temperature with DHT Sensor
+### Lendo temperatura com o sensor DHT
 
 ```cpp
 #include <DHT.h>
@@ -257,7 +257,7 @@ void loop() {
 }
 ```
 
-### Blinking LED
+### Piscar LED
 
 ```cpp
 const int ledPin = 13;
@@ -275,7 +275,7 @@ void loop() {
 
 ```
 
-### Read Button Input
+### Ler entrada de botão
 
 ```cpp
 const int buttonPin = 2;  // Pin where the push button is connected
@@ -299,7 +299,7 @@ void loop() {
 
 ```
 
-### Analog Input
+### Entrada analógica
 
 ```cpp
 const int potPin = A0;    // Pin where the potentiometer is connected
@@ -320,7 +320,7 @@ void loop() {
 
 ```
 
-### Serial Communication
+### Comunicação serial
 
 ```cpp
 void setup() {
@@ -335,7 +335,7 @@ void loop() {
 
 ```
 
-### Temperature Sensor
+### Sensor de temperatura
 
 ```cpp
 const int tempPin = A0;  // Pin where the TMP36 sensor is connected
@@ -358,7 +358,7 @@ void loop() {
 
 ```
 
-### RGB LED Control
+### Controle de LED RGB
 
 ```cpp
 const int redPin = 9;
@@ -389,7 +389,7 @@ void loop() {
 
 ```
 
-### Ultrasonic Sensor
+### Sensor ultrassônico
 
 ```cpp
 const int trigPin = 9;
@@ -421,7 +421,7 @@ void loop() {
 }
 ```
 
-### Controlling a Servo Motor
+### Controlando um servo motor
 
 ```cpp
 #include <Servo.h>
@@ -443,7 +443,7 @@ void loop() {
 
 ```
 
-### Displaying Text on an LCD
+### Exibindo texto em um LCD
 
 ```cpp
 #include <LiquidCrystal.h>
@@ -466,9 +466,9 @@ void loop() {
 }
 ```
 
-## Wireless Communication with NRF24L01
+## Comunicação sem fio com NRF24L01
 
-### Transmitter Code
+### Código do transmissor
 
 ```cpp
 #include <SPI.h>
@@ -493,7 +493,7 @@ void loop() {
 }
 ```
 
-### Receiver Code
+### Código do receptor
 
 ```cpp
 #include <SPI.h>
@@ -522,6 +522,6 @@ void loop() {
 
 ```
 
-## Also Read
+## Leia também
 
-- [Ardunio](https://www.arduino.cc/en/software)
+- [Arduino](https://www.arduino.cc/en/software)

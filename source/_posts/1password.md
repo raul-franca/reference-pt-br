@@ -7,344 +7,344 @@ tags:
   - tools
   -
 categories:
-  - Keyboard Shortcuts
+  - Atalhos de Teclado
 intro: |
-  A cheat sheet for 1password's keyboard shortcuts in Mac, Windows, iOS, Linux.
+  Uma cheat sheet para os atalhos de teclado do 1Password no Mac, Windows, iOS e Linux.
 ---
 
-## 1Password Keyboard Shortcuts for Mac
+## Atalhos de teclado do 1Password para Mac
 
-### Global keyboard shortcuts
+### Atalhos de teclado globais
 
-| `Shortcut`               | Action             |
-| ------------------------ | ------------------ |
-| Enter your own shortcut. | Show 1Password.    |
-| `Shift` `cmd` `Space`    | Show Quick Access. |
-| `Shift` `cmd` `L`        | Lock 1Password.    |
-| `cmd` `\`                | Autofill.          |
+| `Shortcut`               | Ação                 |
+| ------------------------ | -------------------- |
+| Enter your own shortcut. | Mostra o 1Password.  |
+| `Shift` `cmd` `Space`    | Mostra o Quick Access. |
+| `Shift` `cmd` `L`        | Bloqueia o 1Password. |
+| `cmd` `\`                | Preenche automaticamente. |
 
 {.shortcuts}
 
-### 1Password app {.row-span-2}
+### App do 1Password {.row-span-2}
 
-| `Shortcut`         | Action                                                                                       |
+| `Shortcut`         | Ação                                                                                         |
 | ------------------ | -------------------------------------------------------------------------------------------- |
-| `cmd` `/`          | View keyboard shortcuts.                                                                     |
-| `cmd` `,`          | Open preferences.                                                                            |
-| `cmd` `F`          | Search for items.                                                                            |
-| `Option` `cmd` `F` | Find items in the current list.                                                              |
-| `Esc`              | Clear the search field.                                                                      |
-| `cmd` `1`          | Switch to All Accounts.                                                                      |
-| `cmd` `2...9`      | Switch accounts and collections.                                                             |
-| `cmd` `[`          | Go back.                                                                                     |
-| `cmd` `]`          | Go forward.                                                                                  |
-| `Down Arrow`       | Focus next row.                                                                              |
-| `Up Arrow`         | Focus previous row.                                                                          |
-| `Right Arrow`      | Focus right section.                                                                         |
-| `Left Arrow`       | Focus left section.                                                                          |
-| `Return or Space`  | Activate focused element.                                                                    |
-| `cmd` `C`          | Copy the username or primary field of the selected.                                          |
-| `Shift` `cmd` `C`  | Copy the password of the selected.                                                           |
-| `Option` `cmd` `C` | Copy the one-time password of the selected.                                                  |
-| `Shift` `cmd` `F`  | Open the website for the selected login in your browser and fill your username and password. |
-| `cmd` `O`          | Open the selected in a new window.                                                           |
-| `cmd` `N`          | Create a new item.                                                                           |
-| `cmd` `E`          | Edit the selected.                                                                           |
-| `cmd` `S`          | Save changes to an item.                                                                     |
-| `Esc`              | Cancel an edit.                                                                              |
-| `cmd` `R`          | Reveal or conceal secure fields in the selected.                                             |
-| `Option`           | Temporarily reveal all secure fields in the selected.\*                                      |
-| `Delete`           | Move the selected(s) to the Archive.                                                         |
-| `cmd` `Delete`     | Delete the selected(s).                                                                      |
-| `Shift` `cmd` `D`  | Collapse or expand the sidebar.                                                              |
-| `cmd` `+`          | Zoom in.                                                                                     |
-| `cmd` `-`          | Zoom out.                                                                                    |
-| `cmd` `0`          | Revert to actual size.                                                                       |
-| `cmd` `M`          | Minimize the app to the Dock.                                                                |
-| `cmd` `W`          | Close the current window.                                                                    |
+| `cmd` `/`          | Exibe os atalhos de teclado.                                                                 |
+| `cmd` `,`          | Abre as preferências.                                                                        |
+| `cmd` `F`          | Pesquisa itens.                                                                              |
+| `Option` `cmd` `F` | Localiza itens na lista atual.                                                               |
+| `Esc`              | Limpa o campo de pesquisa.                                                                   |
+| `cmd` `1`          | Alterna para Todas as Contas.                                                                |
+| `cmd` `2...9`      | Alterna entre contas e coleções.                                                             |
+| `cmd` `[`          | Volta.                                                                                       |
+| `cmd` `]`          | Avança.                                                                                      |
+| `Down Arrow`       | Foca a próxima linha.                                                                        |
+| `Up Arrow`         | Foca a linha anterior.                                                                       |
+| `Right Arrow`      | Foca a seção à direita.                                                                      |
+| `Left Arrow`       | Foca a seção à esquerda.                                                                     |
+| `Return or Space`  | Ativa o elemento em foco.                                                                    |
+| `cmd` `C`          | Copia o nome de usuário ou o campo principal do item selecionado.                            |
+| `Shift` `cmd` `C`  | Copia a senha do item selecionado.                                                           |
+| `Option` `cmd` `C` | Copia a senha de uso único do item selecionado.                                              |
+| `Shift` `cmd` `F`  | Abre o site do login selecionado no navegador e preenche seu nome de usuário e senha.        |
+| `cmd` `O`          | Abre o item selecionado em uma nova janela.                                                  |
+| `cmd` `N`          | Cria um novo item.                                                                           |
+| `cmd` `E`          | Edita o item selecionado.                                                                    |
+| `cmd` `S`          | Salva as alterações em um item.                                                              |
+| `Esc`              | Cancela uma edição.                                                                          |
+| `cmd` `R`          | Exibe ou oculta os campos seguros do item selecionado.                                       |
+| `Option`           | Exibe temporariamente todos os campos seguros do item selecionado.\*                         |
+| `Delete`           | Move o(s) item(ns) selecionado(s) para o Arquivo.                                            |
+| `cmd` `Delete`     | Exclui o(s) item(ns) selecionado(s).                                                         |
+| `Shift` `cmd` `D`  | Recolhe ou expande a barra lateral.                                                          |
+| `cmd` `+`          | Aumenta o zoom.                                                                              |
+| `cmd` `-`          | Diminui o zoom.                                                                              |
+| `cmd` `0`          | Volta ao tamanho real.                                                                       |
+| `cmd` `M`          | Minimiza o app no Dock.                                                                      |
+| `cmd` `W`          | Fecha a janela atual.                                                                        |
 
 {.shortcuts}
 
-### 1Password in the browser {.row-span-2}
+### 1Password no navegador {.row-span-2}
 
-| `Shortcut`                  | Action                                                                                    |
+| `Shortcut`                  | Ação                                                                                      |
 | --------------------------- | ----------------------------------------------------------------------------------------- |
-| `Shift` `cmd` `X`           | Open or close the 1Password pop-up in Chrome, Edge, Brave, or Safari.                     |
-| `cmd` `.`                   | Open or close the 1Password pop-up in Firefox.                                            |
-| `cmd` `F`                   | Search for items.                                                                         |
-| `Esc`                       | Clear the search field.                                                                   |
-| `cmd` `D`                   | Show the list of vaults.                                                                  |
-| `cmd` `Down Arrow`          | Open or close the category menu.                                                          |
-| `Down Arrow`                | Select the next category, item, or field.                                                 |
-| `Up Arrow`                  | Select the previous category, item, or field.                                             |
-| `Right Arrow`               | Select the item details.                                                                  |
-| `Left Arrow`                | Select the item list.                                                                     |
-| `Space`                     | Expand item overview banners.                                                             |
-| `Return`                    | Copy the selected detail.Perform the default action for the selected.                     |
-| `cmd` `C`                   | Copy the username of the selected.                                                        |
-| `Shift` `cmd` `C`           | Copy the password of the selected.                                                        |
-| `Control` `Shift` `cmd` `C` | Copy the one-time password of the selected.                                               |
-| `cmd` `Return`              | Open the website for the selected login in a new tab and fill your username and password. |
-| `cmd` `O`                   | Open the selected in a separate window.                                                   |
-| `cmd` `I`                   | Create a new item.                                                                        |
-| `cmd` `E`                   | Edit the selected.                                                                        |
-| `Control` `Option`          | Temporarily reveal all secure fields in the selected.                                     |
-| `cmd` `G`                   | Show the password generator.                                                              |
-| `cmd` `C`                   | Copy a password from the password generator.                                              |
-| `Shift` `cmd` `L`           | Lock 1Password.                                                                           |
-| `Esc`                       | Close the 1Password pop-up.                                                               |
+| `Shift` `cmd` `X`           | Abre ou fecha o pop-up do 1Password no Chrome, Edge, Brave ou Safari.                     |
+| `cmd` `.`                   | Abre ou fecha o pop-up do 1Password no Firefox.                                           |
+| `cmd` `F`                   | Pesquisa itens.                                                                           |
+| `Esc`                       | Limpa o campo de pesquisa.                                                                |
+| `cmd` `D`                   | Exibe a lista de cofres.                                                                  |
+| `cmd` `Down Arrow`          | Abre ou fecha o menu de categorias.                                                       |
+| `Down Arrow`                | Seleciona a próxima categoria, item ou campo.                                             |
+| `Up Arrow`                  | Seleciona a categoria, item ou campo anterior.                                            |
+| `Right Arrow`               | Seleciona os detalhes do item.                                                            |
+| `Left Arrow`                | Seleciona a lista de itens.                                                               |
+| `Space`                     | Expande os banners de visão geral do item.                                                |
+| `Return`                    | Copia o detalhe selecionado.Executa a ação padrão do item selecionado.                    |
+| `cmd` `C`                   | Copia o nome de usuário do item selecionado.                                              |
+| `Shift` `cmd` `C`           | Copia a senha do item selecionado.                                                        |
+| `Control` `Shift` `cmd` `C` | Copia a senha de uso único do item selecionado.                                           |
+| `cmd` `Return`              | Abre o site do login selecionado em uma nova aba e preenche seu nome de usuário e senha.  |
+| `cmd` `O`                   | Abre o item selecionado em uma janela separada.                                           |
+| `cmd` `I`                   | Cria um novo item.                                                                        |
+| `cmd` `E`                   | Edita o item selecionado.                                                                 |
+| `Control` `Option`          | Exibe temporariamente todos os campos seguros do item selecionado.                        |
+| `cmd` `G`                   | Exibe o gerador de senhas.                                                                |
+| `cmd` `C`                   | Copia uma senha do gerador de senhas.                                                     |
+| `Shift` `cmd` `L`           | Bloqueia o 1Password.                                                                     |
+| `Esc`                       | Fecha o pop-up do 1Password.                                                              |
 
 {.shortcuts}
 
 ### Quick Access
 
-| `Shortcut`            | Action                                                                              |
+| `Shortcut`            | Ação                                                                                |
 | --------------------- | ----------------------------------------------------------------------------------- |
-| `Shift` `cmd` `Space` | Open or close Quick Access.                                                         |
-| `Esc`                 | Clear the search field.                                                             |
-| `cmd` `1...9`         | Switch accounts or collections.                                                     |
-| `Right Arrow`         | View all available actions.                                                         |
-| `cmd` `C`             | Copy username or primary field.                                                     |
-| `Shift` `cmd` `C`     | Copy password.                                                                      |
-| `Option` `cmd` `C`    | Copy one-time password.                                                             |
-| `cmd` `O`             | Open item details in new window.                                                    |
-| `Option` `Return`     | Open the website for the login in your browser and fill your username and password. |
-| `Shift` `Return`      | Fill the item in the currently focused app.                                         |
-| `Shift` `cmd` `O`     | Open the item in the app.                                                           |
+| `Shift` `cmd` `Space` | Abre ou fecha o Quick Access.                                                       |
+| `Esc`                 | Limpa o campo de pesquisa.                                                          |
+| `cmd` `1...9`         | Alterna entre contas ou coleções.                                                   |
+| `Right Arrow`         | Exibe todas as ações disponíveis.                                                   |
+| `cmd` `C`             | Copia o nome de usuário ou o campo principal.                                       |
+| `Shift` `cmd` `C`     | Copia a senha.                                                                      |
+| `Option` `cmd` `C`    | Copia a senha de uso único.                                                         |
+| `cmd` `O`             | Abre os detalhes do item em uma nova janela.                                        |
+| `Option` `Return`     | Abre o site do login no navegador e preenche seu nome de usuário e senha.           |
+| `Shift` `Return`      | Preenche o item no app em foco.                                                     |
+| `Shift` `cmd` `O`     | Abre o item no app.                                                                 |
 
 {.shortcuts}
 
-## 1Password Keyboard Shortcuts for iOS
+## Atalhos de teclado do 1Password para iOS
 
-### 1Password app (I)
+### App do 1Password (I)
 
-| `Shortcut`    | Action                           |
+| `Shortcut`    | Ação                             |
 | ------------- | -------------------------------- |
-| `cmd` `,`     | Open settings.                   |
-| `cmd` `F`     | Search for items.                |
-| `cmd` `.`     | Clear the search field.          |
-| `cmd` `1`     | Switch to All Accounts.          |
-| `cmd` `2...9` | Switch accounts and collections. |
-| `cmd` `[`     | Go back.                         |
-| `cmd` `]`     | Go forward.                      |
-| `Down Arrow`  | Focus next item.                 |
+| `cmd` `,`     | Abre as configurações.           |
+| `cmd` `F`     | Pesquisa itens.                  |
+| `cmd` `.`     | Limpa o campo de pesquisa.       |
+| `cmd` `1`     | Alterna para Todas as Contas.    |
+| `cmd` `2...9` | Alterna entre contas e coleções. |
+| `cmd` `[`     | Volta.                           |
+| `cmd` `]`     | Avança.                          |
+| `Down Arrow`  | Foca o próximo item.             |
 
 {.shortcuts}
 
-### 1Password app (II)
+### App do 1Password (II)
 
-| `Shortcut`         | Action                                              |
-| ------------------ | --------------------------------------------------- |
-| `Up Arrow`         | Focus previous item.                                |
-| `Space`            | Activate focused item.                              |
-| `cmd` `C`          | Copy the username or primary field of the selected. |
-| `Shift` `cmd` `C`  | Copy the password of the selected.                  |
-| `Option` `cmd` `C` | Copy the one-time password of the selected.         |
-| `cmd` `O`          | Open the selected in a separate window.             |
-| `cmd` `E`          | Edit the selected.                                  |
-
-{.shortcuts}
-
-### 1Password app (III)
-
-| `Shortcut`        | Action                               |
-| ----------------- | ------------------------------------ |
-| `cmd` `S`         | Save changes to an item.             |
-| `cmd` `.`         | Cancel an edit.                      |
-| `cmd` `D`         | Add the selected to your favorites.  |
-| `Delete`          | Move the selected(s) to the Archive. |
-| `cmd` `Delete`    | Delete the selected(s).              |
-| `Shift` `cmd` `D` | Collapse or expand the sidebar.      |
-| `Shift` `cmd` `L` | Lock 1Password.                      |
+| `Shortcut`         | Ação                                                                |
+| ------------------ | ------------------------------------------------------------------- |
+| `Up Arrow`         | Foca o item anterior.                                               |
+| `Space`            | Ativa o item em foco.                                               |
+| `cmd` `C`          | Copia o nome de usuário ou o campo principal do item selecionado.   |
+| `Shift` `cmd` `C`  | Copia a senha do item selecionado.                                  |
+| `Option` `cmd` `C` | Copia a senha de uso único do item selecionado.                     |
+| `cmd` `O`          | Abre o item selecionado em uma janela separada.                     |
+| `cmd` `E`          | Edita o item selecionado.                                           |
 
 {.shortcuts}
 
-## 1Password Keyboard Shortcuts for Windows
+### App do 1Password (III)
 
-### Global keyboard shortcuts
-
-| `Shortcut`                 | Action             |
-| -------------------------- | ------------------ |
-| `Enter your own shortcut.` | Show 1Password.    |
-| `Ctrl` `Shift` `Space`     | Show Quick Access. |
-| `Ctrl` `Shift` `L`         | Lock 1Password.    |
-| `Ctrl` `\`                 | Fill in Browser.   |
+| `Shortcut`        | Ação                                  |
+| ----------------- | ------------------------------------- |
+| `cmd` `S`         | Salva as alterações em um item.       |
+| `cmd` `.`         | Cancela uma edição.                   |
+| `cmd` `D`         | Adiciona o item selecionado aos favoritos. |
+| `Delete`          | Move o(s) item(ns) selecionado(s) para o Arquivo. |
+| `cmd` `Delete`    | Exclui o(s) item(ns) selecionado(s).  |
+| `Shift` `cmd` `D` | Recolhe ou expande a barra lateral.   |
+| `Shift` `cmd` `L` | Bloqueia o 1Password.                 |
 
 {.shortcuts}
 
-### 1Password app {.row-span-2}
+## Atalhos de teclado do 1Password para Windows
 
-| `Shortcut`          | Action                                                                                       |
+### Atalhos de teclado globais
+
+| `Shortcut`                 | Ação                  |
+| -------------------------- | --------------------- |
+| `Enter your own shortcut.` | Mostra o 1Password.   |
+| `Ctrl` `Shift` `Space`     | Mostra o Quick Access. |
+| `Ctrl` `Shift` `L`         | Bloqueia o 1Password. |
+| `Ctrl` `\`                 | Preenche no navegador. |
+
+{.shortcuts}
+
+### App do 1Password {.row-span-2}
+
+| `Shortcut`          | Ação                                                                                         |
 | ------------------- | -------------------------------------------------------------------------------------------- |
-| `Ctrl` `Shift` `/`  | View keyboard shortcuts.                                                                     |
-| `Ctrl` `,`          | Open settings.                                                                               |
-| `Ctrl` `F`          | Search for items.                                                                            |
-| `Ctrl` `Alt` `F`    | Find items in the current list.                                                              |
-| `Esc`               | Clear the search field.                                                                      |
-| `Ctrl` `1`          | Switch to All Accounts.                                                                      |
-| `Ctrl` `2...9`      | Switch accounts and collections.                                                             |
-| `Alt` `Left Arrow`  | Go back.                                                                                     |
-| `Alt` `Right Arrow` | Go forward.                                                                                  |
-| `Down Arrow`        | Focus next row.                                                                              |
-| `Up Arrow`          | Focus previous row.                                                                          |
-| `Right Arrow`       | Focus right section.                                                                         |
-| `Left Arrow`        | Focus left section.                                                                          |
-| `Space`             | Activate focused element.                                                                    |
-| `Ctrl` `C`          | Copy the username or primary field of the selected.                                          |
-| `Ctrl` `Shift` `C`  | Copy the password of the selected.                                                           |
-| `Ctrl` `Alt` `C`    | Copy the one-time password of the selected.                                                  |
-| `Ctrl` `Shift` `F`  | Open the website for the selected login in your browser and fill your username and password. |
-| `Ctrl` `O`          | Open the selected in a new window.                                                           |
-| `Ctrl` `N`          | Create a new item.                                                                           |
-| `Ctrl` `E`          | Edit the selected.                                                                           |
-| `Ctrl` `S`          | Save changes to an item.                                                                     |
-| `Esc`               | Cancel an edit.                                                                              |
-| `Ctrl` `R`          | Reveal or conceal secure fields in the selected.                                             |
-| `Ctrl` `Alt`        | Temporarily reveal all secure fields in the selected.\*                                      |
-| `Delete`            | Move the selected(s) to the Archive.                                                         |
-| `Ctrl` `Delete`     | Delete the selected(s).                                                                      |
-| `Ctrl` `Shift` `D`  | Collapse or expand the sidebar.                                                              |
-| `Ctrl` `+`          | Zoom in.                                                                                     |
-| `Ctrl` `-`          | Zoom out.                                                                                    |
-| `Ctrl` `0`          | Revert to actual size.                                                                       |
+| `Ctrl` `Shift` `/`  | Exibe os atalhos de teclado.                                                                 |
+| `Ctrl` `,`          | Abre as configurações.                                                                       |
+| `Ctrl` `F`          | Pesquisa itens.                                                                              |
+| `Ctrl` `Alt` `F`    | Localiza itens na lista atual.                                                               |
+| `Esc`               | Limpa o campo de pesquisa.                                                                   |
+| `Ctrl` `1`          | Alterna para Todas as Contas.                                                                |
+| `Ctrl` `2...9`      | Alterna entre contas e coleções.                                                             |
+| `Alt` `Left Arrow`  | Volta.                                                                                       |
+| `Alt` `Right Arrow` | Avança.                                                                                      |
+| `Down Arrow`        | Foca a próxima linha.                                                                        |
+| `Up Arrow`          | Foca a linha anterior.                                                                       |
+| `Right Arrow`       | Foca a seção à direita.                                                                      |
+| `Left Arrow`        | Foca a seção à esquerda.                                                                     |
+| `Space`             | Ativa o elemento em foco.                                                                    |
+| `Ctrl` `C`          | Copia o nome de usuário ou o campo principal do item selecionado.                            |
+| `Ctrl` `Shift` `C`  | Copia a senha do item selecionado.                                                           |
+| `Ctrl` `Alt` `C`    | Copia a senha de uso único do item selecionado.                                              |
+| `Ctrl` `Shift` `F`  | Abre o site do login selecionado no navegador e preenche seu nome de usuário e senha.        |
+| `Ctrl` `O`          | Abre o item selecionado em uma nova janela.                                                  |
+| `Ctrl` `N`          | Cria um novo item.                                                                           |
+| `Ctrl` `E`          | Edita o item selecionado.                                                                    |
+| `Ctrl` `S`          | Salva as alterações em um item.                                                              |
+| `Esc`               | Cancela uma edição.                                                                          |
+| `Ctrl` `R`          | Exibe ou oculta os campos seguros do item selecionado.                                       |
+| `Ctrl` `Alt`        | Exibe temporariamente todos os campos seguros do item selecionado.\*                         |
+| `Delete`            | Move o(s) item(ns) selecionado(s) para o Arquivo.                                            |
+| `Ctrl` `Delete`     | Exclui o(s) item(ns) selecionado(s).                                                         |
+| `Ctrl` `Shift` `D`  | Recolhe ou expande a barra lateral.                                                          |
+| `Ctrl` `+`          | Aumenta o zoom.                                                                              |
+| `Ctrl` `-`          | Diminui o zoom.                                                                              |
+| `Ctrl` `0`          | Volta ao tamanho real.                                                                       |
 
 {.shortcuts}
 
-### 1Password in the browser {.row-span-2}
+### 1Password no navegador {.row-span-2}
 
-| `Shortcut`               | Action                                                                                    |
+| `Shortcut`               | Ação                                                                                      |
 | ------------------------ | ----------------------------------------------------------------------------------------- |
-| `Ctrl` `Shift` `X`       | Open or close the 1Password pop-up in Chrome, Edge, or Brave.                             |
-| `Ctrl` `.`               | Open or close the 1Password pop-up in Firefox.                                            |
-| `Ctrl` `F`               | Search for items.                                                                         |
-| `Esc`                    | Clear the search field.                                                                   |
-| `Ctrl` `D`               | Show the list of vaults.                                                                  |
-| `Ctrl` `Down Arrow`      | Open or close the category menu.                                                          |
-| `Down Arrow`             | Select the next category, item, or field.                                                 |
-| `Up Arrow`               | Select the previous category, item, or field.                                             |
-| `Right Arrow`            | Select the item details.                                                                  |
-| `Left Arrow`             | Select the item list.                                                                     |
-| `Space`                  | Expand item overview banners.                                                             |
-| `Enter`                  | Copy the selected detail.Perform the default action for the selected.                     |
-| `Ctrl` `C`               | Copy the username of the selected.                                                        |
-| `Ctrl` `Shift` `C`       | Copy the password of the selected.                                                        |
-| `Ctrl` `Shift` `Win` `C` | Copy the one-time password of the selected.                                               |
-| `Ctrl` `Enter`           | Open the website for the selected login in a new tab and fill your username and password. |
-| `Ctrl` `O`               | Open the selected in a separate window.                                                   |
-| `Ctrl` `I`               | Create new item.                                                                          |
-| `Ctrl` `E`               | Edit the selected.                                                                        |
-| `Ctrl` `Alt`             | Temporarily reveal all secure fields in the selected.                                     |
-| `Ctrl` `G`               | Show the password generator.                                                              |
-| `Ctrl` `C`               | Copy a password from the password generator.                                              |
-| `Ctrl` `Shift` `L`       | Lock 1Password.                                                                           |
-| `Esc`                    | Close the 1Password pop-up.                                                               |
+| `Ctrl` `Shift` `X`       | Abre ou fecha o pop-up do 1Password no Chrome, Edge ou Brave.                             |
+| `Ctrl` `.`               | Abre ou fecha o pop-up do 1Password no Firefox.                                           |
+| `Ctrl` `F`               | Pesquisa itens.                                                                           |
+| `Esc`                    | Limpa o campo de pesquisa.                                                                |
+| `Ctrl` `D`               | Exibe a lista de cofres.                                                                  |
+| `Ctrl` `Down Arrow`      | Abre ou fecha o menu de categorias.                                                       |
+| `Down Arrow`             | Seleciona a próxima categoria, item ou campo.                                             |
+| `Up Arrow`               | Seleciona a categoria, item ou campo anterior.                                            |
+| `Right Arrow`            | Seleciona os detalhes do item.                                                            |
+| `Left Arrow`             | Seleciona a lista de itens.                                                               |
+| `Space`                  | Expande os banners de visão geral do item.                                                |
+| `Enter`                  | Copia o detalhe selecionado.Executa a ação padrão do item selecionado.                    |
+| `Ctrl` `C`               | Copia o nome de usuário do item selecionado.                                              |
+| `Ctrl` `Shift` `C`       | Copia a senha do item selecionado.                                                        |
+| `Ctrl` `Shift` `Win` `C` | Copia a senha de uso único do item selecionado.                                           |
+| `Ctrl` `Enter`           | Abre o site do login selecionado em uma nova aba e preenche seu nome de usuário e senha.  |
+| `Ctrl` `O`               | Abre o item selecionado em uma janela separada.                                           |
+| `Ctrl` `I`               | Cria um novo item.                                                                        |
+| `Ctrl` `E`               | Edita o item selecionado.                                                                 |
+| `Ctrl` `Alt`             | Exibe temporariamente todos os campos seguros do item selecionado.                        |
+| `Ctrl` `G`               | Exibe o gerador de senhas.                                                                |
+| `Ctrl` `C`               | Copia uma senha do gerador de senhas.                                                     |
+| `Ctrl` `Shift` `L`       | Bloqueia o 1Password.                                                                     |
+| `Esc`                    | Fecha o pop-up do 1Password.                                                              |
 
 {.shortcuts}
 
 ### Quick Access
 
-| `Shortcut`             | Action                                                                              |
+| `Shortcut`             | Ação                                                                                |
 | ---------------------- | ----------------------------------------------------------------------------------- |
-| `Ctrl` `Shift` `Space` | Open or close Quick Access.                                                         |
-| `Esc`                  | Clear the search field.                                                             |
-| `Ctrl` `1...9`         | Switch accounts or collections.                                                     |
-| `Right Arrow`          | View all available actions.                                                         |
-| `Ctrl` `C`             | Copy username or primary field.                                                     |
-| `Ctrl` `Shift` `C`     | Copy password.                                                                      |
-| `Ctrl` `Alt` `C`       | Copy one-time password.                                                             |
-| `Ctrl` `O`             | Open item details in new window.                                                    |
-| `Alt` `Enter`          | Open the website for the login in your browser and fill your username and password. |
-| `Ctrl` `Shift` `O`     | Open the item in the app.                                                           |
+| `Ctrl` `Shift` `Space` | Abre ou fecha o Quick Access.                                                       |
+| `Esc`                  | Limpa o campo de pesquisa.                                                          |
+| `Ctrl` `1...9`         | Alterna entre contas ou coleções.                                                   |
+| `Right Arrow`          | Exibe todas as ações disponíveis.                                                   |
+| `Ctrl` `C`             | Copia o nome de usuário ou o campo principal.                                       |
+| `Ctrl` `Shift` `C`     | Copia a senha.                                                                      |
+| `Ctrl` `Alt` `C`       | Copia a senha de uso único.                                                         |
+| `Ctrl` `O`             | Abre os detalhes do item em uma nova janela.                                        |
+| `Alt` `Enter`          | Abre o site do login no navegador e preenche seu nome de usuário e senha.           |
+| `Ctrl` `Shift` `O`     | Abre o item no app.                                                                 |
 
 {.shortcuts}
 
-## 1Password Keyboard Shortcuts for Linux
+## Atalhos de teclado do 1Password para Linux
 
 ### X11
 
-| `Shortcut`              | Action             |
-| ----------------------- | ------------------ |
-| Enter your own shortcut | Show 1Password.    |
-| `Ctrl` `Shift` `Space`  | Show Quick Access. |
-| `Ctrl` `Shift` `L`      | Lock 1Password.    |
-| `Ctrl` `\`              | Fill in Browser.   |
+| `Shortcut`              | Ação                  |
+| ----------------------- | --------------------- |
+| Enter your own shortcut | Mostra o 1Password.   |
+| `Ctrl` `Shift` `Space`  | Mostra o Quick Access. |
+| `Ctrl` `Shift` `L`      | Bloqueia o 1Password. |
+| `Ctrl` `\`              | Preenche no navegador. |
 
 {.shortcuts}
 
-### 1Password app {.row-span-4}
+### App do 1Password {.row-span-4}
 
-| `Shortcut`          | Action                                                                                       |
+| `Shortcut`          | Ação                                                                                         |
 | ------------------- | -------------------------------------------------------------------------------------------- |
-| `Ctrl` `Shift` `/`  | View keyboard shortcuts.                                                                     |
-| `Alt`               | Show or hide the app menu in the title bar.                                                  |
-| `Ctrl` `,`          | Open settings.                                                                               |
-| `Ctrl` `F`          | Search for items.                                                                            |
-| `Ctrl` `Alt` `F`    | Find items in the current list.                                                              |
-| `Esc`               | Clear the search field.                                                                      |
-| `Ctrl` `1`          | Switch to All Accounts.                                                                      |
-| `Ctrl` `2...9`      | Switch accounts and collections.                                                             |
-| `Alt` `Left Arrow`  | Go back.                                                                                     |
-| `Alt` `Right Arrow` | Go forward.                                                                                  |
-| `Down Arrow`        | Focus next row.                                                                              |
-| `Up Arrow`          | Focus previous row.                                                                          |
-| `Right Arrow`       | Focus right section.                                                                         |
-| `Left Arrow`        | Focus left section.                                                                          |
-| `Space`             | Activate focused element.                                                                    |
-| `Ctrl` `C`          | Copy the username or primary field of the selected.                                          |
-| `Ctrl` `Shift` `C`  | Copy the password of the selected.                                                           |
-| `Ctrl` `Alt` `C`    | Copy the one-time password of the selected.                                                  |
-| `Ctrl` `Shift` `F`  | Open the website for the selected login in your browser and fill your username and password. |
-| `Ctrl` `O`          | Open the selected in a new window.                                                           |
-| `Ctrl` `N`          | Create a new item.                                                                           |
-| `Ctrl` `E`          | Edit the selected.                                                                           |
-| `Ctrl` `S`          | Save changes to an item.                                                                     |
-| `Esc`               | Cancel an edit.                                                                              |
-| `Ctrl` `R`          | Reveal or conceal secure fields in the selected.                                             |
-| `Ctrl` `Alt`        | Temporarily reveal all secure fields in the selected.                                        |
-| `Delete`            | Move the selected(s) to the Archive.                                                         |
-| `Ctrl` `Delete`     | Delete the selected(s).                                                                      |
-| `Ctrl` `Shift` `D`  | Collapse or expand the sidebar.                                                              |
-| `Ctrl` `+`          | Zoom in.                                                                                     |
-| `Ctrl` `-`          | Zoom out.                                                                                    |
-| `Ctrl` `0`          | Revert to actual size.                                                                       |
+| `Ctrl` `Shift` `/`  | Exibe os atalhos de teclado.                                                                 |
+| `Alt`               | Exibe ou oculta o menu do app na barra de título.                                            |
+| `Ctrl` `,`          | Abre as configurações.                                                                       |
+| `Ctrl` `F`          | Pesquisa itens.                                                                              |
+| `Ctrl` `Alt` `F`    | Localiza itens na lista atual.                                                               |
+| `Esc`               | Limpa o campo de pesquisa.                                                                   |
+| `Ctrl` `1`          | Alterna para Todas as Contas.                                                                |
+| `Ctrl` `2...9`      | Alterna entre contas e coleções.                                                             |
+| `Alt` `Left Arrow`  | Volta.                                                                                       |
+| `Alt` `Right Arrow` | Avança.                                                                                      |
+| `Down Arrow`        | Foca a próxima linha.                                                                        |
+| `Up Arrow`          | Foca a linha anterior.                                                                       |
+| `Right Arrow`       | Foca a seção à direita.                                                                      |
+| `Left Arrow`        | Foca a seção à esquerda.                                                                     |
+| `Space`             | Ativa o elemento em foco.                                                                    |
+| `Ctrl` `C`          | Copia o nome de usuário ou o campo principal do item selecionado.                            |
+| `Ctrl` `Shift` `C`  | Copia a senha do item selecionado.                                                           |
+| `Ctrl` `Alt` `C`    | Copia a senha de uso único do item selecionado.                                              |
+| `Ctrl` `Shift` `F`  | Abre o site do login selecionado no navegador e preenche seu nome de usuário e senha.        |
+| `Ctrl` `O`          | Abre o item selecionado em uma nova janela.                                                  |
+| `Ctrl` `N`          | Cria um novo item.                                                                           |
+| `Ctrl` `E`          | Edita o item selecionado.                                                                    |
+| `Ctrl` `S`          | Salva as alterações em um item.                                                              |
+| `Esc`               | Cancela uma edição.                                                                          |
+| `Ctrl` `R`          | Exibe ou oculta os campos seguros do item selecionado.                                       |
+| `Ctrl` `Alt`        | Exibe temporariamente todos os campos seguros do item selecionado.                           |
+| `Delete`            | Move o(s) item(ns) selecionado(s) para o Arquivo.                                            |
+| `Ctrl` `Delete`     | Exclui o(s) item(ns) selecionado(s).                                                         |
+| `Ctrl` `Shift` `D`  | Recolhe ou expande a barra lateral.                                                          |
+| `Ctrl` `+`          | Aumenta o zoom.                                                                              |
+| `Ctrl` `-`          | Diminui o zoom.                                                                              |
+| `Ctrl` `0`          | Volta ao tamanho real.                                                                       |
 
 {.shortcuts}
 
-### 1Password in the browser {.row-span-4}
+### 1Password no navegador {.row-span-4}
 
-| `Shortcut`                     | Action                                                                                    |
+| `Shortcut`                     | Ação                                                                                      |
 | ------------------------------ | ----------------------------------------------------------------------------------------- |
-| `Ctrl` `Shift` `X`             | Open or close the 1Password pop-up in Chrome, Edge, or Brave.                             |
-| `Ctrl` `.`                     | Open or close the 1Password pop-up in Firefox.                                            |
-| `Ctrl` `F`                     | Search for items.                                                                         |
-| `Esc`                          | Clear the search field.                                                                   |
-| `Ctrl` `D`                     | Show the list of vaults.                                                                  |
-| `Ctrl` `Down Arrow`            | Open or close the category menu.                                                          |
-| `Down Arrow`                   | Select the next category, item, or field.                                                 |
-| `Up Arrow`                     | Select the previous category, item, or field.                                             |
-| `Right Arrow`                  | Select the item details.                                                                  |
-| `Left Arrow`                   | Select the item list.                                                                     |
-| `Space`                        | Expand item overview banners.                                                             |
-| `Enter`                        | Copy the selected detail.Perform the default action for the selected.                     |
-| `Ctrl` `C`                     | Copy the username of the selected.                                                        |
-| `Ctrl` `Shift` `C`             | Copy the password of the selected.                                                        |
-| `Ctrl` `Shift` `Super key` `C` | Copy the one-time password of the selected.                                               |
-| `Ctrl` `Enter`                 | Open the website for the selected login in a new tab and fill your username and password. |
-| `Ctrl` `O`                     | Open the selected in a separate window.                                                   |
-| `Ctrl` `I`                     | Create new item.                                                                          |
-| `Ctrl` `E`                     | Edit the selected.                                                                        |
-| `Ctrl` `Alt`                   | Temporarily reveal all secure fields in the selected.                                     |
-| `Ctrl` `G`                     | Show the password generator.                                                              |
-| `Ctrl` `C`                     | Copy a password from the password generator.                                              |
-| `Ctrl` `Shift` `L`             | Lock 1Password.                                                                           |
-| `Esc`                          | Close the 1Password pop-up.                                                               |
+| `Ctrl` `Shift` `X`             | Abre ou fecha o pop-up do 1Password no Chrome, Edge ou Brave.                             |
+| `Ctrl` `.`                     | Abre ou fecha o pop-up do 1Password no Firefox.                                           |
+| `Ctrl` `F`                     | Pesquisa itens.                                                                           |
+| `Esc`                          | Limpa o campo de pesquisa.                                                                |
+| `Ctrl` `D`                     | Exibe a lista de cofres.                                                                  |
+| `Ctrl` `Down Arrow`            | Abre ou fecha o menu de categorias.                                                       |
+| `Down Arrow`                   | Seleciona a próxima categoria, item ou campo.                                             |
+| `Up Arrow`                     | Seleciona a categoria, item ou campo anterior.                                            |
+| `Right Arrow`                  | Seleciona os detalhes do item.                                                            |
+| `Left Arrow`                   | Seleciona a lista de itens.                                                               |
+| `Space`                        | Expande os banners de visão geral do item.                                                |
+| `Enter`                        | Copia o detalhe selecionado.Executa a ação padrão do item selecionado.                    |
+| `Ctrl` `C`                     | Copia o nome de usuário do item selecionado.                                              |
+| `Ctrl` `Shift` `C`             | Copia a senha do item selecionado.                                                        |
+| `Ctrl` `Shift` `Super key` `C` | Copia a senha de uso único do item selecionado.                                           |
+| `Ctrl` `Enter`                 | Abre o site do login selecionado em uma nova aba e preenche seu nome de usuário e senha.  |
+| `Ctrl` `O`                     | Abre o item selecionado em uma janela separada.                                           |
+| `Ctrl` `I`                     | Cria um novo item.                                                                        |
+| `Ctrl` `E`                     | Edita o item selecionado.                                                                 |
+| `Ctrl` `Alt`                   | Exibe temporariamente todos os campos seguros do item selecionado.                        |
+| `Ctrl` `G`                     | Exibe o gerador de senhas.                                                                |
+| `Ctrl` `C`                     | Copia uma senha do gerador de senhas.                                                     |
+| `Ctrl` `Shift` `L`             | Bloqueia o 1Password.                                                                     |
+| `Esc`                          | Fecha o pop-up do 1Password.                                                              |
 
 {.shortcuts}
 
 ### GNOME
 
-| Shortcut               | Action                   |
-| ---------------------- | ------------------------ |
+| Atalho                 | Ação                   |
+| ---------------------- | ---------------------- |
 | `Ctrl` `P`             | 1password --show         |
 | `Ctrl` `Shift` `Space` | 1password --quick-access |
 | `Ctrl` `Shift` `L`     | 1password --lock         |
@@ -354,8 +354,8 @@ intro: |
 
 ### KDE Plasma
 
-| `Trigger`              | Action                   |
-| ---------------------- | ------------------------ |
+| `Trigger`              | Ação                   |
+| ---------------------- | ---------------------- |
 | `Ctrl` `P`             | 1password --show         |
 | `Ctrl` `Shift` `Space` | 1password --quick-access |
 | `Ctrl` `Shift` `L`     | 1password --lock         |
@@ -365,21 +365,21 @@ intro: |
 
 ### Quick Access
 
-| `Shortcut`             | Action                                                                              |
+| `Shortcut`             | Ação                                                                                |
 | ---------------------- | ----------------------------------------------------------------------------------- |
-| `Ctrl` `Shift` `Space` | Open or close Quick Access.                                                         |
-| `Esc`                  | Clear the search field.                                                             |
-| `Ctrl` `1...9`         | Switch accounts or collections.                                                     |
-| `Right Arrow`          | View all available actions.                                                         |
-| `Ctrl` `C`             | Copy username or primary field.                                                     |
-| `Ctrl` `Shift` `C`     | Copy password.                                                                      |
-| `Ctrl` `Alt` `C`       | Copy one-time password.                                                             |
-| `Ctrl` `O`             | Open item details in new window.                                                    |
-| `Alt` `Enter`          | Open the website for the login in your browser and fill your username and password. |
-| `Ctrl` `Shift` `O`     | Open the item in the app.                                                           |
+| `Ctrl` `Shift` `Space` | Abre ou fecha o Quick Access.                                                       |
+| `Esc`                  | Limpa o campo de pesquisa.                                                          |
+| `Ctrl` `1...9`         | Alterna entre contas ou coleções.                                                   |
+| `Right Arrow`          | Exibe todas as ações disponíveis.                                                   |
+| `Ctrl` `C`             | Copia o nome de usuário ou o campo principal.                                       |
+| `Ctrl` `Shift` `C`     | Copia a senha.                                                                      |
+| `Ctrl` `Alt` `C`       | Copia a senha de uso único.                                                         |
+| `Ctrl` `O`             | Abre os detalhes do item em uma nova janela.                                        |
+| `Alt` `Enter`          | Abre o site do login no navegador e preenche seu nome de usuário e senha.           |
+| `Ctrl` `Shift` `O`     | Abre o item no app.                                                                 |
 
 {.shortcuts}
 
-## Also see
+## Veja também
 
-- [Keyboard shortcuts for 1Password](https://support.1password.com/keyboard-shortcuts/) _(support.1password.com)_
+- [Atalhos de teclado do 1Password](https://support.1password.com/keyboard-shortcuts/) _(support.1password.com)_

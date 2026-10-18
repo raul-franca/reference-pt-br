@@ -6,56 +6,55 @@ tags:
   - html
   - color
 categories:
-  - Toolkit
-intro: The Color Picker  cheat sheet provides you basic color info and  choices 
+  - Ferramentas
+intro: O cheat sheet do Color Picker traz informações básicas sobre cores e opções de escolha
 plugins:
   - copyCode
 ---
 
-## Getting Started 
+## Primeiros passos
 
 
-### Color Basics {.col-span-3}
+### Fundamentos de cor {.col-span-3}
 
 
-| **Category**                     | **Description**                                                                                                                                                                                                                                                                                |
+| **Categoria**                    | **Descrição**                                                                                                                                                                                                                                                                                  |
 |:---------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Color Models**                 | **RGB**: Red, Green, Blue – additive model used in screens. <br> **HEX**: Hexadecimal color codes, e.g., #FFFFFF. <br> **HSL**: Hue, Saturation, Lightness – intuitive for color adjustments. <br> **HSV**: Hue, Saturation, Value – similar to HSL but with different brightness handling.    |
-| **Color Terminology**            | **Saturation**: Intensity or purity of a color. <br> **Hue**: The color type (e.g., red, blue). <br> **Lightness**: Brightness or darkness of a color. <br> **Opacity**: Transparency level of a color, often defined as alpha in RGBA.                                                        |
-| **Color Representation Formats** | **HEX**: `#RRGGBB` or `#RRGGBBAA` (with alpha). <br> **RGB**: `rgb(255, 255, 255)` <br> **RGBA**: `rgba(255, 255, 255, 0.5)` <br> **HSL**: `hsl(120, 100%, 50%)` <br> **HSLA**: `hsla(120, 100%, 50%, 0.5)`                                                                                    |
+| **Modelos de cor**               | **RGB**: Red, Green, Blue – modelo aditivo usado em telas. <br> **HEX**: Códigos hexadecimais de cor, por exemplo, #FFFFFF. <br> **HSL**: Hue, Saturation, Lightness – intuitivo para ajustes de cor. <br> **HSV**: Hue, Saturation, Value – semelhante ao HSL, mas com tratamento diferente de brilho.    |
+| **Terminologia de cor**          | **Saturation**: Intensidade ou pureza de uma cor. <br> **Hue**: O tipo de cor (por exemplo, vermelho, azul). <br> **Lightness**: Brilho ou escuridão de uma cor. <br> **Opacity**: Nível de transparência de uma cor, normalmente definido como alpha em RGBA.                                                        |
+| **Formatos de representação de cor** | **HEX**: `#RRGGBB` ou `#RRGGBBAA` (com alpha). <br> **RGB**: `rgb(255, 255, 255)` <br> **RGBA**: `rgba(255, 255, 255, 0.5)` <br> **HSL**: `hsl(120, 100%, 50%)` <br> **HSLA**: `hsla(120, 100%, 50%, 0.5)`                                                                                    |
 
 
 
-### Main Frameworks {.col-span-3}
+### Principais frameworks {.col-span-3}
 
-| **Framework**    | **Color Notation / Syntax**                                                                                                                                                     | **Description**                                             | **Documentation Link**                                                                     |
+| **Framework**    | **Notação / sintaxe de cor**                                                                                                                                                    | **Descrição**                                               | **Link da documentação**                                                                   |
 |:-----------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:------------------------------------------------------------|:-------------------------------------------------------------------------------------------|
-| **CSS**          | `color: red;` <br> `color: #ff0000;` <br> `color: rgb(255, 0, 0);` <br> `color: rgba(255, 0, 0, 0.5);` <br> `color: hsl(0, 100%, 50%);` <br> `color: hsla(0, 100%, 50%, 0.5);`  | Standard CSS color properties and formats.                  | [CSS Color Documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/color)          |
-| **SASS/SCSS**    | `$color: #ff0000;` <br> `color: $color;`                                                                                                                                        | Variables for colors, can use same formats as CSS.          | [SASS Color Documentation](https://sass-lang.com/documentation/values/colors)              |
-| **Tailwind CSS** | `class="bg-red-500"` <br> `class="text-green-300"`                                                                                                                              | Utility classes with predefined color shades.               | [Tailwind CSS Colors](https://tailwindcss.com/docs/customizing-colors)                     |
-| **Bootstrap**    | `class="text-primary"` <br> `class="bg-success"`                                                                                                                                | Named color classes for quick styling.                      | [Bootstrap Colors](https://getbootstrap.com/docs/5.0/getting-started/introduction/#colors) |
-| **Material UI**  | `style={{ color: 'primary' }}` or theme palette                                                                                                                                 | Uses theme palette, can override with specific color codes. | [Material UI Color](https://mui.com/customization/color/)                                  |
+| **CSS**          | `color: red;` <br> `color: #ff0000;` <br> `color: rgb(255, 0, 0);` <br> `color: rgba(255, 0, 0, 0.5);` <br> `color: hsl(0, 100%, 50%);` <br> `color: hsla(0, 100%, 50%, 0.5);`  | Propriedades e formatos de cor padrão do CSS.               | [Documentação de cores do CSS](https://developer.mozilla.org/en-US/docs/Web/CSS/color)    |
+| **SASS/SCSS**    | `$color: #ff0000;` <br> `color: $color;`                                                                                                                                        | Variáveis para cores, podem usar os mesmos formatos do CSS. | [Documentação de cores do SASS](https://sass-lang.com/documentation/values/colors)         |
+| **Tailwind CSS** | `class="bg-red-500"` <br> `class="text-green-300"`                                                                                                                              | Classes utilitárias com tons de cor predefinidos.           | [Cores do Tailwind CSS](https://tailwindcss.com/docs/customizing-colors)                   |
+| **Bootstrap**    | `class="text-primary"` <br> `class="bg-success"`                                                                                                                                | Classes de cor nomeadas para estilização rápida.            | [Cores do Bootstrap](https://getbootstrap.com/docs/5.0/getting-started/introduction/#colors) |
+| **Material UI**  | `style={{ color: 'primary' }}` ou paleta do tema                                                                                                                               | Usa a paleta do tema, pode ser sobrescrita com códigos de cor específicos. | [Cores do Material UI](https://mui.com/customization/color/)                               |
 
 
-## Color Palette
+## Paleta de cores
 
-### Tailwind Palette {.col-span-3}
+### Paleta do Tailwind {.col-span-3}
 
 <widget name="color-palette-tailwind"/>
 
 
-## Gradient CSS 
+## Gradiente em CSS
 
-### Gradient Maker {.col-span-3}
+### Gerador de gradiente {.col-span-3}
 
 <widget name="gradient-maker"/>
 
 
-| Parameter     | Description                       | Example                                        |
-|:--------------|:----------------------------------|:-----------------------------------------------|
-| **to right**  | Gradient goes from left to right  | `linear-gradient(to right, #ff7e5f, #feb47b)`  |
-| **to left**   | Gradient goes from right to left  | `linear-gradient(to left, #ff7e5f, #feb47b)`   |
-| **to bottom** | Gradient goes from top to bottom  | `linear-gradient(to bottom, #ff7e5f, #feb47b)` |
-| **to top**    | Gradient goes from bottom to top  | `linear-gradient(to top, #ff7e5f, #feb47b)`    |
-| **deg**       | Specify an angle in degrees       | `linear-gradient(45deg, ...)`                  |
-
+| Parâmetro     | Descrição                            | Exemplo                                        |
+|:--------------|:-------------------------------------|:-----------------------------------------------|
+| **to right**  | O gradiente vai da esquerda para a direita | `linear-gradient(to right, #ff7e5f, #feb47b)`  |
+| **to left**   | O gradiente vai da direita para a esquerda | `linear-gradient(to left, #ff7e5f, #feb47b)`   |
+| **to bottom** | O gradiente vai de cima para baixo   | `linear-gradient(to bottom, #ff7e5f, #feb47b)` |
+| **to top**    | O gradiente vai de baixo para cima   | `linear-gradient(to top, #ff7e5f, #feb47b)`    |
+| **deg**       | Especifica um ângulo em graus        | `linear-gradient(45deg, ...)`                  |

@@ -6,15 +6,15 @@ tags:
   - object-oriented
   - class
 categories:
-  - Programming
+  - Programação
 intro: |
-  This cheat sheet is a crash course for Java beginners and help review the basic syntax of the Java language.
+  Este cheat sheet é um curso intensivo para iniciantes em Java e ajuda a revisar a sintaxe básica da linguagem Java.
 plugins:
   - tooltip
   - copyCode
 ---
 
-## Getting Started
+## Primeiros passos
 
 ### Hello.java {.row-span-2}
 
@@ -29,7 +29,7 @@ public class Hello {
 }
 ```
 
-Compiling and running
+Compilando e executando
 
 ```bash
 $ javac Hello.java
@@ -37,7 +37,7 @@ $ java Hello
 Hello, world!
 ```
 
-### Variables
+### Variáveis
 
 ```java
 int num = 5;
@@ -47,10 +47,10 @@ boolean bool = true;
 String site = "cheatsheets.zip";
 ```
 
-### Primitive Data Types {.row-span-2}
+### Tipos de dados primitivos {.row-span-2}
 
-| Data Type | Size   | Default | Range               |
-| --------- | ------ | ------- | :------------------ |
+| Tipo de dados | Tamanho | Padrão  | Intervalo           |
+| ------------- | ------- | ------- | :------------------ |
 | `byte`    | 1 byte | 0       | -128 ^to^ 127       |
 | `short`   | 2 byte | 0       | -2^15^ ^to^ 2^15^-1 |
 | `int`     | 4 byte | 0       | -2^31^ ^to^ 2^31^-1 |
@@ -71,7 +71,7 @@ String name = first + " " + last;
 System.out.println(name);
 ```
 
-See: [Strings](#java-strings)
+Veja: [Strings](#java-strings)
 
 ### Loops
 
@@ -83,7 +83,7 @@ for (char c: word.toCharArray()) {
 // Outputs: C-h-e-a-t-S-h-e-e-t-s-
 ```
 
-See: [Loops](#java-loops)
+Veja: [Loops](#java-loops)
 
 ### Arrays
 
@@ -97,9 +97,9 @@ int[] mylist = {100, 200};
 boolean[] answers = {true, false};
 ```
 
-See: [Arrays](#java-arrays)
+Veja: [Arrays](#java-arrays)
 
-### Swap
+### Troca
 
 ```java
 int a = 1;
@@ -112,7 +112,7 @@ b = temp;
 System.out.println(a + " " + b); // 2 1
 ```
 
-### Type Casting
+### Conversão de tipos
 
 ```java
 // Widening
@@ -129,7 +129,7 @@ Integer.parseInt("10");   // 10
 Double.parseDouble("10"); // 10.0
 ```
 
-### Conditionals
+### Condicionais
 
 ```java
 int j = 10;
@@ -143,9 +143,9 @@ if (j == 10) {
 }
 ```
 
-See: [Conditionals](#java-conditionals)
+Veja: [Condicionais](#java-conditionals)
 
-### User Input
+### Entrada do usuário
 
 ```java
 Scanner in = new Scanner(System.in);
@@ -158,7 +158,7 @@ System.out.println(num);
 
 ## Java Strings
 
-### Basic
+### Básico
 
 ```java
 String str1 = "value";
@@ -166,7 +166,7 @@ String str2 = new String("value");
 String str3 = String.valueOf(123);
 ```
 
-### Concatenation
+### Concatenação
 
 ```java
 String s = 3 + "str" + 3;     // 3str3
@@ -224,7 +224,7 @@ String s = 3 + 3 + 23;        // Incompatible types
 0   1   2   3   4   5   6   7   8   9
 ```
 
-### Comparison
+### Comparação
 
 ```java
 String s1 = new String("cheatsheets.zip");
@@ -236,7 +236,7 @@ s1.equals(s2)     // true
 "AB".equalsIgnoreCase("ab")  // true
 ```
 
-### Manipulation
+### Manipulação
 
 ```java
 String str = "Abcd";
@@ -250,7 +250,7 @@ str.replace("b", "-"); // A-cd
 "ab".toCharArray();    // {'a', 'b'}
 ```
 
-### Information
+### Informações
 
 ```java
 String str = "abcd";
@@ -268,7 +268,7 @@ str.startsWith("a"); // true
 str.isEmpty();       // false
 ```
 
-### Immutable
+### Imutável
 
 ```java
 String str = "hello";
@@ -288,11 +288,11 @@ String concat = str.concat("world");
 System.out.println(concat);
 ```
 
-Once created cannot be modified, any modification creates a new String
+Uma vez criada, não pode ser modificada; qualquer modificação cria uma nova String
 
 ## Java Arrays
 
-### Declare
+### Declaração
 
 ```java
 int[] a1;
@@ -305,7 +305,7 @@ a4[2] = 2;
 a4[3] = 3;
 ```
 
-### Modify
+### Modificação
 
 ```java
 int[] a = {1, 2, 3};
@@ -317,7 +317,7 @@ System.out.println(a[0]); // 9
 System.out.println(a.length); // 3
 ```
 
-### Loop (Read & Modify)
+### Loop (leitura e modificação)
 
 ```java
 int[] arr = {1, 2, 3};
@@ -328,7 +328,7 @@ for (int i=0; i < arr.length; i++) {
 // Outputs: 2 4 6
 ```
 
-### Loop (Read)
+### Loop (leitura)
 
 ```java
 String[] arr = {"a", "b", "c"};
@@ -338,7 +338,7 @@ for (String a: arr) {
 // Outputs: a b c
 ```
 
-### Multidimensional Arrays
+### Arrays multidimensionais
 
 ```java
 int[][] matrix = { {1, 2, 3}, {4, 5} };
@@ -356,7 +356,7 @@ for (int i = 0; i < a.length; ++i) {
 // Outputs: 1 2 3 4 5 6 7
 ```
 
-### Sort
+### Ordenação
 
 ```java
 char[] chars = {'b', 'a', 'c'};
@@ -366,56 +366,56 @@ Arrays.sort(chars);
 Arrays.toString(chars);
 ```
 
-## Java Conditionals
+## Condicionais em Java
 
-### Operators {.row-span-2}
+### Operadores {.row-span-2}
 
-- <a data-tooltip="Additive operator (also used for String concatenation)">+</a>
-- <a data-tooltip="Subtraction operator">-</a>
-- <a data-tooltip="Multiplication operator">\*</a>
-- <a data-tooltip="Division operator">/</a>
-- <a data-tooltip="Remainder operator">%</a>
-- <a data-tooltip="Simple assignment operator">=</a>
-- <a data-tooltip="Increment operator; increments a value by 1">++</a>
-- <a data-tooltip="Decrement operator; decrements a value by 1">--</a>
-- <a data-tooltip="Logical complement operator; inverts the value of a boolean">!</a>
-
-{.marker-none .cols-4}
-
----
-
-- <a data-tooltip="Equal to">==</a>
-- <a data-tooltip="Not equal to">!=</a>
-- <a data-tooltip="Greater than">></a>
-- <a data-tooltip="Greater than or equal to">>=</a>
-- <a data-tooltip="Less than"><</a>
-- <a data-tooltip="Less than or equal to"><=</a>
+- <a data-tooltip="Operador de adição (também usado para concatenação de strings)">+</a>
+- <a data-tooltip="Operador de subtração">-</a>
+- <a data-tooltip="Operador de multiplicação">\*</a>
+- <a data-tooltip="Operador de divisão">/</a>
+- <a data-tooltip="Operador de resto">%</a>
+- <a data-tooltip="Operador de atribuição simples">=</a>
+- <a data-tooltip="Operador de incremento; incrementa um valor em 1">++</a>
+- <a data-tooltip="Operador de decremento; decrementa um valor em 1">--</a>
+- <a data-tooltip="Operador de complemento lógico; inverte o valor de um boolean">!</a>
 
 {.marker-none .cols-4}
 
 ---
 
-- <a data-tooltip="Conditional-AND">&&</a>
-- <a data-tooltip="Conditional-OR">||</a>
-- [?:](#ternary-operator){data-tooltip="Ternary (shorthand for if-then-else statement)"}
+- <a data-tooltip="Igual a">==</a>
+- <a data-tooltip="Diferente de">!=</a>
+- <a data-tooltip="Maior que">></a>
+- <a data-tooltip="Maior ou igual a">>=</a>
+- <a data-tooltip="Menor que"><</a>
+- <a data-tooltip="Menor ou igual a"><=</a>
 
 {.marker-none .cols-4}
 
 ---
 
-- <a data-tooltip="Compares an object to a specified type">instanceof</a>
+- <a data-tooltip="AND condicional">&&</a>
+- <a data-tooltip="OR condicional">||</a>
+- [?:](#ternary-operator){data-tooltip="Ternário (forma abreviada da instrução if-then-else)"}
+
+{.marker-none .cols-4}
+
+---
+
+- <a data-tooltip="Compara um objeto com um tipo especificado">instanceof</a>
 
 {.marker-none}
 
 ---
 
-- <a data-tooltip="Unary bitwise complement">~</a>
-- <a data-tooltip="Signed left shift"><<</a>
-- <a data-tooltip="Signed right shift">>></a>
-- <a data-tooltip="Unsigned right shift">>>></a>
-- <a data-tooltip="Bitwise AND">&</a>
-- <a data-tooltip="Bitwise exclusive OR">^</a>
-- <a data-tooltip="Bitwise inclusive OR">|</a>
+- <a data-tooltip="Complemento bit a bit unário">~</a>
+- <a data-tooltip="Deslocamento à esquerda com sinal"><<</a>
+- <a data-tooltip="Deslocamento à direita com sinal">>></a>
+- <a data-tooltip="Deslocamento à direita sem sinal">>>></a>
+- <a data-tooltip="AND bit a bit">&</a>
+- <a data-tooltip="OR exclusivo bit a bit">^</a>
+- <a data-tooltip="OR inclusivo bit a bit">|</a>
 
 {.marker-none .cols-4}
 
@@ -456,7 +456,7 @@ switch (month) {
 System.out.println("Result " + str);
 ```
 
-### Ternary operator
+### Operador ternário
 
 ```java
 int a = 10;
@@ -467,9 +467,9 @@ int max = (a > b) ? a : b;
 System.out.println(max);
 ```
 
-## Java Loops
+## Loops em Java
 
-### For Loop
+### Laço for
 
 ```java
 for (int i = 0; i < 10; i++) {
@@ -487,7 +487,7 @@ for (int i = 0,j = 0; i < 3; i++,j--) {
 // Outputs: 0|0 -1|1 -2|2
 ```
 
-### Enhanced For Loop
+### Laço for aprimorado
 
 ```java
 int[] numbers = {1,2,3,4,5};
@@ -498,9 +498,9 @@ for (int number: numbers) {
 // Outputs: 12345
 ```
 
-Used to loop around array's or List's
+Usado para percorrer arrays ou Lists
 
-### While Loop
+### Loop while
 
 ```java
 int count = 0;
@@ -512,7 +512,7 @@ while (count < 5) {
 // Outputs: 01234
 ```
 
-### Do While Loop
+### Loop do while
 
 ```java
 int count = 0;
@@ -524,7 +524,7 @@ do {
 // Outputs: 01234
 ```
 
-### Continue Statement
+### Instrução continue
 
 ```java
 for (int i = 0; i < 5; i++) {
@@ -536,7 +536,7 @@ for (int i = 0; i < 5; i++) {
 // Outputs: 0124
 ```
 
-### Break Statement
+### Instrução break
 
 ```java
 for (int i = 0; i < 5; i++) {
@@ -550,22 +550,22 @@ for (int i = 0; i < 5; i++) {
 
 ## Java Collections Framework
 
-### Java Collections {.col-span-2}
+### Coleções Java {.col-span-2}
 
-| Collection                                                                                                         | Interface   | Ordered | Sorted | Thread safe | Duplicate | Nullable           |
+| Coleção                                                                                                            | Interface   | Ordenada | Sorted | Thread safe | Duplicata | Aceita null        |
 | ------------------------------------------------------------------------------------------------------------------ | ----------- | ------- | ------ | ----------- | --------- | ------------------ |
 | [ArrayList](https://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html)                                    | List        | Y       | _N_    | _N_         | Y         | Y                  |
 | [Vector](https://docs.oracle.com/javase/8/docs/api/java/util/Vector.html)                                          | List        | Y       | _N_    | Y           | Y         | Y                  |
 | [LinkedList](https://docs.oracle.com/javase/8/docs/api/java/util/LinkedList.html)                                  | List, Deque | Y       | _N_    | _N_         | Y         | Y                  |
 | [CopyOnWriteArrayList](https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CopyOnWriteArrayList.html)   | List        | Y       | _N_    | Y           | Y         | Y                  |
-| [HashSet](https://docs.oracle.com/javase/8/docs/api/java/util/HashSet.html)                                        | Set         | _N_     | _N_    | _N_         | _N_       | One `null`         |
-| [LinkedHashSet](https://docs.oracle.com/javase/8/docs/api/java/util/LinkedHashSet.html)                            | Set         | Y       | _N_    | _N_         | _N_       | One `null`         |
+| [HashSet](https://docs.oracle.com/javase/8/docs/api/java/util/HashSet.html)                                        | Set         | _N_     | _N_    | _N_         | _N_       | Um `null`          |
+| [LinkedHashSet](https://docs.oracle.com/javase/8/docs/api/java/util/LinkedHashSet.html)                            | Set         | Y       | _N_    | _N_         | _N_       | Um `null`          |
 | [TreeSet](https://docs.oracle.com/javase/8/docs/api/java/util/TreeSet.html)                                        | Set         | Y       | Y      | _N_         | _N_       | _N_                |
-| [CopyOnWriteArraySet](https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CopyOnWriteArraySet.html)     | Set         | Y       | _N_    | Y           | _N_       | One `null`         |
+| [CopyOnWriteArraySet](https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CopyOnWriteArraySet.html)     | Set         | Y       | _N_    | Y           | _N_       | Um `null`          |
 | [ConcurrentSkipListSet](https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ConcurrentSkipListSet.html) | Set         | Y       | Y      | Y           | _N_       | _N_                |
-| [HashMap](https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html)                                        | Map         | _N_     | _N_    | _N_         | _N (key)_ | One `null` _(key)_ |
+| [HashMap](https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html)                                        | Map         | _N_     | _N_    | _N_         | _N (key)_ | Um `null` _(key)_  |
 | [HashTable](https://docs.oracle.com/javase/8/docs/api/java/util/Hashtable.html)                                    | Map         | _N_     | _N_    | Y           | _N (key)_ | _N (key)_          |
-| [LinkedHashMap](https://docs.oracle.com/javase/8/docs/api/java/util/LinkedHashMap.html)                            | Map         | Y       | _N_    | _N_         | _N (key)_ | One `null` _(key)_ |
+| [LinkedHashMap](https://docs.oracle.com/javase/8/docs/api/java/util/LinkedHashMap.html)                            | Map         | Y       | _N_    | _N_         | _N (key)_ | Um `null` _(key)_  |
 | [TreeMap](https://docs.oracle.com/javase/8/docs/api/java/util/TreeMap.html)                                        | Map         | Y       | Y      | _N_         | _N (key)_ | _N (key)_          |
 | [ConcurrentHashMap](https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ConcurrentHashMap.html)         | Map         | _N_     | _N_    | Y           | _N (key)_ | _N_                |
 | [ConcurrentSkipListMap](https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ConcurrentSkipListMap.html) | Map         | Y       | Y      | Y           | _N (key)_ | _N_                |
@@ -673,20 +673,20 @@ System.out.println(a.peek());
 System.out.println(a.pop());
 ```
 
-## Misc
+## Diversos
 
-### Access Modifiers {.col-span-2}
+### Modificadores de acesso {.col-span-2}
 
-| Modifier    | Class | Package | Subclass | World |
-| ----------- | ----- | ------- | -------- | ----- |
+| Modificador   | Classe | Pacote | Subclasse | Mundo |
+| ------------- | ----- | ------- | -------- | ----- |
 | public      | Y     | Y       | Y        | Y     |
 | protected   | Y     | Y       | Y        | _N_   |
-| no modifier | Y     | Y       | _N_      | _N_   |
+| sem modificador | Y     | Y       | _N_      | _N_   |
 | private     | Y     | _N_     | _N_      | _N_   |
 
 {.show-header .left-text}
 
-### Regular expressions
+### Expressões regulares
 
 ```java
 String text = "I am learning Java";
@@ -698,9 +698,9 @@ text.split("\\|");
 text.split(Pattern.quote("|"));
 ```
 
-See: [Regex in java](/regex#regex-in-java)
+Veja: [Regex em Java](/regex#regex-in-java)
 
-### Comment
+### Comentários
 
 ```java
 // I am a single line comment!
@@ -718,7 +718,7 @@ multi-line comment!
  */
 ```
 
-### Keywords {.col-span-2}
+### Palavras-chave {.col-span-2}
 
 - `abstract`
 - `continue`
@@ -773,23 +773,23 @@ multi-line comment!
 
 {.marker-none .cols-6}
 
-### Math methods
+### Métodos de Math
 
-| Method                | Description            |
+| Método                | Descrição              |
 | --------------------- | :--------------------- |
-| `Math.max(a,b)`       | Maximum of a and b     |
-| `Math.min(a,b)`       | Minimum of a and b     |
-| `Math.abs(a)`         | Absolute value a       |
-| `Math.sqrt(a)`        | Square-root of a       |
-| `Math.pow(a,b)`       | Power of b             |
-| `Math.round(a)`       | Closest integer        |
-| `Math.sin(ang)`       | Sine of ang            |
-| `Math.cos(ang)`       | Cosine of ang          |
-| `Math.tan(ang)`       | Tangent of ang         |
-| `Math.asin(ang)`      | Inverse sine of ang    |
-| `Math.log(a)`         | Natural logarithm of a |
-| `Math.toDegrees(rad)` | Angle rad in degrees   |
-| `Math.toRadians(deg)` | Angle deg in radians   |
+| `Math.max(a,b)`       | Máximo entre a e b     |
+| `Math.min(a,b)`       | Mínimo entre a e b     |
+| `Math.abs(a)`         | Valor absoluto de a    |
+| `Math.sqrt(a)`        | Raiz quadrada de a     |
+| `Math.pow(a,b)`       | Potência de b          |
+| `Math.round(a)`       | Inteiro mais próximo   |
+| `Math.sin(ang)`       | Seno de ang            |
+| `Math.cos(ang)`       | Cosseno de ang         |
+| `Math.tan(ang)`       | Tangente de ang        |
+| `Math.asin(ang)`      | Seno inverso de ang    |
+| `Math.log(a)`         | Logaritmo natural de a |
+| `Math.toDegrees(rad)` | Ângulo rad em graus    |
+| `Math.toRadians(deg)` | Ângulo deg em radianos |
 
 ### Try/Catch/Finally
 

@@ -8,38 +8,38 @@ tags:
   - framework
   - php
 categories:
-  - Programming
+  - Programação
 intro: |
-  [Laravel](https://laravel.com/docs/8.x/) is an expressive and progressive web application framework for PHP. 
-  This cheat sheet provides a reference for common commands and features for Laravel 8.
+  [Laravel](https://laravel.com/docs/8.x/) é um framework de aplicação web expressivo e progressivo para PHP.
+  Este cheat sheet traz uma referência dos comandos e recursos comuns do Laravel 8.
 plugins:
   - copyCode
 ---
 
-## Getting Started
+## Primeiros passos
 
-### Requirements {.row-span-2}
+### Requisitos {.row-span-2}
 
-- PHP version >= 7.3
-- BCMath PHP Extension
-- Ctype PHP Extension
-- Fileinfo PHP Extension
-- JSON PHP Extension
-- Mbstring PHP Extension
-- OpenSSL PHP Extension
-- PDO PHP Extension
-- Tokenizer PHP Extension
-- XML PHP Extension
+- Versão do PHP >= 7.3
+- Extensão BCMath do PHP
+- Extensão Ctype do PHP
+- Extensão Fileinfo do PHP
+- Extensão JSON do PHP
+- Extensão Mbstring do PHP
+- Extensão OpenSSL do PHP
+- Extensão PDO do PHP
+- Extensão Tokenizer do PHP
+- Extensão XML do PHP
 
-Ensure your web server directs all requests to your application's `public/index.php` file, See:
-[Deployment](#deployment)
+Garanta que seu servidor web direcione todas as requisições para o arquivo `public/index.php` da sua aplicação. Veja:
+[Deploy](#deployment)
 
 ### Windows
 
-- #### Install [Docker Desktop](https://www.docker.com/products/docker-desktop)
-- #### Install & enable [WSL2](https://docs.microsoft.com/en-us/windows/wsl/install)
-- #### Ensure that Docker Desktop is [configured to use WSL2](https://docs.docker.com/desktop/windows/wsl/)
-- #### In WSL2 terminal:
+- #### Instale o [Docker Desktop](https://www.docker.com/products/docker-desktop)
+- #### Instale e ative o [WSL2](https://docs.microsoft.com/en-us/windows/wsl/install)
+- #### Garanta que o Docker Desktop esteja [configurado para usar o WSL2](https://docs.docker.com/desktop/windows/wsl/)
+- #### No terminal do WSL2:
       ```shell
       $ curl -s https://laravel.build/example-app | bash
       $ cd example-app
@@ -47,12 +47,12 @@ Ensure your web server directs all requests to your application's `public/index.
       ```
   {.marker-timeline}
 
-Access application via `http://localhost`
+Acesse a aplicação via `http://localhost`
 
 ### Mac
 
-- #### Install [Docker Desktop](https://www.docker.com/products/docker-desktop)
-- #### In terminal:
+- #### Instale o [Docker Desktop](https://www.docker.com/products/docker-desktop)
+- #### No terminal:
       ```shell
       $ curl -s https://laravel.build/example-app | bash
       $ cd example-app
@@ -60,7 +60,7 @@ Access application via `http://localhost`
       ```
   {.marker-timeline}
 
-Access application via `http://localhost`
+Acesse a aplicação via `http://localhost`
 
 ### Linux
 
@@ -70,7 +70,7 @@ $ cd example-app
 $ ./vendor/bin/sail up
 ```
 
-Installation via [Composer](https://getcomposer.org)
+Instalação via [Composer](https://getcomposer.org)
 
 ```bash
 $ composer create-project laravel/laravel example-app
@@ -78,13 +78,13 @@ $ cd example-app
 $ php artisan serve
 ```
 
-Access application via `http://localhost`
+Acesse a aplicação via `http://localhost`
 
-## Configuration
+## Configuração
 
 ### .env {.cols-2}
 
-Retrieve values from `.env` file
+Recupere valores do arquivo `.env`
 
 ```php
 env('APP_DEBUG');
@@ -93,7 +93,7 @@ env('APP_DEBUG');
 env('APP_DEBUG', false);
 ```
 
-Determine current environment
+Determine o ambiente atual
 
 ```php
 use Illuminate\Support\Facades\App;
@@ -101,7 +101,7 @@ use Illuminate\Support\Facades\App;
 $environment = App::environment();
 ```
 
-Accessing configuration values using "dot" syntax
+Acessando valores de configuração com a sintaxe de "ponto"
 
 ```php
 // config/app.php --> ['timezone' => '']
@@ -111,15 +111,15 @@ $value = config('app.timezone');
 $value = config('app.timezone', 'Asia/Seoul');
 ```
 
-Set configuration values at runtime:
+Defina valores de configuração em runtime:
 
 ```php
 config(['app.timezone' => 'America/Chicago']);
 ```
 
-### Debug Mode
+### Modo de depuração
 
-Turn on (local dev):
+Ative (dev local):
 
 ```php
 // .env file
@@ -128,7 +128,7 @@ APP_DEBUG=true
 // ...
 ```
 
-Turn off (production):
+Desative (produção):
 
 ```php
 // .env file
@@ -137,32 +137,32 @@ APP_DEBUG=false
 // ...
 ```
 
-### Maintenance Mode
+### Modo de manutenção
 
-Temporarily disable application (503 status code)
+Desative temporariamente a aplicação (código de status 503)
 
 ```bash
 php artisan down
 ```
 
-#### Disable maintenance mode
+#### Desativar o modo de manutenção
 
 ```bash
 php artisan up
 ```
 
-#### Bypass Maintenance Mode
+#### Ignorar o modo de manutenção
 
 ```bash
 php artisan down --secret="1630542a-246b-4b66-afa1-dd72a4c43515"
 ```
 
-Visit your application URL `https://example.com/1630542a-246b-4b66-afa1-dd72a4c43515` to set a cookie and bypass the
-maintenance screen
+Acesse a URL da sua aplicação `https://example.com/1630542a-246b-4b66-afa1-dd72a4c43515` para definir um cookie e ignorar a
+tela de manutenção
 
-## Routing
+## Roteamento
 
-### Router HTTP Methods {.row-span-2}
+### Métodos HTTP do roteador {.row-span-2}
 
 ```php
 Route::get($uri, $callback);
@@ -173,7 +173,7 @@ Route::delete($uri, $callback);
 Route::options($uri, $callback);
 ```
 
-Multiple HTTP methods
+Múltiplos métodos HTTP
 
 ```php
 Route::match(['get', 'post'], '/', function () {
@@ -185,7 +185,7 @@ Route::any('/', function () {
 });
 ```
 
-### Basic Definition {.row-span-2}
+### Definição básica {.row-span-2}
 
 ```php
 use Illuminate\Support\Facades\Route;
@@ -202,7 +202,7 @@ Route::get(
 );
 ```
 
-### Dependency Injection
+### Injeção de dependência
 
 ```php
 use Illuminate\Http\Request;
@@ -212,9 +212,9 @@ Route::get('/users', function (Request $request) {
 });
 ```
 
-Type hint concrete dependencies for auto-injection
+Use type hint nas dependências concretas para injeção automática
 
-### View Routes
+### Rotas de view
 
 ```php
 // Argument 1: URI, Argument 2: view name
@@ -224,13 +224,13 @@ Route::view('/welcome', 'welcome');
 Route::view('/welcome', 'welcome', ['name' => 'Taylor']);
 ```
 
-Route only needs to return a view.
+A rota só precisa retornar uma view.
 
-### Route Model Binding {.row-span-4}
+### Route model binding {.row-span-4}
 
-#### Implicit binding
+#### Binding implícito
 
-With closure
+Com closure
 
 ```php
 use App\Models\User;
@@ -242,7 +242,7 @@ Route::get('/users/{user}', function (User $user) {
 // /user/1 --> User::where('id', '=', 1);
 ```
 
-With controller action
+Com ação de controller
 
 ```php
 use App\Http\Controllers\UserController;
@@ -258,7 +258,7 @@ public function show(User $user)
 }
 ```
 
-With custom resolution column
+Com coluna de resolução personalizada
 
 ```php
 use App\Models\Post;
@@ -270,7 +270,7 @@ Route::get('/posts/{post:slug}', function (Post $post) {
 // /posts/my-post --> Post::where('slug', '=', 'my-post');
 ```
 
-Always use a different column to resolve
+Sempre use uma coluna diferente para resolver
 
 ```php
 // in App\Models\Post
@@ -280,7 +280,7 @@ public function getRouteKeyName()
 }
 ```
 
-Multiple models - second is child of first
+Múltiplos models - o segundo é filho do primeiro
 
 ```php
 use App\Models\Post;
@@ -291,13 +291,13 @@ Route::get('/users/{user}/posts/{post:slug}', function (User $user, Post $post) 
 });
 ```
 
-Convenient way to automatically inject the model instances directly into your routes
+Forma prática de injetar automaticamente as instâncias de model diretamente nas suas rotas
 
-### Route Parameters {.row-span-2}
+### Parâmetros de rota {.row-span-2}
 
-Capture segments of the URI within your route
+Capture segmentos da URI dentro da sua rota
 
-#### Required parameters
+#### Parâmetros obrigatórios
 
 ```php
 Route::get('/user/{id}', function ($id) {
@@ -305,7 +305,7 @@ Route::get('/user/{id}', function ($id) {
 });
 ```
 
-With dependency injection
+Com injeção de dependência
 
 ```php
 use Illuminate\Http\Request;
@@ -315,7 +315,7 @@ Route::get('/user/{id}', function (Request $request, $id) {
 });
 ```
 
-#### Optional Parameters
+#### Parâmetros opcionais
 
 ```php
 Route::get('/user/{name?}', function ($name = null) {
@@ -327,27 +327,27 @@ Route::get('/user/{name?}', function ($name = 'John') {
 });
 ```
 
-### Redirect Routes
+### Rotas de redirecionamento
 
-HTTP `302` status
+Status HTTP `302`
 
 ```php
 Route::redirect('/here', '/there');
 ```
 
-Set the status code
+Defina o código de status
 
 ```php
 Route::redirect('/here', '/there', 301);
 ```
 
-Permanent `301` redirect
+Redirecionamento permanente `301`
 
 ```php
 Route::permanentRedirect('/here', '/there');
 ```
 
-### Regular Expression Constraints {.cols-2}
+### Restrições de expressão regular {.cols-2}
 
 ```php
 Route::get('/user/{name}', function ($name) {
@@ -363,11 +363,11 @@ Route::get('/user/{id}/{name}', function ($id, $name) {
 })->where(['id' => '[0-9]+', 'name' => '[a-z]+']);
 ```
 
-See also: [Regex Cheatsheet](/regex)
+Veja também: [Cheat sheet de regex](/regex)
 
-### Named Routes
+### Rotas nomeadas
 
-Route names should always be unique
+Os nomes de rota devem ser sempre únicos
 
 ```php
 Route::get('/user/profile', function () {
@@ -375,9 +375,9 @@ Route::get('/user/profile', function () {
 })->name('profile');
 ```
 
-See: [Helpers](#helpers-cols-3)
+Veja: [Helpers](#helpers-cols-3)
 
-### Fallback Routes
+### Rotas de fallback
 
 ```php
 Route::fallback(function () {
@@ -385,9 +385,9 @@ Route::fallback(function () {
 });
 ```
 
-Executed when no other routes match
+Executada quando nenhuma outra rota corresponde
 
-### Route Groups
+### Grupos de rotas
 
 #### Middleware
 
@@ -403,7 +403,7 @@ Route::middleware(['first', 'second'])->group(function () {
 });
 ```
 
-#### URI Prefixes
+#### Prefixos de URI
 
 ```php
 Route::prefix('admin')->group(function () {
@@ -413,7 +413,7 @@ Route::prefix('admin')->group(function () {
 });
 ```
 
-#### Name Prefix
+#### Prefixo de nome
 
 ```php
 Route::name('admin.')->group(function () {
@@ -423,9 +423,9 @@ Route::name('admin.')->group(function () {
 });
 ```
 
-Share attributes across routes
+Compartilhe atributos entre rotas
 
-### Accessing current route
+### Acessando a rota atual
 
 ```php
 use Illuminate\Support\Facades\Route;
@@ -444,13 +444,13 @@ $action = Route::currentRouteAction();
 
 ### routes {.row-span-2}
 
-#### Named route
+#### Rota nomeada
 
 ```php
 $url = route('profile');
 ```
 
-With parameters
+Com parâmetros
 
 ```php
 // Route::get('/user/{id}/profile', /*...*/ )->name('profile);
@@ -460,7 +460,7 @@ $url = route('profile', ['id' => 1]);
 // /user/1/profile/
 ```
 
-With query string
+Com query string
 
 ```php
 // Route::get('/user/{id}/profile', /*...*/ )->name('profile);
@@ -470,25 +470,25 @@ $url = route('profile', ['id' => 1, 'photos'=>'yes']);
 // /user/1/profile?photos=yes
 ```
 
-#### Redirects
+#### Redirecionamentos
 
 ```php
 // Generating Redirects...
 return redirect()->route('profile');
 ```
 
-#### Eloquent Models
+#### Models Eloquent
 
 ```php
 echo route('post.show', ['post' => $post]);
 ```
 
-The route helper will automatically extract the model's route key. See [Routing](#routing-cols-4)
+O helper de rota extrai automaticamente a chave de rota do model. Veja [Roteamento](#routing-cols-4)
 
-### URL Generation
+### Geração de URL
 
-Generate arbitrary URLs for your application that will automatically use the scheme (HTTP or HTTPS) and host from the
-current request
+Gere URLs arbitrárias para sua aplicação que usarão automaticamente o esquema (HTTP ou HTTPS) e o host da
+requisição atual
 
 ```php
 $post = App\Models\Post::find(1);
@@ -498,7 +498,7 @@ echo url("/posts/{$post->id}");
 // http://example.com/posts/1
 ```
 
-#### Current URL
+#### URL atual
 
 ```php
 // Get the current URL without the query string...
@@ -511,15 +511,15 @@ echo url()->full();
 echo url()->previous();
 ```
 
-### Named Route URL
+### URL de rota nomeada
 
 ```php
 $url = route('profile');
 ```
 
-See [Named Route](#named-route)
+Veja [Rota nomeada](#named-route)
 
-### Error Handling
+### Tratamento de erros
 
 ```php
 public function isValid($value)
@@ -534,9 +534,9 @@ public function isValid($value)
 }
 ```
 
-Report an exception but continue handling the current request
+Reporte uma exceção mas continue tratando a requisição atual
 
-### HTTP Exceptions
+### Exceções HTTP
 
 ```php
 // page not found
@@ -552,11 +552,11 @@ abort(403);
 abort(500);
 ```
 
-Generate an HTTP exception response using status code
+Gere uma resposta de exceção HTTP usando o código de status
 
 ## Controllers
 
-### Basic
+### Básico
 
 ```php
 namespace App\Http\Controllers;
@@ -575,7 +575,7 @@ class UserController extends Controller
 }
 ```
 
-Define a route for this controller method:
+Defina uma rota para este método do controller:
 
 ```php
 use App\Http\Controllers\UserController;
@@ -583,14 +583,14 @@ use App\Http\Controllers\UserController;
 Route::get('/user/{id}', [UserController::class, 'show']);
 ```
 
-## Requests
+## Requisições
 
-### CSRF Protection
+### Proteção CSRF
 
-Laravel automatically generates a CSRF "token" for each active user session.  
-This token is used to verify that the authenticated user is the person actually making the requests.
+O Laravel gera automaticamente um "token" CSRF para cada sessão de usuário ativa.  
+Esse token é usado para verificar se o usuário autenticado é quem realmente está fazendo as requisições.
 
-Get current session's token:
+Obtenha o token da sessão atual:
 
 ```php
 Route::get('/token', function (Request $request) {
@@ -602,8 +602,8 @@ Route::get('/token', function (Request $request) {
 });
 ```
 
-`POST`, `PUT`, `PATCH`, or `DELETE` forms should include a hidden CSRF `_token` field in the form to validate the
-request.
+Formulários `POST`, `PUT`, `PATCH` ou `DELETE` devem incluir um campo oculto `_token` de CSRF no formulário para validar a
+requisição.
 
 ```html
 <form method="POST" action="/profile">
@@ -614,11 +614,11 @@ request.
 </form>
 ```
 
-See [Forms](#forms-cols-3)
+Veja [Formulários](#forms-cols-3)
 
-### Accessing Request
+### Acessando a requisição
 
-Get an instance of the current request by type-hinting the controller action or route closure
+Obtenha uma instância da requisição atual usando type hint na ação do controller ou na closure da rota
 
 ```php
 // controller action
@@ -636,11 +636,11 @@ Route::get('/', function (Request $request) {
 });
 ```
 
-[See Routing](#routing)
+[Veja Roteamento](#routing)
 
 ### Path
 
-The request's path information
+As informações de path da requisição
 
 ```php
 $uri = $request->path();
@@ -648,9 +648,9 @@ $uri = $request->path();
 // https://example.com/foo/bar --> foo/bar
 ```
 
-#### Match path to pattern
+#### Corresponder o path ao padrão
 
-Verify that the incoming request path matches a given pattern
+Verifique se o path da requisição recebida corresponde a um padrão fornecido
 
 ```php
 // * is wildcard
@@ -659,7 +659,7 @@ if ($request->is('admin/*')) {
 }
 ```
 
-Determine if the incoming request matches a named route
+Determine se a requisição recebida corresponde a uma rota nomeada
 
 ```php
 if ($request->routeIs('admin.*')) {
@@ -669,7 +669,7 @@ if ($request->routeIs('admin.*')) {
 
 ### URL
 
-Full URL for the incoming request
+URL completa da requisição recebida
 
 ```php
 // URL without the query string
@@ -682,7 +682,7 @@ $urlWithQueryString = $request->fullUrl();
 $request->fullUrlWithQuery(['type' => 'phone']);
 ```
 
-### Request Method
+### Método da requisição
 
 ```php
 $method = $request->method();
@@ -693,7 +693,7 @@ if ($request->isMethod('post')) {
 }
 ```
 
-### Client IP
+### IP do cliente
 
 ```php
 $ipAddress = $request->ip();
@@ -715,15 +715,15 @@ if ($request->hasHeader('X-Header-Name')) {
 $token = $request->bearerToken();
 ```
 
-### Content Type
+### Tipo de conteúdo
 
-Return an array containing all the content types accepted by the request
+Retorna um array com todos os tipos de conteúdo aceitos pela requisição
 
 ```php
 $contentTypes = $request->getAcceptableContentTypes();
 ```
 
-Boolean check for content types are accepted by the request
+Verificação booleana de que tipos de conteúdo são aceitos pela requisição
 
 ```php
 if ($request->accepts(['text/html', 'application/json'])) {
@@ -733,13 +733,13 @@ if ($request->accepts(['text/html', 'application/json'])) {
 
 ### Input {.row-span-4}
 
-Retrieve all the incoming request's input data as an array
+Recupere todos os dados de input da requisição recebida como um array
 
 ```php
 $input = $request->all();
 ```
 
-Retrieve all the incoming request's input data as a collection
+Recupere todos os dados de input da requisição recebida como uma collection
 
 ```php
 $input = $request->collect();
@@ -750,9 +750,9 @@ $request->collect('users')->each(function ($user) {
 });
 ```
 
-See [Helpers](#helpers-cols-3)
+Veja [Helpers](#helpers-cols-3)
 
-Retrieve user input (also gets values from query string)
+Recupere o input do usuário (também obtém valores da query string)
 
 ```php
 $name = $request->input('name');
@@ -761,7 +761,7 @@ $name = $request->input('name');
 $name = $request->input('name', 'Sally');
 ```
 
-Access array inputs
+Acesse inputs de array
 
 ```php
 $name = $request->input('products.0.name');
@@ -769,13 +769,13 @@ $name = $request->input('products.0.name');
 $names = $request->input('products.*.name');
 ```
 
-Retrieve all the input values as an associative array:
+Recupere todos os valores de input como um array associativo:
 
 ```php
 $input = $request->input();
 ```
 
-Only retrieve values from the query string:
+Recupere apenas valores da query string:
 
 ```php
 $name = $request->query('name');
@@ -784,31 +784,31 @@ $name = $request->query('name');
 $name = $request->query('name', 'Helen');
 ```
 
-Retrieve all the query string values as an associative array:
+Recupere todos os valores da query string como um array associativo:
 
 ```php
 $query = $request->query();
 ```
 
-#### Boolean Input Values
+#### Valores de input booleanos
 
-Helpful for checkbox inputs or other booleans. Return `true` for `1`, `"1"`, `true`, `"true"`, `"on"`, and `"yes"`.  
-All other values will return `false`
+Útil para inputs de checkbox ou outros booleanos. Retorna `true` para `1`, `"1"`, `true`, `"true"`, `"on"` e `"yes"`.  
+Todos os outros valores retornam `false`
 
 ```php
 $archived = $request->boolean('archived');
 ```
 
-### Dynamic Properties
+### Propriedades dinâmicas
 
-Access inputs via properties.  
-If not found as an input, the route parameters will be checked.
+Acesse inputs via propriedades.  
+Se não for encontrado como input, os parâmetros de rota serão verificados.
 
 ```php
 $name = $request->name;
 ```
 
-### Retrieve Partial Input
+### Recuperar input parcial
 
 ```php
 $input = $request->only(['username', 'password']);
@@ -820,9 +820,9 @@ $input = $request->except(['credit_card']);
 $input = $request->except('credit_card');
 ```
 
-### Check Existence
+### Verificar existência
 
-Determine if value(s) present
+Determine se o(s) valor(es) está(ão) presente(s)
 
 ```php
 if ($request->has('name')) {
@@ -845,26 +845,26 @@ if ($request->hasFile('image')) {
 }
 ```
 
-### Old Input
+### Input antigo
 
-Retrieve input from the previous request
+Recupere o input da requisição anterior
 
 ```php
 $username = $request->old('username');
 ```
 
-Or use the `old()` helper
+Ou use o helper `old()`
 
 ```php
 <input type="text" name="username" value="{{ old('username') }}">
 ```
 
-See: [Helpers](#helpers-cols-3)  
-See: [Forms](#forms-cols-3)
+Veja: [Helpers](#helpers-cols-3)  
+Veja: [Formulários](#forms-cols-3)
 
-### Uploaded Files
+### Arquivos enviados
 
-Retrieve uploaded file from request
+Recupere o arquivo enviado da requisição
 
 ```php
 $file = $request->file('photo');
@@ -872,7 +872,7 @@ $file = $request->file('photo');
 $file = $request->photo;
 ```
 
-Get file path or extension
+Obtenha o path ou a extensão do arquivo
 
 ```php
 $path = $request->photo->path();
@@ -880,7 +880,7 @@ $path = $request->photo->path();
 $extension = $request->photo->extension();
 ```
 
-Store uploaded file with a randomly generated filename
+Armazene o arquivo enviado com um nome de arquivo gerado aleatoriamente
 
 ```php
 // path where the file should be stored relative to
@@ -891,7 +891,7 @@ $path = $request->photo->store('images');
 $path = $request->photo->store('images', 's3');
 ```
 
-Store uploaded file and specify the name
+Armazene o arquivo enviado e especifique o nome
 
 ```php
 $path = $request->photo->storeAs('images', 'filename.jpg');
@@ -899,13 +899,13 @@ $path = $request->photo->storeAs('images', 'filename.jpg');
 $path = $request->photo->storeAs('images', 'filename.jpg', 's3');
 ```
 
-See More: [Laravel File Storage](https://laravel.com/docs/8.x/filesystem)
+Veja mais: [Laravel File Storage](https://laravel.com/docs/8.x/filesystem)
 
 ## Views
 
-### Intro
+### Introdução
 
-- [Laravel Docs - Views](https://laravel.com/docs/8.x/views)
+- [Docs do Laravel - Views](https://laravel.com/docs/8.x/views)
 
 ```html
 <!-- View stored in resources/views/greeting.blade.php -->
@@ -917,17 +917,17 @@ See More: [Laravel File Storage](https://laravel.com/docs/8.x/filesystem)
 </html>
 ```
 
-Create a view by placing a file with the `.blade.php` extension in the `resources/views` directory.
+Crie uma view colocando um arquivo com a extensão `.blade.php` no diretório `resources/views`.
 
-### Pass Data to Views
+### Passar dados para as views
 
-#### As an array
+#### Como um array
 
 ```php
 return view('greetings', ['name' => 'Victoria']);
 ```
 
-#### Using with()
+#### Usando with()
 
 ```php
 return view('greeting')
@@ -935,7 +935,7 @@ return view('greeting')
             ->with('occupation', 'Astronaut');
 ```
 
-Access each value using the data's keys
+Acesse cada valor usando as chaves dos dados
 
 ```html
 <html>
@@ -947,9 +947,9 @@ Access each value using the data's keys
 </html>
 ```
 
-### view helper
+### Helper view
 
-Return a view from a route with the `view()` helper
+Retorne uma view de uma rota com o helper `view()`
 
 ```php
 Route::get('/', function () {
@@ -957,26 +957,26 @@ Route::get('/', function () {
 });
 ```
 
-See: [View Routes](#view-routes) and [Helpers](#helpers)
+Veja: [Rotas de view](#view-routes) e [Helpers](#helpers)
 
-### Subdirectories
+### Subdiretórios
 
 ```php
 // resources/views/admin.profile.blade.php
 return view('admin.profile');
 ```
 
-## Blade Templates
+## Templates Blade
 
-### Intro
+### Introdução
 
-- [Laravel Docs - Blade Templates](https://laravel.com/docs/8.x/blade)
+- [Docs do Laravel - Templates Blade](https://laravel.com/docs/8.x/blade)
 
-Blade is the templating engine included in Laravel that also allows you to use plain PHP.
+Blade é o motor de templates incluído no Laravel que também permite usar PHP puro.
 
 ### Views
 
-Blade views are returned using the `view()` helper
+Views Blade são retornadas usando o helper `view()`
 
 ```php
 Route::get('/', function () {
@@ -984,17 +984,17 @@ Route::get('/', function () {
 });
 ```
 
-See: [Views](#view-helper)
+Veja: [Views](#view-helper)
 
-### Comments
+### Comentários
 
 ```html
 {{-- This comment will not be present in the rendered HTML --}}
 ```
 
-### Directives {.row-span-3}
+### Diretivas {.row-span-3}
 
-#### if Statements
+#### Instruções if
 
 ```php
 @if (count($records) === 1)
@@ -1018,7 +1018,7 @@ See: [Views](#view-helper)
 @endempty
 ```
 
-#### Authentication
+#### Autenticação
 
 ```php
 @auth
@@ -1053,7 +1053,7 @@ See: [Views](#view-helper)
 @endwhile
 ```
 
-Loop Iteration:
+Iteração de loop:
 
 ```php
 @foreach ($users as $user)
@@ -1069,34 +1069,34 @@ Loop Iteration:
 @endforeach
 ```
 
-See more: [Laravel Loop Variable](https://laravel.com/docs/8.x/blade#the-loop-variable)
+Veja mais: [Variável de loop do Laravel](https://laravel.com/docs/8.x/blade#the-loop-variable)
 
-### Displaying Data
+### Exibindo dados
 
-Blade's echo statements `{{ }}` are automatically sent through PHP's `htmlspecialchars` function to prevent XSS attacks.
+As instruções de echo do Blade `{{ }}` passam automaticamente pela função `htmlspecialchars` do PHP para prevenir ataques XSS.
 
-Display the contents of the name variable:
+Exiba o conteúdo da variável name:
 
 ```html
 Hello, {{ $name }}.
 ```
 
-Display results of a PHP function:
+Exiba o resultado de uma função PHP:
 
 ```html
 The current UNIX timestamp is {{ time() }}.
 ```
 
-Display data without escaping with `htmlspecialchars`
+Exiba dados sem escape com `htmlspecialchars`
 
 ```html
 Hello, {!! $name !!}.
 ```
 
-### Including Subviews
+### Incluindo subviews
 
-Include a Blade view from within another view.  
-All variables that are available to the parent view are also available to the included view
+Inclua uma view Blade dentro de outra view.  
+Todas as variáveis disponíveis para a view pai também ficam disponíveis para a view incluída
 
 ```html
 <div>
@@ -1109,9 +1109,9 @@ All variables that are available to the parent view are also available to the in
 </div>
 ```
 
-### Raw PHP
+### PHP puro
 
-Execute a block of plain PHP
+Execute um bloco de PHP puro
 
 ```php
 @php
@@ -1121,8 +1121,8 @@ Execute a block of plain PHP
 
 ### Stacks
 
-Blade allows you to push to named stacks which can be rendered in another view or layout.  
-Useful for javascript libraries required by child views
+O Blade permite fazer push para stacks nomeadas que podem ser renderizadas em outra view ou layout.  
+Útil para bibliotecas JavaScript exigidas por views filhas
 
 ```html
 <!-- Add to the stack -->
@@ -1131,7 +1131,7 @@ Useful for javascript libraries required by child views
 @endpush
 ```
 
-Render the stack
+Renderize a stack
 
 ```html
 <head>
@@ -1141,7 +1141,7 @@ Render the stack
 </head>
 ```
 
-Prepend to the beginning of a stack
+Adicione ao início de uma stack
 
 ```php
 @push('scripts')
@@ -1155,15 +1155,15 @@ Prepend to the beginning of a stack
 @endprepend
 ```
 
-## Forms
+## Formulários
 
-### Intro
+### Introdução
 
-- [Laravel Docs - Forms](https://laravel.com/docs/8.x/blade#forms)
+- [Docs do Laravel - Formulários](https://laravel.com/docs/8.x/blade#forms)
 
-### CSRF Field
+### Campo CSRF
 
-Include a hidden CSRF token field to validate the request
+Inclua um campo oculto de token CSRF para validar a requisição
 
 <!-- prettier-ignore -->
 ```html
@@ -1174,12 +1174,12 @@ Include a hidden CSRF token field to validate the request
 </form>
 ```
 
-See: [CSRF Protection](#csrf-protection)
+Veja: [Proteção CSRF](#csrf-protection)
 
-### Method Field
+### Campo de método
 
-Since HTML forms can't make `PUT`, `PATCH`, or `DELETE` requests, you will need to add a hidden `_method` field to spoof
-these HTTP verbs:
+Como formulários HTML não conseguem fazer requisições `PUT`, `PATCH` ou `DELETE`, você precisa adicionar um campo oculto `_method` para simular
+esses verbos HTTP:
 
 <!-- prettier-ignore -->
 ```html
@@ -1190,7 +1190,7 @@ these HTTP verbs:
 </form>
 ```
 
-### Validation Errors
+### Erros de validação
 
 <!-- prettier-ignore -->
 ```html
@@ -1205,33 +1205,33 @@ these HTTP verbs:
 @enderror
 ```
 
-See: [Validation](#validation-cols-3)
+Veja: [Validação](#validation-cols-3)
 
-### Repopulating Forms
+### Repopulando formulários
 
-When redirecting due to a validation error, request input is flashed to the session.  
-Retrieve the input from the previous request with the `old` method
+Ao redirecionar por causa de um erro de validação, o input da requisição é gravado na sessão (flash).  
+Recupere o input da requisição anterior com o método `old`
 
 ```php
 $title = $request->old('title');
 ```
 
-Or the `old()` helper
+Ou o helper `old()`
 
 ```html
 <input type="text" name="title" value="{{ old('title') }}" />
 ```
 
-## Validation
+## Validação
 
-### Intro
+### Introdução
 
-- [Laravel Docs - Validation](https://laravel.com/docs/8.x/validation)
+- [Docs do Laravel - Validação](https://laravel.com/docs/8.x/validation)
 
-If validation fails, a redirect response to the previous URL will be generated.  
-If the incoming request is an XHR request, a JSON response with the validation error messages will be returned.
+Se a validação falhar, uma resposta de redirecionamento para a URL anterior será gerada.  
+Se a requisição recebida for uma requisição XHR, uma resposta JSON com as mensagens de erro de validação será retornada.
 
-### Logic
+### Lógica
 
 ```php
 // in routes/web.php
@@ -1251,9 +1251,9 @@ public function store(Request $request)
 }
 ```
 
-### Rules {.row-span-5}
+### Regras {.row-span-5}
 
-Can also be passed as an array
+Também podem ser passadas como um array
 
 ```php
 $validatedData = $request->validate([
@@ -1264,142 +1264,142 @@ $validatedData = $request->validate([
 
 #### after:date
 
-Field must be a value after a given date.
+O campo deve ser um valor posterior a uma data fornecida.
 
 ```php
 'start_date' => 'required|date|after:tomorrow'
 ```
 
-Instead of a date string, you may specify another field to compare against the date
+Em vez de uma string de data, você pode especificar outro campo para comparar com a data
 
 ```php
 'finish_date' => 'required|date|after:start_date'
 ```
 
-See [before:date](#beforedate)
+Veja [before:date](#beforedate)
 
 #### after_or_equal:date
 
-Field must be a value after or equal to the given date.  
-See [after:date](#afterdate)
+O campo deve ser um valor posterior ou igual à data fornecida.  
+Veja [after:date](#afterdate)
 
 #### before:date
 
-Field must be a value preceding the given date.  
-The name of another field may be supplied as the value of `date`.  
-See [after:date](#afterdate)
+O campo deve ser um valor anterior à data fornecida.  
+O nome de outro campo pode ser fornecido como valor de `date`.  
+Veja [after:date](#afterdate)
 
 #### alpha_num
 
-Field must be entirely alpha-numeric characters
+O campo deve conter apenas caracteres alfanuméricos
 
 #### boolean
 
-Field must be able to be cast as a `boolean`.  
-Accepted input are `true`, `false`, `1`, `0`, `"1"`, and `"0"`
+O campo deve poder ser convertido para `boolean`.  
+Os valores aceitos são `true`, `false`, `1`, `0`, `"1"` e `"0"`
 
 #### confirmed
 
-Field must have a matching field of `{field}_confirmation`.  
-For example, if the field is password, a matching `password_confirmation` field must be present
+O campo deve ter um campo correspondente `{field}_confirmation`.  
+Por exemplo, se o campo for password, deve existir um campo `password_confirmation` correspondente
 
 #### current_password
 
-Field must match the authenticated user's password.
+O campo deve corresponder à senha do usuário autenticado.
 
 #### date
 
-Field must be a valid, non-relative date according to the `strtotime` PHP function.
+O campo deve ser uma data válida e não relativa, conforme a função PHP `strtotime`.
 
 #### email
 
-Field must be formatted as an email address.
+O campo deve estar formatado como um endereço de e-mail.
 
 #### file
 
-Field must be a successfully uploaded file.  
-See: [Uploaded Files](#uploaded-files)
+O campo deve ser um arquivo enviado com sucesso.  
+Veja: [Arquivos enviados](#uploaded-files)
 
 #### max:value
 
-Field must be less than or equal to a maximum value.  
-Strings, numerics, arrays, and files are evaluated like the [size](#sizevalue) rule.
+O campo deve ser menor ou igual a um valor máximo.  
+Strings, numéricos, arrays e arquivos são avaliados como a regra [size](#sizevalue).
 
 #### min:value
 
-Field must have a minimum value.  
-Strings, numerics, arrays, and files are evaluated like the [size](#sizevalue) rule.
+O campo deve ter um valor mínimo.  
+Strings, numéricos, arrays e arquivos são avaliados como a regra [size](#sizevalue).
 
 #### mimetypes:text/plain,...
 
-File must match one of the given MIME types:
+O arquivo deve corresponder a um dos tipos MIME fornecidos:
 
 ```php
 'video' => 'mimetypes:video/avi,video/mpeg,video/quicktime'
 ```
 
-File's contents will be read and the framework will attempt to guess the MIME type, regardless of the client's provided
-MIME type.
+O conteúdo do arquivo será lido e o framework tentará adivinhar o tipo MIME, independentemente do tipo MIME fornecido pelo
+cliente.
 
 #### mimes:foo,bar,...
 
-Field must have a MIME type corresponding to one of the listed extensions.
+O campo deve ter um tipo MIME correspondente a uma das extensões listadas.
 
 ```php
 'photo' => 'mimes:jpg,bmp,png'
 ```
 
-File's contents will be read and the framework will attempt to guess the MIME type, regardless of the client's provided
-MIME type.
+O conteúdo do arquivo será lido e o framework tentará adivinhar o tipo MIME, independentemente do tipo MIME fornecido pelo
+cliente.
 
-[Full listing of MIME types & extensions](https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types)
+[Lista completa de tipos MIME e extensões](https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types)
 
 #### nullable
 
-Field may be null.
+O campo pode ser null.
 
 #### numeric
 
-Field must be numeric.
+O campo deve ser numérico.
 
 #### password
 
-Field must match the authenticated user's password.
+O campo deve corresponder à senha do usuário autenticado.
 
 #### prohibited
 
-Field must be empty or not present.
+O campo deve estar vazio ou não estar presente.
 
 #### prohibited_if:anotherfield,value,...
 
-Field must be empty or not present if the _anotherfield_ field is equal to any value.
+O campo deve estar vazio ou não estar presente se o campo _anotherfield_ for igual a qualquer valor.
 
 #### prohibited_unless:anotherfield,value,...
 
-Field must be empty or not present unless the _anotherfield_ field is equal to any value.
+O campo deve estar vazio ou não estar presente a menos que o campo _anotherfield_ seja igual a qualquer valor.
 
 #### required
 
-Field must be present in the input data and not empty.  
-A field is considered "empty" if one of the following conditions are true:
+O campo deve estar presente nos dados de input e não pode estar vazio.  
+Um campo é considerado "vazio" se uma das seguintes condições for verdadeira:
 
-- The value is `null`.
-- The value is an empty string.
-- The value is an empty array or empty `Countable` object.
-- The value is an uploaded file with no path.
+- O valor é `null`.
+- O valor é uma string vazia.
+- O valor é um array vazio ou um objeto `Countable` vazio.
+- O valor é um arquivo enviado sem path.
 
 #### required_with:foo,bar,...
 
-Field must be present and not empty, only if any of the other specified fields are present and not empty
+O campo deve estar presente e não vazio apenas se algum dos outros campos especificados estiver presente e não vazio
 
 #### size:value
 
-Field must have a size matching the given value.
+O campo deve ter um tamanho que corresponda ao valor fornecido.
 
-- For strings: number of characters
-- For numeric data: integer value (must also have the `numeric` or `integer` rule).
-- For arrays: count of the array
-- For files: file size in kilobytes
+- Para strings: número de caracteres
+- Para dados numéricos: valor inteiro (também deve ter a regra `numeric` ou `integer`).
+- Para arrays: contagem do array
+- Para arquivos: tamanho do arquivo em kilobytes
 
 ```php
 // Validate that a string is exactly 12 characters long...
@@ -1414,17 +1414,17 @@ Field must have a size matching the given value.
 
 #### unique:table,column
 
-Field must not exist within the given database table
+O campo não deve existir na tabela de banco de dados fornecida
 
 #### url
 
-Field must be a valid URL
+O campo deve ser uma URL válida
 
-[See all available rules](https://laravel.com/docs/8.x/validation#available-validation-rules)
+[Veja todas as regras disponíveis](https://laravel.com/docs/8.x/validation#available-validation-rules)
 
-### Validate Passwords
+### Validar senhas
 
-Ensure passwords have an adequate level of complexity
+Garanta que as senhas tenham um nível adequado de complexidade
 
 ```php
 $validatedData = $request->validate([
@@ -1432,7 +1432,7 @@ $validatedData = $request->validate([
 ]);
 ```
 
-`Password` rule object allows you to easily customize the password complexity requirements
+O objeto de regra `Password` permite personalizar facilmente os requisitos de complexidade da senha
 
 ```php
 // Require at least 8 characters...
@@ -1451,16 +1451,16 @@ Password::min(8)->numbers()
 Password::min(8)->symbols()
 ```
 
-Ensure a password has not been compromised in a public password data breach leak
+Garanta que uma senha não tenha sido comprometida em um vazamento público de dados de senhas
 
 ```php
 Password::min(8)->uncompromised()
 ```
 
-> _Uses the [k-Anonymity](https://en.wikipedia.org/wiki/K-anonymity) model via the
-> [haveibeenpwned.com](https://haveibeenpwned.com) service without sacrificing the user's privacy or security_
+> _Usa o modelo [k-Anonymity](https://en.wikipedia.org/wiki/K-anonymity) por meio do
+> serviço [haveibeenpwned.com](https://haveibeenpwned.com) sem sacrificar a privacidade ou a segurança do usuário_
 
-Methods can be chained
+Os métodos podem ser encadeados
 
 ```php
 Password::min(8)
@@ -1471,7 +1471,7 @@ Password::min(8)
     ->uncompromised()
 ```
 
-### Display Validation Errors
+### Exibir erros de validação
 
 ```php
 <!-- /resources/views/post/create.blade.php -->
@@ -1491,12 +1491,12 @@ Password::min(8)
 <!-- Create Post Form -->
 ```
 
-See: [Validation Errors](#validation-errors)
+Veja: [Erros de validação](#validation-errors)
 
-### Optional Fields
+### Campos opcionais
 
-You will often need to mark your "optional" request fields as `nullable` if you do not want the validator to consider
-`null` values as invalid
+Frequentemente você precisará marcar seus campos de requisição "opcionais" como `nullable` se não quiser que o validador considere
+valores `null` como inválidos
 
 ```php
 // publish_at field may be either null or a valid date representation
@@ -1507,15 +1507,15 @@ $request->validate([
 ]);
 ```
 
-### Validated Input
+### Input validado
 
-Retrieve the request data that underwent validation
+Recupere os dados da requisição que passaram pela validação
 
 ```php
 $validated = $request->validated();
 ```
 
-Or with `safe()`, which returns an instance of `Illuminate\Support\ValidatedInput`
+Ou com `safe()`, que retorna uma instância de `Illuminate\Support\ValidatedInput`
 
 ```php
 $validated = $request->safe()->only(['name', 'email']);
@@ -1525,7 +1525,7 @@ $validated = $request->safe()->except(['name', 'email']);
 $validated = $request->safe()->all();
 ```
 
-#### Iterate
+#### Iterar
 
 ```php
 foreach ($request->safe() as $key => $value) {
@@ -1533,7 +1533,7 @@ foreach ($request->safe() as $key => $value) {
 }
 ```
 
-#### Access as an array
+#### Acessar como um array
 
 ```php
 $validated = $request->safe();
@@ -1541,23 +1541,23 @@ $validated = $request->safe();
 $email = $validated['email'];
 ```
 
-## Session
+## Sessão
 
-### Intro
+### Introdução
 
-- [Laravel Docs - Session](https://laravel.com/docs/8.x/session)
+- [Docs do Laravel - Sessão](https://laravel.com/docs/8.x/session)
 
-Laravel ships with a variety of session backends that are accessed through a unified API. Memcached, Redis, and database
-support is included.
+O Laravel vem com diversos backends de sessão acessados por uma API unificada. O suporte a Memcached, Redis e banco de dados
+está incluído.
 
-#### Configuration
+#### Configuração
 
-Session configuration is in `config/session.php`.  
-By default, Laravel is configured to use the file session driver
+A configuração de sessão fica em `config/session.php`.  
+Por padrão, o Laravel é configurado para usar o driver de sessão de arquivo
 
-### Check Isset / Exists
+### Verificar Isset / Exists
 
-Returns `true` if the item is present and is not `null`:
+Retorna `true` se o item estiver presente e não for `null`:
 
 ```php
 if ($request->session()->has('users')) {
@@ -1565,7 +1565,7 @@ if ($request->session()->has('users')) {
 }
 ```
 
-Returns `true` if present, even if it's `null`:
+Retorna `true` se estiver presente, mesmo que seja `null`:
 
 ```php
 if ($request->session()->exists('users')) {
@@ -1573,7 +1573,7 @@ if ($request->session()->exists('users')) {
 }
 ```
 
-Returns `true` if the item is `null` or is not present:
+Retorna `true` se o item for `null` ou não estiver presente:
 
 ```php
 if ($request->session()->missing('users')) {
@@ -1581,9 +1581,9 @@ if ($request->session()->missing('users')) {
 }
 ```
 
-### Retrieving Data {.row-span-2}
+### Recuperando dados {.row-span-2}
 
-#### Via Request
+#### Via requisição
 
 ```php
 // ...
@@ -1598,7 +1598,7 @@ class UserController extends Controller
 }
 ```
 
-Pass a default value as the second argument to use if the key does not exist
+Passe um valor padrão como segundo argumento para usar se a chave não existir
 
 ```php
 $value = $request->session()->get('key', 'default');
@@ -1609,7 +1609,7 @@ $value = $request->session()->get('key', function () {
 });
 ```
 
-#### Via session helper
+#### Via helper session
 
 ```php
 Route::get('/home', function () {
@@ -1624,54 +1624,54 @@ Route::get('/home', function () {
 });
 ```
 
-See: [Session Helper]()
+Veja: [Helper de sessão]()
 
-#### All Session Data
+#### Todos os dados da sessão
 
 ```php
 $data = $request->session()->all();
 ```
 
-#### Retrieve and Delete
+#### Recuperar e excluir
 
-Retrieve and delete an item from the session
+Recupere e exclua um item da sessão
 
 ```php
 $value = $request->session()->pull('key', 'default');
 ```
 
-### Store Data
+### Armazenar dados
 
-Via a request instance
+Via uma instância de requisição
 
 ```php
 $request->session()->put('key', 'value');
 ```
 
-Via the global "session" helper
+Via o helper global "session"
 
 ```php
 session(['key' => 'value']);
 ```
 
-Push a new value onto a session value that is an array
+Faça push de um novo valor em um valor de sessão que seja um array
 
 ```php
 // array of team names
 $request->session()->push('user.teams', 'developers');
 ```
 
-## Logging
+## Logs
 
-### Configuration
+### Configuração
 
-Configuration options for logging behavior is in `config/logging.php`.  
-By default, Laravel will use the stack channel when logging messages, which aggregates multiple log channels into a
-single channel.
+As opções de configuração do comportamento de logs ficam em `config/logging.php`.  
+Por padrão, o Laravel usa o canal stack ao registrar mensagens, que agrega vários canais de log em um
+único canal.
 
-### Levels {.row-span-2}
+### Níveis {.row-span-2}
 
-All the log levels defined in the [RFC 5424 specification](https://tools.ietf.org/html/rfc5424) are available:
+Todos os níveis de log definidos na [especificação RFC 5424](https://tools.ietf.org/html/rfc5424) estão disponíveis:
 
 - emergency
 - alert
@@ -1682,7 +1682,7 @@ All the log levels defined in the [RFC 5424 specification](https://tools.ietf.or
 - info
 - debug
 
-### Log Facade {.row-span-2}
+### Facade Log {.row-span-2}
 
 ```php
 use Illuminate\Support\Facades\Log;
@@ -1697,7 +1697,7 @@ Log::info($message);
 Log::debug($message);
 ```
 
-### Contextual Info
+### Informações contextuais
 
 ```php
 use Illuminate\Support\Facades\Log;
@@ -1705,55 +1705,55 @@ use Illuminate\Support\Facades\Log;
 Log::info('User failed to login.', ['id' => $user->id]);
 ```
 
-## Deployment
+## Deploy
 
-### Intro
+### Introdução
 
-- [Laravel Docs - Deployment](https://laravel.com/docs/8.x/deployment)
+- [Docs do Laravel - Deploy](https://laravel.com/docs/8.x/deployment)
 
-Ensure your web server directs all requests to your application's `public/index.php` file
+Garanta que seu servidor web direcione todas as requisições para o arquivo `public/index.php` da sua aplicação
 
-### Optimization
+### Otimização
 
-#### Composer's autoloader map
+#### Mapa do autoloader do Composer
 
 ```bash
 composer install --optimize-autoloader --no-dev
 ```
 
-#### Configuration Loading
+#### Carregamento de configuração
 
-Be sure that you are only calling the `env` function from within your configuration files.  
-Once the configuration has been cached, the `.env` file will not be loaded and all calls to the `env` function for
-`.env` variables will return `null`
+Certifique-se de chamar a função `env` apenas dentro dos seus arquivos de configuração.  
+Depois que a configuração for colocada em cache, o arquivo `.env` não será carregado e todas as chamadas à função `env` para
+variáveis do `.env` retornarão `null`
 
 ```bash
 php artisan config:cache
 ```
 
-#### Route Loading
+#### Carregamento de rotas
 
 ```bash
 php artisan route:cache
 ```
 
-#### View Loading
+#### Carregamento de views
 
 ```bash
 php artisan view:cache
 ```
 
-### Debug Mode
+### Modo de depuração
 
-The debug option in your `config/app.php` determines how much information about an error is actually displayed to the
-user.  
-By default, this option is set to the value of the `APP_DEBUG` environment variable in your `.env` file. In your
-production environment, this value should always be `false`.  
-If the `APP_DEBUG` variable is set to `true` in production, you risk exposing sensitive configuration values to end
-users.
+A opção de debug no seu `config/app.php` determina quanta informação sobre um erro é realmente exibida ao
+usuário.  
+Por padrão, essa opção é definida com o valor da variável de ambiente `APP_DEBUG` no seu arquivo `.env`. No seu
+ambiente de produção, esse valor deve ser sempre `false`.  
+Se a variável `APP_DEBUG` estiver definida como `true` em produção, você corre o risco de expor valores de configuração sensíveis aos
+usuários finais.
 
-## Also see
+## Veja também
 
-- [Laravel Docs](https://laravel.com/docs/8.x)
+- [Docs do Laravel](https://laravel.com/docs/8.x)
 - [Laracasts](https://laracasts.com/)
 - [Laravel API](https://laravel.com/api/8.x/)

@@ -7,25 +7,25 @@ tags:
   - processes
   - utility
 categories:
-  - Linux Command
+  - Comandos Linux
 intro: |
-  This quick reference cheat sheet provides various for using lsof command.
+  Este cheat sheet de referência rápida traz vários exemplos de uso do comando lsof.
 plugins:
   - copyCode
 ---
 
-## Getting Started
+## Primeiros passos
 
-### Introduction
+### Introdução
 
-**lsof** meaning `L`i`S`t `O`pen `F`iles is used to find out which files are open by which process
+**lsof**, de `L`i`S`t `O`pen `F`iles, serve para descobrir quais arquivos estão abertos por qual processo
 
 ```shell script
 $ lsof
 $ sudo lsof -u root
 ```
 
-### Port-specific
+### Por porta
 
 ```shell script
 $ lsof -i :8080
@@ -36,7 +36,7 @@ $ lsof -i UDP
 $ lsof -i @192.168.1.5
 ```
 
-### Process-specific
+### Por processo
 
 ```shell script
 $ lsof -c mysql
@@ -46,7 +46,7 @@ $ lsof -c nginx
 $ lsof -c ssh -c httpd
 ```
 
-### User-specific
+### Por usuário
 
 ```shell script
 $ lsof -u www-data
@@ -54,34 +54,34 @@ $ lsof -u www-data -u ubuntu
 $ lsof -i -u ^root # Except certain user
 ```
 
-### Network-specific
+### Por rede
 
 ```shell script
 $ lsof -i 4   # IPv4 only
 $ lsof -i 6   # IPv6 only
 ```
 
-### PID-specific
+### Por PID
 
 ```shell script
 $ lsof -p 1753
 $ lsof -p ^3  # Except certain pids
 ```
 
-### Filename-specific
+### Por nome de arquivo
 
 ```shell script
 $ lsof /var/log/messages
 $ lsof /etc/passwd
 ```
 
-### Directory-specific
+### Por diretório
 
 ```shell script
 $ lsof +D /var/log # Within a directory
 ```
 
-### Kill
+### Matar processo
 
 ```shell script
 $ kill -9 `lsof -t -u apache`

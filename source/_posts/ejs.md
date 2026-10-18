@@ -7,16 +7,16 @@ tags:
   - Frontend
   - Framework
 categories:
-  - Programming
-intro: EJS(Embedded JavaScript) is a simple templating language that lets you generate HTML markup with plain JavaScript.
+  - Programação
+intro: EJS (Embedded JavaScript) é uma linguagem de template simples que permite gerar marcação HTML com JavaScript puro.
 plugins:
   - copyCode
   - runCode
 ---
 
-<!-- NOTE: EJS does not have Prettier support, so manually format and add a prettier-ignore above broken code blocks -->
+<!-- NOTA: o EJS não tem suporte ao Prettier, então formate manualmente e adicione um prettier-ignore acima dos blocos de código quebrados -->
 
-## Get Started { .cols-3 }
+## Primeiros passos { .cols-3 }
 
 ### Hello world
 
@@ -41,7 +41,7 @@ $ npm install ejs
 $ ejs hello.ejs -o hello.html
 ```
 
-### Render with Data
+### Renderizar com dados
 
 ```js
 let ejs = require('ejs');
@@ -53,9 +53,9 @@ let html = ejs.render(tpl, { people: people });
 console.log(html);
 ```
 
-Pass EJS a template string and some data.
+Passe ao EJS uma string de template e alguns dados.
 
-### Browser Support
+### Suporte no navegador
 
 ```html
 <script src="https://unpkg.com/ejs"></script>
@@ -66,30 +66,30 @@ Pass EJS a template string and some data.
 </script>
 ```
 
-Use ejs in a script tag.
+Use o EJS dentro de uma tag script.
 
-### Variables
+### Variáveis
 
 |              |                                  |
 | ------------ | -------------------------------- |
-| `<%= var %>` | Prints the value of the variable |
-| `<%- var %>` | Prints without HTML escaping     |
+| `<%= var %>` | Imprime o valor da variável      |
+| `<%- var %>` | Imprime sem escape de HTML       |
 
 ### CLI
 
-Render and specify an output file.
+Renderiza e especifica um arquivo de saída.
 
 ```shell
 $ ejs hello.ejs -o hello.html
 ```
 
-Feed it a template file and a data file
+Forneça um arquivo de template e um arquivo de dados
 
 ```shell
 $ ejs hello.ejs -f data.json -o hello.html
 ```
 
-### Comments
+### Comentários
 
 ```html
 <%# This line will denote a comment %>
@@ -106,7 +106,7 @@ $ ejs hello.ejs -f data.json -o hello.html
 %>
 ```
 
-### Method {.col-span-2}
+### Métodos {.col-span-2}
 
 ```js
 let ejs = require('ejs');
@@ -123,13 +123,13 @@ ejs.renderFile(filename, data, options, function (err, str) {
 });
 ```
 
-### Including Files
+### Incluindo arquivos
 
 ```html
 <%- include('partials/navbar.ejs') %>
 ```
 
-Include a template with data:
+Inclua um template com dados:
 
 ```html
 <% include('header', { title: 'My Page' }) %>
@@ -146,11 +146,11 @@ Include a template with data:
 </ul>
 ```
 
-To include a template, needs a file name option, paths are relative
+Para incluir um template, é necessária a opção de nome de arquivo; os paths são relativos
 
-## Docs {.cols-3}
+## Documentação {.cols-3}
 
-### Conditionals
+### Condicionais
 
 <!-- prettier-ignore -->
 ```html
@@ -161,7 +161,7 @@ To include a template, needs a file name option, paths are relative
 <% } %>
 ```
 
-### Using loops
+### Usando loops
 
 <!-- prettier-ignore -->
 ```html
@@ -172,7 +172,7 @@ To include a template, needs a file name option, paths are relative
 </ul>
 ```
 
-### Custom delimiters
+### Delimitadores personalizados
 
 ```js
 let ejs = require('ejs'),
@@ -188,7 +188,7 @@ ejs.render('<$= users.join(" | "); $>', { users: users });
 // => 'geddy | neil | alex'
 ```
 
-### Caching
+### Cache
 
 ```js
 let ejs = require('ejs'),
@@ -198,7 +198,7 @@ let ejs = require('ejs'),
 ejs.cache = LRU(100);
 ```
 
-### Custom file loader
+### Carregador de arquivos personalizado
 
 ```js
 let ejs = require('ejs');
@@ -223,9 +223,9 @@ ejs.fileLoader = myFileLoader;
 <%- include('footer'); -%>
 ```
 
-## Client-side support {.cols-2}
+## Suporte no lado do cliente {.cols-2}
 
-### Example
+### Exemplo
 
 ```html
 <div id="output"></div>
@@ -240,7 +240,7 @@ ejs.fileLoader = myFileLoader;
 </script>
 ```
 
-### Caveats
+### Advertências
 
 ```js
 let str = "Hello <%= include('file', {person: 'John'}); %>",
@@ -255,69 +255,69 @@ fn(data, null, function (path, d) {
 }); // returns rendered string
 ```
 
-## Options {.cols-1}
+## Opções {.cols-1}
 
-### Options list
+### Lista de opções
 
-| Option             | Description                                                                                                                                                                                                                   |
-| ------------------ | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| cache              | Compiled functions are cached, requires filename                                                                                                                                                                              |
-| filename           | Used by cache to key caches, and for includes                                                                                                                                                                                 |
-| root               | Set project root for includes with an absolute path (e.g. `/file.ejs`). Can be an array to try to resolve include from multiple directories.                                                                                  |
-| views              | An array of paths to use when resolving includes with relative paths.                                                                                                                                                         |
-| context            | Function execution context                                                                                                                                                                                                    |
-| compileDebug       | When false, no debug instrumentation is compiled                                                                                                                                                                              |
-| client             | Returns standalone compiled function                                                                                                                                                                                          |
-| delimiter          | Character to use for inner delimiter, by default `%`                                                                                                                                                                          |
-| openDelimiter      | Character to use for opening delimiter, by default `<`                                                                                                                                                                        |
-| closeDelimiter     | Character to use for closing delimiter, by default `>`                                                                                                                                                                        |
-| debug              | Outputs generated function body                                                                                                                                                                                               |
-| strict             | When set to `true`, generated function is in strict mode                                                                                                                                                                      |
-| \_with             | Whether or not to use with() {} constructs. If `false`, then the locals will be stored in the locals object. (Implies `--strict`)                                                                                             |
-| localsName         | Name to use for the object storing local variables when not using with defaults to `locals`                                                                                                                                   |
-| rmWhitespace       | Remove all safe-to-remove whitespace, including leading and trailing whitespace. It also enables a safer version of `-%> `line slurping for all scriptlet tags (it does not strip new lines of tags in the middle of a line). |
-| escape             | The escaping function used with `<%=` construct. It is used in rendering and is `.toString()`ed in the generation of client functions. (By default escapes XML).                                                              |
-| outputFunctionName | Set to a string (e.g., 'echo' or 'print') for a function to print output inside scriptlet tags.                                                                                                                               |
-| async              | When true, EJS will use an async function for rendering. (Depends on async/await support in the JS runtime.                                                                                                                   |
+| Opção              | Descrição                                                                                                                                                                                                                                    |
+| ------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| cache              | Funções compiladas ficam em cache; requer filename                                                                                                                                                                                           |
+| filename           | Usado pelo cache como chave e para includes                                                                                                                                                                                                  |
+| root               | Define o root do projeto para includes com path absoluto (ex.: `/file.ejs`). Pode ser um array para tentar resolver o include em vários diretórios.                                                                                          |
+| views              | Um array de paths usado ao resolver includes com paths relativos.                                                                                                                                                                            |
+| context            | Contexto de execução da função                                                                                                                                                                                                               |
+| compileDebug       | Quando false, nenhuma instrumentação de debug é compilada                                                                                                                                                                                    |
+| client             | Retorna uma função compilada standalone                                                                                                                                                                                                      |
+| delimiter          | Caractere usado como delimitador interno; por padrão `%`                                                                                                                                                                                     |
+| openDelimiter      | Caractere usado para abrir o delimitador; por padrão `<`                                                                                                                                                                                     |
+| closeDelimiter     | Caractere usado para fechar o delimitador; por padrão `>`                                                                                                                                                                                    |
+| debug              | Exibe o corpo da função gerada                                                                                                                                                                                                               |
+| strict             | Quando definido como `true`, a função gerada fica em strict mode                                                                                                                                                                             |
+| \_with             | Define se as construções with() {} serão usadas. Se `false`, os locals serão armazenados no objeto locals. (Implica `--strict`)                                                                                                              |
+| localsName         | Nome do objeto que armazena as variáveis locais quando não se usa with; o padrão é `locals`                                                                                                                                                  |
+| rmWhitespace       | Remove todo espaço em branco seguro de remover, incluindo espaços no início e no fim. Também habilita uma versão mais segura do `-%> `line slurping para todas as tags scriptlet (não remove quebras de linha de tags no meio de uma linha). |
+| escape             | A função de escape usada com a construção `<%=`. É usada na renderização e recebe `.toString()` na geração de funções de cliente. (Por padrão, escapa XML).                                                                                  |
+| outputFunctionName | Defina como uma string (ex.: 'echo' ou 'print') para uma função que imprime a saída dentro das tags scriptlet.                                                                                                                               |
+| async              | Quando true, o EJS usa uma função async para renderizar. (Depende do suporte a async/await no runtime JS.                                                                                                                                    |
 
 ## Tags {.cols-1}
 
-### Tags list
+### Lista de tags
 
-| Tag               | Description                                                          |
-| ----------------- | :------------------------------------------------------------------- |
-| `<%`              | 'Scriptlet' tag, for control-flow, no output                         |
-| <code><%\_</code> | 'Whitespace Slurping' Scriptlet tag, strips all whitespace before it |
-| `<%=`             | Outputs the value into the template (HTML escaped)                   |
-| `<%-`             | Outputs the unescaped value into the template                        |
-| `<%#`             | Comment tag, no execution, no output                                 |
-| `<%%`             | Outputs a literal `<%`                                               |
-| `%>`              | Plain ending tag                                                     |
-| `-%>`             | Trim-mode ('newline slurp') tag, trims following newline             |
-| <code>\_%></code> | 'Whitespace Slurping' ending tag, removes all whitespace after it    |
+| Tag               | Descrição                                                                          |
+| ----------------- | :--------------------------------------------------------------------------------- |
+| `<%`              | Tag 'scriptlet', para controle de fluxo, sem saída                                 |
+| <code><%\_</code> | Tag scriptlet de 'whitespace slurping', remove todo espaço em branco anterior      |
+| `<%=`             | Imprime o valor no template (com escape de HTML)                                   |
+| `<%-`             | Imprime o valor sem escape no template                                             |
+| `<%#`             | Tag de comentário, sem execução, sem saída                                         |
+| `<%%`             | Imprime um `<%` literal                                                            |
+| `%>`              | Tag de fechamento simples                                                          |
+| `-%>`             | Tag em modo trim ('newline slurp'), remove a quebra de linha seguinte              |
+| <code>\_%></code> | Tag de fechamento de 'whitespace slurping', remove todo espaço em branco posterior |
 
 ## CLI {.cols-1}
 
-### CLI list
+### Lista de CLI
 
-| Option                               | Description                                                                                 |
-| ------------------------------------ | :------------------------------------------------------------------------------------------ |
-| `cache`                              | Compiled functions are cached, requires filename                                            |
-| `-o` / `--output-file FILE`          | Write the rendered output to FILE rather than stdout.                                       |
-| `-f` / `--data-file FILE`            | Must be JSON-formatted. Use parsed input from FILE as data for rendering.                   |
-| `-i` / `--data-input STRING`         | Must be JSON-formatted and URI-encoded. Use parsed input from STRING as data for rendering. |
-| `-m` / `--delimiter CHARACTER`       | Use CHARACTER with angle brackets for open/close (defaults to %).                           |
-| `-p` / `--open-delimiter CHARACTER`  | Use CHARACTER instead of left angle bracket to open.                                        |
-| `-c` / `--close-delimiter CHARACTER` | Use CHARACTER instead of right angle bracket to close.                                      |
-| `-s` / `--strict`                    | When set to `true`, generated function is in strict mode                                    |
-| `-n` / `--no-with`                   | Use `locals` object for vars rather than using `with` (implies --strict).                   |
-| `-l` / `--locals-name`               | Name to use for the object storing local variables when not using `with`.                   |
-| `-w` / `--rm-whitespace`             | Remove all safe-to-remove whitespace, including leading and trailing whitespace.            |
-| `-d` / `--debug`                     | Outputs generated function body                                                             |
-| `-h` / `--help`                      | Display this help message.                                                                  |
-| `-V` / `-v` / `--version`            | Display the EJS version.                                                                    |
+| Opção                                | Descrição                                                                                                            |
+| ------------------------------------ | :------------------------------------------------------------------------------------------------------------------- |
+| `cache`                              | Funções compiladas ficam em cache; requer filename                                                                   |
+| `-o` / `--output-file FILE`          | Grava a saída renderizada em FILE em vez de stdout.                                                                  |
+| `-f` / `--data-file FILE`            | Deve estar no formato JSON. Usa a entrada interpretada de FILE como dados para renderização.                         |
+| `-i` / `--data-input STRING`         | Deve estar no formato JSON e codificado como URI. Usa a entrada interpretada de STRING como dados para renderização. |
+| `-m` / `--delimiter CHARACTER`       | Usa CHARACTER com sinais de menor/maior para abrir/fechar (o padrão é %).                                            |
+| `-p` / `--open-delimiter CHARACTER`  | Usa CHARACTER em vez do sinal de menor para abrir.                                                                   |
+| `-c` / `--close-delimiter CHARACTER` | Usa CHARACTER em vez do sinal de maior para fechar.                                                                  |
+| `-s` / `--strict`                    | Quando definido como `true`, a função gerada fica em strict mode                                                     |
+| `-n` / `--no-with`                   | Usa o objeto `locals` para variáveis em vez de `with` (implica --strict).                                            |
+| `-l` / `--locals-name`               | Nome do objeto que armazena variáveis locais quando não se usa `with`.                                               |
+| `-w` / `--rm-whitespace`             | Remove todo espaço em branco seguro de remover, incluindo espaços no início e no fim.                                |
+| `-d` / `--debug`                     | Exibe o corpo da função gerada                                                                                       |
+| `-h` / `--help`                      | Exibe esta mensagem de ajuda.                                                                                        |
+| `-V` / `-v` / `--version`            | Exibe a versão do EJS.                                                                                               |
 
-Examples of use :
+Exemplos de uso:
 
 ```shell
 $ ejs -p [ -c ] ./template_file.ejs -o ./output.html

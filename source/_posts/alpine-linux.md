@@ -8,17 +8,17 @@ tags:
   - server
   - container
 categories:
-  - Operating System
+  - Sistema Operacional
 intro:
-  A comprehensive cheatsheet for Alpine Linux, covering package management, system administration, networking, and more.
-  Alpine Linux is a security-oriented, lightweight Linux distribution based on musl libc and busybox.
+  Uma cheat sheet completa do Alpine Linux, cobrindo gerenciamento de pacotes, administração do sistema, redes e muito mais.
+  O Alpine Linux é uma distribuição Linux leve e voltada à segurança, baseada em musl libc e busybox.
 ---
 
-# Alpine Linux Cheatsheet
+# Cheat sheet do Alpine Linux
 
-## Package Management (apk)
+## Gerenciamento de pacotes (apk)
 
-### Basic Package Operations
+### Operações básicas com pacotes
 
 ```bash
 # Update package index
@@ -43,7 +43,7 @@ apk info <package-name>
 apk list --installed
 ```
 
-### Advanced Package Operations
+### Operações avançadas com pacotes
 
 ```bash
 # Add package from testing repository
@@ -56,9 +56,9 @@ apk add package1 package2 package3
 apk cache clean
 ```
 
-## System Administration
+## Administração do sistema
 
-### Service Management (OpenRC)
+### Gerenciamento de serviços (OpenRC)
 
 ```bash
 # Start a service
@@ -80,7 +80,7 @@ rc-update del <service-name> default
 rc-status
 ```
 
-### System Information
+### Informações do sistema
 
 ```bash
 # Show system information
@@ -99,7 +99,7 @@ ps aux
 uptime
 ```
 
-### Network Configuration
+### Configuração de rede
 
 ```bash
 # Show network interfaces
@@ -118,7 +118,7 @@ ip route show
 vi /etc/network/interfaces
 ```
 
-Check this machine's public IP
+Verifique o IP público desta máquina
 
 ```bash
 # Install curl if needed
@@ -126,9 +126,9 @@ apk add --no-cache curl
 curl myip.dog
 ```
 
-More IP tools: [myip.dog](https://myip.dog/)
+Mais ferramentas de IP: [myip.dog](https://myip.dog/)
 
-### User Management
+### Gerenciamento de usuários
 
 ```bash
 # Add a new user
@@ -147,9 +147,9 @@ deluser <username>
 cat /etc/passwd
 ```
 
-## File System Operations
+## Operações no sistema de arquivos
 
-### Basic File Operations
+### Operações básicas com arquivos
 
 ```bash
 # Create directory
@@ -171,9 +171,9 @@ chmod <permissions> <file>
 chown <user>:<group> <file>
 ```
 
-## Container Operations
+## Operações com containers
 
-### Docker Support
+### Suporte ao Docker
 
 ```bash
 # Install Docker
@@ -186,9 +186,9 @@ rc-service docker start
 rc-update add docker default
 ```
 
-## System Maintenance
+## Manutenção do sistema
 
-### Disk Operations
+### Operações de disco
 
 ```bash
 # Check disk space
@@ -204,7 +204,7 @@ mount /dev/<device> /mnt/<mountpoint>
 umount /mnt/<mountpoint>
 ```
 
-### Backup and Restore
+### Backup e restauração
 
 ```bash
 # Create tar archive
@@ -217,17 +217,17 @@ tar -xzf backup.tar.gz
 lbu package /media/backup.apkovl.tar.gz
 ```
 
-## Tips and Tricks
+## Dicas e truques
 
-### Common Configuration Files
+### Arquivos de configuração comuns
 
-- `/etc/apk/repositories` - Package repositories
-- `/etc/network/interfaces` - Network configuration
-- `/etc/hostname` - System hostname
-- `/etc/hosts` - Host mappings
-- `/etc/resolv.conf` - DNS configuration
+- `/etc/apk/repositories` - Repositórios de pacotes
+- `/etc/network/interfaces` - Configuração de rede
+- `/etc/hostname` - Nome do host do sistema
+- `/etc/hosts` - Mapeamentos de hosts
+- `/etc/resolv.conf` - Configuração de DNS
 
-### Environment Variables
+### Variáveis de ambiente
 
 ```bash
 # Set environment variable
@@ -240,7 +240,7 @@ env
 echo "export VARIABLE=value" >> ~/.profile
 ```
 
-### System Logs
+### Logs do sistema
 
 ```bash
 # View system logs
@@ -253,9 +253,9 @@ dmesg
 tail -f /var/log/messages
 ```
 
-## Security
+## Segurança
 
-### Firewall (using iptables)
+### Firewall (com iptables)
 
 ```bash
 # Install iptables
@@ -271,7 +271,7 @@ iptables -A INPUT -p tcp --dport 22 -j ACCEPT
 /etc/init.d/iptables restart
 ```
 
-### SSH Configuration
+### Configuração do SSH
 
 ```bash
 # Generate SSH key
@@ -284,9 +284,9 @@ ssh-copy-id user@remote-server
 vi /etc/ssh/sshd_config
 ```
 
-## Troubleshooting
+## Solução de problemas
 
-### Common Commands
+### Comandos comuns
 
 ```bash
 # Check system logs for errors

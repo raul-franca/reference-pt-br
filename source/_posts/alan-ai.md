@@ -8,170 +8,170 @@ tags:
   - Prompts
   - Tips
 categories:
-  - Toolkit
+  - Ferramentas
 intro:
-  This cheat sheet covers all major script concepts, client API methods, handlers and other tools to create a multimodal
-  conversational experience with Alan AI
+  Este cheat sheet cobre os principais conceitos de script, métodos da API do cliente, handlers e outras ferramentas
+  para criar uma experiência conversacional multimodal com o Alan AI
 ---
 
-### Legend
+### Legenda
 
-- `pattern` — phrase to invoke a voice/text command or a response to be played
-- `value` — specified value
-- `params` — passed parameters
-- `action` — action to be performed
-- `output` — data outcome
-- `[...]` — optional data or parameters
+- `pattern` — frase para invocar um comando de voz/texto ou uma resposta a ser reproduzida
+- `value` — valor especificado
+- `params` — parâmetros passados
+- `action` — ação a ser executada
+- `output` — resultado dos dados
+- `[...]` — dados ou parâmetros opcionais
 
-## Dialog script
+## Script de diálogo
 
-### Intents & patterns
+### Intents e patterns
 
-Define a voice/text command to play a response
+Define um comando de voz/texto para reproduzir uma resposta
 
 ```{.wrap}
 intent('pattern'[, 'patternN'], reply('pattern'))
 ```
 
-Define a voice/text command to play a response or perform an action
+Define um comando de voz/texto para reproduzir uma resposta ou executar uma ação
 
 ```{.wrap}
 intent('pattern'[, 'patternN'], p => { action })
 ```
 
-Define alternatives
+Define alternativas
 
 ```{.wrap}
 intent('phrase1|phrase2')
 ```
 
-Define optional words and phrases
+Define palavras e frases opcionais
 
 ```{.wrap}
 intent('pattern (optional phrase|)')
 ```
 
-### Response functions
+### Funções de resposta
 
-Play a response (in case of multiple patterns, a response is picked at random)
+Reproduz uma resposta (no caso de vários patterns, uma resposta é escolhida aleatoriamente)
 
 ```{.wrap}
 reply('pattern'[, 'patternN'])
 ```
 
-Play a response
+Reproduz uma resposta
 
 ```{.wrap}
 p.play('pattern')
 ```
 
-Define voice settings for the assistant reply: `accent (en, fr, de, it, ru, es)`, `gender (male/female)`, `voice type`,
+Define as configurações de voz para a resposta do assistente: `accent (en, fr, de, it, ru, es)`, `gender (male/female)`, `voice type`,
 `speaking pitch`, `speaking rate`
 
 ```{.wrap}
 p.play([voice(code, gender, type, pitch, rate), ]'pattern')
 ```
 
-Define play options: `force:true` (execute if the button is inactive), `activate:true` (activate the button before),
-`deactivate:true` (deactivate the button after)
+Define opções de reprodução: `force:true` (executa se o botão estiver inativo), `activate:true` (ativa o botão antes),
+`deactivate:true` (desativa o botão depois)
 
 ```{.wrap}
 p.play('pattern'[, opts(options)])
 ```
 
-Send a command to the app
+Envia um comando para o app
 
 ```{.wrap}
 p.play({command:data})
 ```
 
-### User-defined slots
+### Slots definidos pelo usuário
 
-Define a static list of values expected in the input
+Define uma lista estática de valores esperados na entrada
 
 ```{.wrap}
 $(SLOTNAME value1|value2) => p.SLOTNAME.value
 ```
 
-Provide labels to classify or identify the slot values
+Fornece labels para classificar ou identificar os valores do slot
 
 ```{.wrap}
 $(SLOTNAME value1~label1|value2~label2) => p.SLOTNAME.label
 ```
 
-Enable fuzzy matching to capture similar variants
+Ativa o fuzzy matching para capturar variantes semelhantes
 
 ```{.wrap}
 $(SLOTNAME~ value1|value2) => p.SLOTNAME.value
 ```
 
-Make a slot optional
+Torna um slot opcional
 
 ```{.wrap}
 $(SLOTNAME value1|value2|)
 ```
 
-Capture several slot values
+Captura vários valores de slot
 
 ```{.wrap}
 intent('$(SLOTNAME value1|value2) and $(SLOTNAME value1|value2 )') => p.SLOTNAME_ (array), p.SLOTNAME_[0].value, p.SLOTNAME_[1].value
 ```
 
-### Predefined slots
+### Slots predefinidos
 
-Capture date values
+Captura valores de data
 
 ```{.wrap}
 $(DATE) => p.DATE.value, p.DATE.moment, p.DATE.luxon
 ```
 
-Capture time values
+Captura valores de hora
 
 ```{.wrap}
 $(TIME) => p.TIME.value, p.TIME.moment
 ```
 
-Capture cardinal numbers
+Captura números cardinais
 
 ```{.wrap}
 $(NUMBER) => p.NUMBER.value, p.NUMBER.number
 ```
 
-Capture ordinal numbers
+Captura números ordinais
 
 ```{.wrap}
 $(ORDINAL) => p.ORDINAL.value, p.ORDINAL.number
 ```
 
-Capture locations
+Captura localizações
 
 ```{.wrap}
 $(LOC) => p.LOC.value
 ```
 
-Capture names
+Captura nomes
 
 ```{.wrap}
 $(NAME) => p.NAME.value
 ```
 
-### Dynamic slots
+### Slots dinâmicos
 
-Define a dynamic slot at the project level
+Define um slot dinâmico no nível do projeto
 
 ```{.wrap}
 project.name = {en: "value1|value2|value3"}
 $(SLOTNAME p:name) => p.SLOTNAME.value
 ```
 
-Define a dynamic slot at the dialog session level
+Define um slot dinâmico no nível da sessão de diálogo
 
 ```{.wrap}
 p.userData.name = {en: "value1|value2|value3"}
 $(SLOTNAME u:name) => p.SLOTNAME.value
 ```
 
-Get data for a dynamic slot with the visual state
+Obtém dados de um slot dinâmico com o visual state
 
 ```{.wrap}
 let name = ["value1|value2|value3"]
@@ -179,228 +179,228 @@ p.visual.data = {en: name};
 $(SLOTNAME v:name) => p.SLOTNAME.value
 ```
 
-Define a dynamic slot in a short form
+Define um slot dinâmico de forma abreviada
 
 ```{.wrap}
 project.name = {en: "value1|value2|value3"}
 $(p:name) => p.SLOTNAME.value
 ```
 
-Define labels for dynamic slots: see [User-defined slots](#user-defined-slots).
+Define labels para slots dinâmicos: veja [Slots definidos pelo usuário](#user-defined-slots).
 
-Enable fuzzy matching for dynamic slots: see [User-defined slots](#user-defined-slots).
+Ativa o fuzzy matching para slots dinâmicos: veja [Slots definidos pelo usuário](#user-defined-slots).
 
-Make a dynamic slot optional: see [User-defined slots](#user-defined-slots).
+Torna um slot dinâmico opcional: veja [Slots definidos pelo usuário](#user-defined-slots).
 
-Capture several slot values: see [User-defined slots](#user-defined-slots).
+Captura vários valores de slot: veja [Slots definidos pelo usuário](#user-defined-slots).
 
-### RegEx slots
+### Slots RegEx
 
-Capture digit and/or letter combination
+Captura combinações de dígitos e/ou letras
 
 ```{.wrap}
 const reg = "([A-Za-z]{1}\\s?){6}"
 $(SLOTNAME* ${reg}) => p.SLOTNAME.value
 ```
 
-Capture any user’s input
+Captura qualquer entrada do usuário
 
 ```{.wrap}
 $(SLOTNAME* .+) => p.SLOTNAME.value
 ```
 
-### Contexts
+### Contextos
 
-Define a context
+Define um contexto
 
 ```{.wrap}
 let contextName = context(() => { action })
 ```
 
-Activate a context
+Ativa um contexto
 
 ```{.wrap}
 intent('pattern', p => {..., p.then(contextName)}
 ```
 
-Pass data to the context
+Passa dados para o contexto
 
 ```{.wrap}
 p.then(contextName, state: {data:yourData}) => p.state.data
 ```
 
-Resolve a context
+Resolve um contexto
 
 ```{.wrap}
 p.resolve([data:yourData])
 ```
 
-Reset a context
+Redefine um contexto
 
 ```{.wrap}
 p.resetContext()
 ```
 
-Define intents to be matched at any time without switching the current context
+Define intents que podem ser correspondidos a qualquer momento sem trocar o contexto atual
 
 ```{.wrap}
 intent(noctx, 'pattern', ...) or noContext(() => {intent(...)})
 ```
 
-Play a prompt for an expected input
+Reproduz um prompt para uma entrada esperada
 
 ```{.wrap}
 fallback('pattern1'[, 'patternN'])
 ```
 
-Title a context
+Define um título para um contexto
 
 ```{.wrap}
 title('contextName')
 ```
 
-### Predefined objects
+### Objetos predefinidos
 
-Store static device- and user-specific data passed from the client app
+Armazena dados estáticos específicos do dispositivo e do usuário enviados pelo app cliente
 
 ```{.wrap}
 authData.data => p.authData.data
 ```
 
-Store state data to be available globally at the project scope
+Armazena dados de estado disponíveis globalmente no escopo do projeto
 
 ```{.wrap}
 project.info = {data:yourData} => project.info.data
 ```
 
-Store the intent match score
+Armazena a pontuação de correspondência da intent
 
 ```{.wrap}
 p.score
 ```
 
-Store data to be passed between contexts
+Armazena dados a serem passados entre contextos
 
 ```{.wrap}
 p.state.data
 ```
 
-Store visual context data to be passed from the client app with `setVisualState()`
+Armazena dados do contexto visual a serem enviados pelo app cliente com `setVisualState()`
 
 ```{.wrap}
 p.visual.data
 ```
 
-Store user-specific state data to be accessible during the dialog session
+Armazena dados de estado específicos do usuário acessíveis durante a sessão de diálogo
 
 ```{.wrap}
 p.userData.data
 ```
 
-### Predefined callbacks
+### Callbacks predefinidos
 
-Define actions to be performed when the script is saved and dialog model is built
+Define ações executadas quando o script é salvo e o modelo de diálogo é criado
 
 ```{.wrap}
 onCreateProject(() => { action })
 ```
 
-Define actions to be performed when the dialog session starts
+Define ações executadas quando a sessão de diálogo começa
 
 ```{.wrap}
 onCreateUser((p) => { action })
 ```
 
-Define actions to be performed when the dialog session ends
+Define ações executadas quando a sessão de diálogo termina
 
 ```{.wrap}
 onCleanupUser((p) => { action })
 ```
 
-Define actions to be performed when the visual state is set
+Define ações executadas quando o visual state é definido
 
 ```{.wrap}
 onVisualState((p, s) => { action })
 ```
 
-Define actions to be performed when a user event is triggered in the client app: `buttonReady`, `buttonClicked`,
+Define ações executadas quando um evento de usuário é disparado no app cliente: `buttonReady`, `buttonClicked`,
 `micPermissionPrompt`, `micAllowed`, `firstActivate`, `showPopup`, `popupCloseClicked`, `recognized`
 
 ```{.wrap}
 onUserEvent((p, e) => { action })
 ```
 
-Define actions to be performed when a context is activated
+Define ações executadas quando um contexto é ativado
 
 ```{.wrap}
 onEnter((p) => { action })
 ```
 
-### Q&A service
+### Serviço de Q&A
 
-Define a URL of a resource to be indexed
+Define a URL de um recurso a ser indexado
 
 ```{.wrap}
 corpus({url: url, depth: depthLevel})
 ```
 
-Define text corpus to be used by the assistant in the dialog
+Define o corpus de texto a ser usado pelo assistente no diálogo
 
 ```{.wrap}
 corpus('text')
 ```
 
-### Built-in JS libraries
+### Bibliotecas JS integradas
 
-Make API calls
+Faz chamadas de API
 
 ```{.wrap}
 axios, request
 ```
 
-Work with time
+Trabalha com tempo
 
 ```{.wrap}
 moment-timezone, luxon
 ```
 
-Work with arrays, numbers, objects, strings and so on
+Trabalha com arrays, números, objetos, strings e assim por diante
 
 ```{.wrap}
 lodash
 ```
 
-### Other
+### Outros
 
-Provide a list of hints to help recognize specific terms
+Fornece uma lista de dicas para ajudar a reconhecer termos específicos
 
 ```{.wrap}
 recognitionHints('hint'[, 'hintN'])
 ```
 
-Write info messages to Alan Studio logs
+Grava mensagens de info nos logs do Alan Studio
 
 ```{.wrap}
 console.log(data)
 ```
 
-Write error messages to Alan Studio logs
+Grava mensagens de erro nos logs do Alan Studio
 
 ```{.wrap}
 console.error(data)
 ```
 
-## Client SDK
+## SDK do cliente
 
-### Client API methods
+### Métodos da API do cliente
 
-Send information about the visual state from the client app to the dialog script
+Envia informações sobre o visual state do app cliente para o script de diálogo
 
 ```{.wrap}
 setVisualState(visualStateData:object)
 ```
 
-Send data or perform actions without a voice/text command
+Envia dados ou executa ações sem um comando de voz/texto
 
 ```{.wrap}
 projectAPI.method = function(p, param, callback) {
@@ -411,57 +411,57 @@ projectAPI.method = function(p, param, callback) {
 callProjectApi(method:string, data:object, callback:function)
 ```
 
-Play a text message in the client app
+Reproduz uma mensagem de texto no app cliente
 
 ```{.wrap}
 playText(text:string)
 ```
 
-Send a text message to Alan as the user’s input
+Envia uma mensagem de texto para o Alan como entrada do usuário
 
 ```{.wrap}
 sendText(text:string)
 ```
 
-Execute a command in the client app
+Executa um comando no app cliente
 
 ```{.wrap}
 playCommand(command:object)
 ```
 
-### Client API methods (continued)
+### Métodos da API do cliente (continuação)
 
-Activate the Alan button programmatically
+Ativa o botão do Alan programaticamente
 
 ```{.wrap}
 activate()
 ```
 
-Deactivate the Alan button programmatically
+Desativa o botão do Alan programaticamente
 
 ```{.wrap}
 deactivate()
 ```
 
-Check the Alan button state
+Verifica o estado do botão do Alan
 
 ```{.wrap}
 isActive()
 ```
 
-Remove the Alan button from the parent element, page (supported on Web, Ionic)
+Remove o botão do Alan do elemento pai, da página (com suporte em Web, Ionic)
 
 ```{.wrap}
 remove()
 ```
 
-Check the state of the wake word (supported on iOS, Android)
+Verifica o estado da wake word (com suporte em iOS, Android)
 
 ```{.wrap}
 getWakewordEnabled()
 ```
 
-Set the state of the wake word (supported on iOS, Android)
+Define o estado da wake word (com suporte em iOS, Android)
 
 ```{.wrap}
 setWakewordEnabled(enabled:boolean)
@@ -469,34 +469,34 @@ setWakewordEnabled(enabled:boolean)
 
 ### Handlers
 
-// Examples are provided for the Web platform
+// Os exemplos são fornecidos para a plataforma Web
 
-Handle commands sent from the dialog script to the client app
+Trata comandos enviados do script de diálogo para o app cliente
 
 ```{.wrap}
 onCommand: function (commandData) { action }
 ```
 
-Handle Alan button state changes
+Trata mudanças de estado do botão do Alan
 
 ```{.wrap}
 onButtonState: function (e) { action }
 ```
 
-Handle connection status to the virtual assistant project in the Alan Cloud
+Trata o status de conexão com o projeto do assistente virtual no Alan Cloud
 
 ```{.wrap}
 onConnectionStatus: function (e) { action }
 ```
 
-Handle events received from Alan
+Trata eventos recebidos do Alan
 
 ```{.wrap}
 onEvent: function (e) { action }
 ```
 
-## Also see
+## Veja também
 
-- [Alan AI website](https://alan.app)
-- [About the Alan Platform](https://alan.app/platform)
-- [Alan AI documentation](https://alan.app/docs)
+- [Site do Alan AI](https://alan.app)
+- [Sobre a plataforma Alan](https://alan.app/platform)
+- [Documentação do Alan AI](https://alan.app/docs)

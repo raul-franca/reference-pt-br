@@ -7,121 +7,121 @@ tags:
   - session
   - utility
 categories:
-  - Linux Command
+  - Comandos Linux
 intro: |
-  This is a quick reference guide cheat sheet for the screen command.
+  Este é um guia de referência rápida em formato cheat sheet para o comando screen.
 plugins:
   - copyCode
 ---
 
-## Getting Started
+## Primeiros passos
 
-### Getting started
+### Primeiros passos
 
 ```shell script
 $ screen
 ```
 
-1\. Press <kbd>Ctrl-A</kbd> <kbd>D</kbd> to detach session
+1\. Pressione <kbd>Ctrl-A</kbd> <kbd>D</kbd> para desanexar a sessão
 
 ---
 
-2\. List all screen sessions
+2\. Liste todas as sessões do screen
 
 ```shell script
 $ screen -ls
 ```
 
-3\. Re-attach a screen Session
+3\. Reconecte a uma sessão do screen
 
 ```shell script
 $ screen -r <name/pid>
 ```
 
-### Options {.col-span-2}
+### Opções {.col-span-2}
 
-| Options | Example                               | Description                                             |
-| ------- | ------------------------------------- | ------------------------------------------------------- |
-| `-S`    | screen -S debug                       | Start a new session with session name                   |
-| `-ls`   | screen -ls                            | List running sessions / screens                         |
-| `-x`    | screen -x                             | Attach to a running session                             |
-| `-r`    | screen -r debug                       | Attach to a running session with name                   |
-| `-R`    | screen -R debug                       | Attach to a session _(Will create if it doesn't exist)_ |
-| `-d`    | screen -d -m wget xxxx.com/large.file | Start screen in detached mode                           |
-| `-X`    | screen -X -S debug kill               | Kill a running session                                  |
+| Opções | Exemplo                               | Descrição                                               |
+| ------ | ------------------------------------- | ------------------------------------------------------- |
+| `-S`   | screen -S debug                       | Inicia uma nova sessão com nome                         |
+| `-ls`  | screen -ls                            | Lista as sessões / screens em execução                  |
+| `-x`   | screen -x                             | Conecta a uma sessão em execução                        |
+| `-r`   | screen -r debug                       | Conecta a uma sessão em execução pelo nome              |
+| `-R`   | screen -R debug                       | Conecta a uma sessão _(cria se não existir)_            |
+| `-d`   | screen -d -m wget xxxx.com/large.file | Inicia o screen em modo desanexado                      |
+| `-X`   | screen -X -S debug kill               | Encerra uma sessão em execução                          |
 
 {.show-header}
 
-### Help
+### Ajuda
 
-| Command      | Description                    |
-| ------------ | ------------------------------ |
-| `Ctrl-A` `?` | See help _(Lists keybindings)_ |
+| Comando      | Descrição                          |
+| ------------ | ---------------------------------- |
+| `Ctrl-A` `?` | Ver ajuda _(Lista os keybindings)_ |
 
 {.shortcuts}
 
-### Window Management {.col-span-2 .row-span-2}
+### Gerenciamento de janelas {.col-span-2 .row-span-2}
 
-| Command                                | Description                             |
+| Comando                                | Descrição                               |
 | -------------------------------------- | --------------------------------------- |
-| `Ctrl-A` `C`                           | Create new window                       |
-| `Ctrl-A` `Ctrl-A`                      | Change to last-visited active window    |
-| `Ctrl-A` `0...9`                       | Change to window by number              |
-| `Ctrl-A` `'` `<0...9 or title>`        | Change to window by number or name      |
-| `Ctrl-A` `N` or `Ctrl-A` `<space>`     | Change to next window in list           |
-| `Ctrl-A` `P` or `Ctrl-A` `<backspace>` | Change to previous window in list       |
-| `Ctrl-A` `"`                           | See window list                         |
-| `Ctrl-A` `W`                           | Show window bar                         |
-| `Ctrl-A` `K`                           | Kill current window _(not recommended)_ |
-| `Ctrl-A` `\`                           | Kill all windows _(not recommended)_    |
-| `Ctrl-A` `A`                           | Rename current window                   |
+| `Ctrl-A` `C`                           | Cria uma nova janela                    |
+| `Ctrl-A` `Ctrl-A`                      | Muda para a última janela ativa visitada |
+| `Ctrl-A` `0...9`                       | Muda para a janela pelo número          |
+| `Ctrl-A` `'` `<0...9 or title>`        | Muda para a janela por número ou nome   |
+| `Ctrl-A` `N` or `Ctrl-A` `<space>`     | Muda para a próxima janela da lista     |
+| `Ctrl-A` `P` or `Ctrl-A` `<backspace>` | Muda para a janela anterior da lista    |
+| `Ctrl-A` `"`                           | Ver a lista de janelas                  |
+| `Ctrl-A` `W`                           | Mostra a barra de janelas               |
+| `Ctrl-A` `K`                           | Encerra a janela atual _(não recomendado)_ |
+| `Ctrl-A` `\`                           | Encerra todas as janelas _(não recomendado)_ |
+| `Ctrl-A` `A`                           | Renomeia a janela atual                 |
 
 {.shortcuts}
 
-### Getting Out
+### Saindo
 
-| Command          | Description                               |
+| Comando          | Descrição                                 |
 | ---------------- | ----------------------------------------- |
-| `Ctrl-A` `D`     | Detach                                    |
-| `Ctrl-A` `D` `D` | Detach and logout <br>_(quick exit)_      |
-| `Ctrl-A` `:`     | Exit all session                          |
-| `Ctrl-A` `C-\`   | Force-exit screen <br>_(not recommended)_ |
+| `Ctrl-A` `D`     | Desanexa                                  |
+| `Ctrl-A` `D` `D` | Desanexa e faz logout <br>_(saída rápida)_ |
+| `Ctrl-A` `:`     | Sai de todas as sessões                   |
+| `Ctrl-A` `C-\`   | Força a saída do screen <br>_(não recomendado)_ |
 
 {.shortcuts}
 
-### Split screen
+### Dividir a tela
 
-| Command        | Description                            |
+| Comando        | Descrição                              |
 | -------------- | -------------------------------------- | ------------------------ |
-| `Ctrl-A` `S`   | Split display horizontally             |
-| `Ctrl-A` `V`   | Split display vertically               |
-| `Ctrl-A` `     | `                                      | Split display vertically |
-| `Ctrl-A` `TAB` | Jump to next display region            |
-| `Ctrl-A` `X`   | Remove current region                  |
-| `Ctrl-A` `Q`   | Remove all regions but the current one |
+| `Ctrl-A` `S`   | Divide a tela horizontalmente          |
+| `Ctrl-A` `V`   | Divide a tela verticalmente            |
+| `Ctrl-A` `     | `                                      | Divide a tela verticalmente |
+| `Ctrl-A` `TAB` | Salta para a próxima região de exibição |
+| `Ctrl-A` `X`   | Remove a região atual                  |
+| `Ctrl-A` `Q`   | Remove todas as regiões exceto a atual |
 
 {.shortcuts}
 
-### Misc {.col-span-2 .row-span-2}
+### Diversos {.col-span-2 .row-span-2}
 
-| Command           | Description                                |
+| Comando           | Descrição                                  |
 | ----------------- | ------------------------------------------ |
-| `Ctrl-A` `C-l`    | Redraw window                              |
-| `Ctrl-A` `[`      | Copy mode                                  |
-| `Ctrl-A` `ESC`    | Copy mode                                  |
-| `Ctrl-A` `]`      | Paste                                      |
-| `Ctrl-A` `M`      | Monitor window for activity                |
-| `Ctrl-A` `_`      | Monitor window for silence                 |
-| `Ctrl-A` `Ctrl-V` | Enter digraph <br>_(non-ASCII characters)_ |
-| `Ctrl-A` `X`      | Lock (password protect) display            |
-| `Ctrl-A` `:`      | Enter screen command                       |
-| `Ctrl-A` `H`      | Enable logging in the screen session       |
+| `Ctrl-A` `C-l`    | Redesenha a janela                         |
+| `Ctrl-A` `[`      | Modo de cópia                              |
+| `Ctrl-A` `ESC`    | Modo de cópia                              |
+| `Ctrl-A` `]`      | Cola                                       |
+| `Ctrl-A` `M`      | Monitora a janela em busca de atividade    |
+| `Ctrl-A` `_`      | Monitora a janela em busca de silêncio     |
+| `Ctrl-A` `Ctrl-V` | Entra no modo digraph <br>_(caracteres não ASCII)_ |
+| `Ctrl-A` `X`      | Bloqueia a tela (protege com senha)        |
+| `Ctrl-A` `:`      | Entra no comando do screen                 |
+| `Ctrl-A` `H`      | Ativa o log na sessão do screen            |
 
 {.shortcuts}
 
-### Screen tricks
+### Truques do screen
 
-SSH and attach in one line
+SSH e conexão em uma única linha
 
 ```shell script
 $ ssh -t user@host screen -x <name/pid>

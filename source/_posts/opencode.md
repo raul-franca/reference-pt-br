@@ -9,16 +9,16 @@ tags:
   - agent
   - coding
 categories:
-  - AI
+  - IA
 intro: |
-  [OpenCode](https://opencode.ai) is an open-source AI coding agent with a TUI, CLI, and desktop app — supports any LLM provider, fully extensible via config, plugins, and MCP.
+  [OpenCode](https://opencode.ai) é um agente de programação com IA open-source com TUI, CLI e app desktop — suporta qualquer provedor de LLM, totalmente extensível via config, plugins e MCP.
 plugins:
   - copyCode
 ---
 
-## Getting Started
+## Primeiros passos
 
-### Basic Usage {.row-span-2}
+### Uso básico {.row-span-2}
 
 ```bash
 # Start TUI for current directory
@@ -37,7 +37,7 @@ $ opencode run -c "Fix the failing tests"
 $ cat error.log | opencode run "Explain this error"
 ```
 
-Inside the TUI:
+Dentro da TUI:
 
 ```
 /init           # analyze project, create AGENTS.md
@@ -46,15 +46,15 @@ Inside the TUI:
 Tab             # switch agent (Build / Plan / Ask)
 ```
 
-### Introduction
+### Introdução
 
 - [Official Docs](https://opencode.ai/docs) _(opencode.ai)_
 - [GitHub](https://github.com/anomalyco/opencode) _(github.com)_
 - [Discord](https://discord.gg/opencode) _(discord.gg)_
 
-### Install
+### Instalação
 
-#### Script (recommended)
+#### Script (recomendado)
 
 ```bash
 $ curl -fsSL https://opencode.ai/install | bash
@@ -85,62 +85,62 @@ scoop install opencode      # Scoop
 $ docker run -it --rm ghcr.io/anomalyco/opencode
 ```
 
-### Key Concepts
+### Conceitos-chave
 
-| Term           | Description                 |
-| -------------- | --------------------------- |
-| TUI            | Interactive terminal UI     |
-| `opencode run` | Headless / scripting mode   |
-| Session        | Saved conversation history  |
-| AGENTS.md      | Project context for the AI  |
-| Snapshot       | Git-based undo/redo state   |
-| Compaction     | Auto-summarize full context |
-| Agent          | Task-specific AI persona    |
-| MCP            | External tool integrations  |
+| Termo          | Descrição                        |
+| -------------- | -------------------------------- |
+| TUI            | Interface de terminal interativa |
+| `opencode run` | Modo headless / scripting        |
+| Session        | Histórico de conversa salvo      |
+| AGENTS.md      | Contexto do projeto para a IA    |
+| Snapshot       | Estado de desfazer/refazer via Git |
+| Compaction     | Resume automaticamente todo o contexto |
+| Agent          | Persona de IA para tarefas específicas |
+| MCP            | Integrações com ferramentas externas |
 
-## TUI Slash Commands {.cols-3}
+## Comandos slash da TUI {.cols-3}
 
-### All Commands {.row-span-2}
+### Todos os comandos {.row-span-2}
 
-| Command     | Keybind | Description                   |
-| ----------- | ------- | ----------------------------- |
-| `/connect`  |         | Add provider API key          |
-| `/init`     | `<L>i`  | Create / update AGENTS.md     |
-| `/new`      | `<L>n`  | New session (alias: `/clear`) |
-| `/sessions` | `<L>l`  | List & switch sessions        |
-| `/models`   | `<L>m`  | List available models         |
-| `/themes`   | `<L>t`  | List & change themes          |
-| `/compact`  | `<L>c`  | Compact session context       |
-| `/undo`     | `<L>u`  | Undo last message + edits     |
-| `/redo`     | `<L>r`  | Redo undone message           |
-| `/share`    | `<L>s`  | Share session (get URL)       |
-| `/unshare`  |         | Remove shared session         |
-| `/export`   | `<L>x`  | Export to Markdown            |
-| `/editor`   | `<L>e`  | Open `$EDITOR` for input      |
-| `/details`  | `<L>d`  | Toggle tool details           |
-| `/thinking` |         | Toggle reasoning blocks       |
-| `/help`     | `<L>h`  | Show help dialog              |
-| `/exit`     | `<L>q`  | Exit (alias: `/quit`, `/q`)   |
+| Comando     | Atalho  | Descrição                          |
+| ----------- | ------- | ---------------------------------- |
+| `/connect`  |         | Adiciona a API key do provedor     |
+| `/init`     | `<L>i`  | Cria / atualiza AGENTS.md          |
+| `/new`      | `<L>n`  | Nova sessão (alias: `/clear`)      |
+| `/sessions` | `<L>l`  | Lista e alterna sessões            |
+| `/models`   | `<L>m`  | Lista os modelos disponíveis       |
+| `/themes`   | `<L>t`  | Lista e altera temas               |
+| `/compact`  | `<L>c`  | Compacta o contexto da sessão      |
+| `/undo`     | `<L>u`  | Desfaz a última mensagem + edições |
+| `/redo`     | `<L>r`  | Refaz a mensagem desfeita          |
+| `/share`    | `<L>s`  | Compartilha a sessão (gera URL)    |
+| `/unshare`  |         | Remove a sessão compartilhada      |
+| `/export`   | `<L>x`  | Exporta para Markdown              |
+| `/editor`   | `<L>e`  | Abre `$EDITOR` para entrada        |
+| `/details`  | `<L>d`  | Alterna detalhes da ferramenta     |
+| `/thinking` |         | Alterna blocos de raciocínio       |
+| `/help`     | `<L>h`  | Mostra o diálogo de ajuda          |
+| `/exit`     | `<L>q`  | Sai (alias: `/quit`, `/q`)         |
 
 {.show-header}
 
-`<L>` = leader key (default `ctrl+x`)
+`<L>` = leader key (padrão `ctrl+x`)
 
-### Input Tips
+### Dicas de entrada
 
-| Syntax        | Effect                     |
-| ------------- | -------------------------- |
-| `@filename`   | Fuzzy file reference       |
-| `!command`    | Run shell command inline   |
-| `Tab`         | Cycle agent mode           |
-| `Shift+Tab`   | Reverse cycle agent        |
-| `Drag & drop` | Attach image to prompt     |
-| `Ctrl+P`      | Command palette            |
-| `Ctrl+T`      | Cycle model variant        |
-| `F2`          | Cycle recent model         |
-| `Escape`      | Interrupt running response |
+| Sintaxe       | Efeito                        |
+| ------------- | ----------------------------- |
+| `@filename`   | Referência fuzzy a arquivo    |
+| `!command`    | Executa comando shell inline  |
+| `Tab`         | Alterna o modo do agent       |
+| `Shift+Tab`   | Alterna o agent no sentido inverso |
+| `Drag & drop` | Anexa imagem ao prompt        |
+| `Ctrl+P`      | Paleta de comandos            |
+| `Ctrl+T`      | Alterna a variante do modelo  |
+| `F2`          | Alterna para o modelo recente |
+| `Escape`      | Interrompe a resposta em execução |
 
-### Editor Setup
+### Configuração do editor
 
 ```bash
 # For terminal editors
@@ -153,111 +153,111 @@ export EDITOR="cursor --wait"
 export EDITOR="zed --wait"
 ```
 
-Add to `~/.zshrc` or `~/.bashrc` to persist.
+Adicione a `~/.zshrc` ou `~/.bashrc` para persistir.
 
-## Keyboard Shortcuts {.cols-3}
+## Atalhos de teclado {.cols-3}
 
-### Session Controls {.row-span-2}
+### Controles de sessão {.row-span-2}
 
-| Shortcut     | Action                 |
-| ------------ | ---------------------- |
-| `Ctrl+X` `N` | New session            |
-| `Ctrl+X` `L` | Sessions list          |
-| `Ctrl+X` `C` | Compact session        |
-| `Ctrl+X` `U` | Undo last message      |
-| `Ctrl+X` `R` | Redo message           |
-| `Ctrl+X` `S` | Share session          |
-| `Ctrl+X` `X` | Export to Markdown     |
-| `Ctrl+X` `E` | Open editor            |
-| `Ctrl+X` `M` | Model picker           |
-| `Ctrl+X` `A` | Agent picker           |
-| `Ctrl+X` `T` | Theme picker           |
-| `Ctrl+X` `H` | Help / command palette |
-| `Ctrl+X` `Q` | Exit                   |
-| `Ctrl+X` `D` | Toggle tool details    |
-| `Ctrl+X` `B` | Toggle sidebar         |
-| `Ctrl+X` `G` | Session timeline       |
-| `Ctrl+X` `Y` | Copy messages          |
-| `Escape`     | Interrupt response     |
-| `Ctrl+P`     | Command palette        |
-| `Ctrl+T`     | Cycle model variant    |
-| `F2`         | Next recent model      |
-| `Shift+F2`   | Prev recent model      |
-| `Tab`        | Cycle agent forward    |
-| `Shift+Tab`  | Cycle agent backward   |
-
-{.shortcuts}
-
-### Scroll Navigation
-
-| Shortcut             | Action           |
-| -------------------- | ---------------- |
-| `Page Up`            | Scroll page up   |
-| `Page Down`          | Scroll page down |
-| `Ctrl+Alt+Y`         | Scroll line up   |
-| `Ctrl+Alt+E`         | Scroll line down |
-| `Ctrl+Alt+U`         | Half page up     |
-| `Ctrl+Alt+D`         | Half page down   |
-| `Ctrl+G` / `Home`    | Jump to top      |
-| `Ctrl+Alt+G` / `End` | Jump to bottom   |
+| Atalho       | Ação                     |
+| ------------ | ------------------------ |
+| `Ctrl+X` `N` | Nova sessão              |
+| `Ctrl+X` `L` | Lista de sessões         |
+| `Ctrl+X` `C` | Compacta a sessão        |
+| `Ctrl+X` `U` | Desfaz a última mensagem |
+| `Ctrl+X` `R` | Refaz a mensagem         |
+| `Ctrl+X` `S` | Compartilha a sessão     |
+| `Ctrl+X` `X` | Exporta para Markdown    |
+| `Ctrl+X` `E` | Abre o editor            |
+| `Ctrl+X` `M` | Seletor de modelo        |
+| `Ctrl+X` `A` | Seletor de agent         |
+| `Ctrl+X` `T` | Seletor de tema          |
+| `Ctrl+X` `H` | Ajuda / paleta de comandos |
+| `Ctrl+X` `Q` | Sair                     |
+| `Ctrl+X` `D` | Alterna detalhes da ferramenta |
+| `Ctrl+X` `B` | Alterna a barra lateral  |
+| `Ctrl+X` `G` | Linha do tempo da sessão |
+| `Ctrl+X` `Y` | Copia as mensagens       |
+| `Escape`     | Interrompe a resposta    |
+| `Ctrl+P`     | Paleta de comandos       |
+| `Ctrl+T`     | Alterna a variante do modelo |
+| `F2`         | Próximo modelo recente   |
+| `Shift+F2`   | Modelo recente anterior  |
+| `Tab`        | Alterna o agent para frente |
+| `Shift+Tab`  | Alterna o agent para trás |
 
 {.shortcuts}
 
-### Input Editing
+### Navegação por scroll
 
-| Shortcut       | Action             |
-| -------------- | ------------------ |
-| `Ctrl+A`       | Start of line      |
-| `Ctrl+E`       | End of line        |
-| `Alt+B`        | Word backward      |
-| `Alt+F`        | Word forward       |
-| `Ctrl+K`       | Kill to line end   |
-| `Ctrl+U`       | Kill to line start |
-| `Ctrl+W`       | Kill prev word     |
-| `Alt+D`        | Kill next word     |
-| `Ctrl+V`       | Paste              |
-| `Return`       | Submit message     |
-| `Shift+Return` | New line in input  |
+| Atalho               | Ação                  |
+| -------------------- | --------------------- |
+| `Page Up`            | Rola a página para cima |
+| `Page Down`          | Rola a página para baixo |
+| `Ctrl+Alt+Y`         | Rola uma linha para cima |
+| `Ctrl+Alt+E`         | Rola uma linha para baixo |
+| `Ctrl+Alt+U`         | Meia página para cima |
+| `Ctrl+Alt+D`         | Meia página para baixo |
+| `Ctrl+G` / `Home`    | Vai para o topo       |
+| `Ctrl+Alt+G` / `End` | Vai para o final      |
 
 {.shortcuts}
 
-## CLI Commands {.cols-2}
+### Edição de entrada
 
-### All Commands {.row-span-3}
+| Atalho         | Ação                   |
+| -------------- | ---------------------- |
+| `Ctrl+A`       | Início da linha        |
+| `Ctrl+E`       | Fim da linha           |
+| `Alt+B`        | Palavra anterior       |
+| `Alt+F`        | Próxima palavra        |
+| `Ctrl+K`       | Apaga até o fim da linha |
+| `Ctrl+U`       | Apaga até o início da linha |
+| `Ctrl+W`       | Apaga a palavra anterior |
+| `Alt+D`        | Apaga a próxima palavra |
+| `Ctrl+V`       | Cola                   |
+| `Return`       | Envia a mensagem       |
+| `Shift+Return` | Nova linha na entrada  |
 
-| Command                      | Description                   |
+{.shortcuts}
+
+## Comandos da CLI {.cols-2}
+
+### Todos os comandos {.row-span-3}
+
+| Comando                      | Descrição                     |
 | ---------------------------- | ----------------------------- |
-| `opencode`                   | Start TUI                     |
-| `opencode [path]`            | Start TUI in directory        |
-| `opencode run [msg]`         | Headless/non-interactive run  |
-| `opencode serve`             | Headless HTTP API server      |
-| `opencode web`               | HTTP server + web UI          |
-| `opencode attach [url]`      | Attach TUI to remote server   |
-| `opencode acp`               | Start ACP (JSON-RPC) server   |
-| `opencode agent create`      | Create new agent              |
-| `opencode agent list`        | List agents                   |
-| `opencode auth login`        | Configure provider API key    |
-| `opencode auth list`         | List authenticated providers  |
-| `opencode auth logout`       | Remove provider credentials   |
-| `opencode mcp add`           | Add MCP server                |
-| `opencode mcp list`          | List MCP servers              |
-| `opencode mcp auth [name]`   | Authenticate OAuth MCP server |
-| `opencode mcp logout [name]` | Remove MCP OAuth credentials  |
-| `opencode mcp debug <name>`  | Debug MCP connection          |
-| `opencode models [provider]` | List available models         |
-| `opencode models --refresh`  | Refresh models cache          |
-| `opencode session list`      | List all sessions             |
-| `opencode stats`             | Show token & cost stats       |
-| `opencode export [id]`       | Export session as JSON        |
-| `opencode import <file>`     | Import session / share URL    |
-| `opencode github install`    | Set up GitHub Actions agent   |
-| `opencode github run`        | Run GitHub agent              |
-| `opencode upgrade [ver]`     | Upgrade to latest / specific  |
-| `opencode uninstall`         | Uninstall opencode            |
+| `opencode`                   | Inicia a TUI                  |
+| `opencode [path]`            | Inicia a TUI no diretório     |
+| `opencode run [msg]`         | Execução headless/não interativa |
+| `opencode serve`             | Servidor de API HTTP headless |
+| `opencode web`               | Servidor HTTP + web UI        |
+| `opencode attach [url]`      | Conecta a TUI a um servidor remoto |
+| `opencode acp`               | Inicia o servidor ACP (JSON-RPC) |
+| `opencode agent create`      | Cria um novo agent            |
+| `opencode agent list`        | Lista os agents               |
+| `opencode auth login`        | Configura a API key do provedor |
+| `opencode auth list`         | Lista provedores autenticados |
+| `opencode auth logout`       | Remove credenciais do provedor |
+| `opencode mcp add`           | Adiciona servidor MCP         |
+| `opencode mcp list`          | Lista servidores MCP          |
+| `opencode mcp auth [name]`   | Autentica servidor MCP via OAuth |
+| `opencode mcp logout [name]` | Remove credenciais OAuth do MCP |
+| `opencode mcp debug <name>`  | Depura a conexão MCP          |
+| `opencode models [provider]` | Lista os modelos disponíveis  |
+| `opencode models --refresh`  | Atualiza o cache de modelos   |
+| `opencode session list`      | Lista todas as sessões        |
+| `opencode stats`             | Mostra estatísticas de tokens e custo |
+| `opencode export [id]`       | Exporta a sessão como JSON    |
+| `opencode import <file>`     | Importa sessão / URL de compartilhamento |
+| `opencode github install`    | Configura o agent do GitHub Actions |
+| `opencode github run`        | Executa o agent do GitHub     |
+| `opencode upgrade [ver]`     | Atualiza para a última versão / versão específica |
+| `opencode uninstall`         | Desinstala o opencode         |
 
 {.bold-first}
 
-### Headless Mode
+### Modo headless
 
 ```bash
 # Basic print/run
@@ -286,7 +286,7 @@ $ opencode serve &
 $ opencode run --attach http://localhost:4096 "task"
 ```
 
-### Server & Remote
+### Servidor e remoto
 
 ```bash
 # Headless API server
@@ -308,57 +308,57 @@ $ opencode acp --cwd /my/project
 $ opencode attach http://10.20.30.40:4096
 ```
 
-## CLI Flags {.cols-3}
+## Flags da CLI {.cols-3}
 
-### TUI Flags
+### Flags da TUI
 
-| Flag         | Short | Description              |
+| Flag         | Curta | Descrição                |
 | ------------ | ----- | ------------------------ |
-| `--continue` | `-c`  | Continue last session    |
-| `--session`  | `-s`  | Session ID to use        |
-| `--fork`     |       | Fork on continue         |
-| `--prompt`   |       | Initial prompt           |
-| `--model`    | `-m`  | Model (`provider/model`) |
-| `--agent`    |       | Agent to use             |
-| `--port`     |       | Port to listen on        |
-| `--hostname` |       | Hostname to listen on    |
+| `--continue` | `-c`  | Continua a última sessão |
+| `--session`  | `-s`  | ID da sessão a usar      |
+| `--fork`     |       | Faz fork ao continuar    |
+| `--prompt`   |       | Prompt inicial           |
+| `--model`    | `-m`  | Modelo (`provider/model`) |
+| `--agent`    |       | Agent a usar             |
+| `--port`     |       | Porta para escutar       |
+| `--hostname` |       | Hostname para escutar    |
 
 {.show-header}
 
-### Run Flags
+### Flags do run
 
-| Flag         | Short | Description           |
+| Flag         | Curta | Descrição             |
 | ------------ | ----- | --------------------- |
-| `--continue` | `-c`  | Continue last session |
-| `--session`  | `-s`  | Session ID to use     |
-| `--fork`     |       | Fork on continue      |
-| `--model`    | `-m`  | Model to use          |
-| `--agent`    |       | Agent to use          |
-| `--file`     | `-f`  | Attach file(s)        |
-| `--format`   |       | `default` or `json`   |
-| `--share`    |       | Share the session     |
-| `--title`    |       | Set session title     |
-| `--attach`   |       | Attach to server URL  |
-| `--port`     |       | Local server port     |
+| `--continue` | `-c`  | Continua a última sessão |
+| `--session`  | `-s`  | ID da sessão a usar   |
+| `--fork`     |       | Faz fork ao continuar |
+| `--model`    | `-m`  | Modelo a usar         |
+| `--agent`    |       | Agent a usar          |
+| `--file`     | `-f`  | Anexa arquivo(s)      |
+| `--format`   |       | `default` ou `json`   |
+| `--share`    |       | Compartilha a sessão  |
+| `--title`    |       | Define o título da sessão |
+| `--attach`   |       | Conecta à URL do servidor |
+| `--port`     |       | Porta do servidor local |
 
 {.show-header}
 
-### Global Flags
+### Flags globais
 
-| Flag           | Short | Description           |
+| Flag           | Curta | Descrição             |
 | -------------- | ----- | --------------------- |
-| `--help`       | `-h`  | Display help          |
-| `--version`    | `-v`  | Print version         |
-| `--print-logs` |       | Print logs to stderr  |
+| `--help`       | `-h`  | Exibe a ajuda         |
+| `--version`    | `-v`  | Mostra a versão       |
+| `--print-logs` |       | Imprime logs no stderr |
 | `--log-level`  |       | DEBUG/INFO/WARN/ERROR |
 
 {.show-header}
 
-## Configuration {.cols-2}
+## Configuração {.cols-2}
 
 ### opencode.json {.row-span-2}
 
-Main config at `~/.config/opencode/opencode.json` or `./opencode.json`:
+Configuração principal em `~/.config/opencode/opencode.json` ou `./opencode.json`:
 
 ```json
 {
@@ -399,7 +399,7 @@ Main config at `~/.config/opencode/opencode.json` or `./opencode.json`:
 
 ### tui.json
 
-TUI config at `~/.config/opencode/tui.json`:
+Configuração da TUI em `~/.config/opencode/tui.json`:
 
 ```json
 {
@@ -417,22 +417,22 @@ TUI config at `~/.config/opencode/tui.json`:
 }
 ```
 
-### Config Locations
+### Locais de configuração
 
-| Source       | Path                               | Priority    |
+| Origem       | Caminho                            | Prioridade  |
 | ------------ | ---------------------------------- | ----------- |
-| Remote       | `.well-known/opencode`             | 1 (lowest)  |
+| Remote       | `.well-known/opencode`             | 1 (menor)   |
 | Global       | `~/.config/opencode/opencode.json` | 2           |
 | Custom       | `$OPENCODE_CONFIG` path            | 3           |
 | Project      | `./opencode.json`                  | 4           |
 | `.opencode/` | agents/, commands/, plugins/       | 5           |
-| Inline       | `OPENCODE_CONFIG_CONTENT`          | 6 (highest) |
+| Inline       | `OPENCODE_CONFIG_CONTENT`          | 6 (maior)   |
 
 {.show-header}
 
-Configs **merge** — later sources override conflicting keys only.
+As configurações fazem **merge** — fontes posteriores substituem apenas as chaves conflitantes.
 
-### Variable Substitution
+### Substituição de variáveis
 
 ```json
 {
@@ -452,47 +452,47 @@ Configs **merge** — later sources override conflicting keys only.
 }
 ```
 
-## Environment Variables {.cols-2}
+## Variáveis de ambiente {.cols-2}
 
-### Core Variables {.row-span-2}
+### Variáveis principais {.row-span-2}
 
-| Variable                        | Type   | Description                       |
+| Variável                        | Tipo   | Descrição                         |
 | ------------------------------- | ------ | --------------------------------- |
-| `OPENCODE_CONFIG`               | string | Custom config file path           |
-| `OPENCODE_TUI_CONFIG`           | string | Custom TUI config path            |
-| `OPENCODE_CONFIG_DIR`           | string | Custom config directory           |
-| `OPENCODE_CONFIG_CONTENT`       | string | Inline JSON config                |
-| `OPENCODE_PERMISSION`           | string | Inline JSON permissions           |
-| `OPENCODE_AUTO_SHARE`           | bool   | Auto-share sessions               |
-| `OPENCODE_SERVER_PASSWORD`      | string | Basic auth for serve/web          |
-| `OPENCODE_SERVER_USERNAME`      | string | Auth username (default: opencode) |
-| `OPENCODE_MODELS_URL`           | string | Custom models config URL          |
-| `OPENCODE_ENABLE_EXA`           | bool   | Enable Exa web search             |
-| `OPENCODE_DISABLE_AUTOUPDATE`   | bool   | Disable update checks             |
-| `OPENCODE_DISABLE_PRUNE`        | bool   | Disable old data pruning          |
-| `OPENCODE_DISABLE_AUTOCOMPACT`  | bool   | Disable auto-compaction           |
-| `OPENCODE_DISABLE_LSP_DOWNLOAD` | bool   | Disable LSP auto-download         |
-| `OPENCODE_DISABLE_MODELS_FETCH` | bool   | Disable remote model fetch        |
-| `OPENCODE_DISABLE_CLAUDE_CODE`  | bool   | Disable .claude/ reading          |
-| `OPENCODE_GIT_BASH_PATH`        | string | Git Bash path (Windows)           |
-| `OPENCODE_CLIENT`               | string | Client ID (default: cli)          |
+| `OPENCODE_CONFIG`               | string | Caminho do arquivo de config customizado |
+| `OPENCODE_TUI_CONFIG`           | string | Caminho da config customizada da TUI |
+| `OPENCODE_CONFIG_DIR`           | string | Diretório de config customizado   |
+| `OPENCODE_CONFIG_CONTENT`       | string | Config JSON inline                |
+| `OPENCODE_PERMISSION`           | string | Permissões JSON inline            |
+| `OPENCODE_AUTO_SHARE`           | bool   | Compartilha sessões automaticamente |
+| `OPENCODE_SERVER_PASSWORD`      | string | Basic auth para serve/web         |
+| `OPENCODE_SERVER_USERNAME`      | string | Usuário de autenticação (padrão: opencode) |
+| `OPENCODE_MODELS_URL`           | string | URL da config de modelos customizada |
+| `OPENCODE_ENABLE_EXA`           | bool   | Habilita a busca web Exa          |
+| `OPENCODE_DISABLE_AUTOUPDATE`   | bool   | Desabilita verificações de atualização |
+| `OPENCODE_DISABLE_PRUNE`        | bool   | Desabilita a limpeza de dados antigos |
+| `OPENCODE_DISABLE_AUTOCOMPACT`  | bool   | Desabilita a compactação automática |
+| `OPENCODE_DISABLE_LSP_DOWNLOAD` | bool   | Desabilita o download automático do LSP |
+| `OPENCODE_DISABLE_MODELS_FETCH` | bool   | Desabilita a busca remota de modelos |
+| `OPENCODE_DISABLE_CLAUDE_CODE`  | bool   | Desabilita a leitura de .claude/  |
+| `OPENCODE_GIT_BASH_PATH`        | string | Caminho do Git Bash (Windows)     |
+| `OPENCODE_CLIENT`               | string | ID do cliente (padrão: cli)       |
 
 {.show-header}
 
-### Experimental Variables
+### Variáveis experimentais
 
-| Variable                                        | Description                      |
+| Variável                                        | Descrição                        |
 | ----------------------------------------------- | -------------------------------- |
-| `OPENCODE_EXPERIMENTAL`                         | Enable all experimental features |
-| `OPENCODE_EXPERIMENTAL_PLAN_MODE`               | Enable plan mode                 |
-| `OPENCODE_EXPERIMENTAL_LSP_TOOL`                | Enable experimental LSP tool     |
-| `OPENCODE_EXPERIMENTAL_FILEWATCHER`             | Enable full-dir file watcher     |
-| `OPENCODE_EXPERIMENTAL_MARKDOWN`                | Experimental markdown features   |
-| `OPENCODE_EXPERIMENTAL_EXA`                     | Experimental Exa features        |
-| `OPENCODE_EXPERIMENTAL_OUTPUT_TOKEN_MAX`        | Max output tokens override       |
-| `OPENCODE_EXPERIMENTAL_BASH_DEFAULT_TIMEOUT_MS` | Bash timeout in ms               |
+| `OPENCODE_EXPERIMENTAL`                         | Habilita todos os recursos experimentais |
+| `OPENCODE_EXPERIMENTAL_PLAN_MODE`               | Habilita o modo plan             |
+| `OPENCODE_EXPERIMENTAL_LSP_TOOL`                | Habilita a ferramenta LSP experimental |
+| `OPENCODE_EXPERIMENTAL_FILEWATCHER`             | Habilita o file watcher de diretório completo |
+| `OPENCODE_EXPERIMENTAL_MARKDOWN`                | Recursos experimentais de markdown |
+| `OPENCODE_EXPERIMENTAL_EXA`                     | Recursos experimentais do Exa    |
+| `OPENCODE_EXPERIMENTAL_OUTPUT_TOKEN_MAX`        | Substitui o máximo de tokens de saída |
+| `OPENCODE_EXPERIMENTAL_BASH_DEFAULT_TIMEOUT_MS` | Timeout do Bash em ms            |
 
-## Also see {.cols-1}
+## Veja também {.cols-1}
 
 - [OpenCode Docs](https://opencode.ai/docs) _(opencode.ai)_
 - [CLI Reference](https://opencode.ai/docs/cli/) _(opencode.ai)_

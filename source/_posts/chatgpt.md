@@ -8,391 +8,391 @@ tags:
   - Prompts
   - Tips
 categories:
-  - AI
-intro: This cheat sheet lists out prompts and tips from all over the world on how to use ChatGPT effectively
+  - IA
+intro: Este cheat sheet reúne prompts e dicas de todo o mundo sobre como usar o ChatGPT com eficácia
 plugins:
   - copyCode
 ---
 
-## Glossary
+## Glossário
 
-### AI
+### IA
 
-- Prompt: input or query that guides an AI model in generating a
-  response.[[s]](https://time.com/collections/the-ai-dictionary-from-allbusiness-com/7273982/definition-of-prompt-ai-prompt)
-- Tokens: the smallest units of text processed by an AI model (e.g., words, subwords, characters, and punctuation marks)
-  that varies depending on the model and the tokenization
-  method.[[s]](https://time.com/collections/the-ai-dictionary-from-allbusiness-com/7273998/definition-of-token/)
-- Token Limit: the maximum number of tokens an AI model can process in one
-  interaction.[[s]](https://time.com/collections/the-ai-dictionary-from-allbusiness-com/7273998/definition-of-token/)
-- Artificial intelligence (AI): technology that enables machines to simulate human cognition (e.g., human learning,
-  comprehension, problem solving, decision making, creativity, and
-  autonomy).[[s]](https://www.ibm.com/think/topics/artificial-intelligence)
-- AI Model: program trained on a set of data to recognize patterns or make decisions without further human
-  intervention.[[s]](https://www.ibm.com/think/topics/ai-model)
-- Large language model (LLM): transformer-based AI model trained on large text datasets to understand and generate
-  natural language.[[s]](https://www.ibm.com/think/topics/large-language-models)
-- Hallucination: AI response that detects nonexistent patterns and creates outputs that are nonsensical and
-  inaccurate.[[s]](https://www.ibm.com/think/topics/ai-hallucinations)
-- Jailbreak: exploiting vulnerabilities in AI systems to bypass their ethical guidelines and perform restricted
-  actions.[[s]](https://www.ibm.com/think/insights/ai-jailbreak)
+- Prompt: entrada ou consulta que orienta um modelo de IA na geração de uma
+  resposta.[[s]](https://time.com/collections/the-ai-dictionary-from-allbusiness-com/7273982/definition-of-prompt-ai-prompt)
+- Tokens: as menores unidades de texto processadas por um modelo de IA (por exemplo, palavras, subpalavras, caracteres e sinais de pontuação)
+  que variam conforme o modelo e o método de
+  tokenização.[[s]](https://time.com/collections/the-ai-dictionary-from-allbusiness-com/7273998/definition-of-token/)
+- Limite de tokens: o número máximo de tokens que um modelo de IA consegue processar em uma
+  interação.[[s]](https://time.com/collections/the-ai-dictionary-from-allbusiness-com/7273998/definition-of-token/)
+- Inteligência artificial (IA): tecnologia que permite às máquinas simular a cognição humana (por exemplo, aprendizado,
+  compreensão, resolução de problemas, tomada de decisão, criatividade e
+  autonomia).[[s]](https://www.ibm.com/think/topics/artificial-intelligence)
+- Modelo de IA: programa treinado com um conjunto de dados para reconhecer padrões ou tomar decisões sem intervenção
+  humana adicional.[[s]](https://www.ibm.com/think/topics/ai-model)
+- Large language model (LLM): modelo de IA baseado em transformer, treinado com grandes datasets de texto para entender e
+  gerar linguagem natural.[[s]](https://www.ibm.com/think/topics/large-language-models)
+- Alucinação: resposta de IA que detecta padrões inexistentes e cria saídas sem sentido e
+  imprecisas.[[s]](https://www.ibm.com/think/topics/ai-hallucinations)
+- Jailbreak: exploração de vulnerabilidades em sistemas de IA para contornar suas diretrizes éticas e executar ações
+  restritas.[[s]](https://www.ibm.com/think/insights/ai-jailbreak)
 
-### Prompt Engineering Techniques
+### Técnicas de Prompt Engineering
 
-- Zero-shot: prompt with no examples.[[s]](https://www.ibm.com/think/topics/zero-shot-prompting)
-- One-shot: prompt with one example.[[s]](https://www.ibm.com/think/topics/one-shot-prompting)
-- Few-shot: prompt with multiple examples.[[s]](https://www.ibm.com/think/topics/few-shot-prompting)
-- Chain of thought: prompt guiding the model to break down complex reasoning into intermediate
-  steps.[[s]](https://cloud.google.com/discover/what-is-prompt-engineering?hl=en)
+- Zero-shot: prompt sem exemplos.[[s]](https://www.ibm.com/think/topics/zero-shot-prompting)
+- One-shot: prompt com um exemplo.[[s]](https://www.ibm.com/think/topics/one-shot-prompting)
+- Few-shot: prompt com vários exemplos.[[s]](https://www.ibm.com/think/topics/few-shot-prompting)
+- Chain of thought: prompt que orienta o modelo a dividir um raciocínio complexo em etapas
+  intermediárias.[[s]](https://cloud.google.com/discover/what-is-prompt-engineering?hl=en)
 
-### Modes
+### Modos
 
-- Study and learn: interactive learning that encourages step by step problem solving instead of giving direct
-  answers.[[s]](https://openai.com/index/chatgpt-study-mode/)
-- Create image: generate images from text
-  prompts.[[s]](https://help.openai.com/en/articles/9260256-chatgpt-capabilities-overview)
-- Think longer: performs deeper reasoning and generates more accurate, thoughtful, and detailed
-  responses.[[s]](https://openai.com/index/introducing-gpt-5)
-- Deep research: reads and synthesizes content across multiple online sources and produces cited structured
-  outputs.[[s]](https://help.openai.com/en/articles/9260256-chatgpt-capabilities-overview)
-- Web search: finds recent and real-time information
+- Estudar e aprender: aprendizado interativo que incentiva a resolução de problemas passo a passo em vez de dar respostas
+  diretas.[[s]](https://openai.com/index/chatgpt-study-mode/)
+- Criar imagem: gera imagens a partir de prompts de
+  texto.[[s]](https://help.openai.com/en/articles/9260256-chatgpt-capabilities-overview)
+- Pensar por mais tempo: faz um raciocínio mais profundo e gera respostas mais precisas, ponderadas e
+  detalhadas.[[s]](https://openai.com/index/introducing-gpt-5)
+- Pesquisa profunda: lê e sintetiza conteúdo de várias fontes online e produz saídas estruturadas com
+  citações.[[s]](https://help.openai.com/en/articles/9260256-chatgpt-capabilities-overview)
+- Busca na web: encontra informações recentes e em tempo real
   online.[[s]](https://help.openai.com/en/articles/9260256-chatgpt-capabilities-overview)
-- Canvas: separate interface for collaborative writing and coding that provides inline editing, suggestions, and
+- Canvas: interface separada para escrita e programação colaborativas que oferece edição inline, sugestões e
   feedback.[[s]](https://openai.com/index/introducing-canvas/)
 
-## Prompt Tips
+## Dicas de prompt
 
-### Efficiency
+### Eficiência
 
-- Use the latest model as it's generally more capable and easier to
-  prompt.[[s]](https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering-with-the-openai-api)
-- Provide general instructions at the start of conversations or when changing direction to avoid repeating them.
-- Don't say polite phrases to the AI (e.g., please, thank you) as it adds unecessary computational
-  costs.[[s]](https://www.techradar.com/computing/artificial-intelligence/chatgpt-spends-tens-of-millions-of-dollars-on-people-playing-please-and-thank-you-but-sam-altman-says-its-worth-it?utm_source=chatgpt.com)
-- Don't explicitly ask the AI for help (e.g., can you help me do x?).
-- Don't explicitly reference yourself unless clarifying multiple entities (e.g., I want to, do x for me).
+- Use o modelo mais recente, pois em geral ele é mais capaz e mais fácil de
+  usar com prompts.[[s]](https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering-with-the-openai-api)
+- Forneça instruções gerais no início das conversas ou ao mudar de direção para evitar repeti-las.
+- Não use frases de cortesia com a IA (por exemplo, por favor, obrigado), pois isso adiciona custos computacionais
+  desnecessários.[[s]](https://www.techradar.com/computing/artificial-intelligence/chatgpt-spends-tens-of-millions-of-dollars-on-people-playing-please-and-thank-you-but-sam-altman-says-its-worth-it?utm_source=chatgpt.com)
+- Não peça ajuda explicitamente à IA (por exemplo, você pode me ajudar a fazer x?).
+- Não faça referência explícita a si mesmo, a menos que precise esclarecer várias entidades (por exemplo, eu quero, faça x para mim).
 
-### Clarity
+### Clareza
 
-- Be clear, specific, and provide enough context for the model to understand what you are
-  asking.[[s]](https://help.openai.com/en/articles/10032626-prompt-engineering-best-practices-for-chatgpt)
-- Prompt engineering often requires iterative refinement by adjusting wording, adding context, and simplifying
-  requests.[[s]](https://help.openai.com/en/articles/10032626-prompt-engineering-best-practices-for-chatgpt)
-- Break complex tasks into smaller focused
-  prompts.[[s]](https://help.openai.com/en/articles/4936848-how-do-i-create-a-good-prompt-for-an-ai-model)
-- Specify focus areas, highlight important aspects, and ask for multiple
-  options.[[s]](https://help.openai.com/en/articles/4936848-how-do-i-create-a-good-prompt-for-an-ai-model)
-- Provide examples of the desired output format to improve
-  accuracy.[[s]](https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering-with-the-openai-api)
-- Focus on specifying what to do and not just what to
-  avoid.[[s]](https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering-with-the-openai-api)
-- Before writing a prompt, identify the goal and expected
-  output.[[s]](https://www.techtarget.com/searchenterpriseai/definition/AI-prompt)
-- Provide important keywords or phrases where possible to faciliate SEO and communicate term preferences to the AI
-  model.[[s]](https://www.techtarget.com/searchenterpriseai/definition/AI-prompt)
-- Keep prompts precise and clean by omitting unnecessary or redundant
-  information.[[s]](https://www.techtarget.com/searchenterpriseai/definition/AI-prompt)
-- Avoid conflicting terms that might confuse the
-  AI.[[s]](https://www.techtarget.com/searchenterpriseai/definition/AI-prompt)
-- Open-ended questions usually provide more detailed responses than [closed-ended questions] and yes/no
-  questions.[[s]](https://www.techtarget.com/searchenterpriseai/definition/AI-prompt)
-- When in doubt, ask AI to generate prompts for
-  you.[[s]](https://www.techtarget.com/searchenterpriseai/definition/AI-prompt)
+- Seja claro, específico e forneça contexto suficiente para o modelo entender o que você está
+  pedindo.[[s]](https://help.openai.com/en/articles/10032626-prompt-engineering-best-practices-for-chatgpt)
+- Prompt engineering costuma exigir refinamento iterativo, ajustando o texto, adicionando contexto e simplificando
+  solicitações.[[s]](https://help.openai.com/en/articles/10032626-prompt-engineering-best-practices-for-chatgpt)
+- Divida tarefas complexas em prompts menores e mais
+  focados.[[s]](https://help.openai.com/en/articles/4936848-how-do-i-create-a-good-prompt-for-an-ai-model)
+- Especifique áreas de foco, destaque aspectos importantes e peça várias
+  opções.[[s]](https://help.openai.com/en/articles/4936848-how-do-i-create-a-good-prompt-for-an-ai-model)
+- Forneça exemplos do formato de saída desejado para melhorar a
+  precisão.[[s]](https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering-with-the-openai-api)
+- Concentre-se em especificar o que fazer, e não apenas o que
+  evitar.[[s]](https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering-with-the-openai-api)
+- Antes de escrever um prompt, identifique o objetivo e a saída
+  esperada.[[s]](https://www.techtarget.com/searchenterpriseai/definition/AI-prompt)
+- Forneça palavras-chave ou frases importantes sempre que possível para facilitar o SEO e comunicar as preferências de termos ao modelo de
+  IA.[[s]](https://www.techtarget.com/searchenterpriseai/definition/AI-prompt)
+- Mantenha os prompts precisos e limpos, omitindo informações desnecessárias ou
+  redundantes.[[s]](https://www.techtarget.com/searchenterpriseai/definition/AI-prompt)
+- Evite termos conflitantes que possam confundir a
+  IA.[[s]](https://www.techtarget.com/searchenterpriseai/definition/AI-prompt)
+- Perguntas abertas geralmente geram respostas mais detalhadas do que [perguntas fechadas] e perguntas de
+  sim/não.[[s]](https://www.techtarget.com/searchenterpriseai/definition/AI-prompt)
+- Em caso de dúvida, peça à IA para gerar prompts para
+  você.[[s]](https://www.techtarget.com/searchenterpriseai/definition/AI-prompt)
 
-### Security
+### Segurança
 
-- Don't share sensitive information with AI as you can't be certain how it's stored, if it will be shared, of if it's
-  vulnerable to data
-  breaches.[[s]](https://www.grantthornton.com/insights/articles/advisory/2023/anticipate-cybersecurity-and-privacy-risks-in-ai)
+- Não compartilhe informações sensíveis com a IA, pois não é possível ter certeza de como elas são armazenadas, se serão compartilhadas ou se estão
+  vulneráveis a vazamentos de
+  dados.[[s]](https://www.grantthornton.com/insights/articles/advisory/2023/anticipate-cybersecurity-and-privacy-risks-in-ai)
 
-## Prompt Structure
+## Estrutura do prompt
 
-### Prompt Frameworks
+### Frameworks de prompt
 
-General Purpose
+Uso geral
 
 ```
 [role] [task] [style] [output format] [constraint]
 ```
 
-### Role
+### Papel
 
-Standard
+Padrão
 
-- Act as [occupation] with [specifications]
-- [List of roles](https://github.com/f/awesome-chatgpt-prompts)
+- Aja como [occupation] com [specifications]
+- [Lista de papéis](https://github.com/f/awesome-chatgpt-prompts)
 
 Roleplay
 
-- Act as [name] with [visual description] [personality] [behaviour examples] [lore] in [scenario]
+- Aja como [name] com [visual description] [personality] [behaviour examples] [lore] em [scenario]
 
-### Tasks (Language And Text) {.secondary}
+### Tarefas (Linguagem e texto) {.secondary}
 
 [verb] [task] [specifics]
 
-Generate
+Gerar
 
-- Generate [content type] to [entity] about [topic] and cover [aspects]
-- Generate random [names|numbers|words|ideas|X] matching [criteria]
-- [Continue|extend|lengthen]
+- Gere [content type] para [entity] sobre [topic] e cubra [aspects]
+- Gere [names|numbers|words|ideas|X] aleatórios que correspondam a [criteria]
+- [Continue|estenda|amplie]
 
-Summarise
+Resumir
 
-- [Summarise|shorten|write concise|write key points|write main lesson]
-- Create outline
+- [Resuma|encurte|escreva de forma concisa|escreva os pontos principais|escreva a lição principal]
+- Crie um esboço
 
-Refine
+Refinar
 
-- [Write better|improve]
-- Paraphrase
-- Correct spelling, grammar, and punctuation errors
-- Change [narrative voice A] to [narrative voice B]
-- Replace X with Y
+- [Escreva melhor|melhore]
+- Parafraseie
+- Corrija erros de ortografia, gramática e pontuação
+- Mude [narrative voice A] para [narrative voice B]
+- Substitua X por Y
 
-Explain
+Explicar
 
-- [Explain|elaborate]
-- Explain [how to do|each step of] X
-- Explain what X does
-- Explain X [in simple terms|like I’m 5|simplify]; Simplify X
-- Teach me about [topic|subject]
-- Provide [example|analogy]
+- [Explique|detalhe]
+- Explique [como fazer|cada etapa de] X
+- Explique o que X faz
+- Explique X [em termos simples|como se eu tivesse 5 anos|simplifique]; Simplifique X
+- Ensine-me sobre [topic|subject]
+- Forneça [example|analogy]
 
-Organize
+Organizar
 
-- Sort X by [key] in [order]
+- Ordene X por [key] em [order]
 - Categorize
 
-Advise
+Aconselhar
 
-- Create [strategy|goals|milestones|roadmap|schedule|timeline] for X
-- Recommend [media type] [on|similar to] [topic]
-- Recommend [gifts|X] for [entity|occasion]
-- Recommend improvements
-- Provide [advice|feedback] for X
+- Crie [strategy|goals|milestones|roadmap|schedule|timeline] para X
+- Recomende [media type] [on|similar to] [topic]
+- Recomende [gifts|X] para [entity|occasion]
+- Recomende melhorias
+- Forneça [advice|feedback] para X
 
-Analyze
+Analisar
 
-- Extract [themes|keywords|info] about X
-- Identify [similarities|differences] between X and Y
-- Analyse the [sentiment|tone] of X
-- Identify gaps in X
-- Evaluate [strengths and weaknesses|pros and cons] of X
-- Is X [comparison] Y?
+- Extraia [themes|keywords|info] sobre X
+- Identifique [similarities|differences] entre X e Y
+- Analise o [sentiment|tone] de X
+- Identifique lacunas em X
+- Avalie [strengths and weaknesses|pros and cons] de X
+- X é [comparison] Y?
 
-Translate
+Traduzir
 
-- Translate [language A] into [language B]
-- Convert [unit A] to [unit B]
-- Reformat as [output format]
+- Traduza [language A] para [language B]
+- Converta [unit A] em [unit B]
+- Reformate como [output format]
 
-Filter
+Filtrar
 
-- Filter items where [condition]
-- Choose best from [options]
-- Choose [top|lowest|first|last|random] [quantity] from [options]
+- Filtre itens em que [condition]
+- Escolha o melhor de [options]
+- Escolha [top|lowest|first|last|random] [quantity] de [options]
 
-Engage
+Engajar
 
-- Provide questions about X
+- Forneça perguntas sobre X
 
-Research
+Pesquisar
 
-- Get up-to-date [facts|news|data] on X
-- Find [sources|references|citations] for X
-- Is this true?
+- Obtenha [facts|news|data] atualizados sobre X
+- Encontre [sources|references|citations] para X
+- Isso é verdade?
 
-### Tasks (Meta) {.secondary}
+### Tarefas (Meta) {.secondary}
 
-Chat Memory
+Memória do chat
 
-- Based on [previous context] do X
+- Com base em [previous context] faça X
 
-### Tasks (Code) {.secondary}
+### Tarefas (Código) {.secondary}
 
-Generate
+Gerar
 
-- Generate code in [programming language] to do X
+- Gere código em [programming language] para fazer X
 
-Translate
+Traduzir
 
-- Translate [programming language A] into [programming language B]
+- Traduza [programming language A] para [programming language B]
 
-Optimize
+Otimizar
 
-- Optimize X for [benefit]
+- Otimize X para [benefit]
 
-Debug
+Depurar
 
-- Debug X and explain why it's doing Y
+- Depure X e explique por que ele está fazendo Y
 
-### Tasks (Image) {.secondary}
+### Tarefas (Imagem) {.secondary}
 
-Generate
+Gerar
 
-- Generate image of X in [style]
+- Gere uma imagem de X em [style]
 
-Edit
+Editar
 
-- Edit image to have X
+- Edite a imagem para ter X
 
-### Tasks (File And Image Upload) {.secondary}
+### Tarefas (Upload de arquivo e imagem) {.secondary}
 
-Explain
+Explicar
 
-- Question what is shown
-- Interpet visuals
+- Pergunte o que é mostrado
+- Interprete os elementos visuais
 
-Analysis
+Análise
 
-- Extract data
+- Extraia dados
 
-### Task (5W1H Questions) {.secondary}
+### Tarefa (Perguntas 5W1H) {.secondary}
 
-Who
+Quem
 
-- Who is X?
-- Who is [involved|affected by|responsible] for X?
-- Who should I contact for help with X?
+- Quem é X?
+- Quem está [involved|affected by|responsible] por X?
+- Quem devo contatar para obter ajuda com X?
 
-What
+O quê
 
-- [What is|define|explain|describe] X?
-- What are the key topics of X?
-- What does [quote] mean?
-- [What is done well?|what can be improved?]
-- What is the best way to do X?
+- [O que é|defina|explique|descreva] X?
+- Quais são os tópicos principais de X?
+- O que significa [quote]?
+- [O que está bem feito?|o que pode ser melhorado?]
+- Qual é a melhor forma de fazer X?
 
-When
+Quando
 
-- When [did|will] X happen?
-- When is the best time to do X?
+- Quando X [aconteceu|vai acontecer]?
+- Qual é o melhor momento para fazer X?
 
-Where
+Onde
 
-- Where did X take place?
-- Where to find X?
+- Onde X aconteceu?
+- Onde encontrar X?
 
-Why
+Por quê
 
-- Why did X happen?
-- Why is this approach used?
-- Why is X important?
-- Why might X succeed or fail?
-- Why is X preferable to Y?
+- Por que X aconteceu?
+- Por que essa abordagem é usada?
+- Por que X é importante?
+- Por que X pode ter sucesso ou falhar?
+- Por que X é preferível a Y?
 
-How
+Como
 
-- How to do X?
-- How does X work?
-- How did this happen?
+- Como fazer X?
+- Como X funciona?
+- Como isso aconteceu?
 
-### Style
+### Estilo
 
-Using [style]
+Usando [style]
 
-Imitate
+Imitar
 
-- Using style of [person|brand|genre|character]
+- Usando o estilo de [person|brand|genre|character]
 
-Formality
+Formalidade
 
 - Formal
 - Informal
 
-Directness
+Diretividade
 
-- Direct
-- Indirect
+- Direto
+- Indireto
 
-Tones
+Tons
 
-Positive
+Positivo
 
-- Optimistic
-- Appreciative
-- Assertive
-- Calm
-- Confident
-- Encouraging
-- Friendly
-- Humorous
-- Inspirational
+- Otimista
+- Grato
+- Assertivo
+- Calmo
+- Confiante
+- Encorajador
+- Amigável
+- Humorístico
+- Inspirador
 
-Negative
+Negativo
 
-- Pessimistic
-- Accusatory
-- Concerned
-- Critical
-- Regretful
-- Sarcastic
-- Urgent
+- Pessimista
+- Acusatório
+- Preocupado
+- Crítico
+- Arrependido
+- Sarcástico
+- Urgente
 
-### Output Format (Text) {.secondary}
+### Formato de saída (Texto) {.secondary}
 
-In [output format]
+Em [output format]
 
-Paragraphs
+Parágrafos
 
-- Paragraphs **_(default)_**
+- Parágrafos **_(padrão)_**
 
-List
+Lista
 
-- Bulleted list
-- Numbered list
-- Check list
+- Lista com marcadores
+- Lista numerada
+- Lista de verificação
 
-Code
+Código
 
-- Code
+- Código
 
-Instructions
+Instruções
 
-- Step-by-step instructions
+- Instruções passo a passo
 
-Knowledge Base
+Base de conhecimento
 
-- Q&A
+- Perguntas e respostas (Q&A)
 - FAQ
 
-Creative Writing
+Escrita criativa
 
-- [Joke|humour]
-- [Lyrics|song]
-- [Metaphorical|stylized language]
-- Poetry
-- [Script|screenplay|dialogue]
-- [Story|narrative]
+- [Piada|humor]
+- [Letra de música|canção]
+- [Linguagem metafórica|estilizada]
+- Poesia
+- [Roteiro|roteiro de cinema|diálogo]
+- [História|narrativa]
 
-Games
+Jogos
 
-- [Quiz|test|flashcards|drills]
-- [Riddle|puzzle]
-- [rpg|choose-your-own-adventure]
+- [Quiz|teste|flashcards|exercícios]
+- [Charada|quebra-cabeça]
+- [rpg|escolha seu próprio caminho]
 
-### Output Format (Visual) {.secondary}
+### Formato de saída (Visual) {.secondary}
 
-Data Visualization
+Visualização de dados
 
-- Table
-- [Chart type] chart
+- Tabela
+- Gráfico [chart type]
 
-Creative Visual
+Visual criativo
 
-- ASCII Art
+- Arte ASCII
 - Emojis
-- Word cloud
+- Nuvem de palavras
 
-### Output Format (File Type) {.secondary}
+### Formato de saída (Tipo de arquivo) {.secondary}
 
-Document
+Documento
 
 - PDF
 
-Structured Data And Markup
+Dados estruturados e marcação
 
-- Plain text
+- Texto simples
 - Markdown
 - HTML
 - XML
@@ -400,47 +400,47 @@ Structured Data And Markup
 - JSON
 - LaTeX
 
-Programming Code And Scripting
+Código de programação e scripting
 
-- [Programming language]
-- Pseudocode
-- Regular expression
+- [Linguagem de programação]
+- Pseudocódigo
+- Expressão regular
 
-### Constraint
+### Restrições
 
-But [constraint]
+Mas [constraint]
 
-Length
+Comprimento
 
-- Be [extremely detailed|concise]
-- In [quantity] [words|sentences]
+- Seja [extremely detailed|concise]
+- Em [quantity] [words|sentences]
 
-Language
+Idioma
 
-- No jargon or technical terms
+- Sem jargão ou termos técnicos
 
-Structure
+Estrutura
 
-- Show [quantity] [examples|options]
-- No headers
-- No pretext titles
+- Mostre [quantity] [examples|options]
+- Sem cabeçalhos
+- Sem títulos de pretexto
 
-Voice And Style
+Voz e estilo
 
-- Use [first-person|second-person|third-person] narrative voice
-- Don't change the wording
-- Use pop culture references
+- Use voz narrativa em [first-person|second-person|third-person]
+- Não altere o texto
+- Use referências de cultura pop
 
-Edits
+Edições
 
-- Do [minor|major] edits
-- Only show [changed|unchanged] content
+- Faça edições [minor|major]
+- Mostre apenas o conteúdo [changed|unchanged]
 
-## Examples
+## Exemplos
 
-### Job
+### Trabalho
 
-Name Business
+Nomear negócio
 
 ```{.wrap}
 Suggest creative name for tech startup
@@ -450,13 +450,13 @@ Suggest creative name for tech startup
 Suggest catchy names for bakery business
 ```
 
-Interview Questions
+Perguntas de entrevista
 
 ```{.wrap}
 Suggest common software engineer interview questions
 ```
 
-Create Course Outline
+Criar esboço de curso
 
 ```{.wrap}
 Create course outline on web development for beginners
@@ -466,9 +466,9 @@ Create course outline on web development for beginners
 Create training program outline for customer service workshop
 ```
 
-### Relationship
+### Relacionamentos
 
-Gift Ideas
+Ideias de presente
 
 ```{.wrap}
 Suggest gift ideas for clients
@@ -486,9 +486,9 @@ Suggest gift ideas for my wife who loves steampunk art and crafts, mystery sci-f
 Suggest creative ideas for 10 year old’s birthday
 ```
 
-### Competition
+### Competição
 
-Select Contest Winners
+Selecionar vencedores de concurso
 
 ```{.wrap}
 Randomly select 1 name from this list
@@ -502,15 +502,15 @@ Randomly select 5 email addresses from this list
 Select top 3 records with the shortest lap times from this list
 ```
 
-### Programming
+### Programação
 
-Create Code
+Criar código
 
 ```{.wrap}
 Create program to calculate the factorial of given number in python
 ```
 
-Create Regular Expressions
+Criar expressões regulares
 
 ```{.wrap}
 Create regex to match all email addresses in list
@@ -524,7 +524,7 @@ Create regex to match all words that start with "ban"
 Create regex to match 8-digit password
 ```
 
-Explain Code
+Explicar código
 
 ```{.wrap}
 Explain why code not working
@@ -538,7 +538,7 @@ Explain what code does
 Explain how to make a HTTP request in javascript
 ```
 
-Update Code
+Atualizar código
 
 ```{.wrap}
 Add code comments
@@ -552,17 +552,17 @@ Add class "header" to header tag
 Update CSS to change font color to blue
 ```
 
-Translate
+Traduzir
 
-- Specifically called transpile when addressing programming languages.
+- Especificamente chamado de transpile quando se trata de linguagens de programação.
 
 ```{.wrap}
 Translate code to Python
 ```
 
-### Email
+### E-mail
 
-Create Emails
+Criar e-mails
 
 ```{.wrap}
 Write email inviting Jack to dinner on the weekend
@@ -580,13 +580,13 @@ Write email to inform staff of elevator maintenance on 23 June 2025, elevators u
 Suggest response to message asking about project status
 ```
 
-Format Email
+Formatar e-mail
 
 ```{.wrap}
 Proofread and format email
 ```
 
-Email Marketing
+E-mail marketing
 
 ```{.wrap}
 Suggest tips to increase open and click-through rates for my email campaigns
@@ -596,15 +596,15 @@ Suggest tips to increase open and click-through rates for my email campaigns
 Suggest ways to make my email content more engaging and relevant to my subscribers
 ```
 
-Extract Data
+Extrair dados
 
 ```{.wrap}
 Extract all email addresses in text
 ```
 
-### Spreadsheet
+### Planilha
 
-Create Something
+Criar algo
 
 ```{.wrap}
 Create excel formula to calculate sum of cells A1 to A10
@@ -618,7 +618,7 @@ Generate spreadsheet dummy data as a placeholder
 Create macro to calculate average of cells B1 to B10 and insert result in cell C1
 ```
 
-Explain Something
+Explicar algo
 
 ```{.wrap}
 Explain formula =SUM(A1:A10) in simple terms
@@ -628,9 +628,9 @@ Explain formula =SUM(A1:A10) in simple terms
 Suggest tips to improve spreadsheet efficiency
 ```
 
-### Social Media
+### Redes sociais
 
-Create Content
+Criar conteúdo
 
 ```{.wrap}
 Suggest meme ideas for dogs
@@ -644,9 +644,9 @@ Suggest climate change post ideas to engage my followers
 Generate hashtags and caption for a picture of scenic sunset
 ```
 
-### Reading
+### Leitura
 
-Text Analysis
+Análise de texto
 
 ```{.wrap}
 Summarize article
@@ -656,13 +656,13 @@ Summarize article
 Write concise main points
 ```
 
-Translate
+Traduzir
 
 ```{.wrap}
 Translate to spanish
 ```
 
-Recommendations
+Recomendações
 
 ```{.wrap}
 Recommend books similar to Hunger Games
@@ -670,7 +670,7 @@ Recommend books similar to Hunger Games
 
 ### Design
 
-Design Prompts
+Prompts de design
 
 ```{.wrap}
 Create design prompt of logo for new sports brand
@@ -680,7 +680,7 @@ Create design prompt of logo for new sports brand
 Suggest eye-catching thumbnail designs for youtube video on healthy eating
 ```
 
-Aesthetic Pairings
+Combinações estéticas
 
 ```{.wrap}
 Suggest font pairing for travel blog header design
@@ -690,29 +690,29 @@ Suggest font pairing for travel blog header design
 Suggest color palette for wedding photography website
 ```
 
-### Data Analysis
+### Análise de dados
 
-Data Extraction
+Extração de dados
 
 ```{.wrap}
 Extract all numbers from text
 ```
 
-Data Filtering
+Filtragem de dados
 
 ```{.wrap}
 Filter list based on [condition]
 ```
 
-Data Presentation
+Apresentação de dados
 
 ```{.wrap}
 Create table from data
 ```
 
-### Paid Ads
+### Anúncios pagos
 
-Create Ad
+Criar anúncio
 
 ```{.wrap}
 Suggest creative ideas for new product launch
@@ -726,13 +726,13 @@ Suggest ad copy for travel company
 Create headlines, body text, and calls to action for new fitness program ad
 ```
 
-Ad Targeting
+Segmentação de anúncios
 
 ```{.wrap}
 Recommend target Facebook audience for clothing line ad campaign
 ```
 
-Ad Technical Support
+Suporte técnico de anúncios
 
 ```{.wrap}
 Review tag manager code for errors
@@ -740,13 +740,13 @@ Review tag manager code for errors
 
 ### Amazon FBA
 
-Product Content
+Conteúdo do produto
 
 ```{.wrap}
 Write compelling product description for latest item
 ```
 
-Communication
+Comunicação
 
 ```{.wrap}
 Rewrite appeal letter to make it more persuasive
@@ -756,7 +756,7 @@ Rewrite appeal letter to make it more persuasive
 Write effective email to reach out to potential suppliers
 ```
 
-Product Strategy
+Estratégia de produto
 
 ```{.wrap}
 Suggest items that would make a good bundle for our customers
@@ -766,9 +766,9 @@ Suggest items that would make a good bundle for our customers
 Organize product and pricing information into a neat and manageable spreadsheet
 ```
 
-### Writing
+### Escrita
 
-Name Something
+Nomear algo
 
 ```{.wrap}
 Suggest titles for short story
@@ -782,7 +782,7 @@ Suggest titles for article 10 options
 Suggest domain name for gardening blog
 ```
 
-Content Creation
+Criação de conteúdo
 
 ```{.wrap}
 Create outline for essay on exercise
@@ -800,7 +800,7 @@ Create blog post on financial planning
 Expand jazz music sentence
 ```
 
-Editing And Formatting
+Edição e formatação
 
 ```{.wrap}
 Change report tone to conversational
@@ -814,7 +814,7 @@ Proofread article
 Format headings for blog post
 ```
 
-Evaluation
+Avaliação
 
 ```{.wrap}
 Check for bias
@@ -824,9 +824,9 @@ Check for bias
 Check for plagiarism
 ```
 
-### Teacher
+### Professor
 
-Teaching Support
+Apoio ao ensino
 
 ```{.wrap}
 Convert work history fact list into multiple-choice quiz
@@ -850,7 +850,7 @@ Grade history essay and provide feedback on any areas for improvement
 
 ### YouTube
 
-Content Creation
+Criação de conteúdo
 
 ```{.wrap}
 Create timestamps for podcast episode transcript
@@ -872,21 +872,21 @@ Suggest thumbnail ideas for video on "DIY home decor"
 Suggest fashion video ideas for individual episodes
 ```
 
-Analyse
+Analisar
 
 ```{.wrap}
 What is the script tone for environmental issues video
 ```
 
-Communication
+Comunicação
 
 ```{.wrap}
 Create thoughtful and polite response to negative comment on youtube video
 ```
 
-### Research
+### Pesquisa
 
-History Research
+Pesquisa histórica
 
 ```{.wrap}
 Explain events leading up to American Civil War
@@ -908,12 +908,12 @@ Provide key details about French Revolution
 Explain history of Byzantine Empire
 ```
 
-Science Research
+Pesquisa científica
 
 ```{.wrap}
 Explain quantum computing in simple terms
 ```
-Verified University Papers
+Artigos universitários verificados
 
 ```{.wrap}
 Get me top university research papers with verified direct links
@@ -925,7 +925,7 @@ Explain rocket science like I'm five
 
 ### SEO
 
-Keywords
+Palavras-chave
 
 ```{.wrap}
 Find best keywords for [topic] with low competition
@@ -939,7 +939,7 @@ Generate list of keywords targeting multiple geographic locations
 Generate list of keyword synonyms for [topic]
 ```
 
-Content Optimization
+Otimização de conteúdo
 
 ```{.wrap}
 Find opportunities for internal linking related to [topic]
@@ -953,7 +953,7 @@ Research industry-specific terminology for use in [topic] content
 Find best time to publish content related to [topic]
 ```
 
-Link Building
+Link building
 
 ```{.wrap}
 Find authoritative websites to acquire backlinks for [topic] content
@@ -963,13 +963,13 @@ Find authoritative websites to acquire backlinks for [topic] content
 Research best external linking strategies for [topic]
 ```
 
-Tools
+Ferramentas
 
 ```{.wrap}
 Find most popular tools used for [topic] seo
 ```
 
-Tactics
+Táticas
 
 ```{.wrap}
 Research best tactics for [topic] mobile optimization
@@ -979,7 +979,7 @@ Research best tactics for [topic] mobile optimization
 What are the best tactics for [topic] international seo?
 ```
 
-Competitors
+Concorrentes
 
 ```{.wrap}
 Research competitor strategies related to [topic]

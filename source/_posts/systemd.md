@@ -7,192 +7,192 @@ tags:
   - systemd
   - linux
 categories:
-  - Linux Command
+  - Comandos Linux
 intro: |
-  systemd is the init system and service manager used by most modern Linux distributions.
+  systemd é o sistema de inicialização e gerenciador de serviços usado pela maioria das distribuições Linux modernas.
 plugins:
   - copyCode
 ---
 
-## systemd Core Utilities{.cols-4}
+## Utilitários principais do systemd{.cols-4}
 
-### systemd utility List {.col-span-4}
+### Lista de utilitários do systemd {.col-span-4}
 
-| Utility                               | Description                                                    |
+| Utilitário                            | Descrição                                                      |
 | ------------------------------------- | -------------------------------------------------------------- |
-| [`systemctl`](#systemctl)             | Manages services (start, stop, restart, enable, disable, etc.) |
-| [`journalctl`](#journalctl)           | Views and filters logs collected by the systemd journal        |
-| [`loginctl`](#loginctl)               | Manages user logins and sessions                               |
-| [`hostnamectl`](#hostnamectl)         | Sets or queries the hostname and related machine metadata      |
-| [`timedatectl`](#timedatectl)         | Sets or queries the system date, time, and NTP settings        |
-| [`systemd-analyze`](#systemd-analyze) | Analyzes system boot-up performance                            |
-| [`systemd-cgtop`](#systemd-cgtop)     | Monitors control group resource usage in real time             |
-| [`systemd-run`](#systemd-run)         | Runs a command as a transient service or scope                 |
-| [`resolvectl`](#resolvectl)           | Resolves domain names using the systemd-resolved service       |
-| [`busctl`](#busctl)                   | Interacts with the D-Bus message bus system                    |
+| [`systemctl`](#systemctl)             | Gerencia serviços (iniciar, parar, reiniciar, habilitar, desabilitar etc.) |
+| [`journalctl`](#journalctl)           | Visualiza e filtra os logs coletados pelo journal do systemd    |
+| [`loginctl`](#loginctl)               | Gerencia logins e sessões de usuários                          |
+| [`hostnamectl`](#hostnamectl)         | Define ou consulta o hostname e metadados relacionados da máquina |
+| [`timedatectl`](#timedatectl)         | Define ou consulta data, hora e configurações de NTP do sistema |
+| [`systemd-analyze`](#systemd-analyze) | Analisa o desempenho da inicialização do sistema               |
+| [`systemd-cgtop`](#systemd-cgtop)     | Monitora o uso de recursos dos control groups em tempo real    |
+| [`systemd-run`](#systemd-run)         | Executa um comando como serviço ou scope transiente            |
+| [`resolvectl`](#resolvectl)           | Resolve nomes de domínio usando o serviço systemd-resolved      |
+| [`busctl`](#busctl)                   | Interage com o sistema de barramento de mensagens D-Bus        |
 
 {.left-text}
 
 ---
 
-## Utility Commands {.cols-4}
+## Comandos dos utilitários {.cols-4}
 
 ### systemctl {#systemctl .col-span-2 .row-span-2}
 
-#### systemctl - System Commands
+#### systemctl - Comandos de sistema
 
-- Manage systemd units and control system services (start, stop, enable, etc.).
+- Gerencia units do systemd e controla serviços do sistema (iniciar, parar, habilitar etc.).
 
-| Command               | Description                                                        |
+| Comando               | Descrição                                                          |
 | --------------------- | ------------------------------------------------------------------ |
-| `systemctl halt`      | Stop all running software, leave the hardware powered on.          |
-| `systemctl hibernate` | Save contents of system memory to disk and power off the hardware. |
-| `systemctl poweroff`  | Halt and power off the system.                                     |
-| `systemctl reboot`    | Reboot the system.                                                 |
+| `systemctl halt`      | Para todo o software em execução e mantém o hardware ligado.       |
+| `systemctl hibernate` | Salva o conteúdo da memória do sistema em disco e desliga o hardware. |
+| `systemctl poweroff`  | Para o sistema e desliga a energia.                                |
+| `systemctl reboot`    | Reinicia o sistema.                                                |
 
 {.left-text}
 
-#### systemctl - Service Commands
+#### systemctl - Comandos de serviço
 
-| Command                       | Description                                  |
-| ----------------------------- | -------------------------------------------- |
-| `systemctl start <service>`   | Start a service immediately                  |
-| `systemctl stop <service>`    | Stop a running service                       |
-| `systemctl restart <service>` | Restart a service                            |
-| `systemctl reload <service>`  | Reload service configuration without restart |
-| `systemctl enable <service>`  | Enable service to start at boot              |
-| `systemctl disable <service>` | Disable boot-time start                      |
-| `systemctl status <service>`  | Show current status and recent logs          |
-| `systemctl mask <service>`    | Prevent service from being started           |
-| `systemctl unmask <service>`  | Remove mask so it can start again            |
-| `systemctl list-units`        | List active units                            |
-| `systemctl list-unit-files`   | List all unit files and their enabled state  |
+| Comando                       | Descrição                                     |
+| ----------------------------- | --------------------------------------------- |
+| `systemctl start <service>`   | Inicia um serviço imediatamente                |
+| `systemctl stop <service>`    | Para um serviço em execução                    |
+| `systemctl restart <service>` | Reinicia um serviço                            |
+| `systemctl reload <service>`  | Recarrega a configuração do serviço sem reiniciar |
+| `systemctl enable <service>`  | Habilita o serviço para iniciar no boot        |
+| `systemctl disable <service>` | Desabilita a inicialização no boot             |
+| `systemctl status <service>`  | Mostra o status atual e os logs recentes       |
+| `systemctl mask <service>`    | Impede que o serviço seja iniciado             |
+| `systemctl unmask <service>`  | Remove o mask para que ele possa iniciar novamente |
+| `systemctl list-units`        | Lista as units ativas                          |
+| `systemctl list-unit-files`   | Lista todos os unit files e seu estado de habilitação |
 
 {.left-text}
 
 ### journalctl {#journalctl .col-span-2}
 
-- Query and filter logs from the systemd journal.
+- Consulta e filtra logs do journal do systemd.
 
-| Command                    | Description                               |
-| -------------------------- | ----------------------------------------- |
-| `journalctl`               | Show entire journal                       |
-| `journalctl -b`            | Show logs from current boot               |
-| `journalctl --list-boots`  | List all boot sessions                    |
-| `journalctl -b -1`         | Logs from previous boot                   |
-| `journalctl -u <service>`  | Show logs for a specific unit/service     |
-| `journalctl -n 100`        | Show the last 100 log entries             |
-| `journalctl -f`            | Follow new log entries (tail -f style)    |
-| `journalctl -p err..emerg` | Show only error (and above) priority logs |
-| `journalctl --disk-usage`  | Show disk usage of journal                |
-| `journalctl --since today` | Show logs since today                     |
+| Comando                    | Descrição                                  |
+| -------------------------- | ------------------------------------------ |
+| `journalctl`               | Mostra o journal inteiro                   |
+| `journalctl -b`            | Mostra os logs do boot atual               |
+| `journalctl --list-boots`  | Lista todas as sessões de boot             |
+| `journalctl -b -1`         | Logs do boot anterior                      |
+| `journalctl -u <service>`  | Mostra os logs de uma unit/serviço específico |
+| `journalctl -n 100`        | Mostra as últimas 100 entradas de log      |
+| `journalctl -f`            | Acompanha novas entradas de log (estilo tail -f) |
+| `journalctl -p err..emerg` | Mostra apenas logs de prioridade erro (e acima) |
+| `journalctl --disk-usage`  | Mostra o uso de disco do journal           |
+| `journalctl --since today` | Mostra os logs desde hoje                  |
 
 {.left-text}
 
 ### busctl {#busctl .col-span-2}
 
-- Inspect and monitor D-Bus (Desktop Bus) for debugging or introspection.
+- Inspeciona e monitora o D-Bus (Desktop Bus) para depuração ou introspecção.
 
-| Command                        | Description                                        |
+| Comando                        | Descrição                                          |
 | ------------------------------ | -------------------------------------------------- |
-| `busctl list`                  | List all services/peers on the bus                 |
-| `busctl status [SERVICE\|PID]` | Show process info & credentials for service or PID |
-| `busctl monitor [SERVICE...]`  | Dump live message traffic, Ctrl+C to stop          |
-| `busctl capture [SERVICE...]`  | Capture bus traffic to a pcap file                 |
-| `busctl tree [SERVICE...]`     | Show object tree exported by service(s)            |
+| `busctl list`                  | Lista todos os serviços/peers no barramento        |
+| `busctl status [SERVICE\|PID]` | Mostra informações do processo e credenciais do serviço ou PID |
+| `busctl monitor [SERVICE...]`  | Despeja o tráfego de mensagens ao vivo, Ctrl+C para parar |
+| `busctl capture [SERVICE...]`  | Captura o tráfego do barramento em um arquivo pcap  |
+| `busctl tree [SERVICE...]`     | Mostra a árvore de objetos exportada pelo(s) serviço(s) |
 
 {.left-text}
 
 ### loginctl{#loginctl .col-span-2 .row-span-2}
 
-- Manages user sessions and login-related settings.
+- Gerencia sessões de usuários e configurações relacionadas a login.
 
-| Command                           | Description                                    |
+| Comando                           | Descrição                                      |
 | --------------------------------- | ---------------------------------------------- |
-| `loginctl list-sessions`          | List all active sessions                       |
-| `loginctl list-users`             | List logged-in users                           |
-| `loginctl user-status <UID>`      | Show all sessions & processes for user `<UID>` |
-| `loginctl session-status <ID>`    | Show detailed info and logs for session `<ID>` |
-| `loginctl show-session <ID>`      | Show machine-parsable properties of a session  |
-| `loginctl terminate-session <ID>` | End all processes in session `<ID>`            |
-| `loginctl lock-session <ID>`      | Lock the specified session                     |
-| `loginctl unlock-session <ID>`    | Unlock the specified session                   |
+| `loginctl list-sessions`          | Lista todas as sessões ativas                  |
+| `loginctl list-users`             | Lista os usuários logados                      |
+| `loginctl user-status <UID>`      | Mostra todas as sessões e processos do usuário `<UID>` |
+| `loginctl session-status <ID>`    | Mostra informações detalhadas e logs da sessão `<ID>` |
+| `loginctl show-session <ID>`      | Mostra propriedades de uma sessão legíveis por máquina |
+| `loginctl terminate-session <ID>` | Encerra todos os processos da sessão `<ID>`    |
+| `loginctl lock-session <ID>`      | Bloqueia a sessão especificada                 |
+| `loginctl unlock-session <ID>`    | Desbloqueia a sessão especificada              |
 
 {.left-text}
 
 ### systemd-analyze{#systemd-analyze .col-span-2}
 
-- Analyze system boot performance and unit dependencies.
+- Analisa o desempenho da inicialização do sistema e as dependências entre units.
 
-| Command                           | Description                           |
+| Comando                           | Descrição                             |
 | --------------------------------- | ------------------------------------- |
-| `systemd-analyze`                 | Show total boot time breakdown        |
-| `systemd-analyze blame`           | List services ordered by startup time |
-| `systemd-analyze plot > boot.svg` | Generate SVG visual of boot sequence  |
+| `systemd-analyze`                 | Mostra o detalhamento do tempo total de boot |
+| `systemd-analyze blame`           | Lista os serviços ordenados por tempo de inicialização |
+| `systemd-analyze plot > boot.svg` | Gera uma visualização SVG da sequência de boot |
 
 {.left-text}
 
 ### systemd-cgtop{#systemd-cgtop .col-span-2}
 
-- Real-time monitoring of resource usage by cgroups (CPU, memory, I/O).
+- Monitoramento em tempo real do uso de recursos por cgroups (CPU, memória, I/O).
 
-| Command                    | Description                        |
+| Comando                    | Descrição                          |
 | -------------------------- | ---------------------------------- |
-| `systemd-cgtop`            | Monitor top cgroups resource usage |
-| `systemd-cgtop -c`         | Sort cgroups by CPU usage          |
-| `systemd-cgtop -d <delay>` | Change refresh delay interval      |
+| `systemd-cgtop`            | Monitora o uso de recursos dos principais cgroups |
+| `systemd-cgtop -c`         | Ordena os cgroups por uso de CPU   |
+| `systemd-cgtop -d <delay>` | Altera o intervalo de atualização  |
 
 {.left-text}
 
 ### timedatectl{#timedatectl .col-span-2}
 
-- Manage system date, time, timezone, and NTP synchronization.
+- Gerencia data, hora, fuso horário e sincronização NTP do sistema.
 
-| Command                             | Description                     |
+| Comando                             | Descrição                       |
 | ----------------------------------- | ------------------------------- |
-| `timedatectl status`                | Show current date/time settings |
-| `timedatectl list-timezones`        | List all available timezones    |
-| `timedatectl set-timezone <Zone>`   | Set system timezone             |
-| `timedatectl set-time "YYYY-MM-DD"` | Manually set date               |
-| `timedatectl set-time "HH:MM:SS"`   | Manually set time               |
-| `timedatectl set-ntp true`          | Enable NTP sync                 |
-| `timedatectl set-ntp false`         | Disable NTP sync                |
+| `timedatectl status`                | Mostra as configurações atuais de data/hora |
+| `timedatectl list-timezones`        | Lista todos os fusos horários disponíveis |
+| `timedatectl set-timezone <Zone>`   | Define o fuso horário do sistema |
+| `timedatectl set-time "YYYY-MM-DD"` | Define a data manualmente        |
+| `timedatectl set-time "HH:MM:SS"`   | Define a hora manualmente        |
+| `timedatectl set-ntp true`          | Habilita a sincronização NTP     |
+| `timedatectl set-ntp false`         | Desabilita a sincronização NTP   |
 
 {.left-text}
 
 ### resolvectl{#resolvectl .col-span-2}
 
-- Interact with systemd-resolved DNS resolver service.
+- Interage com o serviço resolvedor de DNS systemd-resolved.
 
-| Command                                | Description                                     |
+| Comando                                | Descrição                                       |
 | -------------------------------------- | ----------------------------------------------- |
-| `resolvectl status`                    | Show DNS configuration and link info            |
-| `resolvectl query <hostname>`          | Resolve hostname via systemd-resolved           |
-| `resolvectl dns <interface> <IP>`      | Set DNS server(s) for a specific interface      |
-| `resolvectl domain <interface> <name>` | Set search domain(s) for an interface           |
-| `resolvectl flush-caches`              | Clear the DNS cache managed by systemd-resolved |
-| `resolvectl reset-statistics`          | Reset all DNS resolution statistics             |
+| `resolvectl status`                    | Mostra a configuração de DNS e informações do link |
+| `resolvectl query <hostname>`          | Resolve o hostname via systemd-resolved         |
+| `resolvectl dns <interface> <IP>`      | Define o(s) servidor(es) DNS para uma interface específica |
+| `resolvectl domain <interface> <name>` | Define o(s) domínio(s) de busca para uma interface |
+| `resolvectl flush-caches`              | Limpa o cache de DNS gerenciado pelo systemd-resolved |
+| `resolvectl reset-statistics`          | Zera todas as estatísticas de resolução de DNS  |
 
 {.left-text}
 
 ### hostnamectl{#hostnamectl .col-span-4}
 
-- Query and set the system hostname (static, transient, pretty) and related metadata.
+- Consulta e define o hostname do sistema (static, transient, pretty) e metadados relacionados.
 
-#### ↓ Commands
+#### ↓ Comandos
 
-| Command                                       | Description                                      |
+| Comando                                       | Descrição                                        |
 | --------------------------------------------- | ------------------------------------------------ |
-| `hostnamectl status`                          | Show current hostname & system info              |
-| `hostnamectl hostname <NAME>`                 | Set the static/transient/pretty hostname         |
-| `hostnamectl set-hostname <NAME> --static`    | Set only the static hostname                     |
-| `hostnamectl set-hostname <NAME> --transient` | Set only the transient hostname                  |
-| `hostnamectl set-hostname <NAME> --pretty`    | Set the pretty (user-friendly) hostname          |
-| `hostnamectl set-chassis <TYPE>`              | Set chassis type (e.g., desktop, laptop, server) |
+| `hostnamectl status`                          | Mostra o hostname atual e informações do sistema |
+| `hostnamectl hostname <NAME>`                 | Define o hostname static/transient/pretty        |
+| `hostnamectl set-hostname <NAME> --static`    | Define apenas o hostname static                  |
+| `hostnamectl set-hostname <NAME> --transient` | Define apenas o hostname transient               |
+| `hostnamectl set-hostname <NAME> --pretty`    | Define o hostname pretty (amigável para o usuário) |
+| `hostnamectl set-chassis <TYPE>`              | Define o tipo de chassis (por exemplo, desktop, laptop, server) |
 
 {.left-text}
 
-#### ↓ Description
+#### ↓ Descrição
 
 ```markdown
 - Static - The permanent hostname stored in `/etc/hostname`. Used at boot time.
@@ -204,19 +204,19 @@ plugins:
 
 ### systemd-run{#systemd-run .col-span-4}
 
-- Run a command as a transient systemd unit (service, scope, timer, etc.).
+- Executa um comando como uma unit transiente do systemd (service, scope, timer etc.).
 
-| Command                                                  | Description                                        |
+| Comando                                                  | Descrição                                          |
 | -------------------------------------------------------- | -------------------------------------------------- |
-| `systemd-run <command>`                                  | Run command as a transient `.service` unit         |
-| `systemd-run -p BlockIOWeight=10 updatedb`               | Run with a specific resource limit property        |
-| `systemd-run -p MemoryMax=100M script.sh`                | Run a memory-hungry task with a memory usage limit |
-| `systemd-run --on-calendar='YYYY-MM-DD HH:MM' script.sh` | Schedule script to run at a specific date and time |
-| `systemd-run -E VAR=value script.sh`                     | Run a script with environment variables set        |
+| `systemd-run <command>`                                  | Executa o comando como uma unit `.service` transiente |
+| `systemd-run -p BlockIOWeight=10 updatedb`               | Executa com uma propriedade específica de limite de recursos |
+| `systemd-run -p MemoryMax=100M script.sh`                | Executa uma tarefa que consome muita memória com um limite de uso |
+| `systemd-run --on-calendar='YYYY-MM-DD HH:MM' script.sh` | Agenda o script para rodar em uma data e hora específicas |
+| `systemd-run -E VAR=value script.sh`                     | Executa um script com variáveis de ambiente definidas |
 
 {.left-text}
 
-#### Types of systemd limits{.col-span-3}
+#### Tipos de limites do systemd{.col-span-3}
 
 ```markdown
 There are different kinds of limit that can be imposed:
@@ -229,13 +229,13 @@ There are different kinds of limit that can be imposed:
 - Execution/Environment
 ```
 
-Example
+Exemplo
 
 ```bash
 systemd-run -p MemoryMax=100M -p CPUQuota=50% scriptFile.sh
 ```
 
-## Also See
+## Veja também
 
 - [linux training academy](https://www.linuxtrainingacademy.com/systemd-cheat-sheet/)
 - [linux Audit Cheat Sheet](https://linux-audit.com/cheat-sheets/systemd/)

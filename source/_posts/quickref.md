@@ -6,35 +6,35 @@ tags:
   - guide
   - reference
 categories:
-  - Other
-intro: This is the magic syntax variant manual that you can use on CheatSheets.zip, It's a good practice for contributors.
+  - Outros
+intro: Este é o manual das variantes da sintaxe mágica que você pode usar no CheatSheets.zip. É uma boa prática para quem contribui.
 plugins:
   - copyCode
 ---
 
-## Getting Started
+## Primeiros passos
 
-### Develop Setup
+### Configuração de desenvolvimento
 
-- Clone Repository [View on GitHub](https://github.com/Fechin/reference.git)
+- Clone o repositório [Ver no GitHub](https://github.com/Fechin/reference.git)
   ```shell script {.wrap}
   $ git clone https://github.com/Fechin/reference.git
   ```
-- Install Dependencies in the project directory
+- Instale as dependências no diretório do projeto
   ```shell script
   $ npm install
   ```
-- Start a Dev Server [http://localhost:4000](http://localhost:4000)
+- Inicie um servidor de desenvolvimento [http://localhost:4000](http://localhost:4000)
   ```shell script
   $ npm run dev
   ```
-- Create or modify `source/_posts/{name}.md`
-- Send us pull request and chill {.marker-timeline}
+- Crie ou modifique `source/_posts/{name}.md`
+- Envie um pull request e relaxe {.marker-timeline}
 
-It's a good practice to refer to the source code of the
-[CheatSheets reference](https://github.com/Fechin/reference/blob/main/source/_posts/quickref.md).
+É uma boa prática consultar o código-fonte da
+[referência do CheatSheets](https://github.com/Fechin/reference/blob/main/source/_posts/quickref.md).
 
-### Directory Structure
+### Estrutura de diretórios
 
 ```yaml
 .
@@ -57,7 +57,7 @@ It's a good practice to refer to the source code of the
     └── coo      # Theme files
 ```
 
-### Cheatsheet Structure {.row-span-2}
+### Estrutura do cheat sheet {.row-span-2}
 
 ```yaml
 .
@@ -87,25 +87,25 @@ It's a good practice to refer to the source code of the
 
 ---
 
-- One cheatsheet contains multiple sections
-- One section contains multiple cards
-- One card can contain Code, Table, List and Paragraph
-- One list can contain Code and Paragraph
-- One table can contain Code and Paragraph
+- Um cheat sheet contém várias seções
+- Uma seção contém vários cards
+- Um card pode conter código, tabela, lista e parágrafo
+- Uma lista pode conter código e parágrafo
+- Uma tabela pode conter código e parágrafo
 
-### Syntax Variants
+### Variantes de sintaxe
 
-- [Section Variants](#section-variants)
-- [Card Variants](#card-variants)
-- [Table Variants](#table-variants)
-- [List Variants](#list-variants)
-- [Code Variants](#code-variants)
-- [Paragraph Variants](#paragraph-variants)
-- [Cards Example](#cards-example)
+- [Variantes de seção](#section-variants)
+- [Variantes de card](#card-variants)
+- [Variantes de tabela](#table-variants)
+- [Variantes de lista](#list-variants)
+- [Variantes de código](#code-variants)
+- [Variantes de parágrafo](#paragraph-variants)
+- [Exemplo de cards](#cards-example)
 
-All the magic variants supported by CheatSheets.zip
+Todas as variantes mágicas suportadas pelo CheatSheets.zip
 
-### Create source/\_posts/demo.md
+### Crie source/\_posts/demo.md
 
 ```markdown
 ## Getting Started
@@ -124,25 +124,25 @@ All the magic variants supported by CheatSheets.zip
 {.show-header}
 ```
 
-## Section Variants
+## Variantes de seção
 
-### Section Overview {.secondary}
+### Visão geral das seções {.secondary}
 
 | -           | -                               |
 | ----------- | ------------------------------- |
-| `{.cols-1}` | one-column layout               |
-| `{.cols-2}` | two-column layout               |
-| `{.cols-3}` | three-column layout _(default)_ |
+| `{.cols-1}` | layout de uma coluna            |
+| `{.cols-2}` | layout de duas colunas          |
+| `{.cols-3}` | layout de três colunas _(padrão)_ |
 | ...         |                                 |
-| `{.cols-6}` | six-column layout               |
+| `{.cols-6}` | layout de seis colunas          |
 
 ---
 
-- Section contains multiple cards
-- Use {.cols-`n`} to specify section as a `n`-column layout
-- Click the preview button below to focus on the section
+- Uma seção contém vários cards
+- Use {.cols-`n`} para definir a seção como um layout de `n` colunas
+- Clique no botão de visualização abaixo para focar na seção
 
-[Preview](/quickref#section-variants) {.link-arrow}
+[Visualizar](/quickref#section-variants) {.link-arrow}
 
 ### .cols-1
 
@@ -156,7 +156,7 @@ All the magic variants supported by CheatSheets.zip
 ╰┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈╯
 ```
 
-#### ↓ Source Code
+#### ↓ Código-fonte
 
 ```markdown
 ## One Column Example {.cols-1}
@@ -166,7 +166,7 @@ All the magic variants supported by CheatSheets.zip
 ### 2
 ```
 
-[Preview](resolutions#lists-of-resolutions) {.link-arrow}
+[Visualizar](resolutions#lists-of-resolutions) {.link-arrow}
 
 ### .cols-2
 
@@ -180,7 +180,7 @@ All the magic variants supported by CheatSheets.zip
 ╰┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈╯
 ```
 
-#### ↓ Source Code
+#### ↓ Código-fonte
 
 ```markdown
 ## Two Columns Example {.cols-2}
@@ -192,9 +192,9 @@ All the magic variants supported by CheatSheets.zip
 ### 3
 ```
 
-[Preview](resolutions#getting-started) {.link-arrow}
+[Visualizar](resolutions#getting-started) {.link-arrow}
 
-### .cols-3 (default)
+### .cols-3 (padrão)
 
 ```text
 # Default
@@ -206,7 +206,7 @@ All the magic variants supported by CheatSheets.zip
 ╰┈┈┈┈┈┈┈┈┈┈╯
 ```
 
-#### ↓ Source Code
+#### ↓ Código-fonte
 
 ```markdown
 ## Default
@@ -220,40 +220,40 @@ All the magic variants supported by CheatSheets.zip
 ### 4
 ```
 
-## Card Variants
+## Variantes de card
 
-### Card Overview {.secondary}
+### Visão geral dos cards {.secondary}
 
-#### Specifies the number of columns the card spans
+#### Especifica quantas colunas o card ocupa
 
 | -               | -                      |
 | --------------- | ---------------------- |
-| `{.col-span-2}` | [Example](#col-span-2) |
+| `{.col-span-2}` | [Exemplo](#col-span-2) |
 | `{.col-span-3}` |                        |
 | ...             |                        |
 | `.col-span-6}`  |                        |
 
-#### Specifies the number of rows the card spans {.text-left}
+#### Especifica quantas linhas o card ocupa {.text-left}
 
 | -               | -                      |
 | --------------- | ---------------------- |
-| `{.row-span-2}` | [Example](#row-span-2) |
+| `{.row-span-2}` | [Exemplo](#row-span-2) |
 | `{.row-span-3}` |                        |
 | ...             |                        |
 | `{.row-span-6}` |                        |
 
-#### Emphasize card (aka `H3` Section)
+#### Destaque de card (também conhecido como seção `H3`)
 
 | -              | -                                         |
 | -------------- | ----------------------------------------- |
-| `{.primary}`   | Red titles, [Example](#primary-card)      |
-| `{.secondary}` | Yellow titles, [Example](#secondary-card) |
+| `{.primary}`   | Títulos vermelhos, [Exemplo](#primary-card) |
+| `{.secondary}` | Títulos amarelos, [Exemplo](#secondary-card) |
 
-A complete example: [Cards Example](#cards-example)
+Um exemplo completo: [Exemplo de cards](#cards-example)
 
 ### .col-span-2 {.row-span-2}
 
-#### The fifth card spans two columns
+#### O quinto card ocupa duas colunas
 
 ```text
 ╭┈┈┈┈┈┈┈┈┈╮ ╭┈┈┈┈┈┈┈┈┈╮ ╭┈┈┈┈┈┈┈┈┈╮
@@ -278,7 +278,7 @@ A complete example: [Cards Example](#cards-example)
 ### 5 {.col-span-2}
 ```
 
-#### The second card spans two columns
+#### O segundo card ocupa duas colunas
 
 ```text
 ╭┈┈┈┈┈┈┈┈┈╮ ╭┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈╮
@@ -303,7 +303,7 @@ A complete example: [Cards Example](#cards-example)
 ### 5
 ```
 
-#### The fourth card spans two columns
+#### O quarto card ocupa duas colunas
 
 ```text
 ╭┈┈┈┈┈┈┈┈┈╮ ╭┈┈┈┈┈┈┈┈┈╮ ╭┈┈┈┈┈┈┈┈┈╮
@@ -330,7 +330,7 @@ A complete example: [Cards Example](#cards-example)
 
 ### .row-span-2 {.row-span-2}
 
-#### The first card spans two rows
+#### O primeiro card ocupa duas linhas
 
 ```text
 ╭┈┈┈┈┈┈┈┈╮ ╭┈┈┈┈┈┈┈┈┈╮ ╭┈┈┈┈┈┈┈┈┈╮
@@ -355,7 +355,7 @@ A complete example: [Cards Example](#cards-example)
 ### 5
 ```
 
-#### The second card spans two rows
+#### O segundo card ocupa duas linhas
 
 ```text
 ╭┈┈┈┈┈┈┈┈┈╮ ╭┈┈┈┈┈┈┈┈╮ ╭┈┈┈┈┈┈┈┈┈╮
@@ -380,7 +380,7 @@ A complete example: [Cards Example](#cards-example)
 ### 5
 ```
 
-#### The third card spans two rows
+#### O terceiro card ocupa duas linhas
 
 ```text
 ╭┈┈┈┈┈┈┈┈┈╮ ╭┈┈┈┈┈┈┈┈┈╮ ╭┈┈┈┈┈┈┈┈╮
@@ -419,7 +419,7 @@ A complete example: [Cards Example](#cards-example)
 ╰┈┈┈┈┈┈┈┈┈╯ ╰┈┈┈┈┈┈┈┈┈╯ ╰┈┈┈┈┈┈┈┈┈╯
 ```
 
-#### ↓ Source Code
+#### ↓ Código-fonte
 
 ```markdown
 ### 1 {.col-span-2 .row-span-2}
@@ -433,31 +433,31 @@ A complete example: [Cards Example](#cards-example)
 ### 5
 ```
 
-Spans rows and columns at the same time
+Ocupa linhas e colunas ao mesmo tempo
 
-## Table Variants
+## Variantes de tabela
 
-### Table Overview {.secondary}
+### Visão geral das tabelas {.secondary}
 
 | -                | -                            |
 | ---------------- | ---------------------------- |
-| `{.show-header}` | Show the header of the table |
-| `{.shortcuts}`   | Render shortcut key style    |
-| `{.bold-first}`  | Bold first column            |
-| `{.plus-first}`  | Plus first column            |
-| `{.show-header}` | Show headers                 |
-| `{.left-text}`   | Align the last column left   |
-| `{.no-wrap}`     | Don't wrap text              |
+| `{.show-header}` | Mostra o cabeçalho da tabela |
+| `{.shortcuts}`   | Renderiza no estilo de atalho de teclado |
+| `{.bold-first}`  | Deixa a primeira coluna em negrito |
+| `{.plus-first}`  | Adiciona "+" na primeira coluna |
+| `{.show-header}` | Mostra os cabeçalhos         |
+| `{.left-text}`   | Alinha a última coluna à esquerda |
+| `{.no-wrap}`     | Não quebra o texto           |
 
-### Basic table
+### Tabela básica
 
-| Pattern  | Description            |
-| -------- | ---------------------- |
-| `[abc]`  | Match a, b or c        |
-| `[^abc]` | Match except a, b or c |
-| `[a-z]`  | Match a to z           |
+| Padrão   | Descrição                  |
+| -------- | -------------------------- |
+| `[abc]`  | Corresponde a a, b ou c    |
+| `[^abc]` | Corresponde exceto a, b ou c |
+| `[a-z]`  | Corresponde de a a z       |
 
-#### ↓ Source Code
+#### ↓ Código-fonte
 
 ```markdown
 | Pattern  | Description            |
@@ -469,14 +469,14 @@ Spans rows and columns at the same time
 
 ### .shortcuts
 
-| -          | -        |
-| ---------- | -------- |
-| `Ctrl` `N` | New File |
-| `Ctrl` `S` | Save     |
+| -          | -            |
+| ---------- | ------------ |
+| `Ctrl` `N` | Novo arquivo |
+| `Ctrl` `S` | Salvar       |
 
 {.shortcuts}
 
-#### ↓ Source Code
+#### ↓ Código-fonte
 
 ```markdown
 | -          | -        |
@@ -489,15 +489,15 @@ Spans rows and columns at the same time
 
 ### .show-header
 
-| Pattern  | Description            |
-| -------- | ---------------------- |
-| `[abc]`  | Match a, b or c        |
-| `[^abc]` | Match except a, b or c |
-| `[a-z]`  | Match a to z           |
+| Padrão   | Descrição                  |
+| -------- | -------------------------- |
+| `[abc]`  | Corresponde a a, b ou c    |
+| `[^abc]` | Corresponde exceto a, b ou c |
+| `[a-z]`  | Corresponde de a a z       |
 
 {.show-header}
 
-#### ↓ Source Code
+#### ↓ Código-fonte
 
 ```markdown
 | Pattern  | Description            |
@@ -511,15 +511,15 @@ Spans rows and columns at the same time
 
 ### .left-text
 
-| Pattern  | Description            |
-| -------- | ---------------------- |
-| `[abc]`  | Match a, b or c        |
-| `[^abc]` | Match except a, b or c |
-| `[a-z]`  | Match a to z           |
+| Padrão   | Descrição                  |
+| -------- | -------------------------- |
+| `[abc]`  | Corresponde a a, b ou c    |
+| `[^abc]` | Corresponde exceto a, b ou c |
+| `[a-z]`  | Corresponde de a a z       |
 
 {.left-text}
 
-#### ↓ Source Code
+#### ↓ Código-fonte
 
 ```markdown
 | Pattern  | Description            |
@@ -533,15 +533,15 @@ Spans rows and columns at the same time
 
 ### .bold-first
 
-| Pattern  | Description            |
-| -------- | ---------------------- |
-| `[abc]`  | Match a, b or c        |
-| `[^abc]` | Match except a, b or c |
-| `[a-z]`  | Match a to z           |
+| Padrão   | Descrição                  |
+| -------- | -------------------------- |
+| `[abc]`  | Corresponde a a, b ou c    |
+| `[^abc]` | Corresponde exceto a, b ou c |
+| `[a-z]`  | Corresponde de a a z       |
 
 {.bold-first}
 
-#### ↓ Source Code
+#### ↓ Código-fonte
 
 ```markdown
 | Pattern  | Description            |
@@ -553,35 +553,35 @@ Spans rows and columns at the same time
 {.bold-first}
 ```
 
-## List Variants
+## Variantes de lista
 
-### List Overview {.secondary}
+### Visão geral das listas {.secondary}
 
-List columns
+Colunas da lista
 
 | -           | -                      |
 | ----------- | ---------------------- |
-| `{.cols-1}` | one column _(default)_ |
-| `{.cols-2}` | two columns            |
+| `{.cols-1}` | uma coluna _(padrão)_  |
+| `{.cols-2}` | duas colunas           |
 | ...         |                        |
 | `{.cols-6}` |                        |
 
-List markers
+Marcadores de lista
 
 | -                    | -                          |
 | -------------------- | -------------------------- |
-| `{.marker-none}`     | Marker is not set          |
-| `{.marker-timeline}` | Marker style like timeline |
-| `{.marker-round}`    | Round marker               |
+| `{.marker-none}`     | O marcador não é definido  |
+| `{.marker-timeline}` | Estilo de marcador como linha do tempo |
+| `{.marker-round}`    | Marcador redondo           |
 
-### One Column (Default)
+### Uma coluna (padrão)
 
-- Share quick reference.
-- cheat sheet for developers.
-- Contributed by open source angels.
-- Manage your code snippets.
+- Compartilhe uma referência rápida.
+- cheat sheet para desenvolvedores.
+- Contribuído por anjos do open source.
+- Gerencie seus snippets de código.
 
-#### ↓ Source Code
+#### ↓ Código-fonte
 
 ```markdown
 - Share quick reference.
@@ -592,17 +592,17 @@ List markers
 
 ### .cols-3
 
-- Share
-- Quick
-- Reference
-- And
+- Compartilhe
+- Rápida
+- Referência
+- E
 - Cheat Sheet
-- For
-- Developers
+- Para
+- Desenvolvedores
 
 {.cols-3}
 
-#### ↓ Source Code
+#### ↓ Código-fonte
 
 ```markdown
 - Share
@@ -618,19 +618,19 @@ List markers
 
 ### .marker-timeline {.row-span-2}
 
-- **Renamed** to `new_name`
+- **Renomeado** para `new_name`
   ```shell script
   $ git branch -m <new_name>
   ```
-- **Push** and reset
+- **Push** e reset
   ```shell script
   $ git push origin -u <new_name>
   ```
-- **Delete** remote branch `shell script     $ git push origin --delete <old>     `
+- **Exclua** o branch remoto `shell script     $ git push origin --delete <old>     `
 
 {.marker-timeline}
 
-#### ↓ Source Code
+#### ↓ Código-fonte
 
 ````markdown
 - **Renamed** to `new_name`
@@ -670,13 +670,13 @@ List markers
 
 ### .marker-round
 
-- Share
-- Quick
-- Reference
+- Compartilhe
+- Rápida
+- Referência
 
 {.marker-round}
 
-#### ↓ Source Code
+#### ↓ Código-fonte
 
 ```markdown
 - Share
@@ -686,9 +686,9 @@ List markers
 {.marker-round}
 ```
 
-## Code Variants
+## Variantes de código
 
-### Basic code
+### Código básico
 
 ```js
 cheatsheets.zip.is(() => {
@@ -700,7 +700,7 @@ cheatsheets.zip.is(() => {
 here.is.some.more();
 ```
 
-#### ↓ Source Code
+#### ↓ Código-fonte
 
 `````markdown
 ````js
@@ -733,7 +733,7 @@ cheatsheets.zip.is(() => {
 here.is.some.more();
 ```
 
-#### ↓ Source Code
+#### ↓ Código-fonte
 
 ````markdown
 #### index.js
@@ -759,7 +759,7 @@ Code blocks can have headings.
 <script>(function(d,s){if(window.Promise&&[].includes&&Object.assign&&window.Map)return;var js,sc=d.getElementsByTagName(s)[0];js=d.createElement(s);js.src='https://cdn.polyfill.io/v2/polyfill.min.js';sc.parentNode.insertBefore(js, sc);}(document,'script'))</script>
 ```
 
-#### ↓ Source Code
+#### ↓ Código-fonte
 
 ````markdown {.wrap}
 ```js {.wrap}
@@ -777,15 +777,15 @@ function createNode(nodeName: string, options: { key: string }) {
 }
 ```
 
-Long lines will have scrollbars.
+Linhas longas terão barras de rolagem.
 
-## Paragraph Variants
+## Variantes de parágrafo
 
-### Header paragraphs
+### Parágrafos de cabeçalho
 
-The text that appears in the header
+O texto que aparece no cabeçalho
 
-#### ↓ Source Code
+#### ↓ Código-fonte
 
 ```markdown {.wrap}
 ### Basic paragraphs
@@ -793,11 +793,11 @@ The text that appears in the header
 The text that appears in the header
 ```
 
-### Middle paragraphs {.row-span-2}
+### Parágrafos do meio {.row-span-2}
 
-- This is a list
+- Esta é uma lista
 
-This paragraph will appear in the middle
+Este parágrafo aparecerá no meio
 
 ```js
 cheatsheets.is(() => {
@@ -805,7 +805,7 @@ cheatsheets.is(() => {
 });
 ```
 
-#### ↓ Source Code
+#### ↓ Código-fonte
 
 ````markdown
 ### Middle paragraphs
@@ -829,7 +829,7 @@ cheatsheets.is(() => {
 });
 ```
 
-#### ↓ Source Code
+#### ↓ Código-fonte
 
 ````markdown
 ```js
@@ -851,9 +851,9 @@ Add `{.link-arrow}` to make big loud external links:
 [Home](/) {.link-arrow}
 ```
 
-[Home](/) {.link-arrow}
+[Início](/) {.link-arrow}
 
-## Cards Example
+## Exemplo de cards
 
 ### row-span-2 {.row-span-2}
 
@@ -867,21 +867,21 @@ Add `{.link-arrow}` to make big loud external links:
 2
 ```
 
-### Primary Card {.primary}
+### Card primário {.primary}
 
 ```
 3
 ```
 
-Add `{.primary}` to make the title red.
+Adicione `{.primary}` para deixar o título vermelho.
 
-### Secondary Card {.secondary}
+### Card secundário {.secondary}
 
 ```
 4
 ```
 
-Add `{.secondary}` to make the title yellow.
+Adicione `{.secondary}` para deixar o título amarelo.
 
 ### col-span-3 {.col-span-3}
 

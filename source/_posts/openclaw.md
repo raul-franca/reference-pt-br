@@ -8,18 +8,18 @@ tags:
   - ai-gateway
   - automation
 categories:
-  - AI
+  - IA
 intro: |
   [OpenClaw](https://openclaw.ai) is a self-hosted AI gateway that bridges WhatsApp, Telegram, Discord, iMessage, and more to AI coding agents.
 plugins:
   - copyCode
 ---
 
-## Getting Started
+## Primeiros passos
 
-### Quick Setup {.row-span-2}
+### Configuração rápida {.row-span-2}
 
-#### 1. Install
+#### 1. Instale
 
 ```bash
 # macOS / Linux / WSL2
@@ -28,35 +28,35 @@ curl -fsSL https://openclaw.ai/install.sh | bash
 npm install -g openclaw@latest
 ```
 
-#### 2. Onboard & install service
+#### 2. Faça o onboarding e instale o serviço
 
 ```bash
 openclaw onboard --install-daemon
 ```
 
-#### 3. Verify the gateway
+#### 3. Verifique o gateway
 
 ```bash
 openclaw gateway status
 ```
 
-#### 4. Open dashboard
+#### 4. Abra o dashboard
 
 ```bash
 openclaw dashboard
 # Local default: http://127.0.0.1:18789/
 ```
 
-### Introduction
+### Introdução
 
 - [Docs](https://docs.openclaw.ai) _(docs.openclaw.ai)_
 - [GitHub](https://github.com/openclaw/openclaw) _(github.com)_
 - [Discord](https://discord.gg/openclaw) _(discord.gg)_
 - [Releases](https://github.com/openclaw/openclaw/releases) _(github.com)_
 
-Self-hosted, MIT licensed, multi-channel
+Auto-hospedado, com licença MIT e multicanal
 
-### Alternative Install
+### Instalação alternativa
 
 ```bash {.wrap}
 # From source
@@ -65,7 +65,7 @@ cd openclaw && pnpm install && pnpm build
 pnpm link --global
 ```
 
-### Verify Install
+### Verifique a instalação
 
 ```bash
 openclaw --version  # confirm CLI available
@@ -73,21 +73,21 @@ openclaw doctor     # health check + fixes
 openclaw status     # channels + gateway status
 ```
 
-### Global Flags
+### Flags globais
 
-| Flag                 | Description              |
+| Flag                 | Descrição                |
 | -------------------- | ------------------------ |
-| `--dev`              | Dev profile, port 19001  |
-| `--profile <name>`   | Named isolated profile   |
-| `--container <name>` | Run inside a container   |
-| `--log-level <l>`    | Log level (silent…trace) |
-| `--no-color`         | Disable ANSI colors      |
+| `--dev`              | Perfil de dev, porta 19001 |
+| `--profile <name>`   | Perfil isolado nomeado   |
+| `--container <name>` | Executa dentro de um container |
+| `--log-level <l>`    | Nível de log (silent…trace) |
+| `--no-color`         | Desativa as cores ANSI   |
 
 {.bold-first}
 
 ## Gateway {.cols-2}
 
-### Service Management {.row-span-2}
+### Gerenciamento do serviço {.row-span-2}
 
 ```bash
 # Install as system service
@@ -100,7 +100,7 @@ openclaw gateway restart
 openclaw gateway uninstall
 ```
 
-#### Status & health
+#### Status e saúde
 
 ```bash
 openclaw gateway status       # service status + probe
@@ -110,7 +110,7 @@ openclaw health               # fetch health from gateway
 openclaw logs --follow        # tail gateway logs
 ```
 
-### Startup Options
+### Opções de inicialização
 
 ```bash
 openclaw gateway run             # foreground
@@ -121,18 +121,18 @@ openclaw gateway run --bind lan  # bind to LAN
 openclaw gateway run --auth token --token <t>
 ```
 
-### Hot Reload Modes
+### Modos de hot reload
 
-| `gateway.reload.mode` | Behavior                                    |
+| `gateway.reload.mode` | Comportamento                               |
 | --------------------- | ------------------------------------------- |
-| `hybrid` _(default)_  | Hot-apply safe changes, restart when needed |
-| `hot`                 | Apply only hot-safe changes                 |
-| `restart`             | Restart on any reload-required change       |
-| `off`                 | No config reload                            |
+| `hybrid` _(default)_  | Aplica alterações seguras em tempo real e reinicia quando necessário |
+| `hot`                 | Aplica apenas alterações seguras em tempo real |
+| `restart`             | Reinicia em qualquer alteração que exija reload |
+| `off`                 | Sem recarregamento de config                |
 
 {.show-header}
 
-### Remote Access
+### Acesso remoto
 
 ```bash
 # SSH tunnel (recommended fallback)
@@ -143,20 +143,20 @@ ssh -N -L 18789:127.0.0.1:18789 user@host
 openclaw gateway run --tailscale serve
 ```
 
-### OpenAI-Compatible API
+### API compatível com OpenAI
 
-| Endpoint                    | Purpose               |
+| Endpoint                    | Finalidade            |
 | --------------------------- | --------------------- |
-| `GET /v1/models`            | List agents as models |
-| `POST /v1/chat/completions` | Chat with agent       |
-| `POST /v1/responses`        | Agent-native response |
-| `POST /v1/embeddings`       | Embedding pipeline    |
+| `GET /v1/models`            | Lista agentes como modelos |
+| `POST /v1/chat/completions` | Conversa com o agente |
+| `POST /v1/responses`        | Resposta nativa do agente |
+| `POST /v1/embeddings`       | Pipeline de embedding |
 
-All endpoints run on the main gateway port.
+Todos os endpoints rodam na porta principal do gateway.
 
-## Channels {.cols-2}
+## Canais {.cols-2}
 
-### Connect Channels {.row-span-2}
+### Conecte canais {.row-span-2}
 
 ```bash
 # List + status
@@ -181,7 +181,7 @@ openclaw channels logs
 openclaw channels capabilities
 ```
 
-#### Resolve contact IDs
+#### Resolva os IDs de contato
 
 ```bash
 openclaw directory self --channel telegram
@@ -189,22 +189,22 @@ openclaw directory peers list --channel slack
 openclaw directory groups list --channel discord
 ```
 
-### Supported Channels {.col-span-2}
+### Canais suportados {.col-span-2}
 
-#### Built-in
+#### Integrados
 
-| Channel     | Notes                            |
+| Canal       | Observações                      |
 | ----------- | -------------------------------- |
-| WhatsApp    | QR pairing via Baileys           |
-| Telegram    | Bot API — fastest to set up      |
-| Discord     | Bot API + Gateway, DMs + servers |
-| BlueBubbles | iMessage via macOS server        |
+| WhatsApp    | Pareamento por QR via Baileys    |
+| Telegram    | Bot API — configuração mais rápida |
+| Discord     | Bot API + Gateway, DMs + servidores |
+| BlueBubbles | iMessage via servidor macOS      |
 | Signal      | Via signal-cli                   |
-| Slack       | Bolt SDK workspace apps          |
-| Google Chat | HTTP webhook                     |
-| IRC         | Classic IRC, DMs + channels      |
+| Slack       | Apps de workspace com Bolt SDK   |
+| Google Chat | Webhook HTTP                     |
+| IRC         | IRC clássico, DMs + canais       |
 | QQ Bot      | QQ Bot API                       |
-| WebChat     | Built-in browser chat UI         |
+| WebChat     | UI de chat integrada no navegador |
 
 {.show-header}
 
@@ -225,9 +225,9 @@ openclaw directory groups list --channel discord
 
 {.cols-3 .marker-none}
 
-## Messaging {.cols-2}
+## Mensagens {.cols-2}
 
-### Send Messages {.row-span-2}
+### Envie mensagens {.row-span-2}
 
 ```bash
 # Basic text
@@ -260,7 +260,7 @@ openclaw message send \
   --message "Reply" --reply-to <msg-id>
 ```
 
-### Read Messages
+### Leia mensagens
 
 ```bash
 openclaw message read \
@@ -271,7 +271,7 @@ openclaw message read \
   --limit 20 --json
 ```
 
-### Message Actions
+### Ações em mensagens
 
 ```bash
 # Broadcast to multiple targets
@@ -293,9 +293,9 @@ openclaw message edit --message-id 456
 openclaw message delete --message-id 456
 ```
 
-## Agents & Sessions {.cols-3}
+## Agentes e sessões {.cols-3}
 
-### Run Agent {.row-span-2}
+### Execute um agente {.row-span-2}
 
 ```bash
 # New session
@@ -329,7 +329,7 @@ openclaw agent \
   --message "Trace" --verbose on --json
 ```
 
-### Manage Agents
+### Gerencie agentes
 
 ```bash
 openclaw agents list
@@ -343,7 +343,7 @@ openclaw agents set-identity \
   --agent work --name "Work Bot"
 ```
 
-### Sessions
+### Sessões
 
 ```bash
 openclaw sessions              # all sessions
@@ -354,24 +354,24 @@ openclaw sessions --json
 openclaw sessions cleanup
 ```
 
-### Routing Priority {.col-span-2}
+### Prioridade de roteamento {.col-span-2}
 
-| Priority    | Match type                         |
+| Prioridade  | Tipo de correspondência            |
 | ----------- | ---------------------------------- |
-| 1 (highest) | `peer` — exact DM/group/channel ID |
-| 2           | `parentPeer` — thread inheritance  |
+| 1 (mais alta) | `peer` — ID exato de DM/grupo/canal |
+| 2           | `parentPeer` — herança de thread   |
 | 3           | `guildId` + roles (Discord)        |
 | 4           | `guildId` (Discord)                |
 | 5           | `teamId` (Slack)                   |
 | 6           | `accountId` match for channel      |
 | 7           | `accountId: "*"` channel fallback  |
-| 8 (lowest)  | Default agent                      |
+| 8 (mais baixa) | Agente padrão                    |
 
 {.show-header}
 
-## Models {.cols-2}
+## Modelos {.cols-2}
 
-### Configure Models {.row-span-2}
+### Configure modelos {.row-span-2}
 
 ```bash
 # Set primary model
@@ -401,7 +401,7 @@ openclaw models fallbacks add anthropic/claude-haiku-4-5
 openclaw models fallbacks clear
 ```
 
-### In-chat /model
+### /model no chat
 
 ```bash
 /model             # interactive picker
@@ -411,9 +411,9 @@ openclaw models fallbacks clear
 /model status      # auth + provider details
 ```
 
-Switch takes effect on the next agent run.
+A troca entra em vigor na próxima execução do agente.
 
-### Model Scan (OpenRouter)
+### Varredura de modelos (OpenRouter)
 
 ```bash
 # Scan free models (metadata only)
@@ -428,11 +428,11 @@ openclaw models scan \
   --set-default --yes
 ```
 
-Requires `OPENROUTER_API_KEY` for probing.
+Requer `OPENROUTER_API_KEY` para fazer o probing.
 
-## Config & Environment {.cols-2}
+## Config e ambiente {.cols-2}
 
-### Config Commands {.row-span-2}
+### Comandos de config {.row-span-2}
 
 ```bash
 # Show config file path
@@ -461,37 +461,37 @@ openclaw config schema
 openclaw configure
 ```
 
-### Environment Variables
+### Variáveis de ambiente
 
-| Variable                    | Description            |
+| Variável                    | Descrição              |
 | --------------------------- | ---------------------- |
-| `OPENCLAW_GATEWAY_PORT`     | Gateway port           |
-| `OPENCLAW_GATEWAY_TOKEN`    | Auth token             |
-| `OPENCLAW_GATEWAY_PASSWORD` | Auth password          |
-| `OPENCLAW_CONFIG_PATH`      | Config file path       |
-| `OPENCLAW_STATE_DIR`        | State directory        |
-| `OPENCLAW_PROFILE`          | Active profile name    |
-| `OPENCLAW_CONTAINER`        | Default container name |
+| `OPENCLAW_GATEWAY_PORT`     | Porta do gateway       |
+| `OPENCLAW_GATEWAY_TOKEN`    | Token de autenticação  |
+| `OPENCLAW_GATEWAY_PASSWORD` | Senha de autenticação  |
+| `OPENCLAW_CONFIG_PATH`      | Path do arquivo de config |
+| `OPENCLAW_STATE_DIR`        | Diretório de estado    |
+| `OPENCLAW_PROFILE`          | Nome do perfil ativo   |
+| `OPENCLAW_CONTAINER`        | Nome do container padrão |
 
 {.bold-first}
 
-### Default Paths
+### Paths padrão
 
-| Path                               | Description         |
+| Path                               | Descrição           |
 | ---------------------------------- | ------------------- |
-| `~/.openclaw/openclaw.json`        | Main config         |
-| `~/.openclaw/`                     | State directory     |
-| `~/.openclaw/workspace`            | Agent workspace     |
-| `~/.openclaw/agents/<id>/agent`    | Agent auth + models |
-| `~/.openclaw/agents/<id>/sessions` | Session store       |
-| `~/.openclaw/credentials/`         | Channel credentials |
-| `~/.openclaw/skills/`              | Shared skills       |
+| `~/.openclaw/openclaw.json`        | Config principal    |
+| `~/.openclaw/`                     | Diretório de estado |
+| `~/.openclaw/workspace`            | Workspace do agente |
+| `~/.openclaw/agents/<id>/agent`    | Auth + modelos do agente |
+| `~/.openclaw/agents/<id>/sessions` | Store de sessões    |
+| `~/.openclaw/credentials/`         | Credenciais dos canais |
+| `~/.openclaw/skills/`              | Skills compartilhadas |
 
 {.bold-first}
 
-## Memory & Backup {.cols-3}
+## Memória e backup {.cols-3}
 
-### Memory Search
+### Busca na memória
 
 ```bash
 openclaw memory status
@@ -503,7 +503,7 @@ openclaw memory search \
 openclaw memory status --json
 ```
 
-### Backup & Restore
+### Backup e restauração
 
 ```bash
 # Create backup archive
@@ -513,9 +513,9 @@ openclaw backup create
 openclaw backup verify backup.tar.gz
 ```
 
-Backs up: config, credentials, sessions, workspaces.
+Faz backup de: config, credenciais, sessões e workspaces.
 
-### Reset & Update
+### Reset e atualização
 
 ```bash
 # Reset config + state (keeps CLI)
@@ -531,9 +531,9 @@ openclaw update --dry-run
 openclaw uninstall
 ```
 
-## Plugins & Skills {.cols-3}
+## Plugins e skills {.cols-3}
 
-### Plugin Commands {.row-span-2}
+### Comandos de plugin {.row-span-2}
 
 ```bash
 # Discover + inspect
@@ -558,7 +558,7 @@ openclaw plugins uninstall <name>
 openclaw plugins doctor
 ```
 
-### Skill Commands
+### Comandos de skill
 
 ```bash
 openclaw skills list
@@ -569,7 +569,7 @@ openclaw skills install clawhub:browser
 openclaw skills update
 ```
 
-### Hook Commands
+### Comandos de hook
 
 ```bash
 openclaw hooks list
@@ -579,9 +579,9 @@ openclaw hooks enable <name>
 openclaw hooks disable <name>
 ```
 
-## Ops & Maintenance {.cols-2}
+## Operação e manutenção {.cols-2}
 
-### Health & Diagnostics {.row-span-2}
+### Saúde e diagnósticos {.row-span-2}
 
 ```bash
 # Quick health checks
@@ -605,7 +605,7 @@ openclaw security audit --fix
 openclaw security audit --json
 ```
 
-### Cron Jobs
+### Tarefas cron
 
 ```bash
 openclaw cron list
@@ -659,7 +659,7 @@ openclaw nodes notify \
   --node <id> --message "Hello"
 ```
 
-### Security Controls
+### Controles de segurança
 
 ```bash
 # DM pairing
@@ -677,7 +677,7 @@ openclaw devices revoke --role admin
 openclaw devices rotate --role admin
 ```
 
-### Multi-agent Config {.col-span-2}
+### Config multiagente {.col-span-2}
 
 ```json
 {
@@ -707,14 +707,14 @@ openclaw devices rotate --role admin
 }
 ```
 
-Config lives at `~/.openclaw/openclaw.json` (JSON5 format)
+A config fica em `~/.openclaw/openclaw.json` (formato JSON5)
 
-## Also see {.cols-1}
+## Veja também {.cols-1}
 
-- [Official Documentation](https://docs.openclaw.ai) _(docs.openclaw.ai)_
-- [GitHub Repository](https://github.com/openclaw/openclaw) _(github.com)_
-- [Discord Community](https://discord.gg/openclaw) _(discord.gg)_
-- [Releases & Changelog](https://github.com/openclaw/openclaw/releases) _(github.com)_
-- [CLI Reference](https://docs.openclaw.ai/cli) _(docs.openclaw.ai)_
-- [Model Providers](https://docs.openclaw.ai/models) _(docs.openclaw.ai)_
-- [Channel Setup Guides](https://docs.openclaw.ai/channels) _(docs.openclaw.ai)_
+- [Documentação oficial](https://docs.openclaw.ai) _(docs.openclaw.ai)_
+- [Repositório no GitHub](https://github.com/openclaw/openclaw) _(github.com)_
+- [Comunidade no Discord](https://discord.gg/openclaw) _(discord.gg)_
+- [Releases e changelog](https://github.com/openclaw/openclaw/releases) _(github.com)_
+- [Referência da CLI](https://docs.openclaw.ai/cli) _(docs.openclaw.ai)_
+- [Provedores de modelos](https://docs.openclaw.ai/models) _(docs.openclaw.ai)_
+- [Guias de configuração de canais](https://docs.openclaw.ai/channels) _(docs.openclaw.ai)_

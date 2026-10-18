@@ -6,18 +6,18 @@ tags:
   - config
   - format
 categories:
-  - Programming
+  - Programação
 intro: |
-  A quick reference cheatsheet for Express, a flexible and streamlined web framework for Node.js
+  Um cheat sheet de referência rápida para o Express, um framework web flexível e enxuto para Node.js
 plugins:
   - copyCode
 ---
 
-## Getting Started
+## Primeiros passos
 
 ### Hello World {.row-span-2}
 
-- "Create project, add `package.json` configuration
+- Crie o projeto e adicione a configuração do `package.json`
 
   ```bash
   $ mkdir myapp # create directory
@@ -25,13 +25,13 @@ plugins:
   $ npm init -y # Initialize a configuration
   ```
 
-- Install dependencies
+- Instale as dependências
 
   ```bash
   $ npm install express
   ```
 
-- Entry file `index.js` add code:
+- No arquivo de entrada `index.js`, adicione o código:
 
   ```js
   const express = require('express');
@@ -45,7 +45,7 @@ plugins:
   });
   ```
 
-- Run the application using the following command
+- Execute a aplicação com o comando a seguir
   ```bash
   $ node index.js
   ```
@@ -71,7 +71,7 @@ Options:
 
 {.wrap-text}
 
-Create a `myapp` project
+Crie um projeto `myapp`
 
 ```bash
 $ express --view=pug myapp
@@ -112,20 +112,20 @@ console.dir(app.locals.email);
 //=> 'me@myapp.com'
 ```
 
-#### Attribute
+#### Atributos
 
 | :-              | :-                                                                                        |
 | :-------------- | :---------------------------------------------------------------------------------------- |
-| `app.locals`    | Local variables in the application [#](http://expressjs.com/en/4x/api.html#app.locals)    |
-| `app.mountpath` | Path pattern for mounting sub-apps [#](http://expressjs.com/en/4x/api.html#app.mountpath) |
+| `app.locals`    | Variáveis locais na aplicação [#](http://expressjs.com/en/4x/api.html#app.locals)          |
+| `app.mountpath` | Padrão de path para montar subapps [#](http://expressjs.com/en/4x/api.html#app.mountpath)  |
 
-#### Events
+#### Eventos
 
 | :-      | :-                                                                                                                                                                   |
 | :------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `mount` | The child application is mounted on the parent application, and the event is triggered on the child application [#](http://expressjs.com/en/4x/api.html#app.onmount) |
+| `mount` | A aplicação filha é montada na aplicação pai, e o evento é disparado na aplicação filha [#](http://expressjs.com/en/4x/api.html#app.onmount)                          |
 
-#### Method
+#### Métodos
 
 | :-                        | :-                                                         |
 | :------------------------ | :--------------------------------------------------------- |
@@ -151,7 +151,7 @@ console.dir(app.locals.email);
 
 ### Request
 
-#### Attribute
+#### Atributos
 
 | :-                  | :-                                                         |
 | :------------------ | :--------------------------------------------------------- |
@@ -176,7 +176,7 @@ console.dir(app.locals.email);
 | `req.subdomains`    | [#](http://expressjs.com/en/4x/api.html#req.subdomains)    |
 | `req.xhr`           | [#](http://expressjs.com/en/4x/api.html#req.xhr)           |
 
-#### Method
+#### Métodos
 
 | :-                       | :-                                                                              |
 | :----------------------- | :------------------------------------------------------------------------------ |
@@ -184,7 +184,7 @@ console.dir(app.locals.email);
 | `req.acceptsCharsets()`  | [#](http://expressjs.com/en/4x/api.html#req.acceptsCharsets)                    |
 | `req.acceptsEncodings()` | [#](http://expressjs.com/en/4x/api.html#req.acceptsEncodings)                   |
 | `req.acceptsLanguages()` | [#](http://expressjs.com/en/4x/api.html#req.acceptsLanguages)                   |
-| `req.get()`              | Get HTTP request header fields [#](http://expressjs.com/en/4x/api.html#req.get) |
+| `req.get()`              | Obtém os campos do header da requisição HTTP [#](http://expressjs.com/en/4x/api.html#req.get) |
 | `req.is()`               | [#](http://expressjs.com/en/4x/api.html#req.is)                                 |
 | `req.param()`            | [#](http://expressjs.com/en/4x/api.html#req.param)                              |
 | `req.range()`            | [#](http://expressjs.com/en/4x/api.html#req.range)                              |
@@ -199,7 +199,7 @@ app.get('/', function (req, res) {
 });
 ```
 
-#### Attribute
+#### Atributos
 
 | :-                | :-                                                       |
 | :---------------- | :------------------------------------------------------- |
@@ -207,7 +207,7 @@ app.get('/', function (req, res) {
 | `res.headersSent` | [#](http://expressjs.com/en/4x/api.html#res.headersSent) |
 | `res.locals`      | [#](http://expressjs.com/en/4x/api.html#res.locals)      |
 
-#### Method
+#### Métodos
 
 | :-                  | :-                                                                                    |
 | :------------------ | :------------------------------------------------------------------------------------ |
@@ -215,29 +215,29 @@ app.get('/', function (req, res) {
 | `res.attachment()`  | [#](http://expressjs.com/en/4x/api.html#res.attachment)                               |
 | `res.cookie()`      | [#](http://expressjs.com/en/4x/api.html#res.cookie)                                   |
 | `res.clearCookie()` | [#](http://expressjs.com/en/4x/api.html#res.clearCookie)                              |
-| `res.download()`    | Prompt for files to download [#](http://expressjs.com/en/4x/api.html#res.download)    |
-| `res.end()`         | end the response process [#](http://expressjs.com/en/4x/api.html#res.end)             |
+| `res.download()`    | Sugere arquivos para download [#](http://expressjs.com/en/4x/api.html#res.download)   |
+| `res.end()`         | encerra o processo de resposta [#](http://expressjs.com/en/4x/api.html#res.end)       |
 | `res.format()`      | [#](http://expressjs.com/en/4x/api.html#res.format)                                   |
 | `res.get()`         | [#](http://expressjs.com/en/4x/api.html#res.get)                                      |
-| `res.json()`        | Send JSON response [#](http://expressjs.com/en/4x/api.html#res.json)                  |
-| `res.jsonp()`       | Send a response with JSONP support [#](http://expressjs.com/en/4x/api.html#res.jsonp) |
+| `res.json()`        | Envia resposta JSON [#](http://expressjs.com/en/4x/api.html#res.json)                 |
+| `res.jsonp()`       | Envia uma resposta com suporte a JSONP [#](http://expressjs.com/en/4x/api.html#res.jsonp) |
 | `res.links()`       | [#](http://expressjs.com/en/4x/api.html#res.links)                                    |
 | `res.location()`    | [#](http://expressjs.com/en/4x/api.html#res.location)                                 |
-| `res.redirect()`    | Redirect request [#](http://expressjs.com/en/4x/api.html#res.redirect)                |
-| `res.render()`      | render view template [#](http://expressjs.com/en/4x/api.html#res.render)              |
-| `res.send()`        | Send various types of responses [#](http://expressjs.com/en/4x/api.html#res.send)     |
-| `res.sendFile()`    | Send a file as an octet stream [#](http://expressjs.com/en/4x/api.html#res.sendFile)  |
+| `res.redirect()`    | Redireciona a requisição [#](http://expressjs.com/en/4x/api.html#res.redirect)        |
+| `res.render()`      | renderiza o template de view [#](http://expressjs.com/en/4x/api.html#res.render)      |
+| `res.send()`        | Envia vários tipos de resposta [#](http://expressjs.com/en/4x/api.html#res.send)      |
+| `res.sendFile()`    | Envia um arquivo como octet stream [#](http://expressjs.com/en/4x/api.html#res.sendFile) |
 | `res.sendStatus()`  | [#](http://expressjs.com/en/4x/api.html#res.sendStatus)                               |
 | `res.set()`         | [#](http://expressjs.com/en/4x/api.html#res.set)                                      |
 | `res.status()`      | [#](http://expressjs.com/en/4x/api.html#res.status)                                   |
 | `res.type()`        | [#](http://expressjs.com/en/4x/api.html#res.type)                                     |
 | `res.vary()`        | [#](http://expressjs.com/en/4x/api.html#res.vary)                                     |
 
-## Example
+## Exemplo
 
 ### Router {. row-span-2}
 
-Called for any request passed to this router
+Chamado para qualquer requisição passada para este router
 
 ```js
 router.use(function (req, res, next) {
@@ -246,7 +246,7 @@ router.use(function (req, res, next) {
 });
 ```
 
-will handle any request ending in `/events`
+vai tratar qualquer requisição terminada em `/events`
 
 ```js
 //depends on where the router "use()"
@@ -257,7 +257,7 @@ router.get('/events', (req, res, next) => {
 
 ### Response
 
-The `res` object represents the HTTP response sent by the `Express` application when it receives an HTTP request
+O objeto `res` representa a resposta HTTP enviada pela aplicação `Express` quando ela recebe uma requisição HTTP
 
 ```js
 app.get('/user/:id', (req, res) => {
@@ -267,8 +267,8 @@ app.get('/user/:id', (req, res) => {
 
 ### Request
 
-A `req` object represents an `HTTP` request and has properties for the request query string, parameters, body, HTTP
-headers, etc.
+Um objeto `req` representa uma requisição `HTTP` e tem propriedades para a query string da requisição, parâmetros,
+body, headers HTTP etc.
 
 ```js
 app.get('/user/:id', (req, res) => {
@@ -283,8 +283,8 @@ res.end();
 res.status(404).end();
 ```
 
-End the response process. This method actually comes from the Node core, specifically the `response.end()` method of
-`http.ServerResponse`
+Encerra o processo de resposta. Este método na verdade vem do core do Node, especificamente do método `response.end()`
+de `http.ServerResponse`
 
 ### res.json([body])
 
@@ -348,7 +348,7 @@ var app = express();
 app.listen(3000);
 ```
 
-### Routing
+### Roteamento
 
 ```js
 const express = require('express');
@@ -392,13 +392,13 @@ app.get('/user/:id', log, (req, res, next) => {
 });
 ```
 
-### Using templates
+### Usando templates
 
 ```js
 app.set('view engine', 'pug');
 ```
 
-Create a `Pug` template file named `index.pug` in the `views` directory with the following content
+Crie um arquivo de template `Pug` chamado `index.pug` no diretório `views` com o seguinte conteúdo
 
 ```pug
 html
@@ -408,8 +408,8 @@ html
     h1=message
 ```
 
-Create a route to render the `index.pug` file. If the view engine property is not set, the extension of the view file
-must be specified
+Crie uma rota para renderizar o arquivo `index.pug`. Se a propriedade do view engine não estiver definida, a extensão do
+arquivo de view deve ser especificada
 
 ```js
 app.get('/', (req, res) => {

@@ -7,207 +7,207 @@ tags:
   -
   -
 categories:
-  - Keyboard Shortcuts
+  - Atalhos de Teclado
 intro: |
-  A visual cheat-sheet for the 116 keyboard shortcuts found in Firefox
+  Um cheat-sheet visual com os 116 atalhos de teclado do Firefox
 ---
 
-## Keyboard Shortcuts
+## Atalhos de Teclado
 
-### Navigation
+### Navegação
 
-| Shortcut           | Action                  |
-| ------------------ | ----------------------- |
-| `Alt` `Left`       | Back                    |
-| `Alt` `Right`      | Forward                 |
-| `Alt` `Home`       | Home                    |
-| `Ctrl` `O`         | Open File               |
-| `Ctrl` `R`         | Reload                  |
-| `Ctrl` `Shift` `R` | Reload (override cache) |
-| `Ctrl` `.`         | Stop                    |
-
-{.shortcuts}
-
-### Current Page
-
-| Shortcut        | Action                             |
-| --------------- | ---------------------------------- |
-| `Tab`           | Focus Next Link or Input Field     |
-| `Shift` `Tab`   | Focus Previous Link or Input Field |
-| `Space`         | Go Down a Screen                   |
-| `Shift` `Space` | Go Up a Screen                     |
-| `Ctrl` `Down`   | Go to Bottom of Page               |
-| `Ctrl` `Up`     | Go to Top of Page                  |
-| `F6`            | Move to Next Frame                 |
-| `Shift` `F6`    | Move to Previous Frame             |
-| `Ctrl` `P`      | Print                              |
-| `Ctrl` `S`      | Save Page As                       |
-| `Ctrl` `+`      | Zoom In                            |
-| `Ctrl` `-`      | Zoom Out                           |
-| `Ctrl` `0`      | Zoom Reset                         |
+| Atalho             | Ação                       |
+| ------------------ | -------------------------- |
+| `Alt` `Left`       | Voltar                     |
+| `Alt` `Right`      | Avançar                    |
+| `Alt` `Home`       | Página inicial             |
+| `Ctrl` `O`         | Abrir arquivo              |
+| `Ctrl` `R`         | Recarregar                 |
+| `Ctrl` `Shift` `R` | Recarregar (ignorar cache) |
+| `Ctrl` `.`         | Parar                      |
 
 {.shortcuts}
 
-### Editing
+### Página atual
 
-| Shortcut           | Action                  |
-| ------------------ | ----------------------- |
-| `Ctrl` `C`         | Copy                    |
-| `Ctrl` `X`         | Cut                     |
-| `Backspace`        | Delete                  |
-| `Home`             | Go to Beginning of Line |
-| `End`              | Go to End of Line       |
-| `Ctrl` `V`         | Paste                   |
-| `Ctrl` `Shift` `V` | Paste (as plain text)   |
-| `Ctrl` `Shift` `Z` | Redo                    |
-| `Ctrl` `A`         | Select All              |
-| `Ctrl` `Z`         | Undo                    |
-
-{.shortcuts}
-
-### Search
-
-| Shortcut           | Action                                             |
-| ------------------ | -------------------------------------------------- |
-| `Ctrl` `F`         | Find                                               |
-| `Ctrl` `G`         | Find Again                                         |
-| `Ctrl` `Shift` `G` | Find Previous                                      |
-| `'`                | Quick Find within link-text only                   |
-| `/`                | Quick Find                                         |
-| `Esc`              | Close the Find or Quick Find bar                   |
-| `Ctrl` `K`         | Focus Search bar                                   |
-| `Ctrl` `Up/Down`   | Change the Default Search Engine                   |
-| `Alt` `Up/Down`    | View menu to switch, add, or manage search engines |
+| Atalho          | Ação                                        |
+| --------------- | ------------------------------------------- |
+| `Tab`           | Focar o próximo link ou campo de entrada    |
+| `Shift` `Tab`   | Focar o link ou campo de entrada anterior   |
+| `Space`         | Descer uma tela                             |
+| `Shift` `Space` | Subir uma tela                              |
+| `Ctrl` `Down`   | Ir para o fim da página                     |
+| `Ctrl` `Up`     | Ir para o topo da página                    |
+| `F6`            | Mover para o próximo frame                  |
+| `Shift` `F6`    | Mover para o frame anterior                 |
+| `Ctrl` `P`      | Imprimir                                    |
+| `Ctrl` `S`      | Salvar página como                          |
+| `Ctrl` `+`      | Aumentar zoom                               |
+| `Ctrl` `-`      | Diminuir zoom                               |
+| `Ctrl` `0`      | Redefinir zoom                              |
 
 {.shortcuts}
 
-### Windows and Tabs {.row-span-2}
+### Edição
 
-| Shortcut                | Action                                       |
-| ----------------------- | -------------------------------------------- |
-| `Ctrl` `W`              | Close Tab                                    |
-| `Ctrl` `Shift` `W`      | Close Window                                 |
-| `Ctrl` `Tab`            | Cycle through Tabs in Recently Used Order    |
-| `Ctrl` `Q`              | Quit                                         |
-| `Ctrl` `PgUp`           | Go one Tab to the Left                       |
-| `Ctrl` `PgDown`         | Go one Tab to the Right                      |
-| `Ctrl` `Shift` `PgUp`   | Move Tab Left                                |
-| `Ctrl` `Shift` `PgDown` | Move Tab Right                               |
-| `Ctrl` `Shift` `Home`   | Move Tab in focus to start                   |
-| `Ctrl` `Shift` `End`    | Move Tab in focus to end                     |
-| `Ctrl` `M`              | Mute/Unmute Audio                            |
-| `Ctrl` `T`              | New Tab                                      |
-| `Ctrl` `N`              | New Window                                   |
-| `Ctrl` `Shift` `P`      | New Private Window                           |
-| `Alt` `Enter`           | Open Address in New Foreground Tab           |
-| `Enter`                 | Open Focused Bookmark or Link in Current Tab |
-| `Ctrl` `Enter`          | Open Focused Bookmark in New Foreground Tab  |
-| `Ctrl` `Shift` `Enter`  | Open Focused Bookmark in New Background Tab  |
-| `Ctrl` `Enter`          | Open Focused Link in New Background Tab      |
-| `Shift` `Enter`         | Open Focused Bookmark or Link in New Window  |
-| `Ctrl` `Shift` `T`      | Undo Close Tab                               |
-| `Ctrl` `Shift` `N`      | Undo Close Window                            |
-| `Ctrl` `1-8`            | Select Tab 1-8                               |
-| `Ctrl` `9`              | Select Last Tab                              |
-| `Ctrl` `Shift` `X`      | Moves the URL left or right                  |
+| Atalho             | Ação                        |
+| ------------------ | --------------------------- |
+| `Ctrl` `C`         | Copiar                      |
+| `Ctrl` `X`         | Recortar                    |
+| `Backspace`        | Excluir                     |
+| `Home`             | Ir para o início da linha   |
+| `End`              | Ir para o fim da linha      |
+| `Ctrl` `V`         | Colar                       |
+| `Ctrl` `Shift` `V` | Colar (como texto simples)  |
+| `Ctrl` `Shift` `Z` | Refazer                     |
+| `Ctrl` `A`         | Selecionar tudo             |
+| `Ctrl` `Z`         | Desfazer                    |
 
 {.shortcuts}
 
-### History
+### Busca
 
-| Shortcut                | Action               |
-| ----------------------- | -------------------- |
-| `Ctrl` `Shift` `H`      | History sidebar      |
-| `Ctrl` `Shift` `Delete` | Clear Recent History |
-
-{.shortcuts}
-
-### Bookmarks
-
-| Shortcut                            | Action                     |
-| ----------------------------------- | -------------------------- |
-| `Ctrl` `Shift` `D`                  | Bookmark All Tabs          |
-| `Ctrl` `D`                          | Bookmark This Page         |
-| `Ctrl` `B`                          | Bookmarks sidebar          |
-| `Ctrl` `Shift` `S`                  | Library window (Bookmarks) |
-| `(search field in Library)` `Space` | Search for all Bookmarks   |
+| Atalho             | Ação                                                       |
+| ------------------ | ---------------------------------------------------------- |
+| `Ctrl` `F`         | Localizar                                                  |
+| `Ctrl` `G`         | Localizar novamente                                        |
+| `Ctrl` `Shift` `G` | Localizar anterior                                         |
+| `'`                | Busca rápida apenas em texto de link                       |
+| `/`                | Busca rápida                                               |
+| `Esc`              | Fechar a barra de localização ou de busca rápida           |
+| `Ctrl` `K`         | Focar a barra de busca                                     |
+| `Ctrl` `Up/Down`   | Alterar o mecanismo de busca padrão                        |
+| `Alt` `Up/Down`    | Ver menu para trocar, adicionar ou gerenciar buscadores    |
 
 {.shortcuts}
 
-### Tools
+### Janelas e abas {.row-span-2}
 
-| Shortcut           | Action                 |
-| ------------------ | ---------------------- |
-| `Ctrl` `J`         | Downloads              |
-| `Ctrl` `Shift` `A` | Add-ons                |
-| `Ctrl` `Alt` `I`   | Toggle Developer Tools |
-| `Ctrl` `Alt` `K`   | Web Console            |
-| `Ctrl` `Alt` `C`   | Inspector              |
-| `Ctrl` `Alt` `S`   | Debugger               |
-| `Shift` `F7`       | Style Editor           |
-| `Shift` `F5`       | Profiler               |
-| `Ctrl` `Alt` `E`   | Network                |
-| `Shift` `F2`       | Developer Toolbar      |
-| `Ctrl` `Alt` `M`   | Responsive Design View |
-| `Shift` `F4`       | Scratchpad             |
-| `Ctrl` `U`         | Page Source            |
-| `Ctrl` `Shift` `J` | Browser Console        |
-| `Ctrl` `I`         | Page Info              |
-
-{.shortcuts}
-
-### PDF Viewer
-
-| Shortcut         | Action                          |
-| ---------------- | ------------------------------- |
-| `N/J/Right`      | Next page                       |
-| `P/K/Left`       | Previous page                   |
-| `Ctrl` `+`       | Zoom in                         |
-| `Ctrl` `-`       | Zoom out                        |
-| `Ctrl` `0`       | Automatic Zoom                  |
-| `R`              | Rotate the document clockwise   |
-| `Ctrl` `R`       | Rotate counterclockwise         |
-| `Ctrl` `Alt` `P` | Switch to Presentation Mode     |
-| `S`              | Choose Text Selection Tool      |
-| `H`              | Choose Hand Tool                |
-| `Ctrl` `Alt` `G` | Focus the Page Number input box |
+| Atalho                  | Ação                                                   |
+| ----------------------- | ------------------------------------------------------ |
+| `Ctrl` `W`              | Fechar aba                                             |
+| `Ctrl` `Shift` `W`      | Fechar janela                                          |
+| `Ctrl` `Tab`            | Alternar entre abas na ordem de uso recente            |
+| `Ctrl` `Q`              | Sair                                                   |
+| `Ctrl` `PgUp`           | Ir uma aba para a esquerda                             |
+| `Ctrl` `PgDown`         | Ir uma aba para a direita                              |
+| `Ctrl` `Shift` `PgUp`   | Mover aba para a esquerda                              |
+| `Ctrl` `Shift` `PgDown` | Mover aba para a direita                               |
+| `Ctrl` `Shift` `Home`   | Mover a aba em foco para o início                      |
+| `Ctrl` `Shift` `End`    | Mover a aba em foco para o fim                         |
+| `Ctrl` `M`              | Silenciar/ativar áudio                                 |
+| `Ctrl` `T`              | Nova aba                                               |
+| `Ctrl` `N`              | Nova janela                                            |
+| `Ctrl` `Shift` `P`      | Nova janela privativa                                  |
+| `Alt` `Enter`           | Abrir endereço em nova aba em primeiro plano           |
+| `Enter`                 | Abrir favorito ou link em foco na aba atual            |
+| `Ctrl` `Enter`          | Abrir favorito em foco em nova aba em primeiro plano   |
+| `Ctrl` `Shift` `Enter`  | Abrir favorito em foco em nova aba em segundo plano    |
+| `Ctrl` `Enter`          | Abrir link em foco em nova aba em segundo plano        |
+| `Shift` `Enter`         | Abrir favorito ou link em foco em nova janela          |
+| `Ctrl` `Shift` `T`      | Reabrir aba fechada                                    |
+| `Ctrl` `Shift` `N`      | Reabrir janela fechada                                 |
+| `Ctrl` `1-8`            | Selecionar a aba 1-8                                   |
+| `Ctrl` `9`              | Selecionar a última aba                                |
+| `Ctrl` `Shift` `X`      | Move a URL para a esquerda ou direita                  |
 
 {.shortcuts}
 
-### Miscellaneous
+### Histórico
 
-| Shortcut               | Action                             |
-| ---------------------- | ---------------------------------- |
-| `Ctrl` `Enter`         | Complete .com address              |
-| `Shift` `Enter`        | Complete .net address              |
-| `Ctrl` `Shift` `Enter` | Complete .org address              |
-| `Shift` `Delete`       | Delete Selected Autocomplete Entry |
-| `Ctrl` `Shift` `F`     | Toggle Full Screen                 |
-| `Ctrl` `Alt` `R`       | Toggle Reader Mode                 |
-| `F7`                   | Caret Browsing                     |
-| `Ctrl` `L`             | Select Location Bar                |
+| Atalho                  | Ação                       |
+| ----------------------- | -------------------------- |
+| `Ctrl` `Shift` `H`      | Barra lateral de histórico |
+| `Ctrl` `Shift` `Delete` | Limpar histórico recente   |
 
 {.shortcuts}
 
-### Media Shortcuts
+### Favoritos
 
-| Shortcut       | Action                  |
-| -------------- | ----------------------- |
-| `Space`        | Toggle Play/Pause       |
-| `Down`         | Decrease volume         |
-| `Up`           | Increase volume         |
-| `Ctrl` `Down`  | Mute audio              |
-| `Ctrl` `Up`    | Unmute audio            |
-| `Left`         | Seek back 15 seconds    |
-| `Ctrl` `Left`  | Seek back 10%           |
-| `Right`        | Seek forward 15 seconds |
-| `Ctrl` `Right` | Seek forward 10%        |
-| `Home`         | Seek to the beginning   |
-| `End`          | Seek to the end         |
+| Atalho                              | Ação                          |
+| ----------------------------------- | ----------------------------- |
+| `Ctrl` `Shift` `D`                  | Adicionar todas as abas aos favoritos |
+| `Ctrl` `D`                          | Adicionar esta página aos favoritos   |
+| `Ctrl` `B`                          | Barra lateral de favoritos    |
+| `Ctrl` `Shift` `S`                  | Janela da biblioteca (favoritos) |
+| `(search field in Library)` `Space` | Pesquisar todos os favoritos  |
 
 {.shortcuts}
 
-## Also see
+### Ferramentas
 
-- [Keyboard shortcuts for Firefox](https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly)
+| Atalho             | Ação                        |
+| ------------------ | --------------------------- |
+| `Ctrl` `J`         | Downloads                   |
+| `Ctrl` `Shift` `A` | Extensões                   |
+| `Ctrl` `Alt` `I`   | Alternar ferramentas de desenvolvedor |
+| `Ctrl` `Alt` `K`   | Console da Web              |
+| `Ctrl` `Alt` `C`   | Inspetor                    |
+| `Ctrl` `Alt` `S`   | Depurador                   |
+| `Shift` `F7`       | Editor de estilo            |
+| `Shift` `F5`       | Profiler                    |
+| `Ctrl` `Alt` `E`   | Rede                        |
+| `Shift` `F2`       | Barra de ferramentas do desenvolvedor |
+| `Ctrl` `Alt` `M`   | Visualização de design responsivo |
+| `Shift` `F4`       | Scratchpad                  |
+| `Ctrl` `U`         | Código-fonte da página      |
+| `Ctrl` `Shift` `J` | Console do navegador        |
+| `Ctrl` `I`         | Informações da página       |
+
+{.shortcuts}
+
+### Leitor de PDF
+
+| Atalho           | Ação                                     |
+| ---------------- | ---------------------------------------- |
+| `N/J/Right`      | Próxima página                           |
+| `P/K/Left`       | Página anterior                          |
+| `Ctrl` `+`       | Aumentar zoom                            |
+| `Ctrl` `-`       | Diminuir zoom                            |
+| `Ctrl` `0`       | Zoom automático                          |
+| `R`              | Girar o documento no sentido horário     |
+| `Ctrl` `R`       | Girar no sentido anti-horário            |
+| `Ctrl` `Alt` `P` | Alternar para o modo apresentação        |
+| `S`              | Escolher a ferramenta de seleção de texto |
+| `H`              | Escolher a ferramenta de mão             |
+| `Ctrl` `Alt` `G` | Focar a caixa de entrada do número da página |
+
+{.shortcuts}
+
+### Diversos
+
+| Atalho                 | Ação                                      |
+| ---------------------- | ----------------------------------------- |
+| `Ctrl` `Enter`         | Completar endereço .com                   |
+| `Shift` `Enter`        | Completar endereço .net                   |
+| `Ctrl` `Shift` `Enter` | Completar endereço .org                   |
+| `Shift` `Delete`       | Excluir a entrada de autocomplete selecionada |
+| `Ctrl` `Shift` `F`     | Alternar tela cheia                       |
+| `Ctrl` `Alt` `R`       | Alternar modo de leitura                  |
+| `F7`                   | Navegação por cursor                      |
+| `Ctrl` `L`             | Selecionar a barra de endereço            |
+
+{.shortcuts}
+
+### Atalhos de mídia
+
+| Atalho         | Ação                             |
+| -------------- | -------------------------------- |
+| `Space`        | Alternar reprodução/pausa        |
+| `Down`         | Diminuir volume                  |
+| `Up`           | Aumentar volume                  |
+| `Ctrl` `Down`  | Silenciar áudio                  |
+| `Ctrl` `Up`    | Ativar áudio                     |
+| `Left`         | Retroceder 15 segundos           |
+| `Ctrl` `Left`  | Retroceder 10%                   |
+| `Right`        | Avançar 15 segundos              |
+| `Ctrl` `Right` | Avançar 10%                      |
+| `Home`         | Ir para o início                 |
+| `End`          | Ir para o fim                    |
+
+{.shortcuts}
+
+## Veja também
+
+- [Atalhos de teclado do Firefox](https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly)
   _(support.mozilla.org)_

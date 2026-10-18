@@ -6,18 +6,18 @@ tags:
   - url
   - request
 categories:
-  - Linux Command
+  - Comandos Linux
 intro: |
-  This [Curl](https://github.com/curl/curl) cheat sheet contains commands and examples of some common Curl tricks.
+  Este cheat sheet do [Curl](https://github.com/curl/curl) contém comandos e exemplos de alguns truques comuns do Curl.
 plugins:
   - copyCode
 ---
 
-## Getting Started
+## Primeiros passos
 
-### Introduction
+### Introdução
 
-`Curl` is a tool for transferring data between servers, supporting protocols, including:
+`Curl` é uma ferramenta para transferir dados entre servidores, com suporte a protocolos, incluindo:
 
 - HTTP
 - HTTPS
@@ -35,10 +35,10 @@ plugins:
 
 ---
 
-- [Curl GitHub source repository](https://github.com/curl/curl) _(github.com)_
-- [Curl Official Website](https://curl.se/) _(curl.se)_
+- [Repositório do código-fonte do Curl no GitHub](https://github.com/curl/curl) _(github.com)_
+- [Site oficial do Curl](https://curl.se/) _(curl.se)_
 
-### Options {.col-span-2 row-span-2}
+### Opções {.col-span-2 row-span-2}
 
 ```bash
 -o <file>    # --output: write to file
@@ -61,7 +61,7 @@ plugins:
 -I  # --head: header only
 ```
 
-### Request
+### Requisição
 
 ```bash
 -X POST # --request
@@ -69,7 +69,7 @@ plugins:
 -F # --form: HTTP POST data for multipart/form-data
 ```
 
-### data
+### Dados
 
 ```bash
 # --data: HTTP post data
@@ -83,7 +83,7 @@ plugins:
 -G
 ```
 
-### Header information Headers
+### Informações de header
 
 ```bash
 -A <str>      # --user-agent
@@ -111,27 +111,27 @@ plugins:
 -k, --insecure # For self-signed certificates
 ```
 
-#### Install
+#### Instalação
 
 ```bash
 apk add --update curl # install in alpine linux
 ```
 
-## Example {.cols-6}
+## Exemplo {.cols-6}
 
 ### CURL GET/HEAD {.col-span-4 .row-span-2}
 
-| command                                                               | description                         |
-| :-------------------------------------------------------------------- | :---------------------------------- |
-| `curl -I https://cheatsheets.zip`                                     | `curl` sends a request              |
-| `curl -v -I https://cheatsheets.zip`                                  | `curl` request with details         |
-| `curl -X GET https://cheatsheets.zip`                                 | use explicit http method for `curl` |
-| `curl --noproxy 127.0.0.1 http://www.stackoverflow.com`               | `curl` without http proxy           |
-| `curl --connect-timeout 10 -I -k https://cheatsheets.zip`             | `curl` has no timeout by default    |
-| `curl --verbose --header "Host: www.mytest.com:8182" cheatsheets.zip` | `curl` get extra header             |
-| `curl -k -v https://www.google.com`                                   | `curl` get response with headers    |
+| comando                                                               | descrição                            |
+| :-------------------------------------------------------------------- | :----------------------------------- |
+| `curl -I https://cheatsheets.zip`                                     | `curl` envia uma requisição          |
+| `curl -v -I https://cheatsheets.zip`                                  | requisição do `curl` com detalhes    |
+| `curl -X GET https://cheatsheets.zip`                                 | usa método HTTP explícito para `curl` |
+| `curl --noproxy 127.0.0.1 http://www.stackoverflow.com`               | `curl` sem proxy HTTP                |
+| `curl --connect-timeout 10 -I -k https://cheatsheets.zip`             | `curl` não tem timeout por padrão    |
+| `curl --verbose --header "Host: www.mytest.com:8182" cheatsheets.zip` | `curl` obtém um header extra         |
+| `curl -k -v https://www.google.com`                                   | `curl` obtém a resposta com headers  |
 
-### Multiple file upload {.col-span-2}
+### Upload de múltiplos arquivos {.col-span-2}
 
 ```bash
 $ curl -v --include \
@@ -139,7 +139,7 @@ $ curl -v --include \
     --form upload=@localfilename URL
 ```
 
-### Prettify json output for curl response {.col-span-2}
+### Formatar a saída JSON da resposta do curl {.col-span-2}
 
 ```bash
 $ curl -XGET http://${elasticsearch_ip}:9200/_cluster/nodes | python -m json.tool
@@ -147,33 +147,33 @@ $ curl -XGET http://${elasticsearch_ip}:9200/_cluster/nodes | python -m json.too
 
 ### CURL POST {.col-span-4}
 
-| command                                                                     | description         |
-| :-------------------------------------------------------------------------- | :------------------ |
-| `curl -d "name=username&password=123456" <URL>`                             | `curl` send request |
-| `curl <URL> -H "content-type: application/json" -d "{ \"woof\": \"bark\"}"` | `curl` sends json   |
+| comando                                                                     | descrição              |
+| :-------------------------------------------------------------------------- | :--------------------- |
+| `curl -d "name=username&password=123456" <URL>`                             | `curl` envia requisição |
+| `curl <URL> -H "content-type: application/json" -d "{ \"woof\": \"bark\"}"` | `curl` envia JSON      |
 
-### CURL script install rvm {.col-span-2}
+### Script do CURL para instalar o rvm {.col-span-2}
 
 ```shell
 curl -sSL https://get.rvm.io | bash
 ```
 
-### CURL Advanced {.col-span-6}
+### CURL avançado {.col-span-6}
 
-| command                                                                                     | description                    |
-| :------------------------------------------------------------------------------------------ | :----------------------------- |
-| `curl myip.dog`                                                                             | get this machine's public `IP` |
-| `curl -L -s http://ipecho.net/plain, curl -L -s http://whatismijnip.nl`                     | get my public `IP`             |
-| `curl -u $username:$password http://repo.dennyzhang.com/README.txt`                         | `curl` with credentials        |
-| `curl -v -F key1=value1 -F upload=@localfilename <URL>`                                     | `curl` upload                  |
-| `curl -k -v --http2 https://www.google.com/`                                                | use http2 curl                 |
-| `curl -T cryptopp552.zip -u test:test ftp://10.32.99.187/`                                  | curl `ftp` upload              |
-| `curl -u test:test ftp://10.32.99.187/cryptopp552.zip -o cryptopp552.zip`                   | curl `ftp` download            |
-| `curl -v -u admin:admin123 --upload-file package1.zip http://mysever:8081/dir/package1.zip` | upload with credentials `curl` |
+| comando                                                                                     | descrição                        |
+| :------------------------------------------------------------------------------------------ | :------------------------------- |
+| `curl myip.dog`                                                                             | obtém o `IP` público desta máquina |
+| `curl -L -s http://ipecho.net/plain, curl -L -s http://whatismijnip.nl`                     | obtém meu `IP` público           |
+| `curl -u $username:$password http://repo.dennyzhang.com/README.txt`                         | `curl` com credenciais           |
+| `curl -v -F key1=value1 -F upload=@localfilename <URL>`                                     | upload com `curl`                |
+| `curl -k -v --http2 https://www.google.com/`                                                | usa curl com http2               |
+| `curl -T cryptopp552.zip -u test:test ftp://10.32.99.187/`                                  | upload `ftp` com curl            |
+| `curl -u test:test ftp://10.32.99.187/cryptopp552.zip -o cryptopp552.zip`                   | download `ftp` com curl          |
+| `curl -v -u admin:admin123 --upload-file package1.zip http://mysever:8081/dir/package1.zip` | upload com credenciais `curl`    |
 
-More IP tools: [myip.dog](https://myip.dog/)
+Mais ferramentas de IP: [myip.dog](https://myip.dog/)
 
-### Check website response time {.col-span-4}
+### Verificar o tempo de resposta de um site {.col-span-4}
 
 ```shell
 curl -s -w \
@@ -181,13 +181,13 @@ curl -s -w \
      -o /dev/null https://www.google.com
 ```
 
-### Use Curl to check if a remote resource is available {.col-span-2}
+### Usar o Curl para verificar se um recurso remoto está disponível {.col-span-2}
 
 ```bash
 curl -o /dev/null --silent -Iw "%{http_code}" https://example.com/my.remote.tarball.gz
 ```
 
-### Downloading file {.col-span-3}
+### Baixar arquivo {.col-span-3}
 
 ```bash
 curl https://example.com | \
@@ -197,81 +197,81 @@ while read i; do curl https://example.com/"${i}" \
 -o "${i##*/}"; done
 ```
 
-Download all PNG files from the site (using GNU grep)
+Baixa todos os arquivos PNG do site (usando GNU grep)
 
-### Download the file, save the file without changing its name {.col-span-3}
+### Baixar o arquivo e salvá-lo sem alterar o nome {.col-span-3}
 
 ```bash
 curl --remote-name "https://example.com/linux-distro.iso"
 ```
 
-Rename file
+Renomeia o arquivo
 
 ```bash
 curl --remote-name "http://example.com/index.html" --output foo.html
 ```
 
-### continue partial download {.col-span-3}
+### Continuar um download parcial {.col-span-3}
 
 ```bash
 curl --remote-name --continue-at -"https://example.com/linux-distro.iso"
 ```
 
-### Download files from multiple domains {.col-span-3}
+### Baixar arquivos de vários domínios {.col-span-3}
 
 ```bash
 curl "https://www.{example,w3,iana}.org/index.html" --output "file_#1.html"
 ```
 
-### Download a series of files {.col-span-3}
+### Baixar uma série de arquivos {.col-span-3}
 
 ```bash
 curl "https://{foo,bar}.com/file_[1-4].webp" --output "#1_#2.webp"
 ```
 
-Download a series of files (output `foo_file1.webp`, `foo_file2.webp...bar_file1_webp`, etc.)
+Baixa uma série de arquivos (saída `foo_file1.webp`, `foo_file2.webp...bar_file1_webp`, etc.)
 
-### Redirect output to file {.col-span-3}
+### Redirecionar a saída para um arquivo {.col-span-3}
 
 ```bash
 $ curl http://url/file > file
 ```
 
-### Basic Authentication {.col-span-3}
+### Autenticação básica {.col-span-3}
 
 ```bash
 $ curl --user username:password http://example.com/
 $ curl -u username:password http://example.com/
 ```
 
-### Write to file instead of stdout {.col-span-2}
+### Gravar em arquivo em vez de stdout {.col-span-2}
 
 ```bash
 $ curl -o file http://url/file
 $ curl --output file http://url/file
 ```
 
-### Download header information
+### Baixar informações de header
 
 ```bash
 $ curl -I url
 # display header information
 ```
 
-### Write output to a file named remote_file {.col-span-2}
+### Gravar a saída em um arquivo chamado remote_file {.col-span-2}
 
 ```bash
 $ curl -o file http://url/file
 $ curl --output file http://url/file
 ```
 
-### Execute remote script {.col-span-2}
+### Executar script remoto {.col-span-2}
 
 ```bash
 $ curl -s http://url/myscript.sh
 ```
 
-### Configuration file {.col-span-2}
+### Arquivo de configuração {.col-span-2}
 
 ```bash
 curl -K file

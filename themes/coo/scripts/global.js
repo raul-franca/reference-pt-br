@@ -3,16 +3,16 @@ const path = require('path');
 
 hexo.extend.helper.register('icon', (name) => svgIcon(name));
 
-// Register custom clean_url helper function
+// Registra a função auxiliar clean_url personalizada
 hexo.extend.helper.register('clean_url', function (url) {
   if (!url) return '';
-  // If it's an absolute URL, convert it to a relative URL first
+  // Se for uma URL absoluta, converte primeiro para uma URL relativa
   const cleanedUrl = this.url_for(url);
-  // Remove .html suffix
+  // Remove o sufixo .html
   return cleanedUrl.replace(/(index)?\.html$/, '');
 });
 
-// Register enhanced url_for helper (optional)
+// Registra a função auxiliar url_for aprimorada (opcional)
 hexo.extend.helper.register('url_for_clean', function (path, options = {}) {
   const url = this.url_for(path, options);
   return url.replace(/(index)?\.html$/, '');
@@ -41,7 +41,7 @@ hexo.extend.generator.register('json', (locals) => {
     temp_data.background = data.background;
     temp_data.intro = data.intro;
 
-    // categories
+    // categorias
     temp_data.categories = [];
     if (data.categories && data.categories.length > 0) {
       data.categories.forEach((category) => {
@@ -56,7 +56,7 @@ hexo.extend.generator.register('json', (locals) => {
         temp_data.tags.push(tag.name);
       });
     }
-    // sections
+    // seções
     temp_data.sections = data.sections;
 
     res[index] = temp_data;
@@ -89,7 +89,7 @@ hexo.extend.generator.register('list', (locals) => {
 });
 
 function svgIcon(name) {
-  // Check file exists
+  // Verifica se o arquivo existe
   const svgPath = path.resolve('./', 'source/assets/icon/', `${name}.svg`);
   if (fs.existsSync(svgPath)) {
     const svgContent = fs.readFileSync(svgPath, 'utf8');

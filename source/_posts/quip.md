@@ -7,94 +7,94 @@ tags:
   -
   -
 categories:
-  - Keyboard Shortcuts
+  - Atalhos de Teclado
 intro: |
-  A visual cheat-sheet for the 52 keyboard shortcuts found in Quip
+  Um cheat sheet visual para os 52 atalhos de teclado do Quip
 ---
 
-## Keyboard Shortcuts
+## Atalhos de Teclado
 
-### Anywhere
+### Em qualquer lugar
 
-| Shortcut                  | Action                                                      |
-| ------------------------- | ----------------------------------------------------------- |
-| <code>\`</code>           | Toggle styles between different types of headings and lists |
-| `Tab`                     | Indent a list item                                          |
-| `Shift` `Tab`             | De-indent a list item                                       |
-| `Shift` `Enter`           | Add a single space between lines                            |
-| `Esc`                     | Stop editing                                                |
-| `Ctrl` `/`                | List all keyboard shortcuts                                 |
-| `Ctrl` `Alt` `Shift` `N`  | Create a new ...                                            |
-| `Ctrl` `Alt` `N`          | Create a new document                                       |
-| `Ctrl` `Alt` `M`          | Create a new message                                        |
-| `Ctrl` `Shift` `D`        | Go to the desktop                                           |
-| `Ctrl` `Alt` `O`          | Search for a document, folder, or conversation              |
-| `Ctrl` `Alt` `Left/Right` | Move between tabs in the desktop app                        |
-
-{.shortcuts}
-
-### Style Shortcuts
-
-| Shortcut           | Action                                   |
-| ------------------ | ---------------------------------------- |
-| `Ctrl` `B`         | Bold the selected text                   |
-| `Ctrl` `I`         | Italicize the selected text              |
-| `Ctrl` `U`         | Underline the selected text              |
-| `Ctrl` `Shift` `X` | Strikethrough the selected text          |
-| `Ctrl` `Shift` `K` | Monospace (code style) the selected text |
-| `Ctrl` `Alt` `0`   | Paragraph (normal text style)            |
-| `Ctrl` `Alt` `1`   | Large heading style                      |
-| `Ctrl` `Alt` `2`   | Medium heading style                     |
-| `Ctrl` `Alt` `3`   | Small heading style                      |
-| `Ctrl` `Shift` `L` | Bulleted list style                      |
-| `Ctrl` `Alt` `K`   | Code block style                         |
-
-{.shortcuts}
-
-### Editing Shortcuts
-
-| Shortcut            | Action                         |
-| ------------------- | ------------------------------ |
-| `Ctrl` `Alt` `Up`   | Move a list item up one line   |
-| `Ctrl` `Alt` `Down` | Move a list item down one line |
-| `Ctrl` `Enter`      | Check a list item              |
-| `Ctrl` `Z`          | Undo                           |
-| `Ctrl` `Shift` `Z`  | Redo                           |
-| `Ctrl` `X`          | Cut                            |
-| `Ctrl` `C`          | Copy                           |
-| `Ctrl` `V`          | Paste                          |
-| `Ctrl` `P`          | Print document                 |
-| `Ctrl` `K`          | Insert link                    |
-| `Ctrl` `N`          | Next line                      |
-| `Ctrl` `P`          | Previous line                  |
-| `Ctrl` `Alt` `C`    | Hide or show conversation      |
-| `Ctrl` `Shift` `C`  | Add a comment                  |
-| `Ctrl` `Alt` `S`    | Finish edit session            |
-| `Ctrl` `Shift` `A`  | Create an anchor link          |
-
-{.shortcuts}
-
-### Spreadsheets
-
-| Shortcut                  | Action                                                       |
+| Atalho                    | Ação                                                         |
 | ------------------------- | ------------------------------------------------------------ |
-| `Ctrl` `(arrows)`         | Move to the edge of dat or the next non-empty cell           |
-| `Ctrl` `Shift` `(arrows)` | Expand select to the edge of data or the next non-empty cell |
-| `Shift` `Space`           | Select row                                                   |
-| `Ctrl` `Space`            | Select column                                                |
-| `Ctrl` `Enter`            | Fill selection with entered text                             |
-| `Ctrl` `D`                | Fill down in selection                                       |
-| `Ctrl` `R`                | Fill right in selection                                      |
-| `Ctrl` `Backspace`        | Scroll focused cell into view                                |
-| `Ctrl` `I`                | Insert above or in front of selected rows or columns         |
-| `Ctrl` `-`                | Remove selected rows or columns                              |
-| `Ctrl` `;`                | Insert current time                                          |
-| `Ctrl` `:`                | Insert today's date                                          |
-| `Alt` `Enter`             | Hard return within a cell                                    |
+| <code>\`</code>           | Alterna os estilos entre diferentes tipos de títulos e listas |
+| `Tab`                     | Recua um item de lista                                       |
+| `Shift` `Tab`             | Remove o recuo de um item de lista                           |
+| `Shift` `Enter`           | Adiciona um único espaço entre as linhas                     |
+| `Esc`                     | Para de editar                                               |
+| `Ctrl` `/`                | Lista todos os atalhos de teclado                            |
+| `Ctrl` `Alt` `Shift` `N`  | Cria um novo ...                                             |
+| `Ctrl` `Alt` `N`          | Cria um novo documento                                       |
+| `Ctrl` `Alt` `M`          | Cria uma nova mensagem                                       |
+| `Ctrl` `Shift` `D`        | Vai para a área de trabalho                                  |
+| `Ctrl` `Alt` `O`          | Pesquisa por um documento, pasta ou conversa                 |
+| `Ctrl` `Alt` `Left/Right` | Move entre abas no aplicativo desktop                        |
 
 {.shortcuts}
 
-## Also see
+### Atalhos de estilo
 
-- [Keyboard shortcuts for Quip](https://www.quipsupport.com/hc/en-us/articles/210436306-What-are-Quip-s-keyboard-shortcuts-)
+| Atalho             | Ação                                                     |
+| ------------------ | -------------------------------------------------------- |
+| `Ctrl` `B`         | Deixa o texto selecionado em negrito                     |
+| `Ctrl` `I`         | Deixa o texto selecionado em itálico                     |
+| `Ctrl` `U`         | Sublinha o texto selecionado                             |
+| `Ctrl` `Shift` `X` | Risca o texto selecionado                                |
+| `Ctrl` `Shift` `K` | Aplica monoespaçado (estilo de código) ao texto selecionado |
+| `Ctrl` `Alt` `0`   | Parágrafo (estilo de texto normal)                       |
+| `Ctrl` `Alt` `1`   | Estilo de título grande                                  |
+| `Ctrl` `Alt` `2`   | Estilo de título médio                                   |
+| `Ctrl` `Alt` `3`   | Estilo de título pequeno                                 |
+| `Ctrl` `Shift` `L` | Estilo de lista com marcadores                           |
+| `Ctrl` `Alt` `K`   | Estilo de bloco de código                                |
+
+{.shortcuts}
+
+### Atalhos de edição
+
+| Atalho              | Ação                               |
+| ------------------- | ---------------------------------- |
+| `Ctrl` `Alt` `Up`   | Move um item de lista uma linha para cima |
+| `Ctrl` `Alt` `Down` | Move um item de lista uma linha para baixo |
+| `Ctrl` `Enter`      | Marca um item de lista             |
+| `Ctrl` `Z`          | Desfaz                             |
+| `Ctrl` `Shift` `Z`  | Refaz                              |
+| `Ctrl` `X`          | Recorta                            |
+| `Ctrl` `C`          | Copia                              |
+| `Ctrl` `V`          | Cola                               |
+| `Ctrl` `P`          | Imprime o documento                |
+| `Ctrl` `K`          | Insere link                        |
+| `Ctrl` `N`          | Próxima linha                      |
+| `Ctrl` `P`          | Linha anterior                     |
+| `Ctrl` `Alt` `C`    | Oculta ou exibe a conversa         |
+| `Ctrl` `Shift` `C`  | Adiciona um comentário             |
+| `Ctrl` `Alt` `S`    | Encerra a sessão de edição         |
+| `Ctrl` `Shift` `A`  | Cria um link âncora                |
+
+{.shortcuts}
+
+### Planilhas
+
+| Atalho                    | Ação                                                         |
+| ------------------------- | ------------------------------------------------------------ |
+| `Ctrl` `(arrows)`         | Move até a borda dos dados ou a próxima célula não vazia     |
+| `Ctrl` `Shift` `(arrows)` | Expande a seleção até a borda dos dados ou a próxima célula não vazia |
+| `Shift` `Space`           | Seleciona a linha                                            |
+| `Ctrl` `Space`            | Seleciona a coluna                                           |
+| `Ctrl` `Enter`            | Preenche a seleção com o texto digitado                      |
+| `Ctrl` `D`                | Preenche para baixo na seleção                               |
+| `Ctrl` `R`                | Preenche para a direita na seleção                           |
+| `Ctrl` `Backspace`        | Rola até exibir a célula em foco                             |
+| `Ctrl` `I`                | Insere acima ou antes das linhas ou colunas selecionadas     |
+| `Ctrl` `-`                | Remove as linhas ou colunas selecionadas                     |
+| `Ctrl` `;`                | Insere a hora atual                                          |
+| `Ctrl` `:`                | Insere a data de hoje                                        |
+| `Alt` `Enter`             | Quebra de linha dentro de uma célula                         |
+
+{.shortcuts}
+
+## Veja também
+
+- [Atalhos de teclado do Quip](https://www.quipsupport.com/hc/en-us/articles/210436306-What-are-Quip-s-keyboard-shortcuts-)
   _(www.quipsupport.com)_

@@ -7,58 +7,58 @@ tags:
   -
   -
 categories:
-  - Keyboard Shortcuts
+  - Atalhos de Teclado
 intro: |
-  A visual cheat-sheet for the 23 keyboard shortcuts found in Postman
+  Um cheat sheet visual dos 23 atalhos de teclado do Postman
 ---
 
-## Keyboard Shortcuts
+## Atalhos de teclado
 
-### Navigational Shortcuts
+### Atalhos de navegação
 
-| Shortcut           | Action                           |
+| Atalho             | Ação                             |
 | ------------------ | -------------------------------- |
-| `Ctrl` `Alt` `1`   | Focus Sidebar                    |
-| `Ctrl` `Alt` `2`   | Focus Builder                    |
-| `Ctrl` `#`         | Focus on #th tab                 |
-| `Ctrl` `Shift` `/` | Switch between tabs              |
-| `Down`             | Move to next item                |
-| `Up`               | Move to previous item            |
-| `Right`            | Expand collection/folder         |
-| `Left`             | Collapse collection/folder       |
-| `Shift` `Down`     | Select current AND next item     |
-| `Shift` `Up`       | Select current AND previous item |
-| `Ctrl` `F`         | Search sidebar                   |
-| `Enter`            | Open request in a tab            |
+| `Ctrl` `Alt` `1`   | Focar a barra lateral            |
+| `Ctrl` `Alt` `2`   | Focar o builder                  |
+| `Ctrl` `#`         | Focar na #ª aba                  |
+| `Ctrl` `Shift` `/` | Alternar entre abas              |
+| `Down`             | Mover para o próximo item        |
+| `Up`               | Mover para o item anterior       |
+| `Right`            | Expandir coleção/pasta           |
+| `Left`             | Recolher coleção/pasta           |
+| `Shift` `Down`     | Selecionar o item atual E o próximo |
+| `Shift` `Up`       | Selecionar o item atual E o anterior |
+| `Ctrl` `F`         | Pesquisar na barra lateral       |
+| `Enter`            | Abrir request em uma aba         |
 
 {.shortcuts}
 
-### Manipulation Shortcuts
+### Atalhos de manipulação
 
-| Shortcut   | Action      |
+| Atalho     | Ação        |
 | ---------- | ----------- |
-| `Ctrl` `C` | Copy        |
-| `Ctrl` `V` | Paste       |
-| `Delete`   | Delete      |
-| `Ctrl` `D` | Duplicate   |
-| `Ctrl` `E` | Edit/Rename |
+| `Ctrl` `C` | Copiar      |
+| `Ctrl` `V` | Colar       |
+| `Delete`   | Excluir     |
+| `Ctrl` `D` | Duplicar    |
+| `Ctrl` `E` | Editar/Renomear |
 
 {.shortcuts}
 
-### Global Shortcuts
+### Atalhos globais
 
-| Shortcut           | Action         |
-| ------------------ | -------------- |
-| `Ctrl` `S`         | Save           |
-| `Ctrl` `Shift` `S` | Save As        |
-| `Ctrl` `Enter`     | Send Request   |
-| `Ctrl` `\`         | Toggle Sidebar |
-| `Ctrl` `L`         | Jump to URL    |
-| `Ctrl` `Alt` `C`   | Open Console   |
+| Atalho             | Ação             |
+| ------------------ | ---------------- |
+| `Ctrl` `S`         | Salvar           |
+| `Ctrl` `Shift` `S` | Salvar como      |
+| `Ctrl` `Enter`     | Enviar request   |
+| `Ctrl` `\`         | Alternar barra lateral |
+| `Ctrl` `L`         | Ir para a URL    |
+| `Ctrl` `Alt` `C`   | Abrir o console  |
 
 {.shortcuts}
 
-## Also see
+## Veja também
 
-- [Keyboard shortcuts for Postman](https://learning.getpostman.com/docs/postman/launching_postman/keyboard_shortcuts/)
+- [Atalhos de teclado do Postman](https://learning.getpostman.com/docs/postman/launching_postman/keyboard_shortcuts/)
   _(learning.getpostman.com)_

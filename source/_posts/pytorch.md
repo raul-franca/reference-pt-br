@@ -6,20 +6,20 @@ tags:
   - AI
   - Python
 categories:
-  - Other
-intro: This is a quick reference list of cheat sheets for PyTorch. See also [PyTorch website](https://pytorch.org/)
+  - Outros
+intro: Esta é uma lista de referência rápida de cheat sheets para o PyTorch. Veja também o [site do PyTorch](https://pytorch.org/)
 ---
 
 ## Imports { .cols-1 }
 
-### General
+### Geral
 
 ```
 import torch                                        # root package
 from torch.utils.data import Dataset, DataLoader    # dataset representation and loading
 ```
 
-### Neural Network API
+### API de redes neurais
 
 ```
 import torch.autograd as autograd         # computation graph
@@ -30,7 +30,7 @@ import torch.optim as optim               # optimizers e.g. gradient descent, AD
 from torch.jit import script, trace       # hybrid frontend decorator and tracing jit
 ```
 
-### Torchscript and JIT
+### Torchscript e JIT
 
 ```
 torch.jit.trace()         # takes your module or function and an example
@@ -56,7 +56,7 @@ onnx.helper.printable_graph(model.graph)               # print a human readable
                                                        # representation of the graph
 ```
 
-### Vision
+### Visão computacional
 
 ```
 from torchvision import datasets, models, transforms     # vision datasets,
@@ -66,7 +66,7 @@ from torchvision import datasets, models, transforms     # vision datasets,
 import torchvision.transforms as transforms              # composable transforms
 ```
 
-### Distributed Training
+### Treinamento distribuído
 
 ```
 import torch.distributed as dist             # distributed communication
@@ -75,7 +75,7 @@ from torch.multiprocessing import Process    # memory sharing processes
 
 ## Tensors { .cols-1 }
 
-### Creation
+### Criação
 
 ```
 x = torch.randn(*size)              # tensor with independent N(0,1) entries
@@ -87,7 +87,7 @@ requires_grad=True                  # arg, when set to True, tracks computation
                                     # history for future derivative calculations
 ```
 
-### Dimensionality
+### Dimensionalidade
 
 ```
 x.size()                                  # return tuple-like object of dimensions
@@ -102,7 +102,7 @@ y = x.squeeze()                           # removes all dimensions of size 1 (a,
 y = x.squeeze(dim=1)                      # removes specified dimension of size 1 (a,1,b,1) -> (a,b,1)
 ```
 
-### Algebra
+### Álgebra
 
 ```
 ret = A.mm(B)       # matrix multiplication
@@ -110,7 +110,7 @@ ret = A.mv(x)       # matrix-vector multiplication
 x = x.t()           # matrix transpose
 ```
 
-### GPU Usage
+### Uso de GPU
 
 ```
 torch.cuda.is_available                                     # check for cuda
@@ -154,7 +154,7 @@ nn.Embedding(num_embeddings, embedding_dim)   # (tensor-wise) mapping from
                                               # indices to embedding vectors
 ```
 
-### Loss Functions
+### Funções de perda
 
 ```
 nn.X                                  # where X is L1Loss, MSELoss, CrossEntropyLoss
@@ -167,7 +167,7 @@ nn.X                                  # where X is L1Loss, MSELoss, CrossEntropy
                                       # or TripletMarginLoss
 ```
 
-### Activation Functions
+### Funções de ativação
 
 ```
 nn.X                                  # where X is ReLU, ReLU6, ELU, SELU, PReLU, LeakyReLU,
@@ -177,7 +177,7 @@ nn.X                                  # where X is ReLU, ReLU6, ELU, SELU, PReLU
                                       # Softmax2d, LogSoftmax or AdaptiveSoftmaxWithLoss
 ```
 
-### Optimizers
+### Otimizadores
 
 ```
 opt = optim.x(model.parameters(), ...)      # create optimizer
@@ -187,7 +187,7 @@ optim.X                                     # where X is SGD, Adadelta, Adagrad,
                                             # LBFGS, RMSprop or Rprop
 ```
 
-### Learning rate scheduling
+### Agendamento da learning rate
 
 ```
 scheduler = optim.X(optimizer,...)      # create lr scheduler
@@ -198,7 +198,7 @@ optim.lr_scheduler.X                    # where X is LambdaLR, MultiplicativeLR,
                                         # OneCycleLR, CosineAnnealingWarmRestarts,
 ```
 
-## Data Utilities { .cols-1 }
+## Utilitários de dados { .cols-1 }
 
 ### Datasets
 
@@ -208,7 +208,7 @@ TensorDataset              # labelled dataset in the form of tensors
 Concat Dataset             # concatenation of Datasets
 ```
 
-### Dataloaders and DataSamplers
+### Dataloaders e DataSamplers
 
 ```
 DataLoader(dataset, batch_size=1, ...)      # loads data batches agnostic

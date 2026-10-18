@@ -7,216 +7,216 @@ tags:
   -
   -
 categories:
-  - Keyboard Shortcuts
+  - Atalhos de Teclado
 intro: |
-  A visual cheat-sheet for the 119 keyboard shortcuts found in Figma
+  Um cheat-sheet visual com os 119 atalhos de teclado do Figma
 ---
 
-## Keyboard Shortcuts
+## Atalhos de Teclado
 
-### Essential
+### Essenciais
 
-| Shortcut   | Action       |
-| ---------- | ------------ |
-| `Ctrl` `\` | Show/Hide UI |
-| `Ctrl` `C` | Pick Color   |
-| `Ctrl` `/` | Search Menu  |
-
-{.shortcuts}
-
-### Tools
-
-| Shortcut    | Action            |
-| ----------- | ----------------- |
-| `V`         | Move Tool         |
-| `F`         | Frame Tool        |
-| `P`         | Pen Tool          |
-| `Shift` `P` | Pencil Tool       |
-| `T`         | Text Tool         |
-| `R`         | Rectangle Tool    |
-| `O`         | Ellipse Tool      |
-| `L`         | Line Tool         |
-| `Shift` `L` | Arrow Tool        |
-| `C`         | Add/Show Comments |
-| `Ctrl` `C`  | Pick Color        |
-| `S`         | Slice Tool        |
+| Atalho     | Ação                 |
+| ---------- | -------------------- |
+| `Ctrl` `\` | Mostrar/ocultar UI   |
+| `Ctrl` `C` | Selecionar cor       |
+| `Ctrl` `/` | Pesquisar no menu    |
 
 {.shortcuts}
 
-### View
+### Ferramentas
 
-| Shortcut         | Action                   |
-| ---------------- | ------------------------ |
-| `Shift` `R`      | Toggle Rulers            |
-| `Ctrl` `Y`       | Show Outlines            |
-| `Ctrl` `P`       | Pixel Preview            |
-| `Ctrl` `G`       | Layout Grids             |
-| `Ctrl` `'`       | Pixel Grid               |
-| `Ctrl` `\`       | Show/Hide UI             |
-| `Ctrl` `Alt` `\` | Show Multiplayer Cursors |
-| `Alt` `1`        | Show Layers              |
-| `Alt` `2`        | Show Components          |
-| `Alt` `3`        | Show Team Library        |
+| Atalho      | Ação                       |
+| ----------- | -------------------------- |
+| `V`         | Ferramenta de mover        |
+| `F`         | Ferramenta de frame        |
+| `P`         | Ferramenta de caneta       |
+| `Shift` `P` | Ferramenta de lápis        |
+| `T`         | Ferramenta de texto        |
+| `R`         | Ferramenta de retângulo    |
+| `O`         | Ferramenta de elipse       |
+| `L`         | Ferramenta de linha        |
+| `Shift` `L` | Ferramenta de seta         |
+| `C`         | Adicionar/mostrar comentários |
+| `Ctrl` `C`  | Selecionar cor             |
+| `S`         | Ferramenta de slice        |
+
+{.shortcuts}
+
+### Visualização
+
+| Atalho           | Ação                          |
+| ---------------- | ----------------------------- |
+| `Shift` `R`      | Alternar réguas               |
+| `Ctrl` `Y`       | Mostrar contornos             |
+| `Ctrl` `P`       | Visualização em pixels        |
+| `Ctrl` `G`       | Grades de layout              |
+| `Ctrl` `'`       | Grade de pixels               |
+| `Ctrl` `\`       | Mostrar/ocultar UI            |
+| `Ctrl` `Alt` `\` | Mostrar cursores dos colaboradores |
+| `Alt` `1`        | Mostrar camadas               |
+| `Alt` `2`        | Mostrar componentes           |
+| `Alt` `3`        | Mostrar biblioteca da equipe  |
 
 {.shortcuts}
 
 ### Zoom
 
-| Shortcut         | Action                 |
-| ---------------- | ---------------------- |
-| `Space` `(drag)` | Pan                    |
-| `+`              | Zoom In                |
-| `-`              | Zoom Out               |
-| `Shift` `0`      | Zoom to 100%           |
-| `Shift` `1`      | Zoom to Fit            |
-| `Shift` `2`      | Zoom to Selection      |
-| `Shift` `N`      | Zoom to Previous Frame |
-| `N`              | Zoom to Next Frame     |
-| `PgUp`           | Previous Page          |
-| `PgDown`         | Next Page              |
-| `Home`           | Find Previous Frame    |
-| `End`            | Find Next Frame        |
+| Atalho           | Ação                    |
+| ---------------- | ----------------------- |
+| `Space` `(drag)` | Mover (pan)             |
+| `+`              | Aumentar zoom           |
+| `-`              | Diminuir zoom           |
+| `Shift` `0`      | Zoom em 100%            |
+| `Shift` `1`      | Ajustar à tela          |
+| `Shift` `2`      | Zoom na seleção         |
+| `Shift` `N`      | Zoom no frame anterior  |
+| `N`              | Zoom no próximo frame   |
+| `PgUp`           | Página anterior         |
+| `PgDown`         | Próxima página          |
+| `Home`           | Encontrar frame anterior |
+| `End`            | Encontrar próximo frame |
 
 {.shortcuts}
 
-### Text
+### Texto
 
-| Shortcut             | Action                |
-| -------------------- | --------------------- |
-| `Ctrl` `B`           | Bold                  |
-| `Ctrl` `I`           | Italic                |
-| `Ctrl` `U`           | Underline             |
-| `Ctrl` `Shift` `V`   | Paste and Match Style |
-| `Ctrl` `Alt` `L`     | Text Alight Left      |
-| `Ctrl` `Alt` `T`     | Text Align Center     |
-| `Ctrl` `Alt` `R`     | Text Align Right      |
-| `Ctrl` `Alt` `J`     | Text Align Justified  |
-| `Ctrl` `Shift` `</>` | Adjust Font Size      |
-| `Alt` `,/.`          | Adjust Letter Spacing |
-| `Alt` `Shift` `</>`  | Adjust Line Height    |
-
-{.shortcuts}
-
-### Shape
-
-| Shortcut            | Action                                             |
-| ------------------- | -------------------------------------------------- |
-| `P`                 | Pen                                                |
-| `Shift` `P`         | Pencil                                             |
-| `B`                 | Paint Bucket (while editing shape)                 |
-| `Ctrl`              | Bend Tool (while editing shape)                    |
-| `Alt` `/`           | Remove Fill                                        |
-| `/`                 | Remove Stroke                                      |
-| `Shift` `X`         | Swap Fill and Stroke                               |
-| `Ctrl` `Shift` `O`  | Outline Stroke                                     |
-| `Ctrl` `E`          | Flatten Selection                                  |
-| `Ctrl` `J`          | Join Selection (after selecting points)            |
-| `Ctrl` `Shift` `J`  | Smooth Join Selection (after selecting points)     |
-| `Shift` `Backspace` | Delete and Heal Selection (after selecting points) |
+| Atalho               | Ação                           |
+| -------------------- | ------------------------------ |
+| `Ctrl` `B`           | Negrito                        |
+| `Ctrl` `I`           | Itálico                        |
+| `Ctrl` `U`           | Sublinhado                     |
+| `Ctrl` `Shift` `V`   | Colar e corresponder ao estilo |
+| `Ctrl` `Alt` `L`     | Alinhar texto à esquerda       |
+| `Ctrl` `Alt` `T`     | Centralizar texto              |
+| `Ctrl` `Alt` `R`     | Alinhar texto à direita        |
+| `Ctrl` `Alt` `J`     | Justificar texto               |
+| `Ctrl` `Shift` `</>` | Ajustar tamanho da fonte       |
+| `Alt` `,/.`          | Ajustar espaçamento entre letras |
+| `Alt` `Shift` `</>`  | Ajustar altura da linha        |
 
 {.shortcuts}
 
-### Selection
+### Forma
 
-| Shortcut               | Action                  |
-| ---------------------- | ----------------------- |
-| `Ctrl` `A`             | Select All              |
-| `Ctrl` `Shift` `A`     | Select Inverse          |
-| `Esc`                  | Select None             |
-| `Ctrl` `(click)`       | Deep Select             |
-| `Ctrl` `(right click)` | Select Layer Menu       |
-| `Enter`                | Select Child            |
-| `Shift` `Enter`        | Select Parents          |
-| `Tab`                  | Select Next Sibling     |
-| `Shift` `Tab`          | Select Previous Sibling |
-| `Ctrl` `G`             | Group Selection         |
-| `Ctrl` `Shift` `G`     | Ungroup Selection       |
-| `Ctrl` `Alt` `G`       | Frame Selection         |
-| `Ctrl` `Shift` `H`     | Show/Hide Selection     |
-| `Ctrl` `Shift` `L`     | Lock/Unlock Selection   |
+| Atalho              | Ação                                                  |
+| ------------------- | ----------------------------------------------------- |
+| `P`                 | Caneta                                                |
+| `Shift` `P`         | Lápis                                                 |
+| `B`                 | Balde de tinta (ao editar a forma)                    |
+| `Ctrl`              | Ferramenta de curva (ao editar a forma)               |
+| `Alt` `/`           | Remover preenchimento                                 |
+| `/`                 | Remover contorno                                      |
+| `Shift` `X`         | Trocar preenchimento e contorno                       |
+| `Ctrl` `Shift` `O`  | Contornar traço                                       |
+| `Ctrl` `E`          | Achatar seleção                                       |
+| `Ctrl` `J`          | Unir seleção (após selecionar pontos)                 |
+| `Ctrl` `Shift` `J`  | Unir seleção suavemente (após selecionar pontos)      |
+| `Shift` `Backspace` | Excluir e fechar seleção (após selecionar pontos)     |
+
+{.shortcuts}
+
+### Seleção
+
+| Atalho                 | Ação                      |
+| ---------------------- | ------------------------- |
+| `Ctrl` `A`             | Selecionar tudo           |
+| `Ctrl` `Shift` `A`     | Inverter seleção          |
+| `Esc`                  | Desmarcar tudo            |
+| `Ctrl` `(click)`       | Seleção profunda          |
+| `Ctrl` `(right click)` | Menu de seleção de camada |
+| `Enter`                | Selecionar filho          |
+| `Shift` `Enter`        | Selecionar pais           |
+| `Tab`                  | Selecionar próximo irmão  |
+| `Shift` `Tab`          | Selecionar irmão anterior |
+| `Ctrl` `G`             | Agrupar seleção           |
+| `Ctrl` `Shift` `G`     | Desagrupar seleção        |
+| `Ctrl` `Alt` `G`       | Criar frame da seleção    |
+| `Ctrl` `Shift` `H`     | Mostrar/ocultar seleção   |
+| `Ctrl` `Shift` `L`     | Bloquear/desbloquear seleção |
 
 {.shortcuts}
 
 ### Cursor
 
-| Shortcut               | Action                                                  |
-| ---------------------- | ------------------------------------------------------- |
-| `Alt`                  | Measure to Selection (while pointing)                   |
-| `Alt`                  | Duplicate Selection (while moving)                      |
-| `Ctrl` `(click)`       | Deep Select (while clicking)                            |
-| `Ctrl` `(right click)` | Select Layer Menu (while clicking)                      |
-| `Ctrl` `(drag)`        | Deep Select Within Rectangle (while dragging to select) |
-| `Alt`                  | Resize from Center (while resizing)                     |
-| `Shift`                | Resize Proportionally (while resizing)                  |
-| `Space`                | Move While Resizing                                     |
-| `Ctrl`                 | Ignore Constraints (Frames Only)                        |
+| Atalho                 | Ação                                                     |
+| ---------------------- | -------------------------------------------------------- |
+| `Alt`                  | Medir até a seleção (ao apontar)                         |
+| `Alt`                  | Duplicar seleção (ao mover)                              |
+| `Ctrl` `(click)`       | Seleção profunda (ao clicar)                             |
+| `Ctrl` `(right click)` | Menu de seleção de camada (ao clicar)                    |
+| `Ctrl` `(drag)`        | Seleção profunda dentro do retângulo (ao arrastar para selecionar) |
+| `Alt`                  | Redimensionar a partir do centro (ao redimensionar)      |
+| `Shift`                | Redimensionar proporcionalmente (ao redimensionar)       |
+| `Space`                | Mover durante o redimensionamento                        |
+| `Ctrl`                 | Ignorar restrições (somente frames)                      |
 
 {.shortcuts}
 
-### Edit
+### Edição
 
-| Shortcut           | Action                       |
-| ------------------ | ---------------------------- |
-| `Ctrl` `C`         | Copy                         |
-| `Ctrl` `X`         | Cut                          |
-| `Ctrl` `V`         | Paste                        |
-| `Ctrl` `Shift` `V` | Paste Over Selection         |
-| `Ctrl` `D`         | Duplicate Selection in Place |
-| `Ctrl` `R`         | Rename Selection             |
-| `Ctrl` `Shift` `E` | Export                       |
-| `Ctrl` `Alt` `C`   | Copy Properties              |
-| `Ctrl` `Alt` `V`   | Paste Properties             |
-
-{.shortcuts}
-
-### Transform
-
-| Shortcut           | Action              |
-| ------------------ | ------------------- |
-| `Shift` `H`        | Flip Horizontal     |
-| `Shift` `V`        | Flip Vertical       |
-| `Ctrl` `M`         | Use as Mask         |
-| `Enter`            | Edit Shape or Image |
-| `Ctrl` `Shift` `K` | Place Image         |
-| `Alt` `(click x2)` | Crop Image          |
-| `1`                | Set Opacity to 10%  |
-| `5`                | Set Opacity to 50%  |
-| `0`                | Set Opacity to 100% |
+| Atalho             | Ação                          |
+| ------------------ | ----------------------------- |
+| `Ctrl` `C`         | Copiar                        |
+| `Ctrl` `X`         | Recortar                      |
+| `Ctrl` `V`         | Colar                         |
+| `Ctrl` `Shift` `V` | Colar sobre a seleção         |
+| `Ctrl` `D`         | Duplicar seleção no lugar     |
+| `Ctrl` `R`         | Renomear seleção              |
+| `Ctrl` `Shift` `E` | Exportar                      |
+| `Ctrl` `Alt` `C`   | Copiar propriedades           |
+| `Ctrl` `Alt` `V`   | Colar propriedades            |
 
 {.shortcuts}
 
-### Arrange
+### Transformar
 
-| Shortcut         | Action                        |
-| ---------------- | ----------------------------- |
-| `Ctrl` `]`       | Bring Forward                 |
-| `Ctrl` `[`       | Send Backward                 |
-| `Ctrl` `Alt` `]` | Bring to Front                |
-| `Ctrl` `Alt` `[` | Send to Back                  |
-| `Alt` `A`        | Align Left                    |
-| `Alt` `D`        | Align Right                   |
-| `Alt` `W`        | Align Top                     |
-| `Alt` `S`        | Align Bottom                  |
-| `Alt` `H`        | Align Horizontal Centers      |
-| `Alt` `V`        | Align Vertical Centers        |
-| `Ctrl` `Alt` `T` | Tidy Up                       |
-| `Ctrl` `Alt` `H` | Distribute Horizontal Spacing |
-| `Ctrl` `Alt` `V` | Distribute Vertical Spacing   |
+| Atalho             | Ação                  |
+| ------------------ | --------------------- |
+| `Shift` `H`        | Inverter horizontalmente |
+| `Shift` `V`        | Inverter verticalmente   |
+| `Ctrl` `M`         | Usar como máscara     |
+| `Enter`            | Editar forma ou imagem |
+| `Ctrl` `Shift` `K` | Inserir imagem        |
+| `Alt` `(click x2)` | Recortar imagem       |
+| `1`                | Definir opacidade em 10% |
+| `5`                | Definir opacidade em 50% |
+| `0`                | Definir opacidade em 100% |
 
 {.shortcuts}
 
-### Components
+### Organizar
 
-| Shortcut           | Action                                               |
-| ------------------ | ---------------------------------------------------- |
-| `Alt` `2`          | Show Components                                      |
-| `Ctrl` `Shift` `O` | Team Library                                         |
-| `Ctrl` `Shift` `K` | Create Component                                     |
-| `Ctrl` `Shift` `B` | Detach Instance                                      |
-| `Alt`              | Swap Component Instance (while dragging from Assets) |
+| Atalho           | Ação                            |
+| ---------------- | ------------------------------- |
+| `Ctrl` `]`       | Avançar uma camada              |
+| `Ctrl` `[`       | Recuar uma camada               |
+| `Ctrl` `Alt` `]` | Trazer para a frente            |
+| `Ctrl` `Alt` `[` | Enviar para trás                |
+| `Alt` `A`        | Alinhar à esquerda              |
+| `Alt` `D`        | Alinhar à direita               |
+| `Alt` `W`        | Alinhar ao topo                 |
+| `Alt` `S`        | Alinhar à base                  |
+| `Alt` `H`        | Centralizar horizontalmente     |
+| `Alt` `V`        | Centralizar verticalmente       |
+| `Ctrl` `Alt` `T` | Organizar                       |
+| `Ctrl` `Alt` `H` | Distribuir espaçamento horizontal |
+| `Ctrl` `Alt` `V` | Distribuir espaçamento vertical |
 
 {.shortcuts}
 
-## Also see
+### Componentes
 
-- [Keyboard shortcuts for Figma](https://help.figma.com/article/77-keyboard-shortcuts) _(help.figma.com)_
+| Atalho             | Ação                                                  |
+| ------------------ | ----------------------------------------------------- |
+| `Alt` `2`          | Mostrar componentes                                   |
+| `Ctrl` `Shift` `O` | Biblioteca da equipe                                  |
+| `Ctrl` `Shift` `K` | Criar componente                                      |
+| `Ctrl` `Shift` `B` | Desvincular instância                                 |
+| `Alt`              | Trocar instância de componente (ao arrastar dos assets) |
+
+{.shortcuts}
+
+## Veja também
+
+- [Atalhos de teclado do Figma](https://help.figma.com/article/77-keyboard-shortcuts) _(help.figma.com)_

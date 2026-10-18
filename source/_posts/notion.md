@@ -9,199 +9,199 @@ tags:
   - productivity
   - reference
 categories:
-  - Productivity
+  - Produtividade
   - Software
 intro:
-  A comprehensive quick reference guide for Notion keyboard shortcuts on Desktop and Web, designed to boost your
-  productivity.
+  Um guia de referência rápida e completo para os atalhos de teclado do Notion no Desktop e na Web, feito para
+  aumentar sua produtividade.
 plugins:
   - copyCode
 ---
 
-# Notion Keyboard Shortcuts {.cols-3}
+# Atalhos de Teclado do Notion {.cols-3}
 
-## Most Popular / Essential {.col-span-3}
+## Mais populares / Essenciais {.col-span-3}
 
-### Create & Navigate
+### Criar e navegar
 
-| Action                       | Mac Shortcut             | Windows/Linux Shortcut |
-| :--------------------------- | :----------------------- | :--------------------- |
-| Create a new page            | `Cmd` `N`                | `Ctrl` `N`             |
-| Open new Notion window       | `Cmd` `Shift` `N`        | `Ctrl` `Shift` `N`     |
-| Quick Find (Search)          | `Cmd` `P`                | `Ctrl` `P`             |
-| Go back in page history      | `Cmd` `[`                | `Ctrl` `[`             |
-| Go forward in page history   | `Cmd` `]`                | `Ctrl` `]`             |
-| Go to parent page            | `Cmd` `Shift` `U`        | `Ctrl` `Shift` `U`     |
-| Open Page Link in New Tab    | `Cmd` `Click`            | `Ctrl` `Click`         |
-| Open Page Link in New Window | `Option` `Shift` `Click` | `Alt` `Shift` `Click`  |
+| Ação                                  | Atalho no Mac            | Atalho no Windows/Linux   |
+| :------------------------------------ | :----------------------- | :------------------------ |
+| Criar uma nova página                 | `Cmd` `N`                | `Ctrl` `N`                |
+| Abrir uma nova janela do Notion       | `Cmd` `Shift` `N`        | `Ctrl` `Shift` `N`        |
+| Busca rápida (Search)                 | `Cmd` `P`                | `Ctrl` `P`                |
+| Voltar no histórico da página         | `Cmd` `[`                | `Ctrl` `[`                |
+| Avançar no histórico da página        | `Cmd` `]`                | `Ctrl` `]`                |
+| Ir para a página pai                  | `Cmd` `Shift` `U`        | `Ctrl` `Shift` `U`        |
+| Abrir o link da página em nova aba    | `Cmd` `Click`            | `Ctrl` `Click`            |
+| Abrir o link da página em nova janela | `Option` `Shift` `Click` | `Alt` `Shift` `Click`     |
 
 {.show-header .shortcuts}
 
-### View & Mode
+### Visualização e modo
 
-| Action                   | Mac Shortcut             | Windows/Linux Shortcut    |
-| :----------------------- | :----------------------- | :------------------------ |
-| Toggle Dark/Light Mode   | `Cmd` `Shift` `L`        | `Ctrl` `Shift` `L`        |
-| Lock/Unlock current page | `Cmd` `Shift` `L` (Hold) | `Ctrl` `Shift` `L` (Hold) |
-| Zoom In                  | `Cmd` `+`                | `Ctrl` `+`                |
-| Zoom Out                 | `Cmd` `-`                | `Ctrl` `-`                |
-| Reset Zoom               | `Cmd` `0`                | `Ctrl` `0`                |
+| Ação                          | Atalho no Mac            | Atalho no Windows/Linux   |
+| :---------------------------- | :----------------------- | :------------------------ |
+| Alternar modo escuro/claro    | `Cmd` `Shift` `L`        | `Ctrl` `Shift` `L`        |
+| Bloquear/desbloquear a página | `Cmd` `Shift` `L` (Hold) | `Ctrl` `Shift` `L` (Hold) |
+| Aumentar zoom                 | `Cmd` `+`                | `Ctrl` `+`                |
+| Diminuir zoom                 | `Cmd` `-`                | `Ctrl` `-`                |
+| Redefinir zoom                | `Cmd` `0`                | `Ctrl` `0`                |
 
 {.show-header .shortcuts}
 
 ---
 
-# Markdown Style Formatting {.cols-1}
+# Formatação no estilo Markdown {.cols-1}
 
-### On New Lines
+### Em novas linhas
 
-Type the following at the beginning of an empty line, then press `Space`:
+Digite o seguinte no início de uma linha vazia e pressione `Space`:
 
-- `*`, `-`, or `+` : Bulleted list
-- `[]` : To-do checkbox (Note: just the characters, no `Cmd`/`Ctrl`)
-- `1.` : Numbered list
-- `#` : H1 heading
-- `##` : H2 heading
-- `###` : H3 heading
-- `>` : Toggle list
-- `"` : Quote block
-- `---` : Divider (three hyphens)
-- ` ` : Code block (three backticks)
+- `*`, `-` ou `+` : Lista com marcadores
+- `[]` : Checkbox de tarefa (Nota: apenas os caracteres, sem `Cmd`/`Ctrl`)
+- `1.` : Lista numerada
+- `#` : Título H1
+- `##` : Título H2
+- `###` : Título H3
+- `>` : Lista expansível
+- `"` : Bloco de citação
+- `---` : Divisor (três hífens)
+- ` ` : Bloco de código (três crases)
 
-### Inline
+### Em linha
 
-- Wrap text with `**` or `__` for **Bold**.
-- Wrap text with `*` or `_` for _Italics_.
-- Wrap text with `~` for ~~Strikethrough~~.
-- Wrap text with `` ` `` for `inline code`.
+- Envolva o texto com `**` ou `__` para **Negrito**.
+- Envolva o texto com `*` ou `_` para _Itálico_.
+- Envolva o texto com `~` para ~~Tachado~~.
+- Envolva o texto com `` ` `` for `código inline`.
 
 ---
 
-# Text Formatting & Editing {.cols-2}
+# Formatação e edição de texto {.cols-2}
 
-### Basic Formatting
+### Formatação básica
 
-Select text first, then use the shortcut: | Action | Mac Shortcut | Windows/Linux Shortcut | |
-:------------------------- | :------------------------ | :----------------------- | | Bold | `Cmd` `B` | `Ctrl` `B` | |
-Italic | `Cmd` `I` | `Ctrl` `I` | | Underline | `Cmd` `U` | `Ctrl` `U` | | Strikethrough | `Cmd` `Shift` `S` | `Ctrl`
-`Shift` `S` | | Inline Code | `Cmd` `E` | `Ctrl` `E` | | Create Link | `Cmd` `K` | `Ctrl` `K` | | Change Color /
-Highlight | `Cmd` `Shift` `H` | `Ctrl` `Shift` `H` | | Clear Formatting | `Cmd` `\` | `Ctrl` `\` | {.show-header
+Selecione o texto primeiro e use o atalho: | Ação | Atalho no Mac | Atalho no Windows/Linux | |
+:------------------------- | :------------------------ | :----------------------- | | Negrito | `Cmd` `B` | `Ctrl` `B` | |
+Itálico | `Cmd` `I` | `Ctrl` `I` | | Sublinhado | `Cmd` `U` | `Ctrl` `U` | | Tachado | `Cmd` `Shift` `S` | `Ctrl`
+`Shift` `S` | | Código inline | `Cmd` `E` | `Ctrl` `E` | | Criar link | `Cmd` `K` | `Ctrl` `K` | | Alterar cor /
+realce | `Cmd` `Shift` `H` | `Ctrl` `Shift` `H` | | Limpar formatação | `Cmd` `\` | `Ctrl` `\` | {.show-header
 .shortcuts}
 
-### Block Type Conversion
+### Conversão de tipo de bloco
 
-Select the block(s) first, then use the shortcut: | Action | Mac Shortcut | Windows/Linux Shortcut | |
-:------------------------- | :------------------------ | :----------------------- | | Turn into Text block | `Cmd`
-`Option` `0` | `Ctrl` `Alt` `0` | | Turn into H1 Heading | `Cmd` `Option` `1` | `Ctrl` `Alt` `1` | | Turn into H2
-Heading | `Cmd` `Option` `2` | `Ctrl` `Alt` `2` | | Turn into H3 Heading | `Cmd` `Option` `3` | `Ctrl` `Alt` `3` | |
-Turn into To-do list | `Cmd` `Option` `4` | `Ctrl` `Alt` `4` | | Turn into Bulleted list | `Cmd` `Option` `5` | `Ctrl`
-`Alt` `5` | | Turn into Numbered list | `Cmd` `Option` `6` | `Ctrl` `Alt` `6` | | Turn into Toggle list | `Cmd` `Option`
-`7` | `Ctrl` `Alt` `7` | | Turn into Code block | `Cmd` `Option` `8` | `Ctrl` `Alt` `8` | | Turn into Page | `Cmd`
-`Option` `9` | `Ctrl` `Alt` `9` | | Turn into Callout | `Cmd` `Option` `C` | `Ctrl` `Alt` `C` | {.show-header
+Selecione o(s) bloco(s) primeiro e use o atalho: | Ação | Atalho no Mac | Atalho no Windows/Linux | |
+:------------------------- | :------------------------ | :----------------------- | | Transformar em bloco de texto | `Cmd`
+`Option` `0` | `Ctrl` `Alt` `0` | | Transformar em título H1 | `Cmd` `Option` `1` | `Ctrl` `Alt` `1` | | Transformar em título
+H2 | `Cmd` `Option` `2` | `Ctrl` `Alt` `2` | | Transformar em título H3 | `Cmd` `Option` `3` | `Ctrl` `Alt` `3` | |
+Transformar em lista de tarefas | `Cmd` `Option` `4` | `Ctrl` `Alt` `4` | | Transformar em lista com marcadores | `Cmd` `Option` `5` | `Ctrl`
+`Alt` `5` | | Transformar em lista numerada | `Cmd` `Option` `6` | `Ctrl` `Alt` `6` | | Transformar em lista expansível | `Cmd` `Option`
+`7` | `Ctrl` `Alt` `7` | | Transformar em bloco de código | `Cmd` `Option` `8` | `Ctrl` `Alt` `8` | | Transformar em página | `Cmd`
+`Option` `9` | `Ctrl` `Alt` `9` | | Transformar em callout | `Cmd` `Option` `C` | `Ctrl` `Alt` `C` | {.show-header
 .shortcuts}
 
-### Editing
+### Edição
 
-| Action                     | Mac Shortcut    | Windows/Linux Shortcut |
-| :------------------------- | :-------------- | :--------------------- |
-| New Line within same block | `Shift` `Enter` | `Shift` `Enter`        |
-
-{.show-header .shortcuts}
-
----
-
-# Creating & Modifying Blocks {.cols-2}
-
-### Creation & Selection
-
-| Action                                     | Mac Shortcut        | Windows/Linux Shortcut |
-| :----------------------------------------- | :------------------ | :--------------------- |
-| Create new text block below                | `Enter`             | `Enter`                |
-| Open the `/` command menu                  | `/`                 | `/`                    |
-| Select current block                       | `Esc`               | `Esc`                  |
-| Select parent block                        | `Shift` `Esc`       | `Shift` `Esc`          |
-| Select block above/below                   | `Up` / `Down`       | `Up` / `Down`          |
-| Select multiple blocks                     | `Shift` `Up`/`Down` | `Shift` `Up`/`Down`    |
-| Select all blocks                          | `Cmd` `A`           | `Ctrl` `A`             |
-| Edit selected block (or text within block) | `Enter`             | `Enter`                |
-
-{.show-header .shortcuts}
-
-### Moving & Structuring
-
-| Action                                  | Mac Shortcut               | Windows/Linux Shortcut     |
-| :-------------------------------------- | :------------------------- | :------------------------- |
-| Duplicate selected block(s)             | `Cmd` `D`                  | `Ctrl` `D`                 |
-| Move selected block(s) up/down          | `Cmd` `Shift` `Up`/`Down`  | `Ctrl` `Shift` `Up`/`Down` |
-| Indent block (nest)                     | `Tab`                      | `Tab`                      |
-| Un-indent block                         | `Shift` `Tab`              | `Shift` `Tab`              |
-| Expand/Collapse toggle list             | `Cmd` `Option` `T`         | `Ctrl` `Alt` `T`           |
-| Expand/Collapse all toggles             | `Cmd` `Option` `Shift` `T` | `Ctrl` `Alt` `Shift` `T`   |
-| Open page from selected link/page block | `Cmd` `Enter`              | `Ctrl` `Enter`             |
-| Delete selected block(s)                | `Delete` or `Backspace`    | `Delete` or `Backspace`    |
-| Turn block into a page                  | `Cmd` `Option` `9`         | `Ctrl` `Alt` `9`           |
-| Move block(s) to another page           | `Cmd` `Option` `Shift` `M` | `Ctrl` `Alt` `Shift` `M`   |
+| Ação                                | Atalho no Mac   | Atalho no Windows/Linux |
+| :---------------------------------- | :-------------- | :---------------------- |
+| Nova linha dentro do mesmo bloco    | `Shift` `Enter` | `Shift` `Enter`         |
 
 {.show-header .shortcuts}
 
 ---
 
-# Comments & Mentions {.cols-2}
+# Criar e modificar blocos {.cols-2}
 
-### Comments
+### Criação e seleção
 
-| Action                   | Mac Shortcut      | Windows/Linux Shortcut |
-| :----------------------- | :---------------- | :--------------------- |
-| Add comment to selection | `Cmd` `Shift` `M` | `Ctrl` `Shift` `M`     |
+| Ação                                        | Atalho no Mac       | Atalho no Windows/Linux |
+| :------------------------------------------ | :------------------ | :---------------------- |
+| Criar novo bloco de texto abaixo            | `Enter`             | `Enter`                 |
+| Abrir o menu de comandos `/`                | `/`                 | `/`                     |
+| Selecionar o bloco atual                    | `Esc`               | `Esc`                   |
+| Selecionar o bloco pai                      | `Shift` `Esc`       | `Shift` `Esc`           |
+| Selecionar o bloco acima/abaixo             | `Up` / `Down`       | `Up` / `Down`           |
+| Selecionar vários blocos                    | `Shift` `Up`/`Down` | `Shift` `Up`/`Down`     |
+| Selecionar todos os blocos                  | `Cmd` `A`           | `Ctrl` `A`              |
+| Editar o bloco selecionado (ou o texto dele) | `Enter`             | `Enter`                 |
 
 {.show-header .shortcuts}
 
-### Mentions & Links (Type in block)
+### Mover e estruturar
 
-- `@` + person's name: Mention a person
-- `@` + page title: Mention/link a page
-- `[[` + page title: Link another page
-- `+` + page title: Link another page (alternative)
-- `@` + date (e.g., `@today`, `@next tuesday`, `@1/15`): Add a date mention
-- `@remind` + date + time (optional): Set a reminder
+| Ação                                          | Atalho no Mac              | Atalho no Windows/Linux    |
+| :-------------------------------------------- | :------------------------- | :------------------------- |
+| Duplicar o(s) bloco(s) selecionado(s)         | `Cmd` `D`                  | `Ctrl` `D`                 |
+| Mover o(s) bloco(s) selecionado(s) para cima/baixo | `Cmd` `Shift` `Up`/`Down`  | `Ctrl` `Shift` `Up`/`Down` |
+| Recuar bloco (aninhar)                        | `Tab`                      | `Tab`                      |
+| Remover recuo do bloco                        | `Shift` `Tab`              | `Shift` `Tab`              |
+| Expandir/recolher lista expansível            | `Cmd` `Option` `T`         | `Ctrl` `Alt` `T`           |
+| Expandir/recolher todas as listas expansíveis | `Cmd` `Option` `Shift` `T` | `Ctrl` `Alt` `Shift` `T`   |
+| Abrir página a partir do link/bloco selecionado | `Cmd` `Enter`              | `Ctrl` `Enter`             |
+| Excluir o(s) bloco(s) selecionado(s)          | `Delete` ou `Backspace`    | `Delete` ou `Backspace`    |
+| Transformar bloco em página                   | `Cmd` `Option` `9`         | `Ctrl` `Alt` `9`           |
+| Mover bloco(s) para outra página              | `Cmd` `Option` `Shift` `M` | `Ctrl` `Alt` `Shift` `M`   |
+
+{.show-header .shortcuts}
+
+---
+
+# Comentários e menções {.cols-2}
+
+### Comentários
+
+| Ação                      | Atalho no Mac     | Atalho no Windows/Linux |
+| :------------------------ | :---------------- | :---------------------- |
+| Adicionar comentário à seleção | `Cmd` `Shift` `M` | `Ctrl` `Shift` `M`     |
+
+{.show-header .shortcuts}
+
+### Menções e links (digite no bloco)
+
+- `@` + nome da pessoa: Menciona uma pessoa
+- `@` + título da página: Menciona/cria link para uma página
+- `[[` + título da página: Cria link para outra página
+- `+` + título da página: Cria link para outra página (alternativa)
+- `@` + data (por exemplo, `@today`, `@next tuesday`, `@1/15`): Adiciona uma menção de data
+- `@remind` + data + hora (opcional): Define um lembrete
 
 ### Emoji
 
-| Action                | Mac Shortcut           | Windows/Linux Shortcut |
-| :-------------------- | :--------------------- | :--------------------- |
-| Emoji Picker (System) | `Cmd` `Ctrl` `Space`   | `Win` `.` or `Win` `;` |
-| Emoji Picker (Notion) | `:` + emoji name + `:` | `:` + emoji name + `:` |
+| Ação                       | Atalho no Mac          | Atalho no Windows/Linux |
+| :------------------------- | :--------------------- | :---------------------- |
+| Seletor de emoji (sistema) | `Cmd` `Ctrl` `Space`   | `Win` `.` ou `Win` `;`  |
+| Seletor de emoji (Notion)  | `:` + nome do emoji + `:` | `:` + nome do emoji + `:` |
 
 {.show-header .shortcuts}
 
 ---
 
-# Database Shortcuts {.cols-2}
+# Atalhos de banco de dados {.cols-2}
 
-### Navigation & Selection
+### Navegação e seleção
 
-| Action                     | Mac Shortcut          | Windows/Linux Shortcut |
-| :------------------------- | :-------------------- | :--------------------- |
-| Select row above/below     | `Shift` `Up`/`Down`   | `Shift` `Up`/`Down`    |
-| Open selected page(s)      | `Cmd` `Enter`         | `Ctrl` `Enter`         |
-| Edit property              | `Enter`               | `Enter`                |
-| Move to cell above/below   | `Shift` `Enter`       | `Shift` `Enter`        |
-| Move to cell left/right    | `Tab` / `Shift` `Tab` | `Tab` / `Shift` `Tab`  |
-| Select column              | `Cmd` `Shift` `K`     | `Ctrl` `Shift` `K`     |
-| Select multiple cards/rows | `Shift` `Click`       | `Shift` `Click`        |
+| Ação                          | Atalho no Mac         | Atalho no Windows/Linux |
+| :---------------------------- | :-------------------- | :---------------------- |
+| Selecionar a linha acima/abaixo | `Shift` `Up`/`Down` | `Shift` `Up`/`Down`     |
+| Abrir a(s) página(s) selecionada(s) | `Cmd` `Enter`   | `Ctrl` `Enter`          |
+| Editar propriedade            | `Enter`               | `Enter`                 |
+| Mover para a célula acima/abaixo | `Shift` `Enter`    | `Shift` `Enter`         |
+| Mover para a célula à esquerda/direita | `Tab` / `Shift` `Tab` | `Tab` / `Shift` `Tab` |
+| Selecionar coluna             | `Cmd` `Shift` `K`     | `Ctrl` `Shift` `K`      |
+| Selecionar vários cartões/linhas | `Shift` `Click`    | `Shift` `Click`         |
 
 {.show-header .shortcuts}
 
-### Other
+### Outros
 
-| Action                     | Mac Shortcut      | Windows/Linux Shortcut |
-| :------------------------- | :---------------- | :--------------------- |
-| Quick Find within Database | `Cmd` `Shift` `P` | `Ctrl` `Shift` `P`     |
+| Ação                         | Atalho no Mac     | Atalho no Windows/Linux |
+| :--------------------------- | :---------------- | :---------------------- |
+| Busca rápida no banco de dados | `Cmd` `Shift` `P` | `Ctrl` `Shift` `P`   |
 
 {.show-header .shortcuts}
 
 ---
 
-## Also see
+## Veja também
 
-- [Official Notion Keyboard Shortcuts](https://www.notion.so/help/keyboard-shortcuts) _(notion.so)_
+- [Atalhos de teclado oficiais do Notion](https://www.notion.so/help/keyboard-shortcuts) _(notion.so)_

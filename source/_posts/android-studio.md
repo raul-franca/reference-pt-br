@@ -7,214 +7,214 @@ tags:
   -
   -
 categories:
-  - Keyboard Shortcuts
+  - Atalhos de Teclado
 intro: |
-  A visual cheat-sheet for the 130 keyboard shortcuts found in the Andriod Studio software
+  Um cheat sheet visual com os 130 atalhos de teclado do software Android Studio
 ---
 
-## Keyboard Shortcuts
+## Atalhos de teclado
 
-### General
+### Geral
 
-| Shortcut                 | Action                                            |
+| Atalho                   | Ação                                              |
 | ------------------------ | ------------------------------------------------- |
-| `Ctrl` `S`               | Save all                                          |
-| `Ctrl` `Alt` `Y`         | Synchronize                                       |
-| `Ctrl` `Shift` `F12`     | Minimize or maximize the editor                   |
-| `Alt` `Shift` `F`        | Add to favorites                                  |
-| `Alt` `Shift` `I`        | Inspect the current file with the current profile |
-| `Ctrl` <code>\`</code>   | Quick switch the scheme                           |
-| `Ctrl` `Alt` `S`         | Open the settings dialogue                        |
-| `Ctrl` `Alt` `Shift` `S` | Open the project structure dialogue               |
-| `Ctrl` `Tab`             | Switch between the tabs and tool window           |
+| `Ctrl` `S`               | Salvar tudo                                       |
+| `Ctrl` `Alt` `Y`         | Sincronizar                                       |
+| `Ctrl` `Shift` `F12`     | Minimizar ou maximizar o editor                   |
+| `Alt` `Shift` `F`        | Adicionar aos favoritos                           |
+| `Alt` `Shift` `I`        | Inspecionar o arquivo atual com o perfil atual    |
+| `Ctrl` <code>\`</code>   | Trocar rapidamente o esquema                      |
+| `Ctrl` `Alt` `S`         | Abrir o diálogo de configurações                  |
+| `Ctrl` `Alt` `Shift` `S` | Abrir o diálogo de estrutura do projeto           |
+| `Ctrl` `Tab`             | Alternar entre as abas e a janela de ferramentas  |
 
 {.shortcuts}
 
-### Navigating and Searching {.row-span-2}
+### Navegação e busca {.row-span-2}
 
-| Shortcut                   | Action                                      |
-| -------------------------- | ------------------------------------------- |
-| `Shift` `Shift`            | Search everything, including code and menus |
-| `Ctrl` `F`                 | Find                                        |
-| `F3`                       | Find next                                   |
-| `Shift` `F3`               | Find previous                               |
-| `Ctrl` `R`                 | Replace                                     |
-| `Ctrl` `Shift` `A`         | Find action                                 |
-| `Ctrl` `Alt` `Shift` `N`   | Search by a symbol name                     |
-| `Ctrl` `N`                 | Find class                                  |
-| `Ctrl` `Shift` `N`         | Find file, instead of class                 |
-| `Ctrl` `Shift` `F`         | Find in path                                |
-| `Ctrl` `F12`               | Open file structure pop-up                  |
-| `Alt` `Right/Left`         | Navigate between open editor tabs           |
-| `Ctrl` `Enter`             | Jump to source                              |
-| `Shift` `F4`               | Open the current editor tab in a new window |
-| `Ctrl` `E`                 | Recently opened files pop-up                |
-| `Ctrl` `Shift` `E`         | Recently edited files pop-up                |
-| `Ctrl` `Shift` `Backspace` | Go to last edit location                    |
-| `Ctrl` `F4`                | Close active editor tab                     |
-| `Esc`                      | Return to editor window from a tool window  |
-| `Shift` `Esc`              | Hide active or last active tool window      |
-| `Ctrl` `G`                 | Go to line                                  |
-| `Ctrl` `H`                 | Open type hierarchy                         |
-| `Ctrl` `Shift` `H`         | Open method hierarchy                       |
-| `Ctrl` `Alt` `H`           | Open call hierarchy                         |
-
-{.shortcuts}
-
-### Writing Code {.row-span-4}
-
-| Shortcut               | Action                                                                            |
-| ---------------------- | --------------------------------------------------------------------------------- |
-| `Alt` `Insert`         | Generate code, e.g. getters, setters, constructors, new class                     |
-| `Ctrl` `O`             | Override methods                                                                  |
-| `Ctrl` `I`             | Implement methods                                                                 |
-| `Ctrl` `Alt` `T`       | Surround with if...else, try...catch, etc                                         |
-| `Ctrl` `Y`             | Delete line at caret                                                              |
-| `Ctrl` `-`             | Collapse the current code block                                                   |
-| `Ctrl` `+`             | Expand the current code block                                                     |
-| `Ctrl` `Shift` `-`     | Collapse all code blocks                                                          |
-| `Ctrl` `Shift` `+`     | Expand all code blocks                                                            |
-| `Ctrl` `D`             | Duplicate the current line or selection                                           |
-| `Ctrl` `Space`         | Basic code completion                                                             |
-| `Ctrl` `Shift` `Space` | Smart code completion, filters the list of methods and variables by expected type |
-| `Ctrl` `Shift` `Enter` | Complete statement                                                                |
-| `Ctrl` `Q`             | Quick documentation lookup                                                        |
-| `Ctrl` `P`             | Show parameters for selected method                                               |
-| `Ctrl` `B`             | Go to declaration, directly                                                       |
-| `Ctrl` `Alt` `B`       | Go to implementations                                                             |
-| `Ctrl` `U`             | Go to super-method or super-class                                                 |
-| `Ctrl` `Shift` `I`     | Open quick definition lookup                                                      |
-| `Alt` `1`              | Toggle project tool window visibility                                             |
-| `F11`                  | Toggle bookmark                                                                   |
-| `Ctrl` `F11`           | Toggle bookmark with mnemonic                                                     |
-| `Ctrl` `/`             | Comment or uncomment with line comment                                            |
-| `Ctrl` `Shift` `/`     | Comment or uncomment with block comment                                           |
-| `Ctrl` `W`             | Select successively increasing code blocks                                        |
-| `Ctrl` `Shift` `W`     | Decrease current selection to previous state                                      |
-| `Ctrl` `[`             | Move to code block start                                                          |
-| `Ctrl` `]`             | Move to code block end                                                            |
-| `Ctrl` `Shift` `[`     | Select to the code block start                                                    |
-| `Ctrl` `Shift` `]`     | Select to the code block end                                                      |
-| `Ctrl` `Del`           | Delete to the end of a word                                                       |
-| `Ctrl` `Backspace`     | Delete to the start of a word                                                     |
-| `Ctrl` `Alt` `O`       | Optimize imports                                                                  |
-| `Alt` `Enter`          | Project quick fix, show intention actions and quick fixes                         |
-| `Ctrl` `Alt` `L`       | Reformat code                                                                     |
-| `Ctrl` `Alt` `I`       | Auto-indent lines                                                                 |
-| `Tab`                  | Indent lines                                                                      |
-| `Shift` `Tab`          | Unindent lines                                                                    |
-| `Ctrl` `Shift` `J`     | Smart line join                                                                   |
-| `Ctrl` `Enter`         | Smart line split                                                                  |
-| `Shift` `Enter`        | Start new line                                                                    |
-| `F2`                   | Next highlighted error                                                            |
-| `Shift` `F2`           | Previous highlighted error                                                        |
+| Atalho                     | Ação                                                                 |
+| -------------------------- | -------------------------------------------------------------------- |
+| `Shift` `Shift`            | Pesquisar tudo, incluindo código e menus                             |
+| `Ctrl` `F`                 | Localizar                                                            |
+| `F3`                       | Localizar próximo                                                    |
+| `Shift` `F3`               | Localizar anterior                                                   |
+| `Ctrl` `R`                 | Substituir                                                           |
+| `Ctrl` `Shift` `A`         | Localizar ação                                                       |
+| `Ctrl` `Alt` `Shift` `N`   | Pesquisar por nome de símbolo                                        |
+| `Ctrl` `N`                 | Localizar classe                                                     |
+| `Ctrl` `Shift` `N`         | Localizar arquivo em vez de classe                                   |
+| `Ctrl` `Shift` `F`         | Localizar no path                                                    |
+| `Ctrl` `F12`               | Abrir pop-up de estrutura do arquivo                                 |
+| `Alt` `Right/Left`         | Navegar entre as abas de editor abertas                              |
+| `Ctrl` `Enter`             | Ir para o código-fonte                                               |
+| `Shift` `F4`               | Abrir a aba atual do editor em uma nova janela                       |
+| `Ctrl` `E`                 | Pop-up de arquivos abertos recentemente                              |
+| `Ctrl` `Shift` `E`         | Pop-up de arquivos editados recentemente                             |
+| `Ctrl` `Shift` `Backspace` | Ir para o último local editado                                       |
+| `Ctrl` `F4`                | Fechar a aba ativa do editor                                         |
+| `Esc`                      | Voltar para a janela do editor a partir de uma janela de ferramentas |
+| `Shift` `Esc`              | Ocultar a janela de ferramentas ativa ou a última ativa              |
+| `Ctrl` `G`                 | Ir para a linha                                                      |
+| `Ctrl` `H`                 | Abrir hierarquia de tipos                                            |
+| `Ctrl` `Shift` `H`         | Abrir hierarquia de métodos                                          |
+| `Ctrl` `Alt` `H`           | Abrir hierarquia de chamadas                                         |
 
 {.shortcuts}
 
-### Viewing Layouts
+### Escrevendo código {.row-span-4}
 
-| Shortcut           | Action        |
-| ------------------ | ------------- |
-| `Ctrl` `+`         | Zoom in       |
-| `Ctrl` `-`         | Zoom out      |
-| `Ctrl` `0`         | Fit to screen |
-| `Ctrl` `Shift` `1` | Actual size   |
+| Atalho                 | Ação                                                                                |
+| ---------------------- | ----------------------------------------------------------------------------------- |
+| `Alt` `Insert`         | Gerar código, ex.: getters, setters, construtores, nova classe                      |
+| `Ctrl` `O`             | Sobrescrever métodos                                                                |
+| `Ctrl` `I`             | Implementar métodos                                                                 |
+| `Ctrl` `Alt` `T`       | Envolver com if...else, try...catch etc                                             |
+| `Ctrl` `Y`             | Excluir a linha no cursor                                                           |
+| `Ctrl` `-`             | Recolher o bloco de código atual                                                    |
+| `Ctrl` `+`             | Expandir o bloco de código atual                                                    |
+| `Ctrl` `Shift` `-`     | Recolher todos os blocos de código                                                  |
+| `Ctrl` `Shift` `+`     | Expandir todos os blocos de código                                                  |
+| `Ctrl` `D`             | Duplicar a linha ou seleção atual                                                   |
+| `Ctrl` `Space`         | Autocompletar básico de código                                                      |
+| `Ctrl` `Shift` `Space` | Autocompletar inteligente, filtra a lista de métodos e variáveis pelo tipo esperado |
+| `Ctrl` `Shift` `Enter` | Completar instrução                                                                 |
+| `Ctrl` `Q`             | Consulta rápida de documentação                                                     |
+| `Ctrl` `P`             | Mostrar parâmetros do método selecionado                                            |
+| `Ctrl` `B`             | Ir diretamente para a declaração                                                    |
+| `Ctrl` `Alt` `B`       | Ir para as implementações                                                           |
+| `Ctrl` `U`             | Ir para o supermétodo ou a superclasse                                              |
+| `Ctrl` `Shift` `I`     | Abrir consulta rápida de definição                                                  |
+| `Alt` `1`              | Alternar a visibilidade da janela de ferramentas do projeto                         |
+| `F11`                  | Alternar marcador                                                                   |
+| `Ctrl` `F11`           | Alternar marcador com mnemônico                                                     |
+| `Ctrl` `/`             | Comentar ou descomentar com comentário de linha                                     |
+| `Ctrl` `Shift` `/`     | Comentar ou descomentar com comentário de bloco                                     |
+| `Ctrl` `W`             | Selecionar blocos de código sucessivamente maiores                                  |
+| `Ctrl` `Shift` `W`     | Reduzir a seleção atual para o estado anterior                                      |
+| `Ctrl` `[`             | Mover para o início do bloco de código                                              |
+| `Ctrl` `]`             | Mover para o fim do bloco de código                                                 |
+| `Ctrl` `Shift` `[`     | Selecionar até o início do bloco de código                                          |
+| `Ctrl` `Shift` `]`     | Selecionar até o fim do bloco de código                                             |
+| `Ctrl` `Del`           | Excluir até o fim de uma palavra                                                    |
+| `Ctrl` `Backspace`     | Excluir até o início de uma palavra                                                 |
+| `Ctrl` `Alt` `O`       | Otimizar imports                                                                    |
+| `Alt` `Enter`          | Correção rápida do projeto, mostra ações de intenção e correções rápidas            |
+| `Ctrl` `Alt` `L`       | Reformatar código                                                                   |
+| `Ctrl` `Alt` `I`       | Indentar linhas automaticamente                                                     |
+| `Tab`                  | Indentar linhas                                                                     |
+| `Shift` `Tab`          | Remover indentação das linhas                                                       |
+| `Ctrl` `Shift` `J`     | Juntar linhas inteligentemente                                                      |
+| `Ctrl` `Enter`         | Dividir linha inteligentemente                                                      |
+| `Shift` `Enter`        | Iniciar nova linha                                                                  |
+| `F2`                   | Próximo erro destacado                                                              |
+| `Shift` `F2`           | Erro destacado anterior                                                             |
 
 {.shortcuts}
 
-### Layout Editor
+### Visualizando layouts
 
-| Shortcut          | Action                                       |
+| Atalho             | Ação           |
+| ------------------ | -------------- |
+| `Ctrl` `+`         | Aumentar zoom  |
+| `Ctrl` `-`         | Diminuir zoom  |
+| `Ctrl` `0`         | Ajustar à tela |
+| `Ctrl` `Shift` `1` | Tamanho real   |
+
+{.shortcuts}
+
+### Editor de layout
+
+| Atalho            | Ação                                         |
 | ----------------- | -------------------------------------------- |
-| `B`               | Toggle between Design and Blueprint modes    |
-| `O`               | Toggle between Portrait and Landscaope modes |
-| `D`               | Toggle devices                               |
-| `R`               | Force refresh                                |
-| `E`               | Toggle render errors panel                   |
-| `Del`             | Delete constraints                           |
-| `Ctrl` `+`        | Zoom in                                      |
-| `Ctrl` `-`        | Zoom out                                     |
-| `Ctrl` `0`        | Zoom to fit                                  |
-| `Ctrl` `B`        | Go to XML                                    |
-| `Ctrl` `A`        | Select all components                        |
-| `Shift` `(click)` | Select multiple components                   |
+| `B`               | Alternar entre os modos Design e Blueprint   |
+| `O`               | Alternar entre os modos Retrato e Paisagem   |
+| `D`               | Alternar dispositivos                        |
+| `R`               | Forçar atualização                           |
+| `E`               | Alternar o painel de erros de renderização   |
+| `Del`             | Excluir restrições                           |
+| `Ctrl` `+`        | Aumentar zoom                                |
+| `Ctrl` `-`        | Diminuir zoom                                |
+| `Ctrl` `0`        | Ajustar ao tamanho                           |
+| `Ctrl` `B`        | Ir para o XML                                |
+| `Ctrl` `A`        | Selecionar todos os componentes              |
+| `Shift` `(click)` | Selecionar vários componentes                |
 
 {.shortcuts}
 
-### Navigation Editor
+### Editor de navegação
 
-| Shortcut         | Action                       |
-| ---------------- | ---------------------------- |
-| `Ctrl` `+`       | Zoom in                      |
-| `Ctrl` `-`       | Zoom out                     |
-| `Ctrl` `0`       | Zoom to fit                  |
-| `Ctrl` `B`       | Go to XML                    |
-| `E`              | Toggle render errors panel   |
-| `Ctrl` `G`       | Group into a nested graph    |
-| `Tab`            | Cycle through destinations   |
-| `Ctrl` `A`       | Select all destinations      |
-| `Ctrl` `(click)` | Select multiple destinations |
-
-{.shortcuts}
-
-### Build and Run
-
-| Shortcut           | Action                             |
-| ------------------ | ---------------------------------- |
-| `Ctrl` `F9`        | Build                              |
-| `Shift` `F10`      | Build and run                      |
-| `Ctrl` `F10`       | Apply changes and restart activity |
-| `Ctrl` `Alt` `F10` | Apply code changes                 |
+| Atalho           | Ação                                       |
+| ---------------- | ------------------------------------------ |
+| `Ctrl` `+`       | Aumentar zoom                              |
+| `Ctrl` `-`       | Diminuir zoom                              |
+| `Ctrl` `0`       | Ajustar ao tamanho                         |
+| `Ctrl` `B`       | Ir para o XML                              |
+| `E`              | Alternar o painel de erros de renderização |
+| `Ctrl` `G`       | Agrupar em um grafo aninhado               |
+| `Tab`            | Percorrer os destinos                      |
+| `Ctrl` `A`       | Selecionar todos os destinos               |
+| `Ctrl` `(click)` | Selecionar vários destinos                 |
 
 {.shortcuts}
 
-### Debugging
+### Build e execução
 
-| Shortcut            | Action              |
-| ------------------- | ------------------- |
-| `Shift` `F9`        | Debug               |
-| `F8`                | Step over           |
-| `F7`                | Step into           |
-| `Shift` `F7`        | Smart step into     |
-| `Shift` `F8`        | Step out            |
-| `Alt` `F9`          | Run to cursor       |
-| `Alt` `F8`          | Evaluate expression |
-| `F9`                | Resume program      |
-| `Ctrl` `F8`         | Toggle breakpoint   |
-| `Ctrl` `Shift` `F8` | View breakpoints    |
+| Atalho             | Ação                                      |
+| ------------------ | ----------------------------------------- |
+| `Ctrl` `F9`        | Build                                     |
+| `Shift` `F10`      | Fazer build e executar                    |
+| `Ctrl` `F10`       | Aplicar alterações e reiniciar a activity |
+| `Ctrl` `Alt` `F10` | Aplicar alterações de código              |
 
 {.shortcuts}
 
-### Refactoring
+### Depuração
 
-| Shortcut         | Action            |
-| ---------------- | ----------------- |
-| `F5`             | Copy              |
-| `F6`             | Move              |
-| `Alt` `Del`      | Safe delete       |
-| `Shift` `F6`     | Rename            |
-| `Ctrl` `F6`      | Change signature  |
-| `Ctrl` `Alt` `N` | Inline            |
-| `Ctrl` `Alt` `M` | Extract method    |
-| `Ctrl` `Alt` `V` | Extract variable  |
-| `Ctrl` `Alt` `F` | Extract field     |
-| `Ctrl` `Alt` `C` | Extract constant  |
-| `Ctrl` `Alt` `P` | Extract parameter |
-
-{.shortcuts}
-
-### Version Control
-
-| Shortcut              | Action                  |
-| --------------------- | ----------------------- |
-| `Ctrl` `K`            | Commit project to VCS   |
-| `Ctrl` `T`            | Update project from VCS |
-| `Alt` `Shift` `C`     | View recent changes     |
-| `Alt` <code>\`</code> | Open VCS pop-up         |
+| Atalho              | Ação                  |
+| ------------------- | --------------------- |
+| `Shift` `F9`        | Depurar               |
+| `F8`                | Passar por cima       |
+| `F7`                | Entrar no método      |
+| `Shift` `F7`        | Entrar com smart step |
+| `Shift` `F8`        | Sair do método        |
+| `Alt` `F9`          | Executar até o cursor |
+| `Alt` `F8`          | Avaliar expressão     |
+| `F9`                | Retomar programa      |
+| `Ctrl` `F8`         | Alternar breakpoint   |
+| `Ctrl` `Shift` `F8` | Ver breakpoints       |
 
 {.shortcuts}
 
-## Also see
+### Refatoração
 
-- [Keyboard shortcuts for Android Studio](https://developer.android.com/studio/intro/keyboard-shortcuts)
+| Atalho           | Ação               |
+| ---------------- | ------------------ |
+| `F5`             | Copiar             |
+| `F6`             | Mover              |
+| `Alt` `Del`      | Exclusão segura    |
+| `Shift` `F6`     | Renomear           |
+| `Ctrl` `F6`      | Alterar assinatura |
+| `Ctrl` `Alt` `N` | Inline             |
+| `Ctrl` `Alt` `M` | Extrair método     |
+| `Ctrl` `Alt` `V` | Extrair variável   |
+| `Ctrl` `Alt` `F` | Extrair campo      |
+| `Ctrl` `Alt` `C` | Extrair constante  |
+| `Ctrl` `Alt` `P` | Extrair parâmetro  |
+
+{.shortcuts}
+
+### Controle de versão
+
+| Atalho                | Ação                                |
+| --------------------- | ----------------------------------- |
+| `Ctrl` `K`            | Fazer commit do projeto no VCS      |
+| `Ctrl` `T`            | Atualizar o projeto a partir do VCS |
+| `Alt` `Shift` `C`     | Ver alterações recentes             |
+| `Alt` <code>\`</code> | Abrir pop-up do VCS                 |
+
+{.shortcuts}
+
+## Veja também
+
+- [Atalhos de teclado do Android Studio](https://developer.android.com/studio/intro/keyboard-shortcuts)
   _(developer.android.com)_

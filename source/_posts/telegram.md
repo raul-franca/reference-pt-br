@@ -7,102 +7,102 @@ tags:
   -
   -
 categories:
-  - Keyboard Shortcuts
+  - Atalhos de Teclado
 intro: |
-  A visual cheat-sheet for the 37 keyboard shortcuts found on the Telegram Desktop app
+  Um cheat sheet visual com os 37 atalhos de teclado do aplicativo Telegram Desktop
 ---
 
-## Keyboard Shortcuts
+## Atalhos de teclado
 
 ### Chats
 
-| Shortcut             | Action                        |
-| -------------------- | ----------------------------- |
-| `Up/Down`            | In-Chat Navigation            |
-| `Up/Down/Left/Right` | Suggested Stickers Navigation |
-| `Left/Right`         | Suggested Emojis Navigation   |
-| `Ctrl` `Tab`         | Move to the Chat Below        |
-| `Ctrl` `Shift` `Tab` | Move to the Chat Above        |
-| `Esc`                | Exit                          |
-| `Esc`                | Go Back                       |
-| `Esc`                | Cancel Current Action         |
-| `Ctrl` `O`           | Send File                     |
+| Atalho               | Ação                              |
+| -------------------- | --------------------------------- |
+| `Up/Down`            | Navegação dentro do chat          |
+| `Up/Down/Left/Right` | Navegação pelas figurinhas sugeridas |
+| `Left/Right`         | Navegação pelos emojis sugeridos  |
+| `Ctrl` `Tab`         | Vai para o chat abaixo            |
+| `Ctrl` `Shift` `Tab` | Vai para o chat acima             |
+| `Esc`                | Sai                               |
+| `Esc`                | Volta                             |
+| `Esc`                | Cancela a ação atual              |
+| `Ctrl` `O`           | Envia um arquivo                  |
 
 {.shortcuts}
 
-### Messages
+### Mensagens
 
-| Shortcut              | Action                              |
+| Atalho                | Ação                                    |
+| --------------------- | --------------------------------------- |
+| `Ctrl` `Up/Down`      | Responde a uma mensagem                 |
+| `Ctrl` `Down`         | Cancela a resposta                      |
+| `Up`                  | Edita a última mensagem enviada         |
+| `Del`                 | Exclui a mensagem selecionada no momento |
+| `Ctrl` `E`            | Edita a mídia                           |
+| `Ctrl` `(click gif)`  | Envia o GIF diretamente                 |
+| `Ctrl` `(click name)` | Abre o perfil do bot pela mensagem inline |
+
+{.shortcuts}
+
+### Busca
+
+| Atalho     | Ação                     |
+| ---------- | ------------------------ |
+| `Ctrl` `F` | Busca no chat selecionado |
+| `Esc`      | Sai da busca             |
+
+{.shortcuts}
+
+### Painel QuickShare
+
+| Atalho         | Ação          |
+| -------------- | ------------- |
+| `Up/Down`      | Navega        |
+| `Enter`        | Seleciona o chat |
+| `Backspace`    | Remove o chat |
+| `Ctrl` `Enter` | Envia a mensagem |
+
+{.shortcuts}
+
+### Ir para
+
+| Atalho                | Ação                                |
 | --------------------- | ----------------------------------- |
-| `Ctrl` `Up/Down`      | Reply to a Message                  |
-| `Ctrl` `Down`         | Cancel Reply                        |
-| `Up`                  | Edit Last Message Sent              |
-| `Del`                 | Delete Currently Selected Message   |
-| `Ctrl` `E`            | Edit Media                          |
-| `Ctrl` `(click gif)`  | Send GIF Directly                   |
-| `Ctrl` `(click name)` | Open Bot Profile via Inline Message |
+| `Alt` `Enter`         | Vai para o fim do chat              |
+| `Alt` `Enter`         | Rola a lista de chats até o topo    |
+| `Ctrl` `0`            | Vai para as suas mensagens salvas   |
+| `Ctrl` `1-5`          | Alterna entre as pastas             |
+| `Ctrl` `Shift` `Down` | Vai para a próxima pasta            |
+| `Ctrl` `Shift` `Up`   | Vai para a pasta anterior           |
 
 {.shortcuts}
 
-### Search
+### Relacionados à janela
 
-| Shortcut   | Action               |
-| ---------- | -------------------- |
-| `Ctrl` `F` | Search Selected Chat |
-| `Esc`      | Exit Search          |
-
-{.shortcuts}
-
-### QuickShare Panel
-
-| Shortcut       | Action       |
-| -------------- | ------------ |
-| `Up/Down`      | Navigate     |
-| `Enter`        | Select Chat  |
-| `Backspace`    | Remove Chat  |
-| `Ctrl` `Enter` | Send Message |
+| Atalho     | Ação                     |
+| ---------- | ------------------------ |
+| `Ctrl` `W` | Minimiza para a bandeja do sistema |
+| `Ctrl` `Q` | Encerra o Telegram       |
+| `Ctrl` `L` | Bloqueia o Telegram      |
+| `Ctrl` `M` | Minimiza o Telegram      |
 
 {.shortcuts}
 
-### Jump to
+### Texto selecionado
 
-| Shortcut              | Action                          |
-| --------------------- | ------------------------------- |
-| `Alt` `Enter`         | Jump to the bottom of the chat  |
-| `Alt` `Enter`         | Scroll the chat list to the top |
-| `Ctrl` `0`            | Jump to your saved messages     |
-| `Ctrl` `1-5`          | Jump between folders            |
-| `Ctrl` `Shift` `Down` | Jump to the next folder         |
-| `Ctrl` `Shift` `Up`   | Jump to the previous folder     |
-
-{.shortcuts}
-
-### Window Related
-
-| Shortcut   | Action                  |
-| ---------- | ----------------------- |
-| `Ctrl` `W` | Minimize to System Tray |
-| `Ctrl` `Q` | Quit Telegram           |
-| `Ctrl` `L` | Lock Telegram           |
-| `Ctrl` `M` | Minimize Telegram       |
+| Atalho             | Ação               |
+| ------------------ | ------------------ |
+| `Ctrl` `B`         | Negrito            |
+| `Ctrl` `I`         | Itálico            |
+| `Ctrl` `K`         | Cria um link       |
+| `Ctrl` `U`         | Sublinhado         |
+| `Ctrl` `Shift` `M` | Monoespaçado       |
+| `Ctrl` `Shift` `N` | Nulo / texto simples |
+| `Ctrl` `Shift` `X` | Tachado            |
 
 {.shortcuts}
 
-### Selected Text
+## Veja também
 
-| Shortcut           | Action            |
-| ------------------ | ----------------- |
-| `Ctrl` `B`         | Bold              |
-| `Ctrl` `I`         | Italic            |
-| `Ctrl` `K`         | Create Link       |
-| `Ctrl` `U`         | Underline         |
-| `Ctrl` `Shift` `M` | Monospace         |
-| `Ctrl` `Shift` `N` | Null / Plain Text |
-| `Ctrl` `Shift` `X` | Strikethrough     |
-
-{.shortcuts}
-
-## Also see
-
-- [Keyboard shortcuts for Telegram Desktop](https://github.com/telegramdesktop/tdesktop/wiki/Keyboard-Shortcuts)
+- [Atalhos de teclado do Telegram Desktop](https://github.com/telegramdesktop/tdesktop/wiki/Keyboard-Shortcuts)
   _(github.com)_

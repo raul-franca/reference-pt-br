@@ -7,150 +7,150 @@ tags:
   -
   -
 categories:
-  - Keyboard Shortcuts
+  - Atalhos de Teclado
 intro: |
-  A visual cheat-sheet for the 108 keyboard shortcuts found in Affinity Designer
+  Uma cheat sheet visual para os 108 atalhos de teclado do Affinity Designer
 ---
 
-## Keyboard Shortcuts
+## Atalhos de teclado
 
-### Designer Persona {.row-span-2}
+### Persona Designer {.row-span-2}
 
-| Shortcut       | Action                     |
-| -------------- | -------------------------- |
-| `Esc`          | Cancel operation           |
-| `F1`           | Help                       |
-| `0-9`          | Change opacity             |
-| `Tab`          | Toggle UI                  |
-| `T`            | Cycle text tools           |
-| `Y`            | Transparency tool          |
-| `I`            | Color picker tool          |
-| `P`            | Pen tool                   |
-| `[`            | Decrease brush size        |
-| `]`            | Increase brush size        |
-| `A`            | Node tool                  |
-| `F`            | Point transform tool       |
-| `G`            | Fill tool                  |
-| `H`            | View tool                  |
-| `;`            | Toggle snapping            |
-| `\`            | Clip to canvas             |
-| `Z`            | Zoom tool                  |
-| `X`            | Toggle active selector     |
-| `C`            | Corner tool                |
-| `V`            | Move tool                  |
-| `B`            | Vector brush tool          |
-| `N`            | Pencil tool                |
-| `M`            | Cycle shape tool           |
-| `,`            | Cycle split view           |
-| `.`            | Reset selection box        |
-| `/`            | Set fill or stroke to none |
-| `Ctrl` `1`     | Zoom to 100%               |
-| `Ctrl` `2`     | Zoom to 200%               |
-| `Ctrl` `3`     | Zoom to 400%               |
-| `Ctrl` `4`     | Zoom to 800%               |
-| `Ctrl` `8`     | Zoom to actual size        |
-| `Ctrl` `9`     | Zoom to pixel size         |
-| `Ctrl` `0`     | Zoom to fit                |
-| `Ctrl` `-`     | Zoom out                   |
-| `Ctrl` `=`     | Zoom in                    |
-| `Ctrl` `Tab`   | Switch view                |
-| `Ctrl` `W`     | Close                      |
-| `Ctrl` `R`     | Rulers                     |
-| `Ctrl` `T`     | Character                  |
-| `Ctrl` `Y`     | Redo                       |
-| `Ctrl` `O`     | Open                       |
-| `Ctrl` `P`     | Print                      |
-| `Ctrl` `[`     | Back one                   |
-| `Ctrl` `]`     | Forward one                |
-| `Ctrl` `Enter` | Convert to curves          |
-| `Ctrl` `A`     | Select all                 |
-| `Ctrl` `S`     | Save                       |
-| `Ctrl` `G`     | Group                      |
-| `Ctrl` `J`     | Duplicate                  |
-| `Ctrl` `L`     | Lock                       |
-| `Ctrl` `;`     | Show guides                |
-| `Ctrl` `'`     | Show grid                  |
-| `Ctrl` `Z`     | Undo                       |
-| `Ctrl` `X`     | Cut                        |
-| `Ctrl` `C`     | Copy                       |
-| `Ctrl` `V`     | Paste                      |
-| `Ctrl` `N`     | New                        |
-| `Ctrl` `M`     | Curves                     |
-| `Ctrl` `,`     | Preferences                |
-| `Space`        | Hold for view tool         |
-
-{.shortcuts}
-
-### Pixel Persona
-
-| Shortcut | Action                      |
-| -------- | --------------------------- |
-| `W`      | Selection brush             |
-| `E`      | Erase brush                 |
-| `I`      | Color picker tool           |
-| `O`      | Cycle dodge or burn brushes |
-| `[`      | Decrease brush size         |
-| `]`      | Increase brush size         |
-| `G`      | Flood fill tool             |
-| `L`      | Freehand selection tool     |
-| `X`      | Toggle active selector      |
-| `V`      | Move tool                   |
-| `B`      | Cycle brush or pixel tools  |
-| `M`      | Cycle marquees              |
-| `,`      | Cycle split view            |
-| `.`      | Reset selection box         |
+| Atalho         | Ação                        |
+| -------------- | --------------------------- |
+| `Esc`          | Cancela a operação          |
+| `F1`           | Ajuda                       |
+| `0-9`          | Altera a opacidade          |
+| `Tab`          | Alterna a UI                |
+| `T`            | Alterna entre as ferramentas de texto |
+| `Y`            | Ferramenta de transparência |
+| `I`            | Ferramenta de seleção de cor |
+| `P`            | Ferramenta caneta           |
+| `[`            | Diminui o tamanho do pincel |
+| `]`            | Aumenta o tamanho do pincel |
+| `A`            | Ferramenta nó               |
+| `F`            | Ferramenta de transformação de pontos |
+| `G`            | Ferramenta de preenchimento |
+| `H`            | Ferramenta de visualização  |
+| `;`            | Alterna o encaixe           |
+| `\`            | Recorta para a tela         |
+| `Z`            | Ferramenta de zoom          |
+| `X`            | Alterna o seletor ativo     |
+| `C`            | Ferramenta de canto         |
+| `V`            | Ferramenta de mover         |
+| `B`            | Ferramenta de pincel vetorial |
+| `N`            | Ferramenta lápis            |
+| `M`            | Alterna entre as ferramentas de forma |
+| `,`            | Alterna a visualização dividida |
+| `.`            | Redefine a caixa de seleção |
+| `/`            | Define preenchimento ou traço como nenhum |
+| `Ctrl` `1`     | Zoom em 100%                |
+| `Ctrl` `2`     | Zoom em 200%                |
+| `Ctrl` `3`     | Zoom em 400%                |
+| `Ctrl` `4`     | Zoom em 800%                |
+| `Ctrl` `8`     | Zoom no tamanho real        |
+| `Ctrl` `9`     | Zoom no tamanho em pixels   |
+| `Ctrl` `0`     | Zoom para ajustar           |
+| `Ctrl` `-`     | Diminui o zoom              |
+| `Ctrl` `=`     | Aumenta o zoom              |
+| `Ctrl` `Tab`   | Alterna a visualização      |
+| `Ctrl` `W`     | Fechar                      |
+| `Ctrl` `R`     | Réguas                      |
+| `Ctrl` `T`     | Caractere                   |
+| `Ctrl` `Y`     | Refazer                     |
+| `Ctrl` `O`     | Abrir                       |
+| `Ctrl` `P`     | Imprimir                    |
+| `Ctrl` `[`     | Uma camada para trás        |
+| `Ctrl` `]`     | Uma camada para frente      |
+| `Ctrl` `Enter` | Converte para curvas        |
+| `Ctrl` `A`     | Seleciona tudo              |
+| `Ctrl` `S`     | Salvar                      |
+| `Ctrl` `G`     | Agrupar                     |
+| `Ctrl` `J`     | Duplicar                    |
+| `Ctrl` `L`     | Bloquear                    |
+| `Ctrl` `;`     | Mostra guias                |
+| `Ctrl` `'`     | Mostra grade                |
+| `Ctrl` `Z`     | Desfazer                    |
+| `Ctrl` `X`     | Recortar                    |
+| `Ctrl` `C`     | Copiar                      |
+| `Ctrl` `V`     | Colar                       |
+| `Ctrl` `N`     | Novo                        |
+| `Ctrl` `M`     | Curvas                      |
+| `Ctrl` `,`     | Preferências                |
+| `Space`        | Mantém pressionado para a ferramenta de visualização |
 
 {.shortcuts}
 
-### Modifiers and Layer Control {.row-span-2}
+### Persona Pixel
 
-| Shortcut | Action                                                                 |
-| -------- | ---------------------------------------------------------------------- |
-| `Alt`    | Drawing and painting - temporarily switches to the color picker tool   |
-| `Shift`  | Freehand selection tools - connects clicked points with straight lines |
-| `Shift`  | Reverses aspect ratio constraint on scaling                            |
-| `Ctrl`   | Scales from the center of selection                                    |
-| `Alt`    | Ignores snapping during an operation                                   |
-| `Ctrl`   | Geometric shapes - moves red handles symmetrically                     |
-| `Shift`  | Path text - maintains distance between red handles                     |
-| `Ctrl`   | Path text - moves red handles symmetrically                            |
-| `Shift`  | Pixel brush painting - draws straight line connecting two strokes      |
-| `Shift`  | Pixel selections - constrains marquee to square or circle              |
-| `Ctrl`   | Pixel selection - moves underlying layer rather than selection         |
-| `Alt`    | Pixel selection - removes from selection                               |
-| `Ctrl`   | Pixel tool - erases from current layer or projects                     |
-| `Shift`  | Rotating - constrains rotations to 15 degree intervals                 |
-| `Shift`  | Selecting - scales multiple objects and layers                         |
-| `Alt`    | Selecting - selects object or layer behind current selection           |
-| `Ctrl`   | Shearing - mirrors shear around center of object                       |
-| `Shift`  | Vector drawing tools - constrains handle angles to 15 degrees          |
-| `Alt`    | Vector drawing tools - sets node to sharp for creating cusps           |
-| `Ctrl`   | Vector drawing tools - temporarily switches to node editing from pen   |
+| Atalho | Ação                          |
+| ------ | ----------------------------- |
+| `W`    | Pincel de seleção             |
+| `E`    | Pincel de apagar              |
+| `I`    | Ferramenta de seleção de cor  |
+| `O`    | Alterna entre pincéis de subexposição e superexposição |
+| `[`    | Diminui o tamanho do pincel   |
+| `]`    | Aumenta o tamanho do pincel   |
+| `G`    | Ferramenta de preenchimento   |
+| `L`    | Ferramenta de seleção à mão livre |
+| `X`    | Alterna o seletor ativo       |
+| `V`    | Ferramenta de mover           |
+| `B`    | Alterna entre pincéis ou ferramentas de pixel |
+| `M`    | Alterna entre seleções retangulares |
+| `,`    | Alterna a visualização dividida |
+| `.`    | Redefine a caixa de seleção   |
 
 {.shortcuts}
 
-### Advanced Text
+### Modificadores e controle de camadas {.row-span-2}
 
-| Shortcut                    | Action                   |
-| --------------------------- | ------------------------ |
-| `Ctrl` `T`                  | Character panel          |
-| `Ctrl` `Shift` `T`          | Typography dialog        |
-| `Ctrl` `B`                  | Bold                     |
-| `Ctrl` `I`                  | Italic                   |
-| `Ctrl` `U`                  | Underline                |
-| `Ctrl` `Alt` `L`            | Align left               |
-| `Ctrl` `Alt` `C`            | Align center             |
-| `Ctrl` `Alt` `R`            | Align right              |
-| `Alt` `Shift` `Left`        | Tighten spacing more     |
-| `Alt` `Shift` `Right`       | Loosen spacing more      |
-| `Ctrl` `Alt` `Shift` `Up`   | Precise raise baseline   |
-| `Ctrl` `Alt` `Shift` `Down` | Precise lower baseline   |
-| `Ctrl` `Alt` `Down`         | Precise increase leading |
-| `Ctrl` `Alt` `Up`           | Precise decrease leading |
+| Atalho  | Ação                                                                   |
+| ------- | ---------------------------------------------------------------------- |
+| `Alt`   | Desenho e pintura - alterna temporariamente para a ferramenta de seleção de cor |
+| `Shift` | Ferramentas de seleção à mão livre - conecta os pontos clicados com linhas retas |
+| `Shift` | Inverte a restrição de proporção ao dimensionar                        |
+| `Ctrl`  | Dimensiona a partir do centro da seleção                               |
+| `Alt`   | Ignora o encaixe durante uma operação                                  |
+| `Ctrl`  | Formas geométricas - move as alças vermelhas simetricamente            |
+| `Shift` | Texto em path - mantém a distância entre as alças vermelhas            |
+| `Ctrl`  | Texto em path - move as alças vermelhas simetricamente                 |
+| `Shift` | Pintura com pincel de pixel - desenha uma linha reta conectando dois traços |
+| `Shift` | Seleções de pixel - restringe a seleção a um quadrado ou círculo       |
+| `Ctrl`  | Seleção de pixel - move a camada subjacente em vez da seleção          |
+| `Alt`   | Seleção de pixel - remove da seleção                                   |
+| `Ctrl`  | Ferramenta de pixel - apaga da camada ou dos projetos atuais           |
+| `Shift` | Rotação - restringe a rotação a intervalos de 15 graus                 |
+| `Shift` | Seleção - dimensiona vários objetos e camadas                          |
+| `Alt`   | Seleção - seleciona o objeto ou a camada atrás da seleção atual        |
+| `Ctrl`  | Cisalhamento - espelha o cisalhamento em torno do centro do objeto     |
+| `Shift` | Ferramentas de desenho vetorial - restringe os ângulos das alças a 15 graus |
+| `Alt`   | Ferramentas de desenho vetorial - define o nó como pontiagudo para criar cúspides |
+| `Ctrl`  | Ferramentas de desenho vetorial - alterna temporariamente da caneta para a edição de nós |
 
 {.shortcuts}
 
-## Also see
+### Texto avançado
 
-- [Keyboard shortcuts for Affinity Designer](https://affinityspotlight.com/article/downloadable-affinity-keyboard-shortcut-cheat-sheets/)
+| Atalho                      | Ação                      |
+| --------------------------- | ------------------------- |
+| `Ctrl` `T`                  | Painel Caractere          |
+| `Ctrl` `Shift` `T`          | Diálogo de tipografia     |
+| `Ctrl` `B`                  | Negrito                   |
+| `Ctrl` `I`                  | Itálico                   |
+| `Ctrl` `U`                  | Sublinhado                |
+| `Ctrl` `Alt` `L`            | Alinhar à esquerda        |
+| `Ctrl` `Alt` `C`            | Alinhar ao centro         |
+| `Ctrl` `Alt` `R`            | Alinhar à direita         |
+| `Alt` `Shift` `Left`        | Aperta mais o espaçamento |
+| `Alt` `Shift` `Right`       | Aumenta mais o espaçamento |
+| `Ctrl` `Alt` `Shift` `Up`   | Eleva a linha de base com precisão |
+| `Ctrl` `Alt` `Shift` `Down` | Abaixa a linha de base com precisão |
+| `Ctrl` `Alt` `Down`         | Aumenta o entrelinhamento com precisão |
+| `Ctrl` `Alt` `Up`           | Diminui o entrelinhamento com precisão |
+
+{.shortcuts}
+
+## Veja também
+
+- [Atalhos de teclado do Affinity Designer](https://affinityspotlight.com/article/downloadable-affinity-keyboard-shortcut-cheat-sheets/)
   _(affinityspotlight.com)_

@@ -8,96 +8,96 @@ tags:
   - Entertainment
   - Reference
 categories:
-  - Other
-intro: SBTI 备忘单，快速了解这套娱乐人格测试的玩法、记分逻辑、15 个维度和 27 个结果代码。
+  - Outros
+intro: Cheat sheet do SBTI para entender rapidamente como funciona esse teste de personalidade recreativo, a lógica de pontuação, as 15 dimensões e os 27 códigos de resultado.
 plugins:
   - copyCode
 ---
 
-## 快速上手 {.cols-2}
+## Início rápido {.cols-2}
 
-### 先看这里
+### Comece por aqui
 
-- [开始测试](https://sbti.now/)
-- [全部类型](https://sbti.now/types)
-- [什么是 SBTI](https://sbti.now/what-is-sbti)
+- [Iniciar o teste](https://sbti.now/)
+- [Todos os tipos](https://sbti.now/types)
+- [O que é o SBTI](https://sbti.now/what-is-sbti)
 - [SBTI vs MBTI](https://sbti.now/sbti-vs-mbti)
-- [官网入口说明](https://sbti.now/official)
+- [Instruções do site oficial](https://sbti.now/official)
 
-### 一句话认识
+### Resumo em uma frase
 
-- `SBTI` 是娱乐人格测试，不是严肃心理评估。
-- 它最强的不是科学性，而是题短、结果怪、截图好发。
-- 官网逻辑本质是前端规则匹配，不是后台深度计算。
-- 英文搜索更适合用 `SBTI personality test` 这类长词。
+- `SBTI` é um teste de personalidade recreativo, não uma avaliação psicológica séria.
+- O ponto mais forte não é a cientificidade, mas sim as perguntas curtas, os resultados esquisitos e as capturas de tela fáceis de compartilhar.
+- A lógica do site oficial é, essencialmente, correspondência de regras no frontend, e não um cálculo profundo no backend.
+- Para buscas em inglês, é melhor usar termos longos como `SBTI personality test`.
 
-### 这篇怎么用
+### Como usar este cheat sheet
 
-| 你现在想做什么 | 建议看哪里               |
-| -------------- | ------------------------ |
-| 先搞懂这是啥   | `一句话认识`、`一眼看懂` |
-| 直接开始测     | `先看这里`               |
-| 想看记分逻辑   | `规则总览`               |
-| 想认代码和名字 | `类型速查`               |
-| 想跟 MBTI 对比 | `和 MBTI 的区别`         |
+| O que você quer fazer agora | Onde olhar               |
+| --------------------------- | ------------------------ |
+| Entender primeiro o que é   | `一句话认识` (resumo em uma frase), `一眼看懂` (visão geral) |
+| Começar o teste direto      | `先看这里` (comece por aqui) |
+| Ver a lógica de pontuação   | `规则总览` (visão geral das regras) |
+| Conhecer os códigos e nomes | `类型速查` (consulta rápida de tipos) |
+| Comparar com o MBTI         | `和 MBTI 的区别` (diferenças em relação ao MBTI) |
 
-### 常见搜索意图
+### Intenções de busca comuns
 
-| 搜索词          | 大概率意图 |
-| --------------- | ---------- |
-| `sbti 人格`     | 直接开测   |
-| `sbti 人格测试` | 找入口     |
-| `sbti 类型`     | 看全部结果 |
-| `sbti 结果`     | 看结果解释 |
-| `sbti vs mbti`  | 看差异     |
+| Termo buscado   | Intenção provável |
+| --------------- | ----------------- |
+| `sbti 人格`     | Começar o teste direto |
+| `sbti 人格测试` | Encontrar o site   |
+| `sbti 类型`     | Ver todos os resultados |
+| `sbti 结果`     | Ver a explicação do resultado |
+| `sbti vs mbti`  | Ver as diferenças  |
 
-## 规则总览 {.cols-2}
+## Visão geral das regras {.cols-2}
 
-### 一眼看懂
+### Entendendo de relance
 
-| 项目       | 说明                               |
-| ---------- | ---------------------------------- |
-| 产品形态   | 纯前端、单页、规则驱动的人格匹配器 |
-| 正式题     | 30 题                              |
-| 特殊题     | 2 题                               |
-| 实际答题数 | 通常 31 题，触发饮酒分支时 32 题   |
-| 维度数     | 15 维                              |
-| 标准人格   | 25 个预设原型                      |
-| 特殊结果   | `DRUNK`、`HHHH`                    |
-| 最终机制   | 15 维 `L/M/H` 向量 + 最近邻匹配    |
+| Item                       | Descrição                          |
+| -------------------------- | ---------------------------------- |
+| Formato do produto         | Matcher de personalidade puramente frontend, de página única e orientado a regras |
+| Perguntas oficiais         | 30 perguntas                       |
+| Perguntas especiais        | 2 perguntas                        |
+| Perguntas respondidas      | Normalmente 31, e 32 quando o branch de bebida é acionado |
+| Número de dimensões        | 15 dimensões                       |
+| Personalidades padrão      | 25 protótipos predefinidos         |
+| Resultados especiais       | `DRUNK`, `HHHH`                    |
+| Mecanismo final            | Vetor `L/M/H` de 15 dimensões + correspondência por vizinho mais próximo |
 
-### 测试流程
+### Fluxo do teste
 
-| 步骤 | 会发生什么                                   |
+| Etapa | O que acontece                               |
 | ---- | -------------------------------------------- |
-| `1`  | 开始后先打乱 `30` 道正式题                   |
-| `2`  | `drink_gate_q1` 会随机插入，而且不会是第一题 |
-| `3`  | 命中饮酒分支时，才会出现 `drink_gate_q2`     |
-| `4`  | 正式题负责记分，特殊题只负责分支和覆盖       |
-| `5`  | 最终通常命中 `25` 个标准人格之一             |
+| `1`  | As `30` perguntas oficiais são embaralhadas ao começar |
+| `2`  | `drink_gate_q1` é inserida aleatoriamente e nunca é a primeira pergunta |
+| `3`  | `drink_gate_q2` só aparece quando o branch de bebida é acionado |
+| `4`  | As perguntas oficiais contam pontos; as especiais só tratam do branch e da sobrescrita |
+| `5`  | No final, o resultado normalmente é uma das `25` personalidades padrão |
 
-### 15 个维度 {.row-span-2}
+### As 15 dimensões {.row-span-2}
 
-| 模型组       | 维度                                                   |
-| ------------ | ------------------------------------------------------ |
-| 自我模型     | `S1 自尊自信`、`S2 自我清晰度`、`S3 核心价值`          |
-| 情感模型     | `E1 依恋安全感`、`E2 情感投入度`、`E3 边界与依赖`      |
-| 态度模型     | `A1 世界观倾向`、`A2 规则与灵活度`、`A3 人生意义感`    |
-| 行动驱力模型 | `Ac1 动机导向`、`Ac2 决策风格`、`Ac3 执行模式`         |
-| 社交模型     | `So1 社交主动性`、`So2 人际边界感`、`So3 表达与真实度` |
+| Grupo de modelo           | Dimensão                                                   |
+| ------------------------- | ---------------------------------------------------------- |
+| Modelo do self            | `S1 自尊自信` (autoconfiança e autoestima), `S2 自我清晰度` (clareza sobre si), `S3 核心价值` (valores centrais) |
+| Modelo afetivo            | `E1 依恋安全感` (segurança no apego), `E2 情感投入度` (envolvimento emocional), `E3 边界与依赖` (limites e dependência) |
+| Modelo de atitude         | `A1 世界观倾向` (tendência de visão de mundo), `A2 规则与灵活度` (regras e flexibilidade), `A3 人生意义感` (senso de propósito) |
+| Modelo de motivação       | `Ac1 动机导向` (orientação da motivação), `Ac2 决策风格` (estilo de decisão), `Ac3 执行模式` (modo de execução) |
+| Modelo social             | `So1 社交主动性` (iniciativa social), `So2 人际边界感` (limites interpessoais), `So3 表达与真实度` (expressão e autenticidade) |
 
-每个维度固定 2 道题，15 个维度彼此等权。  
-它更像“把你压缩成一个人格向量”，再去找最像的结果原型。
+Cada dimensão tem sempre 2 perguntas, e as 15 dimensões têm peso igual.  
+Funciona mais como “comprimir você em um vetor de personalidade” e depois buscar o protótipo de resultado mais parecido.
 
-### L / M / H 映射
+### Mapeamento L / M / H
 
-每个维度两题相加后，按下面规则压缩：
+Cada dimensão soma duas perguntas e depois é comprimida pela regra abaixo:
 
-| 原始分 | 映射 |
-| ------ | ---- |
-| `2-3`  | `L`  |
-| `4`    | `M`  |
-| `5-6`  | `H`  |
+| Pontuação bruta | Mapeamento |
+| --------------- | ---------- |
+| `2-3`           | `L`        |
+| `4`             | `M`        |
+| `5-6`           | `H`        |
 
 ```js
 for each dimension:
@@ -107,88 +107,88 @@ for each dimension:
   if raw >= 5 => H
 ```
 
-### 两个特殊结果
+### Os dois resultados especiais
 
-| 结果    | 触发方式                   | 说明             |
-| ------- | -------------------------- | ---------------- |
-| `DRUNK` | 饮酒隐藏题命中指定选项     | 直接覆盖正常结果 |
-| `HHHH`  | 最近人格相似度仍低于 `60%` | 兜底人格         |
+| Resultado | Como é acionado            | Descrição        |
+| --------- | -------------------------- | ---------------- |
+| `DRUNK`   | A pergunta oculta sobre bebida acerta uma opção específica | Sobrescreve o resultado normal |
+| `HHHH`    | A similaridade com a personalidade mais próxima fica abaixo de `60%` | Personalidade de fallback |
 
-### 记住这几点
+### Lembre-se destes pontos
 
-- 只有 30 道正式题参与正式记分。
-- 没有复杂加权，也没有临床测评意义。
-- `q22` 是强制决策题，辨识度很高。
-- `drink_gate_q2` 不是加分题，而是结果开关。
+- Apenas as 30 perguntas oficiais entram na pontuação.
+- Não há pesos complexos nem significado de avaliação clínica.
+- `q22` é uma pergunta de decisão forçada, com alto poder de discriminação.
+- `drink_gate_q2` não é uma pergunta que soma pontos, mas um switch de resultado.
 
-## 类型速查 {.cols-2}
+## Consulta rápida de tipos {.cols-2}
 
-### 高频类型
+### Tipos mais frequentes
 
-| 代码     | 名称     | 气质标签         |
-| -------- | -------- | ---------------- |
-| `CTRL`   | 拿捏者   | 控场型幕后导演   |
-| `BOSS`   | 领导者   | 接管型执行者     |
-| `MALO`   | 吗喽     | 混乱型快乐源     |
-| `FAKE`   | 伪人     | 适配型表演家     |
-| `LOVE-R` | 多情者   | 心动型情绪玩家   |
-| `MUM`    | 妈妈     | 照顾型稳定器     |
-| `THIN-K` | 思考者   | 分析型脑内戏导演 |
-| `OJBK`   | 无所谓人 | 低耗型佛系选手   |
+| Código   | Nome       | Tag de temperamento         |
+| -------- | ---------- | --------------------------- |
+| `CTRL`   | Quem domina | Diretor dos bastidores que controla tudo |
+| `BOSS`   | Líder      | Executor que assume o controle |
+| `MALO`   | Malo       | Fonte de alegria caótica    |
+| `FAKE`   | Impostor   | Ator que se adapta a tudo   |
+| `LOVE-R` | Romântico  | Jogador emocional do tipo paixão |
+| `MUM`    | Mãe        | Estabilizador que cuida     |
+| `THIN-K` | Pensador   | Diretor de drama mental analítico |
+| `OJBK`   | Indiferente | Competidor zen de baixo esforço |
 
-### 怎么读结果
+### Como ler o resultado
 
-- `CTRL`、`MALO` 这类大写词是结果代码。
-- 中文名负责让结果更好记、更适合传播。
-- 真正的底层结果不是四个字母，而是 15 维 `L/M/H` 组合。
-- `DRUNK` 和 `HHHH` 都属于特殊分支，不完全按普通类型逻辑出现。
+- Palavras em maiúsculas como `CTRL` e `MALO` são códigos de resultado.
+- O nome em chinês serve para tornar o resultado mais fácil de lembrar e de compartilhar.
+- O verdadeiro resultado de base não são quatro letras, mas a combinação `L/M/H` de 15 dimensões.
+- `DRUNK` e `HHHH` são branches especiais e não seguem totalmente a lógica dos tipos comuns.
 
-### 全部结果代码 {.col-span-2}
+### Todos os códigos de resultado {.col-span-2}
 
-| 代码     | 名称   | 代码     | 名称     |
-| -------- | ------ | -------- | -------- |
-| `CTRL`   | 拿捏者 | `ATM-er` | 送钱者   |
-| `Dior-s` | 屌丝   | `BOSS`   | 领导者   |
-| `THAN-K` | 感恩者 | `OH-NO`  | 哦不人   |
-| `GOGO`   | 行者   | `SEXY`   | 尤物     |
-| `LOVE-R` | 多情者 | `MUM`    | 妈妈     |
-| `FAKE`   | 伪人   | `OJBK`   | 无所谓人 |
-| `MALO`   | 吗喽   | `JOKE-R` | 小丑     |
-| `WOC!`   | 握草人 | `THIN-K` | 思考者   |
-| `SHIT`   | 愤世者 | `ZZZZ`   | 装死者   |
-| `POOR`   | 贫困者 | `MONK`   | 僧人     |
-| `IMSB`   | 傻者   | `SOLO`   | 孤儿     |
-| `FUCK`   | 草者   | `DEAD`   | 死者     |
-| `IMFW`   | 废物   | `HHHH`   | 傻乐者   |
-| `DRUNK`  | 酒鬼   |          |          |
+| Código   | Nome    | Código   | Nome     |
+| -------- | ------- | -------- | -------- |
+| `CTRL`   | Quem domina | `ATM-er` | Quem dá dinheiro |
+| `Dior-s` | Loser   | `BOSS`   | Líder    |
+| `THAN-K` | Grato   | `OH-NO`  | Ah, não  |
+| `GOGO`   | Andarilho | `SEXY` | Sedutor  |
+| `LOVE-R` | Romântico | `MUM`  | Mãe      |
+| `FAKE`   | Impostor | `OJBK`  | Indiferente |
+| `MALO`   | Malo    | `JOKE-R` | Palhaço  |
+| `WOC!`   | Chocado | `THIN-K` | Pensador |
+| `SHIT`   | Rancoroso | `ZZZZ` | Finge de morto |
+| `POOR`   | Pobre   | `MONK`   | Monge    |
+| `IMSB`   | Tonto   | `SOLO`   | Solitário |
+| `FUCK`   | Irritado | `DEAD`  | Morto    |
+| `IMFW`   | Inútil  | `HHHH`   | Alegre bobo |
+| `DRUNK`  | Bêbado  |          |          |
 
-## 检索与导航 {.cols-2}
+## Busca e navegação {.cols-2}
 
-### 和 MBTI 的区别
+### Diferenças em relação ao MBTI
 
 | SBTI                           | MBTI                   |
 | ------------------------------ | ---------------------- |
-| 娱乐导向                       | 心理类型框架导向       |
-| 题短、结果怪、传播性强         | 结果更正经、语义更稳定 |
-| 15 维 `L/M/H` + 原型匹配       | 4 个字母维度更常见     |
-| 更适合截图、转发、拉朋友一起测 | 更适合长期做性格讨论   |
+| Voltado ao entretenimento      | Baseado em um framework de tipos psicológicos |
+| Perguntas curtas, resultados esquisitos, alta viralização | Resultados mais sérios e semanticamente estáveis |
+| `L/M/H` em 15 dimensões + correspondência com protótipos | 4 dimensões de letras são mais comuns |
+| Melhor para printar, compartilhar e chamar amigos para testar | Melhor para discussões de personalidade de longo prazo |
 
-### 推荐访问顺序
+### Ordem de visita recomendada
 
-1. 先去 [开始测试](https://sbti.now/)
-2. 再看 [全部类型](https://sbti.now/types)
-3. 想补背景就看 [什么是 SBTI](https://sbti.now/what-is-sbti)
-4. 想对比就看 [SBTI vs MBTI](https://sbti.now/sbti-vs-mbti)
+1. Primeiro, acesse [Iniciar o teste](https://sbti.now/)
+2. Depois, veja [Todos os tipos](https://sbti.now/types)
+3. Para entender o contexto, veja [O que é o SBTI](https://sbti.now/what-is-sbti)
+4. Para comparar, veja [SBTI vs MBTI](https://sbti.now/sbti-vs-mbti)
 
-### 为什么英文搜索容易歪
+### Por que a busca em inglês costuma sair do rumo
 
-- `SBTI` 在英文里还常指 `Science Based Targets initiative`。
-- 所以只搜裸词 `sbti`，很容易被气候或 ESG 结果截流。
-- 更稳妥的写法通常是 `SBTI test`、`SBTI personality test`、`Silly Big Personality Test`。
+- Em inglês, `SBTI` também costuma se referir à `Science Based Targets initiative`.
+- Por isso, buscar apenas o termo solto `sbti` facilmente traz resultados sobre clima ou ESG.
+- O mais seguro costuma ser usar `SBTI test`, `SBTI personality test` ou `Silly Big Personality Test`.
 
-### 适合收藏的部分
+### Partes que vale a pena salvar
 
-- 想快速解释给朋友听：看 `一句话认识`
-- 想理解它到底怎么算：看 `规则总览`
-- 想认人设代码：看 `全部结果代码`
-- 想找官方入口：看 `先看这里`
+- Para explicar rapidamente a um amigo: veja `一句话认识` (resumo em uma frase)
+- Para entender como a conta é feita: veja `规则总览` (visão geral das regras)
+- Para conhecer os códigos de persona: veja `全部结果代码` (todos os códigos de resultado)
+- Para encontrar o site oficial: veja `先看这里` (comece por aqui)

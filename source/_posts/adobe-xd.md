@@ -7,208 +7,208 @@ tags:
   -
   -
 categories:
-  - Keyboard Shortcuts
+  - Atalhos de Teclado
 intro: |
-  A visual cheat-sheet for the 97 keyboard shortcuts found in Adobe XD
+  Uma cheat sheet visual para os 97 atalhos de teclado do Adobe XD
 ---
 
-## Keyboard Shortcuts
+## Atalhos de teclado
 
-### Keys for Edit menu
+### Teclas do menu Editar
 
-| Shortcut           | Action                                                               |
-| ------------------ | -------------------------------------------------------------------- |
-| `Ctrl` `Z`         | Undo                                                                 |
-| `Ctrl` `Shift` `Z` | Redo                                                                 |
-| `Ctrl` `X`         | Cut                                                                  |
-| `Ctrl` `C`         | Copy                                                                 |
-| `Ctrl` `V`         | Paste                                                                |
-| `Ctrl` `Alt` `V`   | Paste Appearance (Design mode) or Paste Interaction (Prototype mode) |
-| `Ctrl` `D`         | Duplicate                                                            |
-| `Del`              | Delete                                                               |
-| `Ctrl` `A`         | Select All                                                           |
-| `Ctrl` `Shift` `A` | Deselect All                                                         |
+| Atalho             | Ação                                                                  |
+| ------------------ | --------------------------------------------------------------------- |
+| `Ctrl` `Z`         | Desfazer                                                              |
+| `Ctrl` `Shift` `Z` | Refazer                                                               |
+| `Ctrl` `X`         | Recortar                                                              |
+| `Ctrl` `C`         | Copiar                                                                |
+| `Ctrl` `V`         | Colar                                                                 |
+| `Ctrl` `Alt` `V`   | Cola aparência (modo Design) ou cola interação (modo Prototype)       |
+| `Ctrl` `D`         | Duplicar                                                              |
+| `Del`              | Excluir                                                               |
+| `Ctrl` `A`         | Selecionar tudo                                                       |
+| `Ctrl` `Shift` `A` | Desmarcar tudo                                                        |
 
 {.shortcuts}
 
-### Keys for File menu
+### Teclas do menu Arquivo
 
-| Shortcut           | Action          |
+| Atalho             | Ação            |
 | ------------------ | --------------- |
-| `Ctrl` `N`         | New             |
-| `Ctrl` `Shift` `O` | Open...         |
-| `Alt` `F4`         | Close           |
-| `Ctrl` `S`         | Save...         |
-| `Ctrl` `Shift` `S` | Save As...      |
-| `Ctrl` `Shift` `E` | Export Batch    |
-| `Ctrl` `E`         | Export Selected |
-| `Ctrl` `Shift` `I` | Import          |
+| `Ctrl` `N`         | Novo            |
+| `Ctrl` `Shift` `O` | Abrir...        |
+| `Alt` `F4`         | Fechar          |
+| `Ctrl` `S`         | Salvar...       |
+| `Ctrl` `Shift` `S` | Salvar como...  |
+| `Ctrl` `Shift` `E` | Exportar em lote |
+| `Ctrl` `E`         | Exportar selecionados |
+| `Ctrl` `Shift` `I` | Importar        |
 
 {.shortcuts}
 
-### Keys for Pen/Path
+### Teclas de Caneta/Path
 
-| Shortcut         | Action                   |
-| ---------------- | ------------------------ |
-| `P`              | Switch to Pen tool       |
-| `Alt`            | Asymmetric control point |
-| `Shift`          | Snap control point angle |
-| `Shift`          | Snap anchor point angle  |
-| `Ctrl` `Alt` `U` | Add                      |
-| `Ctrl` `Alt` `S` | Subtract                 |
-| `Ctrl` `Alt` `I` | Intersect                |
-| `Ctrl` `Alt` `X` | Exclude overlap          |
-| `Ctrl` `8`       | Convert to path          |
-
-{.shortcuts}
-
-### Keys for Layers (Objects), Groups, and Artboards {.row-span-2}
-
-| Shortcut           | Action                    |
-| ------------------ | ------------------------- |
-| `Ctrl` `G`         | Group layers              |
-| `Ctrl` `Shift` `G` | Ungroup layers            |
-| `Ctrl` `K`         | Make component            |
-| `Ctrl` `L`         | Lock/Unlock layer         |
-| `Ctrl` `,`         | Hide/Show layer           |
-| `Ctrl` `Shift` `M` | Mask with shape           |
-| `Ctrl` `R`         | Make repeat grid          |
-| `1-9`              | Change layer opacity      |
-| `Ctrl` `;`         | Show/Hide artboard guides |
-| `Ctrl` `Shift` `;` | Lock artboard guides      |
+| Atalho           | Ação                        |
+| ---------------- | --------------------------- |
+| `P`              | Alterna para a ferramenta Caneta |
+| `Alt`            | Ponto de controle assimétrico |
+| `Shift`          | Encaixa o ângulo do ponto de controle |
+| `Shift`          | Encaixa o ângulo do ponto de ancoragem |
+| `Ctrl` `Alt` `U` | Adicionar                   |
+| `Ctrl` `Alt` `S` | Subtrair                    |
+| `Ctrl` `Alt` `I` | Interseção                  |
+| `Ctrl` `Alt` `X` | Excluir sobreposição        |
+| `Ctrl` `8`       | Converte para path          |
 
 {.shortcuts}
 
-### Keys for Align
+### Teclas de camadas (objetos), grupos e artboards {.row-span-2}
 
-| Shortcut               | Action                |
+| Atalho             | Ação                         |
+| ------------------ | ---------------------------- |
+| `Ctrl` `G`         | Agrupa camadas               |
+| `Ctrl` `Shift` `G` | Desagrupa camadas            |
+| `Ctrl` `K`         | Cria componente              |
+| `Ctrl` `L`         | Bloqueia/desbloqueia camada  |
+| `Ctrl` `,`         | Oculta/mostra camada         |
+| `Ctrl` `Shift` `M` | Mascara com forma            |
+| `Ctrl` `R`         | Cria grade repetida          |
+| `1-9`              | Altera a opacidade da camada |
+| `Ctrl` `;`         | Mostra/oculta guias do artboard |
+| `Ctrl` `Shift` `;` | Bloqueia guias do artboard   |
+
+{.shortcuts}
+
+### Teclas de alinhamento
+
+| Atalho                 | Ação                  |
 | ---------------------- | --------------------- |
-| `Ctrl` `Shift` `Left`  | Left                  |
-| `Shift` `C`            | Center (horizontally) |
-| `Ctrl` `Shift` `Right` | Right                 |
-| `Ctrl` `Shift` `Up`    | Top                   |
-| `Shift` `M`            | Middle (vertically)   |
-| `Ctrl` `Shift` `Down`  | Bottom                |
+| `Ctrl` `Shift` `Left`  | Esquerda              |
+| `Shift` `C`            | Centro (horizontalmente) |
+| `Ctrl` `Shift` `Right` | Direita               |
+| `Ctrl` `Shift` `Up`    | Topo                  |
+| `Shift` `M`            | Meio (verticalmente)  |
+| `Ctrl` `Shift` `Down`  | Base                  |
 
 {.shortcuts}
 
-### Keys for Arrange
+### Teclas de organização
 
-| Shortcut           | Action         |
-| ------------------ | -------------- |
-| `Ctrl` `Shift` `]` | Bring to front |
-| `Ctrl` `]`         | Bring forward  |
-| `Ctrl` `[`         | Send backward  |
-| `Ctrl` `Shift` `[` | Send to back   |
+| Atalho             | Ação               |
+| ------------------ | ------------------ |
+| `Ctrl` `Shift` `]` | Trazer para frente |
+| `Ctrl` `]`         | Avançar            |
+| `Ctrl` `[`         | Enviar para trás   |
+| `Ctrl` `Shift` `[` | Enviar para o fundo |
 
 {.shortcuts}
 
-### Keys for Distribute
+### Teclas de distribuição
 
-| Shortcut           | Action     |
+| Atalho             | Ação       |
 | ------------------ | ---------- |
 | `Ctrl` `Shift` `H` | Horizontal |
 | `Ctrl` `Shift` `V` | Vertical   |
 
 {.shortcuts}
 
-### Keys for Text
+### Teclas de texto
 
-| Shortcut           | Action             |
-| ------------------ | ------------------ |
-| `Ctrl` `B`         | Bold               |
-| `Ctrl` `I`         | Italic             |
-| `Ctrl` `Shift` `.` | Increase font size |
-| `Ctrl` `Shift` `,` | Decrease font size |
-
-{.shortcuts}
-
-### Keys for Operations menu
-
-| Shortcut      | Action                                   |
-| ------------- | ---------------------------------------- |
-| `Alt`         | From center                              |
-| `Shift`       | Constrain                                |
-| `Enter`       | Edit text                                |
-| `Shift`       | Constrain rotate (15 deg)                |
-| `Shift`       | Line constrain rotate (45 deg)           |
-| `Shift` `Alt` | Constrain from center                    |
-| `Ctrl`        | Direct select                            |
-| `Ctrl` `Tab`  | Switch between Design and Prototype mode |
+| Atalho             | Ação                      |
+| ------------------ | ------------------------- |
+| `Ctrl` `B`         | Negrito                   |
+| `Ctrl` `I`         | Itálico                   |
+| `Ctrl` `Shift` `.` | Aumenta o tamanho da fonte |
+| `Ctrl` `Shift` `,` | Diminui o tamanho da fonte |
 
 {.shortcuts}
 
-### Keys for Tools menu
+### Teclas do menu Operações
 
-| Shortcut   | Action            |
+| Atalho        | Ação                                        |
+| ------------- | ------------------------------------------- |
+| `Alt`         | A partir do centro                          |
+| `Shift`       | Restringir                                  |
+| `Enter`       | Editar texto                                |
+| `Shift`       | Restringe a rotação (15 graus)              |
+| `Shift`       | Restringe a rotação de linha (45 graus)     |
+| `Shift` `Alt` | Restringe a partir do centro                |
+| `Ctrl`        | Seleção direta                              |
+| `Ctrl` `Tab`  | Alterna entre os modos Design e Prototype   |
+
+{.shortcuts}
+
+### Teclas do menu Ferramentas
+
+| Atalho     | Ação              |
 | ---------- | ----------------- |
-| `V`        | Select            |
-| `R`        | Rectangle         |
-| `E`        | Ellipse           |
-| `Y`        | Polygon           |
-| `L`        | Line              |
-| `P`        | Pen               |
-| `T`        | Text              |
+| `V`        | Selecionar        |
+| `R`        | Retângulo         |
+| `E`        | Elipse            |
+| `Y`        | Polígono          |
+| `L`        | Linha             |
+| `P`        | Caneta            |
+| `T`        | Texto             |
 | `A`        | Artboard          |
 | `Z`        | Zoom              |
-| `Ctrl` `3` | Zoom to selection |
-| `I`        | Eyedropper        |
+| `Ctrl` `3` | Zoom na seleção   |
+| `I`        | Conta-gotas       |
 
 {.shortcuts}
 
-### Keys for Interface and Viewing Options
+### Teclas de interface e opções de visualização
 
-| Shortcut           | Action                                        |
+| Atalho             | Ação                                          |
 | ------------------ | --------------------------------------------- |
-| `Ctrl` `+`         | Zoom in                                       |
-| `Ctrl` `-`         | Zoom out                                      |
-| `Ctrl` `0`         | Zoom to fit                                   |
-| `Ctrl` `1`         | Zoom to 100%                                  |
-| `Ctrl` `2`         | Zoom to 200%                                  |
-| `Space`            | Pan                                           |
+| `Ctrl` `+`         | Aumenta o zoom                                |
+| `Ctrl` `-`         | Diminui o zoom                                |
+| `Ctrl` `0`         | Zoom para ajustar                             |
+| `Ctrl` `1`         | Zoom em 100%                                  |
+| `Ctrl` `2`         | Zoom em 200%                                  |
+| `Space`            | Panorâmica                                    |
 | `Ctrl` `Shift` `Y` | Assets                                        |
-| `Ctrl` `Y`         | Layers                                        |
-| `Ctrl` `Shift` `'` | Show layout grid                              |
-| `Ctrl` `'`         | Show square grid                              |
-| `Ctrl` `Tab`       | Switch between Design and Prototype mode      |
-| `Up/Down`          | Increase or decrease a value in a field by 1  |
-| `Shift` `Up/Down`  | Increase or decrease a value in a field by 10 |
+| `Ctrl` `Y`         | Camadas                                       |
+| `Ctrl` `Shift` `'` | Mostra grade de layout                        |
+| `Ctrl` `'`         | Mostra grade quadrada                         |
+| `Ctrl` `Tab`       | Alterna entre os modos Design e Prototype     |
+| `Up/Down`          | Aumenta ou diminui em 1 um valor de um campo  |
+| `Shift` `Up/Down`  | Aumenta ou diminui em 10 um valor de um campo |
 
 {.shortcuts}
 
-### Keys for Design Specs
+### Teclas de especificações de design
 
-| Shortcut           | Action                                     |
-| ------------------ | ------------------------------------------ |
-| `Ctrl` `+/-`       | Zoom                                       |
-| `Ctrl` `0`         | Reset zoom                                 |
-| `(arrows)`         | Pan                                        |
-| `Shift` `(arrows)` | Faster pan                                 |
-| `Esc`              | Go from Spec view to UX flow view          |
-| `Esc`              | Remove focus from artboard in UX flow view |
-
-{.shortcuts}
-
-### Keys for Vector Editing
-
-| Shortcut | Action                               |
-| -------- | ------------------------------------ |
-| `Enter`  | Start editing selected vector object |
-| `Esc`    | Stop editing selected vector object  |
+| Atalho             | Ação                                        |
+| ------------------ | ------------------------------------------- |
+| `Ctrl` `+/-`       | Zoom                                        |
+| `Ctrl` `0`         | Redefine o zoom                             |
+| `(arrows)`         | Panorâmica                                  |
+| `Shift` `(arrows)` | Panorâmica mais rápida                      |
+| `Esc`              | Vai da visualização Spec para a visualização de fluxo UX |
+| `Esc`              | Remove o foco do artboard na visualização de fluxo UX |
 
 {.shortcuts}
 
-### Keys for Prototyping
+### Teclas de edição vetorial
 
-| Shortcut           | Action                                            |
-| ------------------ | ------------------------------------------------- |
-| `Ctrl` `A`         | See all connections in prototype mode             |
-| `Ctrl` `Enter`     | Preview                                           |
-| `Ctrl` `Shift` `E` | Share prototype online                            |
-| `Left/Right`       | Navigate artboards in preview or shared prototype |
+| Atalho   | Ação                                        |
+| -------- | ------------------------------------------- |
+| `Enter`  | Inicia a edição do objeto vetorial selecionado |
+| `Esc`    | Encerra a edição do objeto vetorial selecionado |
 
 {.shortcuts}
 
-## Also see
+### Teclas de prototipagem
 
-- [Keyboard shortcuts for Adobe XD](https://helpx.adobe.com/xd/help/keyboard-shortcuts.html) _(helpx.adobe.com)_
+| Atalho             | Ação                                                 |
+| ------------------ | ---------------------------------------------------- |
+| `Ctrl` `A`         | Vê todas as conexões no modo protótipo               |
+| `Ctrl` `Enter`     | Visualizar                                           |
+| `Ctrl` `Shift` `E` | Compartilha o protótipo online                       |
+| `Left/Right`       | Navega pelos artboards na visualização ou no protótipo compartilhado |
+
+{.shortcuts}
+
+## Veja também
+
+- [Atalhos de teclado do Adobe XD](https://helpx.adobe.com/xd/help/keyboard-shortcuts.html) _(helpx.adobe.com)_

@@ -7,46 +7,45 @@ tags:
   - scan
   - port
 categories:
-  - Linux Command
+  - Comandos Linux
 intro:
-  This cheat sheet is intended to be a quick reminder for the main concepts involved in using the command line program
-  telnet and assumes you already understand its usage.
+  Este cheat sheet serve como lembrete rápido dos principais conceitos envolvidos no uso do programa de linha de comando
+  telnet e pressupõe que você já conhece sua utilização.
 plugins:
   - copyCode
 ---
 
-## Getting Started
+## Primeiros passos
 
-### Usage
+### Uso
 
-Standard usage (i.e. a host to connect can be by ip or by domain)
+Uso padrão (ou seja, um host para se conectar pode ser por IP ou por domínio)
 
 ```shell script
 $ telnet [options] target [port]
 ```
 
-communicate over http protocol
+comunique-se pelo protocolo http
 ```shell script
 $ telnet example.com 80
 ```
 
-create traceroute file
+crie um arquivo de traceroute
 ```shell script
 $ telnet example.com 80
 ```
 
 
-### Option examples
+### Exemplos de opções
 
-| Option | Example                                   | Operation                                            |
+| Opção  | Exemplo                                   | Operação                                             |
 | ------ | ----------------------------------------- | ---------------------------------------------------- |
-| `-E`   | telnet -E target port                      | To treat all characters as data and prevent dropping to command
-| `-e`   | telnet -e '^C' host                     | Set a custom escape character  instead of default ^]                   |
-| `-l`   | telnet -l alice host           |   Pass a username to the remote host              |
-| `-d`   | telnet -d host           |   Enable debug mode              |
-| `-l`   | telnet -n host           |   Creates a trace file              |
+| `-E`   | telnet -E target port                      | Trata todos os caracteres como dados e evita cair para o comando
+| `-e`   | telnet -e '^C' host                     | Define um caractere de escape personalizado em vez do padrão ^]                   |
+| `-l`   | telnet -l alice host           |   Passa um nome de usuário para o host remoto              |
+| `-d`   | telnet -d host           |   Ativa o modo de depuração              |
+| `-l`   | telnet -n host           |   Cria um arquivo de trace              |
 
-## Also see
+## Veja também
 
 - [Telnet manpage](https://www.commandlinux.com/man-page/man1/telnet.1.html)
-

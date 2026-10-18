@@ -1,5 +1,5 @@
 ---
-title: 'React Testing Library Cheat Sheet'
+title: 'Cheat sheet do React Testing Library'
 date: 2022-09-09 00:00:00
 background: bg-blue-500
 tags:
@@ -9,32 +9,32 @@ tags:
   - cheatsheet
 
 categories:
-  - Testing
+  - Testes
 
 intro: |
-  When it comes to testing React apps manually, we can either choose to render individual component trees in a simplified test environment or run the complete app in a realistic browser environment (end-to-end testing). But for automated tests, React Testing Library (RTL) is recommended for its user-centric approach and maintainability.
+  Quando se trata de testar aplicações React manualmente, podemos escolher renderizar árvores de componentes individuais em um ambiente de teste simplificado ou executar a aplicação completa em um navegador realista (teste end-to-end). Mas, para testes automatizados, o React Testing Library (RTL) é recomendado pela sua abordagem centrada no usuário e pela manutenibilidade.
 plugins:
   - copyCode
 ---
 
-## Introduction
+## Introdução
 
-React Testing Library is built on top of DOM Testing Library to test React components by querying and interacting with real DOM nodes, avoiding reliance on implementation details.
+O React Testing Library é construído sobre o DOM Testing Library para testar componentes React consultando e interagindo com nós reais do DOM, evitando depender de detalhes de implementação.
 
-## Basic level
+## Nível básico
 
-### 1. Purpose & Solution
+### 1. Propósito e solução
 
-RTL addresses maintainability by focusing on user-visible behavior:
+O RTL prioriza a manutenibilidade ao focar no comportamento visível para o usuário:
 
-- Tests run in actual DOM nodes.
-- Queries mirror user interactions.
-- `data-testid` as an escape hatch when needed.
-- Encourages accessibility.
+- Os testes são executados em nós reais do DOM.
+- As queries refletem as interações do usuário.
+- `data-testid` como válvula de escape quando necessário.
+- Incentiva a acessibilidade.
 
-### 2. A basic component render test
+### 2. Um teste básico de renderização de componente
 
-**Component (App.js):**
+**Componente (App.js):**
 
 ```js
 const title = 'Hello, World!';
@@ -46,7 +46,7 @@ function App() {
 export default App;
 ```
 
-**Test (App.test.js):**
+**Teste (App.test.js):**
 
 ```js
 import { render } from '@testing-library/react';
@@ -59,7 +59,7 @@ describe('App', () => {
 });
 ```
 
-Add debug to inspect output:
+Adicione debug para inspecionar a saída:
 
 ```js
 import { render, screen } from '@testing-library/react';
@@ -73,7 +73,7 @@ describe('App', () => {
 });
 ```
 
-Output in console:
+Saída no console:
 
 ```html
 <body>
@@ -83,13 +83,13 @@ Output in console:
 </body>
 ```
 
-### 3. Why use RTL vs Enzyme?
+### 3. Por que usar RTL em vez do Enzyme?
 
-1. Tests based on user interactions, not internal APIs.
-2. Improves maintainability after refactors.
-3. Intuitive syntax (`getByText`, `getByAltText`, etc.).
+1. Testes baseados em interações do usuário, não em APIs internas.
+2. Melhora a manutenibilidade após refatorações.
+3. Sintaxe intuitiva (`getByText`, `getByAltText`, etc.).
 
-### 4. Queries in RTL
+### 4. Queries no RTL
 
 ```js
 import { render, screen } from '@testing-library/react';
@@ -101,30 +101,30 @@ test('should show login form', () => {
 });
 ```
 
-**Single element queries:**
+**Queries de elemento único:**
 
-- `getBy*`: throws if none found
-- `queryBy*`: returns null if none
-- `findBy*`: async Promise
+- `getBy*`: lança erro se nada for encontrado
+- `queryBy*`: retorna null se nada for encontrado
+- `findBy*`: Promise assíncrona
 
-**Multiple elements queries:**
+**Queries de múltiplos elementos:**
 
-- `getAllBy*`: throws if none
-- `queryAllBy*`: returns \[] if none
-- `findAllBy*`: async Promise array
+- `getAllBy*`: lança erro se nada for encontrado
+- `queryAllBy*`: retorna \[] se nada for encontrado
+- `findAllBy*`: array de Promises assíncronas
 
-### 5. Component tree testing level
+### 5. Nível de teste da árvore de componentes
 
-- Test at user interaction level, not per individual child component unless needed.
+- Teste no nível de interação do usuário, não por componente filho individual, a menos que seja necessário.
 
-## Intermediate level
+## Nível intermediário
 
 ### 1. Jest vs RTL
 
-- **Jest**: Test runner & assertion library (`describe`, `test`, `expect`).
-- **RTL**: DOM utilities for React; works within Jest (or other runners).
+- **Jest**: executor de testes e biblioteca de asserções (`describe`, `test`, `expect`).
+- **RTL**: utilitários de DOM para React; funciona dentro do Jest (ou de outros runners).
 
-### 2. Mocking with MSW
+### 2. Mock com MSW
 
 ```js
 // fetch.test.jsx
@@ -163,7 +163,7 @@ test('handles server error', async () => {
 });
 ```
 
-### 3. `render` options
+### 3. Opções do `render`
 
 ```js
 import { render } from '@testing-library/react';
@@ -184,7 +184,7 @@ test('renders a message', () => {
 });
 ```
 
-### 4. `renderHook` usage
+### 4. Uso do `renderHook`
 
 ```js
 import { renderHook } from '@testing-library/react';
@@ -200,9 +200,9 @@ test('returns logged in user', () => {
 });
 ```
 
-## Advanced Level
+## Nível avançado
 
-### 1. Adding custom queries
+### 1. Adicionando queries personalizadas
 
 ```js
 const dom = require('@testing-library/dom');
@@ -237,7 +237,7 @@ export function getByTestId(container, id, ...rest) {
 }
 ```
 
-Or using `buildQueries`:
+Ou usando `buildQueries`:
 
 ```js
 const queryAllByDataCy = (...args) =>
@@ -255,18 +255,18 @@ const [
 );
 ```
 
-### 2. Skipping auto cleanup
+### 2. Ignorando a limpeza automática
 
 - Via CLI: `cross-env RTL_SKIP_AUTO_CLEANUP=true jest`
-- Or add to Jest `setupFiles`: `import '@testing-library/react/dont-cleanup-after-each';`
+- Ou adicione ao `setupFiles` do Jest: `import '@testing-library/react/dont-cleanup-after-each';`
 
-### 3. Migrating from Enzyme
+### 3. Migrando do Enzyme
 
-1. Install RTL & jest-dom.
-2. Replace `shallow`/`mount` with `render` + `screen`.
-3. Migrate tests incrementally.
+1. Instale o RTL e o jest-dom.
+2. Substitua `shallow`/`mount` por `render` + `screen`.
+3. Migre os testes de forma incremental.
 
-### 4. Querying within elements
+### 4. Consultando dentro de elementos
 
 ```js
 import { render, within } from '@testing-library/react';
@@ -276,7 +276,7 @@ const section = getByText('messages');
 const hello = within(section).getByText('hello');
 ```
 
-### 5. Integration testing
+### 5. Testes de integração
 
 ```js
 import { render, cleanup, waitFor } from '@testing-library/react';
@@ -305,6 +305,6 @@ test('user sees public repos', async () => {
 });
 ```
 
-## Conclusion
+## Conclusão
 
-This comprehensive cheat sheet covers basic to advanced RTL usage—rendering, querying, mocking, custom queries, and integration tests—to help you write robust, maintainable tests.
+Este cheat sheet abrangente cobre o uso do RTL do básico ao avançado — renderização, queries, mocking, queries personalizadas e testes de integração — para ajudar você a escrever testes robustos e de fácil manutenção.

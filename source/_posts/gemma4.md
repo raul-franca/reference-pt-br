@@ -9,16 +9,16 @@ tags:
   - multimodal
   - ai
 categories:
-  - AI
+  - IA
 intro: |
   [Gemma 4](https://deepmind.google/models/gemma/gemma-4/) is Google DeepMind's Apache 2.0 open-weights multimodal LLM family with frontier intelligence across four sizes, from mobile-edge to server-grade deployment.
 plugins:
   - copyCode
 ---
 
-## Getting Started
+## Primeiros passos
 
-### Quick Start {.row-span-2}
+### Início rápido {.row-span-2}
 
 ```python
 from transformers import AutoProcessor, AutoModelForCausalLM
@@ -58,33 +58,33 @@ result = processor.parse_response(response)
 # result["response"] → final answer shown to user
 ```
 
-### Introduction
+### Introdução
 
 - [Docs](https://ai.google.dev/gemma/docs/core) _(ai.google.dev)_
 - [Model Card](https://ai.google.dev/gemma/docs/core/model_card_4) _(ai.google.dev)_
 - [HuggingFace](https://huggingface.co/google) _(huggingface.co)_
 - [Cookbook](https://github.com/google-gemma/gemma-cookbook) _(github.com)_
 
-Released 2026-03-31 · Apache 2.0 · Built from Gemini 3 research · 140+ languages
+Lançado em 2026-03-31 · Apache 2.0 · Construído a partir da pesquisa do Gemini 3 · Mais de 140 idiomas
 
-### Install
+### Instalação
 
 ```bash
 $ pip install -U transformers torch accelerate
 ```
 
-All models: `google/<model-id>` on HuggingFace
+Todos os modelos: `google/<model-id>` no HuggingFace
 
-| Size    | Model ID             |
+| Tamanho | Model ID             |
 | ------- | -------------------- |
 | E2B     | `gemma-4-E2B-it`     |
 | E4B     | `gemma-4-E4B-it`     |
 | 31B     | `gemma-4-31b-it`     |
 | 26B A4B | `gemma-4-26b-a4b-it` |
 
-### Sampling Params
+### Parâmetros de amostragem
 
-| Parameter     | Value  |
+| Parâmetro     | Valor  |
 | ------------- | ------ |
 | `temperature` | `1.0`  |
 | `top_p`       | `0.95` |
@@ -92,18 +92,18 @@ All models: `google/<model-id>` on HuggingFace
 
 {.bold-first}
 
-### Best Practices
+### Boas práticas
 
-- Place images/audio **before** text in any prompt
-- Multi-turn: omit thought blocks from conversation history
-- Include 75%+ CoT data to preserve reasoning capability
-- Freeze vision layers when text-only fine-tuning
+- Coloque imagens/áudio **antes** do texto em qualquer prompt
+- Multi-turn: omita os blocos de pensamento do histórico da conversa
+- Inclua 75%+ de dados CoT para preservar a capacidade de raciocínio
+- Congele as camadas de visão no fine-tuning apenas de texto
 
-## Model Family {.cols-2}
+## Família de modelos {.cols-2}
 
-### Model Specs {.col-span-2}
+### Especificações dos modelos {.col-span-2}
 
-| Model   | Arch      | Total Params    | Active/Token | Layers | Context | Modalities       |
+| Modelo  | Arquitetura | Parâmetros totais | Ativos/Token | Camadas | Contexto | Modalidades      |
 | ------- | --------- | --------------- | ------------ | ------ | ------- | ---------------- |
 | E2B     | Dense+PLE | 5.1B (2.3B eff) | 2.3B         | 35     | 128K    | Text+Image+Audio |
 | E4B     | Dense+PLE | 8B (4.5B eff)   | 4.5B         | 42     | 128K    | Text+Image+Audio |
@@ -112,39 +112,39 @@ All models: `google/<model-id>` on HuggingFace
 
 {.show-header}
 
-Sliding window: 512 tokens (E2B/E4B) · 1024 tokens (31B/26B) · Vocab: 262K (all models)
+Janela deslizante: 512 tokens (E2B/E4B) · 1024 tokens (31B/26B) · Vocabulário: 262K (todos os modelos)
 
-### Architecture Features {.row-span-2}
+### Recursos da arquitetura {.row-span-2}
 
-#### Hybrid Attention
+#### Atenção híbrida
 
-- **Local** layers: sliding window (512 or 1024 tokens)
-- **Global** layers: full context, interleaved with local
-- Final layer is always a global attention layer
+- Camadas **locais**: janela deslizante (512 ou 1024 tokens)
+- Camadas **globais**: contexto completo, intercaladas com as locais
+- A última camada é sempre uma camada de atenção global
 
-#### PLE — Edge Models (E2B/E4B)
+#### PLE — Modelos edge (E2B/E4B)
 
-- Per-Layer Embeddings: each decoder layer has its own small embedding table
-- Large static tables use fast lookups — not dense matrix multiply
-- Effective compute parameters ≪ total loaded parameters
-- Enables inference under 1.5 GB VRAM (with 4-bit quantization)
+- Embeddings por camada: cada camada do decoder tem sua própria tabela pequena de embeddings
+- Tabelas estáticas grandes usam lookups rápidos — não multiplicação de matriz densa
+- Parâmetros efetivos de computação ≪ parâmetros totais carregados
+- Permite inferência com menos de 1.5 GB de VRAM (com quantização em 4 bits)
 
-#### p-RoPE & Shared KV Cache
+#### p-RoPE e KV cache compartilhado
 
-- Proportional RoPE (p-RoPE) on global layers for long-range coherence
-- Shared KV Cache across global layers reduces peak memory usage
-- Supports stable 256K context without performance degradation
+- RoPE proporcional (p-RoPE) nas camadas globais para coerência de longo alcance
+- O KV cache compartilhado entre as camadas globais reduz o pico de uso de memória
+- Suporta contexto estável de 256K sem degradação de desempenho
 
 #### MoE — 26B A4B
 
-- 128 total experts + 1 always-active shared expert
-- 8 experts activated per token at inference time
-- Speed similar to a 4B dense model, quality near 30B
-- Vision encoder: ~550M params (same as 31B)
+- 128 experts no total + 1 expert compartilhado sempre ativo
+- 8 experts ativados por token durante a inferência
+- Velocidade semelhante a um modelo denso de 4B, qualidade próxima de 30B
+- Encoder de visão: ~550M parâmetros (o mesmo do 31B)
 
-### Memory Requirements
+### Requisitos de memória
 
-| Model   | BF16 (16-bit) | 8-bit   | 4-bit   |
+| Modelo  | BF16 (16-bit) | 8-bit   | 4-bit   |
 | ------- | ------------- | ------- | ------- |
 | E2B     | 9.6 GB        | 4.6 GB  | 3.2 GB  |
 | E4B     | 15 GB         | 7.5 GB  | 5 GB    |
@@ -153,22 +153,22 @@ Sliding window: 512 tokens (E2B/E4B) · 1024 tokens (31B/26B) · Vocab: 262K (al
 
 {.show-header}
 
-Base weights only — add VRAM for KV cache.
+Apenas os pesos base — adicione VRAM para o KV cache.
 
-### Pick a Model
+### Escolha um modelo
 
-| Available VRAM  | Recommended |
+| VRAM disponível | Recomendado |
 | --------------- | ----------- |
 | < 5 GB          | E2B (4-bit) |
 | 5–8 GB          | E4B (4-bit) |
 | 15–20 GB        | E4B (BF16)  |
 | 24–32 GB        | 31B (4-bit) |
 | 48–80 GB        | 31B (BF16)  |
-| High throughput | 26B A4B     |
+| Alto throughput | 26B A4B     |
 
 ## Benchmarks {.cols-2}
 
-### Core Benchmarks {.col-span-2 .row-span-2}
+### Benchmarks principais {.col-span-2 .row-span-2}
 
 | Benchmark            | 31B   | 26B A4B | E4B   | E2B   | Gemma 3 27B |
 | -------------------- | ----- | ------- | ----- | ----- | ----------- |
@@ -185,9 +185,9 @@ Base weights only — add VRAM for KV cache.
 
 {.show-header}
 
-All results for instruction-tuned models with thinking mode enabled.
+Todos os resultados são de modelos instruction-tuned com o modo de pensamento ativado.
 
-### Vision Benchmarks
+### Benchmarks de visão
 
 | Benchmark     | 31B   | 26B A4B | E4B   | E2B   |
 | ------------- | ----- | ------- | ----- | ----- |
@@ -198,9 +198,9 @@ All results for instruction-tuned models with thinking mode enabled.
 
 {.show-header}
 
-OmniDocBench = document edit distance (lower is better).
+OmniDocBench = distância de edição de documentos (menor é melhor).
 
-### Long Context
+### Contexto longo
 
 | Benchmark    | 31B   | 26B A4B | E4B   | E2B   |
 | ------------ | ----- | ------- | ----- | ----- |
@@ -210,16 +210,16 @@ OmniDocBench = document edit distance (lower is better).
 
 #### Arena AI (LMSYS ELO)
 
-| Model           | ELO  | Open Rank |
+| Modelo          | ELO  | Ranking aberto |
 | --------------- | ---- | --------- |
 | Gemma 4 31B     | 1452 | #3        |
 | Gemma 4 26B A4B | 1441 | #6        |
 
-## Thinking Mode {.cols-2}
+## Modo de pensamento {.cols-2}
 
-### Thinking Control {.row-span-2}
+### Controle do pensamento {.row-span-2}
 
-Add `<|think|>` to the **start** of the system prompt:
+Adicione `<|think|>` ao **início** do system prompt:
 
 ```python
 messages = [
@@ -245,7 +245,7 @@ result = processor.parse_response(response)
 # result["response"] → final answer
 ```
 
-#### Thinking output structure
+#### Estrutura da saída de pensamento
 
 ```
 <|channel>thought
@@ -254,9 +254,9 @@ result = processor.parse_response(response)
 [Final answer visible to user]
 ```
 
-#### Disabled thinking behavior
+#### Comportamento com o pensamento desativado
 
-For 31B/26B A4B with `enable_thinking=False`, empty tags still emitted:
+Nos modelos 31B/26B A4B com `enable_thinking=False`, tags vazias ainda são emitidas:
 
 ```
 <|channel>thought
@@ -264,40 +264,40 @@ For 31B/26B A4B with `enable_thinking=False`, empty tags still emitted:
 [Final answer]
 ```
 
-E2B/E4B variants skip empty tags entirely when disabled.
+As variantes E2B/E4B ignoram completamente as tags vazias quando o pensamento está desativado.
 
-### Control Tokens
+### Tokens de controle
 
-| Token                  | Purpose                          |
+| Token                  | Finalidade                       |
 | ---------------------- | -------------------------------- |
-| `<\|think\|>`          | Enable thinking in system prompt |
-| `<\|channel>thought\n` | Open internal thought block      |
-| `<channel\|>`          | Close thought block              |
-| `<\|turn>`             | Open conversation turn           |
-| `<turn\|>`             | Close conversation turn          |
+| `<\|think\|>`          | Ativa o pensamento no system prompt |
+| `<\|channel>thought\n` | Abre o bloco de pensamento interno |
+| `<channel\|>`          | Fecha o bloco de pensamento      |
+| `<\|turn>`             | Abre o turno da conversa         |
+| `<turn\|>`             | Fecha o turno da conversa        |
 
 {.bold-first}
 
-### Multi-turn Rules
+### Regras multi-turn
 
-- **Do not** include thought content in conversation history
-- Pass only `result["response"]` as the model turn
-- Longer `max_new_tokens` for complex reasoning tasks
-- Use `enable_thinking=True` for AIME, proofs, debugging
+- **Não** inclua o conteúdo de pensamento no histórico da conversa
+- Passe apenas `result["response"]` como o turno do modelo
+- Use `max_new_tokens` maior para tarefas de raciocínio complexas
+- Use `enable_thinking=True` para AIME, provas e debugging
 
 ## Multimodal {.cols-3}
 
-### Image Inputs {.row-span-2}
+### Entradas de imagem {.row-span-2}
 
-Variable aspect ratio + configurable **visual token budget**:
+Proporção variável + **orçamento de tokens visuais** configurável:
 
-| Budget | Best For                          |
+| Orçamento | Melhor para                       |
 | ------ | --------------------------------- |
-| 70     | Fast classification, video frames |
-| 140    | Captions, thumbnails              |
-| 280    | General image understanding       |
-| 560    | Charts, diagrams                  |
-| 1120   | OCR, PDF parsing, fine detail     |
+| 70     | Classificação rápida, frames de vídeo |
+| 140    | Legendas, miniaturas              |
+| 280    | Compreensão geral de imagens      |
+| 560    | Gráficos, diagramas               |
+| 1120   | OCR, parsing de PDF, detalhes finos |
 
 ```python
 # Image MUST come before text (required)
@@ -312,36 +312,36 @@ inputs = processor(
 ).to(model.device)
 ```
 
-Vision encoder: ~150M params (E2B/E4B) · ~550M params (31B/26B)
+Encoder de visão: ~150M parâmetros (E2B/E4B) · ~550M parâmetros (31B/26B)
 
-### Audio Inputs
+### Entradas de áudio
 
-**E2B and E4B only** (~300M audio encoder)
+**Apenas E2B e E4B** (encoder de áudio de ~300M)
 
-- Max audio: **30 seconds**
-- Tasks: ASR and speech translation
+- Áudio máximo: **30 segundos**
+- Tarefas: ASR e tradução de fala
 
-#### ASR prompt
+#### Prompt de ASR
 
 ```
 Transcribe the following speech in
 {LANGUAGE} into {LANGUAGE} text.
 ```
 
-#### Translation prompt
+#### Prompt de tradução
 
 ```
 Transcribe in {SRC_LANG}, then
 translate to {TARGET_LANG}.
 ```
 
-### Video Inputs
+### Entradas de vídeo
 
-Processed as **sequential image frames**:
+Processadas como **frames de imagem sequenciais**:
 
-- Max: **60 seconds** at 1 fps = 60 frames
-- Use **low token budget** (70–140) per frame
-- E2B/E4B: also processes audio track simultaneously
+- Máximo: **60 segundos** a 1 fps = 60 frames
+- Use um **orçamento de tokens baixo** (70–140) por frame
+- E2B/E4B: também processa a faixa de áudio simultaneamente
 
 ```python
 # Pass frames as list of images
@@ -352,9 +352,9 @@ inputs = processor(
 )
 ```
 
-### Modality Order {.secondary}
+### Ordem das modalidades {.secondary}
 
-Always place **image/audio before text** in content:
+Sempre coloque **imagem/áudio antes do texto** no conteúdo:
 
 ```python
 # ✅ Correct order
@@ -370,7 +370,7 @@ content = [
 ]
 ```
 
-## Deployment {.cols-3}
+## Deploy {.cols-3}
 
 ### HuggingFace {.row-span-2}
 
@@ -378,7 +378,7 @@ content = [
 $ pip install -U transformers accelerate
 ```
 
-#### BF16 (default)
+#### BF16 (padrão)
 
 ```python
 from transformers import (
@@ -395,7 +395,7 @@ model = AutoModelForCausalLM.from_pretrained(
 )
 ```
 
-#### 4-bit quantized
+#### Quantizado em 4 bits
 
 ```python
 from transformers import BitsAndBytesConfig
@@ -417,7 +417,7 @@ $ ollama pull gemma4:e2b       # edge 2B variant
 $ ollama run  gemma4           # interactive chat
 ```
 
-#### Custom GGUF (Modelfile)
+#### GGUF personalizado (Modelfile)
 
 ```bash
 FROM /path/to/fine-tuned.gguf
@@ -429,7 +429,7 @@ $ ollama create mygemma -f Modelfile
 $ ollama run mygemma
 ```
 
-### vLLM Server
+### Servidor vLLM
 
 ```bash
 $ vllm serve google/gemma-4-31B-it \
@@ -439,37 +439,37 @@ $ vllm serve google/gemma-4-31B-it \
   --reasoning-parser gemma4
 ```
 
-OpenAI-compatible API at `http://localhost:8000/v1`
+API compatível com OpenAI em `http://localhost:8000/v1`
 
-### Cloud & API
+### Cloud e API
 
-| Platform   | Notes              |
+| Plataforma | Observações        |
 | ---------- | ------------------ |
 | Gemini API | `gemma-4-31b-it`   |
-| AI Studio  | Browser playground |
-| Vertex AI  | Custom endpoint    |
+| AI Studio  | Playground no navegador |
+| Vertex AI  | Endpoint personalizado |
 | Cloud Run  | Serverless GPU     |
-| GKE + vLLM | Auto-scale         |
+| GKE + vLLM | Escala automática  |
 
 {.bold-first}
 
-### Edge & Mobile
+### Edge e mobile
 
-| Runtime          | Best For          |
+| Runtime          | Melhor para       |
 | ---------------- | ----------------- |
-| AICore (Android) | System-level API  |
+| AICore (Android) | API de nível de sistema |
 | LiteRT-LM        | IoT, Raspberry Pi |
-| AI Edge Gallery  | On-device eval    |
-| LM Studio        | Desktop GUI       |
-| llama.cpp        | CPU/GPU hybrid    |
+| AI Edge Gallery  | Avaliação on-device |
+| LM Studio        | GUI para desktop  |
+| llama.cpp        | Híbrido CPU/GPU   |
 
 {.bold-first}
 
-## Fine-Tuning {.cols-2}
+## Fine-tuning {.cols-2}
 
-### QLoRA Setup {.row-span-2}
+### Configuração do QLoRA {.row-span-2}
 
-Single **16 GB GPU** (T4/free Colab or Kaggle):
+Uma única **GPU de 16 GB** (T4/Colab gratuito ou Kaggle):
 
 ```python
 from unsloth import FastModel
@@ -493,7 +493,7 @@ model = FastModel.get_peft_model(
 )
 ```
 
-#### Vision fine-tuning (E2B / E4B)
+#### Fine-tuning de visão (E2B / E4B)
 
 ```python
 from unsloth import FastVisionModel
@@ -506,74 +506,74 @@ model, tokenizer = FastVisionModel.from_pretrained(
 )
 ```
 
-### MoE Fine-tuning
+### Fine-tuning de MoE
 
-For **26B A4B** — full fine-tune breaks expert routing:
+Para o **26B A4B** — o fine-tuning completo quebra o roteamento de experts:
 
-- Use **LoRA bf16** only (never FFT)
-- Start with `r=16`, `lora_alpha=16`
-- Increase context length gradually after loss converges
-- Avoid targeting expert router weight matrices
+- Use apenas **LoRA bf16** (nunca FFT)
+- Comece com `r=16`, `lora_alpha=16`
+- Aumente o comprimento do contexto gradualmente depois que o loss convergir
+- Evite atingir as matrizes de peso do roteador de experts
 
-### Data Requirements
+### Requisitos de dados
 
-| Requirement      | Value                         |
+| Requisito        | Valor                         |
 | ---------------- | ----------------------------- |
-| CoT data ratio   | ≥ 75% of training set         |
-| Thinking format  | Include `<\|think\|>` trigger |
-| Multimodal order | Images/audio before text      |
-| Chat template    | ShareGPT or OpenAI format     |
-| RL reward        | Verifiable final answer       |
+| Proporção de dados CoT | ≥ 75% do conjunto de treino |
+| Formato de pensamento | Inclui o gatilho `<\|think\|>` |
+| Ordem multimodal | Imagens/áudio antes do texto  |
+| Chat template    | Formato ShareGPT ou OpenAI    |
+| Recompensa de RL | Resposta final verificável    |
 
 {.bold-first}
 
-### Vision Fine-tune Tips
+### Dicas para fine-tuning de visão
 
-1. **Freeze vision first** — `finetune_vision_layers=False`
-2. Fine-tune LLM + attention + MLP projectors only
-3. Validate text-domain quality before unfreezing
-4. Unfreeze vision only for domain-specific images
-5. Low token budget (70–280) saves VRAM during training
+1. **Congele a visão primeiro** — `finetune_vision_layers=False`
+2. Faça fine-tuning apenas do LLM + projetores de atenção + MLP
+3. Valide a qualidade no domínio de texto antes de descongelar
+4. Descongele a visão apenas para imagens específicas do domínio
+5. Orçamento de tokens baixo (70–280) economiza VRAM durante o treino
 
 ## Gemmaverse {.cols-3}
 
-### Specialist Models {.col-span-2}
+### Modelos especialistas {.col-span-2}
 
-| Model         | Domain          | Description                         |
+| Modelo        | Domínio         | Descrição                           |
 | ------------- | --------------- | ----------------------------------- |
-| MedGemma 4B   | Medical imaging | Multimodal X-ray/MRI analysis       |
-| MedGemma 27B  | Clinical text   | EHR + medical report reasoning      |
-| CodeGemma     | Coding          | Code completion & refactoring       |
-| PaliGemma 2   | Visual-language | Fine-grained VLM & visual reasoning |
-| ShieldGemma   | Safety          | LLM output safety classifier        |
-| DataGemma     | Factual data    | Grounded via Google Data Commons    |
-| FunctionGemma | Tool calling    | Low-resource function call parsing  |
+| MedGemma 4B   | Imagem médica   | Análise multimodal de raio-X/RM     |
+| MedGemma 27B  | Texto clínico   | Raciocínio sobre EHR + laudos médicos |
+| CodeGemma     | Programação     | Conclusão de código e refatoração   |
+| PaliGemma 2   | Visual-linguagem | VLM de granularidade fina e raciocínio visual |
+| ShieldGemma   | Segurança       | Classificador de segurança da saída do LLM |
+| DataGemma     | Dados factuais  | Fundamentado via Google Data Commons |
+| FunctionGemma | Chamada de ferramentas | Parsing de function call com poucos recursos |
 
 {.show-header}
 
-### Ecosystem
+### Ecossistema
 
-**Libraries & Frameworks**
+**Bibliotecas e frameworks**
 
 - ADK (Agent Development Kit)
 - JAX Gemma Library (`google-deepmind/gemma`)
 - Gemma Cookbook (`google-gemma/gemma-cookbook`)
 - `google/adk-samples` starter agents
 
-**Community Variants**
+**Variantes da comunidade**
 
-- 100K+ community fine-tuned derivatives
-- RecurrentGemma (Griffin architecture)
+- Mais de 100 mil derivados com fine-tuning da comunidade
+- RecurrentGemma (arquitetura Griffin)
 - EmbeddingGemma, T5Gemma 2
-- VaultGemma (differential privacy)
+- VaultGemma (privacidade diferencial)
 
-## Also see {.cols-1}
+## Veja também {.cols-1}
 
-- [Official Docs](https://ai.google.dev/gemma/docs/core) _(ai.google.dev)_
+- [Documentação oficial](https://ai.google.dev/gemma/docs/core) _(ai.google.dev)_
 - [Model Card](https://ai.google.dev/gemma/docs/core/model_card_4) _(ai.google.dev)_
-- [DeepMind Models Page](https://deepmind.google/models/gemma/gemma-4/) _(deepmind.google)_
+- [Página de modelos do DeepMind](https://deepmind.google/models/gemma/gemma-4/) _(deepmind.google)_
 - [HuggingFace](https://huggingface.co/google) _(huggingface.co)_
 - [Gemma Cookbook](https://github.com/google-gemma/gemma-cookbook) _(github.com)_
 - [JAX Gemma Library](https://github.com/google-deepmind/gemma) _(github.com)_
-- [vLLM Usage Guide](https://docs.vllm.ai/projects/recipes/en/latest/Google/Gemma4.html) _(docs.vllm.ai)_
-- [Ollama Library](https://ollama.com/library/gemma4) _(ollama.com)_
+- [Guia de uso do vLLM](https://docs.vllm.ai/projects/recipes/en/latest/Google/Gemma4.html) _(docs.vllm.ai)_
+- [Biblioteca do Ollama](https://ollama.com/library/gemma4) _(ollama.com)_

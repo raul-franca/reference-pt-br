@@ -1,34 +1,34 @@
 ---
-title: About
+title: Sobre
 date: 2020-03-26 20:45:53
 ---
 
-Welcome to [CheatSheets] – your go-to resource for [describing content]. Designed with
-[developers/students/professionals] in mind, our quick reference provides a comprehensive collection of
-[topics/sections] to help you [solve problems/learn efficiently/etc.].
+Bem-vindo ao [CheatSheets] – seu ponto de referência para [descrever conteúdo]. Pensado para
+[desenvolvedores/estudantes/profissionais], nossa referência rápida reúne uma coleção abrangente de
+[tópicos/seções] para ajudar você a [resolver problemas/aprender com eficiência/etc.].
 
-Our user-friendly interface ensures rapid access to the information you need. Whether you're [coding/studying/working],
-you'll find [specific benefits or standout features].
+Nossa interface amigável garante acesso rápido às informações de que você precisa. Seja para [programar/estudar/trabalhar],
+você vai encontrar [benefícios específicos ou recursos de destaque].
 
-Key Features:
+Principais recursos:
 
-- Users can grasp essential concepts or instructions in a short period, making cheat sheets ideal for learning on the
-  go.
-- By offering quick access to frequently used information, cheat sheets boost productivity by reducing the need to
-  search or look up details repeatedly.
-- Cheat sheets often organize information in a structured format, making it easier for users to follow steps or
-  understand relationships between concepts.
-- Quality cheat sheets are often updated to reflect the latest information, ensuring accuracy and relevance.
-- Cheat sheets can be used as study aids, helping learners memorize key information, formulas, or concepts.
-- In programming or technical fields, cheat sheets offer quick syntax references, ensuring proper code usage.
-- By avoiding the need to seek through lengthy documentation, cheat sheets save users valuable time during tasks or
-  learning.
-- Digital cheat sheets are easily searchable, and users can quickly find what they need by using keywords or phrases.
-- Cheat sheets act as a rapid review tool, allowing users to refresh their memory on topics they've previously learned.
+- Os usuários assimilam conceitos ou instruções essenciais em pouco tempo, o que torna as cheat sheets ideais para aprender
+  em qualquer lugar.
+- Ao oferecer acesso rápido a informações usadas com frequência, as cheat sheets aumentam a produtividade e reduzem a
+  necessidade de buscar ou consultar detalhes repetidamente.
+- As cheat sheets costumam organizar o conteúdo em formato estruturado, facilitando acompanhar etapas ou
+  entender relações entre conceitos.
+- Cheat sheets de qualidade são atualizadas com frequência para refletir as informações mais recentes, garantindo precisão e relevância.
+- Cheat sheets podem servir como material de estudo, ajudando quem aprende a memorizar informações, fórmulas ou conceitos-chave.
+- Em programação ou áreas técnicas, as cheat sheets oferecem referências rápidas de sintaxe, garantindo o uso correto do código.
+- Ao eliminar a necessidade de procurar em documentações extensas, as cheat sheets economizam tempo valioso durante tarefas ou
+  estudos.
+- Cheat sheets digitais são fáceis de pesquisar, e os usuários encontram rapidamente o que precisam usando palavras-chave ou frases.
+- As cheat sheets funcionam como ferramenta de revisão rápida, permitindo relembrar tópicos já estudados.
 
-Our team of experts has meticulously crafted this reference to provide instant information. We're committed to evolving
-our content to meet your needs and bring out fascinating upgrades in the future.
+Nossa equipe de especialistas elaborou esta referência com cuidado para oferecer informação instantânea. Estamos comprometidos
+a evoluir nosso conteúdo para atender às suas necessidades e trazer melhorias fascinantes no futuro.
 
-Start exploring now and make [https://cheatsheets.zip] your trusted companion in [area/topic]!!
+Comece a explorar agora e faça de [https://cheatsheets.zip] seu companheiro de confiança em [área/tópico]!!
 
-Have feedback or suggestions? Reach out to us at [https://twitter.com/FechinLi].
+Tem feedback ou sugestões? Fale com a gente em [https://twitter.com/FechinLi].

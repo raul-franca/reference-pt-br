@@ -7,16 +7,16 @@ tags:
   - crontab
   - time
 categories:
-  - Linux Command
+  - Comandos Linux
 intro: |
-  [Cron](https://en.wikipedia.org/wiki/Cron) is most suitable for scheduling repetitive tasks. Scheduling one-time tasks can be accomplished using the associated at utility.
+  [Cron](https://en.wikipedia.org/wiki/Cron) é mais adequado para agendar tarefas repetitivas. O agendamento de tarefas pontuais pode ser feito com o utilitário at associado.
 plugins:
   - copyCode
 ---
 
-## Crontab Format {.cols-2}
+## Formato do crontab {.cols-2}
 
-### Format
+### Formato
 
 ```
 Min  Hour Day  Mon  Weekday
@@ -39,76 +39,76 @@ Min  Hour Day  Mon  Weekday
 
 ---
 
-| Field        | Range  | Special characters |
-| ------------ | ------ | ------------------ |
-| Minute       | 0 - 59 | , - \* /           |
-| Hour         | 0 - 23 | , - \* /           |
-| Day of Month | 1 - 31 | , - \* ? / L W     |
-| Month        | 1 - 12 | , - \* /           |
-| Day of Week  | 0 - 6  | , - \* ? / L #     |
+| Campo        | Intervalo | Caracteres especiais |
+| ------------ | --------- | -------------------- |
+| Minuto       | 0 - 59    | , - \* /             |
+| Hora         | 0 - 23    | , - \* /             |
+| Dia do mês   | 1 - 31    | , - \* ? / L W       |
+| Mês          | 1 - 12    | , - \* /             |
+| Dia da semana| 0 - 6     | , - \* ? / L #       |
 
 {.show-header}
 
-### Examples
+### Exemplos
 
-| Example        | Description                                                        |
+| Exemplo        | Descrição                                                          |
 | -------------- |--------------------------------------------------------------------|
-| `*/15 * * * *` | Every 15 mins                                                      |
-| `0 * * * *`    | Every hour                                                         |
-| `0 */2 * * *`  | Every 2 hours                                                      |
-| `15 2 * * *`   | At 2:15AM (of every day)                                           |
-| `15 2 * * ?`   | At 2:15AM (of every day)                                           |
-| `10 9 * * 5`   | At 9:10AM (of every Friday)                                        |
-| `0 0 * * 0`    | At 12:00 AM, only on Sunday                                        |
-| `15 2 * * 1L`  | At 2:15am on the last monday of every month                        |
-| `15 0 * * 4#2` | At 00:15am on the second thursday of every month                   |
-| `0 0 1 * *`    | At 12:00 AM, on day 1 of the month (1st of month / monthly)        |
-| `0 0 1 1 *`    | At 12:00 AM, on day 1 of the month, only in January (1st of month) |
-| `@reboot`      | Every reboot <br>_(non-standard)_                                  |
+| `*/15 * * * *` | A cada 15 minutos                                                  |
+| `0 * * * *`    | A cada hora                                                        |
+| `0 */2 * * *`  | A cada 2 horas                                                     |
+| `15 2 * * *`   | Às 2h15 (de todos os dias)                                         |
+| `15 2 * * ?`   | Às 2h15 (de todos os dias)                                         |
+| `10 9 * * 5`   | Às 9h10 (de toda sexta-feira)                                      |
+| `0 0 * * 0`    | Às 00h00, somente aos domingos                                     |
+| `15 2 * * 1L`  | Às 2h15 da última segunda-feira de cada mês                        |
+| `15 0 * * 4#2` | Às 00h15 da segunda quinta-feira de cada mês                       |
+| `0 0 1 * *`    | Às 00h00, no dia 1 do mês (primeiro dia do mês / mensal)           |
+| `0 0 1 1 *`    | Às 00h00, no dia 1 do mês, somente em janeiro (primeiro dia do mês) |
+| `@reboot`      | A cada reboot <br>_(não padrão)_                                   |
 
 
-### Cron Generator {.col-span-3}
+### Gerador de cron {.col-span-3}
 
 <widget name="cron"/>
 
 
-### Special strings
+### Strings especiais
 
-| Special String | Meaning                                              |
-| -------------- | ---------------------------------------------------- |
-| @reboot        | Run once, at system startup _(non-standard)_         |
-| @yearly        | Run once every year, "0 0 1 1 \*" _(non-standard)_   |
-| @annually      | (same as @yearly) _(non-standard)_                   |
-| @monthly       | Run once every month, "0 0 1 \* \*" _(non-standard)_ |
-| @weekly        | Run once every week, "0 0 \* \* 0" _(non-standard)_  |
-| @daily         | Run once each day, "0 0 \* \* \*" _(non-standard)_   |
-| @midnight      | (same as @daily) _(non-standard)_                    |
-| @hourly        | Run once an hour, "0 \* \* \* \*" _(non-standard)_   |
+| String especial | Significado                                          |
+| --------------- | ---------------------------------------------------- |
+| @reboot         | Executa uma vez, na inicialização do sistema _(não padrão)_ |
+| @yearly         | Executa uma vez por ano, "0 0 1 1 \*" _(não padrão)_   |
+| @annually       | (igual a @yearly) _(não padrão)_                     |
+| @monthly        | Executa uma vez por mês, "0 0 1 \* \*" _(não padrão)_  |
+| @weekly         | Executa uma vez por semana, "0 0 \* \* 0" _(não padrão)_ |
+| @daily          | Executa uma vez por dia, "0 0 \* \* \*" _(não padrão)_ |
+| @midnight       | (igual a @daily) _(não padrão)_                      |
+| @hourly         | Executa uma vez por hora, "0 \* \* \* \*" _(não padrão)_ |
 
-### Crontab command
+### Comando crontab
 
 | -            | -                                                                       |
 | ------------ | ----------------------------------------------------------------------- |
-| `crontab -e` | Edit or create a crontab file if doesn’t already exist.                 |
-| `crontab -l` | Display the crontab file.                                               |
-| `crontab -r` | Remove the crontab file.                                                |
-| `crontab -v` | Display the last time you edited your crontab file.<br>_(non-standard)_ |
+| `crontab -e` | Edita ou cria um arquivo crontab, caso ainda não exista.                |
+| `crontab -l` | Exibe o arquivo crontab.                                                |
+| `crontab -r` | Remove o arquivo crontab.                                               |
+| `crontab -v` | Exibe a última vez que você editou seu arquivo crontab.<br>_(não padrão)_ |
 
 {.shortcuts}
 
-### Special characters {.col-span-2}
+### Caracteres especiais {.col-span-2}
 
-| Special Character   | Description                                                                                                                                          |
+| Caractere especial  | Descrição                                                                                                                                          |
 | ------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `Asterik(*)`        | Matches all values in the field or any possible value.                                                                                               |
-| `Hyphen(-)`         | Used to define a range.Ex: 1-5 in 5th field(Day Of Week) Every Weekday i.e., Monday to Friday                                                        |
-| `Slash (/)`         | 1st field(Minute) /15 meaning every fifteen minute or increment of range.                                                                            |
-| `Comma (,)`         | Used to separate items.Ex: 2,6,8 in 2nd fields(Hour) executes at 2am,6am and 8am                                                                     |
-| `L`                 | It is allowed only for Day of Month or Day Of Week field, 2L in Day of week indicates Last tuesday of every month                                    |
-| `Hash (#)`          | It is allowed only for Day Of Week field, which must be followed within range of 1 to 5. For example, 4#1 means "The first Thursday" of given month. |
-| `Question mark (?)` | Can be instead of '\*' and allowed for Day of Month and Day Of Week. Usage is restricted to either Day of Month or Day Of Week in a cron expression. |
+| `Asterik(*)`        | Corresponde a todos os valores do campo ou a qualquer valor possível.                                                                               |
+| `Hyphen(-)`         | Usado para definir um intervalo. Ex.: 1-5 no 5º campo (dia da semana) significa todos os dias úteis, ou seja, de segunda a sexta.                    |
+| `Slash (/)`         | No 1º campo (minuto), /15 significa a cada quinze minutos ou um incremento do intervalo.                                                            |
+| `Comma (,)`         | Usado para separar itens. Ex.: 2,6,8 no 2º campo (hora) executa às 2h, 6h e 8h.                                                                     |
+| `L`                 | Permitido apenas nos campos dia do mês ou dia da semana; 2L no dia da semana indica a última terça-feira de cada mês.                                |
+| `Hash (#)`          | Permitido apenas no campo dia da semana, que deve ser seguido por um valor entre 1 e 5. Por exemplo, 4#1 significa "a primeira quinta-feira" do mês em questão. |
+| `Question mark (?)` | Pode ser usado no lugar de '\*' e é permitido nos campos dia do mês e dia da semana. O uso é restrito a apenas um desses dois campos em uma expressão cron. |
 
-## Also see {.cols-1}
+## Veja também {.cols-1}
 
 - [Devhints](https://devhints.io/cron) _(devhints.io)_
 - [Crontab Generator](https://crontab-generator.org/) _(crontab-generator.org)_

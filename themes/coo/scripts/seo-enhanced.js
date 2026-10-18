@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-// Generate more detailed page descriptions
+// Gera descrições de página mais detalhadas
 hexo.extend.helper.register('enhanced_page_description', function () {
   let description = '';
 
@@ -25,10 +25,10 @@ hexo.extend.helper.register('enhanced_page_description', function () {
     description = this.config.description || '';
   }
 
-  // Clean up description text
+  // Limpa o texto da descrição
   description = description.replace(/[\r\n\s\s+]+/g, ' ').trim();
 
-  // Ensure description ends with a period
+  // Garante que a descrição termine com ponto final
   if (
     description &&
     !description.endsWith('.') &&
@@ -41,41 +41,41 @@ hexo.extend.helper.register('enhanced_page_description', function () {
   return description;
 });
 
-// Generate article reading time estimate
+// Gera a estimativa de tempo de leitura do artigo
 hexo.extend.helper.register('reading_time', function (content) {
-  if (!content) return '2 min read';
+  if (!content) return '2 min de leitura';
 
   const wordsPerMinute = 200;
   const textContent = this.strip_html(content);
   const wordCount = textContent.split(/\s+/).length;
   const readingTime = Math.ceil(wordCount / wordsPerMinute);
 
-  return `${readingTime} min read`;
+  return `${readingTime} min de leitura`;
 });
 
-// Generate related keywords
+// Gera palavras-chave relacionadas
 hexo.extend.helper.register('related_keywords', function () {
   let keywords = [];
 
   if (this.is_post()) {
-    // Basic keywords
+    // Palavras-chave básicas
     keywords.push('cheat sheet', 'quick reference', 'guide', 'tutorial');
 
-    // Add page title keywords
+    // Adiciona palavras-chave do título da página
     if (this.page.title) {
       keywords.push(this.page.title.toLowerCase());
       keywords.push(`${this.page.title.toLowerCase()} guide`);
       keywords.push(`${this.page.title.toLowerCase()} commands`);
     }
 
-    // Add category keywords
+    // Adiciona palavras-chave da categoria
     if (this.page.categories && this.page.categories.each) {
       this.page.categories.each(function (cat) {
         keywords.push(cat.name.toLowerCase());
       });
     }
 
-    // Add tag keywords
+    // Adiciona palavras-chave da tag
     if (this.page.tags && this.page.tags.each) {
       this.page.tags.each(function (tag) {
         keywords.push(tag.name.toLowerCase());
@@ -86,7 +86,7 @@ hexo.extend.helper.register('related_keywords', function () {
   return [...new Set(keywords)].join(', ');
 });
 
-// Generate page type
+// Gera o tipo de página
 hexo.extend.helper.register('page_type', function () {
   if (this.is_home()) return 'homepage';
   if (this.is_post()) return 'cheatsheet';
@@ -94,29 +94,29 @@ hexo.extend.helper.register('page_type', function () {
   return 'other';
 });
 
-// Generate estimated word count
+// Gera a contagem estimada de palavras
 hexo.extend.helper.register('word_count', function (content) {
   if (!content) return 0;
   const textContent = this.strip_html(content);
   return textContent.split(/\s+/).length;
 });
 
-// Check if there is a table of contents
+// Verifica se há um índice
 hexo.extend.helper.register('has_toc', function (content) {
   if (!content) return false;
 
-  // Check if there are title elements
+  // Verifica se há elementos de título
   const headingRegex = /<h[1-6][^>]*>/gi;
   const headings = content.match(headingRegex);
 
   return headings && headings.length >= 3;
 });
 
-// Generate breadcrumb data
+// Gera os dados da breadcrumb
 hexo.extend.helper.register('breadcrumb_data', function () {
   const breadcrumbs = [];
 
-  // Homepage link
+  // Link da página inicial
   breadcrumbs.push({
     name: 'Home',
     url: this.config.url,
@@ -124,7 +124,7 @@ hexo.extend.helper.register('breadcrumb_data', function () {
   });
 
   if (this.is_post()) {
-    // Category link
+    // Link da categoria
     if (this.page.categories && this.page.categories.length > 0) {
       const mainCategory = this.page.categories.toArray()[0];
       breadcrumbs.push({
@@ -133,14 +133,14 @@ hexo.extend.helper.register('breadcrumb_data', function () {
         position: 2
       });
 
-      // Current page
+      // Página atual
       breadcrumbs.push({
         name: `${this.page.title} Cheat Sheet`,
         url: this.clean_url(this.url),
         position: 3
       });
     } else {
-      // Current page
+      // Página atual
       breadcrumbs.push({
         name: `${this.page.title} Cheat Sheet`,
         url: this.clean_url(this.url),
@@ -148,7 +148,7 @@ hexo.extend.helper.register('breadcrumb_data', function () {
       });
     }
   } else if (this.is_page()) {
-    // Current page
+    // Página atual
     breadcrumbs.push({
       name: this.page.title,
       url: this.clean_url(this.url),
@@ -159,25 +159,25 @@ hexo.extend.helper.register('breadcrumb_data', function () {
   return breadcrumbs;
 });
 
-// Generate technical article specific meta information
+// Gera metainformações específicas de artigos técnicos
 hexo.extend.helper.register('tech_article_meta', function () {
   if (!this.is_post()) return {};
 
   const meta = {
-    difficulty: 'Beginner to Advanced',
-    audience: 'Developers, Programmers, System Administrators',
-    type: 'Quick Reference Guide',
-    format: 'Cheat Sheet'
+    difficulty: 'Do básico ao avançado',
+    audience: 'Desenvolvedores, programadores e administradores de sistemas',
+    type: 'Guia de referência rápida',
+    format: 'Cheat sheet'
   };
 
   // Adjust difficulty based on category
   if (this.page.categories && this.page.categories.each) {
     this.page.categories.each(function (cat) {
       if (cat.name.includes('Linux') || cat.name.includes('Command')) {
-        meta.difficulty = 'Intermediate to Advanced';
-        meta.audience = 'System Administrators, DevOps Engineers, Developers';
-      } else if (cat.name.includes('Programming')) {
-        meta.audience = 'Developers, Software Engineers, Programmers';
+        meta.difficulty = 'Do intermediário ao avançado';
+        meta.audience = 'Administradores de sistemas, engenheiros DevOps e desenvolvedores';
+      } else if (cat.name.includes('Programação')) {
+        meta.audience = 'Desenvolvedores, engenheiros de software e programadores';
       }
     });
   }

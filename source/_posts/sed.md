@@ -8,24 +8,24 @@ tags:
   - text
   - utility
 categories:
-  - Linux Command
+  - Comandos Linux
 intro: |
-  [Sed](https://www.gnu.org/software/sed/manual/sed.html) is a stream editor, this sed cheat sheet contains sed commands and some common sed tricks.
+  [Sed](https://www.gnu.org/software/sed/manual/sed.html) é um stream editor; este cheat sheet do sed reúne comandos sed e alguns truques comuns.
 plugins:
   - copyCode
 ---
 
-## Getting Started
+## Primeiros passos
 
-### Sed Usage
+### Uso do sed
 
-Syntax
+Sintaxe
 
 ```shell script
 $ sed [options] command [input-file]
 ```
 
-With pipeline
+Com pipeline
 
 ```shell script
 $ cat report.txt | sed 's/Nick/John/g'
@@ -35,28 +35,28 @@ $ cat report.txt | sed 's/Nick/John/g'
 $ echo '123abc' | sed 's/[0-9]+//g'
 ```
 
-### Option Examples {.col-span-2}
+### Exemplos de opções {.col-span-2}
 
-| Option | Example                                    | Description                             |
+| Opção | Exemplo                                    | Descrição                               |
 | ------ | ------------------------------------------ | --------------------------------------- |
-| `-i`   | sed -ibak 's/On/Off/' php.ini              | Backup and modify input file directly   |
-| `-E`   | sed -E 's/[0-9]+//g' input-file            | Use extended regular expressions        |
-| `-n`   | sed -n '3 p' config.conf                   | Suppress default pattern space printing |
-| `-f`   | sed -f script.sed config.conf              | Execute sed script file                 |
-| `-e`   | sed -e 'command1' -e 'command2' input-file | Execute multiple sed commands           |
+| `-i`   | sed -ibak 's/On/Off/' php.ini              | Faz backup e modifica o arquivo de entrada diretamente |
+| `-E`   | sed -E 's/[0-9]+//g' input-file            | Usa expressões regulares estendidas     |
+| `-n`   | sed -n '3 p' config.conf                   | Suprime a impressão padrão do pattern space |
+| `-f`   | sed -f script.sed config.conf              | Executa o arquivo de script sed         |
+| `-e`   | sed -e 'command1' -e 'command2' input-file | Executa vários comandos sed             |
 
 {.show-header}
 
-### Multiple commands
+### Vários comandos
 
 ```shell script {.wrap}
 $ echo "hello world" | sed -e 's/h/H/g' -e 's/w/W/g'
 Hello World
 ```
 
-Use `-e` to execute multiple sed commands
+Use `-e` para executar vários comandos sed
 
-### Sed script
+### Script sed
 
 ```shell script
 $ echo 's/h/H/g' >> hello.sed
@@ -65,9 +65,9 @@ $ echo "hello world" | sed -f hello.sed
 Hello World
 ```
 
-Use `-f` to execute sed script file
+Use `-f` para executar o arquivo de script sed
 
-### Examples
+### Exemplos
 
 ```shell script
 $ sed 's/old/new/g' file.txt
@@ -77,35 +77,35 @@ $ sed 's/old/new/g' -i file.txt
 $ sed 's/old/new/g' -i.backup file.txt
 ```
 
-See: [Sed examples](#sed-examples)
+Veja: [Exemplos de sed](#sed-examples)
 
-## Sed commands
+## Comandos do sed
 
-### Commands {.col-span-2}
+### Comandos {.col-span-2}
 
-| Command | Example                                | Description                 |
+| Comando | Exemplo                                | Descrição                   |
 | ------- | -------------------------------------- | --------------------------- |
-| `p`     | sed -n '1,4 p' input.txt               | Print lines 1-4             |
-| `p`     | sed -n -e '1,4 p' -e '6,7 p' input.txt | Print lines 1-4 and 6-7     |
-| `d`     | sed '1,4 d' input.txt                  | Print lines except 1-4      |
-| `w`     | sed -n '1,4 w output.txt' input.txt    | Write pattern space to file |
-| `a`     | sed '2 a new-line' input.txt           | Append line after           |
-| `i`     | sed '2 i new-line' input.txt           | Insert line before          |
+| `p`     | sed -n '1,4 p' input.txt               | Imprime as linhas 1-4       |
+| `p`     | sed -n -e '1,4 p' -e '6,7 p' input.txt | Imprime as linhas 1-4 e 6-7 |
+| `d`     | sed '1,4 d' input.txt                  | Imprime as linhas exceto 1-4 |
+| `w`     | sed -n '1,4 w output.txt' input.txt    | Grava o pattern space em um arquivo |
+| `a`     | sed '2 a new-line' input.txt           | Anexa a linha depois        |
+| `i`     | sed '2 i new-line' input.txt           | Insere a linha antes        |
 
 {.show-header}
 
-### Space commands
+### Comandos de espaço
 
-| Command | Description                                                  |
+| Comando | Descrição                                                    |
 | ------- | ------------------------------------------------------------ |
-| `n`     | Print pattern space, empty pattern space, and read next line |
-| `x`     | Swap pattern space with hold space                           |
-| `h`     | Copy pattern space to hold space                             |
-| `H`     | Append pattern space to hold space                           |
-| `g`     | Copy hold space to pattern space                             |
-| `G`     | Append hold space to pattern space                           |
+| `n`     | Imprime o pattern space, esvazia-o e lê a próxima linha       |
+| `x`     | Troca o pattern space pelo hold space                        |
+| `h`     | Copia o pattern space para o hold space                      |
+| `H`     | Anexa o pattern space ao hold space                          |
+| `g`     | Copia o hold space para o pattern space                      |
+| `G`     | Anexa o hold space ao pattern space                          |
 
-See also: [File spacing](#file-spacing)
+Veja também: [Espaçamento de arquivo](#file-spacing)
 
 ### Flags
 
@@ -115,242 +115,242 @@ $ sed 's/old/new/[flags]' [input-file]
 
 ---
 
-| Flag     | Description                                |
+| Flag     | Descrição                                  |
 | -------- | ------------------------------------------ |
-| `g`      | Global substitution                        |
-| `1,2...` | Substitute the nth occurrence              |
-| `p`      | Print only the substituted line            |
-| `w`      | Write only the substituted line to a file  |
-| `I`      | Ignore case while searching                |
-| `e`      | Substitute and execute in the command line |
+| `g`      | Substituição global                        |
+| `1,2...` | Substitui a n-ésima ocorrência             |
+| `p`      | Imprime apenas a linha substituída         |
+| `w`      | Grava apenas a linha substituída em um arquivo |
+| `I`      | Ignora maiúsculas/minúsculas na busca      |
+| `e`      | Substitui e executa na linha de comando    |
 
-### Loops commands
+### Comandos de loop
 
-| Command   | Description                                                        |
+| Comando   | Descrição                                                          |
 | --------- | ------------------------------------------------------------------ |
-| `b label` | Branch to a label (for looping)                                    |
-| `t label` | Branch to a label only on successful substitution<br>(for looping) |
-| `:label`  | Label for the b and t commands (for looping)                       |
-| `N`       | Append next line to pattern space                                  |
-| `P`       | Print 1st line in multi-line                                       |
-| `D`       | Delete 1st line in multi-line                                      |
+| `b label` | Desvia para um label (para loop)                                   |
+| `t label` | Desvia para um label apenas em substituição bem-sucedida<br>(para loop) |
+| `:label`  | Label para os comandos b e t (para loop)                           |
+| `N`       | Anexa a próxima linha ao pattern space                             |
+| `P`       | Imprime a 1ª linha em multilinha                                   |
+| `D`       | Exclui a 1ª linha em multilinha                                    |
 
-### Misc Flags
+### Flags diversas
 
-| Flag                      | Description                                                                  |
+| Flag                      | Descrição                                                                    |
 | ------------------------- | ---------------------------------------------------------------------------- |
-| <code>/ \| ^ @ ! #</code> | Substitution delimiter can be any character                                  |
-| `&`                       | Gets the matched pattern                                                     |
-| `( ) \1 \2 \3`            | Group using `(` and `)`.<br>Use `\1`, `\2` in replacement to refer the group |
+| <code>/ \| ^ @ ! #</code> | O delimitador de substituição pode ser qualquer caractere                    |
+| `&`                       | Obtém o padrão correspondente                                                |
+| `( ) \1 \2 \3`            | Agrupa usando `(` e `)`.<br>Use `\1`, `\2` na substituição para se referir ao grupo |
 
-## Sed examples
+## Exemplos de sed
 
-### Replacing text {.row-span-2}
+### Substituindo texto {.row-span-2}
 
-Replace all occurrences of a string
+Substitui todas as ocorrências de uma string
 
 ```shell script
 $ sed 's/old/new/g' file.txt
 ```
 
-Replace only the nth occurrence of a string
+Substitui apenas a n-ésima ocorrência de uma string
 
 ```shell script
 $ sed 's/old/new/2' file.txt
 ```
 
-Replace a string only on the 5th line
+Substitui uma string apenas na 5ª linha
 
 ```shell script
 $ sed '5 s/old/new/' file.txt
 ```
 
-Replace "world" with "universe" but only if the line begins with "hello"
+Substitui "world" por "universe" apenas se a linha começar com "hello"
 
 ```shell script
 $ sed '/hello/s/world/universe/' file.txt
 ```
 
-Remove "\" from the end of each line
+Remove "\" do final de cada linha
 
 ```shell script
 $ sed 's/\\$//' file.txt
 ```
 
-Remove all whitespace from beginning of each line
+Remove todos os espaços em branco do início de cada linha
 
 ```shell script
 $ sed 's/^\s*//' file.txt
 ```
 
-Remove comments. Even those that are at the end of a line
+Remove comentários. Inclusive os que estão no final de uma linha
 
 ```shell script
 $ sed 's/#.*$//' file.txt
 ```
 
-### Search for text
+### Buscando texto
 
-Search for a string and only print the lines that were matched
+Busca uma string e imprime apenas as linhas correspondentes
 
 ```shell script
 $ sed -n '/hello/p' file.txt
 ```
 
-Case insensitive search
+Busca sem diferenciar maiúsculas de minúsculas
 
 ```shell script
 $ sed -n '/hello/Ip' file.txt
 ```
 
-Search for a string but only output lines that do not match
+Busca uma string, mas imprime apenas as linhas que não correspondem
 
 ```shell script
 $ sed -n '/hello/!p' file.txt
 ```
 
-### Appending lines
+### Anexando linhas
 
-Append line after line 2
+Anexa uma linha após a linha 2
 
 ```shell script
 $ sed '2a Text after line 2' file.txt
 ```
 
-Append line at the end of the file
+Anexa uma linha no final do arquivo
 
 ```shell script
 $ sed '$a THE END!' file.txt
 ```
 
-Append line after every 3rd line starting from line 3
+Anexa uma linha após cada 3ª linha, começando pela linha 3
 
 ```shell script
 $ sed '3~3a Some text' file.txt
 ```
 
-### Numbering {.col-span-2}
+### Numeração {.col-span-2}
 
-Number line of a file (simple left alignment)
+Numera as linhas de um arquivo (alinhamento à esquerda simples)
 
 ```shell script
 $ sed = file.txt | sed 'N;s/\n/\t/'
 ```
 
-Number line of a file (number on left, right-aligned)
+Numera as linhas de um arquivo (número à esquerda, alinhado à direita)
 
 ```shell script
 $ sed = file.txt | sed 'N; s/^/   /; s/ *\(.\{6,\}\)\n/\1  /'
 ```
 
-Number line of file, but only print numbers if line is not blank
+Numera as linhas do arquivo, mas só imprime números se a linha não estiver em branco
 
 ```shell script
 $ sed '/./=' file.txt | sed '/./N; s/\n/ /'
 ```
 
-Count lines (emulates "wc -l")
+Conta linhas (emula "wc -l")
 
 ```shell script
 $ sed -n '$='
 ```
 
-### Prepending lines
+### Inserindo linhas no início
 
-Insert text before line 5
+Insere texto antes da linha 5
 
 ```shell script
 $ sed '5i line number five' file.txt
 ```
 
-Insert "Example: " before each line that contains "hello"
+Insere "Example: " antes de cada linha que contenha "hello"
 
 ```shell script
 $ sed '/hello/i Example: ' file.txt
 ```
 
-### Deleting lines
+### Excluindo linhas
 
-Delete line 5-7 in file
+Exclui as linhas 5-7 do arquivo
 
 ```shell script
 $ sed '5,7d' file.txt
 ```
 
-Delete every 2nd line starting with line 3
+Exclui cada 2ª linha, começando pela linha 3
 
 ```shell script
 $ sed '3~2d' file.txt
 ```
 
-Delete the last line in file
+Exclui a última linha do arquivo
 
 ```shell script
 $ sed '$d' file.txt
 ```
 
-Delete lines starting with "Hello"
+Exclui as linhas que começam com "Hello"
 
 ```shell script
 $ sed '/^Hello/d' file.txt
 ```
 
-Delete all empty lines
+Exclui todas as linhas vazias
 
 ```shell script
 $ sed '/^$/d' file.txt
 ```
 
-Delete lines starting with "#"
+Exclui as linhas que começam com "#"
 
 ```shell script
 $ sed '/^#/d' file.txt
 ```
 
-### File spacing
+### Espaçamento de arquivo
 
-Double space
+Espaçamento duplo
 
 ```shell script
 $ sed G
 ```
 
-Delete all blank lines and double space
+Exclui todas as linhas em branco e aplica espaçamento duplo
 
 ```shell script
 $ sed '/^$/d;G'
 ```
 
-Triple space a file
+Aplica espaçamento triplo em um arquivo
 
 ```shell script
 $ sed 'G;G'
 ```
 
-Undo double-spacing
+Desfaz o espaçamento duplo
 
 ```shell script
 $ sed 'n;d'
 ```
 
-Insert a blank line above line which matches "regex"
+Insere uma linha em branco acima da linha que corresponde a "regex"
 
 ```shell script
 $ sed '/regex/{x;p;x;}'
 ```
 
-Insert a blank line below line which matches "regex"
+Insere uma linha em branco abaixo da linha que corresponde a "regex"
 
 ```shell script
 $ sed '/regex/G'
 ```
 
-Insert a blank line around line which matches "regex"
+Insere uma linha em branco ao redor da linha que corresponde a "regex"
 
 ```shell script
 $ sed '/regex/{x;p;x;G;}'
 ```
 
-## Also see {.cols-1}
+## Veja também {.cols-1}
 
-- [sed cheatsheet](https://gist.github.com/ssstonebraker/6140154) _(gist.github.com)_
+- [Cheat sheet do sed](https://gist.github.com/ssstonebraker/6140154) _(gist.github.com)_

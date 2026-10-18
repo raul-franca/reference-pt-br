@@ -6,27 +6,27 @@ tags:
   - config
   - format
 categories:
-  - Programming
+  - Programação
 intro: |
-  This is a quick reference cheat sheet for understanding and writing YAML format configuration files.
+  Este é um cheat sheet de referência rápida para entender e escrever arquivos de configuração no formato YAML.
 plugins:
   - copyCode
 ---
 
-## Getting Started
+## Primeiros passos
 
-### Introduction
+### Introdução
 
-[YAML](https://yaml.org/) is a data serialization language designed to be directly writable and readable by humans
+[YAML](https://yaml.org/) é uma linguagem de serialização de dados projetada para ser escrita e lida diretamente por humanos
 
-- YAML does not allow the use of tabs
-- Must be space between the element parts
-- YAML is CASE sensitive
-- End your YAML file with the `.yaml` or `.yml` extension
-- YAML is a superset of JSON
-- Ansible playbooks are YAML files {.marker-round}
+- O YAML não permite o uso de tabs
+- Deve haver espaço entre as partes do elemento
+- O YAML diferencia maiúsculas de minúsculas (CASE sensitive)
+- Termine o arquivo YAML com a extensão `.yaml` ou `.yml`
+- O YAML é um superconjunto de JSON
+- Playbooks do Ansible são arquivos YAML {.marker-round}
 
-### Scalar types {.row-span-2}
+### Tipos escalares {.row-span-2}
 
 <!-- prettier-ignore -->
 ```yaml
@@ -42,7 +42,7 @@ b: false         # boolean type
 d: 2015-04-05    # date type
 ```
 
-#### ↓ Equivalent JSON
+#### ↓ JSON equivalente
 
 ```json {.wrap}
 {
@@ -56,16 +56,16 @@ d: 2015-04-05    # date type
 }
 ```
 
-Use spaces to indent. There must be space between the element parts.
+Use espaços para indentar. Deve haver espaço entre as partes do elemento.
 
-### Variables
+### Variáveis
 
 ```yaml
 some_thing: &VAR_NAME foobar
 other_thing: *VAR_NAME
 ```
 
-#### ↓ Equivalent JSON
+#### ↓ JSON equivalente
 
 <!-- prettier-ignore -->
 ```json {.wrap}
@@ -75,7 +75,7 @@ other_thing: *VAR_NAME
 }
 ```
 
-### Comments
+### Comentários
 
 ```yaml
 # A single line comment example
@@ -86,7 +86,7 @@ other_thing: *VAR_NAME
 # comment line 3
 ```
 
-### Multiline strings
+### Strings multilinha
 
 ```yaml
 description: |
@@ -94,13 +94,13 @@ description: |
   world
 ```
 
-#### ↓ Equivalent JSON
+#### ↓ JSON equivalente
 
 ```json {.wrap}
 { "description": "hello\nworld\n" }
 ```
 
-### Inheritance {.row-span-2}
+### Herança {.row-span-2}
 
 ```yaml
 parent: &defaults
@@ -112,7 +112,7 @@ child:
   b: 4
 ```
 
-#### ↓ Equivalent JSON
+#### ↓ JSON equivalente
 
 ```json {.wrap}
 {
@@ -127,7 +127,7 @@ child:
 }
 ```
 
-### Reference {.row-span-2}
+### Referência {.row-span-2}
 
 ```yaml
 values: &ref
@@ -138,7 +138,7 @@ other_values:
   i_am_ref: *ref
 ```
 
-#### ↓ Equivalent JSON
+#### ↓ JSON equivalente
 
 <!-- prettier-ignore -->
 ```json {.wrap}
@@ -156,20 +156,20 @@ other_values:
 }
 ```
 
-### Folded strings
+### Strings folded
 
 ```yaml
 description: >
   hello world
 ```
 
-#### ↓ Equivalent JSON
+#### ↓ JSON equivalente
 
 ```json {.wrap}
 { "description": "hello world\n" }
 ```
 
-### Two Documents
+### Dois documentos
 
 ```yaml
 ---
@@ -178,11 +178,11 @@ document: this is doc 1
 document: this is doc 2
 ```
 
-YAML uses `---` to separate directives from document content.
+O YAML usa `---` para separar diretivas do conteúdo do documento.
 
-## YAML Collections
+## Coleções YAML
 
-### Sequence
+### Sequência
 
 ```yaml
 - Mark McGwire
@@ -190,7 +190,7 @@ YAML uses `---` to separate directives from document content.
 - Ken Griffey
 ```
 
-#### ↓ Equivalent JSON
+#### ↓ JSON equivalente
 
 <!-- prettier-ignore -->
 ```json {.wrap}
@@ -201,7 +201,7 @@ YAML uses `---` to separate directives from document content.
 ]
 ```
 
-### Mapping
+### Mapeamento
 
 <!-- prettier-ignore -->
 ```yaml
@@ -210,7 +210,7 @@ avg: 0.278    # Batting average
 rbi: 147      # Runs Batted In
 ```
 
-#### ↓ Equivalent JSON
+#### ↓ JSON equivalente
 
 ```json {.wrap}
 {
@@ -220,7 +220,7 @@ rbi: 147      # Runs Batted In
 }
 ```
 
-### Mapping to Sequences
+### Mapeamento para sequências
 
 ```yaml
 attributes:
@@ -229,7 +229,7 @@ attributes:
 methods: [getter, setter]
 ```
 
-#### ↓ Equivalent JSON
+#### ↓ JSON equivalente
 
 ```json {.wrap}
 {
@@ -238,7 +238,7 @@ methods: [getter, setter]
 }
 ```
 
-### Sequence of Mappings
+### Sequência de mapeamentos
 
 <!-- prettier-ignore -->
 ```yaml
@@ -252,7 +252,7 @@ children:
     age: 12
 ```
 
-#### ↓ Equivalent JSON
+#### ↓ JSON equivalente
 
 <!-- prettier-ignore -->
 ```json {.wrap}
@@ -265,7 +265,7 @@ children:
 }
 ```
 
-### Sequence of Sequences
+### Sequência de sequências
 
 <!-- prettier-ignore -->
 ```yaml
@@ -279,7 +279,7 @@ my_sequences:
     - 0 
 ```
 
-#### ↓ Equivalent JSON
+#### ↓ JSON equivalente
 
 ```json {.wrap}
 {
@@ -291,14 +291,14 @@ my_sequences:
 }
 ```
 
-### Mapping of Mappings
+### Mapeamento de mapeamentos
 
 ```yaml
 Mark McGwire: { hr: 65, avg: 0.278 }
 Sammy Sosa: { hr: 63, avg: 0.288 }
 ```
 
-#### ↓ Equivalent JSON
+#### ↓ JSON equivalente
 
 ```json {.wrap}
 {
@@ -313,7 +313,7 @@ Sammy Sosa: { hr: 63, avg: 0.288 }
 }
 ```
 
-### Nested Collections
+### Coleções aninhadas
 
 ```yaml
 Jack:
@@ -326,7 +326,7 @@ Jack:
   location: { country: 'A', city: 'A-A' }
 ```
 
-#### ↓ Equivalent JSON
+#### ↓ JSON equivalente
 
 ```json {.wrap}
 {
@@ -343,7 +343,7 @@ Jack:
 }
 ```
 
-### Unordered Sets
+### Conjuntos não ordenados
 
 ```yaml
 set1: !!set
@@ -352,7 +352,7 @@ set1: !!set
 set2: !!set { 'one', 'two' }
 ```
 
-#### ↓ Equivalent JSON
+#### ↓ JSON equivalente
 
 ```json {.wrap}
 {
@@ -361,9 +361,9 @@ set2: !!set { 'one', 'two' }
 }
 ```
 
-Sets are represented as a Mapping where each key is associated with a null value
+Conjuntos são representados como um mapeamento em que cada chave está associada a um valor null
 
-### Ordered Mappings
+### Mapeamentos ordenados
 
 ```yaml
 ordered: !!omap
@@ -372,7 +372,7 @@ ordered: !!omap
   - Ken Griffy: 58
 ```
 
-#### ↓ Equivalent JSON
+#### ↓ JSON equivalente
 
 <!-- prettier-ignore -->
 ```json {.wrap}
@@ -385,98 +385,98 @@ ordered: !!omap
 }
 ```
 
-## YAML Reference
+## Referência YAML
 
-### Terms
+### Termos
 
-- Sequences aka arrays or lists
-- Scalars aka strings or numbers
-- Mappings aka hashes or dictionaries {.marker-round}
+- Sequências, também conhecidas como arrays ou listas
+- Escalares, também conhecidos como strings ou números
+- Mapeamentos, também conhecidos como hashes ou dicionários {.marker-round}
 
-Based on the YAML.org [refcard](https://yaml.org/refcard.html).
+Baseado no [refcard](https://yaml.org/refcard.html) do YAML.org.
 
-### Document indicators
+### Indicadores de documento
 
-|       |                     |
-| ----- | ------------------- |
-| `%`   | Directive indicator |
-| `---` | Document header     |
-| `...` | Document terminator |
+|       |                         |
+| ----- | ----------------------- |
+| `%`   | Indicador de diretiva   |
+| `---` | Cabeçalho do documento  |
+| `...` | Terminador do documento |
 
-### Collection indicators {.row-span-2}
+### Indicadores de coleção {.row-span-2}
 
-|      |                                 |
-| ---- | ------------------------------- |
-| `?`  | Key indicator                   |
-| `:`  | Value indicator                 |
-| `-`  | Nested series entry indicator   |
-| `,`  | Separate in-line branch entries |
-| `[]` | Surround in-line series branch  |
-| `{}` | Surround in-line keyed branch   |
+|      |                                         |
+| ---- | --------------------------------------- |
+| `?`  | Indicador de chave                      |
+| `:`  | Indicador de valor                      |
+| `-`  | Indicador de entrada de série aninhada  |
+| `,`  | Separa entradas de ramificação em linha |
+| `[]` | Delimita ramificação de série em linha  |
+| `{}` | Delimita ramificação com chave em linha |
 
-### Alias indicators
+### Indicadores de alias
 
-|     |                 |
-| --- | --------------- |
-| `&` | Anchor property |
-| `*` | Alias indicator |
+|     |                       |
+| --- | --------------------- |
+| `&` | Propriedade de âncora |
+| `*` | Indicador de alias    |
 
-### Special keys
+### Chaves especiais
 
-|      |                                 |
-| ---- | ------------------------------- |
-| `=`  | Default "value" mapping key     |
-| `<<` | Merge keys from another mapping |
+|      |                                    |
+| ---- | ---------------------------------- |
+| `=`  | Chave de mapeamento "value" padrão |
+| `<<` | Mescla chaves de outro mapeamento  |
 
-### Scalar indicators
+### Indicadores escalares
 
 |       |                                   |
 | ----- | --------------------------------- | --------------------------------------------- | ----------- |
-| `''`  | Surround in-line unescaped scalar |
-| `"`   | Surround in-line escaped scalar   |
-| `     | `                                 | Block scalar indicator                        |
-| `>`   | Folded scalar indicator           |
-| `-`   | Strip chomp modifier (`           | -`or`>-`)                                     |
-| `+`   | Keep chomp modifier (`            | +`or`>+`)                                     |
-| `1-9` | Explicit indentation modifier (`  | 1`or`>2`). <br/> Modifiers can be combined (` | 2-`, `>+1`) |
+| `''`  | Delimita escalar em linha sem escape |
+| `"`   | Delimita escalar em linha com escape   |
+| `     | `                                 | Indicador de escalar de bloco                        |
+| `>`   | Indicador de escalar folded           |
+| `-`   | Modificador de chomp strip (`           | -`or`>-`)                                     |
+| `+`   | Modificador de chomp keep (`            | +`or`>+`)                                     |
+| `1-9` | Modificador de indentação explícita (`  | 1`or`>2`). <br/> Modificadores podem ser combinados (` | 2-`, `>+1`) |
 
-### Tag Property (usually unspecified) {.col-span-2}
+### Propriedade de tag (geralmente não especificada) {.col-span-2}
 
-|          |                                                             |
-| -------- | ----------------------------------------------------------- |
-| `none`   | Unspecified tag (automatically resolved by application)     |
-| `!`      | Non-specific tag (by default, `!!map`/`!!seq`/`!!str`)      |
-| `!foo`   | Primary (by convention, means a local `!foo` tag)           |
-| `!!foo`  | Secondary (by convention, means `tag:yaml.org,2002:foo`)    |
-| `!h!foo` | Requires `%TAG !h! <prefix>` (and then means `<prefix>foo`) |
-| `!<foo>` | Verbatim tag (always means `foo`)                           |
+|          |                                                                 |
+| -------- | --------------------------------------------------------------- |
+| `none`   | Tag não especificada (resolvida automaticamente pela aplicação) |
+| `!`      | Tag não específica (por padrão, `!!map`/`!!seq`/`!!str`)        |
+| `!foo`   | Primária (por convenção, significa uma tag local `!foo`)        |
+| `!!foo`  | Secundária (por convenção, significa `tag:yaml.org,2002:foo`)   |
+| `!h!foo` | Requer `%TAG !h! <prefix>` (e então significa `<prefix>foo`)    |
+| `!<foo>` | Tag verbatim (sempre significa `foo`)                           |
 
-### Misc indicators
+### Indicadores diversos
 
-|                  |                              |
-| ---------------- | ---------------------------- |
-| `#`              | Throwaway comment indicator  |
-| <code>\`@</code> | Both reserved for future use |
+|                  |                                     |
+| ---------------- | ----------------------------------- |
+| `#`              | Indicador de comentário descartável |
+| <code>\`@</code> | Ambos reservados para uso futuro    |
 
-### Core types (default automatic tags) {.row-span-2}
+### Tipos principais (tags automáticas padrão) {.row-span-2}
 
 |         |                                          |
 | ------- | ---------------------------------------- |
 | `!!map` | `{Hash table, dictionary, mapping}`      |
 | `!!seq` | `{List, array, tuple, vector, sequence}` |
-| `!!str` | Unicode string                           |
+| `!!str` | String Unicode                           |
 
-### Escape Codes {.row-span-3}
+### Códigos de escape {.row-span-3}
 
-#### Numeric
+#### Numéricos
 
-- `\x12` (8-bit)
-- `\u1234` (16-bit)
-- `\U00102030` (32-bit)
+- `\x12` (8 bits)
+- `\u1234` (16 bits)
+- `\U00102030` (32 bits)
 
 {.cols-2 .marker-none}
 
-#### Protective
+#### Protetivos
 
 - `\\` (\\)
 - `\"` (")
@@ -498,7 +498,7 @@ Based on the YAML.org [refcard](https://yaml.org/refcard.html).
 
 {.cols-3 .marker-none}
 
-#### Additional
+#### Adicionais
 
 - `\e` (ESC)
 - `\_` (NBSP)
@@ -508,26 +508,26 @@ Based on the YAML.org [refcard](https://yaml.org/refcard.html).
 
 {.cols-3 .marker-none}
 
-### More types
+### Mais tipos
 
 |          |                             |
 | -------- | --------------------------- |
 | `!!set`  | `{cherries, plums, apples}` |
 | `!!omap` | `[one: 1, two: 2]`          |
 
-### Language Independent Scalar Types {.col-span-2}
+### Tipos escalares independentes de linguagem {.col-span-2}
 
-|                           |                                            |
-| ------------------------- | ------------------------------------------ |
-| `{~, null}`               | Null (no value).                           |
-| `[1234, 0x4D2, 02333]`    | [Decimal int, Hexadecimal int, Octal int]  |
-| `[1_230.15, 12.3015e+02]` | [Fixed float, Exponential float]           |
-| `[.inf, -.Inf, .NAN]`     | [Infinity (float), Negative, Not a number] |
-| `{Y, true, Yes, ON}`      | Boolean true                               |
-| `{n, FALSE, No, off}`     | Boolean false                              |
+|                           |                                                       |
+| ------------------------- | ----------------------------------------------------- |
+| `{~, null}`               | Null (sem valor).                                     |
+| `[1234, 0x4D2, 02333]`    | [Inteiro decimal, inteiro hexadecimal, inteiro octal] |
+| `[1_230.15, 12.3015e+02]` | [Float fixo, float exponencial]                       |
+| `[.inf, -.Inf, .NAN]`     | [Infinito (float), negativo, não é um número]         |
+| `{Y, true, Yes, ON}`      | Booleano verdadeiro                                   |
+| `{n, FALSE, No, off}`     | Booleano falso                                        |
 
-## Also see
+## Veja também
 
-- [YAML Reference Card](https://yaml.org/refcard.html) _(yaml.org)_
+- [Referência rápida do YAML](https://yaml.org/refcard.html) _(yaml.org)_
 - [Learn X in Y minutes](https://learnxinyminutes.com/docs/yaml/) _(learnxinyminutes.com)_
 - [YAML lint online](http://www.yamllint.com/) _(yamllint.com)_

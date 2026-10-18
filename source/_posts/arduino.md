@@ -7,33 +7,33 @@ tags:
   -
   -
 categories:
-  - Keyboard Shortcuts
+  - Atalhos de Teclado
 intro: |
-  A visual cheat-sheet for the 12 keyboard shortcuts found in the Arduino IDE
+  Um cheat sheet visual dos 12 atalhos de teclado do Arduino IDE
 ---
 
-## Keyboard Shortcuts
+## Atalhos de teclado
 
-### General
+### Gerais
 
-| Shortcut           | Action                           |
-| ------------------ | -------------------------------- |
-| `Ctrl` `S`         | Save                             |
-| `Ctrl` `Shift` `S` | Save as                          |
-| `Ctrl` `N`         | Open a new sketch                |
-| `Ctrl` `O`         | Open an existing sketch          |
-| `Ctrl` `Q`         | Close the Arduino IDE            |
-| `Ctrl` `R`         | Verify                           |
-| `Ctrl` `U`         | Upload                           |
-| `Ctrl` `F`         | Find                             |
-| `Ctrl` `T`         | Adjust the alignment and spacing |
-| `Ctrl` `/`         | Comment                          |
-| `Ctrl` `Shift` `M` | Open the serial monitor          |
-| `Ctrl` `K`         | Open the sketch folder           |
+| Atalho           | Ação                                  |
+| ------------------ | ------------------------------------- |
+| `Ctrl` `S`         | Salvar                                |
+| `Ctrl` `Shift` `S` | Salvar como                           |
+| `Ctrl` `N`         | Abrir um novo sketch                  |
+| `Ctrl` `O`         | Abrir um sketch existente             |
+| `Ctrl` `Q`         | Fechar o Arduino IDE                  |
+| `Ctrl` `R`         | Verificar                             |
+| `Ctrl` `U`         | Enviar                                |
+| `Ctrl` `F`         | Localizar                             |
+| `Ctrl` `T`         | Ajustar o alinhamento e o espaçamento |
+| `Ctrl` `/`         | Comentar                              |
+| `Ctrl` `Shift` `M` | Abrir o monitor serial                |
+| `Ctrl` `K`         | Abrir a pasta do sketch               |
 
 {.shortcuts}
 
-## Also see
+## Veja também
 
-- [Keyboard shortcuts for the Arduino IDE](https://progtpoint.blogspot.com/2017/02/arduino-keyboard-shortcuts.html)
+- [Atalhos de teclado do Arduino IDE](https://progtpoint.blogspot.com/2017/02/arduino-keyboard-shortcuts.html)
   _(progtpoint.blogspot.com)_

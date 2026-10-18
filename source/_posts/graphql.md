@@ -6,69 +6,69 @@ tags:
   - query
   - API
 categories:
-  - Programming
+  - Programação
 intro: |
-  This quick reference cheat sheet provides a brief overview of GraphQL.
+  Esta cheat sheet de referência rápida oferece uma visão geral do GraphQL.
 plugins:
   - copyCode
 ---
 
-## Getting Started
+## Primeiros passos
 
-### Overview
+### Visão geral
 
-- An alternative approach to RESTful APIs
-- GraphQL is a query language for APIs
-- Easily describe the shape of the GraphQL API using clear shared terms.
-- Clients issue queries/mutations to read and update data
-- GraphQL syntax can express complex entity relations
-- Libraries to implement GraphQL in [different languages](https://graphql.org/code/)
+- Uma abordagem alternativa às APIs RESTful
+- GraphQL é uma linguagem de consulta para APIs
+- Descreva facilmente o formato da API GraphQL usando termos compartilhados e claros.
+- Os clientes enviam queries/mutations para ler e atualizar dados
+- A sintaxe do GraphQL consegue expressar relações complexas entre entidades
+- Bibliotecas para implementar GraphQL em [diferentes linguagens](https://graphql.org/code/)
 
 [GraphQL](https://graphql.org/) {.link-arrow}
 
 ### Schema
 
-|                |                                  |
-| -------------- | -------------------------------- |
-| `schema`       | GraphQL schema definition        |
-| `query`        | Read and traverse data           |
-| `mutation`     | Modify data or trigger an action |
-| `subscription` | Run a query when an event occurs |
+|                |                                       |
+| -------------- | ------------------------------------- |
+| `schema`       | Definição de schema GraphQL           |
+| `query`        | Lê e percorre dados                   |
+| `mutation`     | Modifica dados ou dispara uma ação    |
+| `subscription` | Executa uma query quando um evento ocorre |
 
-### Built-in Scalar Types
+### Tipos escalares nativos
 
 |           |                                              |
 | --------- | -------------------------------------------- |
-| `Int`     | Signed 32‐bit integer                        |
-| `Float`   | Signed double-precision floating-point value |
-| `String`  | UTF‐8 character sequence                     |
-| `Boolean` | true or false                                |
-| `ID`      | A Unique identifier                          |
+| `Int`     | Inteiro de 32 bits com sinal                 |
+| `Float`   | Valor de ponto flutuante de precisão dupla com sinal |
+| `String`  | Sequência de caracteres UTF-8                |
+| `Boolean` | true ou false                                |
+| `ID`      | Um identificador único                       |
 
-### Type Definitions
+### Definições de tipo
 
-|             |                   |
-| ----------- | ----------------- |
-| `scalar`    | Scalar Type       |
-| `type`      | Object Type       |
-| `interface` | Interface Type    |
-| `union`     | Union Type        |
-| `enum`      | Enum Type         |
-| `input`     | Input Object Type |
+|             |                          |
+| ----------- | ------------------------ |
+| `scalar`    | Tipo escalar             |
+| `type`      | Tipo objeto              |
+| `interface` | Tipo interface           |
+| `union`     | Tipo união               |
+| `enum`      | Tipo enum                |
+| `input`     | Tipo objeto de entrada   |
 
-### Type Modifiers
+### Modificadores de tipo
 
-|              |                                   |
-| ------------ | --------------------------------- |
-| `String`     | Nullable String                   |
-| `String!`    | Non-null String                   |
-| `[String]`   | List of nullable Strings          |
-| `[String]!`  | Non-null list of nullable Strings |
-| `[String!]!` | Non-null list of non-null Strings |
+|              |                                        |
+| ------------ | -------------------------------------- |
+| `String`     | String que aceita valor nulo           |
+| `String!`    | String que não aceita valor nulo       |
+| `[String]`   | Lista de Strings que aceitam valor nulo |
+| `[String]!`  | Lista não nula de Strings que aceitam valor nulo |
+| `[String!]!` | Lista não nula de Strings não nulas    |
 
-### Input Arguments {.row-span-2}
+### Argumentos de entrada {.row-span-2}
 
-#### Basic Input
+#### Entrada básica
 
 ```js
 type Query {
@@ -76,7 +76,7 @@ type Query {
 }
 ```
 
-#### Input with default value
+#### Entrada com valor padrão
 
 ```js
 type Query {
@@ -84,7 +84,7 @@ type Query {
 }
 ```
 
-#### Input with multiple arguments
+#### Entrada com vários argumentos
 
 ```js
 type Query {
@@ -92,7 +92,7 @@ type Query {
 }
 ```
 
-#### Input with multiple arguments and default values
+#### Entrada com vários argumentos e valores padrão
 
 ```js {.wrap}
 type Query {
@@ -106,7 +106,7 @@ type Query {
 }
 ```
 
-### Input Types
+### Tipos de entrada
 
 ```js
 input ListUsersInput {
@@ -121,7 +121,7 @@ type Mutation {
 }
 ```
 
-### Custom Scalars
+### Escalares personalizados
 
 ```js
 scalar Url
@@ -151,9 +151,9 @@ type Baz implements Foo, Goo {
 }
 ```
 
-Object implementing one or more Interfaces
+Objeto que implementa uma ou mais interfaces
 
-### Unions
+### Uniões
 
 ```js
 type Foo {
@@ -170,7 +170,7 @@ type Root {
 }
 ```
 
-Union of one or more Objects
+União de um ou mais objetos
 
 ### Enums
 
@@ -187,6 +187,6 @@ type Root {
 }
 ```
 
-## Also see
+## Veja também
 
-- [GraphQL Schema Language Cheat Sheet](https://github.com/sogko/graphql-schema-language-cheat-sheet) _(github.com)_
+- [Cheat sheet da linguagem de schema do GraphQL](https://github.com/sogko/graphql-schema-language-cheat-sheet) _(github.com)_

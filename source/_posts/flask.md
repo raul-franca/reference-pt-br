@@ -7,16 +7,16 @@ tags:
   - python
   - backend
 categories:
-  - Programming
+  - Programação
 intro: |
-  A concise cheatsheet for Flask, a lightweight WSGI web application framework for Python.
+  Um cheat sheet conciso do Flask, um framework leve de aplicação web WSGI para Python.
 plugins:
   - copyCode
 ---
 
-## Getting Started {.cols-3}
+## Primeiros passos {.cols-3}
 
-### Install Flask
+### Instalar o Flask
 
 ```bash
 pip install flask
@@ -42,33 +42,33 @@ export FLASK_APP=app.py
 flask run
 ```
 
-## App Config & Environment {.cols-3}
+## Configuração da aplicação e ambiente {.cols-3}
 
-### App Object
+### Objeto da aplicação
 
 ```python
 from flask import Flask
 app = Flask(__name__)
 ```
 
-### Configuration
+### Configuração
 
 ```python
 app.config["DEBUG"] = True
 app.config.from_pyfile("config.py")
 ```
 
-### Common Config Keys
+### Chaves de configuração comuns
 
-| Key | Description |
+| Chave | Descrição |
 | | -- |
-| `DEBUG` | Enable debug mode |
-| `SECRET_KEY` | For sessions/cookies |
-| `ENV` | Set to 'development' |
+| `DEBUG` | Ativa o modo de depuração |
+| `SECRET_KEY` | Para sessões/cookies |
+| `ENV` | Define como 'development' |
 
-## Routing & Methods {.cols-3}
+## Rotas e métodos {.cols-3}
 
-### Basic Route
+### Rota básica
 
 ```python
 @app.route("/")
@@ -76,7 +76,7 @@ def home():
     return "Home"
 ```
 
-### Methods
+### Métodos
 
 ```python
 @app.route("/login", methods=["GET", "POST"])
@@ -84,7 +84,7 @@ def login():
     return "Login"
 ```
 
-### Dynamic Routes
+### Rotas dinâmicas
 
 ```python
 @app.route("/user/<name>")
@@ -92,9 +92,9 @@ def user(name):
     return f"User: {name}"
 ```
 
-## Request & Response {.cols-3}
+## Request e response {.cols-3}
 
-### Request Object
+### Objeto de request
 
 ```python
 from flask import request
@@ -104,13 +104,13 @@ def data():
     return request.json
 ```
 
-### Request Attributes
+### Atributos do request
 
-- `request.args`: Query params
-- `request.form`: Form data
-- `request.json`: JSON body
+- `request.args`: Parâmetros de query
+- `request.form`: Dados de formulário
+- `request.json`: Corpo em JSON
 
-### Custom Response
+### Response personalizado
 
 ```python
 from flask import make_response
@@ -122,9 +122,9 @@ def custom():
     return res
 ```
 
-## Templates & Static {.cols-3}
+## Templates e arquivos estáticos {.cols-3}
 
-### Render Template
+### Renderizar template
 
 ```python
 from flask import render_template
@@ -134,7 +134,7 @@ def page():
     return render_template("index.html", name="Flask")
 ```
 
-### Jinja Syntax
+### Sintaxe do Jinja
 
 ```html
 <h1>Hello {{ name }}</h1>
@@ -143,15 +143,15 @@ def page():
 {% endif %}
 ```
 
-### Static Files
+### Arquivos estáticos
 
 ```html
 <link href="{{ url_for('static', filename='style.css') }}" />
 ```
 
-## Sessions & Cookies {.cols-2}
+## Sessões e cookies {.cols-2}
 
-### Using Sessions
+### Usar sessões
 
 ```python
 from flask import session
@@ -163,7 +163,7 @@ def login():
     return "Logged in"
 ```
 
-### Access Cookies
+### Acessar cookies
 
 ```python
 from flask import request, make_response
@@ -175,9 +175,9 @@ def cookie():
     return resp
 ```
 
-## JSON API & Middleware {.cols-2}
+## API JSON e middleware {.cols-2}
 
-### JSON Response
+### Response JSON
 
 ```python
 from flask import jsonify
@@ -200,9 +200,9 @@ def after(res):
     return res
 ```
 
-## Error Handling & Blueprints {.cols-2}
+## Tratamento de erros e blueprints {.cols-2}
 
-### Error Handling
+### Tratamento de erros
 
 ```python
 @app.errorhandler(404)
@@ -224,9 +224,9 @@ def dash():
 app.register_blueprint(admin)
 ```
 
-## Project Structure {.cols-2}
+## Estrutura do projeto {.cols-2}
 
-### File Structure
+### Estrutura de arquivos
 
 ```bash
 project/
@@ -238,7 +238,7 @@ project/
 └── config.py
 ```
 
-### Run Server
+### Executar o servidor
 
 ```bash
 python app.py

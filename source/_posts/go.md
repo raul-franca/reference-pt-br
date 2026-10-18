@@ -5,15 +5,15 @@ background: bg-[#4ba4cc]
 tags:
   - Go
 categories:
-  - Programming
+  - Programação
 intro: |
-  This cheat sheet provided basic syntax and methods to help you using [Go](https://go.dev/).
+  Este cheat sheet traz a sintaxe básica e os métodos para ajudar você a usar [Go](https://go.dev/).
 plugins:
   - copyCode
   - runCode
 ---
 
-## Getting Started
+## Primeiros passos
 
 ### hello.go
 
@@ -27,16 +27,16 @@ func main() {
 }
 ```
 
-Run directly
+Execute diretamente
 
 ```shell script
 $ go run hello.go
 Hello, world!
 ```
 
-Or try it out in the [Go repl](https://repl.it/languages/go)
+Ou experimente no [Go repl](https://repl.it/languages/go)
 
-### Variables
+### Variáveis
 
 ```go
 var s1 string
@@ -47,7 +47,7 @@ var b, c int = 1, 2
 var d = true
 ```
 
-Short declaration
+Declaração curta
 
 ```go
 s1 := "Learn Go!"        // string
@@ -55,9 +55,9 @@ b, c := 1, 2             // int
 d := true                // bool
 ```
 
-See: [Basic types](#go-basic-types)
+Veja: [Tipos básicos](#go-basic-types)
 
-### Functions
+### Funções
 
 ```go
 package main
@@ -75,9 +75,9 @@ func say(message string) {
 }
 ```
 
-See: [Functions](#go-functions)
+Veja: [Funções](#go-functions)
 
-### Comments
+### Comentários
 
 ```go
 // Single line comment
@@ -86,7 +86,7 @@ See: [Functions](#go-functions)
  line comment */
 ```
 
-### If statement
+### Instrução if
 
 ```go
 if true {
@@ -94,9 +94,9 @@ if true {
 }
 ```
 
-See: [Flow control](#go-flow-control)
+Veja: [Controle de fluxo](#go-flow-control)
 
-## Go Basic types
+## Tipos básicos do Go
 
 ### Strings
 
@@ -113,9 +113,9 @@ fmt.Println(len(s1))
 fmt.Println(string(s1[0:5]))
 ```
 
-Strings are of type `string`.
+Strings são do tipo `string`.
 
-### Numbers
+### Números
 
 ```go
 num := 3         // int
@@ -127,7 +127,7 @@ var u uint = 7        // uint (unsigned)
 var p float32 = 22.7  // 32-bit float
 ```
 
-#### Operators
+#### Operadores
 
 ```go
 x := 5
@@ -136,16 +136,16 @@ fmt.Println("x + 4 =", x + 4)
 fmt.Println("x * 4 =", x * 4)
 ```
 
-See: [More Operators](#go-operators-and-punctuation)
+Veja: [Mais operadores](#go-operators-and-punctuation)
 
-### Booleans
+### Booleanos
 
 ```go
 isTrue   := true
 isFalse  := false
 ```
 
-#### Operators
+#### Operadores
 
 ```go
 fmt.Println(true && true)   // true
@@ -155,7 +155,7 @@ fmt.Println(true || false)  // true
 fmt.Println(!true)          // false
 ```
 
-See: [More Operators](#go-operators-and-punctuation)
+Veja: [Mais operadores](#go-operators-and-punctuation)
 
 ### Arrays {.row-span-2}
 
@@ -190,7 +190,7 @@ fmt.Println(a[0], a[1]) //=> Hello World
 fmt.Println(a)   // => [Hello World]
 ```
 
-#### 2d array
+#### Array 2D
 
 ```go
 var twoDimension [2][3]int
@@ -203,7 +203,7 @@ for i := 0; i < 2; i++ {
 fmt.Println("2d: ", twoDimension)
 ```
 
-### Pointers
+### Ponteiros
 
 ```go
 func main () {
@@ -224,7 +224,7 @@ a := new(int)
 *a = 234
 ```
 
-See: [Pointers](https://tour.go.dev/moretypes/1)
+Veja: [Ponteiros](https://tour.go.dev/moretypes/1)
 
 ### Slices
 
@@ -243,9 +243,9 @@ fmt.Println(s[1:3])
 slice := []int{2, 3, 4}
 ```
 
-See also: [Slices example](https://gobyexample.com/slices)
+Veja também: [Exemplo de slices](https://gobyexample.com/slices)
 
-### Constants
+### Constantes
 
 ```go
 const s string = "constant"
@@ -255,7 +255,7 @@ const d = 3e20 / n
 fmt.Println(d)
 ```
 
-### Type conversions
+### Conversões de tipo
 
 ```go
 i := 90
@@ -266,7 +266,7 @@ u := uint(i)
 s := string(i)
 ```
 
-#### How to get int string?
+#### Como obter uma string a partir de um int?
 
 ```go
 i := 90
@@ -276,9 +276,9 @@ s := strconv.Itoa(i)
 fmt.Println(s) // Outputs: 90
 ```
 
-## Go Strings
+## Strings em Go
 
-### Strings function
+### Funções de strings
 
 ```go
 package main
@@ -348,11 +348,11 @@ func main() {
 
 ```
 
-See also: [fmt](https://go.dev/pkg/fmt/)
+Veja também: [fmt](https://go.dev/pkg/fmt/)
 
-### Function examples
+### Exemplos de funções
 
-| Example                       | Result      |
+| Exemplo                       | Resultado   |
 | ----------------------------- | ----------- |
 | Contains("test", "es")        | true        |
 | Count("test", "t")            | 2           |
@@ -367,9 +367,9 @@ See also: [fmt](https://go.dev/pkg/fmt/)
 | ToLower("TEST")               | test        |
 | ToUpper("test")               | TEST        |
 
-## Go Flow control
+## Controle de fluxo do Go
 
-### Conditional
+### Condicional
 
 ```go
 
@@ -384,7 +384,7 @@ if a > 20 {
 }
 ```
 
-### Statements in if
+### Instruções no if
 
 ```go
 x := "hello go!"
@@ -421,9 +421,9 @@ default:
 }
 ```
 
-See: [Switch](https://github.com/golang/go/wiki/Switch)
+Veja: [Switch](https://github.com/golang/go/wiki/Switch)
 
-### For loop
+### Laço for
 
 ```go
 for i := 0; i <= 10; i++ {
@@ -431,7 +431,7 @@ for i := 0; i <= 10; i++ {
 }
 ```
 
-### For-Range loop
+### Laço for-range
 
 ```go {.wrap}
 nums := []int{2, 3, 4}
@@ -442,7 +442,7 @@ for _, num := range nums {
 fmt.Println("sum:", sum)
 ```
 
-### While loop
+### Laço while
 
 ```go
 i := 1
@@ -452,7 +452,7 @@ for i <= 3 {
 }
 ```
 
-### Continue keyword
+### Palavra-chave continue
 
 ```go
 for i := 0; i <= 5; i++ {
@@ -463,7 +463,7 @@ for i := 0; i <= 5; i++ {
 }
 ```
 
-### Break keyword
+### Palavra-chave break
 
 ```go
 for {
@@ -472,9 +472,9 @@ for {
 }
 ```
 
-## Go Structs & Maps
+## Structs e maps do Go
 
-### Defining {.row-span-2}
+### Definindo {.row-span-2}
 
 ```go
 package main
@@ -495,9 +495,9 @@ func main() {
 }
 ```
 
-See: [Structs](https://tour.go.dev/moretypes/2)
+Veja: [Structs](https://tour.go.dev/moretypes/2)
 
-### Literals
+### Literais
 
 ```go
 v := Vertex{X: 1, Y: 2}
@@ -507,7 +507,7 @@ v := Vertex{1, 2}
 v := Vertex{X: 1}
 ```
 
-You can also put field names.
+Você também pode informar os nomes dos campos.
 
 ### Maps {.row-span-2}
 
@@ -531,18 +531,18 @@ n := map[string]int{"foo": 1, "bar": 2}
 fmt.Println(n) // => map[bar:2 foo:1]
 ```
 
-### Pointers to structs
+### Ponteiros para structs
 
 ```go
 v := &Vertex{1, 2}
 v.X = 2
 ```
 
-Doing `v.X` is the same as doing `(*v).X`, when `v` is a pointer.
+Fazer `v.X` é o mesmo que fazer `(*v).X`, quando `v` é um ponteiro.
 
-## Go Functions
+## Funções em Go
 
-### Multiple arguments
+### Múltiplos argumentos
 
 ```go
 func plus(a int, b int) int {
@@ -555,7 +555,7 @@ fmt.Println(plus(1, 2))
 fmt.Println(plusPlus(1, 2, 3))
 ```
 
-### Multiple return
+### Múltiplos retornos
 
 ```go
 func vals() (int, int) {
@@ -567,7 +567,7 @@ fmt.Println(a)    // => 3
 fmt.Println(b)    // => 7
 ```
 
-### Function literals
+### Funções literais
 
 ```go
 r1, r2 := func() (string, string) {
@@ -579,7 +579,7 @@ r1, r2 := func() (string, string) {
 fmt.Println(r1, r2)
 ```
 
-### Naked returns
+### Retornos nus (naked returns)
 
 ```go
 func split(sum int) (x, y int) {
@@ -593,9 +593,9 @@ fmt.Println(x)   // => 7
 fmt.Println(y)   // => 10
 ```
 
-Note that using naked returns hurts readability.
+Observe que usar naked returns prejudica a legibilidade.
 
-### Variadic functions
+### Funções variádicas
 
 ```go
 func sum(nums ...int) {
@@ -613,7 +613,7 @@ nums := []int{1, 2, 3, 4}
 sum(nums...)  // => [1 2 3 4] 10
 ```
 
-### init function
+### Função init
 
 ```go
 import --> const --> var --> init()
@@ -635,7 +635,7 @@ func main() {
 }
 ```
 
-### Functions as values
+### Funções como valores
 
 ```go
 func main() {
@@ -678,16 +678,16 @@ fmt.Println(inner()) // => 200
 fmt.Println(val)     // => 101
 ```
 
-## Go Packages
+## Pacotes do Go
 
-### Importing {.row-span-2}
+### Importando {.row-span-2}
 
 ```go
 import "fmt"
 import "math/rand"
 ```
 
-#### Same as
+#### Equivalente a
 
 ```go
 import (
@@ -696,7 +696,7 @@ import (
 )
 ```
 
-See: [Importing](https://tour.go.dev/basics/1)
+Veja: [Importando](https://tour.go.dev/basics/1)
 
 ### Aliases {.row-span-2}
 
@@ -719,7 +719,7 @@ import (
 r.Intn()
 ```
 
-### Packages
+### Pacotes
 
 ```go
 package main
@@ -729,9 +729,9 @@ package main
 package internal
 ```
 
-See: [Internal packages](https://go.dev/doc/go1.4#internalpackages)
+Veja: [Pacotes internos](https://go.dev/doc/go1.4#internalpackages)
 
-### Exporting names
+### Exportando nomes
 
 ```go
 // Begin with a capital letter
@@ -740,9 +740,9 @@ func Hello () {
 }
 ```
 
-See: [Exported names](https://tour.go.dev/basics/3)
+Veja: [Nomes exportados](https://tour.go.dev/basics/3)
 
-## Go Concurrency
+## Concorrência do Go
 
 ### Goroutines {.row-span-2}
 
@@ -773,7 +773,7 @@ func main() {
 }
 ```
 
-See: [Goroutines](https://tour.go.dev/concurrency/1), [Channels](https://tour.go.dev/concurrency/2)
+Veja: [Goroutines](https://tour.go.dev/concurrency/1), [Channels](https://tour.go.dev/concurrency/2)
 
 ### WaitGroup {.row-span-2}
 
@@ -804,9 +804,9 @@ func main() {
 }
 ```
 
-See: [WaitGroup](https://go.dev/pkg/sync/#WaitGroup)
+Veja: [WaitGroup](https://go.dev/pkg/sync/#WaitGroup)
 
-### Closing channels
+### Fechando channels
 
 ```go
 ch <- 1
@@ -831,9 +831,9 @@ for i := range ch {
 v, ok := <- ch
 ```
 
-See: [Range and close](https://tour.go.dev/concurrency/4)
+Veja: [Range e close](https://tour.go.dev/concurrency/4)
 
-### Buffered channels
+### Channels com buffer
 
 ```go
 ch := make(chan int, 2)
@@ -844,11 +844,11 @@ ch <- 3
 // all goroutines are asleep - deadlock
 ```
 
-See: [Buffered channels](https://tour.go.dev/concurrency/3)
+Veja: [Channels com buffer](https://tour.go.dev/concurrency/3)
 
-## Go Error control
+## Controle de erros do Go
 
-### Deferring functions
+### Adiando funções
 
 ```go
 func main() {
@@ -872,7 +872,7 @@ func main() {
 }
 ```
 
-The defer func uses current value of d, unless we use a pointer to get final value at end of main.
+A func de defer usa o valor atual de d, a menos que usemos um ponteiro para obter o valor final no fim de main.
 
 ### Defer
 
@@ -883,9 +883,9 @@ func main() {
 }
 ```
 
-See: [Defer, panic and recover](https://blog.go.dev/defer-panic-and-recover)
+Veja: [Defer, panic e recover](https://blog.go.dev/defer-panic-and-recover)
 
-## Go Methods {.cols-2}
+## Métodos do Go {.cols-2}
 
 ### Receivers
 
@@ -906,9 +906,9 @@ v := Vertex{1, 2}
 v.Abs()
 ```
 
-See: [Methods](https://tour.go.dev/methods/1)
+Veja: [Métodos](https://tour.go.dev/methods/1)
 
-### Mutation
+### Mutação
 
 ```go
 func (v *Vertex) Scale(f float64) {
@@ -923,11 +923,11 @@ v.Scale(0.5)
 // `v` is updated
 ```
 
-See: [Pointer receivers](https://tour.go.dev/methods/4)
+Veja: [Receivers de ponteiro](https://tour.go.dev/methods/4)
 
-## Go Interfaces {.cols-2}
+## Interfaces do Go {.cols-2}
 
-### A basic interface
+### Uma interface básica
 
 ```go
 type Shape interface {
@@ -944,9 +944,9 @@ type Rectangle struct {
 }
 ```
 
-Struct `Rectangle` implicitly implements interface `Shape` by implementing all of its methods.
+A struct `Rectangle` implementa implicitamente a interface `Shape` ao implementar todos os seus métodos.
 
-### Methods
+### Métodos
 
 ```go
 func (r Rectangle) Area() float64 {
@@ -958,9 +958,9 @@ func (r Rectangle) Perimeter() float64 {
 }
 ```
 
-The methods defined in `Shape` are implemented in `Rectangle`.
+Os métodos definidos em `Shape` são implementados em `Rectangle`.
 
-### Interface example
+### Exemplo de interface
 
 ```go {.wrap}
 func main() {
@@ -970,9 +970,9 @@ func main() {
 
 ```
 
-## Go generics {.cols-2}
+## Generics do Go {.cols-2}
 
-### example 1
+### Exemplo 1
 
 ```go
 // comparable represents types that can be compared.
@@ -1004,7 +1004,7 @@ func main() {
 
 ```
 
-### example 2
+### Exemplo 2
 
 ```go
 
@@ -1027,11 +1027,11 @@ func main() {
 
 ```
 
-## Go File I/O {.cols-2}
+## I/O de arquivos no Go {.cols-2}
 
-### Reading a File
+### Lendo um arquivo
 
-Read the contents of a file into memory.
+Leia o conteúdo de um arquivo na memória.
 
 ```go
 data, err := os.ReadFile("file.txt")
@@ -1040,19 +1040,19 @@ if err != nil {
 }
 ```
 
-### Writing to a File
+### Escrevendo em um arquivo
 
-Write data to a file with specific permissions (e.g., 0644 for read-write).
+Grave dados em um arquivo com permissões específicas (por exemplo, 0644 para leitura e escrita).
 
 ```go
 err := os.WriteFile("file.txt", []byte("Hello, Go!"), 0644)
 ```
 
-## Go Testing {.cols-2}
+## Testes no Go {.cols-2}
 
-### Unit Test
+### Teste unitário
 
-Unit Test: A basic unit test follows the below naming convention and uses t.Errorf() to report failures.
+Teste unitário: um teste unitário básico segue a convenção de nomes abaixo e usa t.Errorf() para relatar falhas.
 
 ```go
 func TestAdd(t *testing.T) {
@@ -1063,9 +1063,9 @@ func TestAdd(t *testing.T) {
 }
 ```
 
-### Unit Test
+### Teste unitário
 
-Benchmark: Benchmark tests measure performance, using b.N to control iterations.
+Benchmark: testes de benchmark medem desempenho, usando b.N para controlar as iterações.
 
 ```go
 func BenchmarkAdd(b *testing.B) {
@@ -1075,27 +1075,27 @@ func BenchmarkAdd(b *testing.B) {
 }
 ```
 
-## Go JSON Handling {.cols-2}
+## Manipulação de JSON no Go {.cols-2}
 
-### JSON Encoding
+### Codificação JSON
 
-Convert a Go struct to JSON.
+Converta uma struct Go em JSON.
 
 ```go
 data, _ := json.Marshal(person)
 ```
 
-### JSON Decoding
+### Decodificação JSON
 
-Parse JSON data into a Go struct.
+Faça o parse de dados JSON em uma struct Go.
 
 ```go
 json.Unmarshal(data, &person)
 ```
 
-## Go Server {.cols-2}
+## Servidor Go {.cols-2}
 
-### net/http (Standard Library)
+### net/http (biblioteca padrão)
 
 ```go
 package main
@@ -1227,9 +1227,9 @@ func main() {
 
 ```
 
-## Miscellaneous
+## Diversos
 
-### Keywords
+### Palavras-chave
 
 - `break`
 - `default`
@@ -1260,7 +1260,7 @@ func main() {
 
 {.cols-3 .marker-none}
 
-### Operators and punctuation
+### Operadores e pontuação
 
 |                 |                 |                  |                  |                   |      |       |     |     |
 | --------------- | --------------- | ---------------- | ---------------- | ----------------- | ---- | ----- | --- | --- |
@@ -1271,13 +1271,13 @@ func main() {
 | `%`             | `>>`            | `%=`             | `>>=`            | `--`              | `!`  | `...` | `.` | `:` |
 |                 | `&^`            | `&^=`            |                  |                   |      |       |     |     |
 
-## Also see {.cols-1}
+## Veja também {.cols-1}
 
 - [Devhints](https://devhints.io/go) _(devhints.io)_
 - [A tour of Go](https://tour.go.dev/welcome/1) _(tour.go.dev)_
-- [Go wiki](https://github.com/golang/go/wiki/) _(github.com)_
+- [Wiki do Go](https://github.com/golang/go/wiki/) _(github.com)_
 - [Effective Go](https://go.dev/doc/effective_go) _(go.dev)_
 - [Go by Example](https://gobyexample.com/) _(gobyexample.com)_
 - [Awesome Go](https://awesome-go.com/) _(awesome-go.com)_
 - [JustForFunc Youtube](https://www.youtube.com/channel/UC_BzFbxG2za3bp5NRRRXJSw) _(youtube.com)_
-- [Style Guide](https://github.com/golang/go/wiki/CodeReviewComments) _(github.com)_
+- [Guia de estilo](https://github.com/golang/go/wiki/CodeReviewComments) _(github.com)_

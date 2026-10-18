@@ -7,71 +7,71 @@ tags:
   -
   -
 categories:
-  - Keyboard Shortcuts
+  - Atalhos de Teclado
 intro: |
-  A visual cheat-sheet for the 135 default keyboard shortcuts found in SketchUp Pro
+  Uma cheat sheet visual dos 135 atalhos de teclado padrão do SketchUp Pro
 ---
 
-## Keyboard Shortcuts {.cols-2}
+## Atalhos de teclado {.cols-2}
 
-### General I
+### Geral I
 
-| Shortcut          | Action                                                                             |
-| ----------------- | ---------------------------------------------------------------------------------- |
-| `A`               | 2 point arc tool                                                                   |
-| `C`               | Circle tool                                                                        |
-| `Shift` `C`       | Circle tool - lock current inferences                                              |
-| `E`               | Eraser tool                                                                        |
-| `Alt` `E`         | Eraser tool - soften or smooth (use on edges to make adjacent faces appear curved) |
-| `Shift` `E`       | Eraser tool - hide                                                                 |
-| `Alt` `Shift` `E` | Eraser tool - unsoften or unsmooth                                                 |
-| `L`               | Line tool                                                                          |
-| `Shift` `L`       | Line tool - lock in current inference direction                                    |
-| `(arrows)` `L`    | Line tool - lock direction                                                         |
-| `M`               | Move tool                                                                          |
-| `Alt` `M`         | Move tool - move a copy                                                            |
-| `Shift` `M`       | Move tool - hold down to lock in current inference direction                       |
-| `Ctrl` `M`        | Move tool - auto-fold (allow move even if it means adding extra edges and faces)   |
-| `(arrows)` `M`    | Move tool - lock direction                                                         |
-| `F`               | Offset tool                                                                        |
-| `O`               | Orbit tool                                                                         |
-| `Alt` `O`         | Orbit tool - disable 'gravity-weighted' orbiting                                   |
-| `Shift` `O`       | Orbit tool - activate pan tool                                                     |
-| `B`               | Paint bucket tool                                                                  |
-| `Alt` `B`         | Paint bucket tool - fill material, paint all matching adjacent faces               |
-| `Shift` `B`       | Paint bucket tool - replace material, paint all matching faces in the model        |
+| Atalho            | Ação                                                                                 |
+| ----------------- | ------------------------------------------------------------------------------------ |
+| `A`               | Ferramenta arco de 2 pontos                                                          |
+| `C`               | Ferramenta círculo                                                                   |
+| `Shift` `C`       | Ferramenta círculo - trava as inferências atuais                                     |
+| `E`               | Ferramenta borracha                                                                  |
+| `Alt` `E`         | Ferramenta borracha - suaviza ou alisa (use nas arestas para deixar as faces adjacentes curvas) |
+| `Shift` `E`       | Ferramenta borracha - oculta                                                         |
+| `Alt` `Shift` `E` | Ferramenta borracha - desfaz a suavização ou o alisamento                            |
+| `L`               | Ferramenta linha                                                                     |
+| `Shift` `L`       | Ferramenta linha - trava na direção de inferência atual                              |
+| `(arrows)` `L`    | Ferramenta linha - trava a direção                                                   |
+| `M`               | Ferramenta mover                                                                     |
+| `Alt` `M`         | Ferramenta mover - move uma cópia                                                    |
+| `Shift` `M`       | Ferramenta mover - mantenha pressionado para travar na direção de inferência atual   |
+| `Ctrl` `M`        | Ferramenta mover - dobra automática (permite mover mesmo que isso adicione arestas e faces extras) |
+| `(arrows)` `M`    | Ferramenta mover - trava a direção                                                   |
+| `F`               | Ferramenta deslocamento                                                              |
+| `O`               | Ferramenta órbita                                                                    |
+| `Alt` `O`         | Ferramenta órbita - desativa a órbita "com peso da gravidade"                        |
+| `Shift` `O`       | Ferramenta órbita - ativa a ferramenta de pan                                        |
+| `B`               | Ferramenta balde de tinta                                                            |
+| `Alt` `B`         | Ferramenta balde de tinta - preenche o material, pintando todas as faces adjacentes correspondentes |
+| `Shift` `B`       | Ferramenta balde de tinta - substitui o material, pintando todas as faces correspondentes do modelo |
 
 {.shortcuts}
 
-### General II
+### Geral II
 
-| Shortcut              | Action                                                                                      |
+| Atalho                | Ação                                                                                        |
 | --------------------- | ------------------------------------------------------------------------------------------- |
-| `Shift` `B`           | Paint bucket tool - replace material, paint all matching faces in the model                 |
-| `Alt` `Shift` `B`     | Paint bucket tool - replace material on object, paint all matching faces on the same object |
-| `Ctrl` `B`            | Paint bucket tool - sample material                                                         |
-| `P`                   | Push and pull tool                                                                          |
-| `Alt` `P`             | Push and pull tool - push or pull a copy of the face, leaving original in place             |
-| `R`                   | Rectangle tool                                                                              |
-| `Alt` `R`             | Rectangle tool - start drawing from center                                                  |
-| `Q`                   | Rotate tool                                                                                 |
-| `Alt` `Q`             | Rotate tool - rotate a copy                                                                 |
-| `S`                   | Scale tool                                                                                  |
-| `Alt` `S`             | Scale tool - scale about center                                                             |
-| `Shift` `S`           | Scale tool - scale uniformly, don't distort                                                 |
-| `Space`               | Select tool                                                                                 |
-| `Alt` `Space`         | Select tool - add to selection                                                              |
-| `Shift`               | Select tool - add or subtract from selection                                                |
-| `Alt` `Shift` `Space` | Select tool - subtract from selection                                                       |
-| `T`                   | Tape measure tool                                                                           |
-| `Alt` `T`             | Tape measure tool - toggle create guide or measure only                                     |
-| `(arrows)` `T`        | Tape measure tool - lock direction                                                          |
-| `Z`                   | Zoom tool                                                                                   |
-| `Shift` `Z`           | Zoom tool - combine with click-drag mouse to change field of view                           |
+| `Shift` `B`           | Ferramenta balde de tinta - substitui o material, pintando todas as faces correspondentes do modelo |
+| `Alt` `Shift` `B`     | Ferramenta balde de tinta - substitui o material do objeto, pintando todas as faces correspondentes do mesmo objeto |
+| `Ctrl` `B`            | Ferramenta balde de tinta - amostra o material                                              |
+| `P`                   | Ferramenta empurrar/puxar                                                                   |
+| `Alt` `P`             | Ferramenta empurrar/puxar - empurra ou puxa uma cópia da face, deixando a original no lugar |
+| `R`                   | Ferramenta retângulo                                                                        |
+| `Alt` `R`             | Ferramenta retângulo - começa o desenho a partir do centro                                  |
+| `Q`                   | Ferramenta rotacionar                                                                       |
+| `Alt` `Q`             | Ferramenta rotacionar - rotaciona uma cópia                                                 |
+| `S`                   | Ferramenta escala                                                                           |
+| `Alt` `S`             | Ferramenta escala - escala em torno do centro                                               |
+| `Shift` `S`           | Ferramenta escala - escala uniformemente, sem distorcer                                     |
+| `Space`               | Ferramenta selecionar                                                                       |
+| `Alt` `Space`         | Ferramenta selecionar - adiciona à seleção                                                  |
+| `Shift`               | Ferramenta selecionar - adiciona ou remove da seleção                                       |
+| `Alt` `Shift` `Space` | Ferramenta selecionar - remove da seleção                                                   |
+| `T`                   | Ferramenta trena                                                                             |
+| `Alt` `T`             | Ferramenta trena - alterna entre criar guia ou apenas medir                                 |
+| `(arrows)` `T`        | Ferramenta trena - trava a direção                                                          |
+| `Z`                   | Ferramenta zoom                                                                             |
+| `Shift` `Z`           | Ferramenta zoom - combine com clique e arraste do mouse para alterar o campo de visão       |
 
 {.shortcuts}
 
-## Also see
+## Veja também
 
-- [Keyboard shortcuts for SketchUp](https://help.sketchup.com/en/sketchup/getting-started-sketchup#qrc)
+- [Atalhos de teclado do SketchUp](https://help.sketchup.com/en/sketchup/getting-started-sketchup#qrc)
   _(help.sketchup.com)_

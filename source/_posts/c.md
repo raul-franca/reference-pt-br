@@ -4,15 +4,15 @@ date: 2022-12-30 09:51:44
 background: bg-[#2a338a]
 tags:
 categories:
-  - Programming
+  - Programação
 intro: |
-  C quick reference cheat sheet that provides basic syntax and methods.
+  Cheat sheet de referência rápida de C com sintaxe e métodos básicos.
 plugins:
   - copyCode
   - runCode
 ---
 
-## Getting Started
+## Primeiros passos
 
 ### hello.c {.row-span-2}
 
@@ -26,21 +26,21 @@ int main(void) {
 }
 ```
 
-Compile `hello.c` file with `gcc`
+Compile o arquivo `hello.c` com `gcc`
 
 ```bash
 $ gcc -Wall -g hello.c -o hello
 ```
 
-Run the compiled binary `hello`
+Execute o binário compilado `hello`
 
 ```bash
 $ ./hello
 ```
 
-Output => Hello World!
+Saída => Hello World!
 
-### Variables {.row-span-2}
+### Variáveis {.row-span-2}
 
 ```c
 int myNum = 15;
@@ -62,20 +62,20 @@ int sum = x + y; // add variables to sum
 int a = 5, b = 6, c = 50;
 ```
 
-### Constants
+### Constantes
 
 ```c
 const int minutesPerHour = 60;
 const float PI = 3.14;
 ```
 
-Best Practices
+Boas práticas
 
 ```c
 const int BIRTHYEAR = 1980;
 ```
 
-### Comment
+### Comentários
 
 ```c
 // this is a comment
@@ -85,7 +85,7 @@ printf("Hello World!\n"); // Can comment anywhere in file
 to the screen, it's awesome */
 ```
 
-### Print text
+### Imprimir texto
 
 ```c
 printf("I am learning C.\n");
@@ -116,7 +116,7 @@ printf("a=%hX, b=%X, c=%lX\n", a, b, c);
 // output => a=56, b=5CB, c=1DAB83
 ```
 
-### Control the number of spaces
+### Controlar o número de espaços
 
 ```c
 int a1 = 20, a2 = 345, a3 = 700;
@@ -130,7 +130,7 @@ printf("%-9d %-9d %-9d\n", c1, c2, c3);
 printf("%-9d %-9d %-9d\n", d1, d2, d3);
 ```
 
-output result
+resultado da saída
 
 ```bash
 20        345       700
@@ -139,8 +139,8 @@ output result
 34        0         23
 ```
 
-In `%-9d`, `d` means to output in `10` base, `9` means to occupy at least `9` characters width, and the width is not
-enough to fill with spaces, `-` means left alignment
+Em `%-9d`, `d` significa exibir em base `10`, `9` significa ocupar pelo menos `9` caracteres de largura, e se a largura não
+for suficiente, preencha com espaços; `-` significa alinhamento à esquerda
 
 ### Strings
 
@@ -149,14 +149,14 @@ char greetings[] = "Hello World!";
 printf("%s", greetings);
 ```
 
-Access string
+Acessar string
 
 ```c
 char greetings[] = "Hello World!";
 printf("%c", greetings[0]);
 ```
 
-Modify string
+Modificar string
 
 ```c
 char greetings[] = "Hello World!";
@@ -166,7 +166,7 @@ printf("%s", greetings);
 // prints "Jello World!"
 ```
 
-Another way to create a string
+Outra forma de criar uma string
 
 ```c
 char greetings[] = {'H','e','l','l','\0'};
@@ -175,7 +175,7 @@ printf("%s", greetings);
 // print "Hell!"
 ```
 
-Creating String using character pointer (String Literals)
+Criar string usando ponteiro de caractere (String Literals)
 
 ```c
 char *greetings = "Hello";
@@ -183,12 +183,12 @@ printf("%s", greetings);
 // print "Hello!"
 ```
 
-**NOTE**: String literals might be stored in read-only section of memory. Modifying a string literal invokes undefined
-behavior. You can't modify it!
+**NOTA**: String literals podem ser armazenadas em uma seção de memória somente leitura. Modificar um string literal causa
+comportamento indefinido. Você não pode modificá-lo!
 
-`C` **does not** have a String type, use `char` type and create an `array` of characters
+`C` **não tem** um tipo String; use o tipo `char` e crie um `array` de caracteres
 
-### Condition {.row-span-2}
+### Condição {.row-span-2}
 
 ```c
 int time = 20;
@@ -209,7 +209,7 @@ if (time < 10) {
 // Output -> "Good evening!"
 ```
 
-### Ternary operator {.col-span-2}
+### Operador ternário {.col-span-2}
 
 ```c
 int age = 20;
@@ -230,7 +230,7 @@ switch (day) {
 // output -> "Thursday" (day 4)
 ```
 
-### While Loop
+### Loop while
 
 ```c
 int i = 0;
@@ -241,10 +241,10 @@ while (i < 5) {
 }
 ```
 
-**NOTE**: Don't forget to increment the variable used in the condition, otherwise the loop will never end and become an
-"infinite loop"!
+**NOTA**: Não esqueça de incrementar a variável usada na condição, caso contrário o loop nunca termina e vira um
+"loop infinito"!
 
-### Do/While Loop
+### Loop do/while
 
 ```c
 int i = 0;
@@ -255,7 +255,7 @@ do {
 } while (i < 5);
 ```
 
-### For Loop
+### Laço for
 
 ```c
 for (int i = 0; i < 5; i++) {
@@ -263,7 +263,7 @@ for (int i = 0; i < 5; i++) {
 }
 ```
 
-### Break out of the loop Break/Continue {.row-span-2}
+### Sair do loop: break/continue {.row-span-2}
 
 ```c
 for (int i = 0; i < 10; i++) {
@@ -274,7 +274,7 @@ for (int i = 0; i < 10; i++) {
 }
 ```
 
-Break out of the loop when `i` is equal to `4`
+Saia do loop quando `i` for igual a `4`
 
 ```c
 for (int i = 0; i < 10; i++) {
@@ -285,9 +285,9 @@ for (int i = 0; i < 10; i++) {
 }
 ```
 
-Example to skip the value of `4`
+Exemplo para pular o valor `4`
 
-### While Break Example
+### Exemplo de break com while
 
 ```c
 int i = 0;
@@ -302,7 +302,7 @@ while (i < 10) {
 }
 ```
 
-### While continue example
+### Exemplo de continue com while
 
 ```c
 int i = 0;
@@ -326,7 +326,7 @@ printf("%d", myNumbers[0]);
 // output 25
 ```
 
-Change array elements
+Alterar elementos do array
 
 ```c
 int myNumbers[] = {25, 50, 75, 100};
@@ -335,7 +335,7 @@ myNumbers[0] = 33;
 printf("%d", myNumbers[0]);
 ```
 
-Loop through the array
+Percorrer o array
 
 ```c
 int myNumbers[] = {25, 50, 75, 100};
@@ -346,7 +346,7 @@ for (i = 0; i < 4; i++) {
 }
 ```
 
-Set array size
+Definir o tamanho do array
 
 ```c
 // Declare an array of four integers:
@@ -359,20 +359,20 @@ myNumbers[2] = 75;
 myNumbers[3] = 100;
 ```
 
-### Enumeration Enum {.col-span-2}
+### Enumeração (enum) {.col-span-2}
 
 ```c
 enum week { Mon = 1, Tues, Wed, Thurs, Fri, Sat, Sun };
 ```
 
-Define enum variable
+Definir variável enum
 
 ```c
 enum week a, b, c;
 enum week { Mon = 1, Tues, Wed, Thurs, Fri, Sat, Sun } a, b, c;
 ```
 
-With an enumeration variable, you can assign the value in the list to it
+Com uma variável de enumeração, você pode atribuir a ela um valor da lista
 
 ```c
 enum week { Mon = 1, Tues, Wed, Thurs, Fri, Sat, Sun };
@@ -381,7 +381,7 @@ enum week a = Mon, b = Wed, c = Sat;
 enum week{ Mon = 1, Tues, Wed, Thurs, Fri, Sat, Sun } a = Mon, b = Wed, c = Sat;
 ```
 
-### Enumerate sample applications
+### Exemplos de aplicação de enum
 
 ```c
 enum week {Mon = 1, Tues, Wed, Thurs} day;
@@ -397,7 +397,7 @@ switch(day) {
 }
 ```
 
-### User input
+### Entrada do usuário
 
 ```c
 // Create an integer variable to store the number we got from the user
@@ -413,7 +413,7 @@ scanf("%d", &myNum);
 printf("The number you entered: %d\n", myNum);
 ```
 
-### User input string
+### Entrada de string do usuário
 
 ```c
 // create a string
@@ -426,9 +426,9 @@ scanf("%s", &firstName);
 printf("Hello %s.\n", firstName);
 ```
 
-### memory address
+### Endereço de memória
 
-When a variable is created, it is assigned a memory address
+Quando uma variável é criada, ela recebe um endereço de memória
 
 ```c
 int myAge = 43;
@@ -437,9 +437,9 @@ printf("%p", &myAge);
 // Output: 0x7ffe5367e044
 ```
 
-To access it, use the reference operator (`&`)
+Para acessá-lo, use o operador de referência (`&`)
 
-### create pointer
+### Criar ponteiro
 
 ```c
 int myAge = 43; // an int variable
@@ -449,7 +449,7 @@ printf("%d\n", myAge); // output the value of myAge(43)
 printf("%p\n", &myAge);
 ```
 
-### pointer variable {.col-span-2}
+### Variável de ponteiro {.col-span-2}
 
 ```c
 int myAge = 43; // an int variable
@@ -461,7 +461,7 @@ printf("%p\n", &myAge); // output the memory address of myAge (0x7ffe5367e044)
 printf("%p\n", ptr); // use the pointer (0x7ffe5367e044) to output the memory address of myAge
 ```
 
-### Dereference
+### Desreferenciar
 
 ```c
 int myAge = 43; // variable declaration
@@ -474,9 +474,9 @@ printf("%p\n", ptr);
 printf("%d\n", *ptr);
 ```
 
-## Operators
+## Operadores
 
-### Arithmetic Operators
+### Operadores aritméticos
 
 ```c
 int myNum = 100 + 50;
@@ -487,19 +487,19 @@ int sum3 = sum2 + sum2; // 800 (400 + 400)
 
 ---
 
-| Operator | Name      | Example |
-| -------- | --------- | ------- |
-| `+`      | Add       | `x + y` |
-| `-`      | Subtract  | `x - y` |
-| `*`      | Multiply  | `x * y` |
-| `/`      | Divide    | `x / y` |
-| `%`      | Modulo    | `x % y` |
-| `++`     | Increment | `++x`   |
-| `--`     | Decrement | `--x`   |
+| Operador | Nome          | Exemplo |
+| -------- | ------------- | ------- |
+| `+`      | Soma          | `x + y` |
+| `-`      | Subtração     | `x - y` |
+| `*`      | Multiplicação | `x * y` |
+| `/`      | Divisão       | `x / y` |
+| `%`      | Módulo        | `x % y` |
+| `++`     | Incremento    | `++x`   |
+| `--`     | Decremento    | `--x`   |
 
-### Assignment operator
+### Operador de atribuição
 
-| Example              | As                        |
+| Exemplo              | Equivale a                |
 | -------------------- | ------------------------- |
 | x `=` 5              | x `=` 5                   |
 | x `+=` 3             | x `=` x `+` 3             |
@@ -513,7 +513,7 @@ int sum3 = sum2 + sum2; // 800 (400 + 400)
 | x `>>=` 3            | x `=` x `>>` 3            |
 | x `<<=` 3            | x `=` x `<<` 3            |
 
-### Comparison Operators
+### Operadores de comparação
 
 ```c
 int x = 5;
@@ -525,28 +525,28 @@ printf("%d", x > y);
 
 ---
 
-| Symbol | Name                     | Example  |
-| ------ | ------------------------ | -------- |
-| `==`   | equals                   | x `==` y |
-| `!=`   | not equal to             | x `!=` y |
-| `>`    | greater than             | x `>` y  |
-| `<`    | less than                | x `<` y  |
-| `>=`   | greater than or equal to | x `>=` y |
-| `<=`   | less than or equal to    | x `<=` y |
+| Símbolo | Nome             | Exemplo  |
+| ------ | ---------------- | -------- |
+| `==`   | igual a          | x `==` y |
+| `!=`   | diferente de     | x `!=` y |
+| `>`    | maior que        | x `>` y  |
+| `<`    | menor que        | x `<` y  |
+| `>=`   | maior ou igual a | x `>=` y |
+| `<=`   | menor ou igual a | x `<=` y |
 
-Comparison operators are used to compare two values
+Operadores de comparação são usados para comparar dois valores
 
-### Logical Operators {.col-span-2}
+### Operadores lógicos {.col-span-2}
 
-| Symbol            | Name          | Description                                   | Example                       |
-| ----------------- | ------------- | --------------------------------------------- | ----------------------------- |
-| `&&`              | `and` logical | returns true if both statements are true      | `x < 5 && x < 10`             |
-| <code>\|\|</code> | `or` logical  | returns true if one of the statements is true | <code>x < 5 \|\| x < 4</code> |
-| `!`               | `not` logical | Invert result, return false if true           | `!(x < 5 && x < 10)`          |
+| Símbolo            | Nome          | Descrição                                      | Exemplo                       |
+| ----------------- | ------------- | ---------------------------------------------- | ----------------------------- |
+| `&&`              | `and` lógico  | retorna true se ambas as instruções forem true | `x < 5 && x < 10`             |
+| <code>\|\|</code> | `or` lógico   | retorna true se uma das instruções for true    | <code>x < 5 \|\| x < 4</code> |
+| `!`               | `not` lógico  | Inverte o resultado, retorna false se for true | `!(x < 5 && x < 10)`          |
 
 {.show-header}
 
-### Operator Examples {.row-span-2}
+### Exemplos de operadores {.row-span-2}
 
 ```c
 unsigned int a = 60; /*60 = 0011 1100 */
@@ -568,44 +568,44 @@ c = a >> 2; /*15 = 0000 1111 */
 printf("Line 6 -The value of c is %d\n", c);
 ```
 
-### Bitwise operators {.col-span-2}
+### Operadores bit a bit {.col-span-2}
 
-| Operator        | Description                                                     | Instance                                              |
+| Operador        | Descrição                                                      | Instância                                             |
 | :-------------- | :-------------------------------------------------------------- | :---------------------------------------------------- |
-| `&`             | Bitwise AND operation, "AND" operation by binary digits         | `(A & B)` will get `12` which is 0000 1100            |
-| <code>\|</code> | Bitwise OR operator, "or" operation by binary digit             | <code>(A \| B)</code> will get`61` which is 0011 1101 |
-| `^`             | XOR operator, perform "XOR" operation by binary digits          | `(A ^ B)` will get `49` which is 0011 0001            |
-| `~`             | Inversion operator, perform "inversion" operation by binary bit | `(~A)` will get `-61` which is 1100 0011              |
-| `<<`            | binary left shift operator                                      | `A << 2` will get `240` which is 1111 0000            |
-| `>>`            | binary right shift operator                                     | `A >> 2` will get `15` which is 0000 1111             |
+| `&`             | Operação AND bit a bit, "AND" por dígitos binários              | `(A & B)` retorna `12`, que é 0000 1100               |
+| <code>\|</code> | Operador OR bit a bit, "or" por dígito binário                 | <code>(A \| B)</code> retorna `61`, que é 0011 1101   |
+| `^`             | Operador XOR, realiza operação "XOR" por dígitos binários       | `(A ^ B)` retorna `49`, que é 0011 0001               |
+| `~`             | Operador de inversão, realiza operação de "inversão" bit a bit  | `(~A)` retorna `-61`, que é 1100 0011                 |
+| `<<`            | operador de deslocamento binário à esquerda                     | `A << 2` retorna `240`, que é 1111 0000               |
+| `>>`            | operador de deslocamento binário à direita                      | `A >> 2` retorna `15`, que é 0000 1111                |
 
 {.show-header}
 
-## Data Types
+## Tipos de dados
 
-### Basic data types {.col-span-2}
+### Tipos de dados básicos {.col-span-2}
 
-| Data Type            | Size             | Range                              | Description                         |
+| Tipo de dados        | Tamanho          | Intervalo                          | Descrição                          |
 | -------------------- | ---------------- | ---------------------------------- | :---------------------------------- |
-| `char`               | 1 byte           | `−128` ~ `127`                     | single character/alphanumeric/ASCII |
-| `signed char`        | 1 byte           | `−128` ~ `127`                     |                                     |
-| `unsigned char`      | 1 byte           | `0` ~ `255`                        |                                     |
-| `int`                | `2` to `4` bytes | `−32,768` ~ `32,767`               | store integers                      |
-| `signed int`         | 2 bytes          | `−32,768` ~ `32,767`               |                                     |
-| `unsigned int`       | 2 bytes          | `0` ~ `65,535`                     |                                     |
-| `short int`          | 2 bytes          | `−32,768` ~ `32,767`               |                                     |
-| `signed short int`   | 2 bytes          | `−32,768` ~ `32,767`               |                                     |
-| `unsigned short int` | 2 bytes          | `0` ~ `65,535`                     |                                     |
-| `long int`           | 4 bytes          | `-2,147,483,648` ~ `2,147,483,647` |                                     |
-| `signed long int`    | 4 bytes          | `-2,147,483,648` ~ `2,147,483,647` |                                     |
-| `unsigned long int`  | 4 bytes          | `0` ~ `4,294,967,295`              |                                     |
-| `float`              | 4 bytes          | `3.4E-38` ~ `3.4E+38`              |                                     |
-| `double`             | 8 bytes          | `1.7E-308` ~ `1.7E+308`            |                                     |
-| `long double`        | 10 bytes         | `3.4E-4932` ~ `1.1E+4932`          |                                     |
+| `char`               | 1 byte           | `−128` ~ `127`                     | caractere único/alfanumérico/ASCII |
+| `signed char`        | 1 byte           | `−128` ~ `127`                     |                                    |
+| `unsigned char`      | 1 byte           | `0` ~ `255`                        |                                    |
+| `int`                | `2` a `4` bytes  | `−32,768` ~ `32,767`               | armazena inteiros                  |
+| `signed int`         | 2 bytes          | `−32,768` ~ `32,767`               |                                    |
+| `unsigned int`       | 2 bytes          | `0` ~ `65,535`                     |                                    |
+| `short int`          | 2 bytes          | `−32,768` ~ `32,767`               |                                    |
+| `signed short int`   | 2 bytes          | `−32,768` ~ `32,767`               |                                    |
+| `unsigned short int` | 2 bytes          | `0` ~ `65,535`                     |                                    |
+| `long int`           | 4 bytes          | `-2,147,483,648` ~ `2,147,483,647` |                                    |
+| `signed long int`    | 4 bytes          | `-2,147,483,648` ~ `2,147,483,647` |                                    |
+| `unsigned long int`  | 4 bytes          | `0` ~ `4,294,967,295`              |                                    |
+| `float`              | 4 bytes          | `3.4E-38` ~ `3.4E+38`              |                                    |
+| `double`             | 8 bytes          | `1.7E-308` ~ `1.7E+308`            |                                    |
+| `long double`        | 10 bytes         | `3.4E-4932` ~ `1.1E+4932`          |                                    |
 
 {.show-header}
 
-### Data types
+### Tipos de dados
 
 ```c
 // create variables
@@ -623,31 +623,31 @@ printf("%lf\n", myDouble);
 
 ---
 
-| Data Type | Description                          |
+| Tipo de dados | Descrição                                   |
 | :-------- | :----------------------------------- |
-| `char`    | character type                       |
-| `short`   | short integer                        |
-| `int`     | integer type                         |
-| `long`    | long integer                         |
-| `float`   | single-precision floating-point type |
-| `double`  | double-precision floating-point type |
-| `void`    | no type                              |
+| `char`    | tipo caractere                       |
+| `short`   | inteiro curto                        |
+| `int`     | tipo inteiro                         |
+| `long`    | inteiro longo                        |
+| `float`   | tipo de ponto flutuante de precisão simples |
+| `double`  | tipo de ponto flutuante de precisão dupla   |
+| `void`    | sem tipo                             |
 
-### Basic format specifiers
+### Especificadores de formato básicos
 
-| Format Specifier | Data Type                                             |
+| Especificador de formato | Tipo de dados                                              |
 | ---------------- | :---------------------------------------------------- |
-| `%d` or `%i`     | `int` integer                                         |
-| `%f`             | `float` single-precision decimal type                 |
-| `%lf`            | `double` high precision floating point data or number |
-| `%c`             | `char` character                                      |
-| `%s`             | for `strings` strings                                 |
+| `%d` ou `%i`     | `int` inteiro                                         |
+| `%f`             | `float` tipo decimal de precisão simples              |
+| `%lf`            | `double` dado ou número de ponto flutuante de alta precisão |
+| `%c`             | `char` caractere                                      |
+| `%s`             | para `strings` strings                                |
 
 {.show-header}
 
-### Separate base format specifiers
+### Especificadores de formato por base
 
-| Format      | Short         | Int         | Long          |
+| Formato      | Curto         | Inteiro     | Longo         |
 | ----------- | ------------- | ----------- | :------------ |
 | Octal       | `%ho`         | `%o`        | `%lo`         |
 | Decimal     | `%hd`         | `%d`        | `%ld`         |
@@ -655,7 +655,7 @@ printf("%lf\n", myDouble);
 
 {.show-header}
 
-### Data format example
+### Exemplo de formato de dados
 
 ```c
 int myNum = 5;
@@ -667,23 +667,23 @@ printf("%f\n", myFloatNum);
 printf("%c\n", myLetter);
 ```
 
-## C Preprocessor
+## Pré-processador C
 
-### Preprocessor Directives {.row-span-2}
+### Diretivas do pré-processador {.row-span-2}
 
-| Directive  | Description                                                          |
+| Diretiva   | Descrição                                                          |
 | ---------- | :------------------------------------------------------------------- |
-| `#define`  | define a macro                                                       |
-| `#include` | include a source code file                                           |
-| `#undef`   | undefined macro                                                      |
-| `#ifdef`   | Returns true if the macro is defined                                 |
-| `#ifndef`  | Returns true if the macro is not defined                             |
-| `#if`      | Compile the following code if the given condition is true            |
-| `#else`    | Alternative to `#if`                                                 |
-| `#elif`    | If the `#if` condition is false, the current condition is `true`     |
-| `#endif`   | End a `#if...#else` conditional compilation block                    |
-| `#error`   | Print an error message when standard error is encountered            |
-| `#pragma`  | Issue special commands to the compiler using the standardized method |
+| `#define`  | define uma macro                                                       |
+| `#include` | inclui um arquivo de código-fonte                                      |
+| `#undef`   | remove a definição da macro                                            |
+| `#ifdef`   | Retorna true se a macro estiver definida                               |
+| `#ifndef`  | Retorna true se a macro não estiver definida                           |
+| `#if`      | Compila o código a seguir se a condição informada for verdadeira       |
+| `#else`    | Alternativa ao `#if`                                                   |
+| `#elif`    | Se a condição do `#if` for falsa, a condição atual é `true`            |
+| `#endif`   | Encerra um bloco de compilação condicional `#if...#else`               |
+| `#error`   | Imprime uma mensagem de erro quando um erro padrão é encontrado        |
+| `#pragma`  | Emite comandos especiais ao compilador usando o método padronizado     |
 
 {.show-header}
 
@@ -698,21 +698,21 @@ printf("%c\n", myLetter);
 #define FILE_SIZE 42 // undefine and define to 42
 ```
 
-### Predefined macros {.row-span-2}
+### Macros predefinidas {.row-span-2}
 
-| Macro      | Description                                                           |
+| Macro      | Descrição                                                            |
 | ---------- | :-------------------------------------------------------------------- |
-| `__DATE__` | The current date, a character constant in the format "MMM DD YYYY"    |
-| `__TIME__` | The current time, a character constant in the format "HH:MM:SS"       |
-| `__FILE__` | This will contain the current filename, a string constant             |
-| `__LINE__` | This will contain the current line number, a decimal constant         |
-| `__STDC__` | Defined as `1` when the compiler compiles against the `ANSI` standard |
+| `__DATE__` | A data atual, uma constante de caractere no formato "MMM DD YYYY"     |
+| `__TIME__` | A hora atual, uma constante de caractere no formato "HH:MM:SS"        |
+| `__FILE__` | Contém o nome do arquivo atual, uma constante de string               |
+| `__LINE__` | Contém o número da linha atual, uma constante decimal                 |
+| `__STDC__` | Definida como `1` quando o compilador compila segundo o padrão `ANSI` |
 
 {.show-header}
 
-`ANSI C` defines a number of macros that you can use, but you cannot directly modify these predefined macros
+`ANSI C` define várias macros que você pode usar, mas não é possível modificar diretamente essas macros predefinidas
 
-#### Predefined macro example
+#### Exemplo de macro predefinida
 
 ```c
 #include <stdio.h>
@@ -726,18 +726,18 @@ int main(void) {
 }
 ```
 
-### Macro continuation operator (\\)
+### Operador de continuação de macro (\\)
 
-A macro is usually written on a single line.
+Uma macro geralmente é escrita em uma única linha.
 
 ```c
 #define message_for(a, b) \
     printf(#a " and " #b ": We love you!\n")
 ```
 
-If the macro is too long to fit on a single line, use the macro continuation operator `\`
+Se a macro for longa demais para caber em uma única linha, use o operador de continuação de macro `\`
 
-### String Constantization Operator (#)
+### Operador de constantização de string (#)
 
 ```c
 #include <stdio.h>
@@ -752,15 +752,15 @@ int main(void) {
 }
 ```
 
-When the above code is compiled and executed, it produces the following result:
+Quando o código acima é compilado e executado, ele produz o seguinte resultado:
 
 ```
 Carole and Debra: We love you!
 ```
 
-When you need to convert a macro parameter to a string constant, use the string constant operator `#`
+Quando precisar converter um parâmetro de macro em uma string constante, use o operador de string constante `#`
 
-### tag paste operator (##)
+### Operador de colagem de tag (##)
 
 ```c
 #include <stdio.h>
@@ -775,7 +775,7 @@ int main(void) {
 }
 ```
 
-### defined() operator
+### Operador defined()
 
 ```c
 #include <stdio.h>
@@ -791,7 +791,7 @@ int main(void) {
 }
 ```
 
-### Parameterized macros
+### Macros parametrizadas
 
 ```c
 int square(int x) {
@@ -799,13 +799,13 @@ int square(int x) {
 }
 ```
 
-The macro rewrites the above code as follows:
+A macro reescreve o código acima da seguinte forma:
 
 ```c
 #define square(x) ( (x) * (x) )
 ```
 
-No spaces are allowed between the macro name and the opening parenthesis
+Não são permitidos espaços entre o nome da macro e o parêntese de abertura
 
 ```c
 #include <stdio.h>
@@ -818,9 +818,9 @@ int main(void) {
 }
 ```
 
-## C Function
+## Funções em C
 
-### Function declaration and definition {.row-span-2}
+### Declaração e definição de função {.row-span-2}
 
 ```c
 int main(void) {
@@ -830,7 +830,7 @@ int main(void) {
 }
 ```
 
-The function consists of two parts
+A função consiste em duas partes
 
 ```c
 void myFunction() { // declaration declaration
@@ -840,8 +840,8 @@ void myFunction() { // declaration declaration
 
 ---
 
-- `Declaration` declares the function name, return type and parameters _(if any)_
-- `Definition` function body _(code to execute)_
+- `Declaration` declara o nome da função, o tipo de retorno e os parâmetros _(se houver)_
+- `Definition` corpo da função _(código a executar)_
 
 ---
 
@@ -860,7 +860,7 @@ void myFunction() {// Function definition
 }
 ```
 
-### Call function
+### Chamar função
 
 ```c
 // create function
@@ -878,7 +878,7 @@ int main() {
 // Output -> "Good evening!"
 ```
 
-### Function parameters
+### Parâmetros de função
 
 ```c
 void myFunction(char name[]) {
@@ -895,7 +895,7 @@ int main() {
 // Hello Jenny
 ```
 
-### Multiple parameters
+### Vários parâmetros
 
 ```c
 void myFunction(char name[], int age) {
@@ -911,7 +911,7 @@ int main() {
 // Hi Jenny you are 14 years old.
 ```
 
-### Return value {.row-span-2}
+### Valor de retorno {.row-span-2}
 
 ```c
 int myFunction(int x) {
@@ -925,7 +925,7 @@ int main() {
 // output 8 (5 + 3)
 ```
 
-Two parameters
+Dois parâmetros
 
 ```c
 int myFunction(int x, int y) {
@@ -944,7 +944,7 @@ int main() {
 // result = 8 (5 + 3)
 ```
 
-### Recursive example
+### Exemplo recursivo
 
 ```c
 int sum(int k);
@@ -965,7 +965,7 @@ int sum(int k) {
 }
 ```
 
-### Mathematical functions
+### Funções matemáticas
 
 ```c
 #include <math.h>
@@ -980,19 +980,19 @@ void main(void) {
 
 ---
 
-- `abs(x)` absolute value
-- `acos(x)` arc cosine value
-- `asin(x)` arc sine
-- `atan(x)` arc tangent
-- `cbrt(x)` cube root
-- `cos(x)` cosine
-- the value of `exp(x)` Ex
-- `sin(x)` the sine of x
-- tangent of `tan(x)` angle
+- `abs(x)` valor absoluto
+- `acos(x)` valor do arco cosseno
+- `asin(x)` arco seno
+- `atan(x)` arco tangente
+- `cbrt(x)` raiz cúbica
+- `cos(x)` cosseno
+- o valor de `exp(x)` Ex
+- `sin(x)` o seno de x
+- tangente do ângulo `tan(x)`
 
-## C Structures
+## Estruturas em C
 
-### Create structure
+### Criar estrutura
 
 ```c
 struct MyStructure { // structure declaration
@@ -1001,7 +1001,7 @@ struct MyStructure { // structure declaration
 }; // end the structure with a semicolon
 ```
 
-Create a struct variable called `s1`
+Crie uma variável struct chamada `s1`
 
 ```c{7}
 struct myStructure {
@@ -1016,7 +1016,7 @@ int main() {
 }
 ```
 
-### Strings in the structure
+### Strings na estrutura
 
 ```c{9}
 struct myStructure {
@@ -1035,9 +1035,9 @@ int main() {
 }
 ```
 
-Assigning values to strings using the `strcpy` function
+Atribuindo valores a strings com a função `strcpy`
 
-### Accessing structure members {.row-span-2}
+### Acessar membros da estrutura {.row-span-2}
 
 ```c{11,12,16}
 // create a structure called myStructure
@@ -1064,7 +1064,7 @@ int main() {
 }
 ```
 
-Create different structure variables
+Crie variáveis de estrutura diferentes
 
 ```c
 struct myStructure s1;
@@ -1077,7 +1077,7 @@ s2.myNum = 20;
 s2.myLetter = 'C';
 ```
 
-### Copy structure
+### Copiar estrutura
 
 ```c{6}
 struct myStructure s1 = {
@@ -1088,9 +1088,9 @@ struct myStructure s2;
 s2 = s1;
 ```
 
-In the example, the value of `s1` is copied to `s2`
+No exemplo, o valor de `s1` é copiado para `s2`
 
-### Modify value
+### Modificar valor
 
 ```c{6,7}
 // Create a struct variable and assign it a value
@@ -1106,48 +1106,48 @@ printf("%d %c",
     s1.myLetter);
 ```
 
-## File Processing
+## Processamento de arquivos
 
-### File processing function
+### Funções de processamento de arquivos
 
-| Function    | Description                                       |
-| ----------- | :------------------------------------------------ |
-| `fopen()`   | `open` a new or existing file                     |
-| `fprintf()` | write data to `file`                              |
-| `fscanf()`  | `read` data from a file                           |
-| `fputc()`   | write a character to `file`                       |
-| `fgetc()`   | `read` a character from a file                    |
-| `fclose()`  | `close` the file                                  |
-| `fseek()`   | set the file pointer to `the given position`      |
-| `fputw()`   | Write an integer `to` a file                      |
-| `fgetw()`   | `read` an integer from a file                     |
-| `ftell()`   | returns the current `position`                    |
-| `rewind()`  | set the file pointer to the beginning of the file |
+| Função      | Descrição                                              |
+| ----------- | :----------------------------------------------------- |
+| `fopen()`   | `open` (abre) um arquivo novo ou existente              |
+| `fprintf()` | grava dados em um `file` (arquivo)                      |
+| `fscanf()`  | `read` (lê) dados de um arquivo                         |
+| `fputc()`   | grava um caractere em `file` (arquivo)                  |
+| `fgetc()`   | `read` (lê) um caractere de um arquivo                  |
+| `fclose()`  | `close` (fecha) o arquivo                               |
+| `fseek()`   | posiciona o ponteiro do arquivo em `the given position` |
+| `fputw()`   | Grava um inteiro `to` (em) um arquivo                   |
+| `fgetw()`   | `read` (lê) um inteiro de um arquivo                    |
+| `ftell()`   | retorna a `position` (posição) atual                    |
+| `rewind()`  | posiciona o ponteiro do arquivo no início do arquivo    |
 
 {.show-header}
 
-There are many functions in the C library to `open`/`read`/`write`/`search` and `close` files
+A biblioteca C tem muitas funções para `open`/`read`/`write`/`search` e `close` arquivos
 
-### Open mode parameter
+### Parâmetro de modo de abertura
 
-| Mode  | Description                                                                                                 |
+| Modo  | Descrição                                                                                                   |
 | ----- | :---------------------------------------------------------------------------------------------------------- |
-| `r`   | Open a text file in `read` mode, allowing the file to be read                                               |
-| `w`   | Open a text file in `write` mode, allowing writing to the file                                              |
-| `a`   | Open a text file in `append` mode<br /><small>If the file does not exist, a new one will be created</small> |
-| `r+`  | Open a text file in `read-write` mode, allowing reading and writing of the file                             |
-| `w+`  | Open a text file in `read-write` mode, allowing reading and writing of the file                             |
-| `a+`  | Open a text file in `read-write` mode, allowing reading and writing of the file                             |
-| `rb`  | Open a binary file in `read` mode                                                                           |
-| `wb`  | Open binary file in `write` mode                                                                            |
-| `ab`  | Open a binary file in `append` mode                                                                         |
-| `rb+` | open binary file in `read-write` mode                                                                       |
-| `wb+` | Open binary file in `read-write` mode                                                                       |
-| `ab+` | open binary file in `read-write` mode                                                                       |
+| `r`   | Abre um arquivo de texto no modo `read` (leitura), permitindo ler o arquivo                                 |
+| `w`   | Abre um arquivo de texto no modo `write` (escrita), permitindo escrever no arquivo                          |
+| `a`   | Abre um arquivo de texto no modo `append` (anexar)<br /><small>Se o arquivo não existir, um novo será criado</small> |
+| `r+`  | Abre um arquivo de texto no modo `read-write`, permitindo ler e escrever o arquivo                          |
+| `w+`  | Abre um arquivo de texto no modo `read-write`, permitindo ler e escrever o arquivo                          |
+| `a+`  | Abre um arquivo de texto no modo `read-write`, permitindo ler e escrever o arquivo                          |
+| `rb`  | Abre um arquivo binário no modo `read`                                                                      |
+| `wb`  | Abre arquivo binário no modo `write`                                                                        |
+| `ab`  | Abre um arquivo binário no modo `append`                                                                    |
+| `rb+` | Abre arquivo binário no modo `read-write`                                                                   |
+| `wb+` | Abre arquivo binário no modo `read-write`                                                                   |
+| `ab+` | Abre arquivo binário no modo `read-write`                                                                   |
 
 {.show-header}
 
-### Open the file: fopen()
+### Abrir o arquivo: fopen()
 
 ```c{6}
 #include <stdio.h>
@@ -1168,9 +1168,9 @@ void main() {
 }
 ```
 
-After performing all operations on the file, the file must be closed with `fclose()`
+Após executar todas as operações no arquivo, ele deve ser fechado com `fclose()`
 
-### Write to file: fprintf()
+### Gravar no arquivo: fprintf()
 
 ```c{7}
 #include <stdio.h>
@@ -1185,7 +1185,7 @@ void main() {
 }
 ```
 
-### Read the file: fscanf()
+### Ler o arquivo: fscanf()
 
 ```c{6}
 #include <stdio.h>
@@ -1203,7 +1203,7 @@ void main() {
 }
 ```
 
-### Write to file: fputc()
+### Gravar no arquivo: fputc()
 
 ```c{6}
 #include <stdio.h>
@@ -1216,7 +1216,7 @@ void main() {
 }
 ```
 
-### Read the file: fgetc()
+### Ler o arquivo: fgetc()
 
 ```c{8}
 #include <stdio.h>
@@ -1236,7 +1236,7 @@ void main() {
 }
 ```
 
-### Write to file: fputs()
+### Gravar no arquivo: fputs()
 
 ```c {8}
 #include<stdio.h>
@@ -1252,7 +1252,7 @@ void main() {
 }
 ```
 
-### Read files: fgets()
+### Ler arquivos: fgets()
 
 ```c {10}
 #include<stdio.h>
@@ -1288,7 +1288,7 @@ void main(void) {
 }
 ```
 
-Set the file pointer to the given position
+Define o ponteiro do arquivo para a posição informada
 
 ### rewind()
 

@@ -7,271 +7,271 @@ tags:
   -
   -
 categories:
-  - Keyboard Shortcuts
+  - Atalhos de Teclado
 intro: |
-  A visual cheat-sheet for the 187 keyboard shortcuts found in Blender
+  Um cheat sheet visual com os 187 atalhos de teclado do Blender
 ---
 
-## Keyboard Shortcuts {.cols-2}
+## Atalhos de teclado {.cols-2}
 
-### Universal
+### Universais
 
-| Shortcut            | Action                                                                                                                        |
+| Atalho              | Ação                                                                                                                          |
 | ------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| `Esc`               | Cancels Blender functions without changes                                                                                     |
-| `Space`             | Open the toolbox                                                                                                              |
-| `Tab`               | Start or quit edit mode                                                                                                       |
-| `F1`                | Loads a Blender file, changes the window to a file window                                                                     |
-| `Shift` `F1`        | Appends parts from other files, or loads as library data                                                                      |
-| `F2`                | Writes a Blender file, changes the window to a file window                                                                    |
-| `Shift` `F2`        | Exports the scene as a DXF file                                                                                               |
-| `Ctrl` `F2`         | Exports the scene as a VRML1 file                                                                                             |
-| `F3`                | Writes a picture, if a picture has been rendered, and the file format is as indicated in the display buttons                  |
-| `Ctrl` `F3`         | Saves a screen dump of the active window                                                                                      |
-| `Ctrl` `Shift` `F3` | Saves a screen dump of the whole Blender screen                                                                               |
-| `F4`                | Displays the logic context                                                                                                    |
-| `F5`                | Displays the shading context, light, material, or world sub-contexts                                                          |
-| `F6`                | Displays the shading context and texture sub-context                                                                          |
-| `F7`                | Displays the object context                                                                                                   |
-| `F8`                | Displays the shading context and world sub-context                                                                            |
-| `F9`                | Displays the editing context                                                                                                  |
-| `F10`               | Displays the scene context                                                                                                    |
-| `F11`               | Hides or shows the render window                                                                                              |
-| `F12`               | Starts the rendering from the active camera                                                                                   |
-| `Left`              | Go to the previous frame                                                                                                      |
-| `Shift` `Left`      | Go to the first frame                                                                                                         |
-| `Right`             | Go to the next frame                                                                                                          |
-| `Shift` `Right`     | Go to the last frame                                                                                                          |
-| `Up`                | Go forward 10 frames                                                                                                          |
-| `Down`              | Go back 10 frames                                                                                                             |
-| `Alt` `A`           | Change the current Blender window to animation playback mode, the cursor changes to a counter                                 |
-| `Alt` `Shift` `A`   | Change the current window and all 3D windows to animation playback mode                                                       |
-| `I`                 | Insert key menu, this menu differs from window to window                                                                      |
-| `J`                 | Toggle the render buffers                                                                                                     |
-| `Ctrl` `O`          | Opens the last saved file                                                                                                     |
-| `Q`                 | Quit Blender                                                                                                                  |
-| `Ctrl` `Alt` `T`    | Timer menu, this menu offers access to information about drawing speed                                                        |
-| `Ctrl` `U`          | Save user defaults, current project settings are written to the default file that will be loaded every time you start Blender |
-| `Ctrl` `W`          | Write file without opening a file window                                                                                      |
-| `Alt` `W`           | Write videoscape file                                                                                                         |
-| `Ctrl` `X`          | Erase everything except the render buffer, the default scene is reloaded                                                      |
-| `Ctrl` `Y`          | Redo                                                                                                                          |
-| `Ctrl` `Z`          | Undo                                                                                                                          |
-| `Ctrl` `Shift` `Z`  | Redo                                                                                                                          |
+| `Esc`               | Cancela funções do Blender sem aplicar alterações                                                                             |
+| `Space`             | Abre a caixa de ferramentas                                                                                                   |
+| `Tab`               | Inicia ou encerra o modo de edição                                                                                            |
+| `F1`                | Carrega um arquivo do Blender e muda a janela para uma janela de arquivos                                                     |
+| `Shift` `F1`        | Anexa partes de outros arquivos ou carrega como dados de biblioteca                                                           |
+| `F2`                | Grava um arquivo do Blender e muda a janela para uma janela de arquivos                                                       |
+| `Shift` `F2`        | Exporta a cena como um arquivo DXF                                                                                            |
+| `Ctrl` `F2`         | Exporta a cena como um arquivo VRML1                                                                                          |
+| `F3`                | Grava uma imagem, caso uma tenha sido renderizada, no formato indicado nos botões de exibição                                  |
+| `Ctrl` `F3`         | Salva uma captura de tela da janela ativa                                                                                     |
+| `Ctrl` `Shift` `F3` | Salva uma captura de tela de toda a área do Blender                                                                            |
+| `F4`                | Exibe o contexto de lógica                                                                                                    |
+| `F5`                | Exibe os subcontextos de sombreamento, luz, material ou world                                                                 |
+| `F6`                | Exibe o contexto de sombreamento e o subcontexto de textura                                                                   |
+| `F7`                | Exibe o contexto de objeto                                                                                                    |
+| `F8`                | Exibe o contexto de sombreamento e o subcontexto world                                                                        |
+| `F9`                | Exibe o contexto de edição                                                                                                    |
+| `F10`               | Exibe o contexto de cena                                                                                                      |
+| `F11`               | Oculta ou mostra a janela de renderização                                                                                     |
+| `F12`               | Inicia a renderização a partir da câmera ativa                                                                                |
+| `Left`              | Vai para o frame anterior                                                                                                     |
+| `Shift` `Left`      | Vai para o primeiro frame                                                                                                     |
+| `Right`             | Vai para o próximo frame                                                                                                      |
+| `Shift` `Right`     | Vai para o último frame                                                                                                       |
+| `Up`                | Avança 10 frames                                                                                                              |
+| `Down`              | Volta 10 frames                                                                                                               |
+| `Alt` `A`           | Muda a janela atual do Blender para o modo de reprodução de animação; o cursor se transforma em um contador                    |
+| `Alt` `Shift` `A`   | Muda a janela atual e todas as janelas 3D para o modo de reprodução de animação                                               |
+| `I`                 | Menu de inserção de chave; esse menu varia de janela para janela                                                              |
+| `J`                 | Alterna os buffers de renderização                                                                                            |
+| `Ctrl` `O`          | Abre o último arquivo salvo                                                                                                   |
+| `Q`                 | Sai do Blender                                                                                                                |
+| `Ctrl` `Alt` `T`    | Menu de timer; esse menu dá acesso a informações sobre a velocidade de desenho                                                |
+| `Ctrl` `U`          | Salva os padrões do usuário; as configurações atuais do projeto vão para o arquivo padrão, carregado sempre que você abre o Blender |
+| `Ctrl` `W`          | Grava o arquivo sem abrir uma janela de arquivos                                                                              |
+| `Alt` `W`           | Grava um arquivo videoscape                                                                                                   |
+| `Ctrl` `X`          | Apaga tudo, exceto o buffer de renderização; a cena padrão é recarregada                                                      |
+| `Ctrl` `Y`          | Refaz                                                                                                                         |
+| `Ctrl` `Z`          | Desfaz                                                                                                                        |
+| `Ctrl` `Shift` `Z`  | Refaz                                                                                                                         |
 
 {.shortcuts}
 
-### Object Mode
+### Modo Objeto
 
-| Shortcut                | Action                                                                                                                                                |
-| ----------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `Home`                  | All objects in the visible layer are displayed completely, centered in the window                                                                     |
-| `PgUp`                  | Select the next object key, if more than one is selected the selection is shifted up cyclically                                                       |
-| `Shift` `PgUp`          | Add to selection the next object key                                                                                                                  |
-| `PgDn`                  | Select the previous object key, if more than one is selected the selection is shifted up cyclically                                                   |
-| `Shift` `PgDn`          | Adds to selection the previous object key                                                                                                             |
-| <code>\`</code>         | Select all layers                                                                                                                                     |
-| `Shift` <code>\`</code> | Revert to the previous layer setting                                                                                                                  |
-| `Tab`                   | Start or stop edit mode                                                                                                                               |
-| `A`                     | Selects or deselects all                                                                                                                              |
-| `Ctrl` `A`              | Apply size and rotation                                                                                                                               |
-| `Ctrl` `Shift` `A`      | If the active object is automatically duplicated, brings up a menu for actually creating the objects                                                  |
-| `Shift` `A`             | Brings up the add menu, the toolbox items that start with ADD                                                                                         |
-| `B`                     | Border select, draws a rectangle with the left mouse to select objects                                                                                |
-| `Shift` `B`             | Render border, this only works in camera view mode                                                                                                    |
-| `C`                     | Center view, the position of the 3D cursor becomes the new center of the 3D window                                                                    |
-| `Alt` `C`               | Convert menu, depending on the active object a popup menu is displayed enabling you to convert certain types of ObData                                |
-| `Ctrl` `C`              | Copy menu, this menu copies information from the active object to selected objects                                                                    |
-| `Shift` `C`             | Center zero view, the 3D cursor is set to zero and the view is changed so all objects can be displayed                                                |
-| `D`                     | Display draw mode menu                                                                                                                                |
-| `Shift` `D`             | Add duplicate, the selected objects are duplicated                                                                                                    |
-| `Alt` `D`               | Add linked duplicate, linked duplicates of the selected objects are created                                                                           |
-| `Ctrl` `D`              | Draw the texture image as wire                                                                                                                        |
-| `Alt` `E`               | Start or stop edit mode                                                                                                                               |
-| `F`                     | If selected object is a mash, toggles face select mode on or off                                                                                      |
-| `Ctrl` `F`              | Sort faces, the faces of the active mesh object are sorted based on the current view in the 3D window                                                 |
-| `G`                     | Grab mode, or translation mode                                                                                                                        |
-| `Alt` `G`               | Clears translations, given in grab mode                                                                                                               |
-| `Shift` `G`             | Group selection                                                                                                                                       |
-| `I`                     | Insert object key, a keyposition is inserted in the current frame of all selected objects                                                             |
-| `Ctrl` `J`              | Join objects, all selected objects of the same type are added to the active object                                                                    |
-| `K`                     | Show keys, the draw key option is turned on for all selected objects                                                                                  |
-| `Shift` `K`             | Display popup menu for showing and selecting all keys                                                                                                 |
-| `L`                     | Makes selected object local, makes library linked objects local for the current scene                                                                 |
-| `Ctrl` `L`              | Link selected, links some of the active object data to all selected objects                                                                           |
-| `Shift` `L`             | Select linked, selected all objects somehow linked to the active object                                                                               |
-| `M`                     | Move selected objects to another layer                                                                                                                |
-| `Ctrl` `M`              | Mirror menu, it is possible to mirror an object along the X, Y, or Z axis                                                                             |
-| `N`                     | Number panel, the location, rotation, and scaling of the active object are displayed and can be modified                                              |
-| `Alt` `O`               | Clear origin, the origin is erased for all child objects, which causes them to move ot the exact location of the parent objects                       |
-| `Shift` `O`             | If the selected object is a mesh, toggles the subsurf on or off                                                                                       |
-| `Ctrl` `P`              | Make selected objects the children of the active object                                                                                               |
-| `Alt` `P`               | Clears parent relation, user is asked if they wish to keep or clear parent-induced transforms                                                         |
-| `R`                     | Rotate mode, works on selected objects                                                                                                                |
-| `Alt` `R`               | Clears rotation, the X, Y, and Z rotations of selected objects are set to zero                                                                        |
-| `S`                     | Size mode or scaling mode, works on selected objects                                                                                                  |
-| `Alt` `S`               | Clears size, the X, Y, and Z dimensions of selected objects are set to 1                                                                              |
-| `Shift` `S`             | Opens the snap menu                                                                                                                                   |
-| `T`                     | Texture space mode, the position of dimensions of the texture space for the selected objects can be changed in the same manner for grab and size mode |
-| `Ctrl` `T`              | Makes selected objects track the active object                                                                                                        |
-| `Alt` `T`               | Clears old style track, constraint track is removed as all constrains are                                                                             |
-| `U`                     | Makes object single user, the inverse operation of link                                                                                               |
-| `V`                     | Switches in and out of vertex paint mode                                                                                                              |
-| `Alt` `V`               | Object image aspect, this hotkey sets the X and Y dimensions of the selected objects in relation to the dimensions of the image texture they have     |
-| `W`                     | Opens the object booleans menu                                                                                                                        |
-| `X`                     | Deletes selected objects                                                                                                                              |
-| `Z`                     | Toggles solid mode on or off                                                                                                                          |
-| `Shift` `Z`             | Toggles shaded mode on or off                                                                                                                         |
-| `Alt` `Z`               | Toggles textured mode on or off                                                                                                                       |
+| Atalho                  | Ação                                                                                                                                                |
+| ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `Home`                  | Todos os objetos da camada visível são exibidos por completo, centralizados na janela                                                                |
+| `PgUp`                  | Seleciona a próxima chave de objeto; se houver mais de uma selecionada, a seleção sobe de forma cíclica                                               |
+| `Shift` `PgUp`          | Adiciona à seleção a próxima chave de objeto                                                                                                        |
+| `PgDn`                  | Seleciona a chave de objeto anterior; se houver mais de uma selecionada, a seleção sobe de forma cíclica                                             |
+| `Shift` `PgDn`          | Adiciona à seleção a chave de objeto anterior                                                                                                        |
+| <code>\`</code>         | Seleciona todas as camadas                                                                                                                          |
+| `Shift` <code>\`</code> | Reverte para a configuração de camada anterior                                                                                                      |
+| `Tab`                   | Inicia ou interrompe o modo de edição                                                                                                               |
+| `A`                     | Seleciona ou desmarca tudo                                                                                                                          |
+| `Ctrl` `A`              | Aplica tamanho e rotação                                                                                                                            |
+| `Ctrl` `Shift` `A`      | Se o objeto ativo estiver duplicado automaticamente, abre um menu para criar os objetos de fato                                                      |
+| `Shift` `A`             | Abre o menu de adição, com os itens da caixa de ferramentas que começam com ADD                                                                     |
+| `B`                     | Seleção por borda; desenha um retângulo com o botão esquerdo do mouse para selecionar objetos                                                        |
+| `Shift` `B`             | Render border; funciona apenas no modo de visualização da câmera                                                                                    |
+| `C`                     | Centraliza a visualização; a posição do cursor 3D vira o novo centro da janela 3D                                                                   |
+| `Alt` `C`               | Menu de conversão; dependendo do objeto ativo, um popup permite converter certos tipos de ObData                                                     |
+| `Ctrl` `C`              | Menu de cópia; copia informações do objeto ativo para os objetos selecionados                                                                       |
+| `Shift` `C`             | Centraliza a visualização em zero; o cursor 3D vai para zero e a visão muda para exibir todos os objetos                                            |
+| `D`                     | Exibe o menu de modo de desenho                                                                                                                     |
+| `Shift` `D`             | Adiciona uma duplicata; os objetos selecionados são duplicados                                                                                       |
+| `Alt` `D`               | Adiciona duplicata vinculada; cria duplicatas vinculadas dos objetos selecionados                                                                   |
+| `Ctrl` `D`              | Desenha a textura como wireframe                                                                                                                    |
+| `Alt` `E`               | Inicia ou interrompe o modo de edição                                                                                                               |
+| `F`                     | Se o objeto selecionado for um mesh, ativa ou desativa o modo de seleção de faces                                                                   |
+| `Ctrl` `F`              | Ordena faces; as faces do objeto mesh ativo são ordenadas com base na visualização atual na janela 3D                                                |
+| `G`                     | Modo de agarrar, ou modo de translação                                                                                                              |
+| `Alt` `G`               | Limpa as translações feitas no modo de agarrar                                                                                                      |
+| `Shift` `G`             | Seleção por grupo                                                                                                                                   |
+| `I`                     | Insere chave de objeto; uma keyposition é inserida no frame atual de todos os objetos selecionados                                                   |
+| `Ctrl` `J`              | Junta objetos; todos os objetos selecionados do mesmo tipo são adicionados ao objeto ativo                                                          |
+| `K`                     | Mostra chaves; a opção de desenho de chaves é ativada para todos os objetos selecionados                                                            |
+| `Shift` `K`             | Exibe um popup para mostrar e selecionar todas as chaves                                                                                            |
+| `L`                     | Torna o objeto selecionado local; torna objetos vinculados a bibliotecas locais para a cena atual                                                    |
+| `Ctrl` `L`              | Vincula selecionados; vincula parte dos dados do objeto ativo a todos os objetos selecionados                                                       |
+| `Shift` `L`             | Seleciona vinculados; seleciona todos os objetos de alguma forma vinculados ao objeto ativo                                                         |
+| `M`                     | Move os objetos selecionados para outra camada                                                                                                      |
+| `Ctrl` `M`              | Menu de espelhamento; permite espelhar um objeto ao longo dos eixos X, Y ou Z                                                                       |
+| `N`                     | Painel numérico; mostra localização, rotação e escala do objeto ativo, que podem ser modificadas                                                    |
+| `Alt` `O`               | Limpa a origem; a origem é apagada para todos os objetos filhos, que passam para a localização exata dos objetos pais                                 |
+| `Shift` `O`             | Se o objeto selecionado for um mesh, ativa ou desativa o subsurf                                                                                    |
+| `Ctrl` `P`              | Torna os objetos selecionados filhos do objeto ativo                                                                                                |
+| `Alt` `P`               | Limpa a relação de parentesco; o usuário escolhe manter ou limpar as transformações herdadas do pai                                                 |
+| `R`                     | Modo de rotação; funciona nos objetos selecionados                                                                                                  |
+| `Alt` `R`               | Limpa a rotação; as rotações X, Y e Z dos objetos selecionados são zeradas                                                                          |
+| `S`                     | Modo de tamanho ou de escala; funciona nos objetos selecionados                                                                                     |
+| `Alt` `S`               | Limpa o tamanho; as dimensões X, Y e Z dos objetos selecionados passam para 1                                                                       |
+| `Shift` `S`             | Abre o menu de snap                                                                                                                                |
+| `T`                     | Modo de espaço de textura; a posição e as dimensões do espaço de textura dos objetos selecionados podem ser alteradas como no modo de agarrar e de escala |
+| `Ctrl` `T`              | Faz os objetos selecionados rastrearem o objeto ativo                                                                                               |
+| `Alt` `T`               | Limpa o track no estilo antigo; a restrição de track é removida como todas as restrições                                                            |
+| `U`                     | Torna o objeto de uso único, a operação inversa de link                                                                                             |
+| `V`                     | Entra e sai do modo de pintura de vértices                                                                                                          |
+| `Alt` `V`               | Proporção da imagem do objeto; define as dimensões X e Y dos objetos selecionados em relação às dimensões da textura de imagem deles                 |
+| `W`                     | Abre o menu de booleanos do objeto                                                                                                                   |
+| `X`                     | Exclui os objetos selecionados                                                                                                                      |
+| `Z`                     | Ativa ou desativa o modo sólido                                                                                                                     |
+| `Shift` `Z`             | Ativa ou desativa o modo sombreado                                                                                                                  |
+| `Alt` `Z`               | Ativa ou desativa o modo texturizado                                                                                                                |
 
 {.shortcuts}
 
-### Edit Mode - General
+### Modo de Edição - Geral
 
-| Shortcut     | Action                                                                                             |
+| Atalho       | Ação                                                                                               |
 | ------------ | -------------------------------------------------------------------------------------------------- |
-| `Tab`        | Start or stop edit mode                                                                            |
-| `Alt` `E`    | Start or stop edit mode (alternative)                                                              |
-| `Ctrl` `Tab` | Switches between vertex select, edge select, and face select modes                                 |
-| `A`          | Select or unselect all                                                                             |
-| `B` `B`      | Circle select                                                                                      |
-| `Ctrl` `H`   | With vertices selected, this creates a hook object                                                 |
-| `N`          | Number panel, simpler than the object mode one                                                     |
-| `O`          | Switch in and out of proportional editing                                                          |
-| `Shift` `O`  | Toggles between smooth and sharp proportional editing                                              |
-| `P`          | Separate, you can choose to make a new object with all selected vertices, edges, faces, and curves |
-| `Ctrl` `P`   | Make vertex parent                                                                                 |
-| `Ctrl` `S`   | Shear, in edit mode this operation enables you to make selected forms slant                        |
-| `U`          | Undo                                                                                               |
-| `W`          | Displays specials popup menu                                                                       |
-| `Shift` `W`  | Warp, selected vertices can be bent into curves with this option                                   |
+| `Tab`        | Inicia ou interrompe o modo de edição                                                              |
+| `Alt` `E`    | Inicia ou interrompe o modo de edição (alternativa)                                                |
+| `Ctrl` `Tab` | Alterna entre os modos de seleção de vértices, de arestas e de faces                               |
+| `A`          | Seleciona ou desmarca tudo                                                                         |
+| `B` `B`      | Seleção circular                                                                                   |
+| `Ctrl` `H`   | Com vértices selecionados, cria um objeto hook                                                      |
+| `N`          | Painel numérico, mais simples que o do modo objeto                                                  |
+| `O`          | Entra e sai da edição proporcional                                                                  |
+| `Shift` `O`  | Alterna entre edição proporcional suave e nítida                                                    |
+| `P`          | Separar; permite criar um novo objeto com todos os vértices, arestas, faces e curvas selecionados   |
+| `Ctrl` `P`   | Criar vértice pai                                                                                   |
+| `Ctrl` `S`   | Cisalhar; no modo de edição, essa operação permite inclinar as formas selecionadas                  |
+| `U`          | Desfaz                                                                                              |
+| `W`          | Exibe o popup de especiais                                                                          |
+| `Shift` `W`  | Warp; com essa opção, os vértices selecionados podem ser curvados                                   |
 
 {.shortcuts}
 
-### Edit Mode - Mesh
+### Modo de Edição - Mesh
 
-| Shortcut           | Action                                                                                                                  |
-| ------------------ | ----------------------------------------------------------------------------------------------------------------------- |
-| `Ctrl` `+`         | Adds to selection all vertices connected by an edge to an already selected vertex                                       |
-| `Ctrl` `-`         | Removes from selection all vertices of the outer ring of selected vertices                                              |
-| `C`                | If using curve deformation, toggles the curve cyclic mode on or off                                                     |
-| `E`                | Extrude selected                                                                                                        |
-| `Shift` `E`        | Crease subsurf edge                                                                                                     |
-| `Ctrl` `E`         | Mark LSCM seam                                                                                                          |
-| `F`                | Make edge or face                                                                                                       |
-| `Shift` `F`        | Fill selected, all selected vertices that are bound by edges and form a closed polygon are filled with triangular faces |
-| `Alt` `F`          | Beauty fill, edges of all selected triangular faces are switched so equally sized faces are formed                      |
-| `Ctrl` `F`         | Flip faces, selected triangular faces are paired and common edge of each pair swapped                                   |
-| `H`                | Hide selected, all selected vertices and faces are hidden                                                               |
-| `Shift` `H`        | Hide not selected, all non-selected vertices and faces are hidden                                                       |
-| `Alt` `H`          | Reveal, all hidden vertices and faces are drawn again                                                                   |
-| `Alt` `J`          | Join faces, selected triangular faces are joined in pairs and transformed to quads                                      |
-| `K`                | Knife tool menu                                                                                                         |
-| `L`                | Select linked                                                                                                           |
-| `Shift` `L`        | Deselect linked                                                                                                         |
-| `Ctrl` `L`         | Select linked selected                                                                                                  |
-| `M`                | Mirror, opens a popup asking for the axis to mirror                                                                     |
-| `Alt` `M`          | Merges selected vertices as barycentrum or at cursor depending on selection made on popup                               |
-| `Ctrl` `N`         | Calculate normals outside                                                                                               |
-| `Ctrl` `Shift` `N` | Calculate normals inside                                                                                                |
-| `Alt` `S`          | Scales each vertex in the direction of its local normal                                                                 |
-| `Ctrl` `T`         | Make triangles, all selected faces are converted to triangles                                                           |
-| `U`                | Undo                                                                                                                    |
-| `Shift` `U`        | Redo                                                                                                                    |
-| `Alt` `U`          | Undo menu                                                                                                               |
-| `W`                | Special menu                                                                                                            |
-| `X`                | Erase selected                                                                                                          |
-| `Y`                | Split, this command splits the selected part of a mesh without deleting faces                                           |
+| Atalho             | Ação                                                                                                                      |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------- |
+| `Ctrl` `+`         | Adiciona à seleção todos os vértices conectados por uma aresta a um vértice já selecionado                                |
+| `Ctrl` `-`         | Remove da seleção todos os vértices do anel externo dos vértices selecionados                                              |
+| `C`                | Se estiver usando deformação por curva, ativa ou desativa o modo cíclico da curva                                          |
+| `E`                | Extruda a seleção                                                                                                          |
+| `Shift` `E`        | Cria uma dobra na aresta do subsurf                                                                                        |
+| `Ctrl` `E`         | Marca a costura LSCM                                                                                                       |
+| `F`                | Cria aresta ou face                                                                                                        |
+| `Shift` `F`        | Preenche a seleção; todos os vértices selecionados limitados por arestas e que formam um polígono fechado recebem faces triangulares |
+| `Alt` `F`          | Preenchimento beauty; as arestas de todas as faces triangulares selecionadas são trocadas para formar faces de tamanho igual |
+| `Ctrl` `F`         | Inverte faces; as faces triangulares selecionadas são emparelhadas e a aresta comum de cada par é trocada                   |
+| `H`                | Oculta a seleção; todos os vértices e faces selecionados são ocultados                                                      |
+| `Shift` `H`        | Oculta o que não está selecionado; todos os vértices e faces não selecionados são ocultados                                |
+| `Alt` `H`          | Revela; todos os vértices e faces ocultos são desenhados novamente                                                         |
+| `Alt` `J`          | Junta faces; as faces triangulares selecionadas são unidas em pares e transformadas em quads                                |
+| `K`                | Menu da ferramenta faca                                                                                                    |
+| `L`                | Seleciona vinculados                                                                                                       |
+| `Shift` `L`        | Desmarca vinculados                                                                                                        |
+| `Ctrl` `L`         | Seleciona os vinculados da seleção                                                                                         |
+| `M`                | Espelha; abre um popup para escolher o eixo do espelhamento                                                                 |
+| `Alt` `M`          | Funde os vértices selecionados no baricentro ou no cursor, conforme a escolha no popup                                     |
+| `Ctrl` `N`         | Calcula as normais para fora                                                                                               |
+| `Ctrl` `Shift` `N` | Calcula as normais para dentro                                                                                             |
+| `Alt` `S`          | Escala cada vértice na direção da sua normal local                                                                          |
+| `Ctrl` `T`         | Cria triângulos; todas as faces selecionadas são convertidas em triângulos                                                  |
+| `U`                | Desfaz                                                                                                                     |
+| `Shift` `U`        | Refaz                                                                                                                      |
+| `Alt` `U`          | Menu de desfazer                                                                                                           |
+| `W`                | Menu de especiais                                                                                                          |
+| `X`                | Apaga a seleção                                                                                                            |
+| `Y`                | Divide; esse comando separa a parte selecionada de um mesh sem excluir faces                                                |
 
 {.shortcuts}
 
-### Edit Mode - Curve
+### Modo de Edição - Curva
 
-| Shortcut    | Action                                                                                 |
+| Atalho      | Ação                                                                                   |
 | ----------- | -------------------------------------------------------------------------------------- |
-| `C`         | Set the selected curves to cyclic or turn cyclic off                                   |
-| `E`         | Extrude curve                                                                          |
-| `F`         | Add segment, a segment is added between two selected vertices at the end of two curves |
-| `H`         | Toggle handle align or free                                                            |
-| `Shift` `H` | Set handle to auto                                                                     |
-| `Ctrl` `H`  | Calculate handles                                                                      |
-| `L`         | Select linked                                                                          |
-| `Shift` `L` | Deselect linked                                                                        |
-| `M`         | Mirror selected control points exactly as for vertices in a mesh                       |
-| `T`         | Tilt mode, specify an extra axis rotation for each vertex in a 3D curve                |
-| `Alt` `T`   | Clear tilt                                                                             |
-| `V`         | Vector handle                                                                          |
-| `W`         | The special menu for curves appears                                                    |
-| `X`         | Erase selected                                                                         |
+| `C`         | Define as curvas selecionadas como cíclicas ou desativa o modo cíclico                 |
+| `E`         | Extruda a curva                                                                        |
+| `F`         | Adiciona segmento; um segmento é adicionado entre dois vértices selecionados no fim de duas curvas |
+| `H`         | Alterna o alinhamento do handle entre alinhado e livre                                 |
+| `Shift` `H` | Define o handle como automático                                                        |
+| `Ctrl` `H`  | Calcula os handles                                                                     |
+| `L`         | Seleciona vinculados                                                                   |
+| `Shift` `L` | Desmarca vinculados                                                                    |
+| `M`         | Espelha os pontos de controle selecionados exatamente como para vértices em um mesh    |
+| `T`         | Modo de inclinação; define uma rotação extra de eixo para cada vértice de uma curva 3D |
+| `Alt` `T`   | Limpa a inclinação                                                                     |
+| `V`         | Handle vetorial                                                                        |
+| `W`         | Exibe o menu de especiais para curvas                                                  |
+| `X`         | Apaga a seleção                                                                        |
 
 {.shortcuts}
 
-### Edit Mode - Surface
+### Modo de Edição - Superfície
 
-| Shortcut    | Action                                                                                 |
+| Atalho      | Ação                                                                                   |
 | ----------- | -------------------------------------------------------------------------------------- |
-| `C`         | Toggle cyclic menu                                                                     |
-| `E`         | Extrude selected                                                                       |
-| `F`         | Add segment, a segment is added between two selected vertices at the end of two curves |
-| `L`         | Select linked                                                                          |
-| `Shift` `L` | Deselect linked                                                                        |
-| `M`         | Mirror selected control points exactly as for vertices in a mesh                       |
-| `Shift` `R` | Select row, starting with the last selected vertex                                     |
-| `W`         | The special menu for surfaces appears                                                  |
-| `X`         | Erase selected                                                                         |
+| `C`         | Alterna o menu cíclico                                                                 |
+| `E`         | Extruda a seleção                                                                      |
+| `F`         | Adiciona segmento; um segmento é adicionado entre dois vértices selecionados no fim de duas curvas |
+| `L`         | Seleciona vinculados                                                                   |
+| `Shift` `L` | Desmarca vinculados                                                                    |
+| `M`         | Espelha os pontos de controle selecionados exatamente como para vértices em um mesh    |
+| `Shift` `R` | Seleciona linha, começando pelo último vértice selecionado                             |
+| `W`         | Exibe o menu de especiais para superfícies                                             |
+| `X`         | Apaga a seleção                                                                        |
 
 {.shortcuts}
 
-### Edit Mode - Font
+### Modo de Edição - Texto
 
-| Shortcut        | Action                                        |
+| Atalho          | Ação                                          |
 | --------------- | --------------------------------------------- |
-| `Right`         | Move text cursor one position forward         |
-| `Shift` `Right` | Move text cursor to the end of the line       |
-| `Left`          | Move text cursor one position backwards       |
-| `Shift` `Left`  | Move text cursor to the start of the line     |
-| `Down`          | Move text cursor one line forward             |
-| `Shift` `Down`  | Move text cursor to the end of the text       |
-| `Up`            | Move text cursor one line back                |
-| `Shift` `Up`    | Move text cursor to the beginning of the text |
-| `Alt` `U`       | Reload original data                          |
-| `Alt` `V`       | Paste text                                    |
+| `Right`         | Move o cursor de texto uma posição para frente |
+| `Shift` `Right` | Move o cursor de texto para o fim da linha    |
+| `Left`          | Move o cursor de texto uma posição para trás  |
+| `Shift` `Left`  | Move o cursor de texto para o início da linha |
+| `Down`          | Move o cursor de texto uma linha para frente  |
+| `Shift` `Down`  | Move o cursor de texto para o fim do texto    |
+| `Up`            | Move o cursor de texto uma linha para trás    |
+| `Shift` `Up`    | Move o cursor de texto para o início do texto |
+| `Alt` `U`       | Recarrega os dados originais                  |
+| `Alt` `V`       | Cola texto                                    |
 
 {.shortcuts}
 
 ### VertexPaint
 
-| Shortcut    | Action                                                                      |
+| Atalho      | Ação                                                                        |
 | ----------- | --------------------------------------------------------------------------- |
-| `Shift` `K` | All vertex colors are erased, they are changed to the current drawing color |
-| `U`         | Undo, press twice redos the undone                                          |
-| `W`         | Shared vertexcol, the colors of all faces that share vertices are blended   |
+| `Shift` `K` | Todas as cores de vértice são apagadas e passam para a cor de desenho atual |
+| `U`         | Desfaz; pressionar duas vezes refaz o que foi desfeito                      |
+| `W`         | Vertexcol compartilhado; as cores de todas as faces que compartilham vértices são misturadas |
 
 {.shortcuts}
 
-### UV Editor
+### Editor UV
 
-| Shortcut  | Action                                                                                        |
+| Atalho    | Ação                                                                                          |
 | --------- | --------------------------------------------------------------------------------------------- |
-| `E`       | LSCM unwrapping, launches on the faces visible in the UV editor                               |
-| `P`       | Pin selected vertices, they will stay in place on the UV editor when executing an LSCM unwrap |
-| `Alt` `P` | Un-pin selected vertices                                                                      |
+| `E`       | Desdobramento LSCM; é executado nas faces visíveis no editor UV                               |
+| `P`       | Fixa os vértices selecionados, que permanecem no lugar no editor UV durante um desdobramento LSCM |
+| `Alt` `P` | Desafixa os vértices selecionados                                                             |
 
 {.shortcuts}
 
 ### FaceSelect
 
-| Shortcut | Action                                                                                                       |
-| -------- | ------------------------------------------------------------------------------------------------------------ |
-| `Tab`    | Switches to edit mode                                                                                        |
-| `F`      | With multiple, co-planar faces selected, this will merge them into one FGon so long as they remain co-planar |
-| `L`      | Select linked UVs                                                                                            |
-| `R`      | Calls a menu allowing to rotate the UV coordinates or the vertex col                                         |
-| `U`      | Calls the UV Calculation menu                                                                                |
+| Atalho | Ação                                                                                                         |
+| ------ | ------------------------------------------------------------------------------------------------------------ |
+| `Tab`  | Muda para o modo de edição                                                                                   |
+| `F`    | Com várias faces coplanares selecionadas, funde todas em um único FGon, desde que continuem coplanares       |
+| `L`    | Seleciona UVs vinculadas                                                                                     |
+| `R`    | Abre um menu que permite rotacionar as coordenadas UV ou o vertex col                                              |
+| `U`    | Abre o menu de cálculo de UV                                                                                 |
 
 {.shortcuts}
 
-## Also see
+## Veja também
 
-- [Keyboard shortcuts for Blender](https://download.blender.org/documentation/BlenderHotkeyReference.pdf)
+- [Atalhos de teclado do Blender](https://download.blender.org/documentation/BlenderHotkeyReference.pdf)
   _(download.blender.org)_

@@ -7,121 +7,121 @@ tags:
   - terminal
   - session
 categories:
-  - Linux Command
+  - Comandos Linux
 intro: |
-  The tmux cheat sheet quick reference of most commonly used shortcuts and commands
+  O cheat sheet do tmux, referência rápida dos atalhos e comandos mais usados
 plugins:
   - copyCode
 ---
 
 ## Tmux CLI
 
-### New session {.row-span-2}
+### Nova sessão {.row-span-2}
 
-Start a new session
+Inicie uma nova sessão
 
 ```shell script
 $ tmux
 ```
 
-Start a new named session
+Inicie uma nova sessão com nome
 
 ```shell script
 $ tmux new -s myname
 ```
 
-Show all sessions
+Mostre todas as sessões
 
 ```shell script
 $ tmux ls
 ```
 
-### Attach session
+### Anexar sessão
 
-Attach to last session
+Anexe à última sessão
 
 ```shell script
 $ tmux a
 ```
 
-Attach to named
+Anexe a uma sessão com nome
 
 ```shell script
 $ tmux a -t myname
 ```
 
-### Kill session {.row-span-2}
+### Encerrar sessão {.row-span-2}
 
-Kill a session by name
+Encerre uma sessão pelo nome
 
 ```shell script
 $ tmux kill-ses -t myname
 ```
 
-Kill sessions but the current
+Encerre as sessões, exceto a atual
 
 ```shell script
 $ tmux kill-ses -a
 ```
 
-Kill sessions but 'myname'
+Encerre as sessões, exceto 'myname'
 
 ```shell script
 $ tmux kill-ses -a -t myname
 ```
 
-### Tmux help
+### Ajuda do Tmux
 
 ```shell script
 $ tmux info
 ```
 
-### Config
+### Configuração
 
-Reload config
+Recarregue a configuração
 
 ```shell script
 $ tmux source-file ~/.tmux.conf
 ```
 
-Show config
+Mostre a configuração
 
 ```shell script
 $ tmux show-options -g
 ```
 
-### Copy Mode
+### Modo de cópia
 
-| Command      | Description                |
+| Comando      | Descrição                  |
 | ------------ | -------------------------- |
-| `Ctrl+b` `[` | Enter copy mode            |
-| `<Space>`    | Start selection            |
-| `Enter`      | Copy selection             |
-| `q`          | Quit copy mode             |
-| `Ctrl+b` `]` | Paste contents of buffer_0 |
+| `Ctrl+b` `[` | Entrar no modo de cópia    |
+| `<Space>`    | Iniciar seleção            |
+| `Enter`      | Copiar seleção             |
+| `q`          | Sair do modo de cópia      |
+| `Ctrl+b` `]` | Colar o conteúdo de buffer_0 |
 
 ---
 
-For tmux version 3.5a on macOS 15.3.1 Sequoia, "Copy Mode" functions a bit differently:
+Para a versão 3.5a do tmux no macOS 15.3.1 Sequoia, o "Modo de cópia" funciona de forma um pouco diferente:
 
-| Command          | Description     |
+| Comando          | Descrição       |
 | ---------------- | --------------- |
-| `Ctrl + <Space>` | Start selection |
-| `Ctrl + w`       | Copy selection  |
+| `Ctrl + <Space>` | Iniciar seleção |
+| `Ctrl + w`       | Copiar seleção  |
 
 ---
 
 {.shortcuts}
 
-Mainly works like selecting text in [Vim](/vim#motions)
+Funciona principalmente como selecionar texto no [Vim](/vim#motions)
 
-## Tmux shortcuts
+## Atalhos do Tmux
 
-### Getting started {.secondary}
+### Primeiros passos {.secondary}
 
-| Shortcuts    | Description        |
-| ------------ | ------------------ |
-| `Ctrl+b` `?` | List all shortcuts |
+| Atalhos      | Descrição           |
+| ------------ | ------------------- |
+| `Ctrl+b` `?` | Lista todos os atalhos |
 
 {.shortcuts .show-header}
 
@@ -129,110 +129,110 @@ Mainly works like selecting text in [Vim](/vim#motions)
 
 ---
 
-Show every session, window, pane, etc.
+Mostre cada sessão, janela, painel etc.
 
 ```shell script
 $ tmux info
 ```
 
-### Panes (Splits) {.row-span-2}
+### Painéis (divisões) {.row-span-2}
 
-| Shortcuts              | Description        |
-| ---------------------- | ------------------ |
-| `Ctrl+b` `"` _/_ `%`   | Split Horiz/Vert   |
-| `Ctrl+b` `!`           | Pane -> Window     |
-| `Ctrl+b` `x`           | Kill pane          |
-| `Ctrl+b` <Arrow\>      | Navigate panes     |
-| `Ctrl+b` <Space\>      | Toggle layouts     |
-| `Ctrl+b` `{` _/_ `}`   | Move to Left/Right |
-| `Ctrl+b` `o`           | Go to next panes   |
-| `Ctrl+b` `z`           | Toggle full-screen |
-| `Ctrl+b` `;`           | Toggle Last pane   |
-| `Ctrl+b` `q`           | Show numbers       |
-| `Ctrl+b` `q` `0`...`9` | Go to # pane       |
+| Atalhos                | Descrição              |
+| ---------------------- | ---------------------- |
+| `Ctrl+b` `"` _/_ `%`   | Dividir horiz/vert     |
+| `Ctrl+b` `!`           | Painel -> Janela       |
+| `Ctrl+b` `x`           | Fechar painel          |
+| `Ctrl+b` <Arrow\>      | Navegar entre painéis  |
+| `Ctrl+b` <Space\>      | Alternar layouts       |
+| `Ctrl+b` `{` _/_ `}`   | Mover para esquerda/direita |
+| `Ctrl+b` `o`           | Ir para o próximo painel |
+| `Ctrl+b` `z`           | Alternar tela cheia    |
+| `Ctrl+b` `;`           | Alternar último painel |
+| `Ctrl+b` `q`           | Mostrar números        |
+| `Ctrl+b` `q` `0`...`9` | Ir para o painel #     |
 
 {.shortcuts}
 
-### Window (Tabs) {.row-span-2}
+### Janela (abas) {.row-span-2}
 
 | -                    | -                    |
 | -------------------- | -------------------- |
-| `Ctrl+b` `c`         | Create window        |
-| `Ctrl+b` `p` _/_ `n` | Previous/Next window |
-| `Ctrl+b` `"` _/_ `%` | Split Horiz/Vert     |
-| `Ctrl+b` `w`         | List window          |
-| `Ctrl+b` `,`         | Rename window        |
-| `Ctrl+b` `f`         | Find window          |
-| `Ctrl+b` `l`         | Last window          |
-| `Ctrl+b` `.`         | Move window          |
-| `Ctrl+b` `&`         | Close window         |
-| `Ctrl+b` `0`...`9`   | Go to # window       |
+| `Ctrl+b` `c`         | Criar janela         |
+| `Ctrl+b` `p` _/_ `n` | Janela anterior/próxima |
+| `Ctrl+b` `"` _/_ `%` | Dividir horiz/vert   |
+| `Ctrl+b` `w`         | Listar janelas       |
+| `Ctrl+b` `,`         | Renomear janela      |
+| `Ctrl+b` `f`         | Procurar janela      |
+| `Ctrl+b` `l`         | Última janela        |
+| `Ctrl+b` `.`         | Mover janela         |
+| `Ctrl+b` `&`         | Fechar janela        |
+| `Ctrl+b` `0`...`9`   | Ir para a janela #   |
 
 {.shortcuts}
 
-### Session (Set of Windows)
+### Sessão (conjunto de janelas)
 
 | -                    | -                              |
 | -------------------- | ------------------------------ |
-| `Ctrl+b` `d`         | <red>Detach from session</red> |
-| `Ctrl+b` `s`         | Show all sessions              |
-| `Ctrl+b` `$`         | Rename session                 |
-| `Ctrl+b` `(` _/_ `)` | Previous/Next session          |
+| `Ctrl+b` `d`         | <red>Desanexar da sessão</red> |
+| `Ctrl+b` `s`         | Mostrar todas as sessões       |
+| `Ctrl+b` `$`         | Renomear sessão                |
+| `Ctrl+b` `(` _/_ `)` | Sessão anterior/próxima        |
 
 {.shortcuts}
 
-## Tmux Command Mode
+## Modo de comando do Tmux
 
-### Usage {.secondary}
+### Uso {.secondary}
 
-| Command      | Description        |
-| ------------ | ------------------ |
-| `Ctrl+b` `:` | Enter command mode |
+| Comando      | Descrição              |
+| ------------ | ---------------------- |
+| `Ctrl+b` `:` | Entrar no modo de comando |
 
 {.shortcuts}
 
-### Resizing
+### Redimensionamento
 
-| Command             | Description  |
-| ------------------- | ------------ |
-| `resize-pane -D 20` | Resize down  |
-| `resize-pane -U 20` | Resize up    |
-| `resize-pane -L 20` | Resize left  |
-| `resize-pane -R 20` | Resize right |
+| Comando             | Descrição                |
+| ------------------- | ------------------------ |
+| `resize-pane -D 20` | Redimensionar para baixo |
+| `resize-pane -U 20` | Redimensionar para cima  |
+| `resize-pane -L 20` | Redimensionar para esquerda |
+| `resize-pane -R 20` | Redimensionar para direita |
 
-### Listing
+### Listagem
 
-| Command        | Description  |
-| -------------- | ------------ |
-| `list-keys`    | All commands |
-| `list-panes`   | All panes    |
-| `list-windows` | All Windows  |
+| Comando        | Descrição         |
+| -------------- | ----------------- |
+| `list-keys`    | Todos os comandos |
+| `list-panes`   | Todos os painéis  |
+| `list-windows` | Todas as janelas  |
 
-### Copying
+### Cópia
 
-| Command              | Description      |
-| -------------------- | ---------------- |
-| `list-buffers`       | List all buffers |
-| `show-buffer`        | Show #0 contents |
-| `capture-pane`       | Copy of pane     |
-| `choose-buffer`      | Show and paste   |
-| `save-buffer a.txt`  | Save to file     |
-| `delete-buffer -b 1` | Delete buffer 1  |
+| Comando              | Descrição            |
+| -------------------- | -------------------- |
+| `list-buffers`       | Listar todos os buffers |
+| `show-buffer`        | Mostrar conteúdo de #0 |
+| `capture-pane`       | Cópia do painel      |
+| `choose-buffer`      | Mostrar e colar      |
+| `save-buffer a.txt`  | Salvar em arquivo    |
+| `delete-buffer -b 1` | Excluir buffer 1     |
 
-### Setting
+### Configuração
 
-| Command                | Description          |
-| ---------------------- | -------------------- |
-| `set -g OPTION`        | Set for all sessions |
-| `setw -g OPTION`       | Set for all windows  |
-| `setw -g mode-keys vi` | Enable vi-mode       |
-| `set -g prefix C-a`    | Set prefix           |
+| Comando                | Descrição                  |
+| ---------------------- | -------------------------- |
+| `set -g OPTION`        | Definir para todas as sessões |
+| `setw -g OPTION`       | Definir para todas as janelas |
+| `setw -g mode-keys vi` | Habilitar o modo vi        |
+| `set -g prefix C-a`    | Definir prefixo            |
 
-### Misc
+### Diversos
 
-| Command                  | Description  |
-| ------------------------ | ------------ |
-| `swap-pane -s 3 -t 1`    | Swap pane    |
-| `swap-window -t -1`      | Move to left |
-| `setw synchronize-panes` | Sync Panes   |
-| `join-pane -t :#`        | Join pane    |
+| Comando                  | Descrição              |
+| ------------------------ | ---------------------- |
+| `swap-pane -s 3 -t 1`    | Trocar painel          |
+| `swap-window -t -1`      | Mover para a esquerda  |
+| `setw synchronize-panes` | Sincronizar painéis    |
+| `join-pane -t :#`        | Juntar painel          |

@@ -7,49 +7,49 @@ tags:
   -
   -
 categories:
-  - Keyboard Shortcuts
+  - Atalhos de Teclado
 intro: |
-  A visual cheat-sheet for the 22 keyboard shortcuts found on SoundCloud
+  Um cheat sheet visual dos 22 atalhos de teclado do SoundCloud
 ---
 
-## Keyboard Shortcuts {.cols-2}
+## Atalhos de teclado {.cols-2}
 
-### General I
+### Geral I
 
-| Shortcut        | Action               |
-| --------------- | -------------------- |
-| `Space`         | Play or pause        |
-| `Shift` `Right` | Play next track      |
-| `Shift` `L`     | Repeat playing track |
-| `Shift` `Left`  | Play previous track  |
-| `Right`         | Seek forward         |
-| `L`             | Like playing track   |
-| `R`             | Repost playing track |
-| `S`             | Search               |
-| `G` `L`         | Navigate to likes    |
-| `G` `C`         | Navigate to library  |
+| Atalho          | Ação                     |
+| --------------- | ------------------------ |
+| `Space`         | Reproduzir ou pausar     |
+| `Shift` `Right` | Reproduzir a próxima faixa |
+| `Shift` `L`     | Repetir a faixa em reprodução |
+| `Shift` `Left`  | Reproduzir a faixa anterior |
+| `Right`         | Avançar                  |
+| `L`             | Curtir a faixa em reprodução |
+| `R`             | Repostar a faixa em reprodução |
+| `S`             | Pesquisar                |
+| `G` `L`         | Ir para curtidas         |
+| `G` `C`         | Ir para a biblioteca     |
 
 {.shortcuts}
 
-### General II
+### Geral II
 
-| Shortcut       | Action                    |
+| Atalho         | Ação                      |
 | -------------- | ------------------------- |
-| `G` `H`        | Navigate to history       |
-| `Shift` `S`    | Shuffle                   |
-| `Shift` `Down` | Decrease volume           |
-| `Shift` `Up`   | Increase volume           |
-| `M`            | Mute volume               |
-| `Left`         | Seek backwards            |
-| `0-9`          | Seek to position          |
-| `P`            | Navigate to playing track |
-| `H`            | Show keyboard shortcuts   |
-| `G` `S`        | Navigate to stream        |
-| `G` `P`        | Navigate to profile       |
-| `Q`            | Show next up              |
+| `G` `H`        | Ir para o histórico       |
+| `Shift` `S`    | Aleatório                 |
+| `Shift` `Down` | Diminuir o volume         |
+| `Shift` `Up`   | Aumentar o volume         |
+| `M`            | Silenciar o volume        |
+| `Left`         | Retroceder                |
+| `0-9`          | Ir para a posição         |
+| `P`            | Ir para a faixa em reprodução |
+| `H`            | Mostrar atalhos de teclado |
+| `G` `S`        | Ir para o stream          |
+| `G` `P`        | Ir para o perfil          |
+| `Q`            | Mostrar o que vem a seguir |
 
 {.shortcuts}
 
-## Also see
+## Veja também
 
-- [Keyboard shortcuts for SoundCloud](https://i.imgur.com/ZQf24je.png) _(i.imgur.com)_
+- [Atalhos de teclado do SoundCloud](https://i.imgur.com/ZQf24je.png) _(i.imgur.com)_

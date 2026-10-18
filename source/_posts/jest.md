@@ -1,5 +1,5 @@
 ---
-title: Jest Cheat Sheet
+title: Cheat sheet do Jest
 date: 2022-09-09 00:00:00
 background: bg-blue-500
 description: A complete cheat sheet on  Jest for testing React applications effectively.
@@ -7,42 +7,42 @@ tags: React
   Testing
   Jest
 categories:
-  - Testing
+  - Testes
 intro:
-  Jest is a JavaScript testing framework designed by Facebook. It works out of the box with modern
-  JavaScript apps especially those built with React or Node.js. Its main goal is to simplify testing by providing all required features in one package test runner, assertion library, mocking, spies, coverage reports, and snapshot testing.
+  Jest é um framework de testes JavaScript criado pelo Facebook. Funciona out of the box com
+  aplicações JavaScript modernas, especialmente as construídas com React ou Node.js. Seu principal objetivo é simplificar os testes oferecendo todos os recursos necessários em um único pacote: test runner, biblioteca de asserções, mocking, spies, relatórios de cobertura e snapshot testing.
 ---
 
 ---
 
-## A Quick Overview to Jest
+## Visão rápida do Jest
 
-Jest is a delightful JavaScript testing framework maintained by Facebook. It is widely used for **unit testing**, **integration testing**, and even **end-to-end testing** in modern JavaScript and Node.js applications. Jest comes with a powerful set of features, including a built-in test runner, assertion library, mocking utilities, snapshot testing, and test coverage reporting.
+Jest é um framework de testes JavaScript mantido pelo Facebook. É amplamente usado para **testes unitários**, **testes de integração** e até **testes end-to-end** em aplicações modernas de JavaScript e Node.js. O Jest vem com um conjunto poderoso de recursos, incluindo um test runner integrado, biblioteca de asserções, utilitários de mocking, snapshot testing e relatórios de cobertura de testes.
 
-This guide targets **Jest v20** and gives a concise yet practical overview of how to use it effectively.
+Este guia é voltado para o **Jest v20** e oferece uma visão geral concisa e prática de como usá-lo com eficácia.
 
-### Key Concepts Explained
+### Conceitos-chave explicados
 
-- **`describe()`**: Used to group related test cases into a test suite.
-- **`test()` / `it()`**: Define a single test case. `it()` is just a BDD-style alias for `test()`.
-- **`expect()`**: Assertion library that checks whether a value meets expectations.
-- **`beforeEach()` / `afterEach()`**: Runs code before or after every test in a suite.
-- **`beforeAll()` / `afterAll()`**: Runs setup/teardown code once before or after all tests.
-- **`.only` / `.skip`**: Focus or ignore specific tests/suites.
-- **Snapshot testing**: Captures the rendered output and compares it across test runs.
-- **Mock functions**: Simulate function behavior or monitor how functions are called.
-- **Timer mocks**: Test time-based behavior like `setTimeout()` and `setInterval()`.
-- **Async testing**: Write tests that handle Promises or `async/await`.
+- **`describe()`**: Usado para agrupar casos de teste relacionados em uma suíte de testes.
+- **`test()` / `it()`**: Define um único caso de teste. `it()` é apenas um alias no estilo BDD para `test()`.
+- **`expect()`**: Biblioteca de asserções que verifica se um valor atende às expectativas.
+- **`beforeEach()` / `afterEach()`**: Executa código antes ou depois de cada teste de uma suíte.
+- **`beforeAll()` / `afterAll()`**: Executa código de setup/teardown uma vez antes ou depois de todos os testes.
+- **`.only` / `.skip`**: Focam ou ignoram testes/suítes específicos.
+- **Snapshot testing**: Captura a saída renderizada e a compara entre execuções de teste.
+- **Mock functions**: Simulam o comportamento de funções ou monitoram como elas são chamadas.
+- **Timer mocks**: Testam comportamentos baseados em tempo, como `setTimeout()` e `setInterval()`.
+- **Async testing**: Escreva testes que lidam com Promises ou `async/await`.
 
 ---
 
-### 🚀 Quick Start
+### 🚀 Início rápido
 
 ```bash
 npm install --save-dev jest babel-jest
 ```
 
-Add this to your `package.json`:
+Adicione isto ao seu `package.json`:
 
 ```json
 "scripts": {
@@ -50,17 +50,17 @@ Add this to your `package.json`:
 }
 ```
 
-Run your tests:
+Execute seus testes:
 
 ```bash
 npm test -- --watch
 ```
 
-📖 See: [Getting Started](https://jestjs.io/docs/getting-started)
+📖 Veja: [Primeiros passos](https://jestjs.io/docs/getting-started)
 
 ---
 
-## ✍️ Writing Tests
+## ✍️ Escrevendo testes
 
 ```js
 describe('My work', () => {
@@ -70,17 +70,17 @@ describe('My work', () => {
 });
 ```
 
-- **describe**: Group related tests.
-- **test** or **it**: Define individual test cases.
-- **expect**: Make assertions.
+- **describe**: Agrupa testes relacionados.
+- **test** ou **it**: Define casos de teste individuais.
+- **expect**: Faz asserções.
 
-🔄 `it()` is an alias for `test()`.
+🔄 `it()` é um alias de `test()`.
 
 ---
 
-## 🔧 Setup Hooks
+## 🔧 Hooks de setup
 
-Use these for setup/teardown routines:
+Use-os para rotinas de setup/teardown:
 
 ```js
 beforeEach(() => { ... });
@@ -91,16 +91,16 @@ afterAll(() => { ... });
 
 ---
 
-## 🎯 Focusing or Skipping Tests
+## 🎯 Focar ou ignorar testes
 
-**Focusing tests:**
+**Focar testes:**
 
 ```js
 describe.only(...);
 it.only(...); // or fit()
 ```
 
-**Skipping tests:**
+**Ignorar testes:**
 
 ```js
 describe.skip(...);
@@ -109,19 +109,19 @@ it.skip(...); // or xit()
 
 ---
 
-## 🏁 Optional CLI Flags
+## 🏁 Flags opcionais de CLI
 
-| Flag                  | Description                             |
+| Flag                  | Descrição                               |
 | --------------------- | --------------------------------------- |
-| `--coverage`          | Show test coverage summary              |
-| `--detectOpenHandles` | Detect unclosed handles (e.g., sockets) |
-| `--runInBand`         | Run tests serially (useful for CI)      |
+| `--coverage`          | Mostra o resumo de cobertura de testes  |
+| `--detectOpenHandles` | Detecta handles não fechados (ex.: sockets) |
+| `--runInBand`         | Executa os testes em série (útil para CI) |
 
 ---
 
-## ✅ Expectations (Matchers)
+## ✅ Expectativas (matchers)
 
-### Basic
+### Básico
 
 ```js
 expect(value).not.toBe(value);
@@ -129,7 +129,7 @@ expect(value).toEqual(value);
 expect(value).toBeTruthy();
 ```
 
-> Note: `toEqual` performs deep equality.
+> Nota: `toEqual` faz comparação de igualdade profunda.
 
 ### Snapshots
 
@@ -138,16 +138,16 @@ expect(value).toMatchSnapshot();
 expect(value).toMatchInlineSnapshot();
 ```
 
-> Inline snapshots require Prettier.
+> Snapshots inline exigem o Prettier.
 
-### Errors
+### Erros
 
 ```js
 expect(fn).toThrow(error);
 expect(fn).toThrowErrorMatchingSnapshot();
 ```
 
-### Booleans
+### Booleanos
 
 ```js
 expect(value).toBeFalsy();
@@ -157,7 +157,7 @@ expect(value).toBeUndefined();
 expect(value).toBeDefined();
 ```
 
-### Numbers
+### Números
 
 ```js
 expect(value).toBeCloseTo(number, digits);
@@ -165,7 +165,7 @@ expect(value).toBeGreaterThan(number);
 expect(value).toBeLessThanOrEqual(number);
 ```
 
-### Objects
+### Objetos
 
 ```js
 expect(value).toBeInstanceOf(Class);
@@ -173,7 +173,7 @@ expect(value).toMatchObject(obj);
 expect(value).toHaveProperty('key', value);
 ```
 
-### Arrays/Strings
+### Arrays/strings
 
 ```js
 expect(value).toContain(item);
@@ -181,7 +181,7 @@ expect(value).toHaveLength(number);
 expect(value).toMatch(/pattern/);
 ```
 
-### Custom Matchers
+### Matchers personalizados
 
 ```js
 expect.extend(customMatchers);
@@ -191,7 +191,7 @@ expect.assertions(1);
 
 ---
 
-## ⏱️ Async Tests
+## ⏱️ Testes assíncronos
 
 ### Promises
 
@@ -212,11 +212,11 @@ test('awaits correctly', async () => {
 });
 ```
 
-📖 See: [Jest Async Testing](https://jestjs.io/docs/asynchronous)
+📖 Veja: [Testes assíncronos no Jest](https://jestjs.io/docs/asynchronous)
 
 ---
 
-## 📸 Snapshot Testing
+## 📸 Snapshot testing
 
 ```js
 it('renders correctly', () => {
@@ -225,7 +225,7 @@ it('renders correctly', () => {
 });
 ```
 
-For React components:
+Para componentes React:
 
 ```js
 import renderer from 'react-test-renderer';
@@ -249,20 +249,20 @@ it('delays call', () => {
 });
 ```
 
-📖 See: [Timer Mocks](https://jestjs.io/docs/timer-mocks)
+📖 Veja: [Mocks de timers](https://jestjs.io/docs/timer-mocks)
 
 ---
 
-## 🧪 Mock Functions
+## 🧪 Funções mock
 
-### Creating Mocks
+### Criando mocks
 
 ```js
 const fn = jest.fn();
 const squared = jest.fn((n) => n * n);
 ```
 
-### Assertions
+### Asserções
 
 ```js
 expect(fn).toHaveBeenCalled();
@@ -270,14 +270,14 @@ expect(fn).toHaveBeenCalledTimes(2);
 expect(fn).toHaveBeenCalledWith(arg1, arg2);
 ```
 
-### Flexible Matchers
+### Matchers flexíveis
 
 ```js
 expect(fn).toHaveBeenCalledWith(expect.any(String));
 expect(fn).toHaveBeenCalledWith(expect.arrayContaining([1, 2]));
 ```
 
-### Instances
+### Instâncias
 
 ```js
 const MyClass = jest.fn();
@@ -286,21 +286,21 @@ const b = new MyClass();
 MyClass.mock.instances; // [a, b]
 ```
 
-### Call Data
+### Dados de chamada
 
 ```js
 fn.mock.calls.length;
 fn.mock.calls[0][0];
 ```
 
-### Return Values
+### Valores de retorno
 
 ```js
 jest.fn().mockReturnValue('hello');
 jest.fn().mockReturnValueOnce('hi');
 ```
 
-### Mock Implementations
+### Implementações de mock
 
 ```js
 const fn = jest
@@ -311,4 +311,4 @@ const fn = jest
 
 ---
 
-This comprehensive guide helps you get started with Jest testing or use it like a pro. It pairs perfectly with the React Testing Library for a user-centric testing workflow.
+Este guia completo ajuda você a começar com os testes no Jest ou a usá-lo como um profissional. Ele combina perfeitamente com a React Testing Library para um workflow de testes centrado no usuário.

@@ -7,18 +7,18 @@ tags:
   - scan
   - port
 categories:
-  - Linux Command
-intro: 
-  The [Nmap](https://nmap.org/) cheat sheet is a one-page reference sheet for the famous Network Mapper tool.
+  - Comandos Linux
+intro:
+  O cheat sheet do [Nmap](https://nmap.org/) é uma referência de uma página para a famosa ferramenta Network Mapper.
 plugins:
   - copyCode
   
 ---
 
-## Getting Started
+## Primeiros passos
 
 
-### Basic Usage : 
+### Uso básico :
 
 ```bash
 # set your target in etc/hosts
@@ -31,76 +31,76 @@ namp -p, 80 -T5 -O target
 ```
 
 
-### Basic Options : {.col-span-2}
+### Opções básicas : {.col-span-2}
 
-| Options                  | Purpose                                   |
+| Opções                   | Finalidade                                |
 |:-------------------------|:------------------------------------------|
-| `-p-`                    | all ports                                 |
-| `-p1-1023`               | scan ports 1 to 1023                      |
-| `-F`                     | 100 most common ports                     |
-| `-r`                     | scan ports in consecutive order           |
-| `-T<0-5>`                | -T0 being the slowest and T5 the fastest  |
-| `--max-rate 50`          | rate <= 50 packets/sec                    |
-| `--min-rate 15`          | rate >= 15 packets/sec                    |
-| `--min-parallelism 100`  | at least 100 probes in parallel           |
+| `-p-`                    | todas as portas                           |
+| `-p1-1023`               | escaneia as portas 1 a 1023               |
+| `-F`                     | as 100 portas mais comuns                 |
+| `-r`                     | escaneia as portas em ordem consecutiva   |
+| `-T<0-5>`                | -T0 é o mais lento e T5 o mais rápido     |
+| `--max-rate 50`          | taxa <= 50 pacotes/seg                    |
+| `--min-rate 15`          | taxa >= 15 pacotes/seg                    |
+| `--min-parallelism 100`  | pelo menos 100 sondagens em paralelo      |
 
-## Nmap Intermediate Options
+## Opções intermediárias do Nmap
 
-### Service Detections : {.col-span-2}
+### Detecção de serviços : {.col-span-2}
 
-| Option                       | Meaning                                  |
-|:-----------------------------|:-----------------------------------------|
-| `--traceroute`               | run traceroute to target                 |
-| `--script=SCRIPTS`           | Nmap scripts to run                      |
-| `-sC` or `--script=default`  | run default scripts                      |
-| `-O`                         | OS detection                             |
-| `-sV`                        | Service version detection                |
-| `-A`                         | equivalent to `-sV -O -sC --traceroute`  |
+| Opção                        | Significado                                    |
+|:-----------------------------|:-----------------------------------------------|
+| `--traceroute`               | executa traceroute até o alvo                  |
+| `--script=SCRIPTS`           | scripts do Nmap a executar                     |
+| `-sC` or `--script=default`  | executa os scripts padrão                      |
+| `-O`                         | detecção de sistema operacional                |
+| `-sV`                        | detecção de versão de serviço                  |
+| `-A`                         | equivalente a `-sV -O -sC --traceroute`        |
 
 
 ### Timing  {.col-span-3}
 
-| Option                                                              | Meaning                                                                                            |
+| Opção                                                               | Significado                                                                                        |
 |:--------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------|
-| `-T<0-5>`                                                           | Timing template – paranoid (0), sneaky (1), polite (2), normal (3), aggressive (4), and insane (5) |
-| `--min-parallelism <numprobes>` and `--max-parallelism <numprobes>` | Minimum and maximum number of parallel probes                                                      |
-| `--min-rate <number>` and `--max-rate <number>`                     | Minimum and maximum rate (packets/second)                                                          |
-| `--host-timeout`                                                    | Maximum amount of time to wait for a target host                                                   |
+| `-T<0-5>`                                                           | Template de timing – paranoid (0), sneaky (1), polite (2), normal (3), aggressive (4) e insane (5) |
+| `--min-parallelism <numprobes>` and `--max-parallelism <numprobes>` | Número mínimo e máximo de sondagens em paralelo                                                    |
+| `--min-rate <number>` and `--max-rate <number>`                     | Taxa mínima e máxima (pacotes/segundo)                                                             |
+| `--host-timeout`                                                    | Tempo máximo de espera por um host alvo                                                            |
 
-## Formating answers
+## Formatando as respostas
 
-### Details & Report {.col-span-2}
+### Detalhes e relatório {.col-span-2}
 
-| Option            | Purpose                                |
-|:------------------|:---------------------------------------|
-| `--reason`        | explains how Nmap made its conclusion  |
-| `-v`              | verbose                                |
-| `-vv`             | very verbose                           |
-| `-d`              | debugging                              |
-| `-dd`             | more details for debugging             |
-| `-oN <filename>`  | Normal output                          |
-| `-oX <filename>`  | XML output                             |
-| `-oG <filename>`  | `grep`-able output                     |
-| `-oA <basename>`  | Output in all major formats            |
+| Opção             | Finalidade                                  |
+|:------------------|:--------------------------------------------|
+| `--reason`        | explica como o Nmap chegou à sua conclusão  |
+| `-v`              | modo verboso                                |
+| `-vv`             | modo bem verboso                            |
+| `-d`              | depuração                                   |
+| `-dd`             | mais detalhes para depuração                |
+| `-oN <filename>`  | Saída normal                                |
+| `-oX <filename>`  | Saída XML                                   |
+| `-oG <filename>`  | Saída compatível com `grep`                 |
+| `-oA <basename>`  | Saída em todos os formatos principais       |
 
-## Advanced Technic
+## Técnicas avançadas
 
-### Advanced Scan {.col-span-3}
+### Scan avançado {.col-span-3}
 
-| Options    | Protocol | Main Function     | Typical Use Case                               |
-|------------|:---------|:------------------|:-----------------------------------------------|
-| `-PR -sn`  | **ARP**  | Scan              | Discovering devices on the local network (LAN) |
-| `-PE -sn`  | **ICMP** | Echo Scan         | Checking if hosts are reachable (pinging)      |
-| `-PP -sn`  | **ICMP** | Timestamp Scan    | Gathering device time info (less common)       |
-| `-PM -sn`  | **ICMP** | Address Mask Scan | Determining subnet mask info from hosts        |
-| `-PS -sn`  | **TCP**  | SYN Ping Scan     | Detecting open TCP ports and live hosts        |
-| `-PA -sn ` | **TCP**  | ACK Ping Scan     | Identifying firewall rules and open ports      |
-| `-PU -sn`  | **ICMP** | Ping Scan         | Finding hosts with open UDP services           |
+| Opções     | Protocolo | Função principal   | Caso de uso típico                                 |
+|------------|:----------|:-------------------|:---------------------------------------------------|
+| `-PR -sn`  | **ARP**   | Scan               | Descobrir dispositivos na rede local (LAN)          |
+| `-PE -sn`  | **ICMP**  | Echo Scan          | Verificar se os hosts estão acessíveis (ping)       |
+| `-PP -sn`  | **ICMP**  | Timestamp Scan     | Coletar informações de horário do dispositivo (menos comum) |
+| `-PM -sn`  | **ICMP**  | Address Mask Scan  | Determinar informações de máscara de sub-rede dos hosts |
+| `-PS -sn`  | **TCP**   | SYN Ping Scan      | Detectar portas TCP abertas e hosts ativos          |
+| `-PA -sn ` | **TCP**   | ACK Ping Scan      | Identificar regras de firewall e portas abertas     |
+| `-PU -sn`  | **ICMP**  | Ping Scan          | Encontrar hosts com serviços UDP abertos            |
 
 
-##  Investigation Exemple 
+##  Exemplo de investigação
 
-### Verbose Os Quick port scan {.col-span-3}
+### Scan de portas rápido, verboso e com detecção de SO {.col-span-3}
 
 ```bash
 nmap -sV -O -p- -T5 target 
@@ -129,10 +129,10 @@ Nmap done: 1 IP address (1 host up) scanned in 39.94 seconds
 
 # you can then use `nmap -A -p 22, 8009, 8080 target` on discovered ports
 ```
-Do not use this tool without consent. For educational purposes, this example is coming from a Try Hack Me [machine](https://tryhackme.com/room/bsidesgtthompson).
+Não use esta ferramenta sem consentimento. Para fins educacionais, este exemplo vem de uma [máquina](https://tryhackme.com/room/bsidesgtthompson) do Try Hack Me.
 
 
 
-## Also See
+## Veja também
 
 - [Nmap](https://nmap.org/)

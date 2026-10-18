@@ -9,14 +9,14 @@ tags:
   - script
   - linux
 categories:
-  - Programming
-  - Operating System
-intro: This is a quick reference cheat sheet to getting started with linux bash shell scripting.
+  - Programação
+  - Sistema Operacional
+intro: Este é um cheat sheet de referência rápida para começar com shell scripting no bash do Linux.
 plugins:
   - copyCode
 ---
 
-## Getting Started
+## Primeiros passos
 
 ### hello.sh
 
@@ -27,13 +27,13 @@ VAR="world"
 echo "Hello $VAR!" # => Hello world!
 ```
 
-Execute the script
+Execute o script
 
 ```shell script
 $ bash hello.sh
 ```
 
-### Variables
+### Variáveis
 
 ```bash
 NAME="John"
@@ -47,13 +47,13 @@ echo "${NAME}!" # => John! (Variables)
 NAME = "John"   # => Error (about space)
 ```
 
-### Comments
+### Comentários
 
 ```bash
 # This is a signle-line (inline) Bash comment.
 ```
 
-Single-line comments in Bash start with `#` and continue to the end of the line.
+Comentários de linha única no Bash começam com `#` e seguem até o fim da linha.
 
 ```bash
 : '
@@ -63,28 +63,28 @@ in bash
 '
 ```
 
-Multi-line comments use `:'` to open and `'` to close.
+Comentários de múltiplas linhas usam `:'` para abrir e `'` para fechar.
 
-> **Note:** Bash does not have true multi-line comments. This works by passing a multi-line string to the no-op builtin `:` (colon), which ignores its argument.
+> **Nota:** O Bash não tem comentários de múltiplas linhas de verdade. Isso funciona passando uma string de múltiplas linhas para o builtin no-op `:` (dois-pontos), que ignora seu argumento.
 
-### Arguments {.row-span-2}
+### Argumentos {.row-span-2}
 
-| Expression  | Description                           |
-| ----------- | ------------------------------------- |
-| `$1` … `$9` | Parameter 1 ... 9                     |
-| `$0`        | Name of the script itself             |
-| `$1`        | First argument                        |
-| `${10}`     | Positional parameter 10               |
-| `$#`        | Number of arguments                   |
-| `$$`        | Process id of the shell               |
-| `$*`        | All arguments                         |
-| `$@`        | All arguments, starting from first    |
-| `$-`        | Current options                       |
-| `$_`        | Last argument of the previous command |
+| Expressão   | Descrição                                 |
+| ----------- | ----------------------------------------- |
+| `$1` … `$9` | Parâmetro 1 ... 9                         |
+| `$0`        | Nome do próprio script                    |
+| `$1`        | Primeiro argumento                        |
+| `${10}`     | Parâmetro posicional 10                   |
+| `$#`        | Número de argumentos                      |
+| `$$`        | ID do processo do shell                   |
+| `$*`        | Todos os argumentos                       |
+| `$@`        | Todos os argumentos, a partir do primeiro |
+| `$-`        | Opções atuais                             |
+| `$_`        | Último argumento do comando anterior      |
 
-See: [Special parameters](http://wiki.bash-hackers.org/syntax/shellvars#special_parameters_and_shell_variables)
+Veja: [Parâmetros especiais](http://wiki.bash-hackers.org/syntax/shellvars#special_parameters_and_shell_variables)
 
-### Functions
+### Funções
 
 ```bash
 get_name() {
@@ -94,9 +94,9 @@ get_name() {
 echo "You are $(get_name)"
 ```
 
-See: [Functions](#bash-functions)
+Veja: [Funções](#bash-functions)
 
-### Conditionals {#conditionals-example}
+### Condicionais {#conditionals-example}
 
 ```bash
 if [[ -z "$string" ]]; then
@@ -106,9 +106,9 @@ elif [[ -n "$string" ]]; then
 fi
 ```
 
-See: [Conditionals](#bash-conditionals)
+Veja: [Condicionais](#bash-conditionals)
 
-### Brace expansion
+### Expansão de chaves
 
 ```bash
 echo {A,B}.js
@@ -116,15 +116,15 @@ echo {A,B}.js
 
 ---
 
-| Expression | Description         |
-| ---------- | ------------------- |
-| `{A,B}`    | Same as `A B`       |
-| `{A,B}.js` | Same as `A.js B.js` |
-| `{1..5}`   | Same as `1 2 3 4 5` |
+| Expressão  | Descrição               |
+| ---------- | ----------------------- |
+| `{A,B}`    | O mesmo que `A B`       |
+| `{A,B}.js` | O mesmo que `A.js B.js` |
+| `{1..5}`   | O mesmo que `1 2 3 4 5` |
 
-See: [Brace expansion](http://wiki.bash-hackers.org/syntax/expansion/brace)
+Veja: [Expansão de chaves](http://wiki.bash-hackers.org/syntax/expansion/brace)
 
-### Shell execution
+### Execução no shell
 
 ```bash
 # => I'm in /path/of/current
@@ -134,46 +134,46 @@ echo "I'm in $(PWD)"
 echo "I'm in `pwd`"
 ```
 
-See: [Command substitution](http://wiki.bash-hackers.org/syntax/expansion/cmdsubst)
+Veja: [Substituição de comando](http://wiki.bash-hackers.org/syntax/expansion/cmdsubst)
 
-## Bash Parameter expansions
+## Expansões de parâmetros do Bash
 
-### Syntax {.row-span-2}
+### Sintaxe {.row-span-2}
 
-| Code              | Description         |
-| ----------------- | ------------------- |
-| `${FOO%suffix}`   | Remove suffix       |
-| `${FOO#prefix}`   | Remove prefix       |
-| `${FOO%%suffix}`  | Remove long suffix  |
-| `${FOO##prefix}`  | Remove long prefix  |
-| `${FOO/from/to}`  | Replace first match |
-| `${FOO//from/to}` | Replace all         |
-| `${FOO/%from/to}` | Replace suffix      |
-| `${FOO/#from/to}` | Replace prefix      |
+| Código            | Descrição                       |
+| ----------------- | ------------------------------- |
+| `${FOO%suffix}`   | Remove o sufixo                 |
+| `${FOO#prefix}`   | Remove o prefixo                |
+| `${FOO%%suffix}`  | Remove o sufixo longo           |
+| `${FOO##prefix}`  | Remove o prefixo longo          |
+| `${FOO/from/to}`  | Substitui a primeira ocorrência |
+| `${FOO//from/to}` | Substitui todas                 |
+| `${FOO/%from/to}` | Substitui o sufixo              |
+| `${FOO/#from/to}` | Substitui o prefixo             |
 
 #### Substrings
 
-| Expression      | Description                    |
-| --------------- | ------------------------------ |
-| `${FOO:0:3}`    | Substring _(position, length)_ |
-| `${FOO:(-3):3}` | Substring from the right       |
+| Expressão       | Descrição                          |
+| --------------- | ---------------------------------- |
+| `${FOO:0:3}`    | Substring _(posição, comprimento)_ |
+| `${FOO:(-3):3}` | Substring a partir da direita      |
 
-#### Length
+#### Comprimento
 
-| Expression | Description      |
-| ---------- | ---------------- |
-| `${#FOO}`  | Length of `$FOO` |
+| Expressão  | Descrição             |
+| ---------- | --------------------- |
+| `${#FOO}`  | Comprimento de `$FOO` |
 
-#### Default values
+#### Valores padrão
 
-| Expression        | Description                              |
-| ----------------- | ---------------------------------------- |
-| `${FOO:-val}`     | `$FOO`, or `val` if unset                |
-| `${FOO:=val}`     | Set `$FOO` to `val` if unset             |
-| `${FOO:+val}`     | `val` if `$FOO` is set                   |
-| `${FOO:?message}` | Show message and exit if `$FOO` is unset |
+| Expressão         | Descrição                                                |
+| ----------------- | -------------------------------------------------------- |
+| `${FOO:-val}`     | `$FOO`, ou `val` se não definido                         |
+| `${FOO:=val}`     | Define `$FOO` como `val` se não definido                 |
+| `${FOO:+val}`     | `val` se `$FOO` estiver definido                         |
+| `${FOO:?message}` | Mostra uma mensagem e sai se `$FOO` não estiver definido |
 
-### Substitution
+### Substituição
 
 ```bash
 echo ${food:-Cake}  #=> $food or "Cake"
@@ -210,7 +210,7 @@ length=2
 echo ${name:0:length}  # => Jo
 ```
 
-See: [Parameter expansion](http://wiki.bash-hackers.org/syntax/pe)
+Veja: [Expansão de parâmetros](http://wiki.bash-hackers.org/syntax/pe)
 
 ### basepath & dirpath
 
@@ -227,7 +227,7 @@ DIRPATH=${SRC%$BASEPATH}
 echo $DIRPATH   # => "/path/to/"
 ```
 
-### Transform
+### Transformação
 
 ```bash
 STR="HELLO WORLD!"
@@ -243,9 +243,9 @@ echo "${ARR[@],}" # => hello world
 echo "${ARR[@]^}" # => Hello World
 ```
 
-## Bash Arrays
+## Arrays no Bash
 
-### Defining arrays
+### Definindo arrays
 
 ```bash
 Fruits=('Apple' 'Banana' 'Orange')
@@ -265,21 +265,21 @@ declare -a Numbers=(1 2 3)
 Numbers+=(4 5) # Append => 1 2 3 4 5
 ```
 
-### Indexing
+### Indexação
 
-| -                  | -             |
-| ------------------ | ------------- |
-| `${Fruits[0]}`     | First element |
-| `${Fruits[-1]}`    | Last element  |
-| `${Fruits[*]}`     | All elements  |
-| `${Fruits[@]}`     | All elements  |
-| `${#Fruits[@]}`    | Number of all |
-| `${#Fruits}`       | Length of 1st |
-| `${#Fruits[3]}`    | Length of nth |
-| `${Fruits[@]:3:2}` | Range         |
-| `${!Fruits[@]}`    | Keys of all   |
+| ------------------ | ---------------------- |
+| ------------------ | ---------------------- |
+| `${Fruits[0]}`     | Primeiro elemento      |
+| `${Fruits[-1]}`    | Último elemento        |
+| `${Fruits[*]}`     | Todos os elementos     |
+| `${Fruits[@]}`     | Todos os elementos     |
+| `${#Fruits[@]}`    | Número de todos        |
+| `${#Fruits}`       | Comprimento do 1º      |
+| `${#Fruits[3]}`    | Comprimento do n-ésimo |
+| `${Fruits[@]:3:2}` | Intervalo              |
+| `${!Fruits[@]}`    | Chaves de todos        |
 
-### Iteration
+### Iteração
 
 ```bash
 Fruits=('Apple' 'Banana' 'Orange')
@@ -289,7 +289,7 @@ for e in "${Fruits[@]}"; do
 done
 ```
 
-#### With index
+#### Com índice
 
 ```bash
 for i in "${!Fruits[@]}"; do
@@ -298,7 +298,7 @@ done
 
 ```
 
-### Operations {.col-span-2}
+### Operações {.col-span-2}
 
 ```bash
 Fruits=("${Fruits[@]}" "Watermelon")     # Push
@@ -310,7 +310,7 @@ Fruits=("${Fruits[@]}" "${Veggies[@]}")  # Concatenate
 lines=(`cat "logfile"`)                  # Read from file
 ```
 
-### Arrays as arguments
+### Arrays como argumentos
 
 ```bash
 function extract()
@@ -323,9 +323,9 @@ Fruits=('Apple' 'Banana' 'Orange')
 extract Fruits 2     # => Orangle
 ```
 
-## Bash Dictionaries
+## Dicionários no Bash
 
-### Defining
+### Definindo
 
 ```bash
 declare -A sounds
@@ -338,7 +338,7 @@ sounds[bird]="tweet"
 sounds[wolf]="howl"
 ```
 
-### Working with dictionaries
+### Trabalhando com dicionários
 
 ```bash
 echo ${sounds[dog]} # Dog's sound
@@ -348,7 +348,7 @@ echo ${#sounds[@]}  # Number of elements
 unset sounds[dog]   # Delete dog
 ```
 
-### Iteration
+### Iteração
 
 ```bash
 for val in "${sounds[@]}"; do
@@ -364,37 +364,37 @@ for key in "${!sounds[@]}"; do
 done
 ```
 
-## Bash Conditionals
+## Condicionais no Bash
 
-### Integer conditions
+### Condições de inteiros
 
-| Condition           | Description                                 |
+| Condição            | Descrição                                   |
 | ------------------- | ------------------------------------------- |
-| `[[ NUM -eq NUM ]]` | <yel>Eq</yel>ual                            |
-| `[[ NUM -ne NUM ]]` | <yel>N</yel>ot <yel>e</yel>qual             |
-| `[[ NUM -lt NUM ]]` | <yel>L</yel>ess <yel>t</yel>han             |
-| `[[ NUM -le NUM ]]` | <yel>L</yel>ess than or <yel>e</yel>qual    |
-| `[[ NUM -gt NUM ]]` | <yel>G</yel>reater <yel>t</yel>han          |
-| `[[ NUM -ge NUM ]]` | <yel>G</yel>reater than or <yel>e</yel>qual |
-| `(( NUM < NUM ))`   | Less than                                   |
-| `(( NUM <= NUM ))`  | Less than or equal                          |
-| `(( NUM > NUM ))`   | Greater than                                |
-| `(( NUM >= NUM ))`  | Greater than or equal                       |
+| `[[ NUM -eq NUM ]]` | <yel>Ig</yel>ual                            |
+| `[[ NUM -ne NUM ]]` | <yel>N</yel>ão <yel>i</yel>gual             |
+| `[[ NUM -lt NUM ]]` | <yel>M</yel>enor <yel>q</yel>ue             |
+| `[[ NUM -le NUM ]]` | <yel>M</yel>enor ou <yel>i</yel>gual        |
+| `[[ NUM -gt NUM ]]` | <yel>M</yel>aior <yel>q</yel>ue             |
+| `[[ NUM -ge NUM ]]` | <yel>M</yel>aior ou <yel>i</yel>gual        |
+| `(( NUM < NUM ))`   | Menor que                                   |
+| `(( NUM <= NUM ))`  | Menor ou igual                              |
+| `(( NUM > NUM ))`   | Maior que                                   |
+| `(( NUM >= NUM ))`  | Maior ou igual                              |
 
-### String conditions
+### Condições de strings
 
-| Condition          | Description                 |
+| Condição           | Descrição                   |
 | ------------------ | --------------------------- |
-| `[[ -z STR ]]`     | Empty string                |
-| `[[ -n STR ]]`     | <yel>N</yel>ot empty string |
-| `[[ STR == STR ]]` | Equal                       |
-| `[[ STR = STR ]]`  | Equal (Same above)          |
-| `[[ STR < STR ]]`  | Less than _(ASCII)_         |
-| `[[ STR > STR ]]`  | Greater than _(ASCII)_      |
-| `[[ STR != STR ]]` | Not Equal                   |
+| `[[ -z STR ]]`     | String vazia                |
+| `[[ -n STR ]]`     | <yel>N</yel>ão vazia        |
+| `[[ STR == STR ]]` | Igual                       |
+| `[[ STR = STR ]]`  | Igual (o mesmo acima)       |
+| `[[ STR < STR ]]`  | Menor que _(ASCII)_         |
+| `[[ STR > STR ]]`  | Maior que _(ASCII)_         |
+| `[[ STR != STR ]]` | Diferente                   |
 | `[[ STR =~ STR ]]` | Regexp                      |
 
-### Example {.row-span-3}
+### Exemplo {.row-span-3}
 
 #### String
 
@@ -408,7 +408,7 @@ else
 fi
 ```
 
-#### Combinations
+#### Combinações
 
 ```bash
 if [[ X && Y ]]; then
@@ -416,7 +416,7 @@ if [[ X && Y ]]; then
 fi
 ```
 
-#### Equal
+#### Igual
 
 ```bash
 if [[ "$A" == "$B" ]]; then
@@ -432,7 +432,7 @@ if [[ '1. abc' =~ ([a-z]+) ]]; then
 fi
 ```
 
-#### Smaller
+#### Menor
 
 ```bash
 if (( $a < $b )); then
@@ -440,7 +440,7 @@ if (( $a < $b )); then
 fi
 ```
 
-#### Exists
+#### Existe
 
 ```bash
 if [[ -e "file.txt" ]]; then
@@ -448,32 +448,32 @@ if [[ -e "file.txt" ]]; then
 fi
 ```
 
-### File conditions {.row-span-2}
+### Condições de arquivo {.row-span-2}
 
-| Condition         | Description                            |
-| ----------------- | -------------------------------------- |
-| `[[ -e FILE ]]`   | <yel>E</yel>xists                      |
-| `[[ -d FILE ]]`   | <yel>D</yel>irectory                   |
-| `[[ -f FILE ]]`   | <yel>F</yel>ile                        |
-| `[[ -h FILE ]]`   | Symlink                                |
-| `[[ -s FILE ]]`   | Size is > 0 bytes                      |
-| `[[ -r FILE ]]`   | <yel>R</yel>eadable                    |
-| `[[ -w FILE ]]`   | <yel>W</yel>ritable                    |
-| `[[ -x FILE ]]`   | Executable                             |
-| `[[ f1 -nt f2 ]]` | f1 <yel>n</yel>ewer <yel>t</yel>han f2 |
-| `[[ f1 -ot f2 ]]` | f2 <yel>o</yel>lder <yel>t</yel>han f1 |
-| `[[ f1 -ef f2 ]]` | Same files                             |
+| Condição          | Descrição                                   |
+| ----------------- | ------------------------------------------- |
+| `[[ -e FILE ]]`   | <yel>E</yel>xiste                           |
+| `[[ -d FILE ]]`   | <yel>D</yel>iretório                        |
+| `[[ -f FILE ]]`   | <yel>A</yel>rquivo                          |
+| `[[ -h FILE ]]`   | Symlink                                     |
+| `[[ -s FILE ]]`   | Tamanho > 0 bytes                           |
+| `[[ -r FILE ]]`   | <yel>L</yel>egível                          |
+| `[[ -w FILE ]]`   | <yel>G</yel>ravável                         |
+| `[[ -x FILE ]]`   | Executável                                  |
+| `[[ f1 -nt f2 ]]` | f1 <yel>m</yel>ais <yel>n</yel>ovo que f2   |
+| `[[ f1 -ot f2 ]]` | f2 <yel>m</yel>ais <yel>a</yel>ntigo que f1 |
+| `[[ f1 -ef f2 ]]` | Mesmos arquivos                             |
 
-### More conditions
+### Mais condições
 
-| Condition            | Description          |
+| Condição             | Descrição            |
 | -------------------- | -------------------- | ----- | --- |
-| `[[ -o noclobber ]]` | If OPTION is enabled |
-| `[[ ! EXPR ]]`       | Not                  |
-| `[[ X && Y ]]`       | And                  |
-| `[[ X                |                      | Y ]]` | Or  |
+| `[[ -o noclobber ]]` | Se a OPÇÃO estiver habilitada |
+| `[[ ! EXPR ]]`       | Não                  |
+| `[[ X && Y ]]`       | E                    |
+| `[[ X                |                      | Y ]]` | Ou  |
 
-### logical and, or
+### E lógico, ou lógico
 
 ```bash
 if [ "$1" = 'y' -a $2 -gt 0 ]; then
@@ -485,9 +485,9 @@ if [ "$1" = 'n' -o $2 -lt 0 ]; then
 fi
 ```
 
-## Bash Loops
+## Loops no Bash
 
-### Basic for loop
+### Loop for básico
 
 ```bash
 for i in /etc/rc.*; do
@@ -495,7 +495,7 @@ for i in /etc/rc.*; do
 done
 ```
 
-### C-like for loop
+### Laço for estilo C
 
 ```bash
 for ((i = 0 ; i < 100 ; i++)); do
@@ -503,7 +503,7 @@ for ((i = 0 ; i < 100 ; i++)); do
 done
 ```
 
-### Ranges {.row-span-2}
+### Intervalos {.row-span-2}
 
 ```bash
 for i in {1..5}; do
@@ -511,7 +511,7 @@ for i in {1..5}; do
 done
 ```
 
-#### With step size
+#### Com passo definido
 
 ```bash
 for i in {5..50..5}; do
@@ -553,7 +553,7 @@ until [ $count -gt 10 ]; do
 done
 ```
 
-### While with increment
+### While com incremento
 
 ```bash
 i=1
@@ -563,7 +563,7 @@ while [[ $i -lt 4 ]]; do
 done
 ```
 
-### While with decrement
+### While com decremento
 
 ```bash
 i=3
@@ -573,7 +573,7 @@ while [[ $i -gt 0 ]]; do
 done
 ```
 
-#### Combined with test
+#### Combinado com teste
 
 ```bash
 i=3
@@ -582,7 +582,7 @@ while ((i--)); do
 done
 ```
 
-### Forever
+### Infinito
 
 ```bash
 while true; do
@@ -590,7 +590,7 @@ while true; do
 done
 ```
 
-### Forever (shorthand)
+### Infinito (forma curta)
 
 ```bash
 while :; do
@@ -598,7 +598,7 @@ while :; do
 done
 ```
 
-### Reading lines
+### Lendo linhas
 
 ```bash
 while read line; do
@@ -606,9 +606,9 @@ while read line; do
 done < file.txt
 ```
 
-## Bash Functions
+## Funções no Bash
 
-### Defining functions
+### Definindo funções
 
 ```bash
 myfunc() {
@@ -627,7 +627,7 @@ function myfunc() {
 myfunc "John"
 ```
 
-### Returning values
+### Retornando valores
 
 ```bash
 myfunc() {
@@ -640,7 +640,7 @@ myfunc() {
 result="$(myfunc)"
 ```
 
-### Raising errors
+### Gerando erros
 
 ```bash
 myfunc() {
@@ -656,9 +656,9 @@ else
 fi
 ```
 
-## Bash Options {.cols-2}
+## Opções do Bash {.cols-2}
 
-### Options
+### Opções
 
 ```bash
 # Avoid overlay files
@@ -676,7 +676,7 @@ set -o pipefail
 set -o nounset
 ```
 
-### Glob options
+### Opções de glob
 
 ```bash
 # Non-matching globs are removed
@@ -698,53 +698,53 @@ shopt -s dotglob
 shopt -s globstar
 ```
 
-## Bash History {.cols-2}
+## Histórico do Bash {.cols-2}
 
-### Commands
+### Comandos
 
-| Command               | Description                               |
-| --------------------- | ----------------------------------------- |
-| `history`             | Show history                              |
-| `sudo !!`             | Run the previous command with sudo        |
-| `shopt -s histverify` | Don't execute expanded result immediately |
+| Comando               | Descrição                                       |
+| --------------------- | ----------------------------------------------- |
+| `history`             | Mostra o histórico                              |
+| `sudo !!`             | Executa o comando anterior com sudo             |
+| `shopt -s histverify` | Não executa o resultado expandido imediatamente |
 
-### Expansions
+### Expansões
 
-| Expression   | Description                                          |
-| ------------ | ---------------------------------------------------- |
-| `!$`         | Expand last parameter of most recent command         |
-| `!*`         | Expand all parameters of most recent command         |
-| `!-n`        | Expand `n`th most recent command                     |
-| `!n`         | Expand `n`th command in history                      |
-| `!<command>` | Expand most recent invocation of command `<command>` |
+| Expressão    | Descrição                                               |
+| ------------ | ------------------------------------------------------- |
+| `!$`         | Expande o último parâmetro do comando mais recente      |
+| `!*`         | Expande todos os parâmetros do comando mais recente     |
+| `!-n`        | Expande o `n`-ésimo comando mais recente                |
+| `!n`         | Expande o `n`-ésimo comando do histórico                |
+| `!<command>` | Expande a invocação mais recente do comando `<command>` |
 
-### Operations
+### Operações
 
-| Code                 | Description                                                           |
-| -------------------- | --------------------------------------------------------------------- |
-| `!!`                 | Execute last command again                                            |
-| `!!:s/<FROM>/<TO>/`  | Replace first occurrence of `<FROM>` to `<TO>` in most recent command |
-| `!!:gs/<FROM>/<TO>/` | Replace all occurrences of `<FROM>` to `<TO>` in most recent command  |
-| `!$:t`               | Expand only basename from last parameter of most recent command       |
-| `!$:h`               | Expand only directory from last parameter of most recent command      |
+| Código               | Descrição                                                                      |
+| -------------------- | ------------------------------------------------------------------------------ |
+| `!!`                 | Executa o último comando novamente                                             |
+| `!!:s/<FROM>/<TO>/`  | Substitui a primeira ocorrência de `<FROM>` por `<TO>` no comando mais recente |
+| `!!:gs/<FROM>/<TO>/` | Substitui todas as ocorrências de `<FROM>` por `<TO>` no comando mais recente  |
+| `!$:t`               | Expande apenas o basename do último parâmetro do comando mais recente          |
+| `!$:h`               | Expande apenas o diretório do último parâmetro do comando mais recente         |
 
-`!!` and `!$` can be replaced with any valid expansion.
+`!!` e `!$` podem ser substituídos por qualquer expansão válida.
 
-### Slices
+### Fatias
 
-| Code     | Description                                                                              |
-| -------- | ---------------------------------------------------------------------------------------- |
-| `!!:n`   | Expand only `n`th token from most recent command (command is `0`; first argument is `1`) |
-| `!^`     | Expand first argument from most recent command                                           |
-| `!$`     | Expand last token from most recent command                                               |
-| `!!:n-m` | Expand range of tokens from most recent command                                          |
-| `!!:n-$` | Expand `n`th token to last from most recent command                                      |
+| Código   | Descrição                                                                                              |
+| -------- | ------------------------------------------------------------------------------------------------------ |
+| `!!:n`   | Expande apenas o `n`-ésimo token do comando mais recente (o comando é `0`; o primeiro argumento é `1`) |
+| `!^`     | Expande o primeiro argumento do comando mais recente                                                   |
+| `!$`     | Expande o último token do comando mais recente                                                         |
+| `!!:n-m` | Expande um intervalo de tokens do comando mais recente                                                 |
+| `!!:n-$` | Expande do `n`-ésimo token até o último do comando mais recente                                        |
 
-`!!` can be replaced with any valid expansion i.e. `!cat`, `!-2`, `!42`, etc.
+`!!` pode ser substituído por qualquer expansão válida, por exemplo `!cat`, `!-2`, `!42`, etc.
 
-## Miscellaneous
+## Diversos
 
-### Numeric calculations
+### Cálculos numéricos
 
 ```bash
 $((a + 200))      # Add 200 to $a
@@ -761,14 +761,14 @@ $(($RANDOM%200))  # Random number 0..199
 pwd # still in first directory
 ```
 
-### Inspecting commands
+### Inspecionando comandos
 
 ```bash
 command -V cd
 #=> "cd is a function/alias/whatever"
 ```
 
-### Redirection {.row-span-2 .col-span-2}
+### Redirecionamento {.row-span-2 .col-span-2}
 
 ```bash
 python hello.py > output.txt   # stdout to (file)
@@ -783,13 +783,13 @@ python hello.py &>/dev/null    # stdout and stderr to (null)
 python hello.py < foo.txt      # feed foo.txt to stdin for python
 ```
 
-### Source relative
+### Source relativo
 
 ```bash
 source "${0%/*}/../share/foo.sh"
 ```
 
-### Directory of script
+### Diretório do script
 
 ```bash
 DIR="${0%/*}"
@@ -809,13 +809,13 @@ case "$1" in
 esac
 ```
 
-### Trap errors {.col-span-2}
+### Captura de erros (trap) {.col-span-2}
 
 ```bash
 trap 'echo Error at about $LINENO' ERR
 ```
 
-or
+ou
 
 ```bash
 traperr() {
@@ -839,7 +839,7 @@ printf "Print a float: %f" 2
 #=> "Print a float: 2.000000"
 ```
 
-### Getting options {.col-span-2}
+### Obtendo opções {.col-span-2}
 
 ```bash
 while [[ "$1" =~ ^- && ! "$1" == "--" ]]; do case $1 in
@@ -857,7 +857,7 @@ esac; shift; done
 if [[ "$1" == '--' ]]; then shift; fi
 ```
 
-### Check for command's result {.col-span-2}
+### Verificando o resultado de um comando {.col-span-2}
 
 ```bash
 if ping -c 1 google.com; then
@@ -865,7 +865,7 @@ if ping -c 1 google.com; then
 fi
 ```
 
-### Public IP
+### IP público
 
 ```bash
 # Show this machine's public IP
@@ -876,20 +876,20 @@ public_ip=$(curl -fsS myip.dog)
 printf '%s\n' "$public_ip"
 ```
 
-More IP tools: [myip.dog](https://myip.dog/)
+Mais ferramentas de IP: [myip.dog](https://myip.dog/)
 
-### Special variables {.row-span-2}
+### Variáveis especiais {.row-span-2}
 
-| Expression | Description                  |
-| ---------- | ---------------------------- |
-| `$?`       | Exit status of last task     |
-| `$!`       | PID of last background task  |
-| `$$`       | PID of shell                 |
-| `$0`       | Filename of the shell script |
+| Expressão  | Descrição                             |
+| ---------- | ------------------------------------- |
+| `$?`       | Status de saída da última tarefa      |
+| `$!`       | PID da última tarefa em segundo plano |
+| `$$`       | PID do shell                          |
+| `$0`       | Nome do arquivo do shell script       |
 
-See [Special parameters](http://wiki.bash-hackers.org/syntax/shellvars#special_parameters_and_shell_variables).
+Veja [Parâmetros especiais](http://wiki.bash-hackers.org/syntax/shellvars#special_parameters_and_shell_variables).
 
-### Grep check {.col-span-2}
+### Verificação com grep {.col-span-2}
 
 ```bash
 if grep -q 'foo' ~/.bash_history; then
@@ -897,7 +897,7 @@ if grep -q 'foo' ~/.bash_history; then
 fi
 ```
 
-### Backslash escapes {.row-span-2}
+### Escapes com barra invertida {.row-span-2}
 
 - &nbsp;
 - \!
@@ -925,7 +925,7 @@ fi
 
 {.cols-4 .marker-none}
 
-Escape these special characters with `\`
+Escape estes caracteres especiais com `\`
 
 ### Heredoc
 
@@ -935,7 +935,7 @@ hello world
 END
 ```
 
-### Go to previous directory
+### Ir para o diretório anterior
 
 ```bash
 pwd # /home/user/foo
@@ -945,7 +945,7 @@ cd -
 pwd # /home/user/foo
 ```
 
-### Reading input
+### Lendo entrada
 
 ```bash
 echo -n "Proceed? [y/n]: "
@@ -957,23 +957,23 @@ echo $ans
 read -n 1 ans    # Just one character
 ```
 
-### Conditional execution
+### Execução condicional
 
 ```bash
 git commit && git push
 git commit || echo "Commit failed"
 ```
 
-### Strict mode
+### Modo estrito
 
 ```bash
 set -euo pipefail
 IFS=$'\n\t'
 ```
 
-See: [Unofficial bash strict mode](http://redsymbol.net/articles/unofficial-bash-strict-mode/)
+Veja: [Modo estrito não oficial do bash](http://redsymbol.net/articles/unofficial-bash-strict-mode/)
 
-### Optional arguments
+### Argumentos opcionais
 
 ```bash
 args=("$@")
@@ -982,9 +982,9 @@ args+=(bar)
 echo "${args[@]}"
 ```
 
-Put the arguments into an array and then append
+Coloque os argumentos em um array e depois faça o append
 
-## Also see {.cols-1}
+## Veja também {.cols-1}
 
 - [Devhints](https://devhints.io/bash) _(devhints.io)_
 - [Bash-hackers wiki](http://wiki.bash-hackers.org/) _(bash-hackers.org)_

@@ -7,51 +7,51 @@ tags:
   -
   -
 categories:
-  - Keyboard Shortcuts
+  - Atalhos de Teclado
 intro: |
-  A visual cheat-sheet for the 23 keyboard shortcuts found in Spotify
+  Um cheat sheet visual dos 23 atalhos de teclado do Spotify
 ---
 
-## Keyboard Shortcuts {.cols-2}
+## Atalhos de teclado {.cols-2}
 
-### General I
+### Geral I
 
-| Shortcut         | Action                  |
+| Atalho           | Ação                    |
 | ---------------- | ----------------------- |
-| `Ctrl` `N`       | Create new playlist     |
-| `Ctrl` `X`       | Cut                     |
-| `Ctrl` `C`       | Copy                    |
-| `Ctrl` `Alt` `C` | Copy (alternative link) |
-| `Ctrl` `V`       | Paste                   |
-| `Del`            | Delete                  |
-| `Ctrl` `A`       | Select all              |
-| `Space`          | Play/pause              |
-| `Ctrl` `Right`   | Next track              |
-| `Ctrl` `Left`    | Previous track          |
-| `Ctrl` `Up`      | Volume up               |
+| `Ctrl` `N`       | Criar nova playlist     |
+| `Ctrl` `X`       | Recortar                |
+| `Ctrl` `C`       | Copiar                  |
+| `Ctrl` `Alt` `C` | Copiar (link alternativo) |
+| `Ctrl` `V`       | Colar                   |
+| `Del`            | Excluir                 |
+| `Ctrl` `A`       | Selecionar tudo         |
+| `Space`          | Reproduzir/pausar       |
+| `Ctrl` `Right`   | Próxima faixa           |
+| `Ctrl` `Left`    | Faixa anterior          |
+| `Ctrl` `Up`      | Aumentar o volume       |
 
 {.shortcuts}
 
-### General II
+### Geral II
 
-| Shortcut              | Action                          |
+| Atalho                | Ação                            |
 | --------------------- | ------------------------------- |
-| `Ctrl` `Down`         | Volume down                     |
-| `Ctrl` `Shift` `Down` | Mute                            |
-| `Ctrl` `Shift` `Up`   | Max volume                      |
-| `F1`                  | Show help                       |
-| `Ctrl` `F`            | Filter (in Songs and Playlists) |
-| `Ctrl` `L`            | Give focus to search field      |
-| `Alt` `Left`          | Go back                         |
-| `Alt` `Right`         | Go forward                      |
-| `Enter`               | Play selected row               |
-| `Ctrl` `P`            | Preferences                     |
-| `Ctrl` `Shift` `W`    | Logout active user              |
-| `Alt` `F4`            | Quit                            |
+| `Ctrl` `Down`         | Diminuir o volume               |
+| `Ctrl` `Shift` `Down` | Silenciar                       |
+| `Ctrl` `Shift` `Up`   | Volume máximo                   |
+| `F1`                  | Mostrar ajuda                   |
+| `Ctrl` `F`            | Filtrar (em Músicas e Playlists) |
+| `Ctrl` `L`            | Focar o campo de busca          |
+| `Alt` `Left`          | Voltar                          |
+| `Alt` `Right`         | Avançar                         |
+| `Enter`               | Reproduzir a linha selecionada  |
+| `Ctrl` `P`            | Preferências                    |
+| `Ctrl` `Shift` `W`    | Sair do usuário ativo           |
+| `Alt` `F4`            | Sair                            |
 
 {.shortcuts}
 
-## Also see
+## Veja também
 
-- [Keyboard shortcuts for Spotify](https://support.spotify.com/is/using_spotify/system_settings/keyboard-shortcuts/)
+- [Atalhos de teclado do Spotify](https://support.spotify.com/is/using_spotify/system_settings/keyboard-shortcuts/)
   _(support.spotify.com)_

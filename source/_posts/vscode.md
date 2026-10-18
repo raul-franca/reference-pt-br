@@ -7,410 +7,410 @@ tags:
   - editor
   - shortcut
 categories:
-  - Toolkit
+  - Ferramentas
 intro: |
-  This VSCode (Visual Studio Code) quick reference cheat sheet shows its keyboard shortcuts and commands.
+  Este cheat sheet de referência rápida do VSCode (Visual Studio Code) mostra seus atalhos de teclado e comandos.
 ---
 
-## Keyboard shortcuts for Windows
+## Atalhos de teclado para Windows
 
-### General
+### Geral
 
-| Shortcut              | Action                    |
-| --------------------- | ------------------------- |
-| `Ctrl` `Shift` `P`    | Show Command Palette      |
-| `Ctrl` `P`            | Quick Open, Go to File... |
-| `Ctrl` `Shift` `N`    | New window/instance       |
-| `Ctrl` `Shift` `W`    | Close window/instance     |
-| `Ctrl` `,`            | User Settings             |
-| `Ctrl` `K` `Ctrl` `S` | Keyboard Shortcuts        |
-
-{.shortcuts}
-
-### Basic Editing {.row-span-2}
-
-| Shortcut                | Action                             |
-| ----------------------- | ---------------------------------- |
-| `Ctrl` `X`              | Cut line (empty selection)         |
-| `Ctrl` `C`              | Copy line (empty selection)        |
-| `Alt` `Up/Down`         | Move line up/down                  |
-| `Shift` `Alt` `Up/Down` | Copy line up/down                  |
-| `Ctrl` `Shift` `K`      | Delete line                        |
-| `Ctrl` `Enter`          | Insert line below                  |
-| `Ctrl` `Shift` `Enter`  | Insert line above                  |
-| `Ctrl` `Shift` `\`      | Jump to matching bracket           |
-| `Ctrl` `]/[`            | Indent/outdent line                |
-| `Home/End`              | Go to beginning/end of line        |
-| `Ctrl` `Home`           | Go to beginning of file            |
-| `Ctrl` `End`            | Go to end of file                  |
-| `Ctrl` `Up/Down`        | Scroll line up/down                |
-| `Alt` `PgUp/PgDown`     | Scroll page up/down                |
-| `Ctrl` `Shift` `[`      | Fold (collapse) region             |
-| `Ctrl` `Shift` `]`      | Unfold (uncollapse) region         |
-| `Ctrl` `K` `Ctrl` `[`   | Fold (collapse) all subregions     |
-| `Ctrl` `K` `Ctrl` `]`   | Unfold (uncollapse) all subregions |
-| `Ctrl` `K` `Ctrl` `0`   | Fold (collapse) all regions        |
-| `Ctrl` `K` `Ctrl` `J`   | Unfold (uncollapse) all regions    |
-| `Ctrl` `K` `Ctrl` `C`   | Add line comment                   |
-| `Ctrl` `K` `Ctrl` `U`   | Remove line comment                |
-| `Ctrl` `/`              | Toggle line comment                |
-| `Shift` `Alt` `A`       | Toggle block comment               |
-| `Alt` `Z`               | Toggle word wrap                   |
+| Atalho                | Ação                                |
+| --------------------- | ----------------------------------- |
+| `Ctrl` `Shift` `P`    | Mostra a Command Palette            |
+| `Ctrl` `P`            | Abertura rápida, ir para arquivo... |
+| `Ctrl` `Shift` `N`    | Nova janela/instância               |
+| `Ctrl` `Shift` `W`    | Fecha a janela/instância            |
+| `Ctrl` `,`            | Configurações do usuário            |
+| `Ctrl` `K` `Ctrl` `S` | Atalhos de teclado                  |
 
 {.shortcuts}
 
-### Navigation
+### Edição básica {.row-span-2}
 
-| Shortcut             | Action                          |
-| -------------------- | ------------------------------- |
-| `Ctrl` `T`           | Show all Symbols                |
-| `Ctrl` `G`           | Go to Line...                   |
-| `Ctrl` `P`           | Go to File...                   |
-| `Ctrl` `Shift` `O`   | Go to Symbol...                 |
-| `Ctrl` `Shift` `M`   | Show Problems panel             |
-| `F8`                 | Go to next error or warning     |
-| `Shift` `F8`         | Go to previous error or warning |
-| `Ctrl` `Shift` `Tab` | Navigate editor group history   |
-| `Alt` `Left/Right`   | Go back/forward                 |
-| `Ctrl` `M`           | Toggle Tab moves focus          |
-
-{.shortcuts}
-
-### Search and replace
-
-| Shortcut              | Action                                 |
-| --------------------- | -------------------------------------- |
-| `Ctrl` `F`            | Find                                   |
-| `Ctrl` `H`            | Replace                                |
-| `F3`                  | Find next                              |
-| `Shift` `F3`          | Find previous                          |
-| `Alt` `Enter`         | Select all occurrences of Find match   |
-| `Ctrl` `D`            | Add selection to next Find match       |
-| `Ctrl` `K` `Ctrl` `D` | Move last selection to next Find match |
-| `Alt` `C/R/W`         | Toggle case-sensitive/regex/whole word |
-
-{.shortcuts}
-
-### Multi-cursor and selection
-
-| Shortcut                           | Action                                      |
-| ---------------------------------- | ------------------------------------------- |
-| `Alt` `Click`                      | Insert cursor                               |
-| `Ctrl` `Alt` `Up/Down`             | Insert cursor above/below                   |
-| `Ctrl` `U`                         | Undo last cursor operation                  |
-| `Shift` `Alt` `I`                  | Insert cursor at end of each line selected  |
-| `Ctrl` `I`                         | Select current line                         |
-| `Ctrl` `Shift` `L`                 | Select all occurrences of current selection |
-| `Ctrl` `F2`                        | Select all occurrences of current word      |
-| `Shift` `Alt` `Right`              | Expand selection                            |
-| `Shift` `Alt` `Left`               | Shrink selection                            |
-| `Shift` `Alt` `(drag mouse)`       | Column (box) selection                      |
-| `Ctrl` `Shift` `Alt` `(arrow key)` | Column (box) selection                      |
-| `Ctrl` `Shift` `Alt` `PgUp/PgDown` | Column (box) selection page up/down         |
+| Atalho                  | Ação                                      |
+| ----------------------- | ----------------------------------------- |
+| `Ctrl` `X`              | Recorta a linha (seleção vazia)           |
+| `Ctrl` `C`              | Copia a linha (seleção vazia)             |
+| `Alt` `Up/Down`         | Move a linha para cima/baixo              |
+| `Shift` `Alt` `Up/Down` | Copia a linha para cima/baixo             |
+| `Ctrl` `Shift` `K`      | Exclui a linha                            |
+| `Ctrl` `Enter`          | Insere linha abaixo                       |
+| `Ctrl` `Shift` `Enter`  | Insere linha acima                        |
+| `Ctrl` `Shift` `\`      | Vai para o colchete correspondente        |
+| `Ctrl` `]/[`            | Indenta/desindenta a linha                |
+| `Home/End`              | Vai para o início/fim da linha            |
+| `Ctrl` `Home`           | Vai para o início do arquivo              |
+| `Ctrl` `End`            | Vai para o fim do arquivo                 |
+| `Ctrl` `Up/Down`        | Rola a linha para cima/baixo              |
+| `Alt` `PgUp/PgDown`     | Rola a página para cima/baixo             |
+| `Ctrl` `Shift` `[`      | Recolhe (colapsa) a região                |
+| `Ctrl` `Shift` `]`      | Expande (descolapsa) a região             |
+| `Ctrl` `K` `Ctrl` `[`   | Recolhe (colapsa) todas as sub-regiões    |
+| `Ctrl` `K` `Ctrl` `]`   | Expande (descolapsa) todas as sub-regiões |
+| `Ctrl` `K` `Ctrl` `0`   | Recolhe (colapsa) todas as regiões        |
+| `Ctrl` `K` `Ctrl` `J`   | Expande (descolapsa) todas as regiões     |
+| `Ctrl` `K` `Ctrl` `C`   | Adiciona comentário de linha              |
+| `Ctrl` `K` `Ctrl` `U`   | Remove comentário de linha                |
+| `Ctrl` `/`              | Alterna comentário de linha               |
+| `Shift` `Alt` `A`       | Alterna comentário de bloco               |
+| `Alt` `Z`               | Alterna a quebra automática de linha      |
 
 {.shortcuts}
 
-### Rich languages editing
+### Navegação
 
-| Shortcut               | Action                      |
-| ---------------------- | --------------------------- |
-| `Ctrl` `Space`         | Trigger suggestion          |
-| `Ctrl` `Shift` `Space` | Trigger parameter hints     |
-| `Shift` `Alt` `F`      | Format document             |
-| `Ctrl` `K` `Ctrl` `F`  | Format selection            |
-| `F12`                  | Go to Definition            |
-| `Alt` `F12`            | Peek Definition             |
-| `Ctrl` `K` `F12`       | Open Definition to the side |
-| `Ctrl` `.`             | Quick Fix                   |
-| `Shift` `F12`          | Show References             |
-| `F2`                   | Rename Symbol               |
-| `Ctrl` `K` `Ctrl` `X`  | Trim trailing whitespace    |
-| `Ctrl` `K` `M`         | Change file language        |
+| Atalho               | Ação                                       |
+| -------------------- | ------------------------------------------ |
+| `Ctrl` `T`           | Mostra todos os símbolos                   |
+| `Ctrl` `G`           | Vai para a linha...                        |
+| `Ctrl` `P`           | Vai para o arquivo...                      |
+| `Ctrl` `Shift` `O`   | Vai para o símbolo...                      |
+| `Ctrl` `Shift` `M`   | Mostra o painel de problemas               |
+| `F8`                 | Vai para o próximo erro ou aviso           |
+| `Shift` `F8`         | Vai para o erro ou aviso anterior          |
+| `Ctrl` `Shift` `Tab` | Navega pelo histórico do grupo de editores |
+| `Alt` `Left/Right`   | Volta/avança                               |
+| `Ctrl` `M`           | Alterna o foco ao pressionar Tab           |
 
 {.shortcuts}
 
-### Editor management
+### Busca e substituição
 
-| Shortcut                       | Action                                   |
-| ------------------------------ | ---------------------------------------- |
-| `Ctrl` `F4`                    | Close editor                             |
-| `Ctrl` `W`                     | Close editor                             |
-| `Ctrl` `K` `F`                 | Close folder                             |
-| `Ctrl` `\`                     | Split editor                             |
-| `Ctrl` `1/2/3`                 | Focus into 1st, 2nd, or 3rd editor group |
-| `Ctrl` `K` `Ctrl` `Left/Right` | Focus into previous/next editor group    |
-| `Ctrl` `Shift` `PgUp/PgDown`   | Move editor left/right                   |
-| `Ctrl` `K` `Left/Right`        | Move active editor group                 |
-
-{.shortcuts}
-
-### File management
-
-| Shortcut              | Action                                  |
-| --------------------- | --------------------------------------- |
-| `Ctrl` `N`            | New File                                |
-| `Ctrl` `O`            | Open File...                            |
-| `Ctrl` `S`            | Save                                    |
-| `Ctrl` `Shift` `S`    | Save As...                              |
-| `Ctrl` `K` `S`        | Save All                                |
-| `Ctrl` `F4`           | Close                                   |
-| `Ctrl` `K` `Ctrl` `W` | Close All                               |
-| `Ctrl` `Shift` `T`    | Reopen closed editor                    |
-| `Ctrl` `K` `Enter`    | Keep preview mode editor open           |
-| `Ctrl` `Tab`          | Open next                               |
-| `Ctrl` `Shift` `Tab`  | Open previous                           |
-| `Ctrl` `K` `P`        | Copy path of active file                |
-| `Ctrl` `K` `R`        | Reveal active file in Explorer          |
-| `Ctrl` `K` `O`        | Show active file in new window/instance |
+| Atalho                | Ação                                                     |
+| --------------------- | -------------------------------------------------------- |
+| `Ctrl` `F`            | Localiza                                                 |
+| `Ctrl` `H`            | Substitui                                                |
+| `F3`                  | Localiza o próximo                                       |
+| `Shift` `F3`          | Localiza o anterior                                      |
+| `Alt` `Enter`         | Seleciona todas as ocorrências da busca                  |
+| `Ctrl` `D`            | Adiciona a seleção à próxima ocorrência da busca         |
+| `Ctrl` `K` `Ctrl` `D` | Move a última seleção para a próxima ocorrência da busca |
+| `Alt` `C/R/W`         | Alterna maiúsculas/minúsculas, regex, palavra inteira    |
 
 {.shortcuts}
 
-### Display
+### Multi-cursor e seleção
 
-| Shortcut           | Action                                     |
-| ------------------ | ------------------------------------------ |
-| `F11`              | Toggle full screen                         |
-| `Shift` `Alt` `0`  | Toggle editor layout (horizontal/vertical) |
-| `Ctrl` `=/-`       | Zoom in/out                                |
-| `Ctrl` `B`         | Toggle Sidebar visibility                  |
-| `Ctrl` `Shift` `E` | Show Explorer/Toggle focus                 |
-| `Ctrl` `Shift` `F` | Show Search                                |
-| `Ctrl` `Shift` `G` | Show Source Control                        |
-| `Ctrl` `Shift` `D` | Show Debug                                 |
-| `Ctrl` `Shift` `X` | Show Extensions                            |
-| `Ctrl` `Shift` `H` | Replace in files                           |
-| `Ctrl` `Shift` `J` | Toggle Search details                      |
-| `Ctrl` `Shift` `U` | Show Output panel                          |
-| `Ctrl` `Shift` `V` | Open Markdown preview                      |
-| `Ctrl` `K` `V`     | Open Markdown preview to the side          |
-| `Ctrl` `K` `Z`     | Zen Mode (Esc Esc to exit)                 |
+| Atalho                             | Ação                                            |
+| ---------------------------------- | ----------------------------------------------- |
+| `Alt` `Click`                      | Insere cursor                                   |
+| `Ctrl` `Alt` `Up/Down`             | Insere cursor acima/abaixo                      |
+| `Ctrl` `U`                         | Desfaz a última operação de cursor              |
+| `Shift` `Alt` `I`                  | Insere cursor no fim de cada linha selecionada  |
+| `Ctrl` `I`                         | Seleciona a linha atual                         |
+| `Ctrl` `Shift` `L`                 | Seleciona todas as ocorrências da seleção atual |
+| `Ctrl` `F2`                        | Seleciona todas as ocorrências da palavra atual |
+| `Shift` `Alt` `Right`              | Expande a seleção                               |
+| `Shift` `Alt` `Left`               | Reduz a seleção                                 |
+| `Shift` `Alt` `(drag mouse)`       | Seleção por coluna (caixa)                      |
+| `Ctrl` `Shift` `Alt` `(arrow key)` | Seleção por coluna (caixa)                      |
+| `Ctrl` `Shift` `Alt` `PgUp/PgDown` | Seleção por coluna página acima/abaixo          |
 
 {.shortcuts}
 
-### Debug
+### Edição avançada de linguagens
 
-| Shortcut              | Action            |
-| --------------------- | ----------------- |
-| `F9`                  | Toggle breakpoint |
-| `F5`                  | Start/Continue    |
-| `Shift` `F5`          | Stop              |
-| `F11`                 | Step into         |
-| `Shift` `F11`         | Step out          |
-| `F10`                 | Step over         |
-| `Ctrl` `K` `Ctrl` `I` | Show hover        |
-
-{.shortcuts}
-
-### Integrated terminal
-
-| Shortcut                       | Action                     |
-| ------------------------------ | -------------------------- |
-| `Ctrl` <code>\`</code>         | Show integrated terminal   |
-| `Ctrl` `Shift` <code>\`</code> | Create new terminal        |
-| `Ctrl` `C`                     | Copy selection             |
-| `Ctrl` `V`                     | Paste into active terminal |
-| `Ctrl` `Up/Down`               | Scroll up/down             |
-| `Shift` `PgUp/PgDown`          | Scroll page up/down        |
-| `Ctrl` `Home/End`              | Scroll to top/bottom       |
+| Atalho                 | Ação                            |
+| ---------------------- | ------------------------------- |
+| `Ctrl` `Space`         | Dispara sugestão                |
+| `Ctrl` `Shift` `Space` | Dispara dicas de parâmetros     |
+| `Shift` `Alt` `F`      | Formata o documento             |
+| `Ctrl` `K` `Ctrl` `F`  | Formata a seleção               |
+| `F12`                  | Vai para a definição            |
+| `Alt` `F12`            | Espia a definição               |
+| `Ctrl` `K` `F12`       | Abre a definição ao lado        |
+| `Ctrl` `.`             | Correção rápida                 |
+| `Shift` `F12`          | Mostra referências              |
+| `F2`                   | Renomeia símbolo                |
+| `Ctrl` `K` `Ctrl` `X`  | Remove espaços em branco no fim |
+| `Ctrl` `K` `M`         | Altera a linguagem do arquivo   |
 
 {.shortcuts}
 
-## Keyboard shortcuts for MacOS
+### Gerenciamento do editor
 
-### General
-
-| Shortcut     | Action                  |
-| ------------ | ----------------------- |
-| `⇧⌘P` / `F1` | Show Command Palette    |
-| `⌘P`         | Quick Open, Go to File… |
-| `⇧⌘N`        | New window/instance     |
-| `⌘W`         | Close window/instance   |
-| `⌘,`         | User Settings           |
-| `⌘K` `⌘S`    | Keyboard Shortcuts      |
-
-{.shortcuts}
-
-### Basic editing {.row-span-2}
-
-| Shortcut             | Action                      |
-| -------------------- | --------------------------- |
-| `⌘X`                 | Cut line (empty selection)  |
-| `⌘C`                 | Copy line (empty selection) |
-| `⌥↓` / `⌥↑`          | Move line down/up           |
-| `⇧⌥↓` / `⇧⌥↑`        | Copy line down/up           |
-| `⇧⌘K`                | Delete line                 |
-| `⌘Enter` / `⇧⌘Enter` | Insert line below/above     |
-| `⇧⌘\`                | Jump to matching bracket    |
-| `⌘]` / `⌘[`          | Indent/outdent line         |
-| `Home` / `End`       | Go to beginning/end of line |
-| `⌘↑` / `⌘↓`          | Go to beginning/end of file |
-| `⌃PgUp` / `⌃PgDn`    | Scroll line up/down         |
-| `⌘PgUp` `/⌘PgDn`     | Scroll page up/down         |
-| `⌥⌘[` / `⌥⌘]`        | Fold/unfold region          |
-| `⌘K ⌘[` / `⌘K ⌘]`    | Fold/unfold all subregions  |
-| `⌘K ⌘0` / `⌘K ⌘J`    | Fold/unfold all regions     |
-| `⌘K ⌘C`              | Add line comment            |
-| `⌘K ⌘U`              | Remove line comment         |
-| `⌘/`                 | Toggle line comment         |
-| `⇧⌥A`                | Toggle block comment        |
-| `⌥Z`                 | Toggle word wrap            |
+| Atalho                         | Ação                                       |
+| ------------------------------ | ------------------------------------------ |
+| `Ctrl` `F4`                    | Fecha o editor                             |
+| `Ctrl` `W`                     | Fecha o editor                             |
+| `Ctrl` `K` `F`                 | Fecha a pasta                              |
+| `Ctrl` `\`                     | Divide o editor                            |
+| `Ctrl` `1/2/3`                 | Foca no 1º, 2º ou 3º grupo de editores     |
+| `Ctrl` `K` `Ctrl` `Left/Right` | Foca no grupo de editores anterior/próximo |
+| `Ctrl` `Shift` `PgUp/PgDown`   | Move o editor para a esquerda/direita      |
+| `Ctrl` `K` `Left/Right`        | Move o grupo de editores ativo             |
 
 {.shortcuts}
 
-### Multi-cursor and selection {.row-span-2}
+### Gerenciamento de arquivos
 
-| Shortcut          | Action                                      |
-| ----------------- | ------------------------------------------- |
-| `⌥ +`             | click Insert cursor                         |
-| `⌥⌘↑`             | Insert cursor above                         |
-| `⌥⌘↓`             | Insert cursor below                         |
-| `⌘U`              | Undo last cursor operation                  |
-| `⇧⌥I`             | Insert cursor at end of each line selected  |
-| `⌘L`              | Select current line                         |
-| `⇧⌘L`             | Select all occurrences of current selection |
-| `⌘F2`             | Select all occurrences of current word      |
-| `⌃⇧⌘→` / ←        | Expand / shrink selection                   |
-| `⇧⌥` + drag mouse | Column (box) selection                      |
-| `⇧⌥⌘↑` / ↓        | Column (box) selection up/down              |
-| `⇧⌥⌘←` / →        | Column (box) selection left/right           |
-| `⇧⌥⌘PgUp`         | Column (box) selection page up              |
-| `⇧⌥⌘PgDn`         | Column (box) selection page down            |
-
-{.shortcuts}
-
-### Search and replace
-
-| Shortcut     | Action                                 |
-| ------------ | -------------------------------------- |
-| `⌘F`         | Find                                   |
-| `⌥⌘F`        | Replace                                |
-| `⌘G` / `⇧⌘G` | Find next/previous                     |
-| `⌥Enter`     | Select all occurrences of Find match   |
-| `⌘D`         | Add selection to next Find match       |
-| `⌘K ⌘D`      | Move last selection to next Find match |
+| Atalho                | Ação                                            |
+| --------------------- | ----------------------------------------------- |
+| `Ctrl` `N`            | Novo arquivo                                    |
+| `Ctrl` `O`            | Abre arquivo...                                 |
+| `Ctrl` `S`            | Salva                                           |
+| `Ctrl` `Shift` `S`    | Salva como...                                   |
+| `Ctrl` `K` `S`        | Salva tudo                                      |
+| `Ctrl` `F4`           | Fecha                                           |
+| `Ctrl` `K` `Ctrl` `W` | Fecha tudo                                      |
+| `Ctrl` `Shift` `T`    | Reabre o editor fechado                         |
+| `Ctrl` `K` `Enter`    | Mantém o editor em modo preview aberto          |
+| `Ctrl` `Tab`          | Abre o próximo                                  |
+| `Ctrl` `Shift` `Tab`  | Abre o anterior                                 |
+| `Ctrl` `K` `P`        | Copia o path do arquivo ativo                   |
+| `Ctrl` `K` `R`        | Revela o arquivo ativo no Explorer              |
+| `Ctrl` `K` `O`        | Mostra o arquivo ativo em nova janela/instância |
 
 {.shortcuts}
 
-### Rich languages editing
+### Exibição
 
-| Shortcut     | Action                      |
-| ------------ | --------------------------- |
-| `⌃Space, ⌘I` | Trigger suggestion          |
-| `⇧⌘Space`    | Trigger parameter hints     |
-| `⇧⌥F`        | Format document             |
-| `⌘K ⌘F`      | Format selection            |
-| `F12`        | Go to Definition            |
-| `⌥F12`       | Peek Definition             |
-| `⌘K F12`     | Open Definition to the side |
-| `⌘.`         | Quick Fix                   |
-| `⇧F12`       | Show References             |
-| `F2`         | Rename Symbol               |
-| `⌘K ⌘X`      | Trim trailing whitespace    |
-| `⌘K M`       | Change file language        |
-
-{.shortcuts}
-
-### Navigation
-
-| Shortcut     | Action                               |
-| ------------ | ------------------------------------ |
-| `⌘T`         | Show all Symbols                     |
-| `⌃G`         | Go to Line...                        |
-| `⌘P`         | Go to File...                        |
-| `⇧⌘O`        | Go to Symbol...                      |
-| `⇧⌘M`        | Show Problems panel                  |
-| `F8` / `⇧F8` | Go to next/previous error or warning |
-| `⌃⇧Tab`      | Navigate editor group history        |
-| `⌃-` / `⌃⇧-` | Go back/forward                      |
-| `⌃⇧M`        | Toggle Tab moves focus               |
+| Atalho             | Ação                                             |
+| ------------------ | ------------------------------------------------ |
+| `F11`              | Alterna tela cheia                               |
+| `Shift` `Alt` `0`  | Alterna o layout do editor (horizontal/vertical) |
+| `Ctrl` `=/-`       | Aumenta/diminui o zoom                           |
+| `Ctrl` `B`         | Alterna a visibilidade da barra lateral          |
+| `Ctrl` `Shift` `E` | Mostra o Explorer/alterna o foco                 |
+| `Ctrl` `Shift` `F` | Mostra a busca                                   |
+| `Ctrl` `Shift` `G` | Mostra o controle de código-fonte                |
+| `Ctrl` `Shift` `D` | Mostra a depuração                               |
+| `Ctrl` `Shift` `X` | Mostra as extensões                              |
+| `Ctrl` `Shift` `H` | Substitui nos arquivos                           |
+| `Ctrl` `Shift` `J` | Alterna os detalhes da busca                     |
+| `Ctrl` `Shift` `U` | Mostra o painel de saída                         |
+| `Ctrl` `Shift` `V` | Abre o preview de Markdown                       |
+| `Ctrl` `K` `V`     | Abre o preview de Markdown ao lado               |
+| `Ctrl` `K` `Z`     | Modo Zen (Esc Esc para sair)                     |
 
 {.shortcuts}
 
-### Editor management
+### Depuração
 
-| Shortcut            | Action                                |
-| ------------------- | ------------------------------------- |
-| `⌘W`                | Close editor                          |
-| `⌘K` `F`            | Close folder                          |
-| `⌘\`                | Split editor                          |
-| `⌘1` / `⌘2` / `⌘3`  | Focus into 1st, 2nd, 3rd editor group |
-| `⌘K ⌘←` / `⌘K ⌘→`   | Focus into previous/next editor group |
-| `⌘K ⇧⌘←` / `⌘K ⇧⌘→` | Move editor left/right                |
-| `⌘K ←` / `⌘K →`     | Move active editor group              |
-
-{.shortcuts}
-
-### File management {.row-span-2}
-
-| Shortcut         | Action                                  |
-| ---------------- | --------------------------------------- |
-| `⌘N`             | New File                                |
-| `⌘O`             | Open File...                            |
-| `⌘S`             | Save                                    |
-| `⇧⌘S`            | Save As...                              |
-| `⌥⌘S`            | Save All                                |
-| `⌘W`             | Close                                   |
-| `⌘K ⌘W`          | Close All                               |
-| `⇧⌘T`            | Reopen closed editor                    |
-| `⌘K`             | Enter Keep preview mode editor open     |
-| `⌃Tab` / `⌃⇧Tab` | Open next / previous                    |
-| `⌘K P`           | Copy path of active file                |
-| `⌘K R`           | Reveal active file in Finder            |
-| `⌘K O`           | Show active file in new window/instance |
+| Atalho                | Ação                 |
+| --------------------- | -------------------- |
+| `F9`                  | Alterna o breakpoint |
+| `F5`                  | Inicia/continua      |
+| `Shift` `F5`          | Para                 |
+| `F11`                 | Entra na função      |
+| `Shift` `F11`         | Sai da função        |
+| `F10`                 | Avança sem entrar    |
+| `Ctrl` `K` `Ctrl` `I` | Mostra o hover       |
 
 {.shortcuts}
 
-### Display {.row-span-2}
+### Terminal integrado
 
-| Shortcut     | Action                                     |
+| Atalho                         | Ação                          |
+| ------------------------------ | ----------------------------- |
+| `Ctrl` <code>\`</code>         | Mostra o terminal integrado   |
+| `Ctrl` `Shift` <code>\`</code> | Cria um novo terminal         |
+| `Ctrl` `C`                     | Copia a seleção               |
+| `Ctrl` `V`                     | Cola no terminal ativo        |
+| `Ctrl` `Up/Down`               | Rola para cima/baixo          |
+| `Shift` `PgUp/PgDown`          | Rola a página para cima/baixo |
+| `Ctrl` `Home/End`              | Rola até o topo/fim           |
+
+{.shortcuts}
+
+## Atalhos de teclado para MacOS
+
+### Geral
+
+| Atalho       | Ação                              |
+| ------------ | --------------------------------- |
+| `⇧⌘P` / `F1` | Mostra a Command Palette          |
+| `⌘P`         | Abertura rápida, ir para arquivo… |
+| `⇧⌘N`        | Nova janela/instância             |
+| `⌘W`         | Fecha a janela/instância          |
+| `⌘,`         | Configurações do usuário          |
+| `⌘K` `⌘S`    | Atalhos de teclado                |
+
+{.shortcuts}
+
+### Edição básica {.row-span-2}
+
+| Atalho               | Ação                                 |
+| -------------------- | ------------------------------------ |
+| `⌘X`                 | Recorta a linha (seleção vazia)      |
+| `⌘C`                 | Copia a linha (seleção vazia)        |
+| `⌥↓` / `⌥↑`          | Move a linha para baixo/cima         |
+| `⇧⌥↓` / `⇧⌥↑`        | Copia a linha para baixo/cima        |
+| `⇧⌘K`                | Exclui a linha                       |
+| `⌘Enter` / `⇧⌘Enter` | Insere linha abaixo/acima            |
+| `⇧⌘\`                | Vai para o colchete correspondente   |
+| `⌘]` / `⌘[`          | Indenta/desindenta a linha           |
+| `Home` / `End`       | Vai para o início/fim da linha       |
+| `⌘↑` / `⌘↓`          | Vai para o início/fim do arquivo     |
+| `⌃PgUp` / `⌃PgDn`    | Rola a linha para cima/baixo         |
+| `⌘PgUp` `/⌘PgDn`     | Rola a página para cima/baixo        |
+| `⌥⌘[` / `⌥⌘]`        | Recolhe/expande a região             |
+| `⌘K ⌘[` / `⌘K ⌘]`    | Recolhe/expande todas as sub-regiões |
+| `⌘K ⌘0` / `⌘K ⌘J`    | Recolhe/expande todas as regiões     |
+| `⌘K ⌘C`              | Adiciona comentário de linha         |
+| `⌘K ⌘U`              | Remove comentário de linha           |
+| `⌘/`                 | Alterna comentário de linha          |
+| `⇧⌥A`                | Alterna comentário de bloco          |
+| `⌥Z`                 | Alterna a quebra automática de linha |
+
+{.shortcuts}
+
+### Multi-cursor e seleção {.row-span-2}
+
+| Atalho            | Ação                                            |
+| ----------------- | ----------------------------------------------- |
+| `⌥ +`             | Insere cursor (clique)                          |
+| `⌥⌘↑`             | Insere cursor acima                             |
+| `⌥⌘↓`             | Insere cursor abaixo                            |
+| `⌘U`              | Desfaz a última operação de cursor              |
+| `⇧⌥I`             | Insere cursor no fim de cada linha selecionada  |
+| `⌘L`              | Seleciona a linha atual                         |
+| `⇧⌘L`             | Seleciona todas as ocorrências da seleção atual |
+| `⌘F2`             | Seleciona todas as ocorrências da palavra atual |
+| `⌃⇧⌘→` / ←        | Expande/reduz a seleção                         |
+| `⇧⌥` + drag mouse | Seleção por coluna (caixa)                      |
+| `⇧⌥⌘↑` / ↓        | Seleção por coluna para cima/baixo              |
+| `⇧⌥⌘←` / →        | Seleção por coluna para a esquerda/direita      |
+| `⇧⌥⌘PgUp`         | Seleção por coluna página acima                 |
+| `⇧⌥⌘PgDn`         | Seleção por coluna página abaixo                |
+
+{.shortcuts}
+
+### Busca e substituição
+
+| Atalho       | Ação                                                     |
+| ------------ | -------------------------------------------------------- |
+| `⌘F`         | Localiza                                                 |
+| `⌥⌘F`        | Substitui                                                |
+| `⌘G` / `⇧⌘G` | Localiza o próximo/anterior                              |
+| `⌥Enter`     | Seleciona todas as ocorrências da busca                  |
+| `⌘D`         | Adiciona a seleção à próxima ocorrência da busca         |
+| `⌘K ⌘D`      | Move a última seleção para a próxima ocorrência da busca |
+
+{.shortcuts}
+
+### Edição avançada de linguagens
+
+| Atalho       | Ação                            |
+| ------------ | ------------------------------- |
+| `⌃Space, ⌘I` | Dispara sugestão                |
+| `⇧⌘Space`    | Dispara dicas de parâmetros     |
+| `⇧⌥F`        | Formata o documento             |
+| `⌘K ⌘F`      | Formata a seleção               |
+| `F12`        | Vai para a definição            |
+| `⌥F12`       | Espia a definição               |
+| `⌘K F12`     | Abre a definição ao lado        |
+| `⌘.`         | Correção rápida                 |
+| `⇧F12`       | Mostra referências              |
+| `F2`         | Renomeia símbolo                |
+| `⌘K ⌘X`      | Remove espaços em branco no fim |
+| `⌘K M`       | Altera a linguagem do arquivo   |
+
+{.shortcuts}
+
+### Navegação
+
+| Atalho       | Ação                                       |
 | ------------ | ------------------------------------------ |
-| `⌃⌘F`        | Toggle full screen                         |
-| `⌥⌘0`        | Toggle editor layout (horizontal/vertical) |
-| `⌘=` / `⇧⌘-` | Zoom in/out                                |
-| `⌘B`         | Toggle Sidebar visibility                  |
-| `⇧⌘E`        | Show Explorer / Toggle focus               |
-| `⇧⌘F`        | Show Search                                |
-| `⌃⇧G`        | Show Source Control                        |
-| `⇧⌘D`        | Show Debug                                 |
-| `⇧⌘X`        | Show Extensions                            |
-| `⇧⌘H`        | Replace in files                           |
-| `⇧⌘J`        | Toggle Search details                      |
-| `⇧⌘U`        | Show Output panel                          |
-| `⇧⌘V`        | Open Markdown preview                      |
-| `⌘K V`       | Open Markdown preview to the side          |
-| `⌘K Z`       | Zen Mode (Esc Esc to exit)                 |
+| `⌘T`         | Mostra todos os símbolos                   |
+| `⌃G`         | Vai para a linha...                        |
+| `⌘P`         | Vai para o arquivo...                      |
+| `⇧⌘O`        | Vai para o símbolo...                      |
+| `⇧⌘M`        | Mostra o painel de problemas               |
+| `F8` / `⇧F8` | Vai para o próximo/anterior erro ou aviso  |
+| `⌃⇧Tab`      | Navega pelo histórico do grupo de editores |
+| `⌃-` / `⌃⇧-` | Volta/avança                               |
+| `⌃⇧M`        | Alterna o foco ao pressionar Tab           |
 
 {.shortcuts}
 
-### Debug
+### Gerenciamento do editor
 
-| Shortcut       | Action            |
-| -------------- | ----------------- |
-| `F9`           | Toggle breakpoint |
-| `F5`           | Start/Continue    |
-| `F11` / `⇧F11` | Step into/ out    |
-| `F10`          | Step over         |
-| `⇧F5`          | Stop              |
-| `⌘K ⌘I`        | Show hover        |
-
-{.shortcuts}
-
-### Integrated terminal
-
-| Shortcut          | Action                   |
-| ----------------- | ------------------------ |
-| <code>⌃\`</code>  | Show integrated terminal |
-| <code>⌃⇧\`</code> | Create new terminal      |
-| `⌘C`              | Copy selection           |
-| `⌘↑` / `↓`        | Scroll up/down           |
-| `PgUp` / `PgDn`   | Scroll page up/down      |
-| `⌘Home` / `End`   | Scroll to top/bottom     |
+| Atalho              | Ação                                       |
+| ------------------- | ------------------------------------------ |
+| `⌘W`                | Fecha o editor                             |
+| `⌘K` `F`            | Fecha a pasta                              |
+| `⌘\`                | Divide o editor                            |
+| `⌘1` / `⌘2` / `⌘3`  | Foca no 1º, 2º, 3º grupo de editores       |
+| `⌘K ⌘←` / `⌘K ⌘→`   | Foca no grupo de editores anterior/próximo |
+| `⌘K ⇧⌘←` / `⌘K ⇧⌘→` | Move o editor para a esquerda/direita      |
+| `⌘K ←` / `⌘K →`     | Move o grupo de editores ativo             |
 
 {.shortcuts}
 
-## Also see
+### Gerenciamento de arquivos {.row-span-2}
 
-- [VS Code Keyboard shortcuts for Windows](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf)
+| Atalho           | Ação                                            |
+| ---------------- | ----------------------------------------------- |
+| `⌘N`             | Novo arquivo                                    |
+| `⌘O`             | Abre arquivo...                                 |
+| `⌘S`             | Salva                                           |
+| `⇧⌘S`            | Salva como...                                   |
+| `⌥⌘S`            | Salva tudo                                      |
+| `⌘W`             | Fecha                                           |
+| `⌘K ⌘W`          | Fecha tudo                                      |
+| `⇧⌘T`            | Reabre o editor fechado                         |
+| `⌘K`             | Enter: mantém o editor em modo preview aberto   |
+| `⌃Tab` / `⌃⇧Tab` | Abre o próximo/anterior                         |
+| `⌘K P`           | Copia o path do arquivo ativo                   |
+| `⌘K R`           | Revela o arquivo ativo no Finder                |
+| `⌘K O`           | Mostra o arquivo ativo em nova janela/instância |
+
+{.shortcuts}
+
+### Exibição {.row-span-2}
+
+| Atalho       | Ação                                             |
+| ------------ | ------------------------------------------------ |
+| `⌃⌘F`        | Alterna tela cheia                               |
+| `⌥⌘0`        | Alterna o layout do editor (horizontal/vertical) |
+| `⌘=` / `⇧⌘-` | Aumenta/diminui o zoom                           |
+| `⌘B`         | Alterna a visibilidade da barra lateral          |
+| `⇧⌘E`        | Mostra o Explorer/alterna o foco                 |
+| `⇧⌘F`        | Mostra a busca                                   |
+| `⌃⇧G`        | Mostra o controle de código-fonte                |
+| `⇧⌘D`        | Mostra a depuração                               |
+| `⇧⌘X`        | Mostra as extensões                              |
+| `⇧⌘H`        | Substitui nos arquivos                           |
+| `⇧⌘J`        | Alterna os detalhes da busca                     |
+| `⇧⌘U`        | Mostra o painel de saída                         |
+| `⇧⌘V`        | Abre o preview de Markdown                       |
+| `⌘K V`       | Abre o preview de Markdown ao lado               |
+| `⌘K Z`       | Modo Zen (Esc Esc para sair)                     |
+
+{.shortcuts}
+
+### Depuração
+
+| Atalho         | Ação                 |
+| -------------- | -------------------- |
+| `F9`           | Alterna o breakpoint |
+| `F5`           | Inicia/continua      |
+| `F11` / `⇧F11` | Entra/sai da função  |
+| `F10`          | Avança sem entrar    |
+| `⇧F5`          | Para                 |
+| `⌘K ⌘I`        | Mostra o hover       |
+
+{.shortcuts}
+
+### Terminal integrado
+
+| Atalho            | Ação                          |
+| ----------------- | ----------------------------- |
+| <code>⌃\`</code>  | Mostra o terminal integrado   |
+| <code>⌃⇧\`</code> | Cria um novo terminal         |
+| `⌘C`              | Copia a seleção               |
+| `⌘↑` / `↓`        | Rola para cima/baixo          |
+| `PgUp` / `PgDn`   | Rola a página para cima/baixo |
+| `⌘Home` / `End`   | Rola até o topo/fim           |
+
+{.shortcuts}
+
+## Veja também
+
+- [Atalhos de teclado do VS Code para Windows](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf)
   _(code.visualstudio.com)_
-- [VS Code Keyboard shortcuts for macOS](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf)
+- [Atalhos de teclado do VS Code para macOS](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf)
   _(code.visualstudio.com)_

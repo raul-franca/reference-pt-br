@@ -7,170 +7,170 @@ tags:
   -
   -
 categories:
-  - Keyboard Shortcuts
+  - Atalhos de Teclado
 intro: |
-  A visual cheat-sheet for the 80 keyboard shortcuts found on GitHub.com
+  Uma cheat sheet visual para os 80 atalhos de teclado do GitHub.com
 ---
 
-## Keyboard Shortcuts
+## Atalhos de teclado
 
-### Site wide shortcuts
+### Atalhos em todo o site
 
-| Shortcut | Action                                                        |
-| -------- | ------------------------------------------------------------- |
-| `S`      | Focus the search bar                                          |
-| `G` `N`  | Go to your notifications                                      |
-| `H`      | Opens and focuses on a user, issue, or pull request hovercard |
-| `Esc`    | When focused on above, closes hovercard                       |
-
-{.shortcuts}
-
-### Repositories
-
-| Shortcut | Action                      |
-| -------- | --------------------------- |
-| `G` `C`  | Go to the Code tab          |
-| `G` `I`  | Go to the Issues tab        |
-| `G` `P`  | Go to the Pull requests tab |
-| `G` `B`  | Go to the Projects tab      |
-| `G` `W`  | Go to the Wiki tab          |
+| Atalho  | Ação                                                           |
+| ------- | -------------------------------------------------------------- |
+| `S`     | Foca a barra de pesquisa                                       |
+| `G` `N` | Vai para suas notificações                                     |
+| `H`     | Abre e foca o hovercard de um usuário, issue ou pull request   |
+| `Esc`   | Quando o foco está no item acima, fecha o hovercard            |
 
 {.shortcuts}
 
-### Source code editing
+### Repositórios
 
-| Shortcut           | Action                         |
-| ------------------ | ------------------------------ |
-| `Ctrl` `F`         | Start searching in file editor |
-| `Ctrl` `G`         | Find next                      |
-| `Ctrl` `Shift` `G` | Find previous                  |
-| `Ctrl` `Shift` `F` | Replace                        |
-| `Ctrl` `Shift` `R` | Replace all                    |
-| `Alt` `G`          | Jump to line                   |
-| `Ctrl` `Z`         | Undo                           |
-| `Ctrl` `Y`         | Redo                           |
+| Atalho  | Ação                          |
+| ------- | ----------------------------- |
+| `G` `C` | Vai para a aba Code           |
+| `G` `I` | Vai para a aba Issues         |
+| `G` `P` | Vai para a aba Pull requests  |
+| `G` `B` | Vai para a aba Projects       |
+| `G` `W` | Vai para a aba Wiki           |
 
 {.shortcuts}
 
-### Source code browsing
+### Edição de código-fonte
 
-| Shortcut | Action                             |
-| -------- | ---------------------------------- |
-| `T`      | Activates the file finder          |
-| `L`      | Jump to a line in your code        |
-| `W`      | Switch to a new branch or tag      |
-| `Y`      | Expand a URL to its canonical form |
-| `I`      | Show or hide comments on diffs     |
-| `B`      | Open blame view                    |
+| Atalho             | Ação                                |
+| ------------------ | ----------------------------------- |
+| `Ctrl` `F`         | Inicia a busca no editor de arquivos |
+| `Ctrl` `G`         | Localiza o próximo                  |
+| `Ctrl` `Shift` `G` | Localiza o anterior                 |
+| `Ctrl` `Shift` `F` | Substituir                          |
+| `Ctrl` `Shift` `R` | Substituir tudo                     |
+| `Alt` `G`          | Vai para a linha                    |
+| `Ctrl` `Z`         | Desfazer                            |
+| `Ctrl` `Y`         | Refazer                             |
 
 {.shortcuts}
 
-### Comments
+### Navegação pelo código-fonte
 
-| Shortcut           | Action                                                                       |
+| Atalho | Ação                                   |
+| ------ | -------------------------------------- |
+| `T`    | Ativa o localizador de arquivos        |
+| `L`    | Vai para uma linha do seu código       |
+| `W`    | Alterna para um novo branch ou tag     |
+| `Y`    | Expande uma URL para sua forma canônica |
+| `I`    | Mostra ou oculta comentários nos diffs |
+| `B`    | Abre a visualização blame              |
+
+{.shortcuts}
+
+### Comentários
+
+| Atalho             | Ação                                                                         |
 | ------------------ | ---------------------------------------------------------------------------- |
-| `Ctrl` `B`         | Inserts Markdown formatting for bolding text                                 |
-| `Ctrl` `I`         | Inserts Markdown formatting for italicizing text                             |
-| `Ctrl` `K`         | Inserts Markdown formatting for creating a link                              |
-| `Ctrl` `Shift` `P` | Toggles between the Write and Preview comment tabs                           |
-| `Ctrl` `Enter`     | Submits a comment                                                            |
-| `Ctrl` `.`         | Opens saved replies menu and then autofills comment field with a saved reply |
-| `Ctrl` `G`         | Inserts a suggestions                                                        |
-| `R`                | Quote the selected text in your reply                                        |
+| `Ctrl` `B`         | Insere formatação Markdown para deixar o texto em negrito                     |
+| `Ctrl` `I`         | Insere formatação Markdown para deixar o texto em itálico                     |
+| `Ctrl` `K`         | Insere formatação Markdown para criar um link                                |
+| `Ctrl` `Shift` `P` | Alterna entre as abas Write e Preview do comentário                          |
+| `Ctrl` `Enter`     | Envia um comentário                                                          |
+| `Ctrl` `.`         | Abre o menu de respostas salvas e preenche o campo de comentário com uma resposta salva |
+| `Ctrl` `G`         | Insere uma sugestão                                                          |
+| `R`                | Cita o texto selecionado na sua resposta                                     |
 
 {.shortcuts}
 
-### Issue and pull request lists
+### Listas de issues e pull requests
 
-| Shortcut   | Action                                                      |
+| Atalho     | Ação                                                        |
 | ---------- | ----------------------------------------------------------- |
-| `C`        | Create an issue                                             |
-| `Ctrl` `/` | Focus your cursor on the issues or pull requests search bar |
-| `U`        | Filter by author                                            |
-| `L`        | Filter by or edit labels                                    |
-| `M`        | Filter by or edit milestones                                |
-| `A`        | Filter by or edit assignee                                  |
-| `O`        | Open issue                                                  |
+| `C`        | Cria uma issue                                              |
+| `Ctrl` `/` | Foca o cursor na barra de pesquisa de issues ou pull requests |
+| `U`        | Filtra por autor                                            |
+| `L`        | Filtra por ou edita labels                                  |
+| `M`        | Filtra por ou edita milestones                              |
+| `A`        | Filtra por ou edita assignee                                |
+| `O`        | Abre a issue                                                |
 
 {.shortcuts}
 
-### Issues and pull requests
+### Issues e pull requests
 
-| Shortcut | Action             |
-| -------- | ------------------ |
-| `Q`      | Request a reviewer |
-| `M`      | Set a milestone    |
-| `L`      | Apply a label      |
-| `A`      | Set an assignee    |
+| Atalho | Ação               |
+| ------ | ------------------ |
+| `Q`    | Solicita um revisor |
+| `M`    | Define um milestone |
+| `L`    | Aplica um label    |
+| `A`    | Define um assignee |
 
 {.shortcuts}
 
-### Changes in pull requests
+### Alterações em pull requests
 
-| Shortcut               | Action                                                                                 |
+| Atalho                 | Ação                                                                                   |
 | ---------------------- | -------------------------------------------------------------------------------------- |
-| `C`                    | Open the list of commits in the pull request                                           |
-| `T`                    | Open the list of changed files in the pull request                                     |
-| `J`                    | Move selection down in the list                                                        |
-| `K`                    | Move selection up in the list                                                          |
-| `Ctrl` `Shift` `Enter` | Add a single comment on a pull request diff                                            |
-| `Alt` `(click)`        | Toggle between collapsing and expanding all outdated review comments in a pull request |
+| `C`                    | Abre a lista de commits no pull request                                                |
+| `T`                    | Abre a lista de arquivos alterados no pull request                                     |
+| `J`                    | Move a seleção para baixo na lista                                                     |
+| `K`                    | Move a seleção para cima na lista                                                      |
+| `Ctrl` `Shift` `Enter` | Adiciona um único comentário no diff do pull request                                   |
+| `Alt` `(click)`        | Alterna entre recolher e expandir todos os comentários de revisão desatualizados em um pull request |
 
 {.shortcuts}
 
-### Project boards {.row-span-2}
+### Boards de projeto {.row-span-2}
 
-| Shortcut                 | Action                                             |
-| ------------------------ | -------------------------------------------------- |
-| `Enter/Space`            | Start moving the focused column                    |
-| `Esc`                    | Cancel the move in progress                        |
-| `Enter`                  | Complete the move in progress                      |
-| `Left/H`                 | Move column to the left                            |
-| `Ctrl` `Left/H`          | Move column to the leftmost position               |
-| `Right/L`                | Move column to the right                           |
-| `Ctrl` `Right/L`         | Move column to the rightmost position              |
-| `Enter/Space`            | Start moving the focused card                      |
-| `Esc`                    | Cancel the move in progress                        |
-| `Enter`                  | Complete the move in progress                      |
-| `Down/J`                 | Move card down                                     |
-| `Ctrl` `Down/J`          | Move card to the bottom of the column              |
-| `Up/K`                   | Move card up                                       |
-| `Ctrl` `Up/K`            | Move card to the top of the column                 |
-| `Left/H`                 | Move card to the bottom of the column on the left  |
-| `Shift` `Left/H`         | Move card to the top of the column on the left     |
-| `Ctrl` `Left/H`          | Move card to the bottom of the leftmost column     |
-| `Ctrl` `Shift` `Left/H`  | Move card to the top of the leftmost column        |
-| `Right`                  | Move card to the bottom of the column on the right |
-| `Shift` `Right/L`        | Move card to the top of the column on the right    |
-| `Ctrl` `Right/L`         | Move card to the bottom of the rightmost column    |
-| `Ctrl` `Shift` `Right/L` | Move card to the top of the rightmost column       |
-
-{.shortcuts}
-
-### Notifications
-
-| Shortcut    | Action       |
-| ----------- | ------------ |
-| `E/L/Y`     | Mark as read |
-| `Shift` `M` | Mute thread  |
+| Atalho                   | Ação                                                |
+| ------------------------ | --------------------------------------------------- |
+| `Enter/Space`            | Inicia a movimentação da coluna em foco             |
+| `Esc`                    | Cancela a movimentação em andamento                 |
+| `Enter`                  | Conclui a movimentação em andamento                 |
+| `Left/H`                 | Move a coluna para a esquerda                       |
+| `Ctrl` `Left/H`          | Move a coluna para a posição mais à esquerda        |
+| `Right/L`                | Move a coluna para a direita                        |
+| `Ctrl` `Right/L`         | Move a coluna para a posição mais à direita         |
+| `Enter/Space`            | Inicia a movimentação do card em foco               |
+| `Esc`                    | Cancela a movimentação em andamento                 |
+| `Enter`                  | Conclui a movimentação em andamento                 |
+| `Down/J`                 | Move o card para baixo                              |
+| `Ctrl` `Down/J`          | Move o card para o fim da coluna                    |
+| `Up/K`                   | Move o card para cima                               |
+| `Ctrl` `Up/K`            | Move o card para o topo da coluna                   |
+| `Left/H`                 | Move o card para o fim da coluna à esquerda         |
+| `Shift` `Left/H`         | Move o card para o topo da coluna à esquerda        |
+| `Ctrl` `Left/H`          | Move o card para o fim da coluna mais à esquerda    |
+| `Ctrl` `Shift` `Left/H`  | Move o card para o topo da coluna mais à esquerda   |
+| `Right`                  | Move o card para o fim da coluna à direita          |
+| `Shift` `Right/L`        | Move o card para o topo da coluna à direita         |
+| `Ctrl` `Right/L`         | Move o card para o fim da coluna mais à direita     |
+| `Ctrl` `Shift` `Right/L` | Move o card para o topo da coluna mais à direita    |
 
 {.shortcuts}
 
-### Network graph
+### Notificações
 
-| Shortcut          | Action                   |
-| ----------------- | ------------------------ |
-| `Left/H`          | Scroll left              |
-| `Right/L`         | Scroll right             |
-| `Up/K`            | Scroll up                |
-| `Down/J`          | Scroll down              |
-| `Shift` `Left/H`  | Scroll all the way left  |
-| `Shift` `Right/L` | Scroll all the way right |
-| `Shift` `Up/K`    | Scroll all the way up    |
-| `Shift` `Down/J`  | Scroll all the way down  |
+| Atalho      | Ação          |
+| ----------- | ------------- |
+| `E/L/Y`     | Marca como lido |
+| `Shift` `M` | Silencia a thread |
 
 {.shortcuts}
 
-## Also see
+### Grafo de rede
 
-- [Keyboard shortcuts for GitHub](https://help.github.com/articles/using-keyboard-shortcuts/) _(help.github.com)_
+| Atalho            | Ação                        |
+| ----------------- | --------------------------- |
+| `Left/H`          | Rola para a esquerda        |
+| `Right/L`         | Rola para a direita         |
+| `Up/K`            | Rola para cima              |
+| `Down/J`          | Rola para baixo             |
+| `Shift` `Left/H`  | Rola até o fim à esquerda   |
+| `Shift` `Right/L` | Rola até o fim à direita    |
+| `Shift` `Up/K`    | Rola até o topo             |
+| `Shift` `Down/J`  | Rola até o fim              |
+
+{.shortcuts}
+
+## Veja também
+
+- [Atalhos de teclado do GitHub](https://help.github.com/articles/using-keyboard-shortcuts/) _(help.github.com)_

@@ -7,24 +7,24 @@ tags:
   - hdl
   - synthesis
 categories:
-  - Programming
+  - Programação
 intro: |
-  VHDL (VHSIC Hardware Description Language) cheat sheet - A comprehensive reference for digital hardware design and simulation.
+  VHDL (VHSIC Hardware Description Language) cheat sheet - Uma referência completa para projeto e simulação de hardware digital.
 plugins:
   - copyCode
 ---
 
-## Getting Started
+## Primeiros passos
 
-### Introduction
+### Introdução
 
-VHDL is a hardware description language used for electronic design automation to describe digital and mixed-signal systems.
+VHDL é uma linguagem de descrição de hardware usada em automação de projeto eletrônico para descrever sistemas digitais e de sinais mistos.
 
-- [IEEE 1076 Standard](https://standards.ieee.org/ieee/1076/3636/) _(IEEE Standard)_
-- [VHDL Tutorial](https://www.nandland.com/vhdl/tutorials/tutorial-introduction-to-vhdl-for-beginners.html) _(nandland.com)_
-- [Digital Design VHDL](https://vhdl.lapinoo.net/) _(lapinoo.net)_
+- [Padrão IEEE 1076](https://standards.ieee.org/ieee/1076/3636/) _(Padrão IEEE)_
+- [Tutorial de VHDL](https://www.nandland.com/vhdl/tutorials/tutorial-introduction-to-vhdl-for-beginners.html) _(nandland.com)_
+- [Projeto digital em VHDL](https://vhdl.lapinoo.net/) _(lapinoo.net)_
 
-### Basic Entity
+### Entidade básica
 
 ```vhdl
 entity hello_world is
@@ -41,9 +41,9 @@ begin
 end behavioral;
 ```
 
-A basic VHDL entity and architecture
+Uma entidade e arquitetura VHDL básicas
 
-### Simple AND Gate {.row-span-2}
+### Porta AND simples {.row-span-2}
 
 ```vhdl
 library ieee;
@@ -63,9 +63,9 @@ begin
 end behavioral;
 ```
 
-Basic two-input AND gate implementation
+Implementação básica de porta AND de duas entradas
 
-### Libraries and Packages
+### Bibliotecas e pacotes
 
 ```vhdl
 library ieee;
@@ -78,9 +78,9 @@ library work;
 use work.my_package.all;
 ```
 
-Common library declarations
+Declarações de bibliotecas comuns
 
-### Comments
+### Comentários
 
 ```vhdl
 -- Single line comment
@@ -90,21 +90,21 @@ Common library declarations
    (VHDL-2008 feature) */
 ```
 
-## Data Types
+## Tipos de dados
 
-### Standard Logic Types {.row-span-2}
+### Tipos lógicos padrão {.row-span-2}
 
-| Type | Description | Values |
+| Tipo | Descrição | Valores |
 |------|-------------|---------|
-| `bit` | Binary bit | '0', '1' |
-| `std_logic` | IEEE standard | '0', '1', 'Z', 'X', 'H', 'L', 'W', 'U', '-' |
-| `boolean` | Boolean type | true, false |
-| `integer` | Integer type | -2^31 to 2^31-1 |
-| `real` | Real number | Floating point |
-| `character` | Single character | ASCII characters |
-| `string` | Character array | "Hello World" |
+| `bit` | Bit binário | '0', '1' |
+| `std_logic` | Padrão IEEE | '0', '1', 'Z', 'X', 'H', 'L', 'W', 'U', '-' |
+| `boolean` | Tipo booleano | true, false |
+| `integer` | Tipo inteiro | -2^31 to 2^31-1 |
+| `real` | Número real | Ponto flutuante |
+| `character` | Caractere único | Caracteres ASCII |
+| `string` | Array de caracteres | "Hello World" |
 
-### Vector Types
+### Tipos de vetor
 
 ```vhdl
 -- Bit vectors
@@ -120,7 +120,7 @@ signal counter  : unsigned(7 downto 0);
 signal offset   : signed(15 downto 0);
 ```
 
-### Array Types
+### Tipos de array
 
 ```vhdl
 -- Array type declaration
@@ -134,7 +134,7 @@ type matrix_type is array (0 to 3, 0 to 3) of integer;
 signal matrix : matrix_type;
 ```
 
-### Record Types
+### Tipos de record
 
 ```vhdl
 -- Record type declaration
@@ -153,9 +153,9 @@ cpu_bus.address <= x"1234";
 cpu_bus.data    <= x"AB";
 ```
 
-## Entity and Architecture
+## Entidade e arquitetura
 
-### Entity Declaration {.row-span-2}
+### Declaração de entidade {.row-span-2}
 
 ```vhdl
 entity counter is
@@ -173,9 +173,9 @@ entity counter is
 end entity counter;
 ```
 
-Entity with generics and ports
+Entidade com generics e ports
 
-### Architecture Styles
+### Estilos de arquitetura
 
 ```vhdl
 -- Behavioral Architecture
@@ -204,7 +204,7 @@ begin
 end behavioral;
 ```
 
-### Structural Architecture
+### Arquitetura estrutural
 
 ```vhdl
 architecture structural of adder_4bit is
@@ -225,7 +225,7 @@ begin
 end structural;
 ```
 
-### Dataflow Architecture
+### Arquitetura dataflow
 
 ```vhdl
 architecture dataflow of mux_4to1 is
@@ -245,9 +245,9 @@ begin
 end dataflow;
 ```
 
-## Processes and Sequential Logic
+## Processes e lógica sequencial
 
-### Clocked Process {.row-span-2}
+### Processo com clock {.row-span-2}
 
 ```vhdl
 -- Synchronous process with clock and reset
@@ -274,7 +274,7 @@ begin
 end process;
 ```
 
-### Combinational Process
+### Processo combinacional
 
 ```vhdl
 -- Combinational logic process
@@ -293,7 +293,7 @@ begin
 end process;
 ```
 
-### Wait Statements
+### Comandos wait
 
 ```vhdl
 -- Testbench process with wait statements
@@ -317,9 +317,9 @@ begin
 end process;
 ```
 
-## Operators and Expressions
+## Operadores e expressões
 
-### Logical Operators
+### Operadores lógicos
 
 ```vhdl
 -- Logical operators
@@ -332,7 +332,7 @@ result <= a xnor b;
 result <= not a;
 ```
 
-### Arithmetic Operators {.row-span-2}
+### Operadores aritméticos {.row-span-2}
 
 ```vhdl
 -- Arithmetic operators (requires numeric_std)
@@ -352,7 +352,7 @@ counter <= counter + 1;
 counter <= counter - 1;
 ```
 
-### Relational Operators
+### Operadores relacionais
 
 ```vhdl
 -- Comparison operators
@@ -364,7 +364,7 @@ if a > b then         -- Greater than
 if a >= b then        -- Greater than or equal
 ```
 
-### Shift Operators
+### Operadores de deslocamento
 
 ```vhdl
 -- Shift operators (VHDL-2008)
@@ -378,7 +378,7 @@ data <= data rol 1;   -- Rotate left
 data <= data ror 1;   -- Rotate right
 ```
 
-## Control Structures
+## Estruturas de controle
 
 ### If-Then-Else
 
@@ -407,7 +407,7 @@ else
 end if;
 ```
 
-### Case Statement
+### Comando case
 
 ```vhdl
 -- Case statement
@@ -430,7 +430,7 @@ case state is
 end case;
 ```
 
-### For Loops
+### Laços for
 
 ```vhdl
 -- For loop in process
@@ -456,7 +456,7 @@ gen_mux: for i in 0 to 3 generate
 end generate;
 ```
 
-### While Loops
+### Laços while
 
 ```vhdl
 -- While loop (primarily for testbenches)
@@ -471,9 +471,9 @@ begin
 end process;
 ```
 
-## Functions and Procedures
+## Funções e procedures
 
-### Function Declaration {.row-span-2}
+### Declaração de função {.row-span-2}
 
 ```vhdl
 -- Function declaration
@@ -496,7 +496,7 @@ signal addr_int : integer;
 addr_int <= to_integer(address);
 ```
 
-### Procedure Declaration
+### Declaração de procedure
 
 ```vhdl
 -- Procedure declaration
@@ -515,7 +515,7 @@ end procedure;
 write_memory(clk, address, data_in, memory);
 ```
 
-### Package Declaration
+### Declaração de package
 
 ```vhdl
 -- Package declaration
@@ -547,9 +547,9 @@ package body my_package is
 end package body;
 ```
 
-## Testbenches and Simulation
+## Testbenches e simulação
 
-### Basic Testbench {.row-span-2}
+### Testbench básico {.row-span-2}
 
 ```vhdl
 library ieee;
@@ -620,7 +620,7 @@ begin
 end behavioral;
 ```
 
-### Assert Statements
+### Comandos assert
 
 ```vhdl
 -- Assert for verification
@@ -642,7 +642,7 @@ begin
 end process;
 ```
 
-### File I/O
+### E/S de arquivos
 
 ```vhdl
 -- File I/O for testbenches
@@ -670,9 +670,9 @@ begin
 end process;
 ```
 
-## Attributes and Configuration
+## Atributos e configuração
 
-### Signal Attributes
+### Atributos de sinal
 
 ```vhdl
 -- Common signal attributes
@@ -692,7 +692,7 @@ clk'last_event -- time since last event
 data'stable(5 ns) -- true if stable for 5 ns
 ```
 
-### Type Attributes
+### Atributos de tipo
 
 ```vhdl
 -- Type attributes
@@ -706,7 +706,7 @@ state_type'succ(IDLE)  -- ACTIVE
 state_type'pred(DONE)  -- ACTIVE
 ```
 
-### Generate Statements
+### Comandos generate
 
 ```vhdl
 -- Conditional generate
@@ -735,9 +735,9 @@ gen_sync: if not ASYNC_RESET generate
 end generate;
 ```
 
-## Advanced Concepts
+## Conceitos avançados
 
-### State Machines {.row-span-2}
+### Máquinas de estado {.row-span-2}
 
 ```vhdl
 -- Finite State Machine
@@ -815,7 +815,7 @@ begin
 end process;
 ```
 
-### Generic Programming
+### Programação genérica
 
 ```vhdl
 -- Generic entity
@@ -850,7 +850,7 @@ counter_8bit: entity work.generic_counter
   );
 ```
 
-### Configurations
+### Configurações
 
 ```vhdl
 -- Configuration declaration
@@ -872,9 +872,9 @@ configuration counter_rtl_config of tb_counter is
 end configuration;
 ```
 
-## Common Patterns
+## Padrões comuns
 
-### Clock Domain Crossing
+### Cruzamento de domínio de clock
 
 ```vhdl
 -- Double flip-flop synchronizer
@@ -908,7 +908,7 @@ begin
 end rtl;
 ```
 
-### Memory Inference
+### Inferência de memória
 
 ```vhdl
 -- RAM inference
@@ -926,7 +926,7 @@ begin
 end process;
 ```
 
-### Reset Strategies
+### Estratégias de reset
 
 ```vhdl
 -- Asynchronous reset

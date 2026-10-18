@@ -4,50 +4,23 @@ date: 2024-05-22 9:03:44
 background: bg-[#31719d]
 tags:
 categories:
-  - Programming
+  - Programação
 intro: |
-  The perl quick reference cheat sheet that aims at providing help on writing basic syntax and methods.
+  O cheat sheet de referência rápida de Perl, criado para ajudar a escrever a sintaxe básica e os métodos.
 plugins:
   - copyCode
   - runCode
 ---
 
-## Getting Started
+## Primeiros passos
 
-### Unix and Linux Installation
+### Instalação no Unix e Linux
 
-- Open a Web browser and go to https://www.perl.org/get.html.
+- Abra um navegador web e acesse https://www.perl.org/get.html.
 
-- Follow the link to download zipped source code available for Unix/Linux.
+- Siga o link para baixar o código-fonte compactado disponível para Unix/Linux.
 
-- Download perl-5.x.y.tar.gz file and issue the following commands at $ prompt.
-
-```shell
-$tar -xzf perl-5.x.y.tar.gz
-$cd perl-5.x.y
-$./Configure -de
-$make
-$make test
-$make install
-```
-
-### Windows Installation
-
-- Follow the link for the Strawberry Perl installation on Windows http://strawberryperl.com
-
-- Download either 32bit or 64bit version of installation.
-
-- Run the downloaded file by double-clicking it in Windows Explorer. This brings up the Perl install wizard, which is
-  really easy to use. Just accept the default settings, wait until the installation is finished, and you're ready to
-  roll!
-
-### Macintosh Installation
-
-- Open a Web browser and go to https://www.perl.org/get.html.
-
-- Follow the link to download zipped source code available for Mac OS X.
-
-- Download perl-5.x.y.tar.gz file and issue the following commands at $ prompt
+- Baixe o arquivo perl-5.x.y.tar.gz e execute os seguintes comandos no prompt $.
 
 ```shell
 $tar -xzf perl-5.x.y.tar.gz
@@ -58,7 +31,33 @@ $make test
 $make install
 ```
 
-### Running Perl
+### Instalação no Windows
+
+- Siga o link para a instalação do Strawberry Perl no Windows http://strawberryperl.com
+
+- Baixe a versão de 32 ou 64 bits da instalação.
+
+- Execute o arquivo baixado com um duplo clique no Windows Explorer. Isso abre o assistente de instalação do Perl, que é
+  muito fácil de usar. Basta aceitar as configurações padrão, aguardar o fim da instalação e pronto!
+
+### Instalação no Macintosh
+
+- Abra um navegador web e acesse https://www.perl.org/get.html.
+
+- Siga o link para baixar o código-fonte compactado disponível para Mac OS X.
+
+- Baixe o arquivo perl-5.x.y.tar.gz e execute os seguintes comandos no prompt $
+
+```shell
+$tar -xzf perl-5.x.y.tar.gz
+$cd perl-5.x.y
+$./Configure -de
+$make
+$make test
+$make install
+```
+
+### Executando Perl
 
 ```shell
 # Unix/Linux
@@ -67,21 +66,21 @@ $perl  -e <perl code>
 C:>perl -e <perl code>
 ```
 
-### Available command line options
+### Opções de linha de comando disponíveis
 
-|    Option     |                         Description |
+|    Opção     |                         Descrição |
 | :-----------: | ----------------------------------: |
-| -d[:debugger] |         Runs program under debugger |
-|  -Idirectory  |   Specifies @INC/#include directory |
-|      -T       |           Enables tainting warnings |
-|      -U       |            Allows unsafe operations |
-|      -w       |        Enables many useful warnings |
-|      -W       |                Enables all warnings |
-|      -X       |               Disables all warnings |
-|  -e program   | Runs Perl script sent in as program |
-|     file      |  Runs Perl script from a given file |
+| -d[:debugger] | Executa o programa sob o depurador |
+|  -Idirectory  |   Especifica o diretório @INC/#include |
+|      -T       |           Ativa avisos de taint |
+|      -U       |            Permite operações inseguras |
+|      -w       |        Ativa vários avisos úteis |
+|      -W       |                Ativa todos os avisos |
+|      -X       |               Desativa todos os avisos |
+|  -e program   | Executa o script Perl enviado como programa |
+|     file      |  Executa o script Perl de um arquivo informado |
 
-### Script from the Command-line
+### Script pela linha de comando
 
 ```shell
 # Unix/Linux
@@ -90,7 +89,7 @@ $perl  script.pl
 C:>perl script.pl
 ```
 
-### First Perl Program
+### Primeiro programa em Perl
 
 ```shell
 $perl -e 'print "Hello World\n"'
@@ -104,7 +103,7 @@ $./hello.pl
 
 ```
 
-### Comments in Perl
+### Comentários em Perl
 
 ```perl
 # This is a comment in perl
@@ -117,7 +116,7 @@ compiler until the next =cut is encountered.
 
 ```
 
-### Whitespaces in Perl
+### Espaços em branco em Perl
 
 ```perl
 #!/usr/bin/perl
@@ -131,7 +130,7 @@ print "Hello
 
 ```
 
-### Single and Double Quotes in Perl
+### Aspas simples e duplas em Perl
 
 ```perl
 #!/usr/bin/perl
@@ -143,9 +142,9 @@ print 'Hello, world\n';
 #Hello, world\n$
 ```
 
-## Datatypes
+## Tipos de dados
 
-### Creating Variables
+### Criando variáveis
 
 ```perl
 $age = 25;             # An integer assignment
@@ -153,7 +152,7 @@ $name = "John Paul";   # A string
 $salary = 1445.50;     # A floating point
 ```
 
-### Scalar Variables
+### Variáveis escalares
 
 ```perl
 #!/usr/bin/perl
@@ -167,7 +166,7 @@ print "Name = $name\n";
 print "Salary = $salary\n";
 ```
 
-### Array Variables
+### Variáveis de array
 
 ```perl
 #!/usr/bin/perl
@@ -183,7 +182,7 @@ print "\$names[1] = $names[1]\n";
 print "\$names[2] = $names[2]\n";
 ```
 
-### Hash Variables
+### Variáveis de hash
 
 ```perl
 #!/usr/bin/perl
@@ -195,7 +194,7 @@ print "\$data{'Lisa'} = $data{'Lisa'}\n";
 print "\$data{'Kumar'} = $data{'Kumar'}\n";
 ```
 
-### Variable Context
+### Contexto de variável
 
 ```perl
 #!/usr/bin/perl
@@ -209,7 +208,7 @@ print "Given names are : @copy\n";
 print "Number of names are : $size\n";
 ```
 
-### Numeric Scalars
+### Escalares numéricos
 
 ```perl
 #!/usr/bin/perl
@@ -233,7 +232,7 @@ print "octal = $octal\n";
 print "hexa = $hexa\n";
 ```
 
-### String Scalars
+### Escalares de string
 
 ```perl
 #!/usr/bin/perl
@@ -250,7 +249,7 @@ print "double = $double\n";
 print "escape = $escape\n";
 ```
 
-### Scalar Operations
+### Operações com escalares
 
 ```perl
 #!/usr/bin/perl
@@ -266,7 +265,7 @@ print "mul = $mul\n";
 print "mix = $mix\n";
 ```
 
-### Multiline Strings
+### Strings multilinha
 
 ```perl
 #!/usr/bin/perl
@@ -299,7 +298,7 @@ print "foo = $foo\n";
 print "martin = $martin\n";
 ```
 
-### Special Literals
+### Literais especiais
 
 ```perl
 #!/usr/bin/perl
@@ -312,7 +311,7 @@ print "Package " . __PACKAGE__ ."\n";
 print "__FILE__ __LINE__ __PACKAGE__\n";
 ```
 
-### Sequential Number Arrays
+### Arrays de números sequenciais
 
 ```perl
 #!/usr/bin/perl
@@ -326,7 +325,7 @@ print "@var_20\n";   # Prints number from 10 to 20
 print "@var_abc\n";  # Prints number from a to z
 ```
 
-### Array Size
+### Tamanho do array
 
 ```perl
 #!/usr/bin/perl
@@ -341,18 +340,18 @@ print "Size:  $size\n";
 print "Max Index: $max_index\n";
 ```
 
-## Array oparationns
+## Operações com arrays
 
-### Adding and Removing Elements in Array
+### Adicionando e removendo elementos do array
 
-| types                |                                                  Description                                                  |
+| types                |                                                  Descrição                                                  |
 | :------------------- | :-----------------------------------------------------------------------------------------------------------: |
-| push @ARRAY, LIST    |                           Pushes the values of the list onto the end of the array.                            |
-| pop @ARRAY           |                               Pops off and returns the last value of the array.                               |
-| shift @ARRAY         | Shifts the first value of the array off and returns it, shortening the array by 1 and moving everything down. |
-| unshift @ARRAY, LIST |         Prepends list to the front of the array, and returns the number of elements in the new array.         |
+| push @ARRAY, LIST    |                           Adiciona os valores da lista ao final do array.                            |
+| pop @ARRAY           |                               Remove e retorna o último valor do array.                               |
+| shift @ARRAY         | Remove o primeiro valor do array e o retorna, encurtando o array em 1 e deslocando todo o restante para baixo. |
+| unshift @ARRAY, LIST |         Insere a lista no início do array e retorna o número de elementos no novo array.         |
 
-### Array oparations
+### Operações com arrays
 
 ```perl
 #!/usr/bin/perl
@@ -384,7 +383,7 @@ print "5. \@coins = @coins\n";
 
 ```
 
-### Slicing Array Elements
+### Fatiando elementos do array
 
 ```perl
 #!/usr/bin/perl
@@ -396,7 +395,7 @@ print "5. \@coins = @coins\n";
 print "@weekdays\n";
 ```
 
-### Replacing Array Elements
+### Substituindo elementos do array
 
 ```perl
 #!/usr/bin/perl
@@ -408,7 +407,7 @@ splice(@nums, 5, 5, 21..25);
 print "After - @nums\n";
 ```
 
-### Transform Strings to Arrays
+### Transformando strings em arrays
 
 ```perl
 #!/usr/bin/perl
@@ -427,7 +426,7 @@ print "$string[3]\n";  # This will print Roses
 print "$names[4]\n"; # This will print Michael
 ```
 
-### Transform Arrays to Strings
+### Transformando arrays em strings
 
 ```perl
 #!/usr/bin/perl
@@ -447,7 +446,7 @@ print "$string1\n";
 print "$string2\n";
 ```
 
-### Sorting Arrays
+### Ordenando arrays
 
 ```perl
 #!/usr/bin/perl
@@ -461,7 +460,7 @@ print "Before: @foods\n";
 print "After: @foods\n";
 ```
 
-### The $[ Special Variable
+### A variável especial $[
 
 ```perl
 #!/usr/bin/perl
@@ -477,7 +476,7 @@ print "Food at \@foods[1]: $foods[1]\n";
 print "Food at \@foods[2]: $foods[2]\n";
 ```
 
-### Merging Arrays
+### Mesclando arrays
 
 ```perl
 #!/usr/bin/perl
@@ -490,7 +489,7 @@ print "Food at \@foods[2]: $foods[2]\n";
 print "numbers = @numbers\n";
 ```
 
-### Selecting Elements from Lists
+### Selecionando elementos de listas
 
 ```perl
 #!/usr/bin/perl
@@ -500,7 +499,7 @@ print "numbers = @numbers\n";
 print "Value of list = @list\n";
 ```
 
-### Accessing Hash Elements
+### Acessando elementos de hash
 
 ```perl
 #!/usr/bin/perl
@@ -512,7 +511,7 @@ print "$data{'Lisa'}\n";
 print "$data{'Kumar'}\n";
 ```
 
-### Extracting Slices
+### Extraindo slices
 
 ```perl
 #!/uer/bin/perl
@@ -525,7 +524,7 @@ print "$data{'Kumar'}\n";
 print "Array : @array\n";
 ```
 
-### Extracting Keys and Values
+### Extraindo chaves e valores
 
 ```perl
 #!/usr/bin/perl
@@ -539,7 +538,7 @@ print "$names[1]\n";
 print "$names[2]\n";
 ```
 
-### Getting Hash Size
+### Obtendo o tamanho do hash
 
 ```perl
 #!/usr/bin/perl
@@ -555,7 +554,7 @@ $size = @values;
 print "2 - Hash size:  is $size\n";
 ```
 
-### Add and Remove Elements in Hashes
+### Adicionando e removendo elementos em hashes
 
 ```perl
 #!/usr/bin/perl
@@ -578,7 +577,7 @@ $size = @keys;
 print "3 - Hash size:  is $size\n";
 ```
 
-## Control Flow
+## Controle de fluxo
 
 ### if-else
 
@@ -610,7 +609,7 @@ else
 }
 ```
 
-### The ? : Operator
+### O operador ? :
 
 ```perl
 #!/usr/local/bin/perl
@@ -623,7 +622,7 @@ $status = ($age > 60 )? "A senior citizen" : "Not a senior citizen";
 print "$name is  - $status\n";
 ```
 
-### for loop
+### Laço for
 
 ```perl
 #!/usr/bin/perl
@@ -639,7 +638,7 @@ for ($count = 1 ; $count <= 3 ; $count++)
 }
 ```
 
-### foreach loop
+### Laço foreach
 
 ```perl
 #!/usr/bin/perl
@@ -659,7 +658,7 @@ foreach $word (@data)
 
 ```
 
-### while and do-while
+### while e do-while
 
 ```perl
 #!/usr/bin/perl
@@ -689,9 +688,9 @@ do {
 
 ```
 
-## Object Oriented Programming
+## Programação orientada a objetos
 
-### Class and object
+### Classe e objeto
 
 ```perl
 #!/usr/bin/perl
@@ -730,7 +729,7 @@ print "$Data->{'StudentLastName'}\n";
 
 ```
 
-### Subroutines
+### Sub-rotinas
 
 ```perl
 #!/usr/bin/perl
@@ -750,7 +749,7 @@ sub ask_user
 ask_user();
 ```
 
-### Modules and Packages
+### Módulos e pacotes
 
 ```perl
 #!/usr/bin/perl
@@ -777,7 +776,7 @@ $b = 5;
 Calculator::division($a, $b);
 ```
 
-### References
+### Referências
 
 ```perl
 # Perl program to illustrate the
@@ -797,7 +796,7 @@ $reference_array = \@array;
 print @$reference_array;
 ```
 
-### Regular Expression
+### Expressão regular
 
 ```perl
 # Perl program to demonstrate
@@ -821,7 +820,7 @@ else
 }
 ```
 
-### File Handling
+### Manipulação de arquivos
 
 ```perl
 # Opening the file
@@ -832,7 +831,7 @@ $firstline = <fh>;
 print "$firstline\n";
 ```
 
-### File Test Operators
+### Operadores de teste de arquivo
 
 ```perl
 #!/usr/bin/perl
@@ -860,7 +859,7 @@ else
 }
 ```
 
-### Working with Excel Files
+### Trabalhando com arquivos Excel
 
 ```perl
 #!/usr/bin/perl
@@ -876,7 +875,7 @@ $Excelsheet->write( "B1", "Next_Column" );
 $Excelbook->close;
 ```
 
-### Reading from an Excel File:
+### Lendo de um arquivo Excel:
 
 ```perl
 use 5.016;
@@ -886,7 +885,7 @@ say 'A2: ' . $book_data->[1]{A2};
 
 ```
 
-### Error Handling
+### Tratamento de erros
 
 ```perl
 if(open(DATA, $file)) {
@@ -905,7 +904,7 @@ print(exists($hash{value}) ? 'There' : 'Missing',"\n");
 
 ```
 
-### The warn Function
+### A função warn
 
 ```perl
 chdir('/etc') or warn "Can't change directory";
@@ -913,14 +912,14 @@ chdir('/etc') or warn "Can't change directory";
 
 ```
 
-### The die function
+### A função die
 
 ```perl
 chdir('/etc') or die "Can't change directory";
 
 ```
 
-### Errors within Modules
+### Erros dentro de módulos
 
 ```perl
 package T;
@@ -940,7 +939,7 @@ sub function {
 
 ```
 
-### The carp Function
+### A função carp
 
 ```perl
 package T;
@@ -957,7 +956,7 @@ sub function {
 
 ```
 
-### The cluck Function
+### A função cluck
 
 ```perl
 package T;
@@ -974,7 +973,7 @@ sub function {
 
 ```
 
-### The croak Function
+### A função croak
 
 ```perl
 package T;
@@ -991,7 +990,7 @@ sub function {
 
 ```
 
-### The confess Function
+### A função confess
 
 ```perl
 package T;
@@ -1007,9 +1006,9 @@ sub function {
 1;
 ```
 
-## Date and Time
+## Data e hora
 
-### Current Date and Time
+### Data e hora atuais
 
 ```perl
 #!/usr/local/bin/perl
@@ -1026,7 +1025,7 @@ $datestring = localtime();
 print "Local date and time $datestring\n";
 ```
 
-### GMT Time
+### Hora GMT
 
 ```perl
 #!/usr/local/bin/perl
@@ -1035,7 +1034,7 @@ $datestring = gmtime();
 print "GMT date and time $datestring\n";
 ```
 
-### Format Date and Time
+### Formatando data e hora
 
 ```perl
 #!/usr/local/bin/perl
@@ -1046,7 +1045,7 @@ printf("Time Format - HH:MM:SS\n");
 printf("%02d:%02d:%02d", $hour, $min, $sec);
 ```
 
-### Epoch time
+### Tempo epoch
 
 ```perl
 #!/usr/local/bin/perl
@@ -1067,47 +1066,47 @@ $datestring = localtime($epoc);
 print "Yesterday's date and time $datestring\n";
 ```
 
-### POSIX Function strftime()
+### Função POSIX strftime()
 
 | Specifier | Replaced by                                                                                                    |         Example          |
 | :-------- | :------------------------------------------------------------------------------------------------------------- | :----------------------: |
-| %a        | Abbreviated weekday name                                                                                       |           Thu            |
-| %A        | Full weekday name                                                                                              |         Thursday         |
-| %b        | Abbreviated month name                                                                                         |           Aug            |
-| %B        | Full month name                                                                                                |          August          |
-| %c        | Date and time representation                                                                                   | Thu Aug 23 14:55:02 2001 |
-| %C        | Year divided by 100 and truncated to integer (00-99)                                                           |            20            |
-| %d        | Day of the month, zero-padded (01-31)                                                                          |            23            |
-| %D        | Short MM/DD/YY date, equivalent to %m/%d/%y                                                                    |         08/23/01         |
-| %e        | Day of the month, space-padded ( 1-31)                                                                         |            23            |
-| %F        | Short YYYY-MM-DD date, equivalent to %Y-%m-%d                                                                  |        2001-08-23        |
-| %g        | Week-based year, last two digits (00-99)                                                                       |            01            |
-| %G        | Week-based year                                                                                                |           2001           |
-| %h        | Abbreviated month name (same as %b)                                                                            |           Aug            |
-| %H        | Hour in 24h format (00-23)                                                                                     |            14            |
-| %I        | Hour in 12h format (01-12)                                                                                     |            02            |
-| %j        | Day of the year (001-366)                                                                                      |           235            |
-| %m        | Month as a decimal number (01-12)                                                                              |            08            |
-| %M        | Minute (00-59)                                                                                                 |            55            |
-| %n        | New-line character ('\n')                                                                                      |
-| %p        | AM or PM designation                                                                                           |            PM            |
-| %r        | 12-hour clock time                                                                                             |       02:55:02 pm        |
-| %R        | 24-hour HH:MM time, equivalent to %H:%M                                                                        |          14:55           |
-| %S        | Second (00-61)                                                                                                 |            02            |
-| %t        | Horizontal-tab character ('\t')                                                                                |
-| %T        | ISO 8601 time format (HH:MM:SS), equivalent to %H:%M:%S                                                        |          14:55           |
-| %u        | ISO 8601 weekday as number with Monday as 1 (1-7)                                                              |            4             |
-| %U        | Week number with the first Sunday as the first day of week one (00-53)                                         |            33            |
-| %V        | ISO 8601 week number (00-53)                                                                                   |            34            |
-| %w        | Weekday as a decimal number with Sunday as 0 (0-6)                                                             |            4             |
-| %W        | Week number with the first Monday as the first day of week one (00-53)                                         |            34            |
-| %x        | Date representation                                                                                            |         08/23/01         |
-| %X        | Time representation                                                                                            |         14:55:02         |
-| %y        | Year, last two digits (00-99)                                                                                  |            01            |
-| %Y        | Year                                                                                                           |           2001           |
-| %z        | ISO 8601 offset from UTC in timezone (1 minute = 1, 1 hour = 100)If timezone cannot be termined, no characters |           +100           |
-| %Z        | Timezone name or abbreviation If timezone cannot be termined, no characters                                    |           CDT            |
-| %%        | A % sign                                                                                                       |            %             |
+| %a        | Nome abreviado do dia da semana                                                                                |           Thu            |
+| %A        | Nome completo do dia da semana                                                                                 |         Thursday         |
+| %b        | Nome abreviado do mês                                                                                          |           Aug            |
+| %B        | Nome completo do mês                                                                                           |          August          |
+| %c        | Representação de data e hora                                                                                   | Thu Aug 23 14:55:02 2001 |
+| %C        | Ano dividido por 100 e truncado para inteiro (00-99)                                                           |            20            |
+| %d        | Dia do mês, preenchido com zero (01-31)                                                                        |            23            |
+| %D        | Data curta MM/DD/YY, equivalente a %m/%d/%y                                                                    |         08/23/01         |
+| %e        | Dia do mês, preenchido com espaço ( 1-31)                                                                      |            23            |
+| %F        | Data curta YYYY-MM-DD, equivalente a %Y-%m-%d                                                                  |        2001-08-23        |
+| %g        | Ano baseado na semana, dois últimos dígitos (00-99)                                                            |            01            |
+| %G        | Ano baseado na semana                                                                                          |           2001           |
+| %h        | Nome abreviado do mês (igual a %b)                                                                             |           Aug            |
+| %H        | Hora no formato 24h (00-23)                                                                                    |            14            |
+| %I        | Hora no formato 12h (01-12)                                                                                    |            02            |
+| %j        | Dia do ano (001-366)                                                                                           |           235            |
+| %m        | Mês como número decimal (01-12)                                                                                |            08            |
+| %M        | Minuto (00-59)                                                                                                 |            55            |
+| %n        | Caractere de nova linha ('\n')                                                                                 |
+| %p        | Indicação AM ou PM                                                                                             |            PM            |
+| %r        | Hora no relógio de 12 horas                                                                                    |       02:55:02 pm        |
+| %R        | Hora HH:MM de 24 horas, equivalente a %H:%M                                                                    |          14:55           |
+| %S        | Segundo (00-61)                                                                                                |            02            |
+| %t        | Caractere de tabulação horizontal ('\t')                                                                       |
+| %T        | Formato de hora ISO 8601 (HH:MM:SS), equivalente a %H:%M:%S                                                    |          14:55           |
+| %u        | Dia da semana ISO 8601 como número, com segunda-feira como 1 (1-7)                                            |            4             |
+| %U        | Número da semana com o primeiro domingo como primeiro dia da semana um (00-53)                                |            33            |
+| %V        | Número da semana ISO 8601 (00-53)                                                                              |            34            |
+| %w        | Dia da semana como número decimal, com domingo como 0 (0-6)                                                    |            4             |
+| %W        | Número da semana com a primeira segunda-feira como primeiro dia da semana um (00-53)                          |            34            |
+| %x        | Representação de data                                                                                          |         08/23/01         |
+| %X        | Representação de hora                                                                                          |         14:55:02         |
+| %y        | Ano, dois últimos dígitos (00-99)                                                                              |            01            |
+| %Y        | Ano                                                                                                            |           2001           |
+| %z        | Deslocamento ISO 8601 em relação a UTC no fuso horário (1 minuto = 1, 1 hora = 100)Se o fuso não puder ser determinado, sem caracteres |           +100           |
+| %Z        | Nome ou abreviação do fuso horário Se o fuso não puder ser determinado, sem caracteres                         |           CDT            |
+| %%        | Um sinal de %                                                                                                  |            %             |
 
 ```perl
 #!/usr/local/bin/perl

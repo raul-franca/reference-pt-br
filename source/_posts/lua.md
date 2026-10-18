@@ -6,17 +6,17 @@ tags:
   - script
   - interpret
 categories:
-  - Programming
+  - Programação
 intro: |
-  The [Lua](https://www.lua.org/) cheat sheet is a one-page reference sheet for the Lua 5.4 programming language.
+  O cheat sheet de [Lua](https://www.lua.org/) é uma folha de referência de uma página para a linguagem de programação Lua 5.4.
 plugins:
   - copyCode
   - runCode
 ---
 
-## Getting Started
+## Primeiros passos
 
-### Introduction
+### Introdução
 
 - [Lua](https://www.lua.org/) _(lua.org)_
 - [Lua Document](https://www.lua.org/docs.html) _(lua.org/docs.html)_
@@ -38,9 +38,9 @@ print [[multi-line
 
 ```
 
-The famous "Hello World" program in Lua
+O famoso programa "Hello World" em Lua
 
-### Variables
+### Variáveis
 
 ```lua
 
@@ -58,22 +58,22 @@ foo = anUnknownVariable  -- Now foo = nil.
 
 ```
 
-Lua is a dynamically typed language and hence only the values will have types not the variables.
+Lua é uma linguagem de tipagem dinâmica e, portanto, apenas os valores têm tipos, não as variáveis.
 
-### Data Types {.col-span-2 .row-span-2}
+### Tipos de dados {.col-span-2 .row-span-2}
 
-| Value Type | Description                                    |
-| ---------- | ---------------------------------------------- |
-| `number`   | Represent (double-precision) numbers           |
-| `string`   | Represents text                                |
-| `nil`      | Differentiates between values with data or not |
-| `boolean`  | true or false value                            |
-| `function` | Represents a sub routine                       |
-| `userdata` | Represents arbitrary C data                    |
-| `thread`   | Represents independent threads of execution    |
-| `table`    | key-value pair, or array.                      |
+| Tipo de valor | Descrição                                        |
+| ------------- | ------------------------------------------------ |
+| `number`      | Representa números (de precisão dupla)           |
+| `string`      | Representa texto                                 |
+| `nil`         | Diferencia valores com e sem dados               |
+| `boolean`     | Valor verdadeiro ou falso                        |
+| `function`    | Representa uma sub-rotina                        |
+| `userdata`    | Representa dados arbitrários de C                |
+| `thread`      | Representa threads independentes de execução     |
+| `table`       | Par chave-valor, ou array.                       |
 
-See: [Data Type APIs](#data-type-apis)
+Veja: [APIs de tipos de dados](#data-type-apis)
 
 ### IO
 
@@ -87,7 +87,7 @@ io.write("Enter your age: ")
 age = io.read()
 ```
 
-### Comments
+### Comentários
 
 ```lua
 -- This is a single line comments
@@ -99,9 +99,9 @@ age = io.read()
 --]]
 ```
 
-## Operators
+## Operadores
 
-### Arithmetic
+### Aritmética
 
 ```lua
 -- add
@@ -130,7 +130,7 @@ a = 12
 result = -a -- => -12
 ```
 
-### Relational
+### Relacionais
 
 ```lua
 a = 10
@@ -155,7 +155,7 @@ print(a >= b) -- false
 print(a <= b) -- true
 ```
 
-### Logical
+### Lógicos
 
 ```lua
 -- and
@@ -173,9 +173,9 @@ not true       --> false
 
 ```
 
-Only nil and false are falsy; 0 and '' are true!
+Apenas nil e false são falsy; 0 e '' são verdadeiros!
 
-## Conditionals
+## Condicionais
 
 ### if-else {.col-span-3 .row-span-2}
 
@@ -197,7 +197,7 @@ ans = aBoolValue and 'yes' or 'no'  --> 'no'
 
 ## Loops
 
-### While loop
+### Loop while
 
 ```lua
 i = 1
@@ -207,7 +207,7 @@ while i <= 5 do
 end
 ```
 
-### For loop
+### Laço for
 
 ```lua
 -- Numeric for loop (start, end, step)
@@ -222,7 +222,7 @@ for k, v in ipairs(t) do
 end
 ```
 
-### Repeat-until loop
+### Loop repeat-until
 
 ```lua
 i = 1
@@ -232,7 +232,7 @@ repeat
 until i > 5
 ```
 
-### Breaking out
+### Saindo do loop
 
 ```lua
 while x do
@@ -255,9 +255,9 @@ for i=1,10 do
 end
 ```
 
-## Functions
+## Funções
 
-### Creating fns
+### Criando funções
 
 ```lua
 function myFunction()
@@ -298,7 +298,7 @@ end
 
 ```
 
-### Invoking fns {.col-span-2}
+### Chamando funções {.col-span-2}
 
 ```lua
 myFunction()
@@ -318,7 +318,7 @@ doAction('write', "Shirley", "Abed")
 --> Doing 'write' to Shirley Abed
 ```
 
-You can omit parentheses if the argument is one string or table literal
+Você pode omitir os parênteses se o argumento for um literal de string ou de tabela
 
 ```lua
 print "Hello World"     -->     print("Hello World")
@@ -333,9 +333,9 @@ f{x=10, y=20}           -->     f({x=10, y=20})
 type{}                  -->     type({})
 ```
 
-## Data Type APIs
+## APIs de tipos de dados
 
-### Global functions {.col-span-2 .row-span-2}
+### Funções globais {.col-span-2 .row-span-2}
 
 Assert
 
@@ -393,7 +393,7 @@ for key, value in ipairs(my_table) do
 end
 ```
 
-To number
+Conversão para número
 
 ```lua
 local num1 = tonumber("34")
@@ -415,13 +415,13 @@ print(hex_num) -- 143 (8 * 16 + 15)
 s = "Hello"
 ```
 
-Concatenation
+Concatenação
 
 ```lua
 s .. " there" -- => Hello there
 ```
 
-Commonly used methods
+Métodos usados comumente
 
 ```lua
 s:upper() -- => HELLO
@@ -462,7 +462,7 @@ local formatted = string.format("My name is %s and I am %d years old.", name, ag
 print(formatted) -- "My name is Alice and I am 30 years old."
 ```
 
-Others
+Outros
 
 ```lua
 s:match()
@@ -614,7 +614,7 @@ math.tan(x)` -- => tangent of x
 
 ```
 
-### Table basics
+### Fundamentos de tabelas
 
 ```lua
 -- Array-like table (one-indexed)
@@ -635,7 +635,7 @@ print(mixed.key) -- "value"
 print(#colors) -- 3
 ```
 
-### Tables
+### Tabelas
 
 ```lua
 local my_table = {10, 20}
@@ -665,17 +665,17 @@ local fruit_string = table.concat(fruit, ", ")
 print(fruit_string) -- apple, banana, cherry
 ```
 
-## Misc
+## Diversos
 
 ### Classes {.col-span-2 .row-span-2}
 
-Classes aren't built in; there are different ways to make them using tables and metatables.
+Classes não são nativas; existem diferentes maneiras de criá-las usando tabelas e metatables.
 
 ```lua
 
 ```
 
-Short explanation; what we are trying to do is basically making a table that can hold data and functions
+Explicação curta; o que estamos tentando fazer é basicamente criar uma tabela que possa conter dados e funções
 
 ```lua
 
@@ -696,7 +696,7 @@ mrDog:makeSound()  -- 'I say woof'
 
 ```
 
-Inheritance
+Herança
 
 ```lua
 LoudDog = Dog:new()
@@ -710,7 +710,7 @@ seymour = LoudDog:new()
 seymour:makeSound()  -- 'woof woof woof'
 ```
 
-Another example
+Outro exemplo
 
 ```lua
 Account = {}
@@ -737,9 +737,9 @@ a = Account:new(9000)
 a:withdraw(200)    -- method call
 ```
 
-### Meta-tables
+### Metatabelas
 
-A metatable is simply a table with functions in it.
+Uma metatable é simplesmente uma tabela com funções dentro dela.
 
 ```lua
 mt = {}
@@ -751,7 +751,7 @@ mt.__index    = function(k) ... end       -- Lookups (a[k] or a.k)
 mt.__newindex = function(k, v) ... end    -- Setters (a[k] = v)
 ```
 
-Metatables allow you to override behavior of another table.
+Metatables permitem que você substitua o comportamento de outra tabela.
 
 ```lua
 
@@ -761,7 +761,7 @@ setmetatable(mytable, mt)
 print(myobject)
 ```
 
-### Files
+### Arquivos
 
 ```lua
 local file = io.open("test.txt", "w")

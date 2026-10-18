@@ -7,71 +7,71 @@ tags:
   -
   -
 categories:
-  - Keyboard Shortcuts
+  - Atalhos de Teclado
 intro: |
-  A visual cheat-sheet for the 36 keyboard shortcuts found on Pocket for Web
+  Um cheat sheet visual para os 36 atalhos de teclado do Pocket para Web
 ---
 
-## Keyboard Shortcuts
+## Atalhos de Teclado
 
-### Viewing Your List
+### Visualizando sua lista
 
-| Shortcut | Action                |
-| -------- | --------------------- |
-| `G` `L`  | Go to My List         |
-| `G` `A`  | Go to Archive         |
-| `G` `F`  | Go to Favorites       |
-| `G` `R`  | Go to Articles        |
-| `G` `H`  | Go to Highlights      |
-| `G` `V`  | Go to Videos          |
-| `G` `T`  | Go to All Tags        |
-| `G` `S`  | Go to Search          |
-| `G` `B`  | Bulk Edit             |
-| `G` `U`  | Save a URL            |
-| `S` `N`  | Sort by Newest        |
-| `S` `O`  | Sort by Oldest        |
-| `V` `L`  | List View             |
-| `V` `G`  | Grid View             |
-| `V` `D`  | Detail View           |
-| `C` `L`  | Change to Light Theme |
-| `C` `D`  | Change to Dark Theme  |
-| `C` `S`  | Change to Sepia Theme |
-| `?`      | Open Help Overlay     |
-
-{.shortcuts}
-
-### Item Actions
-
-| Shortcut | Action                         |
-| -------- | ------------------------------ |
-| `O`      | Open the original in a new tab |
-| `A`      | Archive the selected item      |
-| `F`      | Favorite the selected item     |
-| `T`      | Tag the selected item          |
-| `D`      | Delete the selected item       |
-| `X`      | Select item in bulk edit       |
-| `J`      | Select the next item           |
-| `K`      | Select the previous item       |
+| Atalho  | Ação                              |
+| ------- | --------------------------------- |
+| `G` `L` | Ir para Minha Lista               |
+| `G` `A` | Ir para o Arquivo                 |
+| `G` `F` | Ir para Favoritos                 |
+| `G` `R` | Ir para Artigos                   |
+| `G` `H` | Ir para Destaques                 |
+| `G` `V` | Ir para Vídeos                    |
+| `G` `T` | Ir para Todas as Tags             |
+| `G` `S` | Ir para Pesquisa                  |
+| `G` `B` | Edição em massa                   |
+| `G` `U` | Salvar uma URL                    |
+| `S` `N` | Classificar por mais recentes     |
+| `S` `O` | Classificar por mais antigos      |
+| `V` `L` | Visualização em lista             |
+| `V` `G` | Visualização em grade             |
+| `V` `D` | Visualização de detalhes          |
+| `C` `L` | Alterar para o tema claro         |
+| `C` `D` | Alterar para o tema escuro        |
+| `C` `S` | Alterar para o tema Sépia         |
+| `?`     | Abrir a sobreposição de ajuda     |
 
 {.shortcuts}
 
-### Article View
+### Ações de item
 
-| Shortcut   | Action                                   |
-| ---------- | ---------------------------------------- |
-| `Ctrl` `=` | Increase the font size                   |
-| `Ctrl` `-` | Decrease the font size                   |
-| `B`        | Toggle full screen mode                  |
-| `D`        | Edit tags                                |
-| `T`        | Archive the item                         |
-| `F`        | Favorite the item                        |
-| `O`        | View the original                        |
-| `Alt` `=`  | Increase the column width (premium only) |
-| `Alt` `-`  | Decrease the column width (premium only) |
+| Atalho | Ação                                |
+| ------ | ----------------------------------- |
+| `O`    | Abre o original em uma nova aba     |
+| `A`    | Arquiva o item selecionado          |
+| `F`    | Favorita o item selecionado         |
+| `T`    | Adiciona uma tag ao item selecionado |
+| `D`    | Exclui o item selecionado           |
+| `X`    | Seleciona o item na edição em massa |
+| `J`    | Seleciona o próximo item            |
+| `K`    | Seleciona o item anterior           |
 
 {.shortcuts}
 
-## Also see
+### Visualização de artigo
 
-- [Keyboard shortcuts for Pocket](https://help.getpocket.com/article/994-keyboard-shortcuts-in-pocket-for-web)
+| Atalho     | Ação                                         |
+| ---------- | -------------------------------------------- |
+| `Ctrl` `=` | Aumenta o tamanho da fonte                   |
+| `Ctrl` `-` | Diminui o tamanho da fonte                   |
+| `B`        | Alterna o modo de tela cheia                 |
+| `D`        | Edita as tags                                |
+| `T`        | Arquiva o item                               |
+| `F`        | Favorita o item                              |
+| `O`        | Ver o original                               |
+| `Alt` `=`  | Aumenta a largura da coluna (somente premium) |
+| `Alt` `-`  | Diminui a largura da coluna (somente premium) |
+
+{.shortcuts}
+
+## Veja também
+
+- [Atalhos de teclado do Pocket](https://help.getpocket.com/article/994-keyboard-shortcuts-in-pocket-for-web)
   _(help.getpocket.com)_

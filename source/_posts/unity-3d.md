@@ -7,113 +7,113 @@ tags:
   -
   -
 categories:
-  - Keyboard Shortcuts
+  - Atalhos de Teclado
 intro: |
-  A visual cheat-sheet for the 50 keyboard shortcuts found in Unity 3D
+  Uma cheat sheet visual com os 50 atalhos de teclado disponíveis no Unity 3D
 ---
 
-## Keyboard Shortcuts
+## Atalhos de teclado
 
-### Tools
+### Ferramentas
 
-| Shortcut              | Action                |
+| Atalho                | Ação                  |
 | --------------------- | --------------------- |
-| `Q`                   | Pan                   |
-| `W`                   | Move                  |
-| `E`                   | Rotate                |
-| `R`                   | Scale                 |
-| `T`                   | Rect tool             |
-| `Z`                   | Pivot mode toggle     |
-| `X`                   | Pivot rotation toggle |
-| `V`                   | Vertex snap           |
+| `Q`                   | Panorâmica            |
+| `W`                   | Mover                 |
+| `E`                   | Rotacionar            |
+| `R`                   | Escalar               |
+| `T`                   | Ferramenta de retângulo |
+| `Z`                   | Alternar modo pivô    |
+| `X`                   | Alternar rotação do pivô |
+| `V`                   | Snap de vértice       |
 | `Ctrl` `(left click)` | Snap                  |
 
 {.shortcuts}
 
 ### GameObject
 
-| Shortcut           | Action                                                 |
+| Atalho             | Ação                                                   |
 | ------------------ | ------------------------------------------------------ |
-| `Ctrl` `Shift` `N` | New empty game object                                  |
-| `Alt` `Shift` `N`  | New empty child to selected game object                |
-| `Ctrl` `Alt` `F`   | Move to view                                           |
-| `Ctrl` `Shift` `F` | Align with view                                        |
-| `Shift` `F`        | Locks the scene view camera to the selected GameObject |
+| `Ctrl` `Shift` `N` | Novo game object vazio                                 |
+| `Alt` `Shift` `N`  | Novo filho vazio para o game object selecionado        |
+| `Ctrl` `Alt` `F`   | Mover para a visualização                              |
+| `Ctrl` `Shift` `F` | Alinhar com a visualização                             |
+| `Shift` `F`        | Trava a câmera da cena no GameObject selecionado       |
 
 {.shortcuts}
 
-### Window
+### Janela
 
-| Shortcut           | Action          |
+| Atalho             | Ação            |
 | ------------------ | --------------- |
-| `Ctrl` `1`         | Scene           |
-| `Ctrl` `2`         | Game            |
+| `Ctrl` `1`         | Cena            |
+| `Ctrl` `2`         | Jogo            |
 | `Ctrl` `3`         | Inspector       |
 | `Ctrl` `4`         | Hierarchy       |
 | `Ctrl` `5`         | Project         |
 | `Ctrl` `6`         | Animation       |
 | `Ctrl` `7`         | Profiler        |
 | `Ctrl` `9`         | Asset store     |
-| `Ctrl` `0`         | Version control |
+| `Ctrl` `0`         | Controle de versão |
 | `Ctrl` `Shift` `C` | Console         |
 
 {.shortcuts}
 
-### Edit {.row-span-2}
+### Editar {.row-span-2}
 
-| Shortcut           | Action                 |
+| Atalho             | Ação                   |
 | ------------------ | ---------------------- |
-| `Ctrl` `Z`         | Undo                   |
-| `Ctrl` `Shift` `Z` | Redo (MacOS)           |
-| `Ctrl` `Y`         | Redo (Windows)         |
-| `Ctrl` `X`         | Cut                    |
-| `Ctrl` `C`         | Copy                   |
-| `Ctrl` `V`         | Paste                  |
-| `Ctrl` `D`         | Duplicate              |
-| `Shift` `Del`      | Delete                 |
-| `F`                | Frame center selection |
-| `Ctrl` `F`         | Find                   |
-| `Ctrl` `A`         | Select all             |
-| `Ctrl` `P`         | Play                   |
-| `Ctrl` `Shift` `P` | Pause                  |
-| `Ctrl` `Alt` `P`   | Step                   |
+| `Ctrl` `Z`         | Desfazer               |
+| `Ctrl` `Shift` `Z` | Refazer (MacOS)        |
+| `Ctrl` `Y`         | Refazer (Windows)      |
+| `Ctrl` `X`         | Recortar               |
+| `Ctrl` `C`         | Copiar                 |
+| `Ctrl` `V`         | Colar                  |
+| `Ctrl` `D`         | Duplicar               |
+| `Shift` `Del`      | Excluir                |
+| `F`                | Centralizar a seleção no quadro |
+| `Ctrl` `F`         | Localizar              |
+| `Ctrl` `A`         | Selecionar tudo        |
+| `Ctrl` `P`         | Reproduzir             |
+| `Ctrl` `Shift` `P` | Pausar                 |
+| `Ctrl` `Alt` `P`   | Avançar um passo       |
 
 {.shortcuts}
 
-### Selection
+### Seleção
 
-| Shortcut             | Action             |
-| -------------------- | ------------------ |
-| `Ctrl` `Shift` `1-9` | Load selection 1-9 |
-| `Ctrl` `Alt` `1-9`   | Save selection 1-9 |
+| Atalho               | Ação                   |
+| -------------------- | ---------------------- |
+| `Ctrl` `Shift` `1-9` | Carregar seleção 1-9   |
+| `Ctrl` `Alt` `1-9`   | Salvar seleção 1-9     |
 
 {.shortcuts}
 
 ### Assets
 
-| Shortcut   | Action  |
-| ---------- | ------- |
-| `Ctrl` `R` | Refresh |
+| Atalho     | Ação      |
+| ---------- | --------- |
+| `Ctrl` `R` | Atualizar |
 
 {.shortcuts}
 
-### Animation
+### Animação
 
-| Shortcut    | Action            |
+| Atalho      | Ação              |
 | ----------- | ----------------- |
-| `Shift` `,` | First keyframe    |
-| `Shift` `K` | Key modified      |
-| `K`         | Key selected      |
-| `Shift` `.` | Last keyframe     |
-| `.`         | Next frame        |
-| `Alt` `.`   | Next keyframe     |
-| `Space`     | Play animation    |
-| `,`         | Previous frame    |
-| `Alt` `,`   | Previous keyframe |
+| `Shift` `,` | Primeiro keyframe |
+| `Shift` `K` | Key modificado    |
+| `K`         | Key selecionado   |
+| `Shift` `.` | Último keyframe   |
+| `.`         | Próximo frame     |
+| `Alt` `.`   | Próximo keyframe  |
+| `Space`     | Reproduzir animação |
+| `,`         | Frame anterior    |
+| `Alt` `,`   | Keyframe anterior |
 
 {.shortcuts}
 
-## Also see
+## Veja também
 
 - [Keyboard shortcuts for Unity 3D](https://docs.unity3d.com/2018.1/Documentation/Manual/UnityHotkeys.html)
   _(docs.unity3d.com)_

@@ -7,16 +7,16 @@ tags:
   - python
   - web
 categories:
-  - Programming
+  - Programação
 intro: |
-  A Django cheat sheet.
+  Um cheat sheet de Django.
 plugins:
   - copyCode
 ---
 
-## Getting Started
+## Primeiros passos
 
-### Start a new Django Project
+### Criar um novo projeto Django
 
 {.row-span-2}
 
@@ -44,35 +44,35 @@ plugins:
 ~$  python manage.py startapp app_name
 ```
 
-### Migration:
+### Migração
 
-<small>Django create a database table for each models present in your app using those commands:</small>
+<small>O Django cria uma tabela no banco de dados para cada model presente no seu app usando estes comandos:</small>
 
-Makemigrations: Create a file under app_name/migrations with the database structure to create
+Makemigrations: cria um arquivo em app_name/migrations com a estrutura do banco de dados a ser criada
 
 ```python
 ~$  python manage.py makemigrations
 ```
 
-Migrate: Will read the migrations files and create the actual database and tables
+Migrate: lê os arquivos de migrations e cria o banco de dados e as tabelas de fato
 
 ```python
 ~$  python manage.py migrate
 ```
 
-### Create superuser for authenficiation/admin panel
+### Criar superusuário para autenticação/painel admin
 
 ```python
 ~$  python manage.py createsuperuser
 ```
 
-### Start server
+### Iniciar o servidor
 
 ```python
 ~$  python manage.py runserver  => ex.  http://127.0.0.1:8000
 ```
 
-### Requirements
+### Requisitos
 
 ```python
 # Create a requirements file that contain all your project dependencies
@@ -82,7 +82,7 @@ Migrate: Will read the migrations files and create the actual database and table
 ~$  pip install -r requirements.txt
 ```
 
-### Other commands
+### Outros comandos
 
 ```python
 # Django shell (Run project code directly)
@@ -107,16 +107,16 @@ Migrate: Will read the migrations files and create the actual database and table
 ~$ django-admin compilemessages
 ```
 
-## Project config {.cols-1}
+## Configuração do projeto {.cols-1}
 
-### Configuration settings
+### Configurações
 
-##### Project base templates directory and Apps templates directory:
+##### Diretório de templates base do projeto e diretório de templates dos apps:
 
-- create folder project/templates
-- create folder appfolder/templates/appname
+- crie a pasta project/templates
+- crie a pasta appfolder/templates/appname
 
-##### Create Static folder in base root and separate for apps:
+##### Crie a pasta Static na raiz base e separe por apps:
 
 - project_name\static\root
 - app_name\static\app_name
@@ -196,11 +196,11 @@ SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SECURE = True
 ```
 
-## Data Models
+## Models de dados
 
-### Create Data Model {.col-span-2}
+### Criar model de dados {.col-span-2}
 
-<small>Theses models can be created as database tables with the migrations commands</small>
+<small>Estes models podem ser criados como tabelas de banco de dados com os comandos de migrations</small>
 
 ```python
 # models.py
@@ -239,7 +239,7 @@ class Customer(models.Model)
         return reverse("customer_detail", kwargs={"pk": self.pk})
 ```
 
-#### We can also use this method to define the ChoiceField value.
+#### Também podemos usar este método para definir o valor do ChoiceField.
 
 ```python
   class Customer(models.Model)
@@ -253,12 +253,12 @@ class Customer(models.Model)
     type = models.CharField(choices=TypeList.choices, default=1)
 ```
 
-#### To access the ChoiceField value in the template, we need to do the following in the template:
+#### Para acessar o valor do ChoiceField no template, precisamos fazer o seguinte no template:
 
-- In Django templates you can use the "`get_FOO_display()`" method, that will return the readable alias for the field,
-  where `'FOO'` is the name of the field.
-- If the choices are stored in the variable `CHOICES` and the model field storing the selected choice is `'type'` then
-  you can directly use
+- Nos templates Django você pode usar o método "`get_FOO_display()`", que retorna o alias legível para o campo,
+  onde `'FOO'` é o nome do campo.
+- Se as opções estão armazenadas na variável `CHOICES` e o campo do model que guarda a opção selecionada é `'type'`, então
+  você pode usar diretamente
 
 ```html
 <!-- Here, X is the model instance -->
@@ -268,7 +268,7 @@ class Customer(models.Model)
 {% trans X.get_type_display %}
 ```
 
-#### Relationship between models
+#### Relacionamentos entre models
 
 ```python
 # One-to-Many: (use double quotes if the entity is not yet declare) ex. "Supplier"
@@ -294,13 +294,13 @@ def save(self, (*args, **kwargs):
 
 ### Field Lookups {.col-span-2}
 
-In Django, the `field__lookuptype` syntax is used to perform lookups on fields in queries. The `field` represents the
-name of the field you want to perform the lookup on, and `lookuptype` represents the type of lookup you want to perform.
+No Django, a sintaxe `field__lookuptype` é usada para fazer lookups em campos nas queries. O `field` representa o
+nome do campo no qual você quer fazer o lookup, e `lookuptype` representa o tipo de lookup que você quer fazer.
 
-For example, let's say you have a model called `Book` with a field called `title` . You can use the `field__lookuptype`
-syntax to perform different types of lookups on the `title` field.
+Por exemplo, digamos que você tenha um model chamado `Book` com um campo chamado `title` . Você pode usar a sintaxe
+`field__lookuptype` para fazer diferentes tipos de lookup no campo `title`.
 
-Here are a few examples:
+Aqui estão alguns exemplos:
 
 ```python
 
@@ -316,46 +316,46 @@ Book.objects.filter(title__startswith='Python')
 Book.objects.filter(title__endswith='Tricks')
 ```
 
-### Field Lookups Reference
+### Referência de Field Lookups
 
-| Keyword        | Description                                      |
-| -------------- | :----------------------------------------------- |
-| `contains`     | Contains the phrase                              |
-| `icontains`    | Same as contains, but case-insensitive           |
-| `date`         | Matches a date                                   |
-| `day`          | Matches a date (day of month, 1-31) (for dates)  |
-| `endswith`     | Ends with                                        |
-| `iendswith`    | Same as endswidth, but case-insensitive          |
-| `exact`        | An exact match                                   |
-| `iexact`       | Same as exact, but case-insensitive              |
-| `in`           | Matches one of the values                        |
-| `isnull`       | Matches NULL values                              |
-| `gt`           | Greater than                                     |
-| `gte`          | Greater than, or equal to                        |
-| `hour`         | Matches an hour (for datetimes)                  |
-| `lt`           | Less than                                        |
-| `lte`          | Less than, or equal to                           |
-| `minute`       | Matches a minute (for datetimes)                 |
-| `month`        | Matches a month (for dates)                      |
-| `quarter`      | Matches a quarter of the year (1-4) (for dates)  |
-| `range`        | Match between                                    |
-| `regex`        | Matches a regular expression                     |
-| `iregex`       | Same as regex, but case-insensitive              |
-| `second`       | Matches a second (for datetimes)                 |
-| `startswith`   | Starts with                                      |
-| `istartswith`  | Same as startswith, but case-insensitive         |
-| `time`         | Matches a time (for datetimes)                   |
-| `week`         | Matches a week number (1-53) (for dates)         |
-| `week_day`     | Matches a day of week (1-7) 1 is Sunday          |
-| `iso_week_day` | Matches a ISO 8601 day of week (1-7) 1 is Monday |
-| `year`         | Matches a year (for dates)                       |
-| `iso_year`     | Matches an ISO 8601 year (for dates)             |
+| Palavra-chave  | Descrição                                                        |
+| -------------- | :--------------------------------------------------------------- |
+| `contains`     | Contém a frase                                                   |
+| `icontains`    | Igual a contains, mas sem diferenciar maiúsculas de minúsculas   |
+| `date`         | Corresponde a uma data                                           |
+| `day`          | Corresponde a uma data (dia do mês, 1-31) (para datas)           |
+| `endswith`     | Termina com                                                      |
+| `iendswith`    | Igual a endswith, mas sem diferenciar maiúsculas de minúsculas   |
+| `exact`        | Uma correspondência exata                                        |
+| `iexact`       | Igual a exact, mas sem diferenciar maiúsculas de minúsculas      |
+| `in`           | Corresponde a um dos valores                                     |
+| `isnull`       | Corresponde a valores NULL                                       |
+| `gt`           | Maior que                                                        |
+| `gte`          | Maior ou igual a                                                 |
+| `hour`         | Corresponde a uma hora (para datetimes)                          |
+| `lt`           | Menor que                                                        |
+| `lte`          | Menor ou igual a                                                 |
+| `minute`       | Corresponde a um minuto (para datetimes)                         |
+| `month`        | Corresponde a um mês (para datas)                                |
+| `quarter`      | Corresponde a um trimestre do ano (1-4) (para datas)             |
+| `range`        | Corresponde a um intervalo                                       |
+| `regex`        | Corresponde a uma expressão regular                              |
+| `iregex`       | Igual a regex, mas sem diferenciar maiúsculas de minúsculas      |
+| `second`       | Corresponde a um segundo (para datetimes)                        |
+| `startswith`   | Começa com                                                       |
+| `istartswith`  | Igual a startswith, mas sem diferenciar maiúsculas de minúsculas |
+| `time`         | Corresponde a um horário (para datetimes)                        |
+| `week`         | Corresponde a um número de semana (1-53) (para datas)            |
+| `week_day`     | Corresponde a um dia da semana (1-7), 1 é domingo                |
+| `iso_week_day` | Corresponde a um dia da semana ISO 8601 (1-7), 1 é segunda-feira |
+| `year`         | Corresponde a um ano (para datas)                                |
+| `iso_year`     | Corresponde a um ano ISO 8601 (para datas)                       |
 
-### Admin Panel {.col-span-2}
+### Painel Admin {.col-span-2}
 
-Every Django projects come with an Admin Panel that can be open at /admin url (ex: localhost:8000/admin)<br> To display
-the model in the Admin panel register the model in the app_name/admin.py file<br> For each models you can specify the
-fields you want to use</small>
+Todo projeto Django vem com um Painel Admin que pode ser aberto na url /admin (ex: localhost:8000/admin)<br> Para exibir
+o model no Painel Admin, registre o model no arquivo app_name/admin.py<br> Para cada model você pode especificar os
+campos que quer usar</small>
 
 ```python
 from django.contrib import admin
@@ -372,9 +372,9 @@ class BlogAdmin(admin.ModelAdmin)
     list_filter =("title",) # define list filters that appear in the right sidebar
 ```
 
-### Routing
+### Roteamento
 
-Django routing info is store in project_folder/urls.py file
+As informações de roteamento do Django ficam no arquivo project_folder/urls.py
 
 ```python
 from django.contrib import admin
@@ -386,7 +386,7 @@ urlpatterns = [
 ]
 ```
 
-The 'include()' method allow to link another urls.py file created in your app folder (app_name/urls.py)
+O método 'include()' permite vincular outro arquivo urls.py criado na pasta do seu app (app_name/urls.py)
 
 ```python
 from django.urls import path
@@ -402,11 +402,11 @@ urlpatterns = [
 ]
 ```
 
-## Static Route and Customize Admin Panel {.cols-1}
+## Rota estática e personalização do Painel Admin {.cols-1}
 
-### Customizing Admin Panel
+### Personalizar o Painel Admin
 
-Header and Title admin panel & Custom `404`, `500`, and `503` Template
+Cabeçalho e título do painel admin e template personalizado de `404`, `500` e `503`
 
 ```python
 # add in project/urls.py
@@ -433,7 +433,7 @@ handler503 = 'app_name.views.handler503'
 
 ## Views {.cols-1}
 
-### Function Based Views
+### Views baseadas em funções
 
 ```python
 # views.py
@@ -483,7 +483,7 @@ def status(request, id, state):
     return redirect('appfolder/status.html', {'post': post})
 ```
 
-### Class Based Views
+### Views baseadas em classes
 
 ```python
 from django.views.generic import TemplateView, ListView, DetailView,
@@ -552,9 +552,9 @@ path('<int:pk>/update/', PostsUpdateView.as_view(), name='post-update')
 
 ## Templates
 
-### Basic Template
+### Template básico
 
-Templates are store in `project_folder/templates` or in your <code>app_folder/templates/app_name/\*.html</code>
+Templates ficam em `project_folder/templates` ou em <code>app_folder/templates/app_name/\*.html</code>
 
 ```html
 <!-- Extend from another template -->
@@ -659,9 +659,9 @@ Templates are store in `project_folder/templates` or in your <code>app_folder/te
 </p>
 ```
 
-### Custom Template Tags and Filters
+### Tags e filtros de template personalizados
 
-For example, if your custom tags/filters are in a file called `basetags.py`, your app layout might look like this:
+Por exemplo, se suas tags/filtros personalizados estão em um arquivo chamado `basetags.py`, a estrutura do seu app pode ser assim:
 
 ```
 app_name/
@@ -672,23 +672,23 @@ app_name/
      views.py
 ```
 
-- And in your template you would use the following:
+- E no seu template você usaria o seguinte:
 
 ```html
 {% load basetags %}
 ```
 
-- the module must contain a module-level variable named register that is a template.Library instance, in which all the
-  tags and filters are registered. So, near the top of your module, put the following:
+- o módulo deve conter uma variável de nível de módulo chamada register que seja uma instância de template.Library, na qual
+  todas as tags e filtros são registrados. Então, perto do topo do seu módulo, coloque o seguinte:
 
-### Writing custom template filters
+### Escrever filtros de template personalizados
 
-Custom filters are Python functions that take one or two arguments: The value of the variable (input) – not necessarily
-a string. The value of the argument – this can have a default value, or be left out altogether. For example, in the
-filter `{{ var|foo:"bar" }}`, the filter foo would be passed the variable var and the argument "bar".
+Filtros personalizados são funções Python que recebem um ou dois argumentos: o valor da variável (input) – não necessariamente
+uma string. O valor do argumento – que pode ter um valor padrão ou ser omitido. Por exemplo, no filtro `{{ var|foo:"bar" }}`,
+o filtro foo receberia a variável var e o argumento "bar".
 
-The Library.filter() method takes two arguments: The name of the filter – a string. The compilation function – a Python
-function (not the name of the function as a string). You can use register.filter() as a decorator instead:
+O método Library.filter() recebe dois argumentos: o nome do filtro – uma string. A função de compilação – uma função Python
+(não o nome da função como string). Em vez disso, você pode usar register.filter() como decorator:
 
 ```python
 # basetags.py
@@ -723,9 +723,9 @@ def to_class_name(object):
 
 ## Context Processor {.cols-1}
 
-### Creating custom Context Processor
+### Criar um Context Processor personalizado
 
-Anywhere, create a `context_processors.py` file
+Em qualquer lugar, crie um arquivo `context_processors.py`
 
 ```
 project_name
@@ -734,10 +734,10 @@ project_name
     └───context_processors.pyy
 ```
 
-Create a function in context_processors.py that accepts a HttpRequest object as an argument and returns a dictionary
+Crie uma função em context_processors.py que receba um objeto HttpRequest como argumento e retorne um dicionário
 
-A context processor is just a function that accepts an HttpRequest object as an argument and returns a dictionary. Like
-this:
+Um context processor é apenas uma função que recebe um objeto HttpRequest como argumento e retorna um dicionário. Por
+exemplo:
 
 ```python
 # app_name/context_processors.py
@@ -745,7 +745,7 @@ def site_email(request):
     return { 'site_email' : 'example@gmail.com' }
 ```
 
-3. Add this to your context_processors setting in settings.py (at the bottom for security reasons)
+3. Adicione isto à configuração context_processors no settings.py (no final, por motivos de segurança)
 
 ```python
  TEMPLATES = [
@@ -762,11 +762,11 @@ def site_email(request):
 # Now be able to access the 'site_email' template variable on every single django template across your whole site.
 ```
 
-## Model Managers and Querysets
+## Model Managers e Querysets
 
 ### Model Manager
 
-Model manager allow model database reads and writes
+O model manager permite leituras e gravações no banco de dados do model
 
 ```python
 # One line create and save
@@ -845,12 +845,12 @@ article1.tags.all()
 tag1.articles_set.all()
 ```
 
-## Form
+## Formulário
 
-### Form creation {.col-span-2}
+### Criação de formulário {.col-span-2}
 
-In HTML, a form is a collection of elements inside `<form>...</form>` that allow a visitor to do things like enter text,
-select options, manipulate objects or controls, and so on, and then send that information back to the server.
+Em HTML, um formulário é uma coleção de elementos dentro de `<form>...</form>` que permitem que um visitante faça coisas como
+digitar texto, selecionar opções, manipular objetos ou controles e, em seguida, enviar essas informações de volta ao servidor.
 
 ```python
 # app_name/forms.py
@@ -889,7 +889,7 @@ class ArticleForm(ModelForm):
 </form>
 ```
 
-- NOTE: If the form contains a file field, your form MUST contain `enctype="multipart/form-data"`, eg:
+- NOTA: se o formulário contém um campo de arquivo, ele DEVE conter `enctype="multipart/form-data"`, ex.:
 
 ```html
 <form action="" method="post" enctype="multipart/form-data">
@@ -898,7 +898,7 @@ class ArticleForm(ModelForm):
 </form>
 ```
 
-##### A Tailwind CSS template pack for the wonderful django-crispy-forms.
+##### Um template pack do Tailwind CSS para o ótimo django-crispy-forms.
 
 ```bash
 pip install crispy-tailwind
@@ -921,7 +921,7 @@ CRISPY_TEMPLATE_PACK = 'tailwind'
 {% load tailwind_filters %} {{ form|crispy }}
 ```
 
-### Form Validation
+### Validação de formulário
 
 ```python
 # forms.py
@@ -944,7 +944,7 @@ def clean(self):
 
 ## Flash messages {.cols-1}
 
-### Displaying messages
+### Exibir mensagens
 
 ```python
 # Message tags
@@ -960,11 +960,11 @@ messages.error(request, 'Login error')
 {% endfor %} {% endif %}
 ```
 
-## User Model
+## Model de usuário
 
-### Pre-created
+### Pré-criado
 
-User Model (pre-created)
+Model de usuário (pré-criado)
 
 ```python
 # Get a reference to Django pre-created User model
@@ -981,9 +981,9 @@ class User(AbstractUser):
 # To make Django use that model go to settings.py and add: AUTH_USER_MODEL = 'app_name.User'
 ```
 
-## Authentication
+## Autenticação
 
-### Authentication : LoginView
+### Autenticação: LoginView
 
 ```python
 # LoginView is already pre-created by Django
@@ -1009,7 +1009,7 @@ path('login/', LoginView.as_view(), name='login')
 <!-- If successful il will then login the user and redirect to LOGIN_REDIRECT_URL specified in your settings.py -->
 ```
 
-#### Authentication : LogoutView
+#### Autenticação: LogoutView
 
 ```python
 # LogoutView is already pre-created by Django
@@ -1024,7 +1024,7 @@ path('logout/', LoginView.as_view(), name='logout')
 # After link is execute, the user will be logout and redirect to LOGOUT_REDIRECT_URL specified in your settings.py
 ```
 
-#### Authentication : SignupView
+#### Autenticação: SignupView
 
 ```python
 # Create a SignupView (that view is not created by default)
@@ -1071,7 +1071,7 @@ class CustomUserCreationForm(UserCreattionForm):
         fields_classes = {'username': UsernameField}
 ```
 
-#### Optional pre-created Authentication routes
+#### Rotas de autenticação pré-criadas opcionais
 
 ```python
 # urls.py
@@ -1079,7 +1079,7 @@ urlpatterns += path('', include('django.contrib.auth.urls'))
 # /login, /lougout, /signup, etc.
 ```
 
-#### Template Authentication helpers
+#### Helpers de autenticação no template
 
 ```html
 <!-- Authentication links -->
@@ -1092,7 +1092,7 @@ urlpatterns += path('', include('django.contrib.auth.urls'))
 {% endif %}
 ```
 
-#### Authorization: LoginRequiredMixin and login_required
+#### Autorização: LoginRequiredMixin e login_required
 
 ```python
 from django.contrib.auth.mixins import LoginRequiredMixin
@@ -1111,7 +1111,7 @@ def search_page(request):
     ...
 ```
 
-#### Manual Authentication , Login and Logout
+#### Autenticação manual: login e logout
 
 ```python
 from django.contrib.auth import authenticate, login
@@ -1133,14 +1133,14 @@ def logout_page(request):
     return redirect("index")
 ```
 
-#### User Change password
+#### Alterar a senha do usuário
 
 ```python
 # set_password will hash the password
 user.set_password('raw password')
 ```
 
-## Create Custom Accounts Model
+## Criar um model de contas personalizado
 
 ```python
 ~$ python manage.py startapp accounts
@@ -1468,7 +1468,7 @@ def LogoutPage(request):
     return redirect('app_name:home')
 ```
 
-## Send Email
+## Enviar e-mail
 
 ```python
 # settings.py
@@ -1532,22 +1532,22 @@ def seed(request):
     return HttpResponse('Seeded')
 ```
 
-## Environment Variables
+## Variáveis de ambiente
 
-### .env key/value file
+### Arquivo .env de chave/valor
 
 ```python
 $ pip install python-decouple
 ```
 
-Create a file name '.env' in the root folder of your project
+Crie um arquivo chamado '.env' na pasta raiz do seu projeto
 
 ```python
 SECRET_KEY = 'your secret key'
 ALLOWED_HOST = 127.0.0.1
 ```
 
-In settings.py change security related settings to point to the .env file
+No settings.py, altere as configurações relacionadas à segurança para apontar para o arquivo .env
 
 ```python
 from decouple import config
@@ -1556,19 +1556,19 @@ SECRET_KEY = config('SECRET_KEY')
 ALLOWED_HOST = config('ALLOWED_HOST')
 ```
 
-## Asynchronous Tasks
+## Tarefas assíncronas
 
 ### Django Celery Redis
 
-Celery is a distributed task queue that can collect, record, schedule, and perform tasks outside of your main program.
+Celery é uma fila de tarefas distribuída que pode coletar, registrar, agendar e executar tarefas fora do seu programa principal.
 
-#### Step 1: Install Celery Using pip
+#### Passo 1: instalar o Celery usando pip
 
 ```python
 ~$ pip install celery       # pip install celery[redis]
 ```
 
-#### Step 2. Add celery.py File in Your Project Module
+#### Passo 2: adicionar o arquivo celery.py ao módulo do seu projeto
 
 ```python
 # your_project/celery.py
@@ -1585,10 +1585,10 @@ def debug_task(self):
     print(f'Request: {self.request!r}')
 ```
 
-#### Step 3: Import the Celery App to Django
+#### Passo 3: importar o app Celery no Django
 
-<small>To ensure that the Celery app is loaded when Django starts, add the following code into the `__init__.py` file
-that sits on the project module beside on settings.py file.</small>
+<small>Para garantir que o app Celery seja carregado quando o Django iniciar, adicione o código a seguir ao arquivo `__init__.py`
+que fica no módulo do projeto, ao lado do arquivo settings.py.</small>
 
 ```python
 # your_project/__init__.py
@@ -1597,37 +1597,37 @@ from .celery import app as celery_app
 __all__ = ('celery_app',)
 ```
 
-#### Step 4: Download and Run Redis as a Celery ‘broker’
+#### Passo 4: baixar e executar o Redis como ‘broker’ do Celery
 
 ```python
 ~$ redis-server
 ```
 
-<small>You can test that Redis is working properly by typing this into your terminal:</small>
+<small>Você pode testar se o Redis está funcionando corretamente digitando isto no terminal:</small>
 
 ```python
 ~$ redis-cli ping
 ```
 
-Redis should reply with PONG - try it!
+O Redis deve responder com PONG - experimente!
 
-#### Step 5: Add Redis as a Dependency in the Django Project:
+#### Passo 5: adicionar o Redis como dependência no projeto Django:
 
 ```python
 ~$ pip install redis
 ```
 
-#### Step 6: Celery Stuff Configure to the Django Settings File
+#### Passo 6: configurar o Celery no arquivo de settings do Django
 
-Once Redis is up, add the following code to your settings.py file and use celery-result
+Com o Redis em execução, adicione o código a seguir ao seu arquivo settings.py e use celery-result
 
 ```python
 ~$ pip install django-celery-results
 ```
 
-This extension enables you to store Celery task results using the Django ORM.<br> It defines a single model
-(`django_celery_results.models.TaskResult`) used to store task results, and you can query this database table like any
-other Django model.
+Esta extensão permite armazenar os resultados das tarefas do Celery usando o ORM do Django.<br> Ela define um único model
+(`django_celery_results.models.TaskResult`) usado para armazenar os resultados das tarefas, e você pode consultar essa tabela do
+banco de dados como qualquer outro model Django.
 
 ```python
 INSTALLED_APPS = [
@@ -1655,26 +1655,26 @@ CACHES = {
 }
 ```
 
-#### That’s it! You should now be able to use Celery with Django
+#### É isso! Agora você deve conseguir usar o Celery com Django
 
-Test that the Celery worker is ready to receive tasks:
+Teste se o worker do Celery está pronto para receber tarefas:
 
 ```python
 ~$ celery -A your_project_name worker -l info
 ```
 
-The most important task is: Always run a worker is needed to execute the celery task if any error throws from Redis like
-this:
+O ponto mais importante é: sempre é necessário um worker em execução para executar a tarefa do Celery, se algum erro for
+lançado pelo Redis como este:
 
 ```python
 AttributeError: 'str' object has no attribute 'items'
 ```
 
-- the solution is: you have to use Redis old version
+- a solução é: usar uma versão antiga do Redis
 
-### Add a New Task
+### Adicionar uma nova tarefa
 
-#### Step 1: Add tasks.py File to Your Django App.
+#### Passo 1: adicionar o arquivo tasks.py ao seu app Django.
 
 ```python
 # app_name/tasks.py
@@ -1701,10 +1701,10 @@ def adding(x, y):
     return result
 ```
 
-#### Step 2: Assign Task to the Celery.
+#### Passo 2: atribuir a tarefa ao Celery.
 
-You need to assign a task to the celery. To assign this task you need to call this function with something different.
-celery gives us two methods `delay()` and `apply_async()` to call task.
+Você precisa atribuir uma tarefa ao Celery. Para atribuir esta tarefa, chame esta função de forma diferente.
+O Celery nos dá dois métodos, `delay()` e `apply_async()`, para chamar a tarefa.
 
 ```bash
 # Normal function call in python
@@ -1714,15 +1714,15 @@ celery gives us two methods `delay()` and `apply_async()` to call task.
 ~$ my_first_task.delay()
 ```
 
-You can send argument to the function using the delay method. <small>To check celery on the action open a separate tab
-of the terminal then go to the project directory (activate environment if you are using one) and run this command
-again</small>
+Você pode passar argumentos para a função usando o método delay. <small>Para ver o Celery em ação, abra outra aba
+do terminal, vá até o diretório do projeto (ative o ambiente, se estiver usando um) e execute este comando
+novamente</small>
 
 ```bash
 ~$ celery -A your_project_name worker -l info
 ```
 
-### Create a View in your App
+### Criar uma view no seu app
 
 ```python
 # app_name/views.py
@@ -1739,7 +1739,7 @@ def test(request):
     return HttpResponse("Done")
 ```
 
-#### Then call the view from your app URL
+#### Depois, chame a view pela URL do seu app
 
 ```python
 # app_name/urls.py
@@ -1751,23 +1751,23 @@ urlpatterns = [
 ]
 ```
 
-### Celery In Production Using Supervisor
+### Celery em produção usando Supervisor
 
-#### Step 1: Install Supervisor on Ubuntu Server
+#### Passo 1: instalar o Supervisor no servidor Ubuntu
 
 ```bash
 ~$ sudo apt-get install supervisor
 ```
 
-#### Step 2: Add .conf File in Supervisor
+#### Passo 2: adicionar o arquivo .conf no Supervisor
 
 ```bash
 ~$ sudo nano /etc/supervisor/conf.d/app_name.conf
 ```
 
-`app_name` can be anything you like, it should be similar to your project name.
+`app_name` pode ser qualquer coisa que você quiser; deve ser semelhante ao nome do seu projeto.
 
-#### Step 3: Add some Configure in app_name.conf
+#### Passo 3: adicionar algumas configurações em app_name.conf
 
 ```bash
 [program:your_app_name]
@@ -1780,7 +1780,7 @@ stdout_logfile=/path/to/workflow/your_project_name/logs/celeryd.log
 redirect_stderr=true
 ```
 
-Describe the configure file:
+Descrição do arquivo de configuração:
 
 ```bash
 [program:your_app_name]
@@ -1808,31 +1808,31 @@ redirect_stderr=true
 #If true, cause the process’ stderr output to be sent back to supervisord on its stdout file descriptor (in UNIX shell terms, this is the equivalent of executing /the/program 2>&1).
 ```
 
-#### Step 4: Inform Configuration to the Server
+#### Passo 4: informar a configuração ao servidor
 
-After adding a new program, we should run the following two commands, to inform the server to reread the configuration
-files and to apply any changes.
+Depois de adicionar um novo programa, execute os dois comandos a seguir para informar o servidor a reler os arquivos
+de configuração e aplicar quaisquer alterações.
 
 ```python
 ~$ sudo supervisorctl reread
 ~$ sudo supervisorctl update
 ```
 
-#### Managing Supervisor App
+#### Gerenciar o app no Supervisor
 
 ```bash
 ~$ sudo supervisorctl
 ```
 
-You will be greeted with a list of the registered processes. You will see a process called `your_app_name` with a
-`RUNNING` status.
+Você verá uma lista dos processos registrados. Haverá um processo chamado `your_app_name` com status
+`RUNNING`.
 
 ```bash
 your_app_name                 RUNNING   pid 6853, uptime 0:22:30
 supervisor>
 ```
 
-Type `help` for a list of available commands.
+Digite `help` para ver uma lista dos comandos disponíveis.
 
 ```bash
 supervisor> help
@@ -1843,43 +1843,43 @@ avail  fg        pid   remove  shutdown  status  update
 clear  maintail  quit  reread  signal    stop    version
 ```
 
-In a nutshell, we can `start`, `stop` and `restart` programs bypassing the program name as an argument to the respective
-command. We can also take a look at the program output with the `tail` command. Once you are finished, you can `quit`.
+Em resumo, podemos usar `start`, `stop` e `restart` nos programas passando o nome do programa como argumento para o respectivo
+comando. Também podemos ver a saída do programa com o comando `tail`. Ao terminar, use `quit`.
 
 ```bash
 ~$ supervisor> quit
 ```
 
-## Deployment Django in Server
+## Deploy do Django no servidor
 
-### Set Up Django with Postgres, Nginx, and Gunicorn on Ubuntu server
+### Configurar Django com Postgres, Nginx e Gunicorn em um servidor Ubuntu
 
-#### Step 1 — Installing the Packages from the Ubuntu Repositories
+#### Passo 1 — instalar os pacotes dos repositórios do Ubuntu
 
 ```bash
 sudo apt update
 sudo apt install python3-venv python3-dev libpq-dev postgresql postgresql-contrib nginx curl
 ```
 
-#### Step 2 — Creating the PostgreSQL Database and User
+#### Passo 2 — criar o banco de dados PostgreSQL e o usuário
 
 ```bash
 sudo -u postgres psql
 ```
 
-- First, create a database for your project:
+- Primeiro, crie um banco de dados para o seu projeto:
 
 ```bash
 postgres=# CREATE DATABASE myproject;
 ```
 
-- Next, create a database user for our project. Make sure to select a secure password:
+- Em seguida, crie um usuário de banco de dados para o projeto. Escolha uma senha segura:
 
 ```bash
 postgres=# CREATE USER myprojectuser WITH PASSWORD 'password';
 ```
 
-- Afterwards, you’ll modify a few of the connection parameters for the user that you just created
+- Depois, modifique alguns parâmetros de conexão do usuário que você acabou de criar
 
 ```bash
 postgres=# ALTER ROLE myprojectuser SET client_encoding TO 'utf8';
@@ -1887,71 +1887,71 @@ postgres=# ALTER ROLE myprojectuser SET default_transaction_isolation TO 'read c
 postgres=# ALTER ROLE myprojectuser SET timezone TO 'UTC';
 ```
 
-- Now, you can give the new user access to administer the new database:
+- Agora, dê ao novo usuário acesso para administrar o novo banco de dados:
 
 ```bash
 postgres=# GRANT ALL PRIVILEGES ON DATABASE myproject TO myprojectuser;
 ```
 
-- When you are finished, exit out of the PostgreSQL prompt by typing:
+- Ao terminar, saia do prompt do PostgreSQL digitando:
 
 ```bash
 postgres=# \q
 ```
 
-#### Step 3 — Creating a Python Virtual Environment for your Project
+#### Passo 3 — criar um ambiente virtual Python para o seu projeto
 
-- thin the project directory, create a Python virtual environment by typing:
+- No diretório do projeto, crie um ambiente virtual Python digitando:
 
 ```bash
 mkdir ~/myprojectdir
 cd ~/myprojectdir
 ```
 
-- Within the project directory, create a Python virtual environment by typing:
+- Dentro do diretório do projeto, crie um ambiente virtual Python digitando:
 
 ```bash
 python3 -m venv myprojectenv
 ```
 
-- Before installing your project’s Python requirements, you will need to activate the virtual environment. You can do
-  that by typing:
+- Antes de instalar os requisitos Python do seu projeto, ative o ambiente virtual. Faça isso
+  digitando:
 
 ```bash
 source myprojectenv/bin/activate
 ```
 
-- With your virtual environment active, install Django, Gunicorn, and the psycopg2 PostgreSQL adaptor with the local
-  instance of pip
+- Com o ambiente virtual ativo, instale Django, Gunicorn e o adaptador PostgreSQL psycopg2 com a instância local
+  do pip
 
 ```bash
 (myprojectenv)$ pip install django gunicorn psycopg2-binary
 ```
 
-#### Step 4 — Creating and Configuring a New Django Project
+#### Passo 4 — criar e configurar um novo projeto Django
 
-- With your Python components installed, you can now create the actual Django project files.
+- Com os componentes Python instalados, você pode criar os arquivos do projeto Django.
 
 ```bash
 (myprojectenv)$ django-admin startproject myproject ~/myprojectdir
 ```
 
-- The first thing you should do with your newly created project files is adjust the settings. Open the settings file in
-  your text editor:
+- A primeira coisa a fazer com os arquivos do projeto recém-criado é ajustar as configurações. Abra o arquivo de settings
+  no seu editor de texto:
 
 ```bash
 (myprojectenv)$ nano ~/myprojectdir/myproject/settings.py
 ```
 
-- Start by locating the ALLOWED_HOSTS directive.
+- Comece localizando a diretiva ALLOWED_HOSTS.
 
 ```python
 # ~/myprojectdir/myproject/settings.py
 ALLOWED_HOSTS = ['your_server_domain_or_IP', 'second_domain_or_IP', . . ., 'localhost']
 ```
 
-- Next, find the section that configures database access. It will start with DATABASES. The configuration in the file is
-  for a SQLite database.
+- Em seguida, encontre a seção que configura o acesso ao banco de dados. Ela começa com DATABASES. A configuração no arquivo é
+  para um banco de dados SQLite.
 
 ```python
 . . .
@@ -1968,7 +1968,7 @@ DATABASES = {
 . . .
 ```
 
-- Next, move down to the bottom of the file and add a setting indicating where the static files should be placed.
+- Depois, vá até o final do arquivo e adicione uma configuração indicando onde os arquivos estáticos devem ficar.
 
 ```python
 . . .
@@ -1983,48 +1983,48 @@ import os
 STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 ```
 
-#### Step 5 — Completing Initial Project Setup
+#### Passo 5 — concluir a configuração inicial do projeto
 
-- Now, you can migrate the initial database schema to our PostgreSQL database using the management script:
+- Agora, migre o schema inicial do banco de dados para o PostgreSQL usando o script de gerenciamento:
 
 ```bash
 (myprojectenv)$ ~/myprojectdir/manage.py makemigrations
 (myprojectenv)$ ~/myprojectdir/manage.py migrate
 ```
 
-- Create an administrative user for the project by typing:
+- Crie um usuário administrativo para o projeto digitando:
 
 ```bash
 (myprojectenv)$ ~/myprojectdir/manage.py createsuperuser
 ```
 
-- You can collect all of the static content into the directory location that you configured by typing:
+- Você pode reunir todo o conteúdo estático no diretório que configurou digitando:
 
 ```bash
 (myprojectenv)$ ~/myprojectdir/manage.py collectstatic
 ```
 
-#### Step 6 — Testing Gunicorn’s Ability to Serve the Project
+#### Passo 6 — testar a capacidade do Gunicorn de servir o projeto
 
 ```bash
 (myprojectenv)$ cd ~/myprojectdir
 (myprojectenv)$ gunicorn --bind 0.0.0.0:8000 myproject.wsgi
 ```
 
-- You’re now finished configuring your Django application. You can back out of our virtual environment by typing:
+- A configuração da sua aplicação Django está concluída. Você pode sair do ambiente virtual digitando:
 
 ```bash
 (myprojectenv)$ deactivate
 ```
 
-#### Step 7 — Creating systemd Socket and Service Files for Gunicorn You have tested tha
+#### Passo 7 — criar arquivos de socket e serviço do systemd para o Gunicorn Você já testou o
 
 ```bash
 sudo nano /etc/systemd/system/gunicorn.socket
 ```
 
-- Inside, you will create a `[Unit]` section to describe the socket, a `[Socket]` section to define the socket location,
-  and an `[Install]` section to make sure the socket is created at the right time:
+- Dentro dele, crie uma seção `[Unit]` para descrever o socket, uma seção `[Socket]` para definir o local do socket,
+  e uma seção `[Install]` para garantir que o socket seja criado no momento certo:
 
 ```bash /etc/systemd/system/gunicorn.socket
 [Unit]
@@ -2037,9 +2037,9 @@ ListenStream=/run/gunicorn.sock
 WantedBy=sockets.target
 ```
 
-- Save and close the file when you are finished.
-- Next, create and open a systemd service file for Gunicorn with sudo privileges in your text editor. The service
-  filename should match the socket filename with the exception of the extension:
+- Salve e feche o arquivo ao terminar.
+- Em seguida, crie e abra um arquivo de serviço do systemd para o Gunicorn com privilégios sudo no seu editor de texto. O nome
+  do arquivo de serviço deve ser igual ao do socket, exceto pela extensão:
 
 ```bash
 sudo nano /etc/systemd/system/gunicorn.service
@@ -2065,59 +2065,59 @@ ExecStart=/home/sammy/myprojectdir/myprojectenv/bin/gunicorn \
 WantedBy=multi-user.target
 ```
 
-- You can now start and enable the Gunicorn socket. This will create the socket file at /run/gunicorn.sock now and at
-  boot. When a connection is made to that socket, systemd will automatically start the gunicorn.service to handle it
+- Agora você pode iniciar e habilitar o socket do Gunicorn. Isso criará o arquivo de socket em /run/gunicorn.sock agora e
+  no boot. Quando uma conexão for feita nesse socket, o systemd iniciará automaticamente o gunicorn.service para tratá-la
 
 ```bash
 sudo systemctl start gunicorn.socket
 sudo systemctl enable gunicorn.socket
 ```
 
-#### Step 8 — Checking for the Gunicorn Socket File
+#### Passo 8 — verificar o arquivo de socket do Gunicorn
 
-- Check the status of the process to find out whether it was able to start:
+- Verifique o status do processo para saber se ele conseguiu iniciar:
 
 ```bash
 sudo systemctl status gunicorn.socket
 ```
 
-- Next, check for the existence of the gunicorn.sock file within the /run directory:
+- Em seguida, verifique se o arquivo gunicorn.sock existe no diretório /run:
 
 ```bash
 file /run/gunicorn.sock
 ```
 
-#### Step 9 — Testing Socket Activation
+#### Passo 9 — testar a ativação do socket
 
 ```bash
 sudo systemctl status gunicorn
 ```
 
-- To test the socket activation mechanism, you can send a connection to the socket through curl by typing:
+- Para testar o mecanismo de ativação do socket, envie uma conexão ao socket com curl digitando:
 
 ```bash
 curl --unix-socket /run/gunicorn.sock localhost
 ```
 
-- You should receive the HTML output from your application in the terminal. This indicates that Gunicorn was started and
-  was able to serve your Django application. You can verify that the Gunicorn service is running by typing:
+- Você deve receber no terminal a saída HTML da sua aplicação. Isso indica que o Gunicorn iniciou e
+  conseguiu servir sua aplicação Django. Verifique se o serviço Gunicorn está em execução digitando:
 
 ```bash
 sudo systemctl status gunicorn
 ```
 
-- Check your /etc/systemd/system/gunicorn.service file for problems. If you make changes to the
-  /etc/systemd/system/gunicorn.service file, reload the daemon to reread the service definition and restart the Gunicorn
-  process by typing
+- Verifique se há problemas no arquivo /etc/systemd/system/gunicorn.service. Se você alterar o arquivo
+  /etc/systemd/system/gunicorn.service, recarregue o daemon para reler a definição do serviço e reinicie o processo do Gunicorn
+  digitando
 
 ```bash
 sudo systemctl daemon-reload
 sudo systemctl restart gunicorn
 ```
 
-#### Step 10 — Configure Nginx to Proxy Pass to Gunicorn
+#### Passo 10 — configurar o Nginx para fazer proxy pass para o Gunicorn
 
-- Start by creating and opening a new server block in Nginx’s sites-available directory:
+- Comece criando e abrindo um novo server block no diretório sites-available do Nginx:
 
 ```bash
 sudo nano /etc/nginx/sites-available/myproject
@@ -2145,63 +2145,63 @@ server {
 }
 ```
 
-- Save and close the file when you are finished. Now, you can enable the file by linking it to the sites-enabled
-  directory:
+- Salve e feche o arquivo ao terminar. Agora, habilite o arquivo vinculando-o ao diretório sites-enabled
+  digitando:
 
 ```bash
 sudo ln -s /etc/nginx/sites-available/myproject /etc/nginx/sites-enabled
 ```
 
-- Test your Nginx configuration for syntax errors by typing:
+- Teste sua configuração do Nginx em busca de erros de sintaxe digitando:
 
 ```bash
 sudo nginx -t
 ```
 
-- If no errors are reported, go ahead and restart Nginx by typing:
+- Se nenhum erro for reportado, reinicie o Nginx digitando:
 
 ```bash
 sudo systemctl restart nginx
 ```
 
-- you need to open up your firewall to normal traffic on port 80
+- você precisa liberar o firewall para tráfego normal na porta 80
 
 ```bash
 sudo ufw allow 'Nginx Full'
 ```
 
-You should now be able to go to your server’s domain or IP address to view your application.
+Agora você deve conseguir acessar o domínio ou endereço IP do seu servidor para ver sua aplicação.
 
-#### Step 11 — Troubleshooting Nginx and Gunicorn
+#### Passo 11 — solução de problemas do Nginx e do Gunicorn
 
-- Nginx Is Showing the Default Page Instead of the Django Application
+- O Nginx mostra a página padrão em vez da aplicação Django
 
 ```bash
 sudo tail -F /var/log/nginx/error.log
 ```
 
-- Django Is Displaying: “could not connect to server: Connection refused”
+- O Django mostra: “could not connect to server: Connection refused”
 
 ```bash
 sudo systemctl status postgresql
 ```
 
-- If it is not, you can start it and enable it to start automatically at boot (if it is not already configured to do so)
-  by typing:
+- Se não estiver, inicie o serviço e habilite-o para iniciar automaticamente no boot (se ainda não estiver configurado
+  para isso) digitando:
 
 ```bash
 sudo systemctl start postgresql
 sudo systemctl enable postgresql
 ```
 
-If you change Gunicorn socket or service files, reload the daemon and restart the process by typing:
+Se você alterar os arquivos de socket ou de serviço do Gunicorn, recarregue o daemon e reinicie o processo digitando:
 
 ```bash
 sudo systemctl daemon-reload
 sudo systemctl restart gunicorn.socket gunicorn.service
 ```
 
-If you change the Nginx server block configuration, test the configuration and then Nginx by typing:
+Se você alterar a configuração do server block do Nginx, teste a configuração e depois o Nginx digitando:
 
 ```bash
 sudo nginx -t && sudo systemctl restart nginx

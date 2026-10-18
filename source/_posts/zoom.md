@@ -6,128 +6,128 @@ tags:
   -
   - mac
 categories:
-  - Keyboard Shortcuts
+  - Atalhos de Teclado
 intro: |
-  A visual cheat-sheet for the 32 keyboard shortcuts found in Zoom. These shortcuts are for MacOS, for Windows visit /zoom-windows.
+  Um cheat sheet visual com os 32 atalhos de teclado do Zoom. Estes atalhos são para MacOS; para Windows, visite /zoom-windows.
 ---
 
-## Mac Keyboard Shortcuts {.cols-2}
+## Atalhos de teclado no Mac {.cols-2}
 
-### Meetings I
+### Reuniões I
 
-| Shortcut          | Action                                                              |
-| ----------------- | ------------------------------------------------------------------- |
-| `Cmd` `J`         | Join meeting                                                        |
-| `Cmd` `Ctrl` `V`  | Start meeting                                                       |
-| `Cmd` `J`         | Schedule meeting                                                    |
-| `Cmd` `Ctrl` `S`  | Screen share via direct share                                       |
-| `Cmd` `Shift` `A` | Mute or unmute audio                                                |
-| `Cmd` `Ctrl` `U`  | Mute audio for everyone except the host, only available to the host |
-| `Space`           | Push to talk                                                        |
-| `Cmd` `Shift` `V` | Start or stop video                                                 |
-| `Cmd` `Shift` `N` | Switch camera                                                       |
-| `Cmd` `Shift` `S` | Start or stop screen share                                          |
-| `Cmd` `Shift` `T` | Pause or resume screen share                                        |
-| `Cmd` `Shift` `R` | Start local recording                                               |
-| `Cmd` `Shift` `C` | Start cloud recording                                               |
-
-{.shortcuts}
-
-### Meetings II
-
-| Shortcut               | Action                                                                   |
-| ---------------------- | ------------------------------------------------------------------------ |
-| `Cmd` `Shift` `P`      | Pause or resume recording                                                |
-| `Cmd` `Shift` `W`      | Switch to active speaker view or gallery view, depending on current view |
-| `Ctrl` `P`             | View previous 25 participants in gallery view                            |
-| `Ctrl` `N`             | View next 25 participants in gallery view                                |
-| `Cmd` `U`              | Display or hide participants panel                                       |
-| `Cmd` `Shift` `H`      | Show or hide in-meeting chat panel                                       |
-| `Cmd` `I`              | Open invite window                                                       |
-| `Opt` `Y`              | Raise hand or lower hand                                                 |
-| `Ctrl` `Shift` `R`     | Gain remote control                                                      |
-| `Ctrl` `Shift` `G`     | Stop remote control                                                      |
-| `Cmd` `Shift` `F`      | Enter or exit full screen                                                |
-| `Cmd` `Shift` `M`      | Switch to minimal window                                                 |
-| `Ctrl` `Opt` `Cmd` `H` | Show or hide meeting controls                                            |
-| `Cmd` `W`              | Prompt to end or leave meeting                                           |
+| Atalho            | Ação                                                                                 |
+| ----------------- | ------------------------------------------------------------------------------------ |
+| `Cmd` `J`         | Entrar em uma reunião                                                                |
+| `Cmd` `Ctrl` `V`  | Iniciar uma reunião                                                                  |
+| `Cmd` `J`         | Agendar uma reunião                                                                  |
+| `Cmd` `Ctrl` `S`  | Compartilhar tela via compartilhamento direto                                        |
+| `Cmd` `Shift` `A` | Silenciar ou reativar o áudio                                                        |
+| `Cmd` `Ctrl` `U`  | Silencia o áudio de todos, exceto o do anfitrião; disponível apenas para o anfitrião |
+| `Space`           | Falar ao pressionar                                                                  |
+| `Cmd` `Shift` `V` | Iniciar ou parar o vídeo                                                             |
+| `Cmd` `Shift` `N` | Alternar câmera                                                                      |
+| `Cmd` `Shift` `S` | Iniciar ou parar o compartilhamento de tela                                          |
+| `Cmd` `Shift` `T` | Pausar ou retomar o compartilhamento de tela                                         |
+| `Cmd` `Shift` `R` | Iniciar a gravação local                                                             |
+| `Cmd` `Shift` `C` | Iniciar a gravação na nuvem                                                          |
 
 {.shortcuts}
 
-### Chat Shortcuts
+### Reuniões II
 
-| Shortcut  | Action                    |
+| Atalho                 | Ação                                                                                        |
+| ---------------------- | ------------------------------------------------------------------------------------------- |
+| `Cmd` `Shift` `P`      | Pausar ou retomar a gravação                                                                |
+| `Cmd` `Shift` `W`      | Alternar entre a visualização do orador ativo e a galeria, dependendo da visualização atual |
+| `Ctrl` `P`             | Ver os 25 participantes anteriores na visualização em galeria                               |
+| `Ctrl` `N`             | Ver os próximos 25 participantes na visualização em galeria                                 |
+| `Cmd` `U`              | Exibir ou ocultar o painel de participantes                                                 |
+| `Cmd` `Shift` `H`      | Mostrar ou ocultar o painel de chat da reunião                                              |
+| `Cmd` `I`              | Abrir a janela de convite                                                                   |
+| `Opt` `Y`              | Levantar ou abaixar a mão                                                                   |
+| `Ctrl` `Shift` `R`     | Obter o controle remoto                                                                     |
+| `Ctrl` `Shift` `G`     | Encerrar o controle remoto                                                                  |
+| `Cmd` `Shift` `F`      | Entrar ou sair da tela cheia                                                                |
+| `Cmd` `Shift` `M`      | Alternar para a janela mínima                                                               |
+| `Ctrl` `Opt` `Cmd` `H` | Mostrar ou ocultar os controles da reunião                                                  |
+| `Cmd` `W`              | Perguntar se deve encerrar ou sair da reunião                                               |
+
+{.shortcuts}
+
+### Atalhos de chat
+
+| Atalho    | Ação                      |
 | --------- | ------------------------- |
-| `Cmd` `K` | Jump to chat with someone |
-| `Cmd` `T` | Screenshot                |
+| `Cmd` `K` | Ir para o chat com alguém |
+| `Cmd` `T` | Captura de tela           |
 
 {.shortcuts}
 
-### General Shortcuts
+### Atalhos gerais
 
-| Shortcut   | Action                                                          |
-| ---------- | --------------------------------------------------------------- |
-| `Cmd` `W`  | Close the current window                                        |
-| `Cmd` `L`  | Switch to portrait or landscape view, depending on current view |
-| `Ctrl` `T` | Switch from one tab to the next                                 |
-
-{.shortcuts}
-
-## Windows Keyboard Shortcuts {.cols-2}
-
-### All Shortcuts II
-
-| Shortcut             | Action                                                                            |
-| -------------------- | --------------------------------------------------------------------------------- |
-| `F6`                 | Navigate among Zoom popup windows                                                 |
-| `Ctrl` `Alt` `Shift` | Move focus to Zoom's meeting controls                                             |
-| `PgUp`               | View previous 25 video stream in gallery view                                     |
-| `PgDn`               | View next 25 video stream in gallery view                                         |
-| `Alt` `F1`           | Switch to active speaker view in video meeting                                    |
-| `Alt` `F2`           | Switch to gallery video view in video meeting                                     |
-| `Alt` `F4`           | Close the current window                                                          |
-| `Alt` `V`            | Start or stop video                                                               |
-| `Alt` `A`            | Mute or unmute audio                                                              |
-| `Alt` `M`            | Mute or unmute audio for everyone except host, available to the meeting host only |
-| `Alt` `S`            | Launch share screen window and stop screen share                                  |
-| `Alt` `Shift` `S`    | Start or stop new screen share                                                    |
-| `Alt` `T`            | Pause or resume screen share                                                      |
-| `Alt` `R`            | Start or stop local recording                                                     |
-| `Alt` `C`            | Start or stop cloud recording                                                     |
-| `Alt` `P`            | Pause or resume recording                                                         |
-| `Alt` `N`            | Switch camera                                                                     |
-| `Alt` `F`            | Enter or exit full screen                                                         |
+| Atalho     | Ação                                                                             |
+| ---------- | -------------------------------------------------------------------------------- |
+| `Cmd` `W`  | Fechar a janela atual                                                            |
+| `Cmd` `L`  | Alternar entre visualização retrato e paisagem, dependendo da visualização atual |
+| `Ctrl` `T` | Alternar de uma aba para a próxima                                               |
 
 {.shortcuts}
 
-### All Shortcuts II
+## Atalhos de teclado no Windows {.cols-2}
 
-| Shortcut                 | Action                                 |
-| ------------------------ | -------------------------------------- |
-| `Alt` `F`                | Enter or exit full screen              |
-| `Alt` `H`                | Display or hide in-meeting chat panel  |
-| `Alt` `U`                | Display or hide participants panel     |
-| `Alt` `I`                | Open invite window                     |
-| `Alt` `Y`                | Raise or lower hand                    |
-| `Alt` `Shift` `R`        | Gain remote control                    |
-| `Alt` `Shift` `G`        | Stop remote control                    |
-| `Ctrl` `2`               | Read active speaker name               |
-| `Ctrl` `Alt` `Shift` `H` | Show or hide floating meeting controls |
-| `Alt` `Shift` `T`        | Screenshot                             |
-| `Alt` `L`                | Switch to portrait or landscape view   |
-| `Ctrl` `W`               | Close current chat session             |
-| `Ctrl` `Up`              | Go to previous chat                    |
-| `Ctrl` `Down`            | Go to next chat                        |
-| `Ctrl` `T`               | Jump to chat with someone              |
-| `Ctrl` `F`               | Search                                 |
-| `Ctrl` `Tab`             | Move to the next tab                   |
-| `Ctrl` `Shift` `Tab`     | Move to the previous tab               |
+### Todos os atalhos II
+
+| Atalho               | Ação                                                                                                         |
+| -------------------- | ------------------------------------------------------------------------------------------------------------ |
+| `F6`                 | Navegar entre as janelas pop-up do Zoom                                                                      |
+| `Ctrl` `Alt` `Shift` | Mover o foco para os controles de reunião do Zoom                                                            |
+| `PgUp`               | Ver os 25 streams de vídeo anteriores na visualização em galeria                                             |
+| `PgDn`               | Ver os próximos 25 streams de vídeo na visualização em galeria                                               |
+| `Alt` `F1`           | Alternar para a visualização do orador ativo na reunião de vídeo                                             |
+| `Alt` `F2`           | Alternar para a visualização em galeria na reunião de vídeo                                                  |
+| `Alt` `F4`           | Fechar a janela atual                                                                                        |
+| `Alt` `V`            | Iniciar ou parar o vídeo                                                                                     |
+| `Alt` `A`            | Silenciar ou reativar o áudio                                                                                |
+| `Alt` `M`            | Silenciar ou reativar o áudio de todos, exceto o do anfitrião; disponível apenas para o anfitrião da reunião |
+| `Alt` `S`            | Abrir a janela de compartilhamento de tela e parar o compartilhamento de tela                                |
+| `Alt` `Shift` `S`    | Iniciar ou parar um novo compartilhamento de tela                                                            |
+| `Alt` `T`            | Pausar ou retomar o compartilhamento de tela                                                                 |
+| `Alt` `R`            | Iniciar ou parar a gravação local                                                                            |
+| `Alt` `C`            | Iniciar ou parar a gravação na nuvem                                                                         |
+| `Alt` `P`            | Pausar ou retomar a gravação                                                                                 |
+| `Alt` `N`            | Alternar câmera                                                                                              |
+| `Alt` `F`            | Entrar ou sair da tela cheia                                                                                 |
 
 {.shortcuts}
 
-## Also see
+### Todos os atalhos II
 
-- [Keyboard shortcuts for Zoom on MacOS](https://support.zoom.us/hc/en-us/articles/205683899-Hot-Keys-and-Keyboard-Shortcuts-for-Zoom)
+| Atalho                   | Ação                                                  |
+| ------------------------ | ----------------------------------------------------- |
+| `Alt` `F`                | Entrar ou sair da tela cheia                          |
+| `Alt` `H`                | Exibir ou ocultar o painel de chat da reunião         |
+| `Alt` `U`                | Exibir ou ocultar o painel de participantes           |
+| `Alt` `I`                | Abrir a janela de convite                             |
+| `Alt` `Y`                | Levantar ou abaixar a mão                             |
+| `Alt` `Shift` `R`        | Obter o controle remoto                               |
+| `Alt` `Shift` `G`        | Encerrar o controle remoto                            |
+| `Ctrl` `2`               | Ler o nome do orador ativo                            |
+| `Ctrl` `Alt` `Shift` `H` | Mostrar ou ocultar os controles flutuantes da reunião |
+| `Alt` `Shift` `T`        | Captura de tela                                       |
+| `Alt` `L`                | Alternar entre visualização retrato e paisagem        |
+| `Ctrl` `W`               | Fechar a sessão de chat atual                         |
+| `Ctrl` `Up`              | Ir para o chat anterior                               |
+| `Ctrl` `Down`            | Ir para o próximo chat                                |
+| `Ctrl` `T`               | Ir para o chat com alguém                             |
+| `Ctrl` `F`               | Pesquisar                                             |
+| `Ctrl` `Tab`             | Mover para a próxima aba                              |
+| `Ctrl` `Shift` `Tab`     | Mover para a aba anterior                             |
+
+{.shortcuts}
+
+## Veja também
+
+- [Atalhos de teclado do Zoom no MacOS](https://support.zoom.us/hc/en-us/articles/205683899-Hot-Keys-and-Keyboard-Shortcuts-for-Zoom)
   _(support.zoom.us)_
-- [Keyboard shortcuts for Zoom on Windows](https://support.zoom.us/hc/en-us/articles/205683899-Hot-Keys-and-Keyboard-Shortcuts-for-Zoom)
+- [Atalhos de teclado do Zoom no Windows](https://support.zoom.us/hc/en-us/articles/205683899-Hot-Keys-and-Keyboard-Shortcuts-for-Zoom)
   _(support.zoom.us)_

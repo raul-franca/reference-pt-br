@@ -7,350 +7,350 @@ tags:
   -
   -
 categories:
-  - Keyboard Shortcuts
+  - Atalhos de Teclado
 intro: |
-  A visual cheat-sheet for the 210 keyboard shortcuts found in Microsoft Outlook
+  Um cheat sheet visual dos 210 atalhos de teclado do Microsoft Outlook
 ---
 
-## Keyboard Shortcuts
+## Atalhos de Teclado
 
-### Frequently used
+### Usados com frequência
 
-| Shortcut           | Action             |
-| ------------------ | ------------------ |
-| `Esc`              | Close              |
-| `Alt` `H`          | Go to Home tab     |
-| `Ctrl` `Shift` `M` | New message        |
-| `Alt` `S`          | Send               |
-| `Alt` `N`          | Insert file        |
-| `Ctrl` `Shift` `K` | New task           |
-| `Delete`           | Delete             |
-| `Ctrl` `E`         | Search             |
-| `Ctrl` `R`         | Reply              |
-| `Ctrl` `F`         | Forward            |
-| `Ctrl` `Shift` `R` | Reply all          |
-| `Ctrl` `C`         | Copy               |
-| `Alt` `S`          | Send/Receive       |
-| `Ctrl` `2`         | Go to calendar     |
-| `Ctrl` `Shift` `A` | Create appointment |
-| `Alt` `H` `M, V`   | Move to folder     |
-| `Alt` `J` `A`      | Attachment Save As |
-
-{.shortcuts}
-
-### Basic navigation
-
-| Shortcut             | Action                                                      |
-| -------------------- | ----------------------------------------------------------- |
-| `Ctrl` `1`           | Switch to Mail view                                         |
-| `Ctrl` `2`           | Switch to Calendar view                                     |
-| `Ctrl` `3`           | Switch to Contacts view                                     |
-| `Ctrl` `4`           | Switch to Tasks view                                        |
-| `Ctrl` `5`           | Switch to Notes                                             |
-| `Ctrl` `6`           | Switch to Folders list in the Folder pane                   |
-| `Ctrl` `7`           | Switch to Shortcuts                                         |
-| `Ctrl` `.`           | Switch to next open message                                 |
-| `Ctrl` `,`           | Switch to previous open message                             |
-| `Ctrl` `Shift` `Tab` | Move between Folder/Outlook/Reading/To-Do                   |
-| `Ctrl` `Tab`         | Move around message header lines in the Folder pane         |
-| `Arrows`             | Move around within the Folder pane                          |
-| `Ctrl` `Y`           | Go to a different folder                                    |
-| `Ctrl` `E`           | Go to the Search box                                        |
-| `Alt` `Up`           | In the Reading pane, go to the previous message             |
-| `Space`              | In the Reading pane, page down through text                 |
-| `Shift` `Space`      | In the Reading pane, page up through text                   |
-| `Left/Right`         | Collapse or expand a group in the email message list        |
-| `Alt` `B/Left`       | Go back to previous view in the main Outlook window         |
-| `Alt` `Right`        | Go forward to next view in the main Outlook window          |
-| `Ctrl` `Shift` `W`   | Select the InfoBar and, if available, show menu of commands |
+| Atalho             | Ação                          |
+| ------------------ | ----------------------------- |
+| `Esc`              | Fechar                        |
+| `Alt` `H`          | Ir para a guia Página Inicial |
+| `Ctrl` `Shift` `M` | Nova mensagem                 |
+| `Alt` `S`          | Enviar                        |
+| `Alt` `N`          | Inserir arquivo               |
+| `Ctrl` `Shift` `K` | Nova tarefa                   |
+| `Delete`           | Excluir                       |
+| `Ctrl` `E`         | Pesquisar                     |
+| `Ctrl` `R`         | Responder                     |
+| `Ctrl` `F`         | Encaminhar                    |
+| `Ctrl` `Shift` `R` | Responder a todos             |
+| `Ctrl` `C`         | Copiar                        |
+| `Alt` `S`          | Enviar/Receber                |
+| `Ctrl` `2`         | Ir para a agenda              |
+| `Ctrl` `Shift` `A` | Criar compromisso             |
+| `Alt` `H` `M, V`   | Mover para pasta              |
+| `Alt` `J` `A`      | Salvar anexo como             |
 
 {.shortcuts}
 
-### Search
+### Navegação básica
 
-| Shortcut           | Action                                                      |
-| ------------------ | ----------------------------------------------------------- |
-| `Ctrl` `E`         | Find a message or other item                                |
-| `Esc`              | Clear the search results                                    |
-| `Ctrl` `Alt` `A`   | Expand the search to include all items in module you are in |
-| `Ctrl` `Shift` `F` | Use Advanced Find                                           |
-| `Ctrl` `Shift` `P` | Create a Search folder                                      |
-| `F4`               | Search for text within an open item                         |
-| `Ctrl` `H`         | Find and replace text/symbols in Reading pane               |
-| `Ctrl` `Alt` `K`   | Expand search to include items from the current folder      |
-| `Ctrl` `Alt` `Z`   | Expand search to include subfolders                         |
-
-{.shortcuts}
-
-### Create an item or file
-
-| Shortcut           | Action                              |
-| ------------------ | ----------------------------------- |
-| `Ctrl` `Shift` `A` | Create an appointment               |
-| `Ctrl` `Shift` `C` | Create a contact                    |
-| `Ctrl` `Shift` `L` | Create a contact group              |
-| `Ctrl` `Shift` `X` | Create a fax                        |
-| `Ctrl` `Shift` `E` | Create a folder                     |
-| `Ctrl` `Shift` `Q` | Create a meeting request            |
-| `Ctrl` `Shift` `M` | Create a message                    |
-| `Ctrl` `Shift` `N` | Create a note                       |
-| `Ctrl` `Shift` `H` | Create an Office document           |
-| `Ctrl` `Shift` `S` | Post to the selected folder         |
-| `Ctrl` `T`         | Post a reply in the selected folder |
-| `Ctrl` `Shift` `P` | Create a Search folder              |
-| `Ctrl` `Shift` `K` | Create a task                       |
+| Atalho               | Ação                                                                   |
+| -------------------- | ---------------------------------------------------------------------- |
+| `Ctrl` `1`           | Alternar para a exibição de Email                                      |
+| `Ctrl` `2`           | Alternar para a exibição de Agenda                                     |
+| `Ctrl` `3`           | Alternar para a exibição de Contatos                                   |
+| `Ctrl` `4`           | Alternar para a exibição de Tarefas                                    |
+| `Ctrl` `5`           | Alternar para Notas                                                    |
+| `Ctrl` `6`           | Alternar para a lista de Pastas no painel de Pastas                    |
+| `Ctrl` `7`           | Alternar para Atalhos                                                  |
+| `Ctrl` `.`           | Alternar para a próxima mensagem aberta                                |
+| `Ctrl` `,`           | Alternar para a mensagem aberta anterior                               |
+| `Ctrl` `Shift` `Tab` | Mover entre Pasta/Outlook/Leitura/A Fazer                              |
+| `Ctrl` `Tab`         | Navegar entre as linhas de cabeçalho das mensagens no painel de Pastas |
+| `Arrows`             | Navegar dentro do painel de Pastas                                     |
+| `Ctrl` `Y`           | Ir para outra pasta                                                    |
+| `Ctrl` `E`           | Ir para a caixa de Pesquisa                                            |
+| `Alt` `Up`           | No painel de Leitura, ir para a mensagem anterior                      |
+| `Space`              | No painel de Leitura, avançar uma página no texto                      |
+| `Shift` `Space`      | No painel de Leitura, voltar uma página no texto                       |
+| `Left/Right`         | Recolher ou expandir um grupo na lista de mensagens de email           |
+| `Alt` `B/Left`       | Voltar para a exibição anterior na janela principal do Outlook         |
+| `Alt` `Right`        | Avançar para a próxima exibição na janela principal do Outlook         |
+| `Ctrl` `Shift` `W`   | Selecionar a InfoBar e, se disponível, mostrar o menu de comandos      |
 
 {.shortcuts}
 
-### Commands in most views
+### Pesquisa
 
-| Shortcut           | Action                                                |
-| ------------------ | ----------------------------------------------------- |
-| `Ctrl` `S`         | Save (except in Tasks view)                           |
-| `Alt` `S`          | Save and close (except in Mail view)                  |
-| `F12`              | Save as (only in Mail view)                           |
-| `Ctrl` `Z`         | Undo                                                  |
-| `Ctrl` `D`         | Delete an item                                        |
-| `Ctrl` `P`         | Print                                                 |
-| `Ctrl` `Shift` `Y` | Copy an item                                          |
-| `Ctrl` `Shift` `V` | Move an item                                          |
-| `Ctrl` `K`         | Check names                                           |
-| `F7`               | Check spelling                                        |
-| `Ctrl` `Shift` `G` | Flag for follow-up                                    |
-| `Ctrl` `F`         | Forward                                               |
-| `Alt` `S`          | Send or post or invite all                            |
-| `F2`               | Enable editing in a field, all views except Mail/Icon |
-| `Ctrl` `L`         | Left align text                                       |
-| `Ctrl` `E`         | Center text                                           |
-| `Ctrl` `R`         | Right align text                                      |
+| Atalho             | Ação                                                            |
+| ------------------ | --------------------------------------------------------------- |
+| `Ctrl` `E`         | Localizar uma mensagem ou outro item                            |
+| `Esc`              | Limpar os resultados da pesquisa                                |
+| `Ctrl` `Alt` `A`   | Expandir a pesquisa para incluir todos os itens do módulo atual |
+| `Ctrl` `Shift` `F` | Usar a Localização Avançada                                     |
+| `Ctrl` `Shift` `P` | Criar uma pasta de Pesquisa                                     |
+| `F4`               | Pesquisar texto em um item aberto                               |
+| `Ctrl` `H`         | Localizar e substituir texto/símbolos no painel de Leitura      |
+| `Ctrl` `Alt` `K`   | Expandir a pesquisa para incluir itens da pasta atual           |
+| `Ctrl` `Alt` `Z`   | Expandir a pesquisa para incluir subpastas                      |
 
 {.shortcuts}
 
-### Mail {.row-span-2}
+### Criar um item ou arquivo
 
-| Shortcut           | Action                                    |
-| ------------------ | ----------------------------------------- |
-| `Ctrl` `Shift` `I` | Switch to Inbox                           |
-| `Ctrl` `Shift` `O` | Switch to Outbox                          |
-| `Ctrl` `K`         | Check names                               |
-| `Alt` `S`          | Send                                      |
-| `Ctrl` `R`         | Reply to a message                        |
-| `Ctrl` `Shift` `R` | Replay All to a message                   |
-| `Ctrl` `Alt` `R`   | Reply with meeting request                |
-| `Ctrl` `F`         | Forward a message                         |
-| `Ctrl` `Alt` `J`   | Mark a message as not junk                |
-| `Ctrl` `Shift` `I` | Display blocked external content          |
-| `Ctrl` `Shift` `S` | Post to a folder                          |
-| `Ctrl` `Shift` `N` | Apply Normal style                        |
-| `Ctrl` `M`         | Check for new messages                    |
-| `Up`               | Go to the previous message                |
-| `Down`             | Go to next message                        |
-| `Ctrl` `N`         | Create a message (in Mail view)           |
-| `Ctrl` `Shift` `M` | Create a message (from any Outlook view)  |
-| `Ctrl` `O`         | Open a received message                   |
-| `Ctrl` `Shift` `D` | Delete and ignore a conversation          |
-| `Ctrl` `Shift` `B` | Open the Address Book                     |
-| `Insert`           | Add a Quick flag to an unopened message   |
-| `Ctrl` `Shift` `G` | Display the Flag for follow up dialog box |
-| `Ctrl` `Q`         | Mark as read                              |
-| `Ctrl` `U`         | Mark as unread                            |
-| `Ctrl` `Shift` `W` | Open the MailTip in the selected message  |
-| `F4`               | Find or replace                           |
-| `Shift` `F4`       | Find next                                 |
-| `Ctrl` `Enter`     | Send                                      |
-| `Ctrl` `P`         | Print                                     |
-| `Ctrl` `F`         | Forward                                   |
-| `Ctrl` `Alt` `F`   | Forward as attachment                     |
-| `Alt` `Enter`      | Show the properties for the selected item |
-| `Ctrl` `Alt` `M`   | Mark for download                         |
-| `Ctrl` `Alt` `U`   | Check Mark for download status            |
-| `Ctrl` `B`         | Display Send/Receive progress             |
+| Atalho             | Ação                                     |
+| ------------------ | ---------------------------------------- |
+| `Ctrl` `Shift` `A` | Criar um compromisso                     |
+| `Ctrl` `Shift` `C` | Criar um contato                         |
+| `Ctrl` `Shift` `L` | Criar um grupo de contatos               |
+| `Ctrl` `Shift` `X` | Criar um fax                             |
+| `Ctrl` `Shift` `E` | Criar uma pasta                          |
+| `Ctrl` `Shift` `Q` | Criar uma solicitação de reunião         |
+| `Ctrl` `Shift` `M` | Criar uma mensagem                       |
+| `Ctrl` `Shift` `N` | Criar uma nota                           |
+| `Ctrl` `Shift` `H` | Criar um documento do Office             |
+| `Ctrl` `Shift` `S` | Postar na pasta selecionada              |
+| `Ctrl` `T`         | Postar uma resposta na pasta selecionada |
+| `Ctrl` `Shift` `P` | Criar uma pasta de Pesquisa              |
+| `Ctrl` `Shift` `K` | Criar uma tarefa                         |
 
 {.shortcuts}
 
-### Calendar
+### Comandos na maioria das exibições
 
-| Shortcut           | Action                                               |
-| ------------------ | ---------------------------------------------------- |
-| `Ctrl` `N`         | Create an appointment                                |
-| `Ctrl` `Shift` `A` | Create an appointment (any Outlook view)             |
-| `Ctrl` `Shift` `Q` | Create a meeting request                             |
-| `Alt` `1-0`        | Show 1-10 days in the calendar                       |
-| `Ctrl` `G`         | Go to a date                                         |
-| `Alt` `=`          | Switch to Month view                                 |
-| `Ctrl` `Right`     | Go to the next day                                   |
-| `Alt` `Down`       | Go to the next week                                  |
-| `Alt` `PgDown`     | Go to the next month                                 |
-| `Ctrl` `Left`      | Go to the previous day                               |
-| `Alt` `Up`         | Go to the previous week                              |
-| `Alt` `PgUp`       | Go to the previous month                             |
-| `Alt` `Home`       | Go to the start of the week                          |
-| `Alt` `End`        | Go to the end of the week                            |
-| `Alt` `-`          | Switch to Full Week view                             |
-| `Ctrl` `Alt` `2`   | Switch to Work Week view                             |
-| `Ctrl` `,`         | Go to previous appointment                           |
-| `Ctrl` `.`         | Go to next appointment                               |
-| `Ctrl` `G`         | Set up recurrence for an open appointment or meeting |
+| Atalho             | Ação                                                                  |
+| ------------------ | --------------------------------------------------------------------- |
+| `Ctrl` `S`         | Salvar (exceto na exibição de Tarefas)                                |
+| `Alt` `S`          | Salvar e fechar (exceto na exibição de Email)                         |
+| `F12`              | Salvar como (somente na exibição de Email)                            |
+| `Ctrl` `Z`         | Desfazer                                                              |
+| `Ctrl` `D`         | Excluir um item                                                       |
+| `Ctrl` `P`         | Imprimir                                                              |
+| `Ctrl` `Shift` `Y` | Copiar um item                                                        |
+| `Ctrl` `Shift` `V` | Mover um item                                                         |
+| `Ctrl` `K`         | Verificar nomes                                                       |
+| `F7`               | Verificar ortografia                                                  |
+| `Ctrl` `Shift` `G` | Sinalizar para acompanhamento                                         |
+| `Ctrl` `F`         | Encaminhar                                                            |
+| `Alt` `S`          | Enviar, postar ou convidar todos                                      |
+| `F2`               | Habilitar a edição em um campo, todas as exibições exceto Email/Ícone |
+| `Ctrl` `L`         | Alinhar o texto à esquerda                                            |
+| `Ctrl` `E`         | Centralizar o texto                                                   |
+| `Ctrl` `R`         | Alinhar o texto à direita                                             |
 
 {.shortcuts}
 
-### People
+### Email {.row-span-2}
 
-| Shortcut            | Action                                                             |
-| ------------------- | ------------------------------------------------------------------ |
-| `Ctrl` `Shift` `D`  | Dial a new call                                                    |
-| `F3`                | Find a contact or other item                                       |
-| `F11`               | Enter a name in the Search Address Books box                       |
-| `Shift` `(letter)`  | In Table or List view of contacts, go to first contact with letter |
-| `Ctrl` `A`          | Select all contacts                                                |
-| `Ctrl` `F`          | Create a message with selected contact as subject                  |
-| `Ctrl` `N`          | Create a contact (when in Contacts)                                |
-| `Ctrl` `Shift` `C`  | Create a contact (any Outlook view)                                |
-| `Ctrl` `O`          | Open a contact form for the selected contact                       |
-| `Ctrl` `Shift` `L`  | Create a contact group                                             |
-| `Ctrl` `P`          | Print                                                              |
-| `F5`                | Update a list of contact group members                             |
-| `Ctrl` `Y`          | Go to a different folder                                           |
-| `Ctrl` `Shift` `B`  | Open the Address Book                                              |
-| `Ctrl` `Shift` `F`  | Use Advanced Find                                                  |
-| `Ctrl` `Shift` `.`  | In an open contact, open the next contact listed                   |
-| `F11`               | Find a contact                                                     |
-| `Esc`               | Close a contact                                                    |
-| `Ctrl` `Shift` `X`  | Send a fax to the selected contact                                 |
-| `Alt` `D`           | Open the Check Address dialog box                                  |
-| `Alt` `Shift` `1-3` | In contact form, display Email 1-3                                 |
-
-{.shortcuts}
-
-### Tasks {.row-span-3}
-
-| Shortcut                 | Action                            |
-| ------------------------ | --------------------------------- |
-| `Ctrl` `C`               | Accept a task request             |
-| `Ctrl` `D`               | Decline a task request            |
-| `Ctrl` `E`               | Find a task or other item         |
-| `Ctrl` `Y`               | Open the Go to Folder dialog box  |
-| `Ctrl` `N`               | Create a task when in Tasks view  |
-| `Ctrl` `Shift` `K`       | Create a task (any Outlook view)  |
-| `Ctrl` `O`               | Open selected item                |
-| `Ctrl` `P`               | Print selected item               |
-| `Ctrl` `A`               | Select all items                  |
-| `Ctrl` `D`               | Delete selected item              |
-| `Ctrl` `F`               | Forward a task as an attachment   |
-| `Ctrl` `Shift` `Alt` `U` | Create a task request             |
-| `Tab`                    | Switch between Folder/Tasks/To-Do |
-| `Ctrl` `Z`               | Undo last action                  |
-| `Insert`                 | Flag an item or mark complete     |
+| Atalho             | Ação                                                      |
+| ------------------ | --------------------------------------------------------- |
+| `Ctrl` `Shift` `I` | Alternar para a Caixa de Entrada                          |
+| `Ctrl` `Shift` `O` | Alternar para a Caixa de Saída                            |
+| `Ctrl` `K`         | Verificar nomes                                           |
+| `Alt` `S`          | Enviar                                                    |
+| `Ctrl` `R`         | Responder a uma mensagem                                  |
+| `Ctrl` `Shift` `R` | Responder a todos de uma mensagem                         |
+| `Ctrl` `Alt` `R`   | Responder com solicitação de reunião                      |
+| `Ctrl` `F`         | Encaminhar uma mensagem                                   |
+| `Ctrl` `Alt` `J`   | Marcar uma mensagem como não sendo lixo eletrônico        |
+| `Ctrl` `Shift` `I` | Exibir conteúdo externo bloqueado                         |
+| `Ctrl` `Shift` `S` | Postar em uma pasta                                       |
+| `Ctrl` `Shift` `N` | Aplicar o estilo Normal                                   |
+| `Ctrl` `M`         | Verificar novas mensagens                                 |
+| `Up`               | Ir para a mensagem anterior                               |
+| `Down`             | Ir para a próxima mensagem                                |
+| `Ctrl` `N`         | Criar uma mensagem (na exibição de Email)                 |
+| `Ctrl` `Shift` `M` | Criar uma mensagem (de qualquer exibição do Outlook)      |
+| `Ctrl` `O`         | Abrir uma mensagem recebida                               |
+| `Ctrl` `Shift` `D` | Excluir e ignorar uma conversa                            |
+| `Ctrl` `Shift` `B` | Abrir o Catálogo de Endereços                             |
+| `Insert`           | Adicionar um sinalizador rápido a uma mensagem não aberta |
+| `Ctrl` `Shift` `G` | Exibir a caixa de diálogo Sinalizar para Acompanhamento   |
+| `Ctrl` `Q`         | Marcar como lida                                          |
+| `Ctrl` `U`         | Marcar como não lida                                      |
+| `Ctrl` `Shift` `W` | Abrir a Dica de Email na mensagem selecionada             |
+| `F4`               | Localizar ou substituir                                   |
+| `Shift` `F4`       | Localizar próxima                                         |
+| `Ctrl` `Enter`     | Enviar                                                    |
+| `Ctrl` `P`         | Imprimir                                                  |
+| `Ctrl` `F`         | Encaminhar                                                |
+| `Ctrl` `Alt` `F`   | Encaminhar como anexo                                     |
+| `Alt` `Enter`      | Mostrar as propriedades do item selecionado               |
+| `Ctrl` `Alt` `M`   | Marcar para download                                      |
+| `Ctrl` `Alt` `U`   | Verificar o status de Marcar para download                |
+| `Ctrl` `B`         | Exibir o progresso de Enviar/Receber                      |
 
 {.shortcuts}
 
-### Format text {.row-span-4}
+### Agenda
 
-| Shortcut           | Action                           |
-| ------------------ | -------------------------------- |
-| `Alt` `O`          | Display the Format menu          |
-| `Ctrl` `Shift` `P` | Display the Font dialog box      |
-| `Shift` `F3`       | Switch case (with text selected) |
-| `Ctrl` `Shift` `K` | Format letters as small capitals |
-| `Ctrl` `B`         | Make letters bold                |
-| `Ctrl` `Shift` `L` | Add bullets                      |
-| `Ctrl` `I`         | Make letters italic              |
-| `Ctrl` `T`         | Increase indent                  |
-| `Ctrl` `Shift` `T` | Decrease indent                  |
-| `Ctrl` `L`         | Left align                       |
-| `Ctrl` `E`         | Center                           |
-| `Ctrl` `U`         | Underline                        |
-| `Ctrl` `]`         | Increase font size               |
-| `Ctrl` `[`         | Decrease font size               |
-| `Ctrl` `X`         | Cut                              |
-| `Ctrl` `C`         | Copy                             |
-| `Ctrl` `V`         | Paste                            |
-| `Ctrl` `Shift` `Z` | Clear formatting                 |
-| `Ctrl` `Shift` `H` | Delete the next word             |
-| `Ctrl` `Shift` `J` | Justify text                     |
-| `Ctrl` `Shift` `S` | Apply styles                     |
-| `Ctrl` `T`         | Create a hanging indent          |
-| `Ctrl` `K`         | Insert a hyperlink               |
-| `Ctrl` `L`         | Left align a paragraph           |
-| `Ctrl` `R`         | Right align a paragraph          |
-| `Ctrl` `Shift` `T` | Reduce a hanging indent          |
-| `Ctrl` `Q`         | Remove paragraph formatting      |
+| Atalho             | Ação                                                         |
+| ------------------ | ------------------------------------------------------------ |
+| `Ctrl` `N`         | Criar um compromisso                                         |
+| `Ctrl` `Shift` `A` | Criar um compromisso (qualquer exibição do Outlook)          |
+| `Ctrl` `Shift` `Q` | Criar uma solicitação de reunião                             |
+| `Alt` `1-0`        | Mostrar de 1 a 10 dias na agenda                             |
+| `Ctrl` `G`         | Ir para uma data                                             |
+| `Alt` `=`          | Alternar para a exibição de Mês                              |
+| `Ctrl` `Right`     | Ir para o próximo dia                                        |
+| `Alt` `Down`       | Ir para a próxima semana                                     |
+| `Alt` `PgDown`     | Ir para o próximo mês                                        |
+| `Ctrl` `Left`      | Ir para o dia anterior                                       |
+| `Alt` `Up`         | Ir para a semana anterior                                    |
+| `Alt` `PgUp`       | Ir para o mês anterior                                       |
+| `Alt` `Home`       | Ir para o início da semana                                   |
+| `Alt` `End`        | Ir para o fim da semana                                      |
+| `Alt` `-`          | Alternar para a exibição de Semana Completa                  |
+| `Ctrl` `Alt` `2`   | Alternar para a exibição de Semana de Trabalho               |
+| `Ctrl` `,`         | Ir para o compromisso anterior                               |
+| `Ctrl` `.`         | Ir para o próximo compromisso                                |
+| `Ctrl` `G`         | Configurar recorrência para um compromisso ou reunião aberto |
 
 {.shortcuts}
 
-### Add web information to items
+### Pessoas
 
-| Shortcut   | Action                                            |
-| ---------- | ------------------------------------------------- |
-| `Ctrl` `K` | Insert or edit a hyperlink in the body of an item |
-
-{.shortcuts}
-
-### Printing
-
-| Shortcut        | Action                                         |
-| --------------- | ---------------------------------------------- |
-| `Alt` `F, P`    | Open the Print tab in Backstage view           |
-| `Alt` `F, P, F` | Print an item from an open window              |
-| `Alt` `S`       | Open the Page Setup dialog box from Print view |
-| `Alt` `F, P, I` | Select a printer from Print view               |
-| `Alt` `F, P, R` | Open the Print Options dialog box              |
-
-{.shortcuts}
-
-### Send/Receive
-
-| Shortcut         | Action                                      |
-| ---------------- | ------------------------------------------- |
-| `F9`             | Start a send/receive for all defined groups |
-| `Shift` `F9`     | Start a send/receive for the current folder |
-| `Ctrl` `M`       | Start a send/receive                        |
-| `Ctrl` `Alt` `S` | Define Send/Receive groups                  |
+| Atalho              | Ação                                                                               |
+| ------------------- | ---------------------------------------------------------------------------------- |
+| `Ctrl` `Shift` `D`  | Discar uma nova chamada                                                            |
+| `F3`                | Localizar um contato ou outro item                                                 |
+| `F11`               | Inserir um nome na caixa Pesquisar Catálogos de Endereços                          |
+| `Shift` `(letter)`  | Na exibição de Tabela ou Lista de contatos, ir para o primeiro contato com a letra |
+| `Ctrl` `A`          | Selecionar todos os contatos                                                       |
+| `Ctrl` `F`          | Criar uma mensagem com o contato selecionado como assunto                          |
+| `Ctrl` `N`          | Criar um contato (quando em Contatos)                                              |
+| `Ctrl` `Shift` `C`  | Criar um contato (qualquer exibição do Outlook)                                    |
+| `Ctrl` `O`          | Abrir um formulário de contato para o contato selecionado                          |
+| `Ctrl` `Shift` `L`  | Criar um grupo de contatos                                                         |
+| `Ctrl` `P`          | Imprimir                                                                           |
+| `F5`                | Atualizar uma lista de membros de grupos de contatos                               |
+| `Ctrl` `Y`          | Ir para outra pasta                                                                |
+| `Ctrl` `Shift` `B`  | Abrir o Catálogo de Endereços                                                      |
+| `Ctrl` `Shift` `F`  | Usar a Localização Avançada                                                        |
+| `Ctrl` `Shift` `.`  | Em um contato aberto, abrir o próximo contato listado                              |
+| `F11`               | Localizar um contato                                                               |
+| `Esc`               | Fechar um contato                                                                  |
+| `Ctrl` `Shift` `X`  | Enviar um fax para o contato selecionado                                           |
+| `Alt` `D`           | Abrir a caixa de diálogo Verificar Endereço                                        |
+| `Alt` `Shift` `1-3` | No formulário de contato, exibir os emails 1 a 3                                   |
 
 {.shortcuts}
 
-### Visual Basic Editor
+### Tarefas {.row-span-3}
 
-| Shortcut    | Action                   |
-| ----------- | ------------------------ |
-| `Alt` `F11` | Open Visual Basic Editor |
+| Atalho                   | Ação                                            |
+| ------------------------ | ----------------------------------------------- |
+| `Ctrl` `C`               | Aceitar uma solicitação de tarefa               |
+| `Ctrl` `D`               | Recusar uma solicitação de tarefa               |
+| `Ctrl` `E`               | Localizar uma tarefa ou outro item              |
+| `Ctrl` `Y`               | Abrir a caixa de diálogo Ir para Pasta          |
+| `Ctrl` `N`               | Criar uma tarefa quando na exibição de Tarefas  |
+| `Ctrl` `Shift` `K`       | Criar uma tarefa (qualquer exibição do Outlook) |
+| `Ctrl` `O`               | Abrir o item selecionado                        |
+| `Ctrl` `P`               | Imprimir o item selecionado                     |
+| `Ctrl` `A`               | Selecionar todos os itens                       |
+| `Ctrl` `D`               | Excluir o item selecionado                      |
+| `Ctrl` `F`               | Encaminhar uma tarefa como anexo                |
+| `Ctrl` `Shift` `Alt` `U` | Criar uma solicitação de tarefa                 |
+| `Tab`                    | Alternar entre Pasta/Tarefas/A Fazer            |
+| `Ctrl` `Z`               | Desfazer a última ação                          |
+| `Insert`                 | Sinalizar um item ou marcar como concluído      |
+
+{.shortcuts}
+
+### Formatar texto {.row-span-4}
+
+| Atalho             | Ação                                                   |
+| ------------------ | ------------------------------------------------------ |
+| `Alt` `O`          | Exibir o menu Formatar                                 |
+| `Ctrl` `Shift` `P` | Exibir a caixa de diálogo Fonte                        |
+| `Shift` `F3`       | Alternar maiúsculas/minúsculas (com texto selecionado) |
+| `Ctrl` `Shift` `K` | Formatar letras como versaletes                        |
+| `Ctrl` `B`         | Deixar as letras em negrito                            |
+| `Ctrl` `Shift` `L` | Adicionar marcadores                                   |
+| `Ctrl` `I`         | Deixar as letras em itálico                            |
+| `Ctrl` `T`         | Aumentar o recuo                                       |
+| `Ctrl` `Shift` `T` | Diminuir o recuo                                       |
+| `Ctrl` `L`         | Alinhar à esquerda                                     |
+| `Ctrl` `E`         | Centralizar                                            |
+| `Ctrl` `U`         | Sublinhar                                              |
+| `Ctrl` `]`         | Aumentar o tamanho da fonte                            |
+| `Ctrl` `[`         | Diminuir o tamanho da fonte                            |
+| `Ctrl` `X`         | Recortar                                               |
+| `Ctrl` `C`         | Copiar                                                 |
+| `Ctrl` `V`         | Colar                                                  |
+| `Ctrl` `Shift` `Z` | Limpar a formatação                                    |
+| `Ctrl` `Shift` `H` | Excluir a próxima palavra                              |
+| `Ctrl` `Shift` `J` | Justificar o texto                                     |
+| `Ctrl` `Shift` `S` | Aplicar estilos                                        |
+| `Ctrl` `T`         | Criar um recuo deslocado                               |
+| `Ctrl` `K`         | Inserir um hiperlink                                   |
+| `Ctrl` `L`         | Alinhar um parágrafo à esquerda                        |
+| `Ctrl` `R`         | Alinhar um parágrafo à direita                         |
+| `Ctrl` `Shift` `T` | Reduzir um recuo deslocado                             |
+| `Ctrl` `Q`         | Remover a formatação do parágrafo                      |
+
+{.shortcuts}
+
+### Adicionar informações da web aos itens
+
+| Atalho     | Ação                                               |
+| ---------- | -------------------------------------------------- |
+| `Ctrl` `K` | Inserir ou editar um hiperlink no corpo de um item |
+
+{.shortcuts}
+
+### Impressão
+
+| Atalho          | Ação                                                                |
+| --------------- | ------------------------------------------------------------------- |
+| `Alt` `F, P`    | Abrir a guia Imprimir na exibição Backstage                         |
+| `Alt` `F, P, F` | Imprimir um item de uma janela aberta                               |
+| `Alt` `S`       | Abrir a caixa de diálogo Configurar Página na exibição de Impressão |
+| `Alt` `F, P, I` | Selecionar uma impressora na exibição de Impressão                  |
+| `Alt` `F, P, R` | Abrir a caixa de diálogo Opções de Impressão                        |
+
+{.shortcuts}
+
+### Enviar/Receber
+
+| Atalho           | Ação                                                        |
+| ---------------- | ----------------------------------------------------------- |
+| `F9`             | Iniciar um envio/recebimento para todos os grupos definidos |
+| `Shift` `F9`     | Iniciar um envio/recebimento para a pasta atual             |
+| `Ctrl` `M`       | Iniciar um envio/recebimento                                |
+| `Ctrl` `Alt` `S` | Definir grupos de Enviar/Receber                            |
+
+{.shortcuts}
+
+### Editor do Visual Basic
+
+| Atalho      | Ação                           |
+| ----------- | ------------------------------ |
+| `Alt` `F11` | Abrir o Editor do Visual Basic |
 
 {.shortcuts}
 
 ### Macros
 
-| Shortcut   | Action     |
-| ---------- | ---------- |
-| `Alt` `F8` | Play macro |
+| Atalho     | Ação           |
+| ---------- | -------------- |
+| `Alt` `F8` | Executar macro |
 
 {.shortcuts}
 
-### Forms
+### Formulários
 
-| Shortcut                 | Action                  |
-| ------------------------ | ----------------------- |
-| `Ctrl` `N`               | Create an InfoPath form |
-| `Ctrl` `Shift` `Alt` `T` | Close an InfoPath form  |
-
-{.shortcuts}
-
-### Flags
-
-| Shortcut           | Action                                 |
-| ------------------ | -------------------------------------- |
-| `Ctrl` `Shift` `G` | Open the Flag for Follow Up dialog box |
+| Atalho                   | Ação                             |
+| ------------------------ | -------------------------------- |
+| `Ctrl` `N`               | Criar um formulário do InfoPath  |
+| `Ctrl` `Shift` `Alt` `T` | Fechar um formulário do InfoPath |
 
 {.shortcuts}
 
-### Color categories
+### Sinalizadores
 
-| Shortcut  | Action                                                                 |
-| --------- | ---------------------------------------------------------------------- |
-| `Alt` `D` | Delete the selected category from the list in the Color categories box |
+| Atalho             | Ação                                                   |
+| ------------------ | ------------------------------------------------------ |
+| `Ctrl` `Shift` `G` | Abrir a caixa de diálogo Sinalizar para Acompanhamento |
 
 {.shortcuts}
 
-## Also see
+### Categorias de cores
 
-- [Keyboard shortcuts for Microsoft Outlook](https://support.office.com/en-us/article/keyboard-shortcuts-for-outlook-3cdeb221-7ae5-4c1d-8c1d-9e63216c1efd)
+| Atalho    | Ação                                                                  |
+| --------- | --------------------------------------------------------------------- |
+| `Alt` `D` | Excluir a categoria selecionada da lista na caixa Categorias de cores |
+
+{.shortcuts}
+
+## Veja também
+
+- [Atalhos de teclado do Microsoft Outlook](https://support.office.com/en-us/article/keyboard-shortcuts-for-outlook-3cdeb221-7ae5-4c1d-8c1d-9e63216c1efd)
   _(support.office.com)_

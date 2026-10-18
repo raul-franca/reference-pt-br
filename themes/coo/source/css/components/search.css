@@ -79,7 +79,7 @@
   color: rgb(255 255 255);
 }
 
-/* Ensure search result items have no fade-in animation */
+/* Garante que os itens de resultado da busca não tenham animação de fade-in */
 #mysearch-list li {
   animation: none !important;
   transition:

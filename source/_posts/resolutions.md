@@ -6,23 +6,23 @@ tags:
   - screen
   - size
 categories:
-  - Other
+  - Outros
 intro: |
-  This cheat sheet lists screen sizes, viewport size and CSS media queries for popular Phones, Tablets, Laptops and Watches
+  Este cheat sheet lista tamanhos de tela, tamanho de viewport e media queries CSS para celulares, tablets, notebooks e relógios populares
 ---
 
-## Getting Started {.cols-2}
+## Primeiros passos {.cols-2}
 
-### Introduction
+### Introdução
 
-- Resolution is the number of pixels (individual points of color)
-- Viewport is defined by the size of the rectangle filled by a web page on your screen
-- Screen resolution refers to the clarity of the text and images displayed on your screen
-- For design
+- Resolução é o número de pixels (pontos individuais de cor)
+- O viewport é definido pelo tamanho do retângulo preenchido por uma página web na sua tela
+- A resolução da tela se refere à nitidez do texto e das imagens exibidos na sua tela
+- Para design
 
 {.marker-round}
 
-### Multi-format of Resolutions
+### Vários formatos de resoluções
 
 - [Markdown Table](https://tableconvert.com/html-to-markdown?data=https://cheatsheets.zip/resolutions#TableGenerator)
 - [Template](https://tableconvert.com/html-to-template?data=https://cheatsheets.zip/resolutions#TableGenerator)
@@ -50,11 +50,11 @@ intro: |
 
 {.cols-4 .marker-none}
 
-## Lists of Resolutions {.cols-1}
+## Listas de resoluções {.cols-1}
 
-### Mobile Phones
+### Celulares
 
-| DEVICES                            | SCREEN SIZE          | RESOLUTION                | VIEWPORT                 | DENSITY            | DEVICE DENSITY     | RATIO                   | OS            |
+| DISPOSITIVOS                       | TAMANHO DA TELA      | RESOLUÇÃO                 | VIEWPORT                 | DENSIDADE          | DENSIDADE DO DISPOSITIVO | PROPORÇÃO               | SO            |
 | ---------------------------------- | -------------------- | ------------------------- | ------------------------ | ------------------ | ------------------ | ----------------------- | ------------- |
 | Apple iPhone 11 (2019)             | 6.1 <sub>inch</sub>  | 828 x 1792 <sub>px</sub>  | 414 x 896 <sub>px</sub>  | 326 <sub>ppi</sub> | 163 <sub>ppi</sub> | 2 <sub>xhdpi</sub>      | iOS 13.0      |
 | Apple iPhone 11 Pro (2019)         | 5.8 <sub>inch</sub>  | 1125 x 2436 <sub>px</sub> | 375 x 812 <sub>px</sub>  | 458 <sub>ppi</sub> | 153 <sub>ppi</sub> | 3 <sub>xxhdpi</sub>     | iOS 13.0      |
@@ -169,7 +169,7 @@ intro: |
 
 ### Tablets
 
-| DEVICES                     | SCREEN SIZE          | RESOLUTION                | VIEWPORT                  | DENSITY            | DEVICE DENSITY     | RATIO                | OS            |
+| DISPOSITIVOS                | TAMANHO DA TELA      | RESOLUÇÃO                 | VIEWPORT                  | DENSIDADE          | DENSIDADE DO DISPOSITIVO | PROPORÇÃO            | SO            |
 | --------------------------- | -------------------- | ------------------------- | ------------------------- | ------------------ | ------------------ | -------------------- | ------------- |
 | Apple iPad 10.2" (2019)     | 10.2 <sub>inch</sub> | 1620 x 2160 <sub>px</sub> | 810 x 1080 <sub>px</sub>  | 264 <sub>ppi</sub> | 132 <sub>ppi</sub> | 2 <sub>xhdpi</sub>   | iPadOS 13.1.2 |
 | Apple iPad 10.2" (2020)     | 10.2 <sub>inch</sub> | 1620 x 2160 <sub>px</sub> | 810 x 1080 <sub>px</sub>  | 264 <sub>ppi</sub> | 132 <sub>ppi</sub> | 2 <sub>xhdpi</sub>   | iPadOS 14     |
@@ -192,9 +192,9 @@ intro: |
 
 {.show-header}
 
-### Laptops
+### Notebooks
 
-| DEVICES              | SCREEN SIZE          | RESOLUTION                | VIEWPORT                 | DENSITY            | DEVICE DENSITY     | RATIO                | OS              |
+| DISPOSITIVOS         | TAMANHO DA TELA      | RESOLUÇÃO                 | VIEWPORT                 | DENSIDADE          | DENSIDADE DO DISPOSITIVO | PROPORÇÃO            | SO              |
 | -------------------- | -------------------- | ------------------------- | ------------------------ | ------------------ | ------------------ | -------------------- | --------------- |
 | MacBook 2015 12"     | 12 <sub>inch</sub>   | 2304 x 1440 <sub>px</sub> | 1280 x 800 <sub>px</sub> | 226 <sub>ppi</sub> | 113 <sub>ppi</sub> | 2.0 <sub>xhdpi</sub> | macOS Sierra    |
 | MacBook 2016 12"     | 12 <sub>inch</sub>   | 2304 x 1440 <sub>px</sub> | 1280 x 800 <sub>px</sub> | 226 <sub>ppi</sub> | 113 <sub>ppi</sub> | 2.0 <sub>xhdpi</sub> | macOS Sierra    |
@@ -220,9 +220,9 @@ intro: |
 
 {.show-header}
 
-### Smart Watch
+### Smartwatch
 
-| DEVICES                            | SCREEN SIZE          | RESOLUTION              | VIEWPORT                | DENSITY            | DEVICE DENSITY     | RATIO               | OS                               |
+| DISPOSITIVOS                       | TAMANHO DA TELA      | RESOLUÇÃO               | VIEWPORT                | DENSIDADE          | DENSIDADE DO DISPOSITIVO | PROPORÇÃO           | SO                               |
 | ---------------------------------- | -------------------- | ----------------------- | ----------------------- | ------------------ | ------------------ | ------------------- | -------------------------------- |
 | Apple Watch SE (40mm) (2020)       | 1.57 <sub>inch</sub> | 394 x 324 <sub>px</sub> | 197 x 162 <sub>px</sub> | 326 <sub>ppi</sub> | 163 <sub>ppi</sub> | 2 <sub>xhdpi</sub>  | watchOS 7.0                      |
 | Apple Watch SE (44mm) (2020)       | 1.78 <sub>inch</sub> | 448 x 368 <sub>px</sub> | 224 x 184 <sub>px</sub> | 326 <sub>ppi</sub> | 163 <sub>ppi</sub> | 2 <sub>xhdpi</sub>  | watchOS 7.0                      |

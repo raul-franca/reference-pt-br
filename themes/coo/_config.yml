@@ -1,20 +1,20 @@
-# Limit on the number of recent articles
+# Limite de artigos recentes
 recent_posts_limits: 4
 
-# The categories and order displayed on the home page
+# Categorias e ordem exibidas na página inicial
 index_categories:
-  - AI
-  - Programming
-  - Toolkit
-  - Operating System
-  - Linux Command
+  - IA
+  - Programação
+  - Ferramentas
+  - Sistema Operacional
+  - Comandos Linux
   - Python
-  - Database
-  - Keyboard Shortcuts
-  - Game
-  - Other
+  - Banco de Dados
+  - Atalhos de Teclado
+  - Jogos
+  - Outros
 
-# Home recommended posts
+# Posts recomendados na página inicial
 index_recommends:
   - chatgpt
   - bash
@@ -25,11 +25,11 @@ index_recommends:
   - regex
   - awk
 
-# Related popular posts
-# Dependencies: https://github.com/tea3/hexo-related-popular-posts
+# Posts populares relacionados
+# Dependências: https://github.com/tea3/hexo-related-popular-posts
 related_posts:
   enable: true
-  title: Related
+  title: Relacionados
   params:
     maxCount: 4
     #PPMixingRate: 0.0
@@ -39,7 +39,7 @@ related_posts:
 
 top_posts:
   enable: true
-  title: Top
+  title: Mais populares
   params:
     maxCount: 4
     PPMixingRate: 1.0

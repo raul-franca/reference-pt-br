@@ -6,14 +6,14 @@ tags:
   - Cross-platform
   - Android
 categories:
-  - Programming
+  - Programação
 intro: |
-  A quick reference cheatsheet for Kotlin that includes usage, examples, and more.
+  Um cheat sheet de referência rápida para Kotlin, com uso, exemplos e muito mais.
 plugins:
   - copyCode
 ---
 
-## Introduction to Kotlin
+## Introdução ao Kotlin
 
 ### main()
 
@@ -24,9 +24,9 @@ fun main() {
 }
 ```
 
-The main() function is the starting point of every Kotlin program and must be included in the code before execution
+A função main() é o ponto de partida de todo programa Kotlin e deve estar incluída no código antes da execução.
 
-### Print statement
+### Instrução de impressão
 
 ```kotlin
 println("Greetings, earthling!")
@@ -40,7 +40,7 @@ Take me to your leader.
 */
 ```
 
-### Notes
+### Comentários
 
 ```kotlin
 // this is a single line comment
@@ -53,7 +53,7 @@ many
 */
 ```
 
-### Execution order
+### Ordem de execução
 
 ```kotlin
 fun main() {
@@ -63,22 +63,22 @@ fun main() {
 }
 ```
 
-## Data Types and Variables
+## Tipos de dados e variáveis
 
-### Mutable variables
+### Variáveis mutáveis
 
 ```kotlin
 var age = 25
 age = 26
 ```
 
-### Immutable variables
+### Variáveis imutáveis
 
 ```kotlin
 val goldenRatio = 1.618
 ```
 
-### Type inference
+### Inferência de tipos
 
 ```kotlin
 // The following variables are assigned a literal value inside double quotes
@@ -87,7 +87,7 @@ val goldenRatio = 1.618
 var color = "Purple"
 ```
 
-### String concatenation
+### Concatenação de strings
 
 ```kotlin
 var streetAddress = "123 Main St."
@@ -97,7 +97,7 @@ println(streetAddress + " " + cityState)
 // Print: 123 Main St. Brooklyn, NY
 ```
 
-### String Templates
+### Templates de string
 
 ```kotlin
 var address = "123 Main St."
@@ -105,7 +105,7 @@ println("The address is $address")
 // prints: The address is 123 Main St.
 ```
 
-### Built-in Properties and Functions
+### Propriedades e funções integradas
 
 ```kotlin
 var monument = "the Statue of Liberty"
@@ -116,7 +116,7 @@ println(monument. length)
 // print: 21
 ```
 
-### Character escape {.row-span-2}
+### Sequências de escape {.row-span-2}
 
 ```kotlin {.wrap}
 print("\"Excellent!\" I cried. \"Elementary,\" said he.")
@@ -132,7 +132,7 @@ print("\"Excellent!\" I cried. \"Elementary,\" said he.")
 - `\\` inserts a backslash
 - `\$` inserts a dollar sign
 
-### Arithmetic Operators
+### Operadores aritméticos
 
 ```kotlin
 5 + 7  // 12
@@ -142,9 +142,9 @@ print("\"Excellent!\" I cried. \"Elementary,\" said he.")
 31 % 2 // 1
 ```
 
-`+` addition, `-` subtraction, `*` multiplication, `/` division, and `%` modulus
+`+` adição, `-` subtração, `*` multiplicação, `/` divisão e `%` módulo
 
-### Order of operations
+### Ordem das operações
 
 ```kotlin
 5 + 8 *2 /4 -3 // 6
@@ -154,7 +154,7 @@ print("\"Excellent!\" I cried. \"Elementary,\" said he.")
 6 -3 % 2 + 2   // 7
 ```
 
-### Enhanced assignment operator
+### Operador de atribuição composta
 
 ```kotlin
 var batteryPercentage = 80
@@ -166,7 +166,7 @@ batteryPercentage = batteryPercentage + 10
 batteryPercentage += 10
 ```
 
-### Increment and decrement operators
+### Operadores de incremento e decremento
 
 ```kotlin
 var year = 2019
@@ -174,7 +174,7 @@ year++   // 2020
 year--   // 2019
 ```
 
-### Math library
+### Biblioteca Math
 
 ```kotlin
 Math.pow(2.0, 3.0) // 8.0
@@ -183,9 +183,9 @@ Math.max(10, 12)   // 12
 Math. round(13.7)  // 14
 ```
 
-## Conditional Expression
+## Expressões condicionais
 
-### If expression
+### Expressão if
 
 ```kotlin
 var morning = true
@@ -196,7 +196,7 @@ if (morning) {
 // Print: Rise and shine!
 ```
 
-### Else-expression
+### Expressão else
 
 ```kotlin
 var rained = false
@@ -209,7 +209,7 @@ if (rained) {
 // print: The plant needs watering!
 ```
 
-### Else-If expressions
+### Expressões else-if
 
 ```kotlin
 var age = 65
@@ -225,7 +225,7 @@ if (age < 18 ) {
 // print: you are considered senior
 ```
 
-### Comparison Operators
+### Operadores de comparação
 
 ```kotlin
 var myAge = 19
@@ -238,7 +238,7 @@ myAge >= cousinAge // true
 myAge <= sisterAge // false
 ```
 
-### Logical Operators
+### Operadores lógicos
 
 ```kotlin
 var humid = true
@@ -253,7 +253,7 @@ println(humid || raining)
 // print: true
 ```
 
-### AND operator: &&
+### Operador AND: &&
 
 ```kotlin
 var humid = true
@@ -271,7 +271,7 @@ println(sunny && raining) // false
 println(shorts && sunny)  // false
 ```
 
-### Or operator:||
+### Operador OR:||
 
 ```kotlin
 var late = true
@@ -289,7 +289,7 @@ println(underslept || late)    // true
 println(checkEmails || underslept) // false
 ```
 
-### NOT operator
+### Operador NOT
 
 ```kotlin
 var hungry = true
@@ -299,7 +299,7 @@ println(!hungry) // false
 println(!full)   // true
 ```
 
-### Evaluation order
+### Ordem de avaliação
 
 ```kotlin
 !true && (false || true) // false
@@ -316,7 +316,7 @@ then, true || evaluates to false and eventually returns true
 */
 ```
 
-### Nested conditions
+### Condições aninhadas
 
 ```kotlin
 var studied = true
@@ -335,7 +335,7 @@ if (wellRested) {
 // print: You should be ready for the exam!
 ```
 
-### When expression
+### Expressão when
 
 ```kotlin
 var grade = "A"
@@ -349,7 +349,7 @@ when (grade) {
 // print: Great job!
 ```
 
-### Range operator
+### Operador de intervalo
 
 ```kotlin {.wrap}
 var height = 46 // inches
@@ -360,7 +360,7 @@ if (height in 1..53) {
 // Prints: Sorry, you must be at least 54 inches to ride the roller coaster
 ```
 
-### Equality Operators
+### Operadores de igualdade
 
 ```kotlin
 var myAge = 22
@@ -370,9 +370,9 @@ myAge == sisterAge // false
 myAge != sisterAge // true
 ```
 
-## Null-Safety
+## Null-safety
 
-### Nullable vs Not-Nullable
+### Nullable vs. não-nullable
 
 ```kotlin
 var a: String = "Kotlin" // a can never be null
@@ -381,7 +381,7 @@ var b: String? = "Kotlin" // b can be null
 b = null // ok
 ```
 
-### Safe-Calls
+### Safe calls
 
 ```kotlin
 val a = "Kotlin"
@@ -391,13 +391,13 @@ println(b?.length) // b?.length returns the length of b, or null if b is null
 println(a?.length) // Unnecessary safe call
 ```
 
-### Chaining Safe-Calls
+### Encadeamento de safe calls
 
 ```kotlin
 bob?.department?.head?.name // chain returns null if any property is null
 ```
 
-### Elvis Operator
+### Operador Elvis
 
 ```kotlin
 val l = b?.length ?: -1 // if b is null, return the default value -1
@@ -405,27 +405,27 @@ val l = b?.length ?: -1 // if b is null, return the default value -1
 val l: Int = if (b != null) b.length else -1
 ```
 
-### Not Null Assertion Operator
+### Operador de asserção not-null
 
 ```kotlin
 val l = b!!.length // throws a NullPointerException, if b is null
 ```
 
-## Collections
+## Coleções
 
-### Immutable list
+### Lista imutável
 
 ```kotlin {.wrap}
 var programmingLanguages = listOf("C#", "Java", "Kotlin", "Ruby")
 ```
 
-### Mutable List
+### Lista mutável
 
 ```kotlin {.wrap}
 var fruits = mutableListOf("Orange", "Apple", "Banana", "Mango")
 ```
 
-### Access List
+### Acessar lista
 
 ```kotlin {.wrap}
 var cars = listOf("BMW", "Ferrari", "Volvo", "Tesla")
@@ -433,7 +433,7 @@ var cars = listOf("BMW", "Ferrari", "Volvo", "Tesla")
 println(cars[2]) // Prints: Volvo
 ```
 
-### Size Attribute
+### Atributo size
 
 ```kotlin {.wrap}
 var worldContinents = listOf("Asia", "Africa", "North America", "South America", "Antarctica", "Europe", "Australia")
@@ -441,7 +441,7 @@ var worldContinents = listOf("Asia", "Africa", "North America", "South America",
 println(worldContinents.size) // Prints: 7
 ```
 
-### List Manipulation {.row-span-2}
+### Manipulação de listas {.row-span-2}
 
 ```kotlin {.wrap}
 var seas = listOf("Black Sea", "Caribbean Sea", "North Sea")
@@ -452,19 +452,19 @@ seas.add("Baltic Sea") // Error: cannot write to immutable list
 // The add() function can only be called on mutable lists, so the code above throws an error
 ```
 
-### Immutable Sets
+### Sets imutáveis
 
 ```kotlin {.wrap}
 var primaryColors = setOf("Red", "Blue", "Yellow")
 ```
 
-### Mutable Sets
+### Sets mutáveis
 
 ```kotlin {.wrap}
 var womenInTech = mutableSetOf("Ada Lovelace", "Grace Hopper", "Radia Perlman", "Sister Mary Kenneth Keller")
 ```
 
-### Access Collection Elements {.row-span-2}
+### Acessar elementos de coleções {.row-span-2}
 
 ```kotlin {.wrap}
 var companies = setOf("Facebook", "Apple", "Netflix", "Google")
@@ -477,19 +477,19 @@ println(companies.elementAtOrNull(4))
 // Prints: null
 ```
 
-### Immutable Map
+### Map imutável
 
 ```kotlin {.wrap}
 var averageTemp = mapOf("winter" to 35,  "spring" to 60,  "summer" to 85, "fall" to 55)
 ```
 
-### Mutable Mapping
+### Map mutável
 
 ```kotlin {.wrap}
 var europeanDomains = mutableMapOf("Germany" to "de", "Slovakia" to "sk", "Hungary" to "hu", "Norway" to "no")
 ```
 
-### Retrieve map keys and values
+### Recuperar chaves e valores de um map
 
 ```kotlin {.wrap}
 var oscarWinners = mutableMapOf("Parasite" to "Bong Joon-ho", "Green Book" to "Jim Burke", "The Shape Of Water" to "Guillermo del Toro")
@@ -503,7 +503,7 @@ println(oscarWinners["Parasite"])
 // Prints: Bong Joon-ho
 ```
 
-### Add and remove map entries
+### Adicionar e remover entradas de um map
 
 ```kotlin {.wrap}
 var worldCapitals = mutableMapOf("United States" to "Washington D.C.", "Germany" to "Berlin", "Mexico" to "Mexico City", "France" to "Paris")
@@ -517,9 +517,9 @@ println(worldCapitals)
 // Prints: {United States=Washington D.C., Mexico=Mexico City, France=Paris, Brazil=Brasilia}
 ```
 
-## Function
+## Funções
 
-### Function
+### Função
 
 ```kotlin
 fun greet() {
@@ -532,7 +532,7 @@ fun main() {
 }
 ```
 
-### Function Parameters
+### Parâmetros de função
 
 ```kotlin {.wrap}
 fun birthday(name: String, age: Int) {
@@ -547,7 +547,7 @@ fun main() {
 }
 ```
 
-### Default Parameters
+### Parâmetros padrão
 
 ```kotlin {.wrap}
 fun favoriteLanguage(name: String, language: String = "Kotlin") {
@@ -563,7 +563,7 @@ fun main() {
 }
 ```
 
-### Named Parameters
+### Parâmetros nomeados
 
 ```kotlin {.wrap}
 fun findMyAge(currentYear: Int, birthYear: Int) {
@@ -579,7 +579,7 @@ fun main() {
 }
 ```
 
-### Return Statement
+### Instrução return
 
 ```kotlin {.wrap}
 //Return type is declared outside the parentheses
@@ -597,7 +597,7 @@ println("The area is $myArea.")
 }
 ```
 
-### Single expression function
+### Função de expressão única
 
 ```kotlin{.wrap}
 fun fullName(firstName: String, lastName: String) = "$firstName $lastName"
@@ -610,7 +610,7 @@ fun main() {
 }
 ```
 
-### Function Literals
+### Funções literais
 
 ```kotlin{.wrap}
 fun main() {
@@ -627,9 +627,9 @@ return num1 *num2
 }
 ```
 
-## Class
+## Classes
 
-### Class Example
+### Exemplo de classe
 
 ```kotlin
 //class with properties containing default values
@@ -643,7 +643,7 @@ class Student {
 class Student
 ```
 
-### Class Instance
+### Instância de classe
 
 ```kotlin
 // Class
@@ -665,7 +665,7 @@ fun main() {
 }
 ```
 
-### Primary Constructor
+### Construtor primário
 
 ```kotlin {.wrap}
 class Student(val name: String, val gpa: Double, val semester: String, val estimatedGraduationYear: Int)
@@ -683,7 +683,7 @@ fun main() {
 }
 ```
 
-### Initialization Block
+### Bloco de inicialização
 
 ```kotlin {.wrap}
 class Student(val name: String, val gpa: Double, val semester: String, val estimatedGraduationYear: Int) {
@@ -698,7 +698,7 @@ fun main() {
 }
 ```
 
-### Member Function {.col-span-2}
+### Função membro {.col-span-2}
 
 ```kotlin {.wrap}
 class Student(val name: String, val gpa: Double, val semester: String, val estimatedGraduationYear: Int) {
@@ -728,6 +728,6 @@ fun main() {
 }
 ```
 
-## See Also
+## Veja também
 
-- [Kotlin Language Official Documentation](https://kotlinlang.org/) _(kotlinlang.org)_
+- [Documentação oficial da linguagem Kotlin](https://kotlinlang.org/) _(kotlinlang.org)_

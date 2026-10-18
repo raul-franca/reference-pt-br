@@ -1,16 +1,16 @@
 <%
-// Social buttons component - compatibility wrapper, directly uses independent button components
+// Componente de botões sociais - wrapper de compatibilidade que usa diretamente os componentes independentes
 // variant: 'hero' | 'compact' | 'inline'
-// showLabels: boolean - whether to show text labels
-// className: string - additional CSS class names
-// buttons: array - button types to display ['github', 'x', 'coffee']
+// showLabels: boolean - define se os rótulos de texto são exibidos
+// className: string - classes CSS adicionais
+// buttons: array - tipos de botão a exibir ['github', 'x', 'coffee']
 
 const variant = locals.variant || 'hero';
 const showLabels = locals.showLabels !== false; // show labels by default
 const className = locals.className || '';
 const buttons = locals.buttons || ['github', 'x', 'coffee']; // show all buttons by default
 
-// Set container styles based on variant
+// Define os estilos do contêiner conforme a variante
 const containerClass = {
     hero: 'flex flex-col lg:flex-row items-center justify-center gap-4 mb-16 max-w-4xl mx-auto',
     compact: 'hidden lg:flex items-center ml-3',

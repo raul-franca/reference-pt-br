@@ -7,114 +7,114 @@ tags:
   -
   - mac
 categories:
-  - Keyboard Shortcuts
+  - Atalhos de Teclado
 intro: |
-  A visual cheat-sheet for the 45 keyboard shortcuts found in Framer X. This application is MacOS-only.
+  Uma cheat sheet visual com os 45 atalhos de teclado disponíveis no Framer X. Este aplicativo é exclusivo para MacOS.
 ---
 
-## Keyboard Shortcuts
+## Atalhos de teclado
 
-### Tools
+### Ferramentas
 
-| Shortcut | Action     |
-| -------- | ---------- |
-| `F`      | Frame      |
-| `U`      | Round      |
-| `T`      | Text       |
-| `S`      | Stack      |
-| `L`      | Link       |
-| `Space`  | Pan Canvas |
+| Atalho  | Ação        |
+| ------- | ----------- |
+| `F`     | Frame       |
+| `U`     | Arredondar  |
+| `T`     | Texto       |
+| `S`     | Stack       |
+| `L`     | Link        |
+| `Space` | Mover a tela |
 
 {.shortcuts}
 
-### Graphics
+### Gráficos
 
-| Shortcut          | Action    |
-| ----------------- | --------- |
-| `G`               | Graphic   |
-| `P`               | Path      |
-| `R`               | Rectangle |
-| `O`               | Oval      |
-| `V`               | Vector    |
-| `Cmd` `G`         | Group     |
-| `Cmd` `Shift` `G` | Ungroup   |
+| Atalho            | Ação       |
+| ----------------- | ---------- |
+| `G`               | Gráfico    |
+| `P`               | Caminho    |
+| `R`               | Retângulo  |
+| `O`               | Oval       |
+| `V`               | Vetor      |
+| `Cmd` `G`         | Agrupar    |
+| `Cmd` `Shift` `G` | Desagrupar |
 
 {.shortcuts}
 
 ### Layout
 
-| Shortcut            | Action         |
-| ------------------- | -------------- |
-| `Cmd` `Enter`       | Add Frame      |
-| `Cmd` `Opt` `Enter` | Add Stack      |
-| `Cmd` `Del`         | Remove Wrapper |
-| `Cmd` `Opt` `Up`    | Move Forward   |
-| `Cmd` `Opt` `Down`  | Move Backward  |
+| Atalho              | Ação             |
+| ------------------- | ---------------- |
+| `Cmd` `Enter`       | Adicionar frame  |
+| `Cmd` `Opt` `Enter` | Adicionar stack  |
+| `Cmd` `Del`         | Remover wrapper  |
+| `Cmd` `Opt` `Up`    | Mover para frente |
+| `Cmd` `Opt` `Down`  | Mover para trás  |
 
 {.shortcuts}
 
-### Components
+### Componentes
 
-| Shortcut          | Action             |
-| ----------------- | ------------------ |
-| `Cmd` `K`         | Create from Design |
-| `Cmd` `Shift` `K` | Create from Code   |
+| Atalho            | Ação                 |
+| ----------------- | -------------------- |
+| `Cmd` `K`         | Criar a partir do design |
+| `Cmd` `Shift` `K` | Criar a partir do código |
 
 {.shortcuts}
 
-### Text
+### Texto
 
-| Shortcut  | Action          |
+| Atalho    | Ação            |
 | --------- | --------------- |
-| `Cmd` `B` | Bold            |
-| `Cmd` `I` | Italic          |
-| `Cmd` `U` | Underline       |
-| `Cmd` `T` | Select Typeface |
+| `Cmd` `B` | Negrito         |
+| `Cmd` `I` | Itálico         |
+| `Cmd` `U` | Sublinhado      |
+| `Cmd` `T` | Selecionar fonte |
 
 {.shortcuts}
 
-### Editing
+### Edição
 
-| Shortcut                 | Action              |
+| Atalho                   | Ação                |
 | ------------------------ | ------------------- |
-| `Cmd` `(arrows)`         | Object Size         |
-| `Cmd` `Shift` `(arrows)` | Object Size by 10px |
-| `0-9`                    | Opacity             |
-| `Opt`                    | Show Distance       |
-| `Cmd` `D`                | Duplicate in Place  |
-| `Cmd` `Opt` `C`          | Copy Style          |
-| `Cmd` `Opt` `V`          | Paste Style         |
-| `Ctrl` `C`               | Color Picker        |
-| `Cmd` `A`                | Select All Layers   |
-| `Cmd` `Shift` `A`        | Select All Siblings |
-| `Cmd` `Opt` `A`          | Select All Children |
+| `Cmd` `(arrows)`         | Tamanho do objeto   |
+| `Cmd` `Shift` `(arrows)` | Tamanho do objeto em 10px |
+| `0-9`                    | Opacidade           |
+| `Opt`                    | Mostrar distância   |
+| `Cmd` `D`                | Duplicar no lugar   |
+| `Cmd` `Opt` `C`          | Copiar estilo       |
+| `Cmd` `Opt` `V`          | Colar estilo        |
+| `Ctrl` `C`               | Seletor de cores    |
+| `Cmd` `A`                | Selecionar todas as camadas |
+| `Cmd` `Shift` `A`        | Selecionar todos os irmãos |
+| `Cmd` `Opt` `A`          | Selecionar todos os filhos |
 
 {.shortcuts}
 
-### View
+### Visualização
 
-| Shortcut   | Action                |
+| Atalho     | Ação                  |
 | ---------- | --------------------- |
 | `Z`        | Zoom                  |
-| `Cmd` `+`  | Zoom In               |
-| `Cmd` `-`  | Zoom Out              |
-| `Cmd` `1`  | Zoom to Fit           |
-| `Cmd` `2`  | Zoom to Fit Selection |
-| `Cmd` `0`  | Zoom to 100%          |
-| `Ctrl` `R` | Show Rulers           |
+| `Cmd` `+`  | Aumentar zoom         |
+| `Cmd` `-`  | Diminuir zoom         |
+| `Cmd` `1`  | Zoom para ajustar     |
+| `Cmd` `2`  | Zoom para ajustar a seleção |
+| `Cmd` `0`  | Zoom para 100%        |
+| `Ctrl` `R` | Mostrar réguas        |
 
 {.shortcuts}
 
-### Window
+### Janela
 
-| Shortcut          | Action   |
+| Atalho            | Ação     |
 | ----------------- | -------- |
-| `Cmd` `M`         | Minimize |
-| `Cmd` `Shift` `1` | Welcome  |
-| `Cmd` `P`         | Preview  |
+| `Cmd` `M`         | Minimizar |
+| `Cmd` `Shift` `1` | Boas-vindas |
+| `Cmd` `P`         | Pré-visualizar |
 
 {.shortcuts}
 
-## Also see
+## Veja também
 
 - [Keyboard shortcuts for Framer X](https://www.framer.com/support/using-framer-x/shortcuts/) _(www.framer.com)_

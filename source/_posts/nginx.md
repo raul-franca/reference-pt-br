@@ -4,14 +4,14 @@ date: 2025-09-15 21:17:50
 background: bg-slate-600
 tags:
 categories:
-  - Linux Command
-intro: nginx quick reference cheat sheet
+  - Comandos Linux
+intro: cheat sheet de referência rápida do nginx
 plugins:
   - copyCode
 ---
-## Getting Started {.cols-3}
+## Primeiros passos {.cols-3}
 
-### Install & Service
+### Instalação e serviço
 
 - **Ubuntu/Debian**
   ```shell script
@@ -30,15 +30,15 @@ plugins:
   $ nginx -V        # built modules
   ```
 
-### Key Paths
+### Paths principais
 
-- `/etc/nginx/nginx.conf` _(main config)_
+- `/etc/nginx/nginx.conf` _(configuração principal)_
 - `/etc/nginx/conf.d/*.conf` _(drop‑ins)_
-- `/etc/nginx/sites-available/` + `sites-enabled/` _(Debian style)_
-- `/var/www/html` _(default docroot)_
+- `/etc/nginx/sites-available/` + `sites-enabled/` _(estilo Debian)_
+- `/var/www/html` _(docroot padrão)_
 - `logs`: `/var/log/nginx/access.log`, `/var/log/nginx/error.log`
 
-### Minimal HTTP Server
+### Servidor HTTP mínimo
 
 ```nginx
 # /etc/nginx/conf.d/example.conf
@@ -53,12 +53,12 @@ server {
 }
 ```
 
-## Config Structure {.cols-3}
+## Estrutura de configuração {.cols-3}
 
-### Core Blocks
+### Blocos principais
 
 - `main` (global)
-- `events` (worker connections)
+- `events` (conexões de worker)
 - `http` → `server` → `location`
 - `stream` (TCP/UDP)
 - `upstream` (load balancers)
@@ -79,14 +79,14 @@ http {
 }
 ```
 
-### Context & Order
+### Contexto e ordem
 
-- **`location` match order**:
-  1. Exact `=`
-  2. `^~` (no regex if matched)
-  3. Regex `~` / `~*` (first match)
-  4. Prefix (longest path)
-- `try_files` evaluates in order then falls back.
+- **Ordem de correspondência do `location`**:
+  1. Exato `=`
+  2. `^~` (sem regex se houver correspondência)
+  3. Regex `~` / `~*` (primeira correspondência)
+  4. Prefixo (path mais longo)
+- `try_files` avalia em ordem e depois usa o fallback.
 
 ```nginx
 location = /healthz { return 204; }
@@ -95,7 +95,7 @@ location ~* \.(png|jpg|css|js)$ { expires 7d; }
 location / { try_files $uri $uri/ /index.html; }
 ```
 
-### Common Includes
+### Includes comuns
 
 ```nginx
 http {
@@ -104,9 +104,9 @@ http {
 }
 ```
 
-## Virtual Hosts & Redirects {.cols-3}
+## Virtual hosts e redirecionamentos {.cols-3}
 
-### Basic Server Block
+### Bloco de servidor básico
 
 ```nginx
 server {
@@ -117,7 +117,7 @@ server {
 }
 ```
 
-### Redirect HTTP→HTTPS
+### Redirecionar HTTP→HTTPS
 
 ```nginx
 server {
@@ -127,7 +127,7 @@ server {
 }
 ```
 
-### Canonical Host
+### Host canônico
 
 ```nginx
 # Force non-www
@@ -140,7 +140,7 @@ server {
 
 ## TLS/SSL {.cols-3}
 
-### Basic TLS Server
+### Servidor TLS básico
 
 ```nginx
 server {
@@ -157,7 +157,7 @@ server {
 }
 ```
 
-### HSTS & Security Headers
+### HSTS e headers de segurança
 
 ```nginx
 add_header Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" always;
@@ -175,9 +175,9 @@ $ sudo certbot --nginx -d example.com -d www.example.com
 $ sudo systemctl list-timers | grep certbot   # auto-renew
 ```
 
-## Reverse Proxy {.cols-3}
+## Proxy reverso {.cols-3}
 
-### Basic Proxy
+### Proxy básico
 
 ```nginx
 upstream app {
@@ -210,7 +210,7 @@ location /socket.io/ {
 }
 ```
 
-### Timeouts & Buffers
+### Timeouts e buffers
 
 ```nginx
 proxy_connect_timeout 5s;
@@ -221,9 +221,9 @@ proxy_buffers 16 16k;
 proxy_busy_buffers_size 24k;
 ```
 
-## Static, Compression, Caching {.cols-3}
+## Estáticos, compressão e cache {.cols-3}
 
-### Static Files
+### Arquivos estáticos
 
 ```nginx
 location /assets/ {
@@ -243,7 +243,7 @@ gzip_min_length 1024;
 gzip_comp_level 5;
 ```
 
-### (Optional) Brotli (if compiled)
+### (Opcional) Brotli (se compilado)
 
 ```nginx
 brotli on;
@@ -251,16 +251,16 @@ brotli_comp_level 5;
 brotli_types text/plain text/css application/javascript application/json image/svg+xml;
 ```
 
-## Caching & Microcaching {.cols-3}
+## Cache e microcache {.cols-3}
 
-### Proxy Cache Zone
+### Zona de cache do proxy
 
 ```nginx
 proxy_cache_path /var/cache/nginx levels=1:2 keys_zone=micro:10m max_size=1g inactive=10m use_temp_path=off;
 map $request_method $no_cache { default 0; POST 1; PUT 1; PATCH 1; DELETE 1; }
 ```
 
-### Use the Cache
+### Usar o cache
 
 ```nginx
 location /api/ {
@@ -274,7 +274,7 @@ location /api/ {
 }
 ```
 
-### Conditional Bypass
+### Bypass condicional
 
 ```nginx
 # Skip cache when logged in (example cookie)
@@ -288,7 +288,7 @@ proxy_no_cache $logged_in;
 
 ## PHP‑FPM / FastCGI {.cols-3}
 
-### Basic PHP Handler
+### Handler PHP básico
 
 ```nginx
 location ~ \.php$ {
@@ -301,7 +301,7 @@ location ~ \.php$ {
 }
 ```
 
-### try_files Front Controller
+### Front controller com try_files
 
 ```nginx
 location / {
@@ -309,14 +309,14 @@ location / {
 }
 ```
 
-### Security Tips
+### Dicas de segurança
 
 ```nginx
 location ~* \.(?:ini|log|sh|sql|bak)$ { deny all; }
 location ~ /\.(?!well-known) { deny all; }
 ```
 
-## Rewrites & Routing {.cols-3}
+## Rewrites e roteamento {.cols-3}
 
 ### try_files
 
@@ -326,7 +326,7 @@ location / {
 }
 ```
 
-### Regex Rewrites
+### Rewrites com regex
 
 ```nginx
 # Remove trailing slash (except root)
@@ -344,9 +344,9 @@ location / {
 }
 ```
 
-## Rate Limiting & DoS Mitigation {.cols-3}
+## Rate limiting e mitigação de DoS {.cols-3}
 
-### Request Rate
+### Taxa de requisições
 
 ```nginx
 # 10 req/s with burst 20 per IP
@@ -359,7 +359,7 @@ server {
 }
 ```
 
-### Concurrent Connections
+### Conexões simultâneas
 
 ```nginx
 limit_conn_zone $binary_remote_addr zone=conns:10m;
@@ -370,7 +370,7 @@ server {
 }
 ```
 
-### Body Size & Timeouts
+### Tamanho do body e timeouts
 
 ```nginx
 client_max_body_size 25m;
@@ -378,9 +378,9 @@ client_body_timeout 30s;
 keepalive_timeout 65s;
 ```
 
-## Security Headers & Access {.cols-3}
+## Headers de segurança e acesso {.cols-3}
 
-### Basic Hardening
+### Hardening básico
 
 ```nginx
 server_tokens off;
@@ -398,7 +398,7 @@ location /admin/ {
 }
 ```
 
-### CORS (Example)
+### CORS (exemplo)
 
 ```nginx
 location /api/ {
@@ -413,9 +413,9 @@ location /api/ {
 }
 ```
 
-## Logging & Debug {.cols-3}
+## Logs e debug {.cols-3}
 
-### Formats
+### Formatos
 
 ```nginx
 log_format main '$remote_addr - $remote_user [$time_local] "$request" '
@@ -427,13 +427,13 @@ access_log /var/log/nginx/access.log main;
 error_log  /var/log/nginx/error.log warn;
 ```
 
-### Per‑Location Logging
+### Logs por location
 
 ```nginx
 location /healthz { access_log off; }
 ```
 
-### Debugging
+### Depuração
 
 ```shell script
 $ sudo nginx -t
@@ -441,20 +441,20 @@ $ sudo nginx -s reload
 $ tail -f /var/log/nginx/error.log
 ```
 
-## Upstreams & LB {.cols-3}
+## Upstreams e balanceamento {.cols-3}
 
-### Strategies
+### Estratégias
 
-| Directive     | Meaning                 |
-| ------------- | ----------------------- |
-| (default)     | round‑robin             |
-| `least_conn`  | least connections       |
-| `ip_hash`     | sticky by client IP     |
-| `hash key`    | hash by custom key      |
+| Diretiva      | Significado                  |
+| ------------- | ---------------------------- |
+| (padrão)      | round‑robin                  |
+| `least_conn`  | menos conexões               |
+| `ip_hash`     | sticky por IP do cliente     |
+| `hash key`    | hash por chave personalizada |
 
 {.show-header}
 
-### Example Upstream
+### Exemplo de upstream
 
 ```nginx
 upstream api_backends {
@@ -465,52 +465,52 @@ upstream api_backends {
 }
 ```
 
-### Health & Failover
+### Health check e failover
 
 ```nginx
 proxy_next_upstream error timeout http_502 http_503 http_504;
 proxy_next_upstream_tries 3;
 ```
 
-## Useful Variables {.cols-3}
+## Variáveis úteis {.cols-3}
 
-### Request & Client
+### Requisição e cliente
 
-| Variable               | Description                  |
+| Variável              | Descrição                    |
 | --------------------- | ---------------------------- |
-| `$host`               | Host header / server name    |
-| `$server_name`        | Chosen server_name           |
-| `$remote_addr`        | Client IP                    |
+| `$host`               | Header Host / server name    |
+| `$server_name`        | server_name escolhido        |
+| `$remote_addr`        | IP do cliente                |
 | `$http_user_agent`    | User‑Agent                   |
 | `$request_method`     | GET/POST/...                 |
 
 {.show-header .bold-first}
 
-### Paths & Files
+### Paths e arquivos
 
-| Variable                 | Description            |
-| ----------------------- | ---------------------- |
-| `$document_root`        | Current root           |
-| `$realpath_root`        | Symlink‑resolved root  |
-| `$request_uri`          | Path + query           |
-| `$uri`                  | Normalized URI         |
-| `$args`                 | Raw query string       |
+| Variável                | Descrição                  |
+| ----------------------- | -------------------------- |
+| `$document_root`        | Root atual                 |
+| `$realpath_root`        | Root resolvido por symlink |
+| `$request_uri`          | Path + query               |
+| `$uri`                  | URI normalizada            |
+| `$args`                 | Query string bruta         |
 
 {.show-header .bold-first}
 
 ### Upstream
 
-| Variable                    | Description        |
-| -------------------------- | ------------------ |
-| `$upstream_addr`           | Upstream server(s) |
-| `$upstream_status`         | Upstream status    |
-| `$upstream_response_time`  | Time from upstream |
+| Variável                   | Descrição             |
+| -------------------------- | --------------------- |
+| `$upstream_addr`           | Servidor(es) upstream |
+| `$upstream_status`         | Status do upstream    |
+| `$upstream_response_time`  | Tempo do upstream     |
 
 {.show-header .bold-first}
 
 ## Stream (TCP/UDP) {.cols-3}
 
-### TCP Proxy
+### Proxy TCP
 
 ```nginx
 stream {
@@ -525,7 +525,7 @@ stream {
 }
 ```
 
-### UDP Proxy
+### Proxy UDP
 
 ```nginx
 stream {
@@ -538,7 +538,7 @@ stream {
 }
 ```
 
-### Access Control
+### Controle de acesso
 
 ```nginx
 stream {
@@ -553,7 +553,7 @@ stream {
 
 ## Snippets {.cols-3}
 
-### Security Snippet
+### Snippet de segurança
 
 ```nginx
 # /etc/nginx/snippets/security.conf
@@ -563,7 +563,7 @@ add_header X-Frame-Options "SAMEORIGIN" always;
 add_header Referrer-Policy "no-referrer-when-downgrade" always;
 ```
 
-### PHP Snippet
+### Snippet de PHP
 
 ```nginx
 # /etc/nginx/snippets/fastcgi-php.conf
@@ -575,7 +575,7 @@ location ~ \.php$ {
 }
 ```
 
-### Proxy Headers Snippet
+### Snippet de headers de proxy
 
 ```nginx
 # /etc/nginx/snippets/proxy-headers.conf

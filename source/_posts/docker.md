@@ -6,18 +6,18 @@ tags:
   - container
   - virtual
 categories:
-  - Programming
+  - Programação
 intro: |
-  This is a quick reference cheat sheet for [Docker](https://docs.docker.com/get-started/). And you can find the most common Docker commands here.
+  Este é um cheat sheet de referência rápida para o [Docker](https://docs.docker.com/get-started/). Aqui você encontra os comandos Docker mais comuns.
 plugins:
   - copyCode
 ---
 
-## Getting Started {.cols-2}
+## Primeiros passos {.cols-2}
 
-### Getting started
+### Primeiros passos
 
-Create and run a container in background
+Crie e execute um container em segundo plano
 
 ```shell script
 $ docker run -d -p 80:80 docker/getting-started
@@ -25,13 +25,13 @@ $ docker run -d -p 80:80 docker/getting-started
 
 ---
 
-- `-d` - Run the container in detached mode
-- `-p 80:80` - Map port 80 to port 80 in the container
-- `docker/getting-started` - The image to use
+- `-d` - Executa o container em modo detached
+- `-p 80:80` - Mapeia a porta 80 para a porta 80 no container
+- `docker/getting-started` - A imagem a usar
 
 {.marker-none}
 
-Create and run a container in foreground
+Crie e execute um container em primeiro plano
 
 ```shell script
 $ docker run -it -p 8001:8080 --name my-nginx nginx
@@ -39,62 +39,62 @@ $ docker run -it -p 8001:8080 --name my-nginx nginx
 
 ---
 
-- `-it` - Interactive bash mode
-- `-p 8001:8080` - Map port 8001 to port 8080 in the container
-- `--name my-nginx` - Specify a name
-- `nginx` - The image to use
+- `-it` - Modo bash interativo
+- `-p 8001:8080` - Mapeia a porta 8001 para a porta 8080 no container
+- `--name my-nginx` - Especifica um nome
+- `nginx` - A imagem a usar
 
 {.marker-none}
 
-### General commands
+### Comandos gerais
 
-| Example                             | Description                                      |
+| Exemplo                             | Descrição                                        |
 | ----------------------------------- | ------------------------------------------------ |
-| `docker ps`                         | List running containers                          |
-| `docker ps -a`                      | List all containers                              |
-| `docker ps -s`                      | List running containers<br>_(with CPU / memory)_ |
-| `docker images`                     | List all images                                  |
-| `docker exec -it <container>  bash` | Connecting to container                          |
-| `docker logs <container>`           | Shows container's console log                    |
-| `docker stop <container>`           | Stop a container                                 |
-| `docker restart <container>`        | Restart a container                              |
-| `docker rm <container>`             | Remove a container                               |
-| `docker port <container>`           | Shows container's port mapping                   |
-| `docker top <container>`            | List processes                                   |
-| `docker kill <container>`           | Kill a container                                 |
+| `docker ps`                         | Lista os containers em execução                  |
+| `docker ps -a`                      | Lista todos os containers                        |
+| `docker ps -s`                      | Lista os containers em execução<br>_(com CPU / memória)_ |
+| `docker images`                     | Lista todas as imagens                           |
+| `docker exec -it <container>  bash` | Conecta ao container                             |
+| `docker logs <container>`           | Mostra o log do console do container             |
+| `docker stop <container>`           | Para um container                                |
+| `docker restart <container>`        | Reinicia um container                            |
+| `docker rm <container>`             | Remove um container                              |
+| `docker port <container>`           | Mostra o mapeamento de portas do container       |
+| `docker top <container>`            | Lista os processos                               |
+| `docker kill <container>`           | Mata um container                                |
 
-Parameter `<container>` can be container id or name
+O parâmetro `<container>` pode ser o id ou o nome do container
 
-## Docker Containers {.cols-2}
+## Containers Docker {.cols-2}
 
-### Starting & Stopping
+### Iniciando e parando
 
-| Description               | Example                             |
+| Descrição                 | Exemplo                             |
 | ------------------------- | ----------------------------------- |
-| `docker start my-nginx`   | Starting                            |
-| `docker stop my-nginx`    | Stopping                            |
-| `docker restart my-nginx` | Restarting                          |
-| `docker pause my-nginx`   | Pausing                             |
-| `docker unpause my-nginx` | Unpausing                           |
-| `docker wait my-nginx`    | Blocking a Container                |
-| `docker kill my-nginx`    | Sending a SIGKILL                   |
-| `docker attach my-nginx`  | Connecting to an Existing Container |
+| `docker start my-nginx`   | Iniciando                           |
+| `docker stop my-nginx`    | Parando                             |
+| `docker restart my-nginx` | Reiniciando                         |
+| `docker pause my-nginx`   | Pausando                            |
+| `docker unpause my-nginx` | Despausando                         |
+| `docker wait my-nginx`    | Bloqueando um container             |
+| `docker kill my-nginx`    | Enviando um SIGKILL                 |
+| `docker attach my-nginx`  | Conectando a um container existente |
 
-### Information
+### Informações
 
-| Example                   | Description                            |
+| Exemplo                   | Descrição                              |
 | ------------------------- | -------------------------------------- |
-| `docker ps`               | List running containers                |
-| `docker ps -a`            | List all containers                    |
-| `docker logs my-nginx`    | Container Logs                         |
-| `docker inspect my-nginx` | Inspecting Containers                  |
-| `docker events my-nginx`  | Containers Events                      |
-| `docker port my-nginx`    | Public Ports                           |
-| `docker top my-nginx`     | Running Processes                      |
-| `docker stats my-nginx`   | Container Resource Usage               |
-| `docker diff my-nginx`    | Lists the changes made to a container. |
+| `docker ps`               | Lista os containers em execução        |
+| `docker ps -a`            | Lista todos os containers              |
+| `docker logs my-nginx`    | Logs do container                      |
+| `docker inspect my-nginx` | Inspecionando containers               |
+| `docker events my-nginx`  | Eventos de containers                  |
+| `docker port my-nginx`    | Portas públicas                        |
+| `docker top my-nginx`     | Processos em execução                  |
+| `docker stats my-nginx`   | Uso de recursos do container           |
+| `docker diff my-nginx`    | Lista as alterações feitas em um container. |
 
-### Creating
+### Criando
 
 ```yaml
 docker create [options] IMAGE
@@ -110,49 +110,49 @@ docker create [options] IMAGE
   -e, --env NAME=hello       # env vars
 ```
 
-#### Example
+#### Exemplo
 
 ```shell script
 $ docker create --name my_redis --expose 6379 redis:3.0.2
 ```
 
-### Manipulating
+### Manipulando
 
-Renaming a Container
+Renomeando um container
 
 ```shell script
 docker rename my-nginx my-nginx
 ```
 
-Removing a Container
+Removendo um container
 
 ```shell script
 docker rm my-nginx
 ```
 
-Updating a Container
+Atualizando um container
 
 ```shell script
 docker update --cpu-shares 512 -m 300M my-nginx
 ```
 
-## Docker Images {.cols-2}
+## Imagens Docker {.cols-2}
 
-### Manipulating
+### Manipulando
 
-| `Example`                          | Description                     |
+| `Example`                          | Descrição                       |
 | ---------------------------------- | ------------------------------- |
-| `docker images`                    | Listing images                  |
-| `docker rmi nginx`                 | Removing an image               |
-| `docker load < ubuntu.tar.gz`      | Loading a tarred repository     |
-| `docker load --input ubuntu.tar`   | Loading a tarred repository     |
-| `docker save busybox > ubuntu.tar` | Save an image to a tar archive  |
-| `docker history`                   | Showing the history of an image |
-| `docker commit nginx`              | Save a container as an image.   |
-| `docker tag nginx eon01/nginx`     | Tagging an image                |
-| `docker push eon01/nginx`          | Pushing an image                |
+| `docker images`                    | Listando imagens                |
+| `docker rmi nginx`                 | Removendo uma imagem            |
+| `docker load < ubuntu.tar.gz`      | Carregando um repositório em tar |
+| `docker load --input ubuntu.tar`   | Carregando um repositório em tar |
+| `docker save busybox > ubuntu.tar` | Salva uma imagem em um arquivo tar |
+| `docker history`                   | Mostra o histórico de uma imagem |
+| `docker commit nginx`              | Salva um container como imagem. |
+| `docker tag nginx eon01/nginx`     | Aplicando tag em uma imagem     |
+| `docker push eon01/nginx`          | Fazendo push de uma imagem      |
 
-### Building Images
+### Criando imagens
 
 ```shell script
 $ docker build .
@@ -164,47 +164,47 @@ $ docker build -f myOtherDockerfile .
 $ curl example.com/remote/Dockerfile | docker build -f - .
 ```
 
-## Docker Networking {.cols-2}
+## Redes Docker {.cols-2}
 
-### Manipulating
+### Manipulando
 
-Removing a network
+Removendo uma rede
 
 ```shell script
 docker network rm MyOverlayNetwork
 ```
 
-Listing networks
+Listando redes
 
 ```shell script
 docker network ls
 ```
 
-Getting information about a network
+Obtendo informações sobre uma rede
 
 ```shell script
 docker network inspect MyOverlayNetwork
 ```
 
-Connecting a running container to a network
+Conectando um container em execução a uma rede
 
 ```shell script
 docker network connect MyOverlayNetwork nginx
 ```
 
-Connecting a container to a network when it starts
+Conectando um container a uma rede na inicialização
 
 ```shell script
 docker run -it -d --network=MyOverlayNetwork nginx
 ```
 
-Disconnecting a container from a network
+Desconectando um container de uma rede
 
 ```shell script
 docker network disconnect MyOverlayNetwork nginx
 ```
 
-### Creating Networks
+### Criando redes
 
 ```shell script
 docker network create -d overlay MyOverlayNetwork
@@ -224,11 +224,11 @@ docker network create -d overlay \
   MyOverlayNetwork
 ```
 
-## Clean Up {.cols-2}
+## Limpeza {.cols-2}
 
-### Clean All
+### Limpar tudo
 
-Cleans up dangling images, containers, volumes, and networks (ie, not associated with a container)
+Limpa imagens dangling, containers, volumes e redes (ou seja, não associados a um container)
 
 ```shell
 docker system prune
@@ -236,7 +236,7 @@ docker system prune
 
 ---
 
-Additionally, remove any stopped containers and all unused images (not just dangling images)
+Além disso, remove todos os containers parados e todas as imagens não utilizadas (não apenas as dangling)
 
 ```shell
 docker system prune -a
@@ -244,27 +244,27 @@ docker system prune -a
 
 ### Containers
 
-Stop all running containers
+Para todos os containers em execução
 
 ```shell
 docker stop $(docker ps -a -q)
 ```
 
-Delete stopped containers
+Exclui os containers parados
 
 ```shell
 docker container prune
 ```
 
-### Images
+### Imagens
 
-Remove all dangling (not tagged and is not associated with a container) images:
+Remove todas as imagens dangling (sem tag e não associadas a um container):
 
 ```shell
 docker image prune
 ```
 
-Remove all images which are not used by existing containers
+Remove todas as imagens que não são usadas por containers existentes
 
 ```shell
 docker image prune -a
@@ -276,73 +276,73 @@ docker image prune -a
 docker volume prune
 ```
 
-Remove all volumes not used by at least one container
+Remove todos os volumes não utilizados por pelo menos um container
 
-## Miscellaneous {.cols-2}
+## Diversos {.cols-2}
 
 ### Docker Hub
 
-| Docker Syntax               | Description                         |
+| Sintaxe Docker              | Descrição                           |
 | --------------------------- | ----------------------------------- |
-| `docker search search_word` | Search docker hub for images.       |
-| `docker pull user/image   ` | Downloads an image from docker hub. |
-| `docker login             ` | Authenticate to docker hub          |
-| `docker push user/image   ` | Uploads an image to docker hub.     |
+| `docker search search_word` | Busca imagens no docker hub.        |
+| `docker pull user/image   ` | Baixa uma imagem do docker hub.     |
+| `docker login             ` | Autentica no docker hub             |
+| `docker push user/image   ` | Envia uma imagem para o docker hub. |
 
-### Registry commands {.row-span-3}
+### Comandos de registry {.row-span-3}
 
-Login to a Registry
+Login em um registry
 
 ```shell script
 $ docker login
 $ docker login localhost:8080
 ```
 
-Logout from a Registry
+Logout de um registry
 
 ```shell script
 $ docker logout
 $ docker logout localhost:8080
 ```
 
-Searching an Image
+Buscando uma imagem
 
 ```shell script
 $ docker search nginx
 $ docker search nginx --stars=3 --no-trunc busybox
 ```
 
-Pulling an Image
+Baixando uma imagem (pull)
 
 ```shell script
 $ docker pull nginx
 $ docker pull eon01/nginx localhost:5000/myadmin/nginx
 ```
 
-Pushing an Image
+Enviando uma imagem (push)
 
 ```shell script
 $ docker push eon01/nginx
 $ docker push eon01/nginx localhost:5000/myadmin/nginx
 ```
 
-### Batch clean
+### Limpeza em lote
 
-| Example                             | Description             |
+| Exemplo                             | Descrição               |
 | ----------------------------------- | ----------------------- |
-| `docker stop -f $(docker ps -a -q)` | Stopping all containers |
-| `docker rm -f $(docker ps -a -q)`   | Removing all containers |
-| `docker rmi -f $(docker images -q)` | Removing all images     |
+| `docker stop -f $(docker ps -a -q)` | Para todos os containers |
+| `docker rm -f $(docker ps -a -q)`   | Remove todos os containers |
+| `docker rmi -f $(docker images -q)` | Remove todas as imagens |
 
 ### Volumes
 
-Check volumes
+Verifica os volumes
 
 ```shell script
 $ docker volume ls
 ```
 
-Cleanup unused volumes
+Limpa volumes não utilizados
 
 ```shell script
 $ docker volume prune

@@ -1,6 +1,6 @@
 /* stylelint-disable at-rule-no-deprecated */
 
-/* Simple Timeline TOC */
+/* TOC de timeline simples */
 .toc-container {
   @apply fixed top-1/2 z-40 -translate-y-1/2;
   @apply block;
@@ -8,15 +8,15 @@
   width: 20px;
   opacity: 1;
 
-  /* Constrain height to viewport */
+  /* Limita a altura ao viewport */
   max-height: 80vh;
   overflow: visible;
 
-  /* Responsive positioning */
+  /* Posicionamento responsivo */
   right: 1rem; /* 16px on mobile */
 }
 
-/* Larger screens */
+/* Telas maiores */
 @media (width >= 768px) {
   .toc-container {
     right: 1.5rem; /* 24px on tablet+ */
@@ -35,7 +35,7 @@
   height: 100%;
 }
 
-/* Timeline line - background (unread) */
+/* Linha da timeline - fundo (não lida) */
 .toc-list::before {
   content: '';
 
@@ -46,7 +46,7 @@
   z-index: 1;
 }
 
-/* Timeline line - progress (read) */
+/* Linha da timeline - progresso (lida) */
 .toc-list::after {
   content: '';
 
@@ -56,12 +56,12 @@
   transform: translateX(-50%);
   z-index: 1;
 
-  /* Height controlled by CSS variable */
+  /* Altura controlada por variável CSS */
   height: var(--progress-height, 0%);
   transition: height 0.3s ease-out;
 }
 
-/* Timeline dots with larger hover area */
+/* Pontos da timeline com área de hover maior */
 .toc-link {
   @apply relative flex cursor-pointer items-center justify-center;
   @apply transition-all duration-200;
@@ -69,16 +69,16 @@
   text-decoration: none;
   z-index: 2;
 
-  /* Responsive clickable area */
+  /* Área clicável responsiva */
   width: 32px;
   height: 32px;
   margin: 3px 0;
 
-  /* Background for hover effect */
+  /* Fundo para o efeito de hover */
   border-radius: 50%;
 }
 
-/* Mobile optimizations */
+/* Otimizações para mobile */
 @media (width <= 767px) {
   .toc-link {
     width: 36px;
@@ -87,14 +87,14 @@
   }
 }
 
-/* Add subtle background when hovering over the list */
+/* Adiciona um fundo sutil ao passar o mouse sobre a lista */
 .toc-list:hover .toc-link {
   @apply bg-indigo-50 dark:bg-indigo-900;
 
   opacity: 0.7;
 }
 
-/* Highlight the currently hovered link */
+/* Destaca o link em hover no momento */
 .toc-link:hover {
   @apply bg-indigo-100 dark:bg-indigo-800;
 
@@ -102,20 +102,20 @@
   transform: scale(1.1);
 }
 
-/* Actual dot using ::before */
+/* Ponto real usando ::before */
 .toc-link::before {
   content: '';
 
   @apply rounded-full transition-all duration-200;
 
-  /* Default unread state - responsive size */
+  /* Estado padrão não lido - tamanho responsivo */
   width: 12px;
   height: 12px;
 
   @apply bg-indigo-300 dark:bg-indigo-600;
 }
 
-/* Larger dots on mobile for better visibility */
+/* Pontos maiores no mobile para melhor visibilidade */
 @media (width <= 767px) {
   .toc-link::before {
     width: 14px;
@@ -123,29 +123,29 @@
   }
 }
 
-/* Hover effects for dots */
+/* Efeitos de hover nos pontos */
 .toc-list:hover .toc-link::before {
-  /* Dim all dots when hovering over the list */
+  /* Escurece todos os pontos ao passar o mouse sobre a lista */
   @apply bg-indigo-200 dark:bg-indigo-700;
 
   opacity: 0.6;
 }
 
 .toc-list:hover .toc-link.read::before {
-  /* Dim read dots */
+  /* Escurece os pontos lidos */
   @apply bg-indigo-400;
 
   opacity: 0.6;
 }
 
 .toc-list:hover .toc-link.active::before {
-  /* Dim active dots */
+  /* Escurece os pontos ativos */
   @apply bg-indigo-600;
 
   opacity: 0.6;
 }
 
-/* Highlight the currently hovered dot */
+/* Destaca o ponto em hover no momento */
 .toc-link:hover::before {
   @apply bg-indigo-700 dark:bg-indigo-200;
 
@@ -170,12 +170,12 @@
   box-shadow: 0 0 0 3px rgb(99 102 241 / 40%);
 }
 
-/* Active state */
+/* Estado ativo */
 .toc-link.active::before {
   @apply bg-indigo-700 ring-2 ring-indigo-300;
 }
 
-/* Tooltip - show all when any link is hovered */
+/* Tooltip - exibe todos quando qualquer link está em hover */
 .toc-link::after {
   content: attr(data-tooltip);
 
@@ -184,23 +184,23 @@
   @apply whitespace-nowrap shadow-lg;
   @apply dark:bg-indigo-700 dark:text-indigo-100;
 
-  /* Fixed position to the left of the timeline */
+  /* Posição fixa à esquerda da timeline */
   right: 44px;
   z-index: 50;
 
-  /* Hidden by default */
+  /* Oculto por padrão */
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.2s ease-out;
 
-  /* Prevent tooltip from going off screen */
+  /* Impede que o tooltip saia da tela */
   max-width: calc(100vw - 80px);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-/* Mobile tooltip adjustments */
+/* Ajustes do tooltip no mobile */
 @media (width <= 767px) {
   .toc-link::after {
     right: 48px;
@@ -211,12 +211,12 @@
   }
 }
 
-/* Show all tooltips when any link is hovered */
+/* Exibe todos os tooltips quando qualquer link está em hover */
 .toc-list:hover .toc-link::after {
   opacity: 1;
 }
 
-/* Highlight the currently hovered tooltip */
+/* Destaca o tooltip em hover no momento */
 .toc-link:hover::after {
   @apply bg-indigo-800 text-white;
   @apply dark:bg-indigo-600 dark:text-indigo-50;
@@ -240,25 +240,25 @@
   }
 }
 
-/* Mobile touch optimizations */
+/* Otimizações de toque no mobile */
 @media (width <= 767px) {
-  /* Ensure TOC doesn't interfere with content on very small screens */
+  /* Garante que o TOC não interfira no conteúdo em telas muito pequenas */
   .toc-container {
     right: 0.5rem;
 
-    /* Semi-transparent by default on mobile */
+    /* Semitransparente por padrão no mobile */
     opacity: 0.6;
     transition: opacity 0.3s ease;
   }
 
-  /* Full opacity when interacting */
+  /* Opacidade total durante a interação */
   .toc-container:active,
   .toc-container:hover,
   .toc-container:focus-within {
     opacity: 1;
   }
 
-  /* Semi-transparent timeline and dots */
+  /* Timeline e pontos semitransparentes */
   .toc-list::before {
     @apply bg-indigo-200/60 dark:bg-indigo-700/60;
   }
@@ -279,7 +279,7 @@
     @apply bg-indigo-700/90;
   }
 
-  /* Full opacity when container is active */
+  /* Opacidade total quando o container está ativo */
   .toc-container:active .toc-list::before,
   .toc-container:hover .toc-list::before {
     @apply bg-indigo-200 dark:bg-indigo-700;
@@ -305,19 +305,19 @@
     @apply bg-indigo-700;
   }
 
-  /* Better touch targets */
+  /* Alvos de toque melhores */
   .toc-link {
     -webkit-tap-highlight-color: rgb(99 102 241 / 30%);
     /* stylelint-disable-next-line property-no-unknown */
     tap-highlight-color: rgb(99 102 241 / 30%);
   }
 
-  /* Show tooltips on touch for mobile */
+  /* Exibe tooltips ao toque no mobile */
   .toc-link:active::after {
     opacity: 1;
   }
 
-  /* Reduce animation intensity on mobile for better performance */
+  /* Reduz a intensidade das animações no mobile para melhor desempenho */
   .toc-link:active {
     transform: scale(1.05);
   }
@@ -326,7 +326,7 @@
     transform: scale(1.1);
   }
 
-  /* Add subtle swipe indicator */
+  /* Adiciona um indicador sutil de swipe */
   .toc-container::after {
     content: '';
     position: absolute;
@@ -351,7 +351,7 @@
     }
   }
 
-  /* Hide hint when interacting */
+  /* Oculta a dica durante a interação */
   .toc-container:active::after,
   .toc-container:hover::after {
     opacity: 0;

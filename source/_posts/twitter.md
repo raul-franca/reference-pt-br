@@ -7,60 +7,60 @@ tags:
   -
   -
 categories:
-  - Keyboard Shortcuts
+  - Atalhos de Teclado
 intro: |
-  A visual cheat-sheet for the 26 keyboard shortcuts found on Twitter
+  Um cheat sheet visual dos 26 atalhos de teclado do Twitter
 ---
 
-## Keyboard Shortcuts
+## Atalhos de teclado
 
-### Actions
+### Ações
 
-| Shortcut       | Action             |
+| Atalho         | Ação               |
 | -------------- | ------------------ |
-| `N`            | New tweet          |
-| `L`            | Like tweet         |
-| `R`            | Reply to tweet     |
+| `N`            | Novo tweet         |
+| `L`            | Curtir tweet       |
+| `R`            | Responder ao tweet |
 | `T`            | Retweet            |
-| `M`            | Direct message     |
-| `U`            | Mute account       |
-| `B`            | Block account      |
-| `Enter`        | Open tweet details |
-| `O`            | Expand photos      |
-| `/`            | Search             |
-| `Ctrl` `Enter` | Send tweet         |
+| `M`            | Mensagem direta    |
+| `U`            | Silenciar conta    |
+| `B`            | Bloquear conta     |
+| `Enter`        | Abrir detalhes do tweet |
+| `O`            | Expandir fotos     |
+| `/`            | Pesquisar          |
+| `Ctrl` `Enter` | Enviar tweet       |
 
 {.shortcuts}
 
-### Navigation
+### Navegação
 
-| Shortcut | Action             |
-| -------- | ------------------ |
-| `?`      | Full keyboard menu |
-| `J`      | Next tweet         |
-| `K`      | Previous tweet     |
-| `Space`  | Page down          |
-| `.`      | Load new tweets    |
+| Atalho   | Ação                |
+| -------- | ------------------- |
+| `?`      | Menu completo de teclado |
+| `J`      | Próximo tweet       |
+| `K`      | Tweet anterior      |
+| `Space`  | Descer uma página   |
+| `.`      | Carregar novos tweets |
 
 {.shortcuts}
 
 ### Timelines
 
-| Shortcut | Action                  |
-| -------- | ----------------------- |
-| `G` `N`  | Home timeline           |
-| `G` `O`  | Moments                 |
-| `G` `N`  | Notifications tab       |
-| `G` `R`  | Mentions                |
-| `G` `P`  | Profile                 |
-| `G` `L`  | Likes tab               |
-| `G` `I`  | Lists tab               |
-| `G` `M`  | Direct messages         |
-| `G` `S`  | Settings and privacy    |
-| `G` `U`  | Go to someone's profile |
+| Atalho  | Ação                    |
+| ------- | ----------------------- |
+| `G` `N` | Timeline inicial        |
+| `G` `O` | Moments                 |
+| `G` `N` | Aba de notificações     |
+| `G` `R` | Menções                 |
+| `G` `P` | Perfil                  |
+| `G` `L` | Aba de curtidas         |
+| `G` `I` | Aba de listas           |
+| `G` `M` | Mensagens diretas       |
+| `G` `S` | Configurações e privacidade |
+| `G` `U` | Ir para o perfil de alguém |
 
 {.shortcuts}
 
-## Also see
+## Veja também
 
-- [Keyboard shortcuts for Twitter](https://help.twitter.com/en/using-twitter/how-to-tweet) _(help.twitter.com)_
+- [Atalhos de teclado do Twitter](https://help.twitter.com/en/using-twitter/how-to-tweet) _(help.twitter.com)_

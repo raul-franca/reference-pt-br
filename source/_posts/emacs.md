@@ -7,19 +7,19 @@ tags:
   - text
   - shortcut
 categories:
-  - Toolkit
+  - Ferramentas
 intro: |
-  [Emacs](https://www.gnu.org/software/emacs) is the extensible, customizable, self-documenting real time display text editor.
-  This reference was made for Emacs 27.
+  O [Emacs](https://www.gnu.org/software/emacs) é o editor de texto extensível, personalizável e auto-documentado com exibição em tempo real.
+  Esta referência foi feita para o Emacs 27.
 plugins:
   - copyCode
 ---
 
-## Getting started
+## Primeiros passos
 
-### Starting Emacs
+### Iniciando o Emacs
 
-To enter Emacs, just type its name:
+Para entrar no Emacs, basta digitar o nome dele:
 
 ```shell
 $ emacs
@@ -29,134 +29,134 @@ $ emacs
 
 | -           | -                      |
 | ----------- | :--------------------- |
-| `C-z`       | Suspend Emacs          |
-| `C-x` `C-c` | Exit Emacs permanently |
+| `C-z`       | Suspende o Emacs       |
+| `C-x` `C-c` | Sai do Emacs definitivamente |
 
 {.shortcuts}
 
-### Global Description {.secondary}
+### Descrição global {.secondary}
 
 | -         | -                                           |
 | --------- | :------------------------------------------ |
-| `C-<key>` | Means hold the control, and press `<key>`   |
-| `M-<key>` | Means press the Esc once, and press `<key>` |
+| `C-<key>` | Significa segurar Control e pressionar `<key>`   |
+| `M-<key>` | Significa pressionar Esc uma vez e pressionar `<key>` |
 
 {.shortcuts}
 
-NOTICE: This cheatsheet follows the above rules.
+NOTA: Esta cheat sheet segue as regras acima.
 
-### Motion {.row-span-2}
+### Movimento {.row-span-2}
 
-| Backward  | Forward   | Entity to move over            |
-| --------- | --------- | :----------------------------- |
-| `C-b`     | `C-f`     | Haracter                       |
-| `M-b`     | `M-f`     | Word                           |
-| `C-p`     | `C-n`     | Line                           |
-| `C-a`     | `C-e`     | Line beginning<br/>_(or end)_  |
-| `M-a`     | `M-e`     | Sentence                       |
-| `M-{`     | `M-}`     | Paragraph                      |
-| `C-x` `[` | `C-x` `]` | Page                           |
-| `C-M-b`   | `C-M-f`   | Sexp                           |
-| `C-M-a`   | `C-M-e`   | Function                       |
-| `M-<`     | `M->`     | Buffer beginning<br>_(or end)_ |
+| Para trás | Para frente | Entidade a percorrer            |
+| --------- | ----------- | :------------------------------ |
+| `C-b`     | `C-f`       | Caractere                       |
+| `M-b`     | `M-f`       | Palavra                         |
+| `C-p`     | `C-n`       | Linha                           |
+| `C-a`     | `C-e`       | Início da linha<br/>_(ou fim)_  |
+| `M-a`     | `M-e`       | Frase                           |
+| `M-{`     | `M-}`       | Parágrafo                       |
+| `C-x` `[` | `C-x` `]`   | Página                          |
+| `C-M-b`   | `C-M-f`     | Sexp                            |
+| `C-M-a`   | `C-M-e`     | Função                          |
+| `M-<`     | `M->`       | Início do buffer<br>_(ou fim)_  |
 
 {.shortcuts .show-header}
 
-### Case Change
+### Alteração de caixa
 
 | -           | -                |
 | ----------- | :--------------- |
-| `M-u`       | Uppercase word   |
-| `M-l`       | Lowercase word   |
-| `M-c`       | Capitalize word  |
-| `C-x` `C-u` | Uppercase region |
-| `C-x` `C-l` | Lowercase region |
+| `M-u`       | Palavra em maiúsculas   |
+| `M-l`       | Palavra em minúsculas   |
+| `M-c`       | Capitaliza a palavra  |
+| `C-x` `C-u` | Região em maiúsculas |
+| `C-x` `C-l` | Região em minúsculas |
 
 {.shortcuts}
 
-### Files
+### Arquivos
 
 | -           | -                                                |
 | ----------- | :----------------------------------------------- |
-| `C-x` `C-f` | Read a file into Emacs                           |
-| `C-x` `C-s` | Save a file back to disk                         |
-| `C-x` `s`   | Save all files                                   |
-| `C-x` `i`   | Insert contents of another file into this buffer |
-| `C-x` `C-v` | Replace this file with your file                 |
-| `C-x` `C-w` | Write buffer to a specified file                 |
-| `C-x` `C-q` | Toggle read-only status of buffer                |
+| `C-x` `C-f` | Lê um arquivo no Emacs                           |
+| `C-x` `C-s` | Salva um arquivo de volta no disco               |
+| `C-x` `s`   | Salva todos os arquivos                          |
+| `C-x` `i`   | Insere o conteúdo de outro arquivo neste buffer  |
+| `C-x` `C-v` | Substitui este arquivo pelo seu arquivo          |
+| `C-x` `C-w` | Grava o buffer em um arquivo especificado        |
+| `C-x` `C-q` | Alterna o status somente leitura do buffer       |
 
 {.shortcuts}
 
-### Error Recovery
+### Recuperação de erros
 
 | -                           | -                                          |
 | --------------------------- | :----------------------------------------- |
-| `C-g`                       | Abort partially typed or executing command |
-| `M-x` recover-session       | Recover files lost by a system crash       |
-| `C-x` `u`<br>`C-_`<br>`C-/` | Undo an unwanted change                    |
-| `M-x` revert-buffer         | Restore a buffer to its original contents  |
-| `C-l`                       | Redraw garbaged screen                     |
+| `C-g`                       | Aborta um comando parcialmente digitado ou em execução |
+| `M-x` recover-session       | Recupera arquivos perdidos em uma queda do sistema |
+| `C-x` `u`<br>`C-_`<br>`C-/` | Desfaz uma alteração indesejada            |
+| `M-x` revert-buffer         | Restaura um buffer ao conteúdo original    |
+| `C-l`                       | Redesenha a tela corrompida                |
 
 {.shortcuts}
 
-### Transposing {.row-span-2}
+### Transposição {.row-span-2}
 
 | -           | -                    |
 | ----------- | :------------------- |
-| `C-t`       | Transpose characters |
-| `M-t`       | Transpose words      |
-| `C-x` `C-t` | Transpose lines      |
-| `C-M-t`     | Transpose sexps      |
+| `C-t`       | Transpõe caracteres  |
+| `M-t`       | Transpõe palavras    |
+| `C-x` `C-t` | Transpõe linhas      |
+| `C-M-t`     | Transpõe sexps       |
 
 {.shortcuts .table-fixed}
 
-#### Scroll
+#### Rolagem
 
 | -         | -                                              |
 | --------- | :--------------------------------------------- |
-| `C-v`     | Scroll to next screen                          |
-| `M-v`     | Scroll to previous screen                      |
-| `C-x` `<` | Scroll left                                    |
-| `C-x` `>` | Scroll right                                   |
-| `C-l`     | Scroll current line to <br>center, top, bottom |
+| `C-v`     | Rola para a próxima tela                       |
+| `M-v`     | Rola para a tela anterior                      |
+| `C-x` `<` | Rola para a esquerda                           |
+| `C-x` `>` | Rola para a direita                            |
+| `C-l`     | Rola a linha atual para <br>o centro, o topo, a base |
 
 {.shortcuts .table-fixed}
 
-#### Goto
+#### Ir para
 
 | -         | -                   |
 | --------- | :------------------ |
-| `M-g` `g` | Goto line           |
-| `M-g` `c` | Goto char           |
-| `M-m`     | Back to indentation |
+| `M-g` `g` | Vai para a linha    |
+| `M-g` `c` | Vai para o caractere |
+| `M-m`     | Volta para a indentação |
 
 {.shortcuts .table-fixed}
 
-### Marking
+### Marcação
 
 | -                 | -                       |
 | ----------------- | :---------------------- |
-| `C-@`<br/>`C-SPC` | Uet mark here           |
-| `C-x` `C-x`       | Exchange point and mark |
-| `M-@`             | Set mark arg words away |
-| `M-h`             | Mark paragraph          |
-| `C-x` `C-p`       | Mark page               |
-| `C-M-@`           | Mark sexp               |
-| `C-M-h`           | Mark function           |
-| `C-x` `h`         | Mark entire buffer      |
+| `C-@`<br/>`C-SPC` | Define a marca aqui     |
+| `C-x` `C-x`       | Troca o ponto e a marca |
+| `M-@`             | Define a marca a arg palavras de distância |
+| `M-h`             | Marca o parágrafo       |
+| `C-x` `C-p`       | Marca a página          |
+| `C-M-@`           | Marca o sexp            |
+| `C-M-h`           | Marca a função          |
+| `C-x` `h`         | Marca o buffer inteiro  |
 
 {.shortcuts}
 
-### Killing and Deleting {.row-span-2}
+### Killing e exclusão {.row-span-2}
 
-| Backward      | Forward | Entity to kill           |
-| ------------- | ------- | :----------------------- |
-| `DEL`         | `C-d`   | Character <br>_(delete)_ |
-| `M-DEL`       | `M-d`   | Word                     |
-| `M-0` `C-k`   | `C-k`   | Line <br/> _(to end of)_ |
-| `C-x` `DEL`   | `M-k`   | Sentence                 |
-| `M--` `C-M-k` | `C-M-k` | Sexp                     |
+| Para trás     | Para frente | Entidade a remover       |
+| ------------- | ----------- | :----------------------- |
+| `DEL`         | `C-d`       | Caractere <br>_(delete)_ |
+| `M-DEL`       | `M-d`       | Palavra                  |
+| `M-0` `C-k`   | `C-k`       | Linha <br/> _(até o fim da)_ |
+| `C-x` `DEL`   | `M-k`       | Frase                    |
+| `M--` `C-M-k` | `C-M-k`     | Sexp                     |
 
 {.shortcuts .show-header}
 
@@ -164,73 +164,73 @@ NOTICE: This cheatsheet follows the above rules.
 
 | -          | -                                    |
 | ---------- | :----------------------------------- |
-| `C-W`      | Kill region C-w                      |
-| `M-w`      | Copy region to kill ring             |
-| `M-z` char | Kill through next occurrence of char |
-| `C-y`      | Yank back last thing killed          |
-| `M-y`      | Replace last yank with previous kill |
+| `C-W`      | Kill da região C-w                   |
+| `M-w`      | Copia a região para o kill ring      |
+| `M-z` char | Remove até a próxima ocorrência de char |
+| `C-y`      | Recoloca (yank) a última coisa removida |
+| `M-y`      | Substitui o último yank pelo kill anterior |
 
 {.shortcuts}
 
-### Getting Help
+### Obtendo ajuda
 
 | -         | -                                        |
 | --------- | :--------------------------------------- |
-| `C-x` `1` | Remove help window                       |
-| `C-M-v`   | Scroll help window                       |
-| `C-h` `a` | Apropos: show commands matching a string |
-| `C-h` `k` | Describe the function a key runs         |
-| `C-h` `f` | Describe a function                      |
-| `C-h` `m` | Get mode-specific information            |
+| `C-x` `1` | Remove a janela de ajuda                 |
+| `C-M-v`   | Rola a janela de ajuda                   |
+| `C-h` `a` | Apropos: mostra comandos que correspondem a uma string |
+| `C-h` `k` | Descreve a função executada por uma tecla |
+| `C-h` `f` | Descreve uma função                      |
+| `C-h` `m` | Obtém informações específicas do modo    |
 
 {.shortcuts}
 
-The help system is simple. Type `C-h` (or `F1`) and follow the directions. If you are a first-time user, type `C-h` `t`
-for a tutorial.
+O sistema de ajuda é simples. Digite `C-h` (ou `F1`) e siga as instruções. Se for a primeira vez que você usa o Emacs, digite `C-h` `t`
+para um tutorial.
 
-### Multiple Windows {.col-span-2}
+### Múltiplas janelas {.col-span-2}
 
-When two commands are shown, the second is a similar command for a frame instead of a window.
+Quando dois comandos são mostrados, o segundo é um comando semelhante para um frame em vez de uma janela.
 
 | -               | -               | -                                   |
 | --------------- | --------------- | :---------------------------------- |
-| `C-x` `5` `1`   | `C-x` `1`       | Delete all other windows            |
-| `C-x` `5` `2`   | `C-x` `2`       | Split window, above and below       |
-| `C-x` `5` `0`   | `C-x` `0`       | Delete this window                  |
-| `C-x` `3`       |                 | Split window, side by side          |
-| `C-M-v`         |                 | Scroll other window                 |
-| `C-x` `5` `o`   | `C-x` `o`       | Switch cursor to another window     |
-| `C-x` `5` `b`   | `C-x` `4` `b`   | Select buffer in other window       |
-| `C-x` `5` `C-o` | `C-x` `4` `C-o` | Display buffer in other window      |
-| `C-x` `5` `f`   | `C-x` `4` `f`   | Find file in other window           |
-| `C-x` `5` `r`   | `C-x` `4` `r`   | Find file read-only in other window |
-| `C-x` `5` `d`   | `C-x` `4` `d`   | Run Dired in other window           |
-| `C-x` `5` `.`   | `C-x` `4` `.`   | Find tag in other window            |
-| `C-x` `^`       |                 | Grow window taller                  |
-| `C-x` `{`       |                 | Shrink window narrower              |
-| `C-x` `}`       |                 | Grow window wider                   |
+| `C-x` `5` `1`   | `C-x` `1`       | Exclui todas as outras janelas      |
+| `C-x` `5` `2`   | `C-x` `2`       | Divide a janela, acima e abaixo     |
+| `C-x` `5` `0`   | `C-x` `0`       | Exclui esta janela                  |
+| `C-x` `3`       |                 | Divide a janela, lado a lado        |
+| `C-M-v`         |                 | Rola a outra janela                 |
+| `C-x` `5` `o`   | `C-x` `o`       | Move o cursor para outra janela     |
+| `C-x` `5` `b`   | `C-x` `4` `b`   | Seleciona o buffer em outra janela  |
+| `C-x` `5` `C-o` | `C-x` `4` `C-o` | Exibe o buffer em outra janela      |
+| `C-x` `5` `f`   | `C-x` `4` `f`   | Localiza o arquivo em outra janela  |
+| `C-x` `5` `r`   | `C-x` `4` `r`   | Localiza o arquivo como somente leitura em outra janela |
+| `C-x` `5` `d`   | `C-x` `4` `d`   | Executa o Dired em outra janela     |
+| `C-x` `5` `.`   | `C-x` `4` `.`   | Localiza a tag em outra janela      |
+| `C-x` `^`       |                 | Aumenta a altura da janela          |
+| `C-x` `{`       |                 | Diminui a largura da janela         |
+| `C-x` `}`       |                 | Aumenta a largura da janela         |
 
 {.shortcuts}
 
-### Formatting
+### Formatação
 
 | -           | -                                        |
 | ----------- | :--------------------------------------- |
-| `TAB`       | Indent current line (mode-dependent)     |
-| `C-M-\`     | Indent region (mode-dependent)           |
-| `C-M-q`     | Indent sexp (mode-dependent)             |
-| `C-x` `TAB` | Indent region rigidly arg columns        |
-| `M-;`       | Indent for comment                       |
-| `C-o`       | Insert newline after point               |
-| `C-M-o`     | Move rest of line vertically down        |
-| `C-x` `C-o` | Delete blank lines around point          |
-| `M-^`       | Join line with previous (with arg, next) |
-| `M-\`       | Delete all white space around point      |
-| `M-SPC`     | Put exactly one space at point           |
-| `M-q`       | Fill paragraph                           |
-| `C-x` `f`   | Set fill column to arg                   |
-| `C-x` `.`   | Set prefix each line starts with         |
-| `M-o`       | Set face                                 |
+| `TAB`       | Indenta a linha atual (depende do modo)  |
+| `C-M-\`     | Indenta a região (depende do modo)       |
+| `C-M-q`     | Indenta o sexp (depende do modo)         |
+| `C-x` `TAB` | Indenta a região rigidamente em arg colunas |
+| `M-;`       | Indenta para comentário                  |
+| `C-o`       | Insere uma nova linha após o ponto       |
+| `C-M-o`     | Move o restante da linha verticalmente para baixo |
+| `C-x` `C-o` | Exclui as linhas em branco ao redor do ponto |
+| `M-^`       | Une a linha à anterior (com arg, à seguinte) |
+| `M-\`       | Exclui todos os espaços em branco ao redor do ponto |
+| `M-SPC`     | Coloca exatamente um espaço no ponto     |
+| `M-q`       | Preenche o parágrafo                     |
+| `C-x` `f`   | Define a coluna de preenchimento como arg |
+| `C-x` `.`   | Define o prefixo com que cada linha começa |
+| `M-o`       | Define a face                            |
 
 {.shortcuts}
 
@@ -238,106 +238,106 @@ When two commands are shown, the second is a similar command for a frame instead
 
 | -         | -                                           |
 | --------- | :------------------------------------------ |
-| `C-h` `i` | Enter the Info documentation reader         |
-| `C-h` `S` | Find specified function or variable in Info |
+| `C-h` `i` | Entra no leitor de documentação Info        |
+| `C-h` `S` | Localiza a função ou variável especificada no Info |
 
 {.shortcuts .table-fixed}
 
-#### Moving within a node
+#### Movimentação dentro de um nó
 
 | -     | -                 |
 | ----- | :---------------- |
-| `SPC` | Scroll forward    |
-| `DEL` | Scroll reverse    |
-| `b`   | Beginning of node |
+| `SPC` | Rola para frente  |
+| `DEL` | Rola para trás    |
+| `b`   | Início do nó      |
 
 {.shortcuts .table-fixed}
 
-#### Moving between nodes
+#### Movimentação entre nós
 
 | -   | -                                      |
 | --- | :------------------------------------- |
-| `n` | Next node                              |
-| `p` | Previous node                          |
-| `u` | Move up                                |
-| `m` | Select menu item by name               |
-| `n` | Select nth menu item by number (1–9)   |
-| `f` | Follow cross reference (return with l) |
-| `l` | Return to last node you saw            |
-| `d` | Return to directory node               |
-| `t` | Go to top node of Info file            |
-| `g` | Go to any node by name                 |
+| `n` | Próximo nó                             |
+| `p` | Nó anterior                            |
+| `u` | Sobe                                   |
+| `m` | Seleciona o item de menu pelo nome     |
+| `n` | Seleciona o n-ésimo item de menu por número (1–9) |
+| `f` | Segue a referência cruzada (volte com l) |
+| `l` | Volta ao último nó que você viu        |
+| `d` | Volta ao nó de diretório               |
+| `t` | Vai para o nó superior do arquivo Info |
+| `g` | Vai para qualquer nó pelo nome         |
 
 {.shortcuts .table-fixed}
 
-#### Other
+#### Outros
 
 | -   | -                                |
 | --- | :------------------------------- |
-| `h` | Run Info tutorial                |
-| `i` | Look up a subject in the indices |
-| `s` | Search nodes for regexp          |
-| `q` | Quit Info                        |
+| `h` | Executa o tutorial do Info       |
+| `i` | Consulta um assunto nos índices  |
+| `s` | Pesquisa regexp nos nós          |
+| `q` | Sai do Info                      |
 
 {.shortcuts .table-fixed}
 
 ### Minibuffer
 
-The following keys are defined in the minibuffer.
+As teclas a seguir são definidas no minibuffer.
 
 | -     | -                                       |
 | ----- | :-------------------------------------- |
-| `TAB` | Complete as much as possible            |
-| `SPC` | Complete up to one word                 |
-| `RET` | Complete and execute                    |
-| `?`   | Show possible completions               |
-| `M-p` | Fetch previous minibuffer input         |
-| `M-n` | Fetch later minibuffer input or default |
-| `M-r` | Regexp search backward through history  |
-| `M-s` | Regexp search forward through history   |
-| `C-g` | Abort command                           |
+| `TAB` | Completa o máximo possível              |
+| `SPC` | Completa até uma palavra                |
+| `RET` | Completa e executa                      |
+| `?`   | Mostra as conclusões possíveis          |
+| `M-p` | Recupera a entrada anterior do minibuffer |
+| `M-n` | Recupera a próxima entrada do minibuffer ou o padrão |
+| `M-r` | Pesquisa regexp para trás no histórico  |
+| `M-s` | Pesquisa regexp para frente no histórico |
+| `C-g` | Aborta o comando                        |
 
 {.shortcuts}
 
-Type `C-x` `ESC` `ESC` to edit and repeat the last command that used the minibuffer. Type `F10` to activate menu bar
-items on text terminals.
+Digite `C-x` `ESC` `ESC` para editar e repetir o último comando que usou o minibuffer. Digite `F10` para ativar os itens
+da barra de menus em terminais de texto.
 
 ### Tags
 
 | -                        | -                                          |
 | ------------------------ | :----------------------------------------- |
-| `M-.`                    | Find a tag (a definition)                  |
-| `C-u` `M-.`              | Find next occurrence of tag                |
-| `M-x` visit-tags-table   | Specify a new tags file                    |
-| `M-x` tags-search        | Regexp search on all files in tags table   |
-| `M-x` tags-query-replace | Run query-replace on all the files         |
-| `M-,`                    | Continue last tags search or query-replace |
+| `M-.`                    | Localiza uma tag (uma definição)           |
+| `C-u` `M-.`              | Localiza a próxima ocorrência da tag       |
+| `M-x` visit-tags-table   | Especifica um novo arquivo de tags         |
+| `M-x` tags-search        | Pesquisa regexp em todos os arquivos da tabela de tags |
+| `M-x` tags-query-replace | Executa query-replace em todos os arquivos |
+| `M-,`                    | Continua a última pesquisa de tags ou o query-replace |
 
 {.shortcuts}
 
-### Rectangles
+### Retângulos
 
 | -             | -                                   |
 | ------------- | :---------------------------------- |
-| `C-x` `r` `r` | Copy rectangle to register          |
-| `C-x` `r` `k` | Kill rectangle                      |
-| `C-x` `r` `y` | Yank rectangle                      |
-| `C-x` `r` `o` | Open rectangle, shifting text right |
-| `C-x` `r` `c` | Blank out rectangle                 |
-| `C-x` `r` `t` | Prefix each line with a string      |
+| `C-x` `r` `r` | Copia o retângulo para o register   |
+| `C-x` `r` `k` | Remove o retângulo                  |
+| `C-x` `r` `y` | Recoloca o retângulo                |
+| `C-x` `r` `o` | Abre o retângulo, deslocando o texto para a direita |
+| `C-x` `r` `c` | Esvazia o retângulo                 |
+| `C-x` `r` `t` | Prefixa cada linha com uma string   |
 
 {.shortcuts}
 
-### Keyboard Macros
+### Macros de teclado
 
 | -                         | -                                   |
 | ------------------------- | :---------------------------------- |
-| `C-x` `(`                 | Start defining a keyboard macro     |
-| `C-x` `)`                 | End keyboard macro definition       |
-| `C-x` `e`                 | Execute last-defined keyboard macro |
-| `C-u` `C-x` `(`           | Append to last keyboard macro       |
-| `M-x` name-last-kbd-macro | Name last keyboard macro            |
-| `M-x` insert-kbd-macro    | Insert Lisp definition in buffer    |
+| `C-x` `(`                 | Começa a definir uma macro de teclado |
+| `C-x` `)`                 | Encerra a definição da macro de teclado |
+| `C-x` `e`                 | Executa a última macro de teclado definida |
+| `C-u` `C-x` `(`           | Acrescenta à última macro de teclado |
+| `M-x` name-last-kbd-macro | Nomeia a última macro de teclado    |
+| `M-x` insert-kbd-macro    | Insere a definição Lisp no buffer   |
 
 {.shortcuts}
 
@@ -345,113 +345,113 @@ items on text terminals.
 
 | -           | -                     |
 | ----------- | :-------------------- |
-| `C-x` `b`   | Select another buffer |
-| `C-x` `C-b` | List all buffers      |
-| `C-x` `k`   | Kill a buffer         |
+| `C-x` `b`   | Seleciona outro buffer |
+| `C-x` `C-b` | Lista todos os buffers |
+| `C-x` `k`   | Remove um buffer      |
 
 {.shortcuts}
 
-## Emacs Search
+## Pesquisa no Emacs
 
-### Regex (common) {.row-span-2}
+### Regex (comum) {.row-span-2}
 
 | -             | -                                            |
 | ------------- | :------------------------------------------- |
-| `.` `(dot)`   | Any single character except a newline        |
-| `*`           | Zero or more repeats                         |
-| `+`           | One or more repeats                          |
-| `?`           | Zero or one repeat                           |
-| `\`           | Quote special characters                     |
-| `\c`          | Quote regular expression special character c |
-| `\|`          | Alternative (“or”)                           |
-| `\(...\)`     | Grouping                                     |
-| `\(:?...\)`   | Shy grouping                                 |
-| `\(:NUM...\)` | Explicit numbered grouping                   |
-| `\n`          | Same text as nth group                       |
-| `\b`          | At word break                                |
-| `\B`          | Not at word break                            |
+| `.` `(dot)`   | Qualquer caractere único, exceto uma nova linha |
+| `*`           | Zero ou mais repetições                      |
+| `+`           | Uma ou mais repetições                       |
+| `?`           | Zero ou uma repetição                        |
+| `\`           | Escapa caracteres especiais                  |
+| `\c`          | Escapa o caractere especial c de expressão regular |
+| `\|`          | Alternativa (“ou”)                           |
+| `\(...\)`     | Agrupamento                                  |
+| `\(:?...\)`   | Agrupamento shy                              |
+| `\(:NUM...\)` | Agrupamento numerado explícito               |
+| `\n`          | Mesmo texto do n-ésimo grupo                 |
+| `\b`          | Em fronteira de palavra                      |
+| `\B`          | Fora de fronteira de palavra                 |
 
-### Regex (entry)
+### Regex (entrada)
 
-| Start | End   | Entity |
-| ----- | ----- | :----- |
-| `^`   | `$`   | Line   |
-| `\<`  | `\>`  | Word   |
-| `\_<` | `\_>` | Symbol |
-| `\‘`  | `\’`  | Buffer |
+| Início | Fim   | Entidade |
+| ------ | ----- | :------- |
+| `^`    | `$`   | Linha    |
+| `\<`   | `\>`  | Palavra  |
+| `\_<`  | `\_>` | Símbolo  |
+| `\‘`   | `\’`  | Buffer   |
 
 {.show-header}
 
-### Regex (conflict)
+### Regex (conflito)
 
-| These   | Others   | class                     |
+| Estes   | Outros   | classe                    |
 | ------- | -------- | :------------------------ |
-| `[...]` | `[^...]` | Explicit set              |
-| `\w`    | `\W`     | Word-syntax character     |
-| `\sc`   | `\Sc`    | Character with syntax c   |
-| `\cc`   | `\Cc`    | Character with category c |
+| `[...]` | `[^...]` | Conjunto explícito        |
+| `\w`    | `\W`     | Caractere com sintaxe de palavra |
+| `\sc`   | `\Sc`    | Caractere com sintaxe c   |
+| `\cc`   | `\Cc`    | Caractere com categoria c |
 
 {.show-header}
 
-### Incremental Search
+### Pesquisa incremental
 
 | -       | -                                 |
 | ------- | :-------------------------------- |
-| `C-s`   | Search forward                    |
-| `C-r`   | Search backward                   |
-| `C-M-s` | Regular expression search         |
-| `C-M-r` | Reverse regular expression search |
-| `M-p`   | Select previous search string     |
-| `M-n`   | Select next later search string   |
-| `RET`   | Exit incremental search           |
-| `DEL`   | Undo effect of last character     |
-| `C-g`   | Abort current search              |
+| `C-s`   | Pesquisa para frente              |
+| `C-r`   | Pesquisa para trás                |
+| `C-M-s` | Pesquisa por expressão regular    |
+| `C-M-r` | Pesquisa reversa por expressão regular |
+| `M-p`   | Seleciona a string de pesquisa anterior |
+| `M-n`   | Seleciona a próxima string de pesquisa |
+| `RET`   | Sai da pesquisa incremental       |
+| `DEL`   | Desfaz o efeito do último caractere |
+| `C-g`   | Aborta a pesquisa atual           |
 
 {.shortcuts}
 
-Use `C-s` or `C-r` again to repeat the search in either direction. If Emacs is still searching, `C-g` cancels only the
-part not matched.
+Use `C-s` ou `C-r` novamente para repetir a pesquisa em qualquer direção. Se o Emacs ainda estiver pesquisando, `C-g` cancela apenas
+a parte que não teve correspondência.
 
-### Query Replace
+### Query replace
 
 | -            | -                                    |
 | ------------ | :----------------------------------- |
-| `M-%`        | Interactively replace a text string  |
-| `M-x` regexp | Using regular expressions            |
-| `SPC` / `y`  | Replace this one, go on to next      |
-| `,`          | Replace this one, don’t move         |
-| `DEL` / `n`  | Skip to next without replacing       |
-| `!`          | Replace all remaining matches        |
-| `^`          | Back up to the previous match        |
-| `RET`        | Exit query-replace                   |
-| `C-r`        | Enter recursive edit (C-M-c to exit) |
+| `M-%`        | Substitui interativamente uma string de texto |
+| `M-x` regexp | Usando expressões regulares          |
+| `SPC` / `y`  | Substitui esta e vai para a próxima  |
+| `,`          | Substitui esta e não avança          |
+| `DEL` / `n`  | Pula para a próxima sem substituir   |
+| `!`          | Substitui todas as ocorrências restantes |
+| `^`          | Volta para a ocorrência anterior     |
+| `RET`        | Sai do query-replace                 |
+| `C-r`        | Entra na edição recursiva (C-M-c para sair) |
 
 {.shortcuts}
 
-## Misc
+## Diversos
 
 ### Shells
 
 | -           | -                                      |
 | ----------- | :------------------------------------- |
-| `M-!`       | Execute a shell command                |
-| `M-&`       | Execute a shell command asynchronously |
-| `M-`        | Run a shell command on the region      |
-| `C-u` `M-`  | Filter region through a shell command  |
-| `M-x` shell | Start a shell in window shell          |
+| `M-!`       | Executa um comando de shell            |
+| `M-&`       | Executa um comando de shell de forma assíncrona |
+| `M-`        | Executa um comando de shell na região  |
+| `C-u` `M-`  | Filtra a região por um comando de shell |
+| `M-x` shell | Inicia um shell na janela shell        |
 
 {.shortcuts}
 
-### International Character Sets {.col-span-2}
+### Conjuntos de caracteres internacionais {.col-span-2}
 
 | -                          | -                                  |
 | -------------------------- | :--------------------------------- |
-| `C-x` `RET` `l`            | specify principal language         |
-| `M-x` list-input-methods   | show all input methods             |
-| `C-\`                      | enable or disable input method     |
-| `C-x` `RET` `c`            | set coding system for next command |
-| `M-x` list-coding-systems  | show all coding systems            |
-| `M-x` prefer-coding-system | choose preferred coding system     |
+| `C-x` `RET` `l`            | Especifica o idioma principal      |
+| `M-x` list-input-methods   | Mostra todos os métodos de entrada |
+| `C-\`                      | Ativa ou desativa o método de entrada |
+| `C-x` `RET` `c`            | Define o sistema de codificação para o próximo comando |
+| `M-x` list-coding-systems  | Mostra todos os sistemas de codificação |
+| `M-x` prefer-coding-system | Escolhe o sistema de codificação preferido |
 
 {.shortcuts}
 
@@ -459,42 +459,42 @@ part not matched.
 
 | -               | -                                    |
 | --------------- | :----------------------------------- |
-| `C-x` `r` `s`   | Save region in register              |
-| `C-x` `r` `i`   | Insert register contents into buffer |
-| `C-x` `r` `SPC` | Save value of point in register      |
-| `C-x` `r` `j`   | Jump to point saved in register      |
+| `C-x` `r` `s`   | Salva a região no register           |
+| `C-x` `r` `i`   | Insere o conteúdo do register no buffer |
+| `C-x` `r` `SPC` | Salva o valor do ponto no register   |
+| `C-x` `r` `j`   | Salta para o ponto salvo no register |
 
 {.shortcuts}
 
-### Miscellaneous
+### Diversos
 
 | -          | -                 |
 | ---------- | :---------------- |
-| `C-u` num  | Numeric argument  |
-| `M--`      | Negative argument |
-| `C-q` char | Quoted insert     |
+| `C-u` num  | Argumento numérico |
+| `M--`      | Argumento negativo |
+| `C-q` char | Inserção citada   |
 
 {.shortcuts}
 
-### Commands Dealing with Emacs Lisp
+### Comandos para lidar com Emacs Lisp
 
 | -                  | -                                  |
 | ------------------ | :--------------------------------- |
-| `C-x` `C-e`        | Eval sexp before point             |
-| `C-M-x`            | Eval current defun                 |
-| `M-x` eval-region  | Eval region                        |
-| `M-:`              | Read and eval minibuffer           |
-| `M-x` load-library | Load a Lisp library from load-path |
+| `C-x` `C-e`        | Avalia o sexp antes do ponto       |
+| `C-M-x`            | Avalia a defun atual               |
+| `M-x` eval-region  | Avalia a região                    |
+| `M-:`              | Lê e avalia o minibuffer           |
+| `M-x` load-library | Carrega uma biblioteca Lisp do load-path |
 
 {.shortcuts}
 
-### Simple Customization
+### Personalização simples
 
 | -                 | -                             |
 | ----------------- | :---------------------------- |
-| `M-x` `customize` | customize variables and faces |
+| `M-x` `customize` | personaliza variáveis e faces |
 
-Making global key bindings in Emacs Lisp:
+Criando key bindings globais em Emacs Lisp:
 
 ```{.wrap}
 (global-set-key (kbd "C-c g") ’search-forward)
@@ -505,29 +505,29 @@ Making global key bindings in Emacs Lisp:
 
 | -                 | -                                        |
 | ----------------- | :--------------------------------------- |
-| `C-x` `a` `g`     | Add global abbrev                        |
-| `C-x` `a` `l`     | Add mode-local abbrev                    |
-| `C-x` `a` `i` `g` | Add global expansion for this abbrev     |
-| `C-x` `a` `i` `l` | Add mode-local expansion for this abbrev |
-| `C-x` `a` `e`     | Explicitly expand abbrev                 |
-| `M-/`             | Expand previous word dynamically         |
+| `C-x` `a` `g`     | Adiciona um abbrev global                |
+| `C-x` `a` `l`     | Adiciona um abbrev local do modo         |
+| `C-x` `a` `i` `g` | Adiciona uma expansão global para este abbrev |
+| `C-x` `a` `i` `l` | Adiciona uma expansão local do modo para este abbrev |
+| `C-x` `a` `e`     | Expande o abbrev explicitamente          |
+| `M-/`             | Expande a palavra anterior dinamicamente |
 
 {.shortcuts}
 
-### Spelling Check
+### Verificação ortográfica
 
 | -                   | -                                     |
 | ------------------- | :------------------------------------ |
-| `M-$`               | Check spelling of current word        |
-| `M-x` ispell-region | Check spelling of all words in region |
-| `M-x` ispell-buffer | Check spelling of entire buffer       |
-| `M-x` flyspell-mode | Toggle on-the-fly spell checking      |
+| `M-$`               | Verifica a ortografia da palavra atual |
+| `M-x` ispell-region | Verifica a ortografia de todas as palavras da região |
+| `M-x` ispell-buffer | Verifica a ortografia do buffer inteiro |
+| `M-x` flyspell-mode | Ativa ou desativa a verificação ortográfica em tempo real |
 
 {.shortcuts}
 
-### Writing Commands {.col-span-2}
+### Escrevendo comandos {.col-span-2}
 
-#### Syntax
+#### Sintaxe
 
 ```lisp
 (defun command-name (args)
@@ -535,7 +535,7 @@ Making global key bindings in Emacs Lisp:
 body)
 ```
 
-#### Example
+#### Exemplo
 
 ```lisp
 (defun this-line-to-top-of-window (line)
@@ -547,4 +547,4 @@ With prefix argument LINE, put point on LINE."
               (prefix-numeric-value line))))
 ```
 
-The interactive spec says how to read arguments interactively. Type `C-h` `f` interactive `RET` for more details.
+A especificação interativa diz como ler os argumentos interativamente. Digite `C-h` `f` interactive `RET` para mais detalhes.

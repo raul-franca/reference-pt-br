@@ -6,16 +6,16 @@ tags:
   - automation
   - testing
 categories:
-  - Programming
+  - Programação
 intro: |
-  This cheat sheet is a crash course for Selenium beginners and help to get the idea about the basic concepts of Selenium.
+  Esta cheat sheet é um curso intensivo para iniciantes em Selenium e ajuda a entender os conceitos básicos do Selenium.
 ---
 
-## Getting Started
+## Primeiros passos
 
-### Initialize Browser Drivers {.row-span-2}
+### Inicializar drivers de navegador {.row-span-2}
 
-| Browser   | Syntax                                  |
+| Navegador | Sintaxe                                 |
 | --------- | --------------------------------------- |
 | `Chrome`  | WebDriver driver = new ChromeDriver();  |
 | `Edge`    | WebDriver driver = new EdgeDriver();    |
@@ -24,9 +24,9 @@ intro: |
 
 {.show-header .left-text}
 
-### Selenium Locators {.col-span-2}
+### Localizadores do Selenium {.col-span-2}
 
-| Locator           | Syntax                                        |
+| Localizador       | Sintaxe                                       |
 | ----------------- | --------------------------------------------- |
 | `className`       | driver.findElement(By.className (“key”))      |
 | `cssSelector`     | driver.findElement(By.cssSelector(key"))      |
@@ -39,45 +39,45 @@ intro: |
 
 {.show-header .left-text}
 
-### Navigate to URL
+### Navegar para uma URL
 
 ```shell script
 driver.get("https://www.example.com");
 ```
 
-### Close all browser windows
+### Fechar todas as janelas do navegador
 
 ```shell script
 driver.quit();
 ```
 
-### Close the current browser window
+### Fechar a janela atual do navegador
 
 ```shell script
 driver.close();
 ```
 
-### Navigation {.col-span-2}
+### Navegação {.col-span-2}
 
-| Description                     | Syntax                                           |
-| ------------------------------- | ------------------------------------------------ |
-| `Navigate to a new URL`         | driver.navigate().to("https://www.newsite.com"); |
-| `Go forward to the next page`   | driver.navigate().forward();                     |
-| `Go back to the previous page ` | driver.navigate().back();                        |
-| `Refresh the current page`      | driver.navigate().refresh();                     |
-
-{.show-header .left-text}
-
-### Frame Handling {.col-span-2}
-
-| Description                       | Syntax                              |
-| --------------------------------- | ----------------------------------- |
-| `Switch to a frame`               | driver.switchTo().frame("frameId"); |
-| `Switch back to the main content` | driver.switchTo().defaultContent(); |
+| Descrição                        | Sintaxe                                          |
+| -------------------------------- | ------------------------------------------------ |
+| `Navigate to a new URL`          | driver.navigate().to("https://www.newsite.com"); |
+| `Go forward to the next page`    | driver.navigate().forward();                     |
+| `Go back to the previous page `  | driver.navigate().back();                        |
+| `Refresh the current page`       | driver.navigate().refresh();                     |
 
 {.show-header .left-text}
 
-### Alerts/Pop-Ups
+### Manipulação de frames {.col-span-2}
+
+| Descrição                          | Sintaxe                             |
+| ---------------------------------- | ----------------------------------- |
+| `Switch to a frame`                | driver.switchTo().frame("frameId"); |
+| `Switch back to the main content`  | driver.switchTo().defaultContent(); |
+
+{.show-header .left-text}
+
+### Alertas/Pop-ups
 
 ```shell script
 Alert alert = driver.switchTo().alert();
@@ -96,7 +96,7 @@ alert().getText();
 
 ```
 
-### Mouse and Keyboard Actions {.col-span-2}
+### Ações de mouse e teclado {.col-span-2}
 
 ```shell script
 Actions actions = new Actions(driver);
@@ -115,7 +115,7 @@ actions.sendKeys(element, "text").perform();
 
 ```
 
-### Page Information {.col-span-1}
+### Informações da página {.col-span-1}
 
 ```shell script
 // Get the page title
@@ -129,7 +129,7 @@ driver.getPageSource();
 
 ```
 
-### Waits {.col-span-3}
+### Esperas {.col-span-3}
 
 ```shell script
 // Explicit Wait :- These are conditional waits can be applied to satisfy a particular condition

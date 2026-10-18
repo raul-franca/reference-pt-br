@@ -6,16 +6,16 @@ tags:
   - code
   - Table
 categories:
-  - Other
+  - Outros
 intro: |
-  This cheatsheet is a complete list of ASCII Code Table with their numbers and names.
+  Este cheat sheet é uma lista completa da tabela de códigos ASCII com seus números e nomes.
 ---
 
-## ASCII Code Table {.cols-1}
+## Tabela de códigos ASCII {.cols-1}
 
-### ASCII Code Table
+### Tabela de códigos ASCII
 
-| Symbol                             | Dec | Oct | Hex | Bin      |
+| Símbolo                            | Dec | Oct | Hex | Bin      |
 | ---------------------------------- | --- | --- | --- | -------- |
 | NUL (Null)                         | 0   | 0   | 0   | 0        |
 | SOH (Start of Heading)             | 1   | 1   | 1   | 1        |

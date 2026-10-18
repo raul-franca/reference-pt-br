@@ -1,4 +1,4 @@
-// Donation configuration and helper functions
+// Configuração de doações e funções auxiliares
 
 const donationConfig = {
   github: {
@@ -19,7 +19,7 @@ const donationConfig = {
   }
 };
 
-// Helper function to get donation URLs
+// Função auxiliar para obter as URLs de doação
 hexo.extend.helper.register('donation_link', function (platform) {
   const config = donationConfig[platform];
   if (config && config.enabled) {
@@ -28,12 +28,12 @@ hexo.extend.helper.register('donation_link', function (platform) {
   return '#';
 });
 
-// Helper function to check if donations are enabled
+// Função auxiliar para verificar se as doações estão ativas
 hexo.extend.helper.register('donations_enabled', function () {
   return Object.values(donationConfig).some((config) => config.enabled);
 });
 
-// Helper function to get all enabled donation platforms
+// Função auxiliar para obter todas as plataformas de doação ativas
 hexo.extend.helper.register('enabled_donations', function () {
   return Object.entries(donationConfig)
     .filter(([platform, config]) => config.enabled)

@@ -7,152 +7,152 @@ tags:
   -
   -
 categories:
-  - Keyboard Shortcuts
+  - Atalhos de Teclado
 intro: |
-  A visual cheat-sheet for the 83 keyboard shortcuts found in Missive
+  Um cheat sheet visual para os 83 atalhos de teclado do Missive
 ---
 
-## Keyboard Shortcuts
+## Atalhos de teclado
 
-### Navigation
+### Navegação
 
-| Shortcut      | Action         |
-| ------------- | -------------- |
-| `Down`        | Next item      |
-| `Up`          | Previous item  |
-| `Alt` `Up`    | First item     |
-| `Alt` `Down`  | Last item      |
-| `Right`       | Open item      |
-| `Left`        | Collapse item  |
-| `Tab`         | Next scope     |
-| `Shift` `Tab` | Previous scope |
-| `PgUp`        | Scroll up      |
-| `PgDn`        | Scroll down    |
-
-{.shortcuts}
-
-### Selection
-
-| Shortcut             | Action                          |
-| -------------------- | ------------------------------- |
-| `Shift` `Up`         | Select next conversation        |
-| `Shift` `Down`       | Select previous conversation    |
-| `Alt` `Shift` `Up`   | Select until first conversation |
-| `Alt` `Shift` `Down` | Select until last conversation  |
-| `Ctrl` `A`           | Select all conversations        |
+| Atalho        | Ação            |
+| ------------- | --------------- |
+| `Down`        | Próximo item    |
+| `Up`          | Item anterior   |
+| `Alt` `Up`    | Primeiro item   |
+| `Alt` `Down`  | Último item     |
+| `Right`       | Abrir item      |
+| `Left`        | Recolher item   |
+| `Tab`         | Próximo escopo  |
+| `Shift` `Tab` | Escopo anterior |
+| `PgUp`        | Rolar para cima |
+| `PgDn`        | Rolar para baixo |
 
 {.shortcuts}
 
-### Application
+### Seleção
 
-| Shortcut           | Action                            |
-| ------------------ | --------------------------------- |
-| `Ctrl` `N`         | Compose new email                 |
-| `Ctrl` `Shift` `N` | Create new conversation           |
-| `Ctrl` `F`         | Search                            |
-| `Ctrl` `Shift` `C` | Focus comment box                 |
-| `Ctrl` `Shift` `X` | Focus task box                    |
-| `Space`            | Preview item                      |
-| `Ctrl` `Up`        | Edit previous comment             |
-| `Ctrl` `Shift` `Y` | Set a status                      |
-| `Ctrl` `.`         | Open conversation contextual menu |
-| `Ctrl` `G`         | Open more menu                    |
-| `Ctrl` `L`         | Open location                     |
-| `Ctrl` `,`         | Open preferences                  |
-| `Ctrl` `Shift` `,` | Open contacts                     |
-| `Ctrl` `Alt` `S`   | Toggle right sidebar              |
-| `Ctrl` `Alt` `N`   | Main right sidebar action         |
-| `Ctrl` `Alt` `R`   | Reload                            |
+| Atalho               | Ação                             |
+| -------------------- | -------------------------------- |
+| `Shift` `Up`         | Selecionar próxima conversa      |
+| `Shift` `Down`       | Selecionar conversa anterior     |
+| `Alt` `Shift` `Up`   | Selecionar até a primeira conversa |
+| `Alt` `Shift` `Down` | Selecionar até a última conversa |
+| `Ctrl` `A`           | Selecionar todas as conversas    |
 
 {.shortcuts}
 
-### Actions {.row-span-2}
+### Aplicação
 
-| Shortcut               | Action                       |
+| Atalho             | Ação                                  |
+| ------------------ | ------------------------------------- |
+| `Ctrl` `N`         | Compor novo e-mail                    |
+| `Ctrl` `Shift` `N` | Criar nova conversa                   |
+| `Ctrl` `F`         | Pesquisar                             |
+| `Ctrl` `Shift` `C` | Focar na caixa de comentário          |
+| `Ctrl` `Shift` `X` | Focar na caixa de tarefa              |
+| `Space`            | Visualizar item                       |
+| `Ctrl` `Up`        | Editar comentário anterior            |
+| `Ctrl` `Shift` `Y` | Definir um status                     |
+| `Ctrl` `.`         | Abrir menu de contexto da conversa    |
+| `Ctrl` `G`         | Abrir menu "mais"                     |
+| `Ctrl` `L`         | Abrir local                           |
+| `Ctrl` `,`         | Abrir preferências                    |
+| `Ctrl` `Shift` `,` | Abrir contatos                        |
+| `Ctrl` `Alt` `S`   | Ativar/desativar barra lateral direita |
+| `Ctrl` `Alt` `N`   | Ação principal da barra lateral direita |
+| `Ctrl` `Alt` `R`   | Recarregar                            |
+
+{.shortcuts}
+
+### Ações {.row-span-2}
+
+| Atalho                 | Ação                         |
 | ---------------------- | ---------------------------- |
-| `Back`                 | Archive or remove label      |
-| `Alt` `Back`           | Close                        |
-| `Cmd` `Back`           | Trash                        |
-| `Ctrl` `Shift` `L`     | Label as...                  |
-| `Ctrl` `Alt` `L`       | Move to...                   |
-| `Ctrl` `Shift` `K`     | Assign                       |
-| `Ctrl` `Shift` `J`     | Snooze                       |
-| `Ctrl` `Shift` `S`     | Toggle star                  |
-| `Ctrl` `Shift` `M`     | Toggle watch                 |
-| `Ctrl` `R`             | Reply all                    |
-| `Ctrl` `Shift` `R`     | Reply                        |
-| `Ctrl` `Shift` `F`     | Forward                      |
-| `Ctrl` `Shift` `D`     | Open or focus draft          |
-| `Ctrl` `P`             | Print                        |
-| `Ctrl` `O`             | Open in new window           |
-| `Ctrl` `Z`             | Undo last action             |
-| `Ctrl` `Shift` `Z`     | Redo last action             |
-| `Ctrl` `Shift` `I`     | Mark as read                 |
-| `Ctrl` `Shift` `U`     | Mark as unread               |
-| `Ctrl` `Shift` `=`     | Mark as important            |
-| `Ctrl` `-`             | Mark as not important        |
-| `Ctrl` `Shift` `Right` | Expand entire conversation   |
-| `Ctrl` `Shift` `Left`  | Collapse entire conversation |
-| `Ctrl` `Shift` `'`     | Toggle message quote         |
-| `Ctrl` `Shift` `P`     | Pin to sidebar               |
-| `Ctrl` `Shift` `G`     | Merge...                     |
+| `Back`                 | Arquivar ou remover rótulo   |
+| `Alt` `Back`           | Fechar                       |
+| `Cmd` `Back`           | Lixeira                      |
+| `Ctrl` `Shift` `L`     | Rotular como...              |
+| `Ctrl` `Alt` `L`       | Mover para...                |
+| `Ctrl` `Shift` `K`     | Atribuir                     |
+| `Ctrl` `Shift` `J`     | Adiar                        |
+| `Ctrl` `Shift` `S`     | Ativar/desativar estrela     |
+| `Ctrl` `Shift` `M`     | Ativar/desativar acompanhamento |
+| `Ctrl` `R`             | Responder a todos            |
+| `Ctrl` `Shift` `R`     | Responder                    |
+| `Ctrl` `Shift` `F`     | Encaminhar                   |
+| `Ctrl` `Shift` `D`     | Abrir ou focar rascunho      |
+| `Ctrl` `P`             | Imprimir                     |
+| `Ctrl` `O`             | Abrir em nova janela         |
+| `Ctrl` `Z`             | Desfazer última ação         |
+| `Ctrl` `Shift` `Z`     | Refazer última ação          |
+| `Ctrl` `Shift` `I`     | Marcar como lido             |
+| `Ctrl` `Shift` `U`     | Marcar como não lido         |
+| `Ctrl` `Shift` `=`     | Marcar como importante       |
+| `Ctrl` `-`             | Marcar como não importante   |
+| `Ctrl` `Shift` `Right` | Expandir conversa inteira    |
+| `Ctrl` `Shift` `Left`  | Recolher conversa inteira    |
+| `Ctrl` `Shift` `'`     | Ativar/desativar citação da mensagem |
+| `Ctrl` `Shift` `P`     | Fixar na barra lateral       |
+| `Ctrl` `Shift` `G`     | Mesclar...                   |
 
 {.shortcuts}
 
-### Composer
+### Composição
 
-| Shortcut               | Action             |
-| ---------------------- | ------------------ |
-| `Ctrl` `Enter`         | Send               |
-| `Ctrl` `Shift` `Enter` | Send and archive   |
-| `Ctrl` `D`             | Discard draft      |
-| `Ctrl` `Shift` `C`     | Add CC recipients  |
-| `Ctrl` `Shift` `B`     | Add BCC recipients |
-| `Ctrl` `K`             | Insert a link      |
-| `Ctrl` `Shift` `O`     | Open responses     |
-
-{.shortcuts}
-
-### Formatting
-
-| Shortcut           | Action             |
-| ------------------ | ------------------ |
-| `Ctrl` `Shift` `-` | Decrease text size |
-| `Ctrl` `Shift` `=` | Increase text size |
-| `Ctrl` `B`         | Bold               |
-| `Ctrl` `I`         | Italic             |
-| `Ctrl` `U`         | Underline          |
-| `Ctrl` `Shift` `7` | Numbered list      |
-| `Ctrl` `Shift` `8` | Bulleted list      |
-| `Ctrl` `[`         | Decrease indent    |
-| `Ctrl` `]`         | Increase indent    |
+| Atalho                 | Ação                          |
+| ---------------------- | ----------------------------- |
+| `Ctrl` `Enter`         | Enviar                        |
+| `Ctrl` `Shift` `Enter` | Enviar e arquivar             |
+| `Ctrl` `D`             | Descartar rascunho            |
+| `Ctrl` `Shift` `C`     | Adicionar destinatários em CC |
+| `Ctrl` `Shift` `B`     | Adicionar destinatários em BCC |
+| `Ctrl` `K`             | Inserir um link               |
+| `Ctrl` `Shift` `O`     | Abrir respostas               |
 
 {.shortcuts}
 
-### Calendar
+### Formatação
 
-| Shortcut   | Action       |
+| Atalho             | Ação                        |
+| ------------------ | --------------------------- |
+| `Ctrl` `Shift` `-` | Diminuir tamanho do texto   |
+| `Ctrl` `Shift` `=` | Aumentar tamanho do texto   |
+| `Ctrl` `B`         | Negrito                     |
+| `Ctrl` `I`         | Itálico                     |
+| `Ctrl` `U`         | Sublinhado                  |
+| `Ctrl` `Shift` `7` | Lista numerada              |
+| `Ctrl` `Shift` `8` | Lista com marcadores        |
+| `Ctrl` `[`         | Diminuir recuo              |
+| `Ctrl` `]`         | Aumentar recuo              |
+
+{.shortcuts}
+
+### Calendário
+
+| Atalho     | Ação         |
 | ---------- | ------------ |
-| `Ctrl` `N` | Create event |
-| `Ctrl` `R` | Refresh      |
-| `Enter`    | View day     |
-| `T`        | Today        |
-| `Ctrl` `L` | Go to date   |
-| `D`        | Day view     |
-| `W`        | Week view    |
-| `M`        | Month view   |
-| `A`        | Agenda view  |
+| `Ctrl` `N` | Criar evento |
+| `Ctrl` `R` | Atualizar    |
+| `Enter`    | Ver dia      |
+| `T`        | Hoje         |
+| `Ctrl` `L` | Ir para data |
+| `D`        | Visão de dia |
+| `W`        | Visão de semana |
+| `M`        | Visão de mês |
+| `A`        | Visão de agenda |
 
 {.shortcuts}
 
-### Jumping
+### Saltos
 
-| Shortcut     | Action            |
-| ------------ | ----------------- |
-| `Ctrl` `1-9` | Go to Mailbox 1-9 |
+| Atalho       | Ação                  |
+| ------------ | --------------------- |
+| `Ctrl` `1-9` | Ir para a caixa de correio 1-9 |
 
 {.shortcuts}
 
-## Also see
+## Veja também
 
-- [Keyboard shortcuts for Missive Team Inbox](https://missiveapp.com/help/keyboard-shortcuts) _(missiveapp.com)_
+- [Atalhos de teclado do Missive Team Inbox](https://missiveapp.com/help/keyboard-shortcuts) _(missiveapp.com)_

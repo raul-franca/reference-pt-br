@@ -7,134 +7,134 @@ tags:
   -
   -
 categories:
-  - Keyboard Shortcuts
+  - Atalhos de Teclado
 intro: |
-  A visual cheat-sheet for the 58 keyboard shortcuts found in GitLab
+  Um cheat sheet visual para os 58 atalhos de teclado do GitLab
 ---
 
-## Keyboard Shortcuts
+## Atalhos de teclado
 
 ### Global
 
-| Shortcut           | Action                                                                   |
+| Atalho             | Ação                                                                     |
 | ------------------ | ------------------------------------------------------------------------ |
-| `?`                | Show or hide the shortcut reference sheet                                |
-| `Shift` `P`        | Go to your projects page                                                 |
-| `Shift` `G`        | Go to your groups page                                                   |
-| `Shift` `A`        | Go to your activity page                                                 |
-| `Shift` `L`        | Go to your milestones page                                               |
-| `Shift` `S`        | Go to your snippets page                                                 |
-| `S`                | Put the cursor in the issues or merge requests search                    |
-| `Shift` `I`        | Go to your issues page                                                   |
-| `Shift` `T`        | Go to your merge requests page                                           |
-| `P` `B`            | Show or hide the performance bar                                         |
-| `Up`               | Edit your last comment, you must be in a blank text field below a thread |
-| `Ctrl` `Shift` `P` | Toggle markdown preview when editing text in a text field                |
+| `?`                | Mostre ou oculte o cheat sheet de atalhos                                |
+| `Shift` `P`        | Vá para a página de projetos                                             |
+| `Shift` `G`        | Vá para a página de grupos                                               |
+| `Shift` `A`        | Vá para a página de atividades                                           |
+| `Shift` `L`        | Vá para a página de milestones                                           |
+| `Shift` `S`        | Vá para a página de snippets                                             |
+| `S`                | Coloque o cursor na pesquisa de issues ou merge requests                 |
+| `Shift` `I`        | Vá para a página de issues                                               |
+| `Shift` `T`        | Vá para a página de merge requests                                       |
+| `P` `B`            | Mostre ou oculte a barra de performance                                  |
+| `Up`               | Edite seu último comentário; você precisa estar em um campo de texto vazio abaixo de uma thread |
+| `Ctrl` `Shift` `P` | Ative/desative a pré-visualização de markdown ao editar texto em um campo de texto |
 
 {.shortcuts}
 
-### Project
+### Projeto
 
-| Shortcut | Action                                                |
-| -------- | ----------------------------------------------------- |
-| `G` `P`  | Go to the project home page                           |
-| `G` `V`  | Go to the project activity feed                       |
-| `G` `R`  | Go to the project releases list                       |
-| `G` `F`  | Go to the project files list                          |
-| `T`      | Go to the project file search page                    |
-| `G` `C`  | Go to the project commits list                        |
-| `G` `N`  | Go to the repository graph page                       |
-| `G` `D`  | Go to the repository charts                           |
-| `G` `I`  | Go to the project issues list                         |
-| `I`      | Go to the new issue page                              |
-| `G` `B`  | Go to the project issues boards list                  |
-| `G` `M`  | Go to the project merge requests list                 |
-| `G` `J`  | Go to the CI/CD jobs list                             |
-| `G` `L`  | Go to the project metrics                             |
-| `G` `E`  | Go to the project environments                        |
-| `G` `K`  | Go to the project Kubernetes cluster integration page |
-| `G` `S`  | Go to the project snippets list                       |
-| `G` `W`  | Go to the project wiki, if enabled                    |
-
-{.shortcuts}
-
-### Issues and Merge Requests
-
-| Shortcut | Action                                                             |
-| -------- | ------------------------------------------------------------------ |
-| `E`      | Edit description                                                   |
-| `A`      | Change assignee                                                    |
-| `M`      | Change milestone                                                   |
-| `L`      | Change label                                                       |
-| `R`      | Start writing a comment, if any text is selected it will be quoted |
-| `N`      | Move to next unresolved discussion, merge requests only            |
-| `P`      | Move to previous unresolved discussion, merge requests only        |
-| `]`      | Move to next file, merge requests only                             |
-| `[`      | Move to previous file, merge requests only                         |
+| Atalho  | Ação                                                  |
+| ------- | ----------------------------------------------------- |
+| `G` `P` | Vá para a página inicial do projeto                   |
+| `G` `V` | Vá para o feed de atividades do projeto               |
+| `G` `R` | Vá para a lista de releases do projeto                |
+| `G` `F` | Vá para a lista de arquivos do projeto                |
+| `T`     | Vá para a página de pesquisa de arquivos do projeto   |
+| `G` `C` | Vá para a lista de commits do projeto                 |
+| `G` `N` | Vá para a página do grafo do repositório              |
+| `G` `D` | Vá para os gráficos do repositório                    |
+| `G` `I` | Vá para a lista de issues do projeto                  |
+| `I`     | Vá para a página de nova issue                        |
+| `G` `B` | Vá para a lista de boards de issues do projeto        |
+| `G` `M` | Vá para a lista de merge requests do projeto          |
+| `G` `J` | Vá para a lista de jobs de CI/CD                      |
+| `G` `L` | Vá para as métricas do projeto                        |
+| `G` `E` | Vá para os ambientes do projeto                       |
+| `G` `K` | Vá para a página de integração com cluster Kubernetes do projeto |
+| `G` `S` | Vá para a lista de snippets do projeto                |
+| `G` `W` | Vá para a wiki do projeto, se habilitada              |
 
 {.shortcuts}
 
-### Project Files
+### Issues e merge requests
 
-| Shortcut | Action                                                      |
-| -------- | ----------------------------------------------------------- |
-| `Up`     | Move selection up                                           |
-| `Down`   | Move selection down                                         |
-| `Enter`  | Open selection                                              |
-| `Esc`    | Go back to file list screen, only while searching for files |
-| `Y`      | Go to file permalink, only while viewing a file             |
+| Atalho | Ação                                                               |
+| ------ | ------------------------------------------------------------------ |
+| `E`    | Edite a descrição                                                  |
+| `A`    | Altere o responsável                                               |
+| `M`    | Altere o milestone                                                 |
+| `L`    | Altere a label                                                     |
+| `R`    | Comece a escrever um comentário; se houver texto selecionado, ele será citado |
+| `N`    | Vá para a próxima discussão não resolvida, somente em merge requests |
+| `P`    | Vá para a discussão não resolvida anterior, somente em merge requests |
+| `]`    | Vá para o próximo arquivo, somente em merge requests               |
+| `[`    | Vá para o arquivo anterior, somente em merge requests              |
+
+{.shortcuts}
+
+### Arquivos do projeto
+
+| Atalho  | Ação                                                         |
+| ------- | ------------------------------------------------------------ |
+| `Up`    | Mova a seleção para cima                                     |
+| `Down`  | Mova a seleção para baixo                                    |
+| `Enter` | Abra a seleção                                               |
+| `Esc`   | Volte para a tela de lista de arquivos, somente ao pesquisar arquivos |
+| `Y`     | Vá para o permalink do arquivo, somente ao visualizar um arquivo |
 
 {.shortcuts}
 
 ### Web IDE
 
-| Shortcut       | Action                                              |
-| -------------- | --------------------------------------------------- |
-| `Ctrl` `P`     | Search for, and then open, another file for editing |
-| `Ctrl` `Enter` | Commit, when editing the commit message             |
+| Atalho         | Ação                                                 |
+| -------------- | ---------------------------------------------------- |
+| `Ctrl` `P`     | Pesquise e abra outro arquivo para edição            |
+| `Ctrl` `Enter` | Faça commit, ao editar a mensagem de commit          |
 
 {.shortcuts}
 
-### Repository Graph
+### Grafo do repositório
 
-| Shortcut       | Action           |
-| -------------- | ---------------- |
-| `Left`         | Scroll left      |
-| `Right`        | Scroll right     |
-| `Up`           | Scroll up        |
-| `Down`         | Scroll down      |
-| `Shift` `Up`   | Scroll to top    |
-| `Shift` `Down` | Scroll to bottom |
-
-{.shortcuts}
-
-### Wiki Pages
-
-| Shortcut | Action         |
-| -------- | -------------- |
-| `E`      | Edit wiki page |
+| Atalho         | Ação            |
+| -------------- | --------------- |
+| `Left`         | Role para a esquerda |
+| `Right`        | Role para a direita  |
+| `Up`           | Role para cima  |
+| `Down`         | Role para baixo |
+| `Shift` `Up`   | Role até o topo |
+| `Shift` `Down` | Role até o fim  |
 
 {.shortcuts}
 
-### Filtered Search
+### Páginas da wiki
 
-| Shortcut           | Action                     |
+| Atalho | Ação                |
+| ------ | ------------------- |
+| `E`    | Edite a página da wiki |
+
+{.shortcuts}
+
+### Pesquisa filtrada
+
+| Atalho             | Ação                       |
 | ------------------ | -------------------------- |
-| `Ctrl` `Backspace` | Clear entire search filter |
-| `Alt` `Backspace`  | Clear one token at a time  |
+| `Ctrl` `Backspace` | Limpe todo o filtro de pesquisa |
+| `Alt` `Backspace`  | Limpe um token por vez     |
 
 {.shortcuts}
 
 ### Epics
 
-| Shortcut | Action                                                             |
-| -------- | ------------------------------------------------------------------ |
-| `R`      | Start writing a comment, if any text is selected it will be quoted |
-| `E`      | Edit description                                                   |
-| `L`      | Change a label                                                     |
+| Atalho | Ação                                                               |
+| ------ | ------------------------------------------------------------------ |
+| `R`    | Comece a escrever um comentário; se houver texto selecionado, ele será citado |
+| `E`    | Edite a descrição                                                  |
+| `L`    | Altere uma label                                                   |
 
 {.shortcuts}
 
-## Also see
+## Veja também
 
-- [Keyboard shortcuts for GitLab](https://docs.gitlab.com/ee/user/shortcuts.html) _(docs.gitlab.com)_
+- [Atalhos de teclado do GitLab](https://docs.gitlab.com/ee/user/shortcuts.html) _(docs.gitlab.com)_

@@ -7,268 +7,268 @@ tags:
   -
   -
 categories:
-  - Keyboard Shortcuts
+  - Atalhos de Teclado
 intro: |
-  A visual cheat-sheet for the 129 keyboard shortcuts found in Guitar Pro
+  Um cheat sheet visual dos 129 atalhos de teclado do Guitar Pro
 ---
 
-## Keyboard Shortcuts
+## Atalhos de teclado
 
-### Track
+### Faixa
 
-| Shortcut                | Action     |
+| Atalho                | Ação       |
 | ----------------------- | ---------- |
-| `Ctrl` `Shift` `Insert` | Add        |
-| `Ctrl` `Shift` `Delete` | Delete     |
-| `Ctrl` `Alt` `Up`       | Move up    |
-| `Ctrl` `Alt` `Down`     | Move down  |
-| `F6`                    | Properties |
+| `Ctrl` `Shift` `Insert` | Adicionar  |
+| `Ctrl` `Shift` `Delete` | Excluir    |
+| `Ctrl` `Alt` `Up`       | Mover para cima |
+| `Ctrl` `Alt` `Down`     | Mover para baixo |
+| `F6`                    | Propriedades |
 
 {.shortcuts}
 
-### Bar - General {.row-span-2}
+### Compasso - Geral {.row-span-2}
 
-| Shortcut        | Action             |
+| Atalho        | Ação               |
 | --------------- | ------------------ | --------- |
-| `Ctrl` `Insert` | Insert bar         |
-| `Ctrl` `Delete` | Delete bar         |
-| `K`             | Clef               |
-| `Ctrl` `K`      | Key signature      |
-| `Ctrl` `T`      | Time signature     |
-| `Ctrl` `/`      | Triplet feel       |
-| `               | `                  | Free time |
-| `[`             | Repeat open        |
-| `]`             | Repeat close       |
-| `D`             | Directions         |
-| `Ctrl` `R`      | Multi rest         |
-| `Ctrl` `Enter`  | Force line break   |
-| `Shift` `7`     | Prevent line break |
+| `Ctrl` `Insert` | Inserir compasso   |
+| `Ctrl` `Delete` | Excluir compasso   |
+| `K`             | Clave              |
+| `Ctrl` `K`      | Armadura de clave  |
+| `Ctrl` `T`      | Fórmula de compasso |
+| `Ctrl` `/`      | Sensação de tercina |
+| `               | `                  | Tempo livre |
+| `[`             | Início da repetição |
+| `]`             | Fim da repetição   |
+| `D`             | Indicações         |
+| `Ctrl` `R`      | Pausa múltipla     |
+| `Ctrl` `Enter`  | Forçar quebra de linha |
+| `Shift` `7`     | Impedir quebra de linha |
 
 {.shortcuts}
 
-### Bar - Section
+### Compasso - Seção
 
-| Shortcut         | Action           |
+| Atalho         | Ação             |
 | ---------------- | ---------------- |
-| `Shift` `Insert` | Insert or remove |
-| `Alt` `Left`     | Previous section |
-| `Alt` `Right`    | Next section     |
+| `Shift` `Insert` | Inserir ou remover |
+| `Alt` `Left`     | Seção anterior   |
+| `Alt` `Right`    | Próxima seção    |
 
 {.shortcuts}
 
-### Bar - Simile Mark
+### Compasso - Marca de simile
 
-| Shortcut           | Action          |
+| Atalho           | Ação            |
 | ------------------ | --------------- |
-| `Shift` `5`        | Repeat one bar  |
-| `Ctrl` `Shift` `5` | Repeat two bars |
+| `Shift` `5`        | Repetir um compasso |
+| `Ctrl` `Shift` `5` | Repetir dois compassos |
 
 {.shortcuts}
 
-### Note - Duration
+### Nota - Duração
 
-| Shortcut           | Action                                            |
+| Atalho           | Ação                                              |
 | ------------------ | ------------------------------------------------- |
-| `+/-`              | Increase or decrease (whole note, half note, etc) |
-| `Shift` `5`        | Dotting                                           |
-| `Ctrl` `Shift` `5` | Double dotting                                    |
-| `/`                | Triplet                                           |
+| `+/-`              | Aumentar ou diminuir (semibreve, mínima etc.)     |
+| `Shift` `5`        | Ponto de aumento                                  |
+| `Ctrl` `Shift` `5` | Ponto de aumento duplo                            |
+| `/`                | Tercina                                           |
 
 {.shortcuts}
 
-### Note - General {.row-span-6}
+### Nota - Geral {.row-span-6}
 
-| Shortcut           | Action                    |
+| Atalho           | Ação                      |
 | ------------------ | ------------------------- |
-| `Insert`           | Insert a beat             |
-| `Shift` `Delete`   | Delete the beats          |
-| `C`                | Copy the beats at the end |
-| `L`                | Tie note                  |
-| `Shift` `L`        | Tie the beat              |
+| `Insert`           | Inserir um tempo          |
+| `Shift` `Delete`   | Excluir os tempos         |
+| `C`                | Copiar os tempos para o final |
+| `L`                | Ligar nota                |
+| `Shift` `L`        | Ligar o tempo             |
 | `F`                | Fermata                   |
-| `R`                | Rest                      |
-| `Ctrl` `D`         | Brush downstroke          |
-| `Ctrl` `U`         | Brush upstroke            |
-| `Ctrl` `Shift` `D` | Arpeggio down             |
-| `Ctrl` `Shift` `U` | Arpeggio up               |
+| `R`                | Pausa                     |
+| `Ctrl` `D`         | Brush para baixo          |
+| `Ctrl` `U`         | Brush para cima           |
+| `Ctrl` `Shift` `D` | Arpejo para baixo         |
+| `Ctrl` `Shift` `U` | Arpejo para cima          |
 | `Shift` `R`        | Rasgueado                 |
-| `Shift` `D`        | PickStroke down           |
-| `Shift` `U`        | PickStroke up             |
-| `Shift` `-`        | One semi-town down        |
-| `Shift` `+`        | One semi-tone up          |
-| `Alt` `Down`       | Shift down                |
-| `Alt` `Up`         | Shift up                  |
-| `A`                | Chord                     |
-| `Shift` `I`        | Barre                     |
-| `Shift` `2`        | Timer                     |
-| `T`                | Text                      |
+| `Shift` `D`        | PickStroke para baixo     |
+| `Shift` `U`        | PickStroke para cima      |
+| `Shift` `-`        | Um semitom abaixo         |
+| `Shift` `+`        | Um semitom acima          |
+| `Alt` `Down`       | Deslocar para baixo       |
+| `Alt` `Up`         | Deslocar para cima        |
+| `A`                | Acorde                    |
+| `Shift` `I`        | Pestana                   |
+| `Shift` `2`        | Cronômetro                |
+| `T`                | Texto                     |
 
 {.shortcuts}
 
-### Effects - General {.row-span-6}
+### Efeitos - Geral {.row-span-6}
 
-| Shortcut             | Action                |
+| Atalho             | Ação                  |
 | -------------------- | --------------------- |
-| `X`                  | Dead note             |
-| `O`                  | Ghost note            |
-| `;`                  | Accented note         |
-| `Shift` `;`          | Heavily accented note |
+| `X`                  | Nota abafada          |
+| `O`                  | Nota fantasma         |
+| `;`                  | Nota acentuada        |
+| `Shift` `;`          | Nota muito acentuada  |
 | `Shift` `1`          | Staccato              |
 | `Shift` `-`          | Tenuto                |
 | `Shift` `H`          | Legato                |
-| `I`                  | Let ring              |
-| `[`                  | Palm mute note        |
-| `]`                  | Palm-mute on beat     |
-| `Y`                  | Natural harmonic      |
-| `Alt` `Y`            | Artificial harmonic   |
+| `I`                  | Deixar soar           |
+| `[`                  | Nota com palm mute    |
+| `]`                  | Palm mute no tempo    |
+| `Y`                  | Harmônico natural     |
+| `Alt` `Y`            | Harmônico artificial  |
 | `B`                  | Bend                  |
-| `Shift` `W`          | Tremolo bar           |
-| `H`                  | Hammer on or pull-off |
-| `Shift` `9`          | Left-hand tapping     |
+| `Shift` `W`          | Alavanca de tremolo   |
+| `H`                  | Hammer-on ou pull-off |
+| `Shift` `9`          | Tapping com a mão esquerda |
 | `Shift` `0`          | Tapping               |
 | `Shift` `4`          | Slap                  |
 | `Ctrl` `Shift` `4`   | Pop                   |
-| `N`                  | Trill                 |
+| `N`                  | Trilo                 |
 | `Shift` `,`          | Fade in               |
 | `Shift` `.`          | Fade out              |
 | `Ctrl` `Shift` `./,` | Volume swell          |
-| `Alt` `O`            | Wah open              |
-| `Alt` `C`            | Wah close             |
+| `Alt` `O`            | Wah aberto            |
+| `Alt` `C`            | Wah fechado           |
 
 {.shortcuts}
 
-### Note - Accidentals
+### Nota - Acidentes
 
-| Shortcut         | Action                |
+| Atalho         | Ação                  |
 | ---------------- | --------------------- |
-| `Ctrl` `Alt` `7` | Double flat           |
-| `Ctrl` `7`       | Flat                  |
-| `Ctrl` `8`       | Natural               |
-| `Ctrl` `9`       | Sharp                 |
-| `Ctrl` `Alt` `9` | Double sharp          |
-| `Ctrl` `Alt` `8` | Change the accidental |
+| `Ctrl` `Alt` `7` | Bemol duplo           |
+| `Ctrl` `7`       | Bemol                 |
+| `Ctrl` `8`       | Bequadro              |
+| `Ctrl` `9`       | Sustenido             |
+| `Ctrl` `Alt` `9` | Sustenido duplo       |
+| `Ctrl` `Alt` `8` | Alterar o acidente    |
 
 {.shortcuts}
 
-### Effects - Grace Note
+### Efeitos - Apogiatura
 
-| Shortcut  | Action          |
+| Atalho  | Ação            |
 | --------- | --------------- |
-| `G`       | Before the beat |
-| `Alt` `G` | On the beat     |
+| `G`       | Antes do tempo  |
+| `Alt` `G` | No tempo        |
 
 {.shortcuts}
 
-### Effects - Vibrato
+### Efeitos - Vibrato
 
-| Shortcut  | Action                     |
-| --------- | -------------------------- |
-| `V`       | Left-hand vibrato (slight) |
-| `Alt` `V` | Left-hand vibrato (wide)   |
-
-{.shortcuts}
-
-### Effects - Vibrato with Trem. Bar
-
-| Shortcut  | Action                          |
-| --------- | ------------------------------- |
-| `W`       | Vibrato with trem. bar (slight) |
-| `Alt` `W` | Vibrato with trem. bar (wide)   |
+| Atalho  | Ação                             |
+| --------- | -------------------------------- |
+| `V`       | Vibrato com a mão esquerda (leve) |
+| `Alt` `V` | Vibrato com a mão esquerda (amplo) |
 
 {.shortcuts}
 
-### Effects - Slide
+### Efeitos - Vibrato com alavanca de tremolo
 
-| Shortcut  | Action       |
-| --------- | ------------ |
-| `S`       | Legato slide |
-| `Alt` `S` | Shift slide  |
-
-{.shortcuts}
-
-### Effects - Tremolo
-
-| Shortcut    | Action             |
-| ----------- | ------------------ |
-| `Shift` `'` | Thirty-second note |
+| Atalho  | Ação                                    |
+| --------- | --------------------------------------- |
+| `W`       | Vibrato com alavanca de tremolo (leve)  |
+| `Alt` `W` | Vibrato com alavanca de tremolo (amplo) |
 
 {.shortcuts}
 
-### Tools
+### Efeitos - Slide
 
-| Shortcut           | Action                   |
-| ------------------ | ------------------------ |
-| `F4`               | Check the bars' duration |
-| `Ctrl` `Shift` `M` | Move or swap voices      |
+| Atalho  | Ação           |
+| --------- | -------------- |
+| `S`       | Slide legato   |
+| `Alt` `S` | Slide deslocado |
 
 {.shortcuts}
 
-### Sound
+### Efeitos - Tremolo
 
-| Shortcut       | Action                        |
+| Atalho    | Ação   |
+| ----------- | ------ |
+| `Shift` `'` | Fusa   |
+
+{.shortcuts}
+
+### Ferramentas
+
+| Atalho           | Ação                       |
+| ------------------ | -------------------------- |
+| `F4`               | Verificar a duração dos compassos |
+| `Ctrl` `Shift` `M` | Mover ou trocar vozes      |
+
+{.shortcuts}
+
+### Som
+
+| Atalho       | Ação                          |
 | -------------- | ----------------------------- |
-| `Space`        | Play                          |
-| `Ctrl` `Space` | Play from the beginning       |
-| `Ctrl` `Home`  | First bar                     |
-| `Ctrl` `Left`  | Rewind                        |
-| `Ctrl` `Right` | Fast forward                  |
-| `Ctrl` `End`   | Last bar                      |
-| `F9`           | Play in loops (speed trainer) |
+| `Space`        | Reproduzir                    |
+| `Ctrl` `Space` | Reproduzir desde o início     |
+| `Ctrl` `Home`  | Primeiro compasso             |
+| `Ctrl` `Left`  | Retroceder                    |
+| `Ctrl` `Right` | Avançar                       |
+| `Ctrl` `End`   | Último compasso               |
+| `F9`           | Reproduzir em loop (speed trainer) |
 | `F2`           | RSI (Realistic Sound Engine)  |
 
 {.shortcuts}
 
-### View
+### Exibir
 
-| Shortcut         | Action         |
+| Atalho         | Ação           |
 | ---------------- | -------------- |
-| `Ctrl` `Alt` `D` | Design mode    |
+| `Ctrl` `Alt` `D` | Modo de design |
 | `F3`             | Multitrack     |
-| `Ctrl` `B`       | Enable browser |
-| `F6`             | Fretboard      |
-| `F6`             | Keyboard       |
-| `F6`             | Drums          |
-| `F11`            | Full screen    |
+| `Ctrl` `B`       | Ativar navegador |
+| `F6`             | Braço do instrumento |
+| `F6`             | Teclado        |
+| `F6`             | Bateria        |
+| `F11`            | Tela cheia     |
 
 {.shortcuts}
 
-### Edit
+### Editar
 
-| Shortcut           | Action           |
-| ------------------ | ---------------- |
-| `Ctrl` `Z`         | Undo             |
-| `Ctrl` `Shift` `Z` | Redo             |
-| `Ctrl` `X`         | Cut              |
-| `Ctrl` `C`         | Copy             |
-| `Ctrl` `V`         | Paste            |
-| `Ctrl` `Shift` `X` | Multitrack cut   |
-| `Ctrl` `Shift` `C` | Multitrack copy  |
-| `Ctrl` `Shift` `V` | Special paste    |
-| `Ctrl` `A`         | Select all       |
-| `Ctrl` `G`         | Go to            |
-| `F10`              | Edit automations |
-| `Ctrl` `1-4`       | Voices           |
-
-{.shortcuts}
-
-### General
-
-| Shortcut           | Action            |
-| ------------------ | ----------------- |
-| `Ctrl` `N`         | New steel guitar  |
-| `Ctrl` `O`         | Open              |
-| `Ctrl` `W`         | Close             |
-| `Ctrl` `S`         | Save              |
-| `Ctrl` `Shift` `S` | Save As           |
-| `F5`               | Score information |
-| `F7`               | Stylesheet        |
-| `F8`               | Print preview     |
-| `Ctrl` `P`         | Print             |
-| `F12`              | Preferences       |
-| `Ctrl` `Q`         | Quit              |
+| Atalho           | Ação               |
+| ------------------ | ------------------ |
+| `Ctrl` `Z`         | Desfazer           |
+| `Ctrl` `Shift` `Z` | Refazer            |
+| `Ctrl` `X`         | Recortar           |
+| `Ctrl` `C`         | Copiar             |
+| `Ctrl` `V`         | Colar              |
+| `Ctrl` `Shift` `X` | Recortar multitrack |
+| `Ctrl` `Shift` `C` | Copiar multitrack  |
+| `Ctrl` `Shift` `V` | Colar especial     |
+| `Ctrl` `A`         | Selecionar tudo    |
+| `Ctrl` `G`         | Ir para            |
+| `F10`              | Editar automações  |
+| `Ctrl` `1-4`       | Vozes              |
 
 {.shortcuts}
 
-## Also see
+### Geral
 
-- [Keyboard shortcuts for Guitar Pro](https://shredaddict.com/guitar-pro-shortcuts/) _(shredaddict.com)_
+| Atalho           | Ação               |
+| ------------------ | ------------------ |
+| `Ctrl` `N`         | Nova guitarra steel |
+| `Ctrl` `O`         | Abrir              |
+| `Ctrl` `W`         | Fechar             |
+| `Ctrl` `S`         | Salvar             |
+| `Ctrl` `Shift` `S` | Salvar como        |
+| `F5`               | Informações da partitura |
+| `F7`               | Folha de estilo    |
+| `F8`               | Visualizar impressão |
+| `Ctrl` `P`         | Imprimir           |
+| `F12`              | Preferências       |
+| `Ctrl` `Q`         | Sair               |
+
+{.shortcuts}
+
+## Veja também
+
+- [Atalhos de teclado do Guitar Pro](https://shredaddict.com/guitar-pro-shortcuts/) _(shredaddict.com)_

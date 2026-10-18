@@ -5,30 +5,30 @@ background: bg-[#e86d7a]
 tags:
   - permission
 categories:
-  - Other
+  - Outros
 intro: |
-  A cheat sheet of the Conventional Commits and Conventional Comments standards
+  Um cheat sheet dos padrões Conventional Commits e Conventional Comments
 plugins:
 ---
 
-## Getting Started {.cols-3}
+## Primeiros passos {.cols-3}
 
-### Quick Guide
+### Guia rápido
 
-#### Why Conventional Commits
+#### Por que usar Conventional Commits
 
-- Easy-to-follow structure for commit messages.
-- Clearly states the nature of changes.
-- Ensures uniformity in commit messages across teams.
-- Enables automated versioning and changelog generation.
-- Makes commit history easy to browse.
-- Allows the specification of 'scope' for more clarity.
-- Has a special notation for breaking changes.
-- Facilitates better understanding among team members.
-- Makes the review process efficient.
-- Helps in future troubleshooting with descriptive commit messages.
+- Estrutura fácil de seguir para mensagens de commit.
+- Deixa clara a natureza das mudanças.
+- Garante uniformidade nas mensagens de commit entre as equipes.
+- Permite versionamento automatizado e geração de changelog.
+- Torna o histórico de commits fácil de navegar.
+- Permite especificar o 'scope' para maior clareza.
+- Tem uma notação especial para breaking changes.
+- Facilita o entendimento entre os membros da equipe.
+- Torna o processo de revisão eficiente.
+- Ajuda na solução de problemas futuros com mensagens de commit descritivas.
 
-#### Structure
+#### Estrutura
 
 ```javascript
 <type>[optional scope]: <description>
@@ -38,78 +38,97 @@ plugins:
 [optional footer(s)]
 ```
 
-[Official Website](https://www.conventionalcommits.org/en) {.link-arrow}
+[Site oficial](https://www.conventionalcommits.org/en) {.link-arrow}
 
-### Examples
+### Exemplos
 
-- feat: add jwt support
-- feat!: breaking change in API
-- feat(ui)!: redesign user profile page
-- fix: fix SQL injection vulnerability
-- fix(database): resolve data race condition
-- docs: update setup section of README
-- style(login): correct indentation in login component
-- refactor: refactor user database schema
-- perf: optimize user retrieval code for faster response
-- test: add tests for jwt authentication
-- test(payment): add tests for the payment gateway
-- chore: update build script
-- chore(deps): update dependencies
-- build(docker): update Dockerfile to use node 14
-- ci: add job for integration tests
-- revert: revert commit a1b2c3d4e5f
+- feat: adiciona suporte a jwt
+- feat!: breaking change na API
+- feat(ui)!: reformula a página de perfil do usuário
+- fix: corrige vulnerabilidade de SQL injection
+- fix(database): resolve condição de corrida nos dados
+- docs: atualiza a seção de setup do README
+- style(login): corrige a indentação no componente de login
+- refactor: refatora o schema do banco de dados de usuários
+- perf: otimiza o código de busca de usuários para respostas mais rápidas
+- test: adiciona testes para autenticação jwt
+- test(payment): adiciona testes para o gateway de pagamento
+- chore: atualiza o script de build
+- chore(deps): atualiza as dependências
+- build(docker): atualiza o Dockerfile para usar node 14
+- ci: adiciona job para testes de integração
+- revert: reverte o commit a1b2c3d4e5f
 
-### Types
+### Tipos
 
-| Type     | Description                                                                                                      |
-| -------- | ---------------------------------------------------------------------------------------------------------------- |
-| `feat`   | Introduces a new feature                                                                                         |
-| `fix`    | Fixes a bug                                                                                                      |
-| `docs`   | Changes in documentation only                                                                                    |
-| `style`  | Code changes that do not impact the functionality (e.g., formatting, white-space, etc)                           |
-| refactor | Code changes that neither fix a bug nor introduce a feature, typically improving code readability or structure   |
-| perf     | Code changes that improve performance                                                                            |
-| test     | Addition of missing tests or corrections to existing tests                                                       |
-| `chore`  | Changes that do not modify the source code or test files, like tweaking the build process or adding dependencies |
-| build    | Changes affecting the build system or external dependencies (e.g., changes in webpack, npm packages)             |
-| ci       | Changes to Continuous Integration configuration files and scripts (e.g., Travis, CircleCI, Jenkins)              |
-| revert   | Reverts a previously made commit                                                                                 |
+| Tipo     | Descrição                                                                                                                       |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| `feat`   | Introduz um novo recurso                                                                                                        |
+| `fix`    | Corrige um bug                                                                                                                  |
+| `docs`   | Mudanças apenas na documentação                                                                                                 |
+| `style`  | Mudanças no código que não afetam a funcionalidade (ex.: formatação, espaços em branco etc.)                                    |
+| refactor | Mudanças no código que não corrigem um bug nem introduzem um recurso, geralmente melhorando a legibilidade ou a estrutura       |
+| perf     | Mudanças no código que melhoram o desempenho                                                                                    |
+| test     | Adição de testes faltantes ou correções em testes existentes                                                                    |
+| `chore`  | Mudanças que não modificam o código-fonte nem os arquivos de teste, como ajustes no processo de build ou adição de dependências |
+| build    | Mudanças que afetam o sistema de build ou dependências externas (ex.: mudanças no webpack, pacotes npm)                         |
+| ci       | Mudanças nos arquivos de configuração e scripts de Integração Contínua (ex.: Travis, CircleCI, Jenkins)                         |
+| revert   | Reverte um commit feito anteriormente                                                                                           |
 
 {.bold-first}
 
-## Specification {.cols-1}
+## Especificação {.cols-1}
 
-### Specification
+### Especificação
 
-- Commits MUST be prefixed with a type, which consists of a noun, feat, fix, etc., followed by the OPTIONAL scope,
-  OPTIONAL !, and REQUIRED terminal colon and space.
-- The type feat MUST be used when a commit adds a new feature to your application or library.
-- The type fix MUST be used when a commit represents a bug fix for your application.
-- A scope MAY be provided after a type. A scope MUST consist of a noun describing a section of the codebase surrounded
-  by parenthesis, e.g., fix(parser):
-- A description MUST immediately follow the colon and space after the type/scope prefix. The description is a short
-  summary of the code changes, e.g., fix: array parsing issue when multiple spaces were contained in string.
-- A longer commit body MAY be provided after the short description, providing additional contextual information about
-  the code changes. The body MUST begin one blank line after the description.
-- A commit body is free-form and MAY consist of any number of newline separated paragraphs.
-- One or more footers MAY be provided one blank line after the body. Each footer MUST consist of a word token, followed
-  by either a :<space> or <space># separator, followed by a string value (this is inspired by the
-  [git trailer convention](https://git-scm.com/docs/git-interpret-trailers)).
-- A footer’s token MUST use - in place of whitespace characters, e.g., Acked-by (this helps differentiate the footer
-  section from a multi-paragraph body). An exception is made for BREAKING CHANGE, which MAY also be used as a token.
-- A footer’s value MAY contain spaces and newlines, and parsing MUST terminate when the next valid footer
-  token/separator pair is observed.
-- Breaking changes MUST be indicated in the type/scope prefix of a commit, or as an entry in the footer.
-- If included as a footer, a breaking change MUST consist of the uppercase text BREAKING CHANGE, followed by a colon,
-  space, and description, e.g., BREAKING CHANGE: environment variables now take precedence over config files.
-- If included in the type/scope prefix, breaking changes MUST be indicated by a ! immediately before the :. If ! is
-  used, BREAKING CHANGE: MAY be omitted from the footer section, and the commit description SHALL be used to describe
-  the breaking change.
-- Types other than feat and fix MAY be used in your commit messages, e.g., docs: update ref docs.
-- The units of information that make up Conventional Commits MUST NOT be treated as case sensitive by implementors, with
-  the exception of BREAKING CHANGE which MUST be uppercase.
-- BREAKING-CHANGE MUST be synonymous with BREAKING CHANGE, when used as a token in a footer.
+- Os commits DEVEM ser prefixados com um tipo, que consiste em um substantivo,
+  feat, fix etc., seguido do scope OPCIONAL, de ! OPCIONAL e de dois-pontos e
+  espaço obrigatórios no final.
+- O tipo feat DEVE ser usado quando um commit adiciona um novo recurso à sua
+  aplicação ou biblioteca.
+- O tipo fix DEVE ser usado quando um commit representa a correção de um bug na
+  sua aplicação.
+- Um scope PODE ser informado após o tipo. O scope DEVE consistir em um
+  substantivo que descreve uma seção da base de código, entre parênteses, por
+  exemplo, fix(parser):
+- Uma descrição DEVE vir imediatamente após os dois-pontos e o espaço que seguem
+  o prefixo tipo/scope. A descrição é um resumo curto das mudanças no código,
+  por exemplo, fix: array parsing issue when multiple spaces were contained in
+  string.
+- Um corpo de commit mais longo PODE ser fornecido após a descrição curta,
+  trazendo informações contextuais adicionais sobre as mudanças no código. O
+  corpo DEVE começar uma linha em branco após a descrição.
+- O corpo do commit é de formato livre e PODE consistir em qualquer número de
+  parágrafos separados por quebras de linha.
+- Um ou mais footers PODEM ser fornecidos uma linha em branco após o corpo. Cada
+  footer DEVE consistir em um token de palavra, seguido de um separador :<space>
+  ou <space>#, seguido de um valor de string (isso é inspirado na
+  [convenção de trailer do git](https://git-scm.com/docs/git-interpret-trailers)).
+- O token de um footer DEVE usar - no lugar de caracteres de espaço em branco,
+  por exemplo, Acked-by (isso ajuda a diferenciar a seção de footer de um corpo
+  com vários parágrafos). Abre-se uma exceção para BREAKING CHANGE, que também
+  PODE ser usado como token.
+- O valor de um footer PODE conter espaços e quebras de linha, e a análise DEVE
+  terminar quando o próximo par válido de token/separador de footer for
+  encontrado.
+- Breaking changes DEVEM ser indicadas no prefixo tipo/scope de um commit ou
+  como uma entrada no footer.
+- Se incluída como footer, uma breaking change DEVE consistir no texto em
+  maiúsculas BREAKING CHANGE, seguido de dois-pontos, espaço e descrição, por
+  exemplo, BREAKING CHANGE: environment variables now take precedence over
+  config files.
+- Se incluída no prefixo tipo/scope, uma breaking change DEVE ser indicada por
+  um ! imediatamente antes dos :. Se ! for usado, BREAKING CHANGE: PODE ser
+  omitido da seção de footer, e a descrição do commit DEVE ser usada para
+  descrever a breaking change.
+- Tipos além de feat e fix PODEM ser usados nas mensagens de commit, por
+  exemplo, docs: update ref docs.
+- As unidades de informação que compõem Conventional Commits NÃO DEVEM ser
+  tratadas como sensíveis a maiúsculas e minúsculas pelos implementadores, com
+  exceção de BREAKING CHANGE, que DEVE estar em maiúsculas.
+- BREAKING-CHANGE DEVE ser sinônimo de BREAKING CHANGE quando usado como token
+  em um footer.
 
-## Also see
+## Veja também
 
 - [Conventional Commits](https://conventionalcommits.org/) _(conventionalcommits.org)_

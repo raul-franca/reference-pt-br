@@ -9,22 +9,22 @@ tags:
   - terminal
   - shortcut
 categories:
-  - Toolkit
+  - Ferramentas
 intro: |
-  A useful collection of [Vim](http://www.vim.org/) 8.2 quick reference cheat sheets to help you learn vim editor faster.
+  Uma coleção útil de cheat sheets de referência rápida do [Vim](http://www.vim.org/) 8.2 para ajudar você a aprender o editor Vim mais rápido.
 plugins:
   - copyCode
 ---
 
-## Getting Started
+## Primeiros passos
 
-### Motion Diagrams {.row-span-2}
+### Diagramas de movimento {.row-span-2}
 
 ```bash
 ▼/▶ Cursor   ▽/▷ Target
 ```
 
-#### Left-right motions
+#### Movimentos para esquerda/direita
 
 ```bash
 ┌───────────── |
@@ -39,7 +39,7 @@ plugins:
    echo "A cheatsheet from quickref.me"
 ```
 
-#### Up-down motions
+#### Movimentos para cima/baixo
 
 ```bash
                  - SCREEN 1 START
@@ -59,155 +59,155 @@ G gg H M L k j ▶ print("to")
 └──────────────▷ print("SCREEN 2")
 ```
 
-### Motions {.row-span-2}
+### Movimentos {.row-span-2}
 
-| Shortcut                       | Description       |
-| ------------------------------ | :---------------- |
-| `h` _\|_ `j` _\|_ `k` _\|_ `l` | Arrow keys        |
-| `<C-u>` _/_ `<C-d>`            | Half-page up/down |
-| `<C-b>` _/_ `<C-f>`            | Page up/down      |
-
-{.shortcuts}
-
-#### Words{.left-text}
-
-| Shortcut     | Description               |
-| ------------ | :------------------------ |
-| `b` _/_ `w`  | Previous/Next word        |
-| `ge` _/_ `e` | Previous/Next end of word |
+| Atalho                         | Descrição          |
+| ------------------------------ | :----------------- |
+| `h` _\|_ `j` _\|_ `k` _\|_ `l` | Teclas de seta     |
+| `<C-u>` _/_ `<C-d>`            | Meia página cima/baixo |
+| `<C-b>` _/_ `<C-f>`            | Página cima/baixo  |
 
 {.shortcuts}
 
-#### Line
+#### Palavras{.left-text}
 
-| Shortcut             | Description                 |
+| Atalho       | Descrição                        |
+| ------------ | :------------------------------- |
+| `b` _/_ `w`  | Palavra anterior/próxima         |
+| `ge` _/_ `e` | Fim da palavra anterior/próxima  |
+
+{.shortcuts}
+
+#### Linha
+
+| Atalho               | Descrição                   |
 | -------------------- | :-------------------------- |
-| `0` _(zero)_ _/_ `$` | Start/End of line           |
-| `^`                  | Start of line _(non-blank)_ |
+| `0` _(zero)_ _/_ `$` | Início/fim da linha         |
+| `^`                  | Início da linha _(não vazio)_ |
 
 {.shortcuts}
 
-#### Character
+#### Caractere
 
-| Shortcut                            | Description                         |
-| ----------------------------------- | :---------------------------------- |
-| `Fe` _/_ `fe`                       | Move to previous/next `e`           |
-| `To` _/_ `to`                       | Move before/after previous/next `o` |
-| <code>\|</code>_/_ <code>n\|</code> | Go to first/`n`th column            |
-
-{.shortcuts}
-
-#### Document
-
-| Shortcut       | Description              |
-| -------------- | :----------------------- |
-| `gg` _/_ `G`   | First/Last line          |
-| `:n` _\|_ `nG` | Go to line `n`           |
-| `}` _/_ `{`    | Next/Previous empty line |
+| Atalho                              | Descrição                              |
+| ----------------------------------- | :------------------------------------- |
+| `Fe` _/_ `fe`                       | Move para o `e` anterior/próximo       |
+| `To` _/_ `to`                       | Move para antes/depois do `o` anterior/próximo |
+| <code>\|</code>_/_ <code>n\|</code> | Vai para a primeira/`n`-ésima coluna   |
 
 {.shortcuts}
 
-#### Window
+#### Documento
 
-| Shortcut               | Description                 |
-| ---------------------- | :-------------------------- |
-| `H` _/_ `M` _/_ `L`    | Top/Middle/Bottom screen    |
-| `zt` _/_ `zz` _/_ `zb` | Top/Center/Bottom this line |
+| Atalho         | Descrição                   |
+| -------------- | :-------------------------- |
+| `gg` _/_ `G`   | Primeira/última linha       |
+| `:n` _\|_ `nG` | Vai para a linha `n`        |
+| `}` _/_ `{`    | Próxima/linha vazia anterior |
 
 {.shortcuts}
 
-### Insert Mode
+#### Janela
 
-| Shortcut               | Description                   |
+| Atalho                 | Descrição                     |
 | ---------------------- | :---------------------------- |
-| `i` _/_ `a`            | Insert before/after cursor    |
-| `I` _/_ `A`            | Insert start/end of line      |
-| `o` _/_ `O` _(letter)_ | Insert new line below/above   |
-| `s` _/_ `S`            | Delete char/line and insert   |
-| `C` _/_ `cc`           | Change to end of/current line |
-| `gi`                   | Insert at last insert point   |
-| `Esc` _\|_ `<C-[>`     | Exit insert mode              |
+| `H` _/_ `M` _/_ `L`    | Topo/meio/base da tela        |
+| `zt` _/_ `zz` _/_ `zb` | Topo/centro/base desta linha  |
 
 {.shortcuts}
 
-### Saving and Exiting
+### Modo Insert
 
-| Shortcut                  | Description             |
-| ------------------------- | :---------------------- |
-| `:w`                      | Save                    |
-| `:q`                      | Close file              |
-| `:wq` _\|_ `:x` _\|_ `ZZ` | Save and quit           |
-| `:wqa`                    | Save and quit all files |
-| `:q!` _\|_ `ZQ`           | Force quit              |
-| `:qa`                     | Close all files         |
-| `:qa!`                    | Force quit all files    |
-| `:w` now.txt              | Write to `now.txt`      |
-| `:sav` new.txt            | Save and edit `new.txt` |
-| `:w` !sudo tee %          | Write to readonly file  |
+| Atalho                 | Descrição                          |
+| ---------------------- | :--------------------------------- |
+| `i` _/_ `a`            | Insere antes/depois do cursor      |
+| `I` _/_ `A`            | Insere no início/fim da linha      |
+| `o` _/_ `O` _(letter)_ | Insere nova linha abaixo/acima     |
+| `s` _/_ `S`            | Exclui caractere/linha e insere    |
+| `C` _/_ `cc`           | Altera até o fim da/linha atual    |
+| `gi`                   | Insere no último ponto de inserção |
+| `Esc` _\|_ `<C-[>`     | Sai do modo insert                 |
 
 {.shortcuts}
 
-### Normal Mode
+### Salvar e sair
 
-| Shortcut              | Description                  |
-| --------------------- | :--------------------------- |
-| `r`                   | Replace one character        |
-| `R`                   | Enter Replace mode           |
-| `u` _/_ `3u`          | Undo changes `1` / `3` times |
-| `U`                   | Undo changes on one line     |
-| `J`                   | Join with next line          |
-| `<C-r>` _/_ 5 `<C-r>` | Redo changes `1` / `5` times |
-
-{.shortcuts}
-
-### Cut and paste {.row-span-2}
-
-| Shortcut         | Description                   |
-| ---------------- | :---------------------------- |
-| `x`              | Delete character _(Cut)_      |
-| `p` _/_ `P`      | Paste after/before            |
-| `xp`             | Swap two characters           |
-| `D`              | Delete to end of line _(Cut)_ |
-| `dw`             | Delete word _(Cut)_           |
-| `dd`             | Delete line _(Cut)_           |
-| `ddp`            | Swap two lines                |
-| `yy`             | Yank line _(Copy)_            |
-| `"*p` _\|_ `"+p` | Paste from system clipboard   |
-| `"*y` _\|_ `"+y` | Paste to system clipboard     |
+| Atalho                    | Descrição                      |
+| ------------------------- | :----------------------------- |
+| `:w`                      | Salva                          |
+| `:q`                      | Fecha o arquivo                |
+| `:wq` _\|_ `:x` _\|_ `ZZ` | Salva e sai                    |
+| `:wqa`                    | Salva e sai de todos os arquivos |
+| `:q!` _\|_ `ZQ`           | Força a saída                  |
+| `:qa`                     | Fecha todos os arquivos        |
+| `:qa!`                    | Força a saída de todos os arquivos |
+| `:w` now.txt              | Escreve em `now.txt`           |
+| `:sav` new.txt            | Salva e edita `new.txt`        |
+| `:w` !sudo tee %          | Escreve em arquivo somente leitura |
 
 {.shortcuts}
 
-#### In visual mode
+### Modo Normal
 
-| Shortcut     | Description              |
-| ------------ | :----------------------- |
-| `d` _\|_ `x` | Delete selection _(Cut)_ |
-| `s`          | Replace selection        |
-| `y`          | Yank selection _(Copy)_  |
-
-{.shortcuts}
-
-### Repeating
-
-| Shortcut | Description                                 |
-| -------- | :------------------------------------------ |
-| `.`      | Repeat last command                         |
-| `;`      | Repeat latest `f`, `t`, `F` or `T`          |
-| `,`      | Repeat latest `f`, `t`, `F` or `T` reversed |
-| `&`      | Repeat last `:s`                            |
-| `@:`     | Repeat a command-line command               |
+| Atalho                | Descrição                     |
+| --------------------- | :---------------------------- |
+| `r`                   | Substitui um caractere        |
+| `R`                   | Entra no modo Replace         |
+| `u` _/_ `3u`          | Desfaz alterações `1` / `3` vezes |
+| `U`                   | Desfaz alterações em uma linha |
+| `J`                   | Junta com a próxima linha     |
+| `<C-r>` _/_ 5 `<C-r>` | Refaz alterações `1` / `5` vezes |
 
 {.shortcuts}
 
-### Visual mode
+### Recortar e colar {.row-span-2}
 
-| Shortcut    | Description             |
+| Atalho           | Descrição                            |
+| ---------------- | :----------------------------------- |
+| `x`              | Exclui caractere _(Cut)_             |
+| `p` _/_ `P`      | Cola depois/antes                    |
+| `xp`             | Troca dois caracteres                |
+| `D`              | Exclui até o fim da linha _(Cut)_    |
+| `dw`             | Exclui palavra _(Cut)_               |
+| `dd`             | Exclui linha _(Cut)_                 |
+| `ddp`            | Troca duas linhas                    |
+| `yy`             | Yank na linha _(Copy)_               |
+| `"*p` _\|_ `"+p` | Cola da área de transferência do sistema |
+| `"*y` _\|_ `"+y` | Copia para a área de transferência do sistema |
+
+{.shortcuts}
+
+#### No modo visual
+
+| Atalho       | Descrição               |
+| ------------ | :---------------------- |
+| `d` _\|_ `x` | Exclui seleção _(Cut)_  |
+| `s`          | Substitui seleção       |
+| `y`          | Yank na seleção _(Copy)_ |
+
+{.shortcuts}
+
+### Repetição
+
+| Atalho | Descrição                                   |
+| ------ | :------------------------------------------ |
+| `.`    | Repete o último comando                     |
+| `;`    | Repete o último `f`, `t`, `F` ou `T`        |
+| `,`    | Repete o último `f`, `t`, `F` ou `T` invertido |
+| `&`    | Repete o último `:s`                        |
+| `@:`   | Repete um comando de linha de comando       |
+
+{.shortcuts}
+
+### Modo visual
+
+| Atalho      | Descrição               |
 | ----------- | :---------------------- |
-| `v`         | Enter visual mode       |
-| `V`         | Enter visual line mode  |
-| `<C-v>`     | Enter visual block mode |
-| `ggVG`      | Select all text         |
-| `>` _/_ `<` | Shift text right/left   |
+| `v`         | Entra no modo visual    |
+| `V`         | Entra no modo visual de linha |
+| `<C-v>`     | Entra no modo visual de bloco |
+| `ggVG`      | Seleciona todo o texto  |
+| `>` _/_ `<` | Desloca o texto para direita/esquerda |
 
 {.shortcuts}
 
@@ -215,63 +215,63 @@ G gg H M L k j ▶ print("to")
 
 | -     | -                     |
 | ----- | :-------------------- |
-| `qi`  | Record macro `i`      |
-| `q`   | Stop recording macro  |
-| `@i`  | Run macro `i`         |
-| `7@i` | Run macro `i` 7 times |
-| `@@`  | Repeat last macro     |
+| `qi`  | Grava a macro `i`     |
+| `q`   | Para a gravação da macro |
+| `@i`  | Executa a macro `i`   |
+| `7@i` | Executa a macro `i` 7 vezes |
+| `@@`  | Repete a última macro |
 
 {.shortcuts}
 
-You can save macro for any letters not just `i`
+Você pode salvar a macro em qualquer letra, não apenas `i`
 
-## Vim Operators
+## Operadores do Vim
 
-### Usage {.secondary}
+### Uso {.secondary}
 
-| Shortcut | Description  |
+| Atalho   | Descrição    |
 | -------- | :----------- |
 | `d`      | <yel>w</yel> |
-| Operator | Motion       |
+| Operador | Movimento    |
 
-Combine [operators](#available-operators) with [motions](#motions) to use them
+Combine [operadores](#available-operators) com [movimentos](#motions) para usá-los
 
-### Available Operators {.row-span-2}
+### Operadores disponíveis {.row-span-2}
 
-| Shortcut | Description                     |
-| -------- | :------------------------------ |
-| `d`      | Delete                          |
-| `y`      | Yank _(copy)_                   |
-| `c`      | Change _(delete then insert)_   |
-| `p`      | Paste                           |
-| `=`      | Formats code                    |
-| `g~`     | Toggle case                     |
-| `gU`     | Uppercase                       |
-| `gu`     | Lowercase                       |
-| `>`      | Indent right                    |
-| `<`      | Indent left                     |
-| `!`      | Filter through external program |
+| Atalho | Descrição                          |
+| ------ | :--------------------------------- |
+| `d`    | Exclui                             |
+| `y`    | Yank _(copia)_                     |
+| `c`    | Altera _(exclui e depois insere)_  |
+| `p`    | Cola                               |
+| `=`    | Formata código                     |
+| `g~`   | Alterna maiúsculas/minúsculas      |
+| `gU`   | Maiúsculas                         |
+| `gu`   | Minúsculas                         |
+| `>`    | Indenta à direita                  |
+| `<`    | Indenta à esquerda                 |
+| `!`    | Filtra por programa externo        |
 
-### Examples {.row-span-2}
+### Exemplos {.row-span-2}
 
-| Combination          | Description                           |
+| Combinação           | Descrição                             |
 | -------------------- | :------------------------------------ |
-| `d`<yel>d</yel>      | Delete current line                   |
-| `d`<yel>j</yel>      | Delete two lines                      |
-| `d`<yel>w</yel>      | Delete to next word                   |
-| `d`<yel>b</yel>      | Delete to beginning of word           |
-| `d`<yel>fa</yel>     | Delete until `a` char                 |
-| `d`<yel>/hello</yel> | Delete until `hello`                  |
-| `c`<yel>c</yel>      | Change current line, synonym with `S` |
-| `y`<yel>y</yel>      | Copy current line                     |
-| `>`<yel>j</yel>      | Indent 2 lines                        |
-| gg`d`<yel>G</yel>    | Delete a complete document            |
-| gg`=`<yel>G</yel>    | Indent a complete document            |
-| gg`y`<yel>G</yel>    | Copy a whole document                 |
+| `d`<yel>d</yel>      | Exclui a linha atual                  |
+| `d`<yel>j</yel>      | Exclui duas linhas                    |
+| `d`<yel>w</yel>      | Exclui até a próxima palavra          |
+| `d`<yel>b</yel>      | Exclui até o início da palavra        |
+| `d`<yel>fa</yel>     | Exclui até o caractere `a`            |
+| `d`<yel>/hello</yel> | Exclui até `hello`                    |
+| `c`<yel>c</yel>      | Altera a linha atual, sinônimo de `S` |
+| `y`<yel>y</yel>      | Copia a linha atual                   |
+| `>`<yel>j</yel>      | Indenta 2 linhas                      |
+| gg`d`<yel>G</yel>    | Exclui um documento completo          |
+| gg`=`<yel>G</yel>    | Indenta um documento completo         |
+| gg`y`<yel>G</yel>    | Copia um documento completo           |
 
 {.show-header}
 
-### Counts
+### Contagens
 
 ```
 [count] <operator> <motion>
@@ -280,159 +280,159 @@ Combine [operators](#available-operators) with [motions](#motions) to use them
 
 ---
 
-| Combination      | Description                |
-| ---------------- | :------------------------- |
-| 2`d`<yel>d</yel> | Delete `2` lines           |
-| 6`y`<yel>y</yel> | Copy `6` lines             |
-| `d`3<yel>w</yel> | Delete `3` words           |
-| `d`5<yel>j</yel> | Delete `5` lines downwards |
-| `>`4<yel>k</yel> | Indent `4` lines upwards   |
+| Combinação       | Descrição                     |
+| ---------------- | :---------------------------- |
+| 2`d`<yel>d</yel> | Exclui `2` linhas             |
+| 6`y`<yel>y</yel> | Copia `6` linhas              |
+| `d`3<yel>w</yel> | Exclui `3` palavras           |
+| `d`5<yel>j</yel> | Exclui `5` linhas para baixo  |
+| `>`4<yel>k</yel> | Indenta `4` linhas para cima  |
 
-## Vim Text objects
+## Text objects do Vim
 
-### Usage {.secondary}
+### Uso {.secondary}
 
-<!-- Confusing and should be fixed -->
+<!-- Confuso e deve ser corrigido -->
 
-| Shortcut |              Description               | -            |
+| Atalho   |               Descrição                | -            |
 | -------- | :------------------------------------: | :----------- |
 | `v`      |     <pur>i</pur> _/_ <pur>a</pur>      | <yel>p</yel> |
-| Operator | <pur>i</pur>nner _/_ <pur>a</pur>round | Text object  |
+| Operador | <pur>i</pur>nner _/_ <pur>a</pur>round | Text object  |
 
-Operate with an [operator](#available-operators) inner or around text blocks
+Opere com um [operador](#available-operators) dentro ou ao redor de blocos de texto
 
 ### Text objects {.row-span-2}
 
-| Shortcut                                             | Description                            |
+| Atalho                                               | Descrição                              |
 | ---------------------------------------------------- | :------------------------------------- |
-| <yel>p</yel>                                         | Paragraph                              |
-| <yel>w</yel>                                         | Word                                   |
-| <yel>W</yel>                                         | WORD <br/>_(surrounded by whitespace)_ |
-| <yel>s</yel>                                         | Sentence                               |
-| <yel>[</yel> <yel>(</yel> <yel>{</yel> <yel>\<</yel> | A [], (), or {} block                  |
-| <yel>]</yel> <yel>)</yel> <yel>}</yel> <yel>\></yel> | A [], (), or {} block                  |
-| <yel>'</yel> <yel>"</yel> <yel>\`</yel>              | A quoted string                        |
-| <yel>b</yel>                                         | A block [(                             |
-| <yel>B</yel>                                         | A block in [{                          |
-| <yel>t</yel>                                         | A HTML tag block                       |
+| <yel>p</yel>                                         | Parágrafo                              |
+| <yel>w</yel>                                         | Palavra                                |
+| <yel>W</yel>                                         | WORD <br/>_(cercada por espaços em branco)_ |
+| <yel>s</yel>                                         | Frase                                  |
+| <yel>[</yel> <yel>(</yel> <yel>{</yel> <yel>\<</yel> | Um bloco [], () ou {}                  |
+| <yel>]</yel> <yel>)</yel> <yel>}</yel> <yel>\></yel> | Um bloco [], () ou {}                  |
+| <yel>'</yel> <yel>"</yel> <yel>\`</yel>              | Uma string entre aspas                 |
+| <yel>b</yel>                                         | Um bloco [(                            |
+| <yel>B</yel>                                         | Um bloco em [{                         |
+| <yel>t</yel>                                         | Um bloco de tag HTML                   |
 
-See `:help text-objects`
+Veja `:help text-objects`
 
-### Delete
+### Excluir
 
-| Shortcut                    | Description                           |
+| Atalho                      | Descrição                             |
 | --------------------------- | :------------------------------------ |
-| `d`<pur>i</pur><yel>w</yel> | Delete inner word                     |
-| `d`<pur>i</pur><yel>s</yel> | Delete inner sentence                 |
-| `d`<pur>i</pur><yel>"</yel> | Delete in quotes                      |
-| `d`<pur>a</pur><yel>"</yel> | Delete in quotes _(including quotes)_ |
-| `d`<pur>i</pur><yel>p</yel> | Delete a paragraph                    |
+| `d`<pur>i</pur><yel>w</yel> | Exclui a palavra interna              |
+| `d`<pur>i</pur><yel>s</yel> | Exclui a frase interna                |
+| `d`<pur>i</pur><yel>"</yel> | Exclui entre aspas                    |
+| `d`<pur>a</pur><yel>"</yel> | Exclui entre aspas _(incluindo as aspas)_ |
+| `d`<pur>i</pur><yel>p</yel> | Exclui um parágrafo                   |
 
-### Selections
+### Seleções
 
-| Shortcut                                            | Description                               |
+| Atalho                                              | Descrição                                 |
 | --------------------------------------------------- | :---------------------------------------- |
-| `v`<pur>i</pur><yel>"</yel>                         | Select inner quotes "`...`{.underline}"   |
-| `v`<pur>a</pur><yel>"</yel>                         | Select quotes `"..."`{.underline}         |
-| `v`<pur>i</pur><yel>[</yel>                         | Select inner brackets [`...`{.underline}] |
-| `v`<pur>a</pur><yel>[</yel>                         | Select brackets `[...]`{.underline}       |
-| `v`<pur>i</pur><yel>w</yel>                         | Select inner word                         |
-| `v`<pur>i</pur><yel>p</yel>                         | Select inner paragraph                    |
-| `v`<pur>i</pur><yel>p</yel><pur>i</pur><yel>p</yel> | Select more paragraph                     |
+| `v`<pur>i</pur><yel>"</yel>                         | Seleciona as aspas internas "`...`{.underline}" |
+| `v`<pur>a</pur><yel>"</yel>                         | Seleciona as aspas `"..."`{.underline}    |
+| `v`<pur>i</pur><yel>[</yel>                         | Seleciona os colchetes internos [`...`{.underline}] |
+| `v`<pur>a</pur><yel>[</yel>                         | Seleciona os colchetes `[...]`{.underline} |
+| `v`<pur>i</pur><yel>w</yel>                         | Seleciona a palavra interna               |
+| `v`<pur>i</pur><yel>p</yel>                         | Seleciona o parágrafo interno             |
+| `v`<pur>i</pur><yel>p</yel><pur>i</pur><yel>p</yel> | Seleciona mais um parágrafo               |
 
-### Misc
+### Diversos
 
-| Shortcut                    | Description                          |
+| Atalho                      | Descrição                            |
 | --------------------------- | :----------------------------------- |
-| `c`<pur>i</pur><yel>w</yel> | Change inner word                    |
-| `c`<pur>i</pur><yel>"</yel> | Change inner quotes                  |
-| `c`<pur>i</pur><yel>t</yel> | Change inner tags (HTML)             |
-| `c`<pur>i</pur><yel>p</yel> | Change inner paragraph               |
-| `y`<pur>i</pur><yel>p</yel> | Yank inner paragraph                 |
-| `y`<pur>a</pur><yel>p</yel> | Yank paragraph _(including newline)_ |
+| `c`<pur>i</pur><yel>w</yel> | Altera a palavra interna             |
+| `c`<pur>i</pur><yel>"</yel> | Altera as aspas internas             |
+| `c`<pur>i</pur><yel>t</yel> | Altera as tags internas (HTML)       |
+| `c`<pur>i</pur><yel>p</yel> | Altera o parágrafo interno           |
+| `y`<pur>i</pur><yel>p</yel> | Yank no parágrafo interno            |
+| `y`<pur>a</pur><yel>p</yel> | Yank no parágrafo _(incluindo a quebra de linha)_ |
 
-## Vim Multiple files
+## Vários arquivos no Vim
 
 ### Buffers
 
 | -          | -                                |
 | ---------- | :------------------------------- |
-| `:e file`  | Edit a file in a new buffer      |
-| `:bn`      | Go to the next buffer            |
-| `:bp`      | Go to the previous buffer        |
-| `:bd`      | Remove file from buffer list     |
-| `:b 5`     | Open buffer #5                   |
-| `:b file`  | Go to a buffer by file           |
-| `:ls`      | List all open buffers            |
-| `:sp file` | Open and split window            |
-| `:vs file` | Open and vertically split window |
-| `:hid`     | Hide this buffer                 |
-| `:wn`      | Write file and move to next      |
-| `:tab ba`  | Edit all buffers as tabs         |
+| `:e file`  | Edita um arquivo em um novo buffer |
+| `:bn`      | Vai para o próximo buffer        |
+| `:bp`      | Vai para o buffer anterior       |
+| `:bd`      | Remove o arquivo da lista de buffers |
+| `:b 5`     | Abre o buffer #5                 |
+| `:b file`  | Vai para um buffer por arquivo   |
+| `:ls`      | Lista todos os buffers abertos   |
+| `:sp file` | Abre e divide a janela           |
+| `:vs file` | Abre e divide a janela verticalmente |
+| `:hid`     | Oculta este buffer               |
+| `:wn`      | Escreve o arquivo e vai para o próximo |
+| `:tab ba`  | Edita todos os buffers como abas |
 
-### Windows
+### Janelas
 
 | -                       | -                           |
 | ----------------------- | :-------------------------- |
-| `<C-w>` `s`             | Split window                |
-| `<C-w>` `v`             | Split window vertically     |
-| `<C-w>` `w`             | Switch windows              |
-| `<C-w>` `q`             | Quit a window               |
-| `<C-w>` `T`             | Break out into a new tab    |
-| `<C-w>` `x`             | Swap current with next      |
-| `<C-w>` `-` _/_ `+`     | Decrease/Increase height    |
-| `<C-w>` `<` _/_ `>`     | Decrease/Increase width     |
-| `<C-w>` <code>\|</code> | Max out the width           |
-| `<C-w>` `_`             | Max out the height          |
-| `<C-w>` `=`             | Equally high and wide       |
-| `<C-w>` `h` _/_ `l`     | Go to the left/right window |
-| `<C-w>` `j` _/_ `k`     | Go to the up/down window    |
+| `<C-w>` `s`             | Divide a janela             |
+| `<C-w>` `v`             | Divide a janela verticalmente |
+| `<C-w>` `w`             | Alterna entre janelas       |
+| `<C-w>` `q`             | Fecha uma janela            |
+| `<C-w>` `T`             | Separa em uma nova aba      |
+| `<C-w>` `x`             | Troca a atual pela próxima  |
+| `<C-w>` `-` _/_ `+`     | Diminui/aumenta a altura    |
+| `<C-w>` `<` _/_ `>`     | Diminui/aumenta a largura   |
+| `<C-w>` <code>\|</code> | Maximiza a largura          |
+| `<C-w>` `_`             | Maximiza a altura           |
+| `<C-w>` `=`             | Altura e largura iguais     |
+| `<C-w>` `h` _/_ `l`     | Vai para a janela à esquerda/direita |
+| `<C-w>` `j` _/_ `k`     | Vai para a janela acima/abaixo |
 
 {.shortcuts}
 
-### Tabs
+### Abas
 
-| Shortcut       | Description                       |
+| Atalho         | Descrição                         |
 | -------------- | :-------------------------------- |
-| `:tabe [file]` | <yel>E</yel>dit file in a new tab |
-| `:tabf [file]` | Open if exists in new tab         |
-| `:tabc`        | <yel>C</yel>lose current tab      |
-| `:tabo`        | Close <yel>o</yel>ther tabs       |
-| `:tabs`        | List all <yel>tabs</yel>          |
-| `:tabr`        | Go to fi<yel>r</yel>st tab        |
-| `:tabl`        | Go to <yel>l</yel>ast tab         |
-| `:tabm 0`      | <yel>M</yel>ove to position `0`   |
-| `:tabn`        | Go to <yel>n</yel>ext tab         |
-| `:tabp`        | Go to <yel>p</yel>revious tab     |
+| `:tabe [file]` | <yel>Edita</yel> o arquivo em uma nova aba |
+| `:tabf [file]` | Abre se existir em uma nova aba   |
+| `:tabc`        | <yel>Fecha</yel> a aba atual       |
+| `:tabo`        | Fecha as <yel>outras</yel> abas    |
+| `:tabs`        | Lista todas as <yel>abas</yel>     |
+| `:tabr`        | Vai para a <yel>primeira</yel> aba |
+| `:tabl`        | Vai para a <yel>última</yel> aba   |
+| `:tabm 0`      | <yel>Move</yel> para a posição `0` |
+| `:tabn`        | Vai para a <yel>próxima</yel> aba  |
+| `:tabp`        | Vai para a aba <yel>anterior</yel> |
 
-#### Normal mode
+#### Modo normal
 
-| Shortcut | Description                   |
-| -------- | :---------------------------- |
-| `gt`     | Go to <yel>n</yel>ext tab     |
-| `gT`     | Go to <yel>p</yel>revious tab |
-| `2gt`    | Go to tab number `2`          |
+| Atalho | Descrição                     |
+| ------ | :---------------------------- |
+| `gt`   | Vai para a <yel>próxima</yel> aba |
+| `gT`   | Vai para a aba <yel>anterior</yel> |
+| `2gt`  | Vai para a aba número `2`     |
 
 {.shortcuts}
 
-## Vim Search and Replace
+## Busca e substituição no Vim
 
-### Search
+### Busca
 
 | -        | -                                   |
 | -------- | :---------------------------------- |
-| `/foo`   | Search forward                      |
-| `/foo\c` | Search forward _(case insensitive)_ |
-| `?foo`   | Search backward                     |
-| `/\v\d+` | Search with [regex](/regex)         |
-| `n`      | Next matching search pattern        |
-| `N`      | Previous match                      |
-| `*`      | Search for current word forward     |
-| `#`      | Search for current word backward    |
+| `/foo`   | Busca para frente                   |
+| `/foo\c` | Busca para frente _(sem diferenciar maiúsculas de minúsculas)_ |
+| `?foo`   | Busca para trás                     |
+| `/\v\d+` | Busca com [regex](/regex)           |
+| `n`      | Próxima ocorrência do padrão de busca |
+| `N`      | Ocorrência anterior                 |
+| `*`      | Busca a palavra atual para frente   |
+| `#`      | Busca a palavra atual para trás     |
 
 {.shortcuts}
 
-### Replace LINE
+### Substituir LINHA
 
 ```vim
 :[range]s/{pattern}/{str}/[flags]
@@ -442,14 +442,14 @@ See `:help text-objects`
 
 |                   |                                  |
 | ----------------- | :------------------------------- |
-| `:s/old/new`      | Replace first                    |
-| `:s/old/new/g`    | Replace all                      |
-| `:s/\vold/new/g`  | Replace all with [regex](/regex) |
-| `:s/old/new/gc`   | replace all _(Confirm)_          |
-| `:s/old/new/i`    | Ignore case replace first        |
-| `:2,6s/old/new/g` | Replace between lines `2`-`6`    |
+| `:s/old/new`      | Substitui a primeira             |
+| `:s/old/new/g`    | Substitui todas                  |
+| `:s/\vold/new/g`  | Substitui todas com [regex](/regex) |
+| `:s/old/new/gc`   | Substitui todas _(Confirm)_      |
+| `:s/old/new/i`    | Ignora maiúsculas/minúsculas e substitui a primeira |
+| `:2,6s/old/new/g` | Substitui entre as linhas `2`-`6` |
 
-### Replace FILE
+### Substituir ARQUIVO
 
 ```vim
 :%s/{pattern}/{str}/[flags]
@@ -459,27 +459,27 @@ See `:help text-objects`
 
 |                   |                                  |
 | ----------------- | :------------------------------- |
-| `:%s/old/new`     | Replace first                    |
-| `:%s/old/new/g`   | Replace all                      |
-| `:%s/old/new/gc`  | Replace all _(Confirm)_          |
-| `:%s/old/new/gi`  | Replace all _(ignore case)_      |
-| `:%s/\vold/new/g` | Replace all with [regex](/regex) |
+| `:%s/old/new`     | Substitui a primeira             |
+| `:%s/old/new/g`   | Substitui todas                  |
+| `:%s/old/new/gc`  | Substitui todas _(Confirm)_      |
+| `:%s/old/new/gi`  | Substitui todas _(ignora maiúsculas/minúsculas)_ |
+| `:%s/\vold/new/g` | Substitui todas com [regex](/regex) |
 
-### Ranges {.row-span-2}
+### Intervalos {.row-span-2}
 
 | -       | -                 |
 | ------- | :---------------- |
-| `%`     | Entire file       |
-| `’<,’>` | Current selection |
-| `5`     | Line `5`          |
-| `5,10`  | Lines `5` to `10` |
-| `$`     | Last line         |
-| `2,$`   | Lines `2` to Last |
-| `.`     | Current line      |
-| `,3`    | Next `3` lines    |
-| `-3,`   | Forward `3` lines |
+| `%`     | Arquivo inteiro   |
+| `’<,’>` | Seleção atual     |
+| `5`     | Linha `5`         |
+| `5,10`  | Linhas `5` a `10` |
+| `$`     | Última linha      |
+| `2,$`   | Linhas `2` até a última |
+| `.`     | Linha atual       |
+| `,3`    | Próximas `3` linhas |
+| `-3,`   | `3` linhas adiante |
 
-### Global command {.row-span-2}
+### Comando global {.row-span-2}
 
 ```vim
 :[range]g/{pattern}/[command]
@@ -489,15 +489,15 @@ See `:help text-objects`
 
 |              |                                    |
 | ------------ | :--------------------------------- |
-| `:g/foo/d`   | Delete lines containing `foo`      |
-| `:g!/foo/d`  | Delete lines not containing `foo`  |
-| `:g/^\s*$/d` | Delete all blank lines             |
-| `:g/foo/t$`  | Copy lines containing `foo` to EOF |
-| `:g/foo/m$`  | Move lines containing `foo` to EOF |
-| `:g/^/m0`    | Reverse a file                     |
-| `:g/^/t.`    | Duplicate every line               |
+| `:g/foo/d`   | Exclui linhas que contêm `foo`     |
+| `:g!/foo/d`  | Exclui linhas que não contêm `foo` |
+| `:g/^\s*$/d` | Exclui todas as linhas em branco   |
+| `:g/foo/t$`  | Copia linhas que contêm `foo` para EOF |
+| `:g/foo/m$`  | Move linhas que contêm `foo` para EOF |
+| `:g/^/m0`    | Inverte um arquivo                 |
+| `:g/^/t.`    | Duplica cada linha                 |
 
-### Inverse :g
+### :g inverso
 
 ```vim
 :[range]v/{pattern}/[command]
@@ -507,31 +507,31 @@ See `:help text-objects`
 
 |            |                                                            |
 | ---------- | :--------------------------------------------------------- |
-| `:v/foo/d` | Delete lines not containing `foo`<br/>_(also `:g!/foo/d`)_ |
+| `:v/foo/d` | Exclui linhas que não contêm `foo`<br/>_(também `:g!/foo/d`)_ |
 
 ### Flags
 
 | -   | -                         |
 | --- | :------------------------ |
-| `g` | Replace all occurrences   |
-| `i` | Ignore case               |
-| `I` | Don't ignore case         |
-| `c` | Confirm each substitution |
+| `g` | Substitui todas as ocorrências |
+| `i` | Ignora maiúsculas/minúsculas |
+| `I` | Não ignora maiúsculas/minúsculas |
+| `c` | Confirma cada substituição |
 
-### Substitute expression (magic)
+### Expressão de substituição (magic)
 
 | -             | -                                |
 | ------------- | :------------------------------- |
-| `&` _\|_ `\0` | Replace with the whole matched   |
-| `\1`...`\9`   | Replace with the group 0-9       |
-| `\u`          | Uppercase next letter            |
-| `\U`          | Uppercase following characters   |
-| `\l`          | Lowercase next letter            |
-| `\L`          | Lowercase following characters   |
-| `\e`          | End of `\u`, `\U`, `\l` and `\L` |
-| `\E`          | End of `\u`, `\U`, `\l` and `\L` |
+| `&` _\|_ `\0` | Substitui pelo trecho completo encontrado |
+| `\1`...`\9`   | Substitui pelo grupo 0-9         |
+| `\u`          | Deixa a próxima letra em maiúscula |
+| `\U`          | Deixa os próximos caracteres em maiúscula |
+| `\l`          | Deixa a próxima letra em minúscula |
+| `\L`          | Deixa os próximos caracteres em minúscula |
+| `\e`          | Termina `\u`, `\U`, `\l` e `\L`  |
+| `\E`          | Termina `\u`, `\U`, `\l` e `\L`  |
 
-### Examples {.col-span-2}
+### Exemplos {.col-span-2}
 
 ```c {.wrap}
 :s/a\|b/xxx\0xxx/g		         # Modifies "a b"      to "xxxaxxx xxxbxxx"
@@ -554,7 +554,7 @@ See `:help text-objects`
 
 ## Vimdiff
 
-### Usage {.secondary}
+### Uso {.secondary}
 
 ```shell script
 
@@ -562,7 +562,7 @@ $ vimdiff file1 file2 [file3]
 $ vim -d file1 file2 [file3]
 ```
 
-### Editing {.row-span-2}
+### Edição {.row-span-2}
 
 ```
 :[range]diffget [bufspec]
@@ -571,238 +571,238 @@ $ vim -d file1 file2 [file3]
 
 ---
 
-| Shortcut            | Description             |
+| Atalho              | Descrição               |
 | ------------------- | :---------------------- |
-| `do` _/_ `:diffget` | Obtain (get) difference |
-| `dp` _/_ `:diffput` | Put difference          |
-| `:dif`              | Re-scan differences     |
-| `:diffo`            | Switch off diff mode    |
-| `:1,$+1diffget`     | Get all differences     |
-| `ZQ`                | Quit without changes    |
+| `do` _/_ `:diffget` | Obtém (get) a diferença |
+| `dp` _/_ `:diffput` | Aplica (put) a diferença |
+| `:dif`              | Reanalisa as diferenças |
+| `:diffo`            | Desativa o modo diff    |
+| `:1,$+1diffget`     | Obtém todas as diferenças |
+| `ZQ`                | Sai sem alterações      |
 
 {.shortcuts}
 
-See: [Ranges](#ranges)
+Veja: [Intervalos](#ranges)
 
 ### Folds {.row-span-2}
 
-| Shortcut      | Description                  |
+| Atalho        | Descrição                    |
 | ------------- | :--------------------------- |
-| `zo` _/_ `zO` | Open                         |
-| `zc` _/_ `zC` | Close                        |
-| `za` _/_ `zA` | Toggle                       |
-| `zv`          | Open folds for this line     |
-| `zM`          | Close all                    |
-| `zR`          | Open all                     |
-| `zm`          | Fold more _(foldlevel += 1)_ |
-| `zr`          | Fold less _(foldlevel -= 1)_ |
-| `zx`          | Update folds                 |
+| `zo` _/_ `zO` | Abre                         |
+| `zc` _/_ `zC` | Fecha                        |
+| `za` _/_ `zA` | Alterna                      |
+| `zv`          | Abre os folds desta linha    |
+| `zM`          | Fecha todos                  |
+| `zR`          | Abre todos                   |
+| `zm`          | Mais folds _(foldlevel += 1)_ |
+| `zr`          | Menos folds _(foldlevel -= 1)_ |
+| `zx`          | Atualiza os folds            |
 
 {.shortcuts}
 
-### Jumping
+### Saltos
 
 <br>
 
-| Shortcut | Description         |
-| -------- | :------------------ |
-| `]c`     | Next difference     |
-| `[c`     | Previous difference |
+| Atalho | Descrição            |
+| ------ | :------------------- |
+| `]c`     | Próxima diferença    |
+| `[c`     | Diferença anterior   |
 
 {.shortcuts}
 
-## Quickfix List (Advanced)
+## Lista Quickfix (avançado)
 
-### Usage
+### Uso
 
-The Quickfix List is primarily used to navigate a list of errors/warnings (or file locations) generated by a compiler or linter.
+A Lista Quickfix é usada principalmente para navegar por uma lista de erros/avisos (ou localizações de arquivos) gerada por um compilador ou linter.
 
-| Shortcut     | Description                                                      |
-| :----------- | :--------------------------------------------------------------- |
-| `:copen`     | Open the quickfix window                                         |
-| `:cclose`    | Close the quickfix window                                        |
-| `:cnext`     | Go to the **next** error/location (`:cn` also works)             |
-| `:cprevious` | Go to the **previous** error/location (`:cp` also works)         |
-| `:clist`     | List all errors/locations in the list                            |
-| `:cf [file]` | Populate the list with errors from a file (e.g., a compiler log) |
+| Atalho       | Descrição                                                       |
+| :----------- | :-------------------------------------------------------------- |
+| `:copen`     | Abre a janela quickfix                                          |
+| `:cclose`    | Fecha a janela quickfix                                         |
+| `:cnext`     | Vai para o erro/localização **seguinte** (`:cn` também funciona) |
+| `:cprevious` | Vai para o erro/localização **anterior** (`:cp` também funciona) |
+| `:clist`     | Lista todos os erros/localizações da lista                      |
+| `:cf [file]` | Preenche a lista com erros de um arquivo (ex.: um log de compilador) |
 
 ---
 
-### Quickfix Do (`:cdo` and `:cfdo`)
+### Quickfix Do (`:cdo` e `:cfdo`)
 
-The `:cdo` (quickfix do) and `:cfdo` (quickfix file do) commands execute a command in every file listed in the quickfix list. `:cdo` iterates over every _location_ in the list, while `:cfdo` iterates over every _unique file_ in the list.
+Os comandos `:cdo` (quickfix do) e `:cfdo` (quickfix file do) executam um comando em cada arquivo listado na lista quickfix. O `:cdo` percorre cada _localização_ da lista, enquanto o `:cfdo` percorre cada _arquivo único_ da lista.
 
-| Command       | Description                                                     |
+| Comando       | Descrição                                                       |
 | :------------ | :-------------------------------------------------------------- |
-| `:cdo [cmd]`  | Execute `[cmd]` for every **location** in the quickfix list.    |
-| `:cfdo [cmd]` | Execute `[cmd]` for every **unique file** in the quickfix list. |
+| `:cdo [cmd]`  | Executa `[cmd]` para cada **localização** na lista quickfix.    |
+| `:cfdo [cmd]` | Executa `[cmd]` para cada **arquivo único** na lista quickfix.  |
 
 ---
 
-## Miscellaneous
+## Diversos
 
-### Case {.row-span-2}
+### Maiúsculas e minúsculas {.row-span-2}
 
-| Shortcut       | Description             |
-| -------------- | :---------------------- |
-| `vU`           | _Uppercase_ character   |
-| `vu`           | _Lowercase_ character   |
-| `~`            | _Toggle case_ character |
-| `viw` `U`      | _Uppercase_ word        |
-| `viw` `u`      | _Lowercase_ word        |
-| `viw` `~`      | _Toggle case_ word      |
-| `VU` _/_ `gUU` | _Uppercase_ line        |
-| `Vu` _/_ `guu` | _Lowercase_ line        |
-| `V~` _/_ `g~~` | _Toggle case_ line      |
-| `gggUG`        | _Uppercase_ all text    |
-| `ggguG`        | _Lowercase_ all text    |
-| `ggg~G`        | _Toggle case_ all text  |
-
-{.shortcuts}
-
-### Jumping
-
-| Shortcut | Description              |
-| -------- | :----------------------- |
-| `<C-o>`  | Go back to previous      |
-| `<C-i>`  | Go forward               |
-| `gf`     | Go to file in cursor     |
-| `ga`     | Display hex, ascii value |
+| Atalho         | Descrição                    |
+| -------------- | :--------------------------- |
+| `vU`           | Caractere em _maiúscula_     |
+| `vu`           | Caractere em _minúscula_     |
+| `~`            | _Alterna maiúsculas/minúsculas_ do caractere |
+| `viw` `U`      | Palavra em _maiúscula_       |
+| `viw` `u`      | Palavra em _minúscula_       |
+| `viw` `~`      | _Alterna maiúsculas/minúsculas_ da palavra |
+| `VU` _/_ `gUU` | Linha em _maiúscula_         |
+| `Vu` _/_ `guu` | Linha em _minúscula_         |
+| `V~` _/_ `g~~` | _Alterna maiúsculas/minúsculas_ da linha |
+| `gggUG`        | Todo o texto em _maiúscula_  |
+| `ggguG`        | Todo o texto em _minúscula_  |
+| `ggg~G`        | _Alterna maiúsculas/minúsculas_ de todo o texto |
 
 {.shortcuts}
 
-### Misc command-lines {.row-span-2}
+### Saltos
+
+| Atalho  | Descrição                    |
+| ------- | :--------------------------- |
+| `<C-o>` | Volta para o anterior        |
+| `<C-i>` | Avança                       |
+| `gf`    | Vai para o arquivo no cursor |
+| `ga`    | Exibe o valor hex e ascii    |
+
+{.shortcuts}
+
+### Comandos de linha de comando diversos {.row-span-2}
 
 | -              | -                                          |
 | -------------- | :----------------------------------------- |
-| `:h`           | Help open help view                        |
-| `:edit!`       | Reload current file                        |
-| `:2,8m0`       | Move lines `2`-`8` to `0`                  |
-| `:noh`         | Clear search highlights                    |
-| `:sort`        | Sort lines                                 |
-| `:ter`         | Open a terminal window                     |
-| `:set paste`   | Enable Insert Paste sub-mode               |
-| `:set nopaste` | disable Insert Paste sub-mode              |
-| `:cq`          | Exiting with an error<br/>_(aborting Git)_ |
+| `:h`           | Ajuda: abre a visualização de ajuda        |
+| `:edit!`       | Recarrega o arquivo atual                  |
+| `:2,8m0`       | Move as linhas `2`-`8` para `0`            |
+| `:noh`         | Limpa os destaques da busca                |
+| `:sort`        | Ordena as linhas                           |
+| `:ter`         | Abre uma janela de terminal                |
+| `:set paste`   | Ativa o sub-modo Insert Paste              |
+| `:set nopaste` | Desativa o sub-modo Insert Paste           |
+| `:cq`          | Sai com erro<br/>_(abortando o Git)_       |
 
-### Navigating
+### Navegação
 
-| Shortcut       | Description               |
+| Atalho         | Descrição                 |
 | -------------- | :------------------------ |
-| `%`            | Nearest/matching `{[()]}` |
-| `[(` _\|_ `[{` | Previous `(` or `{`       |
-| `])` _\|_ `]{` | Next `)` or `}`           |
-| `[m`           | Previous method start     |
-| `[M`           | Previous method end       |
+| `%`            | `{[()]}` mais próximo/correspondente |
+| `[(` _\|_ `[{` | `(` ou `{` anterior       |
+| `])` _\|_ `]{` | Próximo `)` ou `}`        |
+| `[m`           | Início do método anterior |
+| `[M`           | Fim do método anterior    |
 
 {.shortcuts}
 
-### Counters
+### Contadores
 
-| Shortcut | Description     |
-| -------- | :-------------- |
-| `<C-a>`  | Increase number |
-| `<C-x>`  | Decrease number |
+| Atalho  | Descrição          |
+| ------- | :----------------- |
+| `<C-a>` | Aumenta o número   |
+| `<C-x>` | Diminui o número   |
 
 {.shortcuts}
 
 ### Tags {.row-span-2 .col-span-2}
 
-| Shortcut             | Description                                     |
+| Atalho               | Descrição                                       |
 | -------------------- | :---------------------------------------------- |
-| `:tag Classname`     | Jump to first definition of Classname           |
-| `<C-]>`              | Jump to definition                              |
-| `g]`                 | See all definitions                             |
-| `<C-t>`              | Go back to last tag                             |
-| `<C-o> <C-i>`        | Back/forward                                    |
-| `:tselect Classname` | Find definitions of Classname                   |
-| `:tjump Classname`   | Find definitions of Classname (auto-select 1st) |
+| `:tag Classname`     | Vai para a primeira definição de Classname      |
+| `<C-]>`              | Vai para a definição                            |
+| `g]`                 | Vê todas as definições                          |
+| `<C-t>`              | Volta para a última tag                         |
+| `<C-o> <C-i>`        | Voltar/avançar                                  |
+| `:tselect Classname` | Encontra as definições de Classname             |
+| `:tjump Classname`   | Encontra as definições de Classname (seleciona a 1ª automaticamente) |
 
 {.shortcuts}
 
-### Formatting
+### Formatação
 
 | -       | -                                |
 | ------- | -------------------------------- |
-| `:ce 8` | Center lines between `8` columns |
-| `:ri 4` | Right-align lines at `4` columns |
-| `:le`   | Left-align lines                 |
+| `:ce 8` | Centraliza as linhas em `8` colunas |
+| `:ri 4` | Alinha as linhas à direita em `4` colunas |
+| `:le`   | Alinha as linhas à esquerda      |
 
-See `:help formatting`
+Veja `:help formatting`
 
-### Marks {.col-span-2 .row-span-4}
+### Marcas {.col-span-2 .row-span-4}
 
-| Shortcut            | Description                                          |
+| Atalho              | Descrição                                            |
 | ------------------- | :--------------------------------------------------- |
-| <code>\`^</code>    | Last position of cursor in insert mode               |
-| <code>\`.</code>    | Last change in current buffer                        |
-| <code>\`"</code>    | Last exited current buffer                           |
-| <code>\`0</code>    | In last file edited                                  |
-| <code>''</code>     | Back to line in current buffer where jumped from     |
-| <code>\`\`</code>   | Back to position in current buffer where jumped from |
-| <code>\`[</code>    | To beginning of previously changed or yanked text    |
-| <code>\`]</code>    | To end of previously changed or yanked text          |
-| <code>\`&lt;</code> | To beginning of last visual selection                |
-| <code>\`&gt;</code> | To end of last visual selection                      |
-| `ma`                | Mark this cursor position as `a`                     |
-| <code>\`a</code>    | Jump to the cursor position `a`                      |
-| `'a`                | Jump to the beginning of the line with position `a`  |
-| <code>d'a</code>    | Delete from current line to line of mark `a`         |
-| <code>d\`a</code>   | Delete from current position to position of mark `a` |
-| <code>c'a</code>    | Change text from current line to line of `a`         |
-| <code>y\`a</code>   | Yank text from current position to position of `a`   |
-| `:marks`            | List all current marks                               |
-| `:delm a`           | Delete mark `a`                                      |
-| `:delm a-d`         | Delete marks `a`, `b`, `c`, `d`                      |
-| `:delm abc`         | Delete marks `a`, `b`, `c`                           |
+| <code>\`^</code>    | Última posição do cursor no modo insert              |
+| <code>\`.</code>    | Última alteração no buffer atual                     |
+| <code>\`"</code>    | Último buffer atual do qual saiu                     |
+| <code>\`0</code>    | No último arquivo editado                            |
+| <code>''</code>     | Volta para a linha do buffer atual de onde você saltou |
+| <code>\`\`</code>   | Volta para a posição do buffer atual de onde você saltou |
+| <code>\`[</code>    | Para o início do texto alterado ou copiado anteriormente |
+| <code>\`]</code>    | Para o fim do texto alterado ou copiado anteriormente |
+| <code>\`&lt;</code> | Para o início da última seleção visual               |
+| <code>\`&gt;</code> | Para o fim da última seleção visual                  |
+| `ma`                | Marca esta posição do cursor como `a`                |
+| <code>\`a</code>    | Salta para a posição do cursor `a`                    |
+| `'a`                | Salta para o início da linha com a posição `a`       |
+| <code>d'a</code>    | Exclui da linha atual até a linha da marca `a`       |
+| <code>d\`a</code>   | Exclui da posição atual até a posição da marca `a`    |
+| <code>c'a</code>    | Altera o texto da linha atual até a linha de `a`     |
+| <code>y\`a</code>   | Copia o texto da posição atual até a posição de `a`   |
+| `:marks`            | Lista todas as marcas atuais                         |
+| `:delm a`           | Exclui a marca `a`                                   |
+| `:delm a-d`         | Exclui as marcas `a`, `b`, `c`, `d`                  |
+| `:delm abc`         | Exclui as marcas `a`, `b`, `c`                       |
 
 {.shortcuts}
 
-### Calculator
+### Calculadora
 
-| Shortcut         | Description      |
-| ---------------- | :--------------- |
-| `<C-r>` `=` 7\*7 | Shows the result |
-| `<C-r>` `=` 10/2 | Shows the result |
+| Atalho           | Descrição      |
+| ---------------- | :------------- |
+| `<C-r>` `=` 7\*7 | Mostra o resultado |
+| `<C-r>` `=` 10/2 | Mostra o resultado |
 
 {.shortcuts}
 
-Do this in INSERT mode
+Faça isso no modo INSERT
 
 ### Shell
 
 | -            | -                              |
 | ------------ | :----------------------------- |
-| `:!<shell>`  | Interpret Shell Command        |
-| `:r!<shell>` | Read in output of shell        |
-| `:r!date`    | Insert date                    |
-| `:!!date`    | Replace current line with date |
+| `:!<shell>`  | Interpreta um comando shell    |
+| `:r!<shell>` | Lê a saída do shell            |
+| `:r!date`    | Insere a data                  |
+| `:!!date`    | Substitui a linha atual pela data |
 
-### Command line
+### Linha de comando
 
-| Shortcut     | Description                               |
+| Atalho       | Descrição                                 |
 | ------------ | :---------------------------------------- |
-| `<C-r><C-w>` | Insert current word into the command line |
-| `<C-r>"`     | Paste from " register                     |
-| `<C-x><C-f>` | Auto-completion of path in insert mode    |
+| `<C-r><C-w>` | Insere a palavra atual na linha de comando |
+| `<C-r>"`     | Cola do registro "                      |
+| `<C-x><C-f>` | Autocompleta o path no modo insert      |
 
 {.shortcuts}
 
-### Tricks
+### Truques
 
-Remove duplicate lines
+Remova linhas duplicadas
 
 ```shell script
 :sort | %!uniq -u
 ```
 
-To number the lines in the file
+Para numerar as linhas do arquivo
 
 ```shell script
 :%!cat -n
 ```
 
-Copy whole doc to clipboard
+Copie o documento inteiro para a área de transferência
 
 ```shell script
 :%w !pbcopy            # Mac OS X
@@ -810,7 +810,7 @@ Copy whole doc to clipboard
 :%w !xsel -i -b        # GNU/Linux
 ```
 
-## Also see
+## Veja também
 
 - [Devhints](https://devhints.io/vim) _(devhints.io)_
 - [Vim cheatsheet](https://vim.rtorr.com/) _(vim.rotrr.com)_

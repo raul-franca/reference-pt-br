@@ -7,118 +7,118 @@ tags:
   -
   - mac
 categories:
-  - Keyboard Shortcuts
+  - Atalhos de Teclado
 intro: |
-  A visual cheat-sheet for the 62 keyboard shortcuts found in the Apple Music app. This application is MacOS-only.
+  Um cheat sheet visual com os 62 atalhos de teclado do app Apple Music. Este aplicativo é exclusivo para MacOS.
 ---
 
-## Keyboard Shortcuts
+## Atalhos de teclado
 
-### Playing Music {.row-span-2}
+### Reproduzindo música {.row-span-2}
 
-| Shortcut              | Action                                                   |
-| --------------------- | -------------------------------------------------------- |
-| `Space`               | Start playing or pause the selected song                 |
-| `Enter`               | Play the currently selected song from the beginning      |
-| `Cmd` `Opt` `Right`   | Move forward within a song                               |
-| `Cmd` `Opt` `Left`    | Move backward within a song                              |
-| `Cmd` `.`             | Stop playing the selected song                           |
-| `Right`               | When a song is playing, play the next song in a list     |
-| `Left`                | When a song is playing, play the previous song in a list |
-| `Cmd` `L`             | Show the currently playing song in the list              |
-| `Cmd` `Opt` `U`       | Show the Playing Next queue                              |
-| `Opt` `Right`         | Listen to the next album in a list                       |
-| `Opt` `Left`          | Listen to the previous album in a list                   |
-| `Cmd` `Up`            | Increase the volume                                      |
-| `Cmd` `Down`          | Decrease the volume                                      |
-| `Cmd` `Opt` `E`       | Open the equalizer                                       |
-| `Cmd` `Shift` `Right` | Go to the next chapter, if available                     |
-| `Cmd` `Shift` `Left`  | Go to the previous chapter, if available                 |
-| `Cmd` `U`             | Stream audio file at a specific URL to Music             |
+| Atalho                | Ação                                                             |
+| --------------------- | ---------------------------------------------------------------- |
+| `Space`               | Inicia ou pausa a música selecionada                             |
+| `Enter`               | Reproduz a música selecionada desde o início                     |
+| `Cmd` `Opt` `Right`   | Avança dentro da música                                          |
+| `Cmd` `Opt` `Left`    | Retrocede dentro da música                                       |
+| `Cmd` `.`             | Para a reprodução da música selecionada                          |
+| `Right`               | Com uma música tocando, reproduz a próxima música da lista       |
+| `Left`                | Com uma música tocando, reproduz a música anterior da lista      |
+| `Cmd` `L`             | Mostra na lista a música em reprodução                           |
+| `Cmd` `Opt` `U`       | Mostra a fila Playing Next                                       |
+| `Opt` `Right`         | Ouve o próximo álbum da lista                                    |
+| `Opt` `Left`          | Ouve o álbum anterior da lista                                   |
+| `Cmd` `Up`            | Aumenta o volume                                                 |
+| `Cmd` `Down`          | Diminui o volume                                                 |
+| `Cmd` `Opt` `E`       | Abre o equalizador                                               |
+| `Cmd` `Shift` `Right` | Vai para o próximo capítulo, se disponível                       |
+| `Cmd` `Shift` `Left`  | Vai para o capítulo anterior, se disponível                      |
+| `Cmd` `U`             | Transmite um arquivo de áudio de uma URL específica para o Music |
 
 {.shortcuts}
 
 ### Playlists
 
-| Shortcut          | Action                                                                   |
-| ----------------- | ------------------------------------------------------------------------ |
-| `Cmd` `N`         | Create a new playlist                                                    |
-| `Cmd` `Shift` `N` | Create a playlist from a selection of songs                              |
-| `Cmd` `Opt` `N`   | Create a new Smart Playlist                                              |
-| `Opt` `Space`     | Start the Genius Shuffle                                                 |
-| `Cmd` `R`         | Refresh a Genius Playlist, when the playlist is selected                 |
-| `Cmd` `Del`       | Delete the selected playlist without confirmation                        |
-| `Opt` `Del`       | Delete the selected playlist and all songs it contains from your library |
-| `Opt` `Del`       | Delete the selected song from your library and all playlists             |
+| Atalho            | Ação                                                                      |
+| ----------------- | ------------------------------------------------------------------------- |
+| `Cmd` `N`         | Cria uma nova playlist                                                    |
+| `Cmd` `Shift` `N` | Cria uma playlist a partir de uma seleção de músicas                      |
+| `Cmd` `Opt` `N`   | Cria uma nova Smart Playlist                                              |
+| `Opt` `Space`     | Inicia o Genius Shuffle                                                   |
+| `Cmd` `R`         | Atualiza uma Genius Playlist quando a playlist está selecionada           |
+| `Cmd` `Del`       | Exclui a playlist selecionada sem confirmação                             |
+| `Opt` `Del`       | Exclui do acervo a playlist selecionada e todas as músicas que ela contém |
+| `Opt` `Del`       | Exclui do acervo a música selecionada e de todas as playlists             |
 
 {.shortcuts}
 
-### Window Options {.row-span-2}
+### Opções de janela {.row-span-2}
 
-| Shortcut          | Action                                                    |
-| ----------------- | --------------------------------------------------------- |
-| `Cmd` `Shift` `M` | Open the MiniPlayer                                       |
-| `Cmd` `Shift` `F` | Open the Full Screen Player                               |
-| `Cmd` `Ctrl` `F`  | Toggle full-screen view                                   |
-| `Cmd` `/`         | Show or hide the status bar                               |
-| `Cmd` `I`         | Open the info window for the selected song                |
-| `Cmd` `N`         | In the info window, see information for the next song     |
-| `Cmd` `P`         | In the info window, see information for the previous song |
-| `Cmd` `Shift` `[` | Go to the previous pane in the info window                |
-| `Cmd` `Shift` `]` | Go to the next pane in the info window                    |
-| `Cmd` `J`         | Open the View Options window for the selected source      |
-| `Cmd` `T`         | Turn the visualizer on or off                             |
-| `?`               | See more options when a visual effect is showing          |
-| `Cmd` `R`         | Refresh Apple Music or the iTunes Store                   |
-| `Cmd` `0`         | Open the Music window                                     |
-| `Cmd` `W`         | Close the Music window                                    |
-| `Cmd` `M`         | Put the Music window in the Dock                          |
-| `Cmd` `H`         | Hide the Music window                                     |
-| `Cmd` `Opt` `H`   | Hide all other applications                               |
+| Atalho            | Ação                                                               |
+| ----------------- | ------------------------------------------------------------------ |
+| `Cmd` `Shift` `M` | Abre o MiniPlayer                                                  |
+| `Cmd` `Shift` `F` | Abre o player em tela cheia                                        |
+| `Cmd` `Ctrl` `F`  | Alterna a visualização em tela cheia                               |
+| `Cmd` `/`         | Mostra ou oculta a barra de status                                 |
+| `Cmd` `I`         | Abre a janela de informações da música selecionada                 |
+| `Cmd` `N`         | Na janela de informações, mostra as informações da próxima música  |
+| `Cmd` `P`         | Na janela de informações, mostra as informações da música anterior |
+| `Cmd` `Shift` `[` | Vai para o painel anterior da janela de informações                |
+| `Cmd` `Shift` `]` | Vai para o próximo painel da janela de informações                 |
+| `Cmd` `J`         | Abre a janela de opções de visualização da fonte selecionada       |
+| `Cmd` `T`         | Ativa ou desativa o visualizador                                   |
+| `?`               | Mostra mais opções quando um efeito visual está sendo exibido      |
+| `Cmd` `R`         | Atualiza o Apple Music ou a iTunes Store                           |
+| `Cmd` `0`         | Abre a janela do Music                                             |
+| `Cmd` `W`         | Fecha a janela do Music                                            |
+| `Cmd` `M`         | Coloca a janela do Music no Dock                                   |
+| `Cmd` `H`         | Oculta a janela do Music                                           |
+| `Cmd` `Opt` `H`   | Oculta todos os outros aplicativos                                 |
 
 {.shortcuts}
 
-### Library
+### Biblioteca
 
-| Shortcut          | Action                                             |
-| ----------------- | -------------------------------------------------- |
-| `Cmd` `O`         | Add a file to your library                         |
-| `Cmd` `Shift` `R` | Show where a song file is located                  |
-| `Cmd` `F`         | Select the search field                            |
-| `Cmd` `Z`         | Undo your last typing change while editing an item |
-| `Cmd` `X`         | Cut the selected song's information or artwork     |
-| `Cmd` `C`         | Copy the selected song's information or artwork    |
-| `Cmd` `V`         | Paste the selected song's information or artwork   |
-| `Cmd` `A`         | Select all the songs in the list                   |
-| `Cmd` `B`         | Show or hide the column browser                    |
-| `Cmd` `Shift` `A` | De-select all the songs in the list                |
+| Atalho            | Ação                                                     |
+| ----------------- | -------------------------------------------------------- |
+| `Cmd` `O`         | Adiciona um arquivo ao seu acervo                        |
+| `Cmd` `Shift` `R` | Mostra onde está localizado o arquivo da música          |
+| `Cmd` `F`         | Seleciona o campo de busca                               |
+| `Cmd` `Z`         | Desfaz a última alteração de digitação ao editar um item |
+| `Cmd` `X`         | Recorta as informações ou a arte da música selecionada   |
+| `Cmd` `C`         | Copia as informações ou a arte da música selecionada     |
+| `Cmd` `V`         | Cola as informações ou a arte da música selecionada      |
+| `Cmd` `A`         | Seleciona todas as músicas da lista                      |
+| `Cmd` `B`         | Mostra ou oculta o navegador de colunas                  |
+| `Cmd` `Shift` `A` | Desmarca todas as músicas da lista                       |
 
 {.shortcuts}
 
 ### iTunes Store
 
-| Shortcut      | Action                                      |
-| ------------- | ------------------------------------------- |
-| `Opt` `Enter` | Initiate a search in the iTunes Store       |
-| `Cmd` `]`     | Go to the next page in the iTunes Store     |
-| `Cmd` `[`     | Go to the previous page in the iTunes Store |
-| `Cmd` `R`     | Reload the current page                     |
+| Atalho        | Ação                                       |
+| ------------- | ------------------------------------------ |
+| `Opt` `Enter` | Inicia uma busca na iTunes Store           |
+| `Cmd` `]`     | Vai para a próxima página da iTunes Store  |
+| `Cmd` `[`     | Vai para a página anterior da iTunes Store |
+| `Cmd` `R`     | Recarrega a página atual                   |
 
 {.shortcuts}
 
-### Other
+### Outros
 
-| Shortcut    | Action                                              |
-| ----------- | --------------------------------------------------- |
-| `Cmd` `,`   | Open Music Preferences                              |
-| `Cmd` `Q`   | Quit the Music app                                  |
-| `Cmd` `E`   | Eject a CD                                          |
-| `Cmd` `?`   | Open the Music Help menu                            |
-| `Cmd` `Opt` | Open a different music library, while opening Music |
+| Atalho      | Ação                                                   |
+| ----------- | ------------------------------------------------------ |
+| `Cmd` `,`   | Abre as preferências do Music                          |
+| `Cmd` `Q`   | Encerra o app Music                                    |
+| `Cmd` `E`   | Ejeta um CD                                            |
+| `Cmd` `?`   | Abre o menu de ajuda do Music                          |
+| `Cmd` `Opt` | Abre um acervo de músicas diferente ao iniciar o Music |
 
 {.shortcuts}
 
-## Also see
+## Veja também
 
-- [Keyboard shortcuts for Music on Mac](https://support.apple.com/guide/music/keyboard-shortcuts-mus1019/mac)
+- [Atalhos de teclado do Music no Mac](https://support.apple.com/guide/music/keyboard-shortcuts-mus1019/mac)
   _(support.apple.com)_

@@ -9,43 +9,43 @@ tags:
   - ratio
   - resolutions
 categories:
-  - Other
+  - Outros
 intro: |
-  This cheat sheet lists some common aspect ratios and their pixel resolutions. Always confirm your final delivery ratio when shooting.
+  Este cheat sheet lista algumas proporções de aspecto comuns e suas resoluções em pixels. Sempre confirme a proporção final de entrega ao gravar.
 ---
 
-## Getting Started {.cols-2}
+## Primeiros passos {.cols-2}
 
-### Introduction
+### Introdução
 
-- The aspect ratio is the ratio between the width and height of the screen or image
-- It's usually written as two numbers separated by a colon or "x", ex: 16:9 or 16x9
-- Which is interpreted as W pixels in width for every H pixel in height.
-- Resolution is the number of pixels (individual points of color)
+- A proporção de aspecto é a razão entre a largura e a altura da tela ou imagem
+- Geralmente é escrita como dois números separados por dois-pontos ou "x", por exemplo: 16:9 ou 16x9
+- Isso é interpretado como W pixels de largura para cada H pixel de altura.
+- Resolução é o número de pixels (pontos individuais de cor)
 
 {.marker-round}
 
-### Multi-format of Aspect Ratio
+### Formatos múltiplos de proporção de aspecto
 
-- [Markdown Table](https://tableconvert.com/html-to-markdown?data=https://cheatsheets.zip/aspect-ratio#TableGenerator)
+- [Tabela Markdown](https://tableconvert.com/html-to-markdown?data=https://cheatsheets.zip/aspect-ratio#TableGenerator)
 - [Template](https://tableconvert.com/html-to-template?data=https://cheatsheets.zip/aspect-ratio#TableGenerator)
-- [LaTeX Table](https://tableconvert.com/html-to-latex?data=https://cheatsheets.zip/aspect-ratio#TableGenerator)
+- [Tabela LaTeX](https://tableconvert.com/html-to-latex?data=https://cheatsheets.zip/aspect-ratio#TableGenerator)
 - [CSV](https://tableconvert.com/html-to-csv?data=https://cheatsheets.zip/aspect-ratio#TableGenerator)
 - [Excel](https://tableconvert.com/html-to-excel?data=https://cheatsheets.zip/aspect-ratio#TableGenerator)
-- [JSON Array](https://tableconvert.com/html-to-json?data=https://cheatsheets.zip/aspect-ratio#TableGenerator)
-- [HTML Table](https://tableconvert.com/html-to-html?data=https://cheatsheets.zip/aspect-ratio#TableGenerator)
+- [Array JSON](https://tableconvert.com/html-to-json?data=https://cheatsheets.zip/aspect-ratio#TableGenerator)
+- [Tabela HTML](https://tableconvert.com/html-to-html?data=https://cheatsheets.zip/aspect-ratio#TableGenerator)
 - [Insert SQL](https://tableconvert.com/html-to-sql?data=https://cheatsheets.zip/aspect-ratio#TableGenerator)
-- [YAML Sequence](https://tableconvert.com/html-to-yaml?data=https://cheatsheets.zip/aspect-ratio#TableGenerator)
+- [Sequência YAML](https://tableconvert.com/html-to-yaml?data=https://cheatsheets.zip/aspect-ratio#TableGenerator)
 - [XML](https://tableconvert.com/html-to-xml?data=https://cheatsheets.zip/aspect-ratio#TableGenerator)
 - [ASCII](https://tableconvert.com/html-to-ascii?data=https://cheatsheets.zip/aspect-ratio#TableGenerator)
-- [MediaWiki Table](https://tableconvert.com/html-to-mediawiki?data=https://cheatsheets.zip/aspect-ratio#TableGenerator)
-- [AsciiDoc Table](https://tableconvert.com/html-to-asciidoc?data=https://cheatsheets.zip/aspect-ratio#TableGenerator)
-- [Jira Table](https://tableconvert.com/html-to-jira?data=https://cheatsheets.zip/aspect-ratio#TableGenerator)
-- [Textile Table](https://tableconvert.com/html-to-textile?data=https://cheatsheets.zip/aspect-ratio#TableGenerator)
+- [Tabela MediaWiki](https://tableconvert.com/html-to-mediawiki?data=https://cheatsheets.zip/aspect-ratio#TableGenerator)
+- [Tabela AsciiDoc](https://tableconvert.com/html-to-asciidoc?data=https://cheatsheets.zip/aspect-ratio#TableGenerator)
+- [Tabela Jira](https://tableconvert.com/html-to-jira?data=https://cheatsheets.zip/aspect-ratio#TableGenerator)
+- [Tabela Textile](https://tableconvert.com/html-to-textile?data=https://cheatsheets.zip/aspect-ratio#TableGenerator)
 - [reStructuredText](https://tableconvert.com/html-to-restructuredtext?data=https://cheatsheets.zip/aspect-ratio#TableGenerator)
-- [PHP Array](https://tableconvert.com/html-to-php?data=https://cheatsheets.zip/aspect-ratio#TableGenerator)
-- [Ruby Array](https://tableconvert.com/html-to-ruby?data=https://cheatsheets.zip/aspect-ratio#TableGenerator)
-- [ASP Array](https://tableconvert.com/html-to-asp?data=https://cheatsheets.zip/aspect-ratio#TableGenerator)
+- [Array PHP](https://tableconvert.com/html-to-php?data=https://cheatsheets.zip/aspect-ratio#TableGenerator)
+- [Array Ruby](https://tableconvert.com/html-to-ruby?data=https://cheatsheets.zip/aspect-ratio#TableGenerator)
+- [Array ASP](https://tableconvert.com/html-to-asp?data=https://cheatsheets.zip/aspect-ratio#TableGenerator)
 - [ActionScript](https://tableconvert.com/html-to-actionscript?data=https://cheatsheets.zip/aspect-ratio#TableGenerator)
 - [BBCode](https://tableconvert.com/html-to-bbcode?data=https://cheatsheets.zip/aspect-ratio#TableGenerator)
 - [PDF](https://tableconvert.com/html-to-pdf?data=https://cheatsheets.zip/aspect-ratio#TableGenerator)
@@ -53,11 +53,11 @@ intro: |
 
 {.cols-4 .marker-none}
 
-## Lists of Aspect Ratios
+## Listas de proporções de aspecto
 
 ### 1080p {.row-span-2}
 
-| Aspect Ratio | Resolution  |
+| Proporção | Resolução  |
 | ------------ | ----------- |
 | 0.80 (4:5)   | 864 x 1080  |
 | 1.25 (5:4)   | 1350 x 1080 |
@@ -77,7 +77,7 @@ intro: |
 
 ### 720p {.row-span-2}
 
-| Aspect Ratio | Resolution |
+| Proporção | Resolução |
 | ------------ | ---------- |
 | 0.80 (4:5)   | 576 x 720  |
 | 1.25 (5:4)   | 900 x 720  |
@@ -97,7 +97,7 @@ intro: |
 
 ### Cinema DCP 4K
 
-| Aspect Ratio          | Resolution  |
+| Proporção          | Resolução  |
 | --------------------- | ----------- |
 | Flat (1.85)           | 3996 x 2160 |
 | Scope (2.39)          | 4096 x 1716 |
@@ -107,7 +107,7 @@ intro: |
 
 ### Cinema DCP 2K
 
-| Aspect Ratio          | Resolution  |
+| Proporção          | Resolução  |
 | --------------------- | ----------- |
 | Flat (1.85)           | 1998 x 1080 |
 | Scope (2.39)          | 2048 x 858  |
@@ -117,7 +117,7 @@ intro: |
 
 ### 8K
 
-| Aspect Ratio | Resolution  |
+| Proporção | Resolução  |
 | ------------ | ----------- |
 | 0.80 (4:5)   | 3686 x 4608 |
 | 1.25 (5:4)   | 5760 x 4608 |
@@ -137,7 +137,7 @@ intro: |
 
 ### 6K
 
-| Aspect Ratio | Resolution  |
+| Proporção | Resolução  |
 | ------------ | ----------- |
 | 0.80 (4:5)   | 2765 x 3456 |
 | 1.25 (5:4)   | 4320 x 3456 |
@@ -157,7 +157,7 @@ intro: |
 
 ### 4K
 
-| Aspect Ratio | Resolution  |
+| Proporção | Resolução  |
 | ------------ | ----------- |
 | 0.80 (4:5)   | 2765 x 3456 |
 | 1.25 (5:4)   | 4320 x 3456 |
@@ -177,7 +177,7 @@ intro: |
 
 ### 3K
 
-| Aspect Ratio | Resolution  |
+| Proporção | Resolução  |
 | ------------ | ----------- |
 | 0.80 (4:5)   | 1382 x 1728 |
 | 1.25 (5:4)   | 2160 x 1728 |
@@ -197,7 +197,7 @@ intro: |
 
 ### 2K
 
-| Aspect Ratio | Resolution  |
+| Proporção | Resolução  |
 | ------------ | ----------- |
 | 0.80 (4:5)   | 922 x 1152  |
 | 1.25 (5:4)   | 1440 x 1152 |
@@ -217,7 +217,7 @@ intro: |
 
 ### 8K UHD
 
-| Aspect Ratio | Resolution  |
+| Proporção | Resolução  |
 | ------------ | ----------- |
 | 0.80 (4:5)   | 2765 x 3456 |
 | 1.25 (5:4)   | 5400 x 3456 |
@@ -237,7 +237,7 @@ intro: |
 
 ### 5K
 
-| Aspect Ratio | Resolution  |
+| Proporção | Resolução  |
 | ------------ | ----------- |
 | 0.80 (4:5)   | 2304 x 2880 |
 | 1.25 (5:4)   | 3600 x 2880 |
@@ -257,7 +257,7 @@ intro: |
 
 ### 4K UHD
 
-| Aspect Ratio | Resolution  |
+| Proporção | Resolução  |
 | ------------ | ----------- |
 | 0.80 (4:5)   | 1728 x 2160 |
 | 1.25 (5:4)   | 2700 x 2160 |
@@ -277,7 +277,7 @@ intro: |
 
 ### 3K UHD
 
-| Aspect Ratio | Resolution  |
+| Proporção | Resolução  |
 | ------------ | ----------- |
 | 0.80 (4:5)   | 1296 x 1620 |
 | 1.25 (5:4)   | 2025 x 1620 |

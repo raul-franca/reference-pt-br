@@ -7,87 +7,87 @@ tags:
   -
   -
 categories:
-  - Keyboard Shortcuts
+  - Atalhos de Teclado
 intro: |
-  A visual cheat-sheet for the 45 keyboard shortcuts found on Roam Research
+  Uma cheat sheet visual dos 45 atalhos de teclado do Roam Research
 ---
 
-## Keyboard Shortcuts
+## Atalhos de teclado
 
-### General
+### Geral
 
-| Shortcut           | Action                                           |
+| Atalho             | Ação                                             |
 | ------------------ | ------------------------------------------------ |
-| `/`                | Bring up a menu of many core functions           |
-| `Ctrl` `U`         | Search the database                              |
-| `Ctrl` `Enter`     | Jump back to page after search                   |
-| `Ctrl` `F`         | Search on the current page                       |
-| `Shift` `Enter`    | Open a new page created in search in the sidebar |
-| `Ctrl` `Shift` `D` | Jump to the Daily Notes page                     |
-| `Shift` `(click)`  | Open link in sidebar                             |
-| `Ctrl` `B`         | Toggle brackets                                  |
+| `/`                | Abre um menu com muitas funções principais        |
+| `Ctrl` `U`         | Pesquisa no banco de dados                        |
+| `Ctrl` `Enter`     | Volta para a página após a pesquisa               |
+| `Ctrl` `F`         | Pesquisa na página atual                          |
+| `Shift` `Enter`    | Abre na barra lateral uma nova página criada na pesquisa |
+| `Ctrl` `Shift` `D` | Vai para a página Daily Notes                     |
+| `Shift` `(click)`  | Abre o link na barra lateral                      |
+| `Ctrl` `B`         | Alterna os colchetes                              |
 
 {.shortcuts}
 
-### Lists and Blocks {.row-span-2}
+### Listas e blocos {.row-span-2}
 
-| Shortcut              | Action                                            |
-| --------------------- | ------------------------------------------------- |
-| `Tab`                 | Indent block                                      |
-| `Shift` `Tab`         | Un-indent block                                   |
-| `Ctrl` `Shift` `Up`   | Move block up                                     |
-| `Ctrl` `Shift` `Down` | Move block down                                   |
-| `Enter`               | Create a new block, bullet point                  |
-| `Ctrl` `Enter`        | Create a TODO checkbox                            |
-| `Shift` `Enter`       | Create a new line inside of a block               |
-| `Ctrl` `Z`            | Undo                                              |
-| `Ctrl` `Shift` `Z`    | Redo                                              |
-| `Ctrl` `.`            | Zoom in, show only the current block enlarged     |
-| `Ctrl` `,`            | Zoom out, restores the normal view                |
-| `Ctrl` `O`            | Follow link under cursor, when editing a block    |
-| `Ctrl` `Shift` `O`    | Open a link under cursor in the sidebar           |
-| `Ctrl` `Up`           | Collapse all child blocks under the current block |
-| `Ctrl` `Down`         | Expand all child blocks under the current block   |
-| `Shift` `Up`          | Select the block above where the cursor is placed |
-| `Shift` `Down`        | Select the block below where the cursor is placed |
-| `Ctrl` `Shift` `A`    | Select all blocks                                 |
-| `Ctrl` `A`            | Jump to the beginning of the current block        |
-| `Ctrl` `E`            | Jump to the end of the current block              |
-| `Ctrl` `F`            | Move one character to the right                   |
-| `Ctrl` `B`            | Move one character to the left                    |
-| `Ctrl` `T`            | Swap all characters on either side of the cursor  |
-| `Ctrl` `C` `Ctrl` `X` | Show avatar of the last user to edit the block    |
+| Atalho                | Ação                                               |
+| --------------------- | -------------------------------------------------- |
+| `Tab`                 | Recua o bloco                                       |
+| `Shift` `Tab`         | Remove o recuo do bloco                             |
+| `Ctrl` `Shift` `Up`   | Move o bloco para cima                              |
+| `Ctrl` `Shift` `Down` | Move o bloco para baixo                             |
+| `Enter`               | Cria um novo bloco, item de lista                   |
+| `Ctrl` `Enter`        | Cria uma checkbox TODO                              |
+| `Shift` `Enter`       | Cria uma nova linha dentro de um bloco              |
+| `Ctrl` `Z`            | Desfaz                                              |
+| `Ctrl` `Shift` `Z`    | Refaz                                               |
+| `Ctrl` `.`            | Aproxima a visualização, mostrando apenas o bloco atual ampliado |
+| `Ctrl` `,`            | Afasta a visualização e restaura a visão normal     |
+| `Ctrl` `O`            | Segue o link sob o cursor, ao editar um bloco       |
+| `Ctrl` `Shift` `O`    | Abre na barra lateral o link sob o cursor           |
+| `Ctrl` `Up`           | Recolhe todos os blocos filhos do bloco atual       |
+| `Ctrl` `Down`         | Expande todos os blocos filhos do bloco atual       |
+| `Shift` `Up`          | Seleciona o bloco acima de onde o cursor está       |
+| `Shift` `Down`        | Seleciona o bloco abaixo de onde o cursor está      |
+| `Ctrl` `Shift` `A`    | Seleciona todos os blocos                           |
+| `Ctrl` `A`            | Vai para o início do bloco atual                    |
+| `Ctrl` `E`            | Vai para o fim do bloco atual                       |
+| `Ctrl` `F`            | Move um caractere para a direita                    |
+| `Ctrl` `B`            | Move um caractere para a esquerda                   |
+| `Ctrl` `T`            | Troca todos os caracteres dos dois lados do cursor  |
+| `Ctrl` `C` `Ctrl` `X` | Mostra o avatar do último usuário que editou o bloco |
 
 {.shortcuts}
 
-### Version Control
+### Controle de versão
 
-| Shortcut           | Action                                                            |
+| Atalho             | Ação                                                              |
 | ------------------ | ----------------------------------------------------------------- |
-| `Ctrl` `,`         | Add a version                                                     |
-| `Ctrl` `Shift` `.` | Cycle versions to the right                                       |
-| `Ctrl` `Shift` `,` | Cycle versions to the left                                        |
-| `Ctrl` `.`         | Expand all versions, all versions will appear in their own blocks |
+| `Ctrl` `,`         | Adiciona uma versão                                                |
+| `Ctrl` `Shift` `.` | Alterna as versões para a direita                                  |
+| `Ctrl` `Shift` `,` | Alterna as versões para a esquerda                                 |
+| `Ctrl` `.`         | Expande todas as versões; cada versão aparece em seu próprio bloco |
 
 {.shortcuts}
 
-### Formatting
+### Formatação
 
-| Shortcut           | Action                             |
+| Atalho             | Ação                               |
 | ------------------ | ---------------------------------- |
-| `Ctrl` `Alt` `1-3` | Toggle between heading styles      |
-| `Ctrl` `Alt` `0`   | Reset heading, or set to paragraph |
-| `Ctrl` `Enter`     | Toggle TODO or DONE                |
-| `Ctrl` `B`         | Bold                               |
-| `Ctrl` `I`         | Italic                             |
-| `Ctrl` `K`         | Create an HTML link                |
-| `Ctrl` `Y`         | Strike-through                     |
-| `Ctrl` `H`         | Highlight                          |
-| <code>\`</code>    | Create an inline block of code     |
+| `Ctrl` `Alt` `1-3` | Alterna entre os estilos de título |
+| `Ctrl` `Alt` `0`   | Redefine o título ou define como parágrafo |
+| `Ctrl` `Enter`     | Alterna entre TODO e DONE          |
+| `Ctrl` `B`         | Negrito                            |
+| `Ctrl` `I`         | Itálico                            |
+| `Ctrl` `K`         | Cria um link HTML                  |
+| `Ctrl` `Y`         | Tachado                            |
+| `Ctrl` `H`         | Destaque                           |
+| <code>\`</code>    | Cria um bloco de código inline     |
 
 {.shortcuts}
 
-## Also see
+## Veja também
 
-- [Keyboard shortcuts for Roam Research](https://www.roamtips.com/home/the-complete-list-of-roam-research-keyboard-shortcuts)
+- [Atalhos de teclado do Roam Research](https://www.roamtips.com/home/the-complete-list-of-roam-research-keyboard-shortcuts)
   _(www.roamtips.com)_

@@ -6,22 +6,22 @@ label: CSS
 tags:
   - css
 categories:
-  - Programming
+  - Programação
 intro: |
-  This is a quick reference cheat sheet that lists the most useful features of [SASS](https://sass-lang.com).
+  Este é um cheat sheet de referência rápida que lista os recursos mais úteis do [SASS](https://sass-lang.com).
 plugins:
   - copyCode
   - runCode
 ---
 
-## Sass Basics
+## Fundamentos do Sass
 
-### Introduction
+### Introdução
 
-- [Documentation](https://sass-lang.com/documentation) _(sass-lang.com)_
+- [Documentação](https://sass-lang.com/documentation) _(sass-lang.com)_
 - [Learn X in Y minutes](https://learnxinyminutes.com/docs/sass/) _(learnxinyminutes.com)_
 
-### Variables
+### Variáveis
 
 ```scss
 $defaultLinkColor: #46eac2;
@@ -31,7 +31,7 @@ a {
 }
 ```
 
-### String interpolation
+### Interpolação de strings
 
 ```scss
 $wk: -webkit-;
@@ -41,7 +41,7 @@ $wk: -webkit-;
 }
 ```
 
-### Comments
+### Comentários
 
 ```scss
 /*
@@ -65,9 +65,9 @@ h1 {
 }
 ```
 
-See: [Mixins](#sass-mixins)
+Veja: [Mixins](#sass-mixins)
 
-### Nesting {.row-span-2}
+### Aninhamento {.row-span-2}
 
 ```scss
 .markdown-body {
@@ -80,7 +80,7 @@ See: [Mixins](#sass-mixins)
 }
 ```
 
-#### to properties
+#### para propriedades
 
 ```scss
 text: {
@@ -116,11 +116,11 @@ text: {
 @import url(theme);
 ```
 
-The `.sass` or `.sass` extension is optional.
+A extensão `.sass` ou `.sass` é opcional.
 
-## Sass Mixins
+## Mixins do Sass
 
-### Parameters
+### Parâmetros
 
 ```scss
 @mixin font-size($n) {
@@ -134,7 +134,7 @@ body {
 }
 ```
 
-### Default values
+### Valores padrão
 
 ```scss
 @mixin pad($n: 10px) {
@@ -148,7 +148,7 @@ body {
 }
 ```
 
-### Default variable
+### Variável padrão
 
 ```scss
 $default-padding: 10px;
@@ -162,7 +162,7 @@ body {
 }
 ```
 
-## Sass Color functions {.cols-2}
+## Funções de cor do Sass {.cols-2}
 
 ### rgba
 
@@ -172,13 +172,13 @@ rgba(100, 120, 140, .5)
 rgba($color, .5)
 ```
 
-### Mixing
+### Mistura
 
 ```scss
 mix($a, $b, 10%)   // 10% a, 90% b
 ```
 
-### Modifying HSLA
+### Modificar HSLA
 
 ```scss
 darken($color, 5%)
@@ -203,7 +203,7 @@ fade-out($color, .5)  // aka transparentize()
 rgba($color, .5)      // sets alpha to .5
 ```
 
-### Getting individual values
+### Obter valores individuais
 
 #### HSLA
 
@@ -222,10 +222,10 @@ green($color)
 blue($color)
 ```
 
-See: [hue()](http://sass-lang.com/documentation/Sass/Script/Functions.html#hue-instance_method),
+Veja: [hue()](http://sass-lang.com/documentation/Sass/Script/Functions.html#hue-instance_method),
 [red()](http://sass-lang.com/documentation/Sass/Script/Functions.html#red-instance_method)
 
-### Adjustments
+### Ajustes
 
 ```scss
 // Changes by fixed amounts
@@ -246,9 +246,9 @@ change-color($color, $hue: 180deg)
 change-color($color, $blue: 250)
 ```
 
-Supported: `$red`, `$green`, `$blue`, `$hue`, `$saturation`, `$lightness`, `$alpha`
+Compatível com: `$red`, `$green`, `$blue`, `$hue`, `$saturation`, `$lightness`, `$alpha`
 
-## Sass Other functions {.cols-2}
+## Outras funções do Sass {.cols-2}
 
 ### Strings
 
@@ -268,14 +268,14 @@ str-slice(hello, 2, 5)     // "ello" - it's 1-based, not 0-based
 str-insert("abcd", "X", 1) // "Xabcd"
 ```
 
-### Units
+### Unidades
 
 ```scss
 unit(3em)        // 'em'
 unitless(100px)  // false
 ```
 
-### Numbers
+### Números
 
 ```scss
 floor(3.5)
@@ -294,7 +294,7 @@ percentage(.5)   // 50%
 random(3)        // 0..3
 ```
 
-### Misc
+### Diversos
 
 ```scss
 variable-exists(red)    // checks for $red
@@ -315,24 +315,24 @@ selector-replace(...)
 selector-unify(...)
 ```
 
-## Sass Feature checks {.cols-2}
+## Verificações de recursos do Sass {.cols-2}
 
-### Feature check
+### Verificação de recurso
 
 ```scss
 feature-exists(global-variable-shadowing)
 ```
 
-### Features
+### Recursos
 
 - global-variable-shadowing
 - extend-selector-pseudoclass
 - units-level-3
 - at-error
 
-## Sass Loops
+## Loops do Sass
 
-### For loops
+### Laços for
 
 ```scss
 @for $i from 1 through 4 {
@@ -342,7 +342,7 @@ feature-exists(global-variable-shadowing)
 }
 ```
 
-### Each loops (simple)
+### Loops each (simples)
 
 ```scss
 $menu-items: home about contact;
@@ -354,7 +354,7 @@ $menu-items: home about contact;
 }
 ```
 
-### Each loops (nested)
+### Loops each (aninhados)
 
 ```scss
 $backgrounds: (home, 'home.jpg'), (about, 'about.jpg');
@@ -366,7 +366,7 @@ $backgrounds: (home, 'home.jpg'), (about, 'about.jpg');
 }
 ```
 
-### While loops
+### Loops while
 
 ```scss
 $i: 6;
@@ -378,9 +378,9 @@ $i: 6;
 }
 ```
 
-## Sass Other features
+## Outros recursos do Sass
 
-### Conditionals {.row-span-2}
+### Condicionais {.row-span-2}
 
 ```scss
 @if $position == 'left' {
@@ -394,7 +394,7 @@ $i: 6;
 }
 ```
 
-### Interpolation
+### Interpolação
 
 ```scss
 .#{$klass} { ... }      // Class
@@ -405,7 +405,7 @@ font: #{$size}/#{$line-height}
 url("#{$background}.jpg")
 ```
 
-### Lists
+### Listas
 
 ```scss
 $list: (a b c);

@@ -5,15 +5,15 @@ background: bg-[#7477a9]
 tags:
   - web
 categories:
-  - Programming
+  - Programação
 intro: |
-  This [PHP](https://www.php.net/manual/en/) cheat sheet provides a reference for quickly looking up the correct syntax for the code you use most frequently.
+  Este cheat sheet de [PHP](https://www.php.net/manual/en/) oferece uma referência para consultar rapidamente a sintaxe correta do código que você usa com mais frequência.
 plugins:
   - copyCode
   - runCode
 ---
 
-## Getting Started
+## Primeiros passos
 
 ### hello.php
 
@@ -26,13 +26,13 @@ print("Hello cheatsheets.zip");
 ?>
 ```
 
-PHP run command
+Comando para executar PHP
 
 ```shell script
 $ php hello.php
 ```
 
-### Variables
+### Variáveis
 
 ```php
 $boolean1 = true;
@@ -46,7 +46,7 @@ $str1 = "How are you?";
 $str2 = 'Fine, thanks';
 ```
 
-See: [Types](#php-types)
+Veja: [Tipos](#php-types)
 
 ### Strings
 
@@ -62,7 +62,7 @@ $hello .= "World!";
 echo $hello;   # => Hello, World!
 ```
 
-See: [Strings](#php-strings)
+Veja: [Strings](#php-strings)
 
 ### Arrays
 
@@ -74,9 +74,9 @@ print_r($num);     # => 1 3 7 9 11
 echo count($num);  # => 5
 ```
 
-See: [Arrays](#php-arrays)
+Veja: [Arrays](#php-arrays)
 
-### Operators
+### Operadores
 
 ```php
 $x = 1;
@@ -86,7 +86,7 @@ $sum = $x + $y;
 echo $sum;   # => 3
 ```
 
-See: [Operators](#php-operators)
+Veja: [Operadores](#php-operators)
 
 ### Include {.row-span-3}
 
@@ -124,7 +124,7 @@ echo $result;  # => Anything you like.
 ?>
 ```
 
-### Functions
+### Funções
 
 ```php
 function add($num1, $num2 = 1) {
@@ -134,9 +134,9 @@ echo add(10);    # => 11
 echo add(10, 5); # => 15
 ```
 
-See: [Functions](#php-functions)
+Veja: [Funções](#php-functions)
 
-### Comments
+### Comentários
 
 ```php
 # This is a one line shell-style comment
@@ -147,7 +147,7 @@ See: [Functions](#php-functions)
    yet another line of comment */
 ```
 
-### Constants
+### Constantes
 
 ```php
 const MY_CONST = "hello";
@@ -169,9 +169,9 @@ class Student {
 $alex = new Student("Alex");
 ```
 
-See: [Classes](#php-classes)
+Veja: [Classes](#php-classes)
 
-## PHP Types
+## Tipos em PHP
 
 ### Boolean {.row-span-2}
 
@@ -185,7 +185,7 @@ $boolean5 = (boolean) 1;   # => true
 $boolean6 = (boolean) 0;   # => false
 ```
 
-Boolean are case-insensitive
+Boolean não diferencia maiúsculas de minúsculas
 
 ### Integer {.row-span-2}
 
@@ -200,7 +200,7 @@ $int5 = 0b101; # => 5  (binary)
 $int6 = 2_000_100_000;
 ```
 
-See also: [Integers](https://www.php.net/manual/en/language.types.integer.php)
+Veja também: [Integers](https://www.php.net/manual/en/language.types.integer.php)
 
 ### Strings
 
@@ -208,7 +208,7 @@ See also: [Integers](https://www.php.net/manual/en/language.types.integer.php)
 echo 'this is a simple string';
 ```
 
-See: [Strings](#php-strings)
+Veja: [Strings](#php-strings)
 
 ### Arrays
 
@@ -216,7 +216,7 @@ See: [Strings](#php-strings)
 $arr = array("hello", "world", "!");
 ```
 
-See: [Arrays](#php-arrays)
+Veja: [Arrays](#php-arrays)
 
 ### Float (Double)
 
@@ -246,7 +246,7 @@ $a === null   # => false
 is_null($a)   # => false
 ```
 
-### Iterables
+### Iteráveis
 
 ```php
 function bar(): iterable {
@@ -262,7 +262,7 @@ foreach (bar() as $value) {
 }
 ```
 
-## PHP Strings
+## Strings em PHP
 
 ### String
 
@@ -280,7 +280,7 @@ $escaped   = "a \t tab character.";
 $unescaped = 'a slash and a t: \t';
 ```
 
-### Multi-line
+### Multilinha
 
 ```php
 $str = "foo";
@@ -298,7 +298,7 @@ $str
 END;
 ```
 
-### Manipulation
+### Manipulação
 
 ```php
 $s = "Hello Phper";
@@ -315,11 +315,11 @@ echo strpos($s, "l");      # => 2
 var_dump(strpos($s, "L")); # => false
 ```
 
-See: [String Functions](https://www.php.net/manual/en/ref.strings.php)
+Veja: [String Functions](https://www.php.net/manual/en/ref.strings.php)
 
-## PHP Arrays
+## Arrays em PHP
 
-### Defining {.row-span-2}
+### Definindo {.row-span-2}
 
 ```php
 $a1 = ["hello", "world", "!"]
@@ -327,7 +327,7 @@ $a2 = array("hello", "world", "!");
 $a3 = explode(",", "apple,pear,peach");
 ```
 
-#### Mixed int and string keys
+#### Chaves mistas de int e string
 
 ```php
 $array = array(
@@ -339,7 +339,7 @@ $array = array(
 var_dump($array);
 ```
 
-#### Short array syntax
+#### Sintaxe curta de array
 
 ```php
 $array = [
@@ -362,7 +362,7 @@ print_r($multiArray[0][1]) # => 2
 print_r($multiArray[0][2]) # => 3
 ```
 
-### Multi type {.row-span-2}
+### Multi tipo {.row-span-2}
 
 ```php
 $array = array(
@@ -385,7 +385,7 @@ var_dump($array[42]);
 var_dump($array["multi"]["dim"]["a"]);
 ```
 
-### manipulation
+### manipulação
 
 ```php
 $arr = array(5 => 1, 12 => 2);
@@ -396,9 +396,9 @@ unset($arr[5]);   // Remove
 unset($arr);      // Remove all
 ```
 
-See: [Array Functions](https://www.php.net/manual/en/ref.array.php)
+Veja: [Array Functions](https://www.php.net/manual/en/ref.array.php)
 
-### Indexing iteration
+### Iteração por índice
 
 ```php
 $array = array('a', 'b', 'c');
@@ -409,7 +409,7 @@ for ($i = 0; $i < $count; $i++) {
 }
 ```
 
-### Value iteration
+### Iteração por valor
 
 ```php
 $colors = array('red', 'blue', 'green');
@@ -419,7 +419,7 @@ foreach ($colors as $color) {
 }
 ```
 
-### Key iteration
+### Iteração por chave
 
 ```php
 $arr = ["foo" => "bar", "bar" => "foo"];
@@ -431,7 +431,7 @@ foreach ( $arr as $key => $value )
 }
 ```
 
-### Concatenate arrays
+### Concatenando arrays
 
 ```php
 $a = [1, 2];
@@ -442,7 +442,7 @@ $b = [3, 4];
 $result = [...$a, ...$b];
 ```
 
-### Into functions
+### Em funções
 
 ```php
 $array = [1, 2];
@@ -454,7 +454,7 @@ function foo(int $a, int $b) {
 foo(...$array);
 ```
 
-### Splat Operator
+### Operador Splat
 
 ```php
 function foo($first, ...$other) {
@@ -466,56 +466,56 @@ foo('a', 'b', 'c' /*, ...*/ );
 function foo($first, string ...$other){}
 ```
 
-## PHP Operators {.cols-4}
+## Operadores do PHP {.cols-4}
 
-### Arithmetic
+### Aritmética
 
 | -    | -              |
 | ---- | -------------- |
-| `+`  | Addition       |
-| `-`  | Subtraction    |
-| `*`  | Multiplication |
-| `/`  | Division       |
-| `%`  | Modulo         |
-| `**` | Exponentiation |
+| `+`  | Adição         |
+| `-`  | Subtração      |
+| `*`  | Multiplicação  |
+| `/`  | Divisão        |
+| `%`  | Módulo         |
+| `**` | Exponenciação  |
 
-### Assignment
+### Atribuição
 
 | -        | -                   |
 | -------- | ------------------- |
-| `a += b` | Same as `a = a + b` |
-| `a -= b` | Same as `a = a – b` |
-| `a *= b` | Same as `a = a * b` |
-| `a /= b` | Same as `a = a / b` |
-| `a %= b` | Same as `a = a % b` |
+| `a += b` | Igual a `a = a + b` |
+| `a -= b` | Igual a `a = a – b` |
+| `a *= b` | Igual a `a = a * b` |
+| `a /= b` | Igual a `a = a / b` |
+| `a %= b` | Igual a `a = a % b` |
 
-### Comparison {.row-span-2}
+### Comparação {.row-span-2}
 
 | -     | -                            |
 | ----- | ---------------------------- |
-| `==`  | Equal                        |
-| `===` | Identical                    |
-| `!=`  | Not equal                    |
-| `<>`  | Not equal                    |
-| `!==` | Not identical                |
-| `<`   | Less than                    |
-| `>`   | Greater than                 |
-| `<=`  | Less than or equal           |
-| `>=`  | Greater than or equal        |
-| `<=>` | Less than/equal/greater than |
+| `==`  | Igual                        |
+| `===` | Idêntico                     |
+| `!=`  | Diferente                    |
+| `<>`  | Diferente                    |
+| `!==` | Não idêntico                 |
+| `<`   | Menor que                    |
+| `>`   | Maior que                    |
+| `<=`  | Menor ou igual               |
+| `>=`  | Maior ou igual               |
+| `<=>` | Menor/igual/maior que        |
 
-### Logical
+### Lógicos
 
 | -     | -            |
 | ----- | ------------ | --- | --- |
-| `and` | And          |
-| `or`  | Or           |
-| `xor` | Exclusive or |
-| `!`   | Not          |
-| `&&`  | And          |
-| `     |              | `   | Or  |
+| `and` | E            |
+| `or`  | Ou           |
+| `xor` | Ou exclusivo |
+| `!`   | Não          |
+| `&&`  | E            |
+| `     |              | `   | Ou  |
 
-### Arithmetic {.col-span-2}
+### Aritmética {.col-span-2}
 
 ```php
 // Arithmetic
@@ -532,18 +532,18 @@ echo ++$num;     // Prints 3 (increments before evaluation)
 $num /= $float;  // Divide and assign the quotient to $num
 ```
 
-### Bitwise
+### Bit a bit
 
 | -    | -                  |
 | ---- | ------------------ | ----------------- |
-| `&`  | And                |
-| `    | `                  | Or (inclusive or) |
-| `^`  | Xor (exclusive or) |
-| `~`  | Not                |
-| `<<` | Shift left         |
-| `>>` | Shift right        |
+| `&`  | E                  |
+| `    | `                  | Ou (or inclusivo) |
+| `^`  | Xor (ou exclusivo) |
+| `~`  | Não                |
+| `<<` | Deslocamento à esquerda |
+| `>>` | Deslocamento à direita  |
 
-## PHP Conditionals
+## Condicionais do PHP
 
 ### If elseif else
 
@@ -577,7 +577,7 @@ switch ($x) {
 }
 ```
 
-### Ternary operator
+### Operador ternário
 
 ```php
 # => Does
@@ -608,9 +608,9 @@ $message = match($statusCode) {
 echo $message; # => server error
 ```
 
-See: [Match](https://www.php.net/manual/en/control-structures.match.php)
+Veja: [Match](https://www.php.net/manual/en/control-structures.match.php)
 
-### Match expressions
+### Expressões match
 
 ```php
 $age = 23;
@@ -625,7 +625,7 @@ $result = match (true) {
 echo $result; # => young adult
 ```
 
-## PHP Loops
+## Laços do PHP
 
 ### while
 
@@ -690,11 +690,11 @@ foreach ($a as $k) {
 }
 ```
 
-See: [Array iteration](#php-value-iteration)
+Veja: [Iteração de array](#php-value-iteration)
 
-## PHP Functions
+## Funções do PHP
 
-### Returning values
+### Retornando valores
 
 ```php
 function square($x)
@@ -705,7 +705,7 @@ function square($x)
 echo square(4);  # => 16
 ```
 
-### Return types
+### Tipos de retorno
 
 ```php
 // Basic return type declaration
@@ -717,7 +717,7 @@ class C {}
 function getC(): C { return new C; }
 ```
 
-### Nullable return types
+### Tipos de retorno anuláveis
 
 ```php
 // Available in PHP 7.1
@@ -729,9 +729,9 @@ echo nullOrString(3);       # => odd
 var_dump(nullOrString(4));  # => NULL
 ```
 
-See: [Nullable types](https://www.php.net/manual/en/migration71.new-features.php)
+Veja: [Nullable types](https://www.php.net/manual/en/migration71.new-features.php)
 
-### Void functions
+### Funções void
 
 ```php
 // Available in PHP 7.1
@@ -744,7 +744,7 @@ function voidFunction(): void
 voidFunction();  # => Hello
 ```
 
-### Variable functions
+### Funções variáveis
 
 ```php
 function bar($arg = '')
@@ -756,7 +756,7 @@ $func = 'bar';
 $func('test'); # => In bar(); arg: test
 ```
 
-### Anonymous functions
+### Funções anônimas
 
 ```php
 $greet = function($name)
@@ -768,7 +768,7 @@ $greet('World'); # => Hello World
 $greet('PHP');   # => Hello PHP
 ```
 
-### Recursive functions
+### Funções recursivas
 
 ```php
 function recursion($x)
@@ -781,7 +781,7 @@ function recursion($x)
 recursion(1);  # => 1234
 ```
 
-### Default parameters
+### Parâmetros padrão
 
 ```php
 function coffee($type = "cappuccino")
@@ -811,9 +811,9 @@ echo $fn1(5);   # => 6
 echo $fn2(5);   # => 6
 ```
 
-## PHP Classes
+## Classes do PHP
 
-### Constructor
+### Construtor
 
 ```php
 class Student {
@@ -828,7 +828,7 @@ $alex = new Student("Alex");
 $alex->print();    # => Name: Alex
 ```
 
-### Inheritance
+### Herança
 
 ```php
 class ExtendClass extends SimpleClass
@@ -845,7 +845,7 @@ $extended = new ExtendClass();
 $extended->displayVar();
 ```
 
-### Classes variables {.row-span-2}
+### Variáveis de classe {.row-span-2}
 
 ```php
 class MyClass
@@ -870,14 +870,14 @@ class MyClass
 }
 ```
 
-Access statically
+Acesse estaticamente
 
 ```php
 echo MyClass::MY_CONST;   # => value
 echo MyClass::$staticVar; # => static
 ```
 
-### Magic Methods
+### Métodos mágicos
 
 ```php
 class MyClass
@@ -913,9 +913,9 @@ class Cls implements Foo, Bar
 }
 ```
 
-## PHP Trait 
+## Trait do PHP
 
-### Trait declaration & Use case {.col-span-3}
+### Declaração e caso de uso de Trait {.col-span-3}
 ```php
 // Declare Trait allows reuse of code
 // across multiple classes for common characteristics or use cases
@@ -956,9 +956,9 @@ $product = new Product();
 $product->createProduct(); // Output ex: | 2025-06-18 14:06:09 | Product created.
 ```
 
-## PHP Enums (PHP 8.1)
+## Enums do PHP (PHP 8.1)
 
-### Enum Declaration & Use case {.col-span-3}
+### Declaração e caso de uso de Enum {.col-span-3}
 
 ```php
 <?php
@@ -985,9 +985,9 @@ $currentStatus = Status::Approved;
 echo getStatusMessage($currentStatus); // Output : Your request has been approved.
 ```
 
-## PHP Date & Time Handling 
+## Data e hora no PHP
 
-### Current date and time
+### Data e hora atuais
 ```php
 // DateTime in PHP handles both date and time
 
@@ -999,7 +999,7 @@ echo $now->format('Y-m-d H:i:s.u');
 ```
 
 
-### Creating specific date/time objects
+### Criando objetos de data/hora específicos
 ```php
 <?php
 // Create a date object
@@ -1021,7 +1021,7 @@ echo $dt->format('Y-m-d H:i:s');
 // Output :  2024-04-27 15:30:45
 ```
 
-### Converting between date formats
+### Convertendo entre formatos de data
 ```php
 <?php
 // Convert a string to a DateTime object
@@ -1037,7 +1037,7 @@ echo $formatted_str;
  
 // Output :  27/04/2024 14:00
 ```
-### Timestamps and Unix time {.col-span-2}
+### Timestamps e hora Unix {.col-span-2}
 ```php
 <?php
 // Get current timestamp
@@ -1054,7 +1054,7 @@ echo $dt_from_timestamp->format('Y-m-d H:i:s');
 ```
 
 
-### Date difference and timedelta {.col-span-1}
+### Diferença entre datas e timedelta {.col-span-1}
 ```php
 <?php
 $date1 = new DateTime('2024-04-27');
@@ -1073,9 +1073,9 @@ echo $new_date->format('Y-m-d');
 // Output : 2024-05-07
 ```
 
-## Miscellaneous
+## Diversos
 
-### Basic error handling
+### Tratamento básico de erros
 
 ```php
 try {
@@ -1087,7 +1087,7 @@ try {
 }
 ```
 
-### Exception in PHP 8.0 {.col-span-2}
+### Exceções no PHP 8.0 {.col-span-2}
 
 ```php {.wrap}
 $nullableValue = null;
@@ -1100,7 +1100,7 @@ try {
 }
 ```
 
-### Custom exception {.row-span-2}
+### Exceção personalizada {.row-span-2}
 
 ```php
 class MyException extends Exception {
@@ -1108,7 +1108,7 @@ class MyException extends Exception {
 }
 ```
 
-Usage
+Uso
 
 ```php
 try {
@@ -1121,7 +1121,7 @@ try {
 }
 ```
 
-### Nullsafe Operator {.row-span-2}
+### Operador Nullsafe {.row-span-2}
 
 ```php
 // As of PHP 8.0.0, this line:
@@ -1140,48 +1140,48 @@ if (is_null($repo)) {
 }
 ```
 
-See also: [Nullsafe Operator](https://wiki.php.net/rfc/nullsafe_operator)
+Veja também: [Nullsafe Operator](https://wiki.php.net/rfc/nullsafe_operator)
 
-### Regular expressions
+### Expressões regulares
 
 ```php
 $str = "Visit cheatsheets.zip";
 echo preg_match("/ch/i", $str); # => 1
 ```
 
-See: [Regex in PHP](/regex#regex-in-php)
+Veja: [Regex em PHP](/regex#regex-in-php)
 
-### fopen() mode
+### Modos do fopen()
 
 | -    | -                        |
 | ---- | ------------------------ |
-| `r`  | Read                     |
-| `r+` | Read and write, prepend  |
-| `w`  | Write, truncate          |
-| `w+` | Read and write, truncate |
-| `a`  | Write, append            |
-| `a+` | Read and write, append   |
+| `r`  | Leitura                  |
+| `r+` | Leitura e escrita, prepend |
+| `w`  | Escrita, truncate        |
+| `w+` | Leitura e escrita, truncate |
+| `a`  | Escrita, append          |
+| `a+` | Leitura e escrita, append |
 
 ### Super Global Variables {.col-span-2}
 
-| Variable     | Description                                                  |
+| Variável     | Descrição                                                  |
 |--------------|:-------------------------------------------------------------|
-| `$_SERVER`   | Holds information about headers, paths, and script locations |
-| `$_GET`      | Contains data sent via URL parameters (query string)         |
-| `$_POST`     | Contains data sent via HTTP POST method                      |
-| `$_FILES`    | Contains information about uploaded files                    |
-| `$_COOKIE`   | Contains cookie data                                         |
-| `$_SESSION`  | Stores session variables                                     |
-| `$_REQUEST`  | Contains data from `$_GET`, `$_POST`, and `$_COOKIE`         |
-| `$_ENV`      | Contains environment variables                               |
-| `$GLOBALS`   | References all global variables available in the script      |
+| `$_SERVER`   | Armazena informações sobre headers, paths e localizações de script |
+| `$_GET`      | Contém dados enviados via parâmetros de URL (query string)   |
+| `$_POST`     | Contém dados enviados pelo método HTTP POST                  |
+| `$_FILES`    | Contém informações sobre arquivos enviados                   |
+| `$_COOKIE`   | Contém dados de cookie                                       |
+| `$_SESSION`  | Armazena variáveis de sessão                                 |
+| `$_REQUEST`  | Contém dados de `$_GET`, `$_POST` e `$_COOKIE`               |
+| `$_ENV`      | Contém variáveis de ambiente                                 |
+| `$GLOBALS`   | Referencia todas as variáveis globais disponíveis no script  |
 
 {.left-text}
 
-Super Global Variables are built-in variables always available in all scopes.
+Super Global Variables são variáveis embutidas sempre disponíveis em todos os escopos.
 
 
-### Runtime defined Constants
+### Constantes definidas em runtime
 
 ```php
 define("CURRENT_DATE", date('Y-m-d'));
@@ -1193,7 +1193,7 @@ echo CURRENT_DATE;   # => 2021-01-05
 echo 'CURRENT_DATE is: ' . CURRENT_DATE;
 ```
 
-## Also see
+## Veja também
 
 - [PHP Docs](https://www.php.net/manual/en/index.php)
 - [Learn X in Y minutes](https://learnxinyminutes.com/docs/php/)

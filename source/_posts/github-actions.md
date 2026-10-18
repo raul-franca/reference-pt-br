@@ -7,27 +7,27 @@ tags:
   - Github
   - CICD
 categories:
-  - Toolkit
+  - Ferramentas
 intro:
-  A quick reference to Github Actions for the automation of software workflows, allowing developers to build, test, and
-  deploy code right from their GitHub repositories.
+  Uma referência rápida do Github Actions para a automação de workflows de software, permitindo que desenvolvedores façam build, teste e
+  deploy de código diretamente dos seus repositórios GitHub.
 plugins:
   - copyCode
 ---
 
-## Getting Started
+## Primeiros passos
 
-### Introduction
+### Introdução
 
-[GitHub Actions](https://docs.github.com/en/actions) is a CI/CD platform that enables automation of software workflows,
-allowing developers to build, test, and deploy code right from their GitHub repositories.
+[GitHub Actions](https://docs.github.com/en/actions) é uma plataforma de CI/CD que permite a automação de workflows de software,
+permitindo que desenvolvedores façam build, teste e deploy de código diretamente dos seus repositórios GitHub.
 
 ---
 
-### Workflow Files
+### Arquivos de workflow
 
-Github Action Workflows are defined in special YAML files, typically stored in a `.github/workflows` directory in the
-github repository.
+Os workflows do Github Actions são definidos em arquivos YAML especiais, normalmente armazenados em um diretório `.github/workflows` no
+repositório do github.
 
 ```yaml
 name: hello-world
@@ -40,15 +40,15 @@ jobs:
         run: echo "Hello World!"
 ```
 
-**Viewing your workflow runs**
+**Visualizando as execuções do seu workflow**
 
-- On GitHub.com, navigate to the main page of the repository.
-- Under your repository name, click `Actions`.
-- In the left sidebar, click the workflow you want to display, in this example "hello-world"
+- No GitHub.com, navegue até a página principal do repositório.
+- Abaixo do nome do repositório, clique em `Actions`.
+- Na barra lateral esquerda, clique no workflow que deseja exibir, neste exemplo "hello-world"
 
 ---
 
-### Workflow Syntax
+### Sintaxe de workflow
 
 ```yaml
 name: learn-github-actions
@@ -66,22 +66,22 @@ jobs:
       - run: bats -v
 ```
 
-### Workflow Syntax Descriptions
+### Descrições da sintaxe de workflow
 
-| Line                  | Description                                                                                                                                                                   |
+| Linha                 | Descrição                                                                                                                                                                     |
 | :-------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `name:`               | Sets the name of the GitHub Actions workflow. It's a label used for identifying the workflow in the repository.                                                               |
-| `run-name:`           | Sets a custom name for the run, using a GitHub context `${{ github.actor }}` to include the name of the user who initiated the run.                                           |
-| `on:`                 | Specifies the event that triggers the workflow. In this case, the workflow is triggered on any `push` event to the repository.                                                |
-| `jobs:`               | Defines a group of jobs that will be executed as part of the workflow. Each job runs independently in the workflow.                                                           |
-| `check-bats-version:` | Identifier for a specific job within the workflow. This job is named `check-bats-version`.                                                                                    |
-| `runs-on:`            | Specifies the type of machine to run the job on. Here, it's set to run on the latest version of Ubuntu.                                                                       |
-| `steps:`              | Contains a sequence of tasks (steps) that will be executed as part of the job.                                                                                                |
-| `uses:`               | Used to specify an action to include as part of a step. For example, `actions/checkout@v4` checks out the repository, and `actions/setup-node@v3` sets up a Node environment. |
-| `with:`               | Specifies additional parameters for the action. It's used in conjunction with `uses` to configure the action.                                                                 |
-| `node-version:`       | Contains parameter under `with`, specifying the version of Node.js to be set up by the `setup-node` action. In this case, it's set to version '14'.                           |
+| `name:`               | Define o nome do workflow do GitHub Actions. É um rótulo usado para identificar o workflow no repositório.                                                                   |
+| `run-name:`           | Define um nome personalizado para a execução, usando um contexto do GitHub `${{ github.actor }}` para incluir o nome do usuário que iniciou a execução.                       |
+| `on:`                 | Especifica o evento que dispara o workflow. Neste caso, o workflow é disparado em qualquer evento `push` para o repositório.                                                  |
+| `jobs:`               | Define um grupo de jobs que serão executados como parte do workflow. Cada job é executado de forma independente no workflow.                                                  |
+| `check-bats-version:` | Identificador de um job específico dentro do workflow. Este job se chama `check-bats-version`.                                                                                |
+| `runs-on:`            | Especifica o tipo de máquina em que o job será executado. Aqui, está definido para executar na versão mais recente do Ubuntu.                                                 |
+| `steps:`              | Contém uma sequência de tarefas (steps) que serão executadas como parte do job.                                                                                              |
+| `uses:`               | Usado para especificar uma action a incluir como parte de um step. Por exemplo, `actions/checkout@v4` faz o checkout do repositório, e `actions/setup-node@v3` configura um ambiente Node. |
+| `with:`               | Especifica parâmetros adicionais para a action. É usado junto com `uses` para configurar a action.                                                                             |
+| `node-version:`       | Contém um parâmetro em `with`, especificando a versão do Node.js a ser configurada pela action `setup-node`. Neste caso, está definida para a versão '14'.                     |
 
-### Events
+### Eventos
 
 ```yaml
 name: Event-trigger-on-push-example
@@ -97,43 +97,43 @@ jobs:
         run: echo "This workflow runs on every push to the repository."
 ```
 
-**Event Triggers**
+**Gatilhos de eventos**
 
-| Event Name                    | Description                                     |
+| Nome do evento                | Descrição                                       |
 | :---------------------------- | :---------------------------------------------- |
-| `push`                        | Triggers on a push to the repository.           |
-| `pull_request`                | Triggers on pull request events.                |
-| `pull_request_review`         | Triggers on pull request review events.         |
-| `pull_request_review_comment` | Triggers on comments on pull request reviews.   |
-| `pull_request_target`         | For workflows in forked repositories.           |
-| `fork`                        | Triggers when a repository is forked.           |
-| `issue_comment`               | Triggers on issue and PR comments.              |
-| `issues`                      | Triggers on issue events.                       |
-| `label`                       | Triggers on label events.                       |
-| `milestone`                   | Triggers on milestone events.                   |
-| `deployment`                  | Triggers on deployment.                         |
-| `deployment_status`           | Triggers on deployment status updates.          |
-| `public`                      | Triggers when repo goes from private to public. |
-| `repository_dispatch`         | Triggers on a custom repository event.          |
-| `schedule`                    | Triggers on a defined schedule.                 |
-| `workflow_dispatch`           | Allows manual triggering of the workflow.       |
-| `workflow_run`                | Triggers on the completion of another workflow. |
-| `create`                      | Triggers when a branch or tag is created.       |
-| `delete`                      | Triggers when a branch or tag is deleted.       |
-| `page_build`                  | Triggers on GitHub Pages build events.          |
-| `release`                     | Triggers on release events.                     |
-| `watch`                       | Triggers when someone stars the repo.           |
-| `registry_package`            | Triggers on registry package events.            |
-| `status`                      | Triggers on status updates to a Git commit.     |
-| `project`                     | Triggers on project board events.               |
-| `project_card`                | Triggers on project card events.                |
-| `project_column`              | Triggers on project column events.              |
-| `member`                      | Triggers on collaborator events.                |
-| `gollum`                      | Triggers on wiki page updates.                  |
+| `push`                        | Dispara em um push para o repositório.          |
+| `pull_request`                | Dispara em eventos de pull request.             |
+| `pull_request_review`         | Dispara em eventos de review de pull request.   |
+| `pull_request_review_comment` | Dispara em comentários em reviews de pull request. |
+| `pull_request_target`         | Para workflows em repositórios com fork.        |
+| `fork`                        | Dispara quando um repositório recebe fork.      |
+| `issue_comment`               | Dispara em comentários em issues e PRs.         |
+| `issues`                      | Dispara em eventos de issue.                    |
+| `label`                       | Dispara em eventos de label.                    |
+| `milestone`                   | Dispara em eventos de milestone.                |
+| `deployment`                  | Dispara no deploy.                              |
+| `deployment_status`           | Dispara em atualizações de status de deploy.    |
+| `public`                      | Dispara quando o repositório passa de privado para público. |
+| `repository_dispatch`         | Dispara em um evento personalizado do repositório. |
+| `schedule`                    | Dispara em um agendamento definido.             |
+| `workflow_dispatch`           | Permite o disparo manual do workflow.           |
+| `workflow_run`                | Dispara na conclusão de outro workflow.         |
+| `create`                      | Dispara quando um branch ou tag é criado.       |
+| `delete`                      | Dispara quando um branch ou tag é excluído.     |
+| `page_build`                  | Dispara em eventos de build do GitHub Pages.    |
+| `release`                     | Dispara em eventos de release.                  |
+| `watch`                       | Dispara quando alguém dá star no repositório.   |
+| `registry_package`            | Dispara em eventos de pacote do registry.       |
+| `status`                      | Dispara em atualizações de status de um commit Git. |
+| `project`                     | Dispara em eventos de project board.            |
+| `project_card`                | Dispara em eventos de project card.             |
+| `project_column`              | Dispara em eventos de project column.           |
+| `member`                      | Dispara em eventos de colaborador.              |
+| `gollum`                      | Dispara em atualizações de página wiki.         |
 
 ### Jobs
 
-Single Job:
+Job único:
 
 ```yaml
 name: Single Job
@@ -147,7 +147,7 @@ jobs:
         run: script/build
 ```
 
-Multiple Jobs:
+Múltiplos jobs:
 
 ```yaml
 name: CI Workflow
@@ -203,7 +203,7 @@ jobs:
         run: npm test
 ```
 
-### Github Runners & Self Hosted Runners
+### Runners do Github e runners self-hosted
 
 [Github Hosted Runner](https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners/about-github-hosted-runners):
 
@@ -233,9 +233,9 @@ jobs:
         run: echo "Hello from self-hosted runner!"
 ```
 
-### Environment Variables
+### Variáveis de ambiente
 
-Custom variable defined using environments.
+Variável personalizada definida usando environments.
 
 ```yaml
 jobs:
@@ -250,10 +250,10 @@ jobs:
 
 ### Secrets
 
-To add a new secret in your github repository nagivate to `Repository` > `Settings` > `Security` >
+Para adicionar um novo secret no seu repositório do github, navegue até `Repository` > `Settings` > `Security` >
 `Secrets and Variables` > `Actions` > `New Repository Secret`
 
-Example Secrets workflow:
+Exemplo de workflow com secrets:
 
 ```yaml
 name: Workflow with Secrets
@@ -272,7 +272,7 @@ jobs:
 
 ### Artifacts
 
-To access your artifact navigate to `Repository` > `Actions` > `Workflow Run` > `Artifacts`
+Para acessar seu artifact, navegue até `Repository` > `Actions` > `Workflow Run` > `Artifacts`
 
 ```yaml
 jobs:
@@ -288,9 +288,9 @@ jobs:
           path: path/to/artifact
 ```
 
-### Caching Dependencies
+### Cache de dependências
 
-Dependency caches stores downloaded packages or compiled binaries of your workflows.
+Os caches de dependências armazenam pacotes baixados ou binários compilados dos seus workflows.
 
 ```yaml
 jobs:
@@ -309,7 +309,7 @@ jobs:
         run: install-command
 ```
 
-### Matrix Strategies
+### Estratégias de matriz
 
 ```yaml
 jobs:
@@ -332,9 +332,9 @@ jobs:
           CI: true
 ```
 
-### Conditions and Expressions
+### Condições e expressões
 
-Branch Conditions:
+Condições de branch:
 
 ```yaml
 jobs:
@@ -348,7 +348,7 @@ jobs:
         run: make build
 ```
 
-Event Trigger Conditions:
+Condições de gatilho de evento:
 
 ```yaml
 jobs:
@@ -362,9 +362,9 @@ jobs:
         run: npm test
 ```
 
-### Workflow Commands
+### Comandos de workflow
 
-Depending on your OS, if you are running ubuntu-latest, bash commands should work
+Dependendo do seu sistema operacional, se estiver usando ubuntu-latest, os comandos bash devem funcionar
 
 ```yaml
 steps:
@@ -372,10 +372,10 @@ steps:
     run: echo "NAME=value" >> $GITHUB_ENV
 ```
 
-### Concurrency
+### Concorrência
 
-The concurrency field creates a group based on the `github.head_ref`. If a new run starts within the same concurrency
-group, it cancels any in-progress runs.
+O campo concurrency cria um grupo com base em `github.head_ref`. Se uma nova execução começar dentro do mesmo grupo de
+concorrência, ela cancela as execuções em andamento.
 
 ```yaml
 jobs:
@@ -389,8 +389,8 @@ jobs:
         run: echo "Running script..."
 ```
 
-## Also see
+## Veja também
 
 - [YAML](/yaml) _(cheatsheets.zip)_
 - [Github](/github) _(cheatsheets.zip)_
-- [Github Actions Documentation](https://docs.github.com/en/actions)_(docs.github.com/en/actions)_
+- [Documentação do Github Actions](https://docs.github.com/en/actions)_(docs.github.com/en/actions)_

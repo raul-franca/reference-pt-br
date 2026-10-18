@@ -7,68 +7,68 @@ tags:
   -
   -
 categories:
-  - Keyboard Shortcuts
+  - Atalhos de Teclado
 intro: |
-  A visual cheat-sheet for the 34 keyboard shortcuts found in TablePlus
+  Um cheat sheet visual para os 34 atalhos de teclado do TablePlus
 ---
 
-## Keyboard Shortcuts
+## Atalhos de Teclado
 
 ### Global
 
-| Shortcut           | Action                |
-| ------------------ | --------------------- |
-| `Ctrl` `N`         | Open a new connection |
-| `Ctrl` `Q`         | Quit app              |
-| `Ctrl` `Shift` `O` | Open SQL file         |
-| `Ctrl` `,`         | Open Preferences      |
+| Atalho             | Ação                          |
+| ------------------ | ----------------------------- |
+| `Ctrl` `N`         | Abrir uma nova conexão        |
+| `Ctrl` `Q`         | Sair do app                   |
+| `Ctrl` `Shift` `O` | Abrir arquivo SQL             |
+| `Ctrl` `,`         | Abrir Preferências            |
 
 {.shortcuts}
 
 ### Workspace
 
-| Shortcut               | Action                         |
-| ---------------------- | ------------------------------ |
-| `Ctrl` `W`             | Close a tab/window             |
-| `Ctrl` `S`             | Commit the changes             |
-| `Ctrl` `T`             | Open a new tab                 |
-| `Ctrl` `L`             | Open plugin manager            |
-| `Ctrl` `.`             | Run custom script              |
-| `Ctrl` `R`             | Reload workspace               |
-| `Ctrl` `[`             | Navigate to left tab           |
-| `Ctrl` `]`             | Navigate to right tab          |
-| `Ctrl` `Shift` `[`     | Navigate to left Pane          |
-| `Ctrl` `Shift` `]`     | Navigate to right Pane         |
-| `Ctrl` `D`             | Split Pane horizontally        |
-| `Ctrl` `1-9`           | Navigate to number tab         |
-| `Ctrl` `K`             | Switch database                |
-| `Ctrl` `Shift` `K`     | Switch connection              |
-| `Ctrl` `I`             | Indent selected SQL Code       |
-| `Ctrl` `E`             | Execute SQL Code               |
-| `Ctrl` `O`             | Open file SQL                  |
-| `Ctrl` `Shift` `Enter` | Uglify selected SQL statements |
-| `Ctrl` `\`             | Comment/Uncomment lines of SQL |
-| `Ctrl` `Z`             | Undo                           |
-| `Ctrl` `Shift` `Z`     | Redo                           |
-| `Ctrl` `P`             | Open anything                  |
-| `Ctrl` `E`             | Open SQL Query                 |
-| `Ctrl` `(click)`       | Open item in new tab           |
-| `Tab`                  | Move focus while editing       |
+| Atalho                 | Ação                                        |
+| ---------------------- | ------------------------------------------- |
+| `Ctrl` `W`             | Fecha uma aba/janela                        |
+| `Ctrl` `S`             | Faz o commit das alterações                 |
+| `Ctrl` `T`             | Abre uma nova aba                           |
+| `Ctrl` `L`             | Abre o gerenciador de plugins               |
+| `Ctrl` `.`             | Executa script personalizado                |
+| `Ctrl` `R`             | Recarrega o workspace                       |
+| `Ctrl` `[`             | Navega para a aba da esquerda               |
+| `Ctrl` `]`             | Navega para a aba da direita                |
+| `Ctrl` `Shift` `[`     | Navega para o painel da esquerda            |
+| `Ctrl` `Shift` `]`     | Navega para o painel da direita             |
+| `Ctrl` `D`             | Divide o painel horizontalmente             |
+| `Ctrl` `1-9`           | Navega para a aba de número                 |
+| `Ctrl` `K`             | Troca de banco de dados                     |
+| `Ctrl` `Shift` `K`     | Troca de conexão                            |
+| `Ctrl` `I`             | Indenta o código SQL selecionado            |
+| `Ctrl` `E`             | Executa o código SQL                        |
+| `Ctrl` `O`             | Abre arquivo SQL                            |
+| `Ctrl` `Shift` `Enter` | Minifica as instruções SQL selecionadas     |
+| `Ctrl` `\`             | Comenta/descomenta linhas de SQL            |
+| `Ctrl` `Z`             | Desfaz                                      |
+| `Ctrl` `Shift` `Z`     | Refaz                                       |
+| `Ctrl` `P`             | Abre qualquer coisa                         |
+| `Ctrl` `E`             | Abre consulta SQL                           |
+| `Ctrl` `(click)`       | Abre o item em uma nova aba                 |
+| `Tab`                  | Move o foco durante a edição                |
 
 {.shortcuts}
 
-### Table Data
+### Dados da tabela
 
-| Shortcut         | Action                              |
-| ---------------- | ----------------------------------- |
-| `Space`          | Toggle row detail when row selected |
-| `Ctrl` `C`       | Copy rows                           |
-| `Ctrl` `V`       | Paste rows                          |
-| `Ctrl` `Alt` `I` | Insert a new row                    |
-| `Tab`            | Move focus while editing            |
+| Atalho           | Ação                                                       |
+| ---------------- | ---------------------------------------------------------- |
+| `Space`          | Alterna os detalhes da linha quando a linha está selecionada |
+| `Ctrl` `C`       | Copia as linhas                                            |
+| `Ctrl` `V`       | Cola as linhas                                             |
+| `Ctrl` `Alt` `I` | Insere uma nova linha                                      |
+| `Tab`            | Move o foco durante a edição                               |
 
 {.shortcuts}
 
-## Also see
+## Veja também
 
-- [Keyboard shortcuts for TablePlus app](https://tableplus.com/blog/2018/02/shortcut-keys.html) _(tableplus.com)_
+- [Atalhos de teclado do app TablePlus](https://tableplus.com/blog/2018/02/shortcut-keys.html) _(tableplus.com)_

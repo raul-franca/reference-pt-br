@@ -1,42 +1,42 @@
-/* Social Buttons Component Styles */
+/* Estilos do componente de botões sociais */
 
-/* Base styles for all social buttons */
+/* Estilos base para todos os botões sociais */
 .social-buttons {
-  /* Ensure proper spacing and alignment */
+  /* Garante espaçamento e alinhamento adequados */
 }
 
-/* Fix icon and text alignment issues */
+/* Corrige problemas de alinhamento entre ícone e texto */
 .social-buttons a {
-  /* Ensure perfect vertical alignment */
+  /* Garante alinhamento vertical perfeito */
   align-items: center !important;
   justify-content: center !important;
 }
 
 .social-buttons a > div,
 .social-buttons a > span {
-  /* Remove any default margins that might cause misalignment */
+  /* Remove margens padrão que possam causar desalinhamento */
   margin-top: 0 !important;
   margin-bottom: 0 !important;
 
-  /* Ensure consistent line height */
+  /* Garante altura de linha consistente */
   line-height: 1 !important;
 
-  /* Prevent flex items from growing/shrinking unexpectedly */
+  /* Impede que itens flex cresçam/encolham inesperadamente */
   flex-shrink: 0;
 }
 
-/* Specific fixes for SVG icons */
+/* Correções específicas para ícones SVG */
 .social-buttons svg {
-  /* Ensure SVG icons are properly aligned */
+  /* Garante que os ícones SVG estejam alinhados corretamente */
   vertical-align: middle;
   display: block;
 
-  /* Override any fixed width/height attributes to match container */
+  /* Sobrescreve atributos fixos de largura/altura para corresponder ao container */
   width: 100% !important;
   height: 100% !important;
 }
 
-/* Ensure icon containers have consistent sizing */
+/* Garante dimensionamento consistente dos containers de ícone */
 .social-buttons .w-4 {
   width: 1rem !important;
   height: 1rem !important;
@@ -47,7 +47,7 @@
   height: 1.25rem !important;
 }
 
-/* Force all SVG icons to inherit container dimensions */
+/* Força todos os ícones SVG a herdarem as dimensões do container */
 .social-buttons .w-4 svg,
 .social-buttons .w-5 svg {
   width: 100% !important;
@@ -56,43 +56,43 @@
   max-height: 100% !important;
 }
 
-/* Hero variant - large buttons for homepage */
+/* Variante hero - botões grandes para a página inicial */
 .social-buttons.hero {
-  /* Already handled by Tailwind classes in component */
+  /* Já tratado por classes do Tailwind no componente */
 }
 
-/* Compact variant - small icons for navbar */
+/* Variante compacta - ícones pequenos para a navbar */
 .social-buttons.compact {
-  /* Hide on mobile to save space */
+  /* Oculta no mobile para economizar espaço */
   @media (width <= 1023px) {
     display: none !important;
   }
 }
 
-/* Inline variant - medium size for detail pages */
+/* Variante inline - tamanho médio para páginas de detalhe */
 .social-buttons.inline {
-  /* Responsive adjustments for inline variant */
+  /* Ajustes responsivos para a variante inline */
   @media (width <= 768px) {
     flex-direction: column;
     gap: 0.75rem;
   }
 
   @media (width <= 640px) {
-    /* Stack vertically on small screens */
+    /* Empilha verticalmente em telas pequenas */
     flex-direction: column;
     align-items: stretch;
     gap: 0.5rem;
   }
 }
 
-/* GitHub stars counter responsive behavior */
+/* Comportamento responsivo do contador de estrelas do GitHub */
 [id^='github-stars'] {
-  /* Ensure stars counter is readable */
+  /* Garante que o contador de estrelas seja legível */
   min-width: 2rem;
   text-align: center;
 }
 
-/* Compact variant specific styling for navbar */
+/* Estilos específicos da variante compacta para a navbar */
 #github-stars-compact {
   min-width: 2.5rem;
   font-size: 0.75rem;
@@ -101,17 +101,17 @@
   font-weight: 500;
 }
 
-/* Ensure proper text color for compact variant */
+/* Garante cor de texto adequada para a variante compacta */
 #github-stars-compact {
   color: inherit;
 }
 
-/* Home page compact variant */
+/* Variante compacta da página inicial */
 .home #github-stars-compact {
   color: rgb(255 255 255 / 90%);
 }
 
-/* Non-home page compact variant */
+/* Variante compacta fora da página inicial */
 body:not(.home) #github-stars-compact {
   color: rgb(71 85 105); /* slate-600 */
 }
@@ -120,7 +120,7 @@ body:not(.home) #github-stars-compact {
   color: rgb(203 213 225); /* slate-300 */
 }
 
-/* Loading animation for stars */
+/* Animação de carregamento das estrelas */
 .loading-dots {
   animation: loading-dots 1.5s infinite;
 }
@@ -141,13 +141,13 @@ body:not(.home) #github-stars-compact {
   }
 }
 
-/* Button hover effects - ensure they work on all variants */
+/* Efeitos de hover dos botões - garante que funcionem em todas as variantes */
 .social-buttons a {
-  /* Smooth transitions */
+  /* Transições suaves */
   transition: all 0.2s ease-in-out;
 }
 
-/* Responsive text sizing */
+/* Dimensionamento responsivo do texto */
 @media (width <= 640px) {
   .social-buttons.inline a {
     padding: 0.5rem 1rem;
@@ -160,7 +160,7 @@ body:not(.home) #github-stars-compact {
   }
 }
 
-/* Ensure proper spacing between buttons on all screen sizes */
+/* Garante espaçamento adequado entre os botões em todos os tamanhos de tela */
 .social-buttons.hero {
   @media (width <= 1024px) {
     flex-direction: column;
@@ -168,21 +168,21 @@ body:not(.home) #github-stars-compact {
   }
 }
 
-/* Dark mode adjustments */
+/* Ajustes do modo escuro */
 @media (prefers-color-scheme: dark) {
   .social-buttons.inline a {
-    /* Ensure good contrast in dark mode */
+    /* Garante bom contraste no modo escuro */
     border-color: rgb(51 65 85 / 70%);
   }
 }
 
-/* Focus states for accessibility */
+/* Estados de foco para acessibilidade */
 .social-buttons a:focus {
   outline: 2px solid rgb(59 130 246);
   outline-offset: 2px;
 }
 
-/* Reduce motion for users who prefer it */
+/* Reduz o movimento para quem prefere menos animação */
 @media (prefers-reduced-motion: reduce) {
   .social-buttons a {
     transition: none;

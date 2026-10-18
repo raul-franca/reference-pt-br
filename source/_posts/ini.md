@@ -4,27 +4,27 @@ date: 2022-12-30 09:51:44
 background: bg-[#6d94c7]
 tags:
 categories:
-  - Programming
+  - Programação
 intro: |
-  This is a quick reference cheat sheet for understanding and writing INI-format configuration files.
+  Esta é uma cheat sheet de referência rápida para entender e escrever arquivos de configuração no formato INI.
 plugins:
   - copyCode
 ---
 
-## Getting Started
+## Primeiros passos
 
-### Introduction
+### Introdução
 
-- INI is a configuration file with a fixed standard format
-- Base elements are keys or properties
-- Each key consists of a **name** and a **value**, separated by an equal sign (`=`)
-- **key name** is displayed to the **left side** of the equals sign
-- Equal sign (`=`) and semicolon (`;`) are **reserved** characters
-- INI configuration method comes from the MS-DOS operating system
+- INI é um arquivo de configuração com um formato padrão fixo
+- Os elementos básicos são chaves ou propriedades
+- Cada chave é composta por um **nome** e um **valor**, separados por um sinal de igual (`=`)
+- O **nome da chave** aparece à **esquerda** do sinal de igual
+- O sinal de igual (`=`) e o ponto e vírgula (`;`) são caracteres **reservados**
+- O método de configuração INI vem do sistema operacional MS-DOS
 
-Now an informal standard for many configurations, other operating systems may use `.conf` or `.cfg` as a suffix
+Hoje é um padrão informal para muitas configurações; outros sistemas operacionais podem usar `.conf` ou `.cfg` como sufixo
 
-### Example
+### Exemplo
 
 ```ini
 ; Here are the comments
@@ -42,36 +42,36 @@ file="acme payroll.dat"
 foo = bar
 ```
 
-### Comments
+### Comentários
 
-Comment (`;`)
+Comentário (`;`)
 
 ```ini
 ; This is the comment text and will be ignored
 ```
 
-Comment (`#`)
+Comentário (`#`)
 
 ```ini
 # Here is the comment text, ⚠️ Some compilers support it
 ```
 
-Comments after a line (`;`,`#`) _(not standard)_
+Comentários após uma linha (`;`,`#`) _(não padrão)_
 
 ```ini
 var = a ; this is an inline comment
 foo = bar # this is another inline comment
 ```
 
-Comments must appear alone on lines in some cases
+Em alguns casos, os comentários devem aparecer sozinhos nas linhas
 
-### Sections
+### Seções
 
-- The name appears on a line by itself
-- Names are enclosed in square brackets `[` and `]`
-- No explicit `section end` delimiter
-- End at the next `section` declaration or at the end of the file
-- Section and attribute names are case insensitive
+- O nome aparece em uma linha por si só
+- Os nomes ficam entre colchetes `[` e `]`
+- Não há delimitador explícito de `section end`
+- Termina na próxima declaração de `section` ou no fim do arquivo
+- Nomes de seção e de atributo não diferenciam maiúsculas de minúsculas
 <!--rehype:className=style-round-->
 
 ```ini
@@ -80,7 +80,7 @@ key1 = a
 key2 = b
 ```
 
-The same as `JSON` below 👇
+O mesmo que `JSON` abaixo 👇
 
 ```json
 {
@@ -91,7 +91,7 @@ The same as `JSON` below 👇
 }
 ```
 
-### Nesting (supported by some parsers)
+### Aninhamento (suportado por alguns parsers)
 
 ```ini
 [section]
@@ -100,7 +100,7 @@ domain = cheatsheets.zip
 foo = bar
 ```
 
-The same as `JSON` below 👇
+O mesmo que `JSON` abaixo 👇
 
 ```json
 {
@@ -113,7 +113,7 @@ The same as `JSON` below 👇
 }
 ```
 
-Nest to previous section (shorthand)
+Aninha na seção anterior (forma abreviada)
 
 ```ini
 [section]
@@ -122,24 +122,24 @@ domain = cheatsheets.zip
 foo = bar
 ```
 
-### Escape character
+### Caractere de escape
 
-| sequence | meaning                                                                                          |
-| :------- | :----------------------------------------------------------------------------------------------- |
-| `\\`     | \ (single backslash, escape escape character)                                                    |
-| `\'`     | apostrophe                                                                                       |
-| `\"`     | double quotes                                                                                    |
-| `\0`     | null character                                                                                   |
-| `\a`     | ringtone/alert/sound                                                                             |
-| `\b`     | Backspace, [Bell character] for some applications (https://en.wikipedia.org/wiki/Bell_character) |
-| `\t`     | tab character                                                                                    |
-| `\r`     | carriage return                                                                                  |
-| `\n`     | newline                                                                                          |
-| `\;`     | semicolon                                                                                        |
-| `\#`     | number sign                                                                                      |
-| `\=`     | equal sign                                                                                       |
-| `\:`     | colon                                                                                            |
-| `\x????` | Unicode character for the hexadecimal code point corresponding to ????                           |
+| sequência | significado                                                                                       |
+| :-------- | :------------------------------------------------------------------------------------------------ |
+| `\\`      | \ (barra invertida simples, caractere de escape de escape)                                        |
+| `\'`      | apóstrofo                                                                                         |
+| `\"`      | aspas duplas                                                                                      |
+| `\0`      | caractere nulo                                                                                    |
+| `\a`      | toque/alerta/som                                                                                  |
+| `\b`      | Backspace, [Bell character] para algumas aplicações (https://en.wikipedia.org/wiki/Bell_character) |
+| `\t`      | caractere de tabulação                                                                            |
+| `\r`      | retorno de carro                                                                                  |
+| `\n`      | nova linha                                                                                        |
+| `\;`      | ponto e vírgula                                                                                   |
+| `\#`      | cerquilha                                                                                         |
+| `\=`      | sinal de igual                                                                                    |
+| `\:`      | dois-pontos                                                                                       |
+| `\x????`  | caractere Unicode para o code point hexadecimal correspondente a ????                             |
 
 ### Array
 
@@ -150,7 +150,7 @@ array[]=first value
 array[]=second value
 ```
 
-The same as `JSON` below 👇
+O mesmo que `JSON` abaixo 👇
 
 ```json
 {
@@ -161,7 +161,7 @@ The same as `JSON` below 👇
 }
 ```
 
-### Interpreter
+### Interpretador
 
 - [@go-ini/ini](https://github.com/go-ini/ini) _(golang)_
 - [@npm/ini](https://www.npmjs.com/package/ini) _(nodejs)_
@@ -171,6 +171,6 @@ The same as `JSON` below 👇
 - [@rickyah/ini-parser](https://github.com/rickyah/ini-parser) _(c#)_
 - [@Enichan/Ini](https://github.com/Enichan/Ini) _(c#)_
 
-## See also
+## Veja também
 
 - [INI file configuration](https://en.wikipedia.org/wiki/INI_file)_(wikipedia.org)_

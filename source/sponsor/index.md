@@ -1,13 +1,13 @@
 ---
-title: Sponsor
+title: Patrocínio
 date: 2021-12-11 14:37:13
 intro: |
-  We appreciate your help in order to pay for the hosting fees and ensuring I can spend enough time to create and optimize the cheatsheet webpage.
+  Agradecemos sua ajuda para custear a hospedagem e garantir que eu tenha tempo suficiente para criar e otimizar as páginas de cheat sheet.
 ---
 
-## Sponsor
+## Patrocínio
 
-### Become a sponsor
+### Torne-se um patrocinador
 
 <div class="flex justify-center w-full py-5">
     <a class="flex items-center w-3/5 px-4 py-3 rounded-xl bg-[#2f6eb4]" target="_blank" rel="noopener external nofollow noreferrer" href="https://paypal.me/fechinmr">
@@ -22,10 +22,10 @@ intro: |
     </a>
 </div>
 
-### Support with Crypto {.col-span-2}
+### Apoie com cripto {.col-span-2}
 
 <div class="row-span-3 dark:text-slate-300 p-4">
-    <p>I'm a crypto enthusiast, and these are just a few wallet addresses. If you'd like, I can send you an address to a token or asset of your choice. I'm always happy to receive and learn about a new one!</p>
+    <p>Sou entusiasta de cripto, e estes são apenas alguns endereços de carteira. Se quiser, posso enviar um endereço de um token ou ativo da sua escolha. Fico sempre feliz em receber e aprender sobre um novo!</p>
     <div class="flex items-center mt-3">
         <svg class="icon mr-2" style="width: 30px;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1029 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="6488"><path d="M1024.727025 511.98976c0 282.771945-229.217816 511.98976-511.98976 511.98976-282.766825 0-511.98976-229.217816-511.98976-511.98976 0-282.766825 229.222936-511.98976 511.98976-511.98976 282.771945 0 511.98976 229.222936 511.98976 511.98976" fill="#F7931A" p-id="6489"></path><path d="M637.048379 661.623888a55.842723 55.842723 0 0 1-27.145697 33.417571 55.858083 55.858083 0 0 1-42.827943 4.444071l-144.181437-42.940581 32.122238-107.840403 144.171196 42.945701h0.00512c29.726125 8.852303 46.713946 40.242395 37.856523 69.973641m48.628787-221.00038a55.929761 55.929761 0 0 1 4.438952 42.833063c-8.857423 29.721006-40.262875 46.698586-69.973641 37.861643h-0.00512l-144.176316-42.940582 32.111998-107.840403 144.181436 42.940581a55.888802 55.888802 0 0 1 33.422691 27.145698m64.54143-34.917702c-16.48095-30.458271-43.836563-52.678626-77.01862-62.560029l-19.076738-5.677966 26.705385-89.669887-68.519589-20.407912-26.705386 89.669887-58.49995-17.423012 26.710506-89.669886-16.414392-4.889503-66.49723-19.803763-25.742845 86.434111-81.037739-24.135197-22.870583 76.798464 81.037739 24.140317-83.254655 279.536169-81.037739-24.135197-22.870583 76.803584 81.03262 24.130077-21.723726 72.953421 16.409272 4.889502 66.49723 19.803764 22.691386-76.189196 58.638188 17.463971-22.691387 76.194316 68.243116 20.325993 22.691386-76.194316 19.209856 5.718926a130.255315 130.255315 0 0 0 37.185816 5.452691c21.247575 0 42.295474-5.278614 61.51045-15.677127 30.458271-16.48095 52.673507-43.831443 62.560028-77.023739 10.393392-34.912582 5.263255-70.777464-11.268894-100.298794 30.01284-15.661767 53.927881-42.935461 64.331513-77.863403 9.886522-33.192296 6.251395-68.243115-10.224435-98.696266" fill="#FFFFFF" p-id="6490"></path></svg>
         <span>3AJidvmhz8Soe4fnMU3HV8hZRm261PraAj</span>
@@ -35,22 +35,22 @@ intro: |
         <span>0x38415CEb0215b69cF67f6750cf69c2c9b609873a</span>
     </div>
     <div class="flex items-center mt-3">
-        <a class="text-blue-500" target="_blank" rel="noopener external nofollow noreferrer" href="https://twitter.com/FechinLi">Request more...</a>
+        <a class="text-blue-500" target="_blank" rel="noopener external nofollow noreferrer" href="https://twitter.com/FechinLi">Solicitar mais...</a>
     </div>
 </div>
 
-### Sponsors {.col-span-3}
+### Patrocinadores {.col-span-3}
 
-| Name             | Amount  | Message                                                                                                                        |
+| Nome             | Valor   | Mensagem                                                                                                                        |
 | ---------------- | ------- | ------------------------------------------------------------------------------------------------------------------------------ |
 | Benjamin Schröer | $ 9.34  | Thanks for cheatsheets.zip!                                                                                                    |
 | Fabian Barajas   | $ 10.00 |                                                                                                                                |
-| [Anonymous]      | $ 5.00  |                                                                                                                                |
-| [Anonymous]      | $ 20.00 | Your page is the best reference I've ever come across and I'm sharing it with everyone I know. Thanks so much for creating it! |
+| [Anônimo]        | $ 5.00  |                                                                                                                                |
+| [Anônimo]        | $ 20.00 | Your page is the best reference I've ever come across and I'm sharing it with everyone I know. Thanks so much for creating it! |
 | Tony Qu          | $ 20.00 | Thanks Man ! This looks nice. :-)                                                                                              |
-| [Anonymous]      | $ 25.00 | As a newcomer to Python, this looks incredibly useful. Thanks for your hard work!                                              |
+| [Anônimo]        | $ 25.00 | As a newcomer to Python, this looks incredibly useful. Thanks for your hard work!                                              |
 | VimNewbie        | $ 10.00 | Awesome and elegant... fantastic job!                                                                                          |
 | Dave Hanson      | $ 50.00 | Nice.. great work...                                                                                                           |
 | Alexander        | $ 40.00 | -                                                                                                                              |
 | Frpsi17          | $ 10.00 | I think I just found the greatest site for cheatsheets,Thanks                                                                  |
-| [Anonymous]      | $ 5.00  | Awesome! Thank you!                                                                                                            |
+| [Anônimo]        | $ 5.00  | Awesome! Thank you!                                                                                                            |

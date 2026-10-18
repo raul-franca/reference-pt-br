@@ -6,19 +6,19 @@ tags:
   - react
   - web
 categories:
-  - Programming
+  - Programação
 intro: |
-  A React cheat sheet with the most important concepts, functions, methods, and more. A complete quick reference for beginners.
+  Um cheat sheet de React com os conceitos, funções, métodos e muito mais importantes. Uma referência rápida completa para iniciantes.
 plugins:
   - copyCode
   - runCode
 ---
 
-## Getting Started
+## Primeiros passos
 
 ### JSX
 
-JSX is a syntax extension for JavaScript that lets you write HTML-like markup inside a JavaScript file.
+JSX é uma extensão de sintaxe para JavaScript que permite escrever marcação semelhante a HTML dentro de um arquivo JavaScript.
 
 ```javascript
 let element = <h1>Hello, world!</h1>;
@@ -26,7 +26,7 @@ let element = <h1>Hello, world!</h1>;
 let emptyHeading = <h1 />;
 ```
 
-### JSX Expressions
+### Expressões JSX
 
 ```javascript
 let name = 'Josh Perez';
@@ -38,14 +38,14 @@ function fullName(firstName, lastName) {
 let element = <h1>Hello, {fullName('Julie', 'Johnson')}</h1>;
 ```
 
-### JSX Attributes
+### Atributos JSX
 
 ```javascript
 const element = <img src={user.avatarUrl} />;
 const element = <button className="btn">Click me</button>;
 ```
 
-### JSX Functions
+### Funções JSX
 
 ```javascript
 name() {
@@ -59,7 +59,7 @@ return (
 )
 ```
 
-### JSX Conditional Rendering {.col-span-2}
+### Renderização condicional com JSX {.col-span-2}
 
 ```javascript
 import React from 'react';
@@ -82,11 +82,11 @@ function Weather(props) {
 export default () => <Weather city="New York" temperature={24} />;
 ```
 
-Note: A component must always return something.
+Nota: um componente sempre deve retornar algo.
 
-## Components
+## Componentes
 
-### Functional Component
+### Componente funcional
 
 ```javascript
 import React from 'react';
@@ -101,9 +101,9 @@ export default function UserProfile() {
 }
 ```
 
-Note: Every component needs one root element
+Nota: todo componente precisa de um elemento raiz
 
-### Embed an internal Component
+### Incorporar um componente interno
 
 ```javascript
 import React from 'react';
@@ -119,9 +119,9 @@ export default function UserProfile() {
 }
 ```
 
-Note: Assuming UserAvatar is declared in UserAvatar.js
+Nota: assumindo que UserAvatar está declarado em UserAvatar.js
 
-### Embed an external Component
+### Incorporar um componente externo
 
 ```javascript
 import React from 'react';
@@ -136,9 +136,9 @@ export default function UserProfile() {
 }
 ```
 
-Note: External components are found on npmjs.com and need to be imported first.
+Nota: componentes externos são encontrados em npmjs.com e precisam ser importados primeiro.
 
-### Advanced Functional Components
+### Componentes funcionais avançados
 
 ```javascript
 import React from 'react';
@@ -153,9 +153,9 @@ function Hello(props) {
 export default () => <Hello firstName="Matt" lastName="Delac" />;
 ```
 
-## Properties {.cols-2}
+## Propriedades {.cols-2}
 
-### Passing Properties to a Component
+### Passar propriedades para um componente
 
 <!-- prettier-ignore -->
 ```javascript
@@ -167,7 +167,7 @@ export default () => <Hello firstName="Matt" lastName="Delac" />;
 />
 ```
 
-### Assigning the Properties from a Component
+### Acessar as propriedades em um componente
 
 ```javascript
 import React from 'react';
@@ -181,9 +181,9 @@ export default function Student(props) {
 }
 ```
 
-## States {.cols-1}
+## Estados {.cols-1}
 
-### React State
+### Estado no React
 
 ```javascript
 import React, { useState } from 'react';
@@ -204,9 +204,9 @@ export default function Hello(props) {
 }
 ```
 
-## Events {.cols-1}
+## Eventos {.cols-1}
 
-### Event Listener
+### Listener de evento
 
 ```javascript
 import React from 'react';
@@ -225,11 +225,11 @@ export default function Hello() {
 }
 ```
 
-Note: The most common event listeners are onClick for links/buttons and onSubmit for forms.
+Nota: os listeners de evento mais comuns são onClick para links/botões e onSubmit para formulários.
 
 ## Loops {.cols-2}
 
-### Looping through an Array
+### Percorrer um array
 
 ```javascript
 let elements = ['one', 'two', 'three'];
@@ -243,9 +243,9 @@ return (
 );
 ```
 
-Note: Each list item inside a map loop needs a key attribute with a unique value which is generally the index.
+Nota: cada item de lista dentro de um loop map precisa de um atributo key com um valor único, que geralmente é o index.
 
-### Looping through an Array of Objects
+### Percorrer um array de objetos
 
 ```javascript
 let elements = [
@@ -275,11 +275,11 @@ return (
 );
 ```
 
-Note: Each list item inside a map loop needs a key attribute with a unique value which is generally the index.
+Nota: cada item de lista dentro de um loop map precisa de um atributo key com um valor único, que geralmente é o index.
 
-## Forms {.cols-1}
+## Formulários {.cols-1}
 
-### React Forms
+### Formulários no React
 
 ```javascript
 import React, { useState } from 'react';
@@ -313,7 +313,7 @@ export default function LoginForm() {
 
 ## CSS {.cols-1}
 
-### CSS in a React Component
+### CSS em um componente React
 
 ```javascript
 import React from 'react';
@@ -324,11 +324,11 @@ export default function Student() {
 }
 ```
 
-Note: You'll then have to crate a css file called Student.css
+Nota: depois você precisará criar um arquivo CSS chamado Student.css
 
 ## AJAX {.cols-1}
 
-### AJAX Request with Axios
+### Requisição AJAX com Axios
 
 ```javascript
 import React from 'react';
@@ -349,11 +349,11 @@ export default function Weather(props) {
 }
 ```
 
-Note: Make sure to import Axios first to your project.
+Nota: certifique-se de importar o Axios primeiro no seu projeto.
 
 ## Hooks {.cols-2}
 
-### useState Hook
+### Hook useState
 
 ```javascript
 import React, { useState } from 'react';
@@ -372,10 +372,10 @@ function Counter() {
 export default Counter;
 ```
 
-Note: The useState Hook is a built-in React Hook that allows functional components to manage local state. It provides a
-way to declare state variables and update them within a functional component. Example code illustrating how to use it
+Nota: o Hook useState é um Hook integrado do React que permite que componentes funcionais gerenciem estado local. Ele oferece
+uma forma de declarar variáveis de estado e atualizá-las dentro de um componente funcional. Exemplo de código ilustrando como usá-lo
 
-### Multiple State Variable Declaration
+### Declaração de múltiplas variáveis de estado
 
 ```javascript
 import React, { useState } from 'react';
@@ -424,10 +424,10 @@ function Counter() {
 export default Counter;
 ```
 
-Note: You can declare multiple state variables using the useState Hook by calling it multiple times in a functional
-component. Each call to useState manages a separate piece of state.
+Nota: você pode declarar múltiplas variáveis de estado usando o Hook useState chamando-o várias vezes em um componente
+funcional. Cada chamada a useState gerencia uma parte separada do estado.
 
-### Input State Management
+### Gerenciamento de estado de inputs
 
 ```javascript
 import { useState } from 'react';
@@ -487,7 +487,7 @@ function FormExample() {
 export default FormExample;
 ```
 
-### useEffect Hook
+### Hook useEffect
 
 ```javascript
 import React, { useState, useEffect } from 'react';
@@ -509,10 +509,10 @@ function Timer() {
 export default Timer;
 ```
 
-Note: The useEffect Hook in React is used for performing side effects in functional components. It allows you to execute
-code based on component lifecycle events like mounting, updating, and unmounting.
+Nota: o Hook useEffect no React é usado para realizar efeitos colaterais em componentes funcionais. Ele permite executar
+código com base em eventos do ciclo de vida do componente, como montagem, atualização e desmontagem.
 
-### Fetch API using useEffect
+### Usar a Fetch API com useEffect
 
 ```javascript
 import React, { useState, useEffect } from 'react';
@@ -547,9 +547,9 @@ function UserList() {
 export default UserList;
 ```
 
-Note: Make sure to import Axios first to your project.
+Nota: certifique-se de importar o Axios primeiro no seu projeto.
 
-### Custom Hook creation useLocalStorage
+### Criação de Hook customizado useLocalStorage
 
 ```javascript
 import { useState, useEffect } from 'react';
@@ -570,10 +570,10 @@ function useLocalStorage(key, initialValue) {
 export default useLocalStorage;
 ```
 
-Note: Custom Hooks are reusable functions in React that contain logic shared across multiple components. They allow you
-to extract stateful logic from components into standalone functions.
+Nota: Hooks customizados são funções reutilizáveis no React que contêm lógica compartilhada entre vários componentes. Eles permitem
+extrair lógica com estado de componentes para funções independentes.
 
-### Creating Refs in Class Components
+### Criar refs em componentes de classe
 
 ```javascript
 import React, { Component } from 'react';
@@ -596,7 +596,7 @@ class MyComponent extends Component {
 export default MyComponent;
 ```
 
-### Using Refs in Functional Components
+### Usar refs em componentes funcionais
 
 ```javascript
 import React, { useRef, useEffect } from 'react';
@@ -614,7 +614,7 @@ function MyComponent() {
 export default MyComponent;
 ```
 
-### Callback Refs
+### Refs de callback
 
 ```javascript
 import React, { Component } from 'react';
@@ -640,7 +640,7 @@ class MyComponent extends Component {
 export default MyComponent;
 ```
 
-### Forwarding Refs
+### Encaminhar refs
 
 ```javascript
 Copy code
@@ -657,7 +657,7 @@ const ref = React.createRef();
 <FancyButton ref={ref}>Click me!</FancyButton>;
 ```
 
-### Accessing DOM Elements with Refs
+### Acessar elementos do DOM com refs
 
 ```javascript
 import React, { useRef, useEffect } from 'react';
@@ -676,10 +676,10 @@ function FocusInput() {
 export default FocusInput;
 ```
 
-Note: Refs are often used to access and interact with DOM elements directly. Here's an example where we focus an input
-element using a ref.
+Nota: refs costumam ser usadas para acessar e interagir diretamente com elementos do DOM. Aqui está um exemplo em que focamos um
+elemento input usando uma ref.
 
-### Managing Focus with Refs
+### Gerenciar foco com refs
 
 ```javascript
 import React, { useRef } from 'react';
@@ -705,4 +705,4 @@ function Form() {
 export default Form;
 ```
 
-Note: You can also manage focus between multiple elements using refs.
+Nota: você também pode gerenciar o foco entre vários elementos usando refs.

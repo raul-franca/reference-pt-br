@@ -7,196 +7,196 @@ tags:
   -
   - mac
 categories:
-  - Keyboard Shortcuts
+  - Atalhos de Teclado
 intro: |
-  A visual cheat-sheet for the 105 keyboard shortcuts found in Superhuman. This application is MacOS-only.
+  Uma cheat sheet visual para os 105 atalhos de teclado do Superhuman. Este aplicativo é exclusivo para MacOS.
 ---
 
-## Keyboard Shortcuts
+## Atalhos de teclado
 
-### Actions
+### Ações
 
-| Shortcut      | Action              |
+| Atalho        | Ação                |
 | ------------- | ------------------- |
-| `Cmd` `K`     | Superhuman command  |
-| `/`           | Search              |
-| `Z`           | Undo                |
-| `?`           | Shortcuts           |
-| `X`           | Select conversation |
-| `Shift` `J/K` | Add to selection    |
+| `Cmd` `K`     | Comando do Superhuman |
+| `/`           | Pesquisar           |
+| `Z`           | Desfazer            |
+| `?`           | Atalhos             |
+| `X`           | Seleciona a conversa |
+| `Shift` `J/K` | Adiciona à seleção  |
 
 {.shortcuts}
 
-### Filters
+### Filtros
 
-| Shortcut    | Action    |
+| Atalho      | Ação      |
 | ----------- | --------- |
-| `Shift` `U` | Unread    |
-| `Shift` `S` | Starred   |
-| `Shift` `I` | Important |
-| `Shift` `R` | No reply  |
+| `Shift` `U` | Não lidas |
+| `Shift` `S` | Com estrela |
+| `Shift` `I` | Importantes |
+| `Shift` `R` | Sem resposta |
 
 {.shortcuts}
 
-### Messages
+### Mensagens
 
-| Shortcut    | Action                        |
+| Atalho      | Ação                          |
 | ----------- | ----------------------------- |
-| `C`         | Compose                       |
-| `Enter`     | Reply all                     |
-| `R`         | Reply                         |
-| `F`         | Forward                       |
-| `Cmd` `O`   | Open links and attachments    |
-| `Tab`       | Cycle through links and dates |
-| `O`         | Expand message                |
-| `Shift` `O` | Expand all messages           |
+| `C`         | Escrever                      |
+| `Enter`     | Responder a todos             |
+| `R`         | Responder                     |
+| `F`         | Encaminhar                    |
+| `Cmd` `O`   | Abre links e anexos           |
+| `Tab`       | Alterna entre links e datas   |
+| `O`         | Expande a mensagem            |
+| `Shift` `O` | Expande todas as mensagens    |
 
 {.shortcuts}
 
-### Conversations
+### Conversas
 
-| Shortcut    | Action                 |
-| ----------- | ---------------------- |
-| `E`         | Mark done (archive)    |
-| `Shift` `E` | Mark as not done       |
-| `H`         | Remind me (snooze)     |
-| `S`         | Star                   |
-| `U`         | Mark as read or unread |
-| `Shift` `3` | Trash                  |
-| `Shift` `1` | Mark as spam           |
-| `Shift` `M` | Mute                   |
-| `Cmd` `U`   | Unsubscribe            |
-
-{.shortcuts}
-
-### Folders (Press keys separately)
-
-| Shortcut | Action                   |
-| -------- | ------------------------ |
-| `G` `I`  | Go to inbox or important |
-| `G` `O`  | Go to other              |
-| `G` `S`  | Go to starred            |
-| `G` `D`  | Go to drafts             |
-| `G` `T`  | Go to sent mail          |
-| `G` `E`  | Go to done               |
-| `G` `H`  | Go to reminders          |
-| `G` `M`  | Go to muted              |
-| `G` `;`  | Go to snippets           |
-| `G` `!`  | Go to spam               |
-| `G` `#`  | Go to trash              |
-| `G` `A`  | Go to all mail           |
-| `G` `L`  | Go to label              |
+| Atalho      | Ação                    |
+| ----------- | ----------------------- |
+| `E`         | Marca como concluída (arquiva) |
+| `Shift` `E` | Marca como não concluída |
+| `H`         | Lembrar depois (snooze) |
+| `S`         | Adiciona estrela        |
+| `U`         | Marca como lida ou não lida |
+| `Shift` `3` | Lixeira                 |
+| `Shift` `1` | Marca como spam         |
+| `Shift` `M` | Silencia                |
+| `Cmd` `U`   | Cancela a inscrição     |
 
 {.shortcuts}
 
-### Format
+### Pastas (pressione as teclas separadamente)
 
-| Shortcut          | Action          |
+| Atalho   | Ação                            |
+| -------- | ------------------------------- |
+| `G` `I`  | Vai para a caixa de entrada ou importantes |
+| `G` `O`  | Vai para outros                 |
+| `G` `S`  | Vai para com estrela            |
+| `G` `D`  | Vai para rascunhos              |
+| `G` `T`  | Vai para enviados               |
+| `G` `E`  | Vai para concluídos             |
+| `G` `H`  | Vai para lembretes              |
+| `G` `M`  | Vai para silenciados            |
+| `G` `;`  | Vai para snippets               |
+| `G` `!`  | Vai para spam                   |
+| `G` `#`  | Vai para a lixeira              |
+| `G` `A`  | Vai para todos os e-mails       |
+| `G` `L`  | Vai para a etiqueta             |
+
+{.shortcuts}
+
+### Formatação
+
+| Atalho            | Ação            |
 | ----------------- | --------------- |
-| `Cmd` `B`         | Bold            |
-| `Cmd` `I`         | Italics         |
-| `Cmd` `U`         | Underline       |
-| `Cmd` `K`         | Hyperlink       |
-| `Cmd` `O`         | Color           |
-| `Cmd` `Shift` `X` | Strikethrough   |
-| `Cmd` `Shift` `7` | Numbers         |
-| `Cmd` `Shift` `8` | Bullets         |
-| `Cmd` `Shift` `9` | Quote           |
-| `Tab`             | Indent list     |
-| `Shift` `Tab`     | Outdent list    |
-| `Cmd` `]`         | Increase indent |
-| `Cmd` `[`         | Decrease indent |
+| `Cmd` `B`         | Negrito         |
+| `Cmd` `I`         | Itálico         |
+| `Cmd` `U`         | Sublinhado      |
+| `Cmd` `K`         | Hiperlink       |
+| `Cmd` `O`         | Cor             |
+| `Cmd` `Shift` `X` | Tachado         |
+| `Cmd` `Shift` `7` | Números         |
+| `Cmd` `Shift` `8` | Marcadores      |
+| `Cmd` `Shift` `9` | Citação         |
+| `Tab`             | Recua a lista   |
+| `Shift` `Tab`     | Remove o recuo da lista |
+| `Cmd` `]`         | Aumenta o recuo |
+| `Cmd` `[`         | Diminui o recuo |
 
 {.shortcuts}
 
-### Labels
+### Etiquetas
 
-| Shortcut    | Action                 |
-| ----------- | ---------------------- |
-| `L`         | Add or remove a label  |
-| `Y`         | Remove label           |
-| `[`         | Remove label, next     |
-| `]`         | Remove label, previous |
-| `Shift` `Y` | Remove all labels      |
-| `V`         | Move                   |
-
-{.shortcuts}
-
-### Calendar
-
-| Shortcut | Action          |
-| -------- | --------------- |
-| `0`      | Toggle calendar |
-| `-`      | Previous day    |
-| `=`      | Next day        |
+| Atalho      | Ação                    |
+| ----------- | ----------------------- |
+| `L`         | Adiciona ou remove uma etiqueta |
+| `Y`         | Remove a etiqueta       |
+| `[`         | Remove a etiqueta, próxima |
+| `]`         | Remove a etiqueta, anterior |
+| `Shift` `Y` | Remove todas as etiquetas |
+| `V`         | Mover                   |
 
 {.shortcuts}
 
-### Navigation {.row-span-2}
+### Calendário
 
-| Shortcut             | Action                        |
+| Atalho | Ação            |
+| ------ | --------------- |
+| `0`    | Alterna o calendário |
+| `-`    | Dia anterior    |
+| `=`    | Próximo dia     |
+
+{.shortcuts}
+
+### Navegação {.row-span-2}
+
+| Atalho               | Ação                          |
 | -------------------- | ----------------------------- |
-| `Up/Down/Left/Right` | Superhuman focus              |
-| `Tab`                | Next split                    |
-| `Shift` `Tab`        | Previous split                |
-| `Enter`              | Open conversation             |
-| `J/K`                | Next or previous conversation |
-| `N/P`                | Next or previous message      |
-| `Space`              | Scroll down                   |
-| `Shift` `Space`      | Scroll up                     |
-| `Cmd` `Up/Down`      | Jump to the top or bottom     |
-| `Cmd` `N`            | New window                    |
-| `Cmd` `T`            | New tab                       |
-| `Cmd` `Shift` `]`    | Next tab                      |
-| `Cmd` `Shift` `[`    | Previous tab                  |
-| `Cmd` `1/2/3`        | Switch tabs                   |
-| `Cmd` `W`            | Close tab                     |
-| `Ctrl` `1/2/3`       | Switch accounts               |
-| `Cmd` `=`            | Increase font size            |
-| `Cmd` `-`            | Decrease font size            |
-| `Cmd` `0`            | Reset font size               |
-| `Ctrl` `/`           | Copy page link                |
-| `Esc`                | Back                          |
+| `Up/Down/Left/Right` | Foco do Superhuman            |
+| `Tab`                | Próxima divisão               |
+| `Shift` `Tab`        | Divisão anterior              |
+| `Enter`              | Abre a conversa               |
+| `J/K`                | Próxima ou anterior conversa  |
+| `N/P`                | Próxima ou anterior mensagem  |
+| `Space`              | Rola para baixo               |
+| `Shift` `Space`      | Rola para cima                |
+| `Cmd` `Up/Down`      | Vai para o topo ou para o fim |
+| `Cmd` `N`            | Nova janela                   |
+| `Cmd` `T`            | Nova aba                      |
+| `Cmd` `Shift` `]`    | Próxima aba                   |
+| `Cmd` `Shift` `[`    | Aba anterior                  |
+| `Cmd` `1/2/3`        | Alterna entre abas            |
+| `Cmd` `W`            | Fecha a aba                   |
+| `Ctrl` `1/2/3`       | Alterna entre contas          |
+| `Cmd` `=`            | Aumenta o tamanho da fonte    |
+| `Cmd` `-`            | Diminui o tamanho da fonte    |
+| `Cmd` `0`            | Redefine o tamanho da fonte   |
+| `Ctrl` `/`           | Copia o link da página        |
+| `Esc`                | Voltar                        |
 
 {.shortcuts}
 
-### Pop Out Compose
+### Compor em janela separada
 
-| Shortcut          | Action                     |
+| Atalho            | Ação                       |
 | ----------------- | -------------------------- |
-| `Cmd` `Shift` `P` | Pop draft in or out        |
-| `Shift` `R`       | Pop out reply              |
-| `Shift` `Enter`   | Pop out reply-all          |
-| `Shift` `C`       | Pop out new message        |
-| `Shift` `F`       | Pop out forward            |
-| `Cmd` `/`         | Pop out a draft and search |
-| `Cmd` `D`         | Switch to or from a draft  |
+| `Cmd` `Shift` `P` | Traz ou tira o rascunho da janela |
+| `Shift` `R`       | Abre a resposta em janela separada |
+| `Shift` `Enter`   | Abre a resposta a todos em janela separada |
+| `Shift` `C`       | Abre uma nova mensagem em janela separada |
+| `Shift` `F`       | Abre o encaminhamento em janela separada |
+| `Cmd` `/`         | Abre um rascunho em janela separada e pesquisa |
+| `Cmd` `D`         | Alterna para ou a partir de um rascunho |
 
 {.shortcuts}
 
-### Compose
+### Compor
 
-| Shortcut              | Action               |
+| Atalho                | Ação                 |
 | --------------------- | -------------------- |
-| `Cmd` `Shift` `O`     | To                   |
+| `Cmd` `Shift` `O`     | Para                 |
 | `Cmd` `Shift` `C`     | CC                   |
 | `Cmd` `Shift` `B`     | BCC                  |
-| `Cmd` `Shift` `F`     | From                 |
-| `Cmd` `Shift` `S`     | Edit subject         |
-| `Cmd` `Shift` `M`     | Edit message         |
-| `Cmd` `Shift` `A`     | Attach               |
-| `Cmd` `Shift` `,`     | Discard draft        |
-| `Cmd` `Shift` `I`     | Move contacts to BCC |
-| `Cmd` `Shift` `H`     | Remind me            |
-| `Cmd` `Shift` `L`     | Send later           |
-| `Cmd` `;`             | Use snippet          |
-| `Cmd` `Enter`         | Send                 |
-| `Cmd` `Shift` `Enter` | Send and mark done   |
-| `Cmd` `Shift` `Z`     | Instant send         |
+| `Cmd` `Shift` `F`     | De                   |
+| `Cmd` `Shift` `S`     | Edita o assunto      |
+| `Cmd` `Shift` `M`     | Edita a mensagem     |
+| `Cmd` `Shift` `A`     | Anexar               |
+| `Cmd` `Shift` `,`     | Descarta o rascunho  |
+| `Cmd` `Shift` `I`     | Move os contatos para BCC |
+| `Cmd` `Shift` `H`     | Lembrar depois       |
+| `Cmd` `Shift` `L`     | Enviar mais tarde    |
+| `Cmd` `;`             | Usa snippet          |
+| `Cmd` `Enter`         | Enviar               |
+| `Cmd` `Shift` `Enter` | Envia e marca como concluída |
+| `Cmd` `Shift` `Z`     | Envio instantâneo    |
 
 {.shortcuts}
 
-## Also see
+## Veja também
 
-- [Keyboard shortcuts for Superhuman](https://download.superhuman.com/Superhuman%20Keyboard%20Shortcuts.pdf)
+- [Atalhos de teclado do Superhuman](https://download.superhuman.com/Superhuman%20Keyboard%20Shortcuts.pdf)
   _(download.superhuman.com)_

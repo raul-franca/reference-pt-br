@@ -11,11 +11,11 @@ hexo.extend.helper.register('page_title', function () {
     title = `${this.page.title} - ${this.config.title}`;
   } else if (this.is_post()) {
     title = this.page.title;
-    const hasCommand = this.page.categories.findOne({ name: 'Linux Command' });
+    const hasCommand = this.page.categories.findOne({ name: 'Comandos Linux' });
     if (hasCommand) {
-      title += ' Command';
+      title += ' - Comando';
     }
-    title = `${title} Cheat Sheet & Quick Reference`;
+    title = `${title} - Cheat sheet e referência rápida`;
   } else if (this.page._isNotePagination) {
     title = `Page ${this.page.current} of Notes - ${this.config.title}`;
   }
@@ -57,13 +57,13 @@ hexo.extend.helper.register('page_image', function () {
   const version = (Math.random() + 1).toString(36).substring(7);
   let imageURL;
 
-  // Check file exists
+  // Verifica se o arquivo existe
   const postPath = path.resolve('./', 'source/assets/image/', postPng);
   if (fs.existsSync(postPath)) {
-    // Generate image url
+    // Gera a URL da imagem
     imageURL = `${this.config.url}/assets/image/${postPng}?v=${version}`;
   } else {
-    // console.warn(`Warning: ${postPath} not Found!`);
+    // console.warn(`Aviso: ${postPath} não encontrado!`);
     imageURL = `${this.config.url}/assets/image/${homePng}?v=${version}`;
   }
   return imageURL;

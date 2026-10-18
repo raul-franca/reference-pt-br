@@ -11,37 +11,37 @@ tags:
   - cheats
   - game
 categories:
-  - Game
-intro: A comprehensive reference for Minecraft Bedrock Edition (1.20.x) commands.
+  - Jogos
+intro: Uma referência completa para os comandos do Minecraft Bedrock Edition (1.20.x).
 ---
 
-## Target Selectors
+## Seletores de alvo
 
-| Selector | Description |
+| Seletor | Descrição |
 | :--- | :--- |
-| `@p` | Nearest player |
-| `@r` | Random player |
-| `@a` | All players |
-| `@e` | All entities (mobs, items, etc.) |
-| `@s` | The entity executing the command (Self) |
-| `@c` | The player's agent (Education Edition/Code Builder) |
+| `@p` | Jogador mais próximo |
+| `@r` | Jogador aleatório |
+| `@a` | Todos os jogadores |
+| `@e` | Todas as entidades (mobs, itens etc.) |
+| `@s` | A entidade que executa o comando (ela mesma) |
+| `@c` | O agent do jogador (Education Edition/Code Builder) |
 
-### Selector Arguments
+### Argumentos do seletor
 
-| Argument | Example | Description |
+| Argumento | Exemplo | Descrição |
 | :--- | :--- | :--- |
-| `type` | `@e[type=creeper]` | Selects entities of a specific type |
-| `r` / `rm` | `@a[r=10]` | Selects within a max radius (`r`) or min radius (`rm`) |
-| `c` | `@e[c=1]` | Limits the count of targets (nearest first) |
-| `m` | `@a[m=creative]` | Selects players by gamemode |
-| `l` / `lm` | `@a[lm=30]` | Selects by level max (`l`) or min (`lm`) |
-| `name` | `@e[name="Bob"]` | Selects entities with a specific name tag |
+| `type` | `@e[type=creeper]` | Seleciona entidades de um tipo específico |
+| `r` / `rm` | `@a[r=10]` | Seleciona dentro de um raio máximo (`r`) ou mínimo (`rm`) |
+| `c` | `@e[c=1]` | Limita a quantidade de alvos (do mais próximo para o mais distante) |
+| `m` | `@a[m=creative]` | Seleciona jogadores por modo de jogo |
+| `l` / `lm` | `@a[lm=30]` | Seleciona por nível máximo (`l`) ou mínimo (`lm`) |
+| `name` | `@e[name="Bob"]` | Seleciona entidades com um name tag específico |
 
-## Core Commands
+## Comandos principais
 
 ### Teleport (/tp)
 
-Teleport entities to locations or other entities.
+Teleporta entidades para locais ou outras entidades.
 
 ```mcfunction
 # Teleport yourself to coordinates
@@ -59,7 +59,7 @@ Teleport entities to locations or other entities.
 
 ### Game Mode (/gamemode)
 
-Changes the player's game mode.
+Altera o modo de jogo do jogador.
 
 ```mcfunction
 # Survival Mode (0)
@@ -83,7 +83,7 @@ Changes the player's game mode.
 
 ### Give Items (/give)
 
-Gives items to players.
+Dá itens aos jogadores.
 
 ```mcfunction
 # Give a diamond sword
@@ -102,7 +102,7 @@ Gives items to players.
 
 ### Experience (/xp)
 
-Adds or levels up experience.
+Adiciona experiência ou sobe de nível.
 
 ```mcfunction
 # Add 5 levels
@@ -112,11 +112,11 @@ Adds or levels up experience.
 /xp 100 @s
 ```
 
-## World Management
+## Gerenciamento do mundo
 
 ### Time (/time)
 
-Sets the world time.
+Define a hora do mundo.
 
 ```mcfunction
 # Set to day
@@ -131,7 +131,7 @@ Sets the world time.
 
 ### Weather (/weather)
 
-Changes the weather.
+Altera o clima.
 
 ```mcfunction
 # Clear weather
@@ -146,17 +146,17 @@ Changes the weather.
 
 ### Gamerules (/gamerule)
 
-Sets global world rules.
+Define regras globais do mundo.
 
-| Rule | Description |
+| Regra | Descrição |
 | :--- | :--- |
-| `keepinventory` | Keep items on death (true/false) |
-| `dodaylightcycle` | Toggle sun movement (true/false) |
-| `domobspawning` | Toggle mob spawning (true/false) |
-| `mobgriefing` | Toggle mob destruction (true/false) |
-| `doweathercycle` | Toggle weather changes (true/false) |
-| `commandblockoutput` | Toggle command block chat (true/false) |
-| `showcoordinates` | Show coordinates on screen (true/false) |
+| `keepinventory` | Mantém os itens ao morrer (true/false) |
+| `dodaylightcycle` | Ativa/desativa o movimento do sol (true/false) |
+| `domobspawning` | Ativa/desativa o spawn de mobs (true/false) |
+| `mobgriefing` | Ativa/desativa a destruição por mobs (true/false) |
+| `doweathercycle` | Ativa/desativa as mudanças de clima (true/false) |
+| `commandblockoutput` | Ativa/desativa o chat do command block (true/false) |
+| `showcoordinates` | Mostra as coordenadas na tela (true/false) |
 
 ```mcfunction
 # Enable keep inventory
@@ -166,11 +166,11 @@ Sets global world rules.
 /gamerule showcoordinates true
 ```
 
-## Entity & Block Manipulation
+## Manipulação de entidades e blocos
 
 ### Effect (/effect)
 
-Manages status effects.
+Gerencia efeitos de status.
 
 ```mcfunction
 # Give Speed II for 30 seconds
@@ -185,7 +185,7 @@ Manages status effects.
 
 ### Fill (/fill)
 
-Fills a volume with blocks.
+Preenche um volume com blocos.
 
 ```mcfunction
 # Fill region with dirt
@@ -200,7 +200,7 @@ Fills a volume with blocks.
 
 ### Setblock (/setblock)
 
-Changes a specific block.
+Altera um bloco específico.
 
 ```mcfunction
 # Place a redstone block
@@ -212,7 +212,7 @@ Changes a specific block.
 
 ### Enchant (/enchant)
 
-Enchants the held item.
+Encanta o item na mão.
 
 ```mcfunction
 # Add Sharpness V
@@ -222,11 +222,11 @@ Enchants the held item.
 /enchant @s unbreaking 3
 ```
 
-## Utility Commands
+## Comandos utilitários
 
 ### Locate (/locate)
 
-Finds the nearest biome or structure.
+Encontra o bioma ou a estrutura mais próxima.
 
 ```mcfunction
 # Find nearest village
@@ -238,7 +238,7 @@ Finds the nearest biome or structure.
 
 ### Kill (/kill)
 
-Removes entities.
+Remove entidades.
 
 ```mcfunction
 # Kill yourself
@@ -250,7 +250,7 @@ Removes entities.
 
 ### Ticking Area (/tickingarea)
 
-Keeps chunks loaded even when no players are nearby.
+Mantém chunks carregados mesmo quando não há jogadores por perto.
 
 ```mcfunction
 # Add a ticking area (radius 4 chunks)

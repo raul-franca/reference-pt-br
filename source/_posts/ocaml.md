@@ -6,14 +6,14 @@ tags:
   - scientific
   - functional
 categories:
-  - Programming
+  - Programação
 intro: |
-  The [OCaml](https://www.ocaml.org/) cheat sheet is a one-page reference sheet for the OCaml programming language.
+  O cheat sheet do [OCaml](https://www.ocaml.org/) é uma folha de referência de uma página para a linguagem de programação OCaml.
 plugins:
   - copyCode
 ---
 
-## Getting Started
+## Primeiros passos
 
 ### hello.ml
 
@@ -23,14 +23,14 @@ let () =
   Printf.printf "%s\n" message
 ```
 
-#### Compile and Run
+#### Compile e execute
 
 ```bash
 $ ocamlc -o hello.byte hello.ml
 $ ./hello.byte
 ```
 
-#### Build and Run with Dune
+#### Compile e execute com Dune
 
 ```bash
 $ dune build hello.exe
@@ -40,23 +40,23 @@ $ _build/default/hello.exe
 $ dune exec ./hello.exe
 ```
 
-See the [dune](https://dune.build/) documentation for more info.
+Consulte a documentação do [dune](https://dune.build/) para mais informações.
 
 ### Imports
 
-Install modules with opam
+Instale módulos com opam
 
 ```bash
 $ opam install hex
 ```
 
-#### Global Open
+#### Abertura global
 
 ```ml
 open Hex
 ```
 
-#### Local Open
+#### Abertura local
 
 ```ml
 Hex.of_string "hex string"
@@ -65,9 +65,9 @@ let open Hex in
   of_string "to hex"
 ```
 
-### Comments
+### Comentários
 
-#### Line & Block Comments
+#### Comentários de linha e de bloco
 
 ```ml
 (* A single line comment *)
@@ -81,7 +81,7 @@ let open Hex in
    End of outer comment *)
 ```
 
-#### Documentation Comments
+#### Comentários de documentação
 
 ```ml
 val sum : int -> int -> int
@@ -89,20 +89,20 @@ val sum : int -> int -> int
  of two integers [x] and [y] *)
 ```
 
-## Data Types
+## Tipos de dados
 
-### Predefined Types
+### Tipos predefinidos
 
 #### Unit
 
-Note: `#` Indicates execution at the toplevel followed by the output
+Nota: `#` indica execução no toplevel seguida da saída
 
 ```ml
 # ();; (* equivalent to void in C *)
 - : unit = ()
 ```
 
-#### Basic Types
+#### Tipos básicos
 
 ```ml
 # 5 ;; (* integer *)
@@ -133,7 +133,7 @@ Note: `#` Indicates execution at the toplevel followed by the output
 - : int ref = {contents = 0}
 ```
 
-#### Options & Results
+#### Options e Results
 
 ```ml
 # Some 42;;
@@ -146,7 +146,7 @@ Note: `#` Indicates execution at the toplevel followed by the output
 - : ('a, int) result = Error 404
 ```
 
-### Arrays & Lists
+### Arrays e listas
 
 #### Arrays
 
@@ -158,7 +158,7 @@ Note: `#` Indicates execution at the toplevel followed by the output
 - char = 's'
 ```
 
-Arrays are mutable
+Arrays são mutáveis
 
 ```ml
 let scores = [|97; 85; 99|];;
@@ -171,7 +171,7 @@ let scores = [|97; 85; 99|];;
 - : int array = [|97; 85; 89|]
 ```
 
-#### Lists
+#### Listas
 
 ```ml
 # [1; 2; 3];;
@@ -181,7 +181,7 @@ let scores = [|97; 85; 99|];;
 - : string list = ["a"; "str"; "lst"]
 ```
 
-Lists are immutable
+Listas são imutáveis
 
 ```ml
 # let lst = [1; 2; 3];;
@@ -194,11 +194,11 @@ Lists are immutable
 - : int list = [0; 1; 2; 3; 4; 5; 6]
 ```
 
-### User-Defined Types
+### Tipos definidos pelo usuário
 
 #### Records
 
-Bundle related data
+Agrupa dados relacionados
 
 ```ml
 type person = {
@@ -212,7 +212,7 @@ val zeno : person = {name = "Zeno"; age = 30}
 
 #### Variants
 
-Several different, but related types
+Vários tipos diferentes, mas relacionados
 
 ```ml
 type shape =
@@ -225,7 +225,7 @@ type shape =
 
 #### Aliases
 
-Provide meaningful name to complex or commonly used types
+Dê um nome significativo a tipos complexos ou usados com frequência
 
 ```ml
 type point = float * float
@@ -234,11 +234,11 @@ type point = float * float
 val origin : point = (0., 0.)
 ```
 
-## Functions
+## Funções
 
-### Functions
+### Funções
 
-#### Single parameter
+#### Parâmetro único
 
 ```ml
 let add_one x =
@@ -249,7 +249,7 @@ let add_one x =
 - : int = 2
 ```
 
-#### Multiple parameters
+#### Vários parâmetros
 
 ```ml
 let sum x y =
@@ -260,7 +260,7 @@ let sum x y =
 - : int = 3
 ```
 
-#### Tuple parameter
+#### Parâmetro tupla
 
 ```ml
 let str_concat (x, y) =
@@ -270,22 +270,22 @@ let str_concat (x, y) =
 - : string = "Hello Ocaml"
 ```
 
-### Recursive Functions
+### Funções recursivas
 
-#### rec keyword
+#### Palavra-chave rec
 
-All recusive functions use the rec keyword
+Todas as funções recursivas usam a palavra-chave rec
 
 ```ml
 let rec factorial n =
   if n < 1 then 1 else n * factorial (n - 1)
 ```
 
-The above can cause stackoverflow.
+O exemplo acima pode causar stack overflow.
 
-#### Tail Recursion
+#### Recursão de cauda
 
-Makes use of a helper function and the acc argument.
+Usa uma função auxiliar e o argumento acc.
 
 ```ml
 let rec factorial_helper n acc =
@@ -293,17 +293,17 @@ let rec factorial_helper n acc =
   else factorial_helper (n - 1) (n * acc)
 ```
 
-Notice the last call is the recursive function.
+Observe que a última chamada é a função recursiva.
 
 ```ml
 let factorial n = factorial_helper n 1
 ```
 
-### Chaining
+### Encadeamento
 
-#### Application Operator
+#### Operador de aplicação
 
-Read from right to left, the first operation is `sum 2 3`
+Lido da direita para a esquerda, a primeira operação é `sum 2 3`
 
 ```ml
 (* find log(2 + 3) *)
@@ -322,20 +322,20 @@ Read from right to left, the first operation is `sum 2 3`
 - : float = 4.787...
 ```
 
-`|>` takes the output of the function and passes it as input to the next function in the pipeline
+`|>` pega a saída da função e a passa como entrada para a próxima função do pipeline
 
-## Control Flow
+## Fluxo de controle
 
-### If Statements
+### Instruções if
 
-#### If Statement
+#### Instrução if
 
 ```ml
 let is_pos x =
   if x > 0 then "positive" else "negative"
 ```
 
-#### If else if
+#### If, else if
 
 ```ml
 let f x =
@@ -344,7 +344,7 @@ let f x =
   else "eq 3"
 ```
 
-#### Pattern Matching
+#### Pattern matching
 
 ```ml
 let is_pos x =
@@ -353,9 +353,9 @@ let is_pos x =
   | false -> "negative"
 ```
 
-### Loops
+### Laços
 
-#### For loop
+#### Laço for
 
 ```ml
 for i = 1 to 5 do
@@ -363,9 +363,9 @@ for i = 1 to 5 do
 done
 ```
 
-#### While loop
+#### Laço while
 
-Notice the `ref` is needed to have the while condition eventually become false.
+Observe que o `ref` é necessário para que a condição do while eventualmente se torne falsa.
 
 ```ml
 let i = ref 0 in
@@ -375,9 +375,9 @@ let i = ref 0 in
   done
 ```
 
-### Operators
+### Operadores
 
-#### Comparison Operators
+#### Operadores de comparação
 
 ```ml
 =         (* equal to *)
@@ -388,7 +388,7 @@ let i = ref 0 in
 <=        (* less than or eq to *)
 ```
 
-#### Arithmatic Operators
+#### Operadores aritméticos
 
 ```ml
 (* int operator   float operator *)
@@ -399,11 +399,11 @@ let i = ref 0 in
                   **  (* power *)
 ```
 
-## Useful Tools
+## Ferramentas úteis
 
 ### List
 
-#### Searching & Filtering
+#### Busca e filtragem
 
 ```ml
 # let lst = [1; 2; 3];;
@@ -419,7 +419,7 @@ Exception: Not_found
 - : int list = [1; 2; 3]
 ```
 
-#### Applying Transformations
+#### Aplicando transformações
 
 ```ml
 (* Loop over list and apply fun f *)
@@ -434,9 +434,9 @@ List.map (fun x -> x + x) lst
 List.fold_left (+) 0 lst
 ```
 
-### Associaton Lists
+### Listas de associação
 
-#### Definition and Access
+#### Definição e acesso
 
 ```ml
 let scores =
@@ -449,7 +449,7 @@ let scores =
 - : bool = true
 ```
 
-#### Split and Combine
+#### Divisão e combinação
 
 ```ml
 # List.split scores;;
@@ -459,13 +459,13 @@ let scores =
 - : (int * int) list = [(1, 4); (2, 5); (3, 6)]
 ```
 
-Association lists are similar to dictionaries or hashmaps
+Listas de associação são semelhantes a dicionários ou hashmaps
 
-### Hash Tables
+### Tabelas hash
 
-Hash Tables are mutable.
+Tabelas hash são mutáveis.
 
-#### Initialize & Add Data
+#### Inicializar e adicionar dados
 
 ```ml
 
@@ -477,7 +477,7 @@ val my_htable : ('_weak1, '_weak2) Hashtbl.t = <abstr>
   Hashtbl.add my_htable "B" "Max";;
 ```
 
-#### Find Data
+#### Buscar dados
 
 ```ml
 # Hashtbl.find my_htable "A";;
@@ -490,9 +490,9 @@ val my_htable : ('_weak1, '_weak2) Hashtbl.t = <abstr>
 
 ### Maps
 
-Maps are immutable key-value association tables.
+Maps são tabelas de associação chave-valor imutáveis.
 
-#### Initialization & Add Data
+#### Inicialização e adição de dados
 
 ```ml
 (* the Map.Make functor creates the custom map module *)
@@ -504,7 +504,7 @@ let books =
   |> StringMap.add "Neuromancer" ("Gibson", 1984)
 ```
 
-#### Finding Entries
+#### Buscando entradas
 
 ```ml
 (* find_opt returns assoc val wrapped in an option else None *)
@@ -516,9 +516,9 @@ let books =
 - : string * int = ("Herbet", 1965)
 ```
 
-#### Adding & Removing Entries
+#### Adicionando e removendo entradas
 
-Creates a new map since maps are immutable
+Cria um novo map, já que maps são imutáveis
 
 ```ml
 let more_books = books
@@ -528,7 +528,7 @@ let less_books =
   |> StringMap.remove "Dune"
 ```
 
-Filtering
+Filtragem
 
 ```ml
 let eighties_books =
@@ -536,7 +536,7 @@ let eighties_books =
       (fun _ (_, year) -> year > 1980 & number < 1990) books
 ```
 
-#### Printing Data
+#### Imprimindo dados
 
 ```ml
 let print_books map =

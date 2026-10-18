@@ -11,16 +11,16 @@ tags:
   - coding
   - agent
 categories:
-  - AI
+  - IA
 intro: |
-  [Antigravity CLI (agy)](https://antigravity.google/docs/cli) is Google's AI-first terminal development assistant and agentic coding CLI. It reads codebases, executes edits, manages background tasks, orchestrates subagents, and automates developer workflows.
+  [Antigravity CLI (agy)](https://antigravity.google/docs/cli) é o assistente de desenvolvimento de terminal AI-first do Google e uma CLI de codificação agêntica. Ele lê bases de código, executa edições, gerencia tarefas em segundo plano, orquestra subagentes e automatiza workflows de desenvolvimento.
 plugins:
   - copyCode
 ---
 
-## Getting Started {.cols-3}
+## Primeiros passos {.cols-3}
 
-### Quick Start {.row-span-2}
+### Início rápido {.row-span-2}
 
 ```bash
 # Launch interactive session in current repository
@@ -49,16 +49,16 @@ $ cat logs.txt | agy -p "identify crash trace"
 $ agy --add-dir ../backend --add-dir ../frontend
 ```
 
-### Authentication
+### Autenticação
 
-| Method | Description |
+| Método | Descrição |
 | --- | --- |
-| **Google Account** | Run `agy`, follow browser login prompts on first run |
+| **Conta Google** | Execute `agy` e siga os prompts de login no navegador na primeira execução |
 | **Vertex AI (ADC)** | `gcloud auth application-default login` |
-| **Service Account** | Set `GOOGLE_APPLICATION_CREDENTIALS=/path/to/sa.json` |
-| **Project Selection** | `agy --project <project-id>` or `GOOGLE_CLOUD_PROJECT` |
+| **Conta de serviço** | Defina `GOOGLE_APPLICATION_CREDENTIALS=/path/to/sa.json` |
+| **Seleção de projeto** | `agy --project <project-id>` ou `GOOGLE_CLOUD_PROJECT` |
 
-### Installation Methods
+### Métodos de instalação
 
 ```bash
 # Verify installation
@@ -74,51 +74,51 @@ $ agy update
 $ agy changelog
 ```
 
-### Execution Modes
+### Modos de execução
 
-| Mode | Command Flag | Description |
+| Modo | Flag de comando | Descrição |
 | --- | --- | --- |
-| **Default** | *(default)* | Prompts for confirmation before modifying files or running commands |
-| **Accept Edits** | `--mode accept-edits` | Automatically applies edits and writes files without prompting |
-| **Plan Mode** | `--mode plan` | Formulates step-by-step implementation plans before touching code |
-| **Sandbox** | `--sandbox` | Restricts shell execution inside an isolated terminal sandbox |
-| **Unrestricted** | `--dangerously-skip-permissions` | Auto-approves all tool permission prompts |
+| **Padrão** | *(padrão)* | Pede confirmação antes de modificar arquivos ou executar comandos |
+| **Aceitar edições** | `--mode accept-edits` | Aplica edições e grava arquivos automaticamente, sem pedir confirmação |
+| **Modo Plan** | `--mode plan` | Formula planos de implementação passo a passo antes de mexer no código |
+| **Sandbox** | `--sandbox` | Restringe a execução de shell a um sandbox de terminal isolado |
+| **Sem restrições** | `--dangerously-skip-permissions` | Aprova automaticamente todos os prompts de permissão de ferramentas |
 
-### Key Concepts
+### Conceitos-chave
 
-- **Agentic Loop**: Dynamically inspects files, runs shell commands, views diffs, and self-corrects based on tool results.
-- **Progressive Disclosure**: Skills and contextual rules are loaded on demand rather than cluttering token context.
-- **Asynchronous Tasks**: Background commands and multi-agent runs execute concurrently without blocking turns.
+- **Loop agêntico**: inspeciona arquivos dinamicamente, executa comandos shell, visualiza diffs e se autocorrige com base nos resultados das ferramentas.
+- **Divulgação progressiva**: skills e regras contextuais são carregadas sob demanda, em vez de poluir o contexto de tokens.
+- **Tarefas assíncronas**: comandos em segundo plano e execuções multiagente rodam em paralelo sem bloquear os turnos.
 
 ---
 
-## CLI Options {.cols-2}
+## Opções da CLI {.cols-2}
 
-### Core Flags {.row-span-2}
+### Flags principais {.row-span-2}
 
-| Flag | Short | Description |
+| Flag | Curta | Descrição |
 | --- | --- | --- |
-| `--print <prompt>` | `-p` | Run prompt non-interactively and print response |
-| `--prompt-interactive <prompt>` | `-i` | Run initial prompt and remain interactive |
-| `--continue` | `-c` | Resume the most recent conversation |
-| `--conversation <id>` | | Resume specific conversation by ID |
-| `--model <model>` | | Specify model for the session |
-| `--effort <level>` | | Set reasoning effort (`low`, `medium`, `high`) |
-| `--mode <mode>` | | Agent mode (`accept-edits`, `plan`) |
-| `--sandbox` | | Enable terminal sandbox restrictions |
-| `--dangerously-skip-permissions` | | Auto-approve all tool permissions |
-| `--add-dir <path>` | | Add directory to workspace (repeatable) |
-| `--project <id>` | | Google Cloud / Vertex project ID |
-| `--new-project` | | Create a new project for this session |
-| `--output-format <format>` | | Output format (`text`, `json`, `stream-json`) |
-| `--input-format <format>` | | Input format (`text`, `stream-json`) |
-| `--json-schema <schema>` | | Enforce structured JSON schema for outputs |
-| `--print-timeout <duration>` | | Timeout limit for print mode (default `0s`) |
-| `--log-file <path>` | | Override CLI log file path |
-| `--remote-control` | | Connect to remote control background daemon |
-| `--disable-slash-commands` | | Disable slash command expansion in print mode |
+| `--print <prompt>` | `-p` | Executa o prompt de forma não interativa e imprime a resposta |
+| `--prompt-interactive <prompt>` | `-i` | Executa o prompt inicial e permanece interativo |
+| `--continue` | `-c` | Retoma a conversa mais recente |
+| `--conversation <id>` | | Retoma uma conversa específica por ID |
+| `--model <model>` | | Especifica o modelo da sessão |
+| `--effort <level>` | | Define o esforço de raciocínio (`low`, `medium`, `high`) |
+| `--mode <mode>` | | Modo do agente (`accept-edits`, `plan`) |
+| `--sandbox` | | Ativa as restrições de sandbox do terminal |
+| `--dangerously-skip-permissions` | | Aprova automaticamente todas as permissões de ferramentas |
+| `--add-dir <path>` | | Adiciona um diretório ao workspace (repetível) |
+| `--project <id>` | | ID do projeto Google Cloud / Vertex |
+| `--new-project` | | Cria um novo projeto para esta sessão |
+| `--output-format <format>` | | Formato de saída (`text`, `json`, `stream-json`) |
+| `--input-format <format>` | | Formato de entrada (`text`, `stream-json`) |
+| `--json-schema <schema>` | | Impõe um JSON schema estruturado para as saídas |
+| `--print-timeout <duration>` | | Limite de timeout para o modo print (padrão `0s`) |
+| `--log-file <path>` | | Sobrescreve o path do arquivo de log da CLI |
+| `--remote-control` | | Conecta ao daemon de controle remoto em segundo plano |
+| `--disable-slash-commands` | | Desativa a expansão de slash commands no modo print |
 
-### Subcommands
+### Subcomandos
 
 ```bash
 # Manage MCP servers
@@ -143,7 +143,7 @@ $ agy mic-serve
 $ agy update
 ```
 
-### Headless & CI/CD Formats
+### Formatos headless e CI/CD
 
 ```bash
 # Plain text output
@@ -161,9 +161,9 @@ $ agy -p "list todos" --json-schema schema.json --output-format json
 
 ---
 
-## Model Selection & Reasoning {.cols-2}
+## Seleção de modelo e raciocínio {.cols-2}
 
-### Models & Reasoning Effort {.row-span-2}
+### Modelos e esforço de raciocínio {.row-span-2}
 
 ```bash
 # Check all available models
@@ -184,40 +184,40 @@ $ agy --effort medium
 $ agy --effort low
 ```
 
-### Model Reference
+### Referência de modelos
 
-| Model Identifier | Display Name | Recommended Use |
+| Identificador do modelo | Nome de exibição | Uso recomendado |
 | --- | --- | --- |
-| `gemini-3.8-flash-high` | Gemini 3.8 Flash (High) | Daily coding, rapid agent turns, default |
-| `gemini-3.8-flash-medium` | Gemini 3.8 Flash (Medium) | Balanced speed and thinking tokens |
-| `gemini-3.8-flash-low` | Gemini 3.8 Flash (Low) | Fastest latency, lightweight queries |
-| `gemini-3.7-flash-high` | Gemini 3.7 Flash (High) | Previous generation high reasoning |
-| `gemini-3.1-pro-high` | Gemini 3.1 Pro (High) | Massive refactors, cross-repo design |
-| `claude-sonnet-4-6` | Claude Sonnet 4.6 | Thinking-enabled coding assistant |
-| `claude-opus-4-6-thinking` | Claude Opus 4.6 | Deep complex multi-step reasoning |
-| `gpt-oss-120b-medium` | GPT-OSS 120B | Open-weights reasoning tier |
+| `gemini-3.8-flash-high` | Gemini 3.8 Flash (High) | Codificação diária, turnos rápidos do agente, padrão |
+| `gemini-3.8-flash-medium` | Gemini 3.8 Flash (Medium) | Equilíbrio entre velocidade e tokens de raciocínio |
+| `gemini-3.8-flash-low` | Gemini 3.8 Flash (Low) | Menor latência, consultas leves |
+| `gemini-3.7-flash-high` | Gemini 3.7 Flash (High) | Raciocínio alto da geração anterior |
+| `gemini-3.1-pro-high` | Gemini 3.1 Pro (High) | Refatorações massivas, design entre repositórios |
+| `claude-sonnet-4-6` | Claude Sonnet 4.6 | Assistente de codificação com thinking habilitado |
+| `claude-opus-4-6-thinking` | Claude Opus 4.6 | Raciocínio profundo e complexo em várias etapas |
+| `gpt-oss-120b-medium` | GPT-OSS 120B | Camada de raciocínio com pesos abertos |
 
 ---
 
-## Interactive Slash Commands {.cols-3}
+## Slash commands interativos {.cols-3}
 
-### Slash Commands `/` {.row-span-3}
+### Slash commands `/` {.row-span-3}
 
-| Slash Command | Purpose |
+| Slash command | Finalidade |
 | --- | --- |
-| `/help` | Show available slash commands and keybindings |
-| `/plan` | Formulate a multi-step design & plan before execution |
-| `/goal` | Autonomous mode: runs until goal is completed |
-| `/boost` | Deep thinking, multi-angle exploration, rigorous checks |
-| `/browser` | Web automation, page inspection, and live testing |
-| `/grill-me` | Interactive interview to settle design decisions |
-| `/schedule` | Set a one-off timer or recurring cron schedule |
-| `/teamwork-preview` | Autonomous multi-agent collaboration |
-| `/learn` | Persist developer preferences and lessons |
-| `/exit` | Exit the CLI session |
-| `/quit` | Alias for `/exit` |
+| `/help` | Mostra os slash commands e keybindings disponíveis |
+| `/plan` | Formula um design e um plano em várias etapas antes da execução |
+| `/goal` | Modo autônomo: executa até o objetivo ser concluído |
+| `/boost` | Raciocínio profundo, exploração por vários ângulos, verificações rigorosas |
+| `/browser` | Automação web, inspeção de páginas e testes ao vivo |
+| `/grill-me` | Entrevista interativa para fechar decisões de design |
+| `/schedule` | Define um timer único ou um agendamento cron recorrente |
+| `/teamwork-preview` | Colaboração multiagente autônoma |
+| `/learn` | Persiste preferências e aprendizados do desenvolvedor |
+| `/exit` | Sai da sessão da CLI |
+| `/quit` | Alias para `/exit` |
 
-### Goal & Boost Modes
+### Modos Goal e Boost
 
 ```bash
 # Inside interactive agy:
@@ -227,7 +227,7 @@ $ agy --effort low
 > /boost Review security implications of session token rotation
 ```
 
-### Interactive Interviews
+### Entrevistas interativas
 
 ```bash
 # Challenge your assumptions before writing code
@@ -236,44 +236,44 @@ $ agy --effort low
 
 ---
 
-## Keyboard Shortcuts {.cols-3}
+## Atalhos de teclado {.cols-3}
 
-### General Controls {.row-span-2}
+### Controles gerais {.row-span-2}
 
-| Keybinding | Action |
+| Atalho | Ação |
 | --- | --- |
-| `Ctrl+D Ctrl+D` | Exit agy CLI session |
-| `Ctrl+C` | Cancel currently running agent turn or streaming response |
-| `Enter` | Submit prompt / send message |
-| `Shift+Enter` | Insert a newline into multiline input |
-| `Alt+Enter` | Insert a newline into multiline input |
+| `Ctrl+D Ctrl+D` | Sai da sessão da CLI do agy |
+| `Ctrl+C` | Cancela o turno do agente em execução ou a resposta em streaming |
+| `Enter` | Envia o prompt / a mensagem |
+| `Shift+Enter` | Insere uma nova linha na entrada multilinha |
+| `Alt+Enter` | Insere uma nova linha na entrada multilinha |
 
-### Input Navigation
+### Navegação na entrada
 
-| Keybinding | Action |
+| Atalho | Ação |
 | --- | --- |
-| `Up` / `Down` | Browse prompt history |
-| `Ctrl+A` | Move cursor to beginning of line |
-| `Ctrl+E` | Move cursor to end of line |
-| `Ctrl+U` | Delete from cursor to start of line |
-| `Ctrl+K` | Delete from cursor to end of line |
-| `Ctrl+L` | Clear terminal screen |
+| `Up` / `Down` | Navega pelo histórico de prompts |
+| `Ctrl+A` | Move o cursor para o início da linha |
+| `Ctrl+E` | Move o cursor para o fim da linha |
+| `Ctrl+U` | Apaga do cursor até o início da linha |
+| `Ctrl+K` | Apaga do cursor até o fim da linha |
+| `Ctrl+L` | Limpa a tela do terminal |
 
-### Agent Control
+### Controle do agente
 
-| Action | How |
+| Ação | Como |
 | --- | --- |
-| **Accept Edit** | Press `Enter` or click Approve on tool prompt |
-| **Reject Edit** | Press `Esc` or type feedback |
-| **Interrupt** | `Ctrl+C` halts tool call immediately |
+| **Aceitar edição** | Pressione `Enter` ou clique em Approve no prompt da ferramenta |
+| **Rejeitar edição** | Pressione `Esc` ou digite um feedback |
+| **Interromper** | `Ctrl+C` interrompe a chamada da ferramenta imediatamente |
 
 ---
 
-## Subagents & Delegation {.cols-2}
+## Subagentes e delegação {.cols-2}
 
-### Subagent Architecture {.row-span-2}
+### Arquitetura de subagentes {.row-span-2}
 
-Antigravity CLI can invoke specialized subagents that execute concurrently with their own contexts and workspaces:
+O Antigravity CLI pode invocar subagentes especializados que executam em paralelo, com seus próprios contextos e workspaces:
 
 ```mermaid
 flowchart TD
@@ -284,28 +284,28 @@ flowchart TD
   Sub2 -->|Code Diffs| Parent
 ```
 
-- **Isolated Context**: Subagents keep the main turn's context window clean and concise.
-- **Parallel Work**: Background subagents report results automatically without polling.
-- **Workspace Modes**:
-  - `inherit`: Shares current project workspace.
-  - `branch`: Creates an isolated git worktree branch.
-  - `share`: Uses shared repository cache without copying storage.
+- **Contexto isolado**: os subagentes mantêm a janela de contexto do turno principal limpa e concisa.
+- **Trabalho em paralelo**: subagentes em segundo plano relatam resultados automaticamente, sem polling.
+- **Modos de workspace**:
+  - `inherit`: compartilha o workspace do projeto atual.
+  - `branch`: cria um branch isolado em um git worktree.
+  - `share`: usa o cache compartilhado do repositório sem copiar o armazenamento.
 
-### Built-in Subagent Types
+### Tipos de subagente integrados
 
-| Subagent | Scope | Purpose |
+| Subagente | Escopo | Finalidade |
 | --- | --- | --- |
-| `research` | Read-only | Web search, codebase exploration, documentation analysis |
-| `self` | Full tools | Inherits parent tools to run parallel branch edits |
-| `custom` | Configurable | Defined dynamically via `define_subagent` |
+| `research` | Somente leitura | Busca na web, exploração da base de código, análise de documentação |
+| `self` | Todas as ferramentas | Herda as ferramentas do pai para executar edições paralelas em branches |
+| `custom` | Configurável | Definido dinamicamente via `define_subagent` |
 
 ---
 
-## MCP Servers (Model Context Protocol) {.cols-2}
+## Servidores MCP (Model Context Protocol) {.cols-2}
 
-### Managing MCP Servers {.row-span-2}
+### Gerenciar servidores MCP {.row-span-2}
 
-Antigravity natively integrates MCP servers to connect your agent to external databases, APIs, and devtools:
+O Antigravity integra servidores MCP nativamente para conectar seu agente a bancos de dados externos, APIs e devtools:
 
 ```bash
 # List configured MCP servers
@@ -327,25 +327,25 @@ $ agy mcp enable postgres
 $ agy mcp remove postgres
 ```
 
-### Configuration & Tool Loading
+### Configuração e carregamento de ferramentas
 
-Servers are stored in `~/.gemini/antigravity-cli/mcp/<serverName>/`:
+Os servidores ficam em `~/.gemini/antigravity-cli/mcp/<serverName>/`:
 
-- **Eager Tools**: Automatically loaded into native agent tool registry.
-- **Lazy Tools**: Registered on-demand via schemas (`<toolName>.json`) to conserve prompt tokens.
-- **Instructions**: Optional `instructions.md` guide agent when and how to call tools.
+- **Ferramentas eager**: carregadas automaticamente no registro nativo de ferramentas do agente.
+- **Ferramentas lazy**: registradas sob demanda via schemas (`<toolName>.json`) para economizar tokens do prompt.
+- **Instruções**: o arquivo opcional `instructions.md` orienta o agente sobre quando e como chamar ferramentas.
 
 ---
 
-## Customization: Rules & Skills {.cols-3}
+## Personalização: regras e skills {.cols-3}
 
-### Hierarchical Rules {.row-span-2}
+### Regras hierárquicas {.row-span-2}
 
-Rules guide coding standards and instructions automatically:
+As regras orientam padrões de código e instruções automaticamente:
 
-- **Project Root**: `GEMINI.md`, `AGENTS.md`
-- **Scoped Rules**: `.agents/rules/*.md` or `.gemini/rules/`
-- **Hierarchical Discovery**: Traverses from active file up to git root.
+- **Raiz do projeto**: `GEMINI.md`, `AGENTS.md`
+- **Regras com escopo**: `.agents/rules/*.md` ou `.gemini/rules/`
+- **Descoberta hierárquica**: percorre do arquivo ativo até a raiz do git.
 
 ```markdown
 <!-- GEMINI.md example -->
@@ -354,12 +354,12 @@ Rules guide coding standards and instructions automatically:
 - Write tests with Vitest in tests/ directory.
 ```
 
-### Agent Skills
+### Skills de agente
 
-Skills teach reusable workflows and procedures:
+Skills ensinam workflows e procedimentos reutilizáveis:
 
-- Located in `.agents/skills/<name>/SKILL.md` or `~/.gemini/config/skills/`.
-- Loaded dynamically via **Progressive Disclosure** (only activated when relevant).
+- Ficam em `.agents/skills/<name>/SKILL.md` ou `~/.gemini/config/skills/`.
+- Carregadas dinamicamente via **Divulgação progressiva** (ativadas apenas quando relevantes).
 
 ```yaml
 ---
@@ -369,21 +369,21 @@ description: Deploy branch to preview environment and run smoke tests
 # Runbook steps here...
 ```
 
-### Precedence Order
+### Ordem de precedência
 
-1. Workspace Project (`.agents/`)
-2. Workspace Declared (`skills.json`, `plugins.json`)
-3. Global User Config (`~/.gemini/config/`)
-4. Built-in Applications & Skills
-5. Global Declared Config
+1. Projeto do workspace (`.agents/`)
+2. Declarado no workspace (`skills.json`, `plugins.json`)
+3. Configuração global do usuário (`~/.gemini/config/`)
+4. Aplicações e skills integradas
+5. Configuração global declarada
 
 ---
 
-## Plugins & Extensions {.cols-2}
+## Plugins e extensões {.cols-2}
 
-### Managing Plugins {.row-span-2}
+### Gerenciar plugins {.row-span-2}
 
-Plugins bundle skills, rules, hooks, and MCP servers into installable units:
+Plugins empacotam skills, regras, hooks e servidores MCP em unidades instaláveis:
 
 ```bash
 # List all installed plugins
@@ -410,7 +410,7 @@ $ agy plugin disable security-auditor
 $ agy plugin uninstall security-auditor
 ```
 
-### Plugin Structure
+### Estrutura de plugin
 
 ```
 my-plugin/
@@ -424,18 +424,18 @@ my-plugin/
 
 ---
 
-## Configuration & Brain Storage {.cols-2}
+## Configuração e armazenamento do brain {.cols-2}
 
-### Configuration Locations {.row-span-2}
+### Locais de configuração {.row-span-2}
 
-| Scope | Path | Purpose |
+| Escopo | Path | Finalidade |
 | --- | --- | --- |
-| **CLI Settings** | `~/.gemini/antigravity-cli/settings.json` | Global CLI preferences, default model, reasoning |
-| **Global Config** | `~/.gemini/config/` | User-wide skills, rules, and plugins |
-| **Workspace Config** | `.agents/` or `.gemini/` | Project-scoped rules and agent configurations |
-| **Sessions & Brain** | `~/.gemini/antigravity-cli/brain/<session-id>/` | Transcripts, tasks, and generated artifacts |
+| **Configurações da CLI** | `~/.gemini/antigravity-cli/settings.json` | Preferências globais da CLI, modelo padrão, raciocínio |
+| **Configuração global** | `~/.gemini/config/` | Skills, regras e plugins de todo o usuário |
+| **Configuração do workspace** | `.agents/` ou `.gemini/` | Regras e configurações de agente com escopo do projeto |
+| **Sessões e brain** | `~/.gemini/antigravity-cli/brain/<session-id>/` | Transcrições, tarefas e artefatos gerados |
 
-### Example `settings.json`
+### Exemplo de `settings.json`
 
 ```json
 {
@@ -446,19 +446,19 @@ my-plugin/
 }
 ```
 
-### Transcripts & Artifacts
+### Transcrições e artefatos
 
-- Transcripts stored in `brain/<id>/.system_generated/logs/transcript.jsonl`.
-- Markdown artifacts and diff reports stored in `brain/<id>/`.
+- As transcrições ficam em `brain/<id>/.system_generated/logs/transcript.jsonl`.
+- Artefatos Markdown e relatórios de diff ficam em `brain/<id>/`.
 
 ---
 
-## Also see {.cols-1}
+## Veja também {.cols-1}
 
-- [Official Antigravity Documentation](https://antigravity.google/docs) _(antigravity.google)_
-- [CLI Reference Guide](https://antigravity.google/docs/cli/reference) _(antigravity.google)_
-- [CLI Features & Subagents](https://antigravity.google/docs/cli/features) _(antigravity.google)_
-- [Skills Documentation](https://antigravity.google/docs/skills) _(antigravity.google)_
-- [Rules & Guidelines Guide](https://antigravity.google/docs/rules-workflows) _(antigravity.google)_
+- [Documentação oficial do Antigravity](https://antigravity.google/docs) _(antigravity.google)_
+- [Guia de referência da CLI](https://antigravity.google/docs/cli/reference) _(antigravity.google)_
+- [Recursos da CLI e subagentes](https://antigravity.google/docs/cli/features) _(antigravity.google)_
+- [Documentação de skills](https://antigravity.google/docs/skills) _(antigravity.google)_
+- [Guia de regras e diretrizes](https://antigravity.google/docs/rules-workflows) _(antigravity.google)_
 - [Model Context Protocol (MCP)](https://antigravity.google/docs/mcp) _(antigravity.google)_
 - [Antigravity Python SDK](https://github.com/google-antigravity/antigravity-sdk-python) _(github.com)_

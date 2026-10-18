@@ -7,58 +7,58 @@ tags:
   -
   -
 categories:
-  - Keyboard Shortcuts
+  - Atalhos de Teclado
 intro: |
-  A visual cheat-sheet for the 30 keyboard shortcuts found on the FileZilla program
+  Um cheat sheet visual para os 30 atalhos de teclado do programa FileZilla
 ---
 
-## Keyboard Shortcuts {.cols-2}
+## Atalhos de Teclado {.cols-2}
 
-### General Shortcuts I
+### Atalhos gerais I
 
-| Shortcut           | Action                                                                              |
-| ------------------ | ----------------------------------------------------------------------------------- |
-| `F2`               | Rename selected file                                                                |
-| `F3`               | Search remote files                                                                 |
-| `F5`               | Refreshes local and remote file and folder views                                    |
-| `Tab`              | Switches to the next view                                                           |
-| `Alt` `Down`       | Transfers the currently selected item to an item of the same name in the other pane |
-| `Alt` `Up`         | Navigates up one line in a tree view, navigates to parent folder in file view       |
-| `Ctrl` `B`         | Add bookmark                                                                        |
-| `Ctrl` `Shift` `B` | Manage bookmarks                                                                    |
-| `Ctrl` `C`         | Stops the current operation                                                         |
-| `Ctrl` `D`         | Disconnects from server                                                             |
-| `Ctrl` `E`         | Show files currently being edited                                                   |
-| `Ctrl` `I`         | Directory listing filters...                                                        |
-| `Ctrl` `M`         | Manual transfer                                                                     |
-| `Ctrl` `Shift` `N` | Create a new directory                                                              |
-| `Ctrl` `O`         | Enable directory comparison                                                         |
-
-{.shortcuts}
-
-### General Shortcuts II
-
-| Shortcut      | Action                                                                                |
-| ------------- | ------------------------------------------------------------------------------------- |
-| `Ctrl` `P`    | Process queue                                                                         |
-| `Ctrl` `Q`    | Exit                                                                                  |
-| `Ctrl` `R`    | Reconnects to server                                                                  |
-| `Ctrl` `S`    | Opens the site manager                                                                |
-| `Ctrl` `T`    | Opens a new tab                                                                       |
-| `Ctrl` `U`    | Preserve the timestamps of transferred files                                          |
-| `Ctrl` `Y`    | Toggle synchronized browsing                                                          |
-| `Ctrl` `W`    | Close tab                                                                             |
-| `Enter`       | Transfer the currently selected item if it is a file, or expands if it is a directory |
-| `Ctrl` `PgUp` | Switches to the next tab                                                              |
-| `Ctrl` `PgDn` | Switches to the previous tab                                                          |
-| `Up`          | Moves up one item in the current view                                                 |
-| `Down`        | Moves down one item in the current view                                               |
-| `Left`        | Nothing in a files view, up on level in a tree view                                   |
-| `Right`       | Down one level in a tree view if there are subfolders, nothing if there are none      |
+| Atalho             | Ação                                                                                                        |
+| ------------------ | ----------------------------------------------------------------------------------------------------------- |
+| `F2`               | Renomeia o arquivo selecionado                                                                              |
+| `F3`               | Pesquisa arquivos remotos                                                                                   |
+| `F5`               | Atualiza as visualizações de arquivos e pastas locais e remotas                                             |
+| `Tab`              | Alterna para a próxima visualização                                                                         |
+| `Alt` `Down`       | Transfere o item selecionado no momento para um item de mesmo nome no outro painel                          |
+| `Alt` `Up`         | Navega uma linha para cima em uma visualização em árvore, navega até a pasta pai na visualização de arquivos |
+| `Ctrl` `B`         | Adiciona um favorito                                                                                        |
+| `Ctrl` `Shift` `B` | Gerencia favoritos                                                                                          |
+| `Ctrl` `C`         | Interrompe a operação atual                                                                                 |
+| `Ctrl` `D`         | Desconecta do servidor                                                                                      |
+| `Ctrl` `E`         | Mostra os arquivos que estão sendo editados no momento                                                      |
+| `Ctrl` `I`         | Filtros de listagem de diretórios...                                                                        |
+| `Ctrl` `M`         | Transferência manual                                                                                        |
+| `Ctrl` `Shift` `N` | Cria um novo diretório                                                                                      |
+| `Ctrl` `O`         | Ativa a comparação de diretórios                                                                            |
 
 {.shortcuts}
 
-## Also see
+### Atalhos gerais II
 
-- [Keyboard shortcuts for FileZilla](https://wiki.filezilla-project.org/Keyboard_shortcuts)
+| Atalho        | Ação                                                                                         |
+| ------------- | -------------------------------------------------------------------------------------------- |
+| `Ctrl` `P`    | Processa a fila                                                                              |
+| `Ctrl` `Q`    | Sai                                                                                          |
+| `Ctrl` `R`    | Reconecta ao servidor                                                                        |
+| `Ctrl` `S`    | Abre o gerenciador de sites                                                                  |
+| `Ctrl` `T`    | Abre uma nova aba                                                                            |
+| `Ctrl` `U`    | Preserva os carimbos de data/hora dos arquivos transferidos                                  |
+| `Ctrl` `Y`    | Ativa/desativa a navegação sincronizada                                                      |
+| `Ctrl` `W`    | Fecha a aba                                                                                  |
+| `Enter`       | Transfere o item selecionado no momento se for um arquivo, ou o expande se for um diretório  |
+| `Ctrl` `PgUp` | Alterna para a próxima aba                                                                   |
+| `Ctrl` `PgDn` | Alterna para a aba anterior                                                                  |
+| `Up`          | Move um item para cima na visualização atual                                                 |
+| `Down`        | Move um item para baixo na visualização atual                                                |
+| `Left`        | Nada em uma visualização de arquivos, sobe um nível em uma visualização em árvore            |
+| `Right`       | Desce um nível em uma visualização em árvore se houver subpastas, nada se não houver         |
+
+{.shortcuts}
+
+## Veja também
+
+- [Atalhos de teclado do FileZilla](https://wiki.filezilla-project.org/Keyboard_shortcuts)
   _(wiki.filezilla-project.org)_

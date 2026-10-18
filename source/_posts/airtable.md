@@ -7,85 +7,85 @@ tags:
   -
   -
 categories:
-  - Keyboard Shortcuts
+  - Atalhos de Teclado
 intro: |
-  A visual cheat-sheet for the 36 keyboard shortcuts found in Airtable
+  Um cheat sheet visual para os 36 atalhos de teclado do Airtable
 ---
 
-## Keyboard Shortcuts
+## Atalhos de Teclado
 
-### General {.row-span-3}
+### Geral {.row-span-3}
 
-| Shortcut           | Action                                                                                           |
-| ------------------ | ------------------------------------------------------------------------------------------------ |
-| `Ctrl` `Z`         | Undo action                                                                                      |
-| `Ctrl` `Shift` `Z` | Redo action                                                                                      |
-| `Ctrl` `P`         | Print the current table view or current expanded record (if inside an expanded record)           |
-| `Ctrl` `J`         | Opens the table switcher in the current base                                                     |
-| `Ctrl` `K`         | Opens the quick base switcher if on the home screen or inside a base                             |
-| `Ctrl` `Shift` `K` | Opens the view switcher in the current base                                                      |
-| `Ctrl` `Shift` `F` | Opens the filter menu in the current view, press enter to create a new filter                    |
-| `Ctrl` `Shift` `D` | Opens the grouped records menu in the current view, press enter to collapse or expand all groups |
-| `Ctrl` `Shift` `S` | Opens the sort menu in the current view, press enter to re-apply the most recent sort            |
-| `Ctrl` `Shift` `\` | Toggles blocks                                                                                   |
-| `Ctrl` `F`         | Opens the find bar, use esc to close it                                                          |
-| `Ctrl` `;`         | Sets the selected date/datetime field to now                                                     |
-
-{.shortcuts}
-
-### Grid View {.row-span-3}
-
-| Shortcut                  | Action                                                                                                  |
-| ------------------------- | ------------------------------------------------------------------------------------------------------- |
-| `Ctrl` `C`                | Copy a cell or range of cells                                                                           |
-| `Ctrl` `X`                | Cut a cell or range of cells                                                                            |
-| `Ctrl` `V`                | Paste a cell (if you select a range of cells, you can paste the same value into multiple cells at once) |
-| `Space`                   | Expand the active record, use esc to return to the table                                                |
-| `Shift` `Space`           | Expand the active cell, you can then use arrow keys to move to different cells                          |
-| `PgUp`                    | Scrolls one screen up                                                                                   |
-| `PgDn`                    | Scrolls one screen down                                                                                 |
-| `Alt` `PgUp`              | Scrolls one screen left                                                                                 |
-| `Alt` `PgDn`              | Scrolls one screen right                                                                                |
-| `Ctrl` `(arrows)`         | Jump to the edge of the table                                                                           |
-| `Ctrl` `Shift` `(arrows)` | Jump to the edge of table and select cells                                                              |
-| `Shift` `(arrows)`        | Select range of cells, you can also click while holding shift to select cells                           |
-| `Shift` `Enter`           | Insert a record below the selected cell                                                                 |
-| `Enter`                   | Edit the selected cell                                                                                  |
+| Atalho             | Ação                                                                                                        |
+| ------------------ | ----------------------------------------------------------------------------------------------------------- |
+| `Ctrl` `Z`         | Desfaz a ação                                                                                               |
+| `Ctrl` `Shift` `Z` | Refaz a ação                                                                                                |
+| `Ctrl` `P`         | Imprime a visualização de tabela atual ou o registro expandido atual (se estiver dentro de um registro expandido) |
+| `Ctrl` `J`         | Abre o seletor de tabelas na base atual                                                                     |
+| `Ctrl` `K`         | Abre o seletor rápido de bases se estiver na tela inicial ou dentro de uma base                             |
+| `Ctrl` `Shift` `K` | Abre o seletor de visualizações na base atual                                                               |
+| `Ctrl` `Shift` `F` | Abre o menu de filtros na visualização atual, pressione enter para criar um novo filtro                     |
+| `Ctrl` `Shift` `D` | Abre o menu de registros agrupados na visualização atual, pressione enter para recolher ou expandir todos os grupos |
+| `Ctrl` `Shift` `S` | Abre o menu de classificação na visualização atual, pressione enter para reaplicar a classificação mais recente |
+| `Ctrl` `Shift` `\` | Alterna os blocos                                                                                           |
+| `Ctrl` `F`         | Abre a barra de localização, use esc para fechá-la                                                          |
+| `Ctrl` `;`         | Define o campo de data/data e hora selecionado para agora                                                   |
 
 {.shortcuts}
 
-### Gallery View
+### Visualização em grade {.row-span-3}
 
-| Shortcut         | Action                    |
-| ---------------- | ------------------------- |
-| `Ctrl` `Up/Down` | Scroll to edge of gallery |
+| Atalho                    | Ação                                                                                                       |
+| ------------------------- | ---------------------------------------------------------------------------------------------------------- |
+| `Ctrl` `C`                | Copia uma célula ou intervalo de células                                                                   |
+| `Ctrl` `X`                | Recorta uma célula ou intervalo de células                                                                 |
+| `Ctrl` `V`                | Cola uma célula (se você selecionar um intervalo de células, pode colar o mesmo valor em várias células de uma vez) |
+| `Space`                   | Expande o registro ativo, use esc para voltar à tabela                                                     |
+| `Shift` `Space`           | Expande a célula ativa, você pode então usar as setas para navegar entre as células                        |
+| `PgUp`                    | Rola uma tela para cima                                                                                    |
+| `PgDn`                    | Rola uma tela para baixo                                                                                   |
+| `Alt` `PgUp`              | Rola uma tela para a esquerda                                                                              |
+| `Alt` `PgDn`              | Rola uma tela para a direita                                                                               |
+| `Ctrl` `(arrows)`         | Salta para a borda da tabela                                                                               |
+| `Ctrl` `Shift` `(arrows)` | Salta para a borda da tabela e seleciona células                                                           |
+| `Shift` `(arrows)`        | Seleciona um intervalo de células; você também pode clicar segurando shift para selecionar células         |
+| `Shift` `Enter`           | Insere um registro abaixo da célula selecionada                                                            |
+| `Enter`                   | Edita a célula selecionada                                                                                 |
 
 {.shortcuts}
 
-### Kanban View
+### Visualização em galeria
 
-| Shortcut       | Action                                        |
-| -------------- | --------------------------------------------- |
-| `Left`         | Scroll kanban board to the left by one stack  |
-| `Right`        | Scroll kanban board to the right by one stack |
-| `Ctrl` `Left`  | Scroll kanban board to the left edge          |
-| `Ctrl` `Right` | Scroll kanban board to the right edge         |
-| `Ctrl` `Up`    | Scroll all stacks to the top                  |
-| `Ctrl` `Down`  | Scroll all stacks to the bottom               |
+| Atalho           | Ação                            |
+| ---------------- | ------------------------------- |
+| `Ctrl` `Up/Down` | Rola até a borda da galeria     |
 
 {.shortcuts}
 
-### Expanded Record
+### Visualização Kanban
 
-| Shortcut           | Action                                                       |
+| Atalho         | Ação                                            |
+| -------------- | ----------------------------------------------- |
+| `Left`         | Rola o quadro kanban uma pilha para a esquerda   |
+| `Right`        | Rola o quadro kanban uma pilha para a direita    |
+| `Ctrl` `Left`  | Rola o quadro kanban até a borda esquerda        |
+| `Ctrl` `Right` | Rola o quadro kanban até a borda direita         |
+| `Ctrl` `Up`    | Rola todas as pilhas até o topo                  |
+| `Ctrl` `Down`  | Rola todas as pilhas até o final                 |
+
+{.shortcuts}
+
+### Registro expandido
+
+| Atalho             | Ação                                                         |
 | ------------------ | ------------------------------------------------------------ |
-| `Ctrl` `Shift` `<` | Move to the previous record while viewing an expanded record |
-| `Ctrl` `Shift` `>` | Move to the next record while viewing an expanded record     |
-| `Esc`              | Close expanded record                                        |
+| `Ctrl` `Shift` `<` | Vai para o registro anterior enquanto exibe um registro expandido |
+| `Ctrl` `Shift` `>` | Vai para o próximo registro enquanto exibe um registro expandido |
+| `Esc`              | Fecha o registro expandido                                   |
 
 {.shortcuts}
 
-## Also see
+## Veja também
 
-- [Keyboard shortcuts for Airtable](https://support.airtable.com/hc/en-us/articles/204143385-Airtable-keyboard-shortcuts)
+- [Atalhos de teclado do Airtable](https://support.airtable.com/hc/en-us/articles/204143385-Airtable-keyboard-shortcuts)
   _(support.airtable.com)_

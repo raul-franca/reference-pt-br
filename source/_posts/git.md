@@ -8,220 +8,220 @@ tags:
   - version
   - VCS
 categories:
-  - Linux Command
-intro: This cheat sheet summarizes commonly used Git command line instructions for quick reference.
+  - Comandos Linux
+intro: Este cheat sheet resume os comandos de linha de comando do Git mais usados para consulta rápida.
 plugins:
   - copyCode
 ---
 
-## Getting Started
+## Primeiros passos
 
-### Create a Repository
+### Criar um repositório
 
-Create a new local repository
+Crie um novo repositório local
 
 ```shell script
 $ git init [project name]
 ```
 
-Clone a repository
+Clone um repositório
 
 ```shell script
 $ git clone git_url
 ```
 
-Clone a repository into a specified directory
+Clone um repositório em um diretório específico
 
 ```shell script
 $ git clone git_url my_directory
 ```
 
-### Make a change {.row-span-2}
+### Fazer uma alteração {.row-span-2}
 
-Show modified files in working directory, staged for your next commit
+Mostra os arquivos modificados no diretório de trabalho, preparados para o próximo commit
 
 ```shell script
 $ git status
 ```
 
-Stages the file, ready for commit
+Prepara o arquivo, deixando-o pronto para o commit
 
 ```shell script
 $ git add [file]
 ```
 
-Stage all changed files, ready for commit
+Prepara todos os arquivos alterados, deixando-os prontos para o commit
 
 ```shell script
 $ git add .
 ```
 
-Commit all staged files to version history
+Faz commit de todos os arquivos preparados no histórico de versões
 
 ```shell script
 $ git commit -m "commit message"
 ```
 
-Commit all your tracked files to version history
+Faz commit de todos os arquivos rastreados no histórico de versões
 
 ```shell script
 $ git commit -am "commit message"
 ```
 
-Discard changes in working directory which is not staged
+Descarta alterações no diretório de trabalho que não foram preparadas
 
 ```shell script
 $ git restore [file]
 ```
 
-Unstage a staged file or file which is staged
+Remove da área de preparação um arquivo preparado
 
 ```shell script
 $ git restore --staged [file]
 ```
 
-Unstage a file, keeping the file changes
+Remove um arquivo da área de preparação, mantendo as alterações no arquivo
 
 ```shell script
 $ git reset [file]
 ```
 
-Revert everything to the last commit
+Reverte tudo para o último commit
 
 ```shell script
 $ git reset --hard
 ```
 
-Diff of what is changed but not staged
+Diff do que foi alterado, mas não preparado
 
 ```shell script
 $ git diff
 ```
 
-Diff of what is staged but not yet committed
+Diff do que está preparado, mas ainda não foi commitado
 
 ```shell script
 $ git diff --staged
 ```
 
-Apply any commits of current branch ahead of specified one
+Aplica os commits da branch atual que estão à frente da branch especificada
 
 ```shell script
 $ git rebase [branch]
 ```
 
-### Configuration
+### Configuração
 
-Set the name that will be attached to your commits and tags
+Define o nome que será anexado aos seus commits e tags
 
 ```shell script
 $ git config --global user.name "name"
 ```
 
-Set an email address that will be attached to your commits and tags
+Define um endereço de e-mail que será anexado aos seus commits e tags
 
 ```shell script
 $ git config --global user.email "email"
 ```
 
-Enable some colorization of Git output
+Ativa a colorização da saída do Git
 
 ```shell script
 $ git config --global color.ui auto
 ```
 
-Edit the global configuration file in a text editor
+Edita o arquivo de configuração global em um editor de texto
 
 ```shell script
 $ git config --global --edit
 ```
 
-### Working with Branches
+### Trabalhando com branches
 
-List all local branches
+Lista todas as branches locais
 
 ```shell script
 $ git branch
 ```
 
-List all branches, local and remote
+Lista todas as branches, locais e remotas
 
 ```shell script
 $ git branch -av
 ```
 
-Switch to my_branch, and update working directory
+Troca para my_branch e atualiza o diretório de trabalho
 
 ```shell script
 $ git switch my_branch
 ```
 
-Create a new branch called new_branch
+Cria uma nova branch chamada new_branch
 
 ```shell script
 $ git switch -c new_branch
 ```
 
-Delete the branch called my_branch
+Exclui a branch chamada my_branch
 
 ```shell script
 $ git branch -d my_branch
 ```
 
-Merge branchA into branchB
+Faz merge da branchA na branchB
 
 ```shell script
 $ git checkout branchB
 $ git merge branchA
 ```
 
-Tag the current commit
+Cria uma tag no commit atual
 
 ```shell script
 $ git tag my_tag
 ```
 
-### Observe your Repository
+### Observar seu repositório
 
-Show the commit history for the currently active branch
+Mostra o histórico de commits da branch ativa no momento
 
 ```shell script
 $ git log
 ```
 
-Show the commits on branchA that are not on branchB
+Mostra os commits da branchA que não estão na branchB
 
 ```shell script
 $ git log branchB..branchA
 ```
 
-Show the commits that changed file, even across renames
+Mostra os commits que alteraram o arquivo, mesmo com renomeações
 
 ```shell script
 $ git log --follow [file]
 ```
 
-Show the diff of what is in branchA that is not in branchB
+Mostra o diff do que está na branchA e não está na branchB
 
 ```shell script
 $ git diff branchB...branchA
 ```
 
-Show any object in Git in human-readable format
+Mostra qualquer objeto do Git em formato legível por humanos
 
 ```shell script
 $ git show [SHA]
 ```
 
-### Synchronize
+### Sincronizar
 
-Fetch down all the branches from that Git remote
+Baixa todas as branches daquele remoto do Git
 
 ```shell script
 $ git fetch [alias]
 ```
 
-Merge a remote branch into your current branch to bring it up to date
+Faz merge de uma branch remota na sua branch atual para deixá-la atualizada
 
 ```shell script
 $ git merge [alias]/[branch]
@@ -231,103 +231,103 @@ $ git merge --no-ff [alias]/[branch]
 $ git merge --ff-only [alias]/[branch]
 ```
 
-Transmit local branch commits to the remote repository branch
+Transmite os commits da branch local para a branch do repositório remoto
 
 ```shell script
 $ git push [alias] [branch]
 ```
 
-Fetch and merge any commits from the tracking remote branch
+Baixa e faz merge de quaisquer commits da branch remota rastreada
 
 ```shell script
 $ git pull
 ```
 
-Merge just one specific commit from another branch to your current branch
+Faz merge de apenas um commit específico de outra branch na sua branch atual
 
 ```shell script
 $ git cherry-pick [commit_id]
 ```
 
-### Remote
+### Remoto
 
-Add a git URL as an alias
+Adiciona uma URL do git como alias
 
 ```shell script
 $ git remote add [alias] [url]
 ```
 
-Show the names of the remote repositories you've set up
+Mostra os nomes dos repositórios remotos que você configurou
 
 ```shell script
 $ git remote
 ```
 
-Show the names and URLs of the remote repositories
+Mostra os nomes e as URLs dos repositórios remotos
 
 ```shell script
 $ git remote -v
 ```
 
-Remove a remote repository
+Remove um repositório remoto
 
 ```shell script
 $ git remote rm [remote repo name]
 ```
 
-Change the URL of the git repo
+Altera a URL do repositório git
 
 ```shell script
 $ git remote set-url origin [git_url]
 ```
 
-### Temporary Commits
+### Commits temporários
 
-Save modified and staged changes
+Salva as alterações modificadas e preparadas
 
 ```shell script
 $ git stash
 ```
 
-List stack-order of stashed file changes
+Lista a ordem da pilha de alterações de arquivos guardadas no stash
 
 ```shell script
 $ git stash list
 ```
 
-Write working from top of stash stack
+Restaura o trabalho a partir do topo da pilha do stash
 
 ```shell script
 $ git stash pop
 ```
 
-Discard the changes from top of stash stack
+Descarta as alterações do topo da pilha do stash
 
 ```shell script
 $ git stash drop
 ```
 
-### Tracking path Changes
+### Rastreando mudanças de path
 
-Delete the file from project and stage the removal for commit
+Exclui o arquivo do projeto e prepara a remoção para o commit
 
 ```shell script
 $ git rm [file]
 ```
 
-Change an existing file path and stage the move
+Altera o path de um arquivo existente e prepara a movimentação
 
 ```shell script
 $ git mv [existing-path] [new-path]
 ```
 
-Show all commit logs with indication of any paths that moved
+Mostra todos os logs de commit com indicação dos paths que foram movidos
 
 ```shell script
 $ git log --stat -M
 ```
 
-### Ignoring Files
+### Ignorando arquivos
 
 ```
 /logs/*
@@ -345,21 +345,21 @@ node_modules
 .sass-cache
 ```
 
-A `.gitignore` file specifies intentionally untracked files that Git should ignore
+Um arquivo `.gitignore` especifica arquivos que o Git deve ignorar intencionalmente, deixando-os sem rastreamento
 
-## Git Tricks
+## Truques do Git
 
-### Rename branch
+### Renomear branch
 
-- #### **Renamed** to `new_name`
+- #### **Renomeado** para `new_name`
   ```shell script
   $ git branch -m <new_name>
   ```
-- #### **Push** and reset
+- #### **Push** e reset
   ```shell script
   $ git push origin -u <new_name>
   ```
-- #### **Delete** remote branch
+- #### **Excluir** a branch remota
   ```shell script
   $ git push origin --delete <old>
   ```
@@ -367,97 +367,97 @@ A `.gitignore` file specifies intentionally untracked files that Git should igno
 
 ### Log
 
-Search change by content
+Pesquisa alterações por conteúdo
 
 ```shell script
 $ git log -S'<a term in the source>'
 ```
 
-Show changes over time for specific file
+Mostra as alterações ao longo do tempo para um arquivo específico
 
 ```shell script
 $ git log -p <file_name>
 ```
 
-Print out a cool visualization of your log
+Imprime uma visualização bacana do seu log
 
 ```shell script {.wrap}
 $ git log --pretty=oneline --graph --decorate --all
 ```
 
-List files changed in a commit 
+Lista os arquivos alterados em um commit
 
 ```shell script
 $ git log --name-only <commit-id>
 ```
 
-List files changed in commits excluding merges
+Lista os arquivos alterados nos commits, excluindo merges
 
 ```shell script
 $ git log --no-merges --name-only
 ```
 
-Limit commits to the last N entries 
+Limita os commits às últimas N entradas
 
 ```shell script
 $ git log -<number>
 ```
 
-Limit commits to the last N entries (alternate syntax) 
+Limita os commits às últimas N entradas (sintaxe alternativa)
 
 ```shell script
 $ git log -n <number>
 ```
 
-Limit commits to a maximum of N entries 
+Limita os commits a no máximo N entradas
 
 ```shell script
 $ git log --max-count=<number>
 ```
 
-Show commits more recent than a specific date 
+Mostra commits mais recentes que uma data específica
 
 ```shell script
 $ git log --after="YYYY-MM-DD HH:MM:SS ±HHMM"
 ```
 
-Show commits older than a specific date 
+Mostra commits mais antigos que uma data específica
 
 ```shell script
 $ git log --before="YYYY-MM-DD HH:MM:SS ±HHMM"
 ```
 
-Filter commits by author matching a pattern 
+Filtra commits por autor correspondente a um padrão
 
 ```shell script
 $ git log --author=<pattern>
 ```
 
-Filter commits by commit message matching a pattern 
+Filtra commits pela mensagem de commit correspondente a um padrão
 
 ```shell script
 $ git log --grep=<pattern>
 ```
 
-Show commit graph of the current branch with reference decorations
+Mostra o grafo de commits da branch atual com decorações de referência
 
 ```shell script
 $ git log --graph --decorate
 ```
 
-Show commit graph of a specific branch without switching to it
+Mostra o grafo de commits de uma branch específica sem trocar para ela
 
 ```shell script
 $ git log --graph --decorate <branch>
 ```
 
-Show commit graph for commits in one branch not in another
+Mostra o grafo de commits dos commits que estão em uma branch e não em outra
 
 ```shell script
 $ git log --graph --decorate <branchB>..<branchA>
 ```
 
-Show commit graph of all branches
+Mostra o grafo de commits de todas as branches
 
 ```shell script
 $ git log --graph --decorate --all
@@ -465,47 +465,47 @@ $ git log --graph --decorate --all
 
 ### Branch {.row-span-2}
 
-List all branches and their upstreams
+Lista todas as branches e seus upstreams
 
 ```shell script
 $ git branch -vv
 ```
 
-Quickly switch to the previous branch
+Troca rapidamente para a branch anterior
 
 ```shell script
 $ git checkout -
 ```
 
-Get only remote branches
+Obtém apenas as branches remotas
 
 ```shell script
 $ git branch -r
 ```
 
-Checkout a single file from another branch
+Faz checkout de um único arquivo de outra branch
 
 ```shell script
 $ git checkout <branch> -- <file>
 ```
 
-### Rewriting history
+### Reescrever o histórico
 
-Rewrite last commit message
+Reescreve a mensagem do último commit
 
 ```shell script
 $ git commit --amend -m "new message"
 ```
 
-Amend the latest commit without changing the commit message.
+Altera o último commit sem mudar a mensagem do commit.
 
 ```shell script
 $ git commit --amend --no-edit
 ```
 
-See also: [Rewriting history](https://www.atlassian.com/git/tutorials/rewriting-history)
+Veja também: [Reescrever o histórico](https://www.atlassian.com/git/tutorials/rewriting-history)
 
-### Git Aliases
+### Aliases do Git
 
 ```cmd
 git config --global alias.co checkout
@@ -514,69 +514,69 @@ git config --global alias.ci commit
 git config --global alias.st status
 ```
 
-See also: [More Aliases](https://gist.github.com/johnpolacek/69604a1f6861129ef088)
+Veja também: [Mais aliases](https://gist.github.com/johnpolacek/69604a1f6861129ef088)
 
-## Advanced Git
+## Git avançado
 
 ### Worktrees
 
-Create a new working tree at the specified path. If a branch is specified, it checks out that branch. If no branch is given, a new one is created based on HEAD and named after the new directory.
+Cria uma nova árvore de trabalho no path especificado. Se uma branch for informada, faz checkout dela. Se nenhuma branch for informada, cria uma nova com base no HEAD e com o nome do novo diretório.
 
 ```shell script
 $ git worktree add <path> [<branch>]
 ```
 
-List all of the active working trees associated with the repository.
+Lista todas as árvores de trabalho ativas associadas ao repositório.
 
 ```shell script
 $ git worktree list
 ```
 
-Remove the specified working tree.
+Remove a árvore de trabalho especificada.
 
 ```shell script
 $ git worktree remove <path>
 ```
 
-Clean up stale or manually deleted working trees.
+Limpa árvores de trabalho obsoletas ou excluídas manualmente.
 
 ```shell script
 $ git worktree prune
 ```
 
-Relocate the working tree to a new path.
+Move a árvore de trabalho para um novo path.
 
 ```shell script
 $  git worktree move <old_path> <new_path>
 ```
 
-### Submodules
+### Submódulos
 
-Create a new submodule within your repository:
+Crie um novo submódulo dentro do seu repositório:
 
 ```shell script
 $ git submodule add <repository_url> <path>
 ```
 
-Clone a repository and initialize its submodules:
+Clone um repositório e inicialize seus submódulos:
 
 ```shell script
 $ git clone --recursive <repository_url>
 ```
 
-Update all the submodules in your repository to the latest commit of their respective branches:
+Atualiza todos os submódulos do seu repositório para o último commit de suas respectivas branches:
 
 ```shell script
 $ git submodule update
 ```
 
-Pull the latest changes from the remote repositories of the submodules and update them in your main repository:
+Baixa as últimas alterações dos repositórios remotos dos submódulos e as atualiza no seu repositório principal:
 
 ```shell script
 $ git submodule update --remote
 ```
 
-Remove a submodule from your repository:
+Remove um submódulo do seu repositório:
 
 ```shell script
 $ git submodule deinit <path>
@@ -586,7 +586,7 @@ $ git commit -m "Removed submodule"
 
 ### Cherry-picking
 
-Cherry-picking allows you to apply a specific commit from one branch to another branch.
+O cherry-picking permite aplicar um commit específico de uma branch em outra branch.
 
 ```shell script
 $ git cherry-pick <commit_hash>
@@ -594,13 +594,13 @@ $ git cherry-pick <commit_hash>
 
 ### Reflog
 
-Display the reflog, showing the history of HEAD and branch movements:
+Exibe o reflog, mostrando o histórico de movimentações do HEAD e das branches:
 
 ```shell script
 $ git reflog
 ```
 
-Find the hash of the lost commit or branch using the reflog and then checkout to that hash to restore it:
+Encontre o hash do commit ou da branch perdidos usando o reflog e depois faça checkout para esse hash para restaurá-los:
 
 ```shell script
 $ git checkout <commit_or_branch_hash>

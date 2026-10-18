@@ -3,11 +3,11 @@
         <div class="max-container w-full">
             <h1 class="text-5xl mb-4">
                 <span class="text-slate-700 dark:text-slate-300 font-light"><%- page.title %></span>
-                <span class="text-slate-400 dark:text-slate-500 font-extralight hidden md:inline">cheatsheet</span>
+                <span class="text-slate-400 dark:text-slate-500 font-extralight hidden md:inline">cheat sheet</span>
             </h1>
             <div class="lg:w-3/5 mx-auto intro leading-relaxed text-slate-600"><%- page.intro != null ? markdown(page.intro) : "" %></div>
 
-            <!-- Social Buttons (Inline) -->
+            <!-- Botões sociais (inline) -->
             <div class="flex flex-wrap items-center justify-center gap-3 mt-6 mb-8">
                 <%- partial('_partial/buttons/github-star', {variant: 'inline', showLabel: true}) %>
                 <%- partial('_partial/buttons/follow-x', {variant: 'inline', showLabel: true}) %>

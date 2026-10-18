@@ -6,22 +6,22 @@ tags:
   - vue
   - web
 categories:
-  - Programming
+  - Programação
 intro: |
-  A Vue 3 cheat sheet with the most important concepts, reactivity, component system, routing, and more. Updated for the latest version and perfect for both beginners and advanced users.
+  Um cheat sheet do Vue 3 com os conceitos mais importantes, reatividade, sistema de componentes, roteamento e muito mais. Atualizado para a versão mais recente e perfeito tanto para iniciantes quanto para usuários avançados.
 plugins:
   - copyCode
   - runCode
 ---
 
-## 📘 Vue.js 3 Cheatsheet – Beginner to Advanced
+## 📘 Vue.js 3 Cheatsheet – do básico ao avançado
 
-> The ultimate reference for mastering Vue 3.
+> A referência definitiva para dominar o Vue 3.
 
 
 ## ⚙️ 1. Setup
 
-### CDN (Quick Start)
+### CDN (início rápido)
 
 ```html
 <script src="https://unpkg.com/vue@3"></script>
@@ -44,7 +44,7 @@ npm run dev
 ```
 
 
-## 🧠 2. App Structure
+## 🧠 2. Estrutura do app
 
 ```
 src/
@@ -55,7 +55,7 @@ src/
 ```
 
 
-## 📦 3. Data, Methods, Template
+## 📦 3. Data, Methods e Template
 
 ```js
 data() {
@@ -77,19 +77,19 @@ methods: {
 ```
 
 
-## 🧰 4. Directives
+## 🧰 4. Diretivas
 
-| Directive       | Purpose                 |
-| --------------- | ----------------------- |
-| `v-bind` / `:`  | Bind attributes         |
-| `v-model`       | Two-way binding         |
-| `v-if / v-else` | Conditional rendering   |
-| `v-show`        | Toggle visibility       |
-| `v-for`         | List rendering          |
-| `v-on` / `@`    | Event handling          |
-| `v-slot`        | Named/Scoped slot usage |
+| Diretiva        | Finalidade                 |
+| --------------- | -------------------------- |
+| `v-bind` / `:`  | Vincula atributos          |
+| `v-model`       | Vinculação bidirecional    |
+| `v-if / v-else` | Renderização condicional   |
+| `v-show`        | Alterna a visibilidade     |
+| `v-for`         | Renderização de listas     |
+| `v-on` / `@`    | Tratamento de eventos      |
+| `v-slot`        | Uso de slots nomeados/escopados |
 
-### Example
+### Exemplo
 
 ```html
 <input v-model="name" />
@@ -110,7 +110,7 @@ unmounted() {}
 ```
 
 
-## 🎯 6. Events
+## 🎯 6. Eventos
 
 ```html
 <button @click="sayHi">Click</button>
@@ -118,7 +118,7 @@ unmounted() {}
 ```
 
 
-## 🔁 7. Computed & Watch
+## 🔁 7. Computed e Watch
 
 ```js
 computed: {
@@ -134,9 +134,9 @@ watch: {
 ```
 
 
-## 🧱 8. Components
+## 🧱 8. Componentes
 
-### Register + Use
+### Registrar + Usar
 
 ```js
 app.component("Greeting", {
@@ -150,7 +150,7 @@ app.component("Greeting", {
 ```
 
 
-## 🔗 9. Props & Emits
+## 🔗 9. Props e Emits
 
 ### Props
 
@@ -171,7 +171,7 @@ this.$emit("custom-event", payload);
 ```
 
 
-## 🔄 10. v-model with Components
+## 🔄 10. v-model com componentes
 
 ```js
 props: ['modelValue'],
@@ -240,7 +240,7 @@ app.use(router).mount("#app");
 ```
 
 
-## 📦 13. Pinia (Vuex Alternative)
+## 📦 13. Pinia (alternativa ao Vuex)
 
 ```bash
 npm install pinia
@@ -281,7 +281,7 @@ counter.increment();
 ```
 
 
-## 🧪 15. Testing
+## 🧪 15. Testes
 
 ### Vitest + Vue Test Utils
 
@@ -300,26 +300,25 @@ test("renders", () => {
 ```
 
 
-## 🧼 16. Best Practices
+## 🧼 16. Boas práticas
 
-* Use `ref()` for primitives, `reactive()` for objects
-* Use `<script setup>` syntax in SFCs
-* Break UI into small, reusable components
-* Always define `key` in `v-for`
-* Use slots for flexible composition
+* Use `ref()` para primitivos, `reactive()` para objetos
+* Use a sintaxe `<script setup>` em SFCs
+* Divida a UI em componentes pequenos e reutilizáveis
+* Sempre defina `key` no `v-for`
+* Use slots para uma composição flexível
 
 
-## 🛠 17. Dev Tools
+## 🛠 17. Ferramentas de desenvolvimento
 
 * 🧩 [Vue DevTools](https://devtools.vuejs.org/)
-* 🧠 [Volar](https://github.com/vuejs/language-tools) for VSCode
-* ⚡ [Vite](https://vitejs.dev) for fast dev environment
+* 🧠 [Volar](https://github.com/vuejs/language-tools) para VSCode
+* ⚡ [Vite](https://vitejs.dev) para um ambiente de desenvolvimento rápido
 
 
-## 📚 18. Official Resources
+## 📚 18. Recursos oficiais
 
 * 📘 [Vue Docs](https://vuejs.org)
 * 🧭 [Router Docs](https://router.vuejs.org)
 * 📦 [Pinia Docs](https://pinia.vuejs.org)
 * 🧪 [Composition API FAQ](https://vuejs.org/guide/extras/composition-api-faq.html)
-

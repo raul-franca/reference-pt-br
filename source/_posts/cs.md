@@ -6,14 +6,14 @@ tags:
   - object-oriented
   - class
 categories:
-  - Programming
+  - Programação
 intro: |
-  C# quick reference cheat sheet that provides basic syntax and methods.
+  Cheat sheet de referência rápida de C# que apresenta a sintaxe básica e os métodos.
 plugins:
   - copyCode
 ---
 
-## Getting Started
+## Primeiros passos
 
 ### Hello.cs
 
@@ -28,26 +28,26 @@ class Hello {
 }
 ```
 
-Creates a project directory for new console application
+Cria um diretório de projeto para uma nova aplicação de console
 
 ```cs
 $ dotnet new console
 ```
 
-Lists all the applications templates
+Lista todos os templates de aplicações
 
 ```cs
 $ dotnet new list
 ```
 
-Compiling and running (make sure you are in the project directory)
+Compilando e executando (certifique-se de estar no diretório do projeto)
 
 ```shell script
 $ dotnet run
 Hello, world!
 ```
 
-### Variables
+### Variáveis
 
 ```cs
 int intNum = 9;
@@ -64,22 +64,22 @@ var str = "999";
 var bo = false;
 ```
 
-### Primitive Data Types
+### Tipos de dados primitivos
 
-| Data Type | Size             | Range                     |
-| --------- | ---------------- | ------------------------- |
-| `int`     | 4 bytes          | -2^31^ ^to^ 2^31^-1       |
-| `long`    | 8 bytes          | -2^63^ ^to^ 2^63^-1       |
-| `float`   | 4 bytes          | 6 ^to^ 7 decimal digits   |
-| `double`  | 8 bytes          | 15 decimal digits         |
-| `decimal` | 16 bytes         | 28 ^to^ 29 decimal digits |
-| `char`    | 2 bytes          | 0 ^to^ 65535              |
-| `bool`    | 1 bit            | true / false              |
-| `string`  | 2 bytes per char | _N/A_                     |
+| Tipo de dados | Tamanho               | Intervalo                  |
+| ------------- | --------------------- | -------------------------- |
+| `int`         | 4 bytes               | -2^31^ ^a^ 2^31^-1         |
+| `long`        | 8 bytes               | -2^63^ ^a^ 2^63^-1         |
+| `float`       | 4 bytes               | 6 ^a^ 7 dígitos decimais   |
+| `double`      | 8 bytes               | 15 dígitos decimais        |
+| `decimal`     | 16 bytes              | 28 ^a^ 29 dígitos decimais |
+| `char`        | 2 bytes               | 0 ^a^ 65535                |
+| `bool`        | 1 bit                 | true / false               |
+| `string`      | 2 bytes por caractere | _N/A_                      |
 
 {.show-header}
 
-### Comments
+### Comentários
 
 ```cs
 // Single-line comment
@@ -107,9 +107,9 @@ string name = first + " " + last;
 Console.WriteLine(name); // => John Doe
 ```
 
-See: [Strings](#c-strings)
+Veja: [Strings](#c-strings)
 
-### User Input
+### Entrada do usuário
 
 ```cs
 Console.WriteLine("Enter number:");
@@ -120,7 +120,7 @@ if(int.TryParse(Console.ReadLine(),out int input))
 }
 ```
 
-### Conditionals
+### Condicionais
 
 ```cs
 int j = 10;
@@ -166,7 +166,7 @@ foreach(int num in numbers) {
 
 ## C# Strings
 
-### String concatenation
+### Concatenação de strings
 
 ```cs
 string first = "John";
@@ -176,7 +176,7 @@ string name = first + " " + last;
 Console.WriteLine(name); // => John Doe
 ```
 
-### String interpolation
+### Interpolação de strings
 
 ```cs
 string first = "John";
@@ -186,27 +186,27 @@ string name = $"{first} {last}";
 Console.WriteLine(name); // => John Doe
 ```
 
-### String Members {.row-span-2}
+### Membros de string {.row-span-2}
 
-| Member     | Description                                                                                                                          |
-| ---------- | ------------------------------------------------------------------------------------------------------------------------------------ |
-| Length     | A property that returns the length of the string.                                                                                    |
-| Compare()  | A static method that compares two strings.                                                                                           |
-| Contains() | Determines if the string contains a specific substring.                                                                              |
-| Equals()   | Determines if the two strings have the same character data.                                                                          |
-| Format()   | Formats a string via the {0} notation and by using other primitives.                                                                 |
-| Trim()     | Removes all instances of specific characters from trailing and leading characters. Defaults to removing leading and trailing spaces. |
-| Split()    | Removes the provided character and creates an array out of the remaining characters on either side.                                  |
+| Membro     | Descrição                                                                                                                                                                                          |
+| ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Length     | Uma propriedade que retorna o comprimento da string.                                                                                                                                                    |
+| Compare()  | Um método estático que compara duas strings.                                                                                                                                                         |
+| Contains() | Determina se a string contém uma substring específica.                                                                                                                                              |
+| Equals()   | Determina se as duas strings têm os mesmos dados de caractere.                                                                                                                                       |
+| Format()   | Formata uma string por meio da notação {0} e do uso de outros primitivos.                                                                                                                            |
+| Trim()     | Remove todas as ocorrências de caracteres específicos do início e do fim da string. Por padrão, remove espaços no início e no fim. |
+| Split()    | Remove o caractere fornecido e cria um array com os caracteres restantes de cada lado.                                                                                                              |
 
 {.show-header}
 
-### Verbatim strings
+### Strings verbatim
 
 ```cs {.wrap}
 string longString = @"I can type any characters in here !#@$%^&*()__+ '' \n \t except double quotes and I will be taken literally. I even work with multiple lines.";
 ```
 
-### Member Example
+### Exemplo de membro
 
 ```cs
 // Using property of System.String
@@ -217,15 +217,15 @@ lengthOfString.Length           // => 9
 lengthOfString.Contains("How"); // => true
 ```
 
-## Misc
+## Diversos
 
-### General .NET Terms {.col-span-2}
+### Termos gerais do .NET {.col-span-2}
 
-| Term                          | Definition                                                                                                                                                                                         |
+| Termo                         | Definição                                                                                                                                                                                         |
 | ----------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Runtime                       | A collection of services that are required to execute a given compiled unit of code.                                                                                                               |
-| Common Language Runtime (CLR) | Primarily locates, loads, and managed .NET objects. The CLR also handles memory management, application hosting, coordination of threads, performing security checks, and other low-level details. |
-| Managed code                  | Code that compiles and runs on .NET runtime. C#/F#/VB are examples.                                                                                                                                |
-| Unmanaged code                | Code that compiles straight to machine code and cannot be directly hosted by the .NET runtime. Contains no free memory management, garbage collection, etc. DLLs created from C/C++ are examples.  |
+| Runtime                       | Uma coleção de serviços necessários para executar uma determinada unidade de código compilada.                                                                                                     |
+| Common Language Runtime (CLR) | Principalmente localiza, carrega e gerencia objetos .NET. O CLR também cuida do gerenciamento de memória, da hospedagem de aplicações, da coordenação de threads, da execução de verificações de segurança e de outros detalhes de baixo nível. |
+| Managed code                  | Código que compila e executa no runtime do .NET. C#/F#/VB são exemplos.                                                                                                                          |
+| Unmanaged code                | Código que compila diretamente para código de máquina e não pode ser hospedado diretamente pelo runtime do .NET. Não tem gerenciamento de memória, garbage collection etc. DLLs criadas em C/C++ são exemplos.  |
 
 {.show-header}

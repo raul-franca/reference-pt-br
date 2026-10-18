@@ -6,13 +6,13 @@ tags:
   - AI
   - Python
 categories:
-  - Other
-intro: This is a quick reference list of cheat sheets for Tensorflow. See also [Tensorflow website](https://tensorflow.org/).
+  - Outros
+intro: Esta é uma lista de referência rápida de cheat sheets para Tensorflow. Veja também o [site do Tensorflow](https://tensorflow.org/).
 ---
 
 ## Imports { .cols-1 }
 
-### General
+### Geral
 
 ```
 import tensorflow as tf                             # root package
@@ -22,9 +22,9 @@ model.fit(x_train, y_train, epoch, batch_size)      # model training
 model.evaluate(x_test, y_test)                      # model evaluation
 ```
 
-## Tensors { .cols-1 }
+## Tensores { .cols-1 }
 
-### Basic Operations
+### Operações básicas
 ```
 a = tf.constant(5) + tf.constant(3)      # tf.constant is an immutable tensor storing the fixed value
 a.numpy()                                # This will return the value, which is 8
@@ -33,7 +33,7 @@ b.assign(15)                             # this assign the new value to the vari
 with tf.GradientTape() as tape:          # record operations on variables for automatic differentiation
 ```
 
-### Creation
+### Criação
 
 ```
 x = 
@@ -46,7 +46,7 @@ requires_grad=True                  # arg, when set to True, tracks computation
                                     # history for future derivative calculations
 ```
 
-### Dimensionality
+### Dimensionalidade
 
 ```
 tf.shape                               # shape of the tensor
@@ -60,7 +60,7 @@ y = tf.expand_dims(x)                  # tensor with added axis
 y = tf.expand_dims(x, axis=2)          # (a,b,c) tensor -> (a,b,1,c) tensor
 ```
 
-### Algebra
+### Álgebra
 
 ```
 tf.add(a, b), a + b        # matrix addition
@@ -69,7 +69,7 @@ tf.matmul(a, b), a @ b     # matrix multiplication
 tf.transpose()             # matrix transpose
 ```
 
-### GPU Usage
+### Uso de GPU
 
 ```
 gpus = tf.config.list_physical_devices('GPU')              # check whether there is a GPU usage
@@ -85,15 +85,15 @@ try:
 
 ```
 
-## Deep Learning Models { .cols-1 }
+## Modelos de Deep Learning { .cols-1 }
 
-### Creating Models
+### Criando modelos
 ```
 tf.keras.Sequential                                # stack layers in a way that the computation
                                                    # will be performed sequentially
 ```
 
-### Layers
+### Camadas
 
 ```
 tf.keras.layers.Dense(m,n)                          # fully connected layer from
@@ -113,7 +113,7 @@ tf.keras.layers.Embedding(input_dim, output_dim)    # (tensor-wise) mapping from
                                                     # indices to embedding vectors
 ```
 
-### Loss Functions
+### Funções de perda
 
 ```
 tf.keras.losses.X                   # where X is BinaryCrossentropy, BinaryFocalCrossentropy, CTC
@@ -124,7 +124,7 @@ tf.keras.losses.X                   # where X is BinaryCrossentropy, BinaryFocal
                                     # Reduction, SparseCategoricalCrossentropy, SquaredHinge, Tversky
 ```
 
-### Activation Functions
+### Funções de ativação
 
 ```
 tf.keras.activations.X                # where X is ReLU, ReLU6, ELU, SELU, PReLU, LeakyReLU,
@@ -134,7 +134,7 @@ tf.keras.activations.X                # where X is ReLU, ReLU6, ELU, SELU, PReLU
                                       # Softmax2d, LogSoftmax or AdaptiveSoftmaxWithLoss
 ```
 
-### Optimizers
+### Otimizadores
 
 ```
 opt = tf.keras.optimizer.x(model.parameters(), ...)      # create optimizer
@@ -144,7 +144,7 @@ optim.X                                     # where X is SGD, Adadelta, Adafacto
                                             # LossScaleOptimizer ,RMSprop or Rprop
 ```
 
-### Learning rate scheduling - Callbacks
+### Agendamento da taxa de aprendizado - Callbacks
 
 ```
 callbacks = tf.keras.callbacks.LearningRateScheduler(scheduler)     # create lr scheduler
@@ -152,7 +152,7 @@ model.fit(..., callbacks=[callback], ....)                          # update lr 
                                                                     # using with fit(), evaluate(), and predict()
 ```
 
-### Saving and Loading Models
+### Salvando e carregando modelos
 ```
 tf.keras.models.clone_model(...)         # Clone a Functional or Sequential Model instance.
 tf.keras.models.load_model(...)          # Loads a model saved via model.save().
@@ -160,7 +160,7 @@ tf.keras.models.model_from_json(...)     # Parses a JSON model configuration str
 tf.keras.models.save_model(...)          # Saves a model as a .keras file.
 ```
 
-## Data Utilities { .cols-1 }
+## Utilitários de dados { .cols-1 }
 
 ### Datasets
 

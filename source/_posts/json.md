@@ -6,28 +6,28 @@ tags:
   - config
   - format
 categories:
-  - Programming
+  - Programação
 intro: |
-  This is a quick reference cheat sheet for understanding and writing JSON format configuration files.
+  Este é um cheat sheet de referência rápida para entender e escrever arquivos de configuração no formato JSON.
 plugins:
   - copyCode
 ---
 
-## Getting Started
+## Primeiros passos
 
-### Introduction
+### Introdução
 
-[JSON](https://json.org/) is a lightweight text-based open standard designed for human-readable data interchange.
+[JSON](https://json.org/) é um padrão aberto leve baseado em texto, projetado para a troca de dados legível por humanos.
 
-- JSON stands for JavaScript Object Notation
-- JSON is easy to read and write.
-- JSON is language agnostic data-interchange format
-- JSON filename extension is `.json`
-- JSON Internet Media type is `application/json`
+- JSON significa JavaScript Object Notation
+- JSON é fácil de ler e escrever.
+- JSON é um formato de troca de dados independente de linguagem
+- A extensão de arquivo JSON é `.json`
+- O tipo de mídia de Internet do JSON é `application/json`
 
 {.marker-round}
 
-### Examples
+### Exemplos
 
 ```json
 {
@@ -44,33 +44,33 @@ plugins:
 }
 ```
 
-### Types
+### Tipos
 
-| Type      | Description                             |
-| --------- | :-------------------------------------- |
-| `Number`  | Double precision floating-point         |
-| `String`  | Series of characters                    |
-| `Boolean` | `true` or `false`                       |
-| `Array`   | Ordered sequence of values              |
-| `Value`   | String, Number, Boolean, null etc       |
-| `Object`  | Unordered collection of key/value pairs |
-| `null`    | Null or Empty                           |
+| Tipo      | Descrição                                  |
+| --------- | :----------------------------------------- |
+| `Number`  | Ponto flutuante de precisão dupla           |
+| `String`  | Sequência de caracteres                     |
+| `Boolean` | `true` ou `false`                           |
+| `Array`   | Sequência ordenada de valores               |
+| `Value`   | String, Number, Boolean, null etc           |
+| `Object`  | Coleção não ordenada de pares chave/valor   |
+| `null`    | Nulo ou vazio                               |
 
 ### String {.row-span-3}
 
-|      |                            |
-| ---- | :------------------------- |
-| `\"` | Double quote               |
-| `\\` | Backslash                  |
-| `\/` | Forward slash              |
-| `\b` | Backspace                  |
-| `\f` | Form feed                  |
-| `\n` | Newline                    |
-| `\r` | Carriage return            |
-| `\t` | Tab                        |
-| `\u` | Trailed by four hex digits |
+|      |                                |
+| ---- | :----------------------------- |
+| `\"` | Aspas duplas                   |
+| `\\` | Barra invertida                |
+| `\/` | Barra normal                   |
+| `\b` | Backspace                      |
+| `\f` | Form feed                      |
+| `\n` | Nova linha                     |
+| `\r` | Retorno de carro               |
+| `\t` | Tabulação                      |
+| `\u` | Seguido por quatro dígitos hex |
 
-#### Examples
+#### Exemplos
 
 ```json {.wrap}
 {
@@ -80,23 +80,23 @@ plugins:
 }
 ```
 
-#### Invalid String
+#### String inválida
 
 ```json
 { "foo": "bar" }
 ```
 
-Have to be delimited by double quotes
+Precisa ser delimitada por aspas duplas
 
 ### Number {.row-span-2}
 
-| Type       | Description                            |
+| Tipo       | Descrição                              |
 | ---------- | :------------------------------------- |
-| `Integer`  | Digits 1-9, 0 and positive or negative |
-| `Fraction` | Fractions like 0.3, 3.9                |
-| `Exponent` | Exponent like e, e+, e-, E, E+, E      |
+| `Integer`  | Dígitos 1-9, 0 e positivo ou negativo  |
+| `Fraction` | Frações como 0.3, 3.9                  |
+| `Exponent` | Expoente como e, e+, e-, E, E+, E      |
 
-#### Examples
+#### Exemplos
 
 ```json
 {
@@ -108,15 +108,15 @@ Have to be delimited by double quotes
 }
 ```
 
-#### Invalid Number
+#### Número inválido
 
 ```json
 { "foo": 0xff }
 ```
 
-In JSON you can use only Decimal Literals
+Em JSON você só pode usar literais decimais
 
-### Objects
+### Objetos
 
 ```json
 {
@@ -131,7 +131,7 @@ In JSON you can use only Decimal Literals
 }
 ```
 
-Multiple key/value pairs separated by a comma
+Múltiplos pares chave/valor separados por vírgula
 
 ### Arrays
 
@@ -139,9 +139,9 @@ Multiple key/value pairs separated by a comma
 [1, 2, 3, 4, 5]
 ```
 
-Begins with `[` and ends with `]`
+Começa com `[` e termina com `]`
 
-### Array of objects
+### Array de objetos
 
 ```json
 {
@@ -152,7 +152,7 @@ Begins with `[` and ends with `]`
 }
 ```
 
-### Object of arrays
+### Objeto de arrays
 
 ```json
 {
@@ -162,7 +162,7 @@ Begins with `[` and ends with `]`
 }
 ```
 
-### 2D Array
+### Array 2D
 
 ```json
 {
@@ -175,7 +175,7 @@ Begins with `[` and ends with `]`
 }
 ```
 
-### Object of objects
+### Objeto de objetos
 
 ```json
 {
@@ -190,7 +190,7 @@ Begins with `[` and ends with `]`
 }
 ```
 
-### Nested
+### Aninhado
 
 ```json
 {
@@ -207,9 +207,9 @@ Begins with `[` and ends with `]`
 }
 ```
 
-## Access JSON in JavaScript
+## Acessar JSON em JavaScript
 
-### Access Object
+### Acessar objeto
 
 ```javascript
 let myObject = {
@@ -232,7 +232,7 @@ let myObject = {
 | `myObject.other`   | undefined |
 | `myObject[0]`      | undefined |
 
-### Access Nested {.row-span-2}
+### Acessar aninhado {.row-span-2}
 
 ```javascript
 let myObject = {
@@ -259,7 +259,7 @@ let myObject = {
 | `myObject.jsmith[3]`     | "F"                      |
 | `myObject[1]`            | undefined                |
 
-### Access Array of Objects {.row-span-2}
+### Acessar array de objetos {.row-span-2}
 
 ```javascript
 let myArray = [
@@ -300,7 +300,7 @@ let myArray = [
 | `myArray[3]`        | undefined                  |
 | `myArray[3].gender` | TypeError: Cannot read...  |
 
-### Access Array
+### Acessar array
 
 ```javascript
 let myArray = ['Jason', 'Doe', 39, 'M', 70000, true];
@@ -314,8 +314,8 @@ let myArray = ['Jason', 'Doe', 39, 'M', 70000, true];
 | `myArray[5]` | true      |
 | `myArray[6]` | undefined |
 
-## Also see {.cols-1}
+## Veja também {.cols-1}
 
 - [JSON](https://www.json.org/json-en.html) _(json.org)_
 - [JSON Editor Online](http://jsoneditoronline.org/) _(jsoneditoronline.org)_
-- [Convert JSON Array to Markdown Table, CSV and more](https://tableconvert.com/json-to-markdown) _(tableconvert.com)_
+- [Converter array JSON para tabela Markdown, CSV e mais](https://tableconvert.com/json-to-markdown) _(tableconvert.com)_

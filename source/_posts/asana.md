@@ -7,95 +7,95 @@ tags:
   -
   -
 categories:
-  - Keyboard Shortcuts
+  - Atalhos de Teclado
 intro: |
-  A visual cheat-sheet for the 40 keyboard shortcuts found in Asana
+  Uma cheat sheet visual com os 40 atalhos de teclado disponíveis no Asana
 ---
 
-## Keyboard Shortcuts
+## Atalhos de teclado
 
-### My Tasks
+### Minhas tarefas
 
-| Shortcut  | Action                            |
+| Atalho    | Ação                              |
 | --------- | --------------------------------- |
-| `Tab` `Y` | Mark as Today in your My Tasks    |
-| `Tab` `U` | Mark as Upcoming in your My Tasks |
-| `Tab` `L` | Mark as Later in your My Tasks    |
+| `Tab` `Y` | Marcar como Hoje em Minhas tarefas |
+| `Tab` `U` | Marcar como Futuras em Minhas tarefas |
+| `Tab` `L` | Marcar como Mais tarde em Minhas tarefas |
 
 {.shortcuts}
 
-### Inbox
+### Caixa de entrada
 
-| Shortcut | Action              |
-| -------- | ------------------- |
-| `K/J`    | Move Up/Down        |
-| `H`      | Jump to Inbox tab   |
-| `S`      | Jump to Archive tab |
-| `F`      | Follow or Unfollow  |
-| `I`      | Archive             |
-| `U`      | Move to Inbox       |
+| Atalho | Ação                  |
+| ------ | --------------------- |
+| `K/J`  | Mover para cima/baixo |
+| `H`    | Ir para a aba Caixa de entrada |
+| `S`    | Ir para a aba Arquivo |
+| `F`    | Seguir ou deixar de seguir |
+| `I`    | Arquivar              |
+| `U`    | Mover para a caixa de entrada |
 
 {.shortcuts}
 
-### Task Actions {.row-span-2}
+### Ações de tarefa {.row-span-2}
 
-| Shortcut                 | Action                                        |
+| Atalho                   | Ação                                          |
 | ------------------------ | --------------------------------------------- |
-| `Enter`                  | New Task                                      |
-| `Tab` `Backspace`        | Delete Selected Task(s)                       |
-| `Backspace`              | Delete current task (when task name is empty) |
-| `Ctrl` `Enter`           | Complete Selected Task(s)                     |
-| `Ctrl` `Up/Down`         | Move Up/Down                                  |
-| `Ctrl` `Shift` `Up/Down` | Jump Up/Down to the next Section              |
-| `Ctrl` `C`               | Copy Selected Tasks                           |
-| `Ctrl` `V`               | Paste Tasks (one per line)                    |
-| `Tab` `M`                | Assign to Me                                  |
-| `Tab` `H`                | Like a Selected Task                          |
-| `:`                      | Create a Section (at the end of a task name)  |
+| `Enter`                  | Nova tarefa                                   |
+| `Tab` `Backspace`        | Excluir a(s) tarefa(s) selecionada(s)         |
+| `Backspace`              | Excluir a tarefa atual (quando o nome da tarefa está vazio) |
+| `Ctrl` `Enter`           | Concluir a(s) tarefa(s) selecionada(s)        |
+| `Ctrl` `Up/Down`         | Mover para cima/baixo                         |
+| `Ctrl` `Shift` `Up/Down` | Ir para cima/baixo até a próxima seção        |
+| `Ctrl` `C`               | Copiar as tarefas selecionadas                |
+| `Ctrl` `V`               | Colar tarefas (uma por linha)                 |
+| `Tab` `M`                | Atribuir a mim                                |
+| `Tab` `H`                | Curtir uma tarefa selecionada                 |
+| `:`                      | Criar uma seção (no fim do nome de uma tarefa) |
 
 {.shortcuts}
 
-### Navigation
+### Navegação
 
-| Shortcut  | Action                                     |
+| Atalho    | Ação                                       |
 | --------- | ------------------------------------------ |
-| `Tab` `Z` | Navigate to My Tasks                       |
-| `Tab` `I` | Navigate to Inbox                          |
-| `Tab` `C` | Comment on Selected Task                   |
-| `Tab` `A` | Assign Selected Task                       |
-| `Tab` `D` | Set Due Date                               |
-| `Tab` `F` | Add Follower                               |
-| `Tab` `T` | Add a tag to the task                      |
-| `Tab` `S` | Focus Subtasks                             |
-| `Tab` `/` | Search for a project, tag, person, or task |
+| `Tab` `Z` | Ir para Minhas tarefas                     |
+| `Tab` `I` | Ir para a caixa de entrada                 |
+| `Tab` `C` | Comentar na tarefa selecionada             |
+| `Tab` `A` | Atribuir a tarefa selecionada              |
+| `Tab` `D` | Definir data de vencimento                 |
+| `Tab` `F` | Adicionar seguidor                         |
+| `Tab` `T` | Adicionar um tag à tarefa                  |
+| `Tab` `S` | Focar nas subtarefas                       |
+| `Tab` `/` | Buscar um projeto, tag, pessoa ou tarefa   |
 
 {.shortcuts}
 
-### Selection
+### Seleção
 
-| Shortcut          | Action                       |
-| ----------------- | ---------------------------- |
-| `Up/Down`         | Change Selection             |
-| `Shift` `(click)` | Select Range                 |
-| `Shift` `Up/Down` | Select Range                 |
-| `Ctrl` `(click)`  | Multi-select Individual Task |
+| Atalho            | Ação                            |
+| ----------------- | ------------------------------- |
+| `Up/Down`         | Alterar a seleção               |
+| `Shift` `(click)` | Selecionar intervalo            |
+| `Shift` `Up/Down` | Selecionar intervalo            |
+| `Ctrl` `(click)`  | Selecionar várias tarefas individualmente |
 
 {.shortcuts}
 
-### Application
+### Aplicativo
 
-| Shortcut      | Action                            |
+| Atalho        | Ação                              |
 | ------------- | --------------------------------- |
-| `Ctrl` `/`    | Show Keyboard Shortcuts           |
-| `Tab`         | Expand the right pane             |
-| `Esc`         | Collapse the right pane           |
-| `Tab` `X`     | Enter Focus Mode                  |
-| `Tab` `Q`     | Quick Add                         |
-| `Tab` `Enter` | Post Comment (from comment field) |
-| `Tab` `B`     | What it sounds like               |
+| `Ctrl` `/`    | Mostrar atalhos de teclado        |
+| `Tab`         | Expandir o painel direito         |
+| `Esc`         | Recolher o painel direito         |
+| `Tab` `X`     | Entrar no modo de foco            |
+| `Tab` `Q`     | Adição rápida                     |
+| `Tab` `Enter` | Publicar comentário (do campo de comentário) |
+| `Tab` `B`     | O som que isso faz                |
 
 {.shortcuts}
 
-## Also see
+## Veja também
 
 - [Keyboard shortcuts for Asana](https://asana.com/guide/help/faq/shortcuts) _(asana.com)_

@@ -7,93 +7,93 @@ tags:
   -
   -
 categories:
-  - Keyboard Shortcuts
+  - Atalhos de Teclado
 intro: |
-  A visual cheat-sheet for the 37 keyboard shortcuts found in Todoist
+  Uma cheat sheet visual com os 37 atalhos de teclado disponíveis no Todoist
 ---
 
-## Keyboard Shortcuts
+## Atalhos de teclado
 
-### Task Quick Add
+### Adição rápida de tarefa
 
-| Shortcut      | Action                                |
-| ------------- | ------------------------------------- |
-| `@`           | Add a label                           |
-| `#`           | Pick a project                        |
-| `+`           | Add an assignee                       |
-| `p1/p2/p3/p4` | Set a priority level                  |
-| `Ctrl` `M`    | Add a comment to a newly created task |
-| `Alt` `Enter` | Save and go to comments (Win 10 only) |
-| `Tab`         | Open full task editor (Win 10 only)   |
-
-{.shortcuts}
-
-### General
-
-| Shortcut       | Action                                   |
-| -------------- | ---------------------------------------- |
-| `Ctrl` `Click` | Select and change multiple tasks at once |
-| `Q`            | Add task                                 |
-| `A`            | Add new task at the bottom of the list   |
-| `Shift` `A`    | Add new task at the top of the list      |
-| `/`            | Open search                              |
-| `U`            | Undo last action                         |
-| `F5`           | Manually sync                            |
-| `Home`         | Navigate to default page                 |
-| `PgUp`         | Navigate back in 1-pane/2-pane view      |
-| `PgDown`       | Navigate forward in 1-pane/2-pane view   |
+| Atalho        | Ação                                   |
+| ------------- | -------------------------------------- |
+| `@`           | Adicionar um label                     |
+| `#`           | Escolher um projeto                    |
+| `+`           | Adicionar um responsável               |
+| `p1/p2/p3/p4` | Definir um nível de prioridade         |
+| `Ctrl` `M`    | Adicionar um comentário a uma tarefa recém-criada |
+| `Alt` `Enter` | Salvar e ir para os comentários (somente Win 10) |
+| `Tab`         | Abrir o editor completo de tarefas (somente Win 10) |
 
 {.shortcuts}
 
-### Adding or editing tasks
+### Geral
 
-| Shortcut        | Action                                                                            |
+| Atalho         | Ação                                       |
+| -------------- | ------------------------------------------ |
+| `Ctrl` `Click` | Selecionar e alterar várias tarefas de uma vez |
+| `Q`            | Adicionar tarefa                           |
+| `A`            | Adicionar nova tarefa no fim da lista      |
+| `Shift` `A`    | Adicionar nova tarefa no topo da lista     |
+| `/`            | Abrir busca                                |
+| `U`            | Desfazer a última ação                     |
+| `F5`           | Sincronizar manualmente                    |
+| `Home`         | Navegar para a página padrão               |
+| `PgUp`         | Navegar para trás na visualização de 1 ou 2 painéis |
+| `PgDown`       | Navegar para frente na visualização de 1 ou 2 painéis |
+
+{.shortcuts}
+
+### Adicionar ou editar tarefas
+
+| Atalho          | Ação                                                                              |
 | --------------- | --------------------------------------------------------------------------------- |
-| `Esc`           | Cancel current changes                                                            |
-| `Enter`         | Save a newly created task and create a new one below it                           |
-| `Shift` `Enter` | Save changes to an existing task and create a new task below it                   |
-| `Ctrl` `Enter`  | Save a new task or save changes to an existing one and create a new task above it |
-| `Ctrl` `Up`     | Move to the task above the task currently being edited                            |
-| `Ctrl` `Down`   | Move to the task below the task currently being edited                            |
+| `Esc`           | Cancelar as alterações atuais                                                     |
+| `Enter`         | Salvar uma tarefa recém-criada e criar outra abaixo dela                          |
+| `Shift` `Enter` | Salvar alterações de uma tarefa existente e criar uma nova tarefa abaixo dela     |
+| `Ctrl` `Enter`  | Salvar uma nova tarefa ou alterações de uma existente e criar uma nova acima dela |
+| `Ctrl` `Up`     | Ir para a tarefa acima da que está sendo editada                                  |
+| `Ctrl` `Down`   | Ir para a tarefa abaixo da que está sendo editada                                 |
 
 {.shortcuts}
 
-### Creating and completing sub-tasks
+### Criar e concluir subtarefas
 
-| Shortcut             | Action                                               |
-| -------------------- | ---------------------------------------------------- |
-| `Ctrl` `Alt` `Right` | Increase task indent                                 |
-| `Ctrl` `Alt` `Left`  | Decrease task indent                                 |
-| `Shift` `(click)`    | Complete a sub-task or recurring task and archive it |
-
-{.shortcuts}
-
-### Sorting tasks inside a project
-
-| Shortcut | Action           |
-| -------- | ---------------- |
-| `S`      | Sort by date     |
-| `P`      | Sort by priority |
-| `R`      | Sort by assignee |
+| Atalho               | Ação                                                  |
+| -------------------- | ----------------------------------------------------- |
+| `Ctrl` `Alt` `Right` | Aumentar o recuo da tarefa                            |
+| `Ctrl` `Alt` `Left`  | Diminuir o recuo da tarefa                            |
+| `Shift` `(click)`    | Concluir uma subtarefa ou tarefa recorrente e arquivá-la |
 
 {.shortcuts}
 
-### Navigation
+### Ordenar tarefas dentro de um projeto
 
-| Shortcut           | Action                             |
+| Atalho | Ação               |
+| ------ | ------------------ |
+| `S`    | Ordenar por data   |
+| `P`    | Ordenar por prioridade |
+| `R`    | Ordenar por responsável |
+
+{.shortcuts}
+
+### Navegação
+
+| Atalho             | Ação                               |
 | ------------------ | ---------------------------------- |
-| `Ctrl` `1`         | Inbox                              |
-| `Ctrl` `Shift` `1` | Team Inbox (Todoist Business only) |
-| `Ctrl` `2`         | Today                              |
-| `Ctrl` `3`         | Next 7 days                        |
-| `Ctrl` `4`         | Projects                           |
+| `Ctrl` `1`         | Caixa de entrada                   |
+| `Ctrl` `Shift` `1` | Caixa de entrada da equipe (somente Todoist Business) |
+| `Ctrl` `2`         | Hoje                               |
+| `Ctrl` `3`         | Próximos 7 dias                    |
+| `Ctrl` `4`         | Projetos                           |
 | `Ctrl` `5`         | Labels                             |
-| `Ctrl` `6`         | Filters                            |
-| `Ctrl` `,`         | Settings                           |
+| `Ctrl` `6`         | Filtros                            |
+| `Ctrl` `,`         | Configurações                      |
 
 {.shortcuts}
 
-## Also see
+## Veja também
 
 - [Keyboard shortcuts for Todoist](https://get.todoist.help/hc/en-us/articles/205063212-Keyboard-Shortcuts)
   _(get.todoist.help)_

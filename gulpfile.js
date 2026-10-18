@@ -4,7 +4,7 @@ const htmlclean = require('gulp-htmlclean');
 const version = require('gulp-version-number');
 const terser = require('gulp-terser');
 
-// Compress js files
+// Compacta os arquivos js
 gulp.task('js', function () {
   return gulp
     .src(['./public/js/main.js'])
@@ -16,7 +16,7 @@ gulp.task('js', function () {
     .pipe(gulp.dest('./public/js'));
 });
 
-// Build html files
+// Compila os arquivos html
 gulp.task('html', function () {
   return gulp
     .src('./public/**/*.html')

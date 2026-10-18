@@ -8,41 +8,41 @@ tags:
   - CICD
   - CLI
 categories:
-  - Toolkit
-intro: A quick reference to Github CLI, an open-source command line tool that enables GitHub on your terminal.
+  - Ferramentas
+intro: Uma referência rápida do Github CLI, uma ferramenta de linha de comando open-source que traz o GitHub para o seu terminal.
 plugins:
   - copyCode
 ---
 
-## Getting Started
+## Primeiros passos
 
-### Installation
+### Instalação
 
 **Windows**
 
-| Tool   | Install                          | Upgrade                          |
-| :----- | :------------------------------- | :------------------------------- |
-| WinGet | `winget install --id Github.cli` | `winget upgrade --id GitHub.cli` |
-| Scoop  | `scoop install gh`               | `scoop update gh`                |
-| Choco  | `choco install gh`               | `choco upgrade gh`               |
+| Ferramenta | Instalar                          | Atualizar                          |
+| :--------- | :-------------------------------- | :-------------------------------- |
+| WinGet     | `winget install --id Github.cli`  | `winget upgrade --id GitHub.cli`  |
+| Scoop      | `scoop install gh`                | `scoop update gh`                 |
+| Choco      | `choco install gh`                | `choco upgrade gh`                |
 
 {.show-header}
 
 **Mac OS**
 
-| Tool     | Install                | Upgrade                                        |
-| :------- | :--------------------- | :--------------------------------------------- |
-| Brew     | `brew install gh`      | `brew upgrade gh`                              |
-| MacPorts | `sudo port install gh` | `sudo port selfupdate && sudo port upgrade gh` |
+| Ferramenta | Instalar               | Atualizar                                      |
+| :--------- | :--------------------- | :--------------------------------------------- |
+| Brew       | `brew install gh`      | `brew upgrade gh`                              |
+| MacPorts   | `sudo port install gh` | `sudo port selfupdate && sudo port upgrade gh` |
 
 {.show-header}
 
 **Linux**
 
-See the [install instructions](https://github.com/cli/cli/blob/trunk/docs/install_linux.md) for other Linux
-distributions.
+Consulte as [instruções de instalação](https://github.com/cli/cli/blob/trunk/docs/install_linux.md) para outras
+distribuições Linux.
 
-Installation Script:
+Script de instalação:
 
 ```bash
 type -p curl >/dev/null || (sudo apt update && sudo apt install curl -y)
@@ -55,66 +55,66 @@ curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo 
 
 ---
 
-### Basic Usage
+### Uso básico
 
-**Help and Documentation**
+**Ajuda e documentação**
 
-Display command options:
+Exibe as opções do comando:
 
-| Command             | Description                                                                                                    |
-| :------------------ | :------------------------------------------------------------------------------------------------------------- |
-| `gh help [command]` | Help provides help for any command in the application. Simply type gh help [path to command] for full details. |
+| Comando             | Descrição                                                                                                          |
+| :------------------ | :----------------------------------------------------------------------------------------------------------------- |
+| `gh help [command]` | O help fornece ajuda para qualquer comando da aplicação. Basta digitar gh help [path to command] para ver todos os detalhes. |
 
-**Authentication**
+**Autenticação**
 
-| Command             | Description                                                       |
-| :------------------ | :---------------------------------------------------------------- |
-| `gh auth login`     | Default authentication with web-based browser                     |
-| `gh auth logout`    | Removes the authentication configuration for a host               |
-| `gh auth refresh`   | Expand or fix the permission scopes for stored credentials        |
-| `gh auth setup-git` | Configures git to use GitHub CLI as a credential helper           |
-| `gh auth status`    | Verifies and displays information about your authentication state |
-| `gh auth token`     | Print the auth token gh is configured to use                      |
+| Comando             | Descrição                                                          |
+| :------------------ | :----------------------------------------------------------------- |
+| `gh auth login`     | Autenticação padrão com navegador web                              |
+| `gh auth logout`    | Remove a configuração de autenticação de um host                   |
+| `gh auth refresh`   | Expande ou corrige os escopos de permissão das credenciais armazenadas |
+| `gh auth setup-git` | Configura o git para usar o GitHub CLI como credential helper      |
+| `gh auth status`    | Verifica e exibe informações sobre seu estado de autenticação      |
+| `gh auth token`     | Imprime o token de autenticação que o gh está configurado para usar |
 
-With Github token:
+Com token do Github:
 
 ```shell
 $ gh auth --with-token < token.txt
 ```
 
-### Repository Management
+### Gerenciamento de repositórios
 
-**General**
+**Geral**
 
-| Command                 | Description                                       |
+| Comando                 | Descrição                                         |
 | :---------------------- | :------------------------------------------------ |
-| `gh repo create`        | Create a new GitHub repository                    |
-| `gh repo list [target]` | List repositories owned by a user or organization |
+| `gh repo create`        | Cria um novo repositório no GitHub                |
+| `gh repo list [target]` | Lista repositórios de um usuário ou organização   |
 
-**Targets**
+**Alvos**
 
-| Command                      | Description                                                    |
+| Comando                      | Descrição                                                      |
 | :--------------------------- | :------------------------------------------------------------- |
-| `gh repo archive [repo]`     | Archive a GitHub repository                                    |
-| `gh repo clone [dir]`        | Clone a GitHub repository locally                              |
-| `gh repo delete [repo]`      | Delete a GitHub repository                                     |
-| `gh repo deploy-key`         | Manage deploy keys in a repository                             |
-| `gh repo edit [repo]`        | Edit repository settings                                       |
-| `gh repo fork [repo]`        | Create a fork of a repository                                  |
-| `gh repo rename [name]`      | Rename a GitHub repository                                     |
-| `gh repo set-default [repo]` | This command sets the default remote repository                |
-| `gh repo sync [dest-repo]`   | Sync destination repository from source repository             |
-| `gh repo view [repo]`        | Display the description and the README of a GitHub repository. |
+| `gh repo archive [repo]`     | Arquiva um repositório do GitHub                               |
+| `gh repo clone [dir]`        | Clona um repositório do GitHub localmente                      |
+| `gh repo delete [repo]`      | Exclui um repositório do GitHub                                |
+| `gh repo deploy-key`         | Gerencia deploy keys em um repositório                         |
+| `gh repo edit [repo]`        | Edita as configurações do repositório                          |
+| `gh repo fork [repo]`        | Cria um fork de um repositório                                 |
+| `gh repo rename [name]`      | Renomeia um repositório do GitHub                              |
+| `gh repo set-default [repo]` | Este comando define o repositório remoto padrão                |
+| `gh repo sync [dest-repo]`   | Sincroniza o repositório de destino a partir do repositório de origem |
+| `gh repo view [repo]`        | Exibe a descrição e o README de um repositório do GitHub.      |
 
 ### Issues
 
-**Search Issues**
+**Buscar issues**
 
-| Command                    | Description                 |
+| Comando                    | Descrição                   |
 | :------------------------- | :-------------------------- |
-| `gh search issues [query]` | Search for issues on GitHub |
+| `gh search issues [query]` | Busca issues no GitHub      |
 
-**Examples**
+**Exemplos**
 
 ```bash
 # search issues matching set of keywords "readme" and "typo"
@@ -138,21 +138,21 @@ $ gh search issues -- -label:bug
 
 ### Pull Requests
 
-**Pull Request Actions**
+**Ações de pull request**
 
-| Command        | Description                               |
+| Comando        | Descrição                                 |
 | :------------- | :---------------------------------------- |
-| `gh pr create` | Create a pull request on GitHub           |
-| `gh pr list`   | List pull requests in a GitHub repository |
-| `gh pr status` | Show status of relevant pull requests     |
+| `gh pr create` | Cria um pull request no GitHub            |
+| `gh pr list`   | Lista pull requests em um repositório do GitHub |
+| `gh pr status` | Mostra o status dos pull requests relevantes |
 
-**Example**
+**Exemplo**
 
 ```shell
 $ gh pr status
 ```
 
-Sample Output:
+Exemplo de saída:
 
 ```
 Current branch
@@ -171,66 +171,66 @@ Requesting a code review from you
 
 ### Github Actions
 
-**General Actions**
+**Ações gerais**
 
-| Command               | Description                                                                         |
+| Comando               | Descrição                                                                           |
 | :-------------------- | :---------------------------------------------------------------------------------- |
-| `gh workflow disable` | Disable a workflow, preventing it from running or showing up when listing workflows |
-| `gh workflow enable`  | Enable a workflow, allowing it to be run and show up when listing workflows         |
-| `gh workflow list`    | List workflow files, hiding disabled workflows by default                           |
-| `gh workflow run`     | Create a workflow_dispatch event for a given workflow                               |
-| `gh workflow view`    | View the summary of a workflow                                                      |
+| `gh workflow disable` | Desativa um workflow, impedindo que ele seja executado ou apareça na listagem de workflows |
+| `gh workflow enable`  | Ativa um workflow, permitindo que ele seja executado e apareça na listagem de workflows |
+| `gh workflow list`    | Lista os arquivos de workflow, ocultando workflows desativados por padrão           |
+| `gh workflow run`     | Cria um evento workflow_dispatch para um determinado workflow                       |
+| `gh workflow view`    | Exibe o resumo de um workflow                                                       |
 
-**Running Actions**
+**Ações de execução**
 
-| Command           | Description                                                         |
+| Comando           | Descrição                                                           |
 | :---------------- | :------------------------------------------------------------------ |
-| `gh run cancel`   | Cancel a workflow run                                               |
-| `gh run delete`   | Delete a workflow run                                               |
-| `gh run download` | Download artifacts generated by a GitHub Actions workflow run       |
-| `gh run list`     | List recent workflow runs                                           |
-| `gh run rerun`    | Rerun an entire run, only failed jobs, or a specific job from a run |
-| `gh run view`     | View a summary of a workflow run                                    |
-| `gh run watch`    | Watch a run until it completes, showing its progress                |
+| `gh run cancel`   | Cancela uma execução de workflow                                    |
+| `gh run delete`   | Exclui uma execução de workflow                                     |
+| `gh run download` | Baixa artifacts gerados por uma execução de workflow do GitHub Actions |
+| `gh run list`     | Lista execuções recentes de workflow                                |
+| `gh run rerun`    | Reexecuta uma execução inteira, apenas os jobs com falha ou um job específico de uma execução |
+| `gh run view`     | Exibe um resumo de uma execução de workflow                         |
+| `gh run watch`    | Acompanha uma execução até o fim, mostrando seu progresso           |
 
 ### Aliases
 
-**General Alias Settings**
+**Configurações gerais de alias**
 
-| Command           | Description                                                      |
+| Comando           | Descrição                                                        |
 | :---------------- | :--------------------------------------------------------------- |
-| `gh alias delete` | Delete set aliases                                               |
-| `gh alias import` | Import aliases from the contents of a YAML file                  |
-| `gh alias list`   | Prints out all of the aliases gh is configured to use            |
-| `gh alias set`    | Define a word that will expand to a full gh command when invoked |
+| `gh alias delete` | Exclui aliases definidos                                         |
+| `gh alias import` | Importa aliases do conteúdo de um arquivo YAML                   |
+| `gh alias list`   | Imprime todos os aliases que o gh está configurado para usar     |
+| `gh alias set`    | Define uma palavra que será expandida para um comando gh completo quando invocada |
 
 ### Releases
 
-**General Actions**
+**Ações gerais**
 
-| Command             | Description                                  |
+| Comando             | Descrição                                    |
 | :------------------ | :------------------------------------------- |
-| `gh release create` | Create a new GitHub Release for a repository |
-| `gh release list`   | List releases in a repository                |
+| `gh release create` | Cria um novo GitHub Release para um repositório |
+| `gh release list`   | Lista os releases de um repositório          |
 
-**Target Commands**
+**Comandos de destino**
 
-| Command                   | Description                             |
+| Comando                   | Descrição                               |
 | :------------------------ | :-------------------------------------- |
-| `gh release delete`       | Delete a release                        |
-| `gh release delete-asset` | Delete an asset from a release          |
-| `gh release download`     | Download assets from a GitHub release   |
-| `gh release edit`         | Edit a release                          |
-| `gh release upload`       | Upload asset files to a GitHub Release  |
-| `gh release view`         | View information about a GitHub Release |
+| `gh release delete`       | Exclui um release                       |
+| `gh release delete-asset` | Exclui um asset de um release           |
+| `gh release download`     | Baixa assets de um GitHub release       |
+| `gh release edit`         | Edita um release                        |
+| `gh release upload`       | Envia arquivos de asset para um GitHub Release |
+| `gh release view`         | Exibe informações sobre um GitHub Release |
 
-### Configuration
+### Configuração
 
-**Targeted Settings**
+**Configurações específicas**
 
-| Command                 | Description                                         |
+| Comando                 | Descrição                                           |
 | :---------------------- | :-------------------------------------------------- |
-| `gh config clear-cache` | Clear the cli cache                                 |
-| `gh config get`         | Print the value of a given configuration key        |
-| `gh config list`        | Print a list of configuration keys and values       |
-| `gh config set`         | Update configuration with a value for the given key |
+| `gh config clear-cache` | Limpa o cache da CLI                                |
+| `gh config get`         | Imprime o valor de uma chave de configuração específica |
+| `gh config list`        | Imprime uma lista de chaves e valores de configuração |
+| `gh config set`         | Atualiza a configuração com um valor para a chave específica |

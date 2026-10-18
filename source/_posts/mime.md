@@ -4,44 +4,44 @@ date: 2020-04-03 17:28:43
 tags:
   - media type
 categories:
-  - Other
+  - Outros
 intro: |
-  This cheat sheet lists some common MIME types for the Web. You can look in the [IANA/MIME Media Types registry](http://www.iana.org/assignments/media-types/index.html) which contains all registered MIME types.
+  Este cheat sheet lista alguns tipos MIME comuns para a Web. Consulte o [registro IANA/MIME Media Types](http://www.iana.org/assignments/media-types/index.html), que contém todos os tipos MIME registrados.
 ---
 
-## Getting Started {.cols-2}
+## Primeiros passos {.cols-2}
 
-### Introduction
+### Introdução
 
-- The MIME type registry associates particular filename extensions and filename pattern
-- MIME (Multipurpose Internet Mail Extensions) type aka media type
-- MIME types are defined and standardized in IETF's RFC 6838
-- Indicates the nature and format of a document, file, or assortment of bytes.
-- For file formats or format contents on the Internet
+- O registro de tipos MIME associa determinadas extensões e padrões de nome de arquivo
+- Tipo MIME (Multipurpose Internet Mail Extensions), também conhecido como media type
+- Os tipos MIME são definidos e padronizados na RFC 6838 da IETF
+- Indica a natureza e o formato de um documento, arquivo ou conjunto de bytes.
+- Para formatos de arquivo ou conteúdos de formato na Internet
 
   {.marker-round}
 
-### Multi-format of MIME types
+### Vários formatos de tipos MIME
 
-- [Markdown Table](https://tableconvert.com/html-to-markdown?data=https://cheatsheets.zip/mime#TableGenerator)
+- [Tabela Markdown](https://tableconvert.com/html-to-markdown?data=https://cheatsheets.zip/mime#TableGenerator)
 - [Template](https://tableconvert.com/html-to-template?data=https://cheatsheets.zip/mime#TableGenerator)
-- [LaTeX Table](https://tableconvert.com/html-to-latex?data=https://cheatsheets.zip/mime#TableGenerator)
+- [Tabela LaTeX](https://tableconvert.com/html-to-latex?data=https://cheatsheets.zip/mime#TableGenerator)
 - [CSV](https://tableconvert.com/html-to-csv?data=https://cheatsheets.zip/mime#TableGenerator)
 - [Excel](https://tableconvert.com/html-to-excel?data=https://cheatsheets.zip/mime#TableGenerator)
-- [JSON Array](https://tableconvert.com/html-to-json?data=https://cheatsheets.zip/mime#TableGenerator)
-- [HTML Table](https://tableconvert.com/html-to-html?data=https://cheatsheets.zip/mime#TableGenerator)
+- [Array JSON](https://tableconvert.com/html-to-json?data=https://cheatsheets.zip/mime#TableGenerator)
+- [Tabela HTML](https://tableconvert.com/html-to-html?data=https://cheatsheets.zip/mime#TableGenerator)
 - [Insert SQL](https://tableconvert.com/html-to-sql?data=https://cheatsheets.zip/mime#TableGenerator)
-- [YAML Sequence](https://tableconvert.com/html-to-yaml?data=https://cheatsheets.zip/mime#TableGenerator)
+- [Sequência YAML](https://tableconvert.com/html-to-yaml?data=https://cheatsheets.zip/mime#TableGenerator)
 - [XML](https://tableconvert.com/html-to-xml?data=https://cheatsheets.zip/mime#TableGenerator)
 - [ASCII](https://tableconvert.com/html-to-ascii?data=https://cheatsheets.zip/mime#TableGenerator)
-- [MediaWiki Table](https://tableconvert.com/html-to-mediawiki?data=https://cheatsheets.zip/mime#TableGenerator)
-- [AsciiDoc Table](https://tableconvert.com/html-to-asciidoc?data=https://cheatsheets.zip/mime#TableGenerator)
-- [Jira Table](https://tableconvert.com/html-to-jira?data=https://cheatsheets.zip/mime#TableGenerator)
-- [Textile Table](https://tableconvert.com/html-to-textile?data=https://cheatsheets.zip/mime#TableGenerator)
+- [Tabela MediaWiki](https://tableconvert.com/html-to-mediawiki?data=https://cheatsheets.zip/mime#TableGenerator)
+- [Tabela AsciiDoc](https://tableconvert.com/html-to-asciidoc?data=https://cheatsheets.zip/mime#TableGenerator)
+- [Tabela Jira](https://tableconvert.com/html-to-jira?data=https://cheatsheets.zip/mime#TableGenerator)
+- [Tabela Textile](https://tableconvert.com/html-to-textile?data=https://cheatsheets.zip/mime#TableGenerator)
 - [reStructuredText](https://tableconvert.com/html-to-restructuredtext?data=https://cheatsheets.zip/mime#TableGenerator)
-- [PHP Array](https://tableconvert.com/html-to-php?data=https://cheatsheets.zip/mime#TableGenerator)
-- [Ruby Array](https://tableconvert.com/html-to-ruby?data=https://cheatsheets.zip/mime#TableGenerator)
-- [ASP Array](https://tableconvert.com/html-to-asp?data=https://cheatsheets.zip/mime#TableGenerator)
+- [Array PHP](https://tableconvert.com/html-to-php?data=https://cheatsheets.zip/mime#TableGenerator)
+- [Array Ruby](https://tableconvert.com/html-to-ruby?data=https://cheatsheets.zip/mime#TableGenerator)
+- [Array ASP](https://tableconvert.com/html-to-asp?data=https://cheatsheets.zip/mime#TableGenerator)
 - [ActionScript](https://tableconvert.com/html-to-actionscript?data=https://cheatsheets.zip/mime#TableGenerator)
 - [BBCode](https://tableconvert.com/html-to-bbcode?data=https://cheatsheets.zip/mime#TableGenerator)
 - [PDF](https://tableconvert.com/html-to-pdf?data=https://cheatsheets.zip/mime#TableGenerator)
@@ -49,82 +49,82 @@ intro: |
 
 {.cols-4 .marker-none}
 
-## Lists of MIME types {.cols-1}
+## Listas de tipos MIME {.cols-1}
 
-### Common MIME (Media) types
+### Tipos MIME (media) comuns
 
-| Extension       | Kind of document                                 | MIME Type \(Content Type\)                                                                                                               |
-| --------------- | ------------------------------------------------ | :--------------------------------------------------------------------------------------------------------------------------------------- |
-| \.aac           | AAC audio                                        | audio/aac                                                                                                                                |
-| \.abw           | AbiWord document                                 | application/x\-abiword                                                                                                                   |
-| \.arc           | Archive document \(multiple files embedded\)     | application/x\-freearc                                                                                                                   |
-| \.avi           | AVI: Audio Video Interleave                      | video/x\-msvideo                                                                                                                         |
-| \.azw           | Amazon Kindle eBook format                       | application/vnd\.amazon\.ebook                                                                                                           |
-| \.bin           | Any kind of binary data                          | application/octet\-stream                                                                                                                |
-| \.bmp           | Windows OS/2 Bitmap Graphics                     | image/bmp                                                                                                                                |
-| \.bz            | BZip archive                                     | application/x\-bzip                                                                                                                      |
-| \.bz2           | BZip2 archive                                    | application/x\-bzip2                                                                                                                     |
-| \.csh           | C\-Shell script                                  | application/x\-csh                                                                                                                       |
-| \.css           | Cascading Style Sheets \(CSS\)                   | text/css                                                                                                                                 |
-| \.csv           | Comma\-separated values \(CSV\)                  | text/csv                                                                                                                                 |
-| \.doc           | Microsoft Word                                   | application/msword                                                                                                                       |
-| \.docx          | Microsoft Word \(OpenXML\)                       | application/vnd\.openxmlformats\-officedocument\.wordprocessingml\.document                                                              |
-| \.eot           | MS Embedded OpenType fonts                       | application/vnd\.ms\-fontobject                                                                                                          |
-| \.epub          | Electronic publication \(EPUB\)                  | application/epub\+zip                                                                                                                    |
-| \.gz            | GZip Compressed Archive                          | application/gzip                                                                                                                         |
-| \.gif           | Graphics Interchange Format \(GIF\)              | image/gif                                                                                                                                |
-| \.htm \.html    | HyperText Markup Language \(HTML\)               | text/html                                                                                                                                |
-| \.ico           | Icon format                                      | image/vnd\.microsoft\.icon                                                                                                               |
-| \.ics           | iCalendar format                                 | text/calendar                                                                                                                            |
-| \.jar           | Java Archive \(JAR\)                             | application/java\-archive                                                                                                                |
-| \.jpeg \.jpg    | JPEG images                                      | image/jpeg                                                                                                                               |
-| \.js            | JavaScript                                       | text/javascript                                                                                                                          |
-| \.json          | JSON format                                      | application/json                                                                                                                         |
-| \.jsonld        | JSON\-LD format                                  | application/ld\+json                                                                                                                     |
-| \.mid \.midi    | Musical Instrument Digital Interface \(MIDI\)    | audio/midi audio/x\-midi                                                                                                                 |
-| \.mjs           | JavaScript module                                | text/javascript                                                                                                                          |
-| \.mp3           | MP3 audio                                        | audio/mpeg                                                                                                                               |
-| \.mpeg          | MPEG Video                                       | video/mpeg                                                                                                                               |
-| \.mpkg          | Apple Installer Package                          | application/vnd\.apple\.installer\+xml                                                                                                   |
-| \.odp           | OpenDocument presentation document               | application/vnd\.oasis\.opendocument\.presentation                                                                                       |
-| \.ods           | OpenDocument spreadsheet document                | application/vnd\.oasis\.opendocument\.spreadsheet                                                                                        |
-| \.odt           | OpenDocument text document                       | application/vnd\.oasis\.opendocument\.text                                                                                               |
-| \.oga           | OGG audio                                        | audio/ogg                                                                                                                                |
-| \.ogv           | OGG video                                        | video/ogg                                                                                                                                |
-| \.ogx           | OGG                                              | application/ogg                                                                                                                          |
-| \.opus          | Opus audio                                       | audio/opus                                                                                                                               |
-| \.otf           | OpenType font                                    | font/otf                                                                                                                                 |
-| \.png           | Portable Network Graphics                        | image/png                                                                                                                                |
-| \.pdf           | Adobe Portable Document Format \(PDF\)           | application/pdf                                                                                                                          |
-| \.php           | Hypertext Preprocessor \(Personal Home Page\)    | application/php                                                                                                                          |
-| \.ppt           | Microsoft PowerPoint                             | application/vnd\.ms\-powerpoint                                                                                                          |
-| \.pptx          | Microsoft PowerPoint \(OpenXML\)                 | application/vnd\.openxmlformats\-officedocument\.presentationml\.presentation                                                            |
-| \.rar           | RAR archive                                      | application/vnd\.rar                                                                                                                     |
-| \.rtf           | Rich Text Format \(RTF\)                         | application/rtf                                                                                                                          |
-| \.sh            | Bourne shell script                              | application/x\-sh                                                                                                                        |
-| \.svg           | Scalable Vector Graphics \(SVG\)                 | image/svg\+xml                                                                                                                           |
-| \.swf           | Small web format \(SWF\) or Adobe Flash document | application/x\-shockwave\-flash                                                                                                          |
-| \.tar           | Tape Archive \(TAR\)                             | application/x\-tar                                                                                                                       |
-| \.tif \.tiff    | Tagged Image File Format \(TIFF\)                | image/tiff                                                                                                                               |
-| \.ts            | MPEG transport stream                            | video/mp2t                                                                                                                               |
-| \.ttf           | TrueType Font                                    | font/ttf                                                                                                                                 |
-| \.txt           | Text, \(generally ASCII or ISO 8859\-n\)         | text/plain                                                                                                                               |
-| \.vsd           | Microsoft Visio                                  | application/vnd\.visio                                                                                                                   |
-| \.wav           | Waveform Audio Format                            | audio/wav                                                                                                                                |
-| \.weba          | WEBM audio                                       | audio/webm                                                                                                                               |
-| \.webm          | WEBM video                                       | video/webm                                                                                                                               |
-| \.webp          | WEBP image                                       | image/webp                                                                                                                               |
-| \.woff          | Web Open Font Format \(WOFF\)                    | font/woff                                                                                                                                |
-| \.woff2         | Web Open Font Format \(WOFF\)                    | font/woff2                                                                                                                               |
-| \.xhtml         | XHTML                                            | application/xhtml\+xml                                                                                                                   |
-| \.xls           | Microsoft Excel                                  | application/vnd\.ms\-excel                                                                                                               |
-| \.xlsx          | Microsoft Excel \(OpenXML\)                      | application/vnd\.openxmlformats\-officedocument\.spreadsheetml\.sheet                                                                    |
-| \.xml           | XML                                              | application/xml if not readable from casual users \(RFC 3023, section 3\) text/xml if readable from casual users \(RFC 3023, section 3\) |
-| \.xul           | XUL                                              | application/vnd\.mozilla\.xul\+xml                                                                                                       |
-| \.zip           | ZIP archive                                      | application/zip                                                                                                                          |
-| \.3gp           | 3GPP audio/video container                       | video/3gpp audio/3gpp if it doesn't contain video                                                                                        |
-| \.3g2           | 3GPP2 audio/video container                      | video/3gpp2 audio/3gpp2 if it doesn't contain video                                                                                      |
-| \.7z            | 7\-zip archive                                   | application/x\-7z\-compressed                                                                                                            |
-| \.markdown \.md | Markdown File                                    | text/markdown                                                                                                                            |
+| Extensão        | Tipo de documento                                  | Tipo MIME \(Content Type\)                                                                                                                       |
+| --------------- | -------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| \.aac           | Áudio AAC                                          | audio/aac                                                                                                                                        |
+| \.abw           | Documento AbiWord                                  | application/x\-abiword                                                                                                                           |
+| \.arc           | Documento de arquivo \(vários arquivos embutidos\) | application/x\-freearc                                                                                                                           |
+| \.avi           | AVI: Audio Video Interleave                        | video/x\-msvideo                                                                                                                                 |
+| \.azw           | Formato de eBook do Amazon Kindle                  | application/vnd\.amazon\.ebook                                                                                                                   |
+| \.bin           | Qualquer tipo de dado binário                      | application/octet\-stream                                                                                                                        |
+| \.bmp           | Windows OS/2 Bitmap Graphics                       | image/bmp                                                                                                                                        |
+| \.bz            | Arquivo BZip                                       | application/x\-bzip                                                                                                                              |
+| \.bz2           | Arquivo BZip2                                      | application/x\-bzip2                                                                                                                             |
+| \.csh           | Script C\-Shell                                    | application/x\-csh                                                                                                                               |
+| \.css           | Cascading Style Sheets \(CSS\)                     | text/css                                                                                                                                         |
+| \.csv           | Valores separados por vírgula \(CSV\)              | text/csv                                                                                                                                         |
+| \.doc           | Microsoft Word                                     | application/msword                                                                                                                               |
+| \.docx          | Microsoft Word \(OpenXML\)                         | application/vnd\.openxmlformats\-officedocument\.wordprocessingml\.document                                                                      |
+| \.eot           | Fontes MS Embedded OpenType                        | application/vnd\.ms\-fontobject                                                                                                                  |
+| \.epub          | Publicação eletrônica \(EPUB\)                     | application/epub\+zip                                                                                                                            |
+| \.gz            | GZip Compressed Archive                            | application/gzip                                                                                                                                 |
+| \.gif           | Graphics Interchange Format \(GIF\)                | image/gif                                                                                                                                        |
+| \.htm \.html    | HyperText Markup Language \(HTML\)                 | text/html                                                                                                                                        |
+| \.ico           | Formato de ícone                                   | image/vnd\.microsoft\.icon                                                                                                                       |
+| \.ics           | Formato iCalendar                                  | text/calendar                                                                                                                                    |
+| \.jar           | Java Archive \(JAR\)                               | application/java\-archive                                                                                                                        |
+| \.jpeg \.jpg    | Imagens JPEG                                       | image/jpeg                                                                                                                                       |
+| \.js            | JavaScript                                         | text/javascript                                                                                                                                  |
+| \.json          | Formato JSON                                       | application/json                                                                                                                                 |
+| \.jsonld        | Formato JSON\-LD                                   | application/ld\+json                                                                                                                             |
+| \.mid \.midi    | Musical Instrument Digital Interface \(MIDI\)      | audio/midi audio/x\-midi                                                                                                                         |
+| \.mjs           | Módulo JavaScript                                  | text/javascript                                                                                                                                  |
+| \.mp3           | Áudio MP3                                          | audio/mpeg                                                                                                                                       |
+| \.mpeg          | Vídeo MPEG                                         | video/mpeg                                                                                                                                       |
+| \.mpkg          | Pacote de instalador da Apple                      | application/vnd\.apple\.installer\+xml                                                                                                           |
+| \.odp           | Documento de apresentação OpenDocument             | application/vnd\.oasis\.opendocument\.presentation                                                                                               |
+| \.ods           | Documento de planilha OpenDocument                 | application/vnd\.oasis\.opendocument\.spreadsheet                                                                                                |
+| \.odt           | Documento de texto OpenDocument                    | application/vnd\.oasis\.opendocument\.text                                                                                                       |
+| \.oga           | Áudio OGG                                          | audio/ogg                                                                                                                                        |
+| \.ogv           | Vídeo OGG                                          | video/ogg                                                                                                                                        |
+| \.ogx           | OGG                                                | application/ogg                                                                                                                                  |
+| \.opus          | Áudio Opus                                         | audio/opus                                                                                                                                       |
+| \.otf           | Fonte OpenType                                     | font/otf                                                                                                                                         |
+| \.png           | Portable Network Graphics                          | image/png                                                                                                                                        |
+| \.pdf           | Adobe Portable Document Format \(PDF\)             | application/pdf                                                                                                                                  |
+| \.php           | Hypertext Preprocessor \(Personal Home Page\)      | application/php                                                                                                                                  |
+| \.ppt           | Microsoft PowerPoint                               | application/vnd\.ms\-powerpoint                                                                                                                  |
+| \.pptx          | Microsoft PowerPoint \(OpenXML\)                   | application/vnd\.openxmlformats\-officedocument\.presentationml\.presentation                                                                    |
+| \.rar           | Arquivo RAR                                        | application/vnd\.rar                                                                                                                             |
+| \.rtf           | Rich Text Format \(RTF\)                           | application/rtf                                                                                                                                  |
+| \.sh            | Script Bourne shell                                | application/x\-sh                                                                                                                                |
+| \.svg           | Scalable Vector Graphics \(SVG\)                   | image/svg\+xml                                                                                                                                   |
+| \.swf           | Small web format \(SWF\) ou documento Adobe Flash  | application/x\-shockwave\-flash                                                                                                                  |
+| \.tar           | Tape Archive \(TAR\)                               | application/x\-tar                                                                                                                               |
+| \.tif \.tiff    | Tagged Image File Format \(TIFF\)                  | image/tiff                                                                                                                                       |
+| \.ts            | Fluxo de transporte MPEG                           | video/mp2t                                                                                                                                       |
+| \.ttf           | Fonte TrueType                                     | font/ttf                                                                                                                                         |
+| \.txt           | Texto, \(geralmente ASCII ou ISO 8859\-n\)         | text/plain                                                                                                                                       |
+| \.vsd           | Microsoft Visio                                    | application/vnd\.visio                                                                                                                           |
+| \.wav           | Waveform Audio Format                              | audio/wav                                                                                                                                        |
+| \.weba          | Áudio WEBM                                         | audio/webm                                                                                                                                       |
+| \.webm          | Vídeo WEBM                                         | video/webm                                                                                                                                       |
+| \.webp          | Imagem WEBP                                        | image/webp                                                                                                                                       |
+| \.woff          | Web Open Font Format \(WOFF\)                      | font/woff                                                                                                                                        |
+| \.woff2         | Web Open Font Format \(WOFF\)                      | font/woff2                                                                                                                                       |
+| \.xhtml         | XHTML                                              | application/xhtml\+xml                                                                                                                           |
+| \.xls           | Microsoft Excel                                    | application/vnd\.ms\-excel                                                                                                                       |
+| \.xlsx          | Microsoft Excel \(OpenXML\)                        | application/vnd\.openxmlformats\-officedocument\.spreadsheetml\.sheet                                                                            |
+| \.xml           | XML                                                | application/xml se não for legível por usuários casuais \(RFC 3023, seção 3\) text/xml se for legível por usuários casuais \(RFC 3023, seção 3\) |
+| \.xul           | XUL                                                | application/vnd\.mozilla\.xul\+xml                                                                                                               |
+| \.zip           | Arquivo ZIP                                        | application/zip                                                                                                                                  |
+| \.3gp           | Container de áudio/vídeo 3GPP                      | video/3gpp audio/3gpp se não contiver vídeo                                                                                                      |
+| \.3g2           | Container de áudio/vídeo 3GPP2                     | video/3gpp2 audio/3gpp2 se não contiver vídeo                                                                                                    |
+| \.7z            | Arquivo 7\-zip                                     | application/x\-7z\-compressed                                                                                                                    |
+| \.markdown \.md | Arquivo Markdown                                   | text/markdown                                                                                                                                    |
 
 {.show-header}

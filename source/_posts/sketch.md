@@ -7,246 +7,246 @@ tags:
   -
   - mac
 categories:
-  - Keyboard Shortcuts
+  - Atalhos de Teclado
 intro: |
-  A visual cheat-sheet for the 149 keyboard shortcuts found in Sketch. This application is MacOS-only.
+  Um cheat sheet visual dos 149 atalhos de teclado do Sketch. Este aplicativo é exclusivo para MacOS.
 ---
 
-## Keyboard Shortcuts
+## Atalhos de teclado
 
-### General {.row-span-2}
+### Geral {.row-span-2}
 
-| Shortcut                | Action                  |
+| Atalho                  | Ação                    |
 | ----------------------- | ----------------------- |
-| `Cmd` `C`               | Copy                    |
-| `Cmd` `X`               | Cut                     |
-| `Cmd` `V`               | Paste                   |
-| `Cmd` `Shift` `V`       | Paste over selection    |
-| `Space` `(drag)`        | Pan Canvas              |
-| `Cmd` `Shift` `N`       | New page                |
-| `Fn` `Up`               | Previous page           |
-| `Fn` `Down`             | Next page               |
-| `Cmd` `+`               | Zoom in                 |
-| `Cmd` `-`               | Zoom out                |
-| `Ctrl` `R`              | Toggle rulers           |
-| `Ctrl` `P`              | Toggle pixels           |
-| `Ctrl` `X`              | Toggle pixel grid       |
-| `Ctrl` `G`              | Toggle grid             |
-| `Ctrl` `L`              | Toggle layout           |
-| `Ctrl` `E`              | Toggle slices           |
-| `Ctrl` `F`              | Toggle prototyping      |
-| `Cmd` `F`               | Filter in Layer List    |
-| `Cmd` `Ctrl` `K`        | Run custom plugin       |
-| `Cmd` `Z`               | Undo                    |
-| `Cmd` `Shift` `Z`       | Redo                    |
-| `Cmd` `N`               | New document            |
-| `Cmd` `Shift` `N`       | New Cloud document      |
-| `Cmd` `O`               | Open document           |
-| `Cmd` `Shift` `O`       | Open Cloud document     |
-| `Cmd` `W`               | Close window            |
-| `Cmd` `S`               | Save document           |
-| `Cmd` `Shift` `S`       | Duplicate document      |
-| `Cmd` `Shift` `Opt` `S` | Save document as...     |
-| `Cmd` `Shift` `P`       | Page setup              |
-| `Cmd` `,`               | Open Preferences window |
-| `Cmd` `H`               | Hide Sketch             |
-| `Cmd` `Q`               | Quit Sketch             |
-| `Cmd` `Shift` `?`       | Open the Help menu      |
-| `Cmd` `P`               | Open Preview window     |
+| `Cmd` `C`               | Copiar                  |
+| `Cmd` `X`               | Recortar                |
+| `Cmd` `V`               | Colar                   |
+| `Cmd` `Shift` `V`       | Colar sobre a seleção   |
+| `Space` `(drag)`        | Mover a tela            |
+| `Cmd` `Shift` `N`       | Nova página             |
+| `Fn` `Up`               | Página anterior         |
+| `Fn` `Down`             | Próxima página          |
+| `Cmd` `+`               | Aumentar zoom           |
+| `Cmd` `-`               | Diminuir zoom           |
+| `Ctrl` `R`              | Alternar réguas         |
+| `Ctrl` `P`              | Alternar pixels         |
+| `Ctrl` `X`              | Alternar grade de pixels |
+| `Ctrl` `G`              | Alternar grade          |
+| `Ctrl` `L`              | Alternar layout         |
+| `Ctrl` `E`              | Alternar slices         |
+| `Ctrl` `F`              | Alternar prototipagem   |
+| `Cmd` `F`               | Filtrar na lista de camadas |
+| `Cmd` `Ctrl` `K`        | Executar plugin personalizado |
+| `Cmd` `Z`               | Desfazer                |
+| `Cmd` `Shift` `Z`       | Refazer                 |
+| `Cmd` `N`               | Novo documento          |
+| `Cmd` `Shift` `N`       | Novo documento na nuvem |
+| `Cmd` `O`               | Abrir documento         |
+| `Cmd` `Shift` `O`       | Abrir documento na nuvem |
+| `Cmd` `W`               | Fechar janela           |
+| `Cmd` `S`               | Salvar documento        |
+| `Cmd` `Shift` `S`       | Duplicar documento      |
+| `Cmd` `Shift` `Opt` `S` | Salvar documento como... |
+| `Cmd` `Shift` `P`       | Configurar página       |
+| `Cmd` `,`               | Abrir janela de preferências |
+| `Cmd` `H`               | Ocultar Sketch          |
+| `Cmd` `Q`               | Sair do Sketch          |
+| `Cmd` `Shift` `?`       | Abrir o menu Ajuda      |
+| `Cmd` `P`               | Abrir janela de Preview |
 
 {.shortcuts}
 
-### Inserting Layers
+### Inserindo camadas
 
-| Shortcut | Action            |
+| Atalho | Ação              |
 | -------- | ----------------- |
-| `R`      | Rectangle         |
+| `R`      | Retângulo         |
 | `O`      | Oval              |
-| `L`      | Line              |
-| `U`      | Rounded rectangle |
-| `V`      | Vector tool       |
-| `P`      | Pencil tool       |
-| `T`      | Text tool         |
-| `A`      | Artboard tool     |
-| `S`      | Slice tool        |
-| `H`      | Hotspot tool      |
+| `L`      | Linha             |
+| `U`      | Retângulo arredondado |
+| `V`      | Ferramenta vetor  |
+| `P`      | Ferramenta lápis  |
+| `T`      | Ferramenta texto  |
+| `A`      | Ferramenta artboard |
+| `S`      | Ferramenta slice  |
+| `H`      | Ferramenta hotspot |
 
 {.shortcuts}
 
-### Selecting Layers
+### Selecionando camadas
 
-| Shortcut          | Action                         |
+| Atalho          | Ação                           |
 | ----------------- | ------------------------------ |
-| `Cmd` `A`         | Select all                     |
-| `Cmd` `Shift` `A` | Select all Artboards           |
-| `Fn` `Right`      | Select next Artboard           |
-| `Fn` `Left`       | Select previous Artboard       |
-| `Cmd` `Shift` `J` | Reveal selection in Layer List |
+| `Cmd` `A`         | Selecionar tudo                |
+| `Cmd` `Shift` `A` | Selecionar todos os artboards  |
+| `Fn` `Right`      | Selecionar próximo artboard    |
+| `Fn` `Left`       | Selecionar artboard anterior   |
+| `Cmd` `Shift` `J` | Revelar seleção na lista de camadas |
 
 {.shortcuts}
 
-### Moving and Resizing Layers
+### Movendo e redimensionando camadas
 
-| Shortcut                   | Action                                                                  |
+| Atalho                   | Ação                                                                    |
 | -------------------------- | ----------------------------------------------------------------------- |
-| `Opt`                      | Display distance between other layers (while hovering)                  |
-| `Cmd` `D`                  | Duplicate                                                               |
-| `(arrows)`                 | Nudge layer any direction by 1px                                        |
-| `Shift` `(arrows)`         | Nudge layer any direction by 10px                                       |
-| `Cmd` `K`                  | Scale layer                                                             |
-| `Cmd` `Right/Down`         | Expand by 1px                                                           |
-| `Cmd` `Left/Up`            | Contract by 1px                                                         |
-| `Cmd` `Shift` `Right/Down` | Expand by 10px                                                          |
-| `Cmd` `Shift` `Left/Up`    | Contract by 10px                                                        |
-| `Ctrl` `Opt`               | Show distance to baseline or cap height on text layers (while hovering) |
+| `Opt`                      | Exibe a distância entre outras camadas (ao passar o mouse)              |
+| `Cmd` `D`                  | Duplicar                                                               |
+| `(arrows)`                 | Move a camada 1px em qualquer direção                                  |
+| `Shift` `(arrows)`         | Move a camada 10px em qualquer direção                                 |
+| `Cmd` `K`                  | Escalar camada                                                         |
+| `Cmd` `Right/Down`         | Expandir em 1px                                                        |
+| `Cmd` `Left/Up`            | Contrair em 1px                                                        |
+| `Cmd` `Shift` `Right/Down` | Expandir em 10px                                                       |
+| `Cmd` `Shift` `Left/Up`    | Contrair em 10px                                                       |
+| `Ctrl` `Opt`               | Exibe a distância até a linha de base ou a altura das maiúsculas em camadas de texto (ao passar o mouse) |
 
 {.shortcuts}
 
-### Editing Layers
+### Editando camadas
 
-| Shortcut          | Action                                        |
+| Atalho          | Ação                                          |
 | ----------------- | --------------------------------------------- |
-| `Enter`           | Edit layer                                    |
-| `Esc`             | Finish editing                                |
-| `Opt` `Tab`       | Focus X position input field in the Inspector |
-| `Del`             | Delete layer                                  |
-| `Cmd` `Opt` `C`   | Copy style                                    |
-| `Cmd` `Opt` `V`   | Paste style                                   |
-| `Ctrl` `S`        | Sync shared style                             |
-| `Opt` `Ctrl` `S`  | Reset shared style                            |
-| `W`               | Add link to Artboard                          |
-| `F`               | Toggle fill                                   |
-| `B`               | Toggle border                                 |
-| `Ctrl` `C`        | Pick color                                    |
-| `0-9`             | Edit layer opacity                            |
-| `Cmd` `Shift` `T` | Transform shape                               |
-| `Cmd` `Shift` `R` | Rotate layer                                  |
-| `Cmd` `Ctrl` `M`  | Use as mask                                   |
-| `Cmd` `Esc`       | Return to instance                            |
-| `Cmd` `Opt` `U`   | Union multiple layers                         |
-| `Cmd` `Opt` `S`   | Subtract multiple layers                      |
-| `Cmd` `Opt` `I`   | Intersect multiple layers                     |
-| `Cmd` `Opt` `X`   | Difference multiple layers                    |
+| `Enter`           | Editar camada                                |
+| `Esc`             | Finalizar edição                             |
+| `Opt` `Tab`       | Foca o campo de entrada da posição X no Inspector |
+| `Del`             | Excluir camada                               |
+| `Cmd` `Opt` `C`   | Copiar estilo                                |
+| `Cmd` `Opt` `V`   | Colar estilo                                 |
+| `Ctrl` `S`        | Sincronizar estilo compartilhado             |
+| `Opt` `Ctrl` `S`  | Redefinir estilo compartilhado               |
+| `W`               | Adicionar link ao artboard                   |
+| `F`               | Alternar preenchimento                       |
+| `B`               | Alternar borda                               |
+| `Ctrl` `C`        | Escolher cor                                 |
+| `0-9`             | Editar a opacidade da camada                 |
+| `Cmd` `Shift` `T` | Transformar forma                            |
+| `Cmd` `Shift` `R` | Rotacionar camada                            |
+| `Cmd` `Ctrl` `M`  | Usar como máscara                            |
+| `Cmd` `Esc`       | Voltar para a instância                      |
+| `Cmd` `Opt` `U`   | Unir múltiplas camadas                        |
+| `Cmd` `Opt` `S`   | Subtrair múltiplas camadas                   |
+| `Cmd` `Opt` `I`   | Interseção de múltiplas camadas              |
+| `Cmd` `Opt` `X`   | Diferença de múltiplas camadas               |
 
 {.shortcuts}
 
-### Vector Editing
+### Edição vetorial
 
-| Shortcut        | Action                         |
+| Atalho          | Ação                           |
 | --------------- | ------------------------------ |
-| `Cmd` `Opt` `O` | Open or close path             |
-| `Tab`           | Selects next point             |
-| `Opt`           | Show all handle control points |
-| `1`             | Straight point type            |
-| `2`             | Mirrored point type            |
-| `3`             | Disconnected point type        |
-| `4`             | Asymmetric point type          |
+| `Cmd` `Opt` `O` | Abrir ou fechar path           |
+| `Tab`           | Seleciona o próximo ponto      |
+| `Opt`           | Mostra todos os pontos de controle handle |
+| `1`             | Tipo de ponto reto             |
+| `2`             | Tipo de ponto espelhado        |
+| `3`             | Tipo de ponto desconectado     |
+| `4`             | Tipo de ponto assimétrico      |
 
 {.shortcuts}
 
-### Text Editing {.row-span-2}
+### Edição de texto {.row-span-2}
 
-| Shortcut                | Action                     |
+| Atalho                  | Ação                       |
 | ----------------------- | -------------------------- |
-| `Cmd` `Shift` `Opt` `V` | Paste as rich text         |
-| `Cmd` `T`               | Change typeface            |
-| `Cmd` `B`               | Bold                       |
-| `Cmd` `I`               | Italic                     |
-| `Cmd` `U`               | Underline                  |
-| `Cmd` `Opt` `+`         | Increase font size         |
-| `Cmd` `Opt` `-`         | Decrease font size         |
-| `Ctrl` `Opt` `L`        | Increase character spacing |
-| `Ctrl` `Opt` `T`        | Decrease character spacing |
-| `Cmd` `Shift` `[`       | Align left                 |
-| `Cmd` `Shift` `\`       | Align center               |
-| `Cmd` `Shift` `]`       | Align right                |
-| `Cmd` `Opt` `Space`     | Emoji and symbols          |
-| `Cmd` `Opt` `O`         | Convert to outlines        |
-| `Shift` `Enter`         | Insert a line break        |
+| `Cmd` `Shift` `Opt` `V` | Colar como texto rico      |
+| `Cmd` `T`               | Alterar fonte (typeface)   |
+| `Cmd` `B`               | Negrito                    |
+| `Cmd` `I`               | Itálico                    |
+| `Cmd` `U`               | Sublinhado                 |
+| `Cmd` `Opt` `+`         | Aumentar tamanho da fonte  |
+| `Cmd` `Opt` `-`         | Diminuir tamanho da fonte  |
+| `Ctrl` `Opt` `L`        | Aumentar espaçamento entre caracteres |
+| `Ctrl` `Opt` `T`        | Diminuir espaçamento entre caracteres |
+| `Cmd` `Shift` `[`       | Alinhar à esquerda         |
+| `Cmd` `Shift` `\`       | Centralizar                |
+| `Cmd` `Shift` `]`       | Alinhar à direita          |
+| `Cmd` `Opt` `Space`     | Emoji e símbolos           |
+| `Cmd` `Opt` `O`         | Converter em contornos     |
+| `Shift` `Enter`         | Inserir uma quebra de linha |
 
 {.shortcuts}
 
-### Arranging Layers {.row-span-2}
+### Organizando camadas {.row-span-2}
 
-| Shortcut                 | Action                            |
+| Atalho                 | Ação                              |
 | ------------------------ | --------------------------------- |
-| `Cmd` `G`                | Group                             |
-| `Cmd` `Shift` `G`        | Ungroup                           |
-| `Cmd` `R`                | Rename layer                      |
-| `Tab`                    | Select next layer in group        |
-| `Shift` `Tab`            | Select previous layer in group    |
-| `Enter`                  | Selects layer inside group        |
-| `Esc`                    | Selects parent group              |
-| `Cmd` `]`                | Bring forward                     |
-| `Cmd` `Opt` `]`          | Bring to front                    |
-| `Cmd` `[`                | Send backward                     |
-| `Cmd` `Opt` `[`          | Send to back                      |
-| `Cmd` `Shift` `Opt` `Up` | Move up, out of group or Artboard |
-| `Cmd` `Ctrl` `H`         | Distribute horizontally           |
-| `Cmd` `Ctrl` `V`         | Distribute vertically             |
-| `Cmd` `Shift` `H`        | Hide or show layer                |
-| `Cmd` `Shift` `L`        | Lock or unlock layer              |
+| `Cmd` `G`                | Agrupar                           |
+| `Cmd` `Shift` `G`        | Desagrupar                        |
+| `Cmd` `R`                | Renomear camada                   |
+| `Tab`                    | Selecionar próxima camada no grupo |
+| `Shift` `Tab`            | Selecionar camada anterior no grupo |
+| `Enter`                  | Seleciona a camada dentro do grupo |
+| `Esc`                    | Seleciona o grupo pai             |
+| `Cmd` `]`                | Avançar                           |
+| `Cmd` `Opt` `]`          | Trazer para frente                |
+| `Cmd` `[`                | Recuar                            |
+| `Cmd` `Opt` `[`          | Enviar para o fundo               |
+| `Cmd` `Shift` `Opt` `Up` | Mover para cima, saindo do grupo ou artboard |
+| `Cmd` `Ctrl` `H`         | Distribuir horizontalmente        |
+| `Cmd` `Ctrl` `V`         | Distribuir verticalmente          |
+| `Cmd` `Shift` `H`        | Ocultar ou exibir camada          |
+| `Cmd` `Shift` `L`        | Bloquear ou desbloquear camada    |
 
 {.shortcuts}
 
-### Exporting Layers
+### Exportando camadas
 
-| Shortcut          | Action                   |
+| Atalho          | Ação                     |
 | ----------------- | ------------------------ |
-| `Cmd` `Shift` `E` | Export                   |
-| `Cmd` `E`         | Export selected layer(s) |
+| `Cmd` `Shift` `E` | Exportar                 |
+| `Cmd` `E`         | Exportar camada(s) selecionada(s) |
 
 {.shortcuts}
 
-### Zoom and Focus
+### Zoom e foco
 
-| Shortcut                | Action                             |
+| Atalho                  | Ação                               |
 | ----------------------- | ---------------------------------- |
-| `Cmd` `0`               | Zoom to 100%                       |
-| `Cmd` `1`               | Zoom to all elements on Canvas     |
-| `Cmd` `2`               | Zoom to selected layer(s)          |
-| `Cmd` `3`               | Center selected layer(s) in Canvas |
-| `Shift` <code>\`</code> | Temporarily zoom out to 100%       |
-| `Cmd` `Ctrl` `F`        | Toggle full screen                 |
-| `Cmd` `Opt` `1`         | Show or hide Layer list            |
-| `Cmd` `Opt` `2`         | Show or hide Inspector             |
-| `Cmd` `.`               | Enter presentation mode            |
-| `Cmd` `Opt` `T`         | Show or hide Toolbar               |
+| `Cmd` `0`               | Zoom em 100%                       |
+| `Cmd` `1`               | Zoom em todos os elementos da tela |
+| `Cmd` `2`               | Zoom na(s) camada(s) selecionada(s) |
+| `Cmd` `3`               | Centralizar camada(s) selecionada(s) na tela |
+| `Shift` <code>\`</code> | Diminuir o zoom temporariamente para 100% |
+| `Cmd` `Ctrl` `F`        | Alternar tela cheia                |
+| `Cmd` `Opt` `1`         | Mostrar ou ocultar a lista de camadas |
+| `Cmd` `Opt` `2`         | Mostrar ou ocultar o Inspector     |
+| `Cmd` `.`               | Entrar no modo de apresentação     |
+| `Cmd` `Opt` `T`         | Mostrar ou ocultar a barra de ferramentas |
 
 {.shortcuts}
 
-### Text Fields
+### Campos de texto
 
-| Shortcut       | Action                |
+| Atalho       | Ação                  |
 | -------------- | --------------------- |
-| `Opt` `Tab`    | Focus Inspector       |
-| `Tab`          | Select next field     |
-| `Shift` `Tab`  | Select previous field |
-| `Enter`        | Confirm change        |
-| `Esc`          | Clear change          |
-| `Up`           | Increase value by 1   |
-| `Down`         | Decrease value by 1   |
-| `Shift` `Up`   | Increase value by 10  |
-| `Shift` `Down` | Decrease value by 10  |
-| `Opt` `Up`     | Increase value by 0.1 |
-| `Opt` `Down`   | Decrease value by 0.1 |
+| `Opt` `Tab`    | Focar o Inspector     |
+| `Tab`          | Selecionar próximo campo |
+| `Shift` `Tab`  | Selecionar campo anterior |
+| `Enter`        | Confirmar alteração   |
+| `Esc`          | Limpar alteração      |
+| `Up`           | Aumentar o valor em 1 |
+| `Down`         | Diminuir o valor em 1 |
+| `Shift` `Up`   | Aumentar o valor em 10 |
+| `Shift` `Down` | Diminuir o valor em 10 |
+| `Opt` `Up`     | Aumentar o valor em 0.1 |
+| `Opt` `Down`   | Diminuir o valor em 0.1 |
 
 {.shortcuts}
 
-### Miscellaneous
+### Diversos
 
-| Shortcut               | Action                                                              |
+| Atalho               | Ação                                                                |
 | ---------------------- | ------------------------------------------------------------------- |
-| `Shift`                | Launch Sketch with all plugins disabled (hold on startup)           |
-| `Cmd` `Ctrl` `D`       | Detach from Symbol                                                  |
-| `Cmd` `Ctrl` `Opt` `D` | Detach all contents from Symbol                                     |
-| `Cmd` `Shift` `D`      | Refresh Data                                                        |
-| `Cmd` `Ctrl` `R`       | Run last-used plugin again                                          |
-| `0-9`                  | With a gradient stop selected, position it between 0% and 100%      |
-| `=`                    | Position selected gradient stop directly between two existing stops |
+| `Shift`                | Inicia o Sketch com todos os plugins desativados (segure na inicialização) |
+| `Cmd` `Ctrl` `D`       | Desvincular do Symbol                                               |
+| `Cmd` `Ctrl` `Opt` `D` | Desvincular todo o conteúdo do Symbol                               |
+| `Cmd` `Shift` `D`      | Atualizar dados                                                     |
+| `Cmd` `Ctrl` `R`       | Executar novamente o último plugin usado                            |
+| `0-9`                  | Com um stop de gradiente selecionado, posiciona-o entre 0% e 100%   |
+| `=`                    | Posiciona o stop de gradiente selecionado diretamente entre dois stops existentes |
 
 {.shortcuts}
 
-## Also see
+## Veja também
 
-- [Keyboard shortcuts for Sketch](https://www.sketch.com/docs/shortcuts/) _(www.sketch.com)_
+- [Atalhos de teclado do Sketch](https://www.sketch.com/docs/shortcuts/) _(www.sketch.com)_

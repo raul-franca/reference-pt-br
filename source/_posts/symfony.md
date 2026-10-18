@@ -7,116 +7,116 @@ tags:
   - php
   - web
 categories:
-  - Programming
+  - Programação
 intro: |
-  This Symfony Cheat Sheet is a non exhaustive list of main symfony basics that you can use or need.
+  Este cheat sheet do Symfony é uma lista não exaustiva dos principais fundamentos do Symfony que você pode usar ou precisar.
 plugins:
   - copyCode
 ---
 
 
-## Getting Started 
+## Primeiros passos
 
-### Installation 
+### Instalação
 
 ```bash
 curl -sS https://get.symfony.com/cli/installer | bash
 ```
-- [Doc Symfony Download](https://symfony.com/download) 
+- [Doc: download do Symfony](https://symfony.com/download)
 
 {.marker-round}
 
-### Symfony CLI: Basic Commands {.col-span-2}  
+### Symfony CLI: comandos básicos {.col-span-2}  
 
 
-| Command                         | Description                                   |
+| Comando                         | Descrição                                     |
 |:--------------------------------|:----------------------------------------------|
-| `symfony check:requirements`    | Check system requirements for running Symfony |
-| `symfony version`               | Display the Symfony CLI version               |
-| `symfony help`                  | Display all available commands                |
-| `symfony help <cmd>`            | Display help for a specific command           |
-| `symfony server:start`          | Start server                                  |
-| `symfony server:stop`           | Stop server                                   |
-| `symfony serve -d`              | Run Symfony server in background              |
+| `symfony check:requirements`    | Verifica os requisitos do sistema para executar o Symfony |
+| `symfony version`               | Exibe a versão do Symfony CLI                 |
+| `symfony help`                  | Exibe todos os comandos disponíveis           |
+| `symfony help <cmd>`            | Exibe a ajuda de um comando específico        |
+| `symfony server:start`          | Inicia o servidor                             |
+| `symfony server:stop`           | Para o servidor                               |
+| `symfony serve -d`              | Executa o servidor do Symfony em segundo plano |
 
 
 
-### Creating a New Symfony Project   {.col-span-3}
+### Criando um novo projeto Symfony   {.col-span-3}
 
-| Command                                                       | Description                                        |
+| Comando                                                       | Descrição                                          |
 |:--------------------------------------------------------------|:---------------------------------------------------|
-| `symfony new <dir>`                                           | Create a new Symfony project in `<dir>`            |
-| `symfony new my_project_directory --version="7.3.x" --webapp` | Create a new web application                       |
-| `symfony new my_project_directory --version="7.3.x"`          | Create a new API application                       |
-| `composer create-project symfony/skeleton <dir>`              | Create a new Symfony project using Composer        |
+| `symfony new <dir>`                                           | Cria um novo projeto Symfony em `<dir>`            |
+| `symfony new my_project_directory --version="7.3.x" --webapp` | Cria uma nova aplicação web                        |
+| `symfony new my_project_directory --version="7.3.x"`          | Cria uma nova aplicação de API                     |
+| `composer create-project symfony/skeleton <dir>`              | Cria um novo projeto Symfony usando o Composer     |
 
 ----
 
-[Doc Symfony creating app](https://symfony.com/doc/current/setup.html#creating-symfony-applications) {.link-arrow}
+[Doc: criação de aplicação no Symfony](https://symfony.com/doc/current/setup.html#creating-symfony-applications) {.link-arrow}
 
 
 
-### Symfony Console Basic Usage 
+### Uso básico do console do Symfony
 
-| CMD                       | Description                                               |
+| CMD                       | Descrição                                                 |
 |:--------------------------|:----------------------------------------------------------|
-| `bin/console`             | List all available commands                               |
-| `bin/console <namespace>` | List all commands in a specific namespace or bundle       |
-| `bin/console <cmd>`       | Run a specific command                                    |
-| `bin/console help <cmd>`  | Show help for a specific command                          |
-| `bin/console --env=<env>` | Run console in environment: dev, test, or prod            |
-| `bin/console cache:clear` | Clear the cache                                           |
+| `bin/console`             | Lista todos os comandos disponíveis                       |
+| `bin/console <namespace>` | Lista todos os comandos de um namespace ou bundle específico |
+| `bin/console <cmd>`       | Executa um comando específico                             |
+| `bin/console help <cmd>`  | Mostra a ajuda de um comando específico                   |
+| `bin/console --env=<env>` | Executa o console no ambiente: dev, test ou prod          |
+| `bin/console cache:clear` | Limpa o cache                                             |
 
-### Linting Commands   {.col-span-2}
+### Comandos de lint   {.col-span-2}
 
-| CMD                            | Description                                            |
+| CMD                            | Descrição                                              |
 |:-------------------------------|:-------------------------------------------------------|
-| `bin/console lint:container`   | Check service arguments for type mismatches            |
-| `bin/console lint:twig <dir>`  | Lint Twig templates for syntax errors                  |
-| `bin/console lint:yaml <dir>`  | Lint YAML files for syntax errors                      |
-| `bin/console lint:xliff <dir>` | Lint XLIFF translation files                           |
+| `bin/console lint:container`   | Verifica incompatibilidades de tipo nos argumentos dos serviços |
+| `bin/console lint:twig <dir>`  | Verifica erros de sintaxe nos templates Twig           |
+| `bin/console lint:yaml <dir>`  | Verifica erros de sintaxe nos arquivos YAML            |
+| `bin/console lint:xliff <dir>` | Verifica os arquivos de tradução XLIFF                 |
 
 
-### Debugging Commands   {.col-span-3}
+### Comandos de depuração   {.col-span-3}
 
-| CMD                                          | Description                             |
+| CMD                                          | Descrição                               |
 |:---------------------------------------------|:----------------------------------------|
-| `bin/console debug:asset-map`                | Show all mapped assets                  |
-| `bin/console debug:autowiring`               | List all autowireable services          |
-| `bin/console debug:config <bundle>`          | Dump configuration of a bundle          |
-| `bin/console debug:container`                | List all public services                |
-| `bin/console debug:container <service>`      | Get info about a specific service       |
-| `bin/console debug:container --env-vars`     | Show environment variables in container |
-| `bin/console debug:container --tags`         | List tagged public services             |
-| `bin/console debug:container --tag=<t>`      | List services with a specific tag       |
-| `bin/console debug:dotenv`                   | Display parsed dotenv values            |
-| `bin/console debug:dotenv <search>`          | Show dotenv values matching a search    |
-| `bin/console debug:event-dispatcher`         | List all event listeners                |
-| `bin/console debug:firewall <name>`          | Show details of a firewall              |
-| `bin/console debug:form`                     | Show form type information              |
-| `bin/console debug:messenger`                | List dispatchable messages              |
-| `bin/console debug:router`                   | List all registered routes              |
-| `bin/console debug:router <name>`            | Get info about a specific route         |
-| `bin/console debug:translation <loc>`        | Show messages for a locale              |
+| `bin/console debug:asset-map`                | Mostra todos os assets mapeados         |
+| `bin/console debug:autowiring`               | Lista todos os serviços que podem ser autowired |
+| `bin/console debug:config <bundle>`          | Despeja a configuração de um bundle     |
+| `bin/console debug:container`                | Lista todos os serviços públicos        |
+| `bin/console debug:container <service>`      | Obtém informações sobre um serviço específico |
+| `bin/console debug:container --env-vars`     | Mostra as variáveis de ambiente no container |
+| `bin/console debug:container --tags`         | Lista os serviços públicos com tag      |
+| `bin/console debug:container --tag=<t>`      | Lista os serviços com uma tag específica |
+| `bin/console debug:dotenv`                   | Exibe os valores do dotenv interpretados |
+| `bin/console debug:dotenv <search>`          | Mostra os valores do dotenv que correspondem a uma busca |
+| `bin/console debug:event-dispatcher`         | Lista todos os event listeners          |
+| `bin/console debug:firewall <name>`          | Mostra os detalhes de um firewall       |
+| `bin/console debug:form`                     | Mostra informações sobre tipos de formulário |
+| `bin/console debug:messenger`                | Lista as mensagens despacháveis         |
+| `bin/console debug:router`                   | Lista todas as rotas registradas        |
+| `bin/console debug:router <name>`            | Obtém informações sobre uma rota específica |
+| `bin/console debug:translation <loc>`        | Mostra as mensagens de um locale        |
 
-### AssetMap Commands  {.col-span-2}
+### Comandos do AssetMap  {.col-span-2}
 
-| CMD                                   | Description                                        |
+| CMD                                   | Descrição                                          |
 |:--------------------------------------|:---------------------------------------------------|
-| `bin/console asset-map:compile`       | Compile assets for production                      |
-| `bin/console importmap:require <pkg>` | Add an NPM package to the import map               |
-| `bin/console importmap:install`       | Download all importmap packages                    |
-| `bin/console importmap:update`        | Update all importmap packages                      |
-| `bin/console importmap:remove <pkg>`  | Remove a package from import map                   |
-| `bin/console importmap:outdated`      | List outdated importmap packages                   |
-| `bin/console importmap:audit`         | Check dependencies for vulnerabilities             |
+| `bin/console asset-map:compile`       | Compila os assets para produção                    |
+| `bin/console importmap:require <pkg>` | Adiciona um pacote NPM ao import map               |
+| `bin/console importmap:install`       | Baixa todos os pacotes do importmap                |
+| `bin/console importmap:update`        | Atualiza todos os pacotes do importmap             |
+| `bin/console importmap:remove <pkg>`  | Remove um pacote do import map                     |
+| `bin/console importmap:outdated`      | Lista os pacotes do importmap desatualizados       |
+| `bin/console importmap:audit`         | Verifica vulnerabilidades nas dependências         |
 
 
 
 
-## ORM & Migration 
+## ORM e migrações
 
-### Database Connection    {.col-span-2}
+### Conexão com o banco de dados    {.col-span-2}
 
 
 ```bash
@@ -131,322 +131,299 @@ DATABASE_URL="postgresql://username:password@127.0.0.1:5432/db_name?serverVersio
 ```
 ----
 
-`username` : user of DBMS <br>
-`password` : password of DBMS <br>
-`127.0.0.1`:  `3306` MySQL `3307` MariaDB `5432` PostgreSQL <br> 
-`db_name` : name of data base <br>
-`serverVersion` : to know server version <code>SHOW GLOBAL VARIABLE LIKE</code> `%version%` in your DBMS
+`username` : usuário do SGBD <br>
+`password` : senha do SGBD <br>
+`127.0.0.1`:  `3306` MySQL `3307` MariaDB `5432` PostgreSQL <br>
+`db_name` : nome do banco de dados <br>
+`serverVersion` : para saber a versão do servidor, use <code>SHOW GLOBAL VARIABLE LIKE</code> `%version%` no seu SGBD
 
 
 
 
-### Doctrine Commands  {.col-span-3}
+### Comandos do Doctrine  {.col-span-3}
 
 
 
-| CMD                                                                                                                                         | Description                              |
+| CMD                                                                                                                                         | Descrição                                |
 |:--------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------|
-| `bin/console doctrine:database:create`or `php bin/console d:d:c`                                                                            | Create the configured database           |
-| `bin/console doctrine:database:drop`  or `php bin/console d:d:d`                                                                            | Drop the configured database             |
-| `bin/console doctrine:mapping:info`                                                                                                         | List mapped entities                     |
-| `bin/console doctrine:schema:update --dump-sql`                                                                                             | Generate SQL to sync DB schema           |
-| `bin/console doctrine:schema:update --force`                                                                                                | Sync DB schema with mapping info         |
-| `bin/console doctrine:schema:validate`                                                                                                      | Validate the mapping files               |
-| `bin/console doctrine:query:sql <sql cmd>`                                                                                                  | Run a raw SQL query                      |
-| `bin/console doctrine:query:dql <dql cmd>`                                                                                                  | Run a DQL query                          |
-| `bin/console doctrine:fixtures:load`                                                                                                        | Load data fixtures into the database     |
+| `bin/console doctrine:database:create`or `php bin/console d:d:c`                                                                            | Cria o banco de dados configurado        |
+| `bin/console doctrine:database:drop`  or `php bin/console d:d:d`                                                                            | Remove o banco de dados configurado      |
+| `bin/console doctrine:mapping:info`                                                                                                         | Lista as entidades mapeadas              |
+| `bin/console doctrine:schema:update --dump-sql`                                                                                             | Gera o SQL para sincronizar o schema do banco |
+| `bin/console doctrine:schema:update --force`                                                                                                | Sincroniza o schema do banco com as informações de mapeamento |
+| `bin/console doctrine:schema:validate`                                                                                                      | Valida os arquivos de mapeamento         |
+| `bin/console doctrine:query:sql <sql cmd>`                                                                                                  | Executa uma query SQL pura               |
+| `bin/console doctrine:query:dql <dql cmd>`                                                                                                  | Executa uma query DQL                    |
+| `bin/console doctrine:fixtures:load`                                                                                                        | Carrega as fixtures de dados no banco de dados |
 
 ---
 
-You can run <code>php bin/console doctrine:schema:drop --force && php bin/console doctrine:schema:update --force && php bin/console doctrine:fixtures:load -n</code> to Load data fixtures & reset sequence to 0 
+Você pode executar <code>php bin/console doctrine:schema:drop --force && php bin/console doctrine:schema:update --force && php bin/console doctrine:fixtures:load -n</code> para carregar as fixtures de dados e redefinir a sequence para 0
 
 ----
 
-[Doc Symfony Database](https://symfony.com/doc/current/doctrine.html#configuring-the-database) {.link-arrow}
+[Doc: banco de dados no Symfony](https://symfony.com/doc/current/doctrine.html#configuring-the-database) {.link-arrow}
 
 
 
-### Migration Commands  {.col-span-3}
+### Comandos de migração  {.col-span-3}
 
-| CMD                                                                 | Description                                                         |
+| CMD                                                                 | Descrição                                                           |
 |:--------------------------------------------------------------------|:--------------------------------------------------------------------|
-| `bin/console make:migration`                                        | Generate a new migration based on schema changes                    |
-| `bin/console doctrine:migration:generate`                           | Generate a new migration based on schema changes                    |
-| `bin/console doctrine:migration:migrate` or `php bin/console d:m:m` | Execute pending migrations to update the database                   |
-| `bin/console doctrine:migration:status`                             | Show status of migrations (pending, executed)                       |
-| `bin/console doctrine:migration:diff`                               | Compare current schema with the database and generate migration SQL |
+| `bin/console make:migration`                                        | Gera uma nova migração com base nas mudanças de schema              |
+| `bin/console doctrine:migration:generate`                           | Gera uma nova migração com base nas mudanças de schema              |
+| `bin/console doctrine:migration:migrate` or `php bin/console d:m:m` | Executa as migrações pendentes para atualizar o banco de dados      |
+| `bin/console doctrine:migration:status`                             | Mostra o status das migrações (pendentes, executadas)               |
+| `bin/console doctrine:migration:diff`                               | Compara o schema atual com o banco de dados e gera o SQL da migração |
 
 
 ## Symfony Maker
 
-### Maker-Bundle List  {.col-span-2}
+### Lista do Maker-Bundle  {.col-span-2}
 
-| Command                      | Description                                                                                          |
+| Comando                      | Descrição                                                                                            |
 |:-----------------------------|:-----------------------------------------------------------------------------------------------------|
-| `bin/console list make `     | List all make commands available                                                                     |
-| `make:auth`                  | Create a Guard authenticator of different flavors                                                    |
-| `make:command`               | Create a new console command class                                                                   |
-| `make:controller`            | Create a new controller class                                                                        |
-| `make:crud`                  | Create CRUD for Doctrine entity class                                                                |
-| `make:docker:database`       | Add a database container to your compose.yaml file                                                   |
-| `make:entity`                | Create or update a Doctrine entity class, and optionally an API Platform resource                    |
-| `make:fixtures`              | Create a new class to load Doctrine fixtures                                                         |
-| `make:form`                  | Create a new form class                                                                              |
-| `make:functional-test`       | Create a new test class                                                                              |
-| `make:listener`              | [make:subscriber] Creates a new event subscriber class or a new event listener class                 |
-| `make:message`               | Create a new message and handler                                                                     |
-| `make:messenger-middleware`  | Create a new messenger middleware                                                                    |
-| `make:migration`             | Create a new migration based on database changes                                                     |
-| `make:registration-form`     | Create a new registration form system                                                                |
-| `make:reset-password`        | Create controller, entity, and repositories for use with symfonycasts/reset-password-bundle          |
-| `make:schedule`              | Create a scheduler component                                                                         |
-| `make:security:custom`       | Create a custom security authenticator                                                               |
-| `make:security:form-login`   | Generate the code needed for the form_login authenticator                                            |
-| `make:serializer:encoder`    | Create a new serializer encoder class                                                                |
-| `make:serializer:normalizer` | Create a new serializer normalizer class                                                             |
-| `make:stimulus-controller`   | Create a new Stimulus controller                                                                     |
-| `make:subscriber`            | Creates a new event subscriber class or a new event listener class                                   |
-| `make:test`                  | [make:unit-test make:functional-test] Create a new test class                                        |
-| `make:twig-component`        | Create a Twig (or Live) component                                                                    |
-| `make:twig-extension`        | Create a new Twig extension with its runtime class                                                   |
-| `make:unit-test`             | Create a new test class                                                                              |
-| `make:user`                  | Create a new security user class                                                                     |
-| `make:validator`             | Create a new validator and constraint class                                                          |
-| `make:voter`                 | Create a new security voter class                                                                    |
-| `make:webhook`               | Create a new Webhook                                                                                 |
+| `bin/console list make `     | Lista todos os comandos make disponíveis                                                             |
+| `make:auth`                  | Cria um autenticador Guard de diferentes tipos                                                       |
+| `make:command`               | Cria uma nova classe de comando de console                                                           |
+| `make:controller`            | Cria uma nova classe de controller                                                                   |
+| `make:crud`                  | Cria um CRUD para uma classe de entidade do Doctrine                                                 |
+| `make:docker:database`       | Adiciona um container de banco de dados ao seu arquivo compose.yaml                                  |
+| `make:entity`                | Cria ou atualiza uma classe de entidade do Doctrine e, opcionalmente, um recurso do API Platform     |
+| `make:fixtures`              | Cria uma nova classe para carregar fixtures do Doctrine                                              |
+| `make:form`                  | Cria uma nova classe de formulário                                                                   |
+| `make:functional-test`       | Cria uma nova classe de teste                                                                        |
+| `make:listener`              | [make:subscriber] Cria uma nova classe de event subscriber ou de event listener                      |
+| `make:message`               | Cria uma nova mensagem e seu handler                                                                 |
+| `make:messenger-middleware`  | Cria um novo middleware do messenger                                                                 |
+| `make:migration`             | Cria uma nova migração com base nas mudanças do banco de dados                                       |
+| `make:registration-form`     | Cria um novo sistema de formulário de registro                                                       |
+| `make:reset-password`        | Cria controller, entidade e repositórios para uso com symfonycasts/reset-password-bundle             |
+| `make:schedule`              | Cria um componente scheduler                                                                         |
+| `make:security:custom`       | Cria um autenticador de segurança personalizado                                                      |
+| `make:security:form-login`   | Gera o código necessário para o autenticador form_login                                              |
+| `make:serializer:encoder`    | Cria uma nova classe de encoder do serializer                                                        |
+| `make:serializer:normalizer` | Cria uma nova classe de normalizer do serializer                                                     |
+| `make:stimulus-controller`   | Cria um novo controller Stimulus                                                                     |
+| `make:subscriber`            | Cria uma nova classe de event subscriber ou de event listener                                        |
+| `make:test`                  | [make:unit-test make:functional-test] Cria uma nova classe de teste                                  |
+| `make:twig-component`        | Cria um componente Twig (ou Live)                                                                    |
+| `make:twig-extension`        | Cria uma nova extensão Twig com sua classe de runtime                                                |
+| `make:unit-test`             | Cria uma nova classe de teste                                                                        |
+| `make:user`                  | Cria uma nova classe de usuário de segurança                                                         |
+| `make:validator`             | Cria uma nova classe de validador e constraint                                                       |
+| `make:voter`                 | Cria uma nova classe de voter de segurança                                                           |
+| `make:webhook`               | Cria um novo Webhook                                                                                 |
 
 
-[Doc Symfony Maker Bundle](https://symfony.com/bundles/SymfonyMakerBundle/current/index.html)   {.link-arrow}
+[Doc: Maker Bundle do Symfony](https://symfony.com/bundles/SymfonyMakerBundle/current/index.html)   {.link-arrow}
 
-## Controller Basics
+## Fundamentos de controller
 
-### Route Attributes and Descriptions  {.col-span-3}
+### Atributos de rota e descrições  {.col-span-3}
 
 
 `use Symfony\Component\Routing\Attribute\Route;`
 
-| Attribute                                                                   | Description                                |
+| Atributo                                                                    | Descrição                                  |
 |:----------------------------------------------------------------------------|:-------------------------------------------|
-| `#[Route('/path')]`                                                         | Define a route for a controller method     |
-| `#[Route('/path', name: 'name')]`                                           | Define a named route for a method          |
-| `#[Route('/path', methods: ['GET'])]`                                       | Define allowed HTTP methods                |
-| `#[Route('/blog/{slug}')]`                                                  | Define a route with a parameter            |
-| `#[Route('/page/{page}', requirements: ['page' => '\d+'])]`                 | Define a route with a parameter constraint |
-| `#[Route(path: ['en' => '/about-us', 'nl' => '/over-ons'], name: 'about')]` | Define localized routes                    |
+| `#[Route('/path')]`                                                         | Define uma rota para um método do controller |
+| `#[Route('/path', name: 'name')]`                                           | Define uma rota nomeada para um método     |
+| `#[Route('/path', methods: ['GET'])]`                                       | Define os métodos HTTP permitidos          |
+| `#[Route('/blog/{slug}')]`                                                  | Define uma rota com um parâmetro           |
+| `#[Route('/page/{page}', requirements: ['page' => '\d+'])]`                 | Define uma rota com uma restrição de parâmetro |
+| `#[Route(path: ['en' => '/about-us', 'nl' => '/over-ons'], name: 'about')]` | Define rotas localizadas                    |
 
-[Doc Symfony Route Parameters](https://symfony.com/doc/current/routing.html#route-parameters)  {.link-arrow}
+[Doc: parâmetros de rota no Symfony](https://symfony.com/doc/current/routing.html#route-parameters)  {.link-arrow}
 
-### AbstractController Methods  {.col-span-3}
+### Métodos do AbstractController  {.col-span-3}
 
-| Method                                                 | Description                                   |
+| Método                                                 | Descrição                                     |
 |:-------------------------------------------------------|:----------------------------------------------|
-| `$this->render('template.html')`                       | Returns a Response with the rendered template |
-| `$this->redirectToRoute('homepage')`                   | Returns a RedirectResponse to a named route   |
-| `$this->redirectToRoute('name', ['param' => 'value'])` | Returns a redirect to a route with parameters |
-| `$this->redirectToRoute('name', [], 301)`              | Returns a RedirectResponse with status code   |
-| `$this->redirect('http://example.com')`                | Returns a RedirectResponse to an external URL |
-| `$this->createNotFoundException($msg)`                 | Returns a NotFoundHttpException               |
-| `$this->createForm(FormType::class, $data)`            | Creates a new Form instance based on the type |
+| `$this->render('template.html')`                       | Retorna uma Response com o template renderizado |
+| `$this->redirectToRoute('homepage')`                   | Retorna um RedirectResponse para uma rota nomeada |
+| `$this->redirectToRoute('name', ['param' => 'value'])` | Retorna um redirect para uma rota com parâmetros |
+| `$this->redirectToRoute('name', [], 301)`              | Retorna um RedirectResponse com código de status |
+| `$this->redirect('http://example.com')`                | Retorna um RedirectResponse para uma URL externa |
+| `$this->createNotFoundException($msg)`                 | Retorna uma NotFoundHttpException             |
+| `$this->createForm(FormType::class, $data)`            | Cria uma nova instância de Form com base no tipo |
 
-### Form Methods {.col-span-2}
+### Métodos de formulário {.col-span-2}
 
-| Method                           | Description                     |
+| Método                           | Descrição                       |
 |:---------------------------------|:--------------------------------|
-| `$form->handleRequest($request)` | Handle a form submission        |
-| `$form->isSubmitted()`           | Check if the form was submitted |
-| `$form->isValid()`               | Check if the form is valid      |
+| `$form->handleRequest($request)` | Trata o envio de um formulário  |
+| `$form->isSubmitted()`           | Verifica se o formulário foi enviado |
+| `$form->isValid()`               | Verifica se o formulário é válido |
 
 
-## Form Type : [Doc Symfony Form types](https://symfony.com/doc/current/reference/forms/types.html)  
+## Form Type : [Doc: tipos de formulário do Symfony](https://symfony.com/doc/current/reference/forms/types.html)  
 
 
-### Form Fields: Text Fields
+### Campos de formulário: campos de texto
 
-| Type           | Description                             |
+| Tipo           | Descrição                               |
 |:---------------|:----------------------------------------|
-| `TextType`     | A basic text input field                |
-| `TextareaType` | A multi-line textarea field             |
-| `EmailType`    | An email field (`<input type="email">`) |
-| `PasswordType` | A password field                        |
-| `SearchType`   | A search field                          |
-| `UrlType`      | A URL field (`<input type="url">`)      |
-| `TelType`      | A tel (phone number) input field        |
-| `UuidType`     | A UUID field                            |
+| `TextType`     | Um campo de entrada de texto básico     |
+| `TextareaType` | Um campo textarea de várias linhas      |
+| `EmailType`    | Um campo de e-mail (`<input type="email">`) |
+| `PasswordType` | Um campo de senha                       |
+| `SearchType`   | Um campo de busca                       |
+| `UrlType`      | Um campo de URL (`<input type="url">`)  |
+| `TelType`      | Um campo de entrada de telefone (tel)   |
+| `UuidType`     | Um campo UUID                           |
 
 
-### Form Fields: Numeric Fields
+### Campos de formulário: campos numéricos
 
-| Type           | Description                                |
+| Tipo           | Descrição                                  |
 |:---------------|:-------------------------------------------|
-| `IntegerType`  | A number field for integers                |
-| `MoneyType`    | A money field, with a specifiable currency |
-| `NumberType`   | A number field                             |
-| `PercentType`  | A number field for percentages             |
-| `RangeType`    | A range input field (slider)               |
+| `IntegerType`  | Um campo numérico para inteiros            |
+| `MoneyType`    | Um campo de dinheiro, com moeda especificável |
+| `NumberType`   | Um campo numérico                          |
+| `PercentType`  | Um campo numérico para percentuais         |
+| `RangeType`    | Um campo de entrada de intervalo (slider)  |
 
 
 
-### Form Fields: Choice Fields
+### Campos de formulário: campos de escolha
 
-| Type           | Description                             |
+| Tipo           | Descrição                               |
 |:---------------|:----------------------------------------|
-| `ChoiceType`   | Field for selecting one or more options |
-| `EnumType`     | Choose from PHP enum cases              |
-| `EntityType`   | Choose from a Doctrine entity           |
-| `CountryType`  | Choose a country                        |
-| `LanguageType` | Choose a language                       |
-| `LocaleType`   | Choose a locale                         |
-| `TimezoneType` | Choose a timezone                       |
-| `CurrencyType` | Choose a currency                       |
+| `ChoiceType`   | Campo para selecionar uma ou mais opções |
+| `EnumType`     | Escolha entre casos de enum do PHP      |
+| `EntityType`   | Escolha entre entidades do Doctrine     |
+| `CountryType`  | Escolha um país                        |
+| `LanguageType` | Escolha um idioma                      |
+| `LocaleType`   | Escolha um locale                      |
+| `TimezoneType` | Escolha um fuso horário                |
+| `CurrencyType` | Escolha uma moeda                      |
 
 
 
-### Form Fields: Symfony UX Fields
+### Campos de formulário: campos do Symfony UX
 
-| Type            | Description                        |
+| Tipo            | Descrição                          |
 |:----------------|:-----------------------------------|
-| `CropperType`   | A Cropper.js image cropper field   |
-| `DropzoneType`  | A Dropzone file upload field       |
+| `CropperType`   | Um campo de recorte de imagem do Cropper.js |
+| `DropzoneType`  | Um campo de upload de arquivo do Dropzone |
 
 
 
-### Form Fields: Date and Time Fields
+### Campos de formulário: campos de data e hora
 
-| Type               | Description                 |
+| Tipo               | Descrição                   |
 |:-------------------|:----------------------------|
-| `DateType`         | A date field                |
-| `DateIntervalType` | A date interval field       |
-| `DateTimeType`     | A date and time field       |
-| `TimeType`         | A time field                |
-| `BirthdayType`     | A date field for birthdays  |
-| `WeekType`         | Select a year and week      |
+| `DateType`         | Um campo de data            |
+| `DateIntervalType` | Um campo de intervalo de datas |
+| `DateTimeType`     | Um campo de data e hora     |
+| `TimeType`         | Um campo de hora            |
+| `BirthdayType`     | Um campo de data para aniversários |
+| `WeekType`         | Selecione um ano e uma semana |
 
 
 
-### Form Fields: Other Fields
+### Campos de formulário: outros campos
 
-| Type           | Description                         |
+| Tipo           | Descrição                           |
 |:---------------|:------------------------------------|
-| `CheckboxType` | A single checkbox field             |
-| `FileType`     | A file upload field                 |
-| `RadioType`    | A radio button field                |
-| `HiddenType`   | A hidden field                      |
+| `CheckboxType` | Um campo de checkbox único          |
+| `FileType`     | Um campo de upload de arquivo       |
+| `RadioType`    | Um campo de radio button            |
+| `HiddenType`   | Um campo oculto                     |
 
 
 
-### Form Fields: Field Groups
+### Campos de formulário: grupos de campos
 
-| Type              | Description                                                |
+| Tipo              | Descrição                                                  |
 |:------------------|:-----------------------------------------------------------|
-| `CollectionType`  | A group of fields that can be added or removed             |
-| `RepeatedType`    | A field that is repeated (e.g., password confirmation)     |
+| `CollectionType`  | Um grupo de campos que podem ser adicionados ou removidos   |
+| `RepeatedType`    | Um campo que é repetido (ex.: confirmação de senha)        |
 
 
 
-## Validation Attributes and Descriptions :  [Doc Symfony Validation](https://symfony.com/doc/current/validation.html)
+## Atributos de validação e descrições :  [Doc: validação no Symfony](https://symfony.com/doc/current/validation.html)
 
 
-### General Constraints
-| Attribute                  | Description                                       |
+### Constraints gerais
+| Atributo                   | Descrição                                         |
 |:---------------------------|:--------------------------------------------------|
-| `#[Assert\NotBlank]`       | Value is not an empty string/array, false or null |
-| `#[Assert\Blank]`          | Value is an empty string or null                  |
-| `#[Assert\NotNull]`        | Value is not strictly equal to null               |
-| `#[Assert\IsNull]`         | Value is exactly equal to null                    |
-| `#[Assert\Type('string')]` | Value is of a specific type                       |
+| `#[Assert\NotBlank]`       | O valor não é uma string/array vazio, false ou null |
+| `#[Assert\Blank]`          | O valor é uma string vazia ou null                |
+| `#[Assert\NotNull]`        | O valor não é estritamente igual a null           |
+| `#[Assert\IsNull]`         | O valor é exatamente igual a null                 |
+| `#[Assert\Type('string')]` | O valor é de um tipo específico                   |
 
-### Validation: Comparison Constraints  {.col-span-2}
-| Attribute                           | Description                                       |
+### Validação: constraints de comparação  {.col-span-2}
+| Atributo                            | Descrição                                         |
 |:------------------------------------|:--------------------------------------------------|
-| `#[Assert\<Not>EqualTo('Foo')]`     | Value is (not) equal to another value             |
-| `#[Assert\<Not>IdenticalTo('Foo')]` | Value is (not) identical to another value         |
-| `#[Assert\LessThan<OrEqual>(5)]`    | Value is less than (or equal to) another value    |
-| `#[Assert\GreaterThan<OrEqual>(5)]` | Value is greater than (or equal to) another value |
-| `#[Assert\Range(min: 2, max: 10)]`  | Number or DateTime object is within a range       |
- 
-### Validation: String Constraints  {.col-span-2}
-| Attribute                          | Description                                           |
+| `#[Assert\<Not>EqualTo('Foo')]`     | O valor é (não é) igual a outro valor             |
+| `#[Assert\<Not>IdenticalTo('Foo')]` | O valor é (não é) idêntico a outro valor          |
+| `#[Assert\LessThan<OrEqual>(5)]`    | O valor é menor que (ou igual a) outro valor      |
+| `#[Assert\GreaterThan<OrEqual>(5)]` | O valor é maior que (ou igual a) outro valor      |
+| `#[Assert\Range(min: 2, max: 10)]`  | Número ou objeto DateTime está dentro de um intervalo |
+
+### Validação: constraints de string  {.col-span-2}
+| Atributo                           | Descrição                                             |
 |:-----------------------------------|:------------------------------------------------------|
-| `#[Assert\Length(2, 10)]`          | String is between `<min>` and `<max>` characters long |
-| `#[Assert\Email]`                  | String is a valid email address                       |
-| `#[Assert\Url]`                    | String is a valid URL                                 |
-| `#[Assert\Hostname]`               | String is a valid hostname                            |
-| `#[Assert\Ip]`                     | String is a valid IP address                          |
-| `#[Assert\NoSuspiciousCharacters]` | String does not contain spoofing characters           |
-| `#[Assert\Uuid]`                   | String is a valid UUID                                |
-| `#[Assert\CssColor]`               | String is a valid CSS color                           |
+| `#[Assert\Length(2, 10)]`          | A string tem entre `<min>` e `<max>` caracteres       |
+| `#[Assert\Email]`                  | A string é um endereço de e-mail válido               |
+| `#[Assert\Url]`                    | A string é uma URL válida                             |
+| `#[Assert\Hostname]`               | A string é um hostname válido                         |
+| `#[Assert\Ip]`                     | A string é um endereço IP válido                      |
+| `#[Assert\NoSuspiciousCharacters]` | A string não contém caracteres de spoofing            |
+| `#[Assert\Uuid]`                   | A string é um UUID válido                             |
+| `#[Assert\CssColor]`               | A string é uma cor CSS válida                         |
 
 
-### Validation: Date and Time Constraints
-| Attribute            | Description                                       |
+### Validação: constraints de data e hora
+| Atributo             | Descrição                                         |
 |:---------------------|:--------------------------------------------------|
-| `#[Assert\Date]`     | Value is a valid date string in `Y-m-d` format    |
-| `#[Assert\DateTime]` | Value is a valid datetime in the specified format |
-| `#[Assert\Time]`     | Value is a valid time string in `H:i:s` format    |
-| `#[Assert\Timezone]` | Value is a valid timezone identifier              |
+| `#[Assert\Date]`     | O valor é uma string de data válida no formato `Y-m-d` |
+| `#[Assert\DateTime]` | O valor é um datetime válido no formato especificado |
+| `#[Assert\Time]`     | O valor é uma string de hora válida no formato `H:i:s` |
+| `#[Assert\Timezone]` | O valor é um identificador de fuso horário válido |
 
-### Validation: Password Constraints  {.col-span-2}
-| Attribute                          | Description                                 |
+### Validação: constraints de senha  {.col-span-2}
+| Atributo                           | Descrição                                   |
 |:-----------------------------------|:--------------------------------------------|
-| `#[Assert\UserPassword]`           | String is the authenticated user's password |
-| `#[Assert\NotCompromisedPassword]` | Password is not found in any data breaches  |
-| `#[Assert\PasswordStrength]`       | Password has sufficient entropy             |
+| `#[Assert\UserPassword]`           | A string é a senha do usuário autenticado   |
+| `#[Assert\NotCompromisedPassword]` | A senha não aparece em nenhum vazamento de dados |
+| `#[Assert\PasswordStrength]`       | A senha tem entropia suficiente             |
 
-### Validation: Financial and Other Number Constraints
-| Attribute              | Description                                      |
+### Validação: constraints financeiras e de outros números
+| Atributo               | Descrição                                        |
 |:-----------------------|:-------------------------------------------------|
-| `#[Assert\Bic]`        | Value is a valid Business Identifier Code (BIC)  |
-| `#[Assert\CardScheme]` | Value is a valid credit card number              |
-| `#[Assert\Currency]`   | Value is a valid 3-letter ISO 4217 currency code |
-| `#[Assert\Luhn]`       | Value passes the Luhn algorithm                  |
-| `#[Assert\Iban]`       | Value is a valid IBAN                            |
-| `#[Assert\Isbn]`       | Value is a valid ISBN                            |
+| `#[Assert\Bic]`        | O valor é um Business Identifier Code (BIC) válido |
+| `#[Assert\CardScheme]` | O valor é um número de cartão de crédito válido  |
+| `#[Assert\Currency]`   | O valor é um código de moeda ISO 4217 de 3 letras válido |
+| `#[Assert\Luhn]`       | O valor passa no algoritmo de Luhn               |
+| `#[Assert\Iban]`       | O valor é um IBAN válido                         |
+| `#[Assert\Isbn]`       | O valor é um ISBN válido                         |
 
 
-### Validation: File Constraints
-| Attribute         | Description                                     |
+### Validação: constraints de arquivo
+| Atributo          | Descrição                                       |
 |:------------------|:------------------------------------------------|
-| `#[Assert\File]`  | Value is a valid file path or File object       |
-| `#[Assert\Image]` | Same as File, but only accepts image MIME types |
+| `#[Assert\File]`  | O valor é um path de arquivo válido ou um objeto File |
+| `#[Assert\Image]` | Igual a File, mas aceita apenas tipos MIME de imagem |
 
 
-### Validation: Number Constraints {.col-span-2}
-| Attribute                    | Description                 |
+### Validação: constraints numéricas {.col-span-2}
+| Atributo                     | Descrição                   |
 |:-----------------------------|:----------------------------|
-| `#[Assert\Positive<OrZero>]` | Value is positive (or zero) |
-| `#[Assert\Negative<OrZero>]` | Value is negative (or zero) |
+| `#[Assert\Positive<OrZero>]` | O valor é positivo (ou zero) |
+| `#[Assert\Negative<OrZero>]` | O valor é negativo (ou zero) |
 
 
-### Validation: Choice Constraints {.col-span-2}
-| Attribute                            | Description                               |
+### Validação: constraints de escolha {.col-span-2}
+| Atributo                             | Descrição                                 |
 |:-------------------------------------|:------------------------------------------|
-| `#[Assert\Choice(['A', 'B', 'C'])]`  | Value is one of the specified choices     |
-| `#[Assert\Country]`                  | Value is a valid ISO 3166-1 country code  |
-| `#[Assert\Language]`                 | Value is a valid two-letter language code |
-| `#[Assert\Locale]`                   | Value is a valid locale identifier        |
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+| `#[Assert\Choice(['A', 'B', 'C'])]`  | O valor é uma das opções especificadas    |
+| `#[Assert\Country]`                  | O valor é um código de país ISO 3166-1 válido |
+| `#[Assert\Language]`                 | O valor é um código de idioma de duas letras válido |
+| `#[Assert\Locale]`                   | O valor é um identificador de locale válido |
 
 
 

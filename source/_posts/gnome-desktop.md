@@ -7,112 +7,112 @@ tags:
   -
   -
 categories:
-  - Keyboard Shortcuts
+  - Atalhos de Teclado
 intro: |
-  A visual cheat-sheet for Gnome Desktop
+  Uma cheat sheet visual do Gnome Desktop
 ---
 
-## Keyboard Shortcuts
+## Atalhos de teclado
 
-### Actions
+### Ações
 
-| Shortcut      | Action              |
-| ------------- | ------------------- |
-| `Alt+Super+8` | Turn zoom on or off |
-| `Alt+Super+=` | Zoom in             |
-| `Alt+Super+-` | Zoom out            |
-
-{.shortcuts}
-
-### Launchers
-
-| Shortcut     | Action              |
-| ------------ | ------------------- |
-| `Super+F1`   | Launch Help Browser |
-| `Ctrl+Alt+T` | Launch Terminal     |
+| Atalho        | Ação                     |
+| ------------- | ------------------------ |
+| `Alt+Super+8` | Ativa ou desativa o zoom |
+| `Alt+Super+=` | Aumenta o zoom           |
+| `Alt+Super+-` | Diminui o zoom           |
 
 {.shortcuts}
 
-### Screenshots
+### Lançadores
 
-| Shortcut           | Action                            |
+| Atalho       | Ação                          |
+| ------------ | ----------------------------- |
+| `Super+F1`   | Abre o navegador de ajuda     |
+| `Ctrl+Alt+T` | Abre o terminal               |
+
+{.shortcuts}
+
+### Capturas de tela
+
+| Atalho             | Ação                              |
 | ------------------ | --------------------------------- |
-| `Shift+Ctrl+Alt+R` | Record a screencast interactively |
-| `Shift+Print`      | Take a screenshot                 |
-| `Print`            | Take a screenshot interactively   |
-| `Alt+Print`        | Take a screenshot of a window     |
+| `Shift+Ctrl+Alt+R` | Grava um screencast interativo    |
+| `Shift+Print`      | Faz uma captura de tela           |
+| `Print`            | Faz uma captura de tela interativa |
+| `Alt+Print`        | Faz uma captura de tela de uma janela |
 
 {.shortcuts}
 
-### System
+### Sistema
 
-| Shortcut       | Action                         |
-| -------------- | ------------------------------ |
-| `Super+N`      | Focus the active notification  |
-| `Super+L`      | Lock screen                    |
-| `Ctrl+Alt+Del` | Log out                        |
-| `Super+F10`    | Open the application menu      |
-| `Super+Escape` | Restore the keyboard shortcuts |
-| `Super+A`      | Show all applications          |
-| `Super+V`      | Show the notification list     |
-| `Super+S`      | Show the overview              |
-| `Alt+F2`       | Show the run command prompt    |
-
-{.shortcuts}
-
-### Typing
-
-| Shortcut            | Action                          |
-| ------------------- | ------------------------------- |
-| `Super+space`       | Switch to next typing source    |
-| `Shift+Super+Space` | Switch to previous input source |
+| Atalho         | Ação                                 |
+| -------------- | ------------------------------------ |
+| `Super+N`      | Foca a notificação ativa             |
+| `Super+L`      | Bloqueia a tela                      |
+| `Ctrl+Alt+Del` | Encerra a sessão                     |
+| `Super+F10`    | Abre o menu de aplicativos           |
+| `Super+Escape` | Restaura os atalhos de teclado       |
+| `Super+A`      | Mostra todos os aplicativos          |
+| `Super+V`      | Mostra a lista de notificações        |
+| `Super+S`      | Mostra a visão geral                 |
+| `Alt+F2`       | Mostra o prompt de execução de comando |
 
 {.shortcuts}
 
-### Windows
+### Digitação
 
-| Shortcut      | Action                    |
-| ------------- | ------------------------- |
-| `Alt+Space`   | Activate the window menu  |
-| `Alt+F1`      | Close the window          |
-| `Super+H`     | Hide window               |
-| `Super+Up`    | Maximize window           |
-| `Alt+F7`      | Move window               |
-| `Alt+F8`      | Resize Window             |
-| `Super+Down`  | Restore window            |
-| `Alt+F10`     | Toggle maximization state |
-| `Super+Left`  | View split on left        |
-| `Super+Right` | View split on right       |
+| Atalho              | Ação                              |
+| ------------------- | --------------------------------- |
+| `Super+space`       | Alterna para a próxima fonte de digitação |
+| `Shift+Super+Space` | Alterna para a fonte de entrada anterior |
 
 {.shortcuts}
 
-### Navigation
+### Janelas
 
-| Shortcut                | Action                                 |
-| ----------------------- | -------------------------------------- |
-| `Ctrl+Super+D`          | Hide all normal windows                |
-| `Super+Page Up`         | Move to workspace on the left          |
-| `Super+Page Down`       | Move to workspace on the right         |
-| `Shift+Super+Down`      | Move window one monitor down           |
-| `Shift+Super+Left`      | Move window one monitor to the left    |
-| `Shift+Super+Right`     | Move window one monitor to the right   |
-| `Shift+Super+Up`        | Move window one monitor up             |
-| `Shift+Super+Page Up`   | Move window one workspace to the left  |
-| `Shift+Super+Page Down` | Move window one workspace to the right |
-| `Shift+Super+End`       | Move window to last workspace          |
-| `Shift+Super+Home`      | Move window to workspace 1             |
-| `Super+Tab`             | Switch applications                    |
-| `Ctrl+Alt+Tab`          | Switch system controls                 |
-| `Ctrl+Alt+Escape`       | Switch system controls directly        |
-| `Super+End`             | Switch to last workspace               |
-| `Super+Home`            | Switch to workspace 1                  |
-| `Alt+Tab`               | Switch windows                         |
-| `Alt+Escape`            | Switch windows directly                |
-| `Alt+F6`                | Switch windows of an app directly      |
-| `Super+`                | Switch windows of an application       |
+| Atalho        | Ação                          |
+| ------------- | ----------------------------- |
+| `Alt+Space`   | Ativa o menu da janela        |
+| `Alt+F1`      | Fecha a janela                |
+| `Super+H`     | Oculta a janela               |
+| `Super+Up`    | Maximiza a janela             |
+| `Alt+F7`      | Move a janela                 |
+| `Alt+F8`      | Redimensiona a janela         |
+| `Super+Down`  | Restaura a janela             |
+| `Alt+F10`     | Alterna o estado de maximização |
+| `Super+Left`  | Exibe a divisão à esquerda    |
+| `Super+Right` | Exibe a divisão à direita     |
 
 {.shortcuts}
 
-## Also see
+### Navegação
 
-- [Gnome Shell Cheatsheet](https://wiki.gnome.org/Projects/GnomeShell/CheatSheet) _(www.gnome.org)_
+| Atalho                  | Ação                                      |
+| ----------------------- | ----------------------------------------- |
+| `Ctrl+Super+D`          | Oculta todas as janelas normais           |
+| `Super+Page Up`         | Move para a área de trabalho à esquerda   |
+| `Super+Page Down`       | Move para a área de trabalho à direita    |
+| `Shift+Super+Down`      | Move a janela um monitor para baixo       |
+| `Shift+Super+Left`      | Move a janela um monitor para a esquerda  |
+| `Shift+Super+Right`     | Move a janela um monitor para a direita   |
+| `Shift+Super+Up`        | Move a janela um monitor para cima        |
+| `Shift+Super+Page Up`   | Move a janela uma área de trabalho à esquerda |
+| `Shift+Super+Page Down` | Move a janela uma área de trabalho à direita  |
+| `Shift+Super+End`       | Move a janela para a última área de trabalho |
+| `Shift+Super+Home`      | Move a janela para a área de trabalho 1   |
+| `Super+Tab`             | Alterna entre aplicativos                 |
+| `Ctrl+Alt+Tab`          | Alterna entre os controles do sistema     |
+| `Ctrl+Alt+Escape`       | Alterna diretamente entre os controles do sistema |
+| `Super+End`             | Alterna para a última área de trabalho    |
+| `Super+Home`            | Alterna para a área de trabalho 1         |
+| `Alt+Tab`               | Alterna entre janelas                     |
+| `Alt+Escape`            | Alterna diretamente entre janelas         |
+| `Alt+F6`                | Alterna diretamente entre as janelas de um app |
+| `Super+`                | Alterna entre as janelas de um aplicativo |
+
+{.shortcuts}
+
+## Veja também
+
+- [Cheat sheet do Gnome Shell](https://wiki.gnome.org/Projects/GnomeShell/CheatSheet) _(www.gnome.org)_

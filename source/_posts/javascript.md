@@ -6,22 +6,22 @@ tags:
   - js
   - web
 categories:
-  - Programming
+  - Programação
 intro: |
-  A JavaScript cheat sheet with the most important concepts, functions, methods, and more. A complete quick reference for beginners.
+  Um cheat sheet de JavaScript com os conceitos, funções, métodos e muito mais. Uma referência rápida e completa para iniciantes.
 plugins:
   - copyCode
   - runCode
 ---
 
-## Getting Started
+## Primeiros passos
 
-### Introduction
+### Introdução
 
-JavaScript is a lightweight, interpreted programming language.
+JavaScript é uma linguagem de programação leve e interpretada.
 
-- [JSON cheatsheet](/json) _(cheatsheets.zip)_
-- [Regex in JavaScript](/regex#regex-in-javascript) _(cheatsheets.zip)_
+- [Cheat sheet de JSON](/json) _(cheatsheets.zip)_
+- [Regex em JavaScript](/regex#regex-in-javascript) _(cheatsheets.zip)_
 
 ### Console
 
@@ -36,14 +36,14 @@ console.warn('hello %s', 'CheatSheets.zip');
 console.error(new Error('Oops!'));
 ```
 
-### Numbers
+### Números
 
 ```javascript
 let amount = 6;
 let price = 4.99;
 ```
 
-### Variables
+### Variáveis
 
 ```javascript
 let x = null;
@@ -73,7 +73,7 @@ let mixedQuotes = `hello ${'dear' + name}, "let's have a great day today`;
 console.log(singleQuotes.length);
 ```
 
-### Arithmetic Operators
+### Operadores aritméticos
 
 ```javascript
 5 + 5 = 10     // Addition
@@ -83,7 +83,7 @@ console.log(singleQuotes.length);
 10 % 5 = 0     // Modulo
 ```
 
-### Comments
+### Comentários
 
 ```javascript
 // This line will denote a comment
@@ -94,7 +94,7 @@ changed before deployment.
 */
 ```
 
-### Assignment Operators
+### Operadores de atribuição
 
 ```javascript
 let number = 100;
@@ -107,7 +107,7 @@ console.log(number);
 // => 120
 ```
 
-### String Interpolation
+### Interpolação de strings
 
 ```javascript
 let age = 7;
@@ -119,7 +119,7 @@ let age = 7;
 `Tommy is ${age} years old.`;
 ```
 
-### let Keyword
+### Palavra-chave let
 
 ```javascript
 let count;
@@ -128,7 +128,7 @@ count = 10;
 console.log(count); // => 10
 ```
 
-### const Keyword
+### Palavra-chave const
 
 ```javascript
 const numberOfColumns = 4;
@@ -137,9 +137,9 @@ const numberOfColumns = 4;
 numberOfColumns = 8;
 ```
 
-## JavaScript Conditionals
+## Condicionais em JavaScript
 
-### if Statement
+### Instrução if
 
 ```javascript
 const isMailSent = true;
@@ -149,7 +149,7 @@ if (isMailSent) {
 }
 ```
 
-### Ternary Operator
+### Operador ternário
 
 ```javascript
 // The ternary operator is a concise way to write an if-else statement in a single line: condition ? exprIfTrue : exprIfFalse.
@@ -160,7 +160,7 @@ var x = 1;
 result = x == 1 ? true : false;
 ```
 
-### Operators {.row-span-2}
+### Operadores {.row-span-2}
 
 ```javascript
 true || false; // true
@@ -169,7 +169,7 @@ false || false; // false
 10 > 100 || 10 > 20; // false
 ```
 
-#### Logical Operator &&
+#### Operador lógico &&
 
 ```javascript
 true && true; // true
@@ -178,7 +178,7 @@ true && false; // false
 4 === 4 && 3 > 1; // true
 ```
 
-#### Comparison Operators
+#### Operadores de comparação
 
 ```javascript
 1 > 3; // false
@@ -189,7 +189,7 @@ true && false; // false
 1 === '1'; // false
 ```
 
-#### Logical Operator !
+#### Operador lógico !
 
 ```javascript
 let lateToWork = true;
@@ -199,7 +199,7 @@ let oppositeValue = !lateToWork;
 console.log(oppositeValue);
 ```
 
-#### Nullish coalescing operator ??
+#### Operador de coalescência nula ??
 
 ```javascript
 null ?? 'I win'; //  'I win'
@@ -210,7 +210,7 @@ false ?? 'I lose'; //  false
 '' ?? 'Damn it'; //  ''
 ```
 
-#### Optional Chaining ?.
+#### Encadeamento opcional ?.
 
 ```javascript
 const obj = {
@@ -238,7 +238,7 @@ if (size > 100) {
 // Print: Small
 ```
 
-### switch Statement
+### Instrução switch
 
 ```javascript
 const food = 'salad';
@@ -255,7 +255,7 @@ switch (food) {
 }
 ```
 
-### Object Lookup
+### Consulta em objeto
 
 ```javascript
 const food = 'salad';
@@ -281,11 +281,11 @@ null === undefined; // false
 '0' === false; // false
 ```
 
-The `==` just check the value, `===` check both the value and the type.
+O operador `==` apenas verifica o valor; o `===` verifica tanto o valor quanto o tipo.
 
-## JavaScript Functions
+## Funções em JavaScript
 
-### Functions
+### Funções
 
 ```javascript
 // Defining the function:
@@ -297,7 +297,7 @@ function sum(num1, num2) {
 sum(3, 6); // 9
 ```
 
-### Anonymous Functions
+### Funções anônimas
 
 ```javascript
 // Named function
@@ -311,9 +311,9 @@ const rocketToMars = function () {
 };
 ```
 
-### Arrow Functions (ES6) {.row-span-2}
+### Arrow functions (ES6) {.row-span-2}
 
-#### With two arguments
+#### Com dois argumentos
 
 ```javascript
 const sum = (param1, param2) => {
@@ -322,7 +322,7 @@ const sum = (param1, param2) => {
 console.log(sum(2, 5)); // => 7
 ```
 
-#### With no arguments
+#### Sem argumentos
 
 ```javascript
 const printHello = () => {
@@ -331,7 +331,7 @@ const printHello = () => {
 printHello(); // => hello
 ```
 
-#### With a single argument
+#### Com um único argumento
 
 ```javascript
 const checkWeight = (weight) => {
@@ -340,7 +340,7 @@ const checkWeight = (weight) => {
 checkWeight(25); // => Weight : 25
 ```
 
-#### Concise arrow functions
+#### Arrow functions concisas
 
 ```javascript
 const multiply = (a, b) => a * b;
@@ -348,10 +348,10 @@ const multiply = (a, b) => a * b;
 console.log(multiply(2, 30));
 ```
 
-[Arrow function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions) available
-starting ES2015
+[Arrow function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions) disponível
+a partir do ES2015
 
-### return Keyword
+### Palavra-chave return
 
 ```javascript
 // With return
@@ -365,7 +365,7 @@ function sum(num1, num2) {
 }
 ```
 
-### Calling Functions
+### Chamando funções
 
 ```javascript
 // Defining the function
@@ -377,7 +377,7 @@ function sum(num1, num2) {
 sum(2, 4); // 6
 ```
 
-### Function Expressions
+### Expressões de função
 
 ```javascript
 const dog = function () {
@@ -385,7 +385,7 @@ const dog = function () {
 };
 ```
 
-### Function Parameters
+### Parâmetros de função
 
 ```javascript
 // The parameter is name
@@ -394,7 +394,7 @@ function sayHello(name) {
 }
 ```
 
-### Function Declaration
+### Declaração de função
 
 ```javascript
 function add(num1, num2) {
@@ -402,9 +402,9 @@ function add(num1, num2) {
 }
 ```
 
-## JavaScript Scope
+## Escopo em JavaScript
 
-### Scope
+### Escopo
 
 ```javascript
 function myFunction() {
@@ -415,7 +415,7 @@ function myFunction() {
 // Code here can't use pizzaName
 ```
 
-### Block Scoped Variables
+### Variáveis com escopo de bloco
 
 ```javascript
 const isLoggedIn = true;
@@ -428,7 +428,7 @@ if (isLoggedIn == true) {
 console.log(statusMessage);
 ```
 
-### Global Variables
+### Variáveis globais
 
 ```javascript
 // Variable declared globally
@@ -460,9 +460,9 @@ for (var i = 0; i < 3; i++) {
 // i accessible ✔️
 ```
 
-`var` is scoped to the nearest function block, and `let` is scoped to the nearest enclosing block.
+`var` tem escopo no bloco de função mais próximo, e `let` tem escopo no bloco envolvente mais próximo.
 
-### Loops with closures
+### Loops com closures
 
 ```javascript{.wrap}
 // Prints 3 thrice, not what we meant.
@@ -480,9 +480,9 @@ for (let j = 0; j < 3; j++) {
 }
 ```
 
-The variable has its own copy using `let`, and the variable has shared copy using `var`.
+A variável tem sua própria cópia com `let`, e tem uma cópia compartilhada com `var`.
 
-## JavaScript Arrays
+## Arrays em JavaScript
 
 ### Arrays
 
@@ -493,7 +493,7 @@ const fruits = ['apple', 'orange', 'banana'];
 const data = [1, 'chicken', false];
 ```
 
-### Property .length
+### Propriedade .length
 
 ```javascript
 const numbers = [1, 2, 3, 4];
@@ -501,7 +501,7 @@ const numbers = [1, 2, 3, 4];
 numbers.length; // 4
 ```
 
-### Index
+### Índice
 
 ```javascript
 // Accessing an array element
@@ -511,10 +511,10 @@ console.log(myArray[0]); // 100
 console.log(myArray[1]); // 200
 ```
 
-### Mutable chart
+### Tabela de mutabilidade
 
-|           | add | remove | start | end |
-| :-------- | :-: | :----: | :---: | :-: |
+|           | adicionar | remover | início | fim |
+| :-------- | :-------: | :-----: | :----: | :--: |
 | `push`    |  ✔  |        |       |  ✔  |
 | `pop`     |     |   ✔    |       |  ✔  |
 | `unshift` |  ✔  |        |   ✔   |     |
@@ -534,7 +534,7 @@ const numbers = [1, 2];
 numbers.push(3, 4, 5);
 ```
 
-Add items to the end and returns the new array length.
+Adiciona itens ao final e retorna o novo comprimento do array.
 
 ### Array.pop()
 
@@ -545,7 +545,7 @@ const fruit = fruits.pop(); // 'banana'
 console.log(fruits); // ["apple", "orange"]
 ```
 
-Remove an item from the end and returns the removed item.
+Remove um item do final e retorna o item removido.
 
 ### Array.shift()
 
@@ -555,7 +555,7 @@ let cats = ['Bob', 'Willy', 'Mini'];
 cats.shift(); // ['Willy', 'Mini']
 ```
 
-Remove an item from the beginning and returns the removed item.
+Remove um item do início e retorna o item removido.
 
 ### Array.unshift()
 
@@ -569,7 +569,7 @@ cats.unshift('Willy');
 cats.unshift('Puff', 'George');
 ```
 
-Add items to the beginning and returns the new array length.
+Adiciona itens ao início e retorna o novo comprimento do array.
 
 ### Array.concat()
 
@@ -584,9 +584,9 @@ const newFirstNumber = 4;
 numbers.concat(newFirstNumber);
 ```
 
-If you want to avoid mutating your original array, you can use concat.
+Se você quiser evitar mutar o array original, pode usar concat.
 
-### Destructuring
+### Desestruturação
 
 ```javascript
 const [name, age] = ['John Doe', 8];
@@ -595,9 +595,9 @@ console.log(name);
 console.log(age);
 ```
 
-## JavaScript Set
+## Set em JavaScript
 
-### Create Set
+### Criar Set
 
 ```javascript
 // Empty Set Object
@@ -673,9 +673,9 @@ setObj.forEach(function (value) {
 // 'a'
 ```
 
-## JavaScript Loops
+## Loops em JavaScript
 
-### While Loop
+### Loop while
 
 ```javascript
 while (condition) {
@@ -689,7 +689,7 @@ while (i < 5) {
 }
 ```
 
-### Reverse Loop
+### Loop reverso
 
 ```javascript
 const fruits = ['apple', 'orange', 'banana'];
@@ -703,7 +703,7 @@ for (let i = fruits.length - 1; i >= 0; i--) {
 // => 0. apple
 ```
 
-### Do…While Statement
+### Instrução do…while
 
 ```javascript
 x = 0;
@@ -717,7 +717,7 @@ do {
 // => 0 1 3 6 10
 ```
 
-### For Loop
+### Laço for
 
 ```javascript
 for (let i = 0; i < 4; i += 1) {
@@ -727,7 +727,7 @@ for (let i = 0; i < 4; i += 1) {
 // => 0, 1, 2, 3
 ```
 
-### Looping Through Arrays
+### Percorrendo arrays
 
 ```javascript
 for (let i = 0; i < array.length; i++) {
@@ -760,7 +760,7 @@ for (i = 0; i < 10; i++) {
 }
 ```
 
-### Nested
+### Loops aninhados
 
 ```javascript
 for (let i = 0; i < 2; i += 1) {
@@ -770,7 +770,7 @@ for (let i = 0; i < 2; i += 1) {
 }
 ```
 
-### for...in loop
+### Laço for...in
 
 ```javascript
 const fruits = ['apple', 'orange', 'banana'];
@@ -800,7 +800,7 @@ for (let index in fruits) {
 // => 2 banana
 ```
 
-### for...of loop
+### Laço for...of
 
 ```javascript
 const fruits = ['apple', 'orange', 'banana'];
@@ -820,9 +820,9 @@ for (let [index, value] of fruits.entries()) {
 // => 2 banana
 ```
 
-## JavaScript Iterators {.cols-2}
+## Iterators em JavaScript {.cols-2}
 
-### Functions Assigned to Variables
+### Funções atribuídas a variáveis
 
 ```javascript
 let plusFive = (number) => {
@@ -836,7 +836,7 @@ plusFive(3); // 8
 f(9); // 14
 ```
 
-### Callback Functions
+### Funções de callback
 
 ```javascript
 const isEven = (n) => {
@@ -896,9 +896,9 @@ const filteredArray = randomNumbers.filter((n) => {
 });
 ```
 
-## JavaScript Objects {.cols-2}
+## Objetos em JavaScript {.cols-2}
 
-### Accessing Properties
+### Acessando propriedades
 
 ```javascript
 const apple = {
@@ -909,7 +909,7 @@ console.log(apple.color); // => Green
 console.log(apple.price.bulk); // => $3/kg
 ```
 
-### Naming Properties
+### Nomeando propriedades
 
 ```javascript
 // Example of invalid key names
@@ -923,7 +923,7 @@ const trainSchedule = {
 }
 ```
 
-### Non-existent properties
+### Propriedades inexistentes
 
 ```javascript
 const classElection = {
@@ -933,7 +933,7 @@ const classElection = {
 console.log(classElection.place); // undefined
 ```
 
-### Mutable {.row-span-2}
+### Mutável {.row-span-2}
 
 ```javascript
 const student = {
@@ -954,7 +954,7 @@ student = {};
 // TypeError: Assignment to constant variable.
 ```
 
-### Assignment shorthand syntax
+### Sintaxe abreviada de atribuição
 
 ```javascript
 const person = {
@@ -966,7 +966,7 @@ console.log(name); // 'Tom'
 console.log(age); // '22'
 ```
 
-### Delete operator
+### Operador delete
 
 ```javascript
 const person = {
@@ -988,7 +988,7 @@ console.log(person);
 */
 ```
 
-### Objects as arguments
+### Objetos como argumentos
 
 ```javascript
 const origNum = 8;
@@ -1009,7 +1009,7 @@ console.log(origNum);
 console.log(origObj.color);
 ```
 
-### Shorthand object creation
+### Criação abreviada de objetos
 
 ```javascript
 const activity = 'Surfing';
@@ -1017,7 +1017,7 @@ const beach = { activity };
 console.log(beach); // { activity: 'Surfing' }
 ```
 
-### this Keyword
+### Palavra-chave this
 
 ```javascript
 const cat = {
@@ -1030,7 +1030,7 @@ const cat = {
 console.log(cat.whatName()); // => Pipey
 ```
 
-### Factory functions
+### Funções factory
 
 ```javascript
 // A factory function that accepts 'name',
@@ -1048,7 +1048,7 @@ const dogFactory = (name, age, breed) => {
 };
 ```
 
-### Object methods
+### Métodos de objeto
 
 ```javascript
 const engine = {
@@ -1066,7 +1066,7 @@ engine.start('noisily');
 engine.sputter();
 ```
 
-### Getters and setters
+### Getters e setters
 
 ```javascript
 const myCat = {
@@ -1086,7 +1086,7 @@ console.log(myCat.name);
 myCat.name = 'Yankee';
 ```
 
-### Destructuring
+### Desestruturação
 
 ```javascript
 const obj = {
@@ -1100,9 +1100,9 @@ console.log(name);
 console.log(age);
 ```
 
-## JavaScript Classes
+## Classes em JavaScript
 
-### Static Methods
+### Métodos estáticos
 
 ```javascript
 class Dog {
@@ -1127,7 +1127,7 @@ myDog.introduce();
 Dog.bark();
 ```
 
-### Class
+### Classe
 
 ```javascript
 class Song {
@@ -1145,7 +1145,7 @@ const mySong = new Song();
 mySong.play();
 ```
 
-### Class Constructor
+### Construtor de classe
 
 ```javascript
 class Song {
@@ -1159,7 +1159,7 @@ const mySong = new Song('Bohemian Rhapsody', 'Queen');
 console.log(mySong.title);
 ```
 
-### Class Methods
+### Métodos de classe
 
 ```javascript
 class Song {
@@ -1199,7 +1199,7 @@ const mySong = new Song({
 });
 ```
 
-## JavaScript Modules {.cols-2}
+## Módulos em JavaScript {.cols-2}
 
 ### Export
 
@@ -1241,7 +1241,7 @@ console.log(duplicate(5)) // 10
 <script type="module" src="main.js"></script>
 ```
 
-### Export Module
+### Exportar módulo
 
 ```javascript
 // myMath.js
@@ -1268,7 +1268,7 @@ module.exports = {
 };
 ```
 
-### Require Module
+### Módulo require
 
 ```javascript
 // main.js
@@ -1280,9 +1280,9 @@ console.log(myMath.multiply(6, 2)); // 12
 console.log(myMath.duplicate(5)); // 10
 ```
 
-## JavaScript Promises {.cols-2}
+## Promises em JavaScript {.cols-2}
 
-### Promise states {.row-span-2}
+### Estados de uma promise {.row-span-2}
 
 ```javascript
 const promise = new Promise((resolve, reject) => {
@@ -1301,7 +1301,7 @@ promise.then(
 );
 ```
 
-### Executor function
+### Função executor
 
 ```javascript
 const executorFn = (resolve, reject) => {
@@ -1321,7 +1321,7 @@ const loginAlert = () => {
 setTimeout(loginAlert, 6000);
 ```
 
-### .then() method
+### Método .then()
 
 ```javascript
 const promise = new Promise((resolve, reject) => {
@@ -1394,7 +1394,7 @@ Promise.allSettled([promise1, promise2]).then((res) => {
 });
 ```
 
-### Avoiding nested Promise and .then()
+### Evitando promises aninhadas e .then()
 
 ```javascript
 const promise = new Promise((resolve, reject) => {
@@ -1419,7 +1419,7 @@ const print = (val) => {
 promise.then(twoStars).then(oneDot).then(print);
 ```
 
-### Creating
+### Criando
 
 ```javascript
 const executorFn = (resolve, reject) => {
@@ -1429,7 +1429,7 @@ const executorFn = (resolve, reject) => {
 const promise = new Promise(executorFn);
 ```
 
-### Chaining multiple .then()
+### Encadeando múltiplos .then()
 
 ```javascript
 const promise = new Promise((resolve) =>
@@ -1452,7 +1452,7 @@ promise
   );
 ```
 
-### Fake http Request with Promise
+### Request HTTP fake com Promise
 
 ```javascript
 const mock = (success, timeout = 1000) => {
@@ -1475,9 +1475,9 @@ const someEvent = async () => {
 };
 ```
 
-## JavaScript Async-Await {.cols-2}
+## Async/await em JavaScript {.cols-2}
 
-### Asynchronous
+### Assíncrono
 
 ```javascript
 function helloWorld() {
@@ -1504,7 +1504,7 @@ msg(); // Message: Hello World! <-- after 2 seconds
 msg1(); // Message: Hello World! <-- after 2 seconds
 ```
 
-### Resolving Promises
+### Resolvendo promises
 
 ```javascript
 let pro1 = Promise.resolve(5);
@@ -1519,7 +1519,7 @@ Promise.all([pro1, pro2, pro3]).then(function (values) {
 // expected => Array [5, 44, "foo"]
 ```
 
-### Async Await Promises
+### Promises com async/await
 
 ```javascript
 function helloWorld() {
@@ -1538,7 +1538,7 @@ async function msg() {
 msg(); // Message: Hello World! <-- after 2 seconds
 ```
 
-### Error Handling
+### Tratamento de erros
 
 ```javascript
 let json = '{ "age": 30 }'; // incomplete data
@@ -1551,7 +1551,7 @@ try {
 }
 ```
 
-### Aysnc await operator
+### Operador async/await
 
 ```javascript
 function helloWorld() {
@@ -1570,7 +1570,7 @@ async function msg() {
 msg(); // Message: Hello World! <-- after 2 seconds
 ```
 
-## JavaScript Requests
+## Requests em JavaScript
 
 ### JSON
 
@@ -1582,7 +1582,7 @@ const jsonObj = {
 };
 ```
 
-Also see: [JSON cheatsheet](/json)
+Veja também: [cheat sheet de JSON](/json)
 
 ### XMLHttpRequest
 
@@ -1591,8 +1591,8 @@ const xhr = new XMLHttpRequest();
 xhr.open('GET', 'mysite.com/getjson');
 ```
 
-`XMLHttpRequest` is a browser-level API that enables the client to script data transfers via JavaScript, NOT part of the
-JavaScript language.
+`XMLHttpRequest` é uma API de nível de navegador que permite ao cliente programar transferências de dados via JavaScript, e NÃO faz parte da
+linguagem JavaScript.
 
 ### GET
 
@@ -1625,7 +1625,7 @@ xhr.onload = () => {
 };
 ```
 
-### fetch api {.row-span-2}
+### API fetch {.row-span-2}
 
 ```javascript
 fetch(url, {
@@ -1646,7 +1646,7 @@ fetch(url, {
 }
 ```
 
-### JSON Formatted
+### JSON formatado
 
 ```javascript
 fetch('url-that-returns-JSON')
@@ -1656,7 +1656,7 @@ fetch('url-that-returns-JSON')
   });
 ```
 
-### promise url parameter fetch api
+### Parâmetro de URL de promise na API fetch
 
 ```javascript
 fetch('url')
@@ -1669,7 +1669,7 @@ fetch('url')
 );
 ```
 
-### Fetch API Function
+### Função da API fetch
 
 ```javascript
 fetch('https://api-xxx.com/endpoint', {
@@ -1692,7 +1692,7 @@ fetch('https://api-xxx.com/endpoint', {
   });
 ```
 
-### async await syntax {.col-span-2}
+### Sintaxe async/await {.col-span-2}
 
 ```javascript
 const getSuggestions = async () => {

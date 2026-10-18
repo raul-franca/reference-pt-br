@@ -7,23 +7,23 @@ tags:
   - script
   - interpret
 categories:
-  - Programming
+  - Programação
 intro: |
-  The [Hook](https://github.com/hook-lang/hook/) cheat sheet is a one-page reference sheet for the Hook programming language.
+  A cheat sheet do [Hook](https://github.com/hook-lang/hook/) é uma folha de referência de uma página para a linguagem de programação Hook.
 plugins:
   - copyCode
 ---
 
-## Getting Started
+## Primeiros passos
 
-### Introduction
+### Introdução
 
 - [GitHub](https://github.com/hook-lang/hook)
 - [Playground](https://hook-lang.github.io/hook-playground)
-- [Examples](https://github.com/hook-lang/hook/tree/main/examples)
-- [VSCode Extension](https://marketplace.visualstudio.com/items?itemName=fabiosvm.hook)
+- [Exemplos](https://github.com/hook-lang/hook/tree/main/examples)
+- [Extensão para VS Code](https://marketplace.visualstudio.com/items?itemName=fabiosvm.hook)
 
-### What does Hook look like?
+### Como é o Hook?
 
 ```rs
 fn factorial(n) {
@@ -33,7 +33,7 @@ fn factorial(n) {
 }
 ```
 
-Hook features a modern syntax similar to `C`.
+O Hook tem uma sintaxe moderna, semelhante a `C`.
 
 ### Hello, world!
 
@@ -42,9 +42,9 @@ println('Hello, World!');
 // Hello, World!
 ```
 
-The `Hello, World!` program in Hook.
+O programa `Hello, World!` em Hook.
 
-### Installing with Homebrew
+### Instalação com Homebrew
 
 ```text
 brew tap hook-lang/hook
@@ -52,9 +52,9 @@ brew install hook
 hook --help
 ```
 
-The interpreter is available on [`Homebrew`](https://brew.sh).
+O interpretador está disponível no [`Homebrew`](https://brew.sh).
 
-### Installing on Windows {.col-span-2}
+### Instalação no Windows {.col-span-2}
 
 ```text
 cd %tmp%
@@ -62,11 +62,11 @@ curl -sSLO https://raw.githubusercontent.com/hook-lang/hook/main/scripts/install
 install
 ```
 
-This is how you can install it on `Windows`.
+É assim que você instala no `Windows`.
 
-## Types and Values
+## Tipos e valores
 
-### Basic Types
+### Tipos básicos
 
 |          |           |
 | -------- | :-------- |
@@ -75,7 +75,7 @@ This is how you can install it on `Windows`.
 | `Range`  | `Array`   |
 | `Record` | `Closure` |
 
-List of basic types.
+Lista de tipos básicos.
 
 ### Bool
 
@@ -84,9 +84,9 @@ let x = true;
 let y = false;
 ```
 
-Bool is a boolean type. So, it can be `true` or `false`.
+Bool é um tipo booleano. Ou seja, pode ser `true` ou `false`.
 
-### Numbers
+### Números
 
 ```js
 let x = 0;
@@ -94,7 +94,7 @@ let degree = 45; // integer number
 let pi = 3.14; // floating-point number
 ```
 
-Numbers can be integers or floating-point.
+Números podem ser inteiros ou de ponto flutuante.
 
 ### Strings
 
@@ -106,7 +106,7 @@ let name = 'John';
 let message = 'Hello, "John"!';
 ```
 
-Strings can be single or double-quoted.
+Strings podem usar aspas simples ou duplas.
 
 ### Ranges
 
@@ -117,7 +117,7 @@ println(range);
 // 1..5
 ```
 
-Ranges are a sequence of integers.
+Ranges são uma sequência de inteiros.
 
 ### Arrays
 
@@ -128,7 +128,7 @@ println(fruits);
 // ["apple", "banana", "cherry"]
 ```
 
-Arrays are a sequence of elements.
+Arrays são uma sequência de elementos.
 
 ### Records
 
@@ -139,9 +139,9 @@ println(p);
 // {x: 5, y: 10}
 ```
 
-Records maps fields to values.
+Records mapeiam campos para valores.
 
-### The **nil** value
+### O valor **nil**
 
 ```swift
 let x = nil;
@@ -153,9 +153,9 @@ println(x); // nil
 println(y); // nil
 ```
 
-`nil` is the absence of a value.
+`nil` é a ausência de um valor.
 
-### Falsy values
+### Valores falsy
 
 ```swift
 if (nil) "true" else "false";   // false
@@ -168,11 +168,11 @@ if ([]) "true" else "false";    // true
 if ({}) "true" else "false";    // true
 ```
 
-Just `nil` and `false` are falsy.
+Apenas `nil` e `false` são falsy.
 
-## Syntax
+## Sintaxe
 
-### Comments
+### Comentários
 
 ```js
 // This is a single-line comment.
@@ -182,9 +182,9 @@ Just `nil` and `false` are falsy.
 // comment. ;)
 ```
 
-Hook supports single-line comments only. Sorry!
+O Hook suporta apenas comentários de uma linha. Desculpe!
 
-### Semi-colons {.col-span-2}
+### Ponto e vírgula {.col-span-2}
 
 <!-- prettier-ignore -->
 ```js
@@ -194,9 +194,9 @@ println(4) ; println(5)
 ;                                      // error: unexpected token `;`
 ```
 
-Semi-colons are required and empty statements are not allowed.
+Ponto e vírgula são obrigatórios e instruções vazias não são permitidas.
 
-### Blocks
+### Blocos
 
 ```js
 {
@@ -207,9 +207,9 @@ Semi-colons are required and empty statements are not allowed.
 }
 ```
 
-Blocks are used to define a scope.
+Blocos são usados para definir um escopo.
 
-### Reserved words
+### Palavras reservadas
 
 |         |          |            |         |
 | ------- | :------- | :--------- | :------ |
@@ -220,9 +220,9 @@ Blocks are used to define a scope.
 | `nil`   | `return` | `struct`   | `trait` |
 | `true`  | `var`    | `while`    |         |
 
-There are few reserved words.
+Existem poucas palavras reservadas.
 
-### Identifiers
+### Identificadores
 
 ```php
 var lowercase;
@@ -233,11 +233,11 @@ var snake_case;
 var _123;
 ```
 
-Identifiers are case-sensitive.
+Identificadores diferenciam maiúsculas de minúsculas.
 
-## Variables
+## Variáveis
 
-### Variables
+### Variáveis
 
 ```js
 var x; // x contains nil
@@ -247,9 +247,9 @@ x = 'foo'; // a string
 println(x);
 ```
 
-Values have types, but variables don't.
+Valores têm tipos, mas variáveis não.
 
-### Immutable variables {.col-span-2}
+### Variáveis imutáveis {.col-span-2}
 
 ```js
 let x = 5;
@@ -259,9 +259,9 @@ x = 10; // error: cannot assign to immutable variable `x`
 let y; // error: unexpected token `;`
 ```
 
-Immutable variables must be initialized when declared.
+Variáveis imutáveis precisam ser inicializadas na declaração.
 
-### Scopes {.col-span-2}
+### Escopos {.col-span-2}
 
 ```js
 let x = 5;
@@ -274,7 +274,7 @@ println(x); // 5
 println(y); // error: variable `y` is used but not defined
 ```
 
-When a heap-allocated variable goes out of scope, it is automatically deallocated.
+Quando uma variável alocada no heap sai de escopo, ela é desalocada automaticamente.
 
 ### Shadowing
 
@@ -287,11 +287,11 @@ let x = 5;
 println(x); // 5
 ```
 
-Variables can be shadowed.
+Variáveis podem sofrer shadowing.
 
-## Operators and Expressions
+## Operadores e expressões
 
-### Arithmetic
+### Aritmética
 
 ```js
 println(5 + 10); // 15
@@ -302,9 +302,9 @@ println(5 % 10); // 5
 println(-5); // -5
 ```
 
-The basic arithmetic operators.
+Os operadores aritméticos básicos.
 
-### Comparison
+### Comparação
 
 ```js
 println(5 == 10); // false
@@ -315,9 +315,9 @@ println(5 <= 10); // true
 println(5 >= 10); // false
 ```
 
-The comparison operators.
+Os operadores de comparação.
 
-### Logical
+### Lógicos
 
 ```js
 println(true && false); // false
@@ -325,9 +325,9 @@ println(true || false); // true
 println(!true); // false
 ```
 
-The logical operators.
+Os operadores lógicos.
 
-### Bitwise and shift
+### Bitwise e shift
 
 ```js
 println(5 & 10); // 0
@@ -338,9 +338,9 @@ println(5 << 1); // 10
 println(5 >> 1); // 2
 ```
 
-The bitwise and shift operators.
+Os operadores bitwise e de shift.
 
-### Assignments
+### Atribuições
 
 ```js
 var x = 5; // 5
@@ -358,9 +358,9 @@ x++; // 16
 x--; // 15
 ```
 
-The assignment operators.
+Os operadores de atribuição.
 
-### The ternary operator
+### O operador ternário
 
 ```js
 let x = 5;
@@ -370,9 +370,9 @@ println(y);
 // 20
 ```
 
-In Hook, the ternary operator is `if else`.
+No Hook, o operador ternário é `if else`.
 
-## Branching
+## Desvios condicionais
 
 ### If
 
@@ -385,7 +385,7 @@ if (x > 5) {
 // x is greater than 5
 ```
 
-The `if` statement.
+A instrução `if`.
 
 ### If else
 
@@ -402,7 +402,7 @@ if (x == 5) {
 // x is neither 5 nor 10
 ```
 
-The `if else` statement.
+A instrução `if else`.
 
 ### Match
 
@@ -418,9 +418,9 @@ match (x) {
 // other
 ```
 
-The `match` statement.
+A instrução `match`.
 
-## Looping
+## Laços
 
 ### While
 
@@ -434,7 +434,7 @@ while (x < 5) {
 // 01234
 ```
 
-The `while` loop.
+O laço `while`.
 
 ### Do while
 
@@ -448,7 +448,7 @@ do {
 // 01234
 ```
 
-The `do while` loop.
+O laço `do while`.
 
 ### For
 
@@ -459,7 +459,7 @@ for (var i = 0; i < 5; i++) {
 // 01234
 ```
 
-The classic `for` loop.
+O laço `for` clássico.
 
 ### Loop
 
@@ -469,7 +469,7 @@ loop {
 }
 ```
 
-The unconditional `loop`.
+O `loop` incondicional.
 
 ### Break
 
@@ -487,7 +487,7 @@ loop {
 // 01234
 ```
 
-Use `break` to exit a loop.
+Use `break` para sair de um laço.
 
 ### Continue
 
@@ -507,11 +507,11 @@ if (i == 5) break;
 // 135
 ```
 
-Use `continue` to skip the rest of the loop body.
+Use `continue` para pular o restante do corpo do laço.
 
 ## Strings
 
-### Indexing a string
+### Indexar uma string
 
 ```js
 let s = 'Hello';
@@ -521,9 +521,9 @@ println(s[1]); // e
 println(s[4]); // o
 ```
 
-Indexing a string returns a 1-character string.
+Indexar uma string retorna uma string de 1 caractere.
 
-### Slicing a string
+### Fatiar uma string
 
 ```js
 let s = "Hello, World!";
@@ -532,9 +532,9 @@ println(s[0..5]);        // Hello,
 println(s[7..12]);       // World!
 ```
 
-Pass a range to slice a string.
+Passe um range para fatiar uma string.
 
-### Concatening strings
+### Concatenar strings
 
 ```js
 let greeting = 'Hi' + ' there!';
@@ -543,11 +543,11 @@ println(greeting);
 // Hi there!
 ```
 
-Use the `+` operator to concatenate strings.
+Use o operador `+` para concatenar strings.
 
 ## Arrays
 
-### Indexing an array
+### Indexar um array
 
 ```js
 let a = [1, 2, 3];
@@ -557,9 +557,9 @@ println(a[1]); // 2
 println(a[2]); // 3
 ```
 
-Indexing an array returns an element.
+Indexar um array retorna um elemento.
 
-### Slicing an array
+### Fatiar um array
 
 ```js
 let a = [1, 2, 3, 4];
@@ -569,9 +569,9 @@ println(a[1..3]);            // [2, 3, 4]
 println(a[2 .. len(a) - 1]); // [3, 4]
 ```
 
-Arrays are zero-indexed.
+Arrays são indexados a partir de zero.
 
-### Appending an element
+### Adicionar um elemento
 
 ```js
 var a = [1, 2];
@@ -582,9 +582,9 @@ println(a);
 // [1, 2, 3]
 ```
 
-Arrays are mutable. Use `[]` to append an element.
+Arrays são mutáveis. Use `[]` para adicionar um elemento.
 
-### Element assignment
+### Atribuição de elemento
 
 ```js
 var a = [1, 2, 3];
@@ -595,9 +595,9 @@ println(a);
 // [4, 2, 3]
 ```
 
-Update an element in an array.
+Atualize um elemento em um array.
 
-### Concatening arrays
+### Concatenar arrays
 
 ```js
 let a = [1, 2];
@@ -608,9 +608,9 @@ println(c);
 // [1, 2, 3]
 ```
 
-Use the `+` operator to concatenate arrays.
+Use o operador `+` para concatenar arrays.
 
-### Subtracting arrays
+### Subtrair arrays
 
 ```js
 let a = [1, 2, 2, 3];
@@ -621,11 +621,11 @@ println(c);
 // [1, 3]
 ```
 
-Get the difference between two arrays.
+Obtenha a diferença entre dois arrays.
 
-## Functions and Closures
+## Funções e closures
 
-### Function declaration
+### Declaração de função
 
 ```rs
 fn sum(a, b) {
@@ -636,9 +636,9 @@ println(sum(5, 10));
 // 15
 ```
 
-Functions are first-class citizens.
+Funções são cidadãs de primeira classe.
 
-### Function call
+### Chamada de função
 
 ```rs
 fn greet(name) {
@@ -649,9 +649,9 @@ greet("John", "Doe");
 // Hi, John!
 ```
 
-The number of arguments is adjusted.
+O número de argumentos é ajustado.
 
-### Anonymous functions
+### Funções anônimas
 
 ```js
 let sum = |a, b| {
@@ -662,7 +662,7 @@ println(sum(5, 10));
 // 15
 ```
 
-Anonymous functions are also supported.
+Funções anônimas também são suportadas.
 
 ### Closures
 
@@ -679,9 +679,9 @@ println(area(5));
 // 78.5
 ```
 
-Closures in Hook capture values only.
+Closures no Hook capturam apenas valores.
 
-### Higher-order functions
+### Funções de ordem superior
 
 ```rs
 fn apply(f, x) {
@@ -696,9 +696,9 @@ println(apply(double, 5));
 // 10
 ```
 
-Functions can be passed as arguments or returned.
+Funções podem ser passadas como argumentos ou retornadas.
 
-### Syntax sugar for functions
+### Açúcar sintático para funções
 
 ```rs
 fn factorial(n) =>
@@ -709,9 +709,9 @@ println(factorial(5));
 // 120
 ```
 
-Use `=>` when the body is a single expression.
+Use `=>` quando o corpo for uma única expressão.
 
-### Recursion
+### Recursão
 
 ```rs
 fn fib(n) {
@@ -724,9 +724,9 @@ println(fib(10));
 // 55
 ```
 
-Recursion is supported.
+Recursão é suportada.
 
-### Built-in functions
+### Funções nativas
 
 ```js
 println(type(5));
@@ -737,9 +737,9 @@ println(len('foo'));
 // 3
 ```
 
-There are many built-in functions.
+Existem muitas funções nativas.
 
-### More built-in functions
+### Mais funções nativas
 
 |             |           |             |
 | ----------- | :-------- | :---------- |
@@ -748,7 +748,7 @@ There are many built-in functions.
 | `to_string` | `hex`     | `len`       |
 | `exit`      | `assert`  | `panic`     |
 
-See: [Built-in Functions](https://github.com/hook-lang/hook/blob/main/docs/built-in.md)
+Veja: [Funções nativas](https://github.com/hook-lang/hook/blob/main/docs/built-in.md)
 
 ## Structs
 
@@ -767,18 +767,18 @@ println(p);
 // {x: 5, y: 10}
 ```
 
-A struct is a prototype for a record.
+Uma struct é um protótipo para um record.
 
-### Accessing fields
+### Acessar campos
 
 ```js
 println(p.x); // 5
 println(p.y); // 10
 ```
 
-Use `.` to access a field in a record.
+Use `.` para acessar um campo em um record.
 
-### Field assignment
+### Atribuição de campo
 
 ```js
 p.x = 10;
@@ -788,11 +788,11 @@ println(p);
 // {x: 10, y: 20}
 ```
 
-Update a value of a field in a record.
+Atualize o valor de um campo em um record.
 
-## Destructuring
+## Desestruturação
 
-### Destructuring an array
+### Desestruturar um array
 
 ```js
 let a = [1, 2];
@@ -802,9 +802,9 @@ println(x); // 1
 println(y); // 2
 ```
 
-Varuables are declared and assigned.
+Variáveis são declaradas e atribuídas.
 
-### Destructuring a record
+### Desestruturar um record
 
 ```js
 let p = { x: 5, y: 10 };
@@ -814,7 +814,7 @@ println(x);
 // 5
 ```
 
-Use `{}` to destructure a record.
+Use `{}` para desestruturar um record.
 
 ### Placeholder
 
@@ -827,11 +827,11 @@ println(x); // 1
 println(y); // 2
 ```
 
-Use `_` skip leading or middle elements.
+Use `_` para ignorar elementos iniciais ou do meio.
 
-## Modularity
+## Modularidade
 
-### Importing a module
+### Importar um módulo
 
 ```js
 import math;
@@ -842,9 +842,9 @@ println(math.sqrt(25));
 // 5
 ```
 
-Use `import` to bring a module into scope.
+Use `import` para trazer um módulo para o escopo.
 
-### Exporting symbols
+### Exportar símbolos
 
 ```rs
 // my_module.hk
@@ -855,9 +855,9 @@ fn useful_fn() {
 return { useful: useful_fn };
 ```
 
-Return a record with the symbols to export.
+Retorne um record com os símbolos a exportar.
 
-### Importing local modules
+### Importar módulos locais
 
 ```python
 import "./my_module.hk" as my;
@@ -868,9 +868,9 @@ println(my.useful());
 // Nothing
 ```
 
-Specify the path to the local module.
+Especifique o path do módulo local.
 
-### Selective import
+### Importação seletiva
 
 ```js
 import { pow, sqrt } from math;
@@ -882,9 +882,9 @@ println(a);
 // 5
 ```
 
-Use `{}` to import specific symbols.
+Use `{}` para importar símbolos específicos.
 
-### Core modules
+### Módulos core
 
 |            |          |        |           |
 | ---------- | :------- | :----- | :-------- |
@@ -892,9 +892,9 @@ Use `{}` to import specific symbols.
 | `strings`  | `arrays` | `utf8` | `hashing` |
 | `encoding` | `socket` | `json` | `lists`   |
 
-See: [Core Modules](https://github.com/hook-lang/hook/blob/main/docs/core-modules.md)
+Veja: [Módulos core](https://github.com/hook-lang/hook/blob/main/docs/core-modules.md)
 
-### Extension modules
+### Módulos de extensão
 
 |           |           |         |           |
 | --------- | :-------- | :------ | :-------- |
@@ -902,9 +902,9 @@ See: [Core Modules](https://github.com/hook-lang/hook/blob/main/docs/core-module
 | `geohash` | `leveldb` | `mysql` | `redis`   |
 | `regex`   | `sqlite`  | `uuid`  | `zeromq`  |
 
-This is a list of extension modules.
+Esta é uma lista de módulos de extensão.
 
-### **io** module
+### Módulo **io**
 
 ```js
 import { stderr, writeln } from io;
@@ -913,9 +913,9 @@ writeln(stderr, "Something went wrong");
 // Something went wrong
 ```
 
-Printing to `stderr` using `io` module.
+Imprimindo em `stderr` com o módulo `io`.
 
-### **hashing** module
+### Módulo **hashing**
 
 ```python
 import hashing as h;
@@ -928,9 +928,9 @@ println(hex(d));
 // 315f5bdb76d078c43b8ac0064e4a...
 ```
 
-`hashing` module provides hash functions.
+O módulo `hashing` fornece funções de hash.
 
-### **json** module
+### Módulo **json**
 
 ```js
 import json;
@@ -946,11 +946,11 @@ let k = json.encode(p);
 println(type(k)); // string
 ```
 
-Use `json` module for working with JSON.
+Use o módulo `json` para trabalhar com JSON.
 
-## Error Handling
+## Tratamento de erros
 
-### Errors {.col-span-2}
+### Erros {.col-span-2}
 
 ```js
 println(to_int('foo'));
@@ -960,9 +960,9 @@ println(to_int('foo'));
 //   at main() in example.hk:1
 ```
 
-Hook uses panic mode for error handling. When an error occurs, the interpreter stops.
+O Hook usa modo panic para tratamento de erros. Quando ocorre um erro, o interpretador para.
 
-### Syntax error
+### Erro de sintaxe
 
 ```js
 println('Hello, World!');
@@ -971,7 +971,7 @@ println('Hello, World!');
 //   at main() in example.hk:1,25
 ```
 
-Hook has a strict syntax.
+O Hook tem sintaxe estrita.
 
 ### Panic
 
@@ -982,7 +982,7 @@ panic('Something went wrong');
 //   at main() in example.hk:1
 ```
 
-Use the `panic` built-in function to raise an error.
+Use a função nativa `panic` para lançar um erro.
 
 ### Assert {.col-span-2}
 
@@ -993,9 +993,9 @@ assert(5 > 10, '5 is not greater than 10');
 //   at main() in example.hk:1
 ```
 
-Use the `assert` built-in function to check a condition.
+Use a função nativa `assert` para verificar uma condição.
 
-### Returning errors {.col-span-2}
+### Retornar erros {.col-span-2}
 
 ```rs
 fn divide(a, b) {
@@ -1012,9 +1012,9 @@ if (let [ok, err] = divide(5, 0); ok) {
 // division by zero
 ```
 
-Use a pair to return a value and an error.
+Use um par para retornar um valor e um erro.
 
-### Passing errors
+### Propagar erros
 
 ```rs
 if (let [ok, err] = divide(5, 0); err) {
@@ -1022,4 +1022,4 @@ if (let [ok, err] = divide(5, 0); err) {
 }
 ```
 
-Pass an error without handling it.
+Passe um erro adiante sem tratá-lo.

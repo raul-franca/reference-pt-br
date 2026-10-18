@@ -7,79 +7,79 @@ tags:
   -
   -
 categories:
-  - Keyboard Shortcuts
+  - Atalhos de Teclado
 intro: |
-  A visual cheat-sheet for the 44 keyboard shortcuts found in Jira
+  Um cheat sheet visual para os 44 atalhos de teclado do Jira
 ---
 
-## Keyboard Shortcuts
+## Atalhos de Teclado
 
-### Global Shortcuts
+### Atalhos Globais
 
-| Shortcut                     | Action                           |
-| ---------------------------- | -------------------------------- |
-| `G` `D`                      | Go to Dashboard                  |
-| `G` `P`                      | Browse to a Project              |
-| `G` `A`                      | Go to Agile                      |
-| `G` `I`                      | Go to Issue Navigator            |
-| `G` `G`                      | Administration Search Dialog Box |
-| `/`                          | Quick Search                     |
-| `C`                          | Create an Issue                  |
-| `?`                          | Open shortcut help               |
-| `Ctrl` `Alt` `D`             | Dashboards drop-down menu        |
-| `Ctrl` `Alt` `P`             | Projects drop-down menu          |
-| `Ctrl` `Alt` `I`             | Issues drop-down menu            |
-| `Ctrl` `Alt` `G`             | Agile drop-down menu             |
-| `Ctrl` `Alt` `S`             | Form Submit                      |
-| `Ctrl` `Alt` <code>\`</code> | Cancel Form                      |
-
-{.shortcuts}
-
-### Agile Shortcuts
-
-| Shortcut | Action                        |
-| -------- | ----------------------------- |
-| `J`      | Next Issue                    |
-| `K`      | Previous Issue                |
-| `N`      | Next Column                   |
-| `P`      | Previous Column               |
-| `-`      | Expand/Collapse All Swimlanes |
-| `T`      | Hide/Show Detail View         |
-| `O`      | View Issue                    |
-| `Enter`  | Add a New Line                |
-| `Enter`  | Submit changes                |
-| `Esc`    | Cancel changes                |
-| `I`      | Assign to Me                  |
-| `S` `T`  | Send to Top                   |
-| `S` `B`  | Send to Bottom                |
-| `E`      | Edit Issue                    |
-| `Z`      | Projector Mode                |
+| Atalho                       | Ação                                          |
+| ---------------------------- | --------------------------------------------- |
+| `G` `D`                      | Ir para o Dashboard                           |
+| `G` `P`                      | Navegar até um projeto                        |
+| `G` `A`                      | Ir para o Agile                               |
+| `G` `I`                      | Ir para o Navegador de Issues                 |
+| `G` `G`                      | Caixa de diálogo de pesquisa da administração |
+| `/`                          | Pesquisa rápida                               |
+| `C`                          | Criar uma issue                               |
+| `?`                          | Abrir a ajuda de atalhos                      |
+| `Ctrl` `Alt` `D`             | Menu suspenso de dashboards                   |
+| `Ctrl` `Alt` `P`             | Menu suspenso de projetos                     |
+| `Ctrl` `Alt` `I`             | Menu suspenso de issues                       |
+| `Ctrl` `Alt` `G`             | Menu suspenso do Agile                        |
+| `Ctrl` `Alt` `S`             | Enviar formulário                             |
+| `Ctrl` `Alt` <code>\`</code> | Cancelar formulário                           |
 
 {.shortcuts}
 
-### Issue Actions and Navigator Shortcuts
+### Atalhos do Agile
 
-| Shortcut | Action                 |
-| -------- | ---------------------- |
-| `O`      | View selected issue    |
-| `J`      | Next Issue             |
-| `K`      | Previous Issue         |
-| `U`      | Back to the Navigator  |
-| `[`      | Hide/Show Left Section |
-| `N`      | Next Activity          |
-| `P`      | Previous Activity      |
-| `F`      | Focus search field     |
-| `Esc`    | Escape field           |
-| `E`      | Edit Issue             |
-| `A`      | Assign Issue           |
-| `M`      | Comment on Issue       |
-| `L`      | Edit Issue Labels      |
-| `S`      | Share Issue            |
-| `.`      | Operations dialog box  |
+| Atalho  | Ação                                     |
+| ------- | ---------------------------------------- |
+| `J`     | Próxima issue                            |
+| `K`     | Issue anterior                           |
+| `N`     | Próxima coluna                           |
+| `P`     | Coluna anterior                          |
+| `-`     | Expandir/recolher todas as swimlanes     |
+| `T`     | Ocultar/mostrar visualização de detalhes |
+| `O`     | Ver issue                                |
+| `Enter` | Adicionar uma nova linha                 |
+| `Enter` | Enviar alterações                        |
+| `Esc`   | Cancelar alterações                      |
+| `I`     | Atribuir a mim                           |
+| `S` `T` | Enviar para o topo                       |
+| `S` `B` | Enviar para o fim                        |
+| `E`     | Editar issue                             |
+| `Z`     | Modo projetor                            |
 
 {.shortcuts}
 
-## Also see
+### Ações de Issue e Atalhos do Navegador
 
-- [Keyboard shortcuts for Atlassian's Jira](https://confluence.atlassian.com/agile066/jira-agile-user-s-guide/using-keyboard-shortcuts)
+| Atalho  | Ação                            |
+| ------- | ------------------------------- |
+| `O`     | Ver a issue selecionada         |
+| `J`     | Próxima issue                   |
+| `K`     | Issue anterior                  |
+| `U`     | Voltar ao Navegador             |
+| `[`     | Ocultar/mostrar seção esquerda  |
+| `N`     | Próxima atividade               |
+| `P`     | Atividade anterior              |
+| `F`     | Focar o campo de pesquisa       |
+| `Esc`   | Sair do campo                   |
+| `E`     | Editar issue                    |
+| `A`     | Atribuir issue                  |
+| `M`     | Comentar na issue               |
+| `L`     | Editar labels da issue          |
+| `S`     | Compartilhar issue              |
+| `.`     | Caixa de diálogo de operações   |
+
+{.shortcuts}
+
+## Veja também
+
+- [Atalhos de teclado do Jira da Atlassian](https://confluence.atlassian.com/agile066/jira-agile-user-s-guide/using-keyboard-shortcuts)
   _(confluence.atlassian.com)_

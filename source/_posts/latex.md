@@ -4,27 +4,27 @@ date: 2022-12-30 09:51:44
 background: bg-[#2a338a]
 tags:
 categories:
-  - Programming
+  - Programação
 intro: |
-  This cheat sheet summarizes a reference list of [LaTeX](https://www.latex-project.org/) commonly used display math notation and some application examples of [KaTeX](https://katex.org/).
+  Este cheat sheet resume uma lista de referência das notações matemáticas de exibição mais usadas em [LaTeX](https://www.latex-project.org/) e alguns exemplos de aplicação do [KaTeX](https://katex.org/).
 plugins:
   - katex
   - copyCode
 ---
 
-## Getting Started
+## Primeiros passos
 
-### Introduction
+### Introdução
 
-[LaTeX](https://www.latex-project.org/) A TEX-based typesetting system suitable for producing scientific, mathematical,
-and physical documents of high print quality.
+[LaTeX](https://www.latex-project.org/) Um sistema de tipografia baseado em TEX, adequado para produzir documentos
+científicos, matemáticos e físicos com alta qualidade de impressão.
 
-- [LaTeX official website](https://www.latex-project.org/) _(latex-project.org)_
-- [KaTeX official website](https://katex.org/) _(katex.org)_
+- [Site oficial do LaTeX](https://www.latex-project.org/) _(latex-project.org)_
+- [Site oficial do KaTeX](https://katex.org/) _(katex.org)_
 
-And [KaTeX](https://katex.org/) handles only a smaller subset of LaTeX's mathematical notation for display on the web
+E o [KaTeX](https://katex.org/) lida apenas com um subconjunto menor da notação matemática do LaTeX para exibição na web
 
-### Example
+### Exemplo
 
 ```KaTeX
 % \f is defined as #1f(#2) using the macro
@@ -49,11 +49,11 @@ Based on KaTeX in one lineExample
 Example： `KaTeX:\int_0^\infty x^2 dx`
 ```
 
-Example based on KaTeX showing on one line: `KaTeX:\int_0^\infty x^2 dx`
+Exemplo com KaTeX exibido em uma linha: `KaTeX:\int_0^\infty x^2 dx`
 
-## Supported Functions
+## Funções suportadas
 
-### Accents {.col-span-2 .row-span-2}
+### Acentos {.col-span-2 .row-span-2}
 
 | :-                                             | :-                                                                     | :-                                                               |
 | :--------------------------------------------- | :--------------------------------------------------------------------- | :--------------------------------------------------------------- |
@@ -70,7 +70,7 @@ Example based on KaTeX showing on one line: `KaTeX:\int_0^\infty x^2 dx`
 | `KaTeX:\hat{\theta}` <pur>`\hat{\theta}`</pur> | `KaTeX:\underline{AB}` <pur>`\underline{AB}`</pur>                     | `KaTeX:\underlinesegment{AB}` <pur>`\underlinesegment{AB}`</pur> |
 | `KaTeX:\widehat{ac}` <pur>`\widehat{ac}`</pur> | `KaTeX:\widecheck{ac}` <pur>`\widecheck{ac}`</pur>                     | `KaTeX:\underbar{X}` <pur>`\underbar{X}`</pur>                   |
 
-### Emphasis in \text&lcub;...&rcub;
+### Ênfase em \text&lcub;...&rcub;
 
 | :-                                                   | :-                               |
 | :--------------------------------------------------- | :------------------------------- |
@@ -81,7 +81,7 @@ Example based on KaTeX showing on one line: `KaTeX:\int_0^\infty x^2 dx`
 | `KaTeX:\^{a}` <pur>`\^{a}`</pur>                     | `KaTeX:\u{a}` <pur>`\u{a}`</pur> |
 | `KaTeX:\r{a}` <pur>`\r{a}`</pur>                     |
 
-### Delimiter Sizing
+### Dimensionamento de delimitadores
 
 | :-                                  | :-                                       |
 | :---------------------------------- | :--------------------------------------- |
@@ -97,9 +97,9 @@ Example based on KaTeX showing on one line: `KaTeX:\int_0^\infty x^2 dx`
 | `\right`  | `\bigg` | `\biggl` | `\biggm` | `\biggr` |
 | `\`       | `\Bigg` | `\Biggl` | `\Biggm` | `\Biggr` |
 
-### Greek and Hebrew letters {.col-span-3}
+### Letras gregas e hebraicas {.col-span-3}
 
-| preview          | method                | preview         | method               | preview          | method                | preview             | method                   | preview         | method               | preview          | method                |
+| prévia           | método                | prévia          | método               | prévia           | método                | prévia              | método                   | prévia          | método               | prévia           | método                |
 | :--------------- | :-------------------- | :-------------- | :------------------- | :--------------- | :-------------------- | :------------------ | :----------------------- | :-------------- | :------------------- | :--------------- | :-------------------- |
 | `KaTeX:\alpha`   | <pur>`\alpha`</pur>   | `KaTeX:\kappa`  | <pur>`\kappa`</pur>  | `KaTeX:\psi`     | <pur>`\psi`</pur>     | `KaTeX:\digamma`    | <pur>`\digamma`</pur>    | `KaTeX:\Delta`  | <pur>`\Delta`</pur>  | `KaTeX:\Theta`   | <pur>`\Theta`</pur>   |
 | `KaTeX:\beta`    | <pur>`\beta`</pur>    | `KaTeX:\lambda` | <pur>`\lambda`</pur> | `KaTeX:\rho`     | <pur>`\rho`</pur>     | `KaTeX:\varepsilon` | <pur>`\varepsilon`</pur> | `KaTeX:\Gamma`  | <pur>`\Gamma`</pur>  | `KaTeX:\Upsilon` | <pur>`\Upsilon`</pur> |
@@ -112,7 +112,7 @@ Example based on KaTeX showing on one line: `KaTeX:\int_0^\infty x^2 dx`
 
 {.left-align}
 
-#### Other letters
+#### Outras letras
 
 | :-               | :-                    | :-               | :-                    | :-               | :-                    | :-                 | :-                      | :-                 | :-                      |
 | :--------------- | :-------------------- | :--------------- | :-------------------- | :--------------- | :-------------------- | :----------------- | :---------------------- | :----------------- | :---------------------- |
@@ -128,9 +128,9 @@ Example based on KaTeX showing on one line: `KaTeX:\int_0^\infty x^2 dx`
 
 {.left-align}
 
-### Alphabets and Unicode {.col-span-3}
+### Alfabetos e Unicode {.col-span-3}
 
-| preview             | method                   | preview           | method                 | preview           | method                 | preview             | method                   |
+| prévia              | método                   | prévia            | método                 | prévia            | método                 | prévia              | método                   |
 | :------------------ | :----------------------- | :---------------- | :--------------------- | :---------------- | :--------------------- | :------------------ | :----------------------- |
 | `KaTeX:\Alpha`      | <pur>`\Alpha`</pur>      | `KaTeX:\Beta`     | <pur>`\Beta`</pur>     | `KaTeX:\Gamma`    | <pur>`\Gamma`</pur>    | `KaTeX:\Delta`      | <pur>`\Delta`</pur>      |
 | `KaTeX:\Epsilon`    | <pur>`\Epsilon`</pur>    | `KaTeX:\Zeta`     | <pur>`\Zeta`</pur>     | `KaTeX:\Eta`      | <pur>`\Eta`</pur>      | `KaTeX:\Theta`      | <pur>`\Theta`</pur>      |
@@ -153,7 +153,7 @@ Example based on KaTeX showing on one line: `KaTeX:\int_0^\infty x^2 dx`
 
 {.show-header left-align}
 
-### Annotation {.col-span-3}
+### Anotação {.col-span-3}
 
 | :-                                                    | :-                             | :-                                       | :-                                            |
 | :---------------------------------------------------- | :----------------------------- | :--------------------------------------- | :-------------------------------------------- |
@@ -176,7 +176,7 @@ Example based on KaTeX showing on one line: `KaTeX:\int_0^\infty x^2 dx`
 \tag*{hi} x+y^{2x}
 ```
 
-### Vertical layout {.col-span-3}
+### Layout vertical {.col-span-3}
 
 | :-                                     | :-                                          | :-                      | :-                           | :-                                                          | :-                                                    |
 | :------------------------------------- | :------------------------------------------ | :---------------------- | :--------------------------- | :---------------------------------------------------------- | :---------------------------------------------------- |
@@ -185,7 +185,7 @@ Example based on KaTeX showing on one line: `KaTeX:\int_0^\infty x^2 dx`
 | `KaTeX:_u^o`                           | <pur>`_u^o`</pur>                           | `KaTeX:\underset{!}{=}` | <pur>`\underset{!}{=}`</pur> | `KaTeX:a+\left(\vcenter{\hbox{$\frac{\frac a b}c$}}\right)` | `a+\left(\vcenter{\hbox{$\frac{\frac a b}c$}}\right)` |
 | `KaTeX:\sum_{\substack{0<i<m\\0<j<n}}` | <pur>`\sum_{\substack{0<i<m\\0<j<n}}`</pur> |                         |                              |                                                             |                                                       |
 
-### Overlap and Spacing {.col-span-3}
+### Sobreposição e espaçamento {.col-span-3}
 
 | :-                                                     | :-                                 | :-                                    |
 | :----------------------------------------------------- | :--------------------------------- | :------------------------------------ |
@@ -198,18 +198,18 @@ Example based on KaTeX showing on one line: `KaTeX:\int_0^\infty x^2 dx`
 \sum_{\mathclap{1\le i\le j\le n}} x_{ij}
 ```
 
-### `KaTeX:\LaTeX` math constructs {.col-span-3}
+### Construções matemáticas do `KaTeX:\LaTeX` {.col-span-3}
 
-| Preview                 | Method                       | Preview                 | Method                       | Preview                      | Method                            |
+| Prévia                  | Método                       | Prévia                  | Método                       | Prévia                       | Método                            |
 | :---------------------- | :--------------------------- | :---------------------- | :--------------------------- | :--------------------------- | :-------------------------------- |
 | `KaTeX:\frac{abc}{xyz}` | <pur>`\frac{abc}{xyz}`</pur> | `KaTeX:\overline{abc}`  | <pur>`\overline{abc}`</pur>  | `KaTeX:\overrightarrow{abc}` | <pur>`\overrightarrow{abc}`</pur> |
 | `KaTeX:f'`              | <pur>`f'`</pur>              | `KaTeX:\underline{abc}` | <pur>`\underline{abc}`</pur> | `KaTeX:\overleftarrow{abc}`  | <pur>`\overleftarrow{abc}`</pur>  |
 | `KaTeX:\sqrt{abc}`      | <pur>`\sqrt{abc}`</pur>      | `KaTeX:\widehat{abc}`   | <pur>`\widehat{abc}`</pur>   | `KaTeX:\overbrace{abc}`      | <pur>`\overbrace{abc}`</pur>      |
 | `KaTeX:\sqrt[n]{abc}`   | <pur>`\sqrt[n]{abc}`</pur>   | `KaTeX:\widetilde{abc}` | <pur>`\widetilde{abc}`</pur> | `KaTeX:\underbrace{abc}`     | <pur>`\underbrace{abc}`</pur>     |
 
-### Delimiters {.col-span-3}
+### Delimitadores {.col-span-3}
 
-| preview                                      | method                           | preview                 | method                         | preview     | method              | preview                          | method                                 | preview                 | method                       |
+| prévia                                       | método                           | prévia                  | método                         | prévia      | método              | prévia                           | método                                 | prévia                  | método                       |
 | :------------------------------------------- | :------------------------------- | :---------------------- | :----------------------------- | :---------- | :------------------ | :------------------------------- | :------------------------------------- | :---------------------- | :--------------------------- |
 | `KaTeX:()`                                   | <pur>`()`</pur>                  | `KaTeX:\lparen \rparen` | <pur>`\lparen` `\rparen`</pur> | `KaTeX:⌈ ⌉` | <pur>`⌈ ⌉`</pur>    | `KaTeX:\lceil \rceil`            | <pur>`\lceil` `\rceil`</pur>           | `KaTeX:\uparrow`        | <pur>`\uparrow`</pur>        |
 | `KaTeX:[]`                                   | <pur>`[]`</pur>                  | `KaTeX:\lbrack \rbrack` | <pur>`\lbrack` `\rbrack`</pur> | `KaTeX:⌊ ⌋` | <pur>`⌊ ⌋`</pur>    | `KaTeX:\lfloor \rfloor`          | <pur>`\lfloor` `\rfloor`</pur>         | `KaTeX:\downarrow`      | <pur>`\downarrow`</pur>      |
@@ -222,16 +222,16 @@ Example based on KaTeX showing on one line: `KaTeX:\int_0^\infty x^2 dx`
 
 {.show-header left-align}
 
-The pair of expressions `\left` `KaTeX:s_1` and `\right` `KaTeX:s_2` can be used to match the height of the separators
-`KaTeX:s_1` and `KaTeX:s_2` to the height of their content, e.g. :
+O par de expressões `\left` `KaTeX:s_1` e `\right` `KaTeX:s_2` pode ser usado para ajustar a altura dos separadores
+`KaTeX:s_1` e `KaTeX:s_2` à altura do conteúdo deles, por exemplo:
 
 | :-              | :-           | :-               | :-              | :-           | :-               | :-                 | :-           | :-              |
 | :-------------- | :----------- | :--------------- | :-------------- | :----------- | :--------------- | :----------------- | :----------- | :-------------- |
 | `KaTeX:\left\|` | `KaTeX:expr` | `KaTeX:\right\|` | `KaTeX:\left\{` | `KaTeX:expr` | `KaTeX:\right\}` | `KaTeX:\left\Vert` | `KaTeX:expr` | `KaTeX:\right.` |
 
-### Variable Size Symbols {.col-span-3}
+### Símbolos de tamanho variável {.col-span-3}
 
-| preview         | method               | preview       | method             | preview           | method                 | preview            | method                  | preview           | method                 |
+| prévia          | método               | prévia        | método             | prévia            | método                 | prévia             | método                  | prévia            | método                 |
 | :-------------- | :------------------- | :------------ | :----------------- | :---------------- | :--------------------- | :----------------- | :---------------------- | :---------------- | :--------------------- |
 | `KaTeX:\sum`    | <pur>`\sum`</pur>    | `KaTeX:\int`  | <pur>`\int`</pur>  | `KaTeX:\biguplus` | <pur>`\biguplus`</pur> | `KaTeX:\bigoplus`  | <pur>`\bigoplus`</pur>  | `KaTeX:\bigvee`   | <pur>`\bigvee`</pur>   |
 | `KaTeX:\prod`   | <pur>`\prod`</pur>   | `KaTeX:\oint` | <pur>`\oint`</pur> | `KaTeX:\bigcap`   | <pur>`\bigcap`</pur>   | `KaTeX:\bigotimes` | <pur>`\bigotimes`</pur> | `KaTeX:\bigwedge` | <pur>`\bigwedge`</pur> |
@@ -239,9 +239,9 @@ The pair of expressions `\left` `KaTeX:s_1` and `\right` `KaTeX:s_2` can be used
 
 {.show-header left-align}
 
-### standard function name{.col-span-3}
+### Nomes de funções padrão{.col-span-3}
 
-| preview         | method               | preview         | method               | preview         | method               | preview         | method               |
+| prévia          | método               | prévia          | método               | prévia          | método               | prévia          | método               |
 | :-------------- | :------------------- | :-------------- | :------------------- | :-------------- | :------------------- | :-------------- | :------------------- |
 | `KaTeX:\arccos` | <pur>`\arccos`</pur> | `KaTeX:\arcsin` | <pur>`\arcsin`</pur> | `KaTeX:\arcsin` | <pur>`\arcsin`</pur> | `KaTeX:\arg`    | <pur>`\arg`</pur>    |
 | `KaTeX:\cos`    | <pur>`\cos`</pur>    | `KaTeX:\cosh`   | <pur>`\cosh`</pur>   | `KaTeX:\cot`    | <pur>`\cot`</pur>    | `KaTeX:\coth`   | <pur>`\coth`</pur>   |
@@ -254,16 +254,16 @@ The pair of expressions `\left` `KaTeX:s_1` and `\right` `KaTeX:s_2` can be used
 
 {.show-header left-align}
 
-#### Function names should be in roman font, not italics, for example:
+#### Nomes de funções devem estar em fonte romana, não em itálico, por exemplo:
 
 | :-         | :-                         | :-                  | :-                    |
 | :--------- | :------------------------- | :------------------ | :-------------------- |
-| Correct:   | <pur>`\tan(at-n\pi)`</pur> | `KaTeX:\rightarrow` | `KaTeX:\tan(at-n\pi)` |
-| Incorrect: | <pur>`tan(at-n\pi)`</pur>  | `KaTeX:\rightarrow` | `KaTeX:tan(at-n\pi)`  |
+| Correto:   | <pur>`\tan(at-n\pi)`</pur> | `KaTeX:\rightarrow` | `KaTeX:\tan(at-n\pi)` |
+| Incorreto: | <pur>`tan(at-n\pi)`</pur>  | `KaTeX:\rightarrow` | `KaTeX:tan(at-n\pi)`  |
 
 {.left-align}
 
-### Logic and Set Theory{.col-span-3}
+### Lógica e teoria dos conjuntos{.col-span-3}
 
 | :-               | :-                    | :-                  | :-                       | :-                      | :-                           | :-                         | :-                                      |
 | :--------------- | :-------------------- | :------------------ | :----------------------- | :---------------------- | :--------------------------- | :------------------------- | :-------------------------------------- |
@@ -283,7 +283,7 @@ The pair of expressions `\left` `KaTeX:s_1` and `\right` `KaTeX:s_2` can be used
 | :------------------------------- | :---------------------------------- | :------------------- | :---------------------- |
 | `KaTeX:\Set{ x \| x<\frac 1 2 }` | <pur>\Set{ x \| x<\frac 1 2 }</pur> | `KaTeX:\set{x\|x<5}` | <pur>\set{x\|x<5}</pur> |
 
-### special symbols{.col-span-3}
+### Símbolos especiais{.col-span-3}
 
 | :-                 | :-                    | :-                 | :-                    | :-                                             | :-                                                  |
 | :----------------- | :-------------------- | :----------------- | :-------------------- | :--------------------------------------------- | :-------------------------------------------------- |
@@ -292,9 +292,9 @@ The pair of expressions `\left` `KaTeX:s_1` and `\right` `KaTeX:s_2` can be used
 
 {.left-align}
 
-## Operator
+## Operadores
 
-### Mathematical operator {.col-span-3 row-span-2}
+### Operadores matemáticos {.col-span-3 row-span-2}
 
 | :-                                 | :-                                      | :-              | :-                   | :-               | :-                    | :-                        | :-                             |
 | :--------------------------------- | :-------------------------------------- | :-------------- | :------------------- | :--------------- | :-------------------- | :------------------------ | :----------------------------- |
@@ -316,7 +316,7 @@ The pair of expressions `\left` `KaTeX:s_1` and `\right` `KaTeX:s_2` can be used
 
 {.left-align}
 
-### Big operator {.col-span-2}
+### Operadores grandes {.col-span-2}
 
 | :-             | :-                  | :-                | :-                     | :-                 | :-                      | :-                | :-                     |
 | :------------- | :------------------ | :---------------- | :--------------------- | :----------------- | :---------------------- | :---------------- | :--------------------- |
@@ -328,7 +328,7 @@ The pair of expressions `\left` `KaTeX:s_1` and `\right` `KaTeX:s_2` can be used
 
 {.left-align}
 
-### Fractions and binomials {.row-span-2}
+### Frações e binômios {.row-span-2}
 
 | :-                                  | :-                                       | :-                                  | :-                                       |
 | :---------------------------------- | :--------------------------------------- | :---------------------------------- | :--------------------------------------- |
@@ -355,7 +355,7 @@ The pair of expressions `\left` `KaTeX:s_1` and `\right` `KaTeX:s_2` can be used
 
 {.left-align}
 
-### Binary operator {.col-span-3}
+### Operadores binários {.col-span-3}
 
 | :-                | :-                     | :-                      | :-                           | :-                      | :-                           | :-                       | :-                            |
 | :---------------- | :--------------------- | :---------------------- | :--------------------------- | :---------------------- | :--------------------------- | :----------------------- | :---------------------------- |
@@ -380,9 +380,9 @@ The pair of expressions `\left` `KaTeX:s_1` and `\right` `KaTeX:s_2` can be used
 
 {.left-align}
 
-## Relation
+## Relações
 
-### Relation {.col-span-3}
+### Relações {.col-span-3}
 
 | :-                        | :-                                                          | :-                     | :-                                                       | :-                     | :-                          | :-                        | :-                                              |
 | :------------------------ | :---------------------------------------------------------- | :--------------------- | :------------------------------------------------------- | :--------------------- | :-------------------------- | :------------------------ | :---------------------------------------------- |
@@ -421,7 +421,7 @@ The pair of expressions `\left` `KaTeX:s_1` and `\right` `KaTeX:s_2` can be used
 
 {.left-align}
 
-### Negative relationship {.col-span-3}
+### Relações negativas {.col-span-3}
 
 | :-                 | :-                      | :-                      | :-                           | :-                        | :-                             | :-                     | :-                          |
 | :----------------- | :---------------------- | :---------------------- | :--------------------------- | :------------------------ | :----------------------------- | :--------------------- | :-------------------------- |
@@ -443,7 +443,7 @@ The pair of expressions `\left` `KaTeX:s_1` and `\right` `KaTeX:s_2` can be used
 
 `KaTeX:\not =` <pur>`\not =`</pur>
 
-### Arrow {.col-span-3}
+### Setas {.col-span-3}
 
 | :-                        | :-                             | :-                           | :-                                | :-                         | :-                              |
 | :------------------------ | :----------------------------- | :--------------------------- | :-------------------------------- | :------------------------- | :------------------------------ |
@@ -481,7 +481,7 @@ The pair of expressions `\left` `KaTeX:s_1` and `\right` `KaTeX:s_2` can be used
 
 {.left-align}
 
-### Extensible arrows {.col-span-3}
+### Setas extensíveis {.col-span-3}
 
 | :-                               | :-                                    | :-                                | :-                                     |
 | :------------------------------- | :------------------------------------ | :-------------------------------- | :------------------------------------- |
@@ -496,9 +496,9 @@ The pair of expressions `\left` `KaTeX:s_1` and `\right` `KaTeX:s_2` can be used
 | `KaTeX:\xtofrom{abc}`            | <pur>`\xtofrom{abc}`</pur>            | `KaTeX:\xmapsto{abc}`             | <pur>`\xmapsto{abc}`</pur>             |
 | `KaTeX:\xlongequal{abc}`         | <pur>`\xlongequal{abc}`</pur>         |                                   |                                        |
 
-## Symbols and Punctuation
+## Símbolos e pontuação
 
-### Symbols and Punctuation {.col-span-3}
+### Símbolos e pontuação {.col-span-3}
 
 | :-                                | :-                                        | :-                           | :-                                | :-                            | :-                                 |
 | :-------------------------------- | :---------------------------------------- | :--------------------------- | :-------------------------------- | :---------------------------- | :--------------------------------- |
@@ -541,9 +541,9 @@ The pair of expressions `\left` `KaTeX:s_1` and `\right` `KaTeX:s_2` can be used
 | `KaTeX:\circledS`                 | <pur>`\circledS`</pur>                    | `KaTeX:\spadesuit`           | <pur>`\spadesuit`</pur>           | `KaTeX:\spades`               | <pur>`\spades`</pur>               |
 | `KaTeX:\text{\textcircled a}`     | <pur>`\text{\textcircled a}`</pur>        | `KaTeX:\maltese`             | <pur>`\maltese`</pur>             | `KaTeX:\minuso`               | <pur>`\minuso`</pur>               |
 
-## Environments
+## Ambientes
 
-### Environments 1
+### Ambientes 1
 
 <!--rehype:body-style=display: flex;flex-direction: row;justify-content: flex-start;-->
 
@@ -565,7 +565,7 @@ The pair of expressions `\left` `KaTeX:s_1` and `\right` `KaTeX:s_2` can be used
 
 <!--rehype:style=flex:1;-->
 
-### Environments 2
+### Ambientes 2
 
 <!--rehype:body-style=display: flex;flex-direction: row;justify-content: flex-start;-->
 
@@ -585,7 +585,7 @@ The pair of expressions `\left` `KaTeX:s_1` and `\right` `KaTeX:s_2` can be used
 \end{array}
 ```
 
-### Environments 3
+### Ambientes 3
 
 <!--rehype:body-style=display: flex;flex-direction: row;justify-content: flex-start;-->
 
@@ -607,7 +607,7 @@ The pair of expressions `\left` `KaTeX:s_1` and `\right` `KaTeX:s_2` can be used
 
 <!--rehype:style=flex:1;-->
 
-### Environments 4
+### Ambientes 4
 
 <!--rehype:body-style=display: flex;flex-direction: row;justify-content: flex-start;-->
 
@@ -625,7 +625,7 @@ The pair of expressions `\left` `KaTeX:s_1` and `\right` `KaTeX:s_2` can be used
 \end{bmatrix}
 ```
 
-### Environments 5
+### Ambientes 5
 
 <!--rehype:body-style=display: flex;flex-direction: row;justify-content: flex-start;-->
 
@@ -647,7 +647,7 @@ The pair of expressions `\left` `KaTeX:s_1` and `\right` `KaTeX:s_2` can be used
 
 <!--rehype:style=flex:1;-->
 
-### Environments 6
+### Ambientes 6
 
 <!--rehype:body-style=display: flex;flex-direction: row;justify-content: flex-start;-->
 
@@ -669,7 +669,7 @@ The pair of expressions `\left` `KaTeX:s_1` and `\right` `KaTeX:s_2` can be used
 
 <!--rehype:style=flex:1;-->
 
-### Environments 7
+### Ambientes 7
 
 <!--rehype:body-style=display: flex;flex-direction: row;justify-content: flex-start;-->
 
@@ -687,7 +687,7 @@ The pair of expressions `\left` `KaTeX:s_1` and `\right` `KaTeX:s_2` can be used
 \end{Bmatrix}
 ```
 
-### Environments 8
+### Ambientes 8
 
 <!--rehype:body-style=display: flex;flex-direction: row;justify-content: flex-start;-->
 
@@ -713,7 +713,7 @@ The pair of expressions `\left` `KaTeX:s_1` and `\right` `KaTeX:s_2` can be used
 \end{array}
 ```
 
-### Environments 9
+### Ambientes 9
 
 <!--rehype:body-style=display: flex;flex-direction: row;justify-content: flex-start;-->
 
@@ -731,7 +731,7 @@ x = \begin{cases}
 \end{cases}
 ```
 
-### Environments 10
+### Ambientes 10
 
 <!--rehype:body-style=display: flex;flex-direction: row;justify-content: flex-start;-->
 
@@ -749,7 +749,7 @@ x = \begin{cases}
 \end{rcases}⇒…
 ```
 
-### Environments 11
+### Ambientes 11
 
 <!--rehype:body-style=display: flex;flex-direction: row;justify-content: flex-start;-->
 
@@ -769,7 +769,7 @@ x = \begin{cases}
 \end{smallmatrix}
 ```
 
-### Environments 12
+### Ambientes 12
 
 <!--rehype:body-style=display: flex;flex-direction: row;justify-content: flex-start;-->
 
@@ -791,7 +791,7 @@ x = \begin{cases}
 \end{subarray}}
 ```
 
-### Environments 13
+### Ambientes 13
 
 <!--rehype:body-style=display: flex;flex-direction: row;justify-content: flex-start;-->
 
@@ -813,7 +813,7 @@ x = \begin{cases}
 \end{equation}
 ```
 
-### Environments 14
+### Ambientes 14
 
 <!--rehype:body-style=display: flex;flex-direction: row;justify-content: flex-start;-->
 
@@ -833,7 +833,7 @@ x = \begin{cases}
 \end{align}
 ```
 
-### Environments 15
+### Ambientes 15
 
 <!--rehype:body-style=display: flex;flex-direction: row;justify-content: flex-start;-->
 
@@ -853,7 +853,7 @@ x = \begin{cases}
 \end{gather}
 ```
 
-### Environments 16
+### Ambientes 16
 
 <!--rehype:body-style=display: flex;flex-direction: row;justify-content: flex-start;-->
 
@@ -873,7 +873,7 @@ x = \begin{cases}
 \end{alignat}
 ```
 
-### Environments 17
+### Ambientes 17
 
 <!--rehype:body-style=display: flex;flex-direction: row;justify-content: flex-start;-->
 
@@ -895,9 +895,9 @@ x = \begin{cases}
 \end{CD}
 ```
 
-## Lists
+## Listas
 
-### Unordered List
+### Lista não ordenada
 
 <!--rehype:style=flex:1;-->
 
@@ -909,7 +909,7 @@ x = \begin{cases}
 \end{itemize}
 ```
 
-### Ordered List
+### Lista ordenada
 
 <!--rehype:style=flex:1;-->
 
@@ -921,9 +921,9 @@ x = \begin{cases}
 \begin{enumerate}
 ```
 
-## Style, Color, Size and Font
+## Estilo, cor, tamanho e fonte
 
-### Color
+### Cor
 
 | :-                                    | :-                                         |
 | :------------------------------------ | :----------------------------------------- |
@@ -933,7 +933,7 @@ x = \begin{cases}
 | `KaTeX:\colorbox{aqua}{$F=ma$}`       | <pur>`\colorbox{aqua}{$F=ma$}`</pur>       |
 | `KaTeX:\fcolorbox{red}{aqua}{$F=ma$}` | <pur>`\fcolorbox{red}{aqua}{$F=ma$}`</pur> |
 
-### Font {.col-span-2}
+### Fonte {.col-span-2}
 
 | :-                | :-                     | :-                     | :-                          | :-                       | :-                          |
 | :---------------- | :--------------------- | :--------------------- | :-------------------------- | :----------------------- | :-------------------------- |
@@ -943,7 +943,7 @@ x = \begin{cases}
 | `KaTeX:\Large AB` | <pur>`\Large AB`</pur> | `KaTeX:\Large AB`      | <pur>`\Large AB`</pur>      | `KaTeX:\scriptsize AB`   | <pur>\scriptsize AB</pur>   |
 | `KaTeX:\large AB` | <pur>`\large AB`</pur> | `KaTeX:\large AB`      | <pur>`\large AB`</pur>      | `KaTeX:\tiny AB`         | <pur>\tiny AB</pur>         |
 
-### Style {.col-span-3}
+### Estilo {.col-span-3}
 
 | :-                                | :-                                    | :-                             | :-                                 |
 | :-------------------------------- | :------------------------------------ | :----------------------------- | :--------------------------------- |
@@ -952,8 +952,8 @@ x = \begin{cases}
 | `KaTeX:\lim\limits_x`             | <pur>\lim\limits_x</pur>              | `KaTeX:\lim\nolimits_x`        | <pur>\lim\nolimits_x</pur>         |
 | `KaTeX:\verb!x^2!`                | <pur>\verb!x^2!</pur>                 |
 
-## Also See
+## Veja também
 
-- [LaTeX official website](https://www.latex-project.org/) _(latex-project.org)_
-- [KaTeX official website](https://katex.org/) _(katex.org)_
+- [Site oficial do LaTeX](https://www.latex-project.org/) _(latex-project.org)_
+- [Site oficial do KaTeX](https://katex.org/) _(katex.org)_
 - [symbols.pdf](https://www.cmor-faculty.rice.edu/~heinken/latex/symbols.pdf) _(cmor-faculty.rice.edu)_

@@ -7,44 +7,44 @@ tags:
   -
   -
 categories:
-  - Keyboard Shortcuts
+  - Atalhos de Teclado
 intro: |
-  A visual cheat-sheet for the 17 keyboard shortcuts found in the Obsidian knowledge base app.
+  Um cheat sheet visual dos 17 atalhos de teclado do app de base de conhecimento Obsidian.
 ---
 
-## Keyboard Shortcuts {.cols-2}
+## Atalhos de teclado {.cols-2}
 
-### Default Shortcuts
+### Atalhos padrão
 
-| Shortcut             | Action                      |
+| Atalho               | Ação                        |
 | -------------------- | --------------------------- |
-| `Ctrl` `S`           | Save a file in the editor   |
-| `Ctrl` `N`           | Create a new note           |
-| `Ctrl` `P`           | Open the command palette    |
-| `Ctrl` `O`           | Open the quick switcher     |
-| `Ctrl` `Shift` `F`   | Search in all files         |
-| `Ctrl` `G`           | Open the graph view         |
-| `Ctrl` `Alt` `Left`  | Navigate backwards          |
-| `Ctrl` `Alt` `Right` | Navigate forwards           |
-| `Ctrl` `F`           | Search the current file     |
-| `Ctrl` `E`           | Toggle edit or preview mode |
-| `Ctrl` `,`           | Open settings               |
+| `Ctrl` `S`           | Salvar um arquivo no editor |
+| `Ctrl` `N`           | Criar uma nova nota         |
+| `Ctrl` `P`           | Abrir a paleta de comandos  |
+| `Ctrl` `O`           | Abrir o seletor rápido      |
+| `Ctrl` `Shift` `F`   | Pesquisar em todos os arquivos |
+| `Ctrl` `G`           | Abrir a visualização de grafo |
+| `Ctrl` `Alt` `Left`  | Navegar para trás           |
+| `Ctrl` `Alt` `Right` | Navegar para frente         |
+| `Ctrl` `F`           | Pesquisar no arquivo atual  |
+| `Ctrl` `E`           | Alternar entre modo de edição e visualização |
+| `Ctrl` `,`           | Abrir configurações         |
 
 {.shortcuts}
 
-### Editing
+### Edição
 
-| Shortcut      | Action                          |
+| Atalho        | Ação                            |
 | ------------- | ------------------------------- |
-| `Ctrl` `B`    | Bold selected text              |
-| `Ctrl` `I`    | Italic selected text            |
-| `Ctrl` `K`    | Insert an external link         |
-| `Ctrl` `]`    | Indent                          |
-| `Ctrl` `[`    | Unindent                        |
-| `Alt` `Enter` | Jump into the selected backlink |
+| `Ctrl` `B`    | Deixar o texto selecionado em negrito |
+| `Ctrl` `I`    | Deixar o texto selecionado em itálico |
+| `Ctrl` `K`    | Inserir um link externo         |
+| `Ctrl` `]`    | Aumentar recuo                  |
+| `Ctrl` `[`    | Diminuir recuo                  |
+| `Alt` `Enter` | Ir para o backlink selecionado  |
 
 {.shortcuts}
 
-## Also see
+## Veja também
 
-- [Keyboard shortcuts for Obsidian](https://help.obsidian.md/How+to/Keyboard+shortcuts) _(help.obsidian.md)_
+- [Atalhos de teclado do Obsidian](https://help.obsidian.md/How+to/Keyboard+shortcuts) _(help.obsidian.md)_

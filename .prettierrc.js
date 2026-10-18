@@ -1,5 +1,5 @@
 module.exports = {
-  // Basic configuration
+  // Configuração básica
   semi: true,
   trailingComma: 'none',
   singleQuote: true,
@@ -8,10 +8,10 @@ module.exports = {
   useTabs: false,
   endOfLine: 'lf',
 
-  // Plugin configuration
+  // Configuração de plugins
   plugins: ['prettier-plugin-tailwindcss'],
 
-  // File-specific configuration
+  // Configuração específica por arquivo
   overrides: [
     {
       files: '*.md',

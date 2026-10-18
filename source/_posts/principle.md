@@ -7,78 +7,78 @@ tags:
   -
   - mac
 categories:
-  - Keyboard Shortcuts
+  - Atalhos de Teclado
 intro: |
-  A visual cheat-sheet for the 30 keyboard shortcuts found in Principle. This application is MacOS-only.
+  Um cheat sheet visual para os 30 atalhos de teclado do Principle. Este aplicativo é exclusivo para MacOS.
 ---
 
-## Keyboard Shortcuts
+## Atalhos de Teclado
 
-### Layers {.row-span-2}
+### Camadas {.row-span-2}
 
-| Shortcut          | Action                   |
-| ----------------- | ------------------------ |
-| `R`               | Add rectangle            |
-| `Opt` `R`         | Add rectangle as a child |
-| `T`               | Add text                 |
-| `Opt` `T`         | Add text as a child      |
-| `A`               | Add artboard             |
-| `Cmd` `G`         | Group                    |
-| `Cmd` `Shift` `G` | Ungroup                  |
-| `Cmd` `]`         | Bring forward            |
-| `Cmd` `Shift` `]` | Bring to front           |
-| `Cmd` `[`         | Send backward            |
-| `Cmd` `Shift` `[` | Send to back             |
-
-{.shortcuts}
-
-### Editing
-
-| Shortcut           | Action       |
-| ------------------ | ------------ |
-| `(arrows)`         | Nudge        |
-| `Shift` `(arrows)` | Large nudge  |
-| `Cmd` `D`          | Duplicate    |
-| `Cmd` `R`          | Rename layer |
+| Atalho            | Ação                           |
+| ----------------- | ------------------------------ |
+| `R`               | Adicionar retângulo            |
+| `Opt` `R`         | Adicionar retângulo como filho |
+| `T`               | Adicionar texto                |
+| `Opt` `T`         | Adicionar texto como filho     |
+| `A`               | Adicionar artboard             |
+| `Cmd` `G`         | Agrupar                        |
+| `Cmd` `Shift` `G` | Desagrupar                     |
+| `Cmd` `]`         | Avançar uma camada             |
+| `Cmd` `Shift` `]` | Trazer para frente             |
+| `Cmd` `[`         | Enviar uma camada para trás    |
+| `Cmd` `Shift` `[` | Enviar para o fundo            |
 
 {.shortcuts}
 
-### Canvas Navigation
+### Edição
 
-| Shortcut         | Action              |
-| ---------------- | ------------------- |
-| `Space` `(drag)` | Pan                 |
-| `Cmd` `=`        | Zoom in             |
-| `Cmd` `-`        | Zoom out            |
-| `Cmd` `1`        | Zoom all            |
-| `Cmd` `2`        | Zoom selection      |
-| `Cmd` `3`        | Center selection    |
-| `Cmd` `0`        | Zoom to actual size |
+| Atalho             | Ação                |
+| ------------------ | ------------------- |
+| `(arrows)`         | Deslocar levemente  |
+| `Shift` `(arrows)` | Deslocamento grande |
+| `Cmd` `D`          | Duplicar            |
+| `Cmd` `R`          | Renomear camada     |
 
 {.shortcuts}
 
-### Selection
+### Navegação no Canvas
 
-| Shortcut      | Action                  |
-| ------------- | ----------------------- |
-| `Esc`         | Select parent           |
-| `Enter`       | Select child            |
-| `Tab`         | Select next sibling     |
-| `Shift` `Tab` | Select previous sibling |
-| `Cmd` `A`     | Select all siblings     |
+| Atalho           | Ação                 |
+| ---------------- | -------------------- |
+| `Space` `(drag)` | Mover a tela (pan)   |
+| `Cmd` `=`        | Aumentar zoom        |
+| `Cmd` `-`        | Diminuir zoom        |
+| `Cmd` `1`        | Zoom em tudo         |
+| `Cmd` `2`        | Zoom na seleção      |
+| `Cmd` `3`        | Centralizar seleção  |
+| `Cmd` `0`        | Zoom no tamanho real |
 
 {.shortcuts}
 
-### Preview
+### Seleção
 
-| Shortcut         | Action                               |
+| Atalho        | Ação                      |
+| ------------- | ------------------------- |
+| `Esc`         | Selecionar pai            |
+| `Enter`       | Selecionar filho          |
+| `Tab`         | Selecionar próximo irmão  |
+| `Shift` `Tab` | Selecionar irmão anterior |
+| `Cmd` `A`     | Selecionar todos os irmãos |
+
+{.shortcuts}
+
+### Visualização
+
+| Atalho           | Ação                                 |
 | ---------------- | ------------------------------------ |
-| `W`              | Rewind prototype                     |
-| `Ctrl` `V`       | Start recording video                |
-| `Ctrl` `Opt` `V` | Start recording video without cursor |
+| `W`              | Rebobinar protótipo                  |
+| `Ctrl` `V`       | Iniciar gravação de vídeo            |
+| `Ctrl` `Opt` `V` | Iniciar gravação de vídeo sem cursor |
 
 {.shortcuts}
 
-## Also see
+## Veja também
 
-- [Keyboard shortcuts for Principle](https://principleformac.com/docs.html#shortcuts) _(principleformac.com)_
+- [Atalhos de teclado do Principle](https://principleformac.com/docs.html#shortcuts) _(principleformac.com)_

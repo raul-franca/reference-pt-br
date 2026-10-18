@@ -7,55 +7,55 @@ tags:
   - document
   - utility
 categories:
-  - Linux Command
+  - Comandos Linux
 intro: |
-  [Pandoc](https://pandoc.org) is a document converter, this pandoc cheat sheet contains pandoc commands and some common pandoc tricks.
+  [Pandoc](https://pandoc.org) é um conversor de documentos; este cheat sheet do pandoc traz comandos do pandoc e alguns truques comuns do pandoc.
 plugins:
   - copyCode
 ---
 
-## Getting Started
+## Primeiros passos
 
-### Pandoc Usage
+### Uso do Pandoc
 
-Syntax
+Sintaxe
 
 ```shell script
 $ pandoc -s [source file] -o [output file]
 ```
 
-## Pandoc examples
+## Exemplos do Pandoc
 
-### LaTeX to MS Word {.col-span-2}
+### LaTeX para MS Word {.col-span-2}
 
-Simple .tex to .docx
+Conversão simples de .tex para .docx
 
 ```shell script
 $ pandoc -s file.tex -o file.docx
 ```
 
-.tex to .docx with default citations
+.tex para .docx com citações padrão
 
 ```shell script
 $ pandoc -s file.tex --citeproc --bibliography=bib_library.bib -o file.docx
 ```
 
-.tex to .docx with specific citations
+.tex para .docx com citações específicas
 
 ```shell script
 $ pandoc -s file.tex --citeproc --bibliography=bib_library.bib --csl=apa.csl -o file.docx
 ```
 
-Get `.csl` file from [here](https://github.com/citation-style-language/styles)
+Obtenha o arquivo `.csl` [aqui](https://github.com/citation-style-language/styles)
 
-.tex to .docx with cross references
+.tex para .docx com referências cruzadas
 
 ```shell script
 $ pandoc -s file.tex --filter pandoc-crossref -o file.docx
 ```
 
-Get the filter `pandoc-crossref` from [here](https://github.com/lierdakil/pandoc-crossref/releases)
+Obtenha o filtro `pandoc-crossref` [aqui](https://github.com/lierdakil/pandoc-crossref/releases)
 
-## Also see {.cols-1}
+## Veja também {.cols-1}
 
 - [pandoc examples](https://pandoc.org/demos.html)

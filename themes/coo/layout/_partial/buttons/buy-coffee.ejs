@@ -1,49 +1,49 @@
 <%
-// Buy Me a Coffee button component
+// Componente do botão Pague um café
 // variant: 'hero' | 'compact' | 'inline'
-// showLabel: boolean - whether to show text label
-// className: string - additional CSS class names
+// showLabel: boolean - define se o rótulo de texto é exibido
+// className: string - classes CSS adicionais
 
 const variant = locals.variant || 'inline';
 const showLabel = locals.showLabel !== false; // show label by default
 const className = locals.className || '';
 
-// Set styles based on variant
+// Define os estilos conforme a variante
 const buttonBaseClass = {
     hero: 'group inline-flex items-center justify-center px-6 py-3 backdrop-blur-sm outline outline-1 rounded-3xl transition-all duration-300 hover:scale-105 hover:shadow-lg',
     compact: 'group inline-flex items-center justify-center h-9 px-3 backdrop-blur-sm outline outline-1 rounded-3xl transition-colors duration-200',
     inline: 'group inline-flex items-center justify-center h-9 px-4 backdrop-blur-sm outline outline-1 rounded-3xl transition-all duration-200 hover:scale-105'
 }[variant];
 
-// Coffee button styles
+// Estilos do botão de café
 const coffeeClass = {
     hero: 'bg-gradient-to-r from-orange-500/20 to-yellow-500/20 outline-orange-300/30 text-white hover:from-orange-500/30 hover:to-yellow-500/30',
     compact: is_home() ? 'bg-white/10 outline-white/20 text-white hover:bg-white/20' : 'bg-gradient-to-r from-orange-500/10 to-yellow-500/10 outline-orange-300/30 text-slate-700 dark:text-slate-300 hover:from-orange-500/20 hover:to-yellow-500/20',
     inline: 'bg-gradient-to-r from-orange-500/10 to-yellow-500/10 outline-orange-300/30 text-slate-700 dark:text-slate-300 hover:from-orange-500/20 hover:to-yellow-500/20'
 }[variant];
 
-// Icon size and styles
+// Tamanho e estilos do ícone
 const iconClass = {
     hero: 'w-5 h-5 flex-shrink-0 flex items-center justify-center',
     compact: 'w-4 h-4 flex-shrink-0 flex items-center justify-center',
     inline: 'w-4 h-4 flex-shrink-0 flex items-center justify-center'
 }[variant];
 
-// Actual SVG icon size
+// Tamanho real do ícone SVG
 const svgSize = {
     hero: '20', // w-5 h-5 = 20px
     compact: '16', // w-4 h-4 = 16px
     inline: '16'  // w-4 h-4 = 16px
 }[variant];
 
-// Text size
+// Tamanho do texto
 const textSize = {
     hero: 'font-semibold leading-none',
     compact: 'text-sm font-medium leading-none',
     inline: 'text-sm font-medium leading-none'
 }[variant];
 
-// Spacing
+// Espaçamento
 const spacing = {
     hero: 'mr-3',
     compact: 'mr-2',
@@ -51,7 +51,7 @@ const spacing = {
 }[variant];
 %>
 
-<a href="/support/" title="Buy Me a Coffee - Support cheatsheets.zip"
+<a href="/support/" title="Pague um café - Apoie o cheatsheets.zip"
    class="<%= buttonBaseClass %> <%= coffeeClass %> <%= className %>">
     <div class="<%= iconClass %> <%= spacing %>">
         <svg width="<%= svgSize %>" height="<%= svgSize %>" viewBox="0 0 25 35" fill="currentColor">
@@ -72,7 +72,7 @@ const spacing = {
     </div>
     <% if (showLabel) { %>
         <span class="<%= textSize %>">
-            <% if (variant === 'compact') { %>Coffee<% } else { %>Buy Me a Coffee<% } %>
+            <% if (variant === 'compact') { %>Café<% } else { %>Pague um café<% } %>
         </span>
     <% } %>
 </a> 

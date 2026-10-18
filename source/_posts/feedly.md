@@ -7,66 +7,66 @@ tags:
   -
   -
 categories:
-  - Keyboard Shortcuts
+  - Atalhos de Teclado
 intro: |
-  A visual cheat-sheet for the 25 keyboard shortcuts found on the Feedly app
+  Um cheat sheet visual para os 25 atalhos de teclado do aplicativo Feedly
 ---
 
-## Keyboard Shortcuts
+## Atalhos de Teclado
 
-### Navigation {.row-span-2}
+### Navegação {.row-span-2}
 
-| Shortcut    | Action                        |
+| Atalho      | Ação                          |
 | ----------- | ----------------------------- |
-| `G` `T`     | Show Today                    |
-| `G` `A`     | Show All                      |
-| `G` `F`     | Show Favorites                |
-| `G` `G`     | Jump to...                    |
-| `G` `L`     | Read later                    |
-| `G` `I`     | Index                         |
-| `G` `O`     | Organize sources              |
-| `Shift` `J` | Next source or collection     |
-| `Shift` `K` | Previous source or collection |
-| `R`         | Refresh                       |
+| `G` `T`     | Mostrar Hoje                  |
+| `G` `A`     | Mostrar Tudo                  |
+| `G` `F`     | Mostrar Favoritos             |
+| `G` `G`     | Ir para...                    |
+| `G` `L`     | Ler mais tarde                |
+| `G` `I`     | Índice                        |
+| `G` `O`     | Organizar fontes              |
+| `Shift` `J` | Próxima fonte ou coleção      |
+| `Shift` `K` | Fonte ou coleção anterior     |
+| `R`         | Atualizar                     |
 
 {.shortcuts}
 
-### Lists
+### Listas
 
-| Shortcut    | Action                      |
+| Atalho      | Ação                        |
 | ----------- | --------------------------- |
-| `J`         | Inline next article         |
-| `K`         | Inline previous article     |
-| `N`         | Select the next article     |
-| `P`         | Select the previous article |
-| `Shift` `A` | Mark all as read            |
+| `J`         | Próximo artigo inline       |
+| `K`         | Artigo anterior inline      |
+| `N`         | Selecionar o próximo artigo |
+| `P`         | Selecionar o artigo anterior |
+| `Shift` `A` | Marcar todos como lidos     |
 
 {.shortcuts}
 
-### Selected Article {.row-span-2}
+### Artigo Selecionado {.row-span-2}
 
-| Shortcut    | Action                                         |
-| ----------- | ---------------------------------------------- |
-| `O`         | Inline or close the currently selected article |
-| `V`         | View the original in a new tab                 |
-| `M`         | Toggle mark as read                            |
-| `X`         | Mark as read and hide                          |
-| `S`         | Read later                                     |
-| `T`         | Save to Board                                  |
-| `B`         | Save to Buffer                                 |
-| `C`         | Clip to Evernote                               |
-| `Shift` `V` | Preview                                        |
-
-{.shortcuts}
-
-### Help
-
-| Shortcut | Action                  |
-| -------- | ----------------------- |
-| `?`      | Show keyboard shortcuts |
+| Atalho      | Ação                                            |
+| ----------- | ----------------------------------------------- |
+| `O`         | Abrir inline ou fechar o artigo selecionado     |
+| `V`         | Ver o original em uma nova aba                  |
+| `M`         | Alternar marcação como lido                     |
+| `X`         | Marcar como lido e ocultar                      |
+| `S`         | Ler mais tarde                                  |
+| `T`         | Salvar no Board                                 |
+| `B`         | Salvar no Buffer                                |
+| `C`         | Recortar para o Evernote                        |
+| `Shift` `V` | Visualização                                    |
 
 {.shortcuts}
 
-## Also see
+### Ajuda
 
-- [Keyboard shortcuts for Feedly](https://blog.feedly.com/keyboard-shortcuts/) _(blog.feedly.com)_
+| Atalho | Ação                      |
+| ------ | ------------------------- |
+| `?`    | Mostrar atalhos de teclado |
+
+{.shortcuts}
+
+## Veja também
+
+- [Atalhos de teclado do Feedly](https://blog.feedly.com/keyboard-shortcuts/) _(blog.feedly.com)_

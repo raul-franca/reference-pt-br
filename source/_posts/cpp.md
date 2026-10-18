@@ -4,15 +4,15 @@ date: 2021-06-01 11:51:44
 background: bg-[#6d94c7]
 tags:
 categories:
-  - Programming
+  - Programação
 intro: |
-  C++ quick reference cheat sheet that provides basic syntax and methods.
+  Cheat sheet de referência rápida de C++ com a sintaxe básica e os métodos.
 plugins:
   - copyCode
   - runCode
 ---
 
-## Getting Started
+## Primeiros passos
 
 ### hello.cpp
 
@@ -25,7 +25,7 @@ int main() {
 }
 ```
 
-Compiling and running
+Compilando e executando
 
 ```shell script
 $ g++ hello.cpp -o hello
@@ -33,7 +33,7 @@ $ ./hello
 Hello CheatSheets
 ```
 
-### Variables
+### Variáveis
 
 ```cpp
 int number = 5;       // Integer
@@ -54,21 +54,21 @@ int age {25};         // Since C++11
 std::cout << age;     // Print 25
 ```
 
-### Primitive Data Types
+### Tipos de dados primitivos
 
-| Data Type | Size           | Range               |
-| --------- | -------------- | ------------------- |
-| `int`     | 4 bytes        | -2^31^ ^to^ 2^31^-1 |
-| `float`   | 4 bytes        | _N/A_               |
-| `double`  | 8 bytes        | _N/A_               |
-| `char`    | 1 byte         | -128 ^to^ 127       |
-| `bool`    | 1 byte         | true / false        |
-| `void`    | _N/A_          | _N/A_               |
-| `wchar_t` | 2 ^or^ 4 bytes | 1 wide character    |
+| Tipo de dados | Tamanho        | Intervalo           |
+| ------------- | -------------- | ------------------- |
+| `int`         | 4 bytes        | -2^31^ ^a^ 2^31^-1  |
+| `float`       | 4 bytes        | _N/A_               |
+| `double`      | 8 bytes        | _N/A_               |
+| `char`        | 1 byte         | -128 ^a^ 127        |
+| `bool`        | 1 byte         | true / false        |
+| `void`        | _N/A_          | _N/A_               |
+| `wchar_t`     | 2 ^ou^ 4 bytes | 1 caractere largo   |
 
 {.show-header}
 
-### User Input
+### Entrada do usuário
 
 ```cpp
 int num;
@@ -79,7 +79,7 @@ std::cin >> num;
 std::cout << "You entered " << num;
 ```
 
-### Swap
+### Troca
 
 ```cpp
 int a = 5, b = 10;
@@ -89,7 +89,7 @@ std::swap(a, b);
 std::cout << "a=" << a << ", b=" << b;
 ```
 
-### Comments
+### Comentários
 
 ```cpp
 // A single one line comment in C++
@@ -98,7 +98,7 @@ std::cout << "a=" << a << ", b=" << b;
    in C++ */
 ```
 
-### If statement
+### Instrução if
 
 ```cpp
 if (a == 10) {
@@ -106,9 +106,9 @@ if (a == 10) {
 }
 ```
 
-See: [Conditionals](#c-conditionals)
+Veja: [Condicionais](#c-conditionals)
 
-### Loops
+### Laços
 
 ```cpp
 for (int i = 0; i < 10; i++) {
@@ -116,9 +116,9 @@ for (int i = 0; i < 10; i++) {
 }
 ```
 
-See: [Loops](#c-loops)
+Veja: [Laços](#c-loops)
 
-### Functions
+### Funções
 
 ```cpp
 #include <iostream>
@@ -134,9 +134,9 @@ void hello() { // Defining
 }
 ```
 
-See: [Functions](#c-functions)
+Veja: [Funções](#c-functions)
 
-### References
+### Referências
 
 ```cpp
 int i = 1;
@@ -149,7 +149,7 @@ i = 3;   // i is now changed to 3
 std::cout << "ri=" << ri;
 ```
 
-`ri` and `i` refer to the same memory location.
+`ri` e `i` se referem ao mesmo endereço de memória.
 
 ### Namespaces
 
@@ -175,11 +175,11 @@ int main()
 }
 ```
 
-Namespaces allow global identifiers under a name
+Namespaces permitem agrupar identificadores globais sob um nome
 
-## C++ Arrays
+## Arrays em C++
 
-### Declaration
+### Declaração
 
 ```cpp
 std::array<int, 3> marks; // Definition
@@ -195,7 +195,7 @@ std::array<int, 3> marks = {92, 97};
 std::cout << marks[2]; // Outputs: 0
 ```
 
-### Manipulation
+### Manipulação
 
 ```cpp
 ┌─────┬─────┬─────┬─────┬─────┬─────┐
@@ -219,7 +219,7 @@ marks[1] = 99;
 std::cin >> marks[2];
 ```
 
-### Displaying
+### Exibição
 
 ```cpp
 char ref[5] = {'R', 'e', 'f'};
@@ -260,9 +260,9 @@ for (int i = 0; i < 2; ++i) {
 // Outputs: 1 2 3 4 5 6 6 5 4 3 2 1
 ```
 
-## C++ Conditionals
+## Condicionais em C++
 
-### If Clause
+### Cláusula if
 
 ```cpp
 if (a == 10) {
@@ -287,7 +287,7 @@ else
 // Outputs: even
 ```
 
-### Else if Statement
+### Instrução else if
 
 ```cpp
 int score = 99;
@@ -309,49 +309,49 @@ else
     std::cout << "What?";
 ```
 
-### Operators {.row-span-2}
+### Operadores {.row-span-2}
 
-#### Relational Operators
+#### Operadores relacionais
 
 |          |                              |
 | -------- | ---------------------------- |
-| `a == b` | a is equal to b              |
-| `a != b` | a is NOT equal to b          |
-| `a < b`  | a is less than b             |
-| `a > b`  | a is greater b               |
-| `a <= b` | a is less than or equal to b |
-| `a >= b` | a is greater or equal to b   |
+| `a == b` | a é igual a b                |
+| `a != b` | a NÃO é igual a b            |
+| `a < b`  | a é menor que b              |
+| `a > b`  | a é maior que b              |
+| `a <= b` | a é menor ou igual a b       |
+| `a >= b` | a é maior ou igual a b       |
 
-#### Assignment Operators
+#### Operadores de atribuição
 
-| Example  | Equivalent to    |
+| Exemplo  | Equivalente a    |
 | -------- | ---------------- |
-| `a += b` | _Aka_ a = a + b  |
-| `a -= b` | _Aka_ a = a - b  |
-| `a *= b` | _Aka_ a = a \* b |
-| `a /= b` | _Aka_ a = a / b  |
-| `a %= b` | _Aka_ a = a % b  |
+| `a += b` | _Ou seja_ a = a + b  |
+| `a -= b` | _Ou seja_ a = a - b  |
+| `a *= b` | _Ou seja_ a = a \* b |
+| `a /= b` | _Ou seja_ a = a / b  |
+| `a %= b` | _Ou seja_ a = a % b  |
 
-#### Logical Operators
+#### Operadores lógicos
 
-| Example                     | Meaning                |
+| Exemplo                     | Significado            |
 | --------------------------- | ---------------------- |
-| `exp1 && exp2`              | Both are true _(AND)_  |
-| <code>exp1 \|\| exp2</code> | Either is true _(OR)_  |
-| `!exp`                      | `exp` is false _(NOT)_ |
+| `exp1 && exp2`              | Ambos são verdadeiros _(AND)_  |
+| <code>exp1 \|\| exp2</code> | Um dos dois é verdadeiro _(OR)_ |
+| `!exp`                      | `exp` é falso _(NOT)_ |
 
-#### Bitwise Operators
+#### Operadores bit a bit
 
-| Operator            | Description             |
+| Operador            | Descrição               |
 | ------------------- | ----------------------- |
-| `a & b`             | Binary AND              |
-| <code>a \| b</code> | Binary OR               |
-| `a ^ b`             | Binary XOR              |
-| `~ a`               | Binary One's Complement |
-| `a << b`            | Binary Shift Left       |
-| `a >> b`            | Binary Shift Right      |
+| `a & b`             | AND binário             |
+| <code>a \| b</code> | OR binário              |
+| `a ^ b`             | XOR binário             |
+| `~ a`               | Complemento de um binário |
+| `a << b`            | Deslocamento binário à esquerda |
+| `a >> b`            | Deslocamento binário à direita  |
 
-### Ternary Operator
+### Operador ternário
 
 ```
            ┌── True ──┐
@@ -382,7 +382,7 @@ if (x > y) {
 std::cout << max << std::endl;
 ```
 
-### Switch Statement
+### Instrução switch
 
 ```cpp
 int num = 2;
@@ -405,7 +405,7 @@ switch (num) {
 }
 ```
 
-## C++ Loops
+## Laços em C++
 
 ### While
 
@@ -429,7 +429,7 @@ do {
 // Outputs: 12345
 ```
 
-### Continue statements
+### Instrução continue
 
 ```cpp
 for (int i = 0; i < 10; i++) {
@@ -440,7 +440,7 @@ for (int i = 0; i < 10; i++) {
 } // Outputs: 13579
 ```
 
-### Infinite loop
+### Laço infinito
 
 ```cpp
 while (true) { // true or 1
@@ -464,7 +464,7 @@ for(int i = 1; i > 0; i++) {
 }
 ```
 
-### for_each (Since C++11)
+### for_each (desde C++11)
 
 ```cpp
 #include <iostream>
@@ -480,7 +480,7 @@ int main()
 }
 ```
 
-### Range-based (Since C++11)
+### Range-based (desde C++11)
 
 ```cpp
 for (int n : {1, 2, 3, 4, 5}) {
@@ -500,7 +500,7 @@ for (char c: hello)
 // Outputs: Q u i c k R e f . M E
 ```
 
-### Break statements
+### Instrução break
 
 ```cpp
 int password, times = 0;
@@ -514,7 +514,7 @@ while (password != 1234) {
 }
 ```
 
-### Several variations
+### Diversas variações
 
 ```cpp
 for (int i = 0, j = 2; i < 3; i++, j--){
@@ -524,9 +524,9 @@ for (int i = 0, j = 2; i < 3; i++, j--){
 // Outputs: i=0,j=2;i=1,j=1;i=2,j=0;
 ```
 
-## C++ Functions
+## Funções em C++
 
-### Arguments & Returns
+### Argumentos e retornos
 
 ```cpp
 #include <iostream>
@@ -540,9 +540,9 @@ int main() {
 }
 ```
 
-`add` is a function taking 2 ints and returning int
+`add` é uma função que recebe 2 ints e retorna um int
 
-### Overloading
+### Sobrecarga
 
 ```cpp
 void fun(string a, string b) {
@@ -556,7 +556,7 @@ void fun(int a) {
 }
 ```
 
-### Built-in Functions
+### Funções nativas
 
 ```cpp
 #include <iostream>
@@ -568,9 +568,9 @@ int main() {
 }
 ```
 
-## C++ Classes & Objects {.cols-2}
+## Classes e objetos em C++ {.cols-2}
 
-### Defining a Class
+### Definindo uma classe
 
 ```cpp
 class MyClass {
@@ -581,7 +581,7 @@ class MyClass {
 
 ```
 
-### Creating an Object
+### Criando um objeto
 
 ```cpp
 MyClass myObj;  // Create an object of MyClass
@@ -594,7 +594,7 @@ cout << myObj.myString << endl;      // Output "Hello"
 
 ```
 
-### Constructors
+### Construtores
 
 ```cpp
 class MyClass {
@@ -614,7 +614,7 @@ cout << myObj.myString << endl;      // Output ""
 
 ```
 
-### Destructors
+### Destrutores
 
 ```cpp
 class MyClass {
@@ -639,7 +639,7 @@ MyClass myObj;  // Create an object of MyClass
 
 ```
 
-### Class Methods
+### Métodos da classe
 
 ```cpp
 class MyClass {
@@ -655,7 +655,7 @@ MyClass myObj;  // Create an object of MyClass
 myObj.myMethod();  // Call the method
 ```
 
-### Access Modifiers
+### Modificadores de acesso
 
 ```cpp
 class MyClass {
@@ -674,7 +674,7 @@ myObj.z = 75;  // Not allowed (protected)
 
 ```
 
-### Getters and Setters
+### Getters e setters
 
 ```cpp
 class MyClass {
@@ -695,7 +695,7 @@ cout << myObj.getMyNum() << endl;  // Output 15
 
 ```
 
-### Inheritance
+### Herança
 
 ```cpp
 class Vehicle {
@@ -716,9 +716,9 @@ myCar.honk();  // Output "Tuut, tuut!"
 cout << myCar.brand + " " + myCar.model << endl;  // Output "Ford Mustang"
 ```
 
-## C++ Preprocessor
+## Pré-processador C++
 
-### Preprocessor {.row-span-3}
+### Pré-processador {.row-span-3}
 
 - [if](https://en.cppreference.com/w/cpp/preprocessor/conditional)
 - [elif](https://en.cppreference.com/w/cpp/preprocessor/conditional)
@@ -741,14 +741,14 @@ cout << myCar.brand + " " + myCar.model << endl;  // Output "Ford Mustang"
 
 {.marker-none .cols-2}
 
-### Includes
+### Inclusões
 
 ```cpp
 #include "iostream"
 #include <iostream>
 ```
 
-### Defines
+### Definições
 
 ```cpp
 #define FOO
@@ -769,7 +769,7 @@ cout << myCar.brand + " " + myCar.model << endl;  // Output "Ford Mustang"
 #endif
 ```
 
-### Error
+### Erro
 
 ```cpp
 #if VERSION == 2.0
@@ -784,46 +784,46 @@ cout << myCar.brand + " " + myCar.model << endl;  // Output "Ford Mustang"
 #define DEG(x) ((x) * 57.29)
 ```
 
-### Token concat
+### Concatenação de tokens
 
 ```cpp
 #define DST(name) name##_s name##_t
 DST(object);   #=> object_s object_t;
 ```
 
-### Stringification
+### Stringificação
 
 ```cpp
 #define STR(name) #name
 char * a = STR(object);   #=> char * a = "object";
 ```
 
-### file and line
+### Arquivo e linha
 
 ```cpp
 #define LOG(msg) console.log(__FILE__, __LINE__, msg)
 #=> console.log("file.txt", 3, "hey")
 ```
 
-## Miscellaneous
+## Diversos
 
-### Escape Sequences
+### Sequências de escape
 
-| Escape Sequences | Characters            |
-| ---------------- | --------------------- |
-| `\b`             | Backspace             |
-| `\f`             | Form feed             |
-| `\n`             | Newline               |
-| `\r`             | Return                |
-| `\t`             | Horizontal tab        |
-| `\v`             | Vertical tab          |
-| `\\`             | Backslash             |
-| `\'`             | Single quotation mark |
-| `\"`             | Double quotation mark |
-| `\?`             | Question mark         |
-| `\0`             | Null Character        |
+| Sequências de escape | Caracteres            |
+| -------------------- | --------------------- |
+| `\b`                 | Backspace             |
+| `\f`                 | Avanço de formulário  |
+| `\n`                 | Nova linha            |
+| `\r`                 | Retorno de carro      |
+| `\t`                 | Tabulação horizontal  |
+| `\v`                 | Tabulação vertical    |
+| `\\`                 | Barra invertida       |
+| `\'`                 | Aspas simples         |
+| `\"`                 | Aspas duplas          |
+| `\?`                 | Ponto de interrogação |
+| `\0`                 | Caractere nulo        |
 
-### Keywords {.col-span-2 .row-span-2}
+### Palavras-chave {.col-span-2 .row-span-2}
 
 - [alignas](https://en.cppreference.com/w/cpp/keyword/alignas)
 - [alignof](https://en.cppreference.com/w/cpp/keyword/alignof)
@@ -927,7 +927,7 @@ char * a = STR(object);   #=> char * a = "object";
 - [transaction_safe](https://en.cppreference.com/w/cpp/language/transactional_memory)
 - [transaction_safe_dynamic](https://en.cppreference.com/w/cpp/language/transactional_memory) {.marker-none .cols-5}
 
-### Preprocessor
+### Pré-processador
 
 - [if](https://en.cppreference.com/w/cpp/preprocessor/conditional)
 - [elif](https://en.cppreference.com/w/cpp/preprocessor/conditional)
@@ -949,9 +949,9 @@ char * a = STR(object);   #=> char * a = "object";
 - [module](https://en.cppreference.com/mwiki/index.php?title=cpp/keyword/module&action=edit&redlink=1) {.marker-none
   .cols-2}
 
-## Also see
+## Veja também
 
-- [C++ Infographics & Cheat Sheets](https://hackingcpp.com/cpp/cheat_sheets.html) _(hackingcpp.com)_
+- [Infográficos e cheat sheets de C++](https://hackingcpp.com/cpp/cheat_sheets.html) _(hackingcpp.com)_
 
-- [C++ reference](https://en.cppreference.com/w/) _(cppreference.com)_
-- [C++ Language Tutorials](http://www.cplusplus.com/doc/tutorial/) _(cplusplus.com)_
+- [Referência de C++](https://en.cppreference.com/w/) _(cppreference.com)_
+- [Tutoriais da linguagem C++](http://www.cplusplus.com/doc/tutorial/) _(cplusplus.com)_

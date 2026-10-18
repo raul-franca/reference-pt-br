@@ -7,451 +7,451 @@ tags:
   -
   -
 categories:
-  - Keyboard Shortcuts
+  - Atalhos de Teclado
 intro: |
-  A visual cheat-sheet for the 283 keyboard shortcuts found in Adobe Photoshop
+  Um cheat sheet visual dos 283 atalhos de teclado do Adobe Photoshop
 ---
 
-## Keyboard Shortcuts
+## Atalhos de teclado
 
-### Popular shortcuts
+### Atalhos populares
 
-| Shortcut           | Action                                                         |
-| ------------------ | -------------------------------------------------------------- |
-| `Ctrl` `T`         | Free transform                                                 |
-| `[`                | Decrease brush size                                            |
-| `]`                | Increase brush size                                            |
-| `Shift` `[`        | Decrease brush hardness                                        |
-| `Shift` `]`        | Increase brush hardness                                        |
-| `D`                | Default foreground/background colors                           |
-| `X`                | Switch foreground/background colors                            |
-| `Ctrl` `J`         | New layer via copy                                             |
-| `Ctrl` `Shift` `J` | New layer via cut                                              |
-| `Esc`              | Cancel any modal dialog window (including the Start Workspace) |
-| `Enter`            | Select the first edit field of the tool bar                    |
-| `Tab`              | Navigate between fields                                        |
-| `Shift` `Tab`      | Navigate between fields in the opposite direction              |
-| `Alt`              | Change cancel to reset                                         |
-| `Ctrl` `F`         | Invoke the search experience                                   |
-
-{.shortcuts}
-
-### Use function keys
-
-| Shortcut     | Action                  |
-| ------------ | ----------------------- |
-| `F1`         | Start help              |
-| `F2`         | Cut                     |
-| `F3`         | Copy                    |
-| `F4`         | Paste                   |
-| `F5`         | Show/hide brush panel   |
-| `F6`         | Show/hide color panel   |
-| `F7`         | Show/hide layers panel  |
-| `F8`         | Show/hide info panel    |
-| `F9`         | Show/hide actions panel |
-| `F12`        | Revert                  |
-| `Shift` `F5` | Fill                    |
-| `Shift` `F6` | Feather selection       |
-| `Shift` `F7` | Inverse selection       |
+| Atalho             | Ação                                                                   |
+| ------------------ | ---------------------------------------------------------------------- |
+| `Ctrl` `T`         | Transformação livre                                                    |
+| `[`                | Diminui o tamanho do pincel                                            |
+| `]`                | Aumenta o tamanho do pincel                                            |
+| `Shift` `[`        | Diminui a dureza do pincel                                             |
+| `Shift` `]`        | Aumenta a dureza do pincel                                             |
+| `D`                | Cores de primeiro plano/plano de fundo padrão                          |
+| `X`                | Alterna as cores de primeiro plano/plano de fundo                      |
+| `Ctrl` `J`         | Nova camada via cópia                                                  |
+| `Ctrl` `Shift` `J` | Nova camada via recorte                                                |
+| `Esc`              | Cancela qualquer janela de diálogo modal (incluindo o Start Workspace) |
+| `Enter`            | Seleciona o primeiro campo de edição da barra de ferramentas           |
+| `Tab`              | Navega entre os campos                                                 |
+| `Shift` `Tab`      | Navega entre os campos na direção oposta                               |
+| `Alt`              | Muda Cancelar para Redefinir                                           |
+| `Ctrl` `F`         | Abre a experiência de busca                                            |
 
 {.shortcuts}
 
-### Select tools {.row-span-2}
+### Usar as teclas de função
 
-| Shortcut    | Action                                                                                          |
-| ----------- | ----------------------------------------------------------------------------------------------- |
-| `V`         | Move tool                                                                                       |
-| `M`         | Rectangular marquee tool                                                                        |
-| `L`         | Lasso tool                                                                                      |
-| `W`         | Magic wand tool > quick selection tool                                                          |
-| `C`         | Crop tool > slice tool > slice select tool                                                      |
-| `I`         | Eyedropper tool > ruler tool > note tool                                                        |
-| `J`         | Spot healing brush tool > healing brush tool > patch tool > red eye tool                        |
-| `B`         | Brush tool > pencil tool > color replacement tool > mixer brush tool                            |
-| `S`         | Clone stamp tool > pattern stamp tool                                                           |
-| `Y`         | History brush tool > Art history brush tool                                                     |
-| `E`         | Eraser tool > background eraser tool > magic eraser tool                                        |
-| `G`         | Gradient tool > paint bucket tool                                                               |
-| `O`         | Dodge tool > burn tool > sponge tool                                                            |
-| `P`         | Pen tool > freeform pen tool                                                                    |
-| `T`         | Horizontal type tool > vertical type tool > horizontal type mask tool > vertical type mask tool |
-| `A`         | Path selection tool > direct selection tool                                                     |
-| `U`         | Rectangle tool > rounded rectangle tool > ellipse tool > polygon tool > line tool               |
-| `H`         | Hand tool                                                                                       |
-| `R`         | Rotate view tool                                                                                |
-| `Z`         | Zoom tool                                                                                       |
-| `D`         | Default foreground/background colors                                                            |
-| `X`         | Switch foreground/background colors                                                             |
-| `Q`         | Toggle standard/quick mask modes                                                                |
-| `J`         | Content-aware move tool                                                                         |
-| `C`         | Perspective crop tool                                                                           |
-| `V`         | Artboard tool                                                                                   |
-| `R`         | Rotate view tool                                                                                |
-| `/`         | Toggle preserve transparency                                                                    |
-| `,`         | Previous brush                                                                                  |
-| `.`         | Next brush                                                                                      |
-| `Shift` `,` | First brush                                                                                     |
-| `Shift` `.` | Last brush                                                                                      |
+| Atalho       | Ação                                  |
+| ------------ | ------------------------------------- |
+| `F1`         | Abre a ajuda                          |
+| `F2`         | Recortar                              |
+| `F3`         | Copiar                                |
+| `F4`         | Colar                                 |
+| `F5`         | Mostra/oculta o painel de pincéis     |
+| `F6`         | Mostra/oculta o painel de cores       |
+| `F7`         | Mostra/oculta o painel de camadas     |
+| `F8`         | Mostra/oculta o painel de informações |
+| `F9`         | Mostra/oculta o painel de ações       |
+| `F12`        | Reverter                              |
+| `Shift` `F5` | Preencher                             |
+| `Shift` `F6` | Suavizar seleção                      |
+| `Shift` `F7` | Inverter seleção                      |
 
 {.shortcuts}
 
-### View images {.row-span-2}
+### Selecionar ferramentas {.row-span-2}
 
-| Shortcut             | Action                                                                                   |
-| -------------------- | ---------------------------------------------------------------------------------------- |
-| `Ctrl` `Tab`         | Cycle through open documents                                                             |
-| `Ctrl` `Shift` `Tab` | Switch to previous document                                                              |
-| `Ctrl` `Shift` `W`   | Close a file in Photoshop and open Bridge                                                |
-| `F`                  | Toggle forward between Standard screen > Full screen with menu bar > Full screen modes   |
-| `Shift` `F`          | Toggle backwards between Standard screen > Full screen with menu bar > Full screen modes |
-| `Space` `F`          | Toggle forward canvas color                                                              |
-| `Shift` `Space` `F`  | Toggle backwards canvas color                                                            |
-| `Space`              | Switch to hand tool (when not in text-edit mode)                                         |
-| `Ctrl` `Space`       | Switch to zoom in tool                                                                   |
-| `Alt` `Space`        | Switch to zoom out tool                                                                  |
-| `Shift` `Enter`      | Apply zoom percentage, and keep zoom percentage box active                               |
-| `PgUp/PgDn`          | Scroll up or down 1 screen                                                               |
-| `Shift` `PgUp/PgDn`  | Scroll up or down 10 units                                                               |
-| `Home`               | Move view to upper-left corner                                                           |
-| `End`                | Move view to lower-right corner                                                          |
-| `\`                  | Toggle layer mask on/off as rubylith (layer mask must be selected)                       |
-
-{.shortcuts}
-
-### Use Puppet Warp
-
-| Shortcut   | Action                   |
-| ---------- | ------------------------ |
-| `Esc`      | Cancel completely        |
-| `Ctrl` `Z` | Undo last pin adjustment |
-| `Ctrl` `A` | Select all pins          |
-| `Ctrl` `D` | Deselect all pins        |
-| `H`        | Temporarily hide pins    |
-
-{.shortcuts}
-
-### Use Refine Edge
-
-| Shortcut         | Action                                                  |
-| ---------------- | ------------------------------------------------------- |
-| `Ctrl` `Alt` `R` | Open the Refine Edge dialog box                         |
-| `F`              | Cycle forward through preview modes                     |
-| `Shift` `F`      | Cycle backwards through preview modes                   |
-| `X`              | Toggle between original image and selection preview     |
-| `P`              | Toggle between original selection and refined version   |
-| `J`              | Toggle radius preview on and off                        |
-| `Shift` `E`      | Toggle between Refine Radius and Erase Refinement tools |
+| Atalho      | Ação                                                                                                                |
+| ----------- | ------------------------------------------------------------------------------------------------------------------- |
+| `V`         | Ferramenta Mover                                                                                                    |
+| `M`         | Ferramenta Moldura retangular                                                                                       |
+| `L`         | Ferramenta Laço                                                                                                     |
+| `W`         | Ferramenta Varinha mágica > ferramenta Seleção rápida                                                               |
+| `C`         | Ferramenta Corte > ferramenta Fatiar > ferramenta Seleção de fatia                                                  |
+| `I`         | Ferramenta Conta-gotas > ferramenta Régua > ferramenta Nota                                                         |
+| `J`         | Ferramenta Pincel de recuperação de manchas > pincel de recuperação > ferramenta Patch > ferramenta Olhos vermelhos |
+| `B`         | Ferramenta Pincel > lápis > substituição de cor > pincel misturador                                                 |
+| `S`         | Ferramenta Carimbo de clone > carimbo de padrão                                                                     |
+| `Y`         | Ferramenta Pincel histórico > pincel histórico de arte                                                              |
+| `E`         | Ferramenta Borracha > borracha de plano de fundo > borracha mágica                                                  |
+| `G`         | Ferramenta Degradê > balde de tinta                                                                                 |
+| `O`         | Ferramenta Subexpor > superexpor > esponja                                                                          |
+| `P`         | Ferramenta Caneta > caneta de forma livre                                                                           |
+| `T`         | Ferramenta Texto horizontal > texto vertical > máscara de texto horizontal > máscara de texto vertical              |
+| `A`         | Ferramenta Seleção de caminho > seleção direta                                                                      |
+| `U`         | Ferramenta Retângulo > retângulo arredondado > elipse > polígono > linha                                            |
+| `H`         | Ferramenta Mão                                                                                                      |
+| `R`         | Ferramenta Rotação de visualização                                                                                  |
+| `Z`         | Ferramenta Zoom                                                                                                     |
+| `D`         | Cores de primeiro plano/plano de fundo padrão                                                                       |
+| `X`         | Alterna as cores de primeiro plano/plano de fundo                                                                   |
+| `Q`         | Alterna entre os modos de máscara padrão/rápida                                                                     |
+| `J`         | Ferramenta Mover com reconhecimento de conteúdo                                                                     |
+| `C`         | Ferramenta Corte em perspectiva                                                                                     |
+| `V`         | Ferramenta Prancheta                                                                                                |
+| `R`         | Ferramenta Rotação de visualização                                                                                  |
+| `/`         | Ativa/desativa preservar transparência                                                                              |
+| `,`         | Pincel anterior                                                                                                     |
+| `.`         | Próximo pincel                                                                                                      |
+| `Shift` `,` | Primeiro pincel                                                                                                     |
+| `Shift` `.` | Último pincel                                                                                                       |
 
 {.shortcuts}
 
-### Use the Filter Gallery
+### Visualizar imagens {.row-span-2}
 
-| Shortcut           | Action                          |
-| ------------------ | ------------------------------- |
-| `Ctrl` `Alt` `F`   | Reapply last-used filter        |
-| `Ctrl`             | Change Cancel button to Default |
-| `Alt`              | Change Cancel button to Reset   |
-| `Ctrl` `Z`         | Undo/Redo                       |
-| `Ctrl` `Shift` `Z` | Step forward                    |
-| `Ctrl` `Alt` `Z`   | Step backward                   |
-
-{.shortcuts}
-
-### Use the Liquify filter
-
-| Shortcut       | Action                                                           |
-| -------------- | ---------------------------------------------------------------- |
-| `W`            | Forward warp tool                                                |
-| `R`            | Reconstruct tool                                                 |
-| `C`            | Twirl clockwise tool                                             |
-| `S`            | Pucker tool                                                      |
-| `B`            | Bloat tool                                                       |
-| `O`            | Push left tool                                                   |
-| `M`            | Mirror tool                                                      |
-| `T`            | Turbulence tool                                                  |
-| `F`            | Freeze mask tool                                                 |
-| `D`            | Thaw mask tool                                                   |
-| `Alt` `(tool)` | Reverse direction for Bloat, Pucker, Push Left, and Mirror tools |
-| `Tab`          | Cycle through controls on right from top                         |
-| `Shift` `Tab`  | Cycle through controls on right from bottom                      |
-| `Alt`          | Change cancel to reset                                           |
+| Atalho               | Ação                                                                                             |
+| -------------------- | ------------------------------------------------------------------------------------------------ |
+| `Ctrl` `Tab`         | Alterna entre os documentos abertos                                                              |
+| `Ctrl` `Shift` `Tab` | Muda para o documento anterior                                                                   |
+| `Ctrl` `Shift` `W`   | Fecha um arquivo no Photoshop e abre o Bridge                                                    |
+| `F`                  | Alterna para frente entre os modos Tela padrão > Tela cheia com barra de menus > Tela cheia      |
+| `Shift` `F`          | Alterna para trás entre os modos Tela padrão > Tela cheia com barra de menus > Tela cheia        |
+| `Space` `F`          | Alterna a cor da tela para frente                                                                |
+| `Shift` `Space` `F`  | Alterna a cor da tela para trás                                                                  |
+| `Space`              | Muda para a ferramenta Mão (quando não está no modo de edição de texto)                          |
+| `Ctrl` `Space`       | Muda para a ferramenta Zoom in                                                                   |
+| `Alt` `Space`        | Muda para a ferramenta Zoom out                                                                  |
+| `Shift` `Enter`      | Aplica a porcentagem de zoom e mantém a caixa de porcentagem ativa                               |
+| `PgUp/PgDn`          | Rola uma tela para cima ou para baixo                                                            |
+| `Shift` `PgUp/PgDn`  | Rola 10 unidades para cima ou para baixo                                                         |
+| `Home`               | Move a visualização para o canto superior esquerdo                                               |
+| `End`                | Move a visualização para o canto inferior direito                                                |
+| `\`                  | Ativa/desativa a máscara de camada como rubylith (a máscara de camada precisa estar selecionada) |
 
 {.shortcuts}
 
-### Use Vanishing Point
+### Usar a Puppet Warp
 
-| Shortcut           | Action                                               |
+| Atalho     | Ação                                |
+| ---------- | ----------------------------------- |
+| `Esc`      | Cancela completamente               |
+| `Ctrl` `Z` | Desfaz o último ajuste de alfinete  |
+| `Ctrl` `A` | Seleciona todos os alfinetes        |
+| `Ctrl` `D` | Desmarca todos os alfinetes         |
+| `H`        | Oculta temporariamente os alfinetes |
+
+{.shortcuts}
+
+### Usar o Refine Edge
+
+| Atalho           | Ação                                                          |
+| ---------------- | ------------------------------------------------------------- |
+| `Ctrl` `Alt` `R` | Abre a caixa de diálogo Refine Edge                           |
+| `F`              | Percorre os modos de visualização para frente                 |
+| `Shift` `F`      | Percorre os modos de visualização para trás                   |
+| `X`              | Alterna entre a imagem original e a visualização da seleção   |
+| `P`              | Alterna entre a seleção original e a versão refinada          |
+| `J`              | Ativa/desativa a visualização do raio                         |
+| `Shift` `E`      | Alterna entre as ferramentas Refine Radius e Erase Refinement |
+
+{.shortcuts}
+
+### Usar a Galeria de filtros
+
+| Atalho             | Ação                                 |
+| ------------------ | ------------------------------------ |
+| `Ctrl` `Alt` `F`   | Reaplica o último filtro usado       |
+| `Ctrl`             | Muda o botão Cancelar para Padrão    |
+| `Alt`              | Muda o botão Cancelar para Redefinir |
+| `Ctrl` `Z`         | Desfazer/Refazer                     |
+| `Ctrl` `Shift` `Z` | Avança um passo                      |
+| `Ctrl` `Alt` `Z`   | Retrocede um passo                   |
+
+{.shortcuts}
+
+### Usar o filtro Liquify
+
+| Atalho         | Ação                                                                                   |
+| -------------- | -------------------------------------------------------------------------------------- |
+| `W`            | Ferramenta Distorcer                                                                   |
+| `R`            | Ferramenta Reconstruir                                                                 |
+| `C`            | Ferramenta Torcer no sentido horário                                                   |
+| `S`            | Ferramenta Empinar                                                                     |
+| `B`            | Ferramenta Inchar                                                                      |
+| `O`            | Ferramenta Empurrar para a esquerda                                                    |
+| `M`            | Ferramenta Espelhar                                                                    |
+| `T`            | Ferramenta Turbulência                                                                 |
+| `F`            | Ferramenta Congelar máscara                                                            |
+| `D`            | Ferramenta Descongelar máscara                                                         |
+| `Alt` `(tool)` | Inverte a direção das ferramentas Inchar, Empinar, Empurrar para a esquerda e Espelhar |
+| `Tab`          | Percorre os controles à direita a partir do topo                                       |
+| `Shift` `Tab`  | Percorre os controles à direita a partir da base                                       |
+| `Alt`          | Muda Cancelar para Redefinir                                                           |
+
+{.shortcuts}
+
+### Usar o Ponto de fuga
+
+| Atalho             | Ação                                                 |
 | ------------------ | ---------------------------------------------------- |
-| `X`                | Zoom 2x (temporary)                                  |
-| `Ctrl` `+`         | Zoom in                                              |
-| `Ctrl` `-`         | Zoom out                                             |
-| `Ctrl` `0`         | Fit in view                                          |
-| `Ctrl` `Z`         | Undo last action                                     |
-| `Ctrl` `Shift` `Z` | Redo last action                                     |
-| `Ctrl` `D`         | Deselect all                                         |
-| `Ctrl` `H`         | Hide selection and panes                             |
-| `Arrows`           | Move selection 1 pixel                               |
-| `Shift` `Arrows`   | Move selection 10 pixels                             |
-| `Ctrl` `C`         | Copy                                                 |
-| `Ctrl` `V`         | Paste                                                |
-| `Ctrl` `Shift` `T` | Repeat last duplicate and move                       |
-| `Ctrl` `Alt` `T`   | Create floating selection from the current selection |
-| `Alt` `Shift`      | Constrain selection to a 15 degree rotation          |
-| `Backspace`        | Delete last node while creating plane                |
+| `X`                | Zoom de 2x (temporário)                              |
+| `Ctrl` `+`         | Aumentar zoom                                        |
+| `Ctrl` `-`         | Diminuir zoom                                        |
+| `Ctrl` `0`         | Ajustar à visualização                               |
+| `Ctrl` `Z`         | Desfaz a última ação                                 |
+| `Ctrl` `Shift` `Z` | Refaz a última ação                                  |
+| `Ctrl` `D`         | Desmarca tudo                                        |
+| `Ctrl` `H`         | Oculta a seleção e os painéis                        |
+| `Arrows`           | Move a seleção em 1 pixel                            |
+| `Shift` `Arrows`   | Move a seleção em 10 pixels                          |
+| `Ctrl` `C`         | Copiar                                               |
+| `Ctrl` `V`         | Colar                                                |
+| `Ctrl` `Shift` `T` | Repete a última duplicação e movimento               |
+| `Ctrl` `Alt` `T`   | Cria uma seleção flutuante a partir da seleção atual |
+| `Alt` `Shift`      | Restringe a seleção a uma rotação de 15 graus        |
+| `Backspace`        | Exclui o último nó durante a criação do plano        |
 
 {.shortcuts}
 
-### Use the Camera Raw dialog box {.row-span-4}
+### Usar a caixa de diálogo Camera Raw {.row-span-4}
 
-| Shortcut                 | Action                                                                                             |
-| ------------------------ | -------------------------------------------------------------------------------------------------- |
-| `Z`                      | Zoom tool                                                                                          |
-| `H`                      | Hand tool                                                                                          |
-| `I`                      | White balance tool                                                                                 |
-| `S`                      | Color sampler tool                                                                                 |
-| `C`                      | Crop tool                                                                                          |
-| `A`                      | Straighten tool                                                                                    |
-| `B`                      | Spot removal tool                                                                                  |
-| `E`                      | Red eye removal tool                                                                               |
-| `Ctrl` `Alt` `1`         | Basic panel                                                                                        |
-| `Ctrl` `Alt` `2`         | Tone curve panel                                                                                   |
-| `Ctrl` `Alt` `3`         | Detail panel                                                                                       |
-| `Ctrl` `Alt` `4`         | HSL/Greyscale panel                                                                                |
-| `Ctrl` `Alt` `5`         | Split toning panel                                                                                 |
-| `Ctrl` `Alt` `6`         | Lens corrections panel                                                                             |
-| `Ctrl` `Alt` `7`         | Camera calibration panel                                                                           |
-| `Ctrl` `Alt` `8`         | Presets panel                                                                                      |
-| `Ctrl` `Alt` `9`         | Open snapshots panel                                                                               |
-| `Ctrl` `Alt` `Shift` `T` | Parametric curve targeted adjustment tool                                                          |
-| `Ctrl` `Alt` `Shift` `H` | Hue targeted adjustment tool                                                                       |
-| `Ctrl` `Alt` `Shift` `S` | Saturation targeted adjustment tool                                                                |
-| `Ctrl` `Alt` `Shift` `L` | Luminance targeted adjustment tool                                                                 |
-| `Ctrl` `Alt` `Shift` `G` | Grayscale mix targeted adjustment tool                                                             |
-| `T`                      | Last-used targeted adjustment tool                                                                 |
-| `K`                      | Adjustment brush tool                                                                              |
-| `G`                      | Graduated filter tool                                                                              |
-| `Alt`                    | Temporarily switch from Add to Erase mode for the Adjustment brush tool, or from Erase to Add mode |
-| `Alt` `]/[`              | Increase/decrease temporary adjustment brush tool size                                             |
-| `Alt` `Shift` `]/[`      | Increase/decrease temporary adjustment brush tool feather                                          |
-| `Alt` `=/-`              | Increase/decrease temporary adjustment brush tool size flow in increments of 10                    |
-| `N`                      | Switch to New mode from Add or Erase mode of the Adjustment Brush tool or Graduated filter         |
-| `M`                      | Toggle Auto Mask for Adjustment Brush tool                                                         |
-| `Y`                      | Toggle Show Mask for Adjustment Brush tool                                                         |
-| `V`                      | Toggle pins for Adjustment Brush tool                                                              |
-| `L`                      | Rotate image left                                                                                  |
-| `R`                      | Rotate image right                                                                                 |
-| `Ctrl`                   | Temporarily switch to zoom in tool                                                                 |
-| `Alt`                    | Temporarily switch to zoom out tool and change the image open button to open copy                  |
-| `P`                      | Toggle preview                                                                                     |
-| `F`                      | Full screen mode                                                                                   |
-| `Shift`                  | Temporarily activate the White Balance tool and change the open image button to open object        |
-| `Arrows`                 | Move selected point in curves panel 1 pixel                                                        |
-| `Shift` `Arrows`         | Move selected point in curves panel 10 pixels                                                      |
-| `Ctrl` `R`               | Open selected images in Camera Raw dialog box from Bridge                                          |
-| `O`                      | Highlight clipping warning                                                                         |
-| `U`                      | Shadows clipping warning                                                                           |
-| `Ctrl` `1-5`             | Add 1-5 star rating (filmstrip mode)                                                               |
-| `Ctrl` `./,`             | Increase/decrease rating (filmstrip mode)                                                          |
-| `Ctrl` `6`               | Add red label (filmstrip mode)                                                                     |
-| `Ctrl` `7`               | Add yellow label (filmstrip mode)                                                                  |
-| `Ctrl` `8`               | Add green label (filmstrip mode)                                                                   |
-| `Ctrl` `9`               | Add blue label (filmstrip mode)                                                                    |
-| `Ctrl` `Shift` `0`       | Add purple label (filmstrip mode)                                                                  |
-| `Ctrl` `K`               | Camera Raw preferences                                                                             |
-| `Ctrl` `Alt`             | Delete Adobe Camera Raw preferences (on open)                                                      |
-
-{.shortcuts}
-
-### Use the Black-and-White dialog box
-
-| Shortcut                 | Action                                  |
-| ------------------------ | --------------------------------------- |
-| `Ctrl` `Shift` `Alt` `B` | Open the Black-and-White dialog box     |
-| `Up/Down`                | Increase/decrease selected value by 1%  |
-| `Shift` `Up/Down`        | Increase/decrease selected value by 10% |
+| Atalho                   | Ação                                                                                                              |
+| ------------------------ | ----------------------------------------------------------------------------------------------------------------- |
+| `Z`                      | Ferramenta Zoom                                                                                                   |
+| `H`                      | Ferramenta Mão                                                                                                    |
+| `I`                      | Ferramenta Balanço de branco                                                                                      |
+| `S`                      | Ferramenta Amostra de cor                                                                                         |
+| `C`                      | Ferramenta Corte                                                                                                  |
+| `A`                      | Ferramenta Endireitar                                                                                             |
+| `B`                      | Ferramenta Remoção de manchas                                                                                     |
+| `E`                      | Ferramenta Remoção de olhos vermelhos                                                                             |
+| `Ctrl` `Alt` `1`         | Painel Básico                                                                                                     |
+| `Ctrl` `Alt` `2`         | Painel Curva de tom                                                                                               |
+| `Ctrl` `Alt` `3`         | Painel Detalhes                                                                                                   |
+| `Ctrl` `Alt` `4`         | Painel HSL/Escala de cinza                                                                                        |
+| `Ctrl` `Alt` `5`         | Painel Tonalização dividida                                                                                       |
+| `Ctrl` `Alt` `6`         | Painel Correções de lente                                                                                         |
+| `Ctrl` `Alt` `7`         | Painel Calibração da câmera                                                                                       |
+| `Ctrl` `Alt` `8`         | Painel Predefinições                                                                                              |
+| `Ctrl` `Alt` `9`         | Abre o painel Instantâneos                                                                                        |
+| `Ctrl` `Alt` `Shift` `T` | Ferramenta de ajuste direcionado Curva paramétrica                                                                |
+| `Ctrl` `Alt` `Shift` `H` | Ferramenta de ajuste direcionado Matiz                                                                            |
+| `Ctrl` `Alt` `Shift` `S` | Ferramenta de ajuste direcionado Saturação                                                                        |
+| `Ctrl` `Alt` `Shift` `L` | Ferramenta de ajuste direcionado Luminância                                                                       |
+| `Ctrl` `Alt` `Shift` `G` | Ferramenta de ajuste direcionado Mistura de escala de cinza                                                       |
+| `T`                      | Última ferramenta de ajuste direcionado usada                                                                     |
+| `K`                      | Ferramenta Pincel de ajuste                                                                                       |
+| `G`                      | Ferramenta Filtro gradiente                                                                                       |
+| `Alt`                    | Alterna temporariamente do modo Adicionar para Apagar na ferramenta Pincel de ajuste, ou de Apagar para Adicionar |
+| `Alt` `]/[`              | Aumenta/diminui temporariamente o tamanho do pincel de ajuste                                                     |
+| `Alt` `Shift` `]/[`      | Aumenta/diminui temporariamente a suavidade do pincel de ajuste                                                   |
+| `Alt` `=/-`              | Aumenta/diminui temporariamente o fluxo do pincel de ajuste em incrementos de 10                                  |
+| `N`                      | Muda para o modo Novo a partir dos modos Adicionar ou Apagar da ferramenta Pincel de ajuste ou Filtro gradiente   |
+| `M`                      | Ativa/desativa a Máscara automática na ferramenta Pincel de ajuste                                                |
+| `Y`                      | Ativa/desativa Mostrar máscara na ferramenta Pincel de ajuste                                                     |
+| `V`                      | Ativa/desativa os alfinetes da ferramenta Pincel de ajuste                                                        |
+| `L`                      | Gira a imagem para a esquerda                                                                                     |
+| `R`                      | Gira a imagem para a direita                                                                                      |
+| `Ctrl`                   | Muda temporariamente para a ferramenta Zoom in                                                                    |
+| `Alt`                    | Muda temporariamente para a ferramenta Zoom out e altera o botão de abrir imagem para abrir cópia                 |
+| `P`                      | Ativa/desativa a visualização                                                                                     |
+| `F`                      | Modo de tela cheia                                                                                                |
+| `Shift`                  | Ativa temporariamente a ferramenta Balanço de branco e altera o botão de abrir imagem para abrir objeto           |
+| `Arrows`                 | Move o ponto selecionado no painel de curvas em 1 pixel                                                           |
+| `Shift` `Arrows`         | Move o ponto selecionado no painel de curvas em 10 pixels                                                         |
+| `Ctrl` `R`               | Abre as imagens selecionadas na caixa de diálogo Camera Raw a partir do Bridge                                    |
+| `O`                      | Aviso de recorte de realces                                                                                       |
+| `U`                      | Aviso de recorte de sombras                                                                                       |
+| `Ctrl` `1-5`             | Adiciona classificação de 1 a 5 estrelas (modo tira de filme)                                                     |
+| `Ctrl` `./,`             | Aumenta/diminui a classificação (modo tira de filme)                                                              |
+| `Ctrl` `6`               | Adiciona rótulo vermelho (modo tira de filme)                                                                     |
+| `Ctrl` `7`               | Adiciona rótulo amarelo (modo tira de filme)                                                                      |
+| `Ctrl` `8`               | Adiciona rótulo verde (modo tira de filme)                                                                        |
+| `Ctrl` `9`               | Adiciona rótulo azul (modo tira de filme)                                                                         |
+| `Ctrl` `Shift` `0`       | Adiciona rótulo roxo (modo tira de filme)                                                                         |
+| `Ctrl` `K`               | Preferências do Camera Raw                                                                                        |
+| `Ctrl` `Alt`             | Exclui as preferências do Adobe Camera Raw (ao abrir)                                                             |
 
 {.shortcuts}
 
-### Use Curves
+### Usar a caixa de diálogo Preto e branco
 
-| Shortcut         | Action                                 |
-| ---------------- | -------------------------------------- |
-| `Ctrl` `M`       | Open the Curves dialog box             |
-| `+`              | Select next point on the curve         |
-| `-`              | Select the previous point on the curve |
-| `Ctrl` `D`       | Deselect a point                       |
-| `Del`            | Delete a point on the curve            |
-| `Arrows`         | Move the selected point 1 pixel        |
-| `Shift` `Arrows` | Move the selected point 10 pixels      |
+| Atalho                   | Ação                                       |
+| ------------------------ | ------------------------------------------ |
+| `Ctrl` `Shift` `Alt` `B` | Abre a caixa de diálogo Preto e branco     |
+| `Up/Down`                | Aumenta/diminui o valor selecionado em 1%  |
+| `Shift` `Up/Down`        | Aumenta/diminui o valor selecionado em 10% |
 
 {.shortcuts}
 
-### Transform selections, selection borders, and paths
+### Usar Curvas
 
-| Shortcut                 | Action                              |
-| ------------------------ | ----------------------------------- |
-| `Alt`                    | Transform from center or reflect    |
-| `Shift`                  | Constrain                           |
-| `Ctrl`                   | Distort                             |
-| `Enter`                  | Apply                               |
-| `Ctrl` `.`               | Cancel                              |
-| `Ctrl` `Alt` `T`         | Free transform with duplicate data  |
-| `Ctrl` `Shift` `Alt` `T` | Transform again with duplicate data |
-
-{.shortcuts}
-
-### Edit paths
-
-| Shortcut | Action                                                                                                                  |
-| -------- | ----------------------------------------------------------------------------------------------------------------------- |
-| `Ctrl`   | Switch from path selection, pen, add anchor point, delete anchor point, or convert point tools to direct selection tool |
-| `Alt`    | Switch from pen tool to freeform pen tool to convert point tool when pointer is over anchor or direction point          |
+| Atalho           | Ação                                  |
+| ---------------- | ------------------------------------- |
+| `Ctrl` `M`       | Abre a caixa de diálogo Curvas        |
+| `+`              | Seleciona o próximo ponto da curva    |
+| `-`              | Seleciona o ponto anterior da curva   |
+| `Ctrl` `D`       | Desmarca um ponto                     |
+| `Del`            | Exclui um ponto da curva              |
+| `Arrows`         | Move o ponto selecionado em 1 pixel   |
+| `Shift` `Arrows` | Move o ponto selecionado em 10 pixels |
 
 {.shortcuts}
 
-### Use for painting
+### Transformar seleções, bordas de seleção e caminhos
 
-| Shortcut                 | Action                                               |
-| ------------------------ | ---------------------------------------------------- |
-| `Alt` `Shift` `0-9`      | Mixer brush changes mix setting                      |
-| `0-9`                    | Mixer brush changes wet setting                      |
-| `00`                     | Mixer brush changes wet and mix to zero              |
-| `Shift` `+/-`            | Cycle through blending modes                         |
-| `Backspace`              | Open fill dialog box on background or standard layer |
-| `Alt` `Backspace`        | Fill with foreground color                           |
-| `Ctrl` `Backspace`       | Fill with background color                           |
-| `Ctrl` `Alt` `Backspace` | Fill from history                                    |
-| `Shift` `Backspace`      | Displays fill dialog box                             |
-| `/`                      | Lock transparent pixels on/off                       |
+| Atalho                   | Ação                                      |
+| ------------------------ | ----------------------------------------- |
+| `Alt`                    | Transforma a partir do centro ou reflete  |
+| `Shift`                  | Restringe                                 |
+| `Ctrl`                   | Distorce                                  |
+| `Enter`                  | Aplica                                    |
+| `Ctrl` `.`               | Cancela                                   |
+| `Ctrl` `Alt` `T`         | Transformação livre com dados duplicados  |
+| `Ctrl` `Shift` `Alt` `T` | Transforma novamente com dados duplicados |
 
 {.shortcuts}
 
-### Use for blending modes {.row-span-2}
+### Editar caminhos
 
-| Shortcut          | Action                                                                        |
-| ----------------- | ----------------------------------------------------------------------------- |
-| `Ctrl` `-/+`      | Cycle through blending modes                                                  |
-| `Shift` `Alt` `N` | Normal                                                                        |
-| `Shift` `Alt` `I` | Dissolve                                                                      |
-| `Shift` `Alt` `Q` | Behind (brush tool only)                                                      |
-| `Shift` `Alt` `R` | Clear (brush tool only)                                                       |
-| `Shift` `Alt` `K` | Darken                                                                        |
-| `Shift` `Alt` `M` | Multiply                                                                      |
-| `Shift` `Alt` `B` | Color burn                                                                    |
-| `Shift` `Alt` `A` | Linear burn                                                                   |
-| `Shift` `Alt` `G` | Lighten                                                                       |
-| `Shift` `Alt` `S` | Screen                                                                        |
-| `Shift` `Alt` `D` | Color dodge                                                                   |
-| `Shift` `Alt` `W` | Linear dodge                                                                  |
-| `Shift` `Alt` `O` | Overlay                                                                       |
-| `Shift` `Alt` `F` | Soft light                                                                    |
-| `Shift` `Alt` `H` | Hard light                                                                    |
-| `Shift` `Alt` `V` | Vivid light                                                                   |
-| `Shift` `Alt` `J` | Linear light                                                                  |
-| `Shift` `Alt` `Z` | Pin light                                                                     |
-| `Shift` `Alt` `L` | Hard mix                                                                      |
-| `Shift` `Alt` `E` | Difference                                                                    |
-| `Shift` `Alt` `X` | Exclusion                                                                     |
-| `Shift` `Alt` `U` | Hue                                                                           |
-| `Shift` `Alt` `T` | Saturation                                                                    |
-| `Shift` `Alt` `C` | Color                                                                         |
-| `Shift` `Alt` `Y` | Luminosity                                                                    |
-| `Shift` `Alt` `N` | Set blending mode to Threshold for bitmap images, Normal for all other images |
+| Atalho | Ação                                                                                                                                                             |
+| ------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `Ctrl` | Muda das ferramentas de seleção de caminho, caneta, adicionar ponto de ancoragem, excluir ponto de ancoragem ou converter ponto para a ferramenta Seleção direta |
+| `Alt`  | Muda da ferramenta Caneta para a caneta de forma livre ou converter ponto quando o ponteiro está sobre um ponto de ancoragem ou de direção                       |
 
 {.shortcuts}
 
-### Format type
+### Usar para pintura
 
-| Shortcut                 | Action                                                             |
-| ------------------------ | ------------------------------------------------------------------ |
-| `Ctrl` `Shift` `L/C/R`   | Align left, center, or right                                       |
-| `Ctrl` `Shift` `X`       | Choose 100% horizontal scale                                       |
-| `Ctrl` `Shift` `Alt` `X` | Choose 100% vertical scale                                         |
-| `Ctrl` `Shift` `Alt` `A` | Choose auto leading                                                |
-| `Ctrl` `Shift` `Q`       | Choose 0 for tracking                                              |
-| `Ctrl` `Shift` `J`       | Justify paragraph, left aligns last line                           |
-| `Ctrl` `Shift` `F`       | Justify paragraph, justifies all                                   |
-| `Ctrl` `Shift` `Alt` `H` | Toggle paragraph hyphenation on/off                                |
-| `Ctrl` `Shift` `Alt` `T` | Toggle single/every-line composer on/off                           |
-| `Ctrl` `Shift` `</>`     | Decrease or increase type size of selected text 2 points or pixels |
-| `Alt` `Up/Down`          | Decrease or increase leading 2 points or pixels                    |
-| `Shift` `Alt` `Up/Down`  | Decrease or increase baseline shift 2 points or pixels             |
-| `Alt` `Left/Right`       | Decrease or increase kerning/tracking 20/1000 ems                  |
+| Atalho                   | Ação                                                                  |
+| ------------------------ | --------------------------------------------------------------------- |
+| `Alt` `Shift` `0-9`      | O pincel misturador altera a configuração de mistura                  |
+| `0-9`                    | O pincel misturador altera a configuração de umidade                  |
+| `00`                     | O pincel misturador zera a umidade e a mistura                        |
+| `Shift` `+/-`            | Percorre os modos de mesclagem                                        |
+| `Backspace`              | Abre a caixa de diálogo de preenchimento na camada de fundo ou padrão |
+| `Alt` `Backspace`        | Preenche com a cor de primeiro plano                                  |
+| `Ctrl` `Backspace`       | Preenche com a cor de plano de fundo                                  |
+| `Ctrl` `Alt` `Backspace` | Preenche a partir do histórico                                        |
+| `Shift` `Backspace`      | Exibe a caixa de diálogo de preenchimento                             |
+| `/`                      | Ativa/desativa o bloqueio de pixels transparentes                     |
 
 {.shortcuts}
 
-### Use panels
+### Usar para modos de mesclagem {.row-span-2}
 
-| Shortcut          | Action                                                  |
-| ----------------- | ------------------------------------------------------- |
-| `Shift` `Enter`   | Apply value and keep text box active                    |
-| `Tab`             | Show/Hide all panels                                    |
-| `Shift` `Tab`     | Show/Hide all panels except the toolbox and options bar |
-| `Enter`           | Highlight options bar (select tool first)               |
-| `Shift` `Up/Down` | Increase/decrease selected values by 10                 |
-
-{.shortcuts}
-
-### Use adjustment layers
-
-| Shortcut    | Action                                  |
-| ----------- | --------------------------------------- |
-| `Alt` `3`   | Choose red channel for adjustment       |
-| `Alt` `4`   | Choose green channel for adjustment     |
-| `Alt` `5`   | Choose blue channel for adjustment      |
-| `Alt` `2`   | Choose composite channel for adjustment |
-| `Backspace` | Delete adjustment layer                 |
-
-{.shortcuts}
-
-### Use the Brush panel
-
-| Shortcut          | Action                                 |
-| ----------------- | -------------------------------------- |
-| `,/.`             | Select previous/next brush size        |
-| `Shift` `,/.`     | Select first/last brush                |
-| `Caps Lock`       | Display precise cross hair for brushes |
-| `Shift` `Alt` `P` | Toggle airbrush option                 |
-
-{.shortcuts}
-
-### Use the Clone Source panel
-
-| Shortcut                 | Action                                       |
-| ------------------------ | -------------------------------------------- |
-| `Alt` `Shift`            | Show Clone Source (overlays iamge)           |
-| `Alt` `Shift` `(arrows)` | Nudge Clone Source                           |
-| `Alt` `Shift` `</>`      | Rotate Clone Source                          |
-| `Alt` `Shift` `[/]`      | Scale (increase or reduce size) Clone Source |
+| Atalho            | Ação                                                                                                |
+| ----------------- | --------------------------------------------------------------------------------------------------- |
+| `Ctrl` `-/+`      | Percorre os modos de mesclagem                                                                      |
+| `Shift` `Alt` `N` | Normal                                                                                              |
+| `Shift` `Alt` `I` | Dissolver                                                                                           |
+| `Shift` `Alt` `Q` | Atrás (somente ferramenta Pincel)                                                                   |
+| `Shift` `Alt` `R` | Limpar (somente ferramenta Pincel)                                                                  |
+| `Shift` `Alt` `K` | Escurecer                                                                                           |
+| `Shift` `Alt` `M` | Multiplicar                                                                                         |
+| `Shift` `Alt` `B` | Subexpor cor                                                                                        |
+| `Shift` `Alt` `A` | Subexpor linear                                                                                     |
+| `Shift` `Alt` `G` | Clarear                                                                                             |
+| `Shift` `Alt` `S` | Tela                                                                                                |
+| `Shift` `Alt` `D` | Superexpor cor                                                                                      |
+| `Shift` `Alt` `W` | Superexpor linear                                                                                   |
+| `Shift` `Alt` `O` | Sobrepor                                                                                            |
+| `Shift` `Alt` `F` | Luz suave                                                                                           |
+| `Shift` `Alt` `H` | Luz forte                                                                                           |
+| `Shift` `Alt` `V` | Luz intensa                                                                                         |
+| `Shift` `Alt` `J` | Luz linear                                                                                          |
+| `Shift` `Alt` `Z` | Luz pontual                                                                                         |
+| `Shift` `Alt` `L` | Mistura dura                                                                                        |
+| `Shift` `Alt` `E` | Diferença                                                                                           |
+| `Shift` `Alt` `X` | Exclusão                                                                                            |
+| `Shift` `Alt` `U` | Matiz                                                                                               |
+| `Shift` `Alt` `T` | Saturação                                                                                           |
+| `Shift` `Alt` `C` | Cor                                                                                                 |
+| `Shift` `Alt` `Y` | Luminosidade                                                                                        |
+| `Shift` `Alt` `N` | Define o modo de mesclagem como Limiar para imagens de bitmap e Normal para todas as outras imagens |
 
 {.shortcuts}
 
-### Use the Layers panel
+### Formatar texto
 
-| Shortcut                 | Action                                                          |
-| ------------------------ | --------------------------------------------------------------- |
-| `Ctrl` `Shift` `N`       | New layer                                                       |
-| `Ctrl` `J`               | New layer via copy                                              |
-| `Ctrl` `Shift` `J`       | New layer via cut                                               |
-| `Ctrl` `G`               | Group layers                                                    |
-| `Ctrl` `Shift` `G`       | Ungroup layers                                                  |
-| `Ctrl` `Alt` `G`         | Create/release clipping mask                                    |
-| `Ctrl` `Alt` `A`         | Select all layers                                               |
-| `Ctrl` `Shift` `E`       | Merge visible layers                                            |
-| `Alt` `.`                | Select top layer                                                |
-| `Alt` `.`                | Select bottom layer                                             |
-| `Shift` `Alt` `[/]`      | Add to layer selection in Layers panel                          |
-| `Alt` `[/]`              | Select next layer down/up                                       |
-| `Ctrl` `[/]`             | Move target layer down/up                                       |
-| `Ctrl` `Shift` `Alt` `E` | Merge a copy of all visible layers into target layer            |
-| `Ctrl` `E`               | Merge layers (while layers are highlighted)                     |
-| `Ctrl` `Shift` `[/]`     | Move layer to bottom or top                                     |
-| `/`                      | Toggle lock transparency for target layer, or last applied lock |
-| `\`                      | Toggle rubylith mode for layer mask on/off                      |
+| Atalho                   | Ação                                                                     |
+| ------------------------ | ------------------------------------------------------------------------ |
+| `Ctrl` `Shift` `L/C/R`   | Alinha à esquerda, ao centro ou à direita                                |
+| `Ctrl` `Shift` `X`       | Escolhe escala horizontal de 100%                                        |
+| `Ctrl` `Shift` `Alt` `X` | Escolhe escala vertical de 100%                                          |
+| `Ctrl` `Shift` `Alt` `A` | Escolhe entrelinha automática                                            |
+| `Ctrl` `Shift` `Q`       | Define 0 para o tracking                                                 |
+| `Ctrl` `Shift` `J`       | Justifica o parágrafo, alinhando a última linha à esquerda               |
+| `Ctrl` `Shift` `F`       | Justifica o parágrafo, justificando todas as linhas                      |
+| `Ctrl` `Shift` `Alt` `H` | Ativa/desativa a hifenização do parágrafo                                |
+| `Ctrl` `Shift` `Alt` `T` | Ativa/desativa o compositor de linha única/todas as linhas               |
+| `Ctrl` `Shift` `</>`     | Diminui ou aumenta o tamanho do texto selecionado em 2 pontos ou pixels  |
+| `Alt` `Up/Down`          | Diminui ou aumenta a entrelinha em 2 pontos ou pixels                    |
+| `Shift` `Alt` `Up/Down`  | Diminui ou aumenta o deslocamento da linha de base em 2 pontos ou pixels |
+| `Alt` `Left/Right`       | Diminui ou aumenta o kern/tracking em 20/1000 ems                        |
 
 {.shortcuts}
 
-## Also see
+### Usar painéis
 
-- [Keyboard shortcuts for Adobe Photoshop](https://helpx.adobe.com/photoshop/using/default-keyboard-shortcuts.html)
+| Atalho            | Ação                                                                              |
+| ----------------- | --------------------------------------------------------------------------------- |
+| `Shift` `Enter`   | Aplica o valor e mantém a caixa de texto ativa                                    |
+| `Tab`             | Mostra/oculta todos os painéis                                                    |
+| `Shift` `Tab`     | Mostra/oculta todos os painéis, exceto a caixa de ferramentas e a barra de opções |
+| `Enter`           | Destaca a barra de opções (selecione a ferramenta primeiro)                       |
+| `Shift` `Up/Down` | Aumenta/diminui os valores selecionados em 10                                     |
+
+{.shortcuts}
+
+### Usar camadas de ajuste
+
+| Atalho      | Ação                                 |
+| ----------- | ------------------------------------ |
+| `Alt` `3`   | Escolhe o canal vermelho para ajuste |
+| `Alt` `4`   | Escolhe o canal verde para ajuste    |
+| `Alt` `5`   | Escolhe o canal azul para ajuste     |
+| `Alt` `2`   | Escolhe o canal composto para ajuste |
+| `Backspace` | Exclui a camada de ajuste            |
+
+{.shortcuts}
+
+### Usar o painel Pincéis
+
+| Atalho            | Ação                                            |
+| ----------------- | ----------------------------------------------- |
+| `,/.`             | Seleciona o tamanho de pincel anterior/próximo  |
+| `Shift` `,/.`     | Seleciona o primeiro/último pincel              |
+| `Caps Lock`       | Exibe um cursor em cruz preciso para os pincéis |
+| `Shift` `Alt` `P` | Ativa/desativa a opção de aerógrafo             |
+
+{.shortcuts}
+
+### Usar o painel Origem do clone
+
+| Atalho                   | Ação                                                  |
+| ------------------------ | ----------------------------------------------------- |
+| `Alt` `Shift`            | Mostra a Origem do clone (sobrepõe a imagem)          |
+| `Alt` `Shift` `(arrows)` | Move levemente a Origem do clone                      |
+| `Alt` `Shift` `</>`      | Gira a Origem do clone                                |
+| `Alt` `Shift` `[/]`      | Escala (aumenta ou reduz o tamanho) a Origem do clone |
+
+{.shortcuts}
+
+### Usar o painel Camadas
+
+| Atalho                   | Ação                                                                                           |
+| ------------------------ | ---------------------------------------------------------------------------------------------- |
+| `Ctrl` `Shift` `N`       | Nova camada                                                                                    |
+| `Ctrl` `J`               | Nova camada via cópia                                                                          |
+| `Ctrl` `Shift` `J`       | Nova camada via recorte                                                                        |
+| `Ctrl` `G`               | Agrupa camadas                                                                                 |
+| `Ctrl` `Shift` `G`       | Desagrupa camadas                                                                              |
+| `Ctrl` `Alt` `G`         | Cria/libera máscara de corte                                                                   |
+| `Ctrl` `Alt` `A`         | Seleciona todas as camadas                                                                     |
+| `Ctrl` `Shift` `E`       | Mescla camadas visíveis                                                                        |
+| `Alt` `.`                | Seleciona a camada superior                                                                    |
+| `Alt` `.`                | Seleciona a camada inferior                                                                    |
+| `Shift` `Alt` `[/]`      | Adiciona à seleção de camadas no painel Camadas                                                |
+| `Alt` `[/]`              | Seleciona a próxima camada abaixo/acima                                                        |
+| `Ctrl` `[/]`             | Move a camada de destino para baixo/cima                                                       |
+| `Ctrl` `Shift` `Alt` `E` | Mescla uma cópia de todas as camadas visíveis na camada de destino                             |
+| `Ctrl` `E`               | Mescla as camadas (enquanto as camadas estão destacadas)                                       |
+| `Ctrl` `Shift` `[/]`     | Move a camada para o fim ou o topo                                                             |
+| `/`                      | Ativa/desativa o bloqueio de transparência da camada de destino, ou o último bloqueio aplicado |
+| `\`                      | Ativa/desativa o modo rubylith da máscara de camada                                            |
+
+{.shortcuts}
+
+## Veja também
+
+- [Atalhos de teclado do Adobe Photoshop](https://helpx.adobe.com/photoshop/using/default-keyboard-shortcuts.html)
   _(helpx.adobe.com)_

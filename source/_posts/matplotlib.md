@@ -9,15 +9,15 @@ tags:
 categories:
   - Python
 intro: |
-  [Matplotlib](https://matplotlib.org/) is a comprehensive library for creating static, animated, and interactive plots in Python.
-  This cheat sheet provides a production-grade reference for matplotlib ≥3.8 with emphasis on publication-quality figures, OOP interface, and performance optimization.
+  [Matplotlib](https://matplotlib.org/) é uma biblioteca completa para criar gráficos estáticos, animados e interativos em Python.
+  Este cheat sheet traz uma referência de nível de produção para matplotlib ≥3.8, com ênfase em figuras com qualidade de publicação, interface OOP e otimização de desempenho.
 plugins:
   - copyCode
 ---
 
-## Getting Started {.cols-2}
+## Primeiros passos {.cols-2}
 
-### Import Convention
+### Convenção de importação
 
 ```python
 import matplotlib.pyplot as plt
@@ -32,17 +32,17 @@ plt.rcParams['axes.titlesize'] = 14
 plt.rcParams['legend.fontsize'] = 10
 ```
 
-### Two Interfaces
+### Duas interfaces
 
-| Description | Code |
+| Descrição | Código |
 |-------------|------|
-| Pyplot (procedural) - quick | `plt.plot(x, y); plt.show()` |
-| OOP (explicit) - production | `fig, ax = plt.subplots(); ax.plot(x, y); fig.savefig('fig.pdf')` |
-| Create figure and axes | `fig, ax = plt.subplots(figsize=(8, 6))` |
-| Create figure with grid | `fig, axes = plt.subplots(2, 2, figsize=(10, 8))` |
-| Get current figure/axes | `fig = plt.gcf(); ax = plt.gca()` |
+| Pyplot (procedural) - rápido | `plt.plot(x, y); plt.show()` |
+| OOP (explícito) - produção | `fig, ax = plt.subplots(); ax.plot(x, y); fig.savefig('fig.pdf')` |
+| Cria a figura e os eixos | `fig, ax = plt.subplots(figsize=(8, 6))` |
+| Cria uma figura com grade | `fig, axes = plt.subplots(2, 2, figsize=(10, 8))` |
+| Obtém a figura/eixos atuais | `fig = plt.gcf(); ax = plt.gca()` |
 
-### Basic Plot
+### Gráfico básico
 
 ```python
 x = np.linspace(0, 10, 100)
@@ -57,341 +57,341 @@ plt.show()
 
 ---
 
-## Plot Types {.cols-2}
+## Tipos de gráfico {.cols-2}
 
-### Line Plot
+### Gráfico de linha
 
-| Description | Code |
+| Descrição | Código |
 |-------------|------|
-| Simple line plot | `ax.plot(x, y)` |
-| With custom style | `ax.plot(x, y, 'r--o', linewidth=2, markersize=4)` |
-| Multiple series | `ax.plot(x, y1, label='sin'); ax.plot(x, y2, label='cos'); ax.legend()` |
-| Step plot | `ax.step(x, y, where='mid')` |
-| Stacked lines | `ax.stackplot(x, y1, y2, labels=['A','B'])` |
-| Fill between | `ax.fill_between(x, y1, y2, alpha=0.3)` |
+| Gráfico de linha simples | `ax.plot(x, y)` |
+| Com estilo personalizado | `ax.plot(x, y, 'r--o', linewidth=2, markersize=4)` |
+| Múltiplas séries | `ax.plot(x, y1, label='sin'); ax.plot(x, y2, label='cos'); ax.legend()` |
+| Gráfico de degraus | `ax.step(x, y, where='mid')` |
+| Linhas empilhadas | `ax.stackplot(x, y1, y2, labels=['A','B'])` |
+| Preenchimento entre linhas | `ax.fill_between(x, y1, y2, alpha=0.3)` |
 
-### Scatter Plot
+### Gráfico de dispersão
 
-| Description | Code |
+| Descrição | Código |
 |-------------|------|
-| Basic scatter | `ax.scatter(x, y)` |
-| Scatter with sizes | `ax.scatter(x, y, s=sizes, c=colors, alpha=0.6, cmap='viridis')` |
-| Scatter with categorical colors | `ax.scatter(x, y, c=labels, cmap='Set1', edgecolors='black')` |
-| 3D scatter | `ax.scatter3D(x, y, z, c=z, cmap='viridis')` |
+| Dispersão básica | `ax.scatter(x, y)` |
+| Dispersão com tamanhos | `ax.scatter(x, y, s=sizes, c=colors, alpha=0.6, cmap='viridis')` |
+| Dispersão com cores categóricas | `ax.scatter(x, y, c=labels, cmap='Set1', edgecolors='black')` |
+| Dispersão 3D | `ax.scatter3D(x, y, z, c=z, cmap='viridis')` |
 
-### Bar Charts
+### Gráficos de barras
 
-| Description | Code |
+| Descrição | Código |
 |-------------|------|
-| Vertical bar | `ax.bar(categories, values, width=0.8, color='steelblue')` |
-| Horizontal bar | `ax.barh(categories, values, height=0.8)` |
-| Grouped bar | `ax.bar(x - width/2, y1, width, label='A'); ax.bar(x + width/2, y2, width, label='B')` |
-| Stacked bar | `ax.bar(x, y1, label='A'); ax.bar(x, y2, bottom=y1, label='B')` |
-| Error bars | `ax.bar(x, y, yerr=errors, capsize=5)` |
+| Barra vertical | `ax.bar(categories, values, width=0.8, color='steelblue')` |
+| Barra horizontal | `ax.barh(categories, values, height=0.8)` |
+| Barra agrupada | `ax.bar(x - width/2, y1, width, label='A'); ax.bar(x + width/2, y2, width, label='B')` |
+| Barra empilhada | `ax.bar(x, y1, label='A'); ax.bar(x, y2, bottom=y1, label='B')` |
+| Barras de erro | `ax.bar(x, y, yerr=errors, capsize=5)` |
 
-### Histograms
+### Histogramas
 
-| Description | Code |
+| Descrição | Código |
 |-------------|------|
-| Basic histogram | `ax.hist(data, bins=30, edgecolor='black')` |
-| Multiple histograms | `ax.hist([data1, data2], bins=30, label=['A','B'], alpha=0.6)` |
-| Density (normalized) | `ax.hist(data, bins=30, density=True, histtype='step')` |
-| Cumulative | `ax.hist(data, bins=30, cumulative=True, histtype='step')` |
-| 2D histogram | `ax.hist2d(x, y, bins=30, cmap='viridis')` |
+| Histograma básico | `ax.hist(data, bins=30, edgecolor='black')` |
+| Múltiplos histogramas | `ax.hist([data1, data2], bins=30, label=['A','B'], alpha=0.6)` |
+| Densidade (normalizado) | `ax.hist(data, bins=30, density=True, histtype='step')` |
+| Cumulativo | `ax.hist(data, bins=30, cumulative=True, histtype='step')` |
+| Histograma 2D | `ax.hist2d(x, y, bins=30, cmap='viridis')` |
 
-### Pie Charts
+### Gráficos de pizza
 
-| Description | Code |
+| Descrição | Código |
 |-------------|------|
-| Basic pie | `ax.pie(sizes, labels=labels, autopct='%1.1f%%')` |
-| Exploded pie | `ax.pie(sizes, labels=labels, explode=(0, 0.1, 0, 0), shadow=True)` |
-| Donut chart | `ax.pie(sizes, labels=labels, wedgeprops=dict(width=0.3))` |
-| Custom colors | `ax.pie(sizes, labels=labels, colors=plt.cm.Set3(range(len(sizes))))` |
+| Pizza básica | `ax.pie(sizes, labels=labels, autopct='%1.1f%%')` |
+| Pizza com fatias destacadas | `ax.pie(sizes, labels=labels, explode=(0, 0.1, 0, 0), shadow=True)` |
+| Gráfico de rosca | `ax.pie(sizes, labels=labels, wedgeprops=dict(width=0.3))` |
+| Cores personalizadas | `ax.pie(sizes, labels=labels, colors=plt.cm.Set3(range(len(sizes))))` |
 
-### Box Plots
+### Box plots
 
-| Description | Code |
+| Descrição | Código |
 |-------------|------|
-| Basic box plot | `ax.boxplot(data)` |
-| Grouped box plots | `ax.boxplot([data1, data2, data3], labels=['A','B','C'])` |
-| With notches | `ax.boxplot(data, notch=True, patch_artist=True)` |
+| Box plot básico | `ax.boxplot(data)` |
+| Box plots agrupados | `ax.boxplot([data1, data2, data3], labels=['A','B','C'])` |
+| Com entalhes | `ax.boxplot(data, notch=True, patch_artist=True)` |
 | Violin plot | `ax.violinplot(data, showmeans=True, showmedians=True)` |
 
 ---
 
-## Customization {.row-span-2}
+## Personalização {.row-span-2}
 
-### Figure Elements
+### Elementos da figura
 
-| Description | Code |
+| Descrição | Código |
 |-------------|------|
-| Title | `ax.set_title("Title", fontsize=14, fontweight='bold')` |
-| Axis labels | `ax.set_xlabel("X Label", fontsize=12); ax.set_ylabel("Y Label")` |
-| Axis limits | `ax.set_xlim(0, 10); ax.set_ylim(-1.5, 1.5)` |
-| Grid | `ax.grid(True, linestyle='--', alpha=0.7)` |
-| Legend | `ax.legend(loc='best', frameon=True, fancybox=True, shadow=True)` |
-| Legend outside | `ax.legend(bbox_to_anchor=(1.05, 1), loc='upper left')` |
+| Título | `ax.set_title("Title", fontsize=14, fontweight='bold')` |
+| Rótulos dos eixos | `ax.set_xlabel("X Label", fontsize=12); ax.set_ylabel("Y Label")` |
+| Limites dos eixos | `ax.set_xlim(0, 10); ax.set_ylim(-1.5, 1.5)` |
+| Grade | `ax.grid(True, linestyle='--', alpha=0.7)` |
+| Legenda | `ax.legend(loc='best', frameon=True, fancybox=True, shadow=True)` |
+| Legenda fora | `ax.legend(bbox_to_anchor=(1.05, 1), loc='upper left')` |
 
-### Line & Marker Styles
+### Estilos de linha e marcador
 
-| Description | Code |
+| Descrição | Código |
 |-------------|------|
-| Linestyles | `'-'`, `'--'`, `'-.'`, `':'` |
-| Markers | `'.'`, `'o'`, `'v'`, `'^'`, `'s'`, `'*'`, `'+'`, `'x'` |
-| Color specification | `'r'`, `'#FF5733'`, `(0.2, 0.4, 0.6)`, `'red'` |
-| Line width | `linewidth=2` or `lw=2` |
-| Marker size | `markersize=6` or `ms=6` |
-| Transparency | `alpha=0.5` |
+| Estilos de linha | `'-'`, `'--'`, `'-.'`, `':'` |
+| Marcadores | `'.'`, `'o'`, `'v'`, `'^'`, `'s'`, `'*'`, `'+'`, `'x'` |
+| Especificação de cor | `'r'`, `'#FF5733'`, `(0.2, 0.4, 0.6)`, `'red'` |
+| Largura da linha | `linewidth=2` ou `lw=2` |
+| Tamanho do marcador | `markersize=6` ou `ms=6` |
+| Transparência | `alpha=0.5` |
 
-### Text & Annotations
+### Texto e anotações
 
-| Description | Code |
+| Descrição | Código |
 |-------------|------|
-| Add text | `ax.text(x, y, "Text", fontsize=10, ha='center', va='bottom')` |
-| Annotate with arrow | `ax.annotate("Peak", xy=(7, 1), xytext=(6, 1.5), arrowprops=dict(arrowstyle='->', color='red'))` |
-| Math expressions | `ax.text(5, 0.5, r'$E = mc^2$', fontsize=14)` |
-| Formula in title | `ax.set_title(r'$\sin(x) + \cos(x)$')` |
+| Adiciona texto | `ax.text(x, y, "Text", fontsize=10, ha='center', va='bottom')` |
+| Anota com seta | `ax.annotate("Peak", xy=(7, 1), xytext=(6, 1.5), arrowprops=dict(arrowstyle='->', color='red'))` |
+| Expressões matemáticas | `ax.text(5, 0.5, r'$E = mc^2$', fontsize=14)` |
+| Fórmula no título | `ax.set_title(r'$\sin(x) + \cos(x)$')` |
 
-### Ticks & Scales
+### Ticks e escalas
 
-| Description | Code |
+| Descrição | Código |
 |-------------|------|
-| Custom ticks | `ax.set_xticks([0, 2, 4, 6, 8, 10])` |
-| Custom tick labels | `ax.set_xticklabels(['zero', 'two', 'four', 'six', 'eight', 'ten'])` |
-| Rotate ticks | `plt.xticks(rotation=45)` |
-| Log scale | `ax.set_xscale('log'); ax.set_yscale('log')` |
+| Ticks personalizados | `ax.set_xticks([0, 2, 4, 6, 8, 10])` |
+| Rótulos de tick personalizados | `ax.set_xticklabels(['zero', 'two', 'four', 'six', 'eight', 'ten'])` |
+| Rotaciona os ticks | `plt.xticks(rotation=45)` |
+| Escala log | `ax.set_xscale('log'); ax.set_yscale('log')` |
 | Symlog | `ax.set_xscale('symlog', linthresh=0.01)` |
-| Twin axes | `ax2 = ax.twinx(); ax2.plot(x, y2, 'r-')` |
+| Eixos gêmeos | `ax2 = ax.twinx(); ax2.plot(x, y2, 'r-')` |
 
 ### Colormaps
 
-| Description | Code |
+| Descrição | Código |
 |-------------|------|
-| Sequential | `'viridis'`, `'plasma'`, `'inferno'`, `'magma'`, `'cividis'` |
-| Diverging | `'RdBu'`, `'RdBu_r'`, `'coolwarm'`, `'seismic'` |
-| Qualitative | `'Set1'`, `'Set2'`, `'Set3'`, `'tab10'`, `'tab20'` |
-| Reversed | `'viridis_r'` |
-| Use colormap | `plt.cm.viridis(np.linspace(0, 1, 10))` |
+| Sequencial | `'viridis'`, `'plasma'`, `'inferno'`, `'magma'`, `'cividis'` |
+| Divergente | `'RdBu'`, `'RdBu_r'`, `'coolwarm'`, `'seismic'` |
+| Qualitativa | `'Set1'`, `'Set2'`, `'Set3'`, `'tab10'`, `'tab20'` |
+| Invertido | `'viridis_r'` |
+| Usar colormap | `plt.cm.viridis(np.linspace(0, 1, 10))` |
 
 ### Stylesheets
 
-| Description | Code |
+| Descrição | Código |
 |-------------|------|
-| Default | `plt.style.use('default')` |
+| Padrão | `plt.style.use('default')` |
 | Seaborn | `plt.style.use('seaborn-v0_8')` |
 | FiveThirtyEight | `plt.style.use('fivethirtyeight')` |
 | GGPlot | `plt.style.use('ggplot')` |
-| Dark background | `plt.style.use('dark_background')` |
-| Publication | `plt.style.use('bmh')` |
-| Available styles | `print(plt.style.available)` |
+| Fundo escuro | `plt.style.use('dark_background')` |
+| Publicação | `plt.style.use('bmh')` |
+| Estilos disponíveis | `print(plt.style.available)` |
 
 ---
 
-## Subplots & Layouts {.row-span-2}
+## Subplots e layouts {.row-span-2}
 
-### Creating Subplots
+### Criar subplots
 
-| Description | Code |
+| Descrição | Código |
 |-------------|------|
-| 2x2 grid | `fig, axes = plt.subplots(2, 2, figsize=(10, 8))` |
-| Access subplot | `axes[0, 0].plot(x, y)` |
-| Flatten axes array | `axes_flat = axes.flatten()` |
-| Share x-axis | `fig, axes = plt.subplots(2, 1, sharex=True)` |
-| Share y-axis | `fig, axes = plt.subplots(2, 1, sharey=True)` |
-| Add subplot manually | `ax = fig.add_subplot(2, 2, 1)` |
+| Grade 2x2 | `fig, axes = plt.subplots(2, 2, figsize=(10, 8))` |
+| Acessa o subplot | `axes[0, 0].plot(x, y)` |
+| Achata o array de eixos | `axes_flat = axes.flatten()` |
+| Compartilha o eixo x | `fig, axes = plt.subplots(2, 1, sharex=True)` |
+| Compartilha o eixo y | `fig, axes = plt.subplots(2, 1, sharey=True)` |
+| Adiciona subplot manualmente | `ax = fig.add_subplot(2, 2, 1)` |
 | GridSpec | `gs = fig.add_gridspec(2, 2, width_ratios=[1, 2], height_ratios=[1, 2])` |
-| Span multiple cells | `ax = fig.add_subplot(gs[0, :])` |
+| Abrange várias células | `ax = fig.add_subplot(gs[0, :])` |
 
-### Layout Adjustments
+### Ajustes de layout
 
-| Description | Code |
+| Descrição | Código |
 |-------------|------|
-| Automatic spacing | `plt.tight_layout(pad=1.5)` |
-| Fine-tune spacing | `plt.subplots_adjust(left=0.1, right=0.9, top=0.9, bottom=0.1, wspace=0.3, hspace=0.3)` |
-| Constrained layout | `fig, axes = plt.subplots(constrained_layout=True)` |
-| Colorbar | `fig.colorbar(im, ax=axes, orientation='vertical', fraction=0.02, pad=0.02)` |
+| Espaçamento automático | `plt.tight_layout(pad=1.5)` |
+| Ajuste fino do espaçamento | `plt.subplots_adjust(left=0.1, right=0.9, top=0.9, bottom=0.1, wspace=0.3, hspace=0.3)` |
+| Layout restrito | `fig, axes = plt.subplots(constrained_layout=True)` |
+| Barra de cores | `fig.colorbar(im, ax=axes, orientation='vertical', fraction=0.02, pad=0.02)` |
 
-### Figure Size & DPI
+### Tamanho da figura e DPI
 
-| Description | Code |
+| Descrição | Código |
 |-------------|------|
-| Set figure size | `fig = plt.figure(figsize=(8, 6))` |
-| Set DPI | `fig.set_dpi(150)` |
-| Auto-figure size | `fig.set_size_inches(8, 6)` |
-| Save with DPI | `fig.savefig('fig.png', dpi=300, bbox_inches='tight')` |
+| Define o tamanho da figura | `fig = plt.figure(figsize=(8, 6))` |
+| Define o DPI | `fig.set_dpi(150)` |
+| Tamanho da figura em polegadas | `fig.set_size_inches(8, 6)` |
+| Salva com DPI | `fig.savefig('fig.png', dpi=300, bbox_inches='tight')` |
 
 ---
 
-## Advanced Visualizations {.cols-2}
+## Visualizações avançadas {.cols-2}
 
-### Image & Heatmap
+### Imagem e heatmap
 
-| Description | Code |
+| Descrição | Código |
 |-------------|------|
-| Display image | `ax.imshow(image, cmap='gray', interpolation='bilinear')` |
+| Exibe uma imagem | `ax.imshow(image, cmap='gray', interpolation='bilinear')` |
 | Heatmap | `im = ax.imshow(matrix, cmap='hot', aspect='auto')` |
-| Colorbar | `fig.colorbar(im, ax=ax, label='Intensity')` |
-| Hide axes | `ax.axis('off')` |
-| Aspect ratio | `ax.set_aspect('equal')` |
+| Barra de cores | `fig.colorbar(im, ax=ax, label='Intensity')` |
+| Oculta os eixos | `ax.axis('off')` |
+| Proporção | `ax.set_aspect('equal')` |
 
-### Contour & Surface
+### Contorno e superfície
 
-| Description | Code |
+| Descrição | Código |
 |-------------|------|
-| Contour lines | `contour = ax.contour(X, Y, Z, levels=20, cmap='viridis')` |
-| Filled contour | `ax.contourf(X, Y, Z, levels=20, cmap='viridis')` |
-| Contour labels | `ax.clabel(contour, inline=True, fontsize=8)` |
-| 3D surface | `ax.plot_surface(X, Y, Z, cmap='viridis', alpha=0.8)` |
-| 3D wireframe | `ax.plot_wireframe(X, Y, Z, color='black', alpha=0.3)` |
+| Linhas de contorno | `contour = ax.contour(X, Y, Z, levels=20, cmap='viridis')` |
+| Contorno preenchido | `ax.contourf(X, Y, Z, levels=20, cmap='viridis')` |
+| Rótulos de contorno | `ax.clabel(contour, inline=True, fontsize=8)` |
+| Superfície 3D | `ax.plot_surface(X, Y, Z, cmap='viridis', alpha=0.8)` |
+| Wireframe 3D | `ax.plot_wireframe(X, Y, Z, color='black', alpha=0.3)` |
 
-### 3D Plots
+### Gráficos 3D
 
-| Description | Code |
+| Descrição | Código |
 |-------------|------|
-| Setup 3D axes | `from mpl_toolkits.mplot3d import Axes3D; fig = plt.figure(); ax = fig.add_subplot(111, projection='3d')` |
-| 3D line | `ax.plot3D(x, y, z)` |
-| 3D scatter | `ax.scatter3D(x, y, z, c=z, cmap='viridis')` |
-| 3D bar | `ax.bar3d(x, y, z, dx, dy, dz)` |
-| Set 3D view | `ax.view_init(elev=30, azim=45)` |
+| Configura eixos 3D | `from mpl_toolkits.mplot3d import Axes3D; fig = plt.figure(); ax = fig.add_subplot(111, projection='3d')` |
+| Linha 3D | `ax.plot3D(x, y, z)` |
+| Dispersão 3D | `ax.scatter3D(x, y, z, c=z, cmap='viridis')` |
+| Barra 3D | `ax.bar3d(x, y, z, dx, dy, dz)` |
+| Define a visualização 3D | `ax.view_init(elev=30, azim=45)` |
 
-### Specialized Plots
+### Gráficos especializados
 
-| Description | Code |
+| Descrição | Código |
 |-------------|------|
-| Error bars | `ax.errorbar(x, y, yerr=errors, xerr=x_errors, fmt='o', capsize=5)` |
+| Barras de erro | `ax.errorbar(x, y, yerr=errors, xerr=x_errors, fmt='o', capsize=5)` |
 | Stem plot | `ax.stem(x, y)` |
-| Event plot | `ax.eventplot(data, lineoffsets=1, linelengths=0.5)` |
+| Gráfico de eventos | `ax.eventplot(data, lineoffsets=1, linelengths=0.5)` |
 | Stream plot | `ax.streamplot(X, Y, U, V, density=1.5)` |
-| Quiver (vector field) | `ax.quiver(x, y, u, v, scale=0.5)` |
-| Polar plot | `ax = fig.add_subplot(111, projection='polar'); ax.plot(theta, r)` |
+| Quiver (campo vetorial) | `ax.quiver(x, y, u, v, scale=0.5)` |
+| Gráfico polar | `ax = fig.add_subplot(111, projection='polar'); ax.plot(theta, r)` |
 
 ---
 
-## Working with Images
+## Trabalhar com imagens
 
-| Description | Code |
+| Descrição | Código |
 |-------------|------|
-| Load image | `import matplotlib.image as mpimg; img = mpimg.imread('image.jpg')` |
-| Display image | `ax.imshow(img)` |
-| Save image | `mpimg.imsave('output.jpg', img, dpi=300)` |
-| Resize with interpolation | `ax.imshow(img, interpolation='bicubic')` |
-| RGB channels | `red = img[:,:,0]; green = img[:,:,1]; blue = img[:,:,2]` |
+| Carrega uma imagem | `import matplotlib.image as mpimg; img = mpimg.imread('image.jpg')` |
+| Exibe a imagem | `ax.imshow(img)` |
+| Salva a imagem | `mpimg.imsave('output.jpg', img, dpi=300)` |
+| Redimensiona com interpolação | `ax.imshow(img, interpolation='bicubic')` |
+| Canais RGB | `red = img[:,:,0]; green = img[:,:,1]; blue = img[:,:,2]` |
 
 ---
 
-## For Machine Learning
+## Para machine learning
 
-### Training Curves
+### Curvas de treinamento
 
-| Description | Code |
+| Descrição | Código |
 |-------------|------|
-| Loss vs epochs | `ax.plot(epochs, train_loss, label='Train'); ax.plot(epochs, val_loss, label='Validation')` |
-| Learning rate schedule | `ax.semilogy(epochs, learning_rates)` |
-| Accuracy | `ax.plot(epochs, train_acc, 'b-', label='Train'); ax.plot(epochs, val_acc, 'r-', label='Val')` |
-| Multiple metrics | `ax1 = ax.twinx(); ax1.plot(epochs, loss, 'r-')` |
+| Loss por épocas | `ax.plot(epochs, train_loss, label='Train'); ax.plot(epochs, val_loss, label='Validation')` |
+| Agendamento da taxa de aprendizado | `ax.semilogy(epochs, learning_rates)` |
+| Acurácia | `ax.plot(epochs, train_acc, 'b-', label='Train'); ax.plot(epochs, val_acc, 'r-', label='Val')` |
+| Múltiplas métricas | `ax1 = ax.twinx(); ax1.plot(epochs, loss, 'r-')` |
 
-### Confusion Matrix
+### Matriz de confusão
 
-| Description | Code |
+| Descrição | Código |
 |-------------|------|
-| Confusion matrix | `from sklearn.metrics import confusion_matrix; cm = confusion_matrix(y_true, y_pred)` |
+| Matriz de confusão | `from sklearn.metrics import confusion_matrix; cm = confusion_matrix(y_true, y_pred)` |
 | Heatmap | `im = ax.imshow(cm, cmap='Blues', interpolation='nearest')` |
-| Annotate values | `for i in range(cm.shape[0]): for j in range(cm.shape[1]): ax.text(j, i, cm[i, j], ha='center', va='center')` |
-| Normalized | `cm_norm = cm.astype('float') / cm.sum(axis=1)[:, np.newaxis]` |
+| Anota os valores | `for i in range(cm.shape[0]): for j in range(cm.shape[1]): ax.text(j, i, cm[i, j], ha='center', va='center')` |
+| Normalizada | `cm_norm = cm.astype('float') / cm.sum(axis=1)[:, np.newaxis]` |
 
-### ROC & Precision-Recall
+### ROC e precision-recall
 
-| Description | Code |
+| Descrição | Código |
 |-------------|------|
-| ROC curve | `from sklearn.metrics import roc_curve, auc; fpr, tpr, _ = roc_curve(y_true, y_scores); auc_val = auc(fpr, tpr)` |
-| ROC plot | `ax.plot(fpr, tpr, label=f'AUC = {auc_val:.2f}'); ax.plot([0,1], [0,1], 'k--')` |
-| Precision-Recall | `from sklearn.metrics import precision_recall_curve; precision, recall, _ = precision_recall_curve(y_true, y_scores)` |
-| PR plot | `ax.plot(recall, precision, label='PR Curve')` |
+| Curva ROC | `from sklearn.metrics import roc_curve, auc; fpr, tpr, _ = roc_curve(y_true, y_scores); auc_val = auc(fpr, tpr)` |
+| Gráfico ROC | `ax.plot(fpr, tpr, label=f'AUC = {auc_val:.2f}'); ax.plot([0,1], [0,1], 'k--')` |
+| Precision-recall | `from sklearn.metrics import precision_recall_curve; precision, recall, _ = precision_recall_curve(y_true, y_scores)` |
+| Gráfico PR | `ax.plot(recall, precision, label='PR Curve')` |
 
-### Feature Analysis
+### Análise de features
 
-| Description | Code |
+| Descrição | Código |
 |-------------|------|
-| Feature importance | `ax.barh(feature_names, importances, color='steelblue')` |
-| Correlation matrix | `im = ax.imshow(corr_matrix, cmap='RdBu_r', vmin=-1, vmax=1)` |
-| Pairwise scatter | `import seaborn as sns; sns.pairplot(df)` |
-| Parallel coordinates | `from pandas.plotting import parallel_coordinates; parallel_coordinates(df, 'class')` |
+| Importância das features | `ax.barh(feature_names, importances, color='steelblue')` |
+| Matriz de correlação | `im = ax.imshow(corr_matrix, cmap='RdBu_r', vmin=-1, vmax=1)` |
+| Dispersão par a par | `import seaborn as sns; sns.pairplot(df)` |
+| Coordenadas paralelas | `from pandas.plotting import parallel_coordinates; parallel_coordinates(df, 'class')` |
 
 ---
 
-## Animations
+## Animações
 
-| Description | Code |
+| Descrição | Código |
 |-------------|------|
-| Basic animation | `from matplotlib.animation import FuncAnimation; anim = FuncAnimation(fig, update, frames=100, interval=50)` |
-| Save animation | `anim.save('animation.gif', writer='pillow', fps=20)` |
-| Update function | `def update(frame): ax.clear(); ax.plot(x[:frame], y[:frame]); return ax,` |
-| Interactive animation | `plt.ion(); fig, ax = plt.subplots(); ax.plot(x, y); plt.pause(0.01); plt.ioff()` |
+| Animação básica | `from matplotlib.animation import FuncAnimation; anim = FuncAnimation(fig, update, frames=100, interval=50)` |
+| Salva a animação | `anim.save('animation.gif', writer='pillow', fps=20)` |
+| Função de atualização | `def update(frame): ax.clear(); ax.plot(x[:frame], y[:frame]); return ax,` |
+| Animação interativa | `plt.ion(); fig, ax = plt.subplots(); ax.plot(x, y); plt.pause(0.01); plt.ioff()` |
 
 ---
 
-## Saving & Exporting
+## Salvar e exportar
 
-### File Formats
+### Formatos de arquivo
 
-| Description | Code |
+| Descrição | Código |
 |-------------|------|
-| PNG (high DPI) | `fig.savefig('figure.png', dpi=300, bbox_inches='tight')` |
-| PDF (vector) | `fig.savefig('figure.pdf', bbox_inches='tight')` |
-| SVG (vector) | `fig.savefig('figure.svg', bbox_inches='tight')` |
-| EPS (vector) | `fig.savefig('figure.eps', bbox_inches='tight')` |
-| Transparent background | `fig.savefig('figure.png', transparent=True)` |
-| With metadata | `fig.savefig('figure.pdf', metadata={'Author': 'Name', 'Title': 'Plot'})` |
+| PNG (DPI alto) | `fig.savefig('figure.png', dpi=300, bbox_inches='tight')` |
+| PDF (vetorial) | `fig.savefig('figure.pdf', bbox_inches='tight')` |
+| SVG (vetorial) | `fig.savefig('figure.svg', bbox_inches='tight')` |
+| EPS (vetorial) | `fig.savefig('figure.eps', bbox_inches='tight')` |
+| Fundo transparente | `fig.savefig('figure.png', transparent=True)` |
+| Com metadados | `fig.savefig('figure.pdf', metadata={'Author': 'Name', 'Title': 'Plot'})` |
 
-### Publication Quality
+### Qualidade de publicação
 
-| Description | Code |
+| Descrição | Código |
 |-------------|------|
-| High-res for paper | `plt.rcParams['figure.dpi'] = 300` |
-| Fonts for publication | `plt.rcParams['font.family'] = 'serif'; plt.rcParams['font.serif'] = ['Times New Roman']` |
-| Multiple figures | `fig.savefig('figure.pdf', bbox_inches='tight', pad_inches=0.05)` |
-| Size constraints | `fig = plt.figure(figsize=(3.4, 2.4))` (single column) |
+| Alta resolução para artigo | `plt.rcParams['figure.dpi'] = 300` |
+| Fontes para publicação | `plt.rcParams['font.family'] = 'serif'; plt.rcParams['font.serif'] = ['Times New Roman']` |
+| Múltiplas figuras | `fig.savefig('figure.pdf', bbox_inches='tight', pad_inches=0.05)` |
+| Restrições de tamanho | `fig = plt.figure(figsize=(3.4, 2.4))` (coluna única) |
 
 ---
 
-## Show & Clear
+## Exibir e limpar
 
-| Description | Code |
+| Descrição | Código |
 |-------------|------|
-| Display plot | `plt.show()` |
-| Clear current figure | `plt.clf()` |
-| Clear current axes | `plt.cla()` |
-| Close all figures | `plt.close('all')` |
-| Close specific figure | `plt.close(fig)` |
-| Suppress display | `plt.ioff()` |
+| Exibe o gráfico | `plt.show()` |
+| Limpa a figura atual | `plt.clf()` |
+| Limpa os eixos atuais | `plt.cla()` |
+| Fecha todas as figuras | `plt.close('all')` |
+| Fecha uma figura específica | `plt.close(fig)` |
+| Suprime a exibição | `plt.ioff()` |
 
 ---
 
-## Performance & Memory
+## Desempenho e memória
 
-| Description | Code |
+| Descrição | Código |
 |-------------|------|
-| Fast plotting (AGG backend) | `import matplotlib; matplotlib.use('Agg')` |
-| Interactive backend | `import matplotlib; matplotlib.use('TkAgg')` |
-| Reduce memory | `ax.plot(x[::10], y[::10])` (downsample) |
-| Efficient scatter | `ax.scatter(x, y, s=1)` (small markers) |
-| Disable antialiasing | `ax.plot(x, y, antialiased=False)` |
-| Batch plotting | `fig, axes = plt.subplots(2, 2); for ax in axes.flat: ax.plot(x, y)` |
+| Plotagem rápida (backend AGG) | `import matplotlib; matplotlib.use('Agg')` |
+| Backend interativo | `import matplotlib; matplotlib.use('TkAgg')` |
+| Reduz a memória | `ax.plot(x[::10], y[::10])` (reduzir amostragem) |
+| Dispersão eficiente | `ax.scatter(x, y, s=1)` (marcadores pequenos) |
+| Desativa o antialiasing | `ax.plot(x, y, antialiased=False)` |
+| Plotagem em lote | `fig, axes = plt.subplots(2, 2); for ax in axes.flat: ax.plot(x, y)` |
 
 ---
 
-## Common Pitfalls & Best Practices
+## Armadilhas comuns e boas práticas
 
-| Pitfall | Solution |
+| Armadilha | Solução |
 |---------|----------|
-| Mixing pyplot and OOP | Stick to one interface; prefer OOP for production |
-| Overlapping legends | Place legend outside: `ax.legend(bbox_to_anchor=(1.05, 1), loc='upper left')` |
-| Small fonts in publication | Set `plt.rcParams['font.size'] = 12` globally |
-| Slow rendering | Downsample data or use `agg` backend |
-| Figures cut off | Use `bbox_inches='tight'` in savefig |
-| Memory leaks in loops | Use `plt.clf()` or `plt.close()` after each iteration |
-| Inconsistent colormaps | Use same colormap for comparable visualizations |
-| Missing axis labels | Always label for reproducibility |
-| 3D plot overlapping | Adjust view with `ax.view_init()` |
+| Misturar pyplot e OOP | Mantenha uma única interface; prefira OOP em produção |
+| Legendas sobrepostas | Coloque a legenda fora: `ax.legend(bbox_to_anchor=(1.05, 1), loc='upper left')` |
+| Fontes pequenas em publicação | Defina `plt.rcParams['font.size'] = 12` globalmente |
+| Renderização lenta | Reduza a amostragem dos dados ou use o backend `agg` |
+| Figuras cortadas | Use `bbox_inches='tight'` no savefig |
+| Vazamentos de memória em loops | Use `plt.clf()` ou `plt.close()` após cada iteração |
+| Colormaps inconsistentes | Use o mesmo colormap para visualizações comparáveis |
+| Rótulos de eixo ausentes | Sempre rotule para permitir reprodutibilidade |
+| Sobreposição em gráfico 3D | Ajuste a visualização com `ax.view_init()` |
 
 ---

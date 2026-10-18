@@ -6,17 +6,17 @@ tags:
   - svelte
   - web
 categories:
-  - Programming
+  - Programação
 intro: |
-  A Svelte cheat sheet with the most important concepts, functions, reactivity, and more. A complete quick reference for beginners, updated for Svelte 5.
+  Um cheat sheet de Svelte com os conceitos, funções, reatividade e muito mais. Uma referência rápida completa para iniciantes, atualizada para o Svelte 5.
 plugins:
   - copyCode
   - runCode
 ---
 
-## Getting Started
+## Primeiros passos
 
-### Basic Syntax
+### Sintaxe básica
 
 ```js
 <script>
@@ -26,7 +26,7 @@ plugins:
 <h1>Hello {name}!</h1>
 ```
 
-### Expressions
+### Expressões
 
 ```js
 <script>
@@ -41,7 +41,7 @@ plugins:
 <h1>Hello {fullName()}!</h1>
 ```
 
-### Attributes
+### Atributos
 
 ```js
 <script>
@@ -52,7 +52,7 @@ plugins:
 <button class="btn">Click me</button>
 ```
 
-### Functions in Markup
+### Funções no markup
 
 ```js
 <script>
@@ -64,7 +64,7 @@ plugins:
 <h1>Hi {name()}!</h1>
 ```
 
-### Conditional Rendering {.col-span-2}
+### Renderização condicional {.col-span-2}
 
 ```js
 <script>
@@ -79,11 +79,11 @@ plugins:
 {/if}
 ```
 
-Note: Svelte components must always return a root element or content.
+Nota: componentes Svelte sempre devem retornar um elemento raiz ou conteúdo.
 
-## Components
+## Componentes
 
-### Functional Component
+### Componente funcional
 
 ```js
 <script>
@@ -96,7 +96,7 @@ Note: Svelte components must always return a root element or content.
 </div>
 ```
 
-### Embed an internal Component
+### Incorporar um componente interno
 
 ```js
 <script>
@@ -109,7 +109,7 @@ Note: Svelte components must always return a root element or content.
 </div>
 ```
 
-### Embed an external Component
+### Incorporar um componente externo
 
 ```js
 <script>
@@ -121,9 +121,9 @@ Note: Svelte components must always return a root element or content.
 </div>
 ```
 
-Note: External components should be installed via npm first.
+Nota: componentes externos devem ser instalados via npm antes.
 
-### Advanced Functional Components
+### Componentes funcionais avançados
 
 ```js
 <script>
@@ -137,15 +137,15 @@ Note: External components should be installed via npm first.
 <p>{fullName()}</p>
 ```
 
-## Properties {.cols-2}
+## Propriedades {.cols-2}
 
-### Passing Properties to a Component
+### Passar propriedades para um componente
 
 ```js
 <Student firstName="Zehan" lastName="Khan" age={23} pro={true} />
 ```
 
-### Assigning the Properties from a Component
+### Receber as propriedades em um componente
 
 ```js
 <script>
@@ -155,9 +155,9 @@ Note: External components should be installed via npm first.
 <h1>{firstName} {lastName} is {age}.</h1>
 ```
 
-## State {.cols-1}
+## Estado {.cols-1}
 
-### Local State
+### Estado local
 
 ```js
 <script>
@@ -172,9 +172,9 @@ Note: External components should be installed via npm first.
 <button onclick={updateName}>Update name</button>
 ```
 
-## Events {.cols-1}
+## Eventos {.cols-1}
 
-### Event Listener
+### Listener de evento
 
 ```js
 <script>
@@ -189,11 +189,11 @@ Note: External components should be installed via npm first.
 </a>
 ```
 
-Note: The most common event listeners are `onclick` and `onsubmit`.
+Nota: os listeners de evento mais comuns são `onclick` e `onsubmit`.
 
-## Loops {.cols-2}
+## Laços {.cols-2}
 
-### Looping through an Array
+### Percorrer um array
 
 ```js
 <script>
@@ -207,7 +207,7 @@ Note: The most common event listeners are `onclick` and `onsubmit`.
 </ul>
 ```
 
-### Looping through an Array of Objects
+### Percorrer um array de objetos
 
 ```js
 <script>
@@ -227,9 +227,9 @@ Note: The most common event listeners are `onclick` and `onsubmit`.
 </ul>
 ```
 
-## Forms {.cols-1}
+## Formulários {.cols-1}
 
-### Form Example
+### Exemplo de formulário
 
 ```js
 <script>
@@ -251,7 +251,7 @@ Note: The most common event listeners are `onclick` and `onsubmit`.
 
 ## CSS {.cols-1}
 
-### Scoped CSS
+### CSS com escopo
 
 ```js
 <style>
@@ -263,9 +263,9 @@ Note: The most common event listeners are `onclick` and `onsubmit`.
 <div class="student">Zehan Khan</div>
 ```
 
-## Fetching Data {.cols-1}
+## Buscar dados {.cols-1}
 
-### Fetching Data with onMount
+### Buscar dados com onMount
 
 ```js
 <script>
@@ -291,9 +291,9 @@ Note: The most common event listeners are `onclick` and `onsubmit`.
 {/if}
 ```
 
-Note: Use `onMount` for side effects like API calls.
+Nota: use `onMount` para efeitos colaterais como chamadas de API.
 
-## Lifecycle Hooks {.cols-1}
+## Hooks de ciclo de vida {.cols-1}
 
 ### onMount
 
@@ -343,12 +343,12 @@ Note: Use `onMount` for side effects like API calls.
 </script>
 ```
 
-Note: Svelte lifecycle functions are similar to React Hooks, but they are imported individually and used directly in the
-`<script>` block.
+Nota: as funções de ciclo de vida do Svelte são semelhantes aos React Hooks, mas são importadas individualmente e usadas
+diretamente no bloco `<script>`.
 
-## More Svelte Features {.cols-1}
+## Mais recursos do Svelte {.cols-1}
 
-### Derived Store
+### Store derivado
 
 ```js
 // store.js
@@ -368,7 +368,7 @@ export const double = derived(count, ($count) => $count * 2);
 <p>Double: {$double}</p>
 ```
 
-### Readable Store
+### Store de leitura
 
 ```js
 import { readable } from 'svelte/store';
@@ -384,7 +384,7 @@ export const time = readable(new Date(), function start(set) {
 });
 ```
 
-### Reactive Declarations
+### Declarações reativas
 
 ```js
 <script>
@@ -396,7 +396,7 @@ export const time = readable(new Date(), function start(set) {
 <p>{sum}</p>
 ```
 
-### Reactive Statements with Side Effects
+### Statements reativos com efeitos colaterais
 
 ```js
 <script>
@@ -405,7 +405,7 @@ export const time = readable(new Date(), function start(set) {
 </script>
 ```
 
-### Bind to DOM Properties
+### Vincular a propriedades do DOM
 
 ```js
 <script>
@@ -416,7 +416,7 @@ export const time = readable(new Date(), function start(set) {
 <p>{text.length} characters</p>
 ```
 
-### Bind Grouped Inputs (Radio, Checkbox)
+### Vincular inputs agrupados (radio, checkbox)
 
 ```js
 <script>
@@ -428,7 +428,7 @@ export const time = readable(new Date(), function start(set) {
 <p>Selected: {selected}</p>
 ```
 
-### Class and Style Directives
+### Diretivas de classe e estilo
 
 ```js
 <script>
@@ -446,7 +446,7 @@ export const time = readable(new Date(), function start(set) {
 <p style:font-size={`${size}px`}>Resizable text</p>
 ```
 
-### Await Blocks
+### Blocos await
 
 ```js
 <script>
@@ -463,7 +463,7 @@ export const time = readable(new Date(), function start(set) {
 {/await}
 ```
 
-### SSR with SvelteKit (Basic Example)
+### SSR com SvelteKit (exemplo básico)
 
 ```js
 // +page.server.js
@@ -483,4 +483,4 @@ export async function load({ fetch }) {
 <h1>{data.title}</h1>
 ```
 
-Note: Requires SvelteKit setup for SSR routes.
+Nota: requer a configuração do SvelteKit para rotas SSR.

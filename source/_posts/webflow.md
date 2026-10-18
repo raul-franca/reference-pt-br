@@ -7,125 +7,125 @@ tags:
   -
   -
 categories:
-  - Keyboard Shortcuts
+  - Atalhos de Teclado
 intro: |
-  A visual cheat-sheet for the 41 keyboard shortcuts found in Webflow
+  Uma cheat sheet visual com os 41 atalhos de teclado disponíveis no Webflow
 ---
 
-## Keyboard Shortcuts
+## Atalhos de teclado
 
-### General
+### Geral
 
-| Shortcut           | Action                   |
-| ------------------ | ------------------------ |
-| `Shift` `/`        | Show shortcut cheatsheet |
-| `Ctrl` `Shift` `S` | Save as a snapshot       |
-| `Esc`              | Deselect or abort        |
-| `Del`              | Delete element           |
-| `Shift` `P`        | Show publish dialog      |
-| `Shift` `E`        | Show export code dialog  |
-| `Enter`            | Edit element             |
+| Atalho             | Ação                          |
+| ------------------ | ----------------------------- |
+| `Shift` `/`        | Mostrar cheat sheet de atalhos |
+| `Ctrl` `Shift` `S` | Salvar como snapshot          |
+| `Esc`              | Desmarcar ou abortar          |
+| `Del`              | Excluir elemento              |
+| `Shift` `P`        | Mostrar diálogo de publicação |
+| `Shift` `E`        | Mostrar diálogo de exportação de código |
+| `Enter`            | Editar elemento               |
 
 {.shortcuts}
 
-### View
+### Visualização
 
-| Shortcut           | Action             |
+| Atalho             | Ação               |
 | ------------------ | ------------------ |
-| `Ctrl` `Shift` `P` | Preview mode       |
-| `Ctrl` `Shift` `G` | Guide overlay      |
-| `Ctrl` `Shift` `E` | Show element edges |
-| `Ctrl` `Shift` `X` | X-ray mode         |
+| `Ctrl` `Shift` `P` | Modo de pré-visualização |
+| `Ctrl` `Shift` `G` | Sobreposição de guias |
+| `Ctrl` `Shift` `E` | Mostrar bordas dos elementos |
+| `Ctrl` `Shift` `X` | Modo raio-X        |
 
 {.shortcuts}
 
-### Left-hand Toolbar
+### Barra de ferramentas da esquerda
 
-| Shortcut           | Action                         |
+| Atalho             | Ação                           |
 | ------------------ | ------------------------------ |
-| `A`                | Show add panel                 |
-| `Z`                | Show navigator tab             |
-| `P`                | Show pages panel               |
-| `Shift` `A`        | Show symbols panel             |
-| `Ctrl` `Shift` `A` | Make selected element a symbol |
-| `J`                | Show asset manager             |
+| `A`                | Mostrar painel de adição       |
+| `Z`                | Mostrar aba do navegador       |
+| `P`                | Mostrar painel de páginas      |
+| `Shift` `A`        | Mostrar painel de símbolos     |
+| `Ctrl` `Shift` `A` | Transformar o elemento selecionado em símbolo |
+| `J`                | Mostrar gerenciador de assets  |
 
 {.shortcuts}
 
-### Right-hand Tabs
+### Abas da direita
 
-| Shortcut | Action                 |
-| -------- | ---------------------- |
-| `S`      | Show style tab         |
-| `D`      | Show settings tab      |
-| `G`      | Show style manager tab |
-| `H`      | Show interactions tab  |
+| Atalho | Ação                   |
+| ------ | ---------------------- |
+| `S`    | Mostrar aba de estilo  |
+| `D`    | Mostrar aba de configurações |
+| `G`    | Mostrar aba do gerenciador de estilos |
+| `H`    | Mostrar aba de interações |
 
 {.shortcuts}
 
-### Copy/Paste
+### Copiar/colar
 
-| Shortcut       | Action    |
+| Atalho         | Ação      |
 | -------------- | --------- |
-| `Ctrl` `C`     | Copy      |
-| `Ctrl` `X`     | Cut       |
-| `Ctrl` `V`     | Paste     |
-| `Alt` `(drag)` | Duplicate |
+| `Ctrl` `C`     | Copiar    |
+| `Ctrl` `X`     | Recortar  |
+| `Ctrl` `V`     | Colar     |
+| `Alt` `(drag)` | Duplicar  |
 
 {.shortcuts}
 
-### Undo/Redo
+### Desfazer/refazer
 
-| Shortcut           | Action |
-| ------------------ | ------ |
-| `Ctrl` `Z`         | Undo   |
-| `Ctrl` `Shift` `Z` | Redo   |
-
-{.shortcuts}
-
-### Device View
-
-| Shortcut | Action            |
-| -------- | ----------------- |
-| `1`      | Desktop           |
-| `2`      | Tablet            |
-| `3`      | Phone (landscape) |
-| `4`      | Phone (portrait)  |
+| Atalho             | Ação    |
+| ------------------ | ------- |
+| `Ctrl` `Z`         | Desfazer |
+| `Ctrl` `Shift` `Z` | Refazer |
 
 {.shortcuts}
 
-### Style Panel
+### Visualização por dispositivo
 
-| Shortcut               | Action                                                |
+| Atalho | Ação              |
+| ------ | ----------------- |
+| `1`    | Desktop           |
+| `2`    | Tablet            |
+| `3`    | Celular (paisagem) |
+| `4`    | Celular (retrato) |
+
+{.shortcuts}
+
+### Painel de estilo
+
+| Atalho                 | Ação                                                  |
 | ---------------------- | ----------------------------------------------------- |
-| `Shift` `(drag)`       | Margin or padding (on all sides)                      |
-| `Alt` `(drag)`         | Margin or padding (top and bottom, or left and right) |
-| `Ctrl` `Enter`         | Add class to selected element                         |
-| `Ctrl` `Shift` `Enter` | Rename last class on selected element                 |
+| `Shift` `(drag)`       | Margem ou preenchimento (em todos os lados)           |
+| `Alt` `(drag)`         | Margem ou preenchimento (superior e inferior, ou esquerda e direita) |
+| `Ctrl` `Enter`         | Adicionar classe ao elemento selecionado              |
+| `Ctrl` `Shift` `Enter` | Renomear a última classe do elemento selecionado      |
 
 {.shortcuts}
 
-### Find
+### Localizar
 
-| Shortcut   | Action     |
-| ---------- | ---------- |
-| `Ctrl` `K` | Quick find |
+| Atalho     | Ação           |
+| ---------- | -------------- |
+| `Ctrl` `K` | Busca rápida   |
 
 {.shortcuts}
 
-### Other
+### Outros
 
-| Shortcut           | Action                                   |
+| Atalho             | Ação                                     |
 | ------------------ | ---------------------------------------- |
-| `Alt` `(click)`    | Expand or collapse panel sections        |
-| `Up/Down`          | Select parent or child element           |
-| `Left/Right`       | Select sibling element                   |
-| `Alt` `Left/Right` | Select next or previous element          |
-| `Ctrl` `Shift` `L` | Toggle collaborators on selected element |
+| `Alt` `(click)`    | Expandir ou recolher seções do painel    |
+| `Up/Down`          | Selecionar elemento pai ou filho         |
+| `Left/Right`       | Selecionar elemento irmão                |
+| `Alt` `Left/Right` | Selecionar o próximo ou o elemento anterior |
+| `Ctrl` `Shift` `L` | Alternar colaboradores no elemento selecionado |
 
 {.shortcuts}
 
-## Also see
+## Veja também
 
 - [Keyboard shortcuts for Webflow](https://university.webflow.com/article/keyboard-shortcuts-in-the-webflow-designer)
   _(university.webflow.com)_

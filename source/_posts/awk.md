@@ -7,16 +7,16 @@ tags:
   - text
   - script
 categories:
-  - Linux Command
+  - Comandos Linux
 intro: |
-  This is a one page quick reference cheat sheet to the [GNU awk](https://www.gnu.org/software/gawk/manual/gawk.html), which covers commonly used awk expressions and commands.
+  Este é um cheat sheet de referência rápida de uma página para o [GNU awk](https://www.gnu.org/software/gawk/manual/gawk.html), que cobre expressões e comandos awk usados com frequência.
 plugins:
   - copyCode
 ---
 
-## Getting Started
+## Primeiros passos
 
-### Have a try
+### Experimente
 
 ```shell script {.wrap}
 $ awk -F: '{print $1, $NF}' /etc/passwd
@@ -24,18 +24,18 @@ $ awk -F: '{print $1, $NF}' /etc/passwd
 
 ---
 
-| -             | -                         |
-| ------------- | ------------------------- |
-| `-F:`         | Colon as a separator      |
-| `{...}`       | Awk program               |
-| `print`       | Prints the current record |
-| `$1`          | First field               |
-| `$NF`         | Last field                |
-| `/etc/passwd` | Input data file           |
+| -             | -                           |
+| ------------- | --------------------------- |
+| `-F:`         | Dois-pontos como separador  |
+| `{...}`       | Programa awk                |
+| `print`       | Imprime o registro atual    |
+| `$1`          | Primeiro campo              |
+| `$NF`         | Último campo                |
+| `/etc/passwd` | Arquivo de dados de entrada |
 
 {.left-text}
 
-### Awk program
+### Programa awk
 
 ```
 BEGIN          {<initializations>}
@@ -45,7 +45,7 @@ BEGIN          {<initializations>}
 END            {< final actions >}
 ```
 
-#### Example
+#### Exemplo
 
 ```
 awk '
@@ -55,7 +55,7 @@ awk '
 ' /etc/passwd
 ```
 
-### Variables {.row-span-2}
+### Variáveis {.row-span-2}
 
 ```bash
           $1      $2/$(NF-1)    $3/$NF
@@ -85,9 +85,9 @@ awk -F: '{print $(NF-1)}' /etc/passwd
 awk -F: '{print $1 "=" $6}' /etc/passwd
 ```
 
-See: [Variables](#awk-variables)
+Veja: [Variáveis](#awk-variables)
 
-### Awk program examples {.col-span-2 .row-span-2}
+### Exemplos de programas awk {.col-span-2 .row-span-2}
 
 ```
 awk 'BEGIN {print "hello world"}'        # Prints "hello world"
@@ -103,15 +103,15 @@ awk -F: 'BEGIN { print "uid"} { print $1 }' /etc/passwd
 awk -F: '{print $1} END { print "-done-"}' /etc/passwd
 ```
 
-### Conditions
+### Condições
 
 ```
 awk -F: '$3>30 {print $1}' /etc/passwd
 ```
 
-See: [Conditions](#awk-conditions)
+Veja: [Condições](#awk-conditions)
 
-### Generate 1000 spaces
+### Gerar 1000 espaços
 
 ```
 awk 'BEGIN{
@@ -121,7 +121,7 @@ awk 'BEGIN{
 }'
 ```
 
-See: [Loops](#awk-loops)
+Veja: [Loops](#awk-loops)
 
 ### Arrays
 
@@ -135,9 +135,9 @@ awk 'BEGIN {
 }'
 ```
 
-See: [Arrays](#awk-arrays)
+Veja: [Arrays](#awk-arrays)
 
-### Functions
+### Funções
 
 ```
 # => 5
@@ -148,47 +148,47 @@ awk 'BEGIN{print toupper("hello")}'
 awk 'BEGIN{print substr("hello", 1, 3)}'
 ```
 
-See: [Functions](#awk-functions)
+Veja: [Funções](#awk-functions)
 
-## Awk Variables
+## Variáveis do Awk
 
-### Build-in variables
+### Variáveis internas
 
-| -              | -                                                   |
-| -------------- | --------------------------------------------------- |
-| `$0`           | Whole line                                          |
-| `$1, $2...$NF` | First, second… last field                           |
-| `NR`           | `N`umber of `R`ecords                               |
-| `NF`           | `N`umber of `F`ields                                |
-| `OFS`          | `O`utput `F`ield `S`eparator <br> _(default " ")_   |
-| `FS`           | input `F`ield `S`eparator <br> _(default " ")_      |
-| `ORS`          | `O`utput `R`ecord `S`eparator <br> _(default "\n")_ |
-| `RS`           | input `R`ecord `S`eparator <br> _(default "\n")_    |
-| `FILENAME`     | Name of the file                                    |
+| -              | -                                                    |
+| -------------- | ---------------------------------------------------- |
+| `$0`           | Linha inteira                                        |
+| `$1, $2...$NF` | Primeiro, segundo… último campo                      |
+| `NR`           | `N`úmero de `R`egistros                              |
+| `NF`           | `N`úmero de `F`ields (campos)                        |
+| `OFS`          | `O`utput `F`ield `S`eparator <br> _(padrão " ")_     |
+| `FS`           | `F`ield `S`eparator de entrada <br> _(padrão " ")_   |
+| `ORS`          | `O`utput `R`ecord `S`eparator <br> _(padrão "\n")_   |
+| `RS`           | `R`ecord `S`eparator de entrada <br> _(padrão "\n")_ |
+| `FILENAME`     | Nome do arquivo                                      |
 
-### Expressions
+### Expressões
 
-| -                   | -                                  |
-| ------------------- | ---------------------------------- |
-| `$1 == "root"`      | First field equals root            |
-| `{print $(NF-1)}`   | Second last field                  |
-| `NR!=1{print $0}`   | From 2nd record                    |
-| `NR > 3`            | From 4th record                    |
-| `NR == 1`           | First record                       |
-| `END{print NR}`     | Total records                      |
-| `BEGIN{print OFMT}` | Output format                      |
-| `{print NR, $0}`    | Line number                        |
-| `{print NR "	" $0}`  | Line number (tab)                  |
-| `{$1 = NR; print}`  | Replace 1st field with line number |
-| `$NF > 4`           | Last field > 4                     |
-| `NR % 2 == 0`       | Even records                       |
-| `NR==10, NR==20`    | Records 10 to 20                   |
-| `BEGIN{print ARGC}` | Total arguments                    |
-| `ORS=NR%5?",":"\n"` | Concatenate records                |
+| -                   | -                                         |
+| ------------------- | ----------------------------------------- |
+| `$1 == "root"`      | Primeiro campo igual a root               |
+| `{print $(NF-1)}`   | Penúltimo campo                           |
+| `NR!=1{print $0}`   | A partir do 2º registro                   |
+| `NR > 3`            | A partir do 4º registro                   |
+| `NR == 1`           | Primeiro registro                         |
+| `END{print NR}`     | Total de registros                        |
+| `BEGIN{print OFMT}` | Formato de saída                          |
+| `{print NR, $0}`    | Número da linha                           |
+| `{print NR "	" $0}` | Número da linha (tab)                     |
+| `{$1 = NR; print}`  | Substitui o 1º campo pelo número da linha |
+| `$NF > 4`           | Último campo > 4                          |
+| `NR % 2 == 0`       | Registros pares                           |
+| `NR==10, NR==20`    | Registros de 10 a 20                      |
+| `BEGIN{print ARGC}` | Total de argumentos                       |
+| `ORS=NR%5?",":"\n"` | Concatena registros                       |
 
-### Examples
+### Exemplos
 
-Print sum and average
+Imprima a soma e a média
 
 ```
 awk -F: '{sum += $3}
@@ -196,7 +196,7 @@ awk -F: '{sum += $3}
 ' /etc/passwd
 ```
 
-Printing parameters
+Imprima os parâmetros
 
 ```
 awk 'BEGIN {
@@ -204,14 +204,14 @@ awk 'BEGIN {
         print ARGV[i] }' a b c
 ```
 
-Output field separator as a comma
+Separador de campo de saída como vírgula
 
 ```
 awk 'BEGIN { FS=":";OFS=","}
     {print $1,$2,$3,$4}' /etc/passwd
 ```
 
-Position of match
+Posição da correspondência
 
 ```
 awk 'BEGIN {
@@ -219,7 +219,7 @@ awk 'BEGIN {
         print RSTART }'
 ```
 
-Length of match
+Comprimento da correspondência
 
 ```
 awk 'BEGIN {
@@ -227,30 +227,30 @@ awk 'BEGIN {
         print RLENGTH }'
 ```
 
-### Environment Variables
+### Variáveis de ambiente
 
-| -         | -                                                         |
-| --------- | --------------------------------------------------------- |
-| `ARGC`    | Number or arguments                                       |
-| `ARGV`    | Array of arguments                                        |
-| `FNR`     | `F`ile `N`umber of `R`ecords                              |
-| `OFMT`    | Format for numbers <br> _(default "%.6g")_                |
-| `RSTART`  | Location in the string                                    |
-| `RLENGTH` | Length of match                                           |
-| `SUBSEP`  | Multi-dimensional array separator <br> _(default "\034")_ |
-| `ARGIND`  | Argument Index                                            |
+| -         | -                                                          |
+| --------- | ---------------------------------------------------------- |
+| `ARGC`    | Número de argumentos                                       |
+| `ARGV`    | Array de argumentos                                        |
+| `FNR`     | `F`ile `N`umber of `R`ecords                               |
+| `OFMT`    | Formato para números <br> _(padrão "%.6g")_                |
+| `RSTART`  | Localização na string                                      |
+| `RLENGTH` | Comprimento da correspondência                             |
+| `SUBSEP`  | Separador de array multidimensional <br> _(padrão "\034")_ |
+| `ARGIND`  | Índice do argumento                                        |
 
-### GNU awk only
+### Somente GNU awk
 
-| -             | -                     |
-| ------------- | --------------------- |
-| `ENVIRON`     | Environment variables |
-| `IGNORECASE`  | Ignore case           |
-| `CONVFMT`     | Conversion format     |
-| `ERRNO`       | System errors         |
-| `FIELDWIDTHS` | Fixed width fields    |
+| -             | -                            |
+| ------------- | ---------------------------- |
+| `ENVIRON`     | Variáveis de ambiente        |
+| `IGNORECASE`  | Ignora maiúsculas/minúsculas |
+| `CONVFMT`     | Formato de conversão         |
+| `ERRNO`       | Erros do sistema             |
+| `FIELDWIDTHS` | Campos de largura fixa       |
 
-### Defining variable
+### Definindo variáveis
 
 ```
 awk -v var1="Hello" -v var2="Wold" '
@@ -258,43 +258,43 @@ awk -v var1="Hello" -v var2="Wold" '
 ' </dev/null
 ```
 
-#### Use shell variables
+#### Usar variáveis do shell
 
 ```
 awk -v varName="$PWD" '
     END {print varName}' </dev/null
 ```
 
-## Awk Operators
+## Operadores do Awk
 
-### Operators
+### Operadores
 
-| -                | -           |
-| ---------------- | ----------- |
-| `{print $1}`     | First field |
-| `$2 == "foo"`    | Equals      |
-| `$2 != "foo"`    | Not equals  |
-| `"foo" in array` | In array    |
+| -                | -              |
+| ---------------- | -------------- |
+| `{print $1}`     | Primeiro campo |
+| `$2 == "foo"`    | Igual          |
+| `$2 != "foo"`    | Diferente      |
+| `"foo" in array` | No array       |
 
-#### Regular expression
+#### Expressão regular
 
-| -               | -                 |
-| --------------- | ----------------- |
-| `/regex/`       | Line matches      |
-| `!/regex/`      | Line not matches  |
-| `$1 ~ /regex/`  | Field matches     |
-| `$1 !~ /regex/` | Field not matches |
+| -               | -                     |
+| --------------- | --------------------- |
+| `/regex/`       | Linha corresponde     |
+| `!/regex/`      | Linha não corresponde |
+| `$1 ~ /regex/`  | Campo corresponde     |
+| `$1 !~ /regex/` | Campo não corresponde |
 
-#### More conditions
+#### Mais condições
 
 | -                        | -   |
 | ------------------------ | --- |
-| `($2 <= 4 \|\| $3 < 20)` | Or  |
-| `($1 == 4 && $3 < 20)`   | And |
+| `($2 <= 4 \|\| $3 < 20)` | Ou  |
+| `($1 == 4 && $3 < 20)`   | E   |
 
-### Operations
+### Operações
 
-#### Arithmetic operations
+#### Operações aritméticas
 
 - `+`
 - `-`
@@ -306,7 +306,7 @@ awk -v varName="$PWD" '
 
 {.cols-3 .marker-none}
 
-#### Shorthand assignments
+#### Atribuições abreviadas
 
 - `+=`
 - `-=`
@@ -316,7 +316,7 @@ awk -v varName="$PWD" '
 
 {.cols-3 .marker-none}
 
-#### Comparison operators
+#### Operadores de comparação
 
 - `==`
 - `!=`
@@ -327,7 +327,7 @@ awk -v varName="$PWD" '
 
 {.cols-3 .marker-none}
 
-### Examples
+### Exemplos
 
 ```
 awk 'BEGIN {
@@ -336,7 +336,7 @@ awk 'BEGIN {
 }'
 ```
 
-#### Not match
+#### Não corresponde
 
 ```
 awk 'BEGIN {
@@ -345,7 +345,7 @@ awk 'BEGIN {
 }'
 ```
 
-#### if in array
+#### if em array
 
 ```
 awk 'BEGIN {
@@ -356,28 +356,28 @@ awk 'BEGIN {
 }'
 ```
 
-## Awk Functions
+## Funções do Awk
 
-### Common functions {.col-span-2}
+### Funções comuns {.col-span-2}
 
-| Function              | Description                                                                     |
-| --------------------- | ------------------------------------------------------------------------------- |
-| `index(s,t)`          | Position in string s where string t occurs, 0 if not found                      |
-| `length(s)`           | Length of string s (or $0 if no arg)                                            |
-| `rand`                | Random number between 0 and 1                                                   |
-| `substr(s,index,len)` | Return len-char substring of s that begins at index (counted from 1)            |
-| `srand`               | Set seed for rand and return previous seed                                      |
-| `int(x)`              | Truncate x to integer value                                                     |
-| `split(s,a,fs)`       | Split string s into array a split by fs, returning length of a                  |
-| `match(s,r)`          | Position in string s where regex r occurs, or 0 if not found                    |
-| `sub(r,t,s)`          | Substitute t for first occurrence of regex r in string s (or $0 if s not given) |
-| `gsub(r,t,s)`         | Substitute t for all occurrences of regex r in string s                         |
-| `system(cmd)`         | Execute cmd and return exit status                                              |
-| `tolower(s)`          | String s to lowercase                                                           |
-| `toupper(s)`          | String s to uppercase                                                           |
-| `getline`             | Set $0 to next input record from current input file.                            |
+| Função                | Descrição                                                                               |
+| --------------------- | --------------------------------------------------------------------------------------- |
+| `index(s,t)`          | Posição na string s onde a string t ocorre, 0 se não encontrada                         |
+| `length(s)`           | Comprimento da string s (ou $0 se não houver argumento)                                 |
+| `rand`                | Número aleatório entre 0 e 1                                                            |
+| `substr(s,index,len)` | Retorna a substring de s com len caracteres, começando em index (contado a partir de 1) |
+| `srand`               | Define a semente de rand e retorna a semente anterior                                   |
+| `int(x)`              | Trunca x para um valor inteiro                                                          |
+| `split(s,a,fs)`       | Divide a string s no array a usando fs, retornando o comprimento de a                   |
+| `match(s,r)`          | Posição na string s onde a regex r ocorre, ou 0 se não encontrada                       |
+| `sub(r,t,s)`          | Substitui a primeira ocorrência da regex r em s por t (ou $0 se s não for informado)    |
+| `gsub(r,t,s)`         | Substitui todas as ocorrências da regex r em s por t                                    |
+| `system(cmd)`         | Executa cmd e retorna o status de saída                                                 |
+| `tolower(s)`          | Converte a string s para minúsculas                                                     |
+| `toupper(s)`          | Converte a string s para maiúsculas                                                     |
+| `getline`             | Define $0 como o próximo registro de entrada do arquivo de entrada atual.               |
 
-### User defined function
+### Função definida pelo usuário
 
 ```
 awk '
@@ -408,9 +408,9 @@ awk '
 '
 ```
 
-## Awk Arrays
+## Arrays do Awk
 
-### Array with index
+### Array com índice
 
 ```
 awk 'BEGIN {
@@ -422,7 +422,7 @@ awk 'BEGIN {
 }'
 ```
 
-### Array with key
+### Array com chave
 
 ```
 awk 'BEGIN {
@@ -433,7 +433,7 @@ awk 'BEGIN {
 }'
 ```
 
-### Array with split
+### Array com split
 
 ```
 awk 'BEGIN {
@@ -443,7 +443,7 @@ awk 'BEGIN {
 }'
 ```
 
-### Array with asort
+### Array com asort
 
 ```
 awk 'BEGIN {
@@ -456,7 +456,7 @@ awk 'BEGIN {
 }'
 ```
 
-### Multi-dimensional
+### Multidimensional
 
 ```
 awk 'BEGIN {
@@ -467,7 +467,7 @@ awk 'BEGIN {
 }'
 ```
 
-### Multi-dimensional iteration
+### Iteração multidimensional
 
 ```
 awk 'BEGIN {
@@ -481,9 +481,9 @@ awk 'BEGIN {
 }'
 ```
 
-## Awk Conditions
+## Condições do Awk
 
-### if-else statement
+### Instrução if-else
 
 ```
 awk -v count=2 'BEGIN {
@@ -494,7 +494,7 @@ awk -v count=2 'BEGIN {
 }'
 ```
 
-#### Ternary operator
+#### Operador ternário
 
 ```
 awk -v count=2 'BEGIN {
@@ -502,7 +502,7 @@ awk -v count=2 'BEGIN {
 }'
 ```
 
-### Exists
+### Existe
 
 ```
 awk 'BEGIN {
@@ -513,7 +513,7 @@ awk 'BEGIN {
 }'
 ```
 
-#### Not exists
+#### Não existe
 
 ```
 awk 'BEGIN {
@@ -546,7 +546,7 @@ awk -F: '{
 }' /etc/passwd
 ```
 
-## Awk Loops
+## Loops do Awk
 
 ### for...i
 
@@ -557,7 +557,7 @@ awk 'BEGIN {
 }'
 ```
 
-#### Powers of two between 1 and 100
+#### Potências de dois entre 1 e 100
 
 ```
 awk 'BEGIN {
@@ -577,7 +577,7 @@ awk 'BEGIN {
 }'
 ```
 
-#### Arguments
+#### Argumentos
 
 ```
 awk 'BEGIN {
@@ -586,9 +586,9 @@ awk 'BEGIN {
 }' a b c
 ```
 
-### Examples {.row-span-3}
+### Exemplos {.row-span-3}
 
-#### Reverse records
+#### Inverter registros
 
 ```
 awk -F: '{ x[NR] = $0 }
@@ -599,7 +599,7 @@ awk -F: '{ x[NR] = $0 }
 ' /etc/passwd
 ```
 
-#### Reverse fields
+#### Inverter campos
 
 ```
 awk -F: '{
@@ -609,7 +609,7 @@ awk -F: '{
 }' /etc/passwd
 ```
 
-#### Sum by record
+#### Soma por registro
 
 ```
 awk -F: '{
@@ -620,7 +620,7 @@ awk -F: '{
 }' /etc/passwd
 ```
 
-#### Sum whole file
+#### Soma do arquivo inteiro
 
 ```
 awk -F: '
@@ -654,7 +654,7 @@ awk '{
 }' /etc/passwd
 ```
 
-### Break
+### break
 
 ```
 awk 'BEGIN {
@@ -667,7 +667,7 @@ awk 'BEGIN {
 }'
 ```
 
-### Continue
+### continue
 
 ```
 awk 'BEGIN {
@@ -680,11 +680,11 @@ awk 'BEGIN {
 }'
 ```
 
-## Awk Formatted Printing
+## Impressão formatada do Awk
 
-### Usage
+### Uso
 
-#### Right align
+#### Alinhar à direita
 
 ```
 awk 'BEGIN{printf "|%10s|\n", "hello"}'
@@ -692,7 +692,7 @@ awk 'BEGIN{printf "|%10s|\n", "hello"}'
 |     hello|
 ```
 
-#### Left align
+#### Alinhar à esquerda
 
 ```
 awk 'BEGIN{printf "|%-10s|\n", "hello"}'
@@ -700,18 +700,18 @@ awk 'BEGIN{printf "|%-10s|\n", "hello"}'
 |hello     |
 ```
 
-### Common specifiers
+### Especificadores comuns
 
-| Character     | Description           |
-| ------------- | --------------------- |
-| `c`           | ASCII character       |
-| `d`           | Decimal integer       |
-| `e`, `E`, `f` | Floating-point format |
-| `o`           | Unsigned octal value  |
-| `s`           | String                |
-| `%`           | Literal %             |
+| Caractere     | Descrição                  |
+| ------------- | -------------------------- |
+| `c`           | Caractere ASCII            |
+| `d`           | Inteiro decimal            |
+| `e`, `E`, `f` | Formato de ponto flutuante |
+| `o`           | Valor octal sem sinal      |
+| `s`           | String                     |
+| `%`           | % literal                  |
 
-### Space
+### Espaço
 
 ```
 awk -F: '{
@@ -719,7 +719,7 @@ awk -F: '{
 }' /etc/passwd | head -n 3
 ```
 
-Outputs
+Saída
 
 ```shell script
 root       /root
@@ -727,7 +727,7 @@ bin        /bin
 daemon     /sbin
 ```
 
-### Header
+### Cabeçalho
 
 ```
 awk -F: 'BEGIN {
@@ -737,7 +737,7 @@ awk -F: 'BEGIN {
 ' /etc/passwd | head -n 5
 ```
 
-Outputs
+Saída
 
 ```
 User       Home
@@ -747,9 +747,9 @@ bin        /bin
 daemon     /sbin
 ```
 
-## Miscellaneous
+## Diversos
 
-### Regex Metacharacters
+### Metacaracteres de regex
 
 - `\`
 - `^`
@@ -766,18 +766,18 @@ daemon     /sbin
 
 {.cols-3 .marker-none}
 
-### Escape Sequences
+### Sequências de escape
 
-| -    | -                   |
-| ---- | ------------------- |
-| `\b` | Backspace           |
-| `\f` | Form feed           |
-| `\n` | Newline (line feed) |
-| `\r` | Carriage return     |
-| `\t` | Horizontal tab      |
-| `\v` | Vertical tab        |
+| -    | -                      |
+| ---- | ---------------------- |
+| `\b` | Backspace              |
+| `\f` | Form feed              |
+| `\n` | Nova linha (line feed) |
+| `\r` | Retorno de carro       |
+| `\t` | Tabulação horizontal   |
+| `\v` | Tabulação vertical     |
 
-### Run script
+### Executar script
 
 ```shell script
 $ cat demo.awk
@@ -789,7 +789,7 @@ $ awk -f demo.awk /etc/passwd
 69
 ```
 
-## Also see
+## Veja também
 
 - [The GNU Awk User's Guide](https://www-zeuthen.desy.de/dv/documentation/unixguide/infohtml/gawk/gawk.html)
   _(www-zeuthen.desy.de)_

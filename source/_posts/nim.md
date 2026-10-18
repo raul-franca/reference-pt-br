@@ -4,14 +4,14 @@ date: 2025-11-23 1:04:20
 background: bg-[#eed547]
 tags:
 categories:
-  - Programming
+  - Programação
 intro: |
-  The Nim quick reference cheat sheet that aims at providing help on writing basic syntax and methods.
+  O cheat sheet de referência rápida do Nim, que tem como objetivo ajudar a escrever a sintaxe básica e os métodos.
 plugins:
   - copyCode
 ---
 
-## Getting Started
+## Primeiros passos
 
 ### helloworld.nim {.row-span-2}
 
@@ -26,13 +26,13 @@ var name: string = readLine(stdin)
 echo "Hi, ", name, "!"
 ```
 
-Compile `helloworld.nim` with `nim compile`
+Compile `helloworld.nim` com `nim compile`
 
 ```bash
 $ nim compile helloworld.nim
 ```
 
-Run the compiled binary `helloworld` (or `helloworld.exe` if you're on Windows)
+Execute o binário compilado `helloworld` (ou `helloworld.exe` se estiver no Windows)
 
 ```
 ./helloworld
@@ -41,13 +41,13 @@ What's your name?
 Hi, <name>!
 ```
 
-There is also a possibility
-to both compile and run the
-program with just one command.
-We need to type:
+Também é possível
+compilar e executar o
+programa com apenas um comando.
+Basta digitar:
 `$ nim c -r helloworld.nim`
 
-#### Common compile commands (terminal)
+#### Comandos de compilação comuns (terminal)
 
 ```sh
 nim c -r main.nim          # debug build, run after compile
@@ -55,14 +55,14 @@ nim c -d:release main.nim  # optimized release build
 nim c --mm:arc main.nim    # ARC memory management (Nim 2 default)
 ```
 
-### Useful Resources {.col-span-2}
+### Recursos úteis {.col-span-2}
 
 - [Nim](https://www.nim-lang.org/) _(nim-lang.org)_
-- [The Nim Manual](https://nim-lang.org/docs/manual.html) _(../docs/manual.html)_
+- [O manual do Nim](https://nim-lang.org/docs/manual.html) _(../docs/manual.html)_
 - [Nim Basics](https://narimiran.github.io/nim-basics/) _(narimiran.github.io)_
 - [Learn X in Y minutes](https://learnxinyminutes.com/docs/nim/) _(learnxinyminutes.com)_
 
-### Variables {.row-span-1}
+### Variáveis {.row-span-1}
 
 ```nim
 # 'var' declares mutable variables.
@@ -80,7 +80,7 @@ var
   truth = true
 ```
 
-### Immutable Variables (let)
+### Variáveis imutáveis (let)
 
 ```nim
 # 'let' declares immutable variables.
@@ -93,7 +93,7 @@ let z = 20
 z = 500   # Error: 'z' is immutable
 ```
 
-### Comments
+### Comentários
 
 ```nim
 # This is a comment
@@ -105,7 +105,7 @@ z = 500   # Error: 'z' is immutable
 ]#
 ```
 
-### Constants {.row-span-1}
+### Constantes {.row-span-1}
 
 ```nim
 const
@@ -115,7 +115,7 @@ const
 # Constants are declared at compile time and cannot be changed.
 ```
 
-### "For" Loops
+### Laços for
 
 ```nim
 for item in (1 ..< 6):
@@ -125,9 +125,9 @@ for item in (1 ..< 6):
 echo "All done!"
 ```
 
-See: [Loops](#loops)
+Veja: [Loops](#loops)
 
-### If Statements
+### Instruções if
 
 ```nim
 import std/strutils
@@ -141,9 +141,9 @@ else:
   echo "Big number."
 ```
 
-See: [Flow Control](#flow-control)
+Veja: [Controle de fluxo](#flow-control)
 
-### Procedures / Functions
+### Procedures / Funções
 
 ```nim
 proc myFunction() =
@@ -154,9 +154,9 @@ myFunction()
 # prints "Hello, this is my function"
 ```
 
-See: [Procedures](#procedures)
+Veja: [Procedures](#procedures)
 
-### Formatted Strings
+### Strings formatadas
 
 ```nim
 import std/strformat
@@ -169,11 +169,11 @@ let
 echo fmt"{a} {b} {c}" # "Hello there. How's it going? These are variables."
 ```
 
-See: [Imports](#imports-and-modules)
+Veja: [Imports](#imports-and-modules)
 
-## Data Types
+## Tipos de dados
 
-### Integers
+### Inteiros
 
 ```nim
 let
@@ -217,7 +217,7 @@ echo p, " is a string."
 # prints "32 is a string."
 ```
 
-#### String Concatenation
+#### Concatenação de strings
 
 ```nim
 var
@@ -235,7 +235,7 @@ echo q         # "xyz"
 echo p & q     # "abcdefxyz"
 ```
 
-#### Special Escape Sequences
+#### Sequências de escape especiais
 
 ```nim
 echo "line1\nline2"     # newline
@@ -246,9 +246,9 @@ echo "A\\B\\C"          # backslash
 echo r"line1\nline2"
 ```
 
-See also: [Escape Sequences](https://nim-lang.org/docs/manual.html#lexical-analysis-string-literals)
+Veja também: [Sequências de escape](https://nim-lang.org/docs/manual.html#lexical-analysis-string-literals)
 
-### Characters
+### Caracteres
 
 ```nim
 let
@@ -259,7 +259,7 @@ let
   l = 'xy'   # error: too many characters
 ```
 
-### Booleans
+### Booleanos
 
 ```nim
 let x = true
@@ -268,7 +268,7 @@ let y = false
 # Boolean literals are lowercase.
 ```
 
-### Type Conversion {.col-span-2}
+### Conversão de tipos {.col-span-2}
 
 ```nim
 
@@ -284,7 +284,7 @@ echo float(e) + f    # 28.987
 echo e + int(f)      # 28
 ```
 
-## Compound Types
+## Tipos compostos
 
 ### Arrays
 
@@ -297,7 +297,7 @@ echo a[0]      # 10
 echo a.len     # 4
 ```
 
-### Sequences
+### Sequências
 
 ```nim
 var s: seq[int] = @[1, 2, 3]
@@ -307,7 +307,7 @@ echo s         # @[1, 2, 3, 4]
 echo s.len     # 4
 ```
 
-### Objects
+### Objetos
 
 ```nim
 type Person = object
@@ -318,7 +318,7 @@ let p = Person(name: "Ana", age: 20)
 echo p.name
 ```
 
-### Tuples
+### Tuplas
 
 ```nim
 var person = (name: "Sophie", age: 18)
@@ -332,7 +332,7 @@ var (x, y) = (1, 2)
 echo x, " ", y     # 2 1
 ```
 
-### Sets
+### Conjuntos
 
 ```nim
 type CharSet = set[char]
@@ -343,7 +343,7 @@ echo 'a' in letters    # true
 echo 'Z' in letters    # false
 ```
 
-### Reference Objects
+### Objetos de referência
 
 ```nim
 type Node = ref object
@@ -354,9 +354,9 @@ var n = Node(value: 10)
 echo n.value
 ```
 
-Needed for Object Oriented Programming within Nim.
+Necessário para programação orientada a objetos no Nim.
 
-### Slicing Sequences and Strings {.col-span-2}
+### Fatiamento de sequências e strings {.col-span-2}
 
 ```nim
 let xs = @[10, 20, 30, 40]
@@ -375,7 +375,7 @@ echo s[3..^1]    # "def" (^1 = last char)
 echo s[1..<4]    # "bcd"
 ```
 
-### Tables/Dictionaries
+### Tabelas/Dicionários
 
 ```nim
 import std/tables
@@ -391,9 +391,9 @@ for name, age in ages:
   echo name, ": ", age
 ```
 
-## Operators
+## Operadores
 
-### Arithmetic Operators {.row-span-1}
+### Operadores aritméticos {.row-span-1}
 
 ```nim
 var
@@ -411,21 +411,21 @@ echo a ^ b      # 1000
 
 ---
 
-| Operator | Name           | Example   |
-| -------- | -------------- | --------- |
-| `+`      | Add            | `x + y`   |
-| `-`      | Subtract       | `x - y`   |
-| `*`      | Multiply       | `x * y`   |
-| `/`      | Float Divide   | `x / y`   |
-| `div`    | Integer Divide | `x div y` |
-| `mod`    | Modulo         | `x mod y` |
-| `^`      | Power          | `x ^ y`   |
+| Operador | Nome            | Exemplo   |
+| -------- | --------------- | --------- |
+| `+`      | Soma            | `x + y`   |
+| `-`      | Subtração       | `x - y`   |
+| `*`      | Multiplicação   | `x * y`   |
+| `/`      | Divisão float   | `x / y`   |
+| `div`    | Divisão inteira | `x div y` |
+| `mod`    | Módulo          | `x mod y` |
+| `^`      | Potência        | `x ^ y`   |
 
 {.show-header}
 
-### Assignment
+### Atribuição
 
-These only work on mutable (`var`) variables, not on `let` or `const`.
+Só funcionam em variáveis mutáveis (`var`), não em `let` ou `const`.
 
 ```nim
 var value = 1990
@@ -437,26 +437,26 @@ echo value # 2
 
 ---
 
-| Operator | Description  | Example |
-| -------- | ------------ | ------- |
-| `=`      | Assign value | `x = y` |
+| Operador | Descrição     | Exemplo |
+| -------- | ------------- | ------- |
+| `=`      | Atribui valor | `x = y` |
 
 {.show-header}
 
-#### Update operations
+#### Operações de atualização
 
-| Syntax   | Expands to  | Meaning          |
-| -------- | ----------- | ---------------- |
-| `x += y` | `x = x + y` | add, assign      |
-| `x -= y` | `x = x - y` | subtract, assign |
-| `x *= y` | `x = x * y` | multiply, assign |
+| Sintaxe  | Expande para | Significado         |
+| -------- | ------------ | ------------------- |
+| `x += y` | `x = x + y`  | soma, atribui       |
+| `x -= y` | `x = x - y`  | subtrai, atribui    |
+| `x *= y` | `x = x * y`  | multiplica, atribui |
 
 {.show-header}
 
-Other variants like `/=` or `mod=` are not available,  
-so just write them out explicitly, e.g. `x = x / y`.
+Outras variantes como `/=` ou `mod=` não existem,  
+então escreva-as explicitamente, por exemplo `x = x / y`.
 
-### Comparison Operators {.row-span-2}
+### Operadores de comparação {.row-span-2}
 
 ```nim
 let
@@ -469,22 +469,22 @@ echo x > y
 
 ---
 
-| Symbol | Meaning                  | Example        |
-| ------ | ------------------------ | -------------- |
-| `==`   | equals                   | `if x == y`... |
-| `!=`   | not equal to             | `if x != y`... |
-| `>`    | greater than             | `if x > y`...  |
-| `<`    | less than                | `if x < y`...  |
-| `>=`   | greater than or equal to | `if x >= y`... |
-| `<=`   | less than or equal to    | `if x <= y`... |
+| Símbolo | Significado      | Exemplo        |
+| ------- | ---------------- | -------------- |
+| `==`    | igual a          | `if x == y`... |
+| `!=`    | diferente de     | `if x != y`... |
+| `>`     | maior que        | `if x > y`...  |
+| `<`     | menor que        | `if x < y`...  |
+| `>=`    | maior ou igual a | `if x >= y`... |
+| `<=`    | menor ou igual a | `if x <= y`... |
 
 {.show-header}
 
-Comparison operators are used to compare two values.
+Os operadores de comparação são usados para comparar dois valores.
 
-#### Lexicographical Comparison
+#### Comparação lexicográfica
 
-They also work on `char` and `string` values via lexicographic order.
+Eles também funcionam em valores `char` e `string` por ordem lexicográfica.
 
 ```nim
 echo "apple" < "banana"  # true
@@ -496,37 +496,37 @@ echo 'a' < 'd'           # true
 echo 'a' < 'Z'           # false
 ```
 
-### Logical Operators {.row-span-2} {.col-span-2}
+### Operadores lógicos {.row-span-2} {.col-span-2}
 
-| Operator | Example                | Meaning                  |
-| -------- | ---------------------- | ------------------------ |
-| `and`    | `if a > 0 and a < 10:` | From 1 to 9              |
-| `or`     | `if x == 0 or y == 0:` | Either one of them is 0  |
-| `not`    | `if not isValid:`      | If `isValid` is not true |
-| `xor`    | `if flagA xor flagB:`  | Only one of them is true |
-
-{.show-header}
-
-Logical operators work on `bool`.
-
-#### Extra Bitwise Operators
-
-| Operator | Example   | Result (with a = 60, b = 13) |
-| -------- | --------- | ---------------------------- |
-| `and`    | `a and b` | `12`                         |
-| `or`     | `a or b`  | `61`                         |
-| `xor`    | `a xor b` | `49`                         |
-| `not`    | `not a`   | `-61`                        |
-| `shl`    | `a shl 2` | `240`                        |
-| `shr`    | `a shr 2` | `15`                         |
+| Operador | Exemplo                | Significado               |
+| -------- | ---------------------- | ------------------------- |
+| `and`    | `if a > 0 and a < 10:` | De 1 a 9                  |
+| `or`     | `if x == 0 or y == 0:` | Um dos dois é 0           |
+| `not`    | `if not isValid:`      | Se `isValid` não for true |
+| `xor`    | `if flagA xor flagB:`  | Apenas um deles é true    |
 
 {.show-header}
 
-These work on integers bit-by-bit; use them for flags, masks, low-level code, etc.
+Operadores lógicos trabalham com `bool`.
 
-## Flow Control
+#### Operadores bit a bit extras
 
-### Match Case {.row-span-3}
+| Operador | Exemplo   | Resultado (com a = 60, b = 13) |
+| -------- | --------- | ------------------------------ |
+| `and`    | `a and b` | `12`                           |
+| `or`     | `a or b`  | `61`                           |
+| `xor`    | `a xor b` | `49`                           |
+| `not`    | `not a`   | `-61`                          |
+| `shl`    | `a shl 2` | `240`                          |
+| `shr`    | `a shr 2` | `15`                           |
+
+{.show-header}
+
+Eles operam em inteiros bit a bit; use-os para flags, máscaras, código de baixo nível etc.
+
+## Controle de fluxo
+
+### Case de correspondência {.row-span-3}
 
 ```nim
 let x = 5
@@ -541,7 +541,7 @@ else:
 
 ---
 
-`case of` can look for ranges too.
+`case of` também pode buscar intervalos.
 
 ```nim
 let age = 17
@@ -557,7 +557,7 @@ else:
 
 ---
 
-...and `strings` and `chars`, too
+...e também `strings` e `chars`
 
 ```nim
 let cmd = "quit"
@@ -582,7 +582,7 @@ else:
   echo "consonant or symbol"
 ```
 
-### Basic If-Else {.col-span-2}
+### If-else básico {.col-span-2}
 
 ```nim
 let num = 5
@@ -595,7 +595,7 @@ else:
   echo "num is exactly 10"
 ```
 
-### One Liners {.col-span-2}
+### One-liners {.col-span-2}
 
 ```nim
 let
@@ -607,7 +607,7 @@ let r = if a > b: a else: b
 echo r # 330
 ```
 
-### Compile-Time Conditions {.col-span-2}
+### Condições em tempo de compilação {.col-span-2}
 
 ```nim
 when defined(linux):
@@ -620,7 +620,7 @@ else:
 
 ## Loops
 
-### For Loops {.row-span-2}
+### Loops for {.row-span-2}
 
 ```nim
 for i in 1..5:
@@ -647,11 +647,11 @@ for i, v in @[10, 20, 30]:
 # 2: 30
 ```
 
-**Keep in mind**: \
-1..5 = Inclusive (1 2 3 4 5) \
-1..<5 = Exclusive (1 2 3 4)
+**Lembre-se**: \
+1..5 = Inclusivo (1 2 3 4 5) \
+1..<5 = Exclusivo (1 2 3 4)
 
-### While Loops
+### Loops while
 
 ```nim
 var counter = 0
@@ -661,7 +661,7 @@ while counter <= 10:
   echo counter # prints 1..10
 ```
 
-### Infinite Loops
+### Loops infinitos
 
 ```nim
 while true:
@@ -675,7 +675,7 @@ while 1 > 0:
   echo "echo... "
 ```
 
-### Break Statements
+### Instruções break
 
 ```nim
 var query = ""
@@ -690,7 +690,7 @@ while true:
 
 ```
 
-### Continue Statements
+### Instruções continue
 
 ```nim
 for i in 1..5:
@@ -701,7 +701,7 @@ for i in 1..5:
 
 ## Procedures
 
-### Simple Procedure
+### Procedure simples
 
 ```nim
 proc salute() =
@@ -710,7 +710,7 @@ proc salute() =
 salute() # prints "Hello!"
 ```
 
-### Procedures with Parameters
+### Procedures com parâmetros
 
 ```nim
 proc addition(a: int, b: int): int =
@@ -719,7 +719,7 @@ proc addition(a: int, b: int): int =
 echo addition(20, 30) # returns 50
 ```
 
-### Using result {.row-span-2}
+### Usando result {.row-span-2}
 
 ```nim
 proc double(x: int): int =
@@ -730,7 +730,7 @@ echo double(5) # returns 10
 
 ---
 
-Useful when building results step-by-step:
+Útil ao montar resultados passo a passo:
 
 ```nim
 proc sumAll(xs: seq[int]): int =
@@ -740,7 +740,7 @@ proc sumAll(xs: seq[int]): int =
 echo sumAll(@[1,1,1,1,1]) # returns 5
 ```
 
-### Default Parameters {.col-span-2}
+### Parâmetros padrão {.col-span-2}
 
 ```nim
 proc welcome(name = "stranger") =
@@ -750,7 +750,7 @@ welcome("Sophie") # prints "Hi, Sophie"
 welcome()         # uses default, prints "Hi, stranger"
 ```
 
-### Procedures returning multiple values
+### Procedures que retornam vários valores
 
 ```nim
 proc divmod(a, b: int): (int, int) =
@@ -760,14 +760,14 @@ let (q, r) = divmod(10, 3)
 echo q, " ", r   # 3 1
 ```
 
-### Anonymous Procedures (Lambdas)
+### Procedures anônimas (lambdas)
 
 ```nim
 let square = proc(x: int): int = x * x
 echo square(5) # 25
 ```
 
-### Procedures within Procedures {.row-span-2}
+### Procedures dentro de procedures {.row-span-2}
 
 ```nim
 proc outer() =
@@ -783,7 +783,7 @@ proc outer() =
 outer()   # prints 1 then 2
 ```
 
-### Overloading
+### Sobrecarga
 
 ```nim
 proc show(x: int) = echo "int: ", x
@@ -793,7 +793,7 @@ show(10)
 show("hi")
 ```
 
-### Discardable Procedure Returns
+### Retornos descartáveis de procedures
 
 ```nim
 proc doSomething(): int {.discardable.} =
@@ -802,9 +802,9 @@ proc doSomething(): int {.discardable.} =
 doSomething()      # allowed now
 ```
 
-## Object-Oriented Programming
+## Programação orientada a objetos
 
-### Ref Objects and Inheritance {.row-span-2}
+### Objetos ref e herança {.row-span-2}
 
 ```nim
 type
@@ -828,9 +828,9 @@ speak(a)  # Creature makes a sound.
 speak(d)  # Fido barks!
 ```
 
-Use `ref object of RootObj` + `method` when you need runtime polymorphism.
+Use `ref object of RootObj` + `method` quando precisar de polimorfismo em runtime.
 
-### Procs as Methods
+### Procs como métodos
 
 ```nim
 type
@@ -845,7 +845,7 @@ inc(c)
 echo c.value  # 1
 ```
 
-### Constructor Procs
+### Procs construtoras
 
 ```nim
 type
@@ -860,7 +860,7 @@ let d = newDog("Fido", 3)
 echo d.name, " is ", d.age, " years old"
 ```
 
-### Type tests and Downcasting {.col-span-2}
+### Testes de tipo e downcasting {.col-span-2}
 
 ```nim
 type
@@ -881,11 +881,11 @@ if a of Dog:                       # runtime type check
 
 ```
 
-`x of Type` checks the dynamic type; `Type(x)` downcasts (unsafe if you lie).
+`x of Type` verifica o tipo dinâmico; `Type(x)` faz downcast (inseguro se você mentir).
 
-## Imports and Modules
+## Imports e módulos
 
-### Basic Imports
+### Imports básicos
 
 ```nim
 import std/math
@@ -893,9 +893,9 @@ import std/math
 echo sqrt(9.0) # 3.0
 ```
 
-See also: [Standard Library](https://nim-lang.org/docs/lib.html)
+Veja também: [Biblioteca padrão](https://nim-lang.org/docs/lib.html)
 
-### Importing Multiple Modules
+### Importando vários módulos
 
 ```nim
 import std/[strutils, sequtils]
@@ -904,7 +904,7 @@ echo "hi".toUpperAscii()    # "HI"
 echo @[1,2,3].mapIt(it * 2) # @[2, 4, 6]
 ```
 
-### Importing Specific Modules
+### Importando módulos específicos
 
 ```nim
 from std/strutils import toLowerAscii
@@ -912,7 +912,7 @@ from std/strutils import toLowerAscii
 echo toLowerAscii("ABC")  # "abc"
 ```
 
-### Renaming Modules
+### Renomeando módulos
 
 ```nim
 import std/random as rng
@@ -922,9 +922,9 @@ rng.randomize()
 echo rng.rand(1..10) # anywhere from 1 to 10
 ```
 
-_Don't forget to use randomize() if you're using the std/random library, or else you won't have randomness._
+_Não esqueça de usar randomize() se estiver usando a biblioteca std/random, senão você não terá aleatoriedade._
 
-### Creating Modules {.col-span-2}
+### Criando módulos {.col-span-2}
 
 ```nim
 # utils.nim
@@ -932,7 +932,7 @@ proc greet*(name: string) =
   echo "Hello, ", name
 ```
 
-(The asterisk means "export this procedure from the module".)
+(O asterisco significa "exportar este procedure do módulo".)
 
 ---
 
@@ -953,9 +953,9 @@ when isMainModule:
   run()  # Only runs when this file is the program entry point
 ```
 
-_Code inside when isMainModule: is skipped when the file is imported._
+_O código dentro de when isMainModule: é ignorado quando o arquivo é importado._
 
-### Re-exporting {.col-span-2}
+### Reexportando {.col-span-2}
 
 ```nim
 # utils.nim
@@ -965,7 +965,7 @@ export strutils    # re-export everything from strutils
 
 ---
 
-Now main.nim can use toUpperAscii directly, through utils.
+Agora o main.nim pode usar toUpperAscii diretamente, através de utils.
 
 ```nim
 # main.nim
@@ -974,7 +974,7 @@ import utils
 echo "hi".toUpperAscii()
 ```
 
-### Prelude Module {.col-span-3}
+### Módulo prelude {.col-span-3}
 
 ```nim
 import std/prelude
@@ -989,7 +989,7 @@ when not defined(js) or defined(nodejs):
   assert ($now()).startsWith "20"
 ```
 
-## Error Handling
+## Tratamento de erros
 
 ### Try - Except - Finally {.row-span-2}
 
@@ -1007,7 +1007,7 @@ finally:
   echo "This always runs"
 ```
 
-### Raising Exceptions
+### Lançando exceções
 
 ```nim
 type
@@ -1021,7 +1021,7 @@ proc loadData(name: string) =
 loadData("")  # raises MyError
 ```
 
-### `defer` for Cleanup
+### `defer` para limpeza
 
 ```nim
 proc processFile(path: string) =
@@ -1031,7 +1031,7 @@ proc processFile(path: string) =
   # work with f …
 ```
 
-### Try as Exception
+### Try como exceção
 
 ```nim
 import std/strutils
@@ -1042,7 +1042,7 @@ let result = try: parseInt("bad")
 echo result  # prints -1
 ```
 
-### Exception Tracking with raises
+### Rastreamento de exceções com raises
 
 ```nim
 proc riskyOperation() {.raises: [IOError].} =
@@ -1054,7 +1054,7 @@ proc riskyOperation() {.raises: [IOError].} =
 
 ## Enums
 
-### Basic Usage
+### Uso básico
 
 ```nim
 type
@@ -1067,7 +1067,7 @@ if d == north:
   echo "Going up!"
 ```
 
-### Enums and `case`
+### Enums e `case`
 
 ```nim
 # with the same Direction enum:
@@ -1081,7 +1081,7 @@ case d:
   of west:  echo "W"
 ```
 
-### Enum as an Ordinal
+### Enum como ordinal
 
 ```nim
 # with the same Direction enum:
@@ -1090,9 +1090,9 @@ echo succ(north)  # east
 echo pred(south)  # east
 ```
 
-## Iterators
+## Iteradores
 
-### Basic Iterator {.row-span-2}
+### Iterador básico {.row-span-2}
 
 ```nim
 iterator countUp(a, b: int): int =
@@ -1106,7 +1106,7 @@ for n in countUp(1, 5):
 # 1 2 3 4 5
 ```
 
-### Common Built-In Iterators
+### Iteradores embutidos comuns
 
 ```nim
 for i in countup(1, 3):
@@ -1116,7 +1116,7 @@ for i in countdown(3, 1):
   echo i               # 3 2 1
 ```
 
-### Defining your own Iterator {.row-span-2}
+### Definindo seu próprio iterador {.row-span-2}
 
 ```nim
 iterator evensUpTo(n: int): int =
@@ -1129,9 +1129,9 @@ for e in evensUpTo(10):
   echo e        # 0 2 4 6 8 10
 ```
 
-## Files & IO
+## Arquivos e IO
 
-### Check Paths and Existence {.row-span-2}
+### Verificar paths e existência {.row-span-2}
 
 ```nim
 import std/os
@@ -1146,7 +1146,7 @@ echo getCurrentDir()
 echo absolutePath("data.txt")
 ```
 
-### Read / Write Whole File {.row-span-1}
+### Ler / escrever o arquivo inteiro {.row-span-1}
 
 ```nim
 # Write whole file
@@ -1157,7 +1157,7 @@ let text = readFile("out.txt")
 echo text
 ```
 
-### Manual Open/Close with `defer` {.row-span-2}
+### Abrir/fechar manualmente com `defer` {.row-span-2}
 
 ```nim
 import std/syncio
@@ -1172,7 +1172,7 @@ when isMainModule:
   writeLog()
 ```
 
-### Read a File Line-By-Line
+### Ler um arquivo linha a linha
 
 ```nim
 for line in lines("data.txt"):
@@ -1181,7 +1181,7 @@ for line in lines("data.txt"):
 
 ## Generics
 
-### Generic Types and Procedures {.col-span-3}
+### Tipos e procedures genéricos {.col-span-3}
 
 ```nim
 type
@@ -1198,7 +1198,7 @@ echo a.value            # 10
 echo b.value            # hello
 ```
 
-## Templates and Macros
+## Templates e macros
 
 ### Templates
 

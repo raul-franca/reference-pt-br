@@ -9,25 +9,25 @@ tags:
   - css
   - abbr
 categories:
-  - Toolkit
+  - Ferramentas
 intro: |
-  [Emmet](https://emmet.io/) is a web-developer’s toolkit for boosting HTML & CSS code writing, which allows you to write large HTML code blocks at speed of light using well-known CSS selectors.
+  [Emmet](https://emmet.io/) é um kit de ferramentas do desenvolvedor web para acelerar a escrita de código HTML e CSS, que permite escrever grandes blocos de código HTML na velocidade da luz usando seletores CSS conhecidos.
 plugins:
   - copyCode
 ---
 
-## Emmet Syntax
+## Sintaxe do Emmet
 
-### Getting started
+### Primeiros passos
 
-Let us start to improve your development to the speed of light.
+Vamos começar a melhorar seu desenvolvimento na velocidade da luz.
 
-- [Emmet in Visual Studio Code](https://code.visualstudio.com/docs/editor/emmet) _(code.visualstudio.com)_
-- [Emmet 2 for Sublime Text](https://github.com/emmetio/sublime-text-plugin) _(github.com)_
-- [Emmet for Coda](https://emmet.io/download/coda/) _(emmet.io)_
-- [Emmet for Atom](https://github.com/emmetio/emmet-atom#readme) _(github.com)_
+- [Emmet no Visual Studio Code](https://code.visualstudio.com/docs/editor/emmet) _(code.visualstudio.com)_
+- [Emmet 2 para Sublime Text](https://github.com/emmetio/sublime-text-plugin) _(github.com)_
+- [Emmet para Coda](https://emmet.io/download/coda/) _(emmet.io)_
+- [Emmet para Atom](https://github.com/emmetio/emmet-atom#readme) _(github.com)_
 
-### Multiplication: \*
+### Multiplicação: \*
 
 <code>ul>li\*5</code>
 
@@ -41,7 +41,7 @@ Let us start to improve your development to the speed of light.
 </ul>
 ```
 
-### Child: >
+### Filho: >
 
 `nav>ul>li`
 
@@ -53,7 +53,7 @@ Let us start to improve your development to the speed of light.
 </nav>
 ```
 
-### Custom attributes {.col-span-2}
+### Atributos personalizados {.col-span-2}
 
 `p[title="Hello world"]`
 
@@ -73,7 +73,7 @@ Let us start to improve your development to the speed of light.
 <div a="value1" b="value2"></div>
 ```
 
-### Text: {}
+### Texto: {}
 
 `a{Click me}`
 
@@ -87,7 +87,7 @@ Let us start to improve your development to the speed of light.
 <p>Click <a href="">here</a> to continue</p>
 ```
 
-### ID and CLASS attributes {.row-span-2}
+### Atributos ID e CLASS {.row-span-2}
 
 `#header`
 
@@ -113,7 +113,7 @@ Let us start to improve your development to the speed of light.
 <p class="class1 class2 class3"></p>
 ```
 
-### Implicit tag names {.row-span-2}
+### Nomes de tags implícitos {.row-span-2}
 
 `.class`
 
@@ -145,7 +145,7 @@ Let us start to improve your development to the speed of light.
 </table>
 ```
 
-### Sibling: +
+### Irmão: +
 
 `div+p+bq`
 
@@ -155,7 +155,7 @@ Let us start to improve your development to the speed of light.
 <blockquote></blockquote>
 ```
 
-### Climb-up: ^
+### Subida: ^
 
 `div+div>p>span+em^bq`
 
@@ -177,7 +177,7 @@ Let us start to improve your development to the speed of light.
 <blockquote></blockquote>
 ```
 
-### Grouping: ()
+### Agrupamento: ()
 
 <code>div>(header>ul>li\*2>a)+footer>p</code>
 
@@ -215,7 +215,7 @@ Let us start to improve your development to the speed of light.
 </footer>
 ```
 
-### Indexing: $ {.col-span-2}
+### Indexação: $ {.col-span-2}
 
 <code>ul>li.item$\*3</code>
 
@@ -265,6 +265,6 @@ Let us start to improve your development to the speed of light.
 </ul>
 ```
 
-## Also see {.cols-1}
+## Veja também {.cols-1}
 
-- [Emmet Cheat sheet](https://docs.emmet.io/cheat-sheet/) _(docs.emmet.io)_
+- [Cheat sheet do Emmet](https://docs.emmet.io/cheat-sheet/) _(docs.emmet.io)_

@@ -6,14 +6,14 @@ tags:
   - container
   - virtual
 categories:
-  - Programming
+  - Programação
 intro: |
-  This is a quick reference cheat sheet for [Terraform](https://docs.docker.com/get-started/).
+  Este é um cheat sheet de referência rápida para o [Terraform](https://docs.docker.com/get-started/).
 plugins:
   - copyCode
 ---
 
-## HCL Syntax: {.cols-2}
+## Sintaxe HCL: {.cols-2}
 
 ```
 (Block Name)  (Resource Type)  (Resource Name)
@@ -29,15 +29,15 @@ plugins:
 
 ```
 
-### Variable Types
+### Tipos de variáveis
 
-- Simple types: number, string, bool, null.
+- Tipos simples: number, string, bool, null.
 
-- Complex types: Collection types: list, map, set Structural types: `object({<KEY> = <TYPE>, ...})`,
+- Tipos complexos: Tipos de coleção: list, map, set Tipos estruturais: `object({<KEY> = <TYPE>, ...})`,
   `tuple([<TYPE>, ...])`
 
-Order of Precedence: defaults < env vars < terraform.tfvars file < terraform.tfvars.json file < .auto.tfvars < command
-line (-var & -var-file)
+Ordem de precedência: defaults < env vars < arquivo terraform.tfvars < arquivo terraform.tfvars.json < .auto.tfvars < linha
+de comando (-var & -var-file)
 
 ```
 variable "<VAR NAME>" {
@@ -86,7 +86,7 @@ variable "egress_dsg" {
 }
 ```
 
-## Meta-Arguments
+## Meta-argumentos
 
 ### Loops
 
@@ -148,7 +148,7 @@ output "private_addresses"{
 
 ### depends_on
 
-if two resources depends on each other, depends_on specifies that dependency to enforce ordering
+se dois recursos dependem um do outro, depends_on especifica essa dependência para impor a ordenação
 
 ```
 resource "aws_iam_role_policy" "example" {
@@ -175,7 +175,7 @@ resource "aws_instance" "my_server" {
 
 ### lifecycle
 
-A set of meta arguments to control behavior specific resources
+Um conjunto de meta-argumentos para controlar o comportamento de recursos específicos
 
 ```
 resources "aws_instance" "server" {
@@ -194,13 +194,13 @@ resources "aws_instance" "server" {
 }
 ```
 
-### Conditionals
+### Condicionais
 
 `condition ? true_val : false_val`
 
-### Built-In functions
+### Funções nativas
 
-| Function                                   | Result                  |
+| Função                                     | Resultado               |
 | ------------------------------------------ | ----------------------- |
 | `max(5, 10, 9)`                            | 12                      |
 | `min(5, 10, 9)`                            | 5                       |
@@ -216,9 +216,9 @@ resources "aws_instance" "server" {
 | `cidr("10.1.2.240/28", 1)`                 | 10.1.2.241              |
 | `cidr("10.1.2.240/28", 14)`                | 10.1.2.254              |
 
-### Provider block
+### Bloco provider
 
-Details of the provider(s) being used. Includes information like access mechanisms, regional options, profile touse etc.
+Detalhes do(s) provider(s) em uso. Inclui informações como mecanismos de acesso, opções regionais, profile a usar etc.
 
 ```
 provider "aws" {
@@ -232,7 +232,7 @@ provider "aws" {
 }
 ```
 
-### Requiring Providers
+### Exigindo providers
 
 ```
 terraform {
@@ -247,10 +247,10 @@ terraform {
 }
 ```
 
-### Locals block
+### Bloco locals
 
-A local value assigns a name to an expression, so you can use the name multiple times within a module instead of
-repeating the expression
+Um valor local atribui um nome a uma expressão, para que você possa usar o nome várias vezes dentro de um módulo em vez
+de repetir a expressão
 
 ```
 locals {
@@ -265,7 +265,7 @@ locals {
     Owner   = local.owner
 ```
 
-### Output block
+### Bloco output
 
 ```
 output "api_base_url" {
@@ -282,9 +282,9 @@ output "api_base_url" {
 }
 ```
 
-### Data block
+### Bloco data
 
-Data sources that can be queried (cloud provider, local list, etc.)
+Fontes de dados que podem ser consultadas (cloud provider, lista local etc.)
 
 ```
 data "aws_ami" "example" {
@@ -298,7 +298,7 @@ data "aws_ami" "example" {
 }
 ```
 
-### Modules
+### Módulos
 
 ```
 module "myec2" {
@@ -313,9 +313,9 @@ module "myec2" {
 
 ### Backends
 
-A backend defines where Terraform stores its state data files.
+Um backend define onde o Terraform armazena seus arquivos de dados de estado.
 
-Available backends: local(default), remote, azurerm, consul, cos, gcs, http, Kubernetes, oss, pg, s3
+Backends disponíveis: local(padrão), remote, azurerm, consul, cos, gcs, http, Kubernetes, oss, pg, s3
 
 ```
 terraform {
@@ -329,32 +329,32 @@ terraform {
 }
 ```
 
-### Resource Addressing
+### Endereçamento de recursos
 
-| Example                                           | Description             |
+| Exemplo                                           | Descrição               |
 | ------------------------------------------------- | ----------------------- |
-| `[module path][resource info`                     | Resource path syntax    |
-| `module.<MODULE_PATH>[optional] module index`     | Module path syntax      |
-| `resource_type.user_defined_name[optional index]` | Resource spec syntax    |
-| `<RESOURCE_TYPE>.<NAME>`                          | List all images         |
-| `var.<NAME>`                                      | Input Variable          |
+| `[module path][resource info`                     | Sintaxe de path de recurso |
+| `module.<MODULE_PATH>[optional] module index`     | Sintaxe de path de módulo  |
+| `resource_type.user_defined_name[optional index]` | Sintaxe de especificação de recurso |
+| `<RESOURCE_TYPE>.<NAME>`                          | Lista todas as imagens  |
+| `var.<NAME>`                                      | Variável de entrada     |
 | `local.<NAME>`                                    | Locals                  |
-| `module.<MODULE_NAME>`                            | Child module outputs    |
-| `data.<DATA TYPE>.<NAME>`                         | Data blocks             |
-| `path.module`                                     | Location of expresssion |
-| `path.root`                                       | Root Module location    |
-| `terraform.workspace`                             | Current workspace       |
+| `module.<MODULE_NAME>`                            | Outputs de módulo filho |
+| `data.<DATA TYPE>.<NAME>`                         | Blocos data             |
+| `path.module`                                     | Localização da expressão |
+| `path.root`                                       | Localização do módulo root |
+| `terraform.workspace`                             | Workspace atual         |
 
 ---
 
 ## Terraform CLI
 
-<!-- I don't know what this means but it doesn't fit in a category and breaks the content -->
-<!-- I'm leaving it commented... -->
+<!-- Não sei o que isso significa, mas não se encaixa em uma categoria e quebra o conteúdo -->
+<!-- Vou deixar comentado... -->
 
-<!-- Create/Edit TF config file -> init -> plan -> validate -> apply -> destroy -->
+<!-- Criar/editar arquivo de config TF -> init -> plan -> validate -> apply -> destroy -->
 
-### Initialization
+### Inicialização
 
 ```sh
 terraform init [options]
@@ -365,9 +365,9 @@ terraform init [options]
     -migrate-state      # reconfigure backend & attempt to migrate any existing state
 ```
 
-### Planning
+### Planejamento
 
-Generates & review an execution plan
+Gera e revisa um plano de execução
 
 ```sh
 terraform plan [options]
@@ -384,7 +384,7 @@ terraform plan -refresh-only # updates state to match changes made outside of TF
 
 ```
 
-### Validation
+### Validação
 
 ```sh
 terraform validate      # Validates the config files for errors
@@ -393,7 +393,7 @@ terraform validate      # Validates the config files for errors
 
 ### Apply
 
-Executes changes to infra
+Executa alterações na infra
 
 ```sh
 terraform apply [options]
@@ -411,7 +411,7 @@ terraform plan -refresh-only # Updates statefile to accept changes made manually
 
 ### Destroy
 
-Destroy (deletes) Terraform managed infra. Same as `terraform apply -destroy `
+Destroy (exclui) a infra gerenciada pelo Terraform. O mesmo que `terraform apply -destroy `
 
 ```sh
 terraform destroy [options]
@@ -423,7 +423,7 @@ terraform destroy [options]
 terraform destroy -target aws_vpc.my_vpc -auto-approve
 ```
 
-Miscellaneous
+Diversos
 
 ```sh
 terraform state show aws_instance.my_vm
@@ -437,9 +437,9 @@ sudo apt install graphviz
 terraform graph | dot -Tpng > graph.png
 ```
 
-Logging
+Logs
 
-log levels = TRACE > DEBUG > INFO > WARN > ERROR
+níveis de log = TRACE > DEBUG > INFO > WARN > ERROR
 
 ```sh
 export TF_LOG_CORE=TRACE     # enable core logging
@@ -447,7 +447,7 @@ export TF_LOG_PROVIDER=TRACE # enable provider logging
 export TF_LOG_PATH=logs.txt  # to persist logs
 ```
 
-## Also See
+## Veja também
 
-- [Docs](https://developer.hashicorp.com/terraform/language)
-- [Good FCC Article](https://www.freecodecamp.org/news/terraform-certified-associate-003-study-notes/)
+- [Documentação](https://developer.hashicorp.com/terraform/language)
+- [Bom artigo da FCC](https://www.freecodecamp.org/news/terraform-certified-associate-003-study-notes/)

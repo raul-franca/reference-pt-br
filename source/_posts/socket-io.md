@@ -7,28 +7,28 @@ tags:
   - socket io
   - web
 categories:
-  - Programming
+  - Programação
 intro: |
-  Socket.IO is a JavaScript library for real-time web applications. It enables bi-directional, event-based communication between clients (typically browsers or native apps) and servers.
+  Socket.IO é uma biblioteca JavaScript para aplicações web em tempo real. Ela permite comunicação bidirecional baseada em eventos entre clientes (normalmente navegadores ou apps nativos) e servidores.
 plugins:
   - copyCode
 ---
 
-# Socket.IO Multi-Language Cheat Sheet (v4)
+# Cheat Sheet Multilinguagem do Socket.IO (v4)
 
-## Introduction
+## Introdução
 
-### Introduction
+### Introdução
 
-- [Socket.IO Official Website](https://socket.io/) _(socket.io)_
-- [Socket.IO Documentation (v4.1)](https://socket.io/docs/v4/) _(socket.io)_
-- [Socket.IO GitHub Repository](https://github.com/socketio/socket.io) _(github.com)_
-- [Getting Started with Socket.IO (Chat App Tutorial)](https://socket.io/get-started/chat/) _(socket.io)_
-- [FreeCodeCamp Socket.IO Tutorial](https://www.freecodecamp.org/news/socket-io-tutorial/) _(freecodecamp.org)_
+- [Site oficial do Socket.IO](https://socket.io/) _(socket.io)_
+- [Documentação do Socket.IO (v4.1)](https://socket.io/docs/v4/) _(socket.io)_
+- [Repositório do Socket.IO no GitHub](https://github.com/socketio/socket.io) _(github.com)_
+- [Primeiros passos com Socket.IO (tutorial de app de chat)](https://socket.io/get-started/chat/) _(socket.io)_
+- [Tutorial de Socket.IO do FreeCodeCamp](https://www.freecodecamp.org/news/socket-io-tutorial/) _(freecodecamp.org)_
 
-## Installation / Setup
+## Instalação / Configuração
 
-### Installation / Setup
+### Instalação / Configuração
 
 **JavaScript (Node.js)**
 
@@ -50,7 +50,7 @@ pip install python-socketio aiohttp
 implementation 'io.socket:socket.io-client:2.0.1'
 ```
 
-### Installation / Setup
+### Instalação / Configuração
 
 **Swift (iOS)**
 
@@ -70,7 +70,7 @@ Install-Package SocketIoClientDotNet
 npm install socket.io-client
 ```
 
-### Installation / Setup
+### Instalação / Configuração
 
 **Go**
 
@@ -88,18 +88,18 @@ cargo add socketio-client
 
 ---
 
-## Connecting / Setup
+## Conexão / Configuração
 
-### JavaScript (Browser Client then Node.js Server)
+### JavaScript (cliente no navegador e servidor Node.js)
 
-**Client**
+**Cliente**
 
 ```js
 import { io } from 'socket.io-client';
 const socket = io('http://localhost:3000');
 ```
 
-**Server**
+**Servidor**
 
 ```js
 const io = require('socket.io')(3000, {
@@ -110,9 +110,9 @@ io.on('connection', (socket) => {
 });
 ```
 
-### Python (Client then Server)
+### Python (cliente e servidor)
 
-**Client**
+**Cliente**
 
 ```python
 import socketio
@@ -120,7 +120,7 @@ sio = socketio.Client()
 sio.connect('http://localhost:3000')
 ```
 
-**Server**
+**Servidor**
 
 ```python
 import socketio, eventlet, flask
@@ -137,9 +137,9 @@ if __name__ == '__main__':
     eventlet.wsgi.server(eventlet.listen(('', 3000)), app)
 ```
 
-### Java (Client then Server)
+### Java (cliente e servidor)
 
-**Client**
+**Cliente**
 
 ```java
 IO.Options opts = new IO.Options();
@@ -147,7 +147,7 @@ Socket socket = IO.socket("http://localhost:3000", opts);
 socket.connect();
 ```
 
-**Server**
+**Servidor**
 
 ```java
 import io.socket.engineio.server.EngineIoServer;
@@ -163,9 +163,9 @@ io.on("connection", args -> {
 });
 ```
 
-### Swift (iOS Client then Server)
+### Swift (cliente iOS e servidor)
 
-**Client**
+**Cliente**
 
 ```swift
 let manager = SocketManager(
@@ -176,19 +176,19 @@ let socket = manager.defaultSocket
 socket.connect()
 ```
 
-**Server**
-_Server setups in Swift are uncommon; usually Node.js or Python is used._
+**Servidor**
+_Configurações de servidor em Swift são incomuns; normalmente usa-se Node.js ou Python._
 
-### C# (.NET Client then Server)
+### C# (.NET cliente e servidor)
 
-**Client**
+**Cliente**
 
 ```csharp
 var socket = IO.Socket("http://localhost:3000");
 socket.Connect();
 ```
 
-**Server**
+**Servidor**
 
 ```csharp
 using Fleck;
@@ -199,20 +199,20 @@ server.Start(socket =>
 });
 ```
 
-### React Native (Client)
+### React Native (cliente)
 
-**Client**
+**Cliente**
 
 ```js
 import io from 'socket.io-client';
 const socket = io('http://localhost:3000');
 ```
 
-_(Server side same as JavaScript above.)_
+_(O lado do servidor é o mesmo que em JavaScript acima.)_
 
-### Go (Client then Server)
+### Go (cliente e servidor)
 
-**Client**
+**Cliente**
 
 ```go
 import "github.com/googollee/go-socket.io-client"
@@ -222,7 +222,7 @@ socket, err := gosocketio.Dial(
 )
 ```
 
-**Server**
+**Servidor**
 
 ```go
 import (
@@ -239,9 +239,9 @@ http.Handle("/socket.io/", server)
 go http.ListenAndServe(":3000", nil)
 ```
 
-### Rust (Client then Server)
+### Rust (cliente e servidor)
 
-**Client**
+**Cliente**
 
 ```rust
 use socketio_client::ClientBuilder;
@@ -255,23 +255,23 @@ async fn run() -> Result<(), Box<dyn std::error::Error>> {
 }
 ```
 
-**Server**
-_Rust server support is experimental; commonly use Node.js/Python servers._
+**Servidor**
+_O suporte a servidor em Rust é experimental; normalmente use servidores Node.js/Python._
 
 ---
 
-## Emitting & Listening to Events
+## Emitindo e ouvindo eventos
 
-### JavaScript (Client then Server)
+### JavaScript (cliente e servidor)
 
-**Client**
+**Cliente**
 
 ```js
 socket.emit('msg', 'Hi');
 socket.on('reply', (data) => console.log('Reply:', data));
 ```
 
-**Server**
+**Servidor**
 
 ```js
 io.on('connection', (socket) => {
@@ -282,9 +282,9 @@ io.on('connection', (socket) => {
 });
 ```
 
-### Python (Client then Server)
+### Python (cliente e servidor)
 
-**Client**
+**Cliente**
 
 ```python
 sio.emit('msg', 'Hi')
@@ -294,7 +294,7 @@ def on_reply(data):
     print('Reply:', data)
 ```
 
-**Server**
+**Servidor**
 
 ```python
 @sio.event
@@ -303,16 +303,16 @@ def msg(sid, data):
     sio.emit('reply', 'Hello from server', to=sid)
 ```
 
-### Java (Client then Server)
+### Java (cliente e servidor)
 
-**Client**
+**Cliente**
 
 ```java
 socket.emit("msg", "Hi");
 socket.on("reply", args -> System.out.println("Reply: " + args[0]));
 ```
 
-**Server**
+**Servidor**
 
 ```java
 io.on("connection", args -> {
@@ -324,9 +324,9 @@ io.on("connection", args -> {
 });
 ```
 
-### Swift (Client then Server)
+### Swift (cliente e servidor)
 
-**Client**
+**Cliente**
 
 ```swift
 socket.emit("msg", "Hi")
@@ -335,19 +335,19 @@ socket.on("reply") { data, _ in
 }
 ```
 
-**Server**
-_Server side in Swift is rare; use Node.js/Python._
+**Servidor**
+_O lado do servidor em Swift é raro; use Node.js/Python._
 
-### C# (Client then Server)
+### C# (cliente e servidor)
 
-**Client**
+**Cliente**
 
 ```csharp
 socket.Emit("msg", "Hi");
 socket.On("reply", data => Console.WriteLine("Reply: " + data));
 ```
 
-**Server**
+**Servidor**
 
 ```csharp
 socket.OnMessage = message =>
@@ -357,9 +357,9 @@ socket.OnMessage = message =>
 };
 ```
 
-### Go (Client then Server)
+### Go (cliente e servidor)
 
-**Client**
+**Cliente**
 
 ```go
 socket.Emit("msg", "Hi")
@@ -368,7 +368,7 @@ socket.On("reply", func(msg string) {
 })
 ```
 
-**Server**
+**Servidor**
 
 ```go
 server.OnEvent("/", "msg", func(s socketio.Conn, msg string) {
@@ -377,25 +377,25 @@ server.OnEvent("/", "msg", func(s socketio.Conn, msg string) {
 })
 ```
 
-### Rust (Client then Server)
+### Rust (cliente e servidor)
 
-**Client**
+**Cliente**
 
 ```rust
 socket.emit("msg", Payload::String("Hi"));
 socket.on("reply", |payload| println!("Reply: {:?}", payload));
 ```
 
-**Server**
-_Experimental; typically use Node.js/Python._
+**Servidor**
+_Experimental; normalmente use Node.js/Python._
 
 ---
 
-## Broadcasting & Rooms
+## Broadcasting e rooms
 
-### Client (All Languages)
+### Cliente (todas as linguagens)
 
-- **Join a room:**
+- **Entrar em uma room:**
 
   ```js
   // JavaScript/Python/C#/etc.
@@ -403,7 +403,7 @@ _Experimental; typically use Node.js/Python._
   socket.on('msg', (data) => console.log('Room message:', data));
   ```
 
-### Server (All Languages)
+### Servidor (todas as linguagens)
 
 - **Node.js**
 
@@ -436,9 +436,9 @@ _Experimental; typically use Node.js/Python._
 
 ---
 
-## Disconnects & Errors
+## Desconexões e erros
 
-### Client (All Languages)
+### Cliente (todas as linguagens)
 
 ```js
 socket.on('disconnect', (reason) => console.log('Disconnected:', reason));
@@ -459,7 +459,7 @@ def connect_error(data):
 // Go client library varies; similar patterns apply.
 ```
 
-### Server (All Languages)
+### Servidor (todas as linguagens)
 
 ```js
 io.on('connection', (socket) => {
@@ -479,7 +479,7 @@ server.OnDisconnect("/", func(s socketio.Conn, reason string) {
 
 ## Namespaces
 
-### Client (All Languages)
+### Cliente (todas as linguagens)
 
 ```js
 const adminSocket = io('/admin');
@@ -489,7 +489,7 @@ const adminSocket = io('/admin');
 sio.connect('http://localhost:3000/admin', namespaces=['/admin'])
 ```
 
-### Server (All Languages)
+### Servidor (todas as linguagens)
 
 ```js
 io.of('/admin').on('connection', (socket) => {
@@ -505,9 +505,9 @@ server.Of("/admin").OnConnect(func(s socketio.Conn) {
 
 ---
 
-## Authentication (Basic Token)
+## Autenticação (token básico)
 
-### Client (All Languages)
+### Cliente (todas as linguagens)
 
 ```js
 const socket = io('http://localhost:3000', {
@@ -519,7 +519,7 @@ const socket = io('http://localhost:3000', {
 sio.connect('http://localhost:3000', auth={'token': 'abc'})
 ```
 
-### Server (All Languages)
+### Servidor (todas as linguagens)
 
 ```js
 io.use((socket, next) => {
@@ -530,19 +530,19 @@ io.use((socket, next) => {
 
 ---
 
-## Tips for Debugging & Logging
+## Dicas de debugging e logging
 
-### Client
+### Cliente
 
-- Log events:
+- Registre os eventos:
 
   ```js
   socket.onAny((event, ...args) => console.log(event, args));
   ```
 
-- Inspect network in browser devtools.
+- Inspecione a rede nas devtools do navegador.
 
-### Server
+### Servidor
 
 - **JavaScript**
 
@@ -558,18 +558,18 @@ io.use((socket, next) => {
   ```
 
 - **Go**
-  Print handler errors and use middleware for structured logs.
+  Imprima erros de handler e use middleware para logs estruturados.
 
 ---
 
-## Advanced Features
+## Recursos avançados
 
 ### Middleware
 
-**Client**
-_(Rarely needed)_
+**Cliente**
+_(Raramente necessário)_
 
-**Server**
+**Servidor**
 
 ```js
 io.use((socket, next) => {
@@ -585,9 +585,9 @@ server.Use(func(s socketio.Conn, next func()) {
 })
 ```
 
-### Binary Streaming
+### Streaming binário
 
-**Client**
+**Cliente**
 
 ```js
 fetch('/file')
@@ -595,7 +595,7 @@ fetch('/file')
   .then((buf) => socket.emit('file', buf));
 ```
 
-**Server**
+**Servidor**
 
 ```go
 server.OnEvent("/", "file", func(s socketio.Conn, data []byte) {
@@ -605,16 +605,16 @@ server.OnEvent("/", "file", func(s socketio.Conn, data []byte) {
 
 ---
 
-## Best Practices
+## Boas práticas
 
-# Implement reconnection with exponential backoff on the client.
+# Implemente reconexão com backoff exponencial no cliente.
 
-# Sanitize and validate all data on both sides.
+# Sanitize e valide todos os dados dos dois lados.
 
-# Use TLS in production and rotate authentication tokens frequently.
+# Use TLS em produção e rotacione os tokens de autenticação com frequência.
 
-# Separate concerns with namespaces and rooms.
+# Separe responsabilidades com namespaces e rooms.
 
-# Throttle high-frequency events and enable compression where possible.
+# Limite eventos de alta frequência e ative a compressão quando possível.
 
-> Official docs: [https://socket.io/docs/v4/](https://socket.io/docs/v4/)
+> Documentação oficial: [https://socket.io/docs/v4/](https://socket.io/docs/v4/)

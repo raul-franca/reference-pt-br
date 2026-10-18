@@ -8,98 +8,98 @@ tags:
   - software development kits
   - sdk
 categories:
-  - Linux Command
+  - Comandos Linux
 intro: |
-  This cheatsheet provides the most commonly used SDKMAN! command line instructions
+  Este cheat sheet traz os comandos de linha de comando do SDKMAN! mais usados
 plugins:
   - copyCode
 ---
 
-## Getting Started {.cols-2}
+## Primeiros passos {.cols-2}
 
-### Installing SDKMAN!
+### Instalando o SDKMAN!
 
-Download SDKMAN!
+Baixe o SDKMAN!
 
 ```shell script
 $ curl -s "https://get.sdkman.io" | bash
 ```
 
-Install SDKMAN!
+Instale o SDKMAN!
 
 ```shell script
 $ source "$HOME/.sdkman/bin/sdkman-init.sh"
 ```
 
-Check the version
+Verifique a versão
 
 ```shell script
 $ sdk version
 ```
 
-Update
+Atualize
 
 ```shell script
 $ sdk update
 ```
 
-Help
+Ajuda
 
 ```shell script
 $ sdk help
 ```
 
-### Installing and managing candidates {.row-span-2}
+### Instalando e gerenciando candidatos {.row-span-2}
 
-List all candidates
+Liste todos os candidatos
 
 ```shell script
 $ sdk list
 ```
 
-List versions of a candidate
+Liste as versões de um candidato
 
 ```shell script
 $ sdk list <candidate>
 ```
 
-Install a candidate with the latest version
+Instale um candidato na versão mais recente
 
 ```shell script
 $ sdk install <candidate>
 ```
 
-Install a candidate with specific version
+Instale um candidato em uma versão específica
 
 ```shell script
 $ sdk install <candidate> <version>
 ```
 
-Temporarily switch between versions
+Alterne temporariamente entre versões
 
 ```shell script
 $ sdk use <candidate> <version>
 ```
 
-Permanently switch to version
+Alterne permanentemente para uma versão
 
 ```shell script
 $ sdk default <candidate> <version>
 ```
 
-Display specific candidate version in use
+Exiba a versão específica de um candidato em uso
 
 ```shell script
 $ sdk current <candidate>
 ```
 
-Display all candidates versions in use
+Exiba as versões de todos os candidatos em uso
 
 ```shell script
 $ sdk current
 ```
 
-Remove a candidate
+Remova um candidato
 
 ```shell script
 $ sdk uninstall <candidate> <version>

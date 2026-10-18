@@ -1,4 +1,4 @@
-# OS generated files #
+# Arquivos gerados pelo SO #
 ######################
 .DS_Store
 .DS_Store?
@@ -11,7 +11,7 @@ nohup.out
 *.tmp
 *.temp
 
-# Environment files #
+# Arquivos de ambiente #
 ######################
 .env
 .env.local
@@ -32,7 +32,7 @@ yarn-error.log*
 lerna-debug.log*
 .pnpm-debug.log*
 
-# Editor files #
+# Arquivos de editor #
 ######################
 .idea/
 .vscode/
@@ -61,14 +61,14 @@ coverage/
 .tern-port
 package-lock.json
 
-# Testing #
+# Testes #
 ######################
 .jest/
 .coverage/
 junit.xml
 test-results/
 
-# Build artifacts #
+# Artefatos de build #
 ######################
 themes/coo/source/css/style.css
 public/
@@ -76,13 +76,13 @@ db.json
 *.tgz
 *.tar.gz
 
-# Security #
+# Segurança #
 ######################
 .npmrc
 .yarnrc
 .pnpm-store/
 
-# Misc #
+# Diversos #
 ######################
 .eslintcache
 .stylelintcache

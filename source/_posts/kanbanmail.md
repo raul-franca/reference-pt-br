@@ -7,77 +7,77 @@ tags:
   -
   -
 categories:
-  - Keyboard Shortcuts
+  - Atalhos de Teclado
 intro: |
-  A visual cheat-sheet for the 29 keyboard shortcuts found in KanbanMail
+  Um cheat sheet visual para os 29 atalhos de teclado do KanbanMail
 ---
 
-## Keyboard Shortcuts
+## Atalhos de Teclado
 
 ### Global
 
-| Shortcut   | Action            |
-| ---------- | ----------------- |
-| `Ctrl` `\` | Toggle split view |
+| Atalho     | Ação                     |
+| ---------- | ------------------------ |
+| `Ctrl` `\` | Alternar visualização dividida |
 
 {.shortcuts}
 
-### Board
+### Quadro
 
-| Shortcut   | Action                                       |
-| ---------- | -------------------------------------------- |
-| `C`        | Open composer                                |
-| `Ctrl` `N` | New note in the to-do column                 |
-| `/`        | Focus the search bar                         |
-| `Esc`      | Clear search, if it's on                     |
-| `1-5`      | Select the first thread in column \<number\> |
-
-{.shortcuts}
-
-### Email {.row-span-2}
-
-| Shortcut    | Action                                   |
-| ----------- | ---------------------------------------- |
-| `S`         | Star or unstar                           |
-| `I`         | Mark as important or not important       |
-| `U`         | Mark as read or unread                   |
-| `Shift` `P` | Pin                                      |
-| `R`         | Reply                                    |
-| `A`         | Reply all                                |
-| `F`         | Forward                                  |
-| `E`         | Move to archived                         |
-| `1-5`       | Move to column \<number\>                |
-| `Shift` `3` | Move to trash                            |
-| `P`         | Go to the previous message in the thread |
-| `N`         | Go to the next message in the thread     |
-| `Shift` `U` | Unsubscribe                              |
-| `Enter`     | Open selected thread                     |
-| `Esc`       | Close thread viewer, if open             |
-| `Esc`       | Clear selected threads                   |
+| Atalho     | Ação                                          |
+| ---------- | --------------------------------------------- |
+| `C`        | Abrir compositor                              |
+| `Ctrl` `N` | Nova nota na coluna de tarefas                |
+| `/`        | Focar a barra de pesquisa                     |
+| `Esc`      | Limpar a pesquisa, se estiver ativa           |
+| `1-5`      | Selecionar a primeira thread na coluna \<number\> |
 
 {.shortcuts}
 
-### Composer
+### E-mail {.row-span-2}
 
-| Shortcut       | Action         |
+| Atalho      | Ação                                      |
+| ----------- | ----------------------------------------- |
+| `S`         | Favoritar ou desfavoritar                 |
+| `I`         | Marcar como importante ou não importante  |
+| `U`         | Marcar como lida ou não lida              |
+| `Shift` `P` | Fixar                                     |
+| `R`         | Responder                                 |
+| `A`         | Responder a todos                         |
+| `F`         | Encaminhar                                |
+| `E`         | Mover para arquivados                     |
+| `1-5`       | Mover para a coluna \<number\>             |
+| `Shift` `3` | Mover para a lixeira                      |
+| `P`         | Ir para a mensagem anterior na thread     |
+| `N`         | Ir para a próxima mensagem na thread      |
+| `Shift` `U` | Cancelar inscrição                        |
+| `Enter`     | Abrir thread selecionada                  |
+| `Esc`       | Fechar o visualizador de thread, se aberto |
+| `Esc`       | Limpar threads selecionadas               |
+
+{.shortcuts}
+
+### Compositor
+
+| Atalho         | Ação           |
 | -------------- | -------------- |
-| `Ctrl` `Enter` | Send email     |
-| `Ctrl` `S`     | Save as draft  |
-| `Esc`          | Close composer |
+| `Ctrl` `Enter` | Enviar e-mail  |
+| `Ctrl` `S`     | Salvar como rascunho |
+| `Esc`          | Fechar compositor |
 
 {.shortcuts}
 
 ### Editor
 
-| Shortcut   | Action        |
-| ---------- | ------------- |
-| `Ctrl` `B` | Bold          |
-| `Ctrl` `I` | Italic        |
-| `Ctrl` `U` | Underline     |
-| `Ctrl` `K` | Add hyperlink |
+| Atalho     | Ação              |
+| ---------- | ----------------- |
+| `Ctrl` `B` | Negrito           |
+| `Ctrl` `I` | Itálico           |
+| `Ctrl` `U` | Sublinhado        |
+| `Ctrl` `K` | Adicionar hyperlink |
 
 {.shortcuts}
 
-## Also see
+## Veja também
 
-- [Keyboard shortcuts for KanbanMail](https://guides.kanbanmail.app/keyboard-shortcuts) _(guides.kanbanmail.app)_
+- [Atalhos de teclado do KanbanMail](https://guides.kanbanmail.app/keyboard-shortcuts) _(guides.kanbanmail.app)_

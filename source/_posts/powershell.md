@@ -6,48 +6,48 @@ tags:
   - script
   - windows
 categories:
-  - Programming
-  - Operating System
-intro: This is a quick reference cheat sheet to getting started with PowerShell scripting.
+  - Programação
+  - Sistema Operacional
+intro: Este é um cheat sheet de referência rápida para começar com scripts em PowerShell.
 plugins:
   - copyCode
 ---
 
-## Basic Commands
+## Comandos básicos
 
-### Helper Commands
+### Comandos auxiliares
 
-**_Powershell follows Verb-Noun format for their commands._**
+**_O PowerShell segue o formato Verbo-Substantivo em seus comandos._**
 
-Some common Verbs:
+Alguns verbos comuns:
 
-| Verb    | Description                                       |
+| Verbo   | Descrição                                         |
 | ------- | ------------------------------------------------- |
-| Get     | Used to retrieve information.                     |
-| Set     | Used to configure or change settings.             |
-| New     | Used to create new instances of objects.          |
-| Remove  | Used to delete or remove items.                   |
-| Invoke  | Used to execute a specific action or operation.   |
-| Start   | Used to initiate a process or operation.          |
-| Stop    | Used to halt or terminate a process or operation. |
-| Enable  | Used to activate or enable a feature.             |
-| Disable | Used to deactivate or disable a feature.          |
-| Test    | Used to perform tests or checks.                  |
-| Update  | Used to update or refresh data or configurations. |
+| Get     | Usado para recuperar informações.                 |
+| Set     | Usado para configurar ou alterar definições.      |
+| New     | Usado para criar novas instâncias de objetos.     |
+| Remove  | Usado para excluir ou remover itens.              |
+| Invoke  | Usado para executar uma ação ou operação específica. |
+| Start   | Usado para iniciar um processo ou operação.       |
+| Stop    | Usado para interromper ou encerrar um processo ou operação. |
+| Enable  | Usado para ativar ou habilitar um recurso.        |
+| Disable | Usado para desativar ou desabilitar um recurso.   |
+| Test    | Usado para realizar testes ou verificações.       |
+| Update  | Usado para atualizar ou recarregar dados ou configurações. |
 
-Lists available modules
+Lista os módulos disponíveis
 
 ```powershell
 Get-Module --ListAvailable
 ```
 
-Lists available cmdlets and functions.
+Lista os cmdlets e funções disponíveis.
 
 ```powershell
 Get-Command -Module ActiveDirectory
 ```
 
-Retrieves help
+Obtém ajuda
 
 ```powershell
 Get-Help <cmd>
@@ -55,27 +55,27 @@ Get-Help <cmd> -Examples
 Get-Help -Name Get-Process -Parameter Id
 ```
 
-Lists aliases and their corresponding cmdlet names.
+Lista os aliases e seus nomes de cmdlet correspondentes.
 
 ```powershell
 Get-Alias | Select-Object Name, Definition
 ```
 
-**Get-Member:** Displays the properties and methods of objects.
+**Get-Member:** Exibe as propriedades e métodos dos objetos.
 
 ```powershell
 Get-Process | Get-Member
 ```
 
-### Object Manipulation {.col-span-2}
+### Manipulação de objetos {.col-span-2}
 
-**Select-Object:** Selects specific properties from objects or customizes their display.
+**Select-Object:** Seleciona propriedades específicas de objetos ou personaliza sua exibição.
 
 ```powershell
 Get-Process | Select-Object Name, CPU
 ```
 
-**Where-Object:** Filters objects based on specified conditions.
+**Where-Object:** Filtra objetos com base em condições especificadas.
 
 ```powershell
 Get-Service | Where-Object { $PSItem.Status -eq 'Running' }
@@ -83,38 +83,38 @@ Get-Service | Where-Object { $PSItem.Status -eq 'Running' }
 Get-Service | ? { $_.Status -eq 'Running' }
 ```
 
-**Measure-Object:** Calculates statistics, like sum, average, and count, for object properties.
+**Measure-Object:** Calcula estatísticas, como soma, média e contagem, para propriedades de objetos.
 
 ```powershell
 Get-Process | Measure-Object -Property WorkingSet -Sum
 ```
 
-**ForEach-Object:** Performs an operation on each object in a collection. (BEAWARE: Below command will prefix of
-files/folder in the current dir)
+**ForEach-Object:** Realiza uma operação em cada objeto de uma coleção. (ATENÇÃO: o comando abaixo adiciona um
+prefixo aos arquivos/pastas do diretório atual)
 
 ```powershell
 Get-ChildItem | ForEach-Object { Rename-Item $_ -NewName "Prefix_$_" }
 ```
 
-**Sort-Object:** Sorts objects by specified properties.
+**Sort-Object:** Ordena objetos pelas propriedades especificadas.
 
 ```powershell
 Get-ChildItem | Sort-Object Length -Descending
 ```
 
-**Format-Table:** Formats output as a table with specified columns.
+**Format-Table:** Formata a saída como uma tabela com as colunas especificadas.
 
 ```powershell
 Get-Service | Format-Table -AutoSize  # ft alias
 ```
 
-**Format-List:** Formats output as a list of properties and values.
+**Format-List:** Formata a saída como uma lista de propriedades e valores.
 
 ```powershell
 Get-Process | Format-List -Property Name, CPU  # fl alias
 ```
 
-### FileSystem {.col-span-2}
+### Sistema de arquivos {.col-span-2}
 
 ```powershell
 New-Item -path file.txt -type 'file' -value 'contents'
@@ -135,7 +135,7 @@ Get-Process | Export-Csv -Path "processes.csv"  # Output to csv
 $data = Import-Csv -Path "data.csv"             # Import from csv
 ```
 
-## System Management
+## Gerenciamento do sistema
 
 ### Windows Management Instrumentation {.col-span-2}
 
@@ -161,7 +161,7 @@ Get-CimInstance -Namespace root -ClassName __NAMESPACE
 
 ```
 
-### Network Management
+### Gerenciamento de rede
 
 ```powershell
 # Test network connectivity to a remote host
@@ -181,7 +181,7 @@ Test-NetConnection google.com -Port 80
 
 ```
 
-### User & Group Management {.col-span-2}
+### Gerenciamento de usuários e grupos {.col-span-2}
 
 ```powershell
 # Retrieve local user account information
@@ -200,7 +200,7 @@ Get-LocalGroup
 Add-LocalGroupMember -Group Administrators -Member UserToAdd
 ```
 
-### Security & Permissions
+### Segurança e permissões
 
 ```powershell
 # Retrieve access control lists for file/dir
@@ -210,7 +210,7 @@ Get-Acl C:\Path\To\File.txt
 Set-Acl -Path C:\Path\To\File.txt -AclObject $aclObject
 ```
 
-### Registry Management {.col-span-2}
+### Gerenciamento do registro {.col-span-2}
 
 ```powershell
 # Retrieve registry key values
@@ -231,9 +231,9 @@ Test-Path "HKLM:\Software\MyApp"
 
 ## Scripting
 
-### Variables {.col-span-2}
+### Variáveis {.col-span-2}
 
-Initializing a variable with/without a specified type:
+Inicializando uma variável com/sem um tipo especificado:
 
 ```powershell
 $var = 0
@@ -251,7 +251,7 @@ $arrayvar = @('va1','va2')
 $dict = @{k1 = 'test'; k2 = 'best'}
 ```
 
-Variable Commands
+Comandos de variável
 
 ```powershell
 New-Variable -Name FirstName -Value Trevor
@@ -266,9 +266,9 @@ Remove-Variable -Name firstname
 Remove-Variable -Name firstname -Force
 ```
 
-Variable types int32, int64, string, bool
+Tipos de variável: int32, int64, string, bool
 
-### Operators
+### Operadores
 
 ```powershell
 # operators
@@ -299,9 +299,9 @@ $regex.Matches('this is test').Value
 
 ```
 
-### Structure
+### Estrutura
 
-#### I/O operation
+#### Operação de I/O
 
 ```powershell
 "This displays a string"
@@ -315,7 +315,7 @@ $pwd = Read-host "password" -asSecureString
 Clear-Host
 ```
 
-#### Flow Controls
+#### Controles de fluxo
 
 ```powershell
 IF(<#Condition#>){
@@ -336,9 +336,9 @@ Do{}While()
 
 ```
 
-### Function / Modules {.row-span-2}
+### Funções / Módulos {.row-span-2}
 
-#### Example 1
+#### Exemplo 1
 
 ```powershell
 function funcname{
@@ -354,7 +354,7 @@ function funcname{
 $var = funcname -user pcb
 ```
 
-#### Example 2
+#### Exemplo 2
 
 ```powershell
 function Get-EvenNumbers {
@@ -375,7 +375,7 @@ function Get-EvenNumbers {
 
 ```
 
-#### Modules
+#### Módulos
 
 ```powershell
 # PowerShell looks module in the path
@@ -399,15 +399,15 @@ New-Module -Name trevor -ScriptBlock {
 
 ```
 
-### Tips
+### Dicas
 
-- In most of the languages, escape character is backslash **\\** whereas in PowerShell it is backtick **`**
+- Na maioria das linguagens, o caractere de escape é a barra invertida **\\**, enquanto no PowerShell é o acento grave (backtick) **`**
 
 ```powershell
 
 ```
 
-## Also see {.cols-1}
+## Veja também {.cols-1}
 
 - [Microsoft PowerShell](https://learn.microsoft.com/en-us/powershell/scripting/samples/sample-scripts-for-administration?view=powershell-7.3)
   _(learn.microsoft.com)_

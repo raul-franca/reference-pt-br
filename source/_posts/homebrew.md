@@ -6,126 +6,126 @@ tags:
   - packages manager
   - macos
 categories:
-  - Toolkit
-intro: This is a quick reference cheat sheet to getting started with homebrew.
+  - Ferramentas
+intro: Este é um cheat sheet de referência rápida para começar com o Homebrew.
 plugins:
   - copyCode
 ---
 
-## Getting Started
+## Primeiros passos
 
-### Install
+### Instalação
 
-If not installed, install Command Line Tools (CLT)
+Se ainda não estiver instalado, instale as Command Line Tools (CLT)
 
 ```bash
 xcode-select --install
 ```
 
-Install Homebrew :
+Instale o Homebrew:
 
 ```bash {.wrap}
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-[Official Website](https://brew.sh/) {.link-arrow}
+[Site oficial](https://brew.sh/) {.link-arrow}
 
-### Commands
+### Comandos
 
 |                            |                                        |
 | -------------------------- | -------------------------------------- |
-| `brew install git`         | Install a package                      |
-| `brew uninstall git`       | Uninstall a package                    |
-| `brew upgrade git`         | Upgrade package                        |
-| `brew unlink git`          | Unlink                                 |
-| `brew link git`            | Link                                   |
-| `brew list --versions git` | List the installed versions of package |
+| `brew install git`         | Instala um pacote                      |
+| `brew uninstall git`       | Desinstala um pacote                   |
+| `brew upgrade git`         | Atualiza o pacote                      |
+| `brew unlink git`          | Desfaz o link                          |
+| `brew link git`            | Cria o link                            |
+| `brew list --versions git` | Lista as versões instaladas do pacote  |
 
-### Help
+### Ajuda
 
-Display the version of Homebrew.
+Exibe a versão do Homebrew.
 
 ```bash
 brew --version
 ```
 
-Print Help Information
+Exibe as informações de ajuda.
 
 ```bash
 brew help
 ```
 
-Print Help Info for a brew command
+Exibe as informações de ajuda de um comando do brew.
 
 ```bash
 brew help <sub-command>
 ```
 
-Check system for potential problems.
+Verifica o sistema em busca de possíveis problemas.
 
 ```bash
 brew doctor
 ```
 
-### Updates
+### Atualizações
 
-Fetch latest version of homebrew and formula
+Busca a versão mais recente do Homebrew e das formulae.
 
 ```bash
 brew update
 ```
 
-Show formulae with an updated version available
+Mostra as formulae com versão atualizada disponível.
 
 ```bash
 brew outdated
 ```
 
-Upgrade all outdated and unpinned brews
+Atualiza todos os brews desatualizados e não fixados.
 
 ```bash
 brew upgrade
 ```
 
-Upgrade only the specified brew
+Atualiza apenas o brew especificado.
 
 ```bash
 brew upgrade <formula>
 ```
 
-Prevent the specified formulae from being upgraded
+Impede que as formulae especificadas sejam atualizadas.
 
 ```bash
 brew pin <formula>
 ```
 
-Allow the specified formulae to be upgraded.
+Permite que as formulae especificadas sejam atualizadas.
 
 ```bash
 brew unpin <formula>
 ```
 
-### Repositories
+### Repositórios
 
-List all the current tapped repositories (taps)
+Lista todos os repositórios atualmente adicionados via tap (taps).
 
 ```bash
 brew tap
 ```
 
-Tap a formula repository from GitHub using https for tap https://github.com/user/homebrew-repo
+Adiciona um repositório de formulae do GitHub via https para o tap https://github.com/user/homebrew-repo
 
 ```bash
 brew tap <user/repo>
 ```
 
-Tap a formula repository from the specified URL
+Adiciona um repositório de formulae a partir da URL especificada.
 
 ```bash
 brew tap <user/repo> <URL>
 ```
 
-Remove the given tap from the repository
+Remove o tap informado do repositório.
 
 ```bash
 brew untap <user/repo>
@@ -133,95 +133,95 @@ brew untap <user/repo>
 
 ### Cask
 
-Tap the Cask repository from GitHub.
+Adiciona o repositório Cask a partir do GitHub.
 
 ```bash
 brew tap homebrew/cask
 ```
 
-List all the installed casks .
+Lista todos os casks instalados.
 
 ```bash
 brew list --cask
 ```
 
-Search all known casks based on the substring text.
+Busca todos os casks conhecidos com base no texto (substring).
 
 ```bash
 brew search <text>
 ```
 
-Install the given cask.
+Instala o cask informado.
 
 ```bash
 brew install --cask <cask>
 ```
 
-Reinstalls the given Cask
+Reinstala o Cask informado.
 
 ```bash
 brew reinstall --cask <cask>
 ```
 
-Uninstall the given cask.
+Desinstala o cask informado.
 
 ```bash
 brew uninstall --cask <cask>
 ```
 
-### Search, Install, Remove
+### Busca, instalação e remoção
 
-List all the installed formulae.
+Lista todas as formulae instaladas.
 
 ```bash
 brew list
 ```
 
-Display all locally available formulae for brewing.
+Exibe todas as formulae disponíveis localmente para instalação.
 
 ```bash
 brew search
 ```
 
-Perform a substring search of formulae names for brewing.
+Realiza uma busca por substring nos nomes das formulae disponíveis.
 
 ```bash
 brew search <text>
 ```
 
-Display information about the formula.
+Exibe informações sobre a formula.
 
 ```bash
 brew info <formula>
 ```
 
-Install the formula.
+Instala a formula.
 
 ```bash
 brew install <formula>
 ```
 
-Uninstall the formula.
+Desinstala a formula.
 
 ```bash
 brew uninstall <formula>
 ```
 
-### Cleanup
+### Limpeza
 
-Remove older versions of installed formulae.
+Remove versões mais antigas das formulae instaladas.
 
 ```bash
 brew cleanup
 ```
 
-Remove older versions of specified formula.
+Remove versões mais antigas da formula especificada.
 
 ```bash
 brew cleanup <formula>
 ```
 
-Display all formula that will be removed (dry run)
+Exibe todas as formulae que serão removidas (dry run)
 
 ```bash
 brew cleanup -n

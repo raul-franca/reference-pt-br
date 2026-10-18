@@ -6,29 +6,29 @@ tags:
   - ts
   - web
 categories:
-  - Programming
+  - Programação
 intro: |
-  A TypeScript cheat sheet with the most important concepts, functions, methods, and more. A complete quick reference for beginners.
+  Um cheat sheet de TypeScript com os conceitos, funções, métodos e muito mais importantes. Uma referência rápida completa para iniciantes.
 plugins:
   - copyCode
   - runCode
 ---
 
-## Getting Started
+## Primeiros passos
 
-### Installing the Compiler
+### Instalando o compilador
 
 ```shell
 npm install typescript --save-dev
 npm tsc
 ```
 
-### Introduction
+### Introdução
 
-TypeScript is a superset of JavaScript that adds **static typing**, **interfaces**, and **compile-time error checking**. It compiles down to plain JavaScript.
+TypeScript é um superset do JavaScript que adiciona **tipagem estática**, **interfaces** e **verificação de erros em tempo de compilação**. Ele compila para JavaScript puro.
 - [TypeScript Handbook](https://www.typescriptlang.org/docs/)
 
-### Basic Types
+### Tipos básicos
 
 ```typescript
 let age: number = 25;
@@ -49,7 +49,7 @@ let fruits: Array<string> = ["apple", "banana"];
 let mixed: (string | number)[] = ["one", 2, "three"];
 ```
 
-### Tuples
+### Tuplas
 
 ```typescript
 let person: [string, number];
@@ -75,7 +75,7 @@ enum Status {
 }
 ```
 
-### Type Aliases
+### Aliases de tipo
 
 ```typescript
 type ID = string | number;
@@ -97,7 +97,7 @@ interface User {
 const user: User = { name: "Bob", age: 25, id: 1 };
 ```
 
-### Extending Interfaces
+### Estendendo interfaces
 
 ```typescript
 interface Animal {
@@ -111,7 +111,7 @@ interface Dog extends Animal {
 const dog: Dog = { name: "Fido", breed: "Labrador" };
 ```
 
-### Functions
+### Funções
 
 ```typescript
 function greet(name: string): string {
@@ -121,7 +121,7 @@ function greet(name: string): string {
 const add = (a: number, b: number): number => a + b;
 ```
 
-### Optional & Default Parameters
+### Parâmetros opcionais e padrão
 
 ```typescript
 function log(message: string, userId?: string) {
@@ -133,7 +133,7 @@ function multiply(a: number, b: number = 2) {
 }
 ```
 
-### Rest Parameters
+### Parâmetros rest
 
 ```typescript
 function sum(...numbers: number[]): number {
@@ -141,7 +141,7 @@ function sum(...numbers: number[]): number {
 }
 ```
 
-### Function Overloads
+### Sobrecargas de função
 
 ```typescript
 function combine(a: number, b: number): number;
@@ -151,7 +151,7 @@ function combine(a: any, b: any): any {
 }
 ```
 
-### Union & Intersection Types
+### Tipos de união e interseção
 
 ```typescript
 type Status = "success" | "error" | "loading";
@@ -162,7 +162,7 @@ type AdminInfo = { admin: boolean };
 type AdminUser = UserInfo & AdminInfo;
 ```
 
-### Literal Types
+### Tipos literais
 
 ```typescript
 type Alignment = "left" | "center" | "right";
@@ -180,7 +180,7 @@ let num = identity<number>(42);
 let str = identity("Hello");
 ```
 
-### Generic Constraints
+### Restrições de generics
 
 ```typescript
 interface Lengthwise {
@@ -192,7 +192,7 @@ function logLength<T extends Lengthwise>(arg: T): void {
 }
 ```
 
-### Generic Interfaces
+### Interfaces genéricas
 
 ```typescript
 interface GenericIdentityFn<T> {
@@ -219,7 +219,7 @@ const alice = new Person("Alice");
 alice.greet();
 ```
 
-### Access Modifiers
+### Modificadores de acesso
 
 ```typescript
 class Car {
@@ -235,7 +235,7 @@ class Car {
 }
 ```
 
-### Abstract Classes
+### Classes abstratas
 
 ```typescript
 abstract class Animal {
@@ -252,7 +252,7 @@ class Dog extends Animal {
 }
 ```
 
-### Implements Interface
+### Implementa interface
 
 ```typescript
 interface Vehicle {
@@ -266,21 +266,21 @@ class Bike implements Vehicle {
 }
 ```
 
-### Type Assertions
+### Asserções de tipo
 
 ```typescript
 let someValue: unknown = "Hello TypeScript";
 let strLength: number = (someValue as string).length;
 ```
 
-### Nullish Coalescing
+### Coalescência nula
 
 ```typescript
 let input: string | null = null;
 let result = input ?? "Default";
 ```
 
-### Optional Chaining
+### Encadeamento opcional
 
 ```typescript
 const user = { profile: { name: "Alice" } };
@@ -300,7 +300,7 @@ namespace Utils {
 Utils.log("Hello");
 ```
 
-### Modules
+### Módulos
 
 ```typescript
 // math.ts
@@ -313,7 +313,7 @@ import { add } from "./math";
 console.log(add(2, 3));
 ```
 
-### Export Default
+### Export default
 
 ```typescript
 // logger.ts
@@ -329,7 +329,7 @@ const logger = new Logger();
 logger.log("Info");
 ```
 
-### Promises & Async/Await
+### Promises e async/await
 
 ```typescript
 async function fetchData(): Promise<string> {
@@ -339,7 +339,7 @@ async function fetchData(): Promise<string> {
 fetchData().then(console.log);
 ```
 
-### Typing Async Functions
+### Tipagem de funções assíncronas
 
 ```typescript
 interface User {
@@ -353,7 +353,7 @@ async function getUser(id: number): Promise<User> {
 }
 ```
 
-### Readonly & Record
+### Readonly e Record
 
 ```typescript
 interface Config {
@@ -364,9 +364,9 @@ type Point = Record<"x" | "y", number>;
 const origin: Point = { x: 0, y: 0 };
 ```
 
-## Advanced Features
+## Recursos avançados
 
-### Type Guards
+### Type guards
 
 ```typescript
 function isString(value: any): value is string {
@@ -382,7 +382,7 @@ function process(value: string | number) {
 }
 ```
 
-### Index Signatures
+### Assinaturas de índice
 
 ```typescript
 interface Dictionary {
@@ -392,14 +392,14 @@ interface Dictionary {
 const dict: Dictionary = { hello: "world" };
 ```
 
-### Mapped Types
+### Tipos mapeados
 
 ```typescript
 type Flags = { [K in "option1" | "option2"]: boolean };
 const flags: Flags = { option1: true, option2: false };
 ```
 
-### Conditional Types
+### Tipos condicionais
 
 ```typescript
 type NonNullable<T> = T extends null | undefined ? never : T;
@@ -418,7 +418,7 @@ anyValue = 5;
 console.log(anyValue.length); // No error, but risky
 ```
 
-### Never Type
+### Tipo never
 
 ```typescript
 function throwError(msg: string): never {
@@ -426,7 +426,7 @@ function throwError(msg: string): never {
 }
 ```
 
-### Decorators (Experimental)
+### Decorators (experimental)
 
 ```typescript
 function sealed(target: any) {
@@ -438,7 +438,7 @@ function sealed(target: any) {
 class SealedClass {}
 ```
 
-### Utility Types
+### Tipos utilitários
 
 ```typescript
 interface Todo {
@@ -467,7 +467,7 @@ type P = ReturnType<typeof f>;
 type Params = Parameters<(a: number, b: string) => void>;
 ```
 
-### Keyof and Typeof
+### Keyof e Typeof
 
 ```typescript
 interface Person {
@@ -481,15 +481,15 @@ const person = { name: "Alice", age: 30 };
 type PersonType = typeof person; // { name: string; age: number }
 ```
 
-### Infer Keyword
+### Palavra-chave infer
 
 ```typescript
 type ReturnType<T> = T extends (...args: any[]) => infer R ? R : any;
 ```
 
-## Conditionals and Loops
+## Condicionais e loops
 
-### if Statement
+### Instrução if
 
 ```typescript
 const max: number = 100;
@@ -498,13 +498,13 @@ if (max > 50) {
 }
 ```
 
-### Ternary Operator
+### Operador ternário
 
 ```typescript
 const isEven: boolean = (10 % 2 === 0) ? true : false;
 ```
 
-### Switch Statement
+### Instrução switch
 
 ```typescript
 const color: string = "red";
@@ -517,7 +517,7 @@ switch (color) {
 }
 ```
 
-### For Loop
+### Laço for
 
 ```typescript
 for (let i: number = 0; i < 5; i++) {
@@ -525,7 +525,7 @@ for (let i: number = 0; i < 5; i++) {
 }
 ```
 
-### While Loop
+### Loop while
 
 ```typescript
 let count: number = 0;
@@ -534,7 +534,7 @@ while (count < 5) {
 }
 ```
 
-### For...of Loop
+### Laço for...of
 
 ```typescript
 const arr: number[] = [1, 2, 3];
@@ -543,7 +543,7 @@ for (const num of arr) {
 }
 ```
 
-### For...in Loop
+### Laço for...in
 
 ```typescript
 const obj = { a: 1, b: 2 };
@@ -552,9 +552,9 @@ for (const key in obj) {
 }
 ```
 
-## Arrays and Iterables
+## Arrays e iteráveis
 
-### Array Methods
+### Métodos de array
 
 ```typescript
 const nums: number[] = [1, 2, 3];
@@ -569,7 +569,7 @@ const evens: number[] = nums.filter(n => n % 2 === 0);
 const sum: number = nums.reduce((acc, curr) => acc + curr, 0);
 ```
 
-### Readonly Arrays
+### Arrays readonly
 
 ```typescript
 const readOnlyNums: ReadonlyArray<number> = [1, 2, 3];
@@ -592,9 +592,9 @@ map.set("one", 1);
 map.get("one"); // 1
 ```
 
-## Objects
+## Objetos
 
-### Object Types
+### Tipos de objeto
 
 ```typescript
 const car: { type: string, mileage?: number } = {
@@ -602,7 +602,7 @@ const car: { type: string, mileage?: number } = {
 };
 ```
 
-### Indexable Types
+### Tipos indexáveis
 
 ```typescript
 interface StringArray {
@@ -612,7 +612,7 @@ interface StringArray {
 const myArray: StringArray = ["Bob", "Fred"];
 ```
 
-### Excess Property Checks
+### Verificação de propriedades em excesso
 
 ```typescript
 interface Square {
@@ -623,9 +623,9 @@ interface Square {
 // const redSquare = { color: "red", width: 100, height: 100 }; // Error if strict
 ```
 
-## Modules and Namespaces
+## Módulos e namespaces
 
-### Namespace with Internal Modules
+### Namespace com módulos internos
 
 ```typescript
 namespace Geometry {
@@ -639,7 +639,7 @@ namespace Geometry {
 }
 ```
 
-### Module Resolution
+### Resolução de módulos
 
 // tsconfig.json
 {
@@ -648,9 +648,9 @@ namespace Geometry {
   }
 }
 
-## Error Handling
+## Tratamento de erros
 
-### Try Catch
+### Try catch
 
 ```typescript
 try {
@@ -662,7 +662,7 @@ try {
 }
 ```
 
-### Custom Errors
+### Erros customizados
 
 ```typescript
 class CustomError extends Error {
@@ -672,29 +672,29 @@ class CustomError extends Error {
 }
 ```
 
-## TypeScript with JavaScript Features
+## TypeScript com recursos do JavaScript
 
-### Destructuring
+### Desestruturação
 
 ```typescript
 const [first, second]: [number, number] = [1, 2];
 const { name: userName, age }: { name: string, age: number } = { name: "Alice", age: 30 };
 ```
 
-### Spread Operator
+### Operador spread
 
 ```typescript
 const arr1: number[] = [1, 2];
 const arr2: number[] = [...arr1, 3, 4];
 ```
 
-### Template Literals
+### Template literals
 
 ```typescript
 const greeting: string = `Hello, ${name}`;
 ```
 
-### Arrow Functions
+### Arrow functions
 
 ```typescript
 const square = (x: number): number => x * x;

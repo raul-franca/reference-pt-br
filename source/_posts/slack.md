@@ -7,132 +7,132 @@ tags:
   -
   -
 categories:
-  - Keyboard Shortcuts
+  - Atalhos de Teclado
 intro: |
-  A visual cheat-sheet for the 62 keyboard shortcuts found in Slack
+  Um cheat sheet visual para os 62 atalhos de teclado do Slack
 ---
 
-## Keyboard Shortcuts
+## Atalhos de teclado
 
-### Navigation {.row-span-4}
+### Navegação {.row-span-4}
 
-| Shortcut             | Action                                         |
+| Atalho               | Ação                                           |
 | -------------------- | ---------------------------------------------- |
-| `Tab`                | Move focus to the next element                 |
-| `Shift` `Tab`        | Move focus to the previous element             |
-| `Up/Down`            | Move focus through messages in a channel or DM |
-| `F6`                 | Move focus to the next section                 |
-| `Shift` `F6`         | Move focus to the previous section             |
-| `Space`              | Take action or 'click' on buttons              |
-| `Enter`              | Take action or 'click' on links                |
-| `Esc`                | Close windows, menus, or the message field     |
-| `Ctrl` `+/-`         | Zoom in/out                                    |
-| `Home/PgUp`          | Scroll up                                      |
-| `End/PgDown`         | Scroll down                                    |
+| `Tab`                | Mova o foco para o próximo elemento            |
+| `Shift` `Tab`        | Mova o foco para o elemento anterior           |
+| `Up/Down`            | Mova o foco pelas mensagens de um canal ou DM  |
+| `F6`                 | Mova o foco para a próxima seção               |
+| `Shift` `F6`         | Mova o foco para a seção anterior              |
+| `Space`              | Execute a ação ou 'clique' nos botões          |
+| `Enter`              | Execute a ação ou 'clique' nos links           |
+| `Esc`                | Feche janelas, menus ou o campo de mensagem    |
+| `Ctrl` `+/-`         | Aumente/diminua o zoom                         |
+| `Home/PgUp`          | Role para cima                                 |
+| `End/PgDown`         | Role para baixo                                |
 | `Ctrl` `K`           | Quick Switcher                                 |
-| `Ctrl` `Shift` `K`   | Open direct messages menu                      |
-| `Ctrl` `Shift` `L`   | Browse all channels                            |
-| `Ctrl` `Shift` `T`   | Open All Threads view                          |
-| `Alt` `Up`           | Previous channel or DM                         |
-| `Alt` `Down`         | Next channel or DM                             |
-| `Alt` `Shift` `Up`   | Previous unread channel or DM                  |
-| `Alt` `Shift` `Down` | Next unread channel or DM                      |
-| `Alt` `Left`         | Previous channel or DM visited                 |
-| `Alt` `Right`        | Next channel or DM visited                     |
-| `Ctrl` `,`           | Preferences (desktop apps only)                |
-| `Ctrl` `.`           | Open or close right pane                       |
-| `Ctrl` `Shift` `I`   | Channel info pane                              |
-| `Ctrl` `Shift` `M`   | Activity                                       |
-| `Ctrl` `Shift` `E`   | Directory                                      |
-| `Ctrl` `Shift` `S`   | Starred Items                                  |
-| `Ctrl` `F`           | Search the current channel or conversation     |
-| `Ctrl` `G`           | Open previous search                           |
-| `Ctrl` `Shift` `F`   | Toggle full screen view                        |
+| `Ctrl` `Shift` `K`   | Abra o menu de mensagens diretas               |
+| `Ctrl` `Shift` `L`   | Navegue por todos os canais                    |
+| `Ctrl` `Shift` `T`   | Abra a visão All Threads                       |
+| `Alt` `Up`           | Canal ou DM anterior                           |
+| `Alt` `Down`         | Próximo canal ou DM                            |
+| `Alt` `Shift` `Up`   | Canal ou DM anterior não lido                  |
+| `Alt` `Shift` `Down` | Próximo canal ou DM não lido                   |
+| `Alt` `Left`         | Canal ou DM visitado anteriormente             |
+| `Alt` `Right`        | Próximo canal ou DM visitado                   |
+| `Ctrl` `,`           | Preferências (somente apps desktop)            |
+| `Ctrl` `.`           | Abra ou feche o painel direito                 |
+| `Ctrl` `Shift` `I`   | Painel de informações do canal                 |
+| `Ctrl` `Shift` `M`   | Atividade                                      |
+| `Ctrl` `Shift` `E`   | Diretório                                      |
+| `Ctrl` `Shift` `S`   | Itens com estrela                              |
+| `Ctrl` `F`           | Pesquise no canal ou na conversa atual         |
+| `Ctrl` `G`           | Abra a pesquisa anterior                       |
+| `Ctrl` `Shift` `F`   | Ative/desative a visualização em tela cheia    |
 
 {.shortcuts}
 
-### All Unreads navigation
+### Navegação em All Unreads
 
-| Shortcut                  | Action                                |
-| ------------------------- | ------------------------------------- |
-| `Ctrl` `Shift` `A`        | Open All Unreads view                 |
-| `Alt` `(click a message)` | Mark message as unread                |
-| `Left/Right`              | Move between channels                 |
-| `R`                       | Toggle current channel read or unread |
-
-{.shortcuts}
-
-### Switch workspaces
-
-| Shortcut             | Action                         |
-| -------------------- | ------------------------------ |
-| `Ctrl` `Shift` `Tab` | Switch to previous workspace   |
-| `Ctrl` `Tab`         | Switch to next workspace       |
-| `Ctrl` `[number]`    | Switch to a specific workspace |
+| Atalho                    | Ação                                                  |
+| ------------------------- | ----------------------------------------------------- |
+| `Ctrl` `Shift` `A`        | Abra a visão All Unreads                              |
+| `Alt` `(click a message)` | Marque a mensagem como não lida                       |
+| `Left/Right`              | Navegue entre canais                                  |
+| `R`                       | Alterne o canal atual entre lido e não lido           |
 
 {.shortcuts}
 
-### Mark messages read or unread
+### Alternar entre workspaces
 
-| Shortcut                  | Action                                             |
-| ------------------------- | -------------------------------------------------- |
-| `Esc`                     | Mark all messages in current channel or DM as read |
-| `Shift` `Esc`             | Mark all messages as read                          |
-| `Alt` `(click a message)` | Set a message as your oldest unread message        |
-
-{.shortcuts}
-
-### Message shortcuts {.row-span-2}
-
-| Shortcut           | Action                                   |
-| ------------------ | ---------------------------------------- |
-| `Up`               | Edit your last message                   |
-| `Shift` `Up`       | Select text to beginning of current line |
-| `Shift` `Down`     | Select text to end of current line       |
-| `Shift` `Enter`    | Create a new line in your message        |
-| `Ctrl` `Shift` `\` | Add emoji reactions to a message         |
-| `Ctrl` `B`         | Bold selected text                       |
-| `Ctrl` `I`         | Italicize selected text                  |
-| `Ctrl` `Shift` `X` | Strikethrough selected text              |
-| `Ctrl` `Shift` `>` | Quote selected text                      |
-| `Ctrl` `Shift` `C` | Codeblock selected text                  |
-| `Ctrl` `Shift` `7` | Turn selected text into a numbered list  |
-| `Ctrl` `Shift` `8` | Turn selected text into a bulleted list  |
-| `Ctrl` `Shift` `Y` | Set or edit your status                  |
+| Atalho               | Ação                            |
+| -------------------- | ------------------------------- |
+| `Ctrl` `Shift` `Tab` | Alterne para o workspace anterior |
+| `Ctrl` `Tab`         | Alterne para o próximo workspace |
+| `Ctrl` `[number]`    | Alterne para um workspace específico |
 
 {.shortcuts}
 
-### Message autocomplete
+### Marcar mensagens como lidas ou não lidas
 
-| Shortcut             | Action                                                |
-| -------------------- | ----------------------------------------------------- |
-| `[character]` `Tab`  | Autocomplete @display name beginning with [character] |
-| `#[character]` `Tab` | Autocomplete channel beginning with [character]       |
-| `:[character]` `Tab` | Autocomplete emoji beginning with [character]         |
-
-{.shortcuts}
-
-### File and snippets
-
-| Shortcut               | Action               |
-| ---------------------- | -------------------- |
-| `Ctrl` `U`             | Upload a file        |
-| `Ctrl` `Shift` `Enter` | Create a new snippet |
+| Atalho                    | Ação                                                |
+| ------------------------- | --------------------------------------------------- |
+| `Esc`                     | Marque todas as mensagens do canal ou DM atual como lidas |
+| `Shift` `Esc`             | Marque todas as mensagens como lidas                |
+| `Alt` `(click a message)` | Defina uma mensagem como sua mensagem não lida mais antiga |
 
 {.shortcuts}
 
-### Call actions
+### Atalhos de mensagem {.row-span-2}
 
-| Shortcut  | Action                          |
-| --------- | ------------------------------- |
-| `M`       | Toggle mute on and off          |
-| `V`       | Toggle video on and off         |
-| `+/A`     | Show the invite list            |
-| `E` `1-9` | View and select emoji reactions |
+| Atalho             | Ação                                              |
+| ------------------ | ------------------------------------------------- |
+| `Up`               | Edite sua última mensagem                         |
+| `Shift` `Up`       | Selecione o texto até o início da linha atual     |
+| `Shift` `Down`     | Selecione o texto até o fim da linha atual        |
+| `Shift` `Enter`    | Crie uma nova linha na sua mensagem               |
+| `Ctrl` `Shift` `\` | Adicione reações com emoji a uma mensagem         |
+| `Ctrl` `B`         | Deixe o texto selecionado em negrito              |
+| `Ctrl` `I`         | Deixe o texto selecionado em itálico              |
+| `Ctrl` `Shift` `X` | Aplique tachado ao texto selecionado              |
+| `Ctrl` `Shift` `>` | Cite o texto selecionado                          |
+| `Ctrl` `Shift` `C` | Transforme o texto selecionado em bloco de código |
+| `Ctrl` `Shift` `7` | Transforme o texto selecionado em lista numerada  |
+| `Ctrl` `Shift` `8` | Transforme o texto selecionado em lista com marcadores |
+| `Ctrl` `Shift` `Y` | Defina ou edite seu status                        |
 
 {.shortcuts}
 
-## Also see
+### Autocompletar de mensagem
 
-- [Keyboard shortcuts for Slack](https://get.slack.help/hc/en-us/articles/201374536-Slack-keyboard-shortcuts)
+| Atalho               | Ação                                                    |
+| -------------------- | ------------------------------------------------------- |
+| `[character]` `Tab`  | Autocomplete o nome de exibição @ que começa com [character] |
+| `#[character]` `Tab` | Autocomplete o canal que começa com [character]         |
+| `:[character]` `Tab` | Autocomplete o emoji que começa com [character]         |
+
+{.shortcuts}
+
+### Arquivos e snippets
+
+| Atalho                 | Ação                  |
+| ---------------------- | --------------------- |
+| `Ctrl` `U`             | Envie um arquivo      |
+| `Ctrl` `Shift` `Enter` | Crie um novo snippet  |
+
+{.shortcuts}
+
+### Ações de chamada
+
+| Atalho    | Ação                             |
+| --------- | -------------------------------- |
+| `M`       | Ative/desative o mudo            |
+| `V`       | Ative/desative o vídeo           |
+| `+/A`     | Mostre a lista de convidados     |
+| `E` `1-9` | Veja e selecione reações com emoji |
+
+{.shortcuts}
+
+## Veja também
+
+- [Atalhos de teclado do Slack](https://get.slack.help/hc/en-us/articles/201374536-Slack-keyboard-shortcuts)
   _(get.slack.help)_

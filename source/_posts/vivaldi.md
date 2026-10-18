@@ -7,110 +7,110 @@ tags:
   -
   -
 categories:
-  - Keyboard Shortcuts
+  - Atalhos de Teclado
 intro: |
-  A visual cheat-sheet for the 69 default keyboard shortcuts found in the Vivaldi browser
+  Uma cheat sheet visual para os 69 atalhos de teclado padrão encontrados no navegador Vivaldi
 ---
 
-## Keyboard Shortcuts
+## Atalhos de teclado
 
-### Window
+### Janela
 
-| Shortcut                | Action                  |
-| ----------------------- | ----------------------- |
-| `Ctrl` `N`              | New window              |
-| `Ctrl` `Shift` `N`      | New private window      |
-| `Ctrl` `Shift` `W`      | Close window            |
-| `Ctrl` `E`              | Quick commands          |
-| `Ctrl` `,`              | Settings                |
-| `Ctrl` `Alt` `E`        | Extensions              |
-| `Ctrl` `H`              | History                 |
-| `Ctrl` `Alt` `B`        | Bookmarks               |
-| `Ctrl` `Shift` `Delete` | Delete browsing data    |
-| `Ctrl` `Q`              | Quit Vivaldi            |
-| `Ctrl` `Shift` `?`      | Help                    |
-| `Ctrl` `F1`             | Keyboard cheat sheet    |
-| `Ctrl` `P`              | Print                   |
-| `Ctrl` `U`              | View page source        |
-| `Ctrl` `Shift` `I`      | Developer tools         |
-| `Ctrl` `Shift` `J`      | Developer tools console |
-| `Ctrl` `Shift` `V`      | Paste and go            |
-| `Ctrl` `M`              | Minimize                |
-
-{.shortcuts}
-
-### View
-
-| Shortcut            | Action              |
-| ------------------- | ------------------- |
-| `Ctrl` `Shift` `F`  | Fullscreen mode     |
-| `Ctrl` `Shift` `B`  | Bookmarks bar       |
-| `Ctrl` `/`          | Status bar          |
-| `Ctrl` `F10`        | Toggle UI           |
-| `Ctrl` `+`          | Page zoom in        |
-| `Ctrl` `-`          | Page zoom out       |
-| `Ctrl` `0`          | Page zoom reset     |
-| `Ctrl` `Alt` `P`    | Panel               |
-| `F7`                | Focus panel         |
-| `Ctrl` `Alt` `Down` | Open next panel     |
-| `Ctrl` `Alt` `Up`   | Open previous panel |
-| `Ctrl` `Alt` `B`    | Bookmarks panel     |
-| `Ctrl` `Alt` `L`    | Downloads panel     |
-| `Ctrl` `Alt` `N`    | Notes panel         |
-| `Ctrl` `Alt` `Y`    | History panel       |
+| Atalho                  | Ação                                     |
+| ---                     | ---                                      |
+| `Ctrl` `N`              | Nova janela                              |
+| `Ctrl` `Shift` `N`      | Nova janela privada                      |
+| `Ctrl` `Shift` `W`      | Fechar janela                            |
+| `Ctrl` `E`              | Comandos rápidos                         |
+| `Ctrl` `,`              | Configurações                            |
+| `Ctrl` `Alt` `E`        | Extensões                                |
+| `Ctrl` `H`              | Histórico                                |
+| `Ctrl` `Alt` `B`        | Favoritos                                |
+| `Ctrl` `Shift` `Delete` | Excluir dados de navegação               |
+| `Ctrl` `Q`              | Sair do Vivaldi                          |
+| `Ctrl` `Shift` `?`      | Ajuda                                    |
+| `Ctrl` `F1`             | Cheat sheet de atalhos de teclado        |
+| `Ctrl` `P`              | Imprimir                                 |
+| `Ctrl` `U`              | Exibir código-fonte da página            |
+| `Ctrl` `Shift` `I`      | Ferramentas de desenvolvedor             |
+| `Ctrl` `Shift` `J`      | Console das ferramentas de desenvolvedor |
+| `Ctrl` `Shift` `V`      | Colar e ir                               |
+| `Ctrl` `M`              | Minimizar                                |
 
 {.shortcuts}
 
-### Tab
+### Visualizar
 
-| Shortcut              | Action                   |
-| --------------------- | ------------------------ |
-| `Ctrl` `T`            | New tab                  |
-| `Ctrl` `W`            | Close tab                |
-| `Ctrl` `Shift` `Tab`  | Tab cycler back          |
-| `Ctrl` `Tab`          | Tab cycler forward       |
-| `Ctrl` `Shift` `[`    | Previous tab (by order)  |
-| `Ctrl` `Shift` `]`    | Next tab (by order)      |
-| `Ctrl` `Shift` `Up`   | Move active tab backward |
-| `Ctrl` `Shift` `Down` | Move active tab forward  |
-| `Ctrl` `1-8`          | Switch to tab 1-8        |
-| `Ctrl` `9`            | Switch to the last tab   |
-| `Ctrl` `Shift` `T`    | Reopen last tab          |
-| `Ctrl` `F9`           | Tile vertically          |
-| `Ctrl` `F8`           | Tile horizontally        |
-| `Ctrl` `F7`           | Tile to grid             |
-| `Ctrl` `F6`           | Untile tabs              |
-| `Ctrl` `Alt` `I`      | Load images              |
-
-{.shortcuts}
-
-### Page
-
-| Shortcut           | Action                     |
-| ------------------ | -------------------------- |
-| `Ctrl` `D`         | Create bookmark            |
-| `Ctrl` `L`         | Focus address field        |
-| `Ctrl` `R`         | Reload page                |
-| `Ctrl` `Shift` `R` | Force reload page          |
-| `F9`               | Focus page                 |
-| `Ctrl` `K`         | Focus search field         |
-| `Ctrl` `F`         | Find in page               |
-| `Ctrl` `G`         | Find next in page          |
-| `Ctrl` `Shift` `G` | Find previous in page      |
-| `Ctrl` `Left`      | History back               |
-| `Ctrl` `Right`     | History forward            |
-| `Esc`              | Stop loading               |
-| `Ctrl` `O`         | Open file                  |
-| `Ctrl` `S`         | Save page as               |
-| `Ctrl` `Shift` `H` | Home                       |
-| `Ctrl` `Alt` `C`   | Copy selected text to note |
-| `Shift` `Left`     | Spatial navigation left    |
-| `Shift` `Up`       | Spatial navigation up      |
-| `Shift` `Right`    | Spatial navigation right   |
-| `Shift` `Down`     | Spatial navigation down    |
+| Atalho              | Ação                     |
+| ---                 | ---                      |
+| `Ctrl` `Shift` `F`  | Modo tela cheia          |
+| `Ctrl` `Shift` `B`  | Barra de favoritos       |
+| `Ctrl` `/`          | Barra de status          |
+| `Ctrl` `F10`        | Alternar interface       |
+| `Ctrl` `+`          | Aumentar zoom da página  |
+| `Ctrl` `-`          | Diminuir zoom da página  |
+| `Ctrl` `0`          | Redefinir zoom da página |
+| `Ctrl` `Alt` `P`    | Painel                   |
+| `F7`                | Focar no painel          |
+| `Ctrl` `Alt` `Down` | Abrir próximo painel     |
+| `Ctrl` `Alt` `Up`   | Abrir painel anterior    |
+| `Ctrl` `Alt` `B`    | Painel de favoritos      |
+| `Ctrl` `Alt` `L`    | Painel de downloads      |
+| `Ctrl` `Alt` `N`    | Painel de notas          |
+| `Ctrl` `Alt` `Y`    | Painel de histórico      |
 
 {.shortcuts}
 
-## Also see
+### Aba
 
-- [Keyboard shortcuts for Vivaldi](https://help.vivaldi.com/article/keyboard-shortcuts/) _(help.vivaldi.com)_
+| Atalho                | Ação                            |
+| ---                   | ---                             |
+| `Ctrl` `T`            | Nova aba                        |
+| `Ctrl` `W`            | Fechar aba                      |
+| `Ctrl` `Shift` `Tab`  | Alternador de abas para trás    |
+| `Ctrl` `Tab`          | Alternador de abas para frente  |
+| `Ctrl` `Shift` `[`    | Aba anterior (por ordem)        |
+| `Ctrl` `Shift` `]`    | Próxima aba (por ordem)         |
+| `Ctrl` `Shift` `Up`   | Mover aba ativa para trás       |
+| `Ctrl` `Shift` `Down` | Mover aba ativa para frente     |
+| `Ctrl` `1-8`          | Alternar para a aba 1-8         |
+| `Ctrl` `9`            | Alternar para a última aba      |
+| `Ctrl` `Shift` `T`    | Reabrir última aba              |
+| `Ctrl` `F9`           | Organizar em mosaico vertical   |
+| `Ctrl` `F8`           | Organizar em mosaico horizontal |
+| `Ctrl` `F7`           | Organizar em grade              |
+| `Ctrl` `F6`           | Desfazer mosaico das abas       |
+| `Ctrl` `Alt` `I`      | Carregar imagens                |
+
+{.shortcuts}
+
+### Página
+
+| Atalho             | Ação                                    |
+| ---                | ---                                     |
+| `Ctrl` `D`         | Criar favorito                          |
+| `Ctrl` `L`         | Focar no campo de endereço              |
+| `Ctrl` `R`         | Recarregar página                       |
+| `Ctrl` `Shift` `R` | Forçar recarregamento da página         |
+| `F9`               | Focar na página                         |
+| `Ctrl` `K`         | Focar no campo de busca                 |
+| `Ctrl` `F`         | Localizar na página                     |
+| `Ctrl` `G`         | Localizar próxima ocorrência na página  |
+| `Ctrl` `Shift` `G` | Localizar ocorrência anterior na página |
+| `Ctrl` `Left`      | Voltar no histórico                     |
+| `Ctrl` `Right`     | Avançar no histórico                    |
+| `Esc`              | Parar carregamento                      |
+| `Ctrl` `O`         | Abrir arquivo                           |
+| `Ctrl` `S`         | Salvar página como                      |
+| `Ctrl` `Shift` `H` | Página inicial                          |
+| `Ctrl` `Alt` `C`   | Copiar texto selecionado para nota      |
+| `Shift` `Left`     | Navegação espacial para a esquerda      |
+| `Shift` `Up`       | Navegação espacial para cima            |
+| `Shift` `Right`    | Navegação espacial para a direita       |
+| `Shift` `Down`     | Navegação espacial para baixo           |
+
+{.shortcuts}
+
+## Veja também
+
+- [Atalhos de teclado do Vivaldi](https://help.vivaldi.com/article/keyboard-shortcuts/) _(help.vivaldi.com)_

@@ -7,201 +7,201 @@ tags:
   - web
   - shortcut
 categories:
-  - Keyboard Shortcuts
+  - Atalhos de Teclado
 intro: |
-  This quick reference cheat sheet lists the default keyboard shortcuts for WebStorm running on Windows/Linux or Mac
+  Este cheat sheet de referência rápida lista os atalhos de teclado padrão do WebStorm no Windows/Linux ou no Mac
 ---
 
-## Webstorm Windows & Linux Keymap
+## Keymap do WebStorm para Windows e Linux
 
-### Editing {.row-span-5}
+### Edição {.row-span-5}
 
-| shortcut             | description                                     |
+| atalho               | descrição                                       |
 | -------------------- | ----------------------------------------------- |
-| `Ctrl` `Space`       | Basic code completion                           |
-| `Alt` `Enter`        | Show intention actions, quick fixes             |
-| `Ctrl` `P`           | Parameter info                                  |
-| `Ctrl` `Q`           | Quick documentation lookup                      |
-| `Ctrl` `mouse over`  | Brief Info                                      |
-| `Ctrl` `F1`          | Error or warning at caret                       |
-| `Alt` `Insert`       | Generate code...                                |
-| `Ctrl` `Alt` `T`     | Surround with...                                |
-| `Ctrl` `J`           | Insert Live template                            |
-| `Ctrl` `/`           | Comment/uncomment with line                     |
-| `Ctrl` `Shift` `/`   | Comment/uncomment with block                    |
-| `Ctrl` `W`           | Select successively increasing code blocks      |
-| `Ctrl` `Shift` `W`   | Decrease current selection to previous state    |
-| `Alt+Q`              | Context Info                                    |
-| `Ctrl` `Alt` `L`     | Reformat code                                   |
-| `Ctrl` `Alt` `I`     | Auto-indent line(s)                             |
-| `Tab`                | Indent selected lines                           |
-| `Shift` `Tab`        | Unindent selected lines                         |
-| `Ctrl` `Shift` `V`   | Paste from recent buffers...                    |
-| `Ctrl` `D`           | Duplicate current line or selected block        |
-| `Ctrl` `Y`           | Delete line at caret                            |
-| `Alt` `Shift` `Up`   | Move line up                                    |
-| `Alt` `Shift` `Down` | Move line down                                  |
-| `Ctrl` `Shift` `J`   | Join lines                                      |
-| `Ctrl` `Enter`       | Split lines                                     |
-| `Shift` `Enter`      | Start new line                                  |
-| `Ctrl` `Shift` `U`   | Toggle case for word at caret or selected block |
-| `Ctrl` `Shift` `]`   | Select till code block end                      |
-| `Ctrl` `Shift` `[`   | Select till code block start                    |
-| `Ctrl` `Delete`      | Delete to word end                              |
-| `Ctrl` `Backspace`   | Delete to word start                            |
-| `Ctrl` `+`           | Expand code block                               |
-| `Ctrl` `-`           | Collapse code block                             |
-| `Ctrl` `Shift` `+`   | Expand all                                      |
-| `Ctrl` `Shift` `-`   | Collapse all                                    |
-| `Ctrl` `F4`          | Close active editor tab                         |
+| `Ctrl` `Space`       | Conclusão básica de código                      |
+| `Alt` `Enter`        | Mostra ações de intenção, correções rápidas     |
+| `Ctrl` `P`           | Informações de parâmetros                       |
+| `Ctrl` `Q`           | Consulta rápida de documentação                 |
+| `Ctrl` `mouse over`  | Informação breve                                |
+| `Ctrl` `F1`          | Erro ou aviso no cursor                         |
+| `Alt` `Insert`       | Gerar código...                                 |
+| `Ctrl` `Alt` `T`     | Envolver com...                                 |
+| `Ctrl` `J`           | Inserir Live template                           |
+| `Ctrl` `/`           | Comentar/descomentar com linha                  |
+| `Ctrl` `Shift` `/`   | Comentar/descomentar com bloco                  |
+| `Ctrl` `W`           | Seleciona blocos de código crescentes em sequência |
+| `Ctrl` `Shift` `W`   | Reduz a seleção atual para o estado anterior    |
+| `Alt+Q`              | Informação de contexto                          |
+| `Ctrl` `Alt` `L`     | Reformatar código                               |
+| `Ctrl` `Alt` `I`     | Autoindentar linha(s)                           |
+| `Tab`                | Indentar linhas selecionadas                    |
+| `Shift` `Tab`        | Desindentar linhas selecionadas                 |
+| `Ctrl` `Shift` `V`   | Colar de buffers recentes...                    |
+| `Ctrl` `D`           | Duplicar a linha atual ou o bloco selecionado   |
+| `Ctrl` `Y`           | Excluir a linha no cursor                       |
+| `Alt` `Shift` `Up`   | Mover linha para cima                           |
+| `Alt` `Shift` `Down` | Mover linha para baixo                          |
+| `Ctrl` `Shift` `J`   | Juntar linhas                                   |
+| `Ctrl` `Enter`       | Dividir linhas                                  |
+| `Shift` `Enter`      | Iniciar nova linha                              |
+| `Ctrl` `Shift` `U`   | Alternar maiúsculas/minúsculas da palavra no cursor ou do bloco selecionado |
+| `Ctrl` `Shift` `]`   | Selecionar até o fim do bloco de código         |
+| `Ctrl` `Shift` `[`   | Selecionar até o início do bloco de código      |
+| `Ctrl` `Delete`      | Excluir até o fim da palavra                    |
+| `Ctrl` `Backspace`   | Excluir até o início da palavra                 |
+| `Ctrl` `+`           | Expandir bloco de código                        |
+| `Ctrl` `-`           | Recolher bloco de código                        |
+| `Ctrl` `Shift` `+`   | Expandir tudo                                   |
+| `Ctrl` `Shift` `-`   | Recolher tudo                                   |
+| `Ctrl` `F4`          | Fechar a aba ativa do editor                    |
 
 {.shortcuts}
 
-### General
+### Geral
 
-| shortcut             | description                    |
-| -------------------- | ------------------------------ |
-| `Double Shift`       | Search everywhere              |
-| `Ctrl` `Shift` `A`   | Find Action                    |
-| `Alt` `0...9`        | Open corresponding tool window |
-| `Ctrl` `Shift` `F12` | Toggle maximizing editor       |
-| `Alt` `Shift` `F`    | Add to Favorites               |
-| `Alt` `Shift` `I`    | Inspect current file           |
-| `Ctrl` <kbd>\`</kbd> | Quick switch current scheme    |
-| `Ctrl` `Alt` `S`     | Open Settings dialog           |
-| `Ctrl` `Tab`         | Switch between tool and tabs   |
+| atalho               | descrição                       |
+| -------------------- | ------------------------------- |
+| `Double Shift`       | Buscar em todos os lugares      |
+| `Ctrl` `Shift` `A`   | Localizar ação                  |
+| `Alt` `0...9`        | Abrir a janela de ferramenta correspondente |
+| `Ctrl` `Shift` `F12` | Alternar maximização do editor  |
+| `Alt` `Shift` `F`    | Adicionar aos favoritos         |
+| `Alt` `Shift` `I`    | Inspecionar o arquivo atual     |
+| `Ctrl` <kbd>\`</kbd> | Alternar rapidamente o esquema atual |
+| `Ctrl` `Alt` `S`     | Abrir a caixa de diálogo de configurações |
+| `Ctrl` `Tab`         | Alternar entre ferramenta e abas |
 
 {.shortcuts}
 
-### Navigation {.row-span-4}
+### Navegação {.row-span-4}
 
-| shortcut                       | description                               |
+| atalho                         | descrição                                 |
 | ------------------------------ | ----------------------------------------- |
-| `Ctrl` `B` _\|_ `Ctrl + Click` | Go to declaration                         |
-| `Ctrl` `N`                     | Go to class                               |
-| `Ctrl` `Shift` `N`             | Go to file                                |
-| `Ctrl` `Alt` `Shift` `N`       | Go to symbol                              |
-| `Alt` `Right`                  | Go to next editor tab                     |
-| `Alt` `Left`                   | Go to previous editor tab                 |
-| `F12`                          | Go back to previous tool window           |
-| `Esc`                          | Go to editor                              |
-| `Ctrl` `G`                     | Go to line                                |
-| `Ctrl` `E`                     | Recent files popup                        |
-| `Ctrl` `Alt` `Right`           | Navigate forward                          |
-| `Ctrl` `Alt` `Left`            | Navigate back                             |
-| `Ctrl` `Shift` `Backspace`     | Navigate to last edit location            |
-| `Alt` `F1`                     | Select current file or symbol in any view |
-| `Ctrl` `Alt` `B`               | Go to implementation(s)                   |
-| `Ctrl` `Shift` `I`             | Open quick definition lookup              |
-| `Ctrl` `Shift` `B`             | Go to type declaration                    |
-| `Ctrl` `U`                     | Go to super-method/super-class            |
-| `Alt` `Up`                     | Go to previous method                     |
-| `Alt` `Down`                   | Go to next method                         |
-| `Ctrl` `]` _/_ `[`             | Move to code block end/start              |
-| `Cltrl` `Shift` `M`            | Move caret to matching brace              |
-| `Ctrl` `F12`                   | File structure popup                      |
-| `Ctrl` `H`                     | Type hierarchy                            |
-| `Ctrl` `Alt` `H`               | Call hierarchy                            |
-| `F2` _/_ `Shift` `F2`          | Next/previous highlighted error           |
-| `F4` _/_ `Ctrl` `Enter`        | Jump to source                            |
-| `Alt` `Home`                   | Jump to navigation bar                    |
-| `F11`                          | Toggle bookmark                           |
-| `Ctrl` `Shift` `F11`           | Toggle bookmark with mnemonic             |
-| `Ctrl` `0...9`                 | Go to numbered bookmark                   |
-| `Shift` `F11`                  | Show bookmarks                            |
+| `Ctrl` `B` _\|_ `Ctrl + Click` | Ir para a declaração                      |
+| `Ctrl` `N`                     | Ir para a classe                          |
+| `Ctrl` `Shift` `N`             | Ir para o arquivo                         |
+| `Ctrl` `Alt` `Shift` `N`       | Ir para o símbolo                         |
+| `Alt` `Right`                  | Ir para a próxima aba do editor           |
+| `Alt` `Left`                   | Ir para a aba anterior do editor          |
+| `F12`                          | Voltar para a janela de ferramenta anterior |
+| `Esc`                          | Ir para o editor                          |
+| `Ctrl` `G`                     | Ir para a linha                           |
+| `Ctrl` `E`                     | Popup de arquivos recentes                |
+| `Ctrl` `Alt` `Right`           | Navegar para frente                       |
+| `Ctrl` `Alt` `Left`            | Navegar para trás                         |
+| `Ctrl` `Shift` `Backspace`     | Navegar para o último local de edição     |
+| `Alt` `F1`                     | Selecionar o arquivo ou símbolo atual em qualquer view |
+| `Ctrl` `Alt` `B`               | Ir para a(s) implementação(ões)           |
+| `Ctrl` `Shift` `I`             | Abrir consulta rápida de definição        |
+| `Ctrl` `Shift` `B`             | Ir para a declaração de tipo              |
+| `Ctrl` `U`                     | Ir para o supermétodo/superclasse         |
+| `Alt` `Up`                     | Ir para o método anterior                 |
+| `Alt` `Down`                   | Ir para o próximo método                  |
+| `Ctrl` `]` _/_ `[`             | Mover para o fim/início do bloco de código |
+| `Cltrl` `Shift` `M`            | Mover o cursor para a chave correspondente |
+| `Ctrl` `F12`                   | Popup de estrutura do arquivo             |
+| `Ctrl` `H`                     | Hierarquia de tipos                       |
+| `Ctrl` `Alt` `H`               | Hierarquia de chamadas                    |
+| `F2` _/_ `Shift` `F2`          | Próximo/erro destacado anterior           |
+| `F4` _/_ `Ctrl` `Enter`        | Pular para o código-fonte                 |
+| `Alt` `Home`                   | Pular para a barra de navegação           |
+| `F11`                          | Alternar bookmark                         |
+| `Ctrl` `Shift` `F11`           | Alternar bookmark com mnemônico           |
+| `Ctrl` `0...9`                 | Ir para o bookmark numerado               |
+| `Shift` `F11`                  | Mostrar bookmarks                         |
 
 {.shortcuts}
 
-### Multiple carets and selections
+### Múltiplos cursores e seleções
 
-| shortcut               | description                        |
+| atalho                 | descrição                          |
 | ---------------------- | ---------------------------------- |
-| `Alt` `Click`          | Add or remove caret                |
-| `Shift` `Ctrl + Alt-J` | Select all occurrences             |
-| `Alt` `J`              | Select next occurrence             |
-| `Alt` `Shift` `J`      | Unselect occurrence                |
-| `Esc`                  | Unselect all occurrences or carets |
+| `Alt` `Click`          | Adicionar ou remover cursor        |
+| `Shift` `Ctrl + Alt-J` | Selecionar todas as ocorrências    |
+| `Alt` `J`              | Selecionar a próxima ocorrência    |
+| `Alt` `Shift` `J`      | Desmarcar ocorrência               |
+| `Esc`                  | Desmarcar todas as ocorrências ou cursores |
 
 {.shortcuts}
 
-### Debugging
+### Depuração
 
-| shortcut            | description         |
+| atalho              | descrição           |
 | ------------------- | ------------------- |
-| `F8`                | Step over           |
-| `F7`                | Step into           |
-| `Shift` `F7`        | Smart step into     |
-| `Shift` `F8`        | Step out            |
-| `Alt` `F9`          | Run to cursor       |
-| `Alt` `F8`          | Evaluate expression |
-| `F9`                | Resume program      |
-| `Ctrl` `F8`         | Toggle breakpoint   |
-| `Ctrl` `Shift` `F8` | View breakpoints    |
+| `F8`                | Passar por cima     |
+| `F7`                | Entrar              |
+| `Shift` `F7`        | Entrada inteligente |
+| `Shift` `F8`        | Sair                |
+| `Alt` `F9`          | Executar até o cursor |
+| `Alt` `F8`          | Avaliar expressão   |
+| `F9`                | Retomar programa    |
+| `Ctrl` `F8`         | Alternar breakpoint |
+| `Ctrl` `Shift` `F8` | Ver breakpoints     |
 
 {.shortcuts}
 
-### Running
+### Execução
 
-| shortcut             | description                           |
+| atalho               | descrição                             |
 | -------------------- | ------------------------------------- |
-| `Alt` `Shift` `F10`  | Select configuration and run          |
-| `Alt` `Shift` `F9`   | Select configuration and debug        |
-| `Shift` `F10`        | Run                                   |
-| `Shift` `F9`         | Debug                                 |
-| `Ctrl` `Shift` `F10` | Run context configuration from editor |
-| `Alt` `Shift` `R`    | Rerun tests                           |
-| `Alt` `F11`          | Run Gulp/Grunt/npm tasks              |
+| `Alt` `Shift` `F10`  | Selecionar configuração e executar    |
+| `Alt` `Shift` `F9`   | Selecionar configuração e depurar     |
+| `Shift` `F10`        | Executar                              |
+| `Shift` `F9`         | Depurar                               |
+| `Ctrl` `Shift` `F10` | Executar a configuração de contexto a partir do editor |
+| `Alt` `Shift` `R`    | Reexecutar testes                     |
+| `Alt` `F11`          | Executar tarefas Gulp/Grunt/npm       |
 
 {.shortcuts}
 
-### Usage Search
+### Busca de usos
 
-| shortcut            | description              |
+| atalho              | descrição                |
 | ------------------- | ------------------------ |
-| `Alt` `F7`          | Find usages              |
-| `Ctrl` `F7`         | Find usages in file      |
-| `Ctrl` `Shift` `F7` | Highlight usages in file |
-| `Ctrl` `Alt` `F7`   | Show usages              |
+| `Alt` `F7`          | Localizar usos           |
+| `Ctrl` `F7`         | Localizar usos no arquivo |
+| `Ctrl` `Shift` `F7` | Destacar usos no arquivo |
+| `Ctrl` `Alt` `F7`   | Mostrar usos             |
 
 {.shortcuts}
 
-### VCS/Local History
+### VCS/Histórico local
 
-| shortcut            | description             |
+| atalho              | descrição               |
 | ------------------- | ----------------------- |
-| `Alt` <kbd>\`</kbd> | VCS quick popup         |
-| `Ctrl` `K`          | Commit project to VCS   |
-| `Ctrl` `T`          | Update project from VCS |
-| `Alt` `Shift` `C`   | View recent changes     |
+| `Alt` <kbd>\`</kbd> | Popup rápido do VCS     |
+| `Ctrl` `K`          | Fazer commit do projeto no VCS |
+| `Ctrl` `T`          | Atualizar o projeto a partir do VCS |
+| `Alt` `Shift` `C`   | Ver alterações recentes |
 
 {.shortcuts}
 
-### Search/Replace
+### Buscar/Substituir
 
-| shortcut           | description     |
+| atalho             | descrição       |
 | ------------------ | --------------- |
-| `Ctrl` `F`         | Find            |
-| `F3`               | Find next       |
-| `Shift` `F3`       | Find previous   |
-| `Ctrl` `Shift` `F` | Find in path    |
-| `Ctrl` `R`         | Replace         |
-| `Ctrl` `Shift` `R` | Replace in path |
+| `Ctrl` `F`         | Localizar       |
+| `F3`               | Localizar próximo |
+| `Shift` `F3`       | Localizar anterior |
+| `Ctrl` `Shift` `F` | Localizar no path |
+| `Ctrl` `R`         | Substituir      |
+| `Ctrl` `Shift` `R` | Substituir no path |
 
 {.shortcuts}
 
-### Refactoring
+### Refatoração
 
-| shortcut                | description               |
+| atalho                  | descrição                 |
 | ----------------------- | ------------------------- |
-| `Ctrl` `Alt` `Shift +T` | Refactor this             |
-| `F5` _/_ `F6`           | Copy / Move               |
-| `Alt` `Delete`          | Safe Delete               |
-| `Shift` `F6`            | Rename                    |
-| `Ctrl` `F6`             | Change function signature |
-| `Ctrl` `Alt` `N`        | Inline Variable           |
-| `Ctrl` `Alt` `M`        | Extract Method            |
-| `Ctrl` `Alt` `V`        | Extract Variable          |
-| `Ctrl` `Alt` `C`        | Extract Constant          |
-| `Ctrl` `Alt` `P`        | Extract Parameter         |
+| `Ctrl` `Alt` `Shift +T` | Refatorar isto            |
+| `F5` _/_ `F6`           | Copiar / Mover            |
+| `Alt` `Delete`          | Exclusão segura           |
+| `Shift` `F6`            | Renomear                  |
+| `Ctrl` `F6`             | Alterar assinatura da função |
+| `Ctrl` `Alt` `N`        | Variável inline           |
+| `Ctrl` `Alt` `M`        | Extrair método            |
+| `Ctrl` `Alt` `V`        | Extrair variável          |
+| `Ctrl` `Alt` `C`        | Extrair constante         |
+| `Ctrl` `Alt` `P`        | Extrair parâmetro         |
 
 {.shortcuts}

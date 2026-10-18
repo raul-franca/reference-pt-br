@@ -7,52 +7,52 @@ tags:
   -
   -
 categories:
-  - Keyboard Shortcuts
+  - Atalhos de Teclado
 intro: |
-  A visual cheat-sheet for the 32 keyboard shortcuts found on the PuTTy app
+  Um cheat sheet visual para os 32 atalhos de teclado do app PuTTy
 ---
 
-## Keyboard Shortcuts
+## Atalhos de Teclado
 
-### General Shortcuts
+### Atalhos gerais
 
-| Shortcut               | Action                                               |
-| ---------------------- | ---------------------------------------------------- |
-| `Ctrl` `(right click)` | Open context menu                                    |
-| `Ctrl` `A`             | Jump to the start of the line                        |
-| `Ctrl` `B`             | Move back a character                                |
-| `Ctrl` `C`             | Terminal the command                                 |
-| `Ctrl` `D`             | Delete from under the cursor                         |
-| `Ctrl` `E`             | Jump to the end of the line                          |
-| `Ctrl` `F`             | Move forward a character                             |
-| `Ctrl` `K`             | Delete to end-of-line                                |
-| `Ctrl` `L`             | Clear the screen                                     |
-| `Ctrl` `R`             | Search the history backwards                         |
-| `Ctrl` `Shift` `R`     | Search the history backwards with multi occurrence   |
-| `Ctrl` `U`             | Delete backward from cursor                          |
-| `Ctrl` `X` `X`         | Move between end-of-line and current cursor position |
-| `Ctrl` `X` `@`         | Show possible hostname completions                   |
-| `Ctrl` `Z`             | Suspend or stop the command                          |
-| `Alt` `Left`           | Move to the first line in the history                |
-| `Alt` `Right`          | Move to the last line in the history                 |
-| `Alt` `?`              | Show current completion list                         |
-| `Alt` `*`              | Insert all possible completions                      |
-| `Alt` `/`              | Attempt to complete filename                         |
-| `Alt` `.`              | Yank last argument to previous command               |
-| `Alt` `B`              | Move backward                                        |
-| `Alt` `C`              | Capitalize the word                                  |
-| `Alt` `D`              | Delete word                                          |
-| `Alt` `F`              | Move forward                                         |
-| `Alt` `L`              | Make word lowercase                                  |
-| `Alt` `N`              | Search the history forwards non-incremental          |
-| `Alt` `P`              | Search the history backwards non-incremental         |
-| `Alt` `R`              | Recall command                                       |
-| `Alt` `T`              | Move words around                                    |
-| `Alt` `U`              | Make word uppercase                                  |
-| `Alt` `Backspace`      | Delete backwards from the cursor                     |
+| Atalho                 | Ação                                                              |
+| ---------------------- | ----------------------------------------------------------------- |
+| `Ctrl` `(right click)` | Abre o menu de contexto                                           |
+| `Ctrl` `A`             | Salta para o início da linha                                      |
+| `Ctrl` `B`             | Move um caractere para trás                                       |
+| `Ctrl` `C`             | Termina o comando                                                 |
+| `Ctrl` `D`             | Exclui a partir do cursor                                         |
+| `Ctrl` `E`             | Salta para o fim da linha                                         |
+| `Ctrl` `F`             | Move um caractere para frente                                     |
+| `Ctrl` `K`             | Exclui até o fim da linha                                         |
+| `Ctrl` `L`             | Limpa a tela                                                      |
+| `Ctrl` `R`             | Pesquisa o histórico de trás para frente                           |
+| `Ctrl` `Shift` `R`     | Pesquisa o histórico de trás para frente com múltiplas ocorrências |
+| `Ctrl` `U`             | Exclui para trás a partir do cursor                               |
+| `Ctrl` `X` `X`         | Move entre o fim da linha e a posição atual do cursor             |
+| `Ctrl` `X` `@`         | Mostra possíveis complementos de hostname                         |
+| `Ctrl` `Z`             | Suspende ou para o comando                                        |
+| `Alt` `Left`           | Move para a primeira linha do histórico                           |
+| `Alt` `Right`          | Move para a última linha do histórico                             |
+| `Alt` `?`              | Mostra a lista de complementos atual                              |
+| `Alt` `*`              | Insere todos os complementos possíveis                            |
+| `Alt` `/`              | Tenta completar o nome do arquivo                                 |
+| `Alt` `.`              | Cola o último argumento no comando anterior                       |
+| `Alt` `B`              | Move para trás                                                    |
+| `Alt` `C`              | Capitaliza a palavra                                              |
+| `Alt` `D`              | Exclui a palavra                                                  |
+| `Alt` `F`              | Move para frente                                                  |
+| `Alt` `L`              | Deixa a palavra em minúsculas                                     |
+| `Alt` `N`              | Pesquisa o histórico para frente de forma não incremental         |
+| `Alt` `P`              | Pesquisa o histórico para trás de forma não incremental           |
+| `Alt` `R`              | Recupera o comando                                                |
+| `Alt` `T`              | Move palavras de lugar                                            |
+| `Alt` `U`              | Deixa a palavra em maiúsculas                                     |
+| `Alt` `Backspace`      | Exclui para trás a partir do cursor                               |
 
 {.shortcuts}
 
-## Also see
+## Veja também
 
-- [Keyboard shortcuts for PuTTy](http://rizwanansari.net/putty-shell-keyboard-shortcuts/) _(rizwanansari.net)_
+- [Atalhos de teclado do PuTTy](http://rizwanansari.net/putty-shell-keyboard-shortcuts/) _(rizwanansari.net)_

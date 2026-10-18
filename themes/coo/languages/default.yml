@@ -1,28 +1,28 @@
-categories: Categories
-search: Search
+categories: Categorias
+search: Buscar
 tags: Tags
-tagcloud: Tag Cloud
-prev: "Prev: %s"
-next: "Next: %s"
-comment: Comments
-archive_a: Archives
-archive_b: "Archives: %s"
-page: Page %d
-recent_posts: Recent Posts
+tagcloud: Nuvem de tags
+prev: "Anterior: %s"
+next: "Próximo: %s"
+comment: Comentários
+archive_a: Arquivos
+archive_b: "Arquivos: %s"
+page: Página %d
+recent_posts: Posts recentes
 blogroll: Links
-returntop: Return to top
-readmore: READ MORE
+returntop: Voltar ao topo
+readmore: LEIA MAIS
 floatmenu: Menu
 
 menu:
   home: Home
-  archives: Archives
-  category: Categories
-  search: Search
-current_page: Current page
+  archives: Arquivos
+  category: Categorias
+  search: Buscar
+current_page: Página atual
 page_name:
-  categories: (Categories)
+  categories: (Categorias)
   tags: (Tags)
-  archives: (Archives)
-go_back_home: Go back home
-no_title: No title
+  archives: (Arquivos)
+go_back_home: Voltar para a Home
+no_title: Sem título

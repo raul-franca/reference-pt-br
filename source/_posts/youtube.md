@@ -7,47 +7,47 @@ tags:
   -
   -
 categories:
-  - Keyboard Shortcuts
+  - Atalhos de Teclado
 intro: |
-  A visual cheat-sheet for the 18 keyboard shortcuts found on YouTube.com
+  Um cheat sheet visual para os 18 atalhos de teclado do YouTube.com
 ---
 
-## Keyboard Shortcuts {.cols-2}
+## Atalhos de Teclado {.cols-2}
 
-### General I
+### Geral I
 
-| Shortcut     | Action                                                                            |
+| Atalho       | Ação                                                                              |
 | ------------ | --------------------------------------------------------------------------------- |
-| `Space`      | Play/Pause when the seek bar is selected, activate a button if a button has focus |
-| `K`          | Play/Pause in player                                                              |
-| `Left/Right` | Seek backward/forward 5 seconds                                                   |
-| `J`          | Seek backward 10 seconds in player                                                |
-| `L`          | Seek forward 10 seconds in player                                                 |
-| `Home`       | Seek to the beginning of the video                                                |
-| `End`        | Seek to the last seconds of the video                                             |
-| `Up`         | Increase volume 5%                                                                |
-| `Down`       | Decrease volume 5%                                                                |
-| `1-9`        | Seek to the 10-90% of the video                                                   |
+| `Space`      | Reproduzir/Pausar quando a barra de progresso estiver selecionada; ativar um botão se um botão estiver em foco |
+| `K`          | Reproduzir/Pausar no player                                                       |
+| `Left/Right` | Retroceder/avançar 5 segundos                                                     |
+| `J`          | Retroceder 10 segundos no player                                                  |
+| `L`          | Avançar 10 segundos no player                                                     |
+| `Home`       | Ir para o início do vídeo                                                         |
+| `End`        | Ir para os últimos segundos do vídeo                                              |
+| `Up`         | Aumentar o volume em 5%                                                           |
+| `Down`       | Diminuir o volume em 5%                                                           |
+| `1-9`        | Ir para 10-90% do vídeo                                                           |
 
 {.shortcuts}
 
-### General II
+### Geral II
 
-| Shortcut    | Action                                                      |
+| Atalho      | Ação                                                        |
 | ----------- | ----------------------------------------------------------- |
-| `0`         | Seek to the beginning of the video                          |
-| `Shift` `1` | Move between H1 headers                                     |
-| `/`         | Go to search box                                            |
-| `F`         | Activate full screen, press again (or Esc) to exit          |
-| `C`         | Activate closed captions and subtitles, press again to hide |
-| `Shift` `N` | Move to the next video                                      |
-| `Shift` `P` | Move to the previous video                                  |
-| `I`         | Launch the Miniplayer                                       |
-| `.`         | Move forward a single frame (while paused)                  |
-| `,`         | Move back a single frame (while paused)                     |
+| `0`         | Ir para o início do vídeo                                   |
+| `Shift` `1` | Navegar entre cabeçalhos H1                                 |
+| `/`         | Ir para a caixa de pesquisa                                 |
+| `F`         | Ativar tela cheia; pressione de novo (ou Esc) para sair     |
+| `C`         | Ativar legendas e subtítulos; pressione de novo para ocultar |
+| `Shift` `N` | Ir para o próximo vídeo                                     |
+| `Shift` `P` | Ir para o vídeo anterior                                    |
+| `I`         | Abrir o Miniplayer                                          |
+| `.`         | Avançar um quadro (enquanto pausado)                        |
+| `,`         | Retroceder um quadro (enquanto pausado)                     |
 
 {.shortcuts}
 
-## Also see
+## Veja também
 
-- [Keyboard shortcuts for YouTube](https://support.google.com/youtube/answer/7631406?hl=en) _(support.google.com)_
+- [Atalhos de teclado do YouTube](https://support.google.com/youtube/answer/7631406?hl=en) _(support.google.com)_

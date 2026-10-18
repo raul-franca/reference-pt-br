@@ -1,16 +1,16 @@
 module.exports = {
-  darkMode: 'class', // or 'media' or 'class'
+  darkMode: 'class', // ou 'media' ou 'class'
   plugins: [
     // https://github.com/jamiebuilds/tailwindcss-animate
     require('tailwindcss-animate')
   ],
   theme: {
     boxShadow: {
-      /* Customized */
+      /* Personalizado */
       DEFAULT: '0 6px 8px rgba(102, 119, 136, 0.03), 0 1px 2px rgba(102, 119, 136, 0.3)',
       md: '0 4px 6px -1px rgba(102, 119, 136, 0.05), 0 2px 4px -1px rgba(102, 119, 136, 0.35)',
 
-      /* Default */
+      /* Padrão */
       sm: '0 1px 2px 0 rgba(0, 0, 0, 0.05)',
       lg: '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)',
       xl: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)',

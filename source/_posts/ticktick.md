@@ -7,164 +7,164 @@ tags:
   -
   -
 categories:
-  - Keyboard Shortcuts
+  - Atalhos de Teclado
 intro: |
-  A visual cheat-sheet for the 25 keyboard shortcuts found in the TickTick desktop app
+  Um cheat sheet visual dos 25 atalhos de teclado encontrados no app desktop do TickTick
 ---
 
-## Keyboard Shortcuts (Mac) {.cols-3}
+## Atalhos de teclado (Mac) {.cols-3}
 
-### General
+### Geral
 
-| Shortcut          | Action            |
-| ----------------- | ----------------- |
-| `Cmd` `S`         | Sync task         |
-| `Esc`             | Cancel            |
-| `Cmd` `Z`         | Undo              |
-| `Cmd` `Shift` `Z` | Redo              |
-| `Cmd` `P`         | Print             |
-| `Cmd` `K`         | Open command menu |
-| `?`               | Shortcuts         |
-
-{.shortcuts}
-
-### Global Action
-
-| Shortcut                   | Action                   |
-| -------------------------- | ------------------------ |
-| `Ctrl` `Shift` `A`         | Quick add                |
-| `Cmd` `Shift` `O`          | Show or hide mini window |
-| `Cmd` `Option` `Shift` `P` | Start or abandon pomo    |
+| Atalho            | Ação                 |
+| ----------------- | -------------------- |
+| `Cmd` `S`         | Sincronizar tarefa   |
+| `Esc`             | Cancelar             |
+| `Cmd` `Z`         | Desfazer             |
+| `Cmd` `Shift` `Z` | Refazer              |
+| `Cmd` `P`         | Imprimir             |
+| `Cmd` `K`         | Abrir menu de comandos |
+| `?`               | Atalhos              |
 
 {.shortcuts}
 
-### Navigation
+### Ação global
 
-| Shortcut                  | Action             |
-| ------------------------- | ------------------ |
-| `G` then `S` or `Cmd` `,` | Go to Settings     |
-| `G` then `A`              | Go to All          |
-| `G` then `T`              | Go to Today        |
-| `G` then `R`              | Go to Tomorrow     |
-| `G` then `N`              | Go to Next 7 days  |
-| `G` then `M`              | Go to Assign to me |
-| `G` then `I`              | Go to Inbox        |
-| `G` then `C`              | Go to Completed    |
-| `G` then `W`              | Go to Won't do     |
-| `G` then `B`              | Go to Summary      |
-| `G` then `G`              | Go to Trash        |
+| Atalho                     | Ação                       |
+| -------------------------- | -------------------------- |
+| `Ctrl` `Shift` `A`         | Adição rápida              |
+| `Cmd` `Shift` `O`          | Mostrar ou ocultar mini janela |
+| `Cmd` `Option` `Shift` `P` | Iniciar ou abandonar pomo  |
 
 {.shortcuts}
 
-### Task
+### Navegação
 
-| Shortcut         | Action         |
-| ---------------- | -------------- |
-| `Cmd` `N`        | Add task       |
-| `Return`         | Add task below |
-| `Shift` `Return` | Add subtask    |
-
-{.shortcuts}
-
-### Quick Add
-
-| Shortcut | Action                     |
-| -------- | -------------------------- |
-| `*`      | Set due date for the task  |
-| `!`      | Set priority for the task. |
-| `#`      | Set tag for the task.      |
-| `~/^`    | Add/move task to list.     |
-| `@`      | Assigned task to a member  |
+| Atalho                    | Ação                 |
+| ------------------------- | -------------------- |
+| `G` depois `S` ou `Cmd` `,` | Ir para Configurações |
+| `G` depois `A`              | Ir para Tudo         |
+| `G` depois `T`              | Ir para Hoje         |
+| `G` depois `R`              | Ir para Amanhã       |
+| `G` depois `N`              | Ir para Próximos 7 dias |
+| `G` depois `M`              | Ir para Atribuído a mim |
+| `G` depois `I`              | Ir para Caixa de entrada |
+| `G` depois `C`              | Ir para Concluídos   |
+| `G` depois `W`              | Ir para Não farei    |
+| `G` depois `B`              | Ir para Resumo       |
+| `G` depois `G`              | Ir para Lixeira      |
 
 {.shortcuts}
 
-### Edit Tasks
+### Tarefa
 
-| Shortcut          | Action              |
-| ----------------- | ------------------- |
-| `Cmd` `Shift` `M` | Complete tasks      |
-| `Cmd` `Delete`    | Delete tasks        |
-| `Cmd` `D`         | Set date            |
-| `Cmd` `0`         | Clear date          |
-| `Cmd` `1`         | Set today           |
-| `Cmd` `2`         | Set tomorrow        |
-| `Cmd` `3`         | Set next week       |
-| `Ctrl` `0`        | Set no priority     |
-| `Ctrl` `1`        | Set low priority    |
-| `Ctrl` `2`        | Set medium priority |
-| `Ctrl` `3`        | Set high priority   |
+| Atalho           | Ação                |
+| ---------------- | ------------------- |
+| `Cmd` `N`        | Adicionar tarefa    |
+| `Return`         | Adicionar tarefa abaixo |
+| `Shift` `Return` | Adicionar subtarefa |
 
 {.shortcuts}
 
-### Switch Views
+### Adição rápida
 
-| Shortcut     | Action        |
-| ------------ | ------------- |
-| `V` then `L` | List View     |
-| `V` then `K` | Kanban View   |
-| `G` then `T` | Timeline View |
-| `D` / `1`    | Day View      |
-| `W` / `2`    | Week View     |
-| `M` / `3`    | Month View    |
-| `T`          | Back to Today |
+| Atalho | Ação                          |
+| ------ | ----------------------------- |
+| `*`    | Define a data de entrega da tarefa |
+| `!`    | Define a prioridade da tarefa. |
+| `#`    | Define a tag da tarefa.       |
+| `~/^`  | Adiciona/move a tarefa para a lista. |
+| `@`    | Atribui a tarefa a um membro  |
 
 {.shortcuts}
 
-### Sticky Note
+### Editar tarefas
 
-| Shortcut          | Action              |
-| ----------------- | ------------------- |
-| `F12`             | Pin                 |
-| `Cmd` `Shift` `C` | Color               |
-| `Cmd` `E`         | Expand/Collapse All |
-| `Cmd` `Opt` `↑`   | Arrange by Top      |
-| `Cmd` `Opt` `←`   | Arrange by Left     |
-| `Cmd` `Opt` `→`   | Arrange by Right    |
-
-{.shortcuts}
-
-## Keyboard Shortcuts (Windows) {.cols-2}
-
-### General I
-
-| Shortcut           | Action                   |
-| ------------------ | ------------------------ |
-| `Ctrl` `Shift` `A` | Show quick add bar       |
-| `Ctrl` `Shift` `L` | Show or hide mini window |
-| `Ctrl` `Shift` `P` | Start or abandon pomo    |
-| `Ctrl` `S`         | Sync task                |
-| `Ctrl` `F`         | Search for a task        |
-| `Ctrl` `N`         | Add task                 |
-| `Ctrl` `Shift` `M` | Complete task            |
-| `Ctrl` `0`         | Clear date               |
-| `Ctrl` `D`         | Set date                 |
-| `Ctrl` `1`         | Set today                |
-| `Ctrl` `2`         | Set tomorrow             |
-| `Ctrl` `3`         | Set next week            |
+| Atalho            | Ação                   |
+| ----------------- | ---------------------- |
+| `Cmd` `Shift` `M` | Concluir tarefas       |
+| `Cmd` `Delete`    | Excluir tarefas        |
+| `Cmd` `D`         | Definir data           |
+| `Cmd` `0`         | Limpar data            |
+| `Cmd` `1`         | Definir hoje           |
+| `Cmd` `2`         | Definir amanhã         |
+| `Cmd` `3`         | Definir próxima semana |
+| `Ctrl` `0`        | Sem prioridade         |
+| `Ctrl` `1`        | Prioridade baixa       |
+| `Ctrl` `2`        | Prioridade média       |
+| `Ctrl` `3`        | Prioridade alta        |
 
 {.shortcuts}
 
-### General II
+### Alternar visualizações
 
-| Shortcut         | Action                       |
-| ---------------- | ---------------------------- |
-| `Ctrl` `0`       | Set no priority              |
-| `Ctrl` `1`       | Set low priority             |
-| `Ctrl` `2`       | Set medium priority          |
-| `Ctrl` `3`       | Set high priority            |
-| `Ctrl` `P`       | Print                        |
-| `Ctrl` `Alt` `T` | Open today's list            |
-| `Ctrl` `Opt` `T` | Open tomorrow's list         |
-| `Ctrl` `Alt` `N` | Open next 7 days list        |
-| `Ctrl` `Alt` `A` | Open all list                |
-| `Ctrl` `Alt` `C` | Open the calendar view       |
-| `Ctrl` `Alt` `A` | Open the assigned to me list |
-| `Ctrl` `Alt` `1` | Open the inbox               |
-| `Ctrl` `Alt` `C` | Open completed tasks         |
+| Atalho       | Ação              |
+| ------------ | ----------------- |
+| `V` depois `L` | Visualização em lista |
+| `V` depois `K` | Visualização Kanban |
+| `G` depois `T` | Visualização em linha do tempo |
+| `D` / `1`    | Visualização diária |
+| `W` / `2`    | Visualização semanal |
+| `M` / `3`    | Visualização mensal |
+| `T`          | Voltar para Hoje  |
 
 {.shortcuts}
 
-## Also see
+### Nota adesiva
 
-- [Keyboard shortcuts for TickTick](https://support.ticktick.com/hc/en-us/articles/360016272252-Shortcuts)
+| Atalho            | Ação                  |
+| ----------------- | --------------------- |
+| `F12`             | Fixar                 |
+| `Cmd` `Shift` `C` | Cor                   |
+| `Cmd` `E`         | Expandir/Recolher tudo |
+| `Cmd` `Opt` `↑`   | Organizar por cima    |
+| `Cmd` `Opt` `←`   | Organizar à esquerda  |
+| `Cmd` `Opt` `→`   | Organizar à direita   |
+
+{.shortcuts}
+
+## Atalhos de teclado (Windows) {.cols-2}
+
+### Geral I
+
+| Atalho             | Ação                       |
+| ------------------ | -------------------------- |
+| `Ctrl` `Shift` `A` | Mostrar barra de adição rápida |
+| `Ctrl` `Shift` `L` | Mostrar ou ocultar mini janela |
+| `Ctrl` `Shift` `P` | Iniciar ou abandonar pomo  |
+| `Ctrl` `S`         | Sincronizar tarefa         |
+| `Ctrl` `F`         | Procurar uma tarefa        |
+| `Ctrl` `N`         | Adicionar tarefa           |
+| `Ctrl` `Shift` `M` | Concluir tarefa            |
+| `Ctrl` `0`         | Limpar data                |
+| `Ctrl` `D`         | Definir data               |
+| `Ctrl` `1`         | Definir hoje               |
+| `Ctrl` `2`         | Definir amanhã             |
+| `Ctrl` `3`         | Definir próxima semana     |
+
+{.shortcuts}
+
+### Geral II
+
+| Atalho           | Ação                          |
+| ---------------- | ----------------------------- |
+| `Ctrl` `0`       | Sem prioridade                |
+| `Ctrl` `1`       | Prioridade baixa              |
+| `Ctrl` `2`       | Prioridade média              |
+| `Ctrl` `3`       | Prioridade alta               |
+| `Ctrl` `P`       | Imprimir                      |
+| `Ctrl` `Alt` `T` | Abrir a lista de hoje         |
+| `Ctrl` `Opt` `T` | Abrir a lista de amanhã       |
+| `Ctrl` `Alt` `N` | Abrir a lista dos próximos 7 dias |
+| `Ctrl` `Alt` `A` | Abrir a lista de tudo         |
+| `Ctrl` `Alt` `C` | Abrir a visualização de calendário |
+| `Ctrl` `Alt` `A` | Abrir a lista atribuída a mim |
+| `Ctrl` `Alt` `1` | Abrir a caixa de entrada      |
+| `Ctrl` `Alt` `C` | Abrir as tarefas concluídas   |
+
+{.shortcuts}
+
+## Veja também
+
+- [Atalhos de teclado do TickTick](https://support.ticktick.com/hc/en-us/articles/360016272252-Shortcuts)
   _(support.ticktick.com)_

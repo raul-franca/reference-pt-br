@@ -4,8 +4,8 @@
             <% page.posts.each(function(post) { %>
                 <div class="node-item max-w-4xl mb-6 px-3 md:px-10 py-6 mx-auto bg-white dark:text-slate-300 dark:bg-slate-800 rounded-lg shadow">
                     <div class="flex items-center justify-between">
-                        <span class="font-light text-slate-600">Sep 9, 2021</span>
-                        <a href="#" title="JavaScript Category" class="px-2 py-1 text-slate-100 bg-slate-600 rounded hover:bg-slate-500">JavaScript</a>
+                        <span class="font-light text-slate-600">9 de setembro de 2021</span>
+                        <a href="#" title="Categoria JavaScript" class="px-2 py-1 text-slate-100 bg-slate-600 rounded hover:bg-slate-500">JavaScript</a>
                     </div>
                     <div class="mt-2">
                         <a href="<%- url_for(post.path) %>" title="<%= post.title %>"
@@ -13,7 +13,7 @@
                         <p class="mt-2 text-slate-600 dark:text-slate-300"><%- post.excerpt %></p>
                     </div>
                     <div class="flex items-center justify-between mt-4">
-                        <a href="<%- url_for(post.path) %>" title="Read more about <%= post.title %>" class="underline text-blue-500 dark:opacity-70">Read more</a>
+                        <a href="<%- url_for(post.path) %>" title="Leia mais sobre <%= post.title %>" class="underline text-blue-500 dark:opacity-70">Leia mais</a>
                     </div>
                 </div>
             <% }); %>

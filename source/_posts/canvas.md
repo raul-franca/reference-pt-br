@@ -5,17 +5,17 @@ background: bg-[#cc5534]
 tags:
   - web
 categories:
-  - Programming
+  - Programação
 intro: |
-  This HTML  Canvas quick reference cheat sheet lists the common HTML5  Canvas design tags in readable layout.
+  Este cheat sheet de referência rápida do HTML Canvas lista as tags de design mais comuns do HTML5 Canvas em um layout legível.
 plugins:
   - copyCode
   - runCode
 ---
 
-## Getting Started
+## Primeiros passos
 
-### Basic Setup
+### Configuração básica
 
 ```html
 <!DOCTYPE html>
@@ -35,16 +35,16 @@ plugins:
 </html>
 ```
 
-### Getting the Context
+### Obtendo o contexto
 
 ```js
 const canvas = document.getElementById('myCanvas');
 const ctx = canvas.getContext('2d');
 ```
 
-## Drawing Shapes
+## Desenhando formas
 
-### Rectangles
+### Retângulos
 
 ```js
 ctx.fillStyle = 'red';
@@ -57,9 +57,9 @@ ctx.strokeRect(200, 10, 150, 100); // x, y, width, height
 ctx.clearRect(15, 15, 30, 30); // x, y, width, height
 ```
 
-## Paths
+## Caminhos
 
-### Lines
+### Linhas
 
 ```js
 ctx.beginPath();
@@ -70,7 +70,7 @@ ctx.closePath(); // Connects the end point to the start point
 ctx.stroke();
 ```
 
-### Circles
+### Círculos
 
 ```js
 ctx.beginPath();
@@ -80,7 +80,7 @@ ctx.fill();
 ctx.stroke();
 ```
 
-### Arcs
+### Arcos
 
 ```js
 ctx.beginPath();
@@ -88,9 +88,9 @@ ctx.arc(150, 150, 75, 0, Math.PI); // x, y, radius, startAngle, endAngle
 ctx.stroke();
 ```
 
-## Bezier and Quadratic Curves
+## Curvas de Bézier e quadráticas
 
-### Quadratic Curve
+### Curva quadrática
 
 ```js
 ctx.beginPath();
@@ -99,7 +99,7 @@ ctx.quadraticCurveTo(200, 100, 400, 250); // cpX, cpY, endX, endY
 ctx.stroke();
 ```
 
-### Bezier Curve
+### Curva de Bézier
 
 ```js
 ctx.beginPath();
@@ -108,7 +108,7 @@ ctx.bezierCurveTo(150, 100, 350, 500, 450, 300); // cp1X, cp1Y, cp2X, cp2Y, endX
 ctx.stroke();
 ```
 
-### Text
+### Texto
 
 ```js
 ctx.font = '30px Arial';
@@ -118,7 +118,7 @@ ctx.fillText('Hello Canvas', 10, 50); // text, x, y
 ctx.strokeText('Hello Canvas', 10, 100); // text, x, y
 ```
 
-### Images
+### Imagens
 
 ```js
 const img = new Image();
@@ -130,32 +130,32 @@ img.onload = () => {
 };
 ```
 
-## Transformations
+## Transformações
 
-### Translation
+### Translação
 
 ```js
 ctx.translate(100, 100); // x, y
 ctx.fillRect(0, 0, 50, 50);
 ```
 
-### Rotation
+### Rotação
 
 ```js
 ctx.rotate((Math.PI / 180) * 45); // Angle in radians
 ctx.fillRect(100, 100, 50, 50);
 ```
 
-### Scaling
+### Escala
 
 ```js
 ctx.scale(2, 2); // x, y
 ctx.fillRect(50, 50, 50, 50);
 ```
 
-## Gradients
+## Gradientes
 
-### Linear Gradient
+### Gradiente linear
 
 ```js
 const linearGradient = ctx.createLinearGradient(0, 0, 200, 0); // x0, y0, x1, y1
@@ -165,7 +165,7 @@ ctx.fillStyle = linearGradient;
 ctx.fillRect(10, 10, 200, 100);
 ```
 
-### Radial Gradient
+### Gradiente radial
 
 ```js
 const radialGradient = ctx.createRadialGradient(75, 50, 5, 90, 60, 100); // x0, y0, r0, x1, y1, r1
@@ -175,7 +175,7 @@ ctx.fillStyle = radialGradient;
 ctx.fillRect(10, 10, 200, 100);
 ```
 
-### Patterns
+### Padrões
 
 ```js
 const img = new Image();
@@ -187,7 +187,7 @@ img.onload = () => {
 };
 ```
 
-### Shadows
+### Sombras
 
 ```js
 ctx.shadowColor = 'rgba(0, 0, 0, 0.5)';
@@ -199,9 +199,9 @@ ctx.fillStyle = 'red';
 ctx.fillRect(100, 100, 100, 100);
 ```
 
-## Compositing
+## Composição
 
-### Global Alpha
+### Alpha global
 
 ```js
 ctx.globalAlpha = 0.5;
@@ -212,7 +212,7 @@ ctx.fillStyle = 'blue';
 ctx.fillRect(150, 150, 100, 100);
 ```
 
-### Global Composite Operation
+### Operação de composição global
 
 ```js
 ctx.globalCompositeOperation = 'source-over'; // Default
@@ -224,7 +224,7 @@ ctx.fillStyle = 'blue';
 ctx.fillRect(150, 150, 100, 100);
 ```
 
-### Animations
+### Animações
 
 ```js
 let x = 0;
@@ -238,6 +238,6 @@ function draw() {
 draw();
 ```
 
-## Also read
+## Leia também
 
-- [MDN doc ](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API)
+- [Documentação do MDN](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API)

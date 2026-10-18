@@ -7,363 +7,363 @@ tags:
   -
   -
 categories:
-  - Keyboard Shortcuts
+  - Atalhos de Teclado
 intro: |
-  A visual cheat-sheet for the 251 keyboard shortcuts found in Adobe Lightroom CC
+  Um cheat sheet visual dos 251 atalhos de teclado do Adobe Lightroom CC
 ---
 
-## Keyboard Shortcuts
+## Atalhos de teclado
 
-### Working with panels {.row-span-2}
+### Trabalhando com painéis {.row-span-2}
 
-| Shortcut                  | Action                                                                    |
+| Atalho                  | Ação                                                                      |
 | ------------------------- | ------------------------------------------------------------------------- |
-| `Tab`                     | Show/hide side panels                                                     |
-| `Shift` `Tab`             | Show/hide all panels                                                      |
-| `T`                       | Show/hide toolbar                                                         |
-| `F5`                      | Show/hide Module Picker                                                   |
-| `F6`                      | Show/hide Filmstrip                                                       |
-| `F7`                      | Show/hide left panels                                                     |
-| `F8`                      | Show/hide right panels                                                    |
-| `Alt` `(click a panel)`   | Toggle solo mode                                                          |
-| `Shift` `(click a panel)` | Open a new panel without closing soloed panel                             |
-| `Ctrl` `(click a panel)`  | Open/close all panels                                                     |
-| `Ctrl` `Shift` `0-5`      | Open/close left panels, top to bottom                                     |
-| `Ctrl` `0-9`              | Open/close right panels, Library and Develop modules, top to bottom       |
-| `Ctrl` `1-7`              | Open/close right panels, Slideshow, Print, and Web modules, top to bottom |
+| `Tab`                     | Mostrar/ocultar painéis laterais                                          |
+| `Shift` `Tab`             | Mostrar/ocultar todos os painéis                                          |
+| `T`                       | Mostrar/ocultar barra de ferramentas                                      |
+| `F5`                      | Mostrar/ocultar Module Picker                                             |
+| `F6`                      | Mostrar/ocultar Filmstrip                                                 |
+| `F7`                      | Mostrar/ocultar painéis à esquerda                                        |
+| `F8`                      | Mostrar/ocultar painéis à direita                                         |
+| `Alt` `(click a panel)`   | Alternar o modo solo                                                      |
+| `Shift` `(click a panel)` | Abrir um novo painel sem fechar o painel em modo solo                     |
+| `Ctrl` `(click a panel)`  | Abrir/fechar todos os painéis                                             |
+| `Ctrl` `Shift` `0-5`      | Abrir/fechar painéis à esquerda, de cima para baixo                       |
+| `Ctrl` `0-9`              | Abrir/fechar painéis à direita, módulos Library e Develop, de cima para baixo |
+| `Ctrl` `1-7`              | Abrir/fechar painéis à direita, módulos Slideshow, Print e Web, de cima para baixo |
 
 {.shortcuts}
 
-### Navigating modules
+### Navegando entre módulos
 
-| Shortcut                  | Action                     |
+| Atalho                  | Ação                       |
 | ------------------------- | -------------------------- |
-| `Ctrl` `Alt` `1`          | Go to Library module       |
-| `Ctrl` `Alt` `2`          | Go to Develop module       |
-| `Ctrl` `Alt` `3`          | Go to Slideshow module     |
-| `Ctrl` `Alt` `4`          | Go to Print module         |
-| `Ctrl` `Alt` `5`          | Go to Web module           |
-| `Ctrl` `Alt` `Left/Right` | Go back/go forward         |
-| `Ctrl` `Alt` `Up`         | Go back to previous module |
+| `Ctrl` `Alt` `1`          | Ir para o módulo Library   |
+| `Ctrl` `Alt` `2`          | Ir para o módulo Develop   |
+| `Ctrl` `Alt` `3`          | Ir para o módulo Slideshow |
+| `Ctrl` `Alt` `4`          | Ir para o módulo Print     |
+| `Ctrl` `Alt` `5`          | Ir para o módulo Web       |
+| `Ctrl` `Alt` `Left/Right` | Voltar/avançar             |
+| `Ctrl` `Alt` `Up`         | Voltar ao módulo anterior  |
 
 {.shortcuts}
 
-### Using a secondary window
+### Usando uma janela secundária
 
-| Shortcut                     | Action                                           |
+| Atalho                     | Ação                                             |
 | ---------------------------- | ------------------------------------------------ |
-| `F11`                        | Open secondary window                            |
-| `Shift` `G`                  | Enter Grid view                                  |
-| `Shift` `E`                  | Enter normal Loupe view                          |
-| `Ctrl` `Shift` `Enter`       | Enter locked Loupe view                          |
-| `Shift` `C`                  | Enter Compare view                               |
-| `Shift` `N`                  | Enter Survey view                                |
-| `Ctrl` `Alt` `Shift` `Enter` | Enter Slideshow view                             |
-| `Shift` `F11`                | Enter full-screen mode (requires second monitor) |
-| `Shift` `\`                  | Show/hide Filter bar                             |
-| `Ctrl` `Shift` `+/-`         | Zoom in/out                                      |
+| `F11`                        | Abrir janela secundária                          |
+| `Shift` `G`                  | Entrar na visualização Grid                      |
+| `Shift` `E`                  | Entrar na visualização Loupe normal              |
+| `Ctrl` `Shift` `Enter`       | Entrar na visualização Loupe travada             |
+| `Shift` `C`                  | Entrar na visualização Compare                   |
+| `Shift` `N`                  | Entrar na visualização Survey                    |
+| `Ctrl` `Alt` `Shift` `Enter` | Entrar na visualização Slideshow                 |
+| `Shift` `F11`                | Entrar no modo tela cheia (requer segundo monitor) |
+| `Shift` `\`                  | Mostrar/ocultar a barra de filtros               |
+| `Ctrl` `Shift` `+/-`         | Aumentar/diminuir zoom                           |
 
 {.shortcuts}
 
-### Working in the Develop module {.row-span-3}
+### Trabalhando no módulo Develop {.row-span-3}
 
-| Shortcut                     | Action                                                                                |
+| Atalho                     | Ação                                                                                  |
 | ---------------------------- | ------------------------------------------------------------------------------------- |
-| `V`                          | Convert to grayscale                                                                  |
-| `Ctrl` `U`                   | Auto tone                                                                             |
-| `Ctrl` `Shift` `U`           | Auto white balance                                                                    |
-| `Ctrl` `E`                   | Edit in Photoshop                                                                     |
-| `Ctrl` `Shift` `C/V`         | Copy/paste Develop settings                                                           |
-| `Ctrl` `Alt` `V`             | Paste settings from previous photo                                                    |
-| `Ctrl` `Alt` `Shift` `Left`  | Copy After settings to Before                                                         |
-| `Ctrl` `Alt` `Shift` `Right` | Copy Before settings to After                                                         |
-| `Ctrl` `Alt` `Shift` `Up`    | Swap Before and After settings                                                        |
-| `Up/Down`                    | Increase/decrease selected slider in small increments                                 |
-| `Shift` `Up/Down`            | Increase/decrease selected slider in larger increments                                |
-| `./,`                        | Cycle through Basic panel settings (forward/backward)                                 |
-| `(double-click slider name)` | Reset a slider                                                                        |
-| `Alt` `(click group name)`   | Reset a group of sliders                                                              |
-| `Ctrl` `Shift` `R`           | Reset all settings                                                                    |
-| `Ctrl` `Shift` `S`           | Sync settings                                                                         |
-| `Ctrl` `Alt` `S`             | Sync settings bypassing Synchronize Settings dialog box                               |
-| `Ctrl` `(click Sync button)` | Toggle Auto Sync                                                                      |
-| `Ctrl` `Alt` `Shift` `A`     | Enable Auto Sync                                                                      |
-| `Ctrl` `Alt` `Shift` `M`     | Match total exposures                                                                 |
-| `W`                          | Select White Balance tool (from any module)                                           |
-| `R`                          | Select the Crop tool (from any module)                                                |
-| `A`                          | Constrain aspect ratio when Crop tool is selected                                     |
-| `Shift` `A`                  | Crop to same aspect ratio as previous crop                                            |
-| `Alt` `(drag)`               | Crop from center of photo                                                             |
-| `O`                          | Cycle Crop grid overlay                                                               |
-| `Shift` `O`                  | Cycle Crop grid overlay orientation                                                   |
-| `X`                          | Switch crop between portrait and landscape orientation                                |
-| `Ctrl` `Alt` `R`             | Reset crop                                                                            |
-| `Shift` `T`                  | Select the Guided Upright tool                                                        |
-| `Q`                          | Select the Spot Removal tool                                                          |
-| `Shift` `T`                  | Toggle Brush between Clone and Heal modes when Spot Removal tool is selected          |
-| `K`                          | Select the Adjustment Brush tool (from any module)                                    |
-| `M`                          | Select the Graduated Filter tool                                                      |
-| `Shift` `T`                  | Toggle Mask between Edit and Brush modes when the Graduated/Radial Filter is selected |
-| `]/[`                        | Increase/decrease brush size                                                          |
-| `Shift` `]/[`                | Increase/decrease brush feathering                                                    |
-| `/`                          | Switch between local adjustment brush A and B                                         |
-| `Alt` `(drag)`               | Temporarily switch from brush A or B to Eraser                                        |
-| `Shift` `(drag)`             | Paint a horizontal or vertical line                                                   |
-| `H`                          | Show/hide local adjustment pin                                                        |
-| `O`                          | Show/hide local adjustment mask overlay                                               |
-| `Shift` `O`                  | Cycle local adjustment mask overlay colors                                            |
-| `Ctrl` `Alt` `Shift` `T`     | Select Targeted Adjustment tool to apply a Tone Curve adjustment                      |
-| `Ctrl` `Alt` `Shift` `H`     | Select Targeted Adjustment tool to apply a Hue adjustment                             |
-| `Ctrl` `Alt` `Shift` `S`     | Select Targeted Adjustment tool to apply a Saturation adjustment                      |
-| `Ctrl` `Alt` `Shift` `L`     | Select Targeted Adjustment tool to apply a Luminance adjustment                       |
-| `Ctrl` `Alt` `Shift` `G`     | Select Targeted Adjustment tool to apply a Grayscale Mix adjustment                   |
-| `Ctrl` `Alt` `Shift` `N`     | Deselect Targeted Adjustment tool                                                     |
-| `J`                          | Show clipping                                                                         |
-| `Ctrl` `]`                   | Rotate photo right (clockwise)                                                        |
-| `Ctrl` `[`                   | Rotate photo left (counterclockwise)                                                  |
-| `Space/Z`                    | Toggle between Loupe and 1:1 Zoom preview                                             |
-| `Ctrl` `+/-`                 | Zoom in/out                                                                           |
-| `Ctrl` `Enter`               | Play impromptu slide show                                                             |
-| `Y`                          | View Before and After left/right                                                      |
-| `Alt` `Y`                    | View Before and After top/bottom                                                      |
-| `Shift` `Y`                  | View Before and After in a split screen                                               |
-| `\`                          | View Before only                                                                      |
-| `Ctrl` `N`                   | Create a new snapshot                                                                 |
-| `Ctrl` `Shift` `N`           | Create a new preset                                                                   |
-| `Ctrl` `Alt` `N`             | Create a new preset folder                                                            |
-| `Ctrl` `J`                   | Open Develop view options                                                             |
+| `V`                          | Converter para escala de cinza                                                        |
+| `Ctrl` `U`                   | Tom automático                                                                        |
+| `Ctrl` `Shift` `U`           | Balanço de branco automático                                                          |
+| `Ctrl` `E`                   | Editar no Photoshop                                                                   |
+| `Ctrl` `Shift` `C/V`         | Copiar/colar configurações do Develop                                                 |
+| `Ctrl` `Alt` `V`             | Colar configurações da foto anterior                                                  |
+| `Ctrl` `Alt` `Shift` `Left`  | Copiar configurações de After para Before                                             |
+| `Ctrl` `Alt` `Shift` `Right` | Copiar configurações de Before para After                                             |
+| `Ctrl` `Alt` `Shift` `Up`    | Trocar configurações de Before e After                                                |
+| `Up/Down`                    | Aumentar/diminuir o slider selecionado em pequenos incrementos                        |
+| `Shift` `Up/Down`            | Aumentar/diminuir o slider selecionado em incrementos maiores                         |
+| `./,`                        | Percorrer as configurações do painel Basic (para frente/para trás)                    |
+| `(double-click slider name)` | Redefinir um slider                                                                   |
+| `Alt` `(click group name)`   | Redefinir um grupo de sliders                                                         |
+| `Ctrl` `Shift` `R`           | Redefinir todas as configurações                                                      |
+| `Ctrl` `Shift` `S`           | Sincronizar configurações                                                             |
+| `Ctrl` `Alt` `S`             | Sincronizar configurações ignorando a caixa de diálogo Synchronize Settings           |
+| `Ctrl` `(click Sync button)` | Alternar o Auto Sync                                                                  |
+| `Ctrl` `Alt` `Shift` `A`     | Ativar o Auto Sync                                                                    |
+| `Ctrl` `Alt` `Shift` `M`     | Igualar exposições totais                                                             |
+| `W`                          | Selecionar a ferramenta White Balance (de qualquer módulo)                             |
+| `R`                          | Selecionar a ferramenta Crop (de qualquer módulo)                                     |
+| `A`                          | Restringir a proporção quando a ferramenta Crop estiver selecionada                   |
+| `Shift` `A`                  | Recortar na mesma proporção do recorte anterior                                       |
+| `Alt` `(drag)`               | Recortar a partir do centro da foto                                                   |
+| `O`                          | Percorrer a sobreposição de grade do Crop                                             |
+| `Shift` `O`                  | Percorrer a orientação da sobreposição de grade do Crop                               |
+| `X`                          | Alternar o recorte entre orientação retrato e paisagem                                |
+| `Ctrl` `Alt` `R`             | Redefinir recorte                                                                     |
+| `Shift` `T`                  | Selecionar a ferramenta Guided Upright                                                |
+| `Q`                          | Selecionar a ferramenta Spot Removal                                                  |
+| `Shift` `T`                  | Alternar o Brush entre os modos Clone e Heal quando a ferramenta Spot Removal estiver selecionada |
+| `K`                          | Selecionar a ferramenta Adjustment Brush (de qualquer módulo)                         |
+| `M`                          | Selecionar a ferramenta Graduated Filter                                              |
+| `Shift` `T`                  | Alternar a Mask entre os modos Edit e Brush quando o Graduated/Radial Filter estiver selecionado |
+| `]/[`                        | Aumentar/diminuir o tamanho do pincel                                                 |
+| `Shift` `]/[`                | Aumentar/diminuir a suavização do pincel                                              |
+| `/`                          | Alternar entre o pincel de ajuste local A e B                                         |
+| `Alt` `(drag)`               | Alternar temporariamente do pincel A ou B para a borracha                             |
+| `Shift` `(drag)`             | Pintar uma linha horizontal ou vertical                                               |
+| `H`                          | Mostrar/ocultar o pino de ajuste local                                                |
+| `O`                          | Mostrar/ocultar a sobreposição da máscara de ajuste local                             |
+| `Shift` `O`                  | Percorrer as cores da sobreposição da máscara de ajuste local                         |
+| `Ctrl` `Alt` `Shift` `T`     | Selecionar a ferramenta Targeted Adjustment para aplicar um ajuste de Tone Curve       |
+| `Ctrl` `Alt` `Shift` `H`     | Selecionar a ferramenta Targeted Adjustment para aplicar um ajuste de Hue              |
+| `Ctrl` `Alt` `Shift` `S`     | Selecionar a ferramenta Targeted Adjustment para aplicar um ajuste de Saturation       |
+| `Ctrl` `Alt` `Shift` `L`     | Selecionar a ferramenta Targeted Adjustment para aplicar um ajuste de Luminance        |
+| `Ctrl` `Alt` `Shift` `G`     | Selecionar a ferramenta Targeted Adjustment para aplicar um ajuste de Grayscale Mix    |
+| `Ctrl` `Alt` `Shift` `N`     | Desmarcar a ferramenta Targeted Adjustment                                            |
+| `J`                          | Mostrar clipping                                                                      |
+| `Ctrl` `]`                   | Girar a foto para a direita (sentido horário)                                         |
+| `Ctrl` `[`                   | Girar a foto para a esquerda (sentido anti-horário)                                   |
+| `Space/Z`                    | Alternar entre a prévia Loupe e Zoom 1:1                                              |
+| `Ctrl` `+/-`                 | Aumentar/diminuir zoom                                                                |
+| `Ctrl` `Enter`               | Reproduzir apresentação improvisada                                                   |
+| `Y`                          | Ver Before e After à esquerda/direita                                                 |
+| `Alt` `Y`                    | Ver Before e After acima/abaixo                                                       |
+| `Shift` `Y`                  | Ver Before e After em tela dividida                                                   |
+| `\`                          | Ver somente Before                                                                    |
+| `Ctrl` `N`                   | Criar um novo snapshot                                                                |
+| `Ctrl` `Shift` `N`           | Criar um novo preset                                                                  |
+| `Ctrl` `Alt` `N`             | Criar uma nova pasta de presets                                                       |
+| `Ctrl` `J`                   | Abrir as opções de exibição do Develop                                                |
 
 {.shortcuts}
 
-### Changing view and screen modes
+### Alterando modos de exibição e de tela
 
-| Shortcut           | Action                                             |
+| Atalho           | Ação                                               |
 | ------------------ | -------------------------------------------------- |
-| `E`                | Enter Library Loupe view                           |
-| `G`                | Enter Library Grid view                            |
-| `C`                | Enter Library Compare view                         |
-| `N`                | Enter Library Survey view                          |
-| `D`                | Open selected photo in the Develop module          |
-| `L`                | Cycle forward through Lights Out modes             |
-| `Shift` `L`        | Cycle backward through Lights Out modes            |
-| `Ctrl` `Shift` `L` | Toggle Lights Dim mode                             |
-| `F`                | Cycle screen modes                                 |
-| `Ctrl` `Shift` `F` | Switch between Normal and full-screen, hide panels |
-| `Ctrl` `Alt` `F`   | Go to Normal screen mode                           |
-| `I`                | Cycle info overlay                                 |
-| `Ctrl` `I`         | Show/hide info overlay                             |
+| `E`                | Entrar na visualização Library Loupe               |
+| `G`                | Entrar na visualização Library Grid                |
+| `C`                | Entrar na visualização Library Compare             |
+| `N`                | Entrar na visualização Library Survey              |
+| `D`                | Abrir a foto selecionada no módulo Develop         |
+| `L`                | Percorrer os modos Lights Out para frente          |
+| `Shift` `L`        | Percorrer os modos Lights Out para trás            |
+| `Ctrl` `Shift` `L` | Alternar o modo Lights Dim                         |
+| `F`                | Percorrer os modos de tela                         |
+| `Ctrl` `Shift` `F` | Alternar entre Normal e tela cheia, ocultar painéis |
+| `Ctrl` `Alt` `F`   | Ir para o modo de tela Normal                      |
+| `I`                | Percorrer a sobreposição de informações            |
+| `Ctrl` `I`         | Mostrar/ocultar a sobreposição de informações      |
 
 {.shortcuts}
 
-### Managing photos and catalogs
+### Gerenciando fotos e catálogos
 
-| Shortcut                         | Action                                                                                 |
+| Atalho                         | Ação                                                                                   |
 | -------------------------------- | -------------------------------------------------------------------------------------- |
-| `Ctrl` `Shift` `I`               | Import photos from disk                                                                |
-| `Ctrl` `O`                       | Open catalog                                                                           |
-| `Ctrl` `,`                       | Open Preferences                                                                       |
-| `Ctrl` `Alt` `,`                 | Open Catalog Settings                                                                  |
-| `Ctrl` `Shift` `T`               | Create new subfolder (segmented tethered capture)                                      |
-| `Ctrl` `T`                       | Hide/show tether capture bar                                                           |
-| `Ctrl` `Shift` `N`               | Create a new folder in the Library module                                              |
-| `Ctrl` `'`                       | Create virtual copy (Library and Develop module only)                                  |
-| `Ctrl` `R`                       | Show in Explorer/Finder (Library and Develop module only)                              |
-| `Right/Left`                     | Go to next/previous photo in the Filmstrip                                             |
-| `Shift/Ctrl` `Click`             | Select multiple folders or collections (in Library, Slideshow, Print, and Web modules) |
-| `F2`                             | Rename photo (in Library module)                                                       |
-| `Delete`                         | Delete selected photo(s)                                                               |
-| `Alt` `Backspace`                | Remove selected photo(s) from catalog                                                  |
-| `Ctrl` `Alt` `Shift` `Backspace` | Delete selected photo(s) and move to Trash                                             |
-| `Ctrl` `Backspace`               | Delete rejected photo(s)                                                               |
-| `Ctrl` `E`                       | Edit in Photoshop                                                                      |
-| `Ctrl` `Alt` `E`                 | Open in other editor                                                                   |
-| `Ctrl` `Shift` `E`               | Export selected photo(s)                                                               |
-| `Ctrl` `Alt` `Shift` `E`         | Export with previous settings                                                          |
-| `Ctrl` `Alt` `Shift` `,`         | Open plug-in manager                                                                   |
-| `Ctrl` `P`                       | Print selected photo                                                                   |
-| `Ctrl` `Shift` `P`               | Open Page Setup dialog box                                                             |
+| `Ctrl` `Shift` `I`               | Importar fotos do disco                                                                |
+| `Ctrl` `O`                       | Abrir catálogo                                                                         |
+| `Ctrl` `,`                       | Abrir Preferências                                                                     |
+| `Ctrl` `Alt` `,`                 | Abrir configurações do catálogo                                                        |
+| `Ctrl` `Shift` `T`               | Criar nova subpasta (captura tethering segmentada)                                     |
+| `Ctrl` `T`                       | Ocultar/mostrar a barra de captura tethering                                           |
+| `Ctrl` `Shift` `N`               | Criar uma nova pasta no módulo Library                                                 |
+| `Ctrl` `'`                       | Criar cópia virtual (somente módulos Library e Develop)                                |
+| `Ctrl` `R`                       | Mostrar no Explorer/Finder (somente módulos Library e Develop)                         |
+| `Right/Left`                     | Ir para a próxima foto/anterior no Filmstrip                                           |
+| `Shift/Ctrl` `Click`             | Selecionar várias pastas ou coleções (nos módulos Library, Slideshow, Print e Web)     |
+| `F2`                             | Renomear foto (no módulo Library)                                                      |
+| `Delete`                         | Excluir a(s) foto(s) selecionada(s)                                                    |
+| `Alt` `Backspace`                | Remover a(s) foto(s) selecionada(s) do catálogo                                        |
+| `Ctrl` `Alt` `Shift` `Backspace` | Excluir a(s) foto(s) selecionada(s) e mover para a Lixeira                             |
+| `Ctrl` `Backspace`               | Excluir a(s) foto(s) rejeitada(s)                                                      |
+| `Ctrl` `E`                       | Editar no Photoshop                                                                    |
+| `Ctrl` `Alt` `E`                 | Abrir em outro editor                                                                  |
+| `Ctrl` `Shift` `E`               | Exportar a(s) foto(s) selecionada(s)                                                   |
+| `Ctrl` `Alt` `Shift` `E`         | Exportar com as configurações anteriores                                               |
+| `Ctrl` `Alt` `Shift` `,`         | Abrir o gerenciador de plug-ins                                                        |
+| `Ctrl` `P`                       | Imprimir a foto selecionada                                                            |
+| `Ctrl` `Shift` `P`               | Abrir a caixa de diálogo Page Setup                                                    |
 
 {.shortcuts}
 
-### Comparing photos in the Library module
+### Comparando fotos no módulo Library
 
-| Shortcut                 | Action                                                |
+| Atalho                 | Ação                                                  |
 | ------------------------ | ----------------------------------------------------- |
-| `E/Enter`                | Switch to Loupe view                                  |
-| `G/Esc`                  | Switch to Grid view                                   |
-| `C`                      | Switch to Compare view                                |
-| `N`                      | Switch to Survey view                                 |
-| `Space/E`                | Switch from Grid to Loupe view                        |
-| `Down`                   | Swap select and candidate photos in Compare view      |
-| `Up`                     | Make next photos select and candidate in Compare view |
-| `Z`                      | Toggle Zoom view                                      |
-| `Ctrl` `+/-`             | Zoom in/out in Loupe view                             |
-| `PgUp/PgDown`            | Scroll up/down zoomed photo in Loupe view             |
-| `Home/End`               | Go to beginning/end of Grid view                      |
-| `Ctrl` `Enter`           | Play impromptu slide show                             |
-| `Ctrl` `]`               | Rotate photo right (clockwise)                        |
-| `Ctrl` `[`               | Rotate photo left (counterclockwise)                  |
-| `=/-`                    | Increase/decrease Grid thumbnail size                 |
-| `PgUp/PgDown`            | Scroll up/down Grid thumbnails                        |
-| `Ctrl` `Shift` `H`       | Toggle cell extras                                    |
-| `Ctrl` `Alt` `Shift` `H` | Show/hide badges                                      |
-| `J`                      | Cycle Grid views                                      |
-| `Ctrl` `J`               | Open Library view options                             |
-| `Ctrl` `(click)`         | Select multiple discrete photos                       |
-| `Shift` `(click)`        | Select multiple contiguous photos                     |
-| `Ctrl` `A`               | Select all photos                                     |
-| `Ctrl` `D`               | Deselect all photos                                   |
-| `Ctrl` `Shift` `D`       | Select only active photo                              |
-| `/`                      | Deselect active photo                                 |
-| `Shift` `Left/Right`     | Add previous/next photo to selection                  |
-| `Ctrl` `Alt` `A`         | Select flagged photos                                 |
-| `Ctrl` `Alt` `Shift` `D` | Deselect unflagged photos                             |
-| `Ctrl` `G`               | Group into stack                                      |
-| `Ctrl` `Shift` `G`       | Unstack                                               |
-| `S`                      | Toggle stack                                          |
-| `Shift` `S`              | Move to top of stack                                  |
-| `Shift` `[`              | Move up in stack                                      |
-| `Shift` `]`              | Move down in stack                                    |
+| `E/Enter`                | Alternar para a visualização Loupe                    |
+| `G/Esc`                  | Alternar para a visualização Grid                     |
+| `C`                      | Alternar para a visualização Compare                  |
+| `N`                      | Alternar para a visualização Survey                   |
+| `Space/E`                | Alternar da visualização Grid para Loupe              |
+| `Down`                   | Trocar as fotos selecionada e candidata na visualização Compare |
+| `Up`                     | Tornar as próximas fotos selecionada e candidata na visualização Compare |
+| `Z`                      | Alternar a visualização Zoom                          |
+| `Ctrl` `+/-`             | Aumentar/diminuir zoom na visualização Loupe          |
+| `PgUp/PgDown`            | Rolar para cima/baixo a foto ampliada na visualização Loupe |
+| `Home/End`               | Ir para o início/fim da visualização Grid             |
+| `Ctrl` `Enter`           | Reproduzir apresentação improvisada                   |
+| `Ctrl` `]`               | Girar a foto para a direita (sentido horário)         |
+| `Ctrl` `[`               | Girar a foto para a esquerda (sentido anti-horário)   |
+| `=/-`                    | Aumentar/diminuir o tamanho das miniaturas do Grid    |
+| `PgUp/PgDown`            | Rolar para cima/baixo as miniaturas do Grid           |
+| `Ctrl` `Shift` `H`       | Alternar extras da célula                             |
+| `Ctrl` `Alt` `Shift` `H` | Mostrar/ocultar badges                                |
+| `J`                      | Percorrer as visualizações Grid                       |
+| `Ctrl` `J`               | Abrir as opções de exibição da Library                |
+| `Ctrl` `(click)`         | Selecionar várias fotos não adjacentes                |
+| `Shift` `(click)`        | Selecionar várias fotos contíguas                     |
+| `Ctrl` `A`               | Selecionar todas as fotos                             |
+| `Ctrl` `D`               | Desmarcar todas as fotos                              |
+| `Ctrl` `Shift` `D`       | Selecionar somente a foto ativa                       |
+| `/`                      | Desmarcar a foto ativa                                |
+| `Shift` `Left/Right`     | Adicionar a foto anterior/próxima à seleção           |
+| `Ctrl` `Alt` `A`         | Selecionar fotos marcadas                             |
+| `Ctrl` `Alt` `Shift` `D` | Desmarcar fotos não marcadas                          |
+| `Ctrl` `G`               | Agrupar em pilha                                      |
+| `Ctrl` `Shift` `G`       | Desagrupar a pilha                                    |
+| `S`                      | Alternar a pilha                                      |
+| `Shift` `S`              | Mover para o topo da pilha                            |
+| `Shift` `[`              | Mover para cima na pilha                              |
+| `Shift` `]`              | Mover para baixo na pilha                             |
 
 {.shortcuts}
 
-### Rating and filtering photos
+### Classificando e filtrando fotos
 
-| Shortcut                        | Action                                      |
+| Atalho                        | Ação                                        |
 | ------------------------------- | ------------------------------------------- |
-| `1-5`                           | Set star rating                             |
-| `Shift` `1-5`                   | Set star rating and go to next photo        |
-| `0`                             | Remove star rating                          |
-| `Shift` `0`                     | Remove star rating and go to next photo     |
-| `]/[`                           | Increase/decrease rating by one star        |
-| `6`                             | Assign a red label                          |
-| `7`                             | Assign a yellow label                       |
-| `8`                             | Assign a green label                        |
-| `9`                             | Assign a blue label                         |
-| `Shift` `6-9`                   | Assign a color label and go to next photo   |
-| `P`                             | Flag photo as a pick                        |
-| `Shift` `P`                     | Flag photo as a pick and go to next photo   |
-| `X`                             | Flag photo as a reject                      |
-| `Shift` `X`                     | Flag photo as a reject and go to next photo |
-| `U`                             | Unflag photo                                |
-| `Shift` `U`                     | Unflag photo and go to next photo           |
-| `Ctrl` `Up/Down`                | Increase/decrease flag status               |
-| <code>\`</code>                 | Cycle flag settings                         |
-| `Ctrl` `Alt` `R`                | Refine photos                               |
-| `\`                             | Show/hide Library Filter bar                |
-| `Shift` `(click filter labels)` | Open multiple filters in the Filter bar     |
-| `Shift` `L`                     | Toggle filters on/off                       |
-| `Ctrl` `F`                      | Find photo in the Library module            |
+| `1-5`                           | Definir classificação por estrelas          |
+| `Shift` `1-5`                   | Definir classificação por estrelas e ir para a próxima foto |
+| `0`                             | Remover classificação por estrelas          |
+| `Shift` `0`                     | Remover classificação por estrelas e ir para a próxima foto |
+| `]/[`                           | Aumentar/diminuir a classificação em uma estrela |
+| `6`                             | Atribuir um rótulo vermelho                 |
+| `7`                             | Atribuir um rótulo amarelo                  |
+| `8`                             | Atribuir um rótulo verde                    |
+| `9`                             | Atribuir um rótulo azul                     |
+| `Shift` `6-9`                   | Atribuir um rótulo de cor e ir para a próxima foto |
+| `P`                             | Marcar a foto como escolhida                |
+| `Shift` `P`                     | Marcar a foto como escolhida e ir para a próxima foto |
+| `X`                             | Marcar a foto como rejeitada                |
+| `Shift` `X`                     | Marcar a foto como rejeitada e ir para a próxima foto |
+| `U`                             | Desmarcar a foto                            |
+| `Shift` `U`                     | Desmarcar a foto e ir para a próxima foto   |
+| `Ctrl` `Up/Down`                | Aumentar/diminuir o status de marcação      |
+| <code>\`</code>                 | Percorrer as configurações de marcação      |
+| `Ctrl` `Alt` `R`                | Refinar fotos                               |
+| `\`                             | Mostrar/ocultar a barra de filtros da Library |
+| `Shift` `(click filter labels)` | Abrir vários filtros na barra de filtros    |
+| `Shift` `L`                     | Ativar/desativar filtros                    |
+| `Ctrl` `F`                      | Encontrar foto no módulo Library            |
 
 {.shortcuts}
 
-### Working with collections
+### Trabalhando com coleções
 
-| Shortcut                 | Action                                        |
+| Atalho                 | Ação                                          |
 | ------------------------ | --------------------------------------------- |
-| `Ctrl` `N`               | Create a new collection in the Library module |
-| `B`                      | Add to Quick Collection                       |
-| `Shift` `B`              | Add to Quick Collection and go to next photo  |
-| `Ctrl` `B`               | Show Quick Collection                         |
-| `Ctrl` `Alt` `B`         | Save Quick Collection                         |
-| `Ctrl` `Shift` `B`       | Clear Quick Collection                        |
-| `Ctrl` `Alt` `Shift` `B` | Set as target collection                      |
+| `Ctrl` `N`               | Criar uma nova coleção no módulo Library      |
+| `B`                      | Adicionar à Quick Collection                   |
+| `Shift` `B`              | Adicionar à Quick Collection e ir para a próxima foto |
+| `Ctrl` `B`               | Mostrar Quick Collection                      |
+| `Ctrl` `Alt` `B`         | Salvar Quick Collection                       |
+| `Ctrl` `Shift` `B`       | Limpar Quick Collection                       |
+| `Ctrl` `Alt` `Shift` `B` | Definir como coleção de destino               |
 
 {.shortcuts}
 
-### Working with metadata and keywords in the Library module
+### Trabalhando com metadados e palavras-chave no módulo Library
 
-| Shortcut                   | Action                                             |
+| Atalho                   | Ação                                               |
 | -------------------------- | -------------------------------------------------- |
-| `Ctrl` `K`                 | Add keywords                                       |
-| `Ctrl` `Shift` `K`         | Edit keywords                                      |
-| `Ctrl` `Alt` `Shift` `K`   | Set a keyword shortcut                             |
-| `Shift` `K`                | Add/remove keyword shortcut from selected photo    |
-| `Ctrl` `Alt` `K`           | Enable painting                                    |
-| `Alt` `1-9`                | Add a keyword from a keyword set to selected photo |
-| `Alt` `0`                  | Cycle forward through keyword sets                 |
-| `Alt` `Shift` `0`          | Cycle backward through keyword sets                |
-| `Ctrl` `Alt` `Shift` `C/V` | Copy/paste metadata                                |
-| `Ctrl` `S`                 | Save metadata to file                              |
+| `Ctrl` `K`                 | Adicionar palavras-chave                           |
+| `Ctrl` `Shift` `K`         | Editar palavras-chave                              |
+| `Ctrl` `Alt` `Shift` `K`   | Definir um atalho de palavra-chave                 |
+| `Shift` `K`                | Adicionar/remover atalho de palavra-chave da foto selecionada |
+| `Ctrl` `Alt` `K`           | Ativar pintura                                     |
+| `Alt` `1-9`                | Adicionar uma palavra-chave de um conjunto à foto selecionada |
+| `Alt` `0`                  | Percorrer os conjuntos de palavras-chave para frente |
+| `Alt` `Shift` `0`          | Percorrer os conjuntos de palavras-chave para trás |
+| `Ctrl` `Alt` `Shift` `C/V` | Copiar/colar metadados                             |
+| `Ctrl` `S`                 | Salvar metadados no arquivo                        |
 
 {.shortcuts}
 
-### Working in the Slideshow module
+### Trabalhando no módulo Slideshow
 
-| Shortcut           | Action                                  |
+| Atalho           | Ação                                    |
 | ------------------ | --------------------------------------- |
-| `Enter`            | Play slide show                         |
-| `Ctrl` `Enter`     | Play impromptu slide show               |
-| `Space`            | Pause slide show                        |
-| `Alt` `Enter`      | Preview slide show                      |
-| `Esc`              | End slide show                          |
-| `Right`            | Go to next slide                        |
-| `Left`             | Go to previous slide                    |
-| `Ctrl` `]`         | Rotate photo right (clockwise)          |
-| `Ctrl` `[`         | Rotate photo left (counterclockwise)    |
-| `Ctrl` `Shift` `H` | Show/hide guides                        |
-| `Ctrl` `J`         | Export PDF slide show                   |
-| `Ctrl` `Shift` `J` | Export JPEG slide show                  |
-| `Ctrl` `Alt` `J`   | Export video slide show                 |
-| `Ctrl` `N`         | Create a new slide show template        |
-| `Ctrl` `Shift` `N` | Create a new slide show template folder |
-| `Ctrl` `S`         | Save slide show settings                |
+| `Enter`            | Reproduzir apresentação de slides       |
+| `Ctrl` `Enter`     | Reproduzir apresentação improvisada     |
+| `Space`            | Pausar apresentação de slides           |
+| `Alt` `Enter`      | Visualizar apresentação de slides       |
+| `Esc`              | Encerrar apresentação de slides         |
+| `Right`            | Ir para o próximo slide                 |
+| `Left`             | Ir para o slide anterior                |
+| `Ctrl` `]`         | Girar a foto para a direita (sentido horário) |
+| `Ctrl` `[`         | Girar a foto para a esquerda (sentido anti-horário) |
+| `Ctrl` `Shift` `H` | Mostrar/ocultar guias                   |
+| `Ctrl` `J`         | Exportar apresentação de slides em PDF  |
+| `Ctrl` `Shift` `J` | Exportar apresentação de slides em JPEG |
+| `Ctrl` `Alt` `J`   | Exportar apresentação de slides em vídeo |
+| `Ctrl` `N`         | Criar um novo template de apresentação de slides |
+| `Ctrl` `Shift` `N` | Criar uma nova pasta de templates de apresentação de slides |
+| `Ctrl` `S`         | Salvar configurações da apresentação de slides |
 
 {.shortcuts}
 
-### Working in the Print module
+### Trabalhando no módulo Print
 
-| Shortcut                 | Action                               |
+| Atalho                 | Ação                                 |
 | ------------------------ | ------------------------------------ |
-| `Ctrl` `P`               | Print                                |
-| `Ctrl` `Alt` `P`         | Print one copy                       |
-| `Ctrl` `Shift` `P`       | Open Page Setup dialog box           |
-| `Ctrl` `Alt` `Shift` `P` | Open Print Settings dialog box       |
-| `Ctrl` `Shift` `Left`    | Go to first page                     |
-| `Ctrl` `Shift` `Right`   | Go to last page                      |
-| `Ctrl` `Left`            | Go to previous page                  |
-| `Ctrl` `Right`           | Go to next page                      |
-| `Ctrl` `Shift` `H`       | Show/hide guides                     |
-| `Ctrl` `R`               | Show/hide rulers                     |
-| `Ctrl` `Shift` `J`       | Show/hide page bleed                 |
-| `Ctrl` `Shift` `M`       | Show/hide margins and gutters        |
-| `Ctrl` `Shift` `K`       | Show/hide image cells                |
-| `Ctrl` `Shift` `U`       | Show/hide dimensions                 |
-| `Ctrl` `Enter`           | Play impromptu slide show            |
-| `Ctrl` `]`               | Rotate photo right (clockwise)       |
-| `Ctrl` `[`               | Rotate photo left (counterclockwise) |
-| `Ctrl` `N`               | Create a new print template          |
-| `Ctrl` `Shift` `N`       | Create a new print template folder   |
-| `Ctrl` `S`               | Save print settings                  |
+| `Ctrl` `P`               | Imprimir                             |
+| `Ctrl` `Alt` `P`         | Imprimir uma cópia                   |
+| `Ctrl` `Shift` `P`       | Abrir a caixa de diálogo Page Setup  |
+| `Ctrl` `Alt` `Shift` `P` | Abrir a caixa de diálogo Print Settings |
+| `Ctrl` `Shift` `Left`    | Ir para a primeira página            |
+| `Ctrl` `Shift` `Right`   | Ir para a última página              |
+| `Ctrl` `Left`            | Ir para a página anterior            |
+| `Ctrl` `Right`           | Ir para a próxima página             |
+| `Ctrl` `Shift` `H`       | Mostrar/ocultar guias                |
+| `Ctrl` `R`               | Mostrar/ocultar réguas               |
+| `Ctrl` `Shift` `J`       | Mostrar/ocultar sangria da página    |
+| `Ctrl` `Shift` `M`       | Mostrar/ocultar margens e calhas     |
+| `Ctrl` `Shift` `K`       | Mostrar/ocultar células de imagem    |
+| `Ctrl` `Shift` `U`       | Mostrar/ocultar dimensões            |
+| `Ctrl` `Enter`           | Reproduzir apresentação improvisada  |
+| `Ctrl` `]`               | Girar a foto para a direita (sentido horário) |
+| `Ctrl` `[`               | Girar a foto para a esquerda (sentido anti-horário) |
+| `Ctrl` `N`               | Criar um novo template de impressão  |
+| `Ctrl` `Shift` `N`       | Criar uma nova pasta de templates de impressão |
+| `Ctrl` `S`               | Salvar configurações de impressão    |
 
 {.shortcuts}
 
-### Working in the Web module
+### Trabalhando no módulo Web
 
-| Shortcut           | Action                                   |
+| Atalho           | Ação                                     |
 | ------------------ | ---------------------------------------- |
-| `Ctrl` `R`         | Reload web gallery                       |
-| `Ctrl` `Alt` `P`   | Preview in browser                       |
-| `Ctrl` `Enter`     | Play impromptu slide show                |
-| `Ctrl` `J`         | Export web gallery                       |
-| `Ctrl` `N`         | Create a new web gallery template        |
-| `Ctrl` `Shift` `N` | Create a new web gallery template folder |
-| `Ctrl` `S`         | Save web gallery settings                |
+| `Ctrl` `R`         | Recarregar galeria web                   |
+| `Ctrl` `Alt` `P`   | Visualizar no navegador                  |
+| `Ctrl` `Enter`     | Reproduzir apresentação improvisada      |
+| `Ctrl` `J`         | Exportar galeria web                     |
+| `Ctrl` `N`         | Criar um novo template de galeria web    |
+| `Ctrl` `Shift` `N` | Criar uma nova pasta de templates de galeria web |
+| `Ctrl` `S`         | Salvar configurações da galeria web      |
 
 {.shortcuts}
 
-### Using help
+### Usando a ajuda
 
-| Shortcut         | Action                           |
+| Atalho         | Ação                             |
 | ---------------- | -------------------------------- |
-| `Ctrl` `/`       | Display current module shortcuts |
-| `(click)`        | Hide current module shortcuts    |
-| `Ctrl` `Alt` `/` | Go to current module Help        |
-| `F1`             | Open Community Help              |
+| `Ctrl` `/`       | Exibir atalhos do módulo atual   |
+| `(click)`        | Ocultar atalhos do módulo atual  |
+| `Ctrl` `Alt` `/` | Ir para a ajuda do módulo atual  |
+| `F1`             | Abrir a Community Help           |
 
 {.shortcuts}
 
-## Also see
+## Veja também
 
-- [Keyboard shortcuts for Adobe Lightroom CC](https://helpx.adobe.com/lightroom/help/keyboard-shortcuts.html)
+- [Atalhos de teclado do Adobe Lightroom CC](https://helpx.adobe.com/lightroom/help/keyboard-shortcuts.html)
   _(helpx.adobe.com)_

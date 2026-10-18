@@ -9,904 +9,886 @@ tags:
   - computer graphics
   - visual effects
 categories:
-  - Programming
+  - Programação
 intro: |
-  This is a visual cheat-sheet for the Unity Shader Graph. This tool is used to create custom shaders material in Unity, a popular game engine.
+  Este é um cheat sheet visual do Unity Shader Graph. Esta ferramenta é usada para criar materiais com shaders customizados no Unity, uma game engine popular.
 ---
 
-## Shader Graph Nodes {.cols-2}
+## Nós do Shader Graph {.cols-2}
 
 <code>We are using <yel>**SAIT**</yel> to indicate the output type is "same as the input type".</code> {.col-span-2}
 
-## 1. Attributes {.cols-2}
+## 1. Atributos {.cols-2}
 
-### Positioning {.row-span-2}
+### Posicionamento {.row-span-2}
 
-<yel>**Position**</yel> - provides vertex position
+<yel>**Position**</yel> - fornece a posição do vértice
 
-- **Inputs**
+- **Entradas**
 
-  - | -   | -         |
-    | --- | --------- |
-    | /   | No inputs |
-
-  {.left-text}
-
-- **Outputs**
-
-  - | -         | -                        |
-    | --------- | ------------------------ |
-    | `Vector3` | Provides vertex position |
+  - | --- | ------------ |
+    | --- | ------------ |
+    | /   | Sem entradas |
 
   {.left-text}
 
-{.shortcuts .marker-round .cols-2}
+- **Saídas**
 
-<yel>**Normal**</yel> - supplies surface normal direction
-
-- **Inputs**
-
-  - | -   | -         |
-    | --- | --------- |
-    | /   | No inputs |
-
-  {.left-text}
-
-- **Outputs**
-
-  - | -         | -                       |
-    | --------- | ----------------------- |
-    | `Vector3` | Provides surface normal |
+  - | --------- | ---------------------------- |
+    | --------- | ---------------------------- |
+    | `Vector3` | Fornece a posição do vértice |
 
   {.left-text}
 
 {.shortcuts .marker-round .cols-2}
 
-<yel>**World Position**</yel> - returns the object's world space position
+<yel>**Normal**</yel> - fornece a direção da normal da superfície
 
-- **Inputs**
+- **Entradas**
 
-  - | -   | -         |
-    | --- | --------- |
-    | /   | No inputs |
-
-  {.left-text}
-
-- **Outputs**
-
-  - | -         | -                    |
-    | --------- | -------------------- |
-    | `Vector3` | World space position |
+  - | --- | ------------ |
+    | --- | ------------ |
+    | /   | Sem entradas |
 
   {.left-text}
 
-{.shortcuts .marker-round .cols-2}
+- **Saídas**
 
-<yel>**Object Position**</yel> - returns the object's local space position
-
-- **Inputs**
-
-  - | -   | -         |
-    | --- | --------- |
-    | /   | No inputs |
-
-  {.left-text}
-
-- **Outputs**
-
-  - | -         | -                    |
-    | --------- | -------------------- |
-    | `Vector3` | Local space position |
+  - | --------- | ------------------------------ |
+    | --------- | ------------------------------ |
+    | `Vector3` | Fornece a normal da superfície |
 
   {.left-text}
 
 {.shortcuts .marker-round .cols-2}
 
-<yel>**Screen Position**</yel> - returns the object's screen space position
+<yel>**World Position**</yel> - retorna a posição do objeto no espaço de mundo
 
-- **Inputs**
+- **Entradas**
 
-  - | -   | -         |
-    | --- | --------- |
-    | /   | No inputs |
-
-  {.left-text}
-
-- **Outputs**
-
-  - | -         | -                     |
-    | --------- | --------------------- |
-    | `Vector4` | Screen space position |
+  - | --- | ------------ |
+    | --- | ------------ |
+    | /   | Sem entradas |
 
   {.left-text}
 
-{.shortcuts .marker-round .cols-2}
+- **Saídas**
 
-<yel>**Camera Position**</yel> - returns the camera's world space position
-
-- **Inputs**
-
-  - | -   | -         |
-    | --- | --------- |
-    | /   | No inputs |
-
-  {.left-text}
-
-- **Outputs**
-
-  - | -         | -                           |
-    | --------- | --------------------------- |
-    | `Vector3` | Camera world space position |
+  - | --------- | ------------------------------ |
+    | --------- | ------------------------------ |
+    | `Vector3` | Posição no espaço de mundo     |
 
   {.left-text}
 
 {.shortcuts .marker-round .cols-2}
 
-### Timing
+<yel>**Object Position**</yel> - retorna a posição do objeto no espaço local
 
-<yel>**Time**</yel> - outputs various time-related values
+- **Entradas**
 
-- **Inputs**
-
-  - | -   | -         |
-    | --- | --------- |
-    | /   | No inputs |
+  - | --- | ------------ |
+    | --- | ------------ |
+    | /   | Sem entradas |
 
   {.left-text}
 
-- **Outputs**
+- **Saídas**
 
-  - | -       | -                                                                         |
-    | ------- | ------------------------------------------------------------------------- |
-    | `Float` | Time (T) - The total elapsed time since the start of the shader           |
-    | `Float` | Sin Time (T/8π) - A sine wave based on time                               |
-    | `Float` | Cos Time (T/8π) - A cosine wave based on time                             |
-    | `Float` | Delta Time - Time passed between the previous frame and the current frame |
+  - | --------- | ----------------------------- |
+    | --------- | ----------------------------- |
+    | `Vector3` | Posição no espaço local       |
 
   {.left-text}
 
 {.shortcuts .marker-round .cols-2}
 
-## 2. Math Operations {.cols-2}
+<yel>**Screen Position**</yel> - retorna a posição do objeto no espaço de tela
 
-### Basic Math
+- **Entradas**
 
-<yel>**Add**</yel> - adds two values
-
-- **Inputs**
-
-  - | -                     | -            |
-    | --------------------- | ------------ |
-    | `Float` <br> `Vector` | First value  |
-    | `Float` <br> `Vector` | Second value |
+  - | --- | ------------ |
+    | --- | ------------ |
+    | /   | Sem entradas |
 
   {.left-text}
 
-- **Outputs**
+- **Saídas**
 
-  - | -    | -                     |
-    | ---- | --------------------- |
-    | SAIT | Sum of the two inputs |
+  - | --------- | ------------------------------- |
+    | --------- | ------------------------------- |
+    | `Vector4` | Posição no espaço de tela       |
 
   {.left-text}
 
 {.shortcuts .marker-round .cols-2}
 
-<yel>**Subtract**</yel> - subtracts one value from another
+<yel>**Camera Position**</yel> - retorna a posição da câmera no espaço de mundo
 
-- **Inputs**
+- **Entradas**
 
-  - | -                     | -          |
+  - | --- | ------------ |
+    | --- | ------------ |
+    | /   | Sem entradas |
+
+  {.left-text}
+
+- **Saídas**
+
+  - | --------- | ------------------------------------ |
+    | --------- | ------------------------------------ |
+    | `Vector3` | Posição da câmera no espaço de mundo |
+
+  {.left-text}
+
+{.shortcuts .marker-round .cols-2}
+
+### Tempo
+
+<yel>**Time**</yel> - gera diversos valores relacionados ao tempo
+
+- **Entradas**
+
+  - | --- | ------------ |
+    | --- | ------------ |
+    | /   | Sem entradas |
+
+  {.left-text}
+
+- **Saídas**
+
+  - | ------- | -------------------------------------------------------------------------- |
+    | ------- | -------------------------------------------------------------------------- |
+    | `Float` | Time (T) - O tempo total decorrido desde o início do shader                |
+    | `Float` | Sin Time (T/8π) - Uma onda senoidal baseada no tempo                       |
+    | `Float` | Cos Time (T/8π) - Uma onda cosseno baseada no tempo                        |
+    | `Float` | Delta Time - Tempo decorrido entre o frame anterior e o frame atual        |
+
+  {.left-text}
+
+{.shortcuts .marker-round .cols-2}
+
+## 2. Operações matemáticas {.cols-2}
+
+### Matemática básica
+
+<yel>**Add**</yel> - soma dois valores
+
+- **Entradas**
+
+  - | --------------------- | -------------- |
+    | --------------------- | -------------- |
+    | `Float` <br> `Vector` | Primeiro valor |
+    | `Float` <br> `Vector` | Segundo valor  |
+
+  {.left-text}
+
+- **Saídas**
+
+  - | ---- | ---------------------- |
+    | ---- | ---------------------- |
+    | SAIT | Soma das duas entradas |
+
+  {.left-text}
+
+{.shortcuts .marker-round .cols-2}
+
+<yel>**Subtract**</yel> - subtrai um valor de outro
+
+- **Entradas**
+
+  - | --------------------- | ---------- |
     | --------------------- | ---------- |
-    | `Float` <br> `Vector` | Minuend    |
-    | `Float` <br> `Vector` | Subtrahend |
+    | `Float` <br> `Vector` | Minuendo   |
+    | `Float` <br> `Vector` | Subtraendo |
 
   {.left-text}
 
-- **Outputs**
+- **Saídas**
 
-  - | -    | -                            |
+  - | ---- | --------------------------- |
+    | ---- | --------------------------- |
+    | SAIT | Diferença das duas entradas |
+
+  {.left-text}
+
+{.shortcuts .marker-round .cols-2}
+
+<yel>**Multiply**</yel> - multiplica dois valores
+
+- **Entradas**
+
+  - | ----------------------------------- | -------------- |
+    | ----------------------------------- | -------------- |
+    | `Float` <br> `Vector` <br> `Matrix` | Primeiro valor |
+    | `Float` <br> `Vector` <br> `Matrix` | Segundo valor  |
+
+  {.left-text}
+
+- **Saídas**
+
+  - | ---- | ---------------------------- |
     | ---- | ---------------------------- |
-    | SAIT | Difference of the two inputs |
+    | SAIT | Produto das duas entradas    |
 
   {.left-text}
 
 {.shortcuts .marker-round .cols-2}
 
-<yel>**Multiply**</yel> - multiplies two values
+### Matemática avançada {.row-span-2}
 
-- **Inputs**
+<yel>**Power**</yel> - eleva a entrada a uma potência
 
-  - | -                                   | -            |
-    | ----------------------------------- | ------------ |
-    | `Float` <br> `Vector` <br> `Matrix` | First value  |
-    | `Float` <br> `Vector` <br> `Matrix` | Second value |
+- **Entradas**
 
-  {.left-text}
-
-- **Outputs**
-
-  - | -    | -                             |
-    | ---- | ----------------------------- |
-    | SAIT | The product of the two inputs |
-
-  {.left-text}
-
-{.shortcuts .marker-round .cols-2}
-
-### Advanced Math {.row-span-2}
-
-<yel>**Power**</yel> - raises input to a power
-
-- **Inputs**
-
-  - | -       | -        |
+  - | ------- | -------- |
     | ------- | -------- |
     | `Float` | Base     |
-    | `Float` | Exponent |
+    | `Float` | Expoente |
 
   {.left-text}
 
-- **Outputs**
+- **Saídas**
 
-  - | -       | -                                                  |
-    | ------- | -------------------------------------------------- |
-    | `Float` | Result of base raised to the power of the exponent |
-
-  {.left-text}
-
-{.shortcuts .marker-round .cols-2}
-
-<yel>**Sqrt**</yel> - square root of input
-
-- **Inputs**
-
-  - | -       | -           |
-    | ------- | ----------- |
-    | `Float` | Input value |
-
-  {.left-text}
-
-- **Outputs**
-
-  - | -       | -                        |
-    | ------- | ------------------------ |
-    | `Float` | Square root of the input |
+  - | ------- | ---------------------------------------------------- |
+    | ------- | ---------------------------------------------------- |
+    | `Float` | Resultado da base elevada à potência do expoente     |
 
   {.left-text}
 
 {.shortcuts .marker-round .cols-2}
 
-<yel>**Abs**</yel> - outputs absolute value
+<yel>**Sqrt**</yel> - raiz quadrada da entrada
 
-- **Inputs**
+- **Entradas**
 
-  - | -                     | -           |
-    | --------------------- | ----------- |
-    | `Float` <br> `Vector` | Input value |
-
-  {.left-text}
-
-- **Outputs**
-
-  - | -    | -                           |
-    | ---- | --------------------------- |
-    | SAIT | Absolute value of the input |
-
-  {.left-text}
-
-{.shortcuts .marker-round .cols-2}
-
-<yel>**Dot Product**</yel> - calculates dot product between two vectors
-
-- **Inputs**
-
-  - | -                        | -             |
-    | ------------------------ | ------------- |
-    | `Vector3` <br> `Vector4` | First vector  |
-    | `Vector3` <br> `Vector4` | Second vector |
-
-  {.left-text}
-
-- **Outputs**
-
-  - | -       | -                  |
-    | ------- | ------------------ |
-    | `Float` | Dot product result |
-
-  {.left-text}
-
-{.shortcuts .marker-round .cols-2}
-
-<yel>**Cross Product**</yel> - calculates cross product between two vectors
-
-- **Inputs**
-
-  - | -         | -             |
-    | --------- | ------------- |
-    | `Vector3` | First vector  |
-    | `Vector3` | Second vector |
-
-  {.left-text}
-
-- **Outputs**
-
-  - | -         | -                    |
-    | --------- | -------------------- |
-    | `Vector3` | Cross product result |
-
-  {.left-text}
-
-{.shortcuts .marker-round .cols-2}
-
-### Trigonometry
-
-<yel>**Sin**</yel> - outputs sine of input
-
-- **Inputs**
-
-  - | -       | -                |
+  - | ------- | ---------------- |
     | ------- | ---------------- |
-    | `Float` | Input in radians |
+    | `Float` | Valor de entrada |
 
   {.left-text}
 
-- **Outputs**
+- **Saídas**
 
-  - | -       | -                 |
-    | ------- | ----------------- |
-    | `Float` | Sine of the input |
+  - | ------- | -------------------------- |
+    | ------- | -------------------------- |
+    | `Float` | Raiz quadrada da entrada   |
 
   {.left-text}
 
 {.shortcuts .marker-round .cols-2}
 
-<yel>**Cos**</yel> - outputs cosine of input
+<yel>**Abs**</yel> - gera o valor absoluto
 
-- **Inputs**
+- **Entradas**
 
-  - | -       | -                |
-    | ------- | ---------------- |
-    | `Float` | Input in radians |
+  - | --------------------- | ---------------- |
+    | --------------------- | ---------------- |
+    | `Float` <br> `Vector` | Valor de entrada |
 
   {.left-text}
 
-- **Outputs**
+- **Saídas**
 
-  - | -       | -                   |
+  - | ---- | ----------------------------- |
+    | ---- | ----------------------------- |
+    | SAIT | Valor absoluto da entrada     |
+
+  {.left-text}
+
+{.shortcuts .marker-round .cols-2}
+
+<yel>**Dot Product**</yel> - calcula o produto escalar entre dois vetores
+
+- **Entradas**
+
+  - | ------------------------ | -------------- |
+    | ------------------------ | -------------- |
+    | `Vector3` <br> `Vector4` | Primeiro vetor |
+    | `Vector3` <br> `Vector4` | Segundo vetor  |
+
+  {.left-text}
+
+- **Saídas**
+
+  - | ------- | ---------------------------- |
+    | ------- | ---------------------------- |
+    | `Float` | Resultado do produto escalar |
+
+  {.left-text}
+
+{.shortcuts .marker-round .cols-2}
+
+<yel>**Cross Product**</yel> - calcula o produto vetorial entre dois vetores
+
+- **Entradas**
+
+  - | --------- | -------------- |
+    | --------- | -------------- |
+    | `Vector3` | Primeiro vetor |
+    | `Vector3` | Segundo vetor  |
+
+  {.left-text}
+
+- **Saídas**
+
+  - | --------- | ----------------------------- |
+    | --------- | ----------------------------- |
+    | `Vector3` | Resultado do produto vetorial |
+
+  {.left-text}
+
+{.shortcuts .marker-round .cols-2}
+
+### Trigonometria
+
+<yel>**Sin**</yel> - gera o seno da entrada
+
+- **Entradas**
+
+  - | ------- | ------------------- |
     | ------- | ------------------- |
-    | `Float` | Cosine of the input |
+    | `Float` | Entrada em radianos |
+
+  {.left-text}
+
+- **Saídas**
+
+  - | ------- | ------------------ |
+    | ------- | ------------------ |
+    | `Float` | Seno da entrada    |
 
   {.left-text}
 
 {.shortcuts .marker-round .cols-2}
 
-### Interpolation {.row-span-2}
+<yel>**Cos**</yel> - gera o cosseno da entrada
 
-<yel>**Lerp**</yel> - linear interpolation between two values
+- **Entradas**
 
-- **Inputs**
-
-  - | -                     | -                        |
-    | --------------------- | ------------------------ |
-    | `Float` <br> `Vector` | Start value              |
-    | `Float` <br> `Vector` | End value                |
-    | `Float` <br> `Vector` | Interpolation factor (T) |
+  - | ------- | ------------------- |
+    | ------- | ------------------- |
+    | `Float` | Entrada em radianos |
 
   {.left-text}
 
-- **Outputs**
+- **Saídas**
 
-  - | -    | -                   |
-    | ---- | ------------------- |
-    | SAIT | Interpolated result |
+  - | ------- | --------------------- |
+    | ------- | --------------------- |
+    | `Float` | Cosseno da entrada    |
 
   {.left-text}
 
 {.shortcuts .marker-round .cols-2}
 
-<yel>**Step**</yel> - creates a step between two thresholds
+### Interpolação {.row-span-2}
 
-- **Inputs**
+<yel>**Lerp**</yel> - interpolação linear entre dois valores
 
-  - | -                     | -         |
-    | --------------------- | --------- |
-    | `Float` <br> `Vector` | Threshold |
-    | `Float` <br> `Vector` | Input     |
+- **Entradas**
 
-  {.left-text}
-
-- **Outputs**
-
-  - | -    | -           |
-    | ---- | ----------- |
-    | SAIT | Step result |
+  - | --------------------- | --------------------------- |
+    | --------------------- | --------------------------- |
+    | `Float` <br> `Vector` | Valor inicial               |
+    | `Float` <br> `Vector` | Valor final                 |
+    | `Float` <br> `Vector` | Fator de interpolação (T)   |
 
   {.left-text}
 
-{.shortcuts .marker-round .cols-2}
+- **Saídas**
 
-## 3. Color Processing {.cols-2}
-
-### Basic Color Manipulation
-
-<yel>**Color**</yel> - provides a constant color value
-
-- **Inputs**
-
-  - | -   | -         |
-    | --- | --------- |
-    | /   | No inputs |
-
-  {.left-text}
-
-- **Outputs**
-
-  - | -         | -                |
-    | --------- | ---------------- |
-    | `Vector4` | RGBA color value |
+  - | ---- | --------------------- |
+    | ---- | --------------------- |
+    | SAIT | Resultado interpolado |
 
   {.left-text}
 
 {.shortcuts .marker-round .cols-2}
 
-<yel>**Add Color**</yel> - adds two color values
+<yel>**Step**</yel> - cria um degrau entre dois limiares
 
-- **Inputs**
+- **Entradas**
 
-  - | -         | -            |
-    | --------- | ------------ |
-    | `Vector4` | First color  |
-    | `Vector4` | Second color |
-
-  {.left-text}
-
-- **Outputs**
-
-  - | -         | -                     |
-    | --------- | --------------------- |
-    | `Vector4` | Sum of the two colors |
+  - | --------------------- | -------- |
+    | --------------------- | -------- |
+    | `Float` <br> `Vector` | Limiar   |
+    | `Float` <br> `Vector` | Entrada  |
 
   {.left-text}
 
-{.shortcuts .marker-round .cols-2}
+- **Saídas**
 
-<yel>**Multiply Color**</yel> - multiplies two color values
-
-- **Inputs**
-
-  - | -         | -            |
-    | --------- | ------------ |
-    | `Vector4` | First color  |
-    | `Vector4` | Second color |
-
-  {.left-text}
-
-- **Outputs**
-
-  - | -         | -                         |
-    | --------- | ------------------------- |
-    | `Vector4` | Product of the two colors |
+  - | ---- | -------------------- |
+    | ---- | -------------------- |
+    | SAIT | Resultado do degrau  |
 
   {.left-text}
 
 {.shortcuts .marker-round .cols-2}
 
-<yel>**Lerp Color**</yel> - interpolates between two colors
+## 3. Processamento de cor {.cols-2}
 
-- **Inputs**
+### Manipulação básica de cor
 
-  - | -         | -                        |
-    | --------- | ------------------------ |
-    | `Vector4` | Start color              |
-    | `Vector4` | End color                |
-    | `Float`   | Interpolation factor (T) |
+<yel>**Color**</yel> - fornece um valor de cor constante
 
-  {.left-text}
+- **Entradas**
 
-- **Outputs**
-
-  - | -         | -                  |
-    | --------- | ------------------ |
-    | `Vector4` | Interpolated color |
+  - | --- | ------------ |
+    | --- | ------------ |
+    | /   | Sem entradas |
 
   {.left-text}
 
-{.shortcuts .marker-round .cols-2}
+- **Saídas**
 
-### Color Adjustment {.row-span-2}
-
-<yel>**Saturation**</yel> - adjusts the saturation of input color
-
-- **Inputs**
-
-  - | -         | -                 |
+  - | --------- | ----------------- |
     | --------- | ----------------- |
-    | `Vector4` | Input color       |
-    | `Float`   | Saturation factor |
-
-  {.left-text}
-
-- **Outputs**
-
-  - | -         | -              |
-    | --------- | -------------- |
-    | `Vector4` | Adjusted color |
+    | `Vector4` | Valor de cor RGBA |
 
   {.left-text}
 
 {.shortcuts .marker-round .cols-2}
 
-<yel>**Contrast**</yel> - adjusts contrast of input color
+<yel>**Add Color**</yel> - soma dois valores de cor
 
-- **Inputs**
+- **Entradas**
 
-  - | -         | -               |
-    | --------- | --------------- |
-    | `Vector4` | Input color     |
-    | `Float`   | Contrast factor |
-
-  {.left-text}
-
-- **Outputs**
-
-  - | -         | -              |
+  - | --------- | -------------- |
     | --------- | -------------- |
-    | `Vector4` | Adjusted color |
+    | `Vector4` | Primeira cor   |
+    | `Vector4` | Segunda cor    |
 
   {.left-text}
 
-{.shortcuts .marker-round .cols-2}
+- **Saídas**
 
-<yel>**Hue**</yel> - shifts the hue of the input color
-
-- **Inputs**
-
-  - | -         | -                |
-    | --------- | ---------------- |
-    | `Vector4` | Input color      |
-    | `Float`   | Hue shift amount |
-
-  {.left-text}
-
-- **Outputs**
-
-  - | -         | -                      |
+  - | --------- | ---------------------- |
     | --------- | ---------------------- |
-    | `Vector4` | Color with shifted hue |
+    | `Vector4` | Soma das duas cores    |
 
   {.left-text}
 
 {.shortcuts .marker-round .cols-2}
 
-<yel>**Invert Colors**</yel> - inverts the input color
+<yel>**Multiply Color**</yel> - multiplica dois valores de cor
 
-- **Inputs**
+- **Entradas**
 
-  - | -         | -           |
-    | --------- | ----------- |
-    | `Vector4` | Input color |
-
-  {.left-text}
-
-- **Outputs**
-
-  - | -         | -              |
+  - | --------- | -------------- |
     | --------- | -------------- |
-    | `Vector4` | Inverted color |
+    | `Vector4` | Primeira cor   |
+    | `Vector4` | Segunda cor    |
 
   {.left-text}
 
-{.shortcuts .marker-round .cols-2}
+- **Saídas**
 
-<yel>**Replace Color**</yel> - replaces a specific color in the input with a new color
-
-- **Inputs**
-
-  - | -         | -                 |
-    | --------- | ----------------- |
-    | `Vector4` | Input color       |
-    | `Vector4` | Target color      |
-    | `Vector4` | Replacement color |
-
-  {.left-text}
-
-- **Outputs**
-
-  - | -         | -                          |
-    | --------- | -------------------------- |
-    | `Vector4` | Color with replaced values |
-
-  {.left-text}
-
-{.shortcuts .marker-round .cols-2}
-
-<yel>**White Balance**</yel> - adjusts the white balance of input color
-
-- **Inputs**
-
-  - | -         | -                 |
-    | --------- | ----------------- |
-    | `Vector4` | Input color       |
-    | `Float`   | Temperature value |
-    | `Float`   | Tint value        |
-
-  {.left-text}
-
-- **Outputs**
-
-  - | -         | -              |
-    | --------- | -------------- |
-    | `Vector4` | Adjusted color |
-
-  {.left-text}
-
-{.shortcuts .marker-round .cols-2}
-
-### Channel Operations
-
-<yel>**Channel Mixer**</yel> - modifies color channels independently
-
-- **Inputs**
-
-  - | -         | -                        |
+  - | --------- | ------------------------ |
     | --------- | ------------------------ |
-    | `Vector4` | Input color              |
-    | `Float`   | Red channel multiplier   |
-    | `Float`   | Green channel multiplier |
-    | `Float`   | Blue channel multiplier  |
-
-  {.left-text}
-
-- **Outputs**
-
-  - | -         | -              |
-    | --------- | -------------- |
-    | `Vector4` | Modified color |
+    | `Vector4` | Produto das duas cores   |
 
   {.left-text}
 
 {.shortcuts .marker-round .cols-2}
 
-## 4. Texture Processing {.cols-2}
+<yel>**Lerp Color**</yel> - interpola entre duas cores
 
-### Sampling
+- **Entradas**
 
-<yel>**Sample Texture**</yel> - retrieves color data from texture
-
-- **Inputs**
-
-  - | -                   | -              |
-    | ------------------- | -------------- |
-    | `Texture (sampler)` | Texture input  |
-    | `Vector2`           | UV coordinates |
-
-  {.left-text}
-
-- **Outputs**
-
-  - | -         | -                           |
+  - | --------- | --------------------------- |
     | --------- | --------------------------- |
-    | `Vector4` | Color data from the texture |
+    | `Vector4` | Cor inicial                 |
+    | `Vector4` | Cor final                   |
+    | `Float`   | Fator de interpolação (T)   |
+
+  {.left-text}
+
+- **Saídas**
+
+  - | --------- | ----------------- |
+    | --------- | ----------------- |
+    | `Vector4` | Cor interpolada   |
 
   {.left-text}
 
 {.shortcuts .marker-round .cols-2}
 
-<yel>**UV**</yel> - provides UV coordinates for texture mapping
+### Ajuste de cor {.row-span-2}
 
-- **Inputs**
+<yel>**Saturation**</yel> - ajusta a saturação da cor de entrada
 
-  - | -   | -         |
-    | --- | --------- |
-    | /   | No inputs |
+- **Entradas**
 
-  {.left-text}
-
-- **Outputs**
-
-  - | -         | -              |
-    | --------- | -------------- |
-    | `Vector2` | UV coordinates |
-
-  {.left-text}
-
-{.shortcuts .marker-round .cols-2}
-
-### Manipulation {.row-span-2}
-
-<yel>**Tiling Offset**</yel> - adjusts tiling and offset of texture
-
-- **Inputs**
-
-  - | -         | -             |
-    | --------- | ------------- |
-    | `Vector2` | Tiling values |
-    | `Vector2` | Offset values |
-
-  {.left-text}
-
-- **Outputs**
-
-  - | -         | -                       |
-    | --------- | ----------------------- |
-    | `Vector2` | Modified UV coordinates |
-
-  {.left-text}
-
-{.shortcuts .marker-round .cols-2}
-
-<yel>**Distortion**</yel> - warps the surface of the object
-
-- **Inputs**
-
-  - | -         | -                   |
-    | --------- | ------------------- |
-    | `Float`   | Distortion strength |
-    | `Vector2` | UV coordinates      |
-
-  {.left-text}
-
-- **Outputs**
-
-  - | -         | -                     |
-    | --------- | --------------------- |
-    | `Vector2` | Warped UV coordinates |
-
-  {.left-text}
-
-{.shortcuts .marker-round .cols-2}
-
-<yel>**Parallax**</yel> - simulates depth using parallax mapping
-
-- **Inputs**
-
-  - | -                 | -              |
-    | ----------------- | -------------- |
-    | Texture (sampler) | Input texture  |
-    | `Vector2`         | UV coordinates |
-    | `Float`           | Depth value    |
-
-  {.left-text}
-
-- **Outputs**
-
-  - | -         | -                       |
-    | --------- | ----------------------- |
-    | `Vector2` | Adjusted UV coordinates |
-
-  {.left-text}
-
-{.shortcuts .marker-round .cols-2}
-
-## 5. Effects {.cols-2}
-
-### Visual Effects {.row-span-2}
-
-<yel>**Fresnel Effect**</yel> - creates a glow effect on object edges
-
-- **Inputs**
-
-  - | -         | -                   |
-    | --------- | ------------------- |
-    | `Vector3` | View direction      |
-    | `Float`   | Power of the effect |
-
-  {.left-text}
-
-- **Outputs**
-
-  - | -       | -                    |
-    | ------- | -------------------- |
-    | `Float` | Fresnel effect value |
-
-  {.left-text}
-
-{.shortcuts .marker-round .cols-2}
-
-<yel>**Dissolve**</yel> - generates a dissolve transition effect
-
-- **Inputs**
-
-  - | -                   | -                  |
-    | ------------------- | ------------------ |
-    | `Texture (sampler)` | Input texture      |
-    | `Float`             | Dissolve threshold |
-
-  {.left-text}
-
-- **Outputs**
-
-  - | -         | -                      |
-    | --------- | ---------------------- |
-    | `Vector4` | Dissolve effect output |
-
-  {.left-text}
-
-{.shortcuts .marker-round .cols-2}
-
-### Reflection {.row-span-2}
-
-<yel>**Reflection**</yel> - reflects based on surface normal direction
-
-- **Inputs**
-
-  - | -         | -                  |
+  - | --------- | ------------------ |
     | --------- | ------------------ |
-    | `Vector3` | Incident direction |
-    | `Vector3` | Surface normal     |
+    | `Vector4` | Cor de entrada     |
+    | `Float`   | Fator de saturação |
 
   {.left-text}
 
-- **Outputs**
+- **Saídas**
 
-  - | -         | -                   |
-    | --------- | ------------------- |
-    | `Vector3` | Reflected direction |
+  - | --------- | --------------- |
+    | --------- | --------------- |
+    | `Vector4` | Cor ajustada    |
 
   {.left-text}
 
 {.shortcuts .marker-round .cols-2}
 
-## Custom Function Node
+<yel>**Contrast**</yel> - ajusta o contraste da cor de entrada
 
-### Steps to Create a Custom Function Node {.col-span-2}
+- **Entradas**
 
-- **Step 1: Add Custom Function Node in Shader Graph**
+  - | --------- | ------------------ |
+    | --------- | ------------------ |
+    | `Vector4` | Cor de entrada     |
+    | `Float`   | Fator de contraste |
 
-  - Right-click in Shader Graph and choose **"Create Node"** > **"Custom Function"**.
-  - Choose between **"String"** (for inline HLSL code) or **"File"** (for an external HLSL file).
+  {.left-text}
 
-- **Step 2: Configure the Node in Shader Graph**
+- **Saídas**
 
-  - Set the name of the node.
-  - If using **"File"**, ensure the external HLSL file name exactly matches the function name defined in the HLSL file.
-    This ensures the function is correctly referenced in the Shader Graph pipeline.
+  - | --------- | --------------- |
+    | --------- | --------------- |
+    | `Vector4` | Cor ajustada    |
 
-    <yel>**Example**</yel>: If the file is named `CustomFunction.hlsl`, the function inside it should also be named
+  {.left-text}
+
+{.shortcuts .marker-round .cols-2}
+
+<yel>**Hue**</yel> - desloca o matiz da cor de entrada
+
+- **Entradas**
+
+  - | --------- | ----------------------------------- |
+    | --------- | ----------------------------------- |
+    | `Vector4` | Cor de entrada                      |
+    | `Float`   | Quantidade de deslocamento do matiz |
+
+  {.left-text}
+
+- **Saídas**
+
+  - | --------- | ------------------------ |
+    | --------- | ------------------------ |
+    | `Vector4` | Cor com matiz deslocado  |
+
+  {.left-text}
+
+{.shortcuts .marker-round .cols-2}
+
+<yel>**Invert Colors**</yel> - inverte a cor de entrada
+
+- **Entradas**
+
+  - | --------- | -------------- |
+    | --------- | -------------- |
+    | `Vector4` | Cor de entrada |
+
+  {.left-text}
+
+- **Saídas**
+
+  - | --------- | ---------------- |
+    | --------- | ---------------- |
+    | `Vector4` | Cor invertida    |
+
+  {.left-text}
+
+{.shortcuts .marker-round .cols-2}
+
+<yel>**Replace Color**</yel> - substitui uma cor específica da entrada por uma nova cor
+
+- **Entradas**
+
+  - | --------- | -------------------- |
+    | --------- | -------------------- |
+    | `Vector4` | Cor de entrada       |
+    | `Vector4` | Cor alvo             |
+    | `Vector4` | Cor de substituição  |
+
+  {.left-text}
+
+- **Saídas**
+
+  - | --------- | ---------------------------- |
+    | --------- | ---------------------------- |
+    | `Vector4` | Cor com valores substituídos |
+
+  {.left-text}
+
+{.shortcuts .marker-round .cols-2}
+
+<yel>**White Balance**</yel> - ajusta o balanço de branco da cor de entrada
+
+- **Entradas**
+
+  - | --------- | -------------------- |
+    | --------- | -------------------- |
+    | `Vector4` | Cor de entrada       |
+    | `Float`   | Valor de temperatura |
+    | `Float`   | Valor de tint        |
+
+  {.left-text}
+
+- **Saídas**
+
+  - | --------- | --------------- |
+    | --------- | --------------- |
+    | `Vector4` | Cor ajustada    |
+
+  {.left-text}
+
+{.shortcuts .marker-round .cols-2}
+
+### Operações de canal
+
+<yel>**Channel Mixer**</yel> - modifica os canais de cor de forma independente
+
+- **Entradas**
+
+  - | --------- | ------------------------------- |
+    | --------- | ------------------------------- |
+    | `Vector4` | Cor de entrada                  |
+    | `Float`   | Multiplicador do canal vermelho |
+    | `Float`   | Multiplicador do canal verde    |
+    | `Float`   | Multiplicador do canal azul     |
+
+  {.left-text}
+
+- **Saídas**
+
+  - | --------- | ---------------- |
+    | --------- | ---------------- |
+    | `Vector4` | Cor modificada   |
+
+  {.left-text}
+
+{.shortcuts .marker-round .cols-2}
+
+## 4. Processamento de textura {.cols-2}
+
+### Amostragem
+
+<yel>**Sample Texture**</yel> - obtém dados de cor da textura
+
+- **Entradas**
+
+  - | ------------------- | ------------------ |
+    | ------------------- | ------------------ |
+    | `Texture (sampler)` | Textura de entrada |
+    | `Vector2`           | Coordenadas UV     |
+
+  {.left-text}
+
+- **Saídas**
+
+  - | --------- | ----------------------------- |
+    | --------- | ----------------------------- |
+    | `Vector4` | Dados de cor da textura       |
+
+  {.left-text}
+
+{.shortcuts .marker-round .cols-2}
+
+<yel>**UV**</yel> - fornece coordenadas UV para o mapeamento de textura
+
+- **Entradas**
+
+  - | --- | ------------ |
+    | --- | ------------ |
+    | /   | Sem entradas |
+
+  {.left-text}
+
+- **Saídas**
+
+  - | --------- | ---------------- |
+    | --------- | ---------------- |
+    | `Vector2` | Coordenadas UV   |
+
+  {.left-text}
+
+{.shortcuts .marker-round .cols-2}
+
+### Manipulação {.row-span-2}
+
+<yel>**Tiling Offset**</yel> - ajusta o tiling e o offset da textura
+
+- **Entradas**
+
+  - | --------- | ----------------- |
+    | --------- | ----------------- |
+    | `Vector2` | Valores de tiling |
+    | `Vector2` | Valores de offset |
+
+  {.left-text}
+
+- **Saídas**
+
+  - | --------- | -------------------------- |
+    | --------- | -------------------------- |
+    | `Vector2` | Coordenadas UV modificadas |
+
+  {.left-text}
+
+{.shortcuts .marker-round .cols-2}
+
+<yel>**Distortion**</yel> - deforma a superfície do objeto
+
+- **Entradas**
+
+  - | --------- | ------------------------ |
+    | --------- | ------------------------ |
+    | `Float`   | Intensidade da distorção |
+    | `Vector2` | Coordenadas UV           |
+
+  {.left-text}
+
+- **Saídas**
+
+  - | --------- | ------------------------- |
+    | --------- | ------------------------- |
+    | `Vector2` | Coordenadas UV deformadas |
+
+  {.left-text}
+
+{.shortcuts .marker-round .cols-2}
+
+<yel>**Parallax**</yel> - simula profundidade usando parallax mapping
+
+- **Entradas**
+
+  - | ----------------- | --------------------- |
+    | ----------------- | --------------------- |
+    | Texture (sampler) | Textura de entrada    |
+    | `Vector2`         | Coordenadas UV        |
+    | `Float`           | Valor de profundidade |
+
+  {.left-text}
+
+- **Saídas**
+
+  - | --------- | ------------------------- |
+    | --------- | ------------------------- |
+    | `Vector2` | Coordenadas UV ajustadas  |
+
+  {.left-text}
+
+{.shortcuts .marker-round .cols-2}
+
+## 5. Efeitos {.cols-2}
+
+### Efeitos visuais {.row-span-2}
+
+<yel>**Fresnel Effect**</yel> - cria um efeito de brilho nas bordas do objeto
+
+- **Entradas**
+
+  - | --------- | --------------------- |
+    | --------- | --------------------- |
+    | `Vector3` | Direção de visão      |
+    | `Float`   | Intensidade do efeito |
+
+  {.left-text}
+
+- **Saídas**
+
+  - | ------- | ----------------------- |
+    | ------- | ----------------------- |
+    | `Float` | Valor do efeito Fresnel |
+
+  {.left-text}
+
+{.shortcuts .marker-round .cols-2}
+
+<yel>**Dissolve**</yel> - gera um efeito de transição de dissolução
+
+- **Entradas**
+
+  - | ------------------- | -------------------- |
+    | ------------------- | -------------------- |
+    | `Texture (sampler)` | Textura de entrada   |
+    | `Float`             | Limiar de dissolução |
+
+  {.left-text}
+
+- **Saídas**
+
+  - | --------- | ----------------------------- |
+    | --------- | ----------------------------- |
+    | `Vector4` | Saída do efeito de dissolução |
+
+  {.left-text}
+
+{.shortcuts .marker-round .cols-2}
+
+### Reflexão {.row-span-2}
+
+<yel>**Reflection**</yel> - reflete com base na direção da normal da superfície
+
+- **Entradas**
+
+  - | --------- | --------------------- |
+    | --------- | --------------------- |
+    | `Vector3` | Direção de incidência |
+    | `Vector3` | Normal da superfície  |
+
+  {.left-text}
+
+- **Saídas**
+
+  - | --------- | -------------------- |
+    | --------- | -------------------- |
+    | `Vector3` | Direção refletida    |
+
+  {.left-text}
+
+{.shortcuts .marker-round .cols-2}
+
+## Nó Custom Function
+
+### Passos para criar um nó Custom Function {.col-span-2}
+
+- **Passo 1: Adicione o nó Custom Function no Shader Graph**
+
+  - Clique com o botão direito no Shader Graph e escolha **"Create Node"** > **"Custom Function"**.
+  - Escolha entre **"String"** (para código HLSL inline) ou **"File"** (para um arquivo HLSL externo).
+
+- **Passo 2: Configure o nó no Shader Graph**
+
+  - Defina o nome do nó.
+  - Se usar **"File"**, garanta que o nome do arquivo HLSL externo corresponda exatamente ao nome da função definida
+    no arquivo HLSL. Isso garante que a função seja referenciada corretamente no pipeline do Shader Graph.
+
+    <yel>**Exemplo**</yel>: se o arquivo se chama `CustomFunction.hlsl`, a função dentro dele também deve se chamar
     `CustomFunction`.
 
-- **Step 3: Add Inputs/Outputs in Shader Graph**
+- **Passo 3: Adicione entradas/saídas no Shader Graph**
 
-  - Define the required `Inputs` and `Outputs` for the custom function in Shader Graph. These will automatically
-    generate ports for you to connect other nodes.
+  - Defina os `Inputs` e `Outputs` necessários para a função customizada no Shader Graph. Eles vão gerar
+    automaticamente portas para você conectar outros nós.
 
-    <yel>**Example**</yel>:
+    <yel>**Exemplo**</yel>:
 
-    - **Inputs**: `Float` (time), `Vector3` (position)
-    - **Outputs**: `Vector3` (new position)
+    - **Entradas**: `Float` (tempo), `Vector3` (posição)
+    - **Saídas**: `Vector3` (nova posição)
 
-    In the custom HLSL code, the `in` and `out` parameters correspond to these inputs and outputs:
+    No código HLSL customizado, os parâmetros `in` e `out` correspondem a essas entradas e saídas:
 
-    - `in` represents the data coming into the function (e.g., `time`, `position`).
-    - `out` defines the return value (e.g., modified `position`).
+    - `in` representa os dados que entram na função (ex.: `time`, `position`).
+    - `out` define o valor de retorno (ex.: `position` modificado).
 
-- **Step 4: Write HLSL Code**
+- **Passo 4: Escreva o código HLSL**
 
-  - If using the **"String"** option:
+  - Se usar a opção **"String"**:
 
-    - Directly write the HLSL code inside the custom function node editor in Shader Graph.
-    - Ensure that the `in` and `out` parameters match the inputs and outputs you defined in Shader Graph.
+    - Escreva o código HLSL diretamente no editor do nó de função customizada no Shader Graph.
+    - Garanta que os parâmetros `in` e `out` correspondam às entradas e saídas que você definiu no Shader Graph.
 
-    - <yel>**Example of inline code**</yel> (using **"String"** mode):
-
-      ```cpp
-      float3 CustomPosition(in float time, in float3 position, out float3 newPosition) {
-        newPosition = position + float3(sin(time), cos(time), 0.0);
-        return newPosition;
-      }
-      ```
-
-  - If using the **"File"** option:
-
-    - Write the HLSL code in an external `.hlsl` file and reference the file in Shader Graph.
-
-    - <yel>**Example of an external HLSL file**</yel> (using **"File"** mode):
-
-      1. **1. Create an HLSL file** named `CustomPosition.hlsl`.
-
-      2. **2. Write the custom function** inside the file. The `in` and `out` parameters should match the Shader Graph
-         inputs and outputs.
+    - <yel>**Exemplo de código inline**</yel> (usando o modo **"String"**):
 
       ```cpp
       float3 CustomPosition(in float time, in float3 position, out float3 newPosition) {
@@ -915,28 +897,46 @@ intro: |
       }
       ```
 
-      3. **3. Save the file** in your project directory, for example, `Assets/Shaders/CustomPosition.hlsl`.
+  - Se usar a opção **"File"**:
 
-      4. **4. Link the file** in Shader Graph:
+    - Escreva o código HLSL em um arquivo `.hlsl` externo e referencie o arquivo no Shader Graph.
 
-      - In the Custom Function Node, switch to **"File"** mode and reference `CustomPosition.hlsl`.
+    - <yel>**Exemplo de arquivo HLSL externo**</yel> (usando o modo **"File"**):
 
-- **Step 5: Use the Node in Shader Graph**
+      1. **1. Crie um arquivo HLSL** chamado `CustomPosition.hlsl`.
 
-  - Connect the custom function node’s input ports to other nodes, such as `Time` and `Position`, to feed data into the
-    custom function.
-  - Connect the output port to apply the function result in the Shader Graph pipeline.
+      2. **2. Escreva a função customizada** dentro do arquivo. Os parâmetros `in` e `out` devem corresponder às
+         entradas e saídas do Shader Graph.
 
-  - <yel>**Example Pipeline**</yel>:
+      ```cpp
+      float3 CustomPosition(in float time, in float3 position, out float3 newPosition) {
+        newPosition = position + float3(sin(time), cos(time), 0.0);
+        return newPosition;
+      }
+      ```
 
-    - **Inputs**: `Time` (as a float) and `Position` (as a vector)
-    - **Outputs**: `Modified Position` (vector with new position)
+      3. **3. Salve o arquivo** no diretório do seu projeto, por exemplo, `Assets/Shaders/CustomPosition.hlsl`.
 
-    This would make the custom node update an object's position based on time in the shader.
+      4. **4. Vincule o arquivo** no Shader Graph:
+
+      - No nó Custom Function, mude para o modo **"File"** e referencie `CustomPosition.hlsl`.
+
+- **Passo 5: Use o nó no Shader Graph**
+
+  - Conecte as portas de entrada do nó de função customizada a outros nós, como `Time` e `Position`, para alimentar
+    a função customizada com dados.
+  - Conecte a porta de saída para aplicar o resultado da função no pipeline do Shader Graph.
+
+  - <yel>**Exemplo de pipeline**</yel>:
+
+    - **Entradas**: `Time` (como float) e `Position` (como vetor)
+    - **Saídas**: `Modified Position` (vetor com a nova posição)
+
+    Isso faria o nó customizado atualizar a posição de um objeto com base no tempo, no shader.
 
 {.marker-timeline .shortcuts}
 
-## Also see {.cols-1}
+## Veja também {.cols-1}
 
-- [Unity Shader Graph documentation](https://docs.unity3d.com/Manual/shader-graph-overview.html) _(docs.unity3d.com)_
-- [Tianle Yuan's Unity Visual Effect notes](https://yuantianle.github.io/11_Game_Development/Unity/) _(yuantianle.com)_
+- [Documentação do Unity Shader Graph](https://docs.unity3d.com/Manual/shader-graph-overview.html) _(docs.unity3d.com)_
+- [Notas de Tianle Yuan sobre Unity Visual Effect](https://yuantianle.github.io/11_Game_Development/Unity/) _(yuantianle.com)_

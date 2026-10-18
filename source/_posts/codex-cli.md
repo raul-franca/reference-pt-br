@@ -8,18 +8,18 @@ tags:
   - OpenAI
   - coding-agent
 categories:
-  - AI
+  - IA
 intro: |
-  OpenAI Codex CLI (v0.116+) is an open-source AI coding agent that reads, edits, and runs code directly in your terminal. See the [official docs](https://developers.openai.com/codex/cli) _(developers.openai.com)_.
+  O OpenAI Codex CLI (v0.116+) é um agente de programação com IA de código aberto que lê, edita e executa código diretamente no seu terminal. Consulte a [documentação oficial](https://developers.openai.com/codex/cli) _(developers.openai.com)_.
 plugins:
   - copyCode
 ---
 
-## Getting Started {.cols-2}
+## Primeiros passos {.cols-2}
 
-### Install & Run {.row-span-2}
+### Instalar e executar {.row-span-2}
 
-#### npm (recommended)
+#### npm (recomendado)
 
 ```bash
 $ npm install -g @openai/codex
@@ -32,16 +32,16 @@ $ npm install -g @openai/codex@latest   # upgrade
 $ brew install codex
 ```
 
-#### First run
+#### Primeira execução
 
 ```bash
 $ codex                          # launch interactive TUI
 $ codex "Explain this codebase"  # with initial prompt
 ```
 
-On first run you'll be prompted to sign in via ChatGPT or an API key.
+Na primeira execução, será solicitado que você faça login via ChatGPT ou com uma API key.
 
-#### Shell completions
+#### Completions do shell
 
 ```bash
 # Zsh – add to ~/.zshrc
@@ -54,18 +54,18 @@ $ eval "$(codex completion bash)"
 $ codex completion fish | source
 ```
 
-### Platform Support
+### Suporte a plataformas
 
-| Platform         | Status       |
+| Plataforma       | Status       |
 | ---------------- | ------------ |
-| macOS            | Stable       |
-| Linux            | Stable       |
-| Windows (WSL)    | Recommended  |
+| macOS            | Estável      |
+| Linux            | Estável      |
+| Windows (WSL)    | Recomendado  |
 | Windows (native) | Experimental |
 
 {.show-header}
 
-### Authentication
+### Autenticação
 
 ```bash
 $ codex login                # ChatGPT OAuth
@@ -76,32 +76,32 @@ $ codex login status         # check auth state
 $ codex logout               # remove credentials
 ```
 
-## Subcommands {.cols-3}
+## Subcomandos {.cols-3}
 
-### Command Reference {.col-span-2 .row-span-2}
+### Referência de comandos {.col-span-2 .row-span-2}
 
-| Command            | Alias     | Status       | Description                       |
-| ------------------ | --------- | ------------ | --------------------------------- |
-| `codex`            |           | Stable       | Launch interactive TUI            |
-| `codex exec`       | `codex e` | Stable       | Run non-interactively (scripting) |
-| `codex review`     |           | Stable       | Non-interactive code review       |
-| `codex resume`     |           | Stable       | Resume a previous session         |
-| `codex fork`       |           | Stable       | Fork a session into new thread    |
-| `codex apply`      | `codex a` | Stable       | Apply Cloud task diff locally     |
-| `codex login`      |           | Stable       | Authenticate Codex                |
-| `codex logout`     |           | Stable       | Remove stored credentials         |
-| `codex completion` |           | Stable       | Generate shell completions        |
-| `codex features`   |           | Stable       | Manage feature flags              |
-| `codex app`        |           | Stable       | Launch Codex desktop app          |
-| `codex mcp`        |           | Experimental | Manage MCP servers                |
-| `codex mcp-server` |           | Experimental | Run Codex as an MCP server        |
-| `codex cloud`      |           | Experimental | Browse and exec Cloud tasks       |
-| `codex sandbox`    |           | Experimental | Run cmds inside sandbox           |
-| `codex debug`      |           | Experimental | Debugging tools                   |
+| Comando            | Alias     | Status       | Descrição                                       |
+| ------------------ | --------- | ------------ | ----------------------------------------------- |
+| `codex`            |           | Estável      | Abre a TUI interativa                           |
+| `codex exec`       | `codex e` | Estável      | Executa de forma não interativa (scripting)     |
+| `codex review`     |           | Estável      | Revisão de código não interativa                |
+| `codex resume`     |           | Estável      | Retoma uma sessão anterior                      |
+| `codex fork`       |           | Estável      | Faz fork de uma sessão em uma nova thread       |
+| `codex apply`      | `codex a` | Estável      | Aplica localmente o diff de uma tarefa do Cloud |
+| `codex login`      |           | Estável      | Autentica o Codex                               |
+| `codex logout`     |           | Estável      | Remove as credenciais armazenadas               |
+| `codex completion` |           | Estável      | Gera os completions do shell                    |
+| `codex features`   |           | Estável      | Gerencia feature flags                          |
+| `codex app`        |           | Estável      | Abre o app desktop do Codex                     |
+| `codex mcp`        |           | Experimental | Gerencia servidores MCP                         |
+| `codex mcp-server` |           | Experimental | Executa o Codex como servidor MCP               |
+| `codex cloud`      |           | Experimental | Navega e executa tarefas do Cloud               |
+| `codex sandbox`    |           | Experimental | Executa comandos dentro do sandbox              |
+| `codex debug`      |           | Experimental | Ferramentas de depuração                        |
 
 {.show-header}
 
-### Exec (Non-interactive)
+### Exec (não interativo)
 
 ```bash
 # Basic non-interactive run
@@ -123,36 +123,36 @@ $ codex exec resume --last "Fix the bugs"
 $ codex exec resume <SESSION_ID> "Implement"
 ```
 
-## Global Options {.cols-2}
+## Opções globais {.cols-2}
 
-### All Flags {.row-span-3}
+### Todas as flags {.row-span-3}
 
-| Flag                      | Values          | Description                        |
-| ------------------------- | --------------- | ---------------------------------- |
-| `-m, --model`             | string          | Model override (e.g. `gpt-5.4`)    |
-| `-s, --sandbox`           | see below       | Sandbox policy                     |
-| `-a, --ask-for-approval`  | see below       | Approval policy                    |
-| `--full-auto`             | flag            | workspace-write + on-request       |
-| `--yolo`                  | flag            | Bypass all approvals/sandbox       |
-| `-i, --image`             | path            | Attach image(s) to initial prompt  |
-| `-c, --config`            | `key=val`       | Override a config value            |
-| `-C, --cd`                | path            | Agent working directory            |
-| `-p, --profile`           | string          | Config profile name                |
-| `--search`                | flag            | Enable live web search             |
-| `--add-dir`               | path            | Grant extra directory write access |
-| `--oss`                   | flag            | Use local OSS provider             |
-| `--local-provider`        | lmstudio/ollama | Specify OSS provider               |
-| `--enable`                | feature         | Enable a feature flag              |
-| `--disable`               | feature         | Disable a feature flag             |
-| `--no-alt-screen`         | flag            | Inline TUI mode (no alt screen)    |
-| `--remote`                | ws://host:port  | Connect to remote app server       |
-| `--remote-auth-token-env` | ENV_VAR         | Bearer token env var for remote WS |
-| `-V, --version`           |                 | Print version                      |
-| `-h, --help`              |                 | Print help                         |
+| Flag                      | Valores         | Descrição                                           |
+| ------------------------- | --------------- | --------------------------------------------------- |
+| `-m, --model`             | string          | Substituição do modelo (ex.: `gpt-5.4`)             |
+| `-s, --sandbox`           | veja abaixo     | Política de sandbox                                 |
+| `-a, --ask-for-approval`  | veja abaixo     | Política de aprovação                               |
+| `--full-auto`             | flag            | workspace-write + on-request                        |
+| `--yolo`                  | flag            | Ignora todas as aprovações/sandbox                  |
+| `-i, --image`             | path            | Anexa imagem(ns) ao prompt inicial                  |
+| `-c, --config`            | `key=val`       | Substitui um valor de configuração                  |
+| `-C, --cd`                | path            | Diretório de trabalho do agente                     |
+| `-p, --profile`           | string          | Nome do perfil de configuração                      |
+| `--search`                | flag            | Habilita a pesquisa na web ao vivo                  |
+| `--add-dir`               | path            | Concede acesso de escrita a um diretório extra      |
+| `--oss`                   | flag            | Usa provedor OSS local                              |
+| `--local-provider`        | lmstudio/ollama | Especifica o provedor OSS                           |
+| `--enable`                | feature         | Habilita uma feature flag                           |
+| `--disable`               | feature         | Desabilita uma feature flag                         |
+| `--no-alt-screen`         | flag            | Modo TUI inline (sem alt screen)                    |
+| `--remote`                | ws://host:port  | Conecta a um app server remoto                      |
+| `--remote-auth-token-env` | ENV_VAR         | Variável de ambiente do bearer token para WS remoto |
+| `-V, --version`           |                 | Exibe a versão                                      |
+| `-h, --help`              |                 | Exibe a ajuda                                       |
 
 {.show-header}
 
-### Usage Examples
+### Exemplos de uso
 
 ```bash {.wrap}
 # Specify model
@@ -174,93 +174,93 @@ $ codex --search "Find the latest async syntax"
 $ codex -C ~/projects/api "Review this codebase"
 ```
 
-## Sandbox & Approvals {.cols-3}
+## Sandbox e aprovações {.cols-3}
 
-### Sandbox Modes
+### Modos de sandbox
 
-| Mode                 | Description                             |
-| -------------------- | --------------------------------------- |
-| `read-only`          | Inspect only, no edits without approval |
-| `workspace-write`    | Edit workspace + run local commands     |
-| `danger-full-access` | No restrictions (use in hardened envs)  |
+| Modo                 | Descrição                                    |
+| -------------------- | -------------------------------------------- |
+| `read-only`          | Apenas inspeção, sem edições sem aprovação   |
+| `workspace-write`    | Edita o workspace + executa comandos locais  |
+| `danger-full-access` | Sem restrições (use em ambientes reforçados) |
 
-### Approval Policies
+### Políticas de aprovação
 
-| Policy       | Description                               |
-| ------------ | ----------------------------------------- |
-| `untrusted`  | Ask before all non-trusted commands       |
-| `on-request` | Ask when going beyond sandbox boundary    |
-| `never`      | Never ask; all commands run automatically |
+| Política     | Descrição                                               |
+| ------------ | ------------------------------------------------------- |
+| `untrusted`  | Pergunta antes de todos os comandos não confiáveis      |
+| `on-request` | Pergunta ao sair dos limites do sandbox                 |
+| `never`      | Nunca pergunta; todos os comandos rodam automaticamente |
 
 ### Presets {.primary}
 
-| Preset        | Equivalent setting               |
+| Preset        | Configuração equivalente         |
 | ------------- | -------------------------------- |
 | `--full-auto` | `workspace-write` + `on-request` |
-| `--yolo`      | No sandbox + No approvals        |
+| `--yolo`      | Sem sandbox + Sem aprovações     |
 
-Use `/permissions` in the TUI to change modes mid-session.
+Use `/permissions` na TUI para mudar de modo no meio da sessão.
 
-## Slash Commands {.cols-3}
+## Comandos de barra {.cols-3}
 
-### Session Control {.row-span-2}
+### Controle de sessão {.row-span-2}
 
-| Command           | Description                     |
-| ----------------- | ------------------------------- |
-| `/model`          | Switch model / reasoning effort |
-| `/fast`           | Toggle GPT-5.4 Fast mode        |
-| `/permissions`    | Adjust approval mode            |
-| `/personality`    | Set response style              |
-| `/plan`           | Enter planning mode             |
-| `/status`         | Show model, tokens, config      |
-| `/compact`        | Summarize to free context       |
-| `/clear`          | Clear chat + start fresh        |
-| `/new`            | New chat, keep CLI session      |
-| `/fork`           | Fork current conversation       |
-| `/resume`         | Resume saved session            |
-| `/exit` / `/quit` | Exit the CLI                    |
+| Comando           | Descrição                                |
+| ----------------- | ---------------------------------------- |
+| `/model`          | Alterna o modelo / esforço de raciocínio |
+| `/fast`           | Alterna o modo Fast do GPT-5.4           |
+| `/permissions`    | Ajusta o modo de aprovação               |
+| `/personality`    | Define o estilo de resposta              |
+| `/plan`           | Entra no modo de planejamento            |
+| `/status`         | Mostra modelo, tokens, config            |
+| `/compact`        | Resume para liberar contexto             |
+| `/clear`          | Limpa o chat + começa do zero            |
+| `/new`            | Novo chat, mantém a sessão da CLI        |
+| `/fork`           | Faz fork da conversa atual               |
+| `/resume`         | Retoma a sessão salva                    |
+| `/exit` / `/quit` | Sai da CLI                               |
 
-### Review & Code
+### Revisão e código
 
-| Command    | Description                 |
-| ---------- | --------------------------- |
-| `/review`  | Launch code reviewer        |
-| `/diff`    | Show Git diff               |
-| `/copy`    | Copy latest Codex output    |
-| `/mention` | Attach file to conversation |
-| `/init`    | Generate AGENTS.md scaffold |
+| Comando    | Descrição                           |
+| ---------- | ----------------------------------- |
+| `/review`  | Abre o revisor de código            |
+| `/diff`    | Mostra o diff do Git                |
+| `/copy`    | Copia a saída mais recente do Codex |
+| `/mention` | Anexa um arquivo à conversa         |
+| `/init`    | Gera o scaffold do AGENTS.md        |
 
-### Tools & Debug
+### Ferramentas e depuração
 
-| Command                 | Description                    |
-| ----------------------- | ------------------------------ |
-| `/agent`                | Switch active agent thread     |
-| `/mcp`                  | List MCP tools                 |
-| `/apps`                 | Browse connector apps          |
-| `/experimental`         | Toggle experimental features   |
-| `/statusline`           | Configure TUI footer           |
-| `/ps`                   | Show background terminals      |
-| `/sandbox-add-read-dir` | Add readable dir (Windows)     |
-| `/feedback`             | Send logs to maintainers       |
-| `/plugins`              | Browse and manage plugins      |
-| `/title`                | Set terminal title for session |
-| `/debug-config`         | Print config diagnostics       |
-| `/logout`               | Sign out of Codex              |
+| Comando                 | Descrição                                 |
+| ----------------------- | ----------------------------------------- |
+| `/agent`                | Alterna a thread do agente ativo          |
+| `/mcp`                  | Lista as ferramentas MCP                  |
+| `/apps`                 | Navega pelos apps de conector             |
+| `/experimental`         | Alterna recursos experimentais            |
+| `/statusline`           | Configura o rodapé da TUI                 |
+| `/ps`                   | Mostra os terminais em segundo plano      |
+| `/sandbox-add-read-dir` | Adiciona diretório legível (Windows)      |
+| `/feedback`             | Envia logs para os mantenedores           |
+| `/plugins`              | Navega e gerencia plugins                 |
+| `/title`                | Define o título do terminal para a sessão |
+| `/debug-config`         | Exibe diagnósticos de configuração        |
+| `/logout`               | Sai do Codex                              |
 
-## Models {.cols-3}
+## Modelos {.cols-3}
 
-### Available Models {.col-span-2}
+### Modelos disponíveis {.col-span-2}
 
-| Model                 | Speed | Best for                                 |
-| --------------------- | ----- | ---------------------------------------- |
-| `gpt-5.4`             | ★★★   | Default – coding + reasoning + workflows |
-| `gpt-5.4-mini`        | ★★★★★ | Subagents, light tasks, higher limits    |
-| `gpt-5.3-codex`       | ★★★★  | Complex software engineering             |
-| `gpt-5.3-codex-spark` | ★★★★★ | Near-instant iteration (Pro only)        |
+| Modelo                | Velocidade | Melhor para                                   |
+| --------------------- | ---------- | --------------------------------------------- |
+| `gpt-5.4`             | ★★★        | Padrão – programação + raciocínio + workflows |
+| `gpt-5.4-mini`        | ★★★★★      | Subagentes, tarefas leves, limites maiores    |
+| `gpt-5.3-codex`       | ★★★★       | Engenharia de software complexa               |
+| `gpt-5.3-codex-spark` | ★★★★★      | Iteração quase instantânea (somente Pro)      |
 
 {.show-header}
 
-### Select a Model
+### Selecionar um modelo
 
 ```bash
 $ codex -m gpt-5.4 "Your prompt"
@@ -269,9 +269,9 @@ $ codex --oss    # local Ollama / LM Studio
 # Mid-session: type /model in the TUI
 ```
 
-## Configuration {.cols-2}
+## Configuração {.cols-2}
 
-### config.toml Keys {.row-span-2}
+### Chaves do config.toml {.row-span-2}
 
 ```toml
 # ~/.codex/config.toml
@@ -303,9 +303,9 @@ approval_policy = "never"
 sandbox_mode = "workspace-write"
 ```
 
-Use `-p ci` to activate a profile.
+Use `-p ci` para ativar um perfil.
 
-### Feature Flags
+### Feature flags
 
 ```bash
 $ codex features list
@@ -317,21 +317,21 @@ $ codex --enable unified_exec
 $ codex --disable shell_snapshot
 ```
 
-### Config Locations
+### Locais de configuração
 
-| File                   | Purpose               |
-| ---------------------- | --------------------- |
-| `~/.codex/config.toml` | Global defaults       |
-| `~/.codex/AGENTS.md`   | Personal instructions |
-| `~/.agents/skills/`    | Personal skills       |
-| `.agents/skills/`      | Repo-level skills     |
-| `AGENTS.md`            | Repo instructions     |
+| Arquivo                | Finalidade                     |
+| ---------------------- | ------------------------------ |
+| `~/.codex/config.toml` | Padrões globais                |
+| `~/.codex/AGENTS.md`   | Instruções pessoais            |
+| `~/.agents/skills/`    | Skills pessoais                |
+| `.agents/skills/`      | Skills no nível do repositório |
+| `AGENTS.md`            | Instruções do repositório      |
 
-## Customization {.cols-3}
+## Personalização {.cols-3}
 
 ### AGENTS.md {.row-span-2}
 
-Persistent repo instructions, checked in alongside code:
+Instruções persistentes do repositório, versionadas junto com o código:
 
 ```markdown
 ## Build & test commands
@@ -351,15 +351,15 @@ Persistent repo instructions, checked in alongside code:
 - Flag unhandled promise rejections
 ```
 
-When to add rules:
+Quando adicionar regras:
 
-- Repeated agent mistakes
-- Recurring PR review feedback
-- Tag `@codex add to AGENTS.md` in GitHub
+- Erros repetidos do agente
+- Feedback recorrente de revisão de PR
+- Marque `@codex add to AGENTS.md` no GitHub
 
 ### Skills
 
-Reusable workflows packaged as `SKILL.md`:
+Workflows reutilizáveis empacotados como `SKILL.md`:
 
 ```
 my-skill/
@@ -369,7 +369,7 @@ my-skill/
   assets/       ← optional templates
 ```
 
-Example `SKILL.md`:
+Exemplo de `SKILL.md`:
 
 ```markdown
 ---
@@ -383,7 +383,7 @@ description: Stage and commit changes
 3. Write concise commit messages.
 ```
 
-### MCP Servers
+### Servidores MCP
 
 ```bash
 # Add a stdio server
@@ -406,9 +406,9 @@ $ codex mcp remove myserver
 $ codex mcp-server
 ```
 
-## Session Management {.cols-3}
+## Gerenciamento de sessões {.cols-3}
 
-### Resume Sessions
+### Retomar sessões
 
 ```bash
 $ codex resume           # session picker
@@ -417,9 +417,9 @@ $ codex resume --all     # across all directories
 $ codex resume <ID> "Continue fixing tests"
 ```
 
-Sessions stored at `~/.codex/sessions/`
+Sessões armazenadas em `~/.codex/sessions/`
 
-### Fork a Session
+### Fazer fork de uma sessão
 
 ```bash
 $ codex fork             # fork from picker
@@ -427,9 +427,9 @@ $ codex fork --last      # fork most recent
 $ codex fork <SESSION_ID> "New direction"
 ```
 
-Forking preserves the original transcript while starting a new branch.
+O fork preserva o transcript original enquanto inicia um novo branch.
 
-### Image Inputs
+### Entradas de imagem
 
 ```bash
 # Single image
@@ -441,11 +441,11 @@ $ codex --image img1.png,img2.jpg "Compare"
 # Or drag images into the TUI composer
 ```
 
-Supported: PNG, JPEG and other common formats.
+Formatos suportados: PNG, JPEG e outros formatos comuns.
 
-## Cloud & GitHub {.cols-3}
+## Cloud e GitHub {.cols-3}
 
-### Cloud Tasks {.col-span-2}
+### Tarefas do Cloud {.col-span-2}
 
 ```bash
 # Browse cloud environments
@@ -471,7 +471,7 @@ $ codex cloud diff <TASK_ID>
 $ codex apply <TASK_ID>
 ```
 
-### GitHub Integration
+### Integração com o GitHub
 
 ```
 # In a PR comment – trigger code review:
@@ -485,13 +485,13 @@ $ codex apply <TASK_ID>
 @codex add tests for the new endpoint
 ```
 
-Enable in Codex Settings → Code review → your repo. Turn on Automatic reviews to review every new PR.
+Habilite em Codex Settings → Code review → seu repositório. Ative Automatic reviews para revisar cada novo PR.
 
-## Subagent Workflows {.cols-2}
+## Workflows com subagentes {.cols-2}
 
-### Subagents Guide {.row-span-2}
+### Guia de subagentes {.row-span-2}
 
-Offload noisy work to parallel agents to avoid **context pollution** and **context rot**:
+Delegue trabalho ruidoso para agentes em paralelo e evite **context pollution** e **context rot**:
 
 ```
 codex "Review this branch with parallel agents.
@@ -500,41 +500,41 @@ and one for maintainability. Wait for all three,
 then summarize findings with file references."
 ```
 
-- Use for: exploration, tests, triage, log analysis
-- Avoid parallel write-heavy work (conflicts)
-- Each subagent consumes extra tokens
+- Use para: exploração, testes, triagem, análise de logs
+- Evite trabalho paralelo com muitas escritas (conflitos)
+- Cada subagente consome tokens extras
 
-**Subagent model guide:**
+**Guia de modelos para subagentes:**
 
-| Role                    | Model          | Reasoning |
-| ----------------------- | -------------- | --------- |
-| Main coordinator        | `gpt-5.4`      | medium    |
-| Fast exploration        | `gpt-5.4-mini` | low       |
-| Security / logic review | `gpt-5.4`      | high      |
+| Papel                         | Modelo         | Raciocínio |
+| ----------------------------- | -------------- | ---------- |
+| Coordenador principal         | `gpt-5.4`      | medium     |
+| Exploração rápida             | `gpt-5.4-mini` | low        |
+| Revisão de segurança / lógica | `gpt-5.4`      | high       |
 
 {.show-header}
 
-### Reasoning Effort
+### Esforço de raciocínio
 
-| Level    | Use when                       |
-| -------- | ------------------------------ |
-| `high`   | Complex logic, security audits |
-| `medium` | General tasks (default)        |
-| `low`    | Simple or speed-critical tasks |
+| Nível    | Use quando                                |
+| -------- | ----------------------------------------- |
+| `high`   | Lógica complexa, auditorias de segurança  |
+| `medium` | Tarefas gerais (padrão)                   |
+| `low`    | Tarefas simples ou com foco em velocidade |
 
-Set in `config.toml`:
+Defina em `config.toml`:
 
 ```toml
 model_reasoning_effort = "medium"
 ```
 
-Or inline: `-c model_reasoning_effort="high"`
+Ou inline: `-c model_reasoning_effort="high"`
 
-## Also See {.cols-1}
+## Veja também {.cols-1}
 
-- [Official Codex Docs](https://developers.openai.com/codex/cli) _(developers.openai.com)_
+- [Documentação oficial do Codex](https://developers.openai.com/codex/cli) _(developers.openai.com)_
 - [Codex CLI GitHub](https://github.com/openai/codex) _(github.com)_
-- [Codex Pricing](https://developers.openai.com/codex/pricing) _(developers.openai.com)_
-- [Customization Guide](https://developers.openai.com/codex/concepts/customization) _(developers.openai.com)_
-- [Prompting Best Practices](https://developers.openai.com/codex/prompting) _(developers.openai.com)_
-- [Workflows & Examples](https://developers.openai.com/codex/workflows) _(developers.openai.com)_
+- [Preços do Codex](https://developers.openai.com/codex/pricing) _(developers.openai.com)_
+- [Guia de personalização](https://developers.openai.com/codex/concepts/customization) _(developers.openai.com)_
+- [Boas práticas de prompting](https://developers.openai.com/codex/prompting) _(developers.openai.com)_
+- [Workflows e exemplos](https://developers.openai.com/codex/workflows) _(developers.openai.com)_

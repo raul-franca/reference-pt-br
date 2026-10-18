@@ -6,25 +6,25 @@ tags:
   - process
   - process manager
 categories:
-  - Linux Command
+  - Comandos Linux
 intro:
-  The taskset command is used to set or retrieve the CPU affinity of a running process given its pid, or to launch a new
-  command with a given CPU affinity.
+  O comando taskset é usado para definir ou recuperar a afinidade de CPU de um processo em execução, dado seu pid, ou
+  para iniciar um novo comando com uma determinada afinidade de CPU.
 plugins:
   - copyCode
 ---
 
-## Getting Started {.cols-3}
+## Primeiros passos {.cols-3}
 
-### Usage
+### Uso
 
-The default behavior is to run a new command with a given affinity mask
+O comportamento padrão é executar um novo comando com uma determinada máscara de afinidade
 
 ```shell
 $ taskset [mask] [command] [arguments]
 ```
 
-#### Usage #2
+#### Uso #2
 
 ```shell
 $ taskset -p [pid]
@@ -36,52 +36,52 @@ $ taskset -p [pid]
 $ taskset -p [mask] [pid]
 ```
 
-You can also retrieve the CPU affinity of an existing task
+Você também pode recuperar a afinidade de CPU de uma tarefa existente
 
-### Common Options {.col-span-2}
+### Opções comuns {.col-span-2}
 
-| Command | Alternavite | Meaning                                                                                                                                                  |
+| Comando | Alternativa | Significado                                                                                                                                              |
 | ------- | ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `-a`    | --all-tasks | Set or retrieve the CPU affinity of all the task (threads) for a given PID.                                                                              |
-| `-c`    | --cpu-list  | Interpret mask as numerical list of processors instead of a bitmask.</br>Numbers are separated by commas and may include ranges. For example: `0,5,8-11` |
-| `-p`    | --pid       | Operate on an existing PID and do not launch a new task.                                                                                                 |
-| `-h`    | --help      | Display help text and exit.                                                                                                                              |
-| `-v`    | --version   | Print version and exit.                                                                                                                                  |
+| `-a`    | --all-tasks | Define ou recupera a afinidade de CPU de todas as tarefas (threads) de um determinado PID.                                                              |
+| `-c`    | --cpu-list  | Interpreta a máscara como uma lista numérica de processadores em vez de um bitmask.</br>Os números são separados por vírgulas e podem incluir intervalos. Por exemplo: `0,5,8-11` |
+| `-p`    | --pid       | Opera em um PID existente e não inicia uma nova tarefa.                                                                                                  |
+| `-h`    | --help      | Exibe o texto de ajuda e sai.                                                                                                                            |
+| `-v`    | --version   | Imprime a versão e sai.                                                                                                                                  |
 
 {.show-header}
 
-## Example
+## Exemplo
 
-### View CPU Affinity
+### Ver a afinidade de CPU
 
 ```shell
 $ taskset -cp 29523
 pid 29523's current affinity list: 0-15
 ```
 
-That mean process with PID `29523` is active on CPU range from `[0,1,...,15]` which means `16` total.
+Isso significa que o processo com PID `29523` está ativo no intervalo de CPUs de `[0,1,...,15]`, ou seja, `16` no total.
 
-**PID**: Process Identifier - is a unique numerical identifier given to each running process, you can view PID of
-processes in `top` or `htop` tools
+**PID**: Process Identifier — é um identificador numérico único dado a cada processo em execução; você pode ver o PID dos
+processos nas ferramentas `top` ou `htop`
 
-_If you run the above command but get the message `bad usage`, try with PID = 1_
+_Se você executar o comando acima e receber a mensagem `bad usage`, tente com PID = 1_
 
 ```shell
 $ taskset -cp 1
 ```
 
-### Set CPU Affinity
+### Definir a afinidade de CPU
 
-Now let's try to set process in to a specify CPU. For example, we have a process has PID = 14846
+Agora vamos tentar colocar um processo em uma CPU específica. Por exemplo, temos um processo com PID = 14846
 
-Let's see the CPU affinity list of this process first:
+Vamos ver primeiro a lista de afinidade de CPU desse processo:
 
 ```shell
 $ taskset -cp 14846
 pid 14846's current affinity list: 0-15
 ```
 
-#### Change CPU affinity to 1:
+#### Mudar a afinidade de CPU para 1:
 
 ```shell
 $ taskset -cp 1 14846
@@ -89,11 +89,11 @@ pid 14846's current affinity list: 0-15
 pid 14846's new affinity list: 1
 ```
 
-As we see, CPU affinity was changed
+Como vemos, a afinidade de CPU foi alterada
 
-### Set CPU Affinity with multiple value
+### Definir a afinidade de CPU com vários valores
 
-That mean new CPU affinity list is `[0,1,2,3]`
+Isso significa que a nova lista de afinidade de CPU é `[0,1,2,3]`
 
 ```shell
 $ taskset -cp 0-3 14846
@@ -101,7 +101,7 @@ pid 14846's current affinity list: 1
 pid 14846's new affinity list: 0-3
 ```
 
-You can set single CPU with the following command:
+Você pode definir uma única CPU com o seguinte comando:
 
 ```shell
 $ taskset -cp 5,8,12 14846
@@ -109,24 +109,24 @@ pid 14846's current affinity list: 0-3
 pid 14846's new affinity list: 5,8,12
 ```
 
-That mean new CPU affinity list is `[5,8,12]`
+Isso significa que a nova lista de afinidade de CPU é `[5,8,12]`
 
-### Other
+### Outros
 
-You can set affinity by range with other like a specify CPU
+Você pode definir a afinidade por intervalo, como em uma CPU específica
 
 ```shell
 $ taskset -cp 1-3,12 14846
 ```
 
-Or
+Ou
 
 ```shell
 $ taskset -cp 1-6:2 14846
 ```
 
-The suffix ":N" specifies stride in the range, for example 0-10:3 is interpreted as 0,3,6,9 list.
+O sufixo ":N" especifica o passo (stride) no intervalo; por exemplo, 0-10:3 é interpretado como a lista 0,3,6,9.
 
-## Also see
+## Veja também
 
 [taskset — Linux manual page](https://man7.org/linux/man-pages/man1/taskset.1.html) _(man7.org)_

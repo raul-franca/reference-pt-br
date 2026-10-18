@@ -6,14 +6,14 @@ tags:
   - config
   - format
 categories:
-  - Programming
+  - Programação
 intro: |
-  This page contains a list of commonly used kubectl commands and flags.
+  Esta página contém uma lista dos comandos e flags do kubectl mais usados.
 plugins:
   - copyCode
 ---
 
-## Viewing and finding resources {.cols-2}
+## Visualizando e encontrando recursos {.cols-2}
 
 ### Nodes
 
@@ -28,7 +28,7 @@ kubectl get nodes -o jsonpath='{.items[*].status.addresses[?(@.type="ExternalIP"
 kubectl top node [node_name] # Display node (CPU/memory/storage) usage
 ```
 
-Resource name: nodes, abbreviation: no
+Nome do recurso: nodes, abreviação: no
 
 ### Pods
 
@@ -46,7 +46,7 @@ kubectl get pods --field-selector status.phase=Running
 # Use the field selector to filter out container group information
 ```
 
-Resource name: pods, abbreviation: po
+Nome do recurso: pods, abreviação: po
 
 ### Namespaces
 
@@ -56,7 +56,7 @@ kubectl get ns -o yaml
 kubectl describe ns
 ```
 
-Resource name: namespaces, abbreviation: ns
+Nome do recurso: namespaces, abreviação: ns
 
 ### Deployments
 
@@ -67,7 +67,7 @@ kubectl get deploy -o wide
 kubectl get deploy -o yaml
 ```
 
-Resource name: deployments, abbreviation: deploy
+Nome do recurso: deployments, abreviação: deploy
 
 ### Services
 
@@ -79,7 +79,7 @@ kubectl get svc -o yaml
 kubectl get svc --show-labels
 ```
 
-Resource name: services, abbreviation: svc
+Nome do recurso: services, abreviação: svc
 
 ### Daemon Sets
 
@@ -90,9 +90,9 @@ kubectl describe ds [daemonset_name] -n [namespace_name]
 kubectl get ds [ds_name] -n [ns_name] -o yaml
 ```
 
-Resource name: daemonsets, abbreviation: ds
+Nome do recurso: daemonsets, abreviação: ds
 
-### Events
+### Eventos
 
 ```bash
 kubectl get events
@@ -100,7 +100,7 @@ kubectl get events -n kube-system
 kubectl get events -w
 ```
 
-Resource name: events, abbreviation: ev
+Nome do recurso: events, abreviação: ev
 
 ### Logs
 
@@ -121,7 +121,7 @@ kubectl get serviceaccounts default -o yaml >./sa.yaml
 kubectl replace serviceaccount default -f ./sa.yaml
 ```
 
-Resource name: serviceaccounts, abbreviation: ev
+Nome do recurso: serviceaccounts, abreviação: ev
 
 ### Replica Sets
 
@@ -132,7 +132,7 @@ kubectl get rs -o wide
 kubectl get rs -o yaml
 ```
 
-Resource name: replicasets, abbreviation: rs
+Nome do recurso: replicasets, abreviação: rs
 
 ### Roles
 
@@ -151,7 +151,7 @@ kubectl get secrets -o yaml
 
 ### Config maps
 
-Resource name: configmaps, abbreviation: cm
+Nome do recurso: configmaps, abreviação: cm
 
 ```bash
 kubectl get cm
@@ -161,7 +161,7 @@ kubectl get cm --all-namespaces -o yaml
 
 ### Ingresses
 
-Resource name: ingresses, abbreviation: ing
+Nome do recurso: ingresses, abreviação: ing
 
 ```bash
 kubectl get ing
@@ -170,16 +170,16 @@ kubectl get ing --all-namespaces
 
 ### Persistent Volumes
 
-Resource name: persistentvolumes, abbreviation: pv
+Nome do recurso: persistentvolumes, abreviação: pv
 
 ```bash
 kubectl get pv
 kubectl describe pv
 ```
 
-### Persistent volume declaration
+### Declaração de persistent volume
 
-Resource name: persistentvolumeclaims, abbreviation: pvc
+Nome do recurso: persistentvolumeclaims, abreviação: pvc
 
 ```bash
 kubectl get pvc
@@ -188,14 +188,14 @@ kubectl describe pvc
 
 ### storage class
 
-Resource name: storageclasses, Abbreviation: sc
+Nome do recurso: storageclasses, abreviação: sc
 
 ```bash
 kubectl get sc
 kubectl get sc -o yaml
 ```
 
-### Multiple resources
+### Vários recursos
 
 ```bash
 kubectl get svc, po
@@ -204,7 +204,7 @@ kubectl get all
 kubectl get all --all-namespaces
 ```
 
-## Updating resources
+## Atualizando recursos
 
 ### Taint
 
@@ -219,14 +219,14 @@ kubectl label [node_name] disktype=ssd
 kubectl label [pod_name] env=prod
 ```
 
-### Maintain/Schedulable
+### Manutenção/Agendável
 
 ```bash
 kubectl cordon [node_name] # node maintenance
 kubectl uncordon [node_name] # node is schedulable
 ```
 
-### clear
+### Limpar
 
 ```bash
 kubectl drain [node_name] # empty the node
@@ -273,16 +273,16 @@ kubectl edit sa [sa_name]
 kubectl delete sa [sa_name]
 ```
 
-### Notes
+### Anotações
 
 ```bash
 kubectl annotate po [pod_name] [annotation]
 kubectl annotateno [node_name]
 ```
 
-## Create resources
+## Criar recursos
 
-### Create pod
+### Criar pod
 
 ```bash
 kubectl create -f [name_of_file]
@@ -292,13 +292,13 @@ kubectl run [pod_name] --generator=run-pod/v1 --image=nginx
 kubectl run [pod_name] --image=nginx --restart=Never
 ```
 
-### Create Service
+### Criar Service
 
 ```bash
 kubectl create svc nodeport [svc_name] --tcp=8080:80
 ```
 
-### Create a stateless application
+### Criar uma aplicação stateless
 
 ```bash
 kubectl create -f [name_of_file]
@@ -306,20 +306,20 @@ kubectl apply -f [name_of_file]
 kubectl create deploy [deploy_name] --image=nginx
 ```
 
-### interaction
+### Interação
 
 ```bash
 kubectl run [pod_name] --image=busybox --rm -it --restart=Never --sh
 ```
 
-### Output YAML
+### Saída YAML
 
 ```bash
 kubectl create deploy [deploy_name] --image=nginx --dry-run -o yaml > deploy.yaml
 kubectl get po [pod_name] -o yaml --export > pod.yaml
 ```
 
-### Help
+### Ajuda
 
 ```bash
 kubectl -h
@@ -328,7 +328,7 @@ kubectl run -h
 kubectl explain deploy.spec
 ```
 
-## Miscellaneous
+## Diversos
 
 ### APIs
 
@@ -336,7 +336,7 @@ kubectl explain deploy.spec
 kubectl get --raw /apis/metrics.k8s.io/
 ```
 
-### Information
+### Informações
 
 ```bash
 kubectl config
@@ -344,6 +344,6 @@ kubectl cluster-info
 kubectl get componentstatus
 ```
 
-## Also See
+## Veja também
 
-- [Kubernetes Official Documentation](https://kubernetes.io/zh-cn/docs/reference/kubectl/) _(kubernetes.io)_
+- [Documentação oficial do Kubernetes](https://kubernetes.io/zh-cn/docs/reference/kubectl/) _(kubernetes.io)_

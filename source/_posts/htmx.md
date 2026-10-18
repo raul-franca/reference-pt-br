@@ -7,36 +7,36 @@ tags:
   - javascript
   - htmx
 categories:
-  - Programming
+  - Programação
 intro: |
-  A modern, minimal JavaScript library that allows you to create dynamic web interfaces using HTML attributes.
+  Uma biblioteca JavaScript moderna e minimalista que permite criar interfaces web dinâmicas usando atributos HTML.
 plugins:
   - copyCode
 ---
 
-## Getting Started {.cols-3}
+## Primeiros Passos {.cols-3}
 
-### CDN Import
+### Importação via CDN
 
 ```html
 <script src="https://unpkg.com/htmx.org@1.9.2"></script>
 ```
 
-### Basic Usage
+### Uso Básico
 
 ```html
 <button hx-get="/hello" hx-target="#result">Say Hi</button>
 <div id="result"></div>
 ```
 
-### Server Response
+### Resposta do Servidor
 
 ```html
 <!-- /hello response -->
 <p>Hello from server</p>
 ```
 
-## Core Attributes {.cols-3}
+## Atributos Principais {.cols-3}
 
 ### `hx-get`, `hx-post`, etc.
 
@@ -62,7 +62,7 @@ plugins:
 />
 ```
 
-## Swap & Out of Band {.cols-3}
+## Swap e Out of Band {.cols-3}
 
 ### `hx-swap`
 
@@ -80,17 +80,17 @@ plugins:
 <div hx-swap-oob="true" id="msg"></div>
 ```
 
-_Useful for global updates from partials._
+_Útil para atualizações globais a partir de partials._
 
-### Swap Modifiers
+### Modificadores de Swap
 
 ```html
 hx-swap="outerHTML transition:true swap:1s"
 ```
 
-## Forms & Events {.cols-3}
+## Formulários e Eventos {.cols-3}
 
-### Auto POST on Submit
+### POST Automático ao Enviar
 
 ```html
 <form hx-post="/submit" hx-target="#status">
@@ -113,9 +113,9 @@ hx-swap="outerHTML transition:true swap:1s"
 <button hx-post="/save" hx-vals='{"id": 42, "active": true}'>Save</button>
 ```
 
-## Advanced Features {.cols-3}
+## Recursos Avançados {.cols-3}
 
-### Loading Indicator
+### Indicador de Carregamento
 
 ```html
 <button hx-get="/load" hx-indicator="#spinner">Load</button>
@@ -134,9 +134,9 @@ hx-swap="outerHTML transition:true swap:1s"
 <div hx-get="/time" hx-trigger="every 5s"></div>
 ```
 
-## Events & Extensions {.cols-3}
+## Eventos e Extensões {.cols-3}
 
-### Listen to Events
+### Escutar Eventos
 
 ```js
 document.body.addEventListener('htmx:afterSwap', (e) => {
@@ -144,22 +144,22 @@ document.body.addEventListener('htmx:afterSwap', (e) => {
 });
 ```
 
-### Event Hooks
+### Hooks de Eventos
 
 - `htmx:beforeRequest`
 - `htmx:afterSwap`
 - `htmx:responseError`
 
-### Extensions
+### Extensões
 
 ```html
 <script src="https://unpkg.com/htmx.org/dist/ext/json-enc.js"></script>
 <form hx-post="/api" hx-ext="json-enc"></form>
 ```
 
-## Example Use Case {.cols-2}
+## Exemplo de Uso {.cols-2}
 
-### Python Backend (Flask)
+### Backend em Python (Flask)
 
 ```python
 @app.route("/hello")
@@ -167,7 +167,7 @@ def hello():
     return "<p>Hello, HTMX!</p>"
 ```
 
-### HTML Client
+### Cliente HTML
 
 ```html
 <button hx-get="/hello" hx-target="#msg">Click</button>

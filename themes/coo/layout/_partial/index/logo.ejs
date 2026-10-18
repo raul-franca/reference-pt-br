@@ -1,29 +1,29 @@
 <%
-// Determine theme based on context
-let logoTheme = 'light'; // default for non-home pages
+// Define o tema conforme o contexto
+let logoTheme = 'light'; // padrão para páginas que não são a inicial
 if (typeof theme !== 'undefined') {
-    logoTheme = theme; // use passed theme if provided
+    logoTheme = theme; // usa o tema recebido, se houver
 } else if (is_home()) {
-    logoTheme = 'dark'; // dark theme for home page (light text on dark background)
+    logoTheme = 'dark'; // tema escuro para a página inicial (texto claro em fundo escuro)
 }
 
-// Define color classes based on theme
+// Define as classes de cor conforme o tema
 let iconColorClass, textColorClass, gradientClass, zipColorClass;
 if (logoTheme === 'dark') {
-    // For dark backgrounds (home page)
+    // Para fundos escuros (página inicial)
     iconColorClass = 'text-white';
     textColorClass = 'text-slate-100';
     gradientClass = 'bg-gradient-to-r from-white to-cyan-100 bg-clip-text text-transparent';
     zipColorClass = 'text-cyan-300';
 } else {
-    // For light backgrounds (detail pages, footer)
+    // Para fundos claros (páginas de detalhe, footer)
     iconColorClass = 'text-emerald-600 dark:text-emerald-400';
     textColorClass = 'text-slate-800 dark:text-slate-200';
     gradientClass = 'bg-gradient-to-r from-slate-800 to-slate-600 bg-clip-text text-transparent dark:from-slate-200 dark:to-slate-400';
     zipColorClass = 'text-emerald-600 dark:text-emerald-400';
 }
 %>
-<a href="/" title="cheatsheets.zip - Quick Reference and Cheat Sheets for Developers" class="flex font-medium items-center justify-center md:justify-start text-slate-800 dark:text-slate-300">
+<a href="/" title="cheatsheets.zip - Referência rápida e cheat sheets para desenvolvedores" class="flex font-medium items-center justify-center md:justify-start text-slate-800 dark:text-slate-300">
     <% if (icon) { %>
         <div class="justify-center <%= iconColorClass %> mr-3 text-4xl">
             <div class="self-center">
@@ -36,7 +36,7 @@ if (logoTheme === 'dark') {
         </span>
 </a>
 <% if (page.layout == "note" || page._isNotePagination){ %>
-    <a class="hidden md:block" href="/notes/" title="Notes - Browse our developer notes and tutorials">
-        <span class="flex items-center pl-2 ml-2 text-lg text-slate-300 md:border-l border-slate-400 dark:border-slate-700 hover:text-white transition-colors">Notes</span>
+    <a class="hidden md:block" href="/notes/" title="Notas - Explore nossas notas e tutoriais para desenvolvedores">
+        <span class="flex items-center pl-2 ml-2 text-lg text-slate-300 md:border-l border-slate-400 dark:border-slate-700 hover:text-white transition-colors">Notas</span>
     </a>
 <% } %>

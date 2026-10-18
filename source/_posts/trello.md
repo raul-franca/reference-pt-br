@@ -7,56 +7,56 @@ tags:
   -
   -
 categories:
-  - Keyboard Shortcuts
+  - Atalhos de Teclado
 intro: |
-  A visual cheat-sheet for the 29 keyboard shortcuts found on Trello
+  Um cheat sheet visual para os 29 atalhos de teclado do Trello
 ---
 
-## Keyboard Shortcuts {.cols-2}
+## Atalhos de Teclado {.cols-2}
 
-### General I
+### Geral I
 
-| Shortcut             | Action                     |
-| -------------------- | -------------------------- |
-| `Up/Down/Left/Right` | Navigate Cards             |
-| `B`                  | Open Header Boards Menu    |
-| `/`                  | Focus Search Box           |
-| `C`                  | Archive Card               |
-| `D`                  | Due Date                   |
-| `E`                  | Quick Edit Mode            |
-| `Esc`                | Close Menu/Cancel Editing  |
-| `Ctrl` `Enter`       | Save Text                  |
-| `Enter`              | Open Card                  |
-| `F`                  | Open Card Filter Menu      |
-| `L`                  | Label                      |
-| `;`                  | Toggle Label Names         |
-| `M`                  | Add/Remove Members         |
-| `N`                  | Insert New Card            |
-| `,/./</>`            | Move Card to Adjacent List |
-
-{.shortcuts}
-
-### General II
-
-| Shortcut    | Action                |
-| ----------- | --------------------- |
-| `Q`         | My Cards Filter       |
-| `S`         | Watch                 |
-| `Space`     | Assign Self           |
-| `T`         | Edit Title            |
-| `V`         | Vote                  |
-| `W`         | Toggle Board Menu     |
-| `X`         | Clear All Filters     |
-| `?`         | Open Shortcuts Page   |
-| `Shift` `2` | Autocomplete Members  |
-| `Shift` `3` | Autocomplete Labels   |
-| `Shift` `6` | Autocomplete Position |
-| `Ctrl` `C`  | Copy Card             |
-| `Ctrl` `V`  | Paste Card            |
-| `Ctrl` `X`  | Move Card             |
+| Atalho               | Ação                         |
+| -------------------- | ---------------------------- |
+| `Up/Down/Left/Right` | Navegar pelos cards          |
+| `B`                  | Abrir o menu de boards do cabeçalho |
+| `/`                  | Focar a caixa de pesquisa    |
+| `C`                  | Arquivar card                |
+| `D`                  | Data de entrega              |
+| `E`                  | Modo de edição rápida        |
+| `Esc`                | Fechar menu/cancelar edição  |
+| `Ctrl` `Enter`       | Salvar texto                 |
+| `Enter`              | Abrir card                   |
+| `F`                  | Abrir menu de filtros do card |
+| `L`                  | Etiqueta                     |
+| `;`                  | Alternar nomes das etiquetas |
+| `M`                  | Adicionar/remover membros    |
+| `N`                  | Inserir novo card            |
+| `,/./</>`            | Mover card para a lista adjacente |
 
 {.shortcuts}
 
-## Also see
+### Geral II
 
-- [Keyboard shortcuts for Trello](https://trello.com/shortcuts) _(trello.com)_
+| Atalho      | Ação                     |
+| ----------- | ------------------------ |
+| `Q`         | Filtro dos meus cards    |
+| `S`         | Observar                 |
+| `Space`     | Atribuir a si mesmo      |
+| `T`         | Editar título            |
+| `V`         | Votar                    |
+| `W`         | Alternar menu do board   |
+| `X`         | Limpar todos os filtros  |
+| `?`         | Abrir página de atalhos  |
+| `Shift` `2` | Autocompletar membros    |
+| `Shift` `3` | Autocompletar etiquetas  |
+| `Shift` `6` | Autocompletar posição    |
+| `Ctrl` `C`  | Copiar card              |
+| `Ctrl` `V`  | Colar card               |
+| `Ctrl` `X`  | Mover card               |
+
+{.shortcuts}
+
+## Veja também
+
+- [Atalhos de teclado do Trello](https://trello.com/shortcuts) _(trello.com)_

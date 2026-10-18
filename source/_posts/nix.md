@@ -4,14 +4,14 @@ date: 2025-08-24 23:33:40
 background: bg-[#304673]
 tags:
 categories:
-  - Programming
+  - Programação
 intro: |
-  The Nix quick reference cheat sheet that aims at providing help on writing basic nix code.
+  O cheat sheet de referência rápida do Nix, que tem como objetivo ajudar a escrever código nix básico.
 plugins:
   - copyCode
 ---
 
-## Types & Syntax
+## Tipos e sintaxe
 
 ### String
 
@@ -68,7 +68,7 @@ let
 in
 ```
 
-### Attribute Set
+### Conjunto de atributos
 
 ```nix
 let
@@ -80,9 +80,9 @@ let
 in
 ```
 
-see [Attribute Sets](#attribute-sets)
+veja [Conjuntos de atributos](#attribute-sets)
 
-### List
+### Lista
 
 ```nix
 let
@@ -96,15 +96,15 @@ let
 in
 ```
 
-### Comment
+### Comentário
 
-#### ↓ single-line comment
+#### ↓ comentário de linha única
 
 ```nix
 # your comment
 ```
 
-#### ↓ multi-line comment
+#### ↓ comentário de várias linhas
 
 ```nix
 /*
@@ -112,9 +112,9 @@ in
 */
 ```
 
-## Scoping
+## Escopo
 
-### Define Local Variable
+### Definir variável local
 
 ```nix
 let
@@ -124,7 +124,7 @@ in
   x + y # -> returns 3
 ```
 
-### Add Variables Into Scope
+### Adicionar variáveis ao escopo
 
 ```nix
 let
@@ -133,7 +133,7 @@ in
   { inherit x; }
 ```
 
-#### ↓ desugars to
+#### ↓ equivale a
 
 ```nix
 let
@@ -142,7 +142,7 @@ in
   { x = x; }
 ```
 
-### Add Attributes Into Scope
+### Adicionar atributos ao escopo
 
 ```nix
 let
@@ -151,7 +151,7 @@ in
   { inherit (x) y; }
 ```
 
-#### ↓ desugars to
+#### ↓ equivale a
 
 ```nix
 let
@@ -160,7 +160,7 @@ in
   { y = x.y; }
 ```
 
-### Add All Attributes Into Scope
+### Adicionar todos os atributos ao escopo
 
 ```nix
 let
@@ -170,9 +170,9 @@ in
   y + z # -> returns 3
 ```
 
-## Conditionals
+## Condicionais
 
-### Define Conditionals
+### Definir condicionais
 
 ```nix
 if x > 0
@@ -180,9 +180,9 @@ then 1
 else -1
 ```
 
-## Attribute Sets
+## Conjuntos de atributos
 
-### Define Attribute Sets
+### Definir conjuntos de atributos
 
 ```nix
 let
@@ -194,14 +194,14 @@ let
 in
 ```
 
-### Update Attribute Sets
+### Atualizar conjuntos de atributos
 
 ```nix
 { x = 1; } // { y = 2; } # -> returns { x = 1; y = 2; }
 { x = 1; } // { x = 2; } # -> returns { x = 2; }
 ```
 
-### Check For Attribute
+### Verificar a existência de um atributo
 
 ```nix
 let
@@ -210,7 +210,7 @@ in
   x ? y # -> returns true
 ```
 
-### Reference Attirbute Keys
+### Referenciar chaves de atributos
 
 ```nix
 let
@@ -219,7 +219,7 @@ in
   x.y # -> returns 1
 ```
 
-#### ↓ optional
+#### ↓ opcional
 
 ```nix
 let
@@ -228,15 +228,15 @@ in
   x.z or 2 # -> returns 2
 ```
 
-## Concatenation & Interpolation
+## Concatenação e interpolação
 
-### Concatenate Lists
+### Concatenar listas
 
 ```nix
 [ 1 2 ] ++ [ 3 4 ] # -> returns [ 1 2 3 4 ]
 ```
 
-### Concatenate Paths & Strings
+### Concatenar paths e strings
 
 ```nix
 /bin + /sh # -> returns /bin/sh
@@ -244,7 +244,7 @@ in
 "/bin" + "/sh" # -> returns "/bin/sh"
 ```
 
-### Interpolate Strings
+### Interpolar strings
 
 ```nix
 let
@@ -253,9 +253,9 @@ in
   "foo ${x} baz" # -> returns "foo bar baz"
 ```
 
-## Functions
+## Funções
 
-### Simple Function
+### Função simples
 
 ```nix
 let
@@ -264,7 +264,7 @@ in
   f 1 # -> returns 2
 ```
 
-### Multiple Arguments
+### Múltiplos argumentos
 
 ```nix
 let
@@ -273,7 +273,7 @@ in
   f 1 2 # -> returns [ 1 2 ]
 ```
 
-### Named Arguments
+### Argumentos nomeados
 
 ```nix
 let
@@ -282,7 +282,7 @@ in
   f { x=1; y=2; } # -> returns 3
 ```
 
-#### ↓ ignoring arguments
+#### ↓ ignorando argumentos
 
 ```nix
 let
@@ -291,7 +291,7 @@ in
   f { x=1; y=2; z=3; } # -> returns 3
 ```
 
-#### ↓ default values
+#### ↓ valores padrão
 
 ```nix
 let
@@ -300,7 +300,7 @@ in
   f { x=1; } # -> returns 3
 ```
 
-#### ↓ bind to variable
+#### ↓ vincular a uma variável
 
 ```nix
 let
@@ -309,6 +309,6 @@ in
   f { x=1; y=2; } # -> returns 3
 ```
 
-## Sources
+## Fontes
 
 - [NixOS/marketing](https://github.com/nixos/marketing) _(github.com)_

@@ -22,12 +22,12 @@
         document.querySelectorAll('code').forEach(function (el) {
             const text = el.textContent;
             if (text.startsWith('KaTeX:') || el.classList.contains("language-KaTeX")) {
-                // Do stuff if text starts with `latex`
+                // Executa ações se o texto começar com `latex`
                 const renderedKatex = katex.renderToString(
                     text.replace('KaTeX:', ''),
                     {throwOnError: false}
                 );
-                // Populate katex and additional markup for formatting
+                // Preenche o katex e a marcação adicional para formatação
                 el.outerHTML = `<span class="katex-wrap">${renderedKatex}</span>`;
             }
 
@@ -38,12 +38,12 @@
 
 <% if (is_post() && page.plugins != undefined && page.plugins.includes("copyCode") ){ %>
     <script>
-        // Get all pre > code elements
+        // Obtém todos os elementos pre > code
         const codeBlocks = document.querySelectorAll('pre > code');
         const initInnerHTML = '<svg height="1em" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path> </svg>';
         const successInnerHTML = '<svg height="1em" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path></svg>';
         codeBlocks.forEach(function (codeBlock) {
-            // Create a copy button element
+            // Cria um elemento de botão de copiar
             const copyButton = document.createElement('button');
             copyButton.className = 'opacity-90 bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-600 hover:to-purple-700 p-2 text-white shadow-xl rounded-lg flex items-center absolute top-2 right-2 transition-all duration-200 backdrop-blur-sm';
             copyButton.innerHTML = initInnerHTML;
@@ -53,7 +53,7 @@
             parent.style = "position: relative;"
             parent.insertBefore(copyButton, codeBlock);
 
-            // Add click event listener to copy button
+            // Adiciona o listener de clique ao botão de copiar
             copyButton.addEventListener('click', () => {
                 navigator.clipboard.writeText(codeBlock.textContent).then(() => {
                     copyButton.innerHTML = successInnerHTML;
@@ -78,7 +78,7 @@
     <!-- see https://livecodes.io/docs/ and https://livecodes.io/docs/sdk -->
     <script src="https://cdn.jsdelivr.net/npm/livecodes@0.7.2/livecodes.umd.js"></script>
     <script>
-        // Get all pre > code elements
+        // Obtém todos os elementos pre > code
         const code_Blocks = document.querySelectorAll('pre > code');
         const runInnerHTML = '<svg height="1em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g><path d="M16.6582 9.28638C18.098 10.1862 18.8178 10.6361 19.0647 11.2122C19.2803 11.7152 19.2803 12.2847 19.0647 12.7878C18.8178 13.3638 18.098 13.8137 16.6582 14.7136L9.896 18.94C8.29805 19.9387 7.49907 20.4381 6.83973 20.385C6.26501 20.3388 5.73818 20.0469 5.3944 19.584C5 19.053 5 18.1108 5 16.2264V7.77357C5 5.88919 5 4.94701 5.3944 4.41598C5.73818 3.9531 6.26501 3.66111 6.83973 3.6149C7.49907 3.5619 8.29805 4.06126 9.896 5.05998L16.6582 9.28638Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"></path></g></svg>';
         const pageHeader = (document.querySelector('h1')?.textContent || '').trim();
@@ -88,11 +88,11 @@
 
             if (['', 'shell', 'bash'].includes(language)) return;
             if (language === 'c' && content.includes('FILE ')) {
-                // file operations are not supported in the online playground
+                // operações de arquivo não são suportadas no playground online
                 return;
             }
 
-            // Create a run button element
+            // Cria um elemento de botão de executar
             const runButton = document.createElement('button');
             runButton.className = 'opacity-90 bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 p-2 text-white shadow-xl rounded-lg flex items-center absolute top-12 right-2 transition-all duration-200 backdrop-blur-sm';
             runButton.innerHTML = runInnerHTML;
@@ -102,7 +102,7 @@
             parent.style = "position: relative;"
             parent.insertBefore(runButton, codeBlock);
 
-            // Add click event listener to run button
+            // Adiciona o listener de clique ao botão de executar
             runButton.addEventListener('click', () => {
                 if (language === 'ts') {
                     language = 'typescript';
@@ -118,7 +118,7 @@
                                         : 'markup';
                 const title = codeBlock.closest('.h3-wrap')?.querySelector('h3')?.textContent.replace('#', '') || '';
 
-                // see docs for configuration object: https://livecodes.io/docs/configuration/configuration-object
+                // consulte a documentação do objeto de configuração: https://livecodes.io/docs/configuration/configuration-object
                 const baseConfig = {
                     title,
                     activeEditor: editorId,
@@ -182,7 +182,7 @@
                     }
                 }
 
-                // see https://livecodes.io/docs/languages/ejs
+                // consulte https://livecodes.io/docs/languages/ejs
                 if (language === 'html' && pageHeader.startsWith('EJS')) {
                     config = {
                         ...baseConfig,
@@ -225,8 +225,8 @@
                     }
                 }
 
-                // see https://livecodes.io/docs/languages/jsx
-                // and https://livecodes.io/docs/languages/react
+                // consulte https://livecodes.io/docs/languages/jsx
+                // e https://livecodes.io/docs/languages/react
                 if (language === 'javascript' && pageHeader.startsWith('React')) {
                     config = {
                         ...baseConfig,
@@ -242,8 +242,8 @@
                     }
                 }
 
-                // see https://livecodes.io/docs/languages/php-wasm
-                // and https://livecodes.io/docs/languages/php
+                // consulte https://livecodes.io/docs/languages/php-wasm
+                // e https://livecodes.io/docs/languages/php
                 if (language === 'php') {
                     config = {
                         ...baseConfig,
@@ -261,8 +261,8 @@
                     }
                 }
 
-                // see https://livecodes.io/docs/languages/python
-                // and https://livecodes.io/docs/languages/python-wasm
+                // consulte https://livecodes.io/docs/languages/python
+                // e https://livecodes.io/docs/languages/python-wasm
                 if (language === 'python') {
                     if (content.includes('>>> ')) {
                         content = content
@@ -371,9 +371,9 @@
                     }
                 }
 
-                // see https://livecodes.io/docs/sdk/js-ts#getplaygroundurl
+                // consulte https://livecodes.io/docs/sdk/js-ts#getplaygroundurl
                 const plaugroundUrl = livecodes.getPlaygroundUrl({
-                    // see https://livecodes.io/docs/features/permanent-url/
+                    // consulte https://livecodes.io/docs/features/permanent-url/
                     appUrl: 'https://v39.livecodes.io',
                     config,
                 });
@@ -392,20 +392,20 @@
 
 <!-- PWA Service Worker Registration -->
 <script>
-// Register Service Worker for PWA functionality
+// Registra o Service Worker para a funcionalidade de PWA
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
     navigator.serviceWorker.register('/sw.js')
       .then(registration => {
         console.log('Service Worker registered successfully:', registration.scope);
 
-        // Check for updates
+        // Verifica atualizações
         registration.addEventListener('updatefound', () => {
           const newWorker = registration.installing;
           if (newWorker) {
             newWorker.addEventListener('statechange', () => {
               if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
-                // New content is available, show update notification
+                // Novo conteúdo disponível, exibe a notificação de atualização
                 showUpdateNotification();
               }
             });
@@ -418,9 +418,9 @@ if ('serviceWorker' in navigator) {
   });
 }
 
-// Show update notification
+// Exibe a notificação de atualização
 function showUpdateNotification() {
-  // Create a simple notification banner
+  // Cria um banner de notificação simples
   const notification = document.createElement('div');
   notification.innerHTML = `
     <div style="
@@ -435,7 +435,7 @@ function showUpdateNotification() {
       z-index: 9999;
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     ">
-      <span>New content is available! </span>
+      <span>Há conteúdo novo disponível! </span>
       <button onclick="window.location.reload()" style="
         background: rgba(255,255,255,0.2);
         border: 1px solid rgba(255,255,255,0.3);
@@ -444,7 +444,7 @@ function showUpdateNotification() {
         border-radius: 4px;
         margin-left: 8px;
         cursor: pointer;
-      ">Refresh</button>
+      ">Atualizar</button>
       <button onclick="this.parentElement.parentElement.remove()" style="
         background: transparent;
         border: none;
@@ -460,12 +460,12 @@ function showUpdateNotification() {
 }
 
 
-// Hide install button when app is installed
+// Oculta o botão de instalar quando o app estiver instalado
 window.addEventListener('appinstalled', () => {
   const installBtn = document.getElementById('pwa-install-btn');
   if (installBtn) {
     installBtn.remove();
   }
-  console.log('PWA was installed');
+  console.log('PWA foi instalado');
 });
 </script>

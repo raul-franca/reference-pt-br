@@ -8,29 +8,29 @@ tags:
   - network
   - utility
 categories:
-  - Toolkit
+  - Ferramentas
 intro: |
-  [mitmproxy](https://mitmproxy.org/) is a free and open source interactive HTTPS proxy. This is a quick reference cheat sheet to the mitmproxy.
+  [mitmproxy](https://mitmproxy.org/) é um proxy HTTPS interativo, gratuito e de código aberto. Este é um cheat sheet de referência rápida para o mitmproxy.
 plugins:
   - copyCode
 ---
 
-## Getting Started
+## Primeiros passos
 
-### Usage {.col-span-2}
+### Uso {.col-span-2}
 
-| Option | Example                                            | Description                               |
-| ------ | -------------------------------------------------- | ----------------------------------------- |
-| `-p`   | mitmproxy -p 8001                                  | Start proxy on port 8001                  |
-| `-m`   | mitmproxy -p 8001 -m reverse:http://127.0.0.1:4000 | Reverse proxy on port 8001 to port 4000   |
-| `-w`   | mitmproxy -p 8001 -w traffic.mitm                  | Stream flows to file as they arrive       |
-| `-r`   | mitmproxy -r traffic.mitm                          | Read flows from file                      |
-| `-C`   | mitmproxy -C traffic.mitm                          | Replay client requests from a saved file  |
-| `-S`   | mitmproxy -S traffic.mitm                          | Replay server responses from a saved file |
-| `-s`   | mitmproxy -s myScript.py                           | Execute a script                          |
-| `-h`   | mitmproxy -h                                       | mitmproxy quick help                      |
+| Opção | Exemplo                                            | Descrição                                 |
+| ----- | -------------------------------------------------- | ----------------------------------------- |
+| `-p`  | mitmproxy -p 8001                                  | Inicia o proxy na porta 8001              |
+| `-m`  | mitmproxy -p 8001 -m reverse:http://127.0.0.1:4000 | Proxy reverso na porta 8001 para a porta 4000 |
+| `-w`  | mitmproxy -p 8001 -w traffic.mitm                  | Grava os flows em arquivo conforme chegam |
+| `-r`  | mitmproxy -r traffic.mitm                          | Lê os flows do arquivo                    |
+| `-C`  | mitmproxy -C traffic.mitm                          | Reproduz as requisições do cliente a partir de um arquivo salvo |
+| `-S`  | mitmproxy -S traffic.mitm                          | Reproduz as respostas do servidor a partir de um arquivo salvo |
+| `-s`  | mitmproxy -s myScript.py                           | Executa um script                         |
+| `-h`  | mitmproxy -h                                       | Ajuda rápida do mitmproxy                 |
 
-### Movement
+### Movimentação
 
 ```
         k                 Ctrl b
@@ -46,17 +46,17 @@ h ◀ ─── + ─── ▶ l           ││ page
 
 | -                    | -                     |
 | -------------------- | --------------------- |
-| `h`, `j`, `k` ,`l`   | Left, Down, Up, Right |
-| `Ctrl` `b`           | Page up               |
-| `Space` / `Ctrl` `f` | Page down             |
-| `g` / `G`            | Go to beginning / end |
-| `Arrows`             | Up, Down, Left, Right |
+| `h`, `j`, `k` ,`l`   | Esquerda, Baixo, Cima, Direita |
+| `Ctrl` `b`           | Página acima          |
+| `Space` / `Ctrl` `f` | Página abaixo         |
+| `g` / `G`            | Ir para o início / fim |
+| `Arrows`             | Cima, Baixo, Esquerda, Direita |
 
 {.shortcuts}
 
-### Copy to Clipboard
+### Copiar para a área de transferência
 
-Command Syntax:
+Sintaxe do comando:
 
 ```
 :export.clip format flow
@@ -64,23 +64,23 @@ Command Syntax:
 
 ---
 
-Example:
+Exemplo:
 
-| Description                    | Command Example                    |
+| Descrição                      | Exemplo de comando                 |
 | ------------------------------ | ---------------------------------- |
-| 1. Copy as a curl command      | `:export.clip curl @focus`         |
-| 2. Copy as a httpie            | `:export.clip httpie @focus`       |
-| 2. Copy as a raw               | `:export.clip raw @focus`          |
-| 2. Copy as a raw HTTP request  | `:export.clip raw_request @focus`  |
-| 2. Copy as a raw HTTP response | `:export.clip raw_response @focus` |
+| 1. Copiar como comando curl    | `:export.clip curl @focus`         |
+| 2. Copiar como httpie          | `:export.clip httpie @focus`       |
+| 2. Copiar como raw             | `:export.clip raw @focus`          |
+| 2. Copiar como requisição HTTP raw | `:export.clip raw_request @focus`  |
+| 2. Copiar como resposta HTTP raw | `:export.clip raw_response @focus` |
 
 {.style-list}
 
-Export a flow to the system clipboard.
+Exporta um flow para a área de transferência do sistema.
 
-### Save to File
+### Salvar em arquivo
 
-Command Syntax:
+Sintaxe do comando:
 
 ```
 :export.file format flow path
@@ -88,181 +88,181 @@ Command Syntax:
 
 ---
 
-Example:
+Exemplo:
 
-| Description                  | Command Example                                    |
+| Descrição                    | Exemplo de comando                                 |
 | ---------------------------- | -------------------------------------------------- |
-| 1. Export to /tmp/a.curl     | `:export.file curl @focus /tmp/a.curl`             |
-| 2. Export to /tmp/a.httpie   | `:export.file httpie @focus /tmp/a.httpie`         |
-| 2. Export to /tmp/a.raw      | `:export.file raw @focus  /tmp/a.raw`              |
-| 2. Export to /tmp/a.request  | `:export.file raw_request @focus /tmp/a.request`   |
-| 2. Export to /tmp/a.response | `:export.file raw_response @focus /tmp/a.response` |
+| 1. Exportar para /tmp/a.curl | `:export.file curl @focus /tmp/a.curl`             |
+| 2. Exportar para /tmp/a.httpie | `:export.file httpie @focus /tmp/a.httpie`         |
+| 2. Exportar para /tmp/a.raw  | `:export.file raw @focus  /tmp/a.raw`              |
+| 2. Exportar para /tmp/a.request | `:export.file raw_request @focus /tmp/a.request`   |
+| 2. Exportar para /tmp/a.response | `:export.file raw_response @focus /tmp/a.response` |
 
 {.style-list}
 
-Export a flow to the system clipboard.
+Exporta um flow para a área de transferência do sistema.
 
-### Common Keybindings
+### Keybindings comuns
 
 | -       | -                |
 | ------- | ---------------- |
-| `q`     | Back / Exit      |
-| `z`     | Clear flow list  |
-| `:`     | Command prompt   |
-| `E`     | View event log   |
-| `O`     | View options     |
-| `r`     | Replay this flow |
-| `Tab`   | Next             |
-| `Enter` | Select           |
+| `q`     | Voltar / Sair    |
+| `z`     | Limpar a lista de flows |
+| `:`     | Prompt de comando |
+| `E`     | Ver o log de eventos |
+| `O`     | Ver opções       |
+| `r`     | Reproduzir este flow |
+| `Tab`   | Próximo          |
+| `Enter` | Selecionar       |
 
 {.shortcuts}
 
-### Global Keybindings
+### Keybindings globais
 
 | -              | -                         |
 | -------------- | ------------------------- |
-| `-`            | Cycle to next layout      |
-| `?`            | View help                 |
-| `B`            | Start an attached browser |
-| `C`            | View commands             |
-| `I`            | Toggle intercept          |
-| `K`            | View key bindings         |
-| `P`            | View flow details         |
-| `Q`            | Exit immediately          |
-| `W`            | Stream to file            |
-| `i`            | Set intercept             |
-| `Ctrl` `right` | Focus next layout pane    |
-| `Shift` `tab`  | Focus next layout pane    |
+| `-`            | Alternar para o próximo layout |
+| `?`            | Ver ajuda                 |
+| `B`            | Iniciar um browser anexado |
+| `C`            | Ver comandos              |
+| `I`            | Alternar interceptação    |
+| `K`            | Ver key bindings          |
+| `P`            | Ver detalhes do flow      |
+| `Q`            | Sair imediatamente        |
+| `W`            | Transmitir para arquivo   |
+| `i`            | Definir interceptação     |
+| `Ctrl` `right` | Focar o próximo painel do layout |
+| `Shift` `tab`  | Focar o próximo painel do layout |
 
 {.shortcuts}
 
-### Flow (View)
+### Flow (Visualização)
 
 | -               | -                            |
 | --------------- | ---------------------------- |
-| `A`             | Resume all intercepted flows |
-| `D`             | Duplicate flow               |
-| `F`             | Set focus follow             |
-| `L`             | Load flows from file         |
-| `M`             | Toggle viewing marked flows  |
-| `S`             | Start server replay          |
-| `U`             | Un-set all marks             |
-| `V`             | Revert changes to this flow  |
-| `X`             | Kill this flow               |
-| `Z`             | Purge all flows not showing  |
-| `a`             | Resume this intercepted flow |
-| `b`             | Save response body to file   |
-| `d`             | Delete flow from view        |
-| `e`             | Export this flow to file     |
-| `f`             | Set view filter              |
-| `m`             | Toggle mark on this flow     |
-| `n`             | Create a new flow            |
-| `o`             | Set flow list order          |
-| `r`             | Replay this flow             |
-| `v`             | Reverse flow list order      |
-| `w`             | Save listed flows to file    |
-| <code>\|</code> | Run a script on this flow    |
-| `Ctrl` `l`      | Send cuts to clipboard       |
+| `A`             | Retomar todos os flows interceptados |
+| `D`             | Duplicar flow                |
+| `F`             | Definir focus follow         |
+| `L`             | Carregar flows de um arquivo |
+| `M`             | Alternar a exibição de flows marcados |
+| `S`             | Iniciar replay do servidor   |
+| `U`             | Remover todas as marcações   |
+| `V`             | Reverter alterações deste flow |
+| `X`             | Encerrar este flow           |
+| `Z`             | Limpar todos os flows não exibidos |
+| `a`             | Retomar este flow interceptado |
+| `b`             | Salvar o corpo da resposta em arquivo |
+| `d`             | Excluir o flow da visualização |
+| `e`             | Exportar este flow para arquivo |
+| `f`             | Definir filtro de visualização |
+| `m`             | Alternar marcação neste flow |
+| `n`             | Criar um novo flow           |
+| `o`             | Definir a ordem da lista de flows |
+| `r`             | Reproduzir este flow         |
+| `v`             | Inverter a ordem da lista de flows |
+| `w`             | Salvar os flows listados em arquivo |
+| <code>\|</code> | Executar um script neste flow |
+| `Ctrl` `l`      | Enviar recortes para a área de transferência |
 
 {.shortcuts}
 
-## Mitmproxy Filter
+## Filtros do Mitmproxy
 
-### Filter
+### Filtro
 
 | -   | -                                     |
 | --- | ------------------------------------- |
-| `f` | Set view filter _(on flow view page)_ |
+| `f` | Definir filtro de visualização _(na página de visualização de flows)_ |
 
 {.shortcuts}
 
 ---
 
-- [RegEX cheatsheet](/regex) _(cheatsheets.zip)_
+- [Cheat sheet de RegEX](/regex) _(cheatsheets.zip)_
 
-The regex are Python-style, it can be specified as quoted strings
+As regex são no estilo Python e podem ser especificadas como strings entre aspas
 
-### Operators
+### Operadores
 
 | -       | -         |
 | ------- | --------- | --- |
-| `!`     | unary not |
-| `&`     | and       |
-| `       | `         | or  |
-| `(...)` | grouping  |
+| `!`     | não unário |
+| `&`     | e         |
+| `       | `         | ou  |
+| `(...)` | agrupamento |
 
-### Expressions {.row-span-2}
+### Expressões {.row-span-2}
 
 | -              | -                                                          |
 | -------------- | ---------------------------------------------------------- |
-| `~a`           | Match asset in response: CSS, Javascript, Flash, images.   |
-| `~b` `regex`   | Body                                                       |
-| `~bq` `regex`  | Request body                                               |
-| `~bs` `regex`  | Response body                                              |
-| `~c` `int`     | HTTP response code                                         |
-| `~d` `regex`   | Domain                                                     |
-| `~dst` `regex` | Match destination address                                  |
-| `~e`           | Match error                                                |
+| `~a`           | Corresponder a asset na resposta: CSS, Javascript, Flash, imagens. |
+| `~b` `regex`   | Corpo                                                      |
+| `~bq` `regex`  | Corpo da requisição                                        |
+| `~bs` `regex`  | Corpo da resposta                                          |
+| `~c` `int`     | Código de resposta HTTP                                    |
+| `~d` `regex`   | Domínio                                                    |
+| `~dst` `regex` | Corresponder ao endereço de destino                        |
+| `~e`           | Corresponder a erro                                        |
 | `~h` `regex`   | Header                                                     |
-| `~hq` `regex`  | Request header                                             |
-| `~hs` `regex`  | Response header                                            |
-| `~http`        | Match HTTP flows                                           |
-| `~m` `regex`   | Method                                                     |
-| `~marked`      | Match marked flows                                         |
-| `~q`           | Match request with no response                             |
-| `~s`           | Match response                                             |
-| `~src` `regex` | Match source address                                       |
-| `~t` `regex`   | Content-type header                                        |
-| `~tcp`         | Match TCP flows                                            |
-| `~tq` `regex`  | Request Content-Type header                                |
-| `~ts` `regex`  | Response Content-Type header                               |
+| `~hq` `regex`  | Header da requisição                                       |
+| `~hs` `regex`  | Header da resposta                                         |
+| `~http`        | Corresponder a flows HTTP                                  |
+| `~m` `regex`   | Método                                                     |
+| `~marked`      | Corresponder a flows marcados                              |
+| `~q`           | Corresponder a requisição sem resposta                     |
+| `~s`           | Corresponder a resposta                                    |
+| `~src` `regex` | Corresponder ao endereço de origem                         |
+| `~t` `regex`   | Header Content-type                                        |
+| `~tcp`         | Corresponder a flows TCP                                   |
+| `~tq` `regex`  | Header Content-Type da requisição                          |
+| `~ts` `regex`  | Header Content-Type da resposta                            |
 | `~u` `regex`   | URL                                                        |
-| `~websocket`   | Match WebSocket flows (and HTTP-WebSocket handshake flows) |
+| `~websocket`   | Corresponder a flows WebSocket (e flows de handshake HTTP-WebSocket) |
 
-### Flow selectors
+### Seletores de flow
 
-Expressions
+Expressões
 
 | -           | -                          |
 | ----------- | -------------------------- |
-| `@all     ` | All flows                  |
-| `@focus   ` | The currently focused flow |
-| `@shown   ` | All flows currently shown  |
-| `@hidden  ` | All flows currently hidden |
-| `@marked  ` | All marked flows           |
-| `@unmarked` | All unmarked flows         |
+| `@all     ` | Todos os flows             |
+| `@focus   ` | O flow focado no momento   |
+| `@shown   ` | Todos os flows exibidos no momento |
+| `@hidden  ` | Todos os flows ocultos no momento |
+| `@marked  ` | Todos os flows marcados    |
+| `@unmarked` | Todos os flows não marcados |
 
-mitmproxy has a set of convenient flow selectors that operate on the current view
+O mitmproxy tem um conjunto de seletores de flow convenientes que operam na visualização atual
 
-### Examples
+### Exemplos
 
-URL containing "google.com"
+URL contendo "google.com"
 
 ```
 google\.com
 ```
 
-Requests whose body contains the string "test"
+Requisições cujo corpo contém a string "test"
 
 ```
 ~q ~b test
 ```
 
-Anything but requests with a text/html content type:
+Qualquer coisa, exceto requisições com content type text/html:
 
 ```
 !(~q & ~t "text/html")
 ```
 
-Replace entire GET string in a request (quotes required to make it work):
+Substitui a string GET inteira em uma requisição (aspas necessárias para funcionar):
 
 ```
 ":~q ~m GET:.*:/replacement.html"
 ```
 
-## Mitmproxy Scripts {.cols-2}
+## Scripts do Mitmproxy {.cols-2}
 
-### Custom response
+### Resposta customizada
 
 ```python
 from mitmproxy import http
@@ -277,9 +277,9 @@ def request(flow: http.HTTPFlow) -> None:
         )
 ```
 
-Send a reply from the proxy without sending any data to the remote server
+Envie uma resposta do proxy sem enviar nenhum dado ao servidor remoto
 
-### Add header
+### Adicionar header
 
 ```python
 class AddHeader:
@@ -296,9 +296,9 @@ addons = [
 ]
 ```
 
-Add an HTTP header to each response
+Adicione um header HTTP a cada resposta
 
-## Also see
+## Veja também
 
 - [mitmproxy addons](https://github.com/mitmproxy/mitmproxy/tree/master/examples/addons) _(github.com)_
-- [mitmproxy docs](https://docs.mitmproxy.org/) _(mitmproxy.org)_
+- [docs do mitmproxy](https://docs.mitmproxy.org/) _(mitmproxy.org)_

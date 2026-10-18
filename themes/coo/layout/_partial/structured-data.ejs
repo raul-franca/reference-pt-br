@@ -1,6 +1,6 @@
 <script type="application/ld+json">
 <%
-// Basic Organization data
+// Dados básicos da organização
 const orgData = {
   "@context": "https://schema.org",
   "@type": "Organization",
@@ -17,7 +17,7 @@ const orgData = {
   ]
 };
 
-// Basic Website data
+// Dados básicos do site
 const websiteData = {
   "@context": "https://schema.org",
   "@type": "WebSite", 
@@ -45,15 +45,15 @@ const websiteData = {
 let schemaArray = [];
 
 if (is_home()) {
-  // Homepage: Add Organization and Website schema
+  // Página inicial: adiciona o schema de organização e site
   schemaArray.push(orgData, websiteData);
   
-  // Add ItemList for category display
+  // Adiciona um ItemList para exibir as categorias
   const itemListData = {
     "@context": "https://schema.org",
     "@type": "ItemList", 
-    "name": "Developer Cheat Sheets",
-    "description": "Collection of quick reference guides for developers",
+    "name": "Cheat sheets para desenvolvedores",
+    "description": "Coleção de guias de referência rápida para desenvolvedores",
     "numberOfItems": site.posts.length,
     "itemListElement": []
   };
@@ -63,7 +63,7 @@ if (is_home()) {
     itemListData.itemListElement.push({
       "@type": "ListItem",
       "position": position++,
-      "name": post.title + " Cheat Sheet",
+      "name": post.title + " - Cheat sheet",
       "url": config.url + url_for(post.path)
     });
   });
@@ -71,7 +71,7 @@ if (is_home()) {
   schemaArray.push(itemListData);
   
 } else if (is_post()) {
-  // Article page: Add TechArticle schema
+  // Página de artigo: adiciona o schema TechArticle
   const categoryNames = [];
   if (page.categories && page.categories.each) {
     page.categories.each(function(cat) {
@@ -89,8 +89,8 @@ if (is_home()) {
   const articleData = {
     "@context": "https://schema.org",
     "@type": "TechArticle",
-    "headline": page.title + " Cheat Sheet & Quick Reference",
-    "name": page.title + " Cheat Sheet", 
+    "headline": page.title + " - Cheat sheet e referência rápida",
+    "name": page.title + " - Cheat sheet",
     "description": page_description(),
     "image": page_image(),
     "url": clean_url(url),
@@ -121,12 +121,12 @@ if (is_home()) {
     },
     "audience": {
       "@type": "Audience",
-      "audienceType": "Developers, Programmers, System Administrators"
+      "audienceType": "Desenvolvedores, programadores e administradores de sistemas"
     },
-    "educationalLevel": "Beginner to Advanced",
-    "learningResourceType": "Quick Reference Guide",
+    "educationalLevel": "Do básico ao avançado",
+    "learningResourceType": "Guia de referência rápida",
     "typicalAgeRange": "18-65",
-    "inLanguage": "en"
+    "inLanguage": "pt-BR"
   };
   
   if (categoryNames.length > 0) {
@@ -139,7 +139,7 @@ if (is_home()) {
   
   schemaArray.push(websiteData, articleData);
   
-  // Add BreadcrumbList
+  // Adiciona a BreadcrumbList
   const breadcrumbData = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -164,14 +164,14 @@ if (is_home()) {
     breadcrumbData.itemListElement.push({
       "@type": "ListItem",
       "position": 3, 
-      "name": page.title + " Cheat Sheet",
+      "name": page.title + " - Cheat sheet",
       "item": clean_url(url)
     });
   } else {
     breadcrumbData.itemListElement.push({
       "@type": "ListItem",
       "position": 2,
-      "name": page.title + " Cheat Sheet", 
+      "name": page.title + " - Cheat sheet",
       "item": clean_url(url)
     });
   }
@@ -179,7 +179,7 @@ if (is_home()) {
   schemaArray.push(breadcrumbData);
   
 } else if (is_page()) {
-  // Normal page
+  // Página normal
   const pageData = {
     "@context": "https://schema.org",
     "@type": "WebPage",

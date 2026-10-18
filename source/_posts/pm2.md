@@ -5,38 +5,38 @@ background: bg-[#230769]
 tags:
   - process
 categories:
-  - Linux Command
+  - Comandos Linux
 intro: |
-  [PM2] is a daemon process manager that will help you manage and keep your application online. Getting started with PM2 is straightforward, it is offered as a simple and intuitive CLI.
+  O [PM2] é um gerenciador de processos daemon que ajuda você a gerenciar e manter sua aplicação online. Começar com o PM2 é simples: ele é oferecido como uma CLI simples e intuitiva.
 plugins:
   - copyCode
 ---
 
-## Getting Started
+## Primeiros passos
 
-### Install
+### Instalação
 
-The latest PM2 version is installable with NPM or Yarn
+A versão mais recente do PM2 pode ser instalada com NPM ou Yarn
 
 ```shell script
 $ npm install pm2@latest -g
 ```
 
-OR
+OU
 
 ```shell script
 $ yarn global add pm2
 ```
 
-### Start an app
+### Iniciar um app
 
-The simplest way to start, daemonize and monitor your application is by using this command line
+A forma mais simples de iniciar, daemonizar e monitorar sua aplicação é usar esta linha de comando
 
 ```shell script
 $ pm2 start app.js
 ```
 
-Or start any other application easily
+Ou inicie qualquer outra aplicação facilmente
 
 ```shell script
 $ pm2 start bashscript.sh
@@ -44,71 +44,71 @@ $ pm2 start python-app.py --watch
 $ pm2 start binary-file -- --port 1520
 ```
 
-### Some options you can pass to the CLI {.row-span-3}
+### Algumas opções que você pode passar para a CLI {.row-span-3}
 
-Specify an app name
+Especifica um nome de app
 
 ```shell script
 --name <app_name>
 ```
 
-Watch and Restart app when files change
+Observa e reinicia o app quando os arquivos mudam
 
 ```shell script
 --watch
 ```
 
-Set memory threshold for app reload
+Define o limite de memória para recarregar o app
 
 ```shell script
 --max-memory-restart <200MB>
 ```
 
-Specify log file
+Especifica o arquivo de log
 
 ```shell script
 --log <log_path>
 ```
 
-Pass extra arguments to the script
+Passa argumentos extras para o script
 
 ```shell script
 -- arg1 arg2 arg3
 ```
 
-Delay between automatic restarts
+Atraso entre reinicializações automáticas
 
 ```shell script
 --restart-delay <delay in ms>
 ```
 
-Prefix logs with time
+Adiciona o horário como prefixo nos logs
 
 ```shell script
 --time
 ```
 
-Do not auto restart app
+Não reinicia o app automaticamente
 
 ```shell script
 --no-autorestart
 ```
 
-Specify cron for forced restart
+Especifica um cron para reinicialização forçada
 
 ```shell script
 --cron <cron_pattern>
 ```
 
-Attach to application log
+Anexa ao log da aplicação
 
 ```shell script
 --no-daemon
 ```
 
-### Managing processes
+### Gerenciando processos
 
-Managing application state is simple here are the commands
+Gerenciar o estado da aplicação é simples; aqui estão os comandos
 
 ```shell script
 $ pm2 restart app_name
@@ -117,69 +117,69 @@ $ pm2 stop app_name
 $ pm2 delete app_name
 ```
 
-#### Instead of app_name you can pass
+#### Em vez de app_name, você pode passar
 
-- `all` to act on all processes
-- `id` to act on a specific process id
+- `all` para agir em todos os processos
+- `id` para agir em um id de processo específico
 
-### Check status, logs, metrics {.row-span-2}
+### Verificar status, logs e métricas {.row-span-2}
 
-Now that you have started this application, you can check its status, logs, metrics and even get the online dashboard
-with [pm2.io](https://pm2.io/).
+Agora que você iniciou a aplicação, pode verificar seu status, logs e métricas, e até acessar o dashboard online
+com [pm2.io](https://pm2.io/).
 
-List the status of all application managed by PM2
+Lista o status de todas as aplicações gerenciadas pelo PM2
 
 ```shell script
 $ pm2 [list|ls|status]
 ```
 
-To display logs in realtime
+Para exibir os logs em tempo real
 
 ```shell script
 $ pm2 logs
 ```
 
-To dig in older logs
+Para buscar em logs mais antigos
 
 ```shell script
 $ pm2 logs --lines 200
 ```
 
-Here is a realtime dashboard that fits directly into your terminal
+Um dashboard em tempo real que cabe diretamente no seu terminal
 
 ```shell script
 $ pm2 monit
 ```
 
-Web based dashboard, cross servers with diagnostic system
+Dashboard web, entre servidores, com sistema de diagnóstico
 
 ```shell script
 $ pm2 plus
 ```
 
-### Cluster mode
+### Modo cluster
 
-For Node.js applications, PM2 includes an automatic load balancer that will share all HTTP[s]/Websocket/TCP/UDP
-connections between each spawned processes.
+Para aplicações Node.js, o PM2 inclui um balanceador de carga automático que compartilha todas as conexões
+HTTP[s]/Websocket/TCP/UDP entre cada processo iniciado.
 
-To start an application in Cluster mode
+Para iniciar uma aplicação em modo cluster
 
 ```shell script
 $ pm2 start app.js -i max
 ```
 
-Read more about cluster mode [here](https://pm2.keymetrics.io/docs/usage/quick-start/).
+Leia mais sobre o modo cluster [aqui](https://pm2.keymetrics.io/docs/usage/quick-start/).
 
-### Ecosystem File {.row-span-2}
+### Arquivo Ecosystem {.row-span-2}
 
-You can also create a configuration file, called Ecosystem File, to manage multiple applications. To generate an
-Ecosystem file
+Você também pode criar um arquivo de configuração, chamado Ecosystem File, para gerenciar várias aplicações. Para gerar um
+arquivo Ecosystem
 
 ```shell script
 $ pm2 ecosystem
 ```
 
-This will generate an ecosystem.config.js file
+Isso vai gerar um arquivo ecosystem.config.js
 
 ```
 module.exports = {
@@ -199,53 +199,53 @@ module.exports = {
 }
 ```
 
-And start it easily
+E inicie-o facilmente
 
 ```shell script
 $ pm2 start ecosystem.config.js
 ```
 
-Read more about application declaration [here](https://pm2.keymetrics.io/docs/usage/application-declaration/)
+Leia mais sobre a declaração de aplicações [aqui](https://pm2.keymetrics.io/docs/usage/application-declaration/)
 
-### Setup startup script
+### Configurar script de inicialização
 
-Restarting PM2 with the processes you manage on server boot/reboot is critical. To solve this, just run this command to
-generate an active startup script
+Reiniciar o PM2 com os processos que você gerencia na inicialização/reinicialização do servidor é fundamental. Para
+resolver isso, basta executar este comando para gerar um script de inicialização ativo
 
 ```shell script
 $ pm2 save
 ```
 
-Read more about startup script generator [here](https://pm2.keymetrics.io/docs/usage/startup/)
+Leia mais sobre o gerador de script de inicialização [aqui](https://pm2.keymetrics.io/docs/usage/startup/)
 
-### Restart application on changes
+### Reiniciar a aplicação em alterações
 
-It’s pretty easy with the `--watch` option
+É bem simples com a opção `--watch`
 
 ```
 $ cd /path/to/my/app
 $ pm2 start env.js --watch --ignore-watch="node_modules"
 ```
 
-This will watch & restart the app on any file change from the current directory + all subfolders and it will ignore any
-changes in the node_modules folder `--ignore-watch="node_modules"`.
+Isso observa e reinicia o app em qualquer alteração de arquivo no diretório atual e em todas as subpastas, ignorando
+qualquer alteração na pasta node_modules `--ignore-watch="node_modules"`.
 
-You can then use `pm2 logs` to check for restarted app logs.
+Depois, use `pm2 logs` para verificar os logs do app reiniciado.
 
 ---
 
-### CheatSheet {.row-span-2 .col-span-2}
+### Cheat sheet {.row-span-2 .col-span-2}
 
-Here are some commands that are worth knowing. Just try them with a sample application or with your current web
-application on your development machine
+Aqui estão alguns comandos que vale a pena conhecer. Teste-os com uma aplicação de exemplo ou com sua aplicação web
+atual na sua máquina de desenvolvimento
 
-Fork mode
+Modo fork
 
 ```shell script
 $ pm2 start app.js --name my-api # Name process
 ```
 
-Cluster mode
+Modo cluster
 
 ```shell script
 $ pm2 start app.js -i 0        # Will start maximum processes with LB depending on available CPUs
@@ -254,7 +254,7 @@ $ pm2 scale app +3             # Scales `app` up by 3 workers
 $ pm2 scale app 2              # Scales `app` up or down to 2 workers total
 ```
 
-Listing
+Listagem
 
 ```shell script
 $ pm2 list               # Display all processes status
@@ -274,7 +274,7 @@ $ pm2 flush              # Empty all log files
 $ pm2 reloadLogs         # Reload all logs
 ```
 
-Actions
+Ações
 
 ```shell script
 $ pm2 stop all           # Stop all processes
@@ -289,7 +289,7 @@ $ pm2 delete 0           # Will remove process from pm2 list
 $ pm2 delete all         # Will remove all processes from pm2 list
 ```
 
-Misc
+Diversos
 
 ```shell script
 $ pm2 reset <process>    # Reset meta data (restarted time...)
@@ -301,20 +301,20 @@ $ pm2 start app.js --no-vizion
 $ pm2 start app.js --no-autorestart
 ```
 
-### Updating PM2
+### Atualizando o PM2
 
-We made it simple, there is no breaking change between releases and the procedure is straightforward
+Deixamos simples: não há breaking changes entre releases e o procedimento é direto
 
 ```shell script
 $ npm install pm2@latest -g
 ```
 
-Then update the in-memory PM2
+Em seguida, atualize o PM2 em memória
 
 ```shell script
 $ pm2 update
 ```
 
-## Also see
+## Veja também
 
-- [QUICK START](https://pm2.keymetrics.io/docs/usage/quick-start/) _(pm2.keymetrics.io)_
+- [INÍCIO RÁPIDO](https://pm2.keymetrics.io/docs/usage/quick-start/) _(pm2.keymetrics.io)_

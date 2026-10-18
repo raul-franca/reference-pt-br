@@ -20,7 +20,7 @@ pre:is(.dark *) {
   @apply dark:border-slate-700/50;
 }
 
-/* When there is only one pre code block, the scroll bar is displayed at the bottom */
+/* Quando há apenas um bloco de código pre, a barra de rolagem é exibida na parte inferior */
 pre:only-child {
   @apply h-full;
 }

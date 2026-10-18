@@ -4,13 +4,13 @@ date: 2020-12-15 18:28:43
 background: bg-[#ebbe46]
 tags:
 categories:
-  - Other
-intro: Some of the emoji codes are not super easy to remember, so here is a little cheat sheet.
+  - Outros
+intro: Alguns dos códigos de emoji não são muito fáceis de lembrar, então aqui está uma pequena cheat sheet.
 ---
 
-## Getting Started
+## Primeiros passos
 
-### People
+### Pessoas
 
 | -                              | -                                |
 | ------------------------------ | -------------------------------- |
@@ -192,7 +192,7 @@ intro: Some of the emoji codes are not super easy to remember, so here is a litt
 | :speech_balloon:               | `:speech_balloon:`               |
 | :thought_balloon:              | `:thought_balloon:`              |
 
-### Symbols
+### Símbolos
 
 | -                                 | -                                   |
 | --------------------------------- | ----------------------------------- |
@@ -388,7 +388,7 @@ intro: Some of the emoji codes are not super easy to remember, so here is a litt
 | :small_red_triangle:              | `:small_red_triangle:`              |
 | :small_red_triangle_down:         | `:small_red_triangle_down:`         |
 
-### Objects {.row-span-2}
+### Objetos {.row-span-2}
 
 | -                                | -                                  |
 | -------------------------------- | ---------------------------------- |
@@ -653,7 +653,7 @@ intro: Some of the emoji codes are not super easy to remember, so here is a litt
 | :tomato:                         | `:tomato:`                         |
 | :corn:                           | `:corn:`                           |
 
-### Places
+### Lugares
 
 | -                         | -                           |
 | ------------------------- | --------------------------- |
@@ -764,7 +764,7 @@ intro: Some of the emoji codes are not super easy to remember, so here is a litt
 | :uk:                      | `:uk:`                      |
 | :de:                      | `:de:`                      |
 
-### Nature
+### Natureza
 
 | -                              | -                                |
 | ------------------------------ | -------------------------------- |

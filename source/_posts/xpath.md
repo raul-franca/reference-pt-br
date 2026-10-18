@@ -7,20 +7,20 @@ tags:
   - expression
   - select
 categories:
-  - Toolkit
+  - Ferramentas
 intro: |
-  This is an [XPath](https://en.wikipedia.org/wiki/XPath) selectors cheat sheet, which lists commonly used XPath positioning methods and CSS selectors
+  Este é um cheat sheet de seletores [XPath](https://en.wikipedia.org/wiki/XPath), que lista os métodos de posicionamento XPath e seletores CSS mais usados
 plugins:
   - copyCode
 ---
 
-## XPath Selectors {.cols-6}
+## Seletores XPath {.cols-6}
 
-### Getting started {.col-span-2}
+### Primeiros passos {.col-span-2}
 
 - [Xpath test bed](http://www.whitebeam.org/library/guide/TechNotes/xpathtestbed.rhtm) _(whitebeam.org)_
 
-Test in Firefox or Chromium based browser console:
+Teste no console do Firefox ou de um navegador baseado em Chromium:
 
 ```console
 $x('/html/body')
@@ -29,7 +29,7 @@ $x('//h1')[0].innerText
 $x('//a[text()="XPath"]')[0].click()
 ```
 
-### Descendant selectors {.col-span-2}
+### Seletores descendentes {.col-span-2}
 
 | Xpath        | CSS          |
 | ------------ | ------------ |
@@ -43,7 +43,7 @@ $x('//a[text()="XPath"]')[0].click()
 
 {.show-header}
 
-### Order selectors {.col-span-2}
+### Seletores de ordem {.col-span-2}
 
 | Xpath               | CSS                  |
 | ------------------- | -------------------- |
@@ -56,7 +56,7 @@ $x('//a[text()="XPath"]')[0].click()
 
 {.show-header}
 
-### Attribute selectors {.col-span-3 .row-span-2}
+### Seletores de atributo {.col-span-3 .row-span-2}
 
 | Xpath                           | CSS                  |
 | ------------------------------- | -------------------- |
@@ -72,7 +72,7 @@ $x('//a[text()="XPath"]')[0].click()
 
 {.show-header}
 
-### Siblings {.col-span-3}
+### Irmãos {.col-span-3}
 
 | Xpath                                | CSS      |
 | ------------------------------------ | -------- |
@@ -93,7 +93,7 @@ $x('//a[text()="XPath"]')[0].click()
 
 {.show-header}
 
-### Misc selectors {.col-span-3}
+### Seletores diversos {.col-span-3}
 
 | Xpath                             | CSS                       |
 | --------------------------------- | ------------------------- | --------------------- |
@@ -108,41 +108,41 @@ $x('//a[text()="XPath"]')[0].click()
 
 {.show-header}
 
-## XPath Expressions
+## Expressões XPath
 
-### Steps and axes {.secondary}
+### Steps e eixos {.secondary}
 
 <br/>
 
 | -    | -    | -    | -               |
 | ---- | ---- | ---- | --------------- |
 | `//` | `ul` | `/`  | `a[@id='link']` |
-| Axis | Step | Axis | Step            |
+| Eixo | Step | Eixo | Step            |
 
 {.left-text}
 
-### Prefixes
+### Prefixos
 
-| Prefix | Example               | Means    |
-| ------ | --------------------- | -------- |
-| `//`   | `//hr[@class='edge']` | Anywhere |
-| `/`    | `/html/body/div`      | Root     |
-| `./`   | `./div/p`             | Relative |
-
-{.show-header}
-
-### Axes
-
-| Axis | Example             | Means      |
-| ---- | ------------------- | ---------- |
-| `/`  | `//ul/li/a`         | Child      |
-| `//` | `//[@id="list"]//a` | Descendant |
+| Prefixo | Exemplo               | Significado      |
+| ------- | --------------------- | ---------------- |
+| `//`    | `//hr[@class='edge']` | Em qualquer lugar |
+| `/`     | `/html/body/div`      | Raiz             |
+| `./`    | `./div/p`             | Relativo         |
 
 {.show-header}
 
-## XPath Predicates
+### Eixos
 
-### Predicates
+| Eixo | Exemplo             | Significado |
+| ---- | ------------------- | ----------- |
+| `/`  | `//ul/li/a`         | Filho       |
+| `//` | `//[@id="list"]//a` | Descendente |
+
+{.show-header}
+
+## Predicados XPath
+
+### Predicados
 
 ```bash
 //div[true()]
@@ -150,9 +150,9 @@ $x('//a[text()="XPath"]')[0].click()
 //div[@class="head"][@id="top"]
 ```
 
-Restricts a nodeset only if some condition is true. They can be chained.
+Restringe um nodeset apenas se alguma condição for verdadeira. Eles podem ser encadeados.
 
-### Operators
+### Operadores
 
 ```bash
 # Comparison
@@ -167,7 +167,7 @@ Restricts a nodeset only if some condition is true. They can be chained.
 //div[(x and y) or not(z)]
 ```
 
-### Using nodes
+### Usando nodes
 
 ```bash
 # Use them inside functions
@@ -180,9 +180,9 @@ Restricts a nodeset only if some condition is true. They can be chained.
 //ul[li]
 ```
 
-You can use nodes inside predicates.
+Você pode usar nodes dentro de predicados.
 
-### Indexing
+### Indexação
 
 ```bash
 //a[1]                # first <a>
@@ -192,28 +192,28 @@ You can use nodes inside predicates.
 //ol/li[position()>1] #:not(:first-child)
 ```
 
-Use `[]` with a number, or `last()` or `position()`.
+Use `[]` com um número, ou `last()` ou `position()`.
 
-### Chaining order
+### Ordem de encadeamento
 
 ```bash
 a[1][@href='/']
 a[@href='/'][1]
 ```
 
-Order is significant, these two are different.
+A ordem importa: estas duas expressões são diferentes.
 
-### Nesting predicates
+### Aninhando predicados
 
 ```
 //section[.//h1[@id='hi']]
 ```
 
-This returns `<section>` if it has an `<h1>` descendant with `id='hi'`.
+Retorna `<section>` se ele tiver um descendente `<h1>` com `id='hi'`.
 
-## XPath Functions {.cols-2}
+## Funções XPath {.cols-2}
 
-### Node functions
+### Funções de node
 
 ```bash
 name()            # //[starts-with(name(), 'h')]
@@ -228,7 +228,7 @@ count()           # //table[count(tr)=1]
 position()        # //ol/li[position()=2]
 ```
 
-### String functions
+### Funções de string
 
 ```bash
 contains()        # font[contains(@class,"head")]
@@ -246,13 +246,13 @@ normalize-space()
 string-length()
 ```
 
-### Boolean functions
+### Funções booleanas
 
 ```bash
 not(expr)         # button[not(starts-with(text(),"Submit"))]
 ```
 
-### Type conversion
+### Conversão de tipo
 
 ```bash
 string()
@@ -260,9 +260,9 @@ number()
 boolean()
 ```
 
-## XPath Axes {.cols-2}
+## Eixos XPath {.cols-2}
 
-### Using axes
+### Usando eixos
 
 ```bash
 //ul/li                       # ul > li
@@ -277,14 +277,14 @@ boolean()
 |      |      |            |      |
 | ---- | ---- | ---------- | ---- |
 | `//` | `ul` | `/child::` | `li` |
-| Axis | Step | Axis       | Step |
+| Eixo | Step | Eixo       | Step |
 
 {.left-text}
 
-Steps of an expression are separated by `/`, usually used to pick child nodes. That's not always true: you can specify a
-different "axis" with `::`.
+Os steps de uma expressão são separados por `/`, geralmente usados para selecionar nodes filhos. Isso nem sempre é
+verdade: você pode especificar um "eixo" diferente com `::`.
 
-### Child axis
+### Eixo child
 
 ```bash
 # both the same
@@ -292,7 +292,7 @@ different "axis" with `::`.
 //child::ul/child::li/child::a
 ```
 
-`child::` is the default axis. This makes `//a/b/c` work.
+`child::` é o eixo padrão. É isso que faz `//a/b/c` funcionar.
 
 ```bash
 # both the same
@@ -307,7 +307,7 @@ different "axis" with `::`.
 //ul[count(child::li) > 2]
 ```
 
-### Descendant-or-self axis
+### Eixo descendant-or-self
 
 ```bash
 # both the same
@@ -315,7 +315,7 @@ different "axis" with `::`.
 //div/descendant-or-self::h4
 ```
 
-`//` is short for the `descendant-or-self::` axis.
+`//` é a forma abreviada do eixo `descendant-or-self::`.
 
 ```bash
 # both the same
@@ -323,39 +323,39 @@ different "axis" with `::`.
 //ul/descendant-or-self::[last()]
 ```
 
-### Other axes {.row-span-2}
+### Outros eixos {.row-span-2}
 
-| Axis                 | Abbrev | Notes                                            |
-| -------------------- | ------ | ------------------------------------------------ |
-| `ancestor`           |        |                                                  |
-| `ancestor-or-self`   |        |                                                  |
-| `attribute`          | `@`    | `@href` is short for `attribute::href`           |
-| `child`              |        | `div` is short for `child::div`                  |
-| `descendant`         |        |                                                  |
-| `descendant-or-self` | `//`   | `//` is short for `/descendant-or-self::node()/` |
-| `namespace`          |        |                                                  |
-| `self`               | `.`    | `.` is short for `self::node()`                  |
-| `parent`             | `..`   | `..` is short for `parent::node()`               |
-| `following`          |        |                                                  |
-| `following-sibling`  |        |                                                  |
-| `preceding`          |        |                                                  |
-| `preceding-sibling`  |        |                                                  |
+| Eixo                 | Abreviação | Observações                                      |
+| -------------------- | ---------- | ------------------------------------------------ |
+| `ancestor`           |            |                                                  |
+| `ancestor-or-self`   |            |                                                  |
+| `attribute`          | `@`        | `@href` é abreviação de `attribute::href`        |
+| `child`              |            | `div` é abreviação de `child::div`               |
+| `descendant`         |            |                                                  |
+| `descendant-or-self` | `//`       | `//` é abreviação de `/descendant-or-self::node()/` |
+| `namespace`          |            |                                                  |
+| `self`               | `.`        | `.` é abreviação de `self::node()`               |
+| `parent`             | `..`       | `..` é abreviação de `parent::node()`            |
+| `following`          |            |                                                  |
+| `following-sibling`  |            |                                                  |
+| `preceding`          |            |                                                  |
+| `preceding-sibling`  |            |                                                  |
 
 {.headers}
 
-There are other axes you can use.
+Existem outros eixos que você pode usar.
 
-### Unions
+### Uniões
 
 ```bash
 //a | //span
 ```
 
-Use `|` to join two expressions.
+Use `|` para unir duas expressões.
 
-## XPath More examples {.cols-2}
+## Mais exemplos de XPath {.cols-2}
 
-### Examples
+### Exemplos
 
 ```bash
 //*                 # all elements
@@ -366,19 +366,19 @@ count(//*)          # count all elements
 //ul/li/..          # use .. to select a parent
 ```
 
-### Find a parent
+### Encontrar um pai
 
 ```bash
 //section[h1[@id='section-name']]
 ```
 
-Finds a `<section>` that directly contains `h1#section-name`
+Encontra um `<section>` que contém diretamente `h1#section-name`
 
 ```bash
 //section[//h1[@id='section-name']]
 ```
 
-Finds a `<section>` that contains `h1#section-name`. (Same as above, but uses descendant-or-self instead of child)
+Encontra um `<section>` que contém `h1#section-name`. (Igual ao anterior, mas usa descendant-or-self em vez de child)
 
 ### Closest
 
@@ -386,17 +386,17 @@ Finds a `<section>` that contains `h1#section-name`. (Same as above, but uses de
 ./ancestor-or-self::[@class="box"]
 ```
 
-Works like jQuery's `$().closest('.box')`.
+Funciona como o `$().closest('.box')` do jQuery.
 
-### Attributes
+### Atributos
 
 ```bash
 //item[@price > 2*@discount]
 ```
 
-Finds `<item>` and check its attributes
+Encontra `<item>` e verifica seus atributos
 
-## Also see
+## Veja também
 
 - [Devhints](https://devhints.io/xpath) _(devhints.io)_
 - [Xpath test bed](http://www.whitebeam.org/library/guide/TechNotes/xpathtestbed.rhtm) _(whitebeam.org)_

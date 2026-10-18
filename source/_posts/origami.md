@@ -7,27 +7,27 @@ tags:
   -
   - mac
 categories:
-  - Keyboard Shortcuts
+  - Atalhos de Teclado
 intro: |
-  A visual cheat-sheet for the 71 keyboard shortcuts found in Origami Studio. This application is MacOS-only.
+  Uma cheat sheet visual para os 71 atalhos de teclado encontrados no Origami Studio. Este aplicativo é exclusivo para MacOS.
 ---
 
-## Keyboard Shortcuts
+## Atalhos de teclado
 
-### General
+### Geral
 
-| Shortcut      | Action        |
-| ------------- | ------------- |
-| `Opt` `Enter` | Insert patch  |
-| `Cmd` `Enter` | Insert layer  |
-| `Cmd` `/`     | Documentation |
+| Atalho        | Ação           |
+| ---           | ---            |
+| `Opt` `Enter` | Inserir patch  |
+| `Cmd` `Enter` | Inserir camada |
+| `Cmd` `/`     | Documentação   |
 
 {.shortcuts}
 
 ### Patches {.row-span-3}
 
-| Shortcut    | Action               |
-| ----------- | -------------------- |
+| Atalho      | Ação                 |
+| ---         | ---                  |
 | `I`         | Interaction          |
 | `S`         | Switch               |
 | `A`         | Pop animation        |
@@ -57,77 +57,77 @@ intro: |
 
 {.shortcuts}
 
-### Organizing Patches
+### Organizando patches
 
-| Shortcut                | Action                               |
-| ----------------------- | ------------------------------------ |
-| `Shift` `Enter`         | Rename patch                         |
-| `Cmd` `[`               | Align patches left                   |
-| `Cmd` `]`               | Align patches right                  |
-| `Cmd` `Shift` `[`       | Align patches top                    |
-| `Cmd` `Shift` `]`       | Align patches bottom                 |
-| `Opt` `Ctrl` `C`        | Insert comment around patches        |
-| `Cmd` `Ctrl` `G`        | Create patch component               |
-| `Opt` `P`               | Publish input or output port         |
-| `Opt` `Down`            | Enter patch component                |
-| `Opt` `Up`              | Exit patch component                 |
-| `Cmd` `Shift` `I`       | Patch info                           |
-| `Cmd` `Opt` `L`         | Add patch component to user library  |
-| `Cmd` `Opt` `Shift` `L` | Add patch component to other library |
-
-{.shortcuts}
-
-### Layers {.row-span-2}
-
-| Shortcut                   | Action                     |
-| -------------------------- | -------------------------- |
-| `Shift` `Enter`            | Rename layer               |
-| `Cmd` `Shift` `H`          | Hide or show layer         |
-| `Cmd` `Shift` `L`          | Lock or unlock layer       |
-| `Cmd` `Opt` `Up`           | Bring forward              |
-| `Cmd` `Opt` `Down`         | Send backwards             |
-| `Cmd` `Opt` `Shift` `Up`   | Bring to front             |
-| `Cmd` `Opt` `Shift` `Down` | Send to back               |
-| `Cmd` `Opt` `M`            | Mask layer                 |
-| `Cmd` `Opt` `Shift` `M`    | Add to mask                |
-| `Cmd` `G`                  | Group layers               |
-| `Cmd` `Shift` `G`          | Ungroup layers             |
-| `Cmd` `Ctrl` `G`           | Create layer component     |
-| `Opt` `Down`               | Enter component            |
-| `Opt` `Up`                 | Exit component             |
-| `Cmd` `Shift` `I`          | Layer info                 |
-| `Cmd` `Opt` `L`            | Add layer to user library  |
-| `Cmd` `Opt` `Shift` `L`    | Add layer to other library |
+| Atalho                  | Ação                                                  |
+| ---                     | ---                                                   |
+| `Shift` `Enter`         | Renomear patch                                        |
+| `Cmd` `[`               | Alinhar patches à esquerda                            |
+| `Cmd` `]`               | Alinhar patches à direita                             |
+| `Cmd` `Shift` `[`       | Alinhar patches ao topo                               |
+| `Cmd` `Shift` `]`       | Alinhar patches embaixo                               |
+| `Opt` `Ctrl` `C`        | Inserir comentário ao redor dos patches               |
+| `Cmd` `Ctrl` `G`        | Criar componente de patch                             |
+| `Opt` `P`               | Publicar porta de entrada ou saída                    |
+| `Opt` `Down`            | Entrar no componente de patch                         |
+| `Opt` `Up`              | Sair do componente de patch                           |
+| `Cmd` `Shift` `I`       | Informações do patch                                  |
+| `Cmd` `Opt` `L`         | Adicionar componente de patch à biblioteca do usuário |
+| `Cmd` `Opt` `Shift` `L` | Adicionar componente de patch a outra biblioteca      |
 
 {.shortcuts}
 
-### Viewer
+### Camadas {.row-span-2}
 
-| Shortcut          | Action            |
-| ----------------- | ----------------- |
-| `Cmd` `R`         | Restart prototype |
-| `Opt` `D`         | Toggle device     |
-| `Opt` `H`         | Toggle hand       |
-| `Cmd` `Opt` `F`   | Mini viewer       |
-| `Cmd` `Shift` `F` | Fullscreen viewer |
-| `Cmd` `Opt` `0`   | 1:1 viewer        |
-
-{.shortcuts}
-
-### Number Inputs
-
-| Shortcut       | Action                 |
-| -------------- | ---------------------- |
-| `Up`           | Increase number by one |
-| `Down`         | Decrease number by one |
-| `Shift` `Up`   | Increase number by 10  |
-| `Shift` `Down` | Decrease number by 10  |
-| `Opt` `Up`     | Increase number by 0.1 |
-| `Opt` `Down`   | Decrease number by 0.1 |
+| Atalho                     | Ação                                     |
+| ---                        | ---                                      |
+| `Shift` `Enter`            | Renomear camada                          |
+| `Cmd` `Shift` `H`          | Ocultar ou mostrar camada                |
+| `Cmd` `Shift` `L`          | Bloquear ou desbloquear camada           |
+| `Cmd` `Opt` `Up`           | Trazer para frente                       |
+| `Cmd` `Opt` `Down`         | Enviar para trás                         |
+| `Cmd` `Opt` `Shift` `Up`   | Trazer para o primeiro plano             |
+| `Cmd` `Opt` `Shift` `Down` | Enviar para o último plano               |
+| `Cmd` `Opt` `M`            | Mascarar camada                          |
+| `Cmd` `Opt` `Shift` `M`    | Adicionar à máscara                      |
+| `Cmd` `G`                  | Agrupar camadas                          |
+| `Cmd` `Shift` `G`          | Desagrupar camadas                       |
+| `Cmd` `Ctrl` `G`           | Criar componente de camada               |
+| `Opt` `Down`               | Entrar no componente                     |
+| `Opt` `Up`                 | Sair do componente                       |
+| `Cmd` `Shift` `I`          | Informações da camada                    |
+| `Cmd` `Opt` `L`            | Adicionar camada à biblioteca do usuário |
+| `Cmd` `Opt` `Shift` `L`    | Adicionar camada a outra biblioteca      |
 
 {.shortcuts}
 
-## Also see
+### Visualizador
 
-- [Keyboard shortcuts for Origami Studio](https://origami.design/documentation/workflow/KeyboardShortcuts.html)
+| Atalho            | Ação                       |
+| ---               | ---                        |
+| `Cmd` `R`         | Reiniciar protótipo        |
+| `Opt` `D`         | Alternar dispositivo       |
+| `Opt` `H`         | Alternar mão               |
+| `Cmd` `Opt` `F`   | Visualizador compacto      |
+| `Cmd` `Shift` `F` | Visualizador em tela cheia |
+| `Cmd` `Opt` `0`   | Visualizador 1:1           |
+
+{.shortcuts}
+
+### Entradas numéricas
+
+| Atalho         | Ação                     |
+| ---            | ---                      |
+| `Up`           | Aumentar o número em um  |
+| `Down`         | Diminuir o número em um  |
+| `Shift` `Up`   | Aumentar o número em 10  |
+| `Shift` `Down` | Diminuir o número em 10  |
+| `Opt` `Up`     | Aumentar o número em 0.1 |
+| `Opt` `Down`   | Diminuir o número em 0.1 |
+
+{.shortcuts}
+
+## Veja também
+
+- [Atalhos de teclado do Origami Studio](https://origami.design/documentation/workflow/KeyboardShortcuts.html)
   _(origami.design)_

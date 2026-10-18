@@ -8,24 +8,24 @@ tags:
   - javascript
   - library
 categories:
-  - Programming
+  - Programação
 intro: |
-  This [jQuery](https://jquery.com/) cheat sheet is a great reference for both beginners and experienced developers.
+  Este cheat sheet de [jQuery](https://jquery.com/) é uma ótima referência tanto para iniciantes quanto para desenvolvedores experientes.
 plugins:
   - tooltip
   - copyCode
   - runCode
 ---
 
-## Getting Started
+## Primeiros passos
 
-### Including jQuery
+### Incluindo o jQuery
 
 ```html {.wrap}
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 ```
 
-#### Official CDN
+#### CDN oficial
 
 ```html {.wrap}
 <script
@@ -34,13 +34,13 @@ plugins:
 ></script>
 ```
 
-### jQuery syntax
+### Sintaxe do jQuery
 
 ```javascript
 $(selector).methodOrFunction();
 ```
 
-#### Example:
+#### Exemplo:
 
 ```javascript
 $('#menu').on('click', function () {
@@ -50,7 +50,7 @@ $('#menu').on('click', function () {
 $('body').css('background', 'red');
 ```
 
-### jQuery document ready
+### Document ready do jQuery
 
 ```javascript
 $(document).ready(function () {
@@ -66,9 +66,9 @@ $(function () {
 });
 ```
 
-## jQuery Selectors
+## Seletores do jQuery
 
-### Examples {.secondary}
+### Exemplos {.secondary}
 
 ```javascript
 $('button').click(() => {
@@ -76,106 +76,106 @@ $('button').click(() => {
 });
 ```
 
-#### Combining selectors
+#### Combinando seletores
 
 ```javascript
 $('selector1, selector2 ...selectorn');
 ```
 
-### Basics
+### Básicos
 
 <!-- prettier-ignore -->
-- [*](https://api.jquery.com/all-selector/){data-tooltip="Selects all elements."}
-- [.class](https://api.jquery.com/class-selector/){data-tooltip="Selects all elements with the given class. "}
-- [element](https://api.jquery.com/element-selector/){data-tooltip="Selects all elements with the given tag name."}
-- [#id](https://api.jquery.com/id-selector/){data-tooltip="Selects a single element with the given id attribute. "}
-- [:hidden](https://api.jquery.com/hidden-selector/){data-tooltip="Selects all elements that are hidden."}
-- [:visible](https://api.jquery.com/visible-selector/){data-tooltip="Selects all elements that are visible."}
-- [:contains()](https://api.jquery.com/contains-selector/){data-tooltip="Select all elements that contain the specified text."}
-- [:empty](https://api.jquery.com/empty-selector/){data-tooltip="Select all elements that have no children (including text nodes)."}
-- [:has()](https://api.jquery.com/has-selector/){data-tooltip="Selects elements which contain at least one element that matches the specified selector."}
-- [:parent](https://api.jquery.com/parent-selector/){data-tooltip="Select all elements that have at least one child node (either an element or text)."}
-- [parent &gt; child](https://api.jquery.com/child-selector/){data-tooltip="Selects all direct child elements specified by child of elements specified by parent."}
-- [ancestor descendant](https://api.jquery.com/descendant-selector/){data-tooltip="Selects all elements that are descendants of a given ancestor."}
-- [prev + next](https://api.jquery.com/next-adjacent-selector/){data-tooltip="Selects all next elements matching next that are immediately preceded by a sibling prev."}
-- [prev ~ siblings](https://api.jquery.com/next-siblings-selector/){data-tooltip="Selects all sibling elements that follow after the prev element, have the same parent, and match the filtering siblings selector."}
+- [*](https://api.jquery.com/all-selector/){data-tooltip="Seleciona todos os elementos."}
+- [.class](https://api.jquery.com/class-selector/){data-tooltip="Seleciona todos os elementos com a classe informada. "}
+- [element](https://api.jquery.com/element-selector/){data-tooltip="Seleciona todos os elementos com o nome de tag informado."}
+- [#id](https://api.jquery.com/id-selector/){data-tooltip="Seleciona um único elemento com o atributo id informado. "}
+- [:hidden](https://api.jquery.com/hidden-selector/){data-tooltip="Seleciona todos os elementos que estão ocultos."}
+- [:visible](https://api.jquery.com/visible-selector/){data-tooltip="Seleciona todos os elementos que estão visíveis."}
+- [:contains()](https://api.jquery.com/contains-selector/){data-tooltip="Seleciona todos os elementos que contêm o texto especificado."}
+- [:empty](https://api.jquery.com/empty-selector/){data-tooltip="Seleciona todos os elementos que não têm filhos (incluindo nós de texto)."}
+- [:has()](https://api.jquery.com/has-selector/){data-tooltip="Seleciona elementos que contêm pelo menos um elemento que corresponde ao seletor especificado."}
+- [:parent](https://api.jquery.com/parent-selector/){data-tooltip="Seleciona todos os elementos que têm pelo menos um nó filho (um elemento ou texto)."}
+- [parent &gt; child](https://api.jquery.com/child-selector/){data-tooltip="Seleciona todos os elementos filhos diretos especificados por child, de elementos especificados por parent."}
+- [ancestor descendant](https://api.jquery.com/descendant-selector/){data-tooltip="Seleciona todos os elementos que são descendentes de um ancestral informado."}
+- [prev + next](https://api.jquery.com/next-adjacent-selector/){data-tooltip="Seleciona todos os próximos elementos que correspondem a next e são imediatamente precedidos por um irmão prev."}
+- [prev ~ siblings](https://api.jquery.com/next-siblings-selector/){data-tooltip="Seleciona todos os elementos irmãos que vêm depois do elemento prev, têm o mesmo pai e correspondem ao seletor de filtragem siblings."}
 
 {.marker-none .cols-3}
 
-### Basic Filters
+### Filtros básicos
 
 <!-- prettier-ignore -->
-- [:animated](https://api.jquery.com/animated-selector/){data-tooltip="Select all elements that are in the progress of an animation at the time the selector is run."}
-- [:eq()](https://api.jquery.com/eq-selector/){data-tooltip="Select the element at index n within the matched set."}
-- [:even](https://api.jquery.com/even-selector/){data-tooltip="Selects even elements, zero-indexed.  See also :odd."}
-- [:first](https://api.jquery.com/first-selector/){data-tooltip="Selects the first matched DOM element."}
-- [:gt()](https://api.jquery.com/gt-selector/){data-tooltip="Select all elements at an index greater than index within the matched set."}
-- [:header](https://api.jquery.com/header-selector/){data-tooltip="Selects all elements that are headers, like h1, h2, h3 and so on."}
-- [:lang()](https://api.jquery.com/lang-selector/){data-tooltip="Selects all elements of the specified language."}
-- [:last](https://api.jquery.com/last-selector/){data-tooltip="Selects the last matched element."}
-- [:lt()](https://api.jquery.com/lt-selector/){data-tooltip="Select all elements at an index less than index within the matched set."}
-- [:not()](https://api.jquery.com/not-selector/){data-tooltip="Selects all elements that do not match the given selector."}
-- [:odd](https://api.jquery.com/odd-selector/){data-tooltip="Selects odd elements, zero-indexed.  See also :even."}
-- [:root](https://api.jquery.com/root-selector/){data-tooltip="Selects the element that is the root of the document."}
-- [:target](https://api.jquery.com/target-selector/){data-tooltip="Selects the target element indicated by the fragment identifier of the document&apos;s URI."}
+- [:animated](https://api.jquery.com/animated-selector/){data-tooltip="Seleciona todos os elementos que estão em processo de animação no momento em que o seletor é executado."}
+- [:eq()](https://api.jquery.com/eq-selector/){data-tooltip="Seleciona o elemento no índice n dentro do conjunto correspondido."}
+- [:even](https://api.jquery.com/even-selector/){data-tooltip="Seleciona os elementos de índice par, começando em zero. Veja também :odd."}
+- [:first](https://api.jquery.com/first-selector/){data-tooltip="Seleciona o primeiro elemento do DOM correspondido."}
+- [:gt()](https://api.jquery.com/gt-selector/){data-tooltip="Seleciona todos os elementos com índice maior que index dentro do conjunto correspondido."}
+- [:header](https://api.jquery.com/header-selector/){data-tooltip="Seleciona todos os elementos que são cabeçalhos, como h1, h2, h3 e assim por diante."}
+- [:lang()](https://api.jquery.com/lang-selector/){data-tooltip="Seleciona todos os elementos do idioma especificado."}
+- [:last](https://api.jquery.com/last-selector/){data-tooltip="Seleciona o último elemento correspondido."}
+- [:lt()](https://api.jquery.com/lt-selector/){data-tooltip="Seleciona todos os elementos com índice menor que index dentro do conjunto correspondido."}
+- [:not()](https://api.jquery.com/not-selector/){data-tooltip="Seleciona todos os elementos que não correspondem ao seletor informado."}
+- [:odd](https://api.jquery.com/odd-selector/){data-tooltip="Seleciona os elementos de índice ímpar, começando em zero. Veja também :even."}
+- [:root](https://api.jquery.com/root-selector/){data-tooltip="Seleciona o elemento que é a raiz do documento."}
+- [:target](https://api.jquery.com/target-selector/){data-tooltip="Seleciona o elemento de destino indicado pelo identificador de fragmento da URI do documento."}
 
 {.marker-none .cols-3}
 
-### Attribute
+### Atributos
 
 <!-- prettier-ignore -->
-- [[name|="value"]](https://api.jquery.com/attribute-contains-prefix-selector/){data-tooltip="Selects elements that have the specified attribute with a value either equal to a given string or starting with that string followed by a hyphen (-)."}
-- [[name*="value"]](https://api.jquery.com/attribute-contains-selector/){data-tooltip="Selects elements that have the specified attribute with a value containing a given substring."}
-- [[name~="value"]](https://api.jquery.com/attribute-contains-word-selector/){data-tooltip="Selects elements that have the specified attribute with a value containing a given word, delimited by spaces."}
-- [[name$="value"]](https://api.jquery.com/attribute-ends-with-selector/){data-tooltip="Selects elements that have the specified attribute with a value ending exactly with a given string. The comparison is case sensitive."}
-- [[name="value"]](https://api.jquery.com/attribute-equals-selector/){data-tooltip="Selects elements that have the specified attribute with a value exactly equal to a certain value."}
-- [[name!="value"]](https://api.jquery.com/attribute-not-equal-selector/){data-tooltip="Select elements that either don&apos;t have the specified attribute, or do have the specified attribute but not with a certain value."}
-- [[name^="value"]](https://api.jquery.com/attribute-starts-with-selector/){data-tooltip="Selects elements that have the specified attribute with a value beginning exactly with a given string."}
-- [[name]](https://api.jquery.com/has-attribute-selector/){data-tooltip="Selects elements that have the specified attribute, with any value. "}
-- [[name="value"][name2="value2"]](https://api.jquery.com/multiple-attribute-selector/){data-tooltip="Matches elements that match all of the specified attribute filters."} {.col-span-2}
+- [[name|="value"]](https://api.jquery.com/attribute-contains-prefix-selector/){data-tooltip="Seleciona elementos que têm o atributo especificado com um valor igual a uma string informada ou que começa com essa string seguida de um hífen (-)."}
+- [[name*="value"]](https://api.jquery.com/attribute-contains-selector/){data-tooltip="Seleciona elementos que têm o atributo especificado com um valor que contém uma substring informada."}
+- [[name~="value"]](https://api.jquery.com/attribute-contains-word-selector/){data-tooltip="Seleciona elementos que têm o atributo especificado com um valor que contém uma palavra informada, delimitada por espaços."}
+- [[name$="value"]](https://api.jquery.com/attribute-ends-with-selector/){data-tooltip="Seleciona elementos que têm o atributo especificado com um valor que termina exatamente com uma string informada. A comparação diferencia maiúsculas de minúsculas."}
+- [[name="value"]](https://api.jquery.com/attribute-equals-selector/){data-tooltip="Seleciona elementos que têm o atributo especificado com um valor exatamente igual a um determinado valor."}
+- [[name!="value"]](https://api.jquery.com/attribute-not-equal-selector/){data-tooltip="Seleciona elementos que não têm o atributo especificado ou que o têm, mas não com um determinado valor."}
+- [[name^="value"]](https://api.jquery.com/attribute-starts-with-selector/){data-tooltip="Seleciona elementos que têm o atributo especificado com um valor que começa exatamente com uma string informada."}
+- [[name]](https://api.jquery.com/has-attribute-selector/){data-tooltip="Seleciona elementos que têm o atributo especificado, com qualquer valor. "}
+- [[name="value"][name2="value2"]](https://api.jquery.com/multiple-attribute-selector/){data-tooltip="Corresponde a elementos que atendem a todos os filtros de atributo especificados."} {.col-span-2}
 
 {.marker-none .cols-2}
 
-### Child Filters
+### Filtros de filhos
 
 <!-- prettier-ignore -->
-- [:first-child](https://api.jquery.com/first-child-selector/){data-tooltip="Selects all elements that are the first child of their parent."}
-- [:first-of-type](https://api.jquery.com/first-of-type-selector/){data-tooltip="Selects all elements that are the first among siblings of the same element name."}
-- [:last-child](https://api.jquery.com/last-child-selector/){data-tooltip="Selects all elements that are the last child of their parent."}
-- [:last-of-type](https://api.jquery.com/last-of-type-selector/){data-tooltip="Selects all elements that are the last among siblings of the same element name."}
-- [:nth-child()](https://api.jquery.com/nth-child-selector/){data-tooltip="Selects all elements that are the nth-child of their parent."}
-- [:nth-last-child()](https://api.jquery.com/nth-last-child-selector/){data-tooltip="Selects all elements that are the nth-child of their parent, counting from the last element to the first."}
-- [:nth-last-of-type()](https://api.jquery.com/nth-last-of-type-selector/){data-tooltip="Selects all the elements that are the nth-child of their parent in relation to siblings with the same element name, counting from the last element to the first."}
-- [:nth-of-type()](https://api.jquery.com/nth-of-type-selector/){data-tooltip="Selects all elements that are the nth child of their parent in relation to siblings with the same element name."}
-- [:only-child](https://api.jquery.com/only-child-selector/){data-tooltip="Selects all elements that are the only child of their parent."}
-- [:only-of-type()](https://api.jquery.com/only-of-type-selector/){data-tooltip="Selects all elements that have no siblings with the same element name."}
+- [:first-child](https://api.jquery.com/first-child-selector/){data-tooltip="Seleciona todos os elementos que são o primeiro filho de seu pai."}
+- [:first-of-type](https://api.jquery.com/first-of-type-selector/){data-tooltip="Seleciona todos os elementos que são o primeiro entre irmãos com o mesmo nome de elemento."}
+- [:last-child](https://api.jquery.com/last-child-selector/){data-tooltip="Seleciona todos os elementos que são o último filho de seu pai."}
+- [:last-of-type](https://api.jquery.com/last-of-type-selector/){data-tooltip="Seleciona todos os elementos que são o último entre irmãos com o mesmo nome de elemento."}
+- [:nth-child()](https://api.jquery.com/nth-child-selector/){data-tooltip="Seleciona todos os elementos que são o n-ésimo filho de seu pai."}
+- [:nth-last-child()](https://api.jquery.com/nth-last-child-selector/){data-tooltip="Seleciona todos os elementos que são o n-ésimo filho de seu pai, contando do último elemento para o primeiro."}
+- [:nth-last-of-type()](https://api.jquery.com/nth-last-of-type-selector/){data-tooltip="Seleciona todos os elementos que são o n-ésimo filho de seu pai em relação a irmãos com o mesmo nome de elemento, contando do último elemento para o primeiro."}
+- [:nth-of-type()](https://api.jquery.com/nth-of-type-selector/){data-tooltip="Seleciona todos os elementos que são o n-ésimo filho de seu pai em relação a irmãos com o mesmo nome de elemento."}
+- [:only-child](https://api.jquery.com/only-child-selector/){data-tooltip="Seleciona todos os elementos que são o único filho de seu pai."}
+- [:only-of-type()](https://api.jquery.com/only-of-type-selector/){data-tooltip="Seleciona todos os elementos que não têm irmãos com o mesmo nome de elemento."}
 
 {.marker-none .cols-2}
 
-### Forms
+### Formulários
 
 <!-- prettier-ignore -->
-- [:button](https://api.jquery.com/button-selector/){data-tooltip="Selects all button elements and elements of type button."}
-- [:checkbox](https://api.jquery.com/checkbox-selector/){data-tooltip="Selects all elements of type checkbox."}
-- [:checked](https://api.jquery.com/checked-selector/){data-tooltip="Matches all elements that are checked or selected."}
-- [:disabled](https://api.jquery.com/disabled-selector/){data-tooltip="Selects all elements that are disabled."}
-- [:enabled](https://api.jquery.com/enabled-selector/){data-tooltip="Selects all elements that are enabled."}
-- [:focus](https://api.jquery.com/focus-selector/){data-tooltip="Selects element if it is currently focused."}
-- [:file](https://api.jquery.com/file-selector/){data-tooltip="Selects all elements of type file."}
-- [:image](https://api.jquery.com/image-selector/){data-tooltip="Selects all elements of type image."}
-- [:input](https://api.jquery.com/input-selector/){data-tooltip="Selects all input, textarea, select and button elements."}
-- [:password](https://api.jquery.com/password-selector/){data-tooltip="Selects all elements of type password."}
-- [:radio](https://api.jquery.com/radio-selector/){data-tooltip="Selects all  elements of type radio."}
-- [:reset](https://api.jquery.com/reset-selector/){data-tooltip="Selects all elements of type reset."}
-- [:selected](https://api.jquery.com/selected-selector/){data-tooltip="Selects all elements that are selected."}
-- [:submit](https://api.jquery.com/submit-selector/){data-tooltip="Selects all elements of type submit."}
-- [:text](https://api.jquery.com/text-selector/){data-tooltip="Selects all input elements of type text."}
+- [:button](https://api.jquery.com/button-selector/){data-tooltip="Seleciona todos os elementos button e os elementos do tipo button."}
+- [:checkbox](https://api.jquery.com/checkbox-selector/){data-tooltip="Seleciona todos os elementos do tipo checkbox."}
+- [:checked](https://api.jquery.com/checked-selector/){data-tooltip="Corresponde a todos os elementos que estão marcados ou selecionados."}
+- [:disabled](https://api.jquery.com/disabled-selector/){data-tooltip="Seleciona todos os elementos desabilitados."}
+- [:enabled](https://api.jquery.com/enabled-selector/){data-tooltip="Seleciona todos os elementos habilitados."}
+- [:focus](https://api.jquery.com/focus-selector/){data-tooltip="Seleciona o elemento se ele estiver em foco no momento."}
+- [:file](https://api.jquery.com/file-selector/){data-tooltip="Seleciona todos os elementos do tipo file."}
+- [:image](https://api.jquery.com/image-selector/){data-tooltip="Seleciona todos os elementos do tipo image."}
+- [:input](https://api.jquery.com/input-selector/){data-tooltip="Seleciona todos os elementos input, textarea, select e button."}
+- [:password](https://api.jquery.com/password-selector/){data-tooltip="Seleciona todos os elementos do tipo password."}
+- [:radio](https://api.jquery.com/radio-selector/){data-tooltip="Seleciona todos os elementos do tipo radio."}
+- [:reset](https://api.jquery.com/reset-selector/){data-tooltip="Seleciona todos os elementos do tipo reset."}
+- [:selected](https://api.jquery.com/selected-selector/){data-tooltip="Seleciona todos os elementos que estão selecionados."}
+- [:submit](https://api.jquery.com/submit-selector/){data-tooltip="Seleciona todos os elementos do tipo submit."}
+- [:text](https://api.jquery.com/text-selector/){data-tooltip="Seleciona todos os elementos input do tipo text."}
 
 {.marker-none .cols-3}
 
-## jQuery Attributes
+## Atributos do jQuery
 
-### Examples {.secondary .row-span-2}
+### Exemplos {.secondary .row-span-2}
 
 ```javascript
 $('h2').css({
@@ -206,68 +206,68 @@ $('.button').on('mouseleave', (evt) => {
 $('.choice').toggleClass('highlighted');
 ```
 
-### Attributes
+### Atributos
 
 <!-- prettier-ignore -->
-- [.attr()](https://api.jquery.com/attr/){data-tooltip="Get the value of an attribute for the first element in the set of matched elements."}
-- [.prop()](https://api.jquery.com/prop/){data-tooltip="Get the value of a property for the first element in the set of matched elements."}
-- [.removeAttr()](https://api.jquery.com/removeAttr/){data-tooltip="Remove an attribute from each element in the set of matched elements."}
-- [.removeProp()](https://api.jquery.com/removeProp/){data-tooltip="Remove a property for the set of matched elements."}
-- [.val()](https://api.jquery.com/val/){data-tooltip="Get the current value of the first element in the set of matched elements."}
+- [.attr()](https://api.jquery.com/attr/){data-tooltip="Obtém o valor de um atributo para o primeiro elemento do conjunto de elementos correspondidos."}
+- [.prop()](https://api.jquery.com/prop/){data-tooltip="Obtém o valor de uma propriedade para o primeiro elemento do conjunto de elementos correspondidos."}
+- [.removeAttr()](https://api.jquery.com/removeAttr/){data-tooltip="Remove um atributo de cada elemento do conjunto de elementos correspondidos."}
+- [.removeProp()](https://api.jquery.com/removeProp/){data-tooltip="Remove uma propriedade do conjunto de elementos correspondidos."}
+- [.val()](https://api.jquery.com/val/){data-tooltip="Obtém o valor atual do primeiro elemento do conjunto de elementos correspondidos."}
 
 {.marker-none .cols-2}
 
-#### Data
+#### Dados
 
 <!-- prettier-ignore -->
-- [jQuery.data()](https://api.jquery.com/jQuery.data/){data-tooltip="Store arbitrary data associated with the specified element. Returns the value that was set."}
-- [.data()](https://api.jquery.com/data/){data-tooltip="Store arbitrary data associated with the matched elements."}
-- [jQuery.hasData()](https://api.jquery.com/jQuery.hasData/){data-tooltip="Determine whether an element has any jQuery data associated with it."}
-- [jQuery.removeData()](https://api.jquery.com/jQuery.removeData/){data-tooltip="Remove a previously-stored piece of data."}
-- [.removeData()](https://api.jquery.com/removeData/){data-tooltip="Remove a previously-stored piece of data."}
+- [jQuery.data()](https://api.jquery.com/jQuery.data/){data-tooltip="Armazena dados arbitrários associados ao elemento especificado. Retorna o valor que foi definido."}
+- [.data()](https://api.jquery.com/data/){data-tooltip="Armazena dados arbitrários associados aos elementos correspondidos."}
+- [jQuery.hasData()](https://api.jquery.com/jQuery.hasData/){data-tooltip="Determina se um elemento tem dados do jQuery associados a ele."}
+- [jQuery.removeData()](https://api.jquery.com/jQuery.removeData/){data-tooltip="Remove um dado armazenado anteriormente."}
+- [.removeData()](https://api.jquery.com/removeData/){data-tooltip="Remove um dado armazenado anteriormente."}
 
 {.marker-none .cols-2}
 
 ### CSS
 
 <!-- prettier-ignore -->
-- [.addClass()](https://api.jquery.com/addClass/){data-tooltip="Adds the specified class(es) to each element in the set of matched elements."}
-- [.hasClass()](https://api.jquery.com/hasClass/){data-tooltip="Determine whether any of the matched elements are assigned the given class."}
-- [.removeClass()](https://api.jquery.com/removeClass/){data-tooltip="Remove a single class, multiple classes, or all classes from each element in the set of matched elements."}
-- [.toggleClass()](https://api.jquery.com/toggleClass/){data-tooltip="Add or remove one or more classes from each element in the set of matched elements, depending on either the class&apos;s presence or the value of the state argument."}
-- [.css()](https://api.jquery.com/css/){data-tooltip="Get the computed style properties for the first element in the set of matched elements."}
-- [jQuery.cssHooks](https://api.jquery.com/jQuery.cssHooks/){data-tooltip="Hook directly into jQuery to override how particular CSS properties are retrieved or set, normalize CSS property naming, or create custom properties."}
-- [jQuery.cssNumber](https://api.jquery.com/jQuery.cssNumber/){data-tooltip="An object containing all CSS properties that may be used without a unit. The .css() method uses this object to see if it may append px to unitless values."}
-- [jQuery.escapeSelector()](https://api.jquery.com/jQuery.escapeSelector/){data-tooltip="Escapes any character that has a special meaning in a CSS selector."}
+- [.addClass()](https://api.jquery.com/addClass/){data-tooltip="Adiciona a(s) classe(s) especificada(s) a cada elemento do conjunto de elementos correspondidos."}
+- [.hasClass()](https://api.jquery.com/hasClass/){data-tooltip="Determina se algum dos elementos correspondidos tem a classe informada."}
+- [.removeClass()](https://api.jquery.com/removeClass/){data-tooltip="Remove uma classe, várias classes ou todas as classes de cada elemento do conjunto de elementos correspondidos."}
+- [.toggleClass()](https://api.jquery.com/toggleClass/){data-tooltip="Adiciona ou remove uma ou mais classes de cada elemento do conjunto de elementos correspondidos, conforme a presença da classe ou o valor do argumento state."}
+- [.css()](https://api.jquery.com/css/){data-tooltip="Obtém as propriedades de estilo computadas para o primeiro elemento do conjunto de elementos correspondidos."}
+- [jQuery.cssHooks](https://api.jquery.com/jQuery.cssHooks/){data-tooltip="Conecta-se diretamente ao jQuery para substituir como propriedades CSS específicas são obtidas ou definidas, normalizar a nomenclatura de propriedades CSS ou criar propriedades personalizadas."}
+- [jQuery.cssNumber](https://api.jquery.com/jQuery.cssNumber/){data-tooltip="Um objeto que contém todas as propriedades CSS que podem ser usadas sem unidade. O método .css() usa esse objeto para saber se pode acrescentar px a valores sem unidade."}
+- [jQuery.escapeSelector()](https://api.jquery.com/jQuery.escapeSelector/){data-tooltip="Escapa qualquer caractere que tenha significado especial em um seletor CSS."}
 
 {.marker-none .cols-2}
 
-### Dimensions
+### Dimensões
 
 <!-- prettier-ignore -->
-- [.height()](https://api.jquery.com/height/){data-tooltip="Get the current computed height for the first element in the set of matched elements."}
-- [.innerHeight()](https://api.jquery.com/innerHeight/){data-tooltip="Get the current computed height for the first element in the set of matched elements, including padding but not border."}
-- [.innerWidth()](https://api.jquery.com/innerWidth/){data-tooltip="Get the current computed inner width for the first element in the set of matched elements, including padding but not border."}
-- [.outerHeight()](https://api.jquery.com/outerHeight/){data-tooltip="Get the current computed outer height (including padding, border, and optionally margin) for the first element in the set of matched elements."}
-- [.outerWidth()](https://api.jquery.com/outerWidth/){data-tooltip="Get the current computed outer width (including padding, border, and optionally margin) for the first element in the set of matched elements."}
-- [.width()](https://api.jquery.com/width/){data-tooltip="Get the current computed width for the first element in the set of matched elements."}
+- [.height()](https://api.jquery.com/height/){data-tooltip="Obtém a altura computada atual do primeiro elemento do conjunto de elementos correspondidos."}
+- [.innerHeight()](https://api.jquery.com/innerHeight/){data-tooltip="Obtém a altura computada atual do primeiro elemento do conjunto de elementos correspondidos, incluindo padding, mas não border."}
+- [.innerWidth()](https://api.jquery.com/innerWidth/){data-tooltip="Obtém a largura interna computada atual do primeiro elemento do conjunto de elementos correspondidos, incluindo padding, mas não border."}
+- [.outerHeight()](https://api.jquery.com/outerHeight/){data-tooltip="Obtém a altura externa computada atual (incluindo padding, border e, opcionalmente, margin) do primeiro elemento do conjunto de elementos correspondidos."}
+- [.outerWidth()](https://api.jquery.com/outerWidth/){data-tooltip="Obtém a largura externa computada atual (incluindo padding, border e, opcionalmente, margin) do primeiro elemento do conjunto de elementos correspondidos."}
+- [.width()](https://api.jquery.com/width/){data-tooltip="Obtém a largura computada atual do primeiro elemento do conjunto de elementos correspondidos."}
 
 {.marker-none .cols-2}
 
 ### Offset
 
 <!-- prettier-ignore -->
-- [.offset()](https://api.jquery.com/offset/){data-tooltip="Get the current coordinates of the first element in the set of matched elements, relative to the document."}
-- [.offsetParent()](https://api.jquery.com/offsetParent/){data-tooltip="Get the closest ancestor element that is positioned."}
-- [.position()](https://api.jquery.com/position/){data-tooltip="Get the current coordinates of the first element in the set of matched elements, relative to the offset parent."}
-- [.scrollLeft()](https://api.jquery.com/scrollLeft/){data-tooltip="Get the current horizontal position of the scroll bar for the first element in the set of matched elements."}
-- [.scrollTop()](https://api.jquery.com/scrollTop/){data-tooltip="Get the current vertical position of the scroll bar for the first element in the set of matched elements or set the vertical position of the scroll bar for every matched element."}
+- [.offset()](https://api.jquery.com/offset/){data-tooltip="Obtém as coordenadas atuais do primeiro elemento do conjunto de elementos correspondidos, em relação ao documento."}
+- [.offsetParent()](https://api.jquery.com/offsetParent/){data-tooltip="Obtém o ancestral mais próximo que está posicionado."}
+- [.position()](https://api.jquery.com/position/){data-tooltip="Obtém as coordenadas atuais do primeiro elemento do conjunto de elementos correspondidos, em relação ao offset parent."}
+- [.scrollLeft()](https://api.jquery.com/scrollLeft/){data-tooltip="Obtém a posição horizontal atual da barra de rolagem do primeiro elemento do conjunto de elementos correspondidos."}
+- [.scrollTop()](https://api.jquery.com/scrollTop/){data-tooltip="Obtém a posição vertical atual da barra de rolagem do primeiro elemento do conjunto de elementos correspondidos ou define a posição vertical da barra de rolagem de cada elemento correspondido."}
 
 {.marker-none .cols-2}
 
-## jQuery Manipulation
+## Manipulação do jQuery
 
-### Examples {.secondary .row-span-3}
+### Exemplos {.secondary .row-span-3}
 
 ```javascript
 /*<span>Span.</span>*/
@@ -283,112 +283,112 @@ $('span').wrap('<p></p>');
 /*<p><span>This is span.</span></p>*/
 ```
 
-### Copying
+### Cópia
 
 <!-- prettier-ignore -->
-- [.clone()](https://api.jquery.com/clone/){data-tooltip="Create a deep copy of the set of matched elements."}
+- [.clone()](https://api.jquery.com/clone/){data-tooltip="Cria uma cópia profunda do conjunto de elementos correspondidos."}
 
 {.marker-none .cols-3}
 
-### DOM Insertion, Around
+### Inserção no DOM, ao redor
 
 <!-- prettier-ignore -->
-- [.wrap()](https://api.jquery.com/wrap/){data-tooltip="Wrap an HTML structure around each element in the set of matched elements."}
-- [.wrapAll()](https://api.jquery.com/wrapAll/){data-tooltip="Wrap an HTML structure around all elements in the set of matched elements."}
-- [.wrapInner()](https://api.jquery.com/wrapInner/){data-tooltip="Wrap an HTML structure around the content of each element in the set of matched elements."}
+- [.wrap()](https://api.jquery.com/wrap/){data-tooltip="Envolve uma estrutura HTML em torno de cada elemento do conjunto de elementos correspondidos."}
+- [.wrapAll()](https://api.jquery.com/wrapAll/){data-tooltip="Envolve uma estrutura HTML em torno de todos os elementos do conjunto de elementos correspondidos."}
+- [.wrapInner()](https://api.jquery.com/wrapInner/){data-tooltip="Envolve uma estrutura HTML em torno do conteúdo de cada elemento do conjunto de elementos correspondidos."}
 
 {.marker-none .cols-3}
 
-### DOM Insertion, Inside
+### Inserção no DOM, dentro
 
 <!-- prettier-ignore -->
-- [.append()](https://api.jquery.com/append/){data-tooltip="Insert content, specified by the parameter, to the end of each element in the set of matched elements."}
-- [.appendTo()](https://api.jquery.com/appendTo/){data-tooltip="Insert every element in the set of matched elements to the end of the target."}
-- [.html()](https://api.jquery.com/html/){data-tooltip="Get the HTML contents of the first element in the set of matched elements."}
-- [.prepend()](https://api.jquery.com/prepend/){data-tooltip="Insert content, specified by the parameter, to the beginning of each element in the set of matched elements."}
-- [.prependTo()](https://api.jquery.com/prependTo/){data-tooltip="Insert every element in the set of matched elements to the beginning of the target."}
-- [.text()](https://api.jquery.com/text/){data-tooltip="Get the combined text contents of each element in the set of matched elements, including their descendants."}
+- [.append()](https://api.jquery.com/append/){data-tooltip="Insere conteúdo, especificado pelo parâmetro, no final de cada elemento do conjunto de elementos correspondidos."}
+- [.appendTo()](https://api.jquery.com/appendTo/){data-tooltip="Insere cada elemento do conjunto de elementos correspondidos no final do destino."}
+- [.html()](https://api.jquery.com/html/){data-tooltip="Obtém o conteúdo HTML do primeiro elemento do conjunto de elementos correspondidos."}
+- [.prepend()](https://api.jquery.com/prepend/){data-tooltip="Insere conteúdo, especificado pelo parâmetro, no início de cada elemento do conjunto de elementos correspondidos."}
+- [.prependTo()](https://api.jquery.com/prependTo/){data-tooltip="Insere cada elemento do conjunto de elementos correspondidos no início do destino."}
+- [.text()](https://api.jquery.com/text/){data-tooltip="Obtém o conteúdo de texto combinado de cada elemento do conjunto de elementos correspondidos, incluindo seus descendentes."}
 {.marker-none .cols-3}
 
-### DOM Insertion, Outside
+### Inserção no DOM, fora
 
 <!-- prettier-ignore -->
-- [.after()](https://api.jquery.com/after/){data-tooltip="Insert content, specified by the parameter, after each element in the set of matched elements."}
-- [.before()](https://api.jquery.com/before/){data-tooltip="Insert content, specified by the parameter, before each element in the set of matched elements."}
-- [.insertAfter()](https://api.jquery.com/insertAfter/){data-tooltip="Insert every element in the set of matched elements after the target."}
-- [.insertBefore()](https://api.jquery.com/insertBefore/){data-tooltip="Insert every element in the set of matched elements before the target."}
-
-{.marker-none .cols-3}
-
-### DOM Removal
-
-<!-- prettier-ignore -->
-- [.detach()](https://api.jquery.com/detach/){data-tooltip="Remove the set of matched elements from the DOM."}
-- [.empty()](https://api.jquery.com/empty/){data-tooltip="Remove all child nodes of the set of matched elements from the DOM."}
-- [.remove()](https://api.jquery.com/remove/){data-tooltip="Remove the set of matched elements from the DOM."}
-- [.unwrap()](https://api.jquery.com/unwrap/){data-tooltip="Remove the parents of the set of matched elements from the DOM, leaving the matched elements in their place."}
+- [.after()](https://api.jquery.com/after/){data-tooltip="Insere conteúdo, especificado pelo parâmetro, depois de cada elemento do conjunto de elementos correspondidos."}
+- [.before()](https://api.jquery.com/before/){data-tooltip="Insere conteúdo, especificado pelo parâmetro, antes de cada elemento do conjunto de elementos correspondidos."}
+- [.insertAfter()](https://api.jquery.com/insertAfter/){data-tooltip="Insere cada elemento do conjunto de elementos correspondidos depois do destino."}
+- [.insertBefore()](https://api.jquery.com/insertBefore/){data-tooltip="Insere cada elemento do conjunto de elementos correspondidos antes do destino."}
 
 {.marker-none .cols-3}
 
-### DOM Replacement
+### Remoção do DOM
 
 <!-- prettier-ignore -->
-- [.replaceAll()](https://api.jquery.com/replaceAll/){data-tooltip="Replace each target element with the set of matched elements."}
-- [.replaceWith()](https://api.jquery.com/replaceWith/){data-tooltip="Replace each element in the set of matched elements with the provided new content and return the set of elements that was removed."}
+- [.detach()](https://api.jquery.com/detach/){data-tooltip="Remove o conjunto de elementos correspondidos do DOM."}
+- [.empty()](https://api.jquery.com/empty/){data-tooltip="Remove do DOM todos os nós filhos do conjunto de elementos correspondidos."}
+- [.remove()](https://api.jquery.com/remove/){data-tooltip="Remove o conjunto de elementos correspondidos do DOM."}
+- [.unwrap()](https://api.jquery.com/unwrap/){data-tooltip="Remove do DOM os pais do conjunto de elementos correspondidos, deixando os elementos correspondidos em seu lugar."}
 
 {.marker-none .cols-3}
 
-## jQuery Traversing
-
-### Filtering
+### Substituição no DOM
 
 <!-- prettier-ignore -->
-- [.eq()](https://api.jquery.com/eq/){data-tooltip="Reduce the set of matched elements to the one at the specified index."}
-- [.filter()](https://api.jquery.com/filter/){data-tooltip="Reduce the set of matched elements to those that match the selector or pass the function&apos;s test. "}
-- [.first()](https://api.jquery.com/first/){data-tooltip="Reduce the set of matched elements to the first in the set."}
-- [.has()](https://api.jquery.com/has/){data-tooltip="Reduce the set of matched elements to those that have a descendant that matches the selector or DOM element."}
-- [.is()](https://api.jquery.com/is/){data-tooltip="Check the current matched set of elements against a selector, element, or jQuery object and return true if at least one of these elements matches the given arguments."}
-- [.last()](https://api.jquery.com/last/){data-tooltip="Reduce the set of matched elements to the final one in the set."}
-- [.map()](https://api.jquery.com/map/){data-tooltip="Pass each element in the current matched set through a function, producing a new jQuery object containing the return values."}
-- [.not()](https://api.jquery.com/not/){data-tooltip="Remove elements from the set of matched elements."}
-- [.slice()](https://api.jquery.com/slice/){data-tooltip="Reduce the set of matched elements to a subset specified by a range of indices."}
+- [.replaceAll()](https://api.jquery.com/replaceAll/){data-tooltip="Substitui cada elemento de destino pelo conjunto de elementos correspondidos."}
+- [.replaceWith()](https://api.jquery.com/replaceWith/){data-tooltip="Substitui cada elemento do conjunto de elementos correspondidos pelo novo conteúdo fornecido e retorna o conjunto de elementos removidos."}
 
 {.marker-none .cols-3}
 
-### Miscellaneous Traversing
+## Travessia do jQuery
+
+### Filtragem
 
 <!-- prettier-ignore -->
-- [.add()](https://api.jquery.com/add/){data-tooltip="Create a new jQuery object with elements added to the set of matched elements."}
-- [.addBack()](https://api.jquery.com/addBack/){data-tooltip="Add the previous set of elements on the stack to the current set, optionally filtered by a selector."}
-- [.andSelf()](https://api.jquery.com/andSelf/){data-tooltip="Add the previous set of elements on the stack to the current set."}
-- [.contents()](https://api.jquery.com/contents/){data-tooltip="Get the children of each element in the set of matched elements, including text and comment nodes."}
-- [.each()](https://api.jquery.com/each/){data-tooltip="Iterate over a jQuery object, executing a function for each matched element. "}
-- [.end()](https://api.jquery.com/end/){data-tooltip="End the most recent filtering operation in the current chain and return the set of matched elements to its previous state."}
+- [.eq()](https://api.jquery.com/eq/){data-tooltip="Reduz o conjunto de elementos correspondidos ao elemento no índice especificado."}
+- [.filter()](https://api.jquery.com/filter/){data-tooltip="Reduz o conjunto de elementos correspondidos àqueles que correspondem ao seletor ou passam no teste da função. "}
+- [.first()](https://api.jquery.com/first/){data-tooltip="Reduz o conjunto de elementos correspondidos ao primeiro do conjunto."}
+- [.has()](https://api.jquery.com/has/){data-tooltip="Reduz o conjunto de elementos correspondidos àqueles que têm um descendente que corresponde ao seletor ou ao elemento do DOM."}
+- [.is()](https://api.jquery.com/is/){data-tooltip="Verifica o conjunto atual de elementos correspondidos em relação a um seletor, elemento ou objeto jQuery e retorna true se pelo menos um desses elementos corresponder aos argumentos informados."}
+- [.last()](https://api.jquery.com/last/){data-tooltip="Reduz o conjunto de elementos correspondidos ao último do conjunto."}
+- [.map()](https://api.jquery.com/map/){data-tooltip="Passa cada elemento do conjunto atual de correspondências por uma função, produzindo um novo objeto jQuery que contém os valores retornados."}
+- [.not()](https://api.jquery.com/not/){data-tooltip="Remove elementos do conjunto de elementos correspondidos."}
+- [.slice()](https://api.jquery.com/slice/){data-tooltip="Reduz o conjunto de elementos correspondidos a um subconjunto especificado por um intervalo de índices."}
 
 {.marker-none .cols-3}
 
-### Tree Traversal
+### Travessia diversa
 
 <!-- prettier-ignore -->
-- [.children()](https://api.jquery.com/children/){data-tooltip="Get the children of each element in the set of matched elements, optionally filtered by a selector."}
-- [.closest()](https://api.jquery.com/closest/){data-tooltip="For each element in the set, get the first element that matches the selector by testing the element itself and traversing up through its ancestors in the DOM tree."}
-- [.find()](https://api.jquery.com/find/){data-tooltip="Get the descendants of each element in the current set of matched elements, filtered by a selector, jQuery object, or element."}
-- [.next()](https://api.jquery.com/next/){data-tooltip="Get the immediately following sibling of each element in the set of matched elements. If a selector is provided, it retrieves the next sibling only if it matches that selector."}
-- [.nextAll()](https://api.jquery.com/nextAll/){data-tooltip="Get all following siblings of each element in the set of matched elements, optionally filtered by a selector."}
-- [.nextUntil()](https://api.jquery.com/nextUntil/){data-tooltip="Get all following siblings of each element up to but not including the element matched by the selector, DOM node, or jQuery object passed."}
-- [.parent()](https://api.jquery.com/parent/){data-tooltip="Get the parent of each element in the current set of matched elements, optionally filtered by a selector."}
-- [.parents()](https://api.jquery.com/parents/){data-tooltip="Get the ancestors of each element in the current set of matched elements, optionally filtered by a selector."}
-- [.parentsUntil()](https://api.jquery.com/parentsUntil/){data-tooltip="Get the ancestors of each element in the current set of matched elements, up to but not including the element matched by the selector, DOM node, or jQuery object."}
-- [.prev()](https://api.jquery.com/prev/){data-tooltip="Get the immediately preceding sibling of each element in the set of matched elements. If a selector is provided, it retrieves the previous sibling only if it matches that selector."}
-- [.prevAll()](https://api.jquery.com/prevAll/){data-tooltip="Get all preceding siblings of each element in the set of matched elements, optionally filtered by a selector."}
-- [.prevUntil()](https://api.jquery.com/prevUntil/){data-tooltip="Get all preceding siblings of each element up to but not including the element matched by the selector, DOM node, or jQuery object."}
-- [.siblings()](https://api.jquery.com/siblings/){data-tooltip="Get the siblings of each element in the set of matched elements, optionally filtered by a selector."}
+- [.add()](https://api.jquery.com/add/){data-tooltip="Cria um novo objeto jQuery com elementos adicionados ao conjunto de elementos correspondidos."}
+- [.addBack()](https://api.jquery.com/addBack/){data-tooltip="Adiciona o conjunto anterior de elementos da pilha ao conjunto atual, opcionalmente filtrado por um seletor."}
+- [.andSelf()](https://api.jquery.com/andSelf/){data-tooltip="Adiciona o conjunto anterior de elementos da pilha ao conjunto atual."}
+- [.contents()](https://api.jquery.com/contents/){data-tooltip="Obtém os filhos de cada elemento do conjunto de elementos correspondidos, incluindo nós de texto e de comentário."}
+- [.each()](https://api.jquery.com/each/){data-tooltip="Itera sobre um objeto jQuery, executando uma função para cada elemento correspondido. "}
+- [.end()](https://api.jquery.com/end/){data-tooltip="Encerra a operação de filtragem mais recente na cadeia atual e retorna o conjunto de elementos correspondidos ao estado anterior."}
 
 {.marker-none .cols-3}
 
-## jQuery Events
+### Travessia de árvore
 
-### Examples {.secondary .row-span-6}
+<!-- prettier-ignore -->
+- [.children()](https://api.jquery.com/children/){data-tooltip="Obtém os filhos de cada elemento do conjunto de elementos correspondidos, opcionalmente filtrados por um seletor."}
+- [.closest()](https://api.jquery.com/closest/){data-tooltip="Para cada elemento do conjunto, obtém o primeiro elemento que corresponde ao seletor testando o próprio elemento e percorrendo seus ancestrais na árvore do DOM."}
+- [.find()](https://api.jquery.com/find/){data-tooltip="Obtém os descendentes de cada elemento do conjunto atual de elementos correspondidos, filtrados por um seletor, objeto jQuery ou elemento."}
+- [.next()](https://api.jquery.com/next/){data-tooltip="Obtém o irmão imediatamente seguinte de cada elemento do conjunto de elementos correspondidos. Se um seletor for fornecido, obtém o próximo irmão apenas se ele corresponder a esse seletor."}
+- [.nextAll()](https://api.jquery.com/nextAll/){data-tooltip="Obtém todos os irmãos seguintes de cada elemento do conjunto de elementos correspondidos, opcionalmente filtrados por um seletor."}
+- [.nextUntil()](https://api.jquery.com/nextUntil/){data-tooltip="Obtém todos os irmãos seguintes de cada elemento até, mas sem incluir, o elemento correspondido pelo seletor, nó do DOM ou objeto jQuery informado."}
+- [.parent()](https://api.jquery.com/parent/){data-tooltip="Obtém o pai de cada elemento do conjunto atual de elementos correspondidos, opcionalmente filtrado por um seletor."}
+- [.parents()](https://api.jquery.com/parents/){data-tooltip="Obtém os ancestrais de cada elemento do conjunto atual de elementos correspondidos, opcionalmente filtrados por um seletor."}
+- [.parentsUntil()](https://api.jquery.com/parentsUntil/){data-tooltip="Obtém os ancestrais de cada elemento do conjunto atual de elementos correspondidos até, mas sem incluir, o elemento correspondido pelo seletor, nó do DOM ou objeto jQuery."}
+- [.prev()](https://api.jquery.com/prev/){data-tooltip="Obtém o irmão imediatamente anterior de cada elemento do conjunto de elementos correspondidos. Se um seletor for fornecido, obtém o irmão anterior apenas se ele corresponder a esse seletor."}
+- [.prevAll()](https://api.jquery.com/prevAll/){data-tooltip="Obtém todos os irmãos anteriores de cada elemento do conjunto de elementos correspondidos, opcionalmente filtrados por um seletor."}
+- [.prevUntil()](https://api.jquery.com/prevUntil/){data-tooltip="Obtém todos os irmãos anteriores de cada elemento até, mas sem incluir, o elemento correspondido pelo seletor, nó do DOM ou objeto jQuery."}
+- [.siblings()](https://api.jquery.com/siblings/){data-tooltip="Obtém os irmãos de cada elemento do conjunto de elementos correspondidos, opcionalmente filtrados por um seletor."}
+
+{.marker-none .cols-3}
+
+## Eventos do jQuery
+
+### Exemplos {.secondary .row-span-6}
 
 ```javascript
 // A mouse event 'click'
@@ -407,7 +407,7 @@ $('#menu-button').on('scroll', () => {
 });
 ```
 
-#### Event object
+#### Objeto de evento
 
 ```javascript
 $('#menu').on('click', (event) => {
@@ -415,7 +415,7 @@ $('#menu').on('click', (event) => {
 });
 ```
 
-#### Method chaining
+#### Encadeamento de métodos
 
 ```javascript
 $('#menu-btn')
@@ -427,7 +427,7 @@ $('#menu-btn')
   });
 ```
 
-#### Prevents the event
+#### Impede o evento
 
 ```javascript
 $('p').click(function (event) {
@@ -436,108 +436,108 @@ $('p').click(function (event) {
 });
 ```
 
-### Browser Events
+### Eventos do navegador
 
 <!-- prettier-ignore -->
-- [.error()](https://api.jquery.com/error/){data-tooltip="Bind an event handler to the error JavaScript event."}
-- [.resize()](https://api.jquery.com/resize/){data-tooltip="Bind an event handler to the resize JavaScript event, or trigger that event on an element."}
-- [.scroll()](https://api.jquery.com/scroll/){data-tooltip="Bind an event handler to the scroll JavaScript event, or trigger that event on an element."}
+- [.error()](https://api.jquery.com/error/){data-tooltip="Vincula um handler de evento ao evento JavaScript error."}
+- [.resize()](https://api.jquery.com/resize/){data-tooltip="Vincula um handler de evento ao evento JavaScript resize ou dispara esse evento em um elemento."}
+- [.scroll()](https://api.jquery.com/scroll/){data-tooltip="Vincula um handler de evento ao evento JavaScript scroll ou dispara esse evento em um elemento."}
 
 {.marker-none .cols-3}
 
-### Event Object {.row-span-6}
+### Objeto de evento {.row-span-6}
 
 <!-- prettier-ignore -->
-- [event.currentTarget](https://api.jquery.com/event.currentTarget/){data-tooltip=" The current DOM element within the event bubbling phase.  "}
-- [event.delegateTarget](https://api.jquery.com/event.delegateTarget/){data-tooltip="The element where the currently-called jQuery event handler was attached."}
-- [event.data](https://api.jquery.com/event.data/){data-tooltip="An optional object of data passed to an event method when the current executing handler is bound.  "}
-- [event.isDefaultPrevented()](https://api.jquery.com/event.isDefaultPrevented/){data-tooltip="Returns whether event.preventDefault() was ever called on this event object. "}
-- [event.isImmediatePropagationStopped()](https://api.jquery.com/event.isImmediatePropagationStopped/){data-tooltip="  Returns whether event.stopImmediatePropagation() was ever called on this event object. "}
-- [event.isPropagationStopped()](https://api.jquery.com/event.isPropagationStopped/){data-tooltip="  Returns whether event.stopPropagation() was ever called on this event object. "}
-- [event.metaKey](https://api.jquery.com/event.metaKey/){data-tooltip="Indicates whether the META key was pressed when the event fired."}
-- [event.namespace](https://api.jquery.com/event.namespace/){data-tooltip="The namespace specified when the event was triggered."}
-- [event.pageX](https://api.jquery.com/event.pageX/){data-tooltip="The mouse position relative to the left edge of the document."}
-- [event.pageY](https://api.jquery.com/event.pageY/){data-tooltip="The mouse position relative to the top edge of the document."}
-- [event.preventDefault()](https://api.jquery.com/event.preventDefault/){data-tooltip="If this method is called, the default action of the event will not be triggered."}
-- [event.relatedTarget](https://api.jquery.com/event.relatedTarget/){data-tooltip="The other DOM element involved in the event, if any."}
-- [event.result](https://api.jquery.com/event.result/){data-tooltip="The last value returned by an event handler that was triggered by this event, unless the value was undefined."}
-- [event.stopImmediatePropagation()](https://api.jquery.com/event.stopImmediatePropagation/){data-tooltip="Keeps the rest of the handlers from being executed and prevents the event from bubbling up the DOM tree."}
-- [event.stopPropagation()](https://api.jquery.com/event.stopPropagation/){data-tooltip="Prevents the event from bubbling up the DOM tree, preventing any parent handlers from being notified of the event."}
-- [event.target](https://api.jquery.com/event.target/){data-tooltip=" The DOM element that initiated the event.  "}
-- [event.timeStamp](https://api.jquery.com/event.timeStamp/){data-tooltip="The difference in milliseconds between the time the browser created the event and January 1, 1970."}
-- [event.type](https://api.jquery.com/event.type/){data-tooltip="Describes the nature of the event."}
-- [event.which](https://api.jquery.com/event.which/){data-tooltip="For key or mouse events, this property indicates the specific key or button that was pressed."}
+- [event.currentTarget](https://api.jquery.com/event.currentTarget/){data-tooltip=" O elemento atual do DOM dentro da fase de bubbling do evento.  "}
+- [event.delegateTarget](https://api.jquery.com/event.delegateTarget/){data-tooltip="O elemento ao qual o handler de evento jQuery que está sendo chamado foi anexado."}
+- [event.data](https://api.jquery.com/event.data/){data-tooltip="Um objeto opcional de dados passado a um método de evento quando o handler em execução atual é vinculado.  "}
+- [event.isDefaultPrevented()](https://api.jquery.com/event.isDefaultPrevented/){data-tooltip="Retorna se event.preventDefault() já foi chamado neste objeto de evento. "}
+- [event.isImmediatePropagationStopped()](https://api.jquery.com/event.isImmediatePropagationStopped/){data-tooltip="  Retorna se event.stopImmediatePropagation() já foi chamado neste objeto de evento. "}
+- [event.isPropagationStopped()](https://api.jquery.com/event.isPropagationStopped/){data-tooltip="  Retorna se event.stopPropagation() já foi chamado neste objeto de evento. "}
+- [event.metaKey](https://api.jquery.com/event.metaKey/){data-tooltip="Indica se a tecla META foi pressionada quando o evento foi disparado."}
+- [event.namespace](https://api.jquery.com/event.namespace/){data-tooltip="O namespace especificado quando o evento foi disparado."}
+- [event.pageX](https://api.jquery.com/event.pageX/){data-tooltip="A posição do mouse em relação à borda esquerda do documento."}
+- [event.pageY](https://api.jquery.com/event.pageY/){data-tooltip="A posição do mouse em relação à borda superior do documento."}
+- [event.preventDefault()](https://api.jquery.com/event.preventDefault/){data-tooltip="Se este método for chamado, a ação padrão do evento não será disparada."}
+- [event.relatedTarget](https://api.jquery.com/event.relatedTarget/){data-tooltip="O outro elemento do DOM envolvido no evento, se houver."}
+- [event.result](https://api.jquery.com/event.result/){data-tooltip="O último valor retornado por um handler de evento disparado por este evento, a menos que o valor seja undefined."}
+- [event.stopImmediatePropagation()](https://api.jquery.com/event.stopImmediatePropagation/){data-tooltip="Impede que os demais handlers sejam executados e evita que o evento suba pela árvore do DOM."}
+- [event.stopPropagation()](https://api.jquery.com/event.stopPropagation/){data-tooltip="Evita que o evento suba pela árvore do DOM, impedindo que qualquer handler pai seja notificado do evento."}
+- [event.target](https://api.jquery.com/event.target/){data-tooltip=" O elemento do DOM que iniciou o evento.  "}
+- [event.timeStamp](https://api.jquery.com/event.timeStamp/){data-tooltip="A diferença em milissegundos entre o momento em que o navegador criou o evento e 1º de janeiro de 1970."}
+- [event.type](https://api.jquery.com/event.type/){data-tooltip="Descreve a natureza do evento."}
+- [event.which](https://api.jquery.com/event.which/){data-tooltip="Para eventos de teclado ou mouse, esta propriedade indica a tecla ou o botão específico que foi pressionado."}
 
 {.marker-none .cols-1}
 
-### Document Loading
+### Carregamento do documento
 
 <!-- prettier-ignore -->
-- [.load()](https://api.jquery.com/load-event/){data-tooltip="Bind an event handler to the load JavaScript event."}
-- [.ready()](https://api.jquery.com/ready/){data-tooltip="Specify a function to execute when the DOM is fully loaded."}
-- [.unload()](https://api.jquery.com/unload/){data-tooltip="Bind an event handler to the unload JavaScript event."}
+- [.load()](https://api.jquery.com/load-event/){data-tooltip="Vincula um handler de evento ao evento JavaScript load."}
+- [.ready()](https://api.jquery.com/ready/){data-tooltip="Especifica uma função a ser executada quando o DOM estiver totalmente carregado."}
+- [.unload()](https://api.jquery.com/unload/){data-tooltip="Vincula um handler de evento ao evento JavaScript unload."}
 
 {.marker-none .cols-3}
 
-### Event Handler Attachment
+### Vinculação de handlers de eventos
 
 <!-- prettier-ignore -->
-- [.bind()](https://api.jquery.com/bind/){data-tooltip="Attach a handler to an event for the elements."}
-- [.delegate()](https://api.jquery.com/delegate/){data-tooltip="Attach a handler to one or more events for all elements that match the selector, now or in the future, based on a specific set of root elements."}
-- [.die()](https://api.jquery.com/die/){data-tooltip="Remove event handlers previously attached using .live() from the elements."}
-- [.live()](https://api.jquery.com/live/){data-tooltip="Attach an event handler for all elements which match the current selector, now and in the future."}
-- [.off()](https://api.jquery.com/off/){data-tooltip="Remove an event handler."}
-- [.on()](https://api.jquery.com/on/){data-tooltip="Attach an event handler function for one or more events to the selected elements."}
-- [.one()](https://api.jquery.com/one/){data-tooltip="Attach a handler to an event for the elements. The handler is executed at most once per element per event type."}
-- [.trigger()](https://api.jquery.com/trigger/){data-tooltip="Execute all handlers and behaviors attached to the matched elements for the given event type."}
-- [.triggerHandler()](https://api.jquery.com/triggerHandler/){data-tooltip="Execute all handlers attached to an element for an event."}
-- [.unbind()](https://api.jquery.com/unbind/){data-tooltip="Remove a previously-attached event handler from the elements."}
-- [.undelegate()](https://api.jquery.com/undelegate/){data-tooltip="Remove a handler from the event for all elements which match the current selector, based upon a specific set of root elements."}
+- [.bind()](https://api.jquery.com/bind/){data-tooltip="Anexa um handler a um evento para os elementos."}
+- [.delegate()](https://api.jquery.com/delegate/){data-tooltip="Anexa um handler a um ou mais eventos para todos os elementos que correspondem ao seletor, agora ou no futuro, com base em um conjunto específico de elementos raiz."}
+- [.die()](https://api.jquery.com/die/){data-tooltip="Remove handlers de eventos previamente anexados com .live() dos elementos."}
+- [.live()](https://api.jquery.com/live/){data-tooltip="Anexa um handler de evento para todos os elementos que correspondem ao seletor atual, agora e no futuro."}
+- [.off()](https://api.jquery.com/off/){data-tooltip="Remove um handler de evento."}
+- [.on()](https://api.jquery.com/on/){data-tooltip="Anexa uma função handler de evento para um ou mais eventos aos elementos selecionados."}
+- [.one()](https://api.jquery.com/one/){data-tooltip="Anexa um handler a um evento para os elementos. O handler é executado no máximo uma vez por elemento por tipo de evento."}
+- [.trigger()](https://api.jquery.com/trigger/){data-tooltip="Executa todos os handlers e comportamentos anexados aos elementos correspondidos para o tipo de evento informado."}
+- [.triggerHandler()](https://api.jquery.com/triggerHandler/){data-tooltip="Executa todos os handlers anexados a um elemento para um evento."}
+- [.unbind()](https://api.jquery.com/unbind/){data-tooltip="Remove dos elementos um handler de evento anexado anteriormente."}
+- [.undelegate()](https://api.jquery.com/undelegate/){data-tooltip="Remove um handler do evento para todos os elementos que correspondem ao seletor atual, com base em um conjunto específico de elementos raiz."}
 
 {.marker-none .cols-3}
 
-### Form Events
+### Eventos de formulário
 
 <!-- prettier-ignore -->
-- [.blur()](https://api.jquery.com/blur/){data-tooltip="Bind an event handler to the blur JavaScript event, or trigger that event on an element."}
-- [.change()](https://api.jquery.com/change/){data-tooltip="Bind an event handler to the change JavaScript event, or trigger that event on an element."}
-- [.focus()](https://api.jquery.com/focus/){data-tooltip="Bind an event handler to the focus JavaScript event, or trigger that event on an element."}
-- [.focusin()](https://api.jquery.com/focusin/){data-tooltip="Bind an event handler to the focusin event."}
-- [.focusout()](https://api.jquery.com/focusout/){data-tooltip="Bind an event handler to the focusout JavaScript event."}
-- [.select()](https://api.jquery.com/select/){data-tooltip="Bind an event handler to the select JavaScript event, or trigger that event on an element."}
-- [.submit()](https://api.jquery.com/submit/){data-tooltip="Bind an event handler to the submit JavaScript event, or trigger that event on an element."}
+- [.blur()](https://api.jquery.com/blur/){data-tooltip="Vincula um handler de evento ao evento JavaScript blur ou dispara esse evento em um elemento."}
+- [.change()](https://api.jquery.com/change/){data-tooltip="Vincula um handler de evento ao evento JavaScript change ou dispara esse evento em um elemento."}
+- [.focus()](https://api.jquery.com/focus/){data-tooltip="Vincula um handler de evento ao evento JavaScript focus ou dispara esse evento em um elemento."}
+- [.focusin()](https://api.jquery.com/focusin/){data-tooltip="Vincula um handler de evento ao evento focusin."}
+- [.focusout()](https://api.jquery.com/focusout/){data-tooltip="Vincula um handler de evento ao evento JavaScript focusout."}
+- [.select()](https://api.jquery.com/select/){data-tooltip="Vincula um handler de evento ao evento JavaScript select ou dispara esse evento em um elemento."}
+- [.submit()](https://api.jquery.com/submit/){data-tooltip="Vincula um handler de evento ao evento JavaScript submit ou dispara esse evento em um elemento."}
 
 {.marker-none .cols-3}
 
-### Keyboard Events
+### Eventos de teclado
 
 <!-- prettier-ignore -->
-- [.keydown()](https://api.jquery.com/keydown/){data-tooltip="Bind an event handler to the keydown JavaScript event, or trigger that event on an element."}
-- [.keypress()](https://api.jquery.com/keypress/){data-tooltip="Bind an event handler to the keypress JavaScript event, or trigger that event on an element."}
-- [.keyup()](https://api.jquery.com/keyup/){data-tooltip="Bind an event handler to the keyup JavaScript event, or trigger that event on an element."}
+- [.keydown()](https://api.jquery.com/keydown/){data-tooltip="Vincula um handler de evento ao evento JavaScript keydown ou dispara esse evento em um elemento."}
+- [.keypress()](https://api.jquery.com/keypress/){data-tooltip="Vincula um handler de evento ao evento JavaScript keypress ou dispara esse evento em um elemento."}
+- [.keyup()](https://api.jquery.com/keyup/){data-tooltip="Vincula um handler de evento ao evento JavaScript keyup ou dispara esse evento em um elemento."}
 {.marker-none .cols-3}
 
-### Mouse Events
+### Eventos de mouse
 
 <!-- prettier-ignore -->
-- [.click()](https://api.jquery.com/click/){data-tooltip="Bind an event handler to the click JavaScript event, or trigger that event on an element."}
-- [.contextMenu()](https://api.jquery.com/contextmenu/){data-tooltip="Bind an event handler to the contextmenu JavaScript event, or trigger that event on an element."}
-- [.dblclick()](https://api.jquery.com/dblclick/){data-tooltip="Bind an event handler to the dblclick JavaScript event, or trigger that event on an element."}
-- [.hover()](https://api.jquery.com/hover/){data-tooltip="Bind two handlers to the matched elements, to be executed when the mouse pointer enters and leaves the elements."}
-- [.mousedown()](https://api.jquery.com/mousedown/){data-tooltip="Bind an event handler to the mousedown JavaScript event, or trigger that event on an element."}
-- [.mouseenter()](https://api.jquery.com/mouseenter/){data-tooltip="Bind an event handler to be fired when the mouse enters an element, or trigger that handler on an element."}
-- [.mouseleave()](https://api.jquery.com/mouseleave/){data-tooltip="Bind an event handler to be fired when the mouse leaves an element, or trigger that handler on an element."}
-- [.mousemove()](https://api.jquery.com/mousemove/){data-tooltip="Bind an event handler to the mousemove JavaScript event, or trigger that event on an element."}
-- [.mouseout()](https://api.jquery.com/mouseout/){data-tooltip="Bind an event handler to the mouseout JavaScript event, or trigger that event on an element."}
-- [.mouseover()](https://api.jquery.com/mouseover/){data-tooltip="Bind an event handler to the mouseover JavaScript event, or trigger that event on an element."}
-- [.mouseup()](https://api.jquery.com/mouseup/){data-tooltip="Bind an event handler to the mouseup JavaScript event, or trigger that event on an element."}
-- [.toggle()](https://api.jquery.com/toggle-event/){data-tooltip="Bind two or more handlers to the matched elements, to be executed on alternate clicks."}
+- [.click()](https://api.jquery.com/click/){data-tooltip="Vincula um handler de evento ao evento JavaScript click ou dispara esse evento em um elemento."}
+- [.contextMenu()](https://api.jquery.com/contextmenu/){data-tooltip="Vincula um handler de evento ao evento JavaScript contextmenu ou dispara esse evento em um elemento."}
+- [.dblclick()](https://api.jquery.com/dblclick/){data-tooltip="Vincula um handler de evento ao evento JavaScript dblclick ou dispara esse evento em um elemento."}
+- [.hover()](https://api.jquery.com/hover/){data-tooltip="Vincula dois handlers aos elementos correspondidos, a serem executados quando o ponteiro do mouse entra e sai dos elementos."}
+- [.mousedown()](https://api.jquery.com/mousedown/){data-tooltip="Vincula um handler de evento ao evento JavaScript mousedown ou dispara esse evento em um elemento."}
+- [.mouseenter()](https://api.jquery.com/mouseenter/){data-tooltip="Vincula um handler de evento a ser disparado quando o mouse entra em um elemento ou dispara esse handler em um elemento."}
+- [.mouseleave()](https://api.jquery.com/mouseleave/){data-tooltip="Vincula um handler de evento a ser disparado quando o mouse sai de um elemento ou dispara esse handler em um elemento."}
+- [.mousemove()](https://api.jquery.com/mousemove/){data-tooltip="Vincula um handler de evento ao evento JavaScript mousemove ou dispara esse evento em um elemento."}
+- [.mouseout()](https://api.jquery.com/mouseout/){data-tooltip="Vincula um handler de evento ao evento JavaScript mouseout ou dispara esse evento em um elemento."}
+- [.mouseover()](https://api.jquery.com/mouseover/){data-tooltip="Vincula um handler de evento ao evento JavaScript mouseover ou dispara esse evento em um elemento."}
+- [.mouseup()](https://api.jquery.com/mouseup/){data-tooltip="Vincula um handler de evento ao evento JavaScript mouseup ou dispara esse evento em um elemento."}
+- [.toggle()](https://api.jquery.com/toggle-event/){data-tooltip="Vincula dois ou mais handlers aos elementos correspondidos, a serem executados em cliques alternados."}
 
 {.marker-none .cols-3}
 
-## jQuery Effects
+## Efeitos do jQuery
 
-### Examples {.secondary .row-span-2}
+### Exemplos {.secondary .row-span-2}
 
 ```javascript
 $('#menu-button').on('click', () => {
@@ -546,7 +546,7 @@ $('#menu-button').on('click', () => {
 });
 ```
 
-#### fadeOut effect
+#### Efeito fadeOut
 
 ```javascript
 $('#menu-button').on('click', () => {
@@ -555,55 +555,55 @@ $('#menu-button').on('click', () => {
 });
 ```
 
-### Basics
+### Básicos
 
 <!-- prettier-ignore -->
-- [.hide()](https://api.jquery.com/hide/){data-tooltip="Hide the matched elements."}
-- [.show()](https://api.jquery.com/show/){data-tooltip="Display the matched elements."}
-- [.toggle()](https://api.jquery.com/toggle/){data-tooltip="Display or hide the matched elements."}
+- [.hide()](https://api.jquery.com/hide/){data-tooltip="Oculta os elementos correspondidos."}
+- [.show()](https://api.jquery.com/show/){data-tooltip="Exibe os elementos correspondidos."}
+- [.toggle()](https://api.jquery.com/toggle/){data-tooltip="Exibe ou oculta os elementos correspondidos."}
 
 {.marker-none .cols-3}
 
-### Sliding
+### Deslizamento
 
 <!-- prettier-ignore -->
-- [.slideDown()](https://api.jquery.com/slideDown/){data-tooltip="Display the matched elements with a sliding motion."}
-- [.slideToggle()](https://api.jquery.com/slideToggle/){data-tooltip="Display or hide the matched elements with a sliding motion."}
-- [.slideUp()](https://api.jquery.com/slideUp/){data-tooltip="Hide the matched elements with a sliding motion."}
+- [.slideDown()](https://api.jquery.com/slideDown/){data-tooltip="Exibe os elementos correspondidos com um movimento de deslizamento."}
+- [.slideToggle()](https://api.jquery.com/slideToggle/){data-tooltip="Exibe ou oculta os elementos correspondidos com um movimento de deslizamento."}
+- [.slideUp()](https://api.jquery.com/slideUp/){data-tooltip="Oculta os elementos correspondidos com um movimento de deslizamento."}
 
 {.marker-none .cols-3}
 
-### Custom
+### Personalizados
 
 <!-- prettier-ignore -->
-- [.animate()](https://api.jquery.com/animate/){data-tooltip="Perform a custom animation of a set of CSS properties."}
-- [.clearQueue()](https://api.jquery.com/clearQueue/){data-tooltip="Remove from the queue all items that have not yet been run."}
-- [.delay()](https://api.jquery.com/delay/){data-tooltip="Set a timer to delay execution of subsequent items in the queue."}
-- [.dequeue()](https://api.jquery.com/dequeue/){data-tooltip="Execute the next function on the queue for the matched elements."}
-- [jQuery.dequeue()](https://api.jquery.com/jQuery.dequeue/){data-tooltip="Execute the next function on the queue for the matched element."}
-- [.finish()](https://api.jquery.com/finish/){data-tooltip="Stop the currently-running animation, remove all queued animations, and complete all animations for the matched elements."}
-- [jQuery.fx.interval](https://api.jquery.com/jQuery.fx.interval/){data-tooltip="The rate (in milliseconds) at which animations fire."}
-- [jQuery.fx.off](https://api.jquery.com/jQuery.fx.off/){data-tooltip="Globally disable all animations."}
-- [jQuery.speed](https://api.jquery.com/jQuery.speed/){data-tooltip="Creates an object containing a set of properties ready to be used in the definition of custom animations."}
-- [.queue()](https://api.jquery.com/queue/){data-tooltip="Show the queue of functions to be executed on the matched elements."}
-- [jQuery.queue()](https://api.jquery.com/jQuery.queue/){data-tooltip="Show the queue of functions to be executed on the matched element."}
-- [.stop()](https://api.jquery.com/stop/){data-tooltip="Stop the currently-running animation on the matched elements."}
+- [.animate()](https://api.jquery.com/animate/){data-tooltip="Executa uma animação personalizada de um conjunto de propriedades CSS."}
+- [.clearQueue()](https://api.jquery.com/clearQueue/){data-tooltip="Remove da fila todos os itens que ainda não foram executados."}
+- [.delay()](https://api.jquery.com/delay/){data-tooltip="Define um timer para atrasar a execução dos itens seguintes na fila."}
+- [.dequeue()](https://api.jquery.com/dequeue/){data-tooltip="Executa a próxima função na fila para os elementos correspondidos."}
+- [jQuery.dequeue()](https://api.jquery.com/jQuery.dequeue/){data-tooltip="Executa a próxima função na fila para o elemento correspondido."}
+- [.finish()](https://api.jquery.com/finish/){data-tooltip="Interrompe a animação em execução, remove todas as animações enfileiradas e conclui todas as animações dos elementos correspondidos."}
+- [jQuery.fx.interval](https://api.jquery.com/jQuery.fx.interval/){data-tooltip="A taxa (em milissegundos) com que as animações são disparadas."}
+- [jQuery.fx.off](https://api.jquery.com/jQuery.fx.off/){data-tooltip="Desabilita globalmente todas as animações."}
+- [jQuery.speed](https://api.jquery.com/jQuery.speed/){data-tooltip="Cria um objeto contendo um conjunto de propriedades pronto para ser usado na definição de animações personalizadas."}
+- [.queue()](https://api.jquery.com/queue/){data-tooltip="Mostra a fila de funções a serem executadas nos elementos correspondidos."}
+- [jQuery.queue()](https://api.jquery.com/jQuery.queue/){data-tooltip="Mostra a fila de funções a serem executadas no elemento correspondido."}
+- [.stop()](https://api.jquery.com/stop/){data-tooltip="Interrompe a animação em execução nos elementos correspondidos."}
 
 {.marker-none .cols-3}
 
 ### Fading
 
 <!-- prettier-ignore -->
-- [.fadeIn()](https://api.jquery.com/fadeIn/){data-tooltip="Display the matched elements by fading them to opaque."}
-- [.fadeOut()](https://api.jquery.com/fadeOut/){data-tooltip="Hide the matched elements by fading them to transparent."}
-- [.fadeTo()](https://api.jquery.com/fadeTo/){data-tooltip="Adjust the opacity of the matched elements."}
-- [.fadeToggle()](https://api.jquery.com/fadeToggle/){data-tooltip="Display or hide the matched elements by animating their opacity."}
+- [.fadeIn()](https://api.jquery.com/fadeIn/){data-tooltip="Exibe os elementos correspondidos esmaecendo-os até ficarem opacos."}
+- [.fadeOut()](https://api.jquery.com/fadeOut/){data-tooltip="Oculta os elementos correspondidos esmaecendo-os até ficarem transparentes."}
+- [.fadeTo()](https://api.jquery.com/fadeTo/){data-tooltip="Ajusta a opacidade dos elementos correspondidos."}
+- [.fadeToggle()](https://api.jquery.com/fadeToggle/){data-tooltip="Exibe ou oculta os elementos correspondidos animando sua opacidade."}
 
 {.marker-none .cols-3}
 
-## jQuery Ajax
+## Ajax do jQuery
 
-### Examples {.secondary .row-span-2}
+### Exemplos {.secondary .row-span-2}
 
 ```javascript
 $.ajax({
@@ -619,156 +619,156 @@ $.ajax({
   });
 ```
 
-### Global Ajax Event Handlers
+### Handlers globais de eventos Ajax
 
 <!-- prettier-ignore -->
-- [.ajaxComplete()](https://api.jquery.com/ajaxComplete/){data-tooltip="Register a handler to be called when Ajax requests complete. This is an AjaxEvent."}
-- [.ajaxError()](https://api.jquery.com/ajaxError/){data-tooltip="Register a handler to be called when Ajax requests complete with an error. This is an Ajax Event."}
-- [.ajaxSend()](https://api.jquery.com/ajaxSend/){data-tooltip="Attach a function to be executed before an Ajax request is sent. This is an Ajax Event."}
-- [.ajaxStart()](https://api.jquery.com/ajaxStart/){data-tooltip="Register a handler to be called when the first Ajax request begins. This is an Ajax Event."}
-- [.ajaxStop()](https://api.jquery.com/ajaxStop/){data-tooltip="Register a handler to be called when all Ajax requests have completed. This is an Ajax Event."}
-- [.ajaxSuccess()](https://api.jquery.com/ajaxSuccess/){data-tooltip="Attach a function to be executed whenever an Ajax request completes successfully. This is an Ajax Event."}
+- [.ajaxComplete()](https://api.jquery.com/ajaxComplete/){data-tooltip="Registra um handler a ser chamado quando as requisições Ajax forem concluídas. Este é um AjaxEvent."}
+- [.ajaxError()](https://api.jquery.com/ajaxError/){data-tooltip="Registra um handler a ser chamado quando as requisições Ajax forem concluídas com erro. Este é um Ajax Event."}
+- [.ajaxSend()](https://api.jquery.com/ajaxSend/){data-tooltip="Anexa uma função a ser executada antes de uma requisição Ajax ser enviada. Este é um Ajax Event."}
+- [.ajaxStart()](https://api.jquery.com/ajaxStart/){data-tooltip="Registra um handler a ser chamado quando a primeira requisição Ajax começar. Este é um Ajax Event."}
+- [.ajaxStop()](https://api.jquery.com/ajaxStop/){data-tooltip="Registra um handler a ser chamado quando todas as requisições Ajax forem concluídas. Este é um Ajax Event."}
+- [.ajaxSuccess()](https://api.jquery.com/ajaxSuccess/){data-tooltip="Anexa uma função a ser executada sempre que uma requisição Ajax for concluída com sucesso. Este é um Ajax Event."}
 
 {.marker-none .cols-2}
 
-### Helper Functions
+### Funções auxiliares
 
 <!-- prettier-ignore -->
-- [jQuery.param()](https://api.jquery.com/jQuery.param/){data-tooltip="Create a serialized representation of an array, a plain object, or a jQuery object suitable for use in a URL query string or Ajax request. In case a jQuery object is passed, it should contain input elements with name/value properties."}
-- [.serialize()](https://api.jquery.com/serialize/){data-tooltip="Encode a set of form elements as a string for submission."}
-- [.serializeArray()](https://api.jquery.com/serializeArray/){data-tooltip="Encode a set of form elements as an array of names and values."}
+- [jQuery.param()](https://api.jquery.com/jQuery.param/){data-tooltip="Cria uma representação serializada de um array, de um objeto simples ou de um objeto jQuery adequada para uso em uma query string de URL ou em uma requisição Ajax. Caso um objeto jQuery seja passado, ele deve conter elementos input com propriedades name/value."}
+- [.serialize()](https://api.jquery.com/serialize/){data-tooltip="Codifica um conjunto de elementos de formulário como uma string para envio."}
+- [.serializeArray()](https://api.jquery.com/serializeArray/){data-tooltip="Codifica um conjunto de elementos de formulário como um array de nomes e valores."}
 
 {.marker-none .cols-2}
 
-### Low-Level Interface
+### Interface de baixo nível
 
 <!-- prettier-ignore -->
-- [jQuery.ajax()](https://api.jquery.com/jQuery.ajax/){data-tooltip="Perform an asynchronous HTTP (Ajax) request."}
-- [jQuery.prefilter()](https://api.jquery.com/jQuery.ajaxPrefilter/){data-tooltip="Handle custom Ajax options or modify existing options before each request is sent and before they are processed by $.ajax()."}
-- [jQuery.ajaxSetup()](https://api.jquery.com/jQuery.ajaxSetup/){data-tooltip="Set default values for future Ajax requests. Its use is not recommended."}
-- [jQuery.ajaxTransport()](https://api.jquery.com/jQuery.ajaxTransport/){data-tooltip="Creates an object that handles the actual transmission of Ajax data."}
+- [jQuery.ajax()](https://api.jquery.com/jQuery.ajax/){data-tooltip="Executa uma requisição HTTP (Ajax) assíncrona."}
+- [jQuery.prefilter()](https://api.jquery.com/jQuery.ajaxPrefilter/){data-tooltip="Trata opções Ajax personalizadas ou modifica opções existentes antes de cada requisição ser enviada e antes de serem processadas por $.ajax()."}
+- [jQuery.ajaxSetup()](https://api.jquery.com/jQuery.ajaxSetup/){data-tooltip="Define valores padrão para futuras requisições Ajax. Seu uso não é recomendado."}
+- [jQuery.ajaxTransport()](https://api.jquery.com/jQuery.ajaxTransport/){data-tooltip="Cria um objeto que trata a transmissão efetiva dos dados Ajax."}
 
 {.marker-none .cols-2}
 
-### Shorthand Methods
+### Métodos abreviados
 
 <!-- prettier-ignore -->
-- [jQuery.get()](https://api.jquery.com/jQuery.get/){data-tooltip="Load data from the server using a HTTP GET request."}
-- [jQuery.getJSON()](https://api.jquery.com/jQuery.getJSON/){data-tooltip="Load JSON-encoded data from the server using a GET HTTP request."}
-- [jQuery.getScript()](https://api.jquery.com/jQuery.getScript/){data-tooltip="Load a JavaScript file from the server using a GET HTTP request, then execute it."}
-- [jQuery.post()](https://api.jquery.com/jQuery.post/){data-tooltip="Send data to the server using a HTTP POST request."}
-- [.load()](https://api.jquery.com/load/){data-tooltip="Load data from the server and place the returned HTML into the matched elements."}
+- [jQuery.get()](https://api.jquery.com/jQuery.get/){data-tooltip="Carrega dados do servidor usando uma requisição HTTP GET."}
+- [jQuery.getJSON()](https://api.jquery.com/jQuery.getJSON/){data-tooltip="Carrega dados codificados em JSON do servidor usando uma requisição HTTP GET."}
+- [jQuery.getScript()](https://api.jquery.com/jQuery.getScript/){data-tooltip="Carrega um arquivo JavaScript do servidor usando uma requisição HTTP GET e, em seguida, executa-o."}
+- [jQuery.post()](https://api.jquery.com/jQuery.post/){data-tooltip="Envia dados ao servidor usando uma requisição HTTP POST."}
+- [.load()](https://api.jquery.com/load/){data-tooltip="Carrega dados do servidor e coloca o HTML retornado nos elementos correspondidos."}
 
 {.marker-none .cols-2}
 
-## Miscellaneous
+## Diversos
 
-### jQuery Object
+### Objeto jQuery
 
 <!-- prettier-ignore -->
-- [jQuery()](https://api.jquery.com/jQuery/){data-tooltip="Accepts a string containing a CSS selector which is then used to match a set of elements."}
-- [jQuery.noConflict()](https://api.jquery.com/jQuery.noConflict/){data-tooltip="Relinquish jQuery&apos;s control of the $ variable."}
-- [jQuery.sub()](https://api.jquery.com/jQuery.sub/){data-tooltip="Creates a new copy of jQuery whose properties and methods can be modified without affecting the original jQuery object."}
-- [jQuery.holdReady()](https://api.jquery.com/jQuery.holdReady/){data-tooltip="Holds or releases the execution of jQuery&apos;s ready event."}
-- [jQuery.when()](https://api.jquery.com/jQuery.when/){data-tooltip="Provides a way to execute callback functions based on zero or more Thenable objects, usually Deferred objects that represent asynchronous events."}
+- [jQuery()](https://api.jquery.com/jQuery/){data-tooltip="Aceita uma string contendo um seletor CSS que é então usado para corresponder a um conjunto de elementos."}
+- [jQuery.noConflict()](https://api.jquery.com/jQuery.noConflict/){data-tooltip="Abre mão do controle do jQuery sobre a variável $."}
+- [jQuery.sub()](https://api.jquery.com/jQuery.sub/){data-tooltip="Cria uma nova cópia do jQuery cujas propriedades e métodos podem ser modificados sem afetar o objeto jQuery original."}
+- [jQuery.holdReady()](https://api.jquery.com/jQuery.holdReady/){data-tooltip="Segura ou libera a execução do evento ready do jQuery."}
+- [jQuery.when()](https://api.jquery.com/jQuery.when/){data-tooltip="Fornece uma maneira de executar funções de callback com base em zero ou mais objetos Thenable, geralmente objetos Deferred que representam eventos assíncronos."}
 
 {.marker-none .cols-2}
 
-### Deferred Object {.row-span-2}
+### Objeto Deferred {.row-span-2}
 
 <!-- prettier-ignore -->
-- [jQuery.Deferred()](https://api.jquery.com/jQuery.Deferred/){data-tooltip=" A factory function that returns a chainable utility object with methods to register multiple callbacks into callback queues, invoke callback queues, and relay the success or failure state of any synchronous or asynchronous function."}
-- [deferred.always()](https://api.jquery.com/deferred.always/){data-tooltip=" Add handlers to be called when the Deferred object is either resolved or rejected. "}
-- [deferred.done()](https://api.jquery.com/deferred.done/){data-tooltip=" Add handlers to be called when the Deferred object is resolved. "}
-- [deferred.fail()](https://api.jquery.com/deferred.fail/){data-tooltip=" Add handlers to be called when the Deferred object is rejected. "}
-- [deferred.isRejected()](https://api.jquery.com/deferred.isRejected/){data-tooltip=" Determine whether a Deferred object has been rejected. "}
-- [deferred.isResolved()](https://api.jquery.com/deferred.isResolved/){data-tooltip=" Determine whether a Deferred object has been resolved. "}
-- [deferred.notify()](https://api.jquery.com/deferred.notify/){data-tooltip=" Call the progressCallbacks on a Deferred object with the given args. "}
-- [deferred.notifyWith()](https://api.jquery.com/deferred.notifyWith/){data-tooltip=" Call the progressCallbacks on a Deferred object with the given context and args. "}
-- [deferred.pipe()](https://api.jquery.com/deferred.pipe/){data-tooltip=" Utility method to filter and/or chain Deferreds.  "}
-- [deferred.progress()](https://api.jquery.com/deferred.progress/){data-tooltip=" Add handlers to be called when the Deferred object generates progress notifications."}
-- [deferred.promise()](https://api.jquery.com/deferred.promise/){data-tooltip=" Return a Deferred&apos;s Promise object. "}
-- [deferred.reject()](https://api.jquery.com/deferred.reject/){data-tooltip=" Reject a Deferred object and call any failCallbacks with the given args. "}
-- [deferred.rejectWith()](https://api.jquery.com/deferred.rejectWith/){data-tooltip=" Reject a Deferred object and call any failCallbacks with the given context and args. "}
-- [deferred.resolve()](https://api.jquery.com/deferred.resolve/){data-tooltip=" Resolve a Deferred object and call any doneCallbacks with the given args. "}
-- [deferred.resolveWith()](https://api.jquery.com/deferred.resolveWith/){data-tooltip=" Resolve a Deferred object and call any doneCallbacks with the given context and args. "}
-- [deferred.state()](https://api.jquery.com/deferred.state/){data-tooltip="Determine the current state of a Deferred object. "}
-- [deferred.then()](https://api.jquery.com/deferred.then/){data-tooltip="Add handlers to be called when the Deferred object is resolved, rejected, or still in progress. "}
-- [.promise()](https://api.jquery.com/promise/){data-tooltip=" Return a Promise object to observe when all actions of a certain type bound to the collection, queued or not, have finished. "}
+- [jQuery.Deferred()](https://api.jquery.com/jQuery.Deferred/){data-tooltip=" Uma função factory que retorna um objeto utilitário encadeável com métodos para registrar múltiplos callbacks em filas de callbacks, invocar filas de callbacks e repassar o estado de sucesso ou falha de qualquer função síncrona ou assíncrona."}
+- [deferred.always()](https://api.jquery.com/deferred.always/){data-tooltip=" Adiciona handlers a serem chamados quando o objeto Deferred for resolvido ou rejeitado. "}
+- [deferred.done()](https://api.jquery.com/deferred.done/){data-tooltip=" Adiciona handlers a serem chamados quando o objeto Deferred for resolvido. "}
+- [deferred.fail()](https://api.jquery.com/deferred.fail/){data-tooltip=" Adiciona handlers a serem chamados quando o objeto Deferred for rejeitado. "}
+- [deferred.isRejected()](https://api.jquery.com/deferred.isRejected/){data-tooltip=" Determina se um objeto Deferred foi rejeitado. "}
+- [deferred.isResolved()](https://api.jquery.com/deferred.isResolved/){data-tooltip=" Determina se um objeto Deferred foi resolvido. "}
+- [deferred.notify()](https://api.jquery.com/deferred.notify/){data-tooltip=" Chama os progressCallbacks de um objeto Deferred com os args informados. "}
+- [deferred.notifyWith()](https://api.jquery.com/deferred.notifyWith/){data-tooltip=" Chama os progressCallbacks de um objeto Deferred com o contexto e os args informados. "}
+- [deferred.pipe()](https://api.jquery.com/deferred.pipe/){data-tooltip=" Método utilitário para filtrar e/ou encadear Deferreds.  "}
+- [deferred.progress()](https://api.jquery.com/deferred.progress/){data-tooltip=" Adiciona handlers a serem chamados quando o objeto Deferred gerar notificações de progresso."}
+- [deferred.promise()](https://api.jquery.com/deferred.promise/){data-tooltip=" Retorna o objeto Promise de um Deferred. "}
+- [deferred.reject()](https://api.jquery.com/deferred.reject/){data-tooltip=" Rejeita um objeto Deferred e chama os failCallbacks com os args informados. "}
+- [deferred.rejectWith()](https://api.jquery.com/deferred.rejectWith/){data-tooltip=" Rejeita um objeto Deferred e chama os failCallbacks com o contexto e os args informados. "}
+- [deferred.resolve()](https://api.jquery.com/deferred.resolve/){data-tooltip=" Resolve um objeto Deferred e chama os doneCallbacks com os args informados. "}
+- [deferred.resolveWith()](https://api.jquery.com/deferred.resolveWith/){data-tooltip=" Resolve um objeto Deferred e chama os doneCallbacks com o contexto e os args informados. "}
+- [deferred.state()](https://api.jquery.com/deferred.state/){data-tooltip="Determina o estado atual de um objeto Deferred. "}
+- [deferred.then()](https://api.jquery.com/deferred.then/){data-tooltip="Adiciona handlers a serem chamados quando o objeto Deferred for resolvido, rejeitado ou ainda estiver em andamento. "}
+- [.promise()](https://api.jquery.com/promise/){data-tooltip=" Retorna um objeto Promise para observar quando todas as ações de um determinado tipo vinculadas à coleção, enfileiradas ou não, tiverem terminado. "}
 
 {.marker-none .cols-2}
 
-### Utilities {.row-span-3}
+### Utilitários {.row-span-3}
 
 <!-- prettier-ignore -->
-- [jQuery.boxModel](https://api.jquery.com/jQuery.boxModel/){data-tooltip="States if the current page, in the user&apos;s browser, is being rendered using the W3C CSS Box Model."}
-- [jQuery.browser](https://api.jquery.com/jQuery.browser/){data-tooltip="Contains flags for the useragent, read from navigator.userAgent. This property was removed in jQuery 1.9 and is available only through the jQuery.migrate plugin. Please try to use feature detection instead."}
-- [jQuery.contains()](https://api.jquery.com/jQuery.contains/){data-tooltip="Check to see if a DOM element is a descendant of another DOM element."}
-- [jQuery.each()](https://api.jquery.com/jQuery.each/){data-tooltip="A generic iterator function, which can be used to seamlessly iterate over both objects and arrays. Arrays and array-like objects with a length property (such as a function&apos;s arguments object) are iterated by numeric index, from 0 to length-1. Other objects are iterated via their named properties."}
-- [jQuery.extend()](https://api.jquery.com/jQuery.extend/){data-tooltip="Merge the contents of two or more objects together into the first object."}
-- [jQuery.globalEval()](https://api.jquery.com/jQuery.globalEval/){data-tooltip="Execute some JavaScript code globally."}
-- [jQuery.grep()](https://api.jquery.com/jQuery.grep/){data-tooltip="Finds the elements of an array which satisfy a filter function. The original array is not affected."}
-- [jQuery.inArray()](https://api.jquery.com/jQuery.inArray/){data-tooltip="Search for a specified value within an array and return its index (or -1 if not found)."}
-- [jQuery.isArray()](https://api.jquery.com/jQuery.isArray/){data-tooltip="Determine whether the argument is an array."}
-- [jQuery.isEmptyObject()](https://api.jquery.com/jQuery.isEmptyObject/){data-tooltip="Check to see if an object is empty (contains no enumerable properties)."}
-- [jQuery.isFunction()](https://api.jquery.com/jQuery.isFunction/){data-tooltip="Determines if its argument is callable as a function."}
-- [jQuery.isNumeric()](https://api.jquery.com/jQuery.isNumeric/){data-tooltip="Determines whether its argument represents a JavaScript number."}
-- [jQuery.isPlainObject()](https://api.jquery.com/jQuery.isPlainObject/){data-tooltip="Check to see if an object is a plain object."}
-- [jQuery.isWindow()](https://api.jquery.com/jQuery.isWindow/){data-tooltip="Determine whether the argument is a window."}
-- [jQuery.isXMLDoc()](https://api.jquery.com/jQuery.isXMLDoc/){data-tooltip="Check to see if a DOM node is within an XML document (or is an XML document)."}
-- [jQuery.makeArray()](https://api.jquery.com/jQuery.makeArray/){data-tooltip="Convert an array-like object into a true JavaScript array."}
-- [jQuery.map()](https://api.jquery.com/jQuery.map/){data-tooltip="Translate all items in an array or object to new array of items."}
-- [jQuery.merge()](https://api.jquery.com/jQuery.merge/){data-tooltip="Merge the contents of two arrays together into the first array. "}
-- [jQuery.noop()](https://api.jquery.com/jQuery.noop/){data-tooltip="An empty function."}
-- [jQuery.now()](https://api.jquery.com/jQuery.now/){data-tooltip="Return a number representing the current time."}
-- [jQuery.parseHTML()](https://api.jquery.com/jQuery.parseHTML/){data-tooltip="Parses a string into an array of DOM nodes."}
-- [jQuery.parseJSON()](https://api.jquery.com/jQuery.parseJSON/){data-tooltip="Takes a well-formed JSON string and returns the resulting JavaScript value."}
-- [jQuery.parseXML()](https://api.jquery.com/jQuery.parseXML/){data-tooltip="Parses a string into an XML document."}
-- [jQuery.proxy()](https://api.jquery.com/jQuery.proxy/){data-tooltip="Takes a function and returns a new one that will always have a particular context."}
-- [jQuery.support](https://api.jquery.com/jQuery.support/){data-tooltip="A collection of properties that represent the presence of different browser features or bugs. Intended for jQuery&apos;s internal use; specific properties may be removed when they are no longer needed internally to improve page startup performance. For your own project&apos;s feature-detection needs, we strongly recommend the use of an external library such as Modernizr instead of dependency on properties in jQuery.support."}
-- [jQuery.trim()](https://api.jquery.com/jQuery.trim/){data-tooltip="Remove the whitespace from the beginning and end of a string."}
-- [jQuery.type()](https://api.jquery.com/jQuery.type/){data-tooltip="Determine the internal JavaScript [[Class]] of an object."}
-- [jQuery.unique()](https://api.jquery.com/jQuery.unique/){data-tooltip="Sorts an array of DOM elements, in place, with the duplicates removed. Note that this only works on arrays of DOM elements, not strings or numbers."}
-- [jQuery.uniqueSort()](https://api.jquery.com/jQuery.uniqueSort/){data-tooltip="Sorts an array of DOM elements, in place, with the duplicates removed. Note that this only works on arrays of DOM elements, not strings or numbers."}
+- [jQuery.boxModel](https://api.jquery.com/jQuery.boxModel/){data-tooltip="Indica se a página atual, no navegador do usuário, está sendo renderizada usando o W3C CSS Box Model."}
+- [jQuery.browser](https://api.jquery.com/jQuery.browser/){data-tooltip="Contém flags do useragent, lidas de navigator.userAgent. Esta propriedade foi removida no jQuery 1.9 e está disponível apenas por meio do plugin jQuery.migrate. Em vez disso, prefira usar detecção de recursos."}
+- [jQuery.contains()](https://api.jquery.com/jQuery.contains/){data-tooltip="Verifica se um elemento do DOM é descendente de outro elemento do DOM."}
+- [jQuery.each()](https://api.jquery.com/jQuery.each/){data-tooltip="Uma função iteradora genérica que pode ser usada para iterar de forma transparente por objetos e arrays. Arrays e objetos semelhantes a arrays com uma propriedade length (como o objeto arguments de uma função) são iterados por índice numérico, de 0 a length-1. Outros objetos são iterados por suas propriedades nomeadas."}
+- [jQuery.extend()](https://api.jquery.com/jQuery.extend/){data-tooltip="Mescla o conteúdo de dois ou mais objetos no primeiro objeto."}
+- [jQuery.globalEval()](https://api.jquery.com/jQuery.globalEval/){data-tooltip="Executa algum código JavaScript globalmente."}
+- [jQuery.grep()](https://api.jquery.com/jQuery.grep/){data-tooltip="Encontra os elementos de um array que satisfazem uma função de filtro. O array original não é afetado."}
+- [jQuery.inArray()](https://api.jquery.com/jQuery.inArray/){data-tooltip="Procura um valor especificado dentro de um array e retorna seu index (ou -1 se não for encontrado)."}
+- [jQuery.isArray()](https://api.jquery.com/jQuery.isArray/){data-tooltip="Determina se o argumento é um array."}
+- [jQuery.isEmptyObject()](https://api.jquery.com/jQuery.isEmptyObject/){data-tooltip="Verifica se um objeto está vazio (não contém propriedades enumeráveis)."}
+- [jQuery.isFunction()](https://api.jquery.com/jQuery.isFunction/){data-tooltip="Determina se seu argumento pode ser chamado como função."}
+- [jQuery.isNumeric()](https://api.jquery.com/jQuery.isNumeric/){data-tooltip="Determina se seu argumento representa um número JavaScript."}
+- [jQuery.isPlainObject()](https://api.jquery.com/jQuery.isPlainObject/){data-tooltip="Verifica se um objeto é um objeto simples."}
+- [jQuery.isWindow()](https://api.jquery.com/jQuery.isWindow/){data-tooltip="Determina se o argumento é um window."}
+- [jQuery.isXMLDoc()](https://api.jquery.com/jQuery.isXMLDoc/){data-tooltip="Verifica se um nó do DOM está dentro de um documento XML (ou é um documento XML)."}
+- [jQuery.makeArray()](https://api.jquery.com/jQuery.makeArray/){data-tooltip="Converte um objeto semelhante a array em um array JavaScript de verdade."}
+- [jQuery.map()](https://api.jquery.com/jQuery.map/){data-tooltip="Transforma todos os itens de um array ou objeto em um novo array de itens."}
+- [jQuery.merge()](https://api.jquery.com/jQuery.merge/){data-tooltip="Mescla o conteúdo de dois arrays no primeiro array. "}
+- [jQuery.noop()](https://api.jquery.com/jQuery.noop/){data-tooltip="Uma função vazia."}
+- [jQuery.now()](https://api.jquery.com/jQuery.now/){data-tooltip="Retorna um número que representa a hora atual."}
+- [jQuery.parseHTML()](https://api.jquery.com/jQuery.parseHTML/){data-tooltip="Analisa uma string em um array de nós do DOM."}
+- [jQuery.parseJSON()](https://api.jquery.com/jQuery.parseJSON/){data-tooltip="Recebe uma string JSON bem formada e retorna o valor JavaScript resultante."}
+- [jQuery.parseXML()](https://api.jquery.com/jQuery.parseXML/){data-tooltip="Analisa uma string em um documento XML."}
+- [jQuery.proxy()](https://api.jquery.com/jQuery.proxy/){data-tooltip="Recebe uma função e retorna uma nova função que sempre terá um contexto específico."}
+- [jQuery.support](https://api.jquery.com/jQuery.support/){data-tooltip="Uma coleção de propriedades que representam a presença de diferentes recursos ou bugs do navegador. Destinada ao uso interno do jQuery; propriedades específicas podem ser removidas quando não forem mais necessárias internamente para melhorar o desempenho de inicialização da página. Para as necessidades de detecção de recursos do seu próprio projeto, recomendamos fortemente o uso de uma biblioteca externa como o Modernizr em vez de depender de propriedades em jQuery.support."}
+- [jQuery.trim()](https://api.jquery.com/jQuery.trim/){data-tooltip="Remove os espaços em branco do início e do fim de uma string."}
+- [jQuery.type()](https://api.jquery.com/jQuery.type/){data-tooltip="Determina o [[Class]] interno do JavaScript de um objeto."}
+- [jQuery.unique()](https://api.jquery.com/jQuery.unique/){data-tooltip="Ordena um array de elementos do DOM, no local, removendo as duplicatas. Observe que isso funciona apenas com arrays de elementos do DOM, não com strings ou números."}
+- [jQuery.uniqueSort()](https://api.jquery.com/jQuery.uniqueSort/){data-tooltip="Ordena um array de elementos do DOM, no local, removendo as duplicatas. Observe que isso funciona apenas com arrays de elementos do DOM, não com strings ou números."}
 
 {.marker-none .cols-2}
 
-### DOM Element Methods
+### Métodos de elementos do DOM
 
 <!-- prettier-ignore -->
-- [.get()](https://api.jquery.com/get/){data-tooltip="Retrieve one of the elements matched by the jQuery object."}
-- [.index()](https://api.jquery.com/index/){data-tooltip="Search for a given element from among the matched elements."}
-- [.size()](https://api.jquery.com/size/){data-tooltip="Return the number of elements in the jQuery object."}
-- [.toArray()](https://api.jquery.com/toArray/){data-tooltip="Retrieve all the elements contained in the jQuery set, as an array."}
+- [.get()](https://api.jquery.com/get/){data-tooltip="Recupera um dos elementos correspondidos pelo objeto jQuery."}
+- [.index()](https://api.jquery.com/index/){data-tooltip="Procura um determinado elemento entre os elementos correspondidos."}
+- [.size()](https://api.jquery.com/size/){data-tooltip="Retorna o número de elementos no objeto jQuery."}
+- [.toArray()](https://api.jquery.com/toArray/){data-tooltip="Recupera todos os elementos contidos no conjunto jQuery, como um array."}
 
 {.marker-none .cols-2}
 
-### Internals
+### Internos
 
 <!-- prettier-ignore -->
-- [.jquery](https://api.jquery.com/jquery-2/){data-tooltip="A string containing the jQuery version number."}
-- [.context](https://api.jquery.com/context/){data-tooltip="The DOM node context originally passed to jQuery(); if none was passed then context will likely be the document."}
-- [jQuery.error()](https://api.jquery.com/jQuery.error/){data-tooltip="Takes a string and throws an exception containing it."}
-- [.length](https://api.jquery.com/length/){data-tooltip="The number of elements in the jQuery object."}
-- [.pushStack()](https://api.jquery.com/pushStack/){data-tooltip="Add a collection of DOM elements onto the jQuery stack."}
-- [.selector](https://api.jquery.com/selector/){data-tooltip="A selector representing selector passed to jQuery(), if any, when creating the original set."}
+- [.jquery](https://api.jquery.com/jquery-2/){data-tooltip="Uma string contendo o número da versão do jQuery."}
+- [.context](https://api.jquery.com/context/){data-tooltip="O contexto do nó do DOM originalmente passado para jQuery(); se nenhum foi passado, o contexto provavelmente será o document."}
+- [jQuery.error()](https://api.jquery.com/jQuery.error/){data-tooltip="Recebe uma string e lança uma exceção contendo essa string."}
+- [.length](https://api.jquery.com/length/){data-tooltip="O número de elementos no objeto jQuery."}
+- [.pushStack()](https://api.jquery.com/pushStack/){data-tooltip="Adiciona uma coleção de elementos do DOM à pilha do jQuery."}
+- [.selector](https://api.jquery.com/selector/){data-tooltip="Um seletor que representa o seletor passado para jQuery(), se houver, ao criar o conjunto original."}
 
 {.marker-none .cols-2}
 
-### Callbacks Object
+### Objeto Callbacks
 
 <!-- prettier-ignore -->
-- [jQuery.Callbacks()](https://api.jquery.com/jQuery.Callbacks/){data-tooltip="A multi-purpose callbacks list object that provides a powerful way to manage callback lists."}
-- [callbacks.add()](https://api.jquery.com/callbacks.add/){data-tooltip="Add a callback or a collection of callbacks to a callback list."}
-- [callbacks.disable()](https://api.jquery.com/callbacks.disable/){data-tooltip="Disable a callback list from doing anything more."}
-- [callbacks.disabled()](https://api.jquery.com/callbacks.disabled/){data-tooltip="Determine if the callbacks list has been disabled."}
-- [callbacks.empty()](https://api.jquery.com/callbacks.empty/){data-tooltip="Remove all of the callbacks from a list."}
-- [callbacks.fire()](https://api.jquery.com/callbacks.fire/){data-tooltip="Call all of the callbacks with the given arguments."}
-- [callbacks.fired()](https://api.jquery.com/callbacks.fired/){data-tooltip="Determine if the callbacks have already been called at least once."}
-- [callbacks.fireWith()](https://api.jquery.com/callbacks.fireWith/){data-tooltip="Call all callbacks in a list with the given context and arguments."}
-- [callbacks.has()](https://api.jquery.com/callbacks.has/){data-tooltip="Determine whether or not the list has any callbacks attached. If a callback is provided as an argument, determine whether it is in a list."}
-- [callbacks.lock()](https://api.jquery.com/callbacks.lock/){data-tooltip="Lock a callback list in its current state."}
-- [callbacks.locked()](https://api.jquery.com/callbacks.locked/){data-tooltip="Determine if the callbacks list has been locked."}
-- [callbacks.remove()](https://api.jquery.com/callbacks.remove/){data-tooltip="Remove a callback or a collection of callbacks from a callback list."}
+- [jQuery.Callbacks()](https://api.jquery.com/jQuery.Callbacks/){data-tooltip="Um objeto de lista de callbacks multiuso que oferece uma maneira poderosa de gerenciar listas de callbacks."}
+- [callbacks.add()](https://api.jquery.com/callbacks.add/){data-tooltip="Adiciona um callback ou uma coleção de callbacks a uma lista de callbacks."}
+- [callbacks.disable()](https://api.jquery.com/callbacks.disable/){data-tooltip="Desabilita uma lista de callbacks, impedindo que ela faça qualquer outra coisa."}
+- [callbacks.disabled()](https://api.jquery.com/callbacks.disabled/){data-tooltip="Determina se a lista de callbacks foi desabilitada."}
+- [callbacks.empty()](https://api.jquery.com/callbacks.empty/){data-tooltip="Remove todos os callbacks de uma lista."}
+- [callbacks.fire()](https://api.jquery.com/callbacks.fire/){data-tooltip="Chama todos os callbacks com os argumentos informados."}
+- [callbacks.fired()](https://api.jquery.com/callbacks.fired/){data-tooltip="Determina se os callbacks já foram chamados pelo menos uma vez."}
+- [callbacks.fireWith()](https://api.jquery.com/callbacks.fireWith/){data-tooltip="Chama todos os callbacks de uma lista com o contexto e os argumentos informados."}
+- [callbacks.has()](https://api.jquery.com/callbacks.has/){data-tooltip="Determina se a lista tem ou não callbacks anexados. Se um callback for fornecido como argumento, determina se ele está na lista."}
+- [callbacks.lock()](https://api.jquery.com/callbacks.lock/){data-tooltip="Bloqueia uma lista de callbacks em seu estado atual."}
+- [callbacks.locked()](https://api.jquery.com/callbacks.locked/){data-tooltip="Determina se a lista de callbacks foi bloqueada."}
+- [callbacks.remove()](https://api.jquery.com/callbacks.remove/){data-tooltip="Remove um callback ou uma coleção de callbacks de uma lista de callbacks."}
 
 {.marker-none .cols-2}

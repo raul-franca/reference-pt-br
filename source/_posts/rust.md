@@ -4,14 +4,14 @@ date: 2022-01-01 11:51:44
 background: bg-black
 tags:
 categories:
-  - Programming
+  - Programação
 intro: |
-  The Rust quick reference cheat sheet that aims at providing help on writing basic syntax and methods.
+  O cheat sheet de referência rápida do Rust que ajuda a escrever a sintaxe básica e os métodos.
 plugins:
   - copyCode
 ---
 
-## Getting Started
+## Primeiros passos
 
 ### Hello_World.rs
 
@@ -21,7 +21,7 @@ fn main() {
 }
 ```
 
-#### Compiling and Running
+#### Compilando e executando
 
 ```shell
 $ rustc Hello_World.rs
@@ -29,21 +29,21 @@ $ ./Hello_World
 Hello, World!
 ```
 
-### Primitive types
+### Tipos primitivos
 
-|                           |                                 |
-| ------------------------- | :------------------------------ |
-| `bool`                    | Boolean (`true` _/_ `false`)    |
-| `char`                    | character                       |
-| `f32`, `f64`              | 32-bits, 64-bits floats         |
-| `i64`, `i32`, `i16`, `i8` | signed 16- ... integers         |
-| `u64`, `u32`, `u16`, `u8` | unsigned 16-bits, ... integers  |
-| `isize`                   | pointer-sized signed integers   |
-| `usize`                   | pointer-sized unsigned integers |
+|                           |                                              |
+| ------------------------- | :------------------------------------------- |
+| `bool`                    | Booleano (`true` _/_ `false`)                |
+| `char`                    | caractere                                    |
+| `f32`, `f64`              | floats de 32 bits e 64 bits                  |
+| `i64`, `i32`, `i16`, `i8` | inteiros com sinal de 16 bits...             |
+| `u64`, `u32`, `u16`, `u8` | inteiros sem sinal de 16 bits...             |
+| `isize`                   | inteiros com sinal do tamanho de um ponteiro |
+| `usize`                   | inteiros sem sinal do tamanho de um ponteiro |
 
-See: [Rust Types](#rust-types)
+Veja: [Tipos do Rust](#rust-types)
 
-### Formatting {.row-span-2}
+### Formatação {.row-span-2}
 
 ```rust {.wrap}
 // Single Placeholder
@@ -78,7 +78,7 @@ let x = "world";
 println!("Hello {x}!");
 ```
 
-### Printing Styles
+### Estilos de impressão
 
 ```rust
 // Prints the output
@@ -94,7 +94,7 @@ eprint!("This is an error\n");
 eprintln!("This is an error with new line");
 ```
 
-### Variables
+### Variáveis
 
 ```rust
 // Initializing and declaring a variable
@@ -110,7 +110,7 @@ let (name, age) = ("ElementalX", 20);
 const SCREAMING_SNAKE_CASE: i64 = 9;
 ```
 
-### Comments
+### Comentários
 
 ```rust
 // Line Comments
@@ -119,9 +119,9 @@ const SCREAMING_SNAKE_CASE: i64 = 9;
 //! Inner doc comments
 ```
 
-See: [Comment](https://doc.rust-lang.org/reference/comments.html)
+Veja: [Comentários](https://doc.rust-lang.org/reference/comments.html)
 
-### Functions
+### Funções
 
 ```rust
 fn test() {
@@ -133,11 +133,11 @@ fn main() {
 }
 ```
 
-See: [Functions](#rust-functions)
+Veja: [Funções](#rust-functions)
 
-## Rust Types
+## Tipos do Rust
 
-### Integer
+### Inteiros
 
 ```rust
 let mut a: u32 = 8;
@@ -146,7 +146,7 @@ let c: i64 = 8999;
 let d = -90;
 ```
 
-### Floating-Point
+### Ponto flutuante
 
 ```rust
 let mut sixty_bit_float: f64 = 89.90;
@@ -154,7 +154,7 @@ let thirty_two_bit_float: f32 = 7.90;
 let just_a_float = 69.69;
 ```
 
-### Boolean
+### Booleano
 
 ```rust {.wrap}
 let true_val: bool = true;
@@ -163,7 +163,7 @@ let just_a_bool = true;
 let is_true = 8 < 5; // => false
 ```
 
-### Character
+### Caractere
 
 ```rust
 let first_letter_of_alphabet = 'a';
@@ -172,7 +172,7 @@ let implicit_char = '8';
 let emoji = "\u{1f600}"; // => 😀
 ```
 
-### String Literal
+### String literal
 
 ```rust {.wrap}
 let community_name = "AXIAL";
@@ -181,7 +181,7 @@ let no_of_members: &str = "ten";
 println!("The name of the community is {community_name} and it has {no_of_members} members");
 ```
 
-See: [Strings](#rust-strings)
+Veja: [Strings](#rust-strings)
 
 ### Arrays
 
@@ -198,7 +198,7 @@ See: [Strings](#rust-strings)
 let array: [i64; 6] = [92, 97, 98, 99, 98, 94];
 ```
 
-### Multi-Dimensional Array {.row-span-2}
+### Array multidimensional {.row-span-2}
 
 ```rust
      j0   j1   j2   j3   j4   j5
@@ -218,7 +218,7 @@ let array: [[i64; 6]; 2] = [
 ];
 ```
 
-### Mutable Array
+### Array mutável
 
 ```rust
 let mut array: [i32; 3] = [2, 6, 10];
@@ -227,7 +227,7 @@ array[1] = 4;
 array[2] = 6;
 ```
 
-Use the `mut` keyword to make it mutable.
+Use a palavra-chave `mut` para torná-lo mutável.
 
 ### Slices
 
@@ -238,23 +238,23 @@ let mut slices: &[i64] = &array[0..3]; // Lower range is inclusive and upper ran
 println!("The elements of the slices are : {slices:?}");
 ```
 
-### Vectors
+### Vetores
 
 ```rust
 let some_vector = vec![1, 2, 3, 4, 5];
 ```
 
-A vector is declared using the `vec!` macro.
+Um vetor é declarado usando a macro `vec!`.
 
-### Tuples
+### Tuplas
 
 ```rust
 let tuple = (1, 'A', "Cool", 78, true);
 ```
 
-## Rust Strings
+## Strings do Rust
 
-### String Literal
+### String literal
 
 ```rust
 let cs: &str = "cheat sheet";
@@ -263,7 +263,7 @@ let cs: &str = "cheat sheet";
 println!("Share {cs} for developers");
 ```
 
-### String Object
+### Objeto String
 
 ```rust
 // Creating an empty string object
@@ -284,7 +284,7 @@ let rand = String::from("Random String");
 rand.capacity() // => 13
 ```
 
-Calculates the capacity of the string in bytes.
+Calcula a capacidade da string em bytes.
 
 ### .contains()
 
@@ -293,16 +293,16 @@ let name = String::from("ElementalX");
 name.contains("Element") // => true
 ```
 
-Checks if the substring is contained inside the original string or not.
+Verifica se a substring está contida na string original.
 
-### Pushing a single character
+### Adicionando um único caractere
 
 ```rust
 let mut half_text = String::from("Hal");
 half_text.push('f'); // => Half
 ```
 
-### Pushing an entire String
+### Adicionando uma String inteira
 
 ```rust
 let mut hi = String::from("Hey there...");
@@ -312,18 +312,18 @@ hi.push_str("How are you doing??");
 println!("{hi}");
 ```
 
-## Rust Operators
+## Operadores do Rust
 
-### Comparison Operators
+### Operadores de comparação
 
-|          |                                  |
-| -------- | :------------------------------- |
-| `e == f` | `e` is equal to `f`              |
-| `e != f` | `e` is NOT equal to `f`          |
-| `e < f`  | `e` is less than `f`             |
-| `e > f`  | `e` is greater than `f`          |
-| `e <= f` | `e` is less than or equal to `f` |
-| `e >= f` | `e` is greater or equal to `f`   |
+|          |                            |
+| -------- | :------------------------- |
+| `e == f` | `e` é igual a `f`          |
+| `e != f` | `e` NÃO é igual a `f`      |
+| `e < f`  | `e` é menor que `f`        |
+| `e > f`  | `e` é maior que `f`        |
+| `e <= f` | `e` é menor ou igual a `f` |
+| `e >= f` | `e` é maior ou igual a `f` |
 
 ---
 
@@ -338,15 +338,15 @@ let equal_to = e == f;      // => false
 let not_equal_to = e != f;  // => true
 ```
 
-### Arithmetic Operators
+### Operadores aritméticos
 
-|          |                                            |
-| -------- | :----------------------------------------- |
-| `a +  b` | `a` is added to `b`                        |
-| `a -  b` | `b` is subtracted from `a`                 |
-| `a /  b` | `a` is divided by `b`                      |
-| `a % b`  | Gets remainder of `a` by dividing with `b` |
-| `a * b`  | `a` is multiplied with `b`                 |
+|          |                                         |
+| -------- | :-------------------------------------- |
+| `a +  b` | `a` é somado a `b`                      |
+| `a -  b` | `b` é subtraído de `a`                  |
+| `a /  b` | `a` é dividido por `b`                  |
+| `a % b`  | Obtém o resto da divisão de `a` por `b` |
+| `a * b`  | `a` é multiplicado por `b`              |
 
 ---
 
@@ -360,16 +360,16 @@ let division: i32 = a / b;       // => 0
 let modulus: i32 = a % b;        // => 4
 ```
 
-### Bitwise Operators
+### Operadores bit a bit
 
-| Operator            | Description             |
-| ------------------- | ----------------------- |
-| `g & h`             | Binary AND              |
-| <code>g \| h</code> | Binary OR               |
-| `g ^ h`             | Binary XOR              |
-| `!g`                | Binary one's complement |
-| `g << h`            | Binary shift left       |
-| `g >> h`            | Binary shift right      |
+| Operador            | Descrição                       |
+| ------------------- | ------------------------------- |
+| `g & h`             | AND binário                     |
+| <code>g \| h</code> | OR binário                      |
+| `g ^ h`             | XOR binário                     |
+| `!g`                | Complemento de um binário       |
+| `g << h`            | Deslocamento binário à esquerda |
+| `g >> h`            | Deslocamento binário à direita  |
 
 ---
 
@@ -383,13 +383,13 @@ let right_shift = g >> 2; // => 0
 let left_shift = h << 4;  // => 32
 ```
 
-### Logical Operators
+### Operadores lógicos
 
-| Example               | Meaning               |
-| --------------------- | --------------------- |
-| `c && d`              | Both are true _(AND)_ |
-| <code>c \|\| d</code> | Either is true _(OR)_ |
-| `!c`                  | `c` is false _(NOT)_  |
+| Exemplo               | Significado                     |
+| --------------------- | ------------------------------- |
+| `c && d`              | Ambos são verdadeiros _(AND)_   |
+| <code>c \|\| d</code> | Qualquer um é verdadeiro _(OR)_ |
+| `!c`                  | `c` é falso _(NOT)_             |
 
 ---
 
@@ -401,7 +401,7 @@ let or = c || d;   // => true
 let not = !c;      // => false
 ```
 
-### Compound Assignment Operator
+### Operador de atribuição composta
 
 ```rust
 let mut k = 9;
@@ -410,17 +410,17 @@ let mut l = k;
 
 ---
 
-| Operator             | Description                             |
-| -------------------- | --------------------------------------- |
-| `k += l`             | Add a value and assign, then k=18       |
-| `k -= l`             | Subtract a value and assign, then k=0   |
-| `k /= l`             | Divide a value and assign, then k=1     |
-| `k *= l`             | Multiply a value and assign, then k=81  |
-| <code>k \|= l</code> | Bitwise OR and assign, then k=89        |
+| Operador             | Descrição                                 |
+| -------------------- | ----------------------------------------- |
+| `k += l`             | Soma um valor e atribui, então k=18       |
+| `k -= l`             | Subtrai um valor e atribui, então k=0     |
+| `k /= l`             | Divide um valor e atribui, então k=1      |
+| `k *= l`             | Multiplica um valor e atribui, então k=81 |
+| <code>k \|= l</code> | OR bit a bit e atribui, então k=89        |
 
-## Rust Flow Control
+## Controle de fluxo do Rust
 
-### If Expression
+### Expressão if
 
 ```rust
 let case1: i32 = 81;
@@ -431,7 +431,7 @@ if case1 < case2 {
 }
 ```
 
-### If...Else Expression
+### Expressão if...else
 
 ```rust
 let case3 = 8;
@@ -444,7 +444,7 @@ if case3 >= case4 {
 }
 ```
 
-### If...Else...if...Else Expression
+### Expressão if...else...if...else
 
 ```rust
 let foo = 12;
@@ -461,7 +461,7 @@ if foo == bar {
 }
 ```
 
-### If...Let Expression {.row-span-3}
+### Expressão if...let {.row-span-3}
 
 ```rust
 let mut arr1: [i64; 3] = [1, 2, 3];
@@ -496,7 +496,7 @@ if let (9, 89, "Yes") = tuple_3 {
 }
 ```
 
-### Match Expression {.row-span-3}
+### Expressão match {.row-span-3}
 
 ```rust
 let day_of_week = 2;
@@ -528,7 +528,7 @@ match day_of_week {
 };
 ```
 
-### Nested...If Expression
+### Expressão if aninhada
 
 ```rust
 let nested_conditions = 89;
@@ -540,7 +540,7 @@ if nested_conditions == 89 {
 }
 ```
 
-### For Loop
+### Laço for
 
 ```rust
 for mut i in 0..15 {
@@ -549,7 +549,7 @@ for mut i in 0..15 {
 }
 ```
 
-### While Loop
+### Laço while
 
 ```rust
 let mut check = 0;
@@ -564,7 +564,7 @@ while check < 11 {
 }
 ```
 
-### Loop keyword
+### Palavra-chave loop
 
 ```rust
 loop {
@@ -572,9 +572,9 @@ loop {
 }
 ```
 
-The infinite loop indicated.
+Indica um loop infinito.
 
-### Break Statement
+### Instrução break
 
 ```rust
 let mut i = 1;
@@ -587,7 +587,7 @@ loop {
 }
 ```
 
-### Continue Statement
+### Instrução continue
 
 ```rust
 for (v, c) in (0..10 + 1).enumerate() {
@@ -600,9 +600,9 @@ for (v, c) in (0..10 + 1).enumerate() {
 }
 ```
 
-## Rust Functions
+## Funções do Rust
 
-### Basic function
+### Função básica
 
 ```rust
 fn print_message() {
@@ -615,7 +615,7 @@ fn main() {
 }
 ```
 
-### Pass by Value
+### Passagem por valor
 
 ```rust
 fn main() {
@@ -631,7 +631,7 @@ fn cal_rect(x: u32, y: u32) -> u32 {
 }
 ```
 
-### Pass by Reference
+### Passagem por referência
 
 ```rust
 fn main() {
@@ -647,7 +647,7 @@ fn power_of_three(by_ref: &mut i32) {
 }
 ```
 
-### Returns
+### Retornos
 
 ```rust {.wrap}
 fn main() {
@@ -666,7 +666,7 @@ fn calculate(radius: &mut f64, pi: &mut f64) -> (f64, f64) {
 }
 ```
 
-### Arrays as Arguments
+### Arrays como argumentos
 
 ```rust
 fn main() {
@@ -685,7 +685,7 @@ fn print_arrays(mut array: [i32; 5]) {
 }
 ```
 
-### Returning Arrays
+### Retornando arrays
 
 ```rust
 fn main() {
@@ -703,9 +703,9 @@ fn multiply(mut arr: [i32; 5]) -> [i32; 5] {
 }
 ```
 
-## Misc
+## Diversos
 
-### Type Casting
+### Conversão de tipos
 
 ```rust
 let a_int = 90; // int
@@ -721,9 +721,9 @@ let original: char = 'I';
 let type_casted: i64 = original as i64;
 ```
 
-To perform type-casting in Rust one must use the `as` keyword.
+Para fazer conversão de tipos em Rust, é preciso usar a palavra-chave `as`.
 
-### Borrowing
+### Empréstimo (borrowing)
 
 ```rust
 let mut foo = 4;
@@ -739,9 +739,9 @@ let mut mutable_borrowed_bar = &mut bar;
 println!("{mutable_borrowed_bar}");
 ```
 
-Here borrowed value borrows the value from value one using `&` operator.
+Aqui, o valor emprestado pega o valor da primeira variável usando o operador `&`.
 
-### De-referencing
+### Desreferenciação
 
 ```rust
 let mut borrow = 10;
@@ -750,9 +750,9 @@ let deref = &mut borrow;
 println!("{}", *deref);
 ```
 
-De-referencing in rust can be done using the `*` operator
+A desreferenciação em Rust pode ser feita usando o operador `*`
 
-### Variable Scope
+### Escopo de variável
 
 ```rust
 {
@@ -762,10 +762,10 @@ De-referencing in rust can be done using the `*` operator
 println!("{a_number}");
 ```
 
-This will produce error as the scope of the variable `a_number` ends at the braces
+Isso produzirá erro, pois o escopo da variável `a_number` termina nas chaves
 
-## Also see
+## Veja também
 
-- [The Rust Document](https://doc.rust-lang.org/book/ch00-00-introduction.html) _(doc.rust-lang.org)_
-- [The Rust Reference](https://doc.rust-lang.org/reference/introduction.html) _(doc.rust-lang.org)_
-- [Rust Cheatsheet](https://phaiax.github.io/rust-cheatsheet/) _(phaiax.github.io)_
+- [O livro do Rust](https://doc.rust-lang.org/book/ch00-00-introduction.html) _(doc.rust-lang.org)_
+- [A referência do Rust](https://doc.rust-lang.org/reference/introduction.html) _(doc.rust-lang.org)_
+- [Cheat sheet do Rust](https://phaiax.github.io/rust-cheatsheet/) _(phaiax.github.io)_

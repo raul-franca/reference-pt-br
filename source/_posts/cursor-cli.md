@@ -9,14 +9,14 @@ tags:
   - cursor
   - coding
 categories:
-  - AI
+  - IA
 intro: |
-  [Cursor CLI](https://cursor.com/docs/cli/overview) (`agent`) is the terminal interface for Cursor's AI coding agent — run agentic tasks, scripts, and CI pipelines from the command line.
+  [Cursor CLI](https://cursor.com/docs/cli/overview) (`agent`) é a interface de terminal para o agente de programação com IA do Cursor — execute tarefas agênticas, scripts e pipelines de CI pela linha de comando.
 plugins:
   - copyCode
 ---
 
-## Getting Started
+## Primeiros passos
 
 ### Hello World {.row-span-2}
 
@@ -34,7 +34,7 @@ $ agent --mode=ask "How does auth work here?"
 $ agent --plan "Refactor the payment module"
 ```
 
-### Install
+### Instalação
 
 #### macOS / Linux / WSL
 
@@ -48,7 +48,7 @@ $ curl https://cursor.com/install -fsS | bash
 irm 'https://cursor.com/install?win32=true' | iex
 ```
 
-#### Post-install
+#### Pós-instalação
 
 ```bash
 # Add to PATH if needed
@@ -61,95 +61,95 @@ $ agent --version
 $ agent update
 ```
 
-### Key Concepts
+### Conceitos principais
 
-| Concept     | Description                         |
+| Conceito    | Descrição                           |
 | ----------- | ----------------------------------- |
-| Agent mode  | Full access: read, write, run shell |
-| Plan mode   | Read-only analysis, no edits        |
-| Ask mode    | Q&A / explanations, read-only       |
-| Cloud agent | Delegates to remote Cursor cloud    |
-| Session     | Saved conversation with history     |
-| Worktree    | Isolated git branch environment     |
+| Agent mode  | Acesso total: ler, escrever, rodar shell |
+| Plan mode   | Análise somente leitura, sem edições |
+| Ask mode    | Perguntas e respostas / explicações, somente leitura |
+| Cloud agent | Delega para o Cursor cloud remoto   |
+| Session     | Conversa salva com histórico        |
+| Worktree    | Ambiente de branch git isolado      |
 | ACP         | Agent Client Protocol (JSON-RPC)    |
-| MCP         | External tool/data integrations     |
+| MCP         | Integrações externas de ferramentas/dados |
 
-## CLI Flags {.cols-2}
+## Flags da CLI {.cols-2}
 
-### Session & Mode {.row-span-2}
+### Sessão e modo {.row-span-2}
 
-| Flag                 | Description                           |
+| Flag                 | Descrição                             |
 | -------------------- | ------------------------------------- |
-| `--mode=plan`        | Plan mode (read-only, no edits)       |
-| `--mode=ask`         | Ask mode (Q&A, read-only)             |
-| `--plan`             | Shorthand for `--mode=plan`           |
-| `-p, --print`        | Headless/print mode (non-interactive) |
-| `-c, --cloud`        | Start in cloud agent mode             |
-| `--continue`         | Continue previous session             |
-| `--resume [chatId]`  | Resume a specific session             |
-| `-n, --name`         | Name for the session                  |
-| `--workspace <path>` | Set workspace directory               |
-| `--model <model>`    | Model to use (e.g., `sonnet-4`)       |
-| `--list-models`      | List available models and exit        |
+| `--mode=plan`        | Modo plan (somente leitura, sem edições) |
+| `--mode=ask`         | Modo ask (perguntas e respostas, somente leitura) |
+| `--plan`             | Atalho para `--mode=plan`             |
+| `-p, --print`        | Modo headless/print (não interativo)  |
+| `-c, --cloud`        | Inicia no modo cloud agent            |
+| `--continue`         | Continua a sessão anterior            |
+| `--resume [chatId]`  | Retoma uma sessão específica          |
+| `-n, --name`         | Nome da sessão                        |
+| `--workspace <path>` | Define o diretório do workspace       |
+| `--model <model>`    | Modelo a usar (ex.: `sonnet-4`)       |
+| `--list-models`      | Lista os modelos disponíveis e sai    |
 
 {.bold-first}
 
-### Worktree & Sandbox
+### Worktree e sandbox
 
-| Flag                    | Description                           |
+| Flag                    | Descrição                             |
 | ----------------------- | ------------------------------------- |
-| `-w, --worktree [name]` | Start in isolated git worktree        |
-| `--worktree-base <ref>` | Branch/ref to base the worktree on    |
-| `--skip-worktree-setup` | Skip `.cursor/worktrees.json` scripts |
-| `--sandbox <mode>`      | `enabled` or `disabled`               |
-| `--trust`               | Trust workspace without prompting     |
-| `--approve-mcps`        | Auto-approve all MCP servers          |
+| `-w, --worktree [name]` | Inicia em um worktree git isolado     |
+| `--worktree-base <ref>` | Branch/ref base do worktree           |
+| `--skip-worktree-setup` | Pula os scripts de `.cursor/worktrees.json` |
+| `--sandbox <mode>`      | `enabled` ou `disabled`               |
+| `--trust`               | Confia no workspace sem perguntar     |
+| `--approve-mcps`        | Aprova automaticamente todos os servidores MCP |
 
 {.bold-first}
 
-### Output & Permissions
+### Saída e permissões
 
-| Flag                      | Description                             |
+| Flag                      | Descrição                               |
 | ------------------------- | --------------------------------------- |
 | `--output-format <fmt>`   | `text` \| `json` \| `stream-json`       |
-| `--stream-partial-output` | Stream text deltas (stream-json only)   |
-| `-f, --force`             | Allow commands unless explicitly denied |
-| `--yolo`                  | Alias for `--force`                     |
-| `--api-key <key>`         | Auth key (or `CURSOR_API_KEY`)          |
-| `-H, --header <h>`        | Custom request header (`Name: Value`)   |
+| `--stream-partial-output` | Transmite deltas de texto (apenas stream-json) |
+| `-f, --force`             | Permite comandos, a menos que explicitamente negados |
+| `--yolo`                  | Alias para `--force`                    |
+| `--api-key <key>`         | Chave de autenticação (ou `CURSOR_API_KEY`) |
+| `-H, --header <h>`        | Header de requisição personalizado (`Name: Value`) |
 
 {.bold-first}
 
-## Commands {.cols-2}
+## Comandos {.cols-2}
 
-### All Subcommands {.row-span-2}
+### Todos os subcomandos {.row-span-2}
 
-| Command                             | Description                             |
+| Comando                             | Descrição                               |
 | ----------------------------------- | --------------------------------------- |
-| `agent [prompt]`                    | Start interactive or print session      |
-| `agent ls`                          | List sessions to resume                 |
-| `agent resume`                      | Resume latest chat session              |
-| `agent login`                       | Authenticate with Cursor                |
-| `agent logout`                      | Sign out and clear auth                 |
-| `agent status`                      | View auth status / whoami               |
-| `agent update`                      | Update to latest version                |
-| `agent about`                       | Show version, system, account info      |
-| `agent models`                      | List available models                   |
-| `agent create-chat`                 | Create new empty chat, return ID        |
-| `agent rule`                        | Generate new Cursor rule interactively  |
-| `agent mcp`                         | Manage MCP servers                      |
-| `agent mcp list`                    | List configured MCP servers             |
-| `agent mcp list-tools <id>`         | List tools for a specific MCP server    |
-| `agent mcp enable <id>`             | Add MCP server to approved list         |
-| `agent mcp disable <id>`            | Disable an MCP server                   |
-| `agent mcp login <id>`              | Authenticate with an MCP server         |
-| `agent install-shell-integration`   | Install shell integration to `~/.zshrc` |
-| `agent uninstall-shell-integration` | Remove shell integration                |
-| `agent acp`                         | Start ACP server (JSON-RPC over stdio)  |
+| `agent [prompt]`                    | Inicia uma sessão interativa ou de print |
+| `agent ls`                          | Lista sessões para retomar              |
+| `agent resume`                      | Retoma a última sessão de chat          |
+| `agent login`                       | Autentica no Cursor                     |
+| `agent logout`                      | Sai e limpa a autenticação              |
+| `agent status`                      | Mostra o status de autenticação / whoami |
+| `agent update`                      | Atualiza para a versão mais recente     |
+| `agent about`                       | Mostra versão, sistema e informações da conta |
+| `agent models`                      | Lista os modelos disponíveis            |
+| `agent create-chat`                 | Cria um novo chat vazio e retorna o ID  |
+| `agent rule`                        | Gera uma nova regra do Cursor de forma interativa |
+| `agent mcp`                         | Gerencia servidores MCP                 |
+| `agent mcp list`                    | Lista os servidores MCP configurados    |
+| `agent mcp list-tools <id>`         | Lista as ferramentas de um servidor MCP específico |
+| `agent mcp enable <id>`             | Adiciona o servidor MCP à lista de aprovados |
+| `agent mcp disable <id>`            | Desativa um servidor MCP                |
+| `agent mcp login <id>`              | Autentica em um servidor MCP            |
+| `agent install-shell-integration`   | Instala a integração de shell em `~/.zshrc` |
+| `agent uninstall-shell-integration` | Remove a integração de shell            |
+| `agent acp`                         | Inicia o servidor ACP (JSON-RPC via stdio) |
 
 {.bold-first}
 
-### Session Management
+### Gerenciamento de sessões
 
 ```bash
 # List sessions to resume
@@ -165,7 +165,7 @@ $ agent --resume abc123
 $ agent resume
 ```
 
-### Auth & Account
+### Autenticação e conta
 
 ```bash
 $ agent login
@@ -175,44 +175,44 @@ $ agent about      # version + account info
 $ agent models     # list available models
 ```
 
-## Execution Modes {.cols-3}
+## Modos de execução {.cols-3}
 
 ### Agent Mode {.secondary}
 
-Full agentic access — reads files, writes code, runs shell commands, and uses all tools.
+Acesso agêntico completo — lê arquivos, escreve código, executa comandos de shell e usa todas as ferramentas.
 
 ```bash
 $ agent
 $ agent "Fix the bug in auth.ts"
 ```
 
-Default mode when no `--mode` flag is given.
+Modo padrão quando nenhuma flag `--mode` é informada.
 
 ### Plan Mode
 
-Read-only analysis. Proposes a plan without making any edits to the codebase.
+Análise somente leitura. Propõe um plano sem fazer nenhuma edição no codebase.
 
 ```bash
 $ agent --plan
 $ agent --mode=plan "Refactor auth"
 ```
 
-Cannot modify files or run commands.
+Não pode modificar arquivos nem executar comandos.
 
 ### Ask Mode
 
-Question & answer style. Explains code, answers questions — no edits, no shell.
+Estilo de perguntas e respostas. Explica código, responde perguntas — sem edições, sem shell.
 
 ```bash
 $ agent --mode=ask
 $ agent --mode=ask "How does caching work?"
 ```
 
-Best for understanding code without risk.
+Ideal para entender o código sem risco.
 
-## Headless & Scripting {.cols-2}
+## Headless e scripting {.cols-2}
 
-### Pipe & Script Usage {.row-span-2}
+### Uso com pipe e scripts {.row-span-2}
 
 ```bash
 # Summarize a diff
@@ -228,7 +228,7 @@ $ tail -200 app.log | agent -p "Identify errors"
 $ agent -p "Describe this diagram: /path/to/image.png"
 ```
 
-Output formats:
+Formatos de saída:
 
 ```bash
 # Plain text (default)
@@ -245,7 +245,7 @@ $ agent -p "task" --output-format stream-json \
     --stream-partial-output
 ```
 
-### CI / CD Usage
+### Uso em CI / CD
 
 ```bash
 # Allow all file modifications
@@ -261,7 +261,7 @@ $ agent -p "Deploy" --trust
 $ agent -p "Analyze" --workspace /repo
 ```
 
-Batch processing:
+Processamento em lote:
 
 ```bash {.wrap}
 for f in src/**/*.ts; do
@@ -271,9 +271,9 @@ done
 
 ## Worktrees {.cols-2}
 
-### Isolated Environments {.row-span-2}
+### Ambientes isolados {.row-span-2}
 
-Worktrees create an isolated git branch at `~/.cursor/worktrees/<repo>/<name>` — keeping the main working tree clean.
+Worktrees criam um branch git isolado em `~/.cursor/worktrees/<repo>/<name>` — mantendo a árvore de trabalho principal limpa.
 
 ```bash
 # Auto-named worktree
@@ -289,7 +289,7 @@ $ agent -w fix --worktree-base main
 $ agent -w feature --skip-worktree-setup
 ```
 
-Worktree config in `.cursor/worktrees.json`:
+Configuração do worktree em `.cursor/worktrees.json`:
 
 ```json
 {
@@ -297,9 +297,9 @@ Worktree config in `.cursor/worktrees.json`:
 }
 ```
 
-### Worktree Files
+### Arquivos do worktree
 
-Control what's copied to a new worktree:
+Controle o que é copiado para um novo worktree:
 
 ```
 # .worktreeinclude (glob patterns)
@@ -309,13 +309,13 @@ secrets/
 node_modules/
 ```
 
-Files matching these patterns are copied from the main tree to the new worktree on creation.
+Arquivos que correspondem a esses padrões são copiados da árvore principal para o novo worktree na criação.
 
 ## Shell Mode {.cols-2}
 
-### Shell Execution
+### Execução de shell
 
-Shell mode runs in `$SHELL`. Navigate with `cd` chained to commands:
+O shell mode roda em `$SHELL`. Navegue com `cd` encadeado aos comandos:
 
 ```bash
 # Change directory then run
@@ -327,35 +327,35 @@ $ npm test            # runs tests
 $ git status          # git operations
 ```
 
-Shell controls:
+Controles do shell:
 
-| Key      | Action                       |
+| Tecla    | Ação                         |
 | -------- | ---------------------------- |
-| `Ctrl+C` | Cancel current shell command |
-| `Ctrl+O` | Expand / view full output    |
-| `Tab`    | Add command to allowlist     |
+| `Ctrl+C` | Cancela o comando de shell atual |
+| `Ctrl+O` | Expande / visualiza a saída completa |
+| `Tab`    | Adiciona o comando à allowlist |
 
 {.shortcuts}
 
-### Shell Notes
+### Notas sobre o shell
 
-- Each command runs in `$SHELL` (zsh/bash/fish)
-- 30-second timeout per command
-- `cd dir && cmd` for directory-specific commands
-- Shell integration improves context awareness:
+- Cada comando roda em `$SHELL` (zsh/bash/fish)
+- Timeout de 30 segundos por comando
+- `cd dir && cmd` para comandos específicos de diretório
+- A integração de shell melhora a percepção de contexto:
 
 ```bash
 $ agent install-shell-integration
 # adds hooks to ~/.zshrc
 ```
 
-## MCP Servers {.cols-2}
+## Servidores MCP {.cols-2}
 
-### Configure MCP {.row-span-2}
+### Configurar o MCP {.row-span-2}
 
-User-level config at `~/.cursor/mcp.json`, project-level at `.cursor/mcp.json`:
+Configuração no nível do usuário em `~/.cursor/mcp.json`, no nível do projeto em `.cursor/mcp.json`:
 
-#### stdio server (Node.js)
+#### Servidor stdio (Node.js)
 
 ```json
 {
@@ -369,7 +369,7 @@ User-level config at `~/.cursor/mcp.json`, project-level at `.cursor/mcp.json`:
 }
 ```
 
-#### stdio server (Python)
+#### Servidor stdio (Python)
 
 ```json
 {
@@ -382,7 +382,7 @@ User-level config at `~/.cursor/mcp.json`, project-level at `.cursor/mcp.json`:
 }
 ```
 
-#### HTTP / SSE server
+#### Servidor HTTP / SSE
 
 ```json
 {
@@ -394,7 +394,7 @@ User-level config at `~/.cursor/mcp.json`, project-level at `.cursor/mcp.json`:
 }
 ```
 
-### MCP Commands
+### Comandos MCP
 
 ```bash
 # List all configured servers
@@ -416,11 +416,11 @@ $ agent mcp login my-tool
 $ agent --approve-mcps
 ```
 
-## ACP Protocol {.cols-2}
+## Protocolo ACP {.cols-2}
 
-### ACP Overview {.row-span-2}
+### Visão geral do ACP {.row-span-2}
 
-ACP (Agent Client Protocol) exposes the Cursor agent as a JSON-RPC 2.0 server over **stdio**. Build custom IDE integrations or headless clients.
+O ACP (Agent Client Protocol) expõe o agente do Cursor como um servidor JSON-RPC 2.0 via **stdio**. Crie integrações personalizadas de IDE ou clientes headless.
 
 ```bash
 # Start ACP server
@@ -430,7 +430,7 @@ $ agent acp
 $ agent --api-key "$CURSOR_API_KEY" acp
 ```
 
-**Request flow:**
+**Fluxo da requisição:**
 
 ```
 initialize
@@ -442,47 +442,47 @@ session/prompt
 session/cancel  (optional)
 ```
 
-Permission outcomes:
+Resultados de permissão:
 
-| Response       | Effect                   |
+| Resposta       | Efeito                   |
 | -------------- | ------------------------ |
-| `allow-once`   | Approve this time only   |
-| `allow-always` | Always approve this tool |
-| `reject-once`  | Deny this time only      |
+| `allow-once`   | Aprova apenas desta vez  |
+| `allow-always` | Aprova sempre esta ferramenta |
+| `reject-once`  | Nega apenas desta vez    |
 
-### ACP Extension Methods
+### Métodos de extensão do ACP
 
-Cursor extension methods sent over ACP:
+Métodos de extensão do Cursor enviados via ACP:
 
-| Method                  | Type     | Purpose                |
+| Método                  | Tipo     | Finalidade             |
 | ----------------------- | -------- | ---------------------- |
-| `cursor/ask_question`   | Blocking | Multiple-choice prompt |
-| `cursor/create_plan`    | Blocking | Request plan approval  |
-| `cursor/update_todos`   | Notify   | Update todo list state |
-| `cursor/task`           | Notify   | Subagent task status   |
-| `cursor/generate_image` | Notify   | Image generation event |
+| `cursor/ask_question`   | Bloqueante | Prompt de múltipla escolha |
+| `cursor/create_plan`    | Bloqueante | Solicita aprovação do plano |
+| `cursor/update_todos`   | Notificação | Atualiza o estado da lista de tarefas |
+| `cursor/task`           | Notificação | Status da tarefa do subagente |
+| `cursor/generate_image` | Notificação | Evento de geração de imagem |
 
 {.show-header}
 
-Minimal Node.js client:
+Cliente Node.js mínimo:
 
 ```js {.wrap}
 const agent = spawn('agent', ['acp'], { stdio: ['pipe', 'pipe', 'inherit'] });
 // send initialize → authenticate → session/new → session/prompt
 ```
 
-**IDE integrations via ACP:**
+**Integrações de IDE via ACP:**
 
 - JetBrains (IntelliJ, WebStorm, PyCharm)
-- Neovim via `avante.nvim` plugin
-- Zed editor extensions
-- Any editor with extension support
+- Neovim via plugin `avante.nvim`
+- Extensões do editor Zed
+- Qualquer editor com suporte a extensões
 
 ## Cloud Agents {.cols-2}
 
-### Cloud Mode
+### Modo cloud
 
-Cloud agents run tasks remotely in Cursor's infrastructure. Use for long-running or parallel workloads.
+Cloud agents executam tarefas remotamente na infraestrutura do Cursor. Use para cargas de trabalho longas ou paralelas.
 
 ```bash
 # Launch cloud agent picker
@@ -493,28 +493,28 @@ $ agent --cloud
 $ agent -c "Migrate all tests to Vitest"
 ```
 
-Cloud agents support:
+Cloud agents oferecem suporte a:
 
-- Remote execution (no local resources)
-- Parallel task delegation
-- Longer-running workflows
+- Execução remota (sem recursos locais)
+- Delegação de tarefas em paralelo
+- Workflows de execução mais longa
 
-### Subagent Types
+### Tipos de subagente
 
-When using ACP or cloud, subagents can be typed:
+Ao usar ACP ou cloud, os subagentes podem ser tipados:
 
-| Type                 | Description             |
+| Tipo                 | Descrição               |
 | -------------------- | ----------------------- |
-| `explore`            | Codebase exploration    |
-| `browser_use`        | Web browser automation  |
-| `computer_use`       | Desktop GUI actions     |
-| `shell`              | Shell command execution |
-| `video_review`       | Video content analysis  |
-| `{ custom: "type" }` | Custom subagent type    |
+| `explore`            | Exploração de codebase  |
+| `browser_use`        | Automação de navegador web |
+| `computer_use`       | Ações em GUI do desktop |
+| `shell`              | Execução de comandos de shell |
+| `video_review`       | Análise de conteúdo de vídeo |
+| `{ custom: "type" }` | Tipo de subagente personalizado |
 
-## Also see {.cols-1}
+## Veja também {.cols-1}
 
-- [Cursor CLI Docs](https://cursor.com/docs/cli/overview) _(cursor.com)_
-- [ACP Protocol Docs](https://cursor.com/docs/cli/acp) _(cursor.com)_
-- [Cursor Marketplace](https://cursor.com/marketplace) _(cursor.com)_
-- [MCP Overview](https://cursor.com/docs/mcp) _(cursor.com)_
+- [Documentação do Cursor CLI](https://cursor.com/docs/cli/overview) _(cursor.com)_
+- [Documentação do protocolo ACP](https://cursor.com/docs/cli/acp) _(cursor.com)_
+- [Marketplace do Cursor](https://cursor.com/marketplace) _(cursor.com)_
+- [Visão geral do MCP](https://cursor.com/docs/mcp) _(cursor.com)_

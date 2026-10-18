@@ -2,17 +2,17 @@ const fs = require('fs');
 const path = require('path');
 const hljs = require('highlight.js');
 
-// Helper function to safely require plugins that might be ES modules
+// Função auxiliar para carregar com segurança plugins que podem ser módulos ES
 function safeRequire(moduleName) {
   const plugin = require(moduleName);
   let result = plugin.default || plugin;
 
-  // Special handling for markdown-it-emoji v3.0.0+ which exports an object with multiple functions
+  // Tratamento especial para o markdown-it-emoji v3.0.0+, que exporta um objeto com várias funções
   if (moduleName === 'markdown-it-emoji' && typeof result === 'object' && result.full) {
-    result = result.full; // Use the full emoji plugin
+    result = result.full; // Usa o plugin completo de emoji
   }
 
-  // Special handling for other ES modules with default export
+  // Tratamento especial para outros módulos ES com export default
   if (typeof result === 'object' && result.default && typeof result.default === 'function') {
     result = result.default;
   }
@@ -20,12 +20,12 @@ function safeRequire(moduleName) {
   return result;
 }
 
-// Create a custom highlight.js instance that handles unknown languages gracefully
+// Cria uma instância personalizada do highlight.js que lida com linguagens desconhecidas sem erros
 const customHljs = {
   highlight: function (code, options) {
     const language = options && options.language ? options.language : '';
 
-    // If no language specified, try auto-detection
+    // Se nenhuma linguagem for especificada, tenta a detecção automática
     if (!language) {
       try {
         return hljs.highlightAuto(code);
@@ -38,7 +38,7 @@ const customHljs = {
       }
     }
 
-    // Check if the language is supported
+    // Verifica se a linguagem é suportada
     if (hljs.getLanguage(language)) {
       try {
         return hljs.highlight(code, {
@@ -46,7 +46,7 @@ const customHljs = {
           ignoreIllegals: true
         });
       } catch {
-        // If highlighting fails, fall back to plain text without warning
+        // Se o highlight falhar, usa texto simples sem aviso
         return {
           value: hljs.util.escapeHTML(code),
           language: 'plaintext',
@@ -54,18 +54,18 @@ const customHljs = {
         };
       }
     } else {
-      // Language not supported, try auto-detection or fall back to plain text
+      // Linguagem não suportada: tenta a detecção automática ou usa texto simples
       try {
         const autoResult = hljs.highlightAuto(code);
-        // Only use auto-detection if confidence is reasonable
+        // Só usa a detecção automática se a confiança for razoável
         if (autoResult.relevance > 3) {
           return autoResult;
         }
       } catch {
-        // Auto-detection failed, ignore
+        // A detecção automática falhou; ignora
       }
 
-      // Fall back to plain text without warning
+      // Usa texto simples sem aviso
       return {
         value: hljs.util.escapeHTML(code),
         language: 'plaintext',
@@ -74,7 +74,7 @@ const customHljs = {
     }
   },
 
-  // Expose other hljs methods that might be needed
+  // Expõe outros métodos do hljs que podem ser necessários
   getLanguage: hljs.getLanguage.bind(hljs),
   listLanguages: hljs.listLanguages.bind(hljs),
   util: hljs.util
@@ -127,14 +127,14 @@ hexo.extend.filter.register('markdown-it:renderer', (md) => {
 function headerSections(md, options) {
   const opts = Object.assign({}, options);
 
-  // Check if the rule has already been added to prevent duplicate rules
-  // This is crucial for hexo-renderer-markdown-it v6.0.0+ where the md instance is reused
+  // Verifica se a regra já foi adicionada para evitar duplicatas
+  // Isso é essencial no hexo-renderer-markdown-it v6.0.0+, em que a instância md é reutilizada
   if (md.core.ruler.__rules__.some((rule) => rule.name === 'header_sections')) {
     return;
   }
 
   function addSections(state) {
-    const tokens = []; // output
+    const tokens = []; // saída
     const Token = state.Token;
     const sections = [];
     let nestedLevel = 0;
@@ -179,7 +179,7 @@ function headerSections(md, options) {
     for (let i = 0, l = state.tokens.length; i < l; i++) {
       const token = state.tokens[i];
 
-      // record level of nesting
+      // registra o nível de aninhamento
       if (token.type.search('heading') !== 0) {
         nestedLevel += token.nesting;
       }
@@ -187,7 +187,7 @@ function headerSections(md, options) {
         closeSectionsToCurrentNesting(nestedLevel);
       }
 
-      // add sections before headers
+      // adiciona seções antes dos headers
       const expect = Object.prototype.hasOwnProperty.call(opts, token.tag);
       if (token.type === 'heading_open') {
         const section = {
@@ -200,19 +200,19 @@ function headerSections(md, options) {
         if (expect) {
           tokens.push(openTag(token, 'section_wrapper_open', 'wrapperClass'));
           if (token.attrIndex('id') !== -1) {
-            // remove ID from token
+            // remove o ID do token
             token.attrs.splice(token.attrIndex('id'), 1);
           }
           sections.push(section);
 
-          // The attribute has been placed in section_open,
-          // clear the attribute of the header tag
+          // O atributo foi colocado em section_open,
+          // limpa o atributo da tag do header
           token.attrs = [];
         }
 
         tokens.push(token);
       } else if (token.type === 'heading_close') {
-        // add inner section after headers
+        // adiciona a seção interna depois dos headers
         tokens.push(token);
         if (expect) {
           tokens.push(openTag(token, 'section_inner_open', 'innerClass'));
@@ -220,7 +220,7 @@ function headerSections(md, options) {
       } else {
         tokens.push(token);
       }
-    } // end for every token
+    } // fim do laço de cada token
     closeAllSections();
 
     state.tokens = tokens;

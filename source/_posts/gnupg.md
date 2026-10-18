@@ -1,218 +1,218 @@
 ---
 title: GnuPG
 categories:
-  - Linux Command
-intro: A cheatsheet for GnuPG, the encryption and signing software.
+  - Comandos Linux
+intro: Um cheat sheet do GnuPG, o software de criptografia e assinatura.
 ---
 
-## Getting Started
+## Primeiros passos
 
 ### Software
 
-Gpg4win and the GPG Suite have OS-specific features.
+O Gpg4win e o GPG Suite têm recursos específicos de cada sistema operacional.
 
 - [GnuPG](https://gnupg.org/)
 - [Gpg4win](https://www.gpg4win.org/) (Windows)
 - [GPG Suite](https://gpgtools.org/) (macOS)
 
-Sometimes GPG keys are referred as PGP keys. They're interchangeable, as they follow the
-[OpenPGP Standard](https://www.rfc-editor.org/rfc/rfc9580.html).
+Às vezes as chaves GPG são chamadas de chaves PGP. Os termos são intercambiáveis, pois seguem o
+[Padrão OpenPGP](https://www.rfc-editor.org/rfc/rfc9580.html).
 
-### Create a key-pair
+### Criar um par de chaves
 
-Generate your keys:
+Gere suas chaves:
 
 ```shell script
 $ gpg --generate-key
 ```
 
-... or fully configure your keys.
+... ou configure suas chaves por completo.
 
 ```shell script
 $ gpg --generate-full-keys
 ```
 
-**Note:** Choose a strong passphrase! The encryption is only as strong as your passphrase.
+**Observação:** Escolha uma passphrase forte! A criptografia é tão forte quanto sua passphrase.
 
-### Key management
+### Gerenciamento de chaves
 
-List your keys:
+Liste suas chaves:
 
 ```shell script
 $ gpg --list-keys
 ```
 
-List your secret keys:
+Liste suas chaves secretas:
 
 ```shell script
 $ gpg --list-secret-keys
 ```
 
-Export your public key:
+Exporte sua chave pública:
 
 ```shell script
 $ gpg --export --armor <ID>
 ```
 
-Export your secret key:
+Exporte sua chave secreta:
 
 ```shell script
 $ gpg --export-secret-key --armor <ID>
 ```
 
-Delete your public key:
+Exclua sua chave pública:
 
 ```shell script
 $ gpg --delete-key <ID>
 ```
 
-Delete your secret key:
+Exclua sua chave secreta:
 
 ```shell script
 $ gpg --delete-secret-key <ID>
 ```
 
-## Encryption
+## Criptografia
 
-### Symmetric
+### Simétrica
 
-Encrypt with a passphrase:
+Criptografe com uma passphrase:
 
 ```shell script
 $ gpg -c <FILE>
 ```
 
-Encrypt as ASCII with `-a` flag:
+Criptografe como ASCII com a flag `-a`:
 
 ```shell script
 $ gpg -ac <FILE>
 ```
 
-Set output file path with `-o` flag:
+Defina o path do arquivo de saída com a flag `-o`:
 
 ```shell script
 $ gpg -c <FILE> -o <PATH>
 ```
 
-Decrypt with a passphrase:
+Descriptografe com uma passphrase:
 
 ```shell script
 $ gpg <FILE>
 ```
 
-**Note:** Choose a strong passphrase! The encryption is only as strong as your passphrase.
+**Observação:** Escolha uma passphrase forte! A criptografia é tão forte quanto sua passphrase.
 
-### Asymmetric
+### Assimétrica
 
-Encrypt using public-private key encryption:
+Criptografe usando criptografia de chave pública-privada:
 
 ```shell script
 $ gpg -e -r <RECIPIENT> <FILE>
 ```
 
-Encrypt as ASCII output with `-a` flag:
+Criptografe com saída ASCII usando a flag `-a`:
 
 ```shell script
 $ gpg -ea -r <RECIPIENT> <FILE>
 ```
 
-Encrypt and sign with `-s` flag:
+Criptografe e assine com a flag `-s`:
 
 ```shell script
 $ gpg -se -r <RECIPIENT> <FILE>
 ```
 
-Add multiple recipients:
+Adicione vários destinatários:
 
 ```shell script
 $ gpg -e -r <RECIPIENT1> -r <RECIPIENT2> <FILE>
 ```
 
-Set output file path with `-o` flag:
+Defina o path do arquivo de saída com a flag `-o`:
 
 ```shell script
 $ gpg -e -o <PATH> -r <RECIPIENT> <FILE>
 ```
 
-Decrypt with your private key:
+Descriptografe com sua chave privada:
 
 ```shell script
 $ gpg <FILE>
 ```
 
-Replace `<RECIPIENT>` with your intended recipient's [imported public key](#importing-a-public-key) ID.
+Substitua `<RECIPIENT>` pelo ID da [chave pública importada](#importing-a-public-key) do destinatário desejado.
 
-### Importing a public key
+### Importando uma chave pública
 
-Import using a file:
+Importe usando um arquivo:
 
 ```shell script
 $ gpg --import <FILE>
 ```
 
-Import using a link (macOS/Linux):
+Importe usando um link (macOS/Linux):
 
 ```shell script
 $ curl <WEBSITE> | gpg --import
 ```
 
-Don't forget to sign the imported key:
+Não esqueça de assinar a chave importada:
 
 ```shell script
 $ gpg --sign-key <ID>
 ```
 
-## Commit Signing
+## Assinatura de commits
 
-### Local Git Setup
+### Configuração local do Git
 
-Enable GPG signing:
+Ative a assinatura com GPG:
 
 ```shell script
 $ git config --global commit.gpgsign true
 ```
 
-Set the signing key:
+Defina a chave de assinatura:
 
 ```shell script
 $ git config --global user.signingkey <ID>
 ```
 
-Set location of GPG:
+Defina o local do GPG:
 
 ```shell script
 $ git config --global gpg.program <PROGRAM>
 ```
 
-**Note:** Your name and email must match on Git and GnuPG.
+**Observação:** Seu nome e e-mail devem coincidir no Git e no GnuPG.
 
-### GPG Program List
+### Lista de programas GPG
 
-Replace `<PROGRAM>` with one of the following:
+Substitua `<PROGRAM>` por um dos seguintes:
 
-| Platform    | Value                                      |
+| Plataforma  | Valor                                      |
 | ----------- | ------------------------------------------ |
 | Windows     | `C:\Program Files (x86)\GnuPG\bin\gpg.exe` |
 | macOS/Linux | /usr/local/bin/gpg                         |
 
 {.left-text}
 
-### Exporting your public key
+### Exportando sua chave pública
 
-Export as ASCII:
+Exporte como ASCII:
 
 ```shell script
 $ gpg --export --armor <ID>
 ```
 
-**Note:** Platforms, like GitHub, may ask you to verify the email you set in Git and GnuPG.
+**Observação:** Plataformas como o GitHub podem pedir que você verifique o e-mail definido no Git e no GnuPG.
 
-## Windows: Add to Startup Apps {.cols-1}
+## Windows: adicionar aos aplicativos de inicialização {.cols-1}
 
-### PowerShell Commands
+### Comandos do PowerShell
 
-When you do a full restart, the GPG agent might not automatically start. Add the GnuPG's IPC tool to Startup Apps using
-PowerShell:
+Quando você faz uma reinicialização completa, o agente do GPG pode não iniciar automaticamente. Adicione a ferramenta IPC do GnuPG aos aplicativos de inicialização usando
+o PowerShell:
 
 ```shell script
 $ $shell = New-Object -ComObject WScript.Shell
@@ -222,10 +222,10 @@ $ $shortcut.Arguments = "/bye"
 $ $shortcut.Save()
 ```
 
-Start up manually instead:
+Ou inicie manualmente:
 
 ```shell script
 $ gpgconf --launch gpg-agent
 ```
 
-Check if it was successfully added [here](ms-settings:startupapps).
+Verifique se foi adicionado com sucesso [aqui](ms-settings:startupapps).

@@ -6,17 +6,17 @@ tags:
   - config
   - format
 categories:
-  - Programming
+  - Programação
 intro: |
-  A quick reference cheatsheet of what's new in JavaScript for ES2015, ES2016, ES2017, ES2018 and beyond
+  Um cheat sheet de referência rápida sobre o que há de novo no JavaScript em ES2015, ES2016, ES2017, ES2018 e além.
 plugins:
   - copyCode
   - runCode
 ---
 
-## Getting Started
+## Primeiros passos
 
-### Block-scoped {.row-span-2}
+### Escopo de bloco {.row-span-2}
 
 #### Let
 
@@ -35,18 +35,18 @@ function fn () {
 const a = 1;
 ```
 
-`let` is the new `var`. Constants (`const`) work just like `let`, but cannot be reassigned. See:
+`let` é o novo `var`. Constantes (`const`) funcionam como `let`, mas não podem ser reatribuídas. Veja:
 [Let and const](https://babeljs.io/learn-es2015/#let--const)
 
 ### Template Strings {.row-span-2}
 
-#### Interpolation
+#### Interpolação
 
 ```js
 const message = `Hello ${name}`;
 ```
 
-#### Multi-line string
+#### String multilinha
 
 ```js
 const str = `
@@ -55,28 +55,28 @@ the world
 `;
 ```
 
-Templates and multiline strings. See: [template strings](https://babeljs.io/learn-es2015/#template-strings)
+Templates e strings multilinha. Veja: [template strings](https://babeljs.io/learn-es2015/#template-strings)
 
-### Binary and octal literals
+### Literais binários e octais
 
 ```js
 let bin = 0b1010010;
 let oct = 0o755;
 ```
 
-See: [Binary and Octal Literals](https://babeljs.io/learn-es2015/#binary-and-octal-literals)
+Veja: [Binary and Octal Literals](https://babeljs.io/learn-es2015/#binary-and-octal-literals)
 
-### Exponential Operator
+### Operador exponencial
 
 ```js {1}
 const byte = 2 ** 8;
 ```
 
-Same as: Math.pow(2, 8)
+Equivalente a: Math.pow(2, 8)
 
-### New library additions
+### Novas adições à biblioteca
 
-#### New string methods
+#### Novos métodos de string
 
 ```js
 'hello'.repeat(3);
@@ -88,7 +88,7 @@ Same as: Math.pow(2, 8)
 '\u1E9B\u0323'.normalize('NFC');
 ```
 
-#### New Number Methods
+#### Novos métodos de Number
 
 ```js
 Number.EPSILON;
@@ -96,7 +96,7 @@ Number.isInteger(Infinity); // false
 Number.isNaN('NaN'); // false
 ```
 
-#### New Math methods
+#### Novos métodos de Math
 
 ```js
 Math.acosh(3); // 1.762747174039086
@@ -104,7 +104,7 @@ Math.hypot(3, 4); // 5
 Math.imul(Math.pow(2, 32) - 1, Math.pow(2, 32) - 2); // 2
 ```
 
-#### New Array methods
+#### Novos métodos de Array
 
 ```js
 //return a real array
@@ -113,7 +113,7 @@ Array.from(document.querySelectorAll('*'));
 Array.of(1, 2, 3);
 ```
 
-See: [New library additions](https://babeljs.io/learn-es2015/#math--number--string--object-apis)
+Veja: [New library additions](https://babeljs.io/learn-es2015/#math--number--string--object-apis)
 
 ### kind
 
@@ -137,7 +137,7 @@ getArea () {
 }
 ```
 
-#### Call the superclass method
+#### Chamar o método da superclasse
 
 ```js {2}
 expand(n) {
@@ -145,7 +145,7 @@ expand(n) {
 }
 ```
 
-#### Static methods
+#### Métodos estáticos
 
 ```js {1}
 static createFromDiameter(diameter) {
@@ -153,11 +153,11 @@ static createFromDiameter(diameter) {
 }
 ```
 
-Syntactic sugar for prototypes. See: [classes](https://babeljs.io/learn-es2015/#classes)
+Açúcar sintático para prototypes. Veja: [classes](https://babeljs.io/learn-es2015/#classes)
 
-### Private class
+### Classe privada
 
-The javascript default field is public (`public`), if you need to indicate private, you can use (`#`)
+O campo padrão do javascript é público (`public`); se precisar indicar que é privado, use (`#`)
 
 ```js
 class Dog {
@@ -177,7 +177,7 @@ const dog = new Dog('putty');
 dog.printName();
 ```
 
-#### Static private class
+#### Classe privada estática
 
 ```js
 class ClassWithPrivate {
@@ -192,7 +192,7 @@ class ClassWithPrivate {
 
 ## Promises
 
-### make the commitment
+### Criar a promise
 
 ```js {1}
 new Promise((resolve, reject) => {
@@ -204,9 +204,9 @@ new Promise((resolve, reject) => {
 });
 ```
 
-for asynchronous programming. See: [Promises](https://babeljs.io/learn-es2015/#promises)
+para programação assíncrona. Veja: [Promises](https://babeljs.io/learn-es2015/#promises)
 
-### Using Promises
+### Usar Promises
 
 ```js{2,3}
 promise
@@ -214,7 +214,7 @@ promise
   .catch((error) => { ··· })
 ```
 
-### Using Promises in finally
+### Usar Promises no finally
 
 ```js {4}
 promise
@@ -225,9 +225,9 @@ promise
   })
 ```
 
-The handler is called when the promise is fulfilled or rejected
+O handler é chamado quando a promise é resolvida ou rejeitada
 
-### Promise function
+### Funções de Promise
 
 ```js
 Promise.all(···)
@@ -246,12 +246,12 @@ async function run () {
 }
 ```
 
-`async` functions are another way to use functions. See:
+Funções `async` são outra forma de usar funções. Veja:
 [Async Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function)
 
 ## Destructuring
 
-### Destructuring assignment
+### Atribuição por desestruturação
 
 #### Arrays
 
@@ -259,7 +259,7 @@ async function run () {
 const [first, last] = ['Nikola', 'Tesla'];
 ```
 
-#### Objects
+#### Objetos
 
 ```js {1}
 let { title, author } = {
@@ -268,9 +268,9 @@ let { title, author } = {
 };
 ```
 
-Supports matching arrays and objects. See: [Destructuring](https://babeljs.io/learn-es2015/#destructuring)
+Suporta correspondência de arrays e objetos. Veja: [Destructuring](https://babeljs.io/learn-es2015/#destructuring)
 
-### Defaults
+### Valores padrão
 
 ```js
 const scores = [22, 33];
@@ -284,9 +284,9 @@ const [math = 50, sci = 50, arts = 50] = scores;
 //math === 22, sci === 33, arts === 50
 ```
 
-A default value can be assigned when destructuring an array or object
+Um valor padrão pode ser atribuído ao desestruturar um array ou objeto
 
-### Function parameters
+### Parâmetros de função
 
 ```js {1}
 function greet({ name, greeting }) {
@@ -300,9 +300,9 @@ function greet({ name, greeting }) {
 greet({ name: 'Larry', greeting: 'Ahoy' });
 ```
 
-Destructuring of objects and arrays can also be done in function parameters
+A desestruturação de objetos e arrays também pode ser feita nos parâmetros de função
 
-### Defaults
+### Valores padrão
 
 ```js {1}
 function greet({ name = 'Rauno' } = {}) {
@@ -317,7 +317,7 @@ greet(); // Hi Rauno!
 greet({ name: 'Larry' }); // Hi Larry!
 ```
 
-### Reassign keys
+### Renomear chaves
 
 ```js {1}
 function printCoordinates({ left: x, top: y }) {
@@ -331,7 +331,7 @@ function printCoordinates({ left: x, top: y }) {
 printCoordinates({ left: 25, top: 90 });
 ```
 
-This example assigns `x` to the value of the `left` key
+Este exemplo atribui `x` ao valor da chave `left`
 
 ### Loop
 
@@ -341,21 +341,21 @@ for (let {title, artist} of songs) {
 }
 ```
 
-Assignment expressions also work in loops
+Expressões de atribuição também funcionam em loops
 
-### Object Deconstruction
+### Desestruturação de objetos
 
 ```js {1}
 const { id, ...detail } = song;
 ```
 
-Use the `rest(...)` operator to extract some keys individually and the rest of the keys in the object
+Use o operador `rest(...)` para extrair algumas chaves individualmente e o restante das chaves do objeto
 
-## Spread Operator {.cols-2}
+## Operador Spread {.cols-2}
 
-### Object Extensions
+### Extensões de objeto
 
-#### with object extensions
+#### com extensões de objeto
 
 ```js {2}
 const options = {
@@ -364,18 +364,18 @@ const options = {
 };
 ```
 
-#### No object extension
+#### Sem extensão de objeto
 
 ```js
 const options = Object.assign({}, defaults, { visible: true });
 ```
 
-The object spread operator allows you to build new objects from other objects. See:
+O operador spread de objeto permite construir novos objetos a partir de outros objetos. Veja:
 [Object Spread](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_operator)
 
-### Array Expansion
+### Expansão de array
 
-#### with array extension
+#### com expansão de array
 
 ```js{2,3}
 const users = [
@@ -385,20 +385,20 @@ const users = [
 ]
 ```
 
-#### No array expansion
+#### Sem expansão de array
 
 ```js
 const users = admins.concat(editors).concat(['rstacruz']);
 ```
 
-The spread operator allows you to build new arrays in the same way. See:
+O operador spread permite construir novos arrays da mesma forma. Veja:
 [Spread operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_operator)
 
-## Functions
+## Funções
 
-### Function parameters {.row-span-3}
+### Parâmetros de função {.row-span-3}
 
-#### Default parameters
+#### Parâmetros padrão
 
 ```js {1}
 function greet(name = 'Jerry') {
@@ -406,7 +406,7 @@ function greet(name = 'Jerry') {
 }
 ```
 
-#### Rest parameters
+#### Parâmetros rest
 
 ```js {1}
 function fn(x, ...y) {
@@ -415,14 +415,14 @@ function fn(x, ...y) {
 }
 ```
 
-#### Extensions
+#### Extensões
 
 ```js {1}
 fn(...[1, 2, 3]);
 //same as fn(1, 2, 3)
 ```
 
-Default (default), rest, spread (extension). See:
+Default (padrão), rest, spread (extensão). Veja:
 [function parameters](https://babeljs.io/learn-es2015/#default--rest--spread)
 
 ### Arrow function {.row-span-3}
@@ -435,7 +435,7 @@ setTimeout(() => {
 })
 ```
 
-#### with parameters
+#### com parâmetros
 
 ```js {1}
 readFile('text.txt', (err, data) => {
@@ -443,7 +443,7 @@ readFile('text.txt', (err, data) => {
 })
 ```
 
-#### implicit return
+#### retorno implícito
 
 ```js{1,4,5,6}
 arr.map(n => n*2)
@@ -455,9 +455,9 @@ arr.map(n => ({
 //Implicitly returning an object requires parentheses around the object
 ```
 
-Like a function, but preserves `this`. See: [Arrow functions](https://babeljs.io/learn-es2015/#arrows-and-lexical-this)
+Como uma função, mas preserva o `this`. Veja: [Arrow functions](https://babeljs.io/learn-es2015/#arrows-and-lexical-this)
 
-### Parameter setting default value
+### Definição de valor padrão em parâmetro
 
 ```js
 function log(x, y = 'World') {
@@ -469,7 +469,7 @@ log('Hello', 'China'); // Hello China
 log('Hello', ''); // Hello
 ```
 
-### Used in conjunction with destructuring assignment defaults
+### Uso em conjunto com valores padrão na desestruturação
 
 ```js
 function foo({ x, y = 5 } = {}) {
@@ -479,29 +479,29 @@ function foo({ x, y = 5 } = {}) {
 foo(); // undefined 5
 ```
 
-### name attribute
+### atributo name
 
 ```js
 function foo() {}
 foo.name; // "foo"
 ```
 
-### length property
+### propriedade length
 
 ```js
 function foo(a, b) {}
 foo.length; // 2
 ```
 
-## Objects
+## Objetos
 
-### Shorthand Syntax
+### Sintaxe abreviada
 
 ```js
 module.exports = { hello, bye };
 ```
 
-same below:
+o mesmo que:
 
 ```js
 module.exports = {
@@ -510,7 +510,7 @@ module.exports = {
 };
 ```
 
-See: [Object Literals Enhanced](https://babeljs.io/learn-es2015/#enhanced-object-literals)
+Veja: [Object Literals Enhanced](https://babeljs.io/learn-es2015/#enhanced-object-literals)
 
 ### method
 
@@ -523,9 +523,9 @@ const App = {
 //Same as: App = { start: function () {···} }
 ```
 
-See: [Object Literals Enhanced](https://babeljs.io/learn-es2015/#enhanced-object-literals)
+Veja: [Object Literals Enhanced](https://babeljs.io/learn-es2015/#enhanced-object-literals)
 
-### Getters and setters
+### Getters e setters
 
 ```js{2,5}
 const App = {
@@ -538,9 +538,9 @@ const App = {
 }
 ```
 
-See: [Object Literals Enhanced](https://babeljs.io/learn-es2015/#enhanced-object-literals)
+Veja: [Object Literals Enhanced](https://babeljs.io/learn-es2015/#enhanced-object-literals)
 
-### Computed property name
+### Nome de propriedade computado
 
 ```js {3}
 let event = 'click';
@@ -550,9 +550,9 @@ let handlers = {
 //Same as: handlers = { 'onclick': true }
 ```
 
-See: [Object Literals Enhanced](https://babeljs.io/learn-es2015/#enhanced-object-literals)
+Veja: [Object Literals Enhanced](https://babeljs.io/learn-es2015/#enhanced-object-literals)
 
-### Extract value
+### Extrair valores
 
 ```js{3,5}
 const fatherJS = { age: 57, name: "Zhang San" }
@@ -562,9 +562,9 @@ Object.entries(fatherJS)
 //[["age", 57], ["name", "Zhang San"]]
 ```
 
-## Modules module
+## Módulos
 
-### Imports import
+### Imports
 
 ```js
 import 'helpers';
@@ -599,9 +599,9 @@ import { indentSpaces as indent } from 'helpers';
 //aka: const indent = require('···').indentSpaces
 ```
 
-`import` is the new `require()`. See: [Module imports](https://babeljs.io/learn-es2015/#modules)
+`import` é o novo `require()`. Veja: [Module imports](https://babeljs.io/learn-es2015/#modules)
 
-### Exports export
+### Exports
 
 ```js
 export default function () { ··· }
@@ -637,9 +637,9 @@ export { firstName, lastName, year };
 export * from 'lib/math';
 ```
 
-`export` is the new `module.exports`. See: [Module exports](https://babeljs.io/learn-es2015/#modules)
+`export` é o novo `module.exports`. Veja: [Module exports](https://babeljs.io/learn-es2015/#modules)
 
-### `as` keyword renaming
+### Renomeação com a palavra-chave `as`
 
 ```js{2,8,12-14}
 import {
@@ -659,7 +659,7 @@ export {
 };
 ```
 
-### Dynamically load modules
+### Carregar módulos dinamicamente
 
 ```js
 button.addEventListener('click', (event) => {
@@ -673,9 +673,9 @@ button.addEventListener('click', (event) => {
 });
 ```
 
-[ES2020 Proposal](https://github.com/tc39/proposal-dynamic-import) introduce `import()` function
+A [ES2020 Proposal](https://github.com/tc39/proposal-dynamic-import) introduz a função `import()`
 
-### import() allows module paths to be dynamically generated
+### import() permite que paths de módulos sejam gerados dinamicamente
 
 ```js
 const main = document.querySelector('main');
@@ -691,26 +691,26 @@ import(`./modules/${someVariable}.js`)
 
 ### import.meta
 
-[ES2020](https://github.com/tc39/proposal-import-meta) Added a meta property `import.meta` to the `import` command,
-which returns the meta information of the current module
+A [ES2020](https://github.com/tc39/proposal-import-meta) adicionou a meta propriedade `import.meta` ao comando `import`,
+que retorna as metainformações do módulo atual
 
 ```js
 new URL('data.txt', import.meta.url);
 ```
 
-In the Node.js environment, `import.meta.url` always returns a local path, that is, a string of the `file:URL` protocol,
-such as `file:/// home/user/foo.js`
+No ambiente Node.js, `import.meta.url` sempre retorna um path local, ou seja, uma string do protocolo `file:URL`,
+como `file:/// home/user/foo.js`
 
 ### Import Assertions {.col-span-2}
 
-#### static import
+#### import estático
 
 ```js
 import json from './package.json' assert { type: 'json' };
 //Import all objects in the json file
 ```
 
-#### Dynamic Import
+#### Import dinâmico
 
 ```js
 const json = await import('./package.json', { assert: { type: 'json' } });
@@ -718,7 +718,7 @@ const json = await import('./package.json', { assert: { type: 'json' } });
 
 ## Generators
 
-### Generator function
+### Função generator
 
 ```js
 function* idMaker() {
@@ -738,7 +738,7 @@ gen.next().value; // → 1
 gen.next().value; // → 2
 ```
 
-it's complicated. See: [Generators](https://babeljs.io/learn-es2015/#generators)
+é complicado. Veja: [Generators](https://babeljs.io/learn-es2015/#generators)
 
 ### For..of + iterator {.row-span-2}
 
@@ -763,9 +763,9 @@ for (var n of fibonacci) {
 }
 ```
 
-For iterating over generators and arrays. See: [For..of iteration](https://babeljs.io/learn-es2015/#iterators--forof)
+Para iterar sobre generators e arrays. Veja: [For..of iteration](https://babeljs.io/learn-es2015/#iterators--forof)
 
-### Relationship with Iterator interface
+### Relação com a interface Iterator
 
 ```js
 var gen = {};
@@ -778,10 +778,10 @@ gen[Symbol.iterator] = function* () {
 [...gen]; // => [1, 2, 3]
 ```
 
-The `Generator` function is assigned to the `Symbol.iterator` property, so that the `gen` object has the `Iterator`
-interface, which can be traversed by the `...` operator
+A função `Generator` é atribuída à propriedade `Symbol.iterator`, de modo que o objeto `gen` tenha a interface `Iterator`,
+que pode ser percorrida pelo operador `...`
 
-### Symbol.iterator property
+### Propriedade Symbol.iterator
 
 ```js
 function* gen() {
@@ -792,10 +792,10 @@ var g = gen();
 g[Symbol.iterator]() === g; // true
 ```
 
-`gen` is a `Generator` function, calling it will generate a traverser object `g`. Its `Symbol.iterator` property, which
-is also an iterator object generation function, returns itself after execution
+`gen` é uma função `Generator`; chamá-la gera um objeto iterador `g`. Sua propriedade `Symbol.iterator`, que também é
+uma função geradora de objeto iterador, retorna a si mesma após a execução
 
-## see also
+## veja também
 
 - [Learn ES2015](https://babeljs.io/docs/en/learn/)_(babeljs.io)_
 - [ECMAScript 6 Features Overview](https://github.com/lukehoban/es6features#readme) _(github.com)_

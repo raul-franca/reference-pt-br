@@ -6,22 +6,22 @@ tags:
   - file
   - directory
 categories:
-  - Linux Command
+  - Comandos Linux
 intro: |
-  This is a quick reference list of cheatsheet for linux find command, contains common options and examples.
+  Esta é uma lista de referência rápida em cheat sheet do comando find do Linux, com opções e exemplos comuns.
 plugins:
   - copyCode
 ---
 
-## Getting Started
+## Primeiros passos
 
-### Usage
+### Uso
 
 ```shell script
 $ find [path...] [options] [expression]
 ```
 
-Wildcard
+Curinga (wildcard)
 
 ```shell script
 $ find . -name "*.txt"
@@ -31,396 +31,396 @@ $ find . -name "json_*"
 
 ---
 
-- [Regex reference](/regex) _(cheatsheets.zip)_
-- [Find cheatsheet](https://gist.github.com/gr1ev0us/3a9b9d9dbdd38f6379288eb2686fc538) _(gist.github.com)_
+- [Referência de regex](/regex) _(cheatsheets.zip)_
+- [Cheat sheet de find](https://gist.github.com/gr1ev0us/3a9b9d9dbdd38f6379288eb2686fc538) _(gist.github.com)_
 
-### Option Examples {.col-span-2}
+### Exemplos de opções {.col-span-2}
 
-| Option      | Example                                    | Description                                 |
+| Opção       | Exemplo                                    | Descrição                                   |
 | ----------- | ------------------------------------------ | ------------------------------------------- |
-| `-type`     | find . -type d                             | Find only directories                       |
-| `-name`     | find . -type f -name "\*.txt"              | Find file by name                           |
-| `-iname`    | find . -type f -iname "hello"              | Find file by name (case-insensitive)        |
-| `-size`     | find . -size +1G                           | Find files larger than 1G                   |
-| `-user`     | find . -type d -user jack                  | Find jack's file                            |
-| `-regex`    | find /var -regex '.\*/tmp/.\*[0-9]\*.file' | Using Regex with find. See [regex](/regex)  |
-| `-maxdepth` | find . -maxdepth 1 -name "a.txt"           | In the current directory and subdirectories |
-| `-mindepth` | find / -mindepth 3 -maxdepth 5 -name pass  | Between sub-directory level 2 and 4         |
+| `-type`     | find . -type d                             | Localiza apenas diretórios                  |
+| `-name`     | find . -type f -name "\*.txt"              | Localiza arquivo por nome                   |
+| `-iname`    | find . -type f -iname "hello"              | Localiza arquivo por nome (sem diferenciar maiúsculas) |
+| `-size`     | find . -size +1G                           | Localiza arquivos maiores que 1G            |
+| `-user`     | find . -type d -user jack                  | Localiza o arquivo do jack                  |
+| `-regex`    | find /var -regex '.\*/tmp/.\*[0-9]\*.file' | Usa regex com o find. Veja [regex](/regex)  |
+| `-maxdepth` | find . -maxdepth 1 -name "a.txt"           | No diretório atual e nos subdiretórios      |
+| `-mindepth` | find / -mindepth 3 -maxdepth 5 -name pass  | Entre os níveis 2 e 4 de subdiretório       |
 
 {.show-header}
 
-### Type
+### Tipo
 
 |           |                      |
 | --------- | -------------------- |
-| `-type d` | Directory            |
-| `-type f` | File                 |
-| `-type l` | Symbolic link        |
-| `-type b` | Buffered block       |
-| `-type c` | Unbuffered character |
-| `-type p` | Named pipe           |
+| `-type d` | Diretório            |
+| `-type f` | Arquivo              |
+| `-type l` | Link simbólico       |
+| `-type b` | Bloco com buffer     |
+| `-type c` | Caractere sem buffer |
+| `-type p` | Pipe nomeado         |
 | `-type s` | Socket               |
 
-### Size
+### Tamanho
 
 |           |                           |
 | --------- | ------------------------- |
-| `-size b` | 512-byte blocks (default) |
+| `-size b` | Blocos de 512 bytes (padrão) |
 | `-size c` | Bytes                     |
-| `-size k` | Kilobytes                 |
+| `-size k` | Quilobytes                |
 | `-size M` | Megabytes                 |
 | `-size G` | Gigabytes                 |
-| `-size T` | Terabytes _(only BSD)_    |
-| `-size P` | Petabytes _(only BSD)_    |
+| `-size T` | Terabytes _(somente BSD)_    |
+| `-size P` | Petabytes _(somente BSD)_    |
 
-### Size +/-
+### Tamanho +/-
 
-Find all bigger than 10MB files
+Localiza todos os arquivos maiores que 10MB
 
 ```shell script
 $ find / -size +10M
 ```
 
-Find all smaller than 10MB files
+Localiza todos os arquivos menores que 10MB
 
 ```shell script
 $ find / -size -10M
 ```
 
-Find all files that are exactly 10M
+Localiza todos os arquivos com exatamente 10M
 
 ```shell script
 $ find / -size 10M
 ```
 
-Find Size between 100MB and 1GB
+Localiza arquivos com tamanho entre 100MB e 1GB
 
 ```shell script
 $ find / -size +100M -size -1G
 ```
 
-The `+` and `-` prefixes signify greater than and less than, as usual.
+Os prefixos `+` e `-` significam maior que e menor que, como de costume.
 
-### Names
+### Nomes
 
-Find files using name in current directory
+Localiza arquivos pelo nome no diretório atual
 
 ```shell script
 $ find . -name tecmint.txt
 ```
 
-Find files under home directory
+Localiza arquivos no diretório home
 
 ```shell script
 $ find /home -name tecmint.txt
 ```
 
-Find files using name and ignoring case
+Localiza arquivos pelo nome ignorando maiúsculas e minúsculas
 
 ```shell script
 $ find /home -iname tecmint.txt
 ```
 
-Find directories using name
+Localiza diretórios pelo nome
 
 ```shell script
 $ find / -type d -name tecmint
 ```
 
-Find php files using name
+Localiza arquivos php pelo nome
 
 ```shell script
 $ find . -type f -name tecmint.php
 ```
 
-Find all php files in directory
+Localiza todos os arquivos php no diretório
 
 ```shell script
 $ find . -type f -name "*.php"
 ```
 
-### Permissions
+### Permissões
 
-Find the files whose permissions are 777.
+Localiza os arquivos cujas permissões são 777.
 
 ```shell script
 $ find . -type f -perm 0777 -print
 ```
 
-Find the files without permission 777.
+Localiza os arquivos sem a permissão 777.
 
 ```shell script
 $ find / -type f ! -perm 777
 ```
 
-Find SUID set files.
+Localiza arquivos com SUID definido.
 
 ```shell script
 $ find / -perm /u=s
 ```
 
-Find SGID set files.
+Localiza arquivos com SGID definido.
 
 ```shell script
 $ find / -perm /g=s
 ```
 
-Find Read Only files.
+Localiza arquivos somente leitura.
 
 ```shell script
 $ find / -perm /u=r
 ```
 
-Find Executable files.
+Localiza arquivos executáveis.
 
 ```shell script
 $ find / -perm /a=x
 ```
 
-### Owners and Groups
+### Proprietários e grupos
 
-Find single file based on user
+Localiza um único arquivo com base no usuário
 
 ```shell script
 $ find / -user root -name tecmint.txt
 ```
 
-Find all files based on user
+Localiza todos os arquivos com base no usuário
 
 ```shell script
 $ find /home -user tecmint
 ```
 
-Find all files based on group
+Localiza todos os arquivos com base no grupo
 
 ```shell script
 $ find /home -group developer
 ```
 
-Find particular files of user
+Localiza arquivos específicos do usuário
 
 ```shell script
 $ find /home -user tecmint -iname "*.txt"
 ```
 
-### Multiple filenames
+### Múltiplos nomes de arquivo
 
 ```shell script {.wrap}
 $ find . -type f \( -name "*.sh" -o -name "*.txt" \)
 ```
 
-Find files with `.sh` and `.txt` extensions
+Localiza arquivos com extensões `.sh` e `.txt`
 
-### Multiple dirs
+### Múltiplos diretórios
 
 ```shell script {.wrap}
 $ find /opt /usr /var -name foo.scala -type f
 ```
 
-Find files with multiple dirs
+Localiza arquivos em múltiplos diretórios
 
-### Empty
+### Vazios
 
 ```shell script
 $ find . -type d -empty
 ```
 
-Delete all empty files in a directory
+Exclui todos os arquivos vazios de um diretório
 
 ```shell script
 $ find . -type f -empty -delete
 ```
 
-## Find Date and Time
+## Find com data e hora
 
-### Means {.col-span-2}
+### Significados {.col-span-2}
 
-| Option  | Description                                                     |
+| Opção  | Descrição                                                     |
 | ------- | --------------------------------------------------------------- |
-| `atime` | access time (last time file <yel>opened</yel>)                  |
-| `mtime` | modified time (last time file <yel>contents was modified</yel>) |
-| `ctime` | changed time (last time file <yel>inode was changed</yel>)      |
+| `atime` | tempo de acesso (última vez que o arquivo foi <yel>aberto</yel>) |
+| `mtime` | tempo de modificação (última vez que o <yel>conteúdo do arquivo foi modificado</yel>) |
+| `ctime` | tempo de alteração (última vez que o <yel>inode foi alterado</yel>)      |
 
-#### Example
+#### Exemplo
 
-| Option          | Description                                                |
+| Opção          | Descrição                                                |
 | --------------- | ---------------------------------------------------------- |
-| `-mtime +0`     | Modified greater than 24 hours ago                         |
-| `-mtime 0`      | Modified between now and 1 day ago                         |
-| `-mtime -1`     | Modified less than 1 day ago (same as `-mtime 0`)          |
-| `-mtime 1`      | Modified between 24 and 48 hours ago                       |
-| `-mtime +1`     | Modified more than 48 hours ago                            |
-| `-mtime +1w`    | Last modified more than 1 week ago                         |
-| `-atime 0`      | Last accessed between now and 24 hours ago                 |
-| `-atime +0`     | Accessed more than 24 hours ago                            |
-| `-atime 1`      | Accessed between 24 and 48 hours ago                       |
-| `-atime +1`     | Accessed more than 48 hours ago                            |
-| `-atime -1`     | Accessed less than 24 hours ago (same as `-atime 0`)       |
-| `-ctime -6h30m` | File status changed within the last 6 hours and 30 minutes |
+| `-mtime +0`     | Modificado há mais de 24 horas                            |
+| `-mtime 0`      | Modificado entre agora e 1 dia atrás                      |
+| `-mtime -1`     | Modificado há menos de 1 dia (o mesmo que `-mtime 0`)     |
+| `-mtime 1`      | Modificado entre 24 e 48 horas atrás                      |
+| `-mtime +1`     | Modificado há mais de 48 horas                            |
+| `-mtime +1w`    | Última modificação há mais de 1 semana                    |
+| `-atime 0`      | Último acesso entre agora e 24 horas atrás                |
+| `-atime +0`     | Acessado há mais de 24 horas                              |
+| `-atime 1`      | Acessado entre 24 e 48 horas atrás                        |
+| `-atime +1`     | Acessado há mais de 48 horas                              |
+| `-atime -1`     | Acessado há menos de 24 horas (o mesmo que `-atime 0`)    |
+| `-ctime -6h30m` | Status do arquivo alterado nas últimas 6 horas e 30 minutos |
 
-### Examples
+### Exemplos
 
-Find last 50 days modified files
+Localiza arquivos modificados nos últimos 50 dias
 
 ```shell script
 $ find / -mtime 50
 ```
 
-find last 50 days accessed files
+localiza arquivos acessados nos últimos 50 dias
 
 ```shell script
 $ find / -atime 50
 ```
 
-find last 50-100 days modified files
+localiza arquivos modificados nos últimos 50 a 100 dias
 
 ```shell script
 $ find / -mtime +50 –mtime -100
 ```
 
-find changed files in last 1 hour
+localiza arquivos alterados na última 1 hora
 
 ```shell script
 $ find / -cmin -60
 ```
 
-find modified files in last 1 hour
+localiza arquivos modificados na última 1 hora
 
 ```shell script
 $ find / -mmin -60
 ```
 
-find accessed files in last 1 hour
+localiza arquivos acessados na última 1 hora
 
 ```shell script
 $ find / -amin -60
 ```
 
-## Find and {.cols-2}
+## Find com {.cols-2}
 
-### Find and delete {.row-span-2}
+### Find e excluir {.row-span-2}
 
-Find and remove multiple files
+Localiza e remove múltiplos arquivos
 
 ```shell script
 $ find . -type f -name "*.mp3" -exec rm -f {} \;
 ```
 
-Find and remove single file
+Localiza e remove um único arquivo
 
 ```shell script
 $ find . -type f -name "tecmint.txt" -exec rm -f {} \;
 ```
 
-Find and delete 100mb files
+Localiza e exclui arquivos de 100mb
 
 ```shell script
 $ find / -type f -size +100m -exec rm -f {} \;
 ```
 
-Find specific files and delete
+Localiza arquivos específicos e exclui
 
 ```shell script
 $ find / -type f -name *.mp3 -size +10m -exec rm {} \;
 ```
 
-### Find and replace
+### Find e substituir
 
-Find all files and modify the content `const` to `let`
+Localiza todos os arquivos e altera o conteúdo `const` para `let`
 
 ```shell script {.wrap}
 $ find ./ -type f -exec sed -i 's/const/let/g' {} \;
 ```
 
-Find readable and writable files and modify the content `old` to `new`
+Localiza arquivos legíveis e graváveis e altera o conteúdo `old` para `new`
 
 ```shell script {.wrap}
 $ find ./ -type f -readable -writable -exec sed -i "s/old/new/g" {} \;
 ```
 
-See also: [sed cheatsheet](/sed)
+Veja também: [cheat sheet de sed](/sed)
 
-### Find and rename
+### Find e renomear
 
-Find and suffix (added `.bak`)
+Localiza e adiciona sufixo (`.bak`)
 
 ```shell script {.wrap}
 $ find . -type f -name 'file*' -exec mv {} {}.bak\;
 ```
 
-Find and rename extension (`.html` => `.gohtml`)
+Localiza e renomeia a extensão (`.html` => `.gohtml`)
 
 ```shell script {.wrap}
 $ find ./ -depth -name "*.html" -exec sh -c 'mv "$1" "${1%.html}.gohtml"' _ {} \;
 ```
 
-### Find and move
+### Find e mover
 
 ```shell script
 $ find . -name '*.mp3' -exec mv {} /tmp/music \;
 ```
 
-Find and move it to a specific directory (`/tmp/music`)
+Localiza e move para um diretório específico (`/tmp/music`)
 
-### Find and copy
+### Find e copiar
 
 ```shell script
 $ find . -name '*2020*.xml' -exec cp -r "{}" /tmp/backup \;
 ```
 
-Find matching files and copy to a specific directory (`/tmp/backup`)
+Localiza arquivos correspondentes e copia para um diretório específico (`/tmp/backup`)
 
-### Find and concatenate
+### Find e concatenar
 
-Merge all csv files in the download directory into `merged.csv`
+Junta todos os arquivos csv do diretório download em `merged.csv`
 
 ```shell script
 $ find download -type f -iname '*.csv' | xargs cat > merged.csv
 ```
 
-Merge all sorted csv files in the download directory into `merged.csv`
+Junta todos os arquivos csv ordenados do diretório download em `merged.csv`
 
 ```shell script {.wrap}
 $ find download -type f -iname '*.csv' | sort | xargs cat > merged.csv
 ```
 
-### Find and sort
+### Find e ordenar
 
-Find and sort in ascending
+Localiza e ordena em ordem crescente
 
 ```shell script
 $ find . -type f | sort
 ```
 
-find and sort descending
+localiza e ordena em ordem decrescente
 
 ```shell script
 $ find . -type f | sort -r
 ```
 
-### Find and chmod {.row-span-1}
+### Find e chmod {.row-span-1}
 
-Find files and set permissions to 644.
+Localiza arquivos e define as permissões como 644.
 
 ```shell script
 $ find / -type f -perm 0777 -print -exec chmod 644 {} \;
 ```
 
-Find directories and set permissions to 755.
+Localiza diretórios e define as permissões como 755.
 
 ```shell script
 $ find / -type d -perm 777 -print -exec chmod 755 {} \;
 ```
 
-### Find and compress
+### Find e compactar
 
-Find all `.java` files and compress it into `java.tar`
+Localiza todos os arquivos `.java` e os compacta em `java.tar`
 
 ```shell script
 $ find . -type f -name "*.java" | xargs tar cvf java.tar
 ```
 
-Find all `.csv` files and compress it into `cheatsheets.zip`
+Localiza todos os arquivos `.csv` e os compacta em `cheatsheets.zip`
 
 ```shell script
 $ find . -type f -name "*.csv" | xargs zip cheatsheets.zip

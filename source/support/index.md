@@ -1,56 +1,56 @@
 ---
-title: Buy Me a Coffee
-description: Support the development of CheatSheets.zip through various donation platforms
+title: Pague um café
+description: Apoie o desenvolvimento do CheatSheets.zip por meio de diversas plataformas de doação
 permalink: /support/
 background: bg-gradient-to-r from-pink-500 to-purple-600
 tags:
   - support
   - donation
 categories:
-  - Other
+  - Outros
 intro: |
-  Thank you for considering supporting CheatSheets.zip! Your contributions help us maintain and improve this free resource for developers worldwide.
+  Obrigado por considerar apoiar o CheatSheets.zip! Sua contribuição nos ajuda a manter e melhorar este recurso gratuito para desenvolvedores no mundo todo.
 ---
 
-## Buy Me a Coffee
+## Pague um café
 
-### 💖 Why Support Us?
+### 💖 Por que nos apoiar?
 
-CheatSheets.zip serves **1M+ developers** monthly with **200+ free cheat sheets**.
+O CheatSheets.zip atende **mais de 1 milhão de desenvolvedores** por mês com **mais de 200 cheat sheets gratuitas**.
 
-We believe great developer resources should be **free forever**. Your support helps us:
+Acreditamos que recursos de qualidade para desenvolvedores devem ser **gratuitos para sempre**. Seu apoio nos ajuda a:
 
-- 🚀 Keep servers running smoothly
-- ✨ Add new cheat sheets weekly
-- 🎯 Improve user experience
-- 🔥 Maintain top-quality content
+- 🚀 Manter os servidores funcionando sem problemas
+- ✨ Adicionar novas cheat sheets toda semana
+- 🎯 Melhorar a experiência do usuário
+- 🔥 Manter conteúdo de alta qualidade
 
-_No ads, no paywalls, just pure developer goodness._
+_Sem anúncios, sem paywall: só conteúdo de qualidade para desenvolvedores._
 
-### ☕ Buy Me a Coffee
+### ☕ Pague um café
 
-**Fuel our coding sessions!**
+**Abasteça nossas sessões de código!**
 
-Buy us a coffee and help keep the cheat sheets coming. Perfect for one-time support or when you just want to say thanks.
+Pague um café e ajude a manter as cheat sheets chegando. Perfeito para um apoio único ou quando você só quer agradecer.
 
-☕ **What your coffee buys:**
+☕ **O que seu café paga:**
 
-- Server uptime for thousands of developers
-- Motivation to create new content
-- A smile on our faces
+- Tempo de servidor para milhares de desenvolvedores
+- Motivação para criar conteúdo novo
+- Um sorriso no nosso rosto
 
 [Buy Me a Coffee](https://buymeacoffee.com/cheatsheets.zip) {.link-arrow}
 
 ### 🌟 GitHub Sponsors
 
-**Join our amazing sponsors!**
+**Junte-se aos nossos incríveis patrocinadores!**
 
-Support the future of free developer resources. Every contribution, big or small, makes a real difference.
+Apoie o futuro dos recursos gratuitos para desenvolvedores. Toda contribuição, grande ou pequena, faz diferença de verdade.
 
-✨ **Sponsor perks:**
+✨ **Vantagens de patrocinar:**
 
-- Your name in our README
-- Early access to new features
-- Good karma for supporting open source
+- Seu nome no nosso README
+- Acesso antecipado a novos recursos
+- Boa energia por apoiar open source
 
-[Sponsor on GitHub](https://github.com/sponsors/Fechin) {.link-arrow}
+[Patrocine no GitHub](https://github.com/sponsors/Fechin) {.link-arrow}

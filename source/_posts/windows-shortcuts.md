@@ -1,465 +1,465 @@
-# Best Windows Shortcuts on Your Keyboard
+# Melhores atalhos do Windows no seu teclado
 
-Copy selected content (Ctrl + C can also abort commands):
+Copia o conteúdo selecionado (Ctrl + C também pode abortar comandos):
 
 ```
 Ctrl + C
 ```
 
-Paste copied content:
+Cola o conteúdo copiado:
 
 ```
 Ctrl + V
 ```
 
-Paste unformatted content:
+Cola o conteúdo sem formatação:
 
 ```
 Ctrl + Shift + V
 ```
 
-Delete and copy selected content (good for moving text, files, etc.):
+Exclui e copia o conteúdo selecionado (útil para mover textos, arquivos etc.):
 
 ```
 Ctrl + X
 ```
 
-Select all available content in focus:
+Seleciona todo o conteúdo disponível em foco:
 
 ```
 Ctrl + A
 ```
 
-Undo the previous action:
+Desfaz a ação anterior:
 
 ```
 Ctrl + Z
 ```
 
-Redo the previous action:
+Refaz a ação anterior:
 
 ```
 Ctrl + Y
 ```
 
-Save what you're working on:
+Salva o que você está fazendo:
 
 ```
 Ctrl + S
 ```
 
-Open a new file:
+Abre um novo arquivo:
 
 ```
 Ctrl + O
 ```
 
-Open the print dialog box:
+Abre a caixa de diálogo de impressão:
 
 ```
 Ctrl + P
 ```
 
-Open the search tool to find something on the page:
+Abre a ferramenta de busca para encontrar algo na página:
 
 ```
 Ctrl + F
 ```
 
-Refresh the contents on the screen (only F5 works in some cases):
+Atualiza o conteúdo na tela (em alguns casos, só o F5 funciona):
 
 ```
 Ctrl + R
 ```
 
-Close the active program:
+Fecha o programa ativo:
 
 ```
 Alt + F4
 ```
 
-Enter full-screen mode:
+Entra no modo tela cheia:
 
 ```
 F11
 ```
 
-Stop or close a prompt or process:
+Interrompe ou fecha um prompt ou processo:
 
 ```
 Esc
 ```
 
-# Keyboard Shortcuts for Navigating Windows
+# Atalhos de teclado para navegar no Windows
 
-Lock your user account:
+Bloqueia sua conta de usuário:
 
 ```
 Win + L
 ```
 
-Open File Explorer:
+Abre o Explorador de Arquivos:
 
 ```
 Win + E
 ```
 
-Open Windows Settings:
+Abre as Configurações do Windows:
 
 ```
 Win + i
 ```
 
-Move focus to the navigation bar to edit or copy the folder path:
+Move o foco para a barra de navegação para editar ou copiar o path da pasta:
 
 ```
 Alt + D
 ```
 
-Go to the folder the current folder is stored in:
+Vai para a pasta que contém a pasta atual:
 
 ```
 Alt + Up
 ```
 
-Show your password on the sign-in screen:
+Mostra sua senha na tela de login:
 
 ```
 Alt + F8
 ```
 
-Open Task Manager (Ctrl + Alt + Del works, too):
+Abre o Gerenciador de Tarefas (Ctrl + Alt + Del também funciona):
 
 ```
 Ctrl + Shift + Esc
 ```
 
-Open the Run dialog box to run commands:
+Abre a caixa de diálogo Executar para rodar comandos:
 
 ```
 Win + R
 ```
 
-Quickly switch to the desktop:
+Alterna rapidamente para a área de trabalho:
 
 ```
 Win + D
 ```
 
-Open the selected item's Properties window:
+Abre a janela Propriedades do item selecionado:
 
 ```
 Alt + [Enter or double-click]
 ```
 
-Add a Virtual Desktop:
+Adiciona uma área de trabalho virtual:
 
 ```
 Win + Ctrl + D
 ```
 
-Switch to the virtual desktop on the left or right:
+Alterna para a área de trabalho virtual à esquerda ou à direita:
 
 ```
 Win + Ctrl + [Left or Right]
 ```
 
-Show All Open Desktops:
+Mostra todas as áreas de trabalho abertas:
 
 ```
 WIN + Tab
 ```
 
-Close Current Virtual Desktop:
+Fecha a área de trabalho virtual atual:
 
 ```
 WIN + Ctrl + F4
 ```
 
-Select noncontiguous items (like files or folders):
+Seleciona itens não contíguos (como arquivos ou pastas):
 
 ```
 Ctrl + Click
 ```
 
-A possible fix for when your screen is black:
+Uma possível solução para quando a tela está preta:
 
 ```
 Win + Ctrl + Shift + B
 ```
 
-Select every item between the first and last select items:
+Seleciona todos os itens entre o primeiro e o último item selecionado:
 
 ```
 Shift + Click
 ```
 
-Permanently delete a file or folder (it skips the Recycle Bin):
+Exclui permanentemente um arquivo ou pasta (passa direto pela Lixeira):
 
 ```
 Shift + Del
 ```
 
-Switch to the last used window:
+Alterna para a última janela usada:
 
 ```
 Alt + Tab
 ```
 
-Snap the active window to one side of the screen:
+Encaixa a janela ativa em um lado da tela:
 
 ```
 Win + [Arrow]
 ```
 
-Rename the selected file or folder:
+Renomeia o arquivo ou pasta selecionado:
 
 ```
 F2
 ```
 
-Open the Power User Menu:
+Abre o menu Power User:
 
 ```
 Win + X
 ```
 
-Open a new instance of that app:
+Abre uma nova instância desse app:
 
 ```
 Shift + Click Taskbar Icon
 ```
 
-Launch that item from the taskbar:
+Inicia esse item pela barra de tarefas:
 
 ```
 Win + [number]
 ```
 
-Make a new folder:
+Cria uma nova pasta:
 
 ```
 Ctrl + Shift + N
 ```
 
-Open the Windows About page:
+Abre a página Sobre do Windows:
 
 ```
 Win + Pause
 ```
 
-# Keyboard Shortcuts for Screenshots
+# Atalhos de teclado para capturas de tela
 
-Screenshot just the active window:
+Captura apenas a janela ativa:
 
 ```
 Alt + PrtScn
 ```
 
-Auto-save full-screen screenshot to Pictures > Screenshots:
+Salva automaticamente a captura da tela inteira em Imagens > Capturas de tela:
 
 ```
 Win + PrtScn
 ```
 
-Choose a part of the screen to make a screenshot:
+Escolhe uma parte da tela para capturar:
 
 ```
 Win + Shift + S
 ```
 
-# Keyboard Shortcuts for Text Manipulation
+# Atalhos de teclado para manipulação de texto
 
-Bold the selected text:
+Deixa o texto selecionado em negrito:
 
 ```
 Ctrl + B
 ```
 
-Italicize the selected text:
+Deixa o texto selecionado em itálico:
 
 ```
 Ctrl + i
 ```
 
-Underline the selected text:
+Sublinha o texto selecionado:
 
 ```
 Ctrl + U
 ```
 
-Insert a hyperlink into the selected text:
+Insere um hyperlink no texto selecionado:
 
 ```
 Ctrl + K
 ```
 
-Open the Find and Replace tool (confirmed in MS Word and Google Docs):
+Abre a ferramenta Localizar e Substituir (confirmado no MS Word e no Google Docs):
 
 ```
 Ctrl + H
 ```
 
-Pick an arrow key with this shortcut to quickly highlight a whole word or paragraph:
+Combine com uma tecla de seta para destacar rapidamente uma palavra ou um parágrafo inteiro:
 
 ```
 Shift + Ctrl + [Arrow]
 ```
 
-Highlight everything from the cursor to the beginning or end of the line:
+Destaca tudo do cursor até o início ou o fim da linha:
 
 ```
 Shift + [Home or End]
 ```
 
-Delete the word to the right of the cursor:
+Exclui a palavra à direita do cursor:
 
 ```
 Ctrl + Del
 ```
 
-# Keyboard Shortcuts for Web Browsers
+# Atalhos de teclado para navegadores web
 
-Open a new tab:
+Abre uma nova aba:
 
 ```
 Ctrl + T
 ```
 
-Reopen the most recently closed tab:
+Reabre a aba fechada mais recentemente:
 
 ```
 Ctrl + Shift + T
 ```
 
-Close the active tab:
+Fecha a aba ativa:
 
 ```
 Ctrl + W
 ```
 
-Open the link in a new tab:
+Abre o link em uma nova aba:
 
 ```
 Ctrl + [Link]
 ```
 
-View your web browsing history:
+Exibe seu histórico de navegação:
 
 ```
 Ctrl + H
 ```
 
-View recent or active downloads:
+Exibe os downloads recentes ou ativos:
 
 ```
 Ctrl + J
 ```
 
-Start a search using the default search engine:
+Inicia uma busca usando o mecanismo de busca padrão:
 
 ```
 Ctrl + E
 ```
 
-Jump to the tab in that position from the left (e.g., Ctrl + 4):
+Vai para a aba naquela posição a partir da esquerda (por exemplo, Ctrl + 4):
 
 ```
 Ctrl + [number]
 ```
 
-Open the options to delete browsing data:
+Abre as opções para excluir dados de navegação:
 
 ```
 Ctrl + Shift + Del
 ```
 
-Go back or forward a page:
+Volta ou avança uma página:
 
 ```
 Alt + [Left or Right]
 ```
 
-Adjust the size of the text (scroll up with the mouse to increase the size):
+Ajusta o tamanho do texto (role para cima com o mouse para aumentar o tamanho):
 
 ```
 Ctrl + [Zoom]
 ```
 
-Add .com to the end of the text in the address bar, and then visit the page:
+Adiciona .com ao final do texto na barra de endereços e visita a página:
 
 ```
 Ctrl + Enter
 ```
 
-Refresh the page, but skip the cache:
+Atualiza a página, mas ignora o cache:
 
 ```
 Ctrl + F5
 ```
 
-Open LinkedIn (or Teams, Word Online):
+Abre o LinkedIn (ou Teams, Word Online):
 
 ```
 Ctrl + Shift + Alt + Win + L
 ```
 
-# Windows Shortcuts in Run Command
+# Atalhos do Windows no comando Executar
 
-- The quickest way to access the Run command window is to use the keyboard shortcut `Windows + R`
+- A forma mais rápida de acessar a janela do comando Executar é usar o atalho de teclado `Windows + R`
 
-| Command               | Description                                                                      |
+| Comando               | Descrição                                                                        |
 | --------------------- | -------------------------------------------------------------------------------- |
-| `sysdm.cpl`           | Windows Propertes                                                                |
-| `compmgmt.msc`        | Component Managment                                                              |
-| `winver`              | Windows Version                                                                  |
-| `appwiz.cpl`          | Programs And Fuatchers                                                           |
-| `resmon`              | The Resource Monitor window will open, displaying real-time performance d`ata    |
-| `taskmgr`             | Task Manager                                                                     |
-| `explorer`            | Windows Explorer                                                                 |
-| `ncpa.cpl`            | Network Connection                                                               |
+| `sysdm.cpl`           | Propriedades do Windows                                                          |
+| `compmgmt.msc`        | Gerenciamento do Computador                                                      |
+| `winver`              | Versão do Windows                                                                |
+| `appwiz.cpl`          | Programas e Recursos                                                             |
+| `resmon`              | Abre a janela do Monitor de Recursos, exibindo dados de desempenho em tempo real |
+| `taskmgr`             | Gerenciador de Tarefas                                                           |
+| `explorer`            | Explorador do Windows                                                            |
+| `ncpa.cpl`            | Conexões de Rede                                                                 |
 | `Firewall.cpl`        | Firewall                                                                         |
-| `wf.msc`              | Windows Firewall Advanced                                                        |
-| `intl.cpl`            | Time And Date Options                                                            |
-| `timedate.cpl`        | Time And Date Settings                                                           |
-| `mstsc`               | Remote Desktop                                                                   |
-| `osk`                 | Keybord Virtual                                                                  |
-| `charmap`             | Character Map                                                                    |
-| `devmgmt.msc`         | Device Managment                                                                 |
-| `desk.cpl`            | Desktop Resuliation                                                              |
-| `dfrgui`              | program for configuring the scheduled task for disk defragmentation              |
-| `diskmgmt.msc`        | Disk Managare                                                                    |
-| `fsmgmt.msc`          | Show Folders Share                                                               |
-| `inetcpl.cpl`         | Internet Explorer options                                                        |
-| `logoff`              | Log Off                                                                          |
-| `magnify`             | Show Magnifier                                                                   |
-| `mmsys.cpl`           | Sound settings                                                                   |
-| `msconfig`            | System settings                                                                  |
-| `msinfo32`            | Show system all info                                                             |
-| `systeminfo`          | Show system info                                                                 |
-| `netplwiz`            | System Users info                                                                |
-| `perfmon.msc`         | Start Windows Reliability and Performance Monitor in a specific s`tandalone mode |
-| `powercfg.cpl`        | Power options                                                                    |
-| `services.msc`        | Services                                                                         |
-| `shrpubw`             | Shared Folder Wizard                                                             |
+| `wf.msc`              | Firewall do Windows com Segurança Avançada                                       |
+| `intl.cpl`            | Opções de Data e Hora                                                            |
+| `timedate.cpl`        | Configurações de Data e Hora                                                     |
+| `mstsc`               | Área de Trabalho Remota                                                          |
+| `osk`                 | Teclado Virtual                                                                  |
+| `charmap`             | Mapa de Caracteres                                                               |
+| `devmgmt.msc`         | Gerenciamento de Dispositivos                                                    |
+| `desk.cpl`            | Resolução da Tela                                                                |
+| `dfrgui`              | programa para configurar a tarefa agendada de desfragmentação de disco           |
+| `diskmgmt.msc`        | Gerenciamento de Disco                                                           |
+| `fsmgmt.msc`          | Mostra pastas compartilhadas                                                     |
+| `inetcpl.cpl`         | Opções do Internet Explorer                                                      |
+| `logoff`              | Fazer logoff                                                                     |
+| `magnify`             | Mostra a Lupa                                                                    |
+| `mmsys.cpl`           | Configurações de som                                                             |
+| `msconfig`            | Configurações do sistema                                                         |
+| `msinfo32`            | Mostra todas as informações do sistema                                           |
+| `systeminfo`          | Mostra informações do sistema                                                    |
+| `netplwiz`            | Informações dos usuários do sistema                                              |
+| `perfmon.msc`         | Inicia o Monitor de Confiabilidade e Desempenho do Windows em modo autônomo específico |
+| `powercfg.cpl`        | Opções de energia                                                                |
+| `services.msc`        | Serviços                                                                         |
+| `shrpubw`             | Assistente de pasta compartilhada                                                |
 | `write`               | WordPad                                                                          |
-| `control`             | Control Panel                                                                    |
-| `Control Printers`    | Device And Printers                                                              |
-| `dxdiag`              | Show System Information Hardware                                                 |
-| `tracert`             | Trace Route                                                                      |
-| `printui /s /t2`      | Print Server Properties                                                          |
-| `printui /s`          | Show Printer Drivers                                                             |
-| `PrintManagement.msc` | Printers Management , show all printers with drivers                             |
-| `shell:appsfolder`    | Show App Folder                                                                  |
-| `shutdown /r /t 5`    | Restart the system after 5 seconds                                               |
-| `shutdown /s /t 5`    | System shutdown after 5 seconds                                                  |
-| `shutdown -a`         | This command will cancel the scheduled shutdown for one time                     |
-| `shutdown /r /fw`     | Bios Login from windows                                                          |
+| `control`             | Painel de Controle                                                               |
+| `Control Printers`    | Dispositivos e Impressoras                                                       |
+| `dxdiag`              | Mostra informações de hardware do sistema                                        |
+| `tracert`             | Rastrear rota                                                                    |
+| `printui /s /t2`      | Propriedades do servidor de impressão                                            |
+| `printui /s`          | Mostra drivers de impressora                                                     |
+| `PrintManagement.msc` | Gerenciamento de Impressoras, mostra todas as impressoras com drivers            |
+| `shell:appsfolder`    | Mostra a pasta de apps                                                           |
+| `shutdown /r /t 5`    | Reinicia o sistema após 5 segundos                                               |
+| `shutdown /s /t 5`    | Desliga o sistema após 5 segundos                                                |
+| `shutdown -a`         | Este comando cancela o desligamento agendado uma vez                             |
+| `shutdown /r /fw`     | Login na BIOS a partir do Windows                                                |
 
-# Create God Mode Folder
+# Criar pasta God Mode
 
-create a new folder on your desktop with this exact name (copy and paste it):
+Crie uma nova pasta na área de trabalho com exatamente este nome (copie e cole):
 `GodMode.{ED7BA470-8E54-465E-825C-99712043E01C}`
 
-- The folder icon will change to a Control Panel-style icon, and you will be able to jump in and change all kinds of
-  settings
+- O ícone da pasta muda para um ícone no estilo do Painel de Controle, e você pode entrar e alterar todos os tipos de
+  configuração

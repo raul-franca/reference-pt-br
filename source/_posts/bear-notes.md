@@ -7,156 +7,156 @@ tags:
   -
   - mac
 categories:
-  - Keyboard Shortcuts
+  - Atalhos de Teclado
 intro: |
-  A visual cheat-sheet for the 66 keyboard shortcuts found in Bear. This application is MacOS-only.
+  Um cheat sheet visual dos 66 atalhos de teclado encontrados no Bear. Este aplicativo é exclusivo para MacOS.
 ---
 
-## Keyboard Shortcuts
+## Atalhos de teclado
 
-### Text Styles {.row-span-3}
+### Estilos de texto {.row-span-3}
 
-| Shortcut             | Action             |
-| -------------------- | ------------------ |
-| `Option` `Cmd` `1-6` | Headings           |
-| `Option` `Cmd` `S`   | Line separator     |
-| `Cmd` `B`            | Bold               |
-| `Cmd` `I`            | Italic             |
-| `Cmd` `U`            | Underline          |
-| `Shift` `Cmd` `E`    | Strikethrough      |
-| `Cmd` `K`            | Link               |
-| `Cmd` `L`            | Unordered list     |
-| `Shift` `Cmd` `L`    | Ordered list       |
-| `Shift` `Cmd` `U`    | Quote              |
-| `Cmd` `T`            | Todo               |
-| `Option` `Cmd` `C`   | Inline code        |
-| `Ctrl` `Option` `C`  | Code block         |
-| `Shift` `Cmd` `M`    | Marker/Highlighter |
-| `Shift` `Cmd` `V`    | Insert file        |
-
-{.shortcuts}
-
-### Todos
-
-| Shortcut           | Action                  |
-| ------------------ | ----------------------- |
-| `Shift` `Cmd` `T`  | Toggle Todo             |
-| `Option` `Cmd` `T` | Mark Todo as completed  |
-| `Ctrl` `Cmd` `T`   | Mark Todo as incomplete |
+| Atalho               | Ação                |
+| -------------------- | ------------------- |
+| `Option` `Cmd` `1-6` | Títulos             |
+| `Option` `Cmd` `S`   | Separador de linha  |
+| `Cmd` `B`            | Negrito             |
+| `Cmd` `I`            | Itálico             |
+| `Cmd` `U`            | Sublinhado          |
+| `Shift` `Cmd` `E`    | Tachado             |
+| `Cmd` `K`            | Link                |
+| `Cmd` `L`            | Lista não ordenada  |
+| `Shift` `Cmd` `L`    | Lista ordenada      |
+| `Shift` `Cmd` `U`    | Citação             |
+| `Cmd` `T`            | Tarefa              |
+| `Option` `Cmd` `C`   | Código inline       |
+| `Ctrl` `Option` `C`  | Bloco de código     |
+| `Shift` `Cmd` `M`    | Marcador/realçador  |
+| `Shift` `Cmd` `V`    | Inserir arquivo     |
 
 {.shortcuts}
 
-### Structure
+### Tarefas
 
-| Shortcut              | Action           |
-| --------------------- | ---------------- |
-| `Cmd` `]`             | Shift line right |
-| `Cmd` `[`             | Shift line left  |
-| `Cmd` `Option` `Up`   | Move line up     |
-| `Cmd` `Option` `Down` | Move line down   |
-
-{.shortcuts}
-
-### Lists
-
-| Shortcut        | Action                       |
-| --------------- | ---------------------------- |
-| `Tab`           | Shift the list element right |
-| `Shift` `Tab`   | Shift the list element left  |
-| `Shift` `Enter` | End the list                 |
+| Atalho             | Ação                      |
+| ------------------ | ------------------------- |
+| `Shift` `Cmd` `T`  | Alternar tarefa           |
+| `Option` `Cmd` `T` | Marcar tarefa como concluída |
+| `Ctrl` `Cmd` `T`   | Marcar tarefa como não concluída |
 
 {.shortcuts}
 
-### Dates
+### Estrutura
 
-| Shortcut          | Action                                        |
+| Atalho                | Ação                |
+| --------------------- | ------------------- |
+| `Cmd` `]`             | Deslocar linha para a direita |
+| `Cmd` `[`             | Deslocar linha para a esquerda |
+| `Cmd` `Option` `Up`   | Mover linha para cima |
+| `Cmd` `Option` `Down` | Mover linha para baixo |
+
+{.shortcuts}
+
+### Listas
+
+| Atalho          | Ação                          |
+| --------------- | ----------------------------- |
+| `Tab`           | Deslocar o item da lista para a direita |
+| `Shift` `Tab`   | Deslocar o item da lista para a esquerda |
+| `Shift` `Enter` | Encerrar a lista              |
+
+{.shortcuts}
+
+### Datas
+
+| Atalho            | Ação                                          |
 | ----------------- | --------------------------------------------- |
-| `Shift` `Cmd` `7` | Long Form Date with time (11 Jul 2017, 10:43) |
-| `Shift` `Cmd` `8` | Long Form Date (11 Jul 2017)                  |
-| `Shift` `Cmd` `9` | Short Form Date (11/07/2017)                  |
-| `Shift` `Cmd` `0` | Hours (11:43)                                 |
+| `Shift` `Cmd` `7` | Data por extenso com hora (11 Jul 2017, 10:43) |
+| `Shift` `Cmd` `8` | Data por extenso (11 Jul 2017)                |
+| `Shift` `Cmd` `9` | Data abreviada (11/07/2017)                   |
+| `Shift` `Cmd` `0` | Horas (11:43)                                 |
 
 {.shortcuts}
 
-### Control
+### Controle
 
-| Shortcut      | Action      |
-| ------------- | ----------- |
-| `Cmd` `A`     | Select all  |
-| `Cmd` `Enter` | End editing |
-| `Cmd` `P`     | Print note  |
+| Atalho        | Ação            |
+| ------------- | --------------- |
+| `Cmd` `A`     | Selecionar tudo |
+| `Cmd` `Enter` | Encerrar edição |
+| `Cmd` `P`     | Imprimir nota   |
 
 {.shortcuts}
 
 ### Zoom
 
-| Shortcut  | Action      |
-| --------- | ----------- |
-| `Cmd` `+` | Zoom in     |
-| `Cmd` `-` | Zoom out    |
-| `Cmd` `0` | Actual size |
+| Atalho    | Ação         |
+| --------- | ------------ |
+| `Cmd` `+` | Aumentar zoom |
+| `Cmd` `-` | Diminuir zoom |
+| `Cmd` `0` | Tamanho real |
 
 {.shortcuts}
 
-### Navigation {.row-span-2}
+### Navegação {.row-span-2}
 
-| Shortcut                  | Action                                                                |
+| Atalho                    | Ação                                                                  |
 | ------------------------- | --------------------------------------------------------------------- |
-| `Cmd` `N`                 | Create a new note                                                     |
-| `Option` `Cmd` `N`        | Create a new note in a new window                                     |
-| `Up/Down`                 | Move the selection in the note and tags list                          |
-| `Left/Right`              | Move the selection between the sidebar, the nost list, and the editor |
-| `Enter`                   | Edit the selected note                                                |
-| `Option` `Cmd` `F`        | Search in the current note list                                       |
-| `Cmd` `Backspace`         | Delete selected note                                                  |
-| `Shift` `Cmd` `R`         | Restore selected note                                                 |
-| `Shift` `Cmd` `P`         | Pin/unpin selected note                                               |
-| `Cmd` `A`                 | Select all the notes in the list                                      |
-| `Shift` `Cmd` `Backspace` | Empty Trash                                                           |
-| `Cmd` `1`                 | Select Notes in the sidebar                                           |
-| `Cmd` `2`                 | Select Untagged in the sidebar                                        |
-| `Cmd` `3`                 | Select ToDo in the sidebar                                            |
-| `Cmd` `4`                 | Select Today in the sidebar                                           |
-| `Cmd` `5`                 | Select Archive in the sidebar                                         |
-| `Cmd` `6`                 | Select Trash in the sidebar                                           |
-| `Option` `Cmd` `Left`     | Navigate back in visualized notes history                             |
-| `Option` `Cmd` `Right`    | Navigate forward in visualized notes history                          |
+| `Cmd` `N`                 | Criar uma nova nota                                                   |
+| `Option` `Cmd` `N`        | Criar uma nova nota em uma nova janela                                |
+| `Up/Down`                 | Mover a seleção na lista de notas e tags                              |
+| `Left/Right`              | Mover a seleção entre a barra lateral, a lista de notas e o editor    |
+| `Enter`                   | Editar a nota selecionada                                             |
+| `Option` `Cmd` `F`        | Buscar na lista de notas atual                                        |
+| `Cmd` `Backspace`         | Excluir a nota selecionada                                            |
+| `Shift` `Cmd` `R`         | Restaurar a nota selecionada                                          |
+| `Shift` `Cmd` `P`         | Fixar/desafixar a nota selecionada                                    |
+| `Cmd` `A`                 | Selecionar todas as notas da lista                                    |
+| `Shift` `Cmd` `Backspace` | Esvaziar lixeira                                                      |
+| `Cmd` `1`                 | Selecionar Notas na barra lateral                                     |
+| `Cmd` `2`                 | Selecionar Sem tags na barra lateral                                  |
+| `Cmd` `3`                 | Selecionar ToDo na barra lateral                                      |
+| `Cmd` `4`                 | Selecionar Hoje na barra lateral                                      |
+| `Cmd` `5`                 | Selecionar Arquivo na barra lateral                                   |
+| `Cmd` `6`                 | Selecionar Lixeira na barra lateral                                   |
+| `Option` `Cmd` `Left`     | Navegar para trás no histórico de notas visualizadas                  |
+| `Option` `Cmd` `Right`    | Navegar para frente no histórico de notas visualizadas                |
 
 {.shortcuts}
 
-### Panels and search
+### Painéis e busca
 
-| Shortcut           | Action                                     |
+| Atalho             | Ação                                       |
 | ------------------ | ------------------------------------------ |
-| `Shift` `Cmd` `I`  | Toggle information panel                   |
-| `Cmd` `F`          | Search inside the current note             |
-| `Option` `Cmd` `F` | Search and replace inside the current note |
-| `Shift` `Cmd` `F`  | Search inside the note list                |
+| `Shift` `Cmd` `I`  | Alternar painel de informações             |
+| `Cmd` `F`          | Buscar dentro da nota atual                |
+| `Option` `Cmd` `F` | Buscar e substituir dentro da nota atual   |
+| `Shift` `Cmd` `F`  | Buscar dentro da lista de notas            |
 
 {.shortcuts}
 
-### Saving and importing
+### Salvando e importando
 
-| Shortcut          | Action                |
+| Atalho            | Ação                  |
 | ----------------- | --------------------- |
-| `Shift` `Cmd` `S` | Export selected notes |
-| `Shift` `Cmd` `O` | Import notes          |
+| `Shift` `Cmd` `S` | Exportar notas selecionadas |
+| `Shift` `Cmd` `O` | Importar notas        |
 
 {.shortcuts}
 
-### Window
+### Janela
 
-| Shortcut         | Action                             |
+| Atalho           | Ação                               |
 | ---------------- | ---------------------------------- |
-| `Ctrl` `1`       | Show sidebar, note list and editor |
-| `Ctrl` `2`       | Show note list and editor          |
-| `Ctrl` `3`       | Show editor only                   |
-| `Cmd` `,`        | Show preferences                   |
-| `Ctrl` `Cmd` `F` | Enter fullscreen                   |
-| `Cmd` `\`        | Open main window                   |
+| `Ctrl` `1`       | Mostrar barra lateral, lista de notas e editor |
+| `Ctrl` `2`       | Mostrar lista de notas e editor    |
+| `Ctrl` `3`       | Mostrar apenas o editor            |
+| `Cmd` `,`        | Mostrar preferências               |
+| `Ctrl` `Cmd` `F` | Entrar em tela cheia               |
+| `Cmd` `\`        | Abrir janela principal             |
 
 {.shortcuts}
 
-## Also see
+## Veja também
 
-- [Keyboard shortcuts for Bear notes app](https://bear.app/faq/Shortcuts%20and%20more/Mac%20shortcuts/) _(bear.app)_
+- [Atalhos de teclado do app de notas Bear](https://bear.app/faq/Shortcuts%20and%20more/Mac%20shortcuts/) _(bear.app)_

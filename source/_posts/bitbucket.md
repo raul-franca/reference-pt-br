@@ -7,98 +7,98 @@ tags:
   -
   -
 categories:
-  - Keyboard Shortcuts
+  - Atalhos de Teclado
 intro: |
-  A visual cheat-sheet for the 35 keyboard shortcuts found on Bitbucket
+  Um cheat sheet visual com os 35 atalhos de teclado disponíveis no Bitbucket
 ---
 
-## Keyboard Shortcuts
+## Atalhos de teclado
 
-### All pages
+### Todas as páginas
 
-| Shortcut | Action                              |
-| -------- | ----------------------------------- |
-| `?`      | Display keyboard shortcuts          |
-| `[`      | Expand and collapse left navigation |
-| `/`      | Focus the site search               |
-
-{.shortcuts}
-
-### Most pages (except Your Work and Source)
-
-| Shortcut | Action                         |
-| -------- | ------------------------------ |
-| `.`      | Open the Omnibar               |
-| `J`      | Select next item               |
-| `K`      | Select previous item           |
-| `Enter`  | View selected item             |
-| `G` `D`  | Go to Your Work dashboard      |
-| `G` `A`  | Go to your Personal Settings   |
-| `Esc`    | Dismiss dialog or remove focus |
-| `U`      | Go back                        |
+| Atalho   | Ação                                     |
+| -------- | ---------------------------------------- |
+| `?`      | Exibe os atalhos de teclado              |
+| `[`      | Expande e recolhe a navegação à esquerda |
+| `/`      | Foca a busca do site                     |
 
 {.shortcuts}
 
-### Repository pages (except for Source)
+### Maioria das páginas (exceto Your Work e Source)
 
-| Shortcut | Action                        |
-| -------- | ----------------------------- |
-| `C` `R`  | Create a repository           |
-| `I` `R`  | Import a repository           |
-| `R` `S`  | Open repository source        |
-| `R` `C`  | Open repository commits       |
-| `R` `B`  | Open repository branches      |
-| `R` `P`  | Open repository pull requests |
-| `R` `I`  | Open repository issues        |
-| `R` `W`  | Open repository wiki          |
-| `R` `D`  | Open repository downloads     |
-| `R` `A`  | Open repository settings      |
-| `F`      | Search for file               |
+| Atalho   | Ação                              |
+| -------- | --------------------------------- |
+| `.`      | Abre o Omnibar                    |
+| `J`      | Seleciona o próximo item          |
+| `K`      | Seleciona o item anterior         |
+| `Enter`  | Visualiza o item selecionado      |
+| `G` `D`  | Vai para o dashboard Your Work    |
+| `G` `A`  | Vai para suas configurações pessoais |
+| `Esc`    | Fecha o diálogo ou remove o foco  |
+| `U`      | Volta                             |
 
 {.shortcuts}
 
-### Repository pages (except for Source and Settings) {.row-span-2}
+### Páginas de repositório (exceto Source)
 
-| Shortcut | Action                   |
-| -------- | ------------------------ |
-| `X` `F`  | Fork repository          |
-| `X` `B`  | Create branch            |
-| `X` `C`  | Compare branches or tags |
-| `X` `P`  | Create pull request      |
-| `X` `I`  | Create issue             |
+| Atalho   | Ação                             |
+| -------- | -------------------------------- |
+| `C` `R`  | Cria um repositório              |
+| `I` `R`  | Importa um repositório           |
+| `R` `S`  | Abre o código-fonte do repositório |
+| `R` `C`  | Abre os commits do repositório   |
+| `R` `B`  | Abre os branches do repositório  |
+| `R` `P`  | Abre os pull requests do repositório |
+| `R` `I`  | Abre as issues do repositório    |
+| `R` `W`  | Abre a wiki do repositório       |
+| `R` `D`  | Abre os downloads do repositório |
+| `R` `A`  | Abre as configurações do repositório |
+| `F`      | Busca um arquivo                 |
+
+{.shortcuts}
+
+### Páginas de repositório (exceto Source e Settings) {.row-span-2}
+
+| Atalho   | Ação                        |
+| -------- | --------------------------- |
+| `X` `F`  | Faz fork do repositório     |
+| `X` `B`  | Cria um branch              |
+| `X` `C`  | Compara branches ou tags    |
+| `X` `P`  | Cria um pull request        |
+| `X` `I`  | Cria uma issue              |
 
 {.shortcuts}
 
 ### Pull requests {.row-span-2}
 
-| Shortcut       | Action                                  |
-| -------------- | --------------------------------------- |
-| `Ctrl` `Enter` | Submit a comment                        |
-| `T` `C`        | Toggle display of inline comments       |
-| `P` `D`        | Switch to the pull request diff tab     |
-| `P` `C`        | Switch to the pull request commits tab  |
-| `P` `A`        | Switch to the pull request activity tab |
-| `Shift` `T`    | Show the list of tasks                  |
+| Atalho         | Ação                                          |
+| -------------- | --------------------------------------------- |
+| `Ctrl` `Enter` | Envia um comentário                           |
+| `T` `C`        | Alterna a exibição dos comentários inline     |
+| `P` `D`        | Muda para a aba de diff do pull request       |
+| `P` `C`        | Muda para a aba de commits do pull request    |
+| `P` `A`        | Muda para a aba de atividades do pull request |
+| `Shift` `T`    | Mostra a lista de tarefas                     |
 
 {.shortcuts}
 
-### Repository pages with sidebar
+### Páginas de repositório com sidebar
 
-| Shortcut | Action                            |
+| Atalho   | Ação                              |
 | -------- | --------------------------------- |
-| `]`      | Expand and collapse right sidebar |
+| `]`      | Expande e recolhe a sidebar direita |
 
 {.shortcuts}
 
-### Repository source
+### Código-fonte do repositório
 
-| Shortcut | Action                |
+| Atalho   | Ação                  |
 | -------- | --------------------- |
-| `F`      | Focus the file filter |
+| `F`      | Foca o filtro de arquivos |
 
 {.shortcuts}
 
-## Also see
+## Veja também
 
-- [Keyboard shortcuts for Bitbucket](https://confluence.atlassian.com/bitbucket/keyboard-shortcuts-269980511.html)
+- [Atalhos de teclado do Bitbucket](https://confluence.atlassian.com/bitbucket/keyboard-shortcuts-269980511.html)
   _(confluence.atlassian.com)_

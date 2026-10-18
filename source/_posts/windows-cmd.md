@@ -5,192 +5,192 @@ background: bg-red-500
 tags:
   - command
 categories:
-  - Programming
+  - Programação
 intro: |
-  This Windows Command Cheat Sheet is a non-exhaustive list of the main Windows commands you can use.
+  Este cheat sheet de comandos do Windows é uma lista não exaustiva dos principais comandos do Windows que você pode usar.
 plugins:
   - copyCode
 ---
 
-## Getting Started
+## Primeiros passos
 
-### Basic {.col-span-3}
+### Básico {.col-span-3}
 
-| CMD        | Description                                                 |
-| :--------- | :---------------------------------------------------------- |
-| `cls`      | Clears the content of the screen.                           |
-| `echo`     | Displays messages or enables/disables command echoing.      |
-| `help`     | Provides help information for Windows commands.             |
-| `exit`     | Exits the CMD.EXE program (command interpreter).            |
-| `date`     | Displays or sets the date.                                  |
-| `time`     | Displays or sets the system time.                           |
-| `ver`      | Displays the Windows version.                               |
-| `dir`      | Displays a list of files and subdirectories in a directory. |
-| `cd`       | Displays the name of or changes the current directory.      |
-| `copy`     | Copies one or more files to another location.               |
-| `move`     | Moves files and renames files and directories.              |
-| `del`      | Deletes one or more files.                                  |
-| `mkdir`    | Creates a directory.                                        |
-| `rmdir`    | Removes a directory.                                        |
-| `type`     | Displays the contents of a text file.                       |
-| `ren`      | Renames a file or files.                                    |
-| `start`    | Starts a separate window to run a specified program or cmd. |
-| `shutdown` | Allows you to shut down or restart the computer.            |
-| `tasklist` | Displays all currently running tasks including services.    |
-| `taskkill` | Ends one or more tasks or processes.                        |
+| CMD         | Descrição                                                                  |
+| :---------- | :------------------------------------------------------------------------- |
+| `cls`       | Limpa o conteúdo da tela.                                                  |
+| `echo`      | Exibe mensagens ou habilita/desabilita o eco de comandos.                  |
+| `help`      | Fornece informações de ajuda sobre os comandos do Windows.                 |
+| `exit`      | Sai do programa CMD.EXE (interpretador de comandos).                       |
+| `date`      | Exibe ou define a data.                                                    |
+| `time`      | Exibe ou define a hora do sistema.                                         |
+| `ver`       | Exibe a versão do Windows.                                                 |
+| `dir`       | Exibe uma lista de arquivos e subdiretórios em um diretório.               |
+| `cd`        | Exibe o nome do diretório atual ou o altera.                               |
+| `copy`      | Copia um ou mais arquivos para outro local.                                |
+| `move`      | Move arquivos e renomeia arquivos e diretórios.                            |
+| `del`       | Exclui um ou mais arquivos.                                                |
+| `mkdir`     | Cria um diretório.                                                         |
+| `rmdir`     | Remove um diretório.                                                       |
+| `type`      | Exibe o conteúdo de um arquivo de texto.                                   |
+| `ren`       | Renomeia um arquivo ou arquivos.                                           |
+| `start`     | Inicia uma janela separada para executar um programa ou cmd especificado.  |
+| `shutdown`  | Permite desligar ou reiniciar o computador.                                |
+| `tasklist`  | Exibe todas as tarefas em execução no momento, incluindo serviços.         |
+| `taskkill`  | Encerra uma ou mais tarefas ou processos.                                  |
 
-## Manage files:
+## Gerenciar arquivos:
 
-### File {.col-span-3}
+### Arquivos {.col-span-3}
 
-| CMD        | Description                                                       |
-| :--------- | :---------------------------------------------------------------- |
-| `attrib`   | Displays or changes file attributes.                              |
-| `fc`       | Compares two files and displays the differences between them.     |
-| `find`     | Searches for a text string in a file or files.                    |
-| `findstr`  | Searches for strings in files.                                    |
-| `xcopy`    | Copies files and directory trees.                                 |
-| `robocopy` | Robust File Copy for Windows, a more advanced version of `xcopy`. |
-| `compact`  | Displays or alters the compression of files on NTFS partitions.   |
-| `expand`   | Expands one or more compressed files.                             |
-| `replace`  | Replaces files.                                                   |
-| `tree`     | Graphically displays the folder structure of a drive or path.     |
-| `sort`     | Sorts input.                                                      |
-| `more`     | Displays output one screen at a time.                             |
-| `print`    | Prints a text file.                                               |
-| `cipher`   | Displays or alters the encryption of dir [files] on NTFS parts.   |
-| `diskcomp` | Compares the contents of two floppy disks.                        |
-| `diskcopy` | Copies the contents of one floppy disk to another.                |
-| `format`   | Formats a disk for use with Windows.                              |
-| `chkdsk`   | Checks a disk and displays a status report.                       |
-| `label`    | Creates, changes, or deletes the volume label of a disk.          |
-| `recover`  | Recovers readable information from a bad or defective disk.       |
+| CMD         | Descrição                                                            |
+| :---------- | :------------------------------------------------------------------- |
+| `attrib`    | Exibe ou altera atributos de arquivos.                               |
+| `fc`        | Compara dois arquivos e exibe as diferenças entre eles.              |
+| `find`      | Procura uma string de texto em um ou mais arquivos.                  |
+| `findstr`   | Procura strings em arquivos.                                         |
+| `xcopy`     | Copia arquivos e árvores de diretórios.                              |
+| `robocopy`  | Robust File Copy for Windows, uma versão mais avançada do `xcopy`.   |
+| `compact`   | Exibe ou altera a compactação de arquivos em partições NTFS.         |
+| `expand`    | Expande um ou mais arquivos compactados.                             |
+| `replace`   | Substitui arquivos.                                                  |
+| `tree`      | Exibe graficamente a estrutura de pastas de uma unidade ou path.     |
+| `sort`      | Classifica a entrada.                                                |
+| `more`      | Exibe a saída uma tela por vez.                                      |
+| `print`     | Imprime um arquivo de texto.                                         |
+| `cipher`    | Exibe ou altera a criptografia de dir [arquivos] em partições NTFS.  |
+| `diskcomp`  | Compara o conteúdo de dois disquetes.                                |
+| `diskcopy`  | Copia o conteúdo de um disquete para outro.                          |
+| `format`    | Formata um disco para uso com o Windows.                             |
+| `chkdsk`    | Verifica um disco e exibe um relatório de status.                    |
+| `label`     | Cria, altera ou exclui o rótulo de volume de um disco.               |
+| `recover`   | Recupera informações legíveis de um disco ruim ou defeituoso.        |
 
-## System & Network
+## Sistema e rede
 
-### System {.col-span-3}
+### Sistema {.col-span-3}
 
-| CMD           | Description                                                                               |
-| :------------ | :---------------------------------------------------------------------------------------- |
-| `systeminfo`  | Displays detailed configuration information about a computer and its operating system.    |
-| `driverquery` | Displays current device driver status and properties.                                     |
-| `msinfo32`    | Starts the System Information tool.                                                       |
-| `reg`         | Registry Console Tool, used to manage the Windows Registry.                               |
-| `sc`          | Displays or configures services (background processes).                                   |
-| `taskmgr`     | Starts the Task Manager.                                                                  |
-| `wmic`        | Windows Management Instrumentation, used for managing Windows systems.                    |
-| `sfc`         | System File Checker, scans and verifies the versions of all protected system files.       |
-| `gpupdate`    | Refreshes local and Active Directory-based Group Policy settings.                         |
-| `gpresult`    | Displays Group Policy settings and Resultant Set of Policy (RSoP) for a user or computer. |
-| `powercfg`    | Configures power settings.                                                                |
-| `dxdiag`      | Starts the DirectX Diagnostic Tool.                                                       |
-| `perfmon`     | Starts the Performance Monitor.                                                           |
-| `rsop`        | Resultant Set of Policy, used to view Group Policy settings.                              |
-| `sigverif`    | Starts the File Signature Verification tool.                                              |
-| `sysedit`     | Starts the System Configuration Editor.                                                   |
-| `syskey`      | Secures the Windows XP account database.                                                  |
-| `chgport`     | Displays or changes Com port mappings.                                                    |
-| `chgusr`      | Changes the installed user mode.                                                          |
+| CMD            | Descrição                                                                                                    |
+| :------------- | :----------------------------------------------------------------------------------------------------------- |
+| `systeminfo`   | Exibe informações detalhadas de configuração sobre um computador e seu sistema operacional.                  |
+| `driverquery`  | Exibe o status e as propriedades atuais dos drivers de dispositivo.                                          |
+| `msinfo32`     | Inicia a ferramenta Informações do Sistema.                                                                  |
+| `reg`          | Console do Registro, usado para gerenciar o Registro do Windows.                                             |
+| `sc`           | Exibe ou configura serviços (processos em segundo plano).                                                    |
+| `taskmgr`      | Inicia o Gerenciador de Tarefas.                                                                             |
+| `wmic`         | Windows Management Instrumentation, usado para gerenciar sistemas Windows.                                   |
+| `sfc`          | System File Checker, verifica e valida as versões de todos os arquivos de sistema protegidos.                |
+| `gpupdate`     | Atualiza as configurações de Política de Grupo locais e baseadas no Active Directory.                        |
+| `gpresult`     | Exibe as configurações de Política de Grupo e o Resultant Set of Policy (RSoP) de um usuário ou computador.  |
+| `powercfg`     | Configura as configurações de energia.                                                                       |
+| `dxdiag`       | Inicia a ferramenta de diagnóstico do DirectX.                                                               |
+| `perfmon`      | Inicia o Monitor de Desempenho.                                                                              |
+| `rsop`         | Resultant Set of Policy, usado para visualizar as configurações de Política de Grupo.                        |
+| `sigverif`     | Inicia a ferramenta de verificação de assinatura de arquivos.                                                |
+| `sysedit`      | Inicia o Editor de Configuração do Sistema.                                                                  |
+| `syskey`       | Protege o banco de dados de contas do Windows XP.                                                            |
+| `chgport`      | Exibe ou altera mapeamentos de portas Com.                                                                   |
+| `chgusr`       | Altera o modo de usuário instalado.                                                                          |
 
-### Network {.col-span-3}
+### Rede {.col-span-3}
 
-| CMD              | Description                                                                                                        |
-| :--------------- | :----------------------------------------------------------------------------------------------------------------- |
-| `ipconfig`       | Displays all current TCP/IP network configuration values.                                                          |
-| `ping`           | Tests network connectivity to a specified host.                                                                    |
-| `tracert`        | Traces the route taken by packets to a specified destination.                                                      |
-| `netstat`        | Displays active TCP connections, ports on which the computer is listening.                                         |
-| `nslookup`       | Displays information that you can use to diagnose Domain Name System (DNS) infrastructure.                         |
-| `net`            | Manages network resources, services, and user accounts.                                                            |
-| `netsh`          | Network Shell, used to configure and monitor network devices.                                                      |
-| `arp`            | Displays and modifies the IP-to-Physical address translation tables used by the Address Resolution Protocol (ARP). |
-| `route`          | Displays and modifies the entries in the local IP routing table.                                                   |
-| `ftp`            | Starts the File Transfer Protocol (FTP) client.                                                                    |
-| `telnet`         | Starts the Telnet client.                                                                                          |
-| `nbtstat`        | Displays protocol statistics and current TCP/IP connections using NBT (NetBIOS over TCP/IP).                       |
-| `net use`        | Connects to, disconnects from, and displays information about network connections.                                 |
-| `net session`    | Manages server computer connections.                                                                               |
-| `net start`      | Starts a network service.                                                                                          |
-| `net stop`       | Stops a network service.                                                                                           |
-| `net view`       | Displays a list of resources being shared on a specified computer.                                                 |
-| `net user`       | Manages user accounts.                                                                                             |
-| `net localgroup` | Manages local groups.                                                                                              |
-| `net share`      | Manages shared resources.                                                                                          |
-| `net statistics` | Displays network statistics.                                                                                       |
+| CMD               | Descrição                                                                                                           |
+| :---------------- | :------------------------------------------------------------------------------------------------------------------ |
+| `ipconfig`        | Exibe todos os valores atuais de configuração de rede TCP/IP.                                                       |
+| `ping`            | Testa a conectividade de rede com um host especificado.                                                             |
+| `tracert`         | Rastreia a rota percorrida pelos pacotes até um destino especificado.                                               |
+| `netstat`         | Exibe as conexões TCP ativas e as portas nas quais o computador está escutando.                                     |
+| `nslookup`        | Exibe informações que você pode usar para diagnosticar a infraestrutura do Domain Name System (DNS).                |
+| `net`             | Gerencia recursos de rede, serviços e contas de usuário.                                                            |
+| `netsh`           | Network Shell, usado para configurar e monitorar dispositivos de rede.                                              |
+| `arp`             | Exibe e modifica as tabelas de tradução de endereço IP para físico usadas pelo Address Resolution Protocol (ARP).   |
+| `route`           | Exibe e modifica as entradas na tabela de roteamento IP local.                                                      |
+| `ftp`             | Inicia o cliente File Transfer Protocol (FTP).                                                                      |
+| `telnet`          | Inicia o cliente Telnet.                                                                                            |
+| `nbtstat`         | Exibe estatísticas de protocolo e conexões TCP/IP atuais usando NBT (NetBIOS over TCP/IP).                          |
+| `net use`         | Conecta, desconecta e exibe informações sobre conexões de rede.                                                     |
+| `net session`     | Gerencia conexões do computador servidor.                                                                           |
+| `net start`       | Inicia um serviço de rede.                                                                                          |
+| `net stop`        | Para um serviço de rede.                                                                                            |
+| `net view`        | Exibe uma lista de recursos compartilhados em um computador especificado.                                           |
+| `net user`        | Gerencia contas de usuário.                                                                                         |
+| `net localgroup`  | Gerencia grupos locais.                                                                                             |
+| `net share`       | Gerencia recursos compartilhados.                                                                                   |
+| `net statistics`  | Exibe estatísticas de rede.                                                                                         |
 
-## Miscellaneous
+## Diversos
 
-### Process Management {.col-span-1}
+### Gerenciamento de processos {.col-span-1}
 
-| CMD            | Description                                                  |
-| :------------- | :----------------------------------------------------------- |
-| `wmic process` | Manages processes using Windows Management Instrumentation . |
-| `timeout`      | Waits for specified number of seconds / until a key pressed. |
+| CMD             | Descrição                                                                         |
+| :-------------- | :-------------------------------------------------------------------------------- |
+| `wmic process`  | Gerencia processos usando Windows Management Instrumentation .                    |
+| `timeout`       | Aguarda um número especificado de segundos / até que uma tecla seja pressionada.  |
 
-### Disk Management {.col-span-1}
+### Gerenciamento de disco {.col-span-1}
 
-| CMD Command | Description                        |
-| :---------- | :--------------------------------- |
-| `diskpart`  | Manages disk partitions.           |
-| `defrag`    | Defragments a disk.                |
-| `convert`   | Converts a FAT volume to NTFS.     |
-| `diskperf`  | Manages disk performance counters. |
+| CMD Command  | Descrição                                    |
+| :----------- | :------------------------------------------- |
+| `diskpart`   | Gerencia partições de disco.                 |
+| `defrag`     | Desfragmenta um disco.                       |
+| `convert`    | Converte um volume FAT em NTFS.              |
+| `diskperf`   | Gerencia contadores de desempenho de disco.  |
 
-### System Configuration {.col-span-1}
+### Configuração do sistema {.col-span-1}
 
-| CMD Command | Description                                             |
-| :---------- | :------------------------------------------------------ |
-| `bcdedit`   | Manages the Boot Configuration Data (BCD) store.        |
-| `bootcfg`   | Configures, queries, or changes Boot.ini file settings. |
-| `msconfig`  | Starts the System Configuration utility.                |
-| `regedit`   | Starts the Registry Editor.                             |
+| CMD Command  | Descrição                                                            |
+| :----------- | :------------------------------------------------------------------- |
+| `bcdedit`    | Gerencia o repositório Boot Configuration Data (BCD).                |
+| `bootcfg`    | Configura, consulta ou altera as configurações do arquivo Boot.ini.  |
+| `msconfig`   | Inicia o utilitário de Configuração do Sistema.                      |
+| `regedit`    | Inicia o Editor do Registro.                                         |
 
-## Tips & Tricks
+## Dicas e truques
 
-### Miscellaneous Tips & Tricks {.col-span-3}
+### Dicas e truques diversos {.col-span-3}
 
-| Tip or Trick                                                    | Description                                                                                                                                      |
-| :-------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------- |
-| `wmic path SoftwareLicensingService get OA3xOriginalProductKey` | Get your Windows Product key                                                                                                                     |
-| `cmd /k`                                                        | Opens the command prompt and executes a specified command, keeping the window open.                                                              |
-| `cmd /c`                                                        | Opens the command prompt, executes a specified command, and then closes the window.                                                              |
-| `&&`                                                            | Allows you to run multiple commands in sequence. For example, `command1 && command2`.                                                            |
-| `\|\|`                                                          | Allows you to run a second command only if the first command fails. For example, `command1 \|\| command2`.                                       |
-| `>`                                                             | Redirects the output of a command to a file, overwriting the file if it already exists. For example, `command > output.txt`.                     |
-| `>>`                                                            | Redirects the output of a command to a file, appending the output if the file already exists. For example, `command >> output.txt`.              |
-| `\|`                                                            | Pipes the output of one command to another command. For example, `command1 \| command2`.                                                         |
-| `clip`                                                          | Redirects the output of a command to the Windows clipboard. For example, `dir \| clip`.                                                          |
-| `for %i in (*.txt) do echo %i`                                  | Loops through all `.txt` files in the current directory and echoes their names.                                                                  |
-| `pushd` and `popd`                                              | `pushd` saves the current directory and then changes to a new directory. `popd` returns to the saved directory.                                  |
-| `set`                                                           | Displays, sets, or removes environment variables. For example, `set PATH=C:\newpath`.                                                            |
-| `start "" "C:\Path\To\Program\program.exe"`                     | Starts a program without waiting for it to finish.                                                                                               |
-| `taskkill /IM "process.exe" /F`                                 | Forcefully kills a process by its image name.                                                                                                    |
-| `wmic product get name`                                         | Lists all installed software on the system.                                                                                                      |
-| `wmic logicaldisk get size,freespace,caption`                   | Displays the size, free space, and caption of all logical disks.                                                                                 |
-| `systeminfo` `\|` `findstr /B /C:"OS Name" /C:"OS Version"`     | Displays the OS name and version.                                                                                                                |
-| `schtasks /query /fo LIST /v`                                   | Lists all scheduled tasks in detail.                                                                                                             |
-| `netsh wlan show profiles`                                      | Displays a list of all saved Wi-Fi profiles.                                                                                                     |
-| `netsh wlan show profiles name="ProfileName" key=clear`         | Displays the password for a specific Wi-Fi profile.                                                                                              |
-| `assoc`                                                         | Displays or modifies file extension associations.                                                                                                |
-| `ftype`                                                         | Displays or modifies file types used in file extension associations.                                                                             |
-| `driverquery /v`                                                | Lists all installed drivers with detailed information.                                                                                           |
-| `powercfg /energy`                                              | Generates a detailed energy report for the system.                                                                                               |
-| `powercfg /batteryreport`                                       | Generates a battery life report for laptops.                                                                                                     |
-| `robocopy C:\Source D:\Destination /MIR`                        | Mirrors a directory from one location to another, including subdirectories and files.                                                            |
-| `mklink /D "C:\Path\To\Link" "C:\Path\To\Target"`               | Creates a symbolic link to a directory.                                                                                                          |
-| `mklink /H "C:\Path\To\Link" "C:\Path\To\Target"`               | Creates a hard link to a file.                                                                                                                   |
-| `mklink /J "C:\Path\To\Link" "C:\Path\To\Target"`               | Creates a directory junction.                                                                                                                    |
-| `diskpart /s script.txt`                                        | Runs a DiskPart script to automate disk partitioning tasks.                                                                                      |
-| `shutdown /a`                                                   | Aborts a system shutdown.                                                                                                                        |
-| `chkdsk /f /r`                                                  | Checks a disk and fixes errors, also recovers readable information from bad sectors.                                                             |
-| `sfc /scannow`                                                  | Scans and repairs protected system files.                                                                                                        |
-| `DISM /Online /Cleanup-Image /RestoreHealth`                    | Repairs the Windows image using DISM.                                                                                                            |
-| `bcdboot C:\Windows`                                            | Repairs the boot environment by copying boot files from the Windows directory.                                                                   |
-| `bootrec /fixmbr`                                               | Repairs the Master Boot Record (MBR).                                                                                                            |
-| `bootrec /fixboot`                                              | Writes a new boot sector to the system partition.                                                                                                |
-| `bootrec /scanos`                                               | Scans for installations compatible with Windows and displays the entries that are currently not in the Boot Configuration Data store.            |
-| `bootrec /rebuildbcd`                                           | Scans for installations compatible with Windows and allows you to select the installations you want to add to the Boot Configuration Data store. |
+| Dica ou truque                                                   | Descrição                                                                                                                                            |
+| :--------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `wmic path SoftwareLicensingService get OA3xOriginalProductKey`  | Obtenha a chave de produto do Windows                                                                                                                |
+| `cmd /k`                                                         | Abre o prompt de comando e executa um comando especificado, mantendo a janela aberta.                                                                |
+| `cmd /c`                                                         | Abre o prompt de comando, executa um comando especificado e depois fecha a janela.                                                                   |
+| `&&`                                                             | Permite executar vários comandos em sequência. Por exemplo, `command1 && command2`.                                                                  |
+| `\|\|`                                                           | Permite executar um segundo comando apenas se o primeiro comando falhar. Por exemplo, `command1 \|\| command2`.                                      |
+| `>`                                                              | Redireciona a saída de um comando para um arquivo, sobrescrevendo o arquivo se ele já existir. Por exemplo, `command > output.txt`.                  |
+| `>>`                                                             | Redireciona a saída de um comando para um arquivo, anexando a saída se o arquivo já existir. Por exemplo, `command >> output.txt`.                   |
+| `\|`                                                             | Canaliza a saída de um comando para outro comando. Por exemplo, `command1 \| command2`.                                                              |
+| `clip`                                                           | Redireciona a saída de um comando para a área de transferência do Windows. Por exemplo, `dir \| clip`.                                               |
+| `for %i in (*.txt) do echo %i`                                   | Percorre todos os arquivos `.txt` do diretório atual e exibe seus nomes.                                                                             |
+| `pushd` and `popd`                                               | `pushd` salva o diretório atual e então muda para um novo diretório. `popd` retorna ao diretório salvo.                                              |
+| `set`                                                            | Exibe, define ou remove variáveis de ambiente. Por exemplo, `set PATH=C:\newpath`.                                                                   |
+| `start "" "C:\Path\To\Program\program.exe"`                      | Inicia um programa sem esperar que ele termine.                                                                                                      |
+| `taskkill /IM "process.exe" /F`                                  | Encerra à força um processo pelo nome da imagem.                                                                                                     |
+| `wmic product get name`                                          | Lista todos os softwares instalados no sistema.                                                                                                      |
+| `wmic logicaldisk get size,freespace,caption`                    | Exibe o tamanho, o espaço livre e a legenda de todos os discos lógicos.                                                                              |
+| `systeminfo` `\|` `findstr /B /C:"OS Name" /C:"OS Version"`      | Exibe o nome e a versão do sistema operacional.                                                                                                      |
+| `schtasks /query /fo LIST /v`                                    | Lista todas as tarefas agendadas em detalhes.                                                                                                        |
+| `netsh wlan show profiles`                                       | Exibe uma lista de todos os perfis Wi-Fi salvos.                                                                                                     |
+| `netsh wlan show profiles name="ProfileName" key=clear`          | Exibe a senha de um perfil Wi-Fi específico.                                                                                                         |
+| `assoc`                                                          | Exibe ou modifica associações de extensões de arquivo.                                                                                               |
+| `ftype`                                                          | Exibe ou modifica os tipos de arquivo usados nas associações de extensões de arquivo.                                                                |
+| `driverquery /v`                                                 | Lista todos os drivers instalados com informações detalhadas.                                                                                        |
+| `powercfg /energy`                                               | Gera um relatório detalhado de energia do sistema.                                                                                                   |
+| `powercfg /batteryreport`                                        | Gera um relatório de duração da bateria para notebooks.                                                                                              |
+| `robocopy C:\Source D:\Destination /MIR`                         | Espelha um diretório de um local para outro, incluindo subdiretórios e arquivos.                                                                     |
+| `mklink /D "C:\Path\To\Link" "C:\Path\To\Target"`                | Cria um link simbólico para um diretório.                                                                                                            |
+| `mklink /H "C:\Path\To\Link" "C:\Path\To\Target"`                | Cria um hard link para um arquivo.                                                                                                                   |
+| `mklink /J "C:\Path\To\Link" "C:\Path\To\Target"`                | Cria uma junção de diretório.                                                                                                                        |
+| `diskpart /s script.txt`                                         | Executa um script DiskPart para automatizar tarefas de particionamento de disco.                                                                     |
+| `shutdown /a`                                                    | Cancela um desligamento do sistema.                                                                                                                  |
+| `chkdsk /f /r`                                                   | Verifica um disco e corrige erros, além de recuperar informações legíveis de setores defeituosos.                                                    |
+| `sfc /scannow`                                                   | Verifica e repara arquivos de sistema protegidos.                                                                                                    |
+| `DISM /Online /Cleanup-Image /RestoreHealth`                     | Repara a imagem do Windows usando o DISM.                                                                                                            |
+| `bcdboot C:\Windows`                                             | Repara o ambiente de inicialização copiando os arquivos de boot do diretório do Windows.                                                             |
+| `bootrec /fixmbr`                                                | Repara o Master Boot Record (MBR).                                                                                                                   |
+| `bootrec /fixboot`                                               | Grava um novo setor de boot na partição do sistema.                                                                                                  |
+| `bootrec /scanos`                                                | Procura instalações compatíveis com o Windows e exibe as entradas que não estão atualmente no repositório Boot Configuration Data.                   |
+| `bootrec /rebuildbcd`                                            | Procura instalações compatíveis com o Windows e permite selecionar as instalações que você deseja adicionar ao repositório Boot Configuration Data.  |
 
-## Other
+## Outros
 
-- Also see : [Windows Official Documentation](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands)
+- Veja também: [Documentação oficial do Windows](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands)

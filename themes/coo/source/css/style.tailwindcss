@@ -3,7 +3,7 @@
 @import "tailwindcss/utilities";
 
 
-/* Custom Components */
+/* Componentes personalizados */
 @import "components/layer.css";
 @import "highlightjs/stackoverflow-light.min.css";
 @import "components/layout_table.css";
@@ -29,7 +29,7 @@ html.scrollbar {
     scroll-padding-top: 20px;
 }
 
-/***Scrollbars***/
+/***Barras de rolagem***/
 :root.dark {
     color-scheme: dark;
 }
@@ -88,7 +88,7 @@ html.scrollbar {
     @apply text-slate-100;
 }
 
-/*************************Cheat sheet start****************************/
+/*************************Início da cheat sheet****************************/
 .mdLayout {
     color: #345;
     @apply flex flex-col space-y-14;
@@ -101,7 +101,7 @@ html.scrollbar {
     }
 }
 
-/* Dark mode toggle icons */
+/* Ícones de alternância do modo escuro */
 .icon-light {
     display: block;
 }
@@ -122,7 +122,7 @@ html.scrollbar {
     @apply hidden;
 }
 
-/** H2 Wrap **/
+/** Wrapper de H2 **/
 .mdLayout .h2-wrap {
     @apply rounded-lg;
 }
@@ -144,7 +144,7 @@ html.scrollbar {
     @apply text-indigo-700 no-underline cursor-pointer;
 }
 
-/** Grid layout. */
+/** Layout de grid. */
 .mdLayout .h2-wrap > .h3-wrap-list { @apply flex flex-col lg:grid lg:grid-cols-3 lg:gap-7; }
 .mdLayout .h2-wrap.cols-1 > .h3-wrap-list { @apply lg:grid-cols-1; }
 .mdLayout .h2-wrap.cols-2 > .h3-wrap-list { @apply lg:grid-cols-2; }
@@ -154,14 +154,14 @@ html.scrollbar {
 .mdLayout .h2-wrap.cols-6 > .h3-wrap-list { @apply lg:grid-cols-6; }
 
 
-/** H3 Wrap **/
+/** Wrapper de H3 **/
 .mdLayout .h3-wrap-list {
     font-size: 0.925rem;
     line-height: 1.325rem;
 }
 
 
-/** List Layout in h3-wrap **/
+/** Layout de lista em h3-wrap **/
 .mdLayout .h3-wrap ul,.h3-wrap ol,.h3-wrap dl { @apply my-2 grid grid-cols-1 list-outside; }
 .mdLayout .h3-wrap .cols-1  { @apply grid-cols-1; }
 .mdLayout .h3-wrap .cols-2  { @apply grid-cols-2; }
@@ -219,7 +219,7 @@ html.scrollbar {
     @apply flex flex-col h-full w-full z-0;
 }
 
-/* Paragraphs */
+/* Parágrafos */
 .mdLayout .h3-wrap > .section > p {
     background: #f8f9fa;
     color: #345;
@@ -242,7 +242,7 @@ html.scrollbar {
     margin-top: auto;
 }
 
-/* Headings in between bodies */
+/* Títulos entre os blocos de texto */
 .mdLayout .h3-wrap > .section > h4 {
     @apply bg-slate-100 border-t border-slate-200 text-slate-500 m-0 px-4 py-1 text-center;
     @apply dark:bg-slate-700/30 dark:text-slate-300 dark:border-slate-700/50;
@@ -268,13 +268,13 @@ html.scrollbar {
 
 /*******************************/
 
-/* For links with sources, eg, [Foo](foo.com) _(foo.com)_ */
+/* Para links com fontes, ex.: [Foo](foo.com) _(foo.com)_ */
 .mdLayout.mdLayout a + em {
     opacity: 0.5;
     @apply dark:opacity-80;
 }
 
-/* mdLayout context */
+/* Contexto do mdLayout */
 .mdLayout h2 {
     margin: 0;
     padding: 0;
@@ -347,7 +347,7 @@ html.scrollbar {
     @apply text-white bg-indigo-500;
 }
 
-/* Crosslink (eg, phoenix.md) */
+/* Crosslink (ex.: phoenix.md) */
 .mdLayout.mdLayout img {
     max-width: 100%;
 }
@@ -390,9 +390,9 @@ html.scrollbar {
     @apply bg-indigo-500;
 }
 
-/* IMPORTANT: Override any conflicting header.home styles */
+/* IMPORTANTE: sobrescreve quaisquer estilos conflitantes de header.home */
 header.home {
-    position: relative !important; /* Force relative positioning */
+    position: relative !important; /* Força posicionamento relativo */
     top: auto !important;
     left: auto !important;
     right: auto !important;

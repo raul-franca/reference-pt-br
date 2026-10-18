@@ -7,118 +7,118 @@ tags:
   -
   -
 categories:
-  - Keyboard Shortcuts
+  - Atalhos de Teclado
 intro: |
-  A visual cheat-sheet for the 48 keyboard shortcuts found in Proto.io
+  Uma cheat sheet visual dos 48 atalhos de teclado do Proto.io
 ---
 
-## Keyboard Shortcuts
+## Atalhos de teclado
 
-### Main
+### Principal
 
-| Shortcut           | Action                  |
+| Atalho             | Ação                    |
 | ------------------ | ----------------------- |
-| `Ctrl` `F`         | Find                    |
-| `Ctrl` `K`         | Show keyboard shortcuts |
-| `Ctrl` `S`         | Save                    |
-| `Esc`              | Close modal windows     |
-| `Shift` `P`        | Preview                 |
-| `Ctrl` `Shift` `S` | Save and Preview        |
+| `Ctrl` `F`         | Localiza                |
+| `Ctrl` `K`         | Mostra os atalhos de teclado |
+| `Ctrl` `S`         | Salva                   |
+| `Esc`              | Fecha janelas modais    |
+| `Shift` `P`        | Pré-visualiza           |
+| `Ctrl` `Shift` `S` | Salva e pré-visualiza   |
 
 {.shortcuts}
 
-### History
+### Histórico
 
-| Shortcut           | Action                |
-| ------------------ | --------------------- |
-| `Ctrl` `Z`         | Undo                  |
-| `Ctrl` `Shift` `Z` | Redo                  |
-| `Ctrl` `[`         | Go to previous canvas |
-| `Ctrl` `]`         | Go to next canvas     |
-
-{.shortcuts}
-
-### Edit
-
-| Shortcut    | Action     |
-| ----------- | ---------- |
-| `Ctrl` `A`  | Select all |
-| `Ctrl` `X`  | Cut        |
-| `Ctrl` `C`  | Copy       |
-| `Ctrl` `V`  | Paste      |
-| `Ctrl` `D`  | Duplicate  |
-| `Backspace` | Delete     |
+| Atalho             | Ação                       |
+| ------------------ | -------------------------- |
+| `Ctrl` `Z`         | Desfaz                     |
+| `Ctrl` `Shift` `Z` | Refaz                      |
+| `Ctrl` `[`         | Vai para o canvas anterior |
+| `Ctrl` `]`         | Vai para o próximo canvas  |
 
 {.shortcuts}
 
-### Grid
+### Edição
 
-| Shortcut   | Action                                |
-| ---------- | ------------------------------------- |
-| `Ctrl` `'` | Toggle grid                           |
-| `Ctrl` `\` | Toggle grid system                    |
-| `Ctrl` `;` | Toggle custom guides                  |
-| `Ctrl` `L` | Toggle smart guides                   |
-| `Alt`      | Toggle snap to grid on drag or resize |
+| Atalho      | Ação            |
+| ----------- | --------------- |
+| `Ctrl` `A`  | Seleciona tudo  |
+| `Ctrl` `X`  | Recorta         |
+| `Ctrl` `C`  | Copia           |
+| `Ctrl` `V`  | Cola            |
+| `Ctrl` `D`  | Duplica         |
+| `Backspace` | Exclui          |
 
 {.shortcuts}
 
-### View
+### Grade
 
-| Shortcut       | Action                                                                       |
-| -------------- | ---------------------------------------------------------------------------- |
-| `Ctrl` `+`     | Zoom in                                                                      |
-| `Ctrl` `-`     | Zoom out                                                                     |
-| `Ctrl` `0`     | Zoom to 100%                                                                 |
-| `Ctrl` `1`     | Fit to screen                                                                |
-| `Ctrl` `2`     | Zoom to selected layers, or fit all layers if none selected                  |
-| `Ctrl` `3`     | Center selected layer(s) in the canvas, or center on screen if none selected |
-| `Ctrl` `Right` | Toggle right pane                                                            |
-| `Ctrl` `Left`  | Toggle left pane                                                             |
-| `Space`        | Pan canvas while keydown                                                     |
+| Atalho     | Ação                                      |
+| ---------- | ----------------------------------------- |
+| `Ctrl` `'` | Alterna a grade                           |
+| `Ctrl` `\` | Alterna o sistema de grade                |
+| `Ctrl` `;` | Alterna as guias personalizadas           |
+| `Ctrl` `L` | Alterna as guias inteligentes             |
+| `Alt`      | Alterna o encaixe na grade ao arrastar ou redimensionar |
+
+{.shortcuts}
+
+### Visualização
+
+| Atalho         | Ação                                                                          |
+| -------------- | ----------------------------------------------------------------------------- |
+| `Ctrl` `+`     | Aumenta o zoom                                                                |
+| `Ctrl` `-`     | Diminui o zoom                                                                |
+| `Ctrl` `0`     | Zoom em 100%                                                                  |
+| `Ctrl` `1`     | Ajusta à tela                                                                 |
+| `Ctrl` `2`     | Zoom nas camadas selecionadas ou ajusta todas as camadas se nenhuma estiver selecionada |
+| `Ctrl` `3`     | Centraliza a(s) camada(s) selecionada(s) no canvas ou centraliza na tela se nenhuma estiver selecionada |
+| `Ctrl` `Right` | Alterna o painel direito                                                      |
+| `Ctrl` `Left`  | Alterna o painel esquerdo                                                     |
+| `Space`        | Move o canvas enquanto a tecla estiver pressionada                            |
 
 {.shortcuts}
 
 ### Item
 
-| Shortcut              | Action                                    |
-| --------------------- | ----------------------------------------- |
-| `Ctrl` `Up`           | Bring to front                            |
-| `Ctrl` `Down`         | Send to back                              |
-| `Ctrl` `Shift` `Up`   | Bring forward                             |
-| `Ctrl` `Shift` `Down` | Send backwards                            |
-| `(arrows)`            | Move item                                 |
-| `Shift` `(arrows)`    | Snap item                                 |
-| `Shift`               | Lock drag direction (hold while dragging) |
-| `R`                   | Insert rectangle                          |
-| `O`                   | Insert oval                               |
-| `L`                   | Insert line                               |
-| `T`                   | Insert text                               |
-| `I`                   | Insert interaction area                   |
-| `Enter`               | Enter selected container                  |
+| Atalho                | Ação                                          |
+| --------------------- | --------------------------------------------- |
+| `Ctrl` `Up`           | Traz para a frente                            |
+| `Ctrl` `Down`         | Envia para trás                               |
+| `Ctrl` `Shift` `Up`   | Avança uma camada                             |
+| `Ctrl` `Shift` `Down` | Recua uma camada                              |
+| `(arrows)`            | Move o item                                   |
+| `Shift` `(arrows)`    | Encaixa o item                                |
+| `Shift`               | Trava a direção do arrasto (mantenha pressionado ao arrastar) |
+| `R`                   | Insere um retângulo                           |
+| `O`                   | Insere uma elipse                             |
+| `L`                   | Insere uma linha                              |
+| `T`                   | Insere um texto                               |
+| `I`                   | Insere uma área de interação                  |
+| `Enter`               | Entra no container selecionado                |
 
 {.shortcuts}
 
-### Group
+### Grupo
 
-| Shortcut           | Action           |
-| ------------------ | ---------------- |
-| `Ctrl` `G`         | Group selected   |
-| `Ctrl` `Shift` `G` | Ungroup selected |
-
-{.shortcuts}
-
-### States Preview
-
-| Shortcut | Action                         |
-| -------- | ------------------------------ |
-| `Space`  | Play or pause state transition |
-| `.`      | Forward state transition       |
-| `,`      | Rewind state transition        |
+| Atalho             | Ação                  |
+| ------------------ | --------------------- |
+| `Ctrl` `G`         | Agrupa a seleção      |
+| `Ctrl` `Shift` `G` | Desagrupa a seleção   |
 
 {.shortcuts}
 
-## Also see
+### Pré-visualização de estados
 
-- [Keyboard shortcuts for Proto.io](https://support.proto.io/hc/en-us/articles/115001423511-Keyboard-shortcuts)
+| Atalho | Ação                              |
+| ------ | --------------------------------- |
+| `Space` | Reproduz ou pausa a transição de estado |
+| `.`      | Avança a transição de estado      |
+| `,`      | Retrocede a transição de estado   |
+
+{.shortcuts}
+
+## Veja também
+
+- [Atalhos de teclado do Proto.io](https://support.proto.io/hc/en-us/articles/115001423511-Keyboard-shortcuts)
   _(support.proto.io)_

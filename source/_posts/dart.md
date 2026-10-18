@@ -6,14 +6,14 @@ tags:
   - dart
   - flutter
 categories:
-  - Programming
+  - Programação
 intro: |
-  A Dart cheat sheet with the most important concepts, functions, methods, and more. A complete quick reference for beginners.
+  Um cheat sheet de Dart com os conceitos, funções, métodos e outros recursos mais importantes. Uma referência rápida completa para iniciantes.
 plugins:
   - copyCode
 ---
 
-## Getting Started {.cols-2}
+## Primeiros passos {.cols-2}
 
 ### hello.dart
 
@@ -24,9 +24,9 @@ void main(){
 }
 ```
 
-Every app has a main() function
+Todo app tem uma função main()
 
-### Variables
+### Variáveis
 
 ```dart
 int x = 2; // explicitly typed
@@ -43,7 +43,7 @@ final String email = "temid@gmail.com"; // you can't change the value
 const qty = 5; // Compile-time constant
 ```
 
-### Datatypes
+### Tipos de dados
 
 ```dart
 
@@ -61,7 +61,7 @@ bool isFavourite = true;
 bool isLoaded = false;
 ```
 
-### String interpolation
+### Interpolação de strings
 
 ```dart
 // can use single or double qoutes for String type
@@ -78,7 +78,7 @@ String upperCase = '${firstName.toUpperCase()}';
 print(upperCase); //Print: NICOLA
 ```
 
-### Comments
+### Comentários
 
 ```dart
 // This is a normal, one-line comment.
@@ -90,7 +90,7 @@ print(upperCase); //Print: NICOLA
 /* Comments like these are also supported. */
 ```
 
-### multiline String
+### String multilinha
 
 ```dart
 For multiline String we have to use ''' your text'''
@@ -113,9 +113,9 @@ import 'package:test/test.dart';
 import 'path/to/my_other_file.dart';
 ```
 
-## Operators {.cols-2}
+## Operadores {.cols-2}
 
-### Arithmatic Operators
+### Operadores aritméticos
 
 ```dart
 print(2 + 3); //Print: 5
@@ -135,7 +135,7 @@ b = --a; // predecrement - Decrement a before b gets its value.
 b = a--; // postdecrement - Decrement a AFTER b gets its value.
 ```
 
-### Equality and relational operators
+### Operadores de igualdade e relacionais
 
 ```dart
 print(2 == 2);  //Print: true - Equal
@@ -146,7 +146,7 @@ print(3 >= 3); //Print: true - Greater than or equal to
 print(2 <= 3); //Print: true - Less than or equal to
 ```
 
-### Logical operators
+### Operadores lógicos
 
 ```dart
 // !expr inverts the expression (changes false to true, and vice versa)
@@ -159,9 +159,9 @@ if (!isOutOfStock && (quantity == 2 || quantity == 3)) {
 }
 ```
 
-## Control Flows : Conditionals {.cols-2}
+## Fluxo de controle: condicionais {.cols-2}
 
-### if and else if
+### if e else if
 
 ```dart
 if(age < 18){
@@ -191,9 +191,9 @@ switch(myPet){
 // Prints: My Pet is Dog.
 ```
 
-## Control Flows : Loops
+## Fluxo de controle: loops
 
-### while loop
+### Loop while
 
 ```dart
 while (!dreamsAchieved) {
@@ -201,9 +201,9 @@ while (!dreamsAchieved) {
 }
 ```
 
-while loop check condition before iteration of the loop
+O loop while verifica a condição antes da iteração do loop
 
-### do-while loop
+### Loop do-while
 
 ```dart
 do {
@@ -211,9 +211,9 @@ do {
 } while (!dreamsAchieved);
 ```
 
-do-while loop verifies the condition after the execution of the statements inside the loop
+O loop do-while verifica a condição após a execução das instruções dentro do loop
 
-### for loop
+### Laço for
 
 ```dart
 for(int i=0; i< 10; i++){
@@ -227,7 +227,7 @@ for(var number in numbers){
 }
 ```
 
-### for in loop
+### Laço for-in
 
 ```dart
   // Define a list of numbers
@@ -247,9 +247,9 @@ for(var number in numbers){
   }
 ```
 
-## Collections {.cols-2}
+## Coleções {.cols-2}
 
-### Lists
+### Listas
 
 ```dart
 // ordered group of objects
@@ -266,7 +266,7 @@ List<String> cities = <String>["New York", "Mumbai", "Tokyo"];
 const constantCities = const ["New York", "Mumbai", "Tokyo"];
 ```
 
-### Sets
+### Conjuntos
 
 ```dart
 // A set in Dart is an unordered collection of unique items.
@@ -278,7 +278,7 @@ Set<String> names = {}; // This works, too.
 //var names = {}; // Creates a map, not a set.
 ```
 
-### Maps
+### Mapas
 
 ```dart
 // a map is an object that associates keys and values
@@ -299,9 +299,9 @@ var nobleGases = {
 };
 ```
 
-## Functions {.cols-2}
+## Funções {.cols-2}
 
-### Functions
+### Funções
 
 ```dart
 // functions in dart are objects and have a type
@@ -316,14 +316,14 @@ int sum = add(2,3); // returns: 5
 int totalSum = add(2, add(2,3)); // returns : 7
 ```
 
-### Arrow Syntax (=>)
+### Sintaxe de seta (=>)
 
 ```dart
 // functions that contain just one expression, you can use a shorthand syntax
 bool isFav(Product product) => favProductsList.contains(product);
 ```
 
-### Anonymous (lambda) functions
+### Funções anônimas (lambda)
 
 ```dart
 // small one line functions that dont have name
@@ -336,9 +336,9 @@ list.forEach(
 //Prints: 0: apples 1: bananas 2: oranges
 ```
 
-## Classes and Objects
+## Classes e objetos
 
-### Class
+### Classe
 
 ```dart
 class Cat {
@@ -351,7 +351,7 @@ class Cat {
 }
 ```
 
-### Object
+### Objeto
 
 ```dart
 // instance of a class
@@ -364,7 +364,7 @@ void main(){
 }
 ```
 
-### Constructors
+### Construtores
 
 ```dart
 class Cat {
@@ -377,7 +377,7 @@ void main(){
 }
 ```
 
-### Abstract Classes
+### Classes abstratas
 
 ```dart
 // abstract class—a class that can’t be instantiated
@@ -408,9 +408,9 @@ class Cat {
 }
 ```
 
-## Implicit interfaces {.cols-2}
+## Interfaces implícitas {.cols-2}
 
-### A basic interface
+### Uma interface básica
 
 ```dart
 // A person. The implicit interface contains greet().
@@ -440,7 +440,7 @@ void main() {
 }
 ```
 
-### Extending a class
+### Estendendo uma classe
 
 ```dart
 class Phone {
@@ -461,7 +461,7 @@ class SmartPhone extends Phone {
 }
 ```
 
-## Exceptions
+## Exceções
 
 ### Throw
 
@@ -528,9 +528,9 @@ main() async {
 }
 ```
 
-## Extensions {.cols-2}
+## Extensões {.cols-2}
 
-### Why use extensions? {.row-span-2}
+### Por que usar extensões? {.row-span-2}
 
 ```dart
 // Extensions allow you to add methods to existing
@@ -561,7 +561,7 @@ print('SomeString'.isValidEmail); //Print: false
 
 ```
 
-### Generic Extensions
+### Extensões genéricas
 
 ```dart
 // allows you to apply the same logic to a range of types.
@@ -572,7 +572,7 @@ extension NumGenericExtensions<T extends num> on T {
 print(7.addTwo()); // Print: 9
 ```
 
-### Dart Extensions in Flutter
+### Extensões Dart no Flutter
 
 ```dart
 extension ContextExtension on BuildContext {
@@ -594,9 +594,9 @@ Widget build(BuildContext context) => MaterialApp(
   );
 ```
 
-## Miscellaneous {.cols-2}
+## Diversos {.cols-2}
 
-### Null and Null aware
+### Null e null-aware
 
 ```dart
 int x; // The initial value of any object is null
@@ -612,7 +612,7 @@ print(x); // Print: 6 - result is still 6
 print(null ?? 10); // Prints: 10. Display the value on the left if it's not null else return the value on the right
 ```
 
-### Ternary Operator
+### Operador ternário
 
 ```dart
 // condition ? exprIfTrue : exprIfFalse
@@ -621,7 +621,7 @@ bool isAvailable;
 isAvailable ? orderproduct() : addToFavourite();
 ```
 
-### Spread Operator (...)
+### Operador spread (...)
 
 ```dart
 // to insert multiple values into a collection.
@@ -631,7 +631,7 @@ var list2 = [0, ...list];
 print(list2.length); //Print: 4
 ```
 
-### Cascade notation (..)
+### Notação em cascata (..)
 
 ```dart
 // allows you to make a sequence of operations on the same object
@@ -649,7 +649,7 @@ var user = User()
   ..age = 24;
 ```
 
-### Conditional Property Access
+### Acesso condicional a propriedades
 
 ```dart
 userObject?.userName
@@ -663,7 +663,7 @@ userObject?.userName?.toString()
 // The preceeding code returns null and never calls toString() if either userObject or userObject.userName is null
 ```
 
-### enum in dart
+### enum no Dart
 
 ```dart
 defination: An enum (short for "enumeration") is a special data type that enables a variable to be a set of predefined constants. Enums are used to define variables that can only take one out of a small set of possible values. They help make code more readable and less error-prone by providing meaningful names to these sets of values.

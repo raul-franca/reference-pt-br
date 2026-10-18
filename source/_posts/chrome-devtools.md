@@ -7,126 +7,126 @@ tags:
   -
   -
 categories:
-  - Keyboard Shortcuts
+  - Atalhos de Teclado
 intro: |
-  A visual cheat-sheet for the 56 keyboard shortcuts found in Chrome's Developer Tools
+  Um cheat sheet visual dos 56 atalhos de teclado encontrados no Chrome Developer Tools
 ---
 
-## Keyboard Shortcuts
+## Atalhos de teclado
 
-### Opening DevTools
+### Abrir o DevTools
 
-| Shortcut           | Action                            |
+| Atalho             | Ação                              |
 | ------------------ | --------------------------------- |
-| `Ctrl` `Shift` `I` | Open whatever panel you used last |
-| `Ctrl` `Shift` `J` | Open the Console panel            |
-| `Ctrl` `Shift` `C` | Open the Elements panel           |
+| `Ctrl` `Shift` `I` | Abre o último painel que você usou |
+| `Ctrl` `Shift` `J` | Abre o painel Console             |
+| `Ctrl` `Shift` `C` | Abre o painel Elements            |
 
 {.shortcuts}
 
-### Global Shortcuts {.row-span-2}
+### Atalhos globais {.row-span-2}
 
-| Shortcut           | Action                                                 |
+| Atalho             | Ação                                                   |
 | ------------------ | ------------------------------------------------------ |
-| `F1`               | Show Settings                                          |
-| `Ctrl` `]`         | Focus the next panel                                   |
-| `Ctrl` `[`         | Focus the previous panel                               |
-| `Ctrl` `Shift` `D` | Switch back to whatever docking position you last used |
-| `Ctrl` `Shift` `M` | Toggle Device Mode                                     |
-| `Ctrl` `Shift` `C` | Toggle Inspect Element Mode                            |
-| `Ctrl` `Shift` `P` | Open the Command Menu                                  |
-| `Esc`              | Toggle the Drawer                                      |
-| `Ctrl` `R`         | Normal reload                                          |
-| `Ctrl` `Shift` `R` | Hard reload                                            |
-| `Ctrl` `F`         | Search for text within the current panel               |
-| `Ctrl` `Shift` `F` | Opens the Search tab in the Drawer                     |
-| `Ctrl` `P`         | Open a file in the Sources panel                       |
-| `Ctrl` `Shift` `+` | Zoom in                                                |
-| `Ctrl` `-`         | Zoom out                                               |
-| `Ctrl` `0`         | Restore default zoom level                             |
-| `Ctrl` `O` `!`     | Run snippet                                            |
+| `F1`               | Mostra as configurações                                |
+| `Ctrl` `]`         | Foca o próximo painel                                  |
+| `Ctrl` `[`         | Foca o painel anterior                                 |
+| `Ctrl` `Shift` `D` | Volta para a última posição de encaixe usada           |
+| `Ctrl` `Shift` `M` | Alterna o Device Mode                                  |
+| `Ctrl` `Shift` `C` | Alterna o modo de inspeção de elementos                |
+| `Ctrl` `Shift` `P` | Abre o Command Menu                                    |
+| `Esc`              | Alterna o Drawer                                       |
+| `Ctrl` `R`         | Recarregamento normal                                  |
+| `Ctrl` `Shift` `R` | Recarregamento forçado                                 |
+| `Ctrl` `F`         | Busca texto no painel atual                            |
+| `Ctrl` `Shift` `F` | Abre a aba Search no Drawer                            |
+| `Ctrl` `P`         | Abre um arquivo no painel Sources                      |
+| `Ctrl` `Shift` `+` | Aumenta o zoom                                         |
+| `Ctrl` `-`         | Diminui o zoom                                         |
+| `Ctrl` `0`         | Restaura o nível de zoom padrão                        |
+| `Ctrl` `O` `!`     | Executa um snippet                                     |
 
 {.shortcuts}
 
-### Elements Panel
+### Painel Elements
 
-| Shortcut      | Action                                                            |
+| Atalho        | Ação                                                              |
 | ------------- | ----------------------------------------------------------------- |
-| `Ctrl` `Z`    | Undo change                                                       |
-| `Ctrl` `Y`    | Redo change                                                       |
-| `Up/Down`     | Select the element above or below the currently-selected element  |
-| `Right`       | Expand the currently-selected node                                |
-| `Left`        | Collapse the currently-selected node                              |
-| `Enter`       | Toggle Edit Attributes mode on the currently-selected element     |
-| `Tab`         | Select the next attribute after entering Edit Attributes mode     |
-| `Shift` `Tab` | Select the previous attribute after entering Edit Attributes mode |
-| `H`           | Hide the currently-selected element                               |
-| `F2`          | Toggle Edit as HTML mode on the currently-selected element        |
+| `Ctrl` `Z`    | Desfaz a alteração                                                |
+| `Ctrl` `Y`    | Refaz a alteração                                                 |
+| `Up/Down`     | Seleciona o elemento acima ou abaixo do elemento selecionado      |
+| `Right`       | Expande o nó selecionado                                          |
+| `Left`        | Recolhe o nó selecionado                                          |
+| `Enter`       | Alterna o modo Edit Attributes no elemento selecionado            |
+| `Tab`         | Seleciona o próximo atributo após entrar no modo Edit Attributes   |
+| `Shift` `Tab` | Seleciona o atributo anterior após entrar no modo Edit Attributes  |
+| `H`           | Oculta o elemento selecionado                                     |
+| `F2`          | Alterna o modo Edit as HTML no elemento selecionado               |
 
 {.shortcuts}
 
-### Sources Panel
+### Painel Sources
 
-| Shortcut           | Action                                                            |
+| Atalho             | Ação                                                              |
 | ------------------ | ----------------------------------------------------------------- |
-| `Ctrl` `\`         | Pause script execution (if running), or resume (if paused)        |
-| `Ctrl` `'`         | Step over next function call                                      |
-| `Ctrl` `;`         | Step into next function call                                      |
-| `Ctrl` `Shift` `;` | Step out of current function                                      |
-| `Ctrl` `./,`       | Select the call frame below or above the currently-selected frame |
-| `Ctrl` `S`         | Save changes to local modifications                               |
-| `Ctrl` `Alt` `S`   | Save all changes                                                  |
-| `Ctrl` `G`         | Go to line                                                        |
-| `Alt` `W`          | Close the active tab                                              |
+| `Ctrl` `\`         | Pausa a execução do script (se estiver rodando) ou retoma (se pausada) |
+| `Ctrl` `'`         | Passa para a próxima chamada de função                            |
+| `Ctrl` `;`         | Entra na próxima chamada de função                                |
+| `Ctrl` `Shift` `;` | Sai da função atual                                               |
+| `Ctrl` `./,`       | Seleciona o call frame abaixo ou acima do frame selecionado       |
+| `Ctrl` `S`         | Salva as alterações nas modificações locais                       |
+| `Ctrl` `Alt` `S`   | Salva todas as alterações                                         |
+| `Ctrl` `G`         | Vai para a linha                                                  |
+| `Alt` `W`          | Fecha a aba ativa                                                 |
 
 {.shortcuts}
 
-### Code Editor
+### Editor de código
 
-| Shortcut     | Action                                                         |
-| ------------ | -------------------------------------------------------------- |
-| `Ctrl` `Del` | Delete all characters in the last word, up to the cursor       |
-| `Ctrl` `M`   | Go to matching bracket                                         |
-| `Ctrl` `/`   | Toggle single-line comment                                     |
-| `Ctrl` `D`   | Select the next occurrence of whatever word the cursor is on   |
-| `Ctrl` `U`   | Deselect the next occurrence of whatever word the cursor is on |
-
-{.shortcuts}
-
-### Performance Panel
-
-| Shortcut   | Action                  |
-| ---------- | ----------------------- |
-| `Ctrl` `E` | Start or stop recording |
-| `Ctrl` `S` | Save recording          |
-| `Ctrl` `O` | Load recording          |
+| Atalho       | Ação                                                          |
+| ------------ | ------------------------------------------------------------- |
+| `Ctrl` `Del` | Apaga todos os caracteres da última palavra, até o cursor     |
+| `Ctrl` `M`   | Vai para o colchete correspondente                            |
+| `Ctrl` `/`   | Alterna o comentário de linha única                           |
+| `Ctrl` `D`   | Seleciona a próxima ocorrência da palavra sob o cursor        |
+| `Ctrl` `U`   | Desmarca a próxima ocorrência da palavra sob o cursor         |
 
 {.shortcuts}
 
-### Memory Panel
+### Painel Performance
 
-| Shortcut   | Action                  |
-| ---------- | ----------------------- |
-| `Ctrl` `E` | Start or stop recording |
-
-{.shortcuts}
-
-### Console Panel
-
-| Shortcut               | Action                         |
-| ---------------------- | ------------------------------ |
-| `Tab`                  | Accept autocomplete suggestion |
-| `Esc`                  | Reject autocomplete suggestion |
-| `Up`                   | Get previous statement         |
-| `Down`                 | Get next statement             |
-| `Ctrl` <code>\`</code> | Focus the Console              |
-| `Ctrl` `L`             | Clear the console              |
-| `Shift` `Enter`        | Force a multi-line entry       |
-| `Enter`                | Execute                        |
+| Atalho     | Ação                     |
+| ---------- | ------------------------ |
+| `Ctrl` `E` | Inicia ou para a gravação |
+| `Ctrl` `S` | Salva a gravação         |
+| `Ctrl` `O` | Carrega a gravação       |
 
 {.shortcuts}
 
-## Also see
+### Painel Memory
 
-- [Keyboard shortcuts for Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools/shortcuts)
+| Atalho     | Ação                     |
+| ---------- | ------------------------ |
+| `Ctrl` `E` | Inicia ou para a gravação |
+
+{.shortcuts}
+
+### Painel Console
+
+| Atalho                 | Ação                            |
+| ---------------------- | ------------------------------- |
+| `Tab`                  | Aceita a sugestão de autocomplete |
+| `Esc`                  | Rejeita a sugestão de autocomplete |
+| `Up`                   | Obtém o comando anterior        |
+| `Down`                 | Obtém o próximo comando         |
+| `Ctrl` <code>\`</code> | Foca o Console                  |
+| `Ctrl` `L`             | Limpa o console                 |
+| `Shift` `Enter`        | Força uma entrada multilinha    |
+| `Enter`                | Executa                         |
+
+{.shortcuts}
+
+## Veja também
+
+- [Atalhos de teclado do Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools/shortcuts)
   _(developers.google.com)_

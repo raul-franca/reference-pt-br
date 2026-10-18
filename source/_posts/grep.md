@@ -8,106 +8,106 @@ tags:
   - pattern
   - text
 categories:
-  - Linux Command
+  - Comandos Linux
 intro:
-  This cheat sheet is intended to be a quick reminder for the main concepts involved in using the command line program
-  grep and assumes you already understand its usage.
+  Este cheat sheet tem o objetivo de ser um lembrete rápido dos principais conceitos envolvidos no uso do programa de linha de comando
+  grep e assume que você já entende como usá-lo.
 plugins:
   - copyCode
 ---
 
-## Getting Started {.cols-5}
+## Primeiros passos {.cols-5}
 
-### Usage {.col-span-2}
+### Uso {.col-span-2}
 
-Search standard output (i.e. a stream of text)
+Busca na saída padrão (ou seja, um fluxo de texto)
 
 ```shell script
 $ grep [options] search_string
 ```
 
-Search for an exact string in file:
+Buscar uma string exata em um arquivo:
 
 ```shell script
 $ grep [options] search_string path/to/file
 ```
 
-Print lines in myfile.txt containing the string "mellon"
+Imprime as linhas de myfile.txt que contêm a string "mellon"
 
 ```shell script
 $ grep 'mellon' myfile.txt
 ```
 
-Wildcards are accepted in filename.
+Curingas são aceitos no nome do arquivo.
 
-### Option examples {.col-span-3}
+### Exemplos de opções {.col-span-3}
 
-| Option | Example                                   | Operation                                            |
-| ------ | ----------------------------------------- | ---------------------------------------------------- |
-| `-i`   | grep -i ^DA demo.txt                      | Forgets about case sensitivity                       |
-| `-w`   | grep -w "of" demo.txt                     | Search only for the full word                        |
-| `-A`   | grep -A 3 'Exception' error.log           | Display 3 lines after matching string                |
-| `-B`   | grep -B 4 'Exception' error.log           | Display 4 lines before matching string               |
-| `-C`   | grep -C 5 'Exception' error.log           | Display 5 lines around matching string               |
-| `-r`   | grep -r 'cheatsheets.zip' /var/log/nginx/ | Recursive search _(within subdirs)_                  |
-| `-v`   | grep -v 'warning' /var/log/syslog         | Return all lines which don't match the pattern       |
-| `-e`   | grep -e '^al' filename                    | Use regex _(lines starting with 'al')_               |
-| `-E`   | grep -E 'ja(s\|cks)on' filename           | Extended regex _(lines containing jason or jackson)_ |
-| `-c`   | grep -c 'error' /var/log/syslog           | Count the number of matches                          |
-| `-l`   | grep -l 'robot' /var/log/\*               | Print the name of the file(s) of matches             |
-| `-o`   | grep -o search_string filename            | Only show the matching part of the string            |
-| `-n`   | grep -n "go" demo.txt                     | Show the line numbers of the matches                 |
+| Opção | Exemplo                                   | Operação                                                   |
+| ----- | ----------------------------------------- | ---------------------------------------------------------- |
+| `-i`  | grep -i ^DA demo.txt                      | Ignora a diferenciação entre maiúsculas e minúsculas       |
+| `-w`  | grep -w "of" demo.txt                     | Busca apenas pela palavra completa                         |
+| `-A`  | grep -A 3 'Exception' error.log           | Exibe 3 linhas após a string correspondente                |
+| `-B`  | grep -B 4 'Exception' error.log           | Exibe 4 linhas antes da string correspondente              |
+| `-C`  | grep -C 5 'Exception' error.log           | Exibe 5 linhas ao redor da string correspondente           |
+| `-r`  | grep -r 'cheatsheets.zip' /var/log/nginx/ | Busca recursiva _(dentro de subdiretórios)_                |
+| `-v`  | grep -v 'warning' /var/log/syslog         | Retorna todas as linhas que não correspondem ao padrão     |
+| `-e`  | grep -e '^al' filename                    | Usa regex _(linhas que começam com 'al')_                  |
+| `-E`  | grep -E 'ja(s\|cks)on' filename           | Usa regex estendida _(linhas que contêm jason ou jackson)_ |
+| `-c`  | grep -c 'error' /var/log/syslog           | Conta o número de correspondências                         |
+| `-l`  | grep -l 'robot' /var/log/\*               | Imprime o nome do(s) arquivo(s) com correspondências       |
+| `-o`  | grep -o search_string filename            | Mostra apenas a parte correspondente da string             |
+| `-n`  | grep -n "go" demo.txt                     | Mostra os números das linhas correspondentes               |
 
-## Grep regular expressions
+## Expressões regulares do grep
 
-### Refer
+### Referência
 
-- [Regex syntax](/regex) _(cheatsheets.zip)_
-- [Regex examples](/regex#regex-examples) _(cheatsheets.zip)_
+- [Sintaxe de regex](/regex) _(cheatsheets.zip)_
+- [Exemplos de regex](/regex#regex-examples) _(cheatsheets.zip)_
 
-Please refer to the full version of the regex cheat sheet for more complex requirements.
+Consulte a versão completa do cheat sheet de regex para requisitos mais complexos.
 
-### Wildcards
+### Curingas
 
-| -               | -                                      |
-| --------------- | -------------------------------------- |
-| .               | Any character.                         |
-| `?            ` | Optional and can only occur once.      |
-| `*            ` | Optional and can occur more than once. |
-| `+            ` | Required and can occur more than once. |
+| -               | -                                           |
+| --------------- | ------------------------------------------- |
+| .               | Qualquer caractere.                         |
+| `?            ` | Opcional e pode ocorrer apenas uma vez.     |
+| `*            ` | Opcional e pode ocorrer mais de uma vez.    |
+| `+            ` | Obrigatório e pode ocorrer mais de uma vez. |
 
-### Quantifiers
+### Quantificadores
 
-| -               | -                                            |
-| --------------- | -------------------------------------------- |
-| `{n}          ` | Previous item appears exactly n times.       |
-| `{n,}         ` | Previous item appears n times or more.       |
-| `{,m}         ` | Previous item appears n times maximum.       |
-| `{n,m}        ` | Previous item appears between n and m times. |
+| -               | -                                           |
+| --------------- | ------------------------------------------- |
+| `{n}          ` | O item anterior aparece exatamente n vezes. |
+| `{n,}         ` | O item anterior aparece n vezes ou mais.    |
+| `{,m}         ` | O item anterior aparece no máximo n vezes.  |
+| `{n,m}        ` | O item anterior aparece entre n e m vezes.  |
 
 ### POSIX
 
-| -               | -                                         |
-| --------------- | ----------------------------------------- |
-| `[:alpha:]   `  | Any lower and upper case letter.          |
-| `[:digit:]   `  | Any number.                               |
-| `[:alnum:]   `  | Any lower and upper case letter or digit. |
-| `[:space:]    ` | Any whites­pace.                          |
+| -               | -                                                |
+| --------------- | ------------------------------------------------ |
+| `[:alpha:]   `  | Qualquer letra maiúscula ou minúscula.           |
+| `[:digit:]   `  | Qualquer número.                                 |
+| `[:alnum:]   `  | Qualquer letra maiúscula ou minúscula ou dígito. |
+| `[:space:]    ` | Qualquer espaço em branco.                       |
 
-### Character
+### Caractere
 
-| -               | -                                         |
-| --------------- | ----------------------------------------- |
-| `[A-Z­a-z]    ` | Any lower and upper case letter.          |
-| `[0-9]        ` | Any number.                               |
-| `[0-9­A-Z­a-z]` | Any lower and upper case letter or digit. |
+| -               | -                                                |
+| --------------- | ------------------------------------------------ |
+| `[A-Z­a-z]    ` | Qualquer letra maiúscula ou minúscula.           |
+| `[0-9]        ` | Qualquer número.                                 |
+| `[0-9­A-Z­a-z]` | Qualquer letra maiúscula ou minúscula ou dígito. |
 
-### Position
+### Posição
 
 |      |                    |
 | ---- | ------------------ |
-| `^ ` | Beginning of line. |
-| `$ ` | End of line.       |
-| `^$` | Empty line.        |
-| `\<` | Start of word.     |
-| `\>` | End of word.       |
+| `^ ` | Início da linha.   |
+| `$ ` | Fim da linha.      |
+| `^$` | Linha vazia.       |
+| `\<` | Início de palavra. |
+| `\>` | Fim de palavra.    |

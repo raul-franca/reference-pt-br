@@ -7,80 +7,80 @@ tags:
   -
   -
 categories:
-  - Keyboard Shortcuts
+  - Atalhos de Teclado
 intro: |
-  A visual cheat-sheet for the 38 keyboard shortcuts found in Microsoft Teams
+  Um cheat sheet visual com os 38 atalhos de teclado do Microsoft Teams
 ---
 
-## Keyboard Shortcuts
+## Atalhos de teclado
 
-### General
+### Geral
 
-| Shortcut   | Action                  |
+| Atalho     | Ação                    |
 | ---------- | ----------------------- |
-| `Ctrl` `.` | Show keyboard shortcuts |
-| `Ctrl` `E` | Go to search            |
-| `Ctrl` `/` | Show commands           |
-| `Ctrl` `G` | Goto                    |
-| `Ctrl` `N` | Start new chat          |
-| `Ctrl` `,` | Open settings           |
-| `F1`       | Open help               |
-| `Esc`      | Close                   |
-| `Ctrl` `=` | Zoom in                 |
-| `Ctrl` `-` | Zoom out                |
-| `Ctrl` `0` | Return to default zoom  |
+| `Ctrl` `.` | Mostra os atalhos de teclado |
+| `Ctrl` `E` | Vai para a busca        |
+| `Ctrl` `/` | Mostra os comandos      |
+| `Ctrl` `G` | Ir para                 |
+| `Ctrl` `N` | Inicia um novo chat     |
+| `Ctrl` `,` | Abre as configurações   |
+| `F1`       | Abre a ajuda            |
+| `Esc`      | Fecha                   |
+| `Ctrl` `=` | Aumenta o zoom          |
+| `Ctrl` `-` | Diminui o zoom          |
+| `Ctrl` `0` | Volta ao zoom padrão    |
 
 {.shortcuts}
 
-### Navigation
+### Navegação
 
-| Shortcut              | Action                     |
-| --------------------- | -------------------------- |
-| `Ctrl` `1`            | Open activity              |
-| `Ctrl` `2`            | Open chat                  |
-| `Ctrl` `3`            | Open teams                 |
-| `Ctrl` `4`            | Open calendar              |
-| `Ctrl` `5`            | Open calls                 |
-| `Ctrl` `6`            | Open files                 |
-| `Alt` `Up`            | Go to previous list item   |
-| `Alt` `Down`          | Go to next list item       |
-| `Ctrl` `Shift` `Up`   | Move selected team up      |
-| `Ctrl` `Shift` `Down` | Move selected team down    |
-| `Ctrl` `Shift` `F6`   | Go to the previous section |
-| `Ctrl` `F6`           | Go to the next section     |
-
-{.shortcuts}
-
-### Messaging
-
-| Shortcut           | Action                            |
-| ------------------ | --------------------------------- |
-| `Alt` `Shift` `C`  | Go to compose box                 |
-| `Ctrl` `Shift` `X` | Expand compose box                |
-| `Ctrl` `Enter`     | Send, in the expanded compose box |
-| `Ctrl` `O`         | Attach a file                     |
-| `Shift` `Enter`    | Start a new line                  |
-| `Alt` `Shift` `R`  | Reply to thread                   |
+| Atalho                | Ação                          |
+| --------------------- | ----------------------------- |
+| `Ctrl` `1`            | Abre a atividade              |
+| `Ctrl` `2`            | Abre o chat                   |
+| `Ctrl` `3`            | Abre as equipes               |
+| `Ctrl` `4`            | Abre o calendário             |
+| `Ctrl` `5`            | Abre as chamadas              |
+| `Ctrl` `6`            | Abre os arquivos              |
+| `Alt` `Up`            | Vai para o item anterior da lista |
+| `Alt` `Down`          | Vai para o próximo item da lista |
+| `Ctrl` `Shift` `Up`   | Move a equipe selecionada para cima |
+| `Ctrl` `Shift` `Down` | Move a equipe selecionada para baixo |
+| `Ctrl` `Shift` `F6`   | Vai para a seção anterior     |
+| `Ctrl` `F6`           | Vai para a próxima seção      |
 
 {.shortcuts}
 
-### Meetings and Calls
+### Mensagens
 
-| Shortcut               | Action                |
+| Atalho             | Ação                                  |
+| ------------------ | ------------------------------------- |
+| `Alt` `Shift` `C`  | Vai para a caixa de composição        |
+| `Ctrl` `Shift` `X` | Expande a caixa de composição         |
+| `Ctrl` `Enter`     | Envia, com a caixa de composição expandida |
+| `Ctrl` `O`         | Anexa um arquivo                      |
+| `Shift` `Enter`    | Inicia uma nova linha                 |
+| `Alt` `Shift` `R`  | Responde à conversa                   |
+
+{.shortcuts}
+
+### Reuniões e chamadas
+
+| Atalho                 | Ação                  |
 | ---------------------- | --------------------- |
-| `Ctrl` `Shift` `A`     | Accept video call     |
-| `Ctrl` `Shift` `S`     | Accept audio call     |
-| `Ctrl` `Shift` `D`     | Decline call          |
-| `Ctrl` `Shift` `C`     | Start audio call      |
-| `Ctrl` `Shift` `U`     | Start video call      |
-| `Ctrl` `Shift` `M`     | Toggle mute           |
-| `Ctrl` `Shift` `O`     | Toggle video          |
-| `Ctrl` `Shift` `F`     | Toggle fullscreen     |
-| `Ctrl` `Shift` `Space` | Go to sharing toolbar |
+| `Ctrl` `Shift` `A`     | Aceita chamada de vídeo |
+| `Ctrl` `Shift` `S`     | Aceita chamada de áudio |
+| `Ctrl` `Shift` `D`     | Recusa a chamada      |
+| `Ctrl` `Shift` `C`     | Inicia chamada de áudio |
+| `Ctrl` `Shift` `U`     | Inicia chamada de vídeo |
+| `Ctrl` `Shift` `M`     | Alterna o mudo        |
+| `Ctrl` `Shift` `O`     | Alterna o vídeo       |
+| `Ctrl` `Shift` `F`     | Alterna a tela cheia  |
+| `Ctrl` `Shift` `Space` | Vai para a barra de compartilhamento |
 
 {.shortcuts}
 
-## Also see
+## Veja também
 
-- [Keyboard shortcuts for Microsoft Teams](https://support.microsoft.com/en-us/office/keyboard-shortcuts-for-microsoft-teams-2e8e2a70-e8d8-4a19-949b-4c36dd5292d2)
+- [Atalhos de teclado do Microsoft Teams](https://support.microsoft.com/en-us/office/keyboard-shortcuts-for-microsoft-teams-2e8e2a70-e8d8-4a19-949b-4c36dd5292d2)
   _(support.microsoft.com)_

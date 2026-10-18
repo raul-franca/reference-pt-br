@@ -8,112 +8,112 @@ tags:
   - editor
   - shortcut
 categories:
-  - Keyboard Shortcuts
-intro: A visual cheat-sheet for the 50 keyboard shortcuts found in the Zed text editor.
+  - Atalhos de Teclado
+intro: Um cheat sheet visual para os 50 atalhos de teclado do editor de texto Zed.
 ---
 
-## Keyboard Shortcuts
+## Atalhos de Teclado
 
 ### Zed
 
-| Shortcut           | Action                |
-| ------------------ | --------------------- |
-| `Ctrl` `,`         | Open settings         |
-| `Ctrl` `Shift` `X` | Open Extensions store |
-| `Ctrl` `Q`         | Quit Zed              |
+| Atalho             | Ação                    |
+| ------------------ | ----------------------- |
+| `Ctrl` `,`         | Abre as configurações   |
+| `Ctrl` `Shift` `X` | Abre a loja de extensões |
+| `Ctrl` `Q`         | Sai do Zed              |
 
 {.shortcuts}
 
-### File
+### Arquivo
 
-| Shortcut                 | Action             |
+| Atalho                   | Ação               |
 | ------------------------ | ------------------ |
-| `Ctrl` `N`               | New file           |
-| `Ctrl` `Shift` `N`       | New Window         |
-| `Ctrl` `O`               | Open folder        |
-| `Ctrl` `Alt` `Shift` `O` | Open remote folder |
-| `Ctrl` `S`               | Save               |
-| `Ctrl` `Shift` `S`       | Save As...         |
-| `Ctrl` `Alt` `S`         | Save All           |
-| `Ctrl` `Shift` `W`       | Close Window       |
+| `Ctrl` `N`               | Novo arquivo       |
+| `Ctrl` `Shift` `N`       | Nova janela        |
+| `Ctrl` `O`               | Abre pasta         |
+| `Ctrl` `Alt` `Shift` `O` | Abre pasta remota  |
+| `Ctrl` `S`               | Salva              |
+| `Ctrl` `Shift` `S`       | Salvar como...     |
+| `Ctrl` `Alt` `S`         | Salvar tudo        |
+| `Ctrl` `Shift` `W`       | Fecha a janela     |
 
 {.shortcuts}
 
-### Edit
+### Edição
 
-| Shortcut           | Action              |
-| ------------------ | ------------------- |
-| `Ctrl` `Z`         | Undo                |
-| `Ctrl` `Shift` `Z` | Redo                |
-| `Ctrl` `X`         | Cut                 |
-| `Ctrl` `C`         | Copy                |
-| `Ctrl` `V`         | Paste               |
-| `Ctrl` `Shift` `F` | Find in project     |
-| `Ctrl` `/`         | Toggle line comment |
-
-{.shortcuts}
-
-### Selection
-
-| Shortcut              | Action                 |
-| --------------------- | ---------------------- |
-| `Ctrl` `A`            | Select all             |
-| `Alt` `Shift` `Right` | Expand selection       |
-| `Alt` `Shift` `Left`  | Shrink selection       |
-| `Alt` `Shift` `Up`    | Add cursor above       |
-| `Alt` `Shift` `Down`  | Add cursor below       |
-| `Ctrl` `Shift` `Down` | Select next Occurrence |
-| `Alt` `Up`            | Move line up           |
-| `Alt` `Down`          | Move line down         |
-| `Ctrl` `Shift` `D`    | Duplicate selection    |
+| Atalho             | Ação                      |
+| ------------------ | ------------------------- |
+| `Ctrl` `Z`         | Desfaz                    |
+| `Ctrl` `Shift` `Z` | Refaz                     |
+| `Ctrl` `X`         | Recorta                   |
+| `Ctrl` `C`         | Copia                     |
+| `Ctrl` `V`         | Cola                      |
+| `Ctrl` `Shift` `F` | Localiza no projeto       |
+| `Ctrl` `/`         | Alterna comentário de linha |
 
 {.shortcuts}
 
-### View
+### Seleção
 
-| Shortcut                  | Action                    |
+| Atalho                | Ação                       |
+| --------------------- | -------------------------- |
+| `Ctrl` `A`            | Seleciona tudo             |
+| `Alt` `Shift` `Right` | Expande a seleção          |
+| `Alt` `Shift` `Left`  | Reduz a seleção            |
+| `Alt` `Shift` `Up`    | Adiciona cursor acima      |
+| `Alt` `Shift` `Down`  | Adiciona cursor abaixo     |
+| `Ctrl` `Shift` `Down` | Seleciona a próxima ocorrência |
+| `Alt` `Up`            | Move a linha para cima     |
+| `Alt` `Down`          | Move a linha para baixo    |
+| `Ctrl` `Shift` `D`    | Duplica a seleção          |
+
+{.shortcuts}
+
+### Visualização
+
+| Atalho                    | Ação                        |
 | --------------------------| ------------------------- |
-| `Ctrl` `B`                | Toggle Left Dock          |
-| `Ctrl` `Alt` `B`          | Toggle Right Dock         |
-| `Ctrl` `J`                | Toggle Bottom Dock        |
-| `Ctrl` `Alt` `Y`          | Close All Docks           |
-| `Ctrl` `K` `Up`           | Split Up                  |
-| `Ctrl` `K` `Down`         | Split Down                |
-| `Ctrl` `K` `Left`         | Split Left                |
-| `Ctrl` `K` `Right`        | Split Right               |
-| `Ctrl` `K` `Ctrl` `Up`    | Focus Split Buffer Up     |
-| `Ctrl` `K` `Ctrl` `Down`  | Focus Split Buffer Down   |
-| `Ctrl` `K` `Ctrl` `Left`  | Focus Split Buffer Left   |
-| `Ctrl` `K` `Ctrl` `Right` | Focus Split Buffer Right  |
-| `Ctrl` `Shift` `E`        | Project Panel             |
-| `Ctrl` `Shift` `B`        | Outline Panel             |
-| `Ctrl` `Shift` `C`        | Collab Panel              |
-| `Ctrl` `` ` ``            | Terminal Panel            |
-| `Ctrl` ` ~`               | New Terminal Panel        |
-| `Ctrl` `Shift` `M`        | Diagnostics               |
-| `Ctrl` `Tab`              | Switch Tabs               |
+| `Ctrl` `B`                | Alterna o dock esquerdo     |
+| `Ctrl` `Alt` `B`          | Alterna o dock direito      |
+| `Ctrl` `J`                | Alterna o dock inferior     |
+| `Ctrl` `Alt` `Y`          | Fecha todos os docks        |
+| `Ctrl` `K` `Up`           | Divide para cima            |
+| `Ctrl` `K` `Down`         | Divide para baixo           |
+| `Ctrl` `K` `Left`         | Divide para a esquerda      |
+| `Ctrl` `K` `Right`        | Divide para a direita       |
+| `Ctrl` `K` `Ctrl` `Up`    | Foca o buffer de split acima |
+| `Ctrl` `K` `Ctrl` `Down`  | Foca o buffer de split abaixo |
+| `Ctrl` `K` `Ctrl` `Left`  | Foca o buffer de split à esquerda |
+| `Ctrl` `K` `Ctrl` `Right` | Foca o buffer de split à direita |
+| `Ctrl` `Shift` `E`        | Painel do projeto           |
+| `Ctrl` `Shift` `B`        | Painel de estrutura         |
+| `Ctrl` `Shift` `C`        | Painel de colaboração       |
+| `Ctrl` `` ` ``            | Painel do terminal          |
+| `Ctrl` ` ~`               | Novo painel de terminal     |
+| `Ctrl` `Shift` `M`        | Diagnósticos                |
+| `Ctrl` `Tab`              | Alterna as abas             |
 
 {.shortcuts}
 
-### Go
+### Ir
 
-| Shortcut            | Action                  |
-| ------------------- | ----------------------- |
-| `Ctrl` `Alt` `-`    | Back                    |
-| `Ctrl` `Shift` `P`  | Command Palette…        |
-| `Ctrl` `E`          | Go to File…             |
-| `Ctrl` `Shift` `O`  | Go to Symbol in Editor… |
-| `Ctrl` `G`          | Go to Line/Column…      |
-| `F12`               | Go to Definition        |
-| `Ctrl` `F12`        | Go to Type Definition   |
-| `Alt` `Shift` `F12` | Find All References     |
-| `F8`                | Next Problem            |
-| `Shift` `F8`        | Previous Problem        |
+| Atalho              | Ação                        |
+| ------------------- | --------------------------- |
+| `Ctrl` `Alt` `-`    | Voltar                      |
+| `Ctrl` `Shift` `P`  | Paleta de comandos…         |
+| `Ctrl` `E`          | Ir para arquivo…            |
+| `Ctrl` `Shift` `O`  | Ir para símbolo no editor…  |
+| `Ctrl` `G`          | Ir para linha/coluna…       |
+| `F12`               | Ir para a definição         |
+| `Ctrl` `F12`        | Ir para a definição de tipo |
+| `Alt` `Shift` `F12` | Localiza todas as referências |
+| `F8`                | Próximo problema            |
+| `Shift` `F8`        | Problema anterior           |
 
 {.shortcuts}
 
-## Also see
+## Veja também
 
 - [Zed](https://zed.dev/)
 - [Zed GitHub](https://github.com/zed-industries/zed)
-- [Zed Documentation](https://zed.dev/docs)
+- [Documentação do Zed](https://zed.dev/docs)

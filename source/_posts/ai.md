@@ -8,15 +8,15 @@ tags:
   - Tools
   - Resources
 categories:
-  - Other
+  - Outros
 intro:
-  This is a quick reference list of cheat sheets for the AI Navigation Directory, designed to help you discover exciting
-  AI tools.
+  Esta é uma lista de referência rápida de cheat sheets do AI Navigation Directory, criada para ajudar você a descobrir
+  novas ferramentas de IA.
 ---
 
-## Getting Started
+## Primeiros passos
 
-### Health & fitness
+### Saúde e fitness
 
 - [![Favicon](https://icon.horse/icon/buoyhealth.com) Buoy health](https://buoyhealth.com)
 - [![Favicon](https://icon.horse/icon/mdacne.com) Mdacne](https://mdacne.com)
@@ -27,7 +27,7 @@ intro:
 
 {.icon-list .marker-none}
 
-### Text
+### Texto
 
 - [![Favicon](https://icon.horse/icon/quillbot.com) Quillbot paraphraser](https://quillbot.com)
 - [![Favicon](https://icon.horse/icon/notion.so/product/ai) Notion ai](https://notion.so/product/ai)
@@ -38,7 +38,7 @@ intro:
 
 {.icon-list .marker-none}
 
-### Writing
+### Escrita
 
 - [![Favicon](https://icon.horse/icon/prowritingaid.com) Prowritingaid](https://prowritingaid.com)
 - [![Favicon](https://icon.horse/icon/sapling.ai) Sapling](https://sapling.ai)
@@ -49,7 +49,7 @@ intro:
 
 {.icon-list .marker-none}
 
-### Image editing
+### Edição de imagens
 
 - [![Favicon](https://icon.horse/icon/remove.bg) Remove.bg](https://remove.bg)
 - [![Favicon](https://icon.horse/icon/tools.picsart.com/image) Quicktools by picsart](https://tools.picsart.com/image)
@@ -60,7 +60,7 @@ intro:
 
 {.icon-list .marker-none}
 
-### Productivity
+### Produtividade
 
 - [![Favicon](https://icon.horse/icon/openai.com/blog/dall-e) Dall-e](https://openai.com/blog/dall-e)
 - [![Favicon](https://icon.horse/icon/flowrite.com) Flowrite](https://flowrite.com)
@@ -71,7 +71,7 @@ intro:
 
 {.icon-list .marker-none}
 
-### Music
+### Música
 
 - [![Favicon](https://icon.horse/icon/openai.com/blog/musenet) Musenet (openai)](https://openai.com/blog/musenet)
 - [![Favicon](https://icon.horse/icon/sites.research.google/trc) Tensorflow research cloud](https://sites.research.google/trc)
@@ -82,7 +82,7 @@ intro:
 
 {.icon-list .marker-none}
 
-### Design assistant
+### Assistente de design
 
 - [![Favicon](https://icon.horse/icon/kapwing.com/cartoonify) Cartoonify](https://kapwing.com/cartoonify)
 - [![Favicon](https://icon.horse/icon/icons8.com/upscaler) Smart upscaler](https://icons8.com/upscaler)
@@ -93,7 +93,7 @@ intro:
 
 {.icon-list .marker-none}
 
-### Image
+### Imagem
 
 - [![Favicon](https://icon.horse/icon/icons8.com/swapper) Swapper](https://icons8.com/swapper)
 - [![Favicon](https://icon.horse/icon/movavi.com/photo-editor) Movavi picverse](https://movavi.com/photo-editor)
@@ -104,7 +104,7 @@ intro:
 
 {.icon-list .marker-none}
 
-### Business
+### Negócios
 
 - [![Favicon](https://icon.horse/icon/tools.picsart.com/text/ai-writer) Ai writer by picsart](https://tools.picsart.com/text/ai-writer)
 - [![Favicon](https://icon.horse/icon/aiseo.ai/tools/paraphrasing-tool.html) Intelligent paraphraser](https://aiseo.ai/tools/paraphrasing-tool.html)
@@ -115,7 +115,7 @@ intro:
 
 {.icon-list .marker-none}
 
-### Virtual reality
+### Realidade virtual
 
 - [![Favicon](https://icon.horse/icon/myheritage.com/deep-nostalgia) Deep nostalgia™](https://myheritage.com/deep-nostalgia)
 - [![Favicon](https://icon.horse/icon/resemble.ai/gpt-3) Gpt-3 custom ai voices](https://resemble.ai/gpt-3)
@@ -126,7 +126,7 @@ intro:
 
 {.icon-list .marker-none}
 
-### Developer tools
+### Ferramentas para desenvolvedores
 
 - [![Favicon](https://icon.horse/icon/coda.io/@coda/openai-for-coda) Openai for coda](https://coda.io/@coda/openai-for-coda)
 - [![Favicon](https://icon.horse/icon/case-study-page-nanonets.webflow.io/ocr-api) Nanonets ocr](https://case-study-page-nanonets.webflow.io/ocr-api)
@@ -148,7 +148,7 @@ intro:
 
 {.icon-list .marker-none}
 
-### Fun tools
+### Ferramentas divertidas
 
 - [![Favicon](https://icon.horse/icon/transformer.huggingface.co) Write with artificial intelligence](https://transformer.huggingface.co)
 - [![Favicon](https://icon.horse/icon/chai.ml) Chai](https://chai.ml)
@@ -159,7 +159,7 @@ intro:
 
 {.icon-list .marker-none}
 
-### Seo
+### SEO
 
 - [![Favicon](https://icon.horse/icon/writer.com) Writer](https://writer.com)
 - [![Favicon](https://icon.horse/icon/jenni.ai) Jenni](https://jenni.ai)
@@ -170,7 +170,7 @@ intro:
 
 {.icon-list .marker-none}
 
-### Video editing
+### Edição de vídeo
 
 - [![Favicon](https://icon.horse/icon/wave.video) Wave.video](https://wave.video)
 - [![Favicon](https://icon.horse/icon/topazlabs.com/topaz-video-ai) Topaz video ai](https://topazlabs.com/topaz-video-ai)
@@ -181,7 +181,7 @@ intro:
 
 {.icon-list .marker-none}
 
-### Code assistant
+### Assistente de código
 
 - [![Favicon](https://icon.horse/icon/replit.com/site/ghostwriter) Ghostwriter](https://replit.com/site/ghostwriter)
 - [![Favicon](https://icon.horse/icon/fig.io/user-manual/ai) Fig ai](https://fig.io/user-manual/ai)
@@ -200,7 +200,7 @@ intro:
 
 {.icon-list .marker-none}
 
-### Audio editing
+### Edição de áudio
 
 - [![Favicon](https://icon.horse/icon/voicemod.net) Voicemod](https://voicemod.net)
 - [![Favicon](https://icon.horse/icon/podcastle.ai) Podcastle](https://podcastle.ai)
@@ -222,7 +222,7 @@ intro:
 
 {.icon-list .marker-none}
 
-### General writing
+### Escrita em geral
 
 - [![Favicon](https://icon.horse/icon/languagetool.org) Languagetool](https://languagetool.org)
 - [![Favicon](https://icon.horse/icon/wordtune.com) Wordtune](https://wordtune.com)
@@ -233,7 +233,7 @@ intro:
 
 {.icon-list .marker-none}
 
-### Summarizer
+### Resumidor
 
 - [![Favicon](https://icon.horse/icon/otter.ai) Otter ai](https://otter.ai)
 - [![Favicon](https://icon.horse/icon/tldrthis.com) Tldr this](https://tldrthis.com)
@@ -244,7 +244,7 @@ intro:
 
 {.icon-list .marker-none}
 
-### Video generator
+### Gerador de vídeo
 
 - [![Favicon](https://icon.horse/icon/invideo.io) Invideo](https://invideo.io)
 - [![Favicon](https://icon.horse/icon/replicate.com/google-research/frame-interpolation) Film](https://replicate.com/google-research/frame-interpolation)
@@ -255,7 +255,7 @@ intro:
 
 {.icon-list .marker-none}
 
-### Legal assistant
+### Assistente jurídico
 
 - [![Favicon](https://icon.horse/icon/donotpay.com) Donotpay](https://donotpay.com)
 - [![Favicon](https://icon.horse/icon/darrow.ai) Darrow ai](https://darrow.ai)
@@ -266,7 +266,7 @@ intro:
 
 {.icon-list .marker-none}
 
-### Generative art
+### Arte generativa
 
 - [![Favicon](https://icon.horse/icon/hotpot.ai/art-generator) Hotpot art generator](https://hotpot.ai/art-generator)
 - [![Favicon](https://icon.horse/icon/bannerbear.com) Bannerbear](https://bannerbear.com)
@@ -277,7 +277,7 @@ intro:
 
 {.icon-list .marker-none}
 
-### Text to speech
+### Texto para fala
 
 - [![Favicon](https://icon.horse/icon/speechify.com) Speechify](https://speechify.com)
 - [![Favicon](https://icon.horse/icon/fakeyou.com) Fakeyou](https://fakeyou.com)
@@ -288,7 +288,7 @@ intro:
 
 {.icon-list .marker-none}
 
-### Life assistant
+### Assistente pessoal
 
 - [![Favicon](https://icon.horse/icon/resumeworded.com/index.php) Resume worded](https://resumeworded.com/index.php)
 - [![Favicon](https://icon.horse/icon/replika.com) Replika](https://replika.com)
@@ -299,7 +299,7 @@ intro:
 
 {.icon-list .marker-none}
 
-### Image generator
+### Gerador de imagens
 
 - [![Favicon](https://icon.horse/icon/hotpot.ai) Hotpot.ai](https://hotpot.ai)
 - [![Favicon](https://icon.horse/icon/generated.photos) Generated photos](https://generated.photos)
@@ -310,13 +310,13 @@ intro:
 
 {.icon-list .marker-none}
 
-### Book
+### Livros
 
 - [![Favicon](https://icon.horse/icon/readthistwice.com/sona) Sona](https://readthistwice.com/sona)
 
 {.icon-list .marker-none}
 
-### Gaming
+### Jogos
 
 - [![Favicon](https://icon.horse/icon/play.aidungeon.io) Aidungeon](https://play.aidungeon.io)
 - [![Favicon](https://icon.horse/icon/beam.eyeware.tech) Eyeware beam](https://beam.eyeware.tech)
@@ -327,14 +327,14 @@ intro:
 
 {.icon-list .marker-none}
 
-### Image scanning
+### Digitalização de imagens
 
 - [![Favicon](https://icon.horse/icon/experiments.withgoogle.com/thing-translator) Thing translator](https://experiments.withgoogle.com/thing-translator)
 - [![Favicon](https://icon.horse/icon/poly.cam) Polycam](https://poly.cam)
 
 {.icon-list .marker-none}
 
-### Sales
+### Vendas
 
 - [![Favicon](https://icon.horse/icon/klaviyo.com/product/whats-new/sms-assistant) Klaviyo sms assistant](https://klaviyo.com/product/whats-new/sms-assistant)
 - [![Favicon](https://icon.horse/icon/instantly.ai) Instantly](https://instantly.ai)
@@ -345,7 +345,7 @@ intro:
 
 {.icon-list .marker-none}
 
-### Audio
+### Áudio
 
 - [![Favicon](https://icon.horse/icon/descript.com) Descript](https://descript.com)
 - [![Favicon](https://icon.horse/icon/lalal.ai) Lalal.ai voice cleaner](https://lalal.ai)
@@ -356,7 +356,7 @@ intro:
 
 {.icon-list .marker-none}
 
-### Analytics
+### Análise de dados
 
 - [![Favicon](https://icon.horse/icon/paperswithcode.com) Papers with code](https://paperswithcode.com)
 - [![Favicon](https://icon.horse/icon/explainpaper.com) Explainpaper](https://explainpaper.com)
@@ -384,7 +384,7 @@ intro:
 
 {.icon-list .marker-none}
 
-### Story teller
+### Contador de histórias
 
 - [![Favicon](https://icon.horse/icon/novelai.net) Novelai](https://novelai.net)
 - [![Favicon](https://icon.horse/icon/artflow.ai) Artflow ai](https://artflow.ai)
@@ -406,7 +406,7 @@ intro:
 
 {.icon-list .marker-none}
 
-### Art
+### Arte
 
 - [![Favicon](https://icon.horse/icon/wombo.art) Wombo](https://wombo.art)
 - [![Favicon](https://icon.horse/icon/neural.love) Neural.love art generator](https://neural.love)
@@ -417,13 +417,13 @@ intro:
 
 {.icon-list .marker-none}
 
-### Customer communication
+### Comunicação com clientes
 
 - [![Favicon](https://icon.horse/icon/algolia.com/products/recommendations) Algolia recommend](https://algolia.com/products/recommendations)
 
 {.icon-list .marker-none}
 
-### Chrome extensions
+### Extensões do Chrome
 
 - [![Favicon](https://icon.horse/icon/sendpulse.com) Sendpulse for slack](https://sendpulse.com)
 - [![Favicon](https://icon.horse/icon/bizzabo.com) X.ai](https://bizzabo.com)
@@ -434,7 +434,7 @@ intro:
 
 {.icon-list .marker-none}
 
-### Search engine
+### Mecanismos de busca
 
 - [![Favicon](https://icon.horse/icon/algolia.com) Algolia](https://algolia.com)
 - [![Favicon](https://icon.horse/icon/everypixel.com) Everypixel](https://everypixel.com)
@@ -445,7 +445,7 @@ intro:
 
 {.icon-list .marker-none}
 
-### Research
+### Pesquisa
 
 - [![Favicon](https://icon.horse/icon/elicit.org) Elicit](https://elicit.org)
 - [![Favicon](https://icon.horse/icon/typeset.io) Scispace](https://typeset.io)
@@ -456,13 +456,13 @@ intro:
 
 {.icon-list .marker-none}
 
-### Browser extensions
+### Extensões de navegador
 
 - [![Favicon](https://icon.horse/icon/usemotion.com) Motion task manager](https://usemotion.com)
 
 {.icon-list .marker-none}
 
-### Pc
+### PC
 
 - [![Favicon](https://icon.horse/icon/paperspace.com/gradient) Gradient°](https://paperspace.com/gradient)
 
@@ -479,7 +479,7 @@ intro:
 
 {.icon-list .marker-none}
 
-### Email
+### E-mail
 
 - [![Favicon](https://icon.horse/icon/unbounce.com) The landing page analyzer by unbounce](https://unbounce.com)
 - [![Favicon](https://icon.horse/icon/unbounce.com/smart-copy-everywhere) Smart copy everywhere](https://unbounce.com/smart-copy-everywhere)
@@ -490,7 +490,7 @@ intro:
 
 {.icon-list .marker-none}
 
-### Image improvement
+### Melhoria de imagens
 
 - [![Favicon](https://icon.horse/icon/vanceai.com/image-enlarger) Vanceai image upscaler](https://vanceai.com/image-enlarger)
 - [![Favicon](https://icon.horse/icon/cloudinary.com) Cloudinary](https://cloudinary.com)
@@ -501,7 +501,7 @@ intro:
 
 {.icon-list .marker-none}
 
-### Human resources
+### Recursos humanos
 
 - [![Favicon](https://icon.horse/icon/chatbot.com/features) Chatbot](https://chatbot.com/features)
 - [![Favicon](https://icon.horse/icon/moveworks.com) Moveworks](https://moveworks.com)
@@ -512,7 +512,7 @@ intro:
 
 {.icon-list .marker-none}
 
-### Website
+### Site
 
 - [![Favicon](https://icon.horse/icon/getresponse.com/features/website-builder) Getresponse](https://getresponse.com/features/website-builder)
 - [![Favicon](https://icon.horse/icon/bookmark.com/ai-website-builder) Aida](https://bookmark.com/ai-website-builder)
@@ -528,20 +528,20 @@ intro:
 
 {.icon-list .marker-none}
 
-### Speech
+### Fala
 
 - [![Favicon](https://icon.horse/icon/speechanalyzer.elsaspeak.com) Elsa speech analyzer](https://speechanalyzer.elsaspeak.com)
 - [![Favicon](https://icon.horse/icon/resemble.ai/speech-to-speech) Speech-to-speech](https://resemble.ai/speech-to-speech)
 
 {.icon-list .marker-none}
 
-### Communication
+### Comunicação
 
 - [![Favicon](https://icon.horse/icon/poised.com) Poised 2.0](https://poised.com)
 
 {.icon-list .marker-none}
 
-### Other
+### Outros
 
 - [![Favicon](https://icon.horse/icon/pjreddie.com/darknet/yolo) Yolo](https://pjreddie.com/darknet/yolo)
 - [![Favicon](https://icon.horse/icon/hownormalami.eu) How normal am i?](https://hownormalami.eu)
@@ -552,13 +552,13 @@ intro:
 
 {.icon-list .marker-none}
 
-### Health
+### Saúde
 
 - [![Favicon](https://icon.horse/icon/ubiehealth.com) Ubie ai symptom checker](https://ubiehealth.com)
 
 {.icon-list .marker-none}
 
-### Aggregator
+### Agregador
 
 - [![Favicon](https://icon.horse/icon/gpt3demo.com) Gpt-3 demo](https://gpt3demo.com)
 - [![Favicon](https://icon.horse/icon/futurepedia.io) Futurepedia](https://futurepedia.io)
@@ -569,7 +569,7 @@ intro:
 
 {.icon-list .marker-none}
 
-### Customer support
+### Suporte ao cliente
 
 - [![Favicon](https://icon.horse/icon/hiverhq.com/harvey-ai-customer-support) Harvey](https://hiverhq.com/harvey-ai-customer-support)
 - [![Favicon](https://icon.horse/icon/forethought.ai) Forethought](https://forethought.ai)
@@ -580,13 +580,13 @@ intro:
 
 {.icon-list .marker-none}
 
-### Movies
+### Filmes
 
 - [![Favicon](https://icon.horse/icon/taste.io) Taste](https://taste.io)
 
 {.icon-list .marker-none}
 
-### Video
+### Vídeo
 
 - [![Favicon](https://icon.horse/icon/deepfakesweb.com) Deepfakesweb](https://deepfakesweb.com)
 - [![Favicon](https://icon.horse/icon/fineshare.com/finecam) Fineshare](https://fineshare.com/finecam)
@@ -597,7 +597,7 @@ intro:
 
 {.icon-list .marker-none}
 
-### Email assistant
+### Assistente de e-mail
 
 - [![Favicon](https://icon.horse/icon/missiveapp.com) Missive](https://missiveapp.com)
 - [![Favicon](https://icon.horse/icon/magicreach.ai) Magicreach](https://magicreach.ai)
@@ -608,7 +608,7 @@ intro:
 
 {.icon-list .marker-none}
 
-### Messaging
+### Mensagens
 
 - [![Favicon](https://icon.horse/icon/madgicx.com) Madgicx for facebook ads](https://madgicx.com)
 - [![Favicon](https://icon.horse/icon/bottr.me) Bottr.me](https://bottr.me)
@@ -619,7 +619,7 @@ intro:
 
 {.icon-list .marker-none}
 
-### Generative video
+### Vídeo generativo
 
 - [![Favicon](https://icon.horse/icon/lumen5.com) Lumen5](https://lumen5.com)
 - [![Favicon](https://icon.horse/icon/livereacting.com) Livereacting](https://livereacting.com)
@@ -630,13 +630,13 @@ intro:
 
 {.icon-list .marker-none}
 
-### Safari extensions
+### Extensões do Safari
 
 - [![Favicon](https://icon.horse/icon/rezi.ai/ai-resume-builder) Rezi 3.0](https://rezi.ai/ai-resume-builder)
 
 {.icon-list .marker-none}
 
-### Transcriber
+### Transcritor
 
 - [![Favicon](https://icon.horse/icon/fireflies.ai) Fireflies.ai](https://fireflies.ai)
 - [![Favicon](https://icon.horse/icon/steno.ai) Steno](https://steno.ai)
@@ -646,14 +646,14 @@ intro:
 
 {.icon-list .marker-none}
 
-### Motion capture
+### Captura de movimento
 
 - [![Favicon](https://icon.horse/icon/rokoko.com) Rokoko](https://rokoko.com)
 - [![Favicon](https://icon.horse/icon/cascadeur.com) Cascadeur](https://cascadeur.com)
 
 {.icon-list .marker-none}
 
-### Voice
+### Voz
 
 - [![Favicon](https://icon.horse/icon/fineshare.com/finevoice) Fineshare](https://fineshare.com/finevoice)
 - [![Favicon](https://icon.horse/icon/voice.ai) Voice ai](https://voice.ai)
@@ -670,7 +670,7 @@ intro:
 
 {.icon-list .marker-none}
 
-### Social media assistant
+### Assistente de redes sociais
 
 - [![Favicon](https://icon.horse/icon/tweethunter.io) Tweet hunter](https://tweethunter.io)
 - [![Favicon](https://icon.horse/icon/socialbu.com) Socialbu](https://socialbu.com)
@@ -681,7 +681,7 @@ intro:
 
 {.icon-list .marker-none}
 
-### Inspiration
+### Inspiração
 
 - [![Favicon](https://icon.horse/icon/entreresource.com/chatgpt-cheat-sheet) Gpt cheat sheet](https://entreresource.com/chatgpt-cheat-sheet)
 - [![Favicon](https://icon.horse/icon/trello.com/b/4BPkSY1w/100-ai-prompts-resources-prompt-lovers) 100+ ai prompts](https://trello.com/b/4BPkSY1w/100-ai-prompts-resources-prompt-lovers)
@@ -692,20 +692,20 @@ intro:
 
 {.icon-list .marker-none}
 
-### Stocks
+### Ações
 
 - [![Favicon](https://icon.horse/icon/torto.ai/welcome) Torto.ai](https://torto.ai/welcome)
 
 {.icon-list .marker-none}
 
-### Voice modulation
+### Modulação de voz
 
 - [![Favicon](https://icon.horse/icon/voice.ai/voice-ai-beta/I2p6L) Voice.ai](https://voice.ai/voice-ai-beta/I2p6L)
 - [![Favicon](https://icon.horse/icon/studio.themetavoice.xyz) Metavoice studio](https://studio.themetavoice.xyz)
 
 {.icon-list .marker-none}
 
-### Paraphraser
+### Parafraseador
 
 - [![Favicon](https://icon.horse/icon/paraphrasetool.com) Paraphraser](https://paraphrasetool.com)
 - [![Favicon](https://icon.horse/icon/rephrasely.com) Rephrasely](https://rephrasely.com)
@@ -720,7 +720,7 @@ intro:
 
 {.icon-list .marker-none}
 
-### Personalized videos
+### Vídeos personalizados
 
 - [![Favicon](https://icon.horse/icon/windsor.io) Windsor](https://windsor.io)
 - [![Favicon](https://icon.horse/icon/rephrase.ai) Rephrase](https://rephrase.ai)
@@ -730,7 +730,7 @@ intro:
 
 {.icon-list .marker-none}
 
-### Spreadsheets
+### Planilhas
 
 - [![Favicon](https://icon.horse/icon/excelformulabot.com) Excel formula bot](https://excelformulabot.com)
 - [![Favicon](https://icon.horse/icon/boloforms.com/sheetgod) Sheetgod](https://boloforms.com/sheetgod)
@@ -740,13 +740,13 @@ intro:
 
 {.icon-list .marker-none}
 
-### Ipad
+### iPad
 
 - [![Favicon](https://icon.horse/icon/brain.fm) Brain.fm](https://brain.fm)
 
 {.icon-list .marker-none}
 
-### Task management
+### Gestão de tarefas
 
 - [![Favicon](https://icon.horse/icon/levity.ai) Levity](https://levity.ai)
 - [![Favicon](https://icon.horse/icon/apac.ai) Athena](https://apac.ai)
@@ -754,13 +754,13 @@ intro:
 
 {.icon-list .marker-none}
 
-### Email marketing
+### E-mail marketing
 
 - [![Favicon](https://icon.horse/icon/phrasee.co) Phrasee](https://phrasee.co)
 
 {.icon-list .marker-none}
 
-### Fashion
+### Moda
 
 - [![Favicon](https://icon.horse/icon/ca.la) Cala](https://ca.la)
 - [![Favicon](https://icon.horse/icon/botika.io) Botika](https://botika.io)
@@ -769,13 +769,13 @@ intro:
 
 {.icon-list .marker-none}
 
-### Generator
+### Gerador
 
 - [![Favicon](https://icon.horse/icon/blocksurvey.io/ai-surveys) Blocksurvey](https://blocksurvey.io/ai-surveys)
 
 {.icon-list .marker-none}
 
-### 3d
+### 3D
 
 - [![Favicon](https://icon.horse/icon/deepmotion.com) Deepmotion](https://deepmotion.com)
 - [![Favicon](https://icon.horse/icon/plask.ai) Plask](https://plask.ai)
@@ -786,14 +786,14 @@ intro:
 
 {.icon-list .marker-none}
 
-### Home
+### Casa
 
 - [![Favicon](https://icon.horse/icon/shapescale.com) Shapescale](https://shapescale.com)
 - [![Favicon](https://icon.horse/icon/github.com/Shinao/SmartMirror) Smartmirror](https://github.com/Shinao/SmartMirror)
 
 {.icon-list .marker-none}
 
-### Api
+### API
 
 - [![Favicon](https://icon.horse/icon/deepgram.com) Deepgram](https://deepgram.com)
 - [![Favicon](https://icon.horse/icon/banana.dev) Banana](https://banana.dev)
@@ -804,7 +804,7 @@ intro:
 
 {.icon-list .marker-none}
 
-### Software engineering
+### Engenharia de software
 
 - [![Favicon](https://icon.horse/icon/prodi.gy) Prodigy](https://prodi.gy)
 
@@ -832,7 +832,7 @@ intro:
 
 {.icon-list .marker-none}
 
-### Playstation
+### PlayStation
 
 - [![Favicon](https://icon.horse/icon/chatfuel.com) Chatfuel](https://chatfuel.com)
 
@@ -849,7 +849,7 @@ intro:
 
 {.icon-list .marker-none}
 
-### Experiments
+### Experimentos
 
 - [![Favicon](https://icon.horse/icon/alethea.ai) Alethea](https://alethea.ai)
 - [![Favicon](https://icon.horse/icon/thismodeldoesnotexist.co) This model does not exist](https://thismodeldoesnotexist.co)
@@ -862,7 +862,7 @@ intro:
 
 {.icon-list .marker-none}
 
-### Generative code
+### Código generativo
 
 - [![Favicon](https://icon.horse/icon/gradio.app) Gradio](https://gradio.app)
 - [![Favicon](https://icon.horse/icon/obviously.ai) Obviously ai](https://obviously.ai)
@@ -873,7 +873,7 @@ intro:
 
 {.icon-list .marker-none}
 
-### Photography
+### Fotografia
 
 - [![Favicon](https://icon.horse/icon/portrait.vana.com) Portrait by vana](https://portrait.vana.com)
 - [![Favicon](https://icon.horse/icon/photorestoration.ai) Photorestoration](https://photorestoration.ai)
@@ -884,13 +884,13 @@ intro:
 
 {.icon-list .marker-none}
 
-### Healthcare
+### Saúde
 
 - [![Favicon](https://icon.horse/icon/whisper.ai) Whisper ai](https://whisper.ai)
 
 {.icon-list .marker-none}
 
-### Resources
+### Recursos
 
 - [![Favicon](https://icon.horse/icon/lablab.ai) Lablab.ai](https://lablab.ai)
 - [![Favicon](https://icon.horse/icon/aiartapps.com) Ai art apps database](https://aiartapps.com)
@@ -905,19 +905,19 @@ intro:
 
 {.icon-list .marker-none}
 
-### Kids
+### Crianças
 
 - [![Favicon](https://icon.horse/icon/brickit.app) Brickit](https://brickit.app)
 
 {.icon-list .marker-none}
 
-### Search
+### Busca
 
 - [![Favicon](https://icon.horse/icon/open.ai) Open](https://open.ai)
 
 {.icon-list .marker-none}
 
-### Speech-to-text
+### Fala para texto
 
 - [![Favicon](https://icon.horse/icon/glasp.co/youtube-summary) Glasp youtube summarizer](https://glasp.co/youtube-summary)
 - [![Favicon](https://icon.horse/icon/relayed.ai) Relayed](https://relayed.ai)
@@ -927,7 +927,7 @@ intro:
 
 {.icon-list .marker-none}
 
-### Articles
+### Artigos
 
 - [![Favicon](https://icon.horse/icon/riku.ai/creators) Riku](https://riku.ai/creators)
 
@@ -941,14 +941,14 @@ intro:
 
 {.icon-list .marker-none}
 
-### Parenting
+### Parentalidade
 
 - [![Favicon](https://icon.horse/icon/smartivity.in/pages/parentivity_bot) Parentivity](https://smartivity.in/pages/parentivity_bot)
 - [![Favicon](https://icon.horse/icon/gosesh.com) Sesh](https://gosesh.com)
 
 {.icon-list .marker-none}
 
-### Education assistant
+### Assistente educacional
 
 - [![Favicon](https://icon.horse/icon/brain-buddy.com) Brain Buddy](https://brain-buddy.com/)
 - [![Favicon](https://icon.horse/icon/kobra.dev) Kobra](https://kobra.dev)
@@ -960,20 +960,20 @@ intro:
 
 {.icon-list .marker-none}
 
-### Tracking
+### Rastreamento
 
 - [![Favicon](https://icon.horse/icon/hexowatch.com) Hexowatch](https://hexowatch.com)
 
 {.icon-list .marker-none}
 
-### Privacy
+### Privacidade
 
 - [![Favicon](https://icon.horse/icon/playground.ai) Anonymous camera](https://playground.ai)
 - [![Favicon](https://icon.horse/icon/useguard.com) Guard](https://useguard.com)
 
 {.icon-list .marker-none}
 
-### Vehicle
+### Veículos
 
 - [![Favicon](https://icon.horse/icon/polymathrobotics.com) Polymath robotics](https://polymathrobotics.com)
 
@@ -997,7 +997,7 @@ intro:
 
 {.icon-list .marker-none}
 
-### Saas
+### SaaS
 
 - [![Favicon](https://icon.horse/icon/yous.ai) Yous](https://yous.ai)
 - [![Favicon](https://icon.horse/icon/trydocent.ai) Docent](https://trydocent.ai)
@@ -1016,20 +1016,20 @@ intro:
 
 {.icon-list .marker-none}
 
-### Finance
+### Finanças
 
 - [![Favicon](https://icon.horse/icon/glean.ai) Glean ai](https://glean.ai)
 - [![Favicon](https://icon.horse/icon/avanz.ai) Avanzai](https://avanz.ai)
 
 {.icon-list .marker-none}
 
-### Self-improvement
+### Desenvolvimento pessoal
 
 - [![Favicon](https://icon.horse/icon/huberman.rile.yt) Huberman ai](https://huberman.rile.yt)
 
 {.icon-list .marker-none}
 
-### Robots
+### Robôs
 
 - [![Favicon](https://icon.horse/icon/activechat.ai/intents-and-insights) Activechat bot trainer](https://activechat.ai/intents-and-insights)
 - [![Favicon](https://icon.horse/icon/motion.ai) Motion ai](https://motion.ai)
@@ -1045,26 +1045,26 @@ intro:
 
 {.icon-list .marker-none}
 
-### Investing
+### Investimentos
 
 - [![Favicon](https://icon.horse/icon/koble.ai/founderfit) Founderfit by koble](https://koble.ai/founderfit)
 
 {.icon-list .marker-none}
 
-### Questions
+### Perguntas
 
 - [![Favicon](https://icon.horse/icon/therocketbrew.com/jeeves) Jeeves](https://therocketbrew.com/jeeves)
 - [![Favicon](https://icon.horse/icon/godinabox.co) God in a box](https://godinabox.co)
 
 {.icon-list .marker-none}
 
-### Construction
+### Construção
 
 - [![Favicon](https://icon.horse/icon/aim.vision) Aim](https://aim.vision)
 
 {.icon-list .marker-none}
 
-### Data
+### Dados
 
 - [![Favicon](https://icon.horse/icon/geniussheets.com) Genius sheets](https://geniussheets.com)
 - [![Favicon](https://icon.horse/icon/askcommand.com) Ask command](https://askcommand.com)
@@ -1081,20 +1081,20 @@ intro:
 
 {.icon-list .marker-none}
 
-### Pet
+### Pets
 
 - [![Favicon](https://icon.horse/icon/digitaldogs.ai) Digital dogs](https://digitaldogs.ai)
 - [![Favicon](https://icon.horse/icon/aipetavatar.com) Aipetavatar](https://aipetavatar.com)
 
 {.icon-list .marker-none}
 
-### Sports
+### Esportes
 
 - [![Favicon](https://icon.horse/icon/sportsprediction.ai) Ai sports prediction](https://sportsprediction.ai)
 
 {.icon-list .marker-none}
 
-### User experience
+### Experiência do usuário
 
 - [![Favicon](https://icon.horse/icon/arcopypaste.app) Clipdrop](https://arcopypaste.app)
 - [![Favicon](https://icon.horse/icon/getairim.com) Airim 2.0](https://getairim.com)
@@ -1108,7 +1108,7 @@ intro:
 
 {.icon-list .marker-none}
 
-### Sql
+### SQL
 
 - [![Favicon](https://icon.horse/icon/decile.app) Decile](https://decile.app)
 - [![Favicon](https://icon.horse/icon/aihelperbot.com) Aihelperbot](https://aihelperbot.com)
@@ -1118,13 +1118,13 @@ intro:
 
 {.icon-list .marker-none}
 
-### Linkedin
+### LinkedIn
 
 - [![Favicon](https://icon.horse/icon/sid.black/tools/linkedin-post-generator) Linkedin posts generator](https://sid.black/tools/linkedin-post-generator)
 
 {.icon-list .marker-none}
 
-### Food
+### Comida
 
 - [![Favicon](https://icon.horse/icon/ai-recipes.softr.app) Ai recipe generator](https://ai-recipes.softr.app)
 - [![Favicon](https://icon.horse/icon/foodai.app) Foodai](https://foodai.app)
@@ -1132,7 +1132,7 @@ intro:
 
 {.icon-list .marker-none}
 
-### Tool
+### Ferramenta
 
 - [![Favicon](https://icon.horse/icon/autoname.org) Autoname](https://autoname.org)
 - [![Favicon](https://icon.horse/icon/assetsai.art) Assetsai](https://assetsai.art)
@@ -1152,7 +1152,7 @@ intro:
 
 {.icon-list .marker-none}
 
-### Streaming services
+### Serviços de streaming
 
 - [![Favicon](https://icon.horse/icon/their.tube) Theirtube](https://their.tube)
 
@@ -1164,40 +1164,40 @@ intro:
 
 {.icon-list .marker-none}
 
-### Ai detection
+### Detecção de IA
 
 - [![Favicon](https://icon.horse/icon/thomas.io/detect-gpt) Detect gpt](https://thomas.io/detect-gpt)
 - [![Favicon](https://icon.horse/icon/nsfw.m1guelpf.me) Is this image nsfw?](https://nsfw.m1guelpf.me)
 
 {.icon-list .marker-none}
 
-### News
+### Notícias
 
 - [![Favicon](https://icon.horse/icon/speechkit.io) Speechkit](https://speechkit.io)
 - [![Favicon](https://icon.horse/icon/useclarity.com) Clarity](https://useclarity.com)
 
 {.icon-list .marker-none}
 
-### Vacation
+### Férias
 
 - [![Favicon](https://icon.horse/icon/letsroam.app) Roamr](https://letsroam.app)
 
 {.icon-list .marker-none}
 
-### Logo generator
+### Gerador de logotipos
 
 - [![Favicon](https://icon.horse/icon/makelogoai.com) Make logo ai](https://makelogoai.com)
 
 {.icon-list .marker-none}
 
-### Real estate
+### Imóveis
 
 - [![Favicon](https://icon.horse/icon/airoomplanner.com) Ai room planner](https://airoomplanner.com)
 - [![Favicon](https://icon.horse/icon/coolaiid.com) Coolaiid](https://coolaiid.com)
 
 {.icon-list .marker-none}
 
-### Assistant
+### Assistente
 
 - [![Favicon](https://icon.horse/icon/eddyai.com) Eddyai](https://eddyai.com)
 
@@ -1209,13 +1209,13 @@ intro:
 
 {.icon-list .marker-none}
 
-### Advertising
+### Publicidade
 
 - [![Favicon](https://icon.horse/icon/jotapp.tech) Jot](https://jotapp.tech)
 
 {.icon-list .marker-none}
 
-### Gift ideas
+### Ideias de presentes
 
 - [![Favicon](https://icon.horse/icon/giftastic.ai) Giftastic.ai](https://giftastic.ai)
 - [![Favicon](https://icon.horse/icon/coolgiftideas.io) Cool gift ideas](https://coolgiftideas.io)
@@ -1223,19 +1223,19 @@ intro:
 
 {.icon-list .marker-none}
 
-### Text-to-speech
+### Texto para fala
 
 - [![Favicon](https://icon.horse/icon/verbatik.com) Verbatik](https://verbatik.com)
 
 {.icon-list .marker-none}
 
-### Character
+### Personagem
 
 - [![Favicon](https://icon.horse/icon/salewhale.chat) Salewhale](https://salewhale.chat)
 
 {.icon-list .marker-none}
 
-### Memory
+### Memória
 
 - [![Favicon](https://icon.horse/icon/heyday.xyz) Heyday](https://heyday.xyz)
 
@@ -1247,67 +1247,67 @@ intro:
 
 {.icon-list .marker-none}
 
-### Background
+### Plano de fundo
 
 - [![Favicon](https://icon.horse/icon/zoomscape.ai) Zoomscape](https://zoomscape.ai)
 
 {.icon-list .marker-none}
 
-### Support
+### Suporte
 
 - [![Favicon](https://icon.horse/icon/resolveai.co) Resolveai](https://resolveai.co)
 
 {.icon-list .marker-none}
 
-### Rank
+### Ranking
 
 - [![Favicon](https://icon.horse/icon/reviewz.ai) Reviewz](https://reviewz.ai)
 
 {.icon-list .marker-none}
 
-### Letter
+### Carta
 
 - [![Favicon](https://icon.horse/icon/recommendme.to) Recommendme](https://recommendme.to)
 
 {.icon-list .marker-none}
 
-### Gift
+### Presente
 
 - [![Favicon](https://icon.horse/icon/text2present.com) Text2present](https://text2present.com)
 
 {.icon-list .marker-none}
 
-### Dream
+### Sonho
 
 - [![Favicon](https://icon.horse/icon/scarlettpanda.com) Scarlettpanda](https://scarlettpanda.com)
 
 {.icon-list .marker-none}
 
-### Excuse
+### Desculpa
 
 - [![Favicon](https://icon.horse/icon/excuses.ai) Excuses ai](https://excuses.ai)
 
 {.icon-list .marker-none}
 
-### Game
+### Jogo
 
 - [![Favicon](https://icon.horse/icon/huggingface.co/spaces/huggingface-projects/stable-diffusion-multiplayer) Stable diffusion multiplayer](https://huggingface.co/spaces/huggingface-projects/stable-diffusion-multiplayer)
 
 {.icon-list .marker-none}
 
-### Edit
+### Edição
 
 - [![Favicon](https://icon.horse/icon/bigmp4.com) Bigmp4](https://bigmp4.com)
 
 {.icon-list .marker-none}
 
-### Translation
+### Tradução
 
 - [![Favicon](https://icon.horse/icon/bot.petit.today) Languagepro](https://bot.petit.today)
 
 {.icon-list .marker-none}
 
-### Startup tools
+### Ferramentas para startups
 
 - [![Favicon](https://icon.horse/icon/releasenote.ai) Releasenote.ai](https://releasenote.ai)
 
@@ -1319,13 +1319,13 @@ intro:
 
 {.icon-list .marker-none}
 
-### Beauty
+### Beleza
 
 - [![Favicon](https://icon.horse/icon/hairbyai.com) Hairbyai](https://hairbyai.com)
 
 {.icon-list .marker-none}
 
-### Photo
+### Foto
 
 - [![Favicon](https://icon.horse/icon/camira.ai) Camira](https://camira.ai)
 

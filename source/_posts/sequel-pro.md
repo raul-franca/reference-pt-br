@@ -7,126 +7,126 @@ tags:
   -
   - mac
 categories:
-  - Keyboard Shortcuts
+  - Atalhos de Teclado
 intro: |
-  A visual cheat-sheet for the 71 keyboard shortcuts found in Sequel Pro. This application is MacOS-only.
+  Um cheat sheet visual dos 71 atalhos de teclado encontrados no Sequel Pro. Este aplicativo é exclusivo para MacOS.
 ---
 
-## Keyboard Shortcuts
+## Atalhos de teclado
 
-### Main Tabs
+### Abas principais
 
-| Shortcut  | Action          |
-| --------- | --------------- |
-| `Cmd` `1` | Table Structure |
-| `Cmd` `2` | Table Content   |
-| `Cmd` `3` | Table Relations |
-| `Cmd` `4` | Table Info      |
-| `Cmd` `5` | Custom Query    |
-| `Cmd` `6` | Table Triggers  |
+| Atalho    | Ação              |
+| --------- | ----------------- |
+| `Cmd` `1` | Estrutura da tabela |
+| `Cmd` `2` | Conteúdo da tabela |
+| `Cmd` `3` | Relações da tabela |
+| `Cmd` `4` | Informações da tabela |
+| `Cmd` `5` | Query personalizada |
+| `Cmd` `6` | Triggers da tabela |
 
 {.shortcuts}
 
-### General Shortcuts {.row-span-4}
+### Atalhos gerais {.row-span-4}
 
-| Shortcut               | Action                                     |
+| Atalho                 | Ação                                       |
 | ---------------------- | ------------------------------------------ |
-| `Cmd` `N`              | New window (connection file)               |
-| `Cmd` `T`              | New tab (connection file)                  |
-| `Cmd` `Shift` `A`      | Add connection to favorites                |
-| `Cmd` `O`              | Open (connection file or SQL file)         |
-| `Cmd` `Opt` `O`        | Open current connection file in new window |
-| `Cmd` `S`              | Save (connection file)                     |
-| `Cmd` `Shift` `S`      | Save as (connection file)                  |
-| `Cmd` `Ctrl` `S`       | Save query                                 |
-| `Cmd` `W`              | Close (connection file)                    |
-| `Cmd` `Opt` `W`        | Close all (connection file)                |
-| `Cmd` `P`              | Print                                      |
-| `Cmd` `Shift` `I`      | Import                                     |
-| `Cmd` `Shift` `K`      | Show console window                        |
-| `Cmd` `K`              | Clear console                              |
-| `Ctrl` `Opt` `Left`    | Back in history                            |
-| `Ctrl` `Opt` `Right`   | Forward in history                         |
-| `Ctrl` `Tab`           | Select next tab                            |
-| `Ctrl` `Shift` `Tab`   | Select previous tab                        |
-| `Ctrl` `Shift` `N`     | Insert NULL value                          |
-| `Cmd` `Shift` `C`      | Copy create table syntax                   |
-| `Cmd` `Opt` `S`        | Show create table syntax                   |
-| `Cmd` `Shift` `R`      | Refresh databases                          |
-| `Cmd` `Shift` `D`      | Choose database                            |
-| `Cmd` `Shift` `V`      | Show server variables                      |
-| `Cmd` `Opt` `P`        | Show server processes                      |
-| `Cmd` `Ctrl` `R`       | Refresh tables                             |
-| `Cmd` `Shift` `F`      | Flush privileges                           |
-| `Cmd` `U`              | User accounts...                           |
-| `Cmd` `C`              | Copy selection or selected row(s)          |
-| `Cmd` `Opt` `C`        | Copy selected row(s) with column names     |
-| `Cmd` `Opt` `Ctrl` `C` | Copy selected row(s) as SQL INSERT         |
-| `Cmd` `Shift` `T`      | Show/hide toolbar                          |
-| `Cmd` `Ctrl` `F`       | Filter table content                       |
-| `Cmd` `Opt` `Ctrl` `F` | Filter tables                              |
-| `Cmd` `Opt` `Ctrl` `B` | Bundle editor                              |
-| `Cmd` `Opt` `Ctrl` `N` | Navigator                                  |
+| `Cmd` `N`              | Nova janela (arquivo de conexão)           |
+| `Cmd` `T`              | Nova aba (arquivo de conexão)              |
+| `Cmd` `Shift` `A`      | Adicionar conexão aos favoritos            |
+| `Cmd` `O`              | Abrir (arquivo de conexão ou arquivo SQL)  |
+| `Cmd` `Opt` `O`        | Abrir o arquivo de conexão atual em nova janela |
+| `Cmd` `S`              | Salvar (arquivo de conexão)                |
+| `Cmd` `Shift` `S`      | Salvar como (arquivo de conexão)           |
+| `Cmd` `Ctrl` `S`       | Salvar query                               |
+| `Cmd` `W`              | Fechar (arquivo de conexão)                |
+| `Cmd` `Opt` `W`        | Fechar todos (arquivo de conexão)          |
+| `Cmd` `P`              | Imprimir                                   |
+| `Cmd` `Shift` `I`      | Importar                                   |
+| `Cmd` `Shift` `K`      | Mostrar janela do console                  |
+| `Cmd` `K`              | Limpar console                             |
+| `Ctrl` `Opt` `Left`    | Voltar no histórico                        |
+| `Ctrl` `Opt` `Right`   | Avançar no histórico                       |
+| `Ctrl` `Tab`           | Selecionar próxima aba                     |
+| `Ctrl` `Shift` `Tab`   | Selecionar aba anterior                    |
+| `Ctrl` `Shift` `N`     | Inserir valor NULL                         |
+| `Cmd` `Shift` `C`      | Copiar sintaxe de criação de tabela        |
+| `Cmd` `Opt` `S`        | Mostrar sintaxe de criação de tabela       |
+| `Cmd` `Shift` `R`      | Atualizar bancos de dados                  |
+| `Cmd` `Shift` `D`      | Escolher banco de dados                    |
+| `Cmd` `Shift` `V`      | Mostrar variáveis do servidor              |
+| `Cmd` `Opt` `P`        | Mostrar processos do servidor              |
+| `Cmd` `Ctrl` `R`       | Atualizar tabelas                          |
+| `Cmd` `Shift` `F`      | Recarregar privilégios                     |
+| `Cmd` `U`              | Contas de usuário...                       |
+| `Cmd` `C`              | Copiar seleção ou linha(s) selecionada(s)  |
+| `Cmd` `Opt` `C`        | Copiar linha(s) selecionada(s) com nomes de colunas |
+| `Cmd` `Opt` `Ctrl` `C` | Copiar linha(s) selecionada(s) como SQL INSERT |
+| `Cmd` `Shift` `T`      | Mostrar/ocultar barra de ferramentas       |
+| `Cmd` `Ctrl` `F`       | Filtrar conteúdo da tabela                 |
+| `Cmd` `Opt` `Ctrl` `F` | Filtrar tabelas                            |
+| `Cmd` `Opt` `Ctrl` `B` | Editor de bundles                          |
+| `Cmd` `Opt` `Ctrl` `N` | Navegador                                  |
 
 {.shortcuts}
 
-### Select
+### Selecionar
 
-| Shortcut          | Action                    |
-| ----------------- | ------------------------- |
-| `Ctrl` `W`        | Select current word       |
-| `Ctrl` `L`        | Select current line       |
-| `Cmd` `Shift` `B` | Select enclosing brackets |
-| `Cmd` `A`         | Select all                |
+| Atalho            | Ação                        |
+| ----------------- | --------------------------- |
+| `Ctrl` `W`        | Selecionar a palavra atual  |
+| `Ctrl` `L`        | Selecionar a linha atual    |
+| `Cmd` `Shift` `B` | Selecionar colchetes envolventes |
+| `Cmd` `A`         | Selecionar tudo             |
 
 {.shortcuts}
 
-### Table Structure Tab
+### Aba de estrutura da tabela
 
-| Shortcut        | Action                   |
+| Atalho          | Ação                     |
 | --------------- | ------------------------ |
-| `Cmd` `Opt` `A` | Add a new field          |
-| `Del`           | Delete selected field    |
-| `Cmd` `D`       | Duplicate selected field |
-| `Cmd` `R`       | Refresh table structure  |
-| `Cmd` `4`       | Edit table details       |
+| `Cmd` `Opt` `A` | Adicionar novo campo     |
+| `Del`           | Excluir campo selecionado |
+| `Cmd` `D`       | Duplicar campo selecionado |
+| `Cmd` `R`       | Atualizar estrutura da tabela |
+| `Cmd` `4`       | Editar detalhes da tabela |
 
 {.shortcuts}
 
-### Table Content Tab
+### Aba de conteúdo da tabela
 
-| Shortcut        | Action                 |
-| --------------- | ---------------------- |
-| `Cmd` `Opt` `A` | Add a new row          |
-| `Del`           | Delete selected row(s) |
-| `Cmd` `D`       | Duplicate selected row |
-| `Cmd` `R`       | Refresh table contents |
+| Atalho          | Ação                    |
+| --------------- | ----------------------- |
+| `Cmd` `Opt` `A` | Adicionar nova linha    |
+| `Del`           | Excluir linha(s) selecionada(s) |
+| `Cmd` `D`       | Duplicar linha selecionada |
+| `Cmd` `R`       | Atualizar conteúdo da tabela |
 
 {.shortcuts}
 
-### Custom Query Tab
+### Aba de query personalizada
 
-| Shortcut        | Action                                                              |
+| Atalho          | Ação                                                                |
 | --------------- | ------------------------------------------------------------------- |
-| `Cmd` `Opt` `R` | Run all queries (1.0+) / Run current query or selection (<=0.9.9.1) |
-| `Cmd` `R`       | Run current query or selection (1.0+) / Run all queries (<=0.9.9.1) |
-| `Cmd` `[`       | Shift line or selection rightwards                                  |
-| `Cmd` `]`       | Shift line or selection leftwards                                   |
-| `Cmd` `/`       | Toggle comment line or selection                                    |
-| `Cmd` `Opt` `/` | Toggle comment current query                                        |
-| `F5`            | Spell checker completion (narrow-down list)                         |
-| `Ctrl` `Y`      | Select current query                                                |
-| `Ctrl` `H`      | Show MySQL help for current word or selection                       |
-| `Cmd` `Opt` `F` | Open query favorites popup menu                                     |
-| `Cmd` `Opt` `Y` | Open query history popup menu                                       |
-| `Ctrl` `Up`     | Insert previous history item (successively)                         |
-| `Ctrl` `Down`   | Insert next history item (successively)                             |
-| `Cmd` `Opt` `1` | Show all database names as completion list                          |
-| `Cmd` `Opt` `2` | Show all table and view names as completion list                    |
-| `Cmd` `Opt` `3` | Show all table names from current database as completion list       |
+| `Cmd` `Opt` `R` | Executar todas as queries (1.0+) / Executar query atual ou seleção (<=0.9.9.1) |
+| `Cmd` `R`       | Executar query atual ou seleção (1.0+) / Executar todas as queries (<=0.9.9.1) |
+| `Cmd` `[`       | Deslocar linha ou seleção para a direita                             |
+| `Cmd` `]`       | Deslocar linha ou seleção para a esquerda                            |
+| `Cmd` `/`       | Alternar comentário da linha ou seleção                              |
+| `Cmd` `Opt` `/` | Alternar comentário da query atual                                   |
+| `F5`            | Preenchimento do corretor ortográfico (lista reduzida)               |
+| `Ctrl` `Y`      | Selecionar a query atual                                             |
+| `Ctrl` `H`      | Mostrar ajuda do MySQL para a palavra ou seleção atual               |
+| `Cmd` `Opt` `F` | Abrir menu pop-up de queries favoritas                               |
+| `Cmd` `Opt` `Y` | Abrir menu pop-up do histórico de queries                            |
+| `Ctrl` `Up`     | Inserir item anterior do histórico (sucessivamente)                  |
+| `Ctrl` `Down`   | Inserir próximo item do histórico (sucessivamente)                   |
+| `Cmd` `Opt` `1` | Mostrar todos os nomes de bancos de dados como lista de preenchimento |
+| `Cmd` `Opt` `2` | Mostrar todos os nomes de tabelas e views como lista de preenchimento |
+| `Cmd` `Opt` `3` | Mostrar todos os nomes de tabelas do banco atual como lista de preenchimento |
 
 {.shortcuts}
 
-## Also see
+## Veja também
 
-- [Keyboard shortcuts for Sequel Pro](https://sequelpro.com/docs/get-started/keyboard-shortcuts) _(sequelpro.com)_
+- [Atalhos de teclado do Sequel Pro](https://sequelpro.com/docs/get-started/keyboard-shortcuts) _(sequelpro.com)_

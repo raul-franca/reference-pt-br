@@ -7,60 +7,60 @@ tags:
   -
   -
 categories:
-  - Keyboard Shortcuts
+  - Atalhos de Teclado
 intro: |
-  A visual cheat-sheet for the 26 default keyboard shortcuts found in Fortnite
+  Um cheat sheet visual dos 26 atalhos de teclado padrão do Fortnite
 ---
 
-## Keyboard Shortcuts
+## Atalhos de teclado
 
-### Main Controls
+### Controles principais
 
-| Shortcut     | Action                                    |
+| Atalho       | Ação                                      |
 | ------------ | ----------------------------------------- |
-| `R`          | Reload                                    |
-| `Q`          | Switch between combat mode and build mode |
-| `Space`      | Jump                                      |
-| `Left Ctrl`  | Crouch                                    |
-| `Left Shift` | Sprint                                    |
-| `=`          | Auto run                                  |
-| `W`          | Move forward                              |
-| `S`          | Move backwards                            |
-| `A`          | Move left                                 |
-| `D`          | Move right                                |
-| `M`          | Toggle map                                |
-| `Tab`        | Toggle inventory                          |
-| `E`          | Use or interact with object               |
-| `F`          | Select pickaxe                            |
-| `1-5`        | Select weapon slot 1-5                    |
+| `R`          | Recarregar                                |
+| `Q`          | Alternar entre o modo combate e o modo construção |
+| `Space`      | Pular                                     |
+| `Left Ctrl`  | Agachar                                   |
+| `Left Shift` | Correr (sprint)                           |
+| `=`          | Correr automaticamente                    |
+| `W`          | Mover para frente                         |
+| `S`          | Mover para trás                           |
+| `A`          | Mover para a esquerda                     |
+| `D`          | Mover para a direita                      |
+| `M`          | Alternar mapa                             |
+| `Tab`        | Alternar inventário                       |
+| `E`          | Usar ou interagir com o objeto            |
+| `F`          | Selecionar picareta                       |
+| `1-5`        | Selecionar slot de arma 1-5               |
 
 {.shortcuts}
 
-### Building
+### Construção
 
-| Shortcut | Action                                                  |
-| -------- | ------------------------------------------------------- |
-| `R`      | Rotate building piece                                   |
-| `Z`      | Wall mode                                               |
-| `X`      | Floor mode                                              |
-| `C`      | Stair mode                                              |
-| `V`      | Pyramid mode                                            |
-| `Y`      | Trap mode                                               |
-| `F3`     | Select trap                                             |
-| `H`      | Upgrade building piece of repair damaged building piece |
-| `G`      | Edit building piece                                     |
-
-{.shortcuts}
-
-### Communication
-
-| Shortcut | Action |
-| -------- | ------ |
-| `Enter`  | Chat   |
-| `B`      | Emote  |
+| Atalho | Ação                                                    |
+| ------ | ------------------------------------------------------- |
+| `R`    | Rotacionar a peça de construção                         |
+| `Z`    | Modo parede                                             |
+| `X`    | Modo piso                                               |
+| `C`    | Modo escada                                             |
+| `V`    | Modo pirâmide                                           |
+| `Y`    | Modo armadilha                                          |
+| `F3`   | Selecionar armadilha                                    |
+| `H`    | Melhorar a peça de construção ou reparar a peça danificada |
+| `G`    | Editar peça de construção                               |
 
 {.shortcuts}
 
-## Also see
+### Comunicação
 
-- [Keyboard shortcuts for Fortnite](https://fortnite.gamepedia.com/Controls) _(fortnite.gamepedia.com)_
+| Atalho  | Ação  |
+| ------- | ----- |
+| `Enter` | Chat  |
+| `B`     | Emote |
+
+{.shortcuts}
+
+## Veja também
+
+- [Atalhos de teclado do Fortnite](https://fortnite.gamepedia.com/Controls) _(fortnite.gamepedia.com)_

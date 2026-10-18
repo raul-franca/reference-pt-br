@@ -12,12 +12,12 @@
 <div class="md:px-6">
     <div class="flex flex-col max-w-sm px-6 py-4 mx-auto bg-white dark:bg-slate-800 rounded-lg shadow">
         <div class="flex flex-row justify-between text-blue-dark border-b dark:border-slate-700">
-            <h2 class="mb-4 text-xl font-medium text-slate-700 dark:text-slate-300">Popular</h2>
+            <h2 class="mb-4 text-xl font-medium text-slate-700 dark:text-slate-300">Populares</h2>
             <div class="mt-2 sm:mt-0">
-                <a href="/" title="More Popular Cheatsheets"
+                <a href="/" title="Mais cheat sheets populares"
                    class="flex items-center text-white bg-blue-600  text-sm rounded px-2 py-1 hover:bg-blue-500 focus:outline-none focus:shadow-outline">
                     <i class="icon icon-placeholder mr-1"></i>
-                    <span class="inline">More</span>
+                    <span class="inline">Mais</span>
                 </a>
             </div>
         </div>
@@ -27,7 +27,7 @@
                     <div class="flex justify-center w-10 h-10 text-white p-5 rounded-full mr-4 <%- post.background %>">
                         <i class="self-center icon <%- post.icon %> text-2xl"></i>
                     </div>
-                    <a href="<%- url_for(post.path) %>" title="<%- post.title %> Cheat sheet" class="underline mx-1 font-medium text-slate-700 dark:text-slate-300">
+                    <a href="<%- url_for(post.path) %>" title="<%- post.title %> - Cheat sheet" class="underline mx-1 font-medium text-slate-700 dark:text-slate-300">
                         <%- post.title %> <span class="text-sm font-light text-slate-700 dark:text-slate-500">Cheat sheet</span>
                     </a>
                 </li>
@@ -40,12 +40,12 @@
     <div class="md:px-6 mt-10">
         <div class="flex flex-col max-w-sm px-6 py-4 mx-auto bg-white dark:bg-slate-800 rounded-lg shadow">
             <div class="flex flex-row justify-between text-blue-dark border-b dark:border-slate-700">
-                <h2 class="mb-4 text-xl font-medium text-slate-700 dark:text-slate-300">Related Posts</h2>
+                <h2 class="mb-4 text-xl font-medium text-slate-700 dark:text-slate-300">Posts relacionados</h2>
                 <div class="mt-2 sm:mt-0">
-                    <a href="/notes/" title="More Related Posts and Notes"
+                    <a href="/notes/" title="Mais posts e notas relacionados"
                        class="flex items-center text-white bg-blue-600  text-sm rounded px-2 py-1 hover:bg-blue-500 focus:outline-none focus:shadow-outline">
                         <i class="icon icon-placeholder mr-1"></i>
-                        <span class="inline">More</span>
+                        <span class="inline">Mais</span>
                     </a>
                 </div>
             </div>

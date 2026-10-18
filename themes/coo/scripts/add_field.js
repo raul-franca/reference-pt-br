@@ -29,7 +29,7 @@ hexo.extend.filter.register('after_post_render', (data) => {
         title: h3_m[2].trim()
       });
     }
-    // h2_list[i] = h2_list[i]; // Remove self-assignment
+    // h2_list[i] = h2_list[i]; // Remove a auto-atribuição
     h3_list.push(h3_items);
   }
 

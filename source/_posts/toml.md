@@ -6,23 +6,23 @@ tags:
   - config
   - format
 categories:
-  - Programming
+  - Programação
 intro: |
-  This is a quick reference cheat sheet to the TOML format configuration file syntax.
+  Esta é uma cheat sheet de referência rápida para a sintaxe de arquivos de configuração no formato TOML.
 plugins:
   - copyCode
 ---
 
-## Getting Started
+## Primeiros passos
 
-### Introduction
+### Introdução
 
-[TOML](https://toml.io/en/) is a minimal configuration file format that's easy to read due to obvious semantics.
+[TOML](https://toml.io/en/) é um formato minimalista de arquivo de configuração, fácil de ler graças a uma semântica óbvia.
 
-- [Document](https://toml.io/en/latest) _(toml.io)_
+- [Documentação](https://toml.io/en/latest) _(toml.io)_
 - [Learn X in Y minutes](https://learnxinyminutes.com/docs/toml/) _(learnxinyminutes.com)_
 
-### Examples
+### Exemplos
 
 ```toml
 bool = true
@@ -33,7 +33,7 @@ float = 3.14
 scientificNotation = 1e+12
 ```
 
-### Comments
+### Comentários
 
 ```yaml
 # A single line comment example
@@ -44,7 +44,7 @@ scientificNotation = 1e+12
 # comment line 3
 ```
 
-### Integer
+### Inteiro
 
 ```toml
 int1 = +42
@@ -53,7 +53,7 @@ int3 = -21
 integerRange = 64
 ```
 
-### Float
+### Ponto flutuante
 
 ```toml
 float2 = 3.1415
@@ -61,7 +61,7 @@ float4 = 5e+22
 float7 = 6.626e-34
 ```
 
-### Boolean
+### Booleano
 
 ```toml
 bool1 = true
@@ -69,7 +69,7 @@ bool2 = false
 boolMustBeLowercase = true
 ```
 
-### Datetime
+### Data e hora
 
 ```toml
 date1 = 1989-05-27T07:32:00Z
@@ -88,9 +88,9 @@ str2 = "You can \"quote\" me."
 str3 = "Name\tJos\u00E9\nLoc\tSF."
 ```
 
-See: [Strings](#toml-strings)
+Veja: [Strings](#toml-strings)
 
-### Table
+### Tabela
 
 ```toml
 [owner]
@@ -98,7 +98,7 @@ name = "Tom Preston-Werner"
 dob = 1979-05-27T07:32:00-08:00
 ```
 
-See: [Tables](#toml-tables)
+Veja: [Tabelas](#toml-tables)
 
 ### Array
 
@@ -108,7 +108,7 @@ array2 = ["Commas", "are", "delimiter"]
 array3 = [8001, 8001, 8002]
 ```
 
-### Friendly Array {.col-span-2}
+### Array amigável {.col-span-2}
 
 ```toml
 array1 = [ "Don't mix", "different", "types" ]
@@ -119,9 +119,9 @@ array3 = [
 ]
 ```
 
-## TOML Strings
+## Strings TOML
 
-### Multiline String
+### String multilinha
 
 ```toml
 multiLineString = """
@@ -131,7 +131,7 @@ and allow newlines.
 """
 ```
 
-### Literal String
+### String literal
 
 ```toml {.wrap}
 path = 'C:\Users\nodejs\templates'
@@ -140,9 +140,9 @@ quoted = 'Tom "Dubs" Preston-Werner'
 regex = '<\i\c*\s*>'
 ```
 
-Surrounded by single quotes. Escaping are not allowed.
+Delimitada por aspas simples. Escapes não são permitidos.
 
-### MultiLine Literal String
+### String literal multilinha
 
 ```toml
 re = '''\d{2} apps is t[wo]o many'''
@@ -154,9 +154,9 @@ is preserved.
 '''
 ```
 
-## TOML Tables
+## Tabelas TOML
 
-### Basic
+### Básico
 
 ```toml
 [name]
@@ -164,9 +164,9 @@ foo = 1
 bar = 2
 ```
 
-`foo` and `bar` are keys in the table called `name`
+`foo` e `bar` são chaves na tabela chamada `name`
 
-### Nested
+### Aninhada
 
 ```toml
 [table1]
@@ -176,7 +176,7 @@ bar = 2
 	baz = "bat"
 ```
 
-### Array-like {.row-span-2}
+### Semelhante a array {.row-span-2}
 
 ```toml
 [[comments]]
@@ -188,7 +188,7 @@ author = "Anonymous"
 text = "Love it!"
 ```
 
-#### ↓ Equivalent JSON
+#### ↓ JSON equivalente
 
 ```json
 {
@@ -205,14 +205,14 @@ text = "Love it!"
 }
 ```
 
-### Dot separated
+### Separadas por ponto
 
 ```toml
 [dog."tater.man"]
 type = "pug"
 ```
 
-#### ↓ Equivalent JSON
+#### ↓ JSON equivalente
 
 ```json
 {
@@ -224,14 +224,14 @@ type = "pug"
 }
 ```
 
-### Multi-nested
+### Multianinhada
 
 ```toml
 [foo.bar.baz]
 bat = "hi"
 ```
 
-#### ↓ Equivalent JSON
+#### ↓ JSON equivalente
 
 ```json
 {
@@ -245,7 +245,7 @@ bat = "hi"
 }
 ```
 
-### Ignore whitespace
+### Ignorar espaços em branco
 
 ```toml
 [a.b.c]          # this is best practice
@@ -254,7 +254,7 @@ bat = "hi"
 [ j . "ʞ" .'l' ] # same as [j."ʞ".'l']
 ```
 
-### Inline Table {.col-span-2}
+### Tabela inline {.col-span-2}
 
 ```toml
 name = { first = "Tom", last = "Preston-Werner" }

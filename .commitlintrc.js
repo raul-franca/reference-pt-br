@@ -5,40 +5,40 @@ module.exports = {
       2,
       'always',
       [
-        'feat', // new feature
-        'fix', // bug fix
-        'docs', // documentation update
-        'style', // code formatting, no logic changes
-        'refactor', // code refactoring
-        'perf', // performance optimization
-        'test', // add tests
-        'chore', // build process or auxiliary tool changes
-        'ci', // CI/CD related changes
-        'build', // build system or external dependency changes
-        'revert' // revert commit
+        'feat', // novo recurso
+        'fix', // correção de bug
+        'docs', // atualização de documentação
+        'style', // formatação de código, sem mudanças de lógica
+        'refactor', // refatoração de código
+        'perf', // otimização de desempenho
+        'test', // adiciona testes
+        'chore', // mudanças no processo de build ou ferramentas auxiliares
+        'ci', // mudanças relacionadas a CI/CD
+        'build', // mudanças no sistema de build ou dependências externas
+        'revert' // reverte commit
       ]
     ],
     'scope-enum': [
       2,
       'always',
       [
-        'search', // search functionality
-        'theme', // theme related
-        'css', // style files
-        'js', // JavaScript files
-        'content', // content files
-        'build', // build related
-        'deps', // dependency updates
-        'config', // configuration files
-        'docs', // documentation
-        'layout', // layout templates
-        'widget', // components
-        'gulp', // Gulp tasks
-        'hexo', // Hexo related
-        'markdown', // Markdown processing
-        'seo', // SEO optimization
-        'a11y', // accessibility
-        'perf' // performance related
+        'search', // funcionalidade de busca
+        'theme', // relacionado ao tema
+        'css', // arquivos de estilo
+        'js', // arquivos JavaScript
+        'content', // arquivos de conteúdo
+        'build', // relacionado ao build
+        'deps', // atualizações de dependências
+        'config', // arquivos de configuração
+        'docs', // documentação
+        'layout', // templates de layout
+        'widget', // componentes
+        'gulp', // tarefas do Gulp
+        'hexo', // relacionado ao Hexo
+        'markdown', // processamento de Markdown
+        'seo', // otimização de SEO
+        'a11y', // acessibilidade
+        'perf' // relacionado a desempenho
       ]
     ],
     'subject-case': [2, 'never', ['start-case', 'pascal-case', 'upper-case']],

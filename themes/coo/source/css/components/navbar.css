@@ -1,25 +1,25 @@
-/* Modern Navbar Styles */
+/* Estilos modernos da navbar */
 
-/* Share Dropdown Styles */
+/* Estilos do dropdown de compartilhamento */
 .share-dropdown {
   position: relative;
-  z-index: 1000; /* Ensure container has sufficient z-index */
+  z-index: 1000; /* Garante que o container tenha z-index suficiente */
 }
 
-/* Ensure navbar container doesn't clip dropdown menu */
+/* Garante que o container da navbar não corte o menu dropdown */
 header .max-container {
   overflow: visible;
-  position: relative; /* Ensure z-index takes effect */
+  position: relative; /* Garante que o z-index tenha efeito */
 }
 
 #share-menu {
   transform-origin: top right;
   transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 
-  /* Use absolute positioning, follow button position */
+  /* Usa posicionamento absoluto, acompanha a posição do botão */
   position: absolute;
-  z-index: 99999; /* Increase z-index to ensure it's on top layer */
-  pointer-events: auto; /* Ensure it can be clicked */
+  z-index: 99999; /* Aumenta o z-index para garantir que fique na camada superior */
+  pointer-events: auto; /* Garante que possa ser clicado */
 }
 
 #share-menu.opacity-0 {
@@ -34,18 +34,18 @@ header .max-container {
   transform: scale(1) translateY(0);
 }
 
-/* Share menu items - Fix alignment and overflow issues */
+/* Itens do menu de compartilhamento - corrige problemas de alinhamento e overflow */
 .share-item {
   transition: background-color 0.15s ease-in-out;
   cursor: pointer;
-  pointer-events: auto; /* Ensure menu items can be clicked */
+  pointer-events: auto; /* Garante que os itens do menu possam ser clicados */
 
-  /* Fix icon and text alignment */
+  /* Corrige o alinhamento entre ícone e texto */
   align-items: center;
   display: flex;
 }
 
-/* Fix icon container alignment */
+/* Corrige o alinhamento do container do ícone */
 .share-item .flex-shrink-0 {
   display: flex;
   align-items: center;
@@ -53,30 +53,30 @@ header .max-container {
   flex-shrink: 0;
 }
 
-/* Fix SVG icon alignment within container */
+/* Corrige o alinhamento do ícone SVG dentro do container */
 .share-item .flex-shrink-0 svg {
   width: 20px;
   height: 20px;
   flex-shrink: 0;
 }
 
-/* Fix hover background to not overflow container */
+/* Corrige o fundo de hover para não ultrapassar o container */
 .share-item:hover {
   background-color: rgb(148 163 184 / 10%);
   border-radius: 0.75rem; /* 12px rounded-xl */
-  margin: 0.25rem 0.5rem; /* 4px 8px - ensure margin for rounded corners */
+  margin: 0.25rem 0.5rem; /* 4px 8px - garante margem para cantos arredondados */
 }
 
 .dark .share-item:hover {
   background-color: rgb(71 85 105 / 50%);
 }
 
-/* Fix the last item specifically to prevent overflow */
+/* Corrige especificamente o último item para evitar overflow */
 .share-item:last-child {
-  margin-bottom: 0.25rem; /* Ensure bottom margin */
+  margin-bottom: 0.25rem; /* Garante margem inferior */
 }
 
-/* Ensure dropdown menu can be interacted with when visible */
+/* Garante interação com o menu dropdown quando visível */
 #share-menu.opacity-100 {
   pointer-events: auto;
 }
@@ -85,9 +85,9 @@ header .max-container {
   pointer-events: none;
 }
 
-/* Debug styles - ensure dropdown menu is visible */
+/* Estilos de debug - garante que o menu dropdown esteja visível */
 #share-menu {
-  /* Temporary debug: make menu always visible */
+  /* Debug temporário: mantém o menu sempre visível */
 
   /* opacity: 1 !important; */
 
@@ -96,14 +96,14 @@ header .max-container {
   /* transform: scale(1) !important; */
 }
 
-/* Backdrop blur support */
+/* Suporte a backdrop blur */
 @supports (backdrop-filter: blur(10px)) {
   .backdrop-blur-sm {
     backdrop-filter: blur(4px);
   }
 }
 
-/* Fallback for browsers without backdrop-filter */
+/* Fallback para navegadores sem backdrop-filter */
 @supports not (backdrop-filter: blur(10px)) {
   .backdrop-blur-sm {
     background-color: rgb(255 255 255 / 80%);
@@ -114,36 +114,36 @@ header .max-container {
   }
 }
 
-/* Professional Flexbox Layout Solution for Home Page */
+/* Solução de layout Flexbox profissional para a página inicial */
 body {
   padding-top: 0;
   margin: 0;
 }
 
-/* Use modern viewport units with fallback */
+/* Usa unidades de viewport modernas com fallback */
 html {
   height: 100%;
 }
 
 body {
   min-height: 100vh; /* Fallback */
-  min-height: 100dvh; /* Dynamic viewport height for mobile */
+  min-height: 100dvh; /* Altura dinâmica de viewport para mobile */
   display: flex;
   flex-direction: column;
 }
 
-/* Header positioning for home page - use relative instead of absolute */
+/* Posicionamento do header na página inicial - usa relative em vez de absolute */
 header.home {
-  position: relative; /* Change from absolute to relative for natural flow */
+  position: relative; /* Muda de absolute para relative para fluxo natural */
   z-index: 50;
-  flex-shrink: 0; /* Don't shrink */
+  flex-shrink: 0; /* Não encolhe */
 
-  /* Keep all the background styling for hero section */
+  /* Mantém todo o estilo de fundo da seção hero */
 }
 
-/* Main content area takes remaining space */
+/* Área de conteúdo principal ocupa o espaço restante */
 section.home {
-  flex: 1; /* Take all available space */
+  flex: 1; /* Ocupa todo o espaço disponível */
   display: flex;
   flex-direction: column;
   margin-top: 0;
@@ -151,33 +151,33 @@ section.home {
   z-index: 10;
 }
 
-/* Footer stays at bottom */
+/* Footer permanece na parte inferior */
 footer {
-  flex-shrink: 0; /* Don't shrink */
-  margin-top: auto; /* Push to bottom if content is short */
+  flex-shrink: 0; /* Não encolhe */
+  margin-top: auto; /* Empurra para baixo se o conteúdo for curto */
 }
 
-/* Content spacing - natural and responsive */
+/* Espaçamento do conteúdo - natural e responsivo */
 section.home .max-container {
   margin-top: 0;
-  padding-top: 2rem; /* Clean visual spacing */
-  flex: 1; /* Take available space in the section */
+  padding-top: 2rem; /* Espaçamento visual limpo */
+  flex: 1; /* Ocupa o espaço disponível na seção */
 }
 
-/* Legacy selector for backward compatibility */
+/* Seletor legado para compatibilidade retroativa */
 .home .max-container:last-child {
   margin-top: 2rem;
 }
 
-/* Mobile optimizations */
+/* Otimizações para mobile */
 @media (width <= 768px) {
-  /* Adjust header spacing on mobile */
+  /* Ajusta o espaçamento do header no mobile */
   header .max-container {
     padding-left: 1rem;
     padding-right: 1rem;
   }
 
-  /* Make buttons more touch-friendly */
+  /* Torna os botões mais amigáveis ao toque */
   #mysearch-trigger,
   #darkMode,
   #share-trigger {
@@ -185,7 +185,7 @@ section.home .max-container {
     min-width: 44px;
   }
 
-  /* Adjust share dropdown position on mobile */
+  /* Ajusta a posição do dropdown de compartilhamento no mobile */
   #share-menu {
     right: 0;
     left: auto;
@@ -193,7 +193,7 @@ section.home .max-container {
     max-width: calc(100vw - 2rem);
   }
 
-  /* Hero section mobile adjustments */
+  /* Ajustes da seção hero no mobile */
   .hero-section {
     padding-top: 2rem;
     padding-bottom: 3rem;
@@ -209,7 +209,7 @@ section.home .max-container {
     line-height: 1.6;
   }
 
-  /* CTA buttons stack on mobile */
+  /* Botões CTA se empilham no mobile */
   .hero-cta-buttons {
     flex-direction: column;
     gap: 1rem;
@@ -220,20 +220,20 @@ section.home .max-container {
     justify-content: center;
   }
 
-  /* Stats grid on mobile */
+  /* Grid de estatísticas no mobile */
   .hero-stats {
     grid-template-columns: 1fr;
     gap: 1rem;
   }
 
-  /* Mobile grid adjustments */
+  /* Ajustes do grid no mobile */
   body:has(.home) {
-    grid-template-rows: auto 1fr auto; /* Maintain grid structure */
+    grid-template-rows: auto 1fr auto; /* Mantém a estrutura do grid */
   }
 
-  /* Fix mobile content spacing */
+  /* Corrige o espaçamento do conteúdo no mobile */
   section.home .max-container {
-    padding-top: 1.5rem; /* Responsive spacing */
+    padding-top: 1.5rem; /* Espaçamento responsivo */
   }
 
   .home .max-container:last-child {
@@ -242,15 +242,15 @@ section.home .max-container {
   }
 }
 
-/* Tablet optimizations */
+/* Otimizações para tablet */
 @media (width >= 769px) and (width <= 1024px) {
-  /* Adjust container width on tablet */
+  /* Ajusta a largura do container no tablet */
   .max-container {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
 
-  /* Hero section tablet adjustments */
+  /* Ajustes da seção hero no tablet */
   .hero-section h1 {
     font-size: 3.5rem;
   }
@@ -259,15 +259,15 @@ section.home .max-container {
     font-size: 1.25rem;
   }
 
-  /* Tablet grid adjustments */
+  /* Ajustes do grid no tablet */
   section.home .max-container {
-    padding-top: 2rem; /* Consistent responsive spacing */
+    padding-top: 2rem; /* Espaçamento responsivo consistente */
   }
 }
 
-/* Large screen optimizations */
+/* Otimizações para telas grandes */
 @media (width >= 1280px) {
-  /* Add more spacing on large screens */
+  /* Adiciona mais espaçamento em telas grandes */
   .hero-section {
     padding-top: 4rem;
     padding-bottom: 6rem;
@@ -281,15 +281,15 @@ section.home .max-container {
     font-size: 1.5rem;
   }
 
-  /* Large screen grid adjustments */
+  /* Ajustes do grid em telas grandes */
   section.home .max-container {
-    padding-top: 3rem; /* Slightly more spacing for large screens */
+    padding-top: 3rem; /* Um pouco mais de espaçamento para telas grandes */
   }
 }
 
-/* Animation improvements */
+/* Melhorias de animação */
 @media (prefers-reduced-motion: no-preference) {
-  /* Add subtle animations */
+  /* Adiciona animações sutis */
   .fadeIn {
     animation: fadeInUp 0.6s ease-out forwards;
   }
@@ -323,7 +323,7 @@ section.home .max-container {
   }
 }
 
-/* Respect user preference for reduced motion */
+/* Respeita a preferência do usuário por movimento reduzido */
 @media (prefers-reduced-motion: reduce) {
   .fadeIn,
   * {
@@ -333,7 +333,7 @@ section.home .max-container {
   }
 }
 
-/* Focus states for accessibility */
+/* Estados de foco para acessibilidade */
 #mysearch-trigger:focus,
 #darkMode:focus,
 #share-trigger:focus {
@@ -341,7 +341,7 @@ section.home .max-container {
   outline-offset: 2px;
 }
 
-/* High contrast mode support */
+/* Suporte ao modo de alto contraste */
 @media (prefers-contrast: high) {
   #share-menu {
     border: 2px solid;
@@ -352,19 +352,19 @@ section.home .max-container {
   }
 }
 
-/* Hero section specific styles */
+/* Estilos específicos da seção hero */
 .hero-section {
   background: linear-gradient(135deg, rgb(99 102 241), rgb(139 92 246));
   position: relative;
   overflow: hidden;
 }
 
-/* Header background styles for home page (positioning handled above) */
+/* Estilos de fundo do header na página inicial (posicionamento tratado acima) */
 header.home .max-container {
   background: transparent;
 }
 
-/* Animation keyframes */
+/* Keyframes das animações */
 @keyframes float {
   0%,
   100% {
@@ -401,7 +401,7 @@ header.home .max-container {
   }
 }
 
-/* Apply animations */
+/* Aplica as animações */
 header .animate-float {
   animation: float 6s ease-in-out infinite;
 }
@@ -414,7 +414,7 @@ header .animate-drift {
   animation: drift 20s linear infinite;
 }
 
-/* Background effects */
+/* Efeitos de fundo */
 .mesh-gradient {
   background: linear-gradient(
     135deg,
@@ -424,7 +424,7 @@ header .animate-drift {
   );
 }
 
-/* Search trigger styles */
+/* Estilos do gatilho de busca */
 #mysearch-trigger {
   position: relative;
 }
@@ -436,7 +436,7 @@ header .animate-drift {
   margin-left: 0.5rem;
 }
 
-/* Loading animation for GitHub stars */
+/* Animação de carregamento das estrelas do GitHub */
 .loading-dots {
   animation: loading-dots 1.5s infinite;
 }
@@ -465,7 +465,7 @@ header .animate-drift {
   }
 }
 
-/* GitHub stars counter */
+/* Contador de estrelas do GitHub */
 #github-stars {
   transition: all 0.2s ease-in-out;
   min-width: 2rem;
@@ -476,7 +476,7 @@ header .animate-drift {
   animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
-/* Donation button styles */
+/* Estilos do botão de doação */
 .donation-button-hero {
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }

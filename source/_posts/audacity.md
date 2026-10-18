@@ -7,205 +7,205 @@ tags:
   -
   -
 categories:
-  - Keyboard Shortcuts
+  - Atalhos de Teclado
 intro: |
-  A visual cheat-sheet for the 135 default keyboard shortcuts found in Audacity
+  Um cheat sheet visual com os 135 atalhos de teclado padrão do Audacity
 ---
 
-## Keyboard Shortcuts
+## Atalhos de teclado
 
-### File Menu
+### Menu Arquivo
 
-| Shortcut           | Action          |
+| Atalho             | Ação            |
 | ------------------ | --------------- |
-| `Ctrl` `N`         | New             |
-| `Ctrl` `O`         | Open            |
-| `Ctrl` `W`         | Close           |
-| `Ctrl` `Q`         | Exit            |
-| `Ctrl` `S`         | Save project    |
-| `Ctrl` `Shift` `E` | Export audio    |
-| `Ctrl` `Shift` `L` | Export multiple |
-| `Ctrl` `Shift` `I` | Import audio    |
+| `Ctrl` `N`         | Novo            |
+| `Ctrl` `O`         | Abrir           |
+| `Ctrl` `W`         | Fechar          |
+| `Ctrl` `Q`         | Sair            |
+| `Ctrl` `S`         | Salvar projeto  |
+| `Ctrl` `Shift` `E` | Exportar áudio  |
+| `Ctrl` `Shift` `L` | Exportar múltiplos |
+| `Ctrl` `Shift` `I` | Importar áudio  |
 
 {.shortcuts}
 
-### Edit Menu
+### Menu Editar
 
-| Shortcut           | Action                           |
+| Atalho             | Ação                             |
 | ------------------ | -------------------------------- |
-| `Ctrl` `Z`         | Undo                             |
-| `Ctrl` `Y`         | Redo                             |
-| `Ctrl` `X`         | Cut                              |
-| `Ctrl` `K`         | Delete                           |
-| `Ctrl` `C`         | Copy                             |
-| `Ctrl` `V`         | Paste                            |
-| `Ctrl` `D`         | Duplicate                        |
-| `Ctrl` `P`         | Preferences                      |
-| `Ctrl` `Alt` `X`   | Split cut                        |
-| `Ctrl` `Alt` `K`   | Split delete                     |
-| `Ctrl` `L`         | Silence audio                    |
-| `Ctrl` `T`         | Trim audio                       |
-| `Ctrl` `Alt` `I`   | Split new                        |
-| `Ctrl` `J`         | Join                             |
-| `Ctrl` `Shift` `J` | Detach at silences               |
-| `Ctrl` `B`         | Add label at selection           |
-| `Ctrl` `M`         | Add label at playback position   |
-| `Ctrl` `Alt` `V`   | Paste text to new label          |
-| `Alt` `X`          | Cut labeled audio                |
-| `Alt` `K`          | Delete labeled audio             |
-| `Alt` `Shift` `X`  | Split cut labeled audio          |
-| `Alt` `Shift` `K`  | Split delete labeled audio       |
-| `Alt` `L`          | Silence labeled audio            |
-| `Alt` `Shift` `C`  | Copy labeled audio               |
-| `Alt` `I`          | Split labeled audio              |
-| `Alt` `J`          | Join labeled audio               |
-| `Alt` `Shift` `J`  | Detach labeled audio at silences |
+| `Ctrl` `Z`         | Desfazer                         |
+| `Ctrl` `Y`         | Refazer                          |
+| `Ctrl` `X`         | Recortar                         |
+| `Ctrl` `K`         | Excluir                          |
+| `Ctrl` `C`         | Copiar                           |
+| `Ctrl` `V`         | Colar                            |
+| `Ctrl` `D`         | Duplicar                         |
+| `Ctrl` `P`         | Preferências                     |
+| `Ctrl` `Alt` `X`   | Dividir e recortar               |
+| `Ctrl` `Alt` `K`   | Dividir e excluir                |
+| `Ctrl` `L`         | Silenciar áudio                  |
+| `Ctrl` `T`         | Aparar áudio                     |
+| `Ctrl` `Alt` `I`   | Dividir em nova faixa            |
+| `Ctrl` `J`         | Juntar                           |
+| `Ctrl` `Shift` `J` | Separar nos silêncios            |
+| `Ctrl` `B`         | Adicionar rótulo na seleção      |
+| `Ctrl` `M`         | Adicionar rótulo na posição de reprodução |
+| `Ctrl` `Alt` `V`   | Colar texto em novo rótulo       |
+| `Alt` `X`          | Recortar áudio com rótulo        |
+| `Alt` `K`          | Excluir áudio com rótulo         |
+| `Alt` `Shift` `X`  | Dividir e recortar áudio com rótulo |
+| `Alt` `Shift` `K`  | Dividir e excluir áudio com rótulo |
+| `Alt` `L`          | Silenciar áudio com rótulo       |
+| `Alt` `Shift` `C`  | Copiar áudio com rótulo          |
+| `Alt` `I`          | Dividir áudio com rótulo         |
+| `Alt` `J`          | Juntar áudio com rótulo          |
+| `Alt` `Shift` `J`  | Separar áudio com rótulo nos silêncios |
 
 {.shortcuts}
 
-### Extra Menu {.row-span-4}
+### Menu Extra {.row-span-4}
 
-| Shortcut               | Action                                 |
+| Atalho                 | Ação                                   |
 | ---------------------- | -------------------------------------- |
-| `F11`                  | Toggle full screen                     |
-| `1`                    | Play one second                        |
-| `B`                    | Play to selection                      |
-| `Shift` `F5`           | Play before selection start            |
-| `Shift` `F6`           | Play after selection start             |
-| `Shift` `F7`           | Play before selection end              |
-| `Shift` `F8`           | Play after selection end               |
-| `Ctrl` `Shift` `F5`    | Play before and after selection start  |
-| `Ctrl` `Shift` `F7`    | Play before and after selection end    |
-| `C`                    | Play cut preview                       |
-| `F1`                   | Selection tool                         |
-| `F2`                   | Envelope tool                          |
-| `F3`                   | Draw tool                              |
-| `F4`                   | Zoom tool                              |
-| `F5`                   | Time shift tool                        |
-| `F6`                   | Multi tool                             |
-| `A`                    | Previous tool                          |
-| `D`                    | Next tool                              |
-| `Backspace`            | Delete                                 |
-| `Alt` `Left`           | Move to previous label                 |
-| `Alt` `Right`          | Move to next label                     |
-| `Left`                 | Short seek left during playback        |
-| `Right`                | Short seek right during playback       |
-| `Shift` `Left`         | Long seek left during playback         |
-| `Shift` `Right`        | Long seek right during playback        |
-| `Shift` `I`            | Change recording device                |
-| `Shift` `O`            | Change playback device                 |
-| `Shift` `H`            | Change audio host                      |
-| `Shift` `N`            | Change recording channels              |
-| `Shift` `Home`         | Selection to start                     |
-| `Shift` `End`          | Selection to end                       |
-| `Shift` `Left`         | Selection extend left                  |
-| `Shift` `Right`        | Selection extend right                 |
-| `Ctrl` `Shift` `Right` | Selection contract left                |
-| `Ctrl` `Shift` `Left`  | Selection contract right               |
-| `Ctrl` `Shift` `F6`    | Move backwards from toolbars to tracks |
-| `Ctrl` `F6`            | Move forward from toolbars to tracks   |
-| `Up`                   | Move focus to previous track           |
-| `Down`                 | Move focus to next track               |
-| `Ctrl` `Home`          | Move focus to first track              |
-| `Ctrl` `End`           | Move focus to last track               |
-| `Shift` `Up`           | Move focus to previous and select      |
-| `Shift` `Down`         | Move focus to next and select          |
-| `Enter`                | Toggle focused track                   |
-| `Left`                 | Cursor left                            |
-| `Right`                | Cursor right                           |
-| `,`                    | Cursor short jump left                 |
-| `.`                    | Cursor short jump right                |
-| `Shift` `,`            | Cursor long jump left                  |
-| `Shift` `.`            | Cursor long jump right                 |
-| `Shift` `P`            | Change pan on focused track            |
-| `Alt` `Shift` `Left`   | Pan left on focused track              |
-| `Alt` `Shift` `Right`  | Pan right on focused track             |
-| `Shift` `G`            | Change gain on focused track           |
-| `Alt` `Shift` `Up`     | Increase gain on focused track         |
-| `Alt` `Shift` `Down`   | Decrease gain on focused track         |
-| `Shift` `U`            | Mute or unmute focused track           |
-| `Shift` `S`            | Solo or unsolo focused track           |
-| `Shift` `C`            | Close focused track                    |
+| `F11`                  | Alternar tela cheia                    |
+| `1`                    | Reproduzir um segundo                  |
+| `B`                    | Reproduzir até a seleção               |
+| `Shift` `F5`           | Reproduzir antes do início da seleção  |
+| `Shift` `F6`           | Reproduzir depois do início da seleção |
+| `Shift` `F7`           | Reproduzir antes do fim da seleção     |
+| `Shift` `F8`           | Reproduzir depois do fim da seleção    |
+| `Ctrl` `Shift` `F5`    | Reproduzir antes e depois do início da seleção |
+| `Ctrl` `Shift` `F7`    | Reproduzir antes e depois do fim da seleção    |
+| `C`                    | Reproduzir prévia do corte             |
+| `F1`                   | Ferramenta de seleção                  |
+| `F2`                   | Ferramenta envelope                    |
+| `F3`                   | Ferramenta de desenho                  |
+| `F4`                   | Ferramenta de zoom                     |
+| `F5`                   | Ferramenta de deslocamento no tempo    |
+| `F6`                   | Ferramenta múltipla                    |
+| `A`                    | Ferramenta anterior                    |
+| `D`                    | Próxima ferramenta                     |
+| `Backspace`            | Excluir                                |
+| `Alt` `Left`           | Mover para o rótulo anterior           |
+| `Alt` `Right`          | Mover para o próximo rótulo            |
+| `Left`                 | Avanço curto para a esquerda durante a reprodução |
+| `Right`                | Avanço curto para a direita durante a reprodução  |
+| `Shift` `Left`         | Avanço longo para a esquerda durante a reprodução |
+| `Shift` `Right`        | Avanço longo para a direita durante a reprodução  |
+| `Shift` `I`            | Alterar dispositivo de gravação        |
+| `Shift` `O`            | Alterar dispositivo de reprodução      |
+| `Shift` `H`            | Alterar host de áudio                  |
+| `Shift` `N`            | Alterar canais de gravação             |
+| `Shift` `Home`         | Seleção até o início                   |
+| `Shift` `End`          | Seleção até o fim                      |
+| `Shift` `Left`         | Estender seleção para a esquerda       |
+| `Shift` `Right`        | Estender seleção para a direita        |
+| `Ctrl` `Shift` `Right` | Reduzir seleção à esquerda            |
+| `Ctrl` `Shift` `Left`  | Reduzir seleção à direita             |
+| `Ctrl` `Shift` `F6`    | Mover para trás das barras de ferramentas para as faixas |
+| `Ctrl` `F6`            | Mover para frente das barras de ferramentas para as faixas |
+| `Up`                   | Mover o foco para a faixa anterior     |
+| `Down`                 | Mover o foco para a próxima faixa      |
+| `Ctrl` `Home`          | Mover o foco para a primeira faixa     |
+| `Ctrl` `End`           | Mover o foco para a última faixa       |
+| `Shift` `Up`           | Mover o foco para a anterior e selecionar |
+| `Shift` `Down`         | Mover o foco para a próxima e selecionar  |
+| `Enter`                | Alternar a faixa em foco               |
+| `Left`                 | Cursor para a esquerda                 |
+| `Right`                | Cursor para a direita                  |
+| `,`                    | Salto curto do cursor para a esquerda  |
+| `.`                    | Salto curto do cursor para a direita   |
+| `Shift` `,`            | Salto longo do cursor para a esquerda  |
+| `Shift` `.`            | Salto longo do cursor para a direita   |
+| `Shift` `P`            | Alterar o pan na faixa em foco         |
+| `Alt` `Shift` `Left`   | Pan para a esquerda na faixa em foco   |
+| `Alt` `Shift` `Right`  | Pan para a direita na faixa em foco    |
+| `Shift` `G`            | Alterar o ganho na faixa em foco       |
+| `Alt` `Shift` `Up`     | Aumentar o ganho na faixa em foco      |
+| `Alt` `Shift` `Down`   | Diminuir o ganho na faixa em foco      |
+| `Shift` `U`            | Silenciar ou reativar a faixa em foco  |
+| `Shift` `S`            | Ativar ou desativar o solo na faixa em foco |
+| `Shift` `C`            | Fechar a faixa em foco                 |
 
 {.shortcuts}
 
-### Select Menu
+### Menu Selecionar
 
-| Shortcut           | Action                           |
+| Atalho             | Ação                             |
 | ------------------ | -------------------------------- |
-| `Ctrl` `A`         | Select all                       |
-| `Ctrl` `Shift` `A` | Select none                      |
-| `Z`                | Select at zero crossings         |
-| `Ctrl` `Shift` `K` | Select in all tracks             |
-| `Ctrl` `Shift` `Y` | Select in all sync-locked tracks |
-| `[`                | Left at playback position        |
-| `]`                | Right at playback position       |
-| `Shift` `J`        | Track start to cursor            |
-| `Shift` `K`        | Cursor to track end              |
-| `Q`                | Toggle spectral selection        |
-| `Ctrl` `Alt` `P`   | Previous clip                    |
-| `Ctrl` `Alt` `N`   | Next clip                        |
+| `Ctrl` `A`         | Selecionar tudo                  |
+| `Ctrl` `Shift` `A` | Desmarcar tudo                   |
+| `Z`                | Selecionar nos cruzamentos por zero |
+| `Ctrl` `Shift` `K` | Selecionar em todas as faixas    |
+| `Ctrl` `Shift` `Y` | Selecionar em todas as faixas sincronizadas |
+| `[`                | Esquerda na posição de reprodução |
+| `]`                | Direita na posição de reprodução  |
+| `Shift` `J`        | Início da faixa até o cursor     |
+| `Shift` `K`        | Cursor até o fim da faixa        |
+| `Q`                | Alternar seleção espectral       |
+| `Ctrl` `Alt` `P`   | Clipe anterior                   |
+| `Ctrl` `Alt` `N`   | Próximo clipe                    |
 
 {.shortcuts}
 
-### View Menu
+### Menu Exibir
 
-| Shortcut           | Action                  |
+| Atalho             | Ação                    |
 | ------------------ | ----------------------- |
-| `Ctrl` `1`         | Zoom in                 |
+| `Ctrl` `1`         | Aumentar zoom           |
 | `Ctrl` `2`         | Zoom normal             |
-| `Ctrl` `3`         | Zoom out                |
-| `Ctrl` `E`         | Zoom to selection       |
-| `Shift` `Z`        | Zoom toggle             |
-| `Ctrl` `F`         | Fit to width            |
-| `Ctrl` `Shift` `F` | Fit to height           |
-| `Ctrl` `Shift` `C` | Collapse all tracks     |
-| `Ctrl` `Shift` `X` | Expand collapsed tracks |
-| `Ctrl` `[`         | Skip to selection start |
-| `Ctrl` `]`         | Skip to selection end   |
+| `Ctrl` `3`         | Diminuir zoom           |
+| `Ctrl` `E`         | Zoom na seleção         |
+| `Shift` `Z`        | Alternar zoom           |
+| `Ctrl` `F`         | Ajustar à largura       |
+| `Ctrl` `Shift` `F` | Ajustar à altura        |
+| `Ctrl` `Shift` `C` | Recolher todas as faixas |
+| `Ctrl` `Shift` `X` | Expandir faixas recolhidas |
+| `Ctrl` `[`         | Pular para o início da seleção |
+| `Ctrl` `]`         | Pular para o fim da seleção    |
 
 {.shortcuts}
 
-### Transport Menu
+### Menu Transporte
 
-| Shortcut        | Action                      |
+| Atalho          | Ação                        |
 | --------------- | --------------------------- |
-| `Space`         | Play or stop                |
-| `X`             | Play or stop and set cursor |
-| `Shift` `Space` | Loop play                   |
-| `P`             | Pause                       |
-| `R`             | Record                      |
-| `Shift` `R`     | Record new track            |
-| `Shift` `T`     | Timer record...             |
-| `Shift` `D`     | Punch and roll record       |
-| `P`             | Pause                       |
-| `J`             | Cursor to track start       |
-| `K`             | Cursor to track end         |
-| `Home`          | Cursor to project start     |
-| `End`           | Cursor to project end       |
+| `Space`         | Reproduzir ou parar         |
+| `X`             | Reproduzir ou parar e definir o cursor |
+| `Shift` `Space` | Reproduzir em loop          |
+| `P`             | Pausar                      |
+| `R`             | Gravar                      |
+| `Shift` `R`     | Gravar em nova faixa        |
+| `Shift` `T`     | Gravação com timer...       |
+| `Shift` `D`     | Gravação punch and roll     |
+| `P`             | Pausar                      |
+| `J`             | Cursor para o início da faixa |
+| `K`             | Cursor para o fim da faixa  |
+| `Home`          | Cursor para o início do projeto |
+| `End`           | Cursor para o fim do projeto |
 
 {.shortcuts}
 
-### Tracks Menu
+### Menu Faixas
 
-| Shortcut           | Action                      |
+| Atalho             | Ação                        |
 | ------------------ | --------------------------- |
-| `Ctrl` `Shift` `N` | Add new mono track          |
-| `Ctrl` `Shift` `M` | Mix and render to new track |
-| `Ctrl` `U`         | Mute all tracks             |
-| `Ctrl` `Shift` `U` | Unmute all tracks           |
+| `Ctrl` `Shift` `N` | Adicionar nova faixa mono   |
+| `Ctrl` `Shift` `M` | Mixar e renderizar em nova faixa |
+| `Ctrl` `U`         | Silenciar todas as faixas   |
+| `Ctrl` `Shift` `U` | Reativar todas as faixas    |
 
 {.shortcuts}
 
-### Effect Menu
+### Menu Efeito
 
-| Shortcut   | Action             |
+| Atalho     | Ação               |
 | ---------- | ------------------ |
-| `Ctrl` `R` | Repeat last effect |
+| `Ctrl` `R` | Repetir o último efeito |
 
 {.shortcuts}
 
-## Also see
+## Veja também
 
-- [Keyboard shortcuts for Audacity](https://manual.audacityteam.org/man/keyboard_shortcut_reference.html)
+- [Atalhos de teclado do Audacity](https://manual.audacityteam.org/man/keyboard_shortcut_reference.html)
   _(manual.audacityteam.org)_

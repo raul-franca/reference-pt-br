@@ -1,10 +1,10 @@
 module.exports = {
-  // JavaScript files
+  // Arquivos JavaScript
   '*.{js,mjs}': ['eslint --fix', 'prettier --write'],
 
-  // CSS files
+  // Arquivos CSS
   '*.css': ['stylelint --fix', 'prettier --write'],
 
-  // All other files that Prettier supports
+  // Todos os outros arquivos compatíveis com o Prettier
   '*.{md,json,yml,yaml}': ['prettier --write']
 };

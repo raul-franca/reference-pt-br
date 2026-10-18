@@ -7,27 +7,27 @@ tags:
   - css
   - style
 categories:
-  - Programming
+  - Programação
 intro: |
-  This is a quick reference cheat sheet for CSS goodness, listing selector syntax, properties, units and other useful bits of information.
+  Este é um cheat sheet de referência rápida para CSS, listando sintaxe de seletores, propriedades, unidades e outras informações úteis.
 plugins:
   - copyCode
   - runCode
 ---
 
-## Getting Started
+## Primeiros passos
 
-### Introduction {.row-span-3}
+### Introdução {.row-span-3}
 
-CSS is rich in capabilities and is more than simply laying out pages.
+CSS é rico em recursos e vai além de simplesmente montar o layout de páginas.
 
-#### External stylesheet
+#### Folha de estilo externa
 
 ```html {.wrap}
 <link href="./path/to/stylesheet/style.css" rel="stylesheet" type="text/css" />
 ```
 
-#### Internal stylesheet
+#### Folha de estilo interna
 
 ```html
 <style>
@@ -37,7 +37,7 @@ CSS is rich in capabilities and is more than simply laying out pages.
 </style>
 ```
 
-#### Inline styles
+#### Estilos inline
 
 ```html {.wrap}
 <h2 style="text-align: center;">Centered text</h2>
@@ -45,14 +45,14 @@ CSS is rich in capabilities and is more than simply laying out pages.
 <p style="color: blue; font-size: 18px;">Blue, 18-point text</p>
 ```
 
-### Add class
+### Adicionar classe
 
 ```html
 <div class="classname"></div>
 <div class="class1 classn ..."></div>
 ```
 
-Support multiple classes on one element.
+Suporta várias classes em um único elemento.
 
 ### !important
 
@@ -62,9 +62,9 @@ Support multiple classes on one element.
 }
 ```
 
-Overrides all previous styling rules.
+Sobrepõe todas as regras de estilo anteriores.
 
-### Selector
+### Seletor
 
 ```css
 h1 {
@@ -77,9 +77,9 @@ div > p {
 }
 ```
 
-See: [Selectors](#css-selectors)
+Veja: [Seletores](#css-selectors)
 
-### Text color
+### Cor do texto
 
 ```css
 color: #2a2aff;
@@ -88,9 +88,9 @@ color: rgb(34, 12, 64, 0.6);
 color: hsla(30 100% 50% / 0.6);
 ```
 
-See: [Colors](#css-colors)
+Veja: [Cores](#css-colors)
 
-### Background
+### Plano de fundo
 
 ```css
 background-color: blue;
@@ -98,9 +98,9 @@ background-image: url('nyan-cat.gif');
 background-image: url('../image.png');
 ```
 
-See: [Backgrounds](#css-backgrounds)
+Veja: [Planos de fundo](#css-backgrounds)
 
-### Font
+### Fonte
 
 ```css
 .page-title {
@@ -110,9 +110,9 @@ See: [Backgrounds](#css-backgrounds)
 }
 ```
 
-See: [Fonts](#css-fonts)
+Veja: [Fontes](#css-fonts)
 
-### Position
+### Posicionamento
 
 ```css
 .box {
@@ -122,9 +122,9 @@ See: [Fonts](#css-fonts)
 }
 ```
 
-See also: [Position](https://learn-the-web.algonquindesign.ca/topics/css-layout-cheat-sheet/)
+Veja também: [Posicionamento](https://learn-the-web.algonquindesign.ca/topics/css-layout-cheat-sheet/)
 
-### Animation
+### Animação
 
 ```css
 animation: 300ms linear 0s infinite;
@@ -132,9 +132,9 @@ animation: 300ms linear 0s infinite;
 animation: bounce 300ms linear infinite;
 ```
 
-See: [Animation](#css-animation)
+Veja: [Animação](#css-animation)
 
-### Comment
+### Comentário
 
 ```css
 /* This is a single line comment */
@@ -143,7 +143,7 @@ See: [Animation](#css-animation)
    multi-line comment */
 ```
 
-### Flex layout
+### Layout flex
 
 ```css
 div {
@@ -156,9 +156,9 @@ div {
 }
 ```
 
-See: [Flexbox](#css-flexbox) | [Flex Tricks](#css-flexbox-tricks)
+Veja: [Flexbox](#css-flexbox) | [Truques de flex](#css-flexbox-tricks)
 
-### Grid layout
+### Layout grid
 
 ```css
 #container {
@@ -173,9 +173,9 @@ See: [Flexbox](#css-flexbox) | [Flex Tricks](#css-flexbox-tricks)
 }
 ```
 
-See: [Grid Layout](#css-grid-layout)
+Veja: [Layout grid](#css-grid-layout)
 
-### Variable & Counter
+### Variável e contador
 
 ```css
 counter-set: subsection;
@@ -190,13 +190,13 @@ element {
 }
 ```
 
-See: [Dynamic content](#css-dynamic-content)
+Veja: [Conteúdo dinâmico](#css-dynamic-content)
 
-## CSS Selectors
+## Seletores CSS
 
-### Examples {.row-span-2}
+### Exemplos {.row-span-2}
 
-#### Groups Selector
+#### Seletor de grupo
 
 ```css
 h1,
@@ -205,7 +205,7 @@ h2 {
 }
 ```
 
-#### Chaining Selector
+#### Seletor encadeado
 
 ```css
 h3.section-heading {
@@ -213,7 +213,7 @@ h3.section-heading {
 }
 ```
 
-#### Attribute Selector
+#### Seletor de atributo
 
 ```css
 div[attribute='SomeValue'] {
@@ -221,7 +221,7 @@ div[attribute='SomeValue'] {
 }
 ```
 
-#### First Child Selector
+#### Seletor de primeiro filho
 
 ```css
 p:first-child {
@@ -229,7 +229,7 @@ p:first-child {
 }
 ```
 
-#### No Children Selector
+#### Seletor sem filhos
 
 ```css
 .box:empty {
@@ -239,116 +239,116 @@ p:first-child {
 }
 ```
 
-### Basic
+### Básico
 
-|              |                             |
-| ------------ | --------------------------- |
-| `*`          | All elements                |
-| `div`        | All div tags                |
-| `.classname` | All elements with class     |
-| `#idname`    | Element with ID             |
-| `div,p`      | All divs and paragraphs     |
-| `#idname *`  | All elements inside #idname |
+|              |                                      |
+| ------------ | ------------------------------------ |
+| `*`          | Todos os elementos                   |
+| `div`        | Todas as tags div                    |
+| `.classname` | Todos os elementos com classe        |
+| `#idname`    | Elemento com ID                      |
+| `div,p`      | Todos os divs e parágrafos           |
+| `#idname *`  | Todos os elementos dentro de #idname |
 
-See also: [Type](https://developer.mozilla.org/en-US/docs/Web/CSS/Type_selectors) /
+Veja também: seletores [Type](https://developer.mozilla.org/en-US/docs/Web/CSS/Type_selectors) /
 [Class](https://developer.mozilla.org/en-US/docs/Web/CSS/Class_selectors) /
 [ID](https://developer.mozilla.org/en-US/docs/Web/CSS/ID_selectors) /
-[Universal](https://developer.mozilla.org/en-US/docs/Web/CSS/Universal_selectors) selectors
+[Universal](https://developer.mozilla.org/en-US/docs/Web/CSS/Universal_selectors)
 
-### Combinators
+### Combinadores
 
-| Selector        | Description                           |
-| --------------- | ------------------------------------- |
-| `div.classname` | Div with certain classname            |
-| `div#idname`    | Div with certain ID                   |
-| `div p`         | Paragraphs inside divs                |
-| `div > p`       | All p tags<br>_one level deep in div_ |
-| `div + p`       | P tags immediately after div          |
-| `div ~ p`       | P tags preceded by div                |
+| Seletor         | Descrição                                   |
+| --------------- | ------------------------------------------- |
+| `div.classname` | Div com determinada classe                  |
+| `div#idname`    | Div com determinado ID                      |
+| `div p`         | Parágrafos dentro de divs                   |
+| `div > p`       | Todas as tags p<br>_um nível dentro da div_ |
+| `div + p`       | Tags p imediatamente após div               |
+| `div ~ p`       | Tags p precedidas por div                   |
 
-See also: [Adjacent](https://developer.mozilla.org/en-US/docs/Web/CSS/Adjacent_sibling_combinator) /
+Veja também: seletores [Adjacent](https://developer.mozilla.org/en-US/docs/Web/CSS/Adjacent_sibling_combinator) /
 [Sibling](https://developer.mozilla.org/en-US/docs/Web/CSS/General_sibling_combinator) /
-[Child](https://developer.mozilla.org/en-US/docs/Web/CSS/Child_combinator) selectors
+[Child](https://developer.mozilla.org/en-US/docs/Web/CSS/Child_combinator)
 
-### Attribute selectors
+### Seletores de atributo
 
 |                      |                                    |
 | -------------------- | ---------------------------------- | ---------------------------- |
-| `a[target]`          | With a <yel>target</yel> attribute |
-| `a[target="_blank"]` | Open in new tab                    |
-| `a[href^="/index"]`  | Starts with <yel>/index</yel>      |
-| `[class              | ="chair"]`                         | Starts with <yel>chair</yel> |
-| `[class*="chair"]`   | containing <yel>chair</yel>        |
-| `[title~="chair"]`   | Contains the word <yel>chair</yel> |
-| `a[href$=".doc"]`    | Ends with <yel>.doc</yel>          |
-| `[type="button"]`    | Specified type                     |
+| `a[target]`          | Com atributo <yel>target</yel>     |
+| `a[target="_blank"]` | Abre em nova aba                   |
+| `a[href^="/index"]`  | Começa com <yel>/index</yel>       |
+| `[class              | ="chair"]`                         | Começa com <yel>chair</yel> |
+| `[class*="chair"]`   | contendo <yel>chair</yel>          |
+| `[title~="chair"]`   | Contém a palavra <yel>chair</yel>  |
+| `a[href$=".doc"]`    | Termina com <yel>.doc</yel>        |
+| `[type="button"]`    | Tipo especificado                  |
 
-See also: [Attribute selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors)
+Veja também: [Seletores de atributo](https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors)
 
-### User action pseudo classes
+### Pseudo-classes de ação do usuário
 
-|              |                         |
-| ------------ | ----------------------- |
-| `a:link    ` | Link in normal state    |
-| `a:active  ` | Link in clicked state   |
-| `a:hover   ` | Link with mouse over it |
-| `a:visited ` | Visited link            |
+|              |                          |
+| ------------ | ------------------------ |
+| `a:link    ` | Link em estado normal    |
+| `a:active  ` | Link no estado clicado   |
+| `a:hover   ` | Link com o mouse em cima |
+| `a:visited ` | Link visitado            |
 
-### Pseudo classes
+### Pseudo-classes
 
 |                   |                                                                                         |
 | ----------------- | --------------------------------------------------------------------------------------- |
-| `p::after`        | Add content after p                                                                     |
-| `p::before`       | Add content before p                                                                    |
-| `p::first-letter` | First letter in p                                                                       |
-| `p::first-line`   | First line in p                                                                         |
-| `::selection`     | Selected by user                                                                        |
-| `::placeholder`   | [Placeholder](https://developer.mozilla.org/en-US/docs/Web/CSS/::placeholder) attribute |
-| `:root`           | Documents root element                                                                  |
-| `:target`         | Highlight active anchor                                                                 |
-| `div:empty`       | Element with no children                                                                |
-| `p:lang(en)`      | P with en language attribute                                                            |
-| `:not(span)`      | Element that's not a span                                                               |
+| `p::after`        | Adiciona conteúdo depois de p                                                           |
+| `p::before`       | Adiciona conteúdo antes de p                                                            |
+| `p::first-letter` | Primeira letra de p                                                                     |
+| `p::first-line`   | Primeira linha de p                                                                     |
+| `::selection`     | Selecionado pelo usuário                                                                |
+| `::placeholder`   | atributo [Placeholder](https://developer.mozilla.org/en-US/docs/Web/CSS/::placeholder)  |
+| `:root`           | Elemento raiz do documento                                                              |
+| `:target`         | Destaca a âncora ativa                                                                  |
+| `div:empty`       | Elemento sem filhos                                                                     |
+| `p:lang(en)`      | P com atributo de idioma en                                                             |
+| `:not(span)`      | Elemento que não é um span                                                              |
 
-### Input pseudo classes
+### Pseudo-classes de input
 
 |                       |                                                                                             |
 | --------------------- | ------------------------------------------------------------------------------------------- |
-| `input:checked`       | Checked inputs                                                                              |
-| `input:disabled`      | Disabled inputs                                                                             |
-| `input:enabled`       | Enabled inputs                                                                              |
-| `input:focus`         | Input has focus                                                                             |
-| `input:in-range`      | Value in range                                                                              |
-| `input:out-of-range`  | Input value out of range                                                                    |
-| `input:valid`         | Input with valid value                                                                      |
-| `input:invalid`       | Input with invalid value                                                                    |
-| `input:optional`      | No required attribute                                                                       |
-| `input:required`      | Input with required attribute                                                               |
-| `input:read-only`     | With readonly attribute                                                                     |
-| `input:read-write`    | No readonly attribute                                                                       |
-| `input:indeterminate` | With [indeterminate](https://developer.mozilla.org/en-US/docs/Web/CSS/:indeterminate) state |
+| `input:checked`       | Inputs marcados                                                                             |
+| `input:disabled`      | Inputs desabilitados                                                                        |
+| `input:enabled`       | Inputs habilitados                                                                          |
+| `input:focus`         | Input com foco                                                                              |
+| `input:in-range`      | Valor dentro do intervalo                                                                   |
+| `input:out-of-range`  | Valor do input fora do intervalo                                                            |
+| `input:valid`         | Input com valor válido                                                                      |
+| `input:invalid`       | Input com valor inválido                                                                    |
+| `input:optional`      | Sem atributo required                                                                       |
+| `input:required`      | Input com atributo required                                                                 |
+| `input:read-only`     | Com atributo readonly                                                                       |
+| `input:read-write`    | Sem atributo readonly                                                                       |
+| `input:indeterminate` | Com estado [indeterminate](https://developer.mozilla.org/en-US/docs/Web/CSS/:indeterminate) |
 
-### Structural pseudo classes
+### Pseudo-classes estruturais
 
-|                         |                            |
-| ----------------------- | -------------------------- |
-| `p:first-child`         | First child                |
-| `p:last-child`          | Last child                 |
-| `p:first-of-type`       | First of some type         |
-| `p:last-of-type`        | Last of some type          |
-| `p:nth-child(2)`        | Second child of its parent |
-| `p:nth-child(3n42)`     | Nth-child (an + b) formula |
-| `p:nth-last-child(2)`   | Second child from behind   |
-| `p:nth-of-type(2)`      | Second p of its parent     |
-| `p:nth-last-of-type(2)` | ...from behind             |
-| `p:only-of-type`        | Unique of its parent       |
-| `p:only-child`          | Only child of its parent   |
+|                         |                                   |
+| ----------------------- | --------------------------------- |
+| `p:first-child`         | Primeiro filho                    |
+| `p:last-child`          | Último filho                      |
+| `p:first-of-type`       | Primeiro de algum tipo            |
+| `p:last-of-type`        | Último de algum tipo              |
+| `p:nth-child(2)`        | Segundo filho de seu pai          |
+| `p:nth-child(3n42)`     | Fórmula Nth-child (an + b)        |
+| `p:nth-last-child(2)`   | Segundo filho de trás para frente |
+| `p:nth-of-type(2)`      | Segundo p de seu pai              |
+| `p:nth-last-of-type(2)` | ...de trás para frente            |
+| `p:only-of-type`        | Único de seu pai                  |
+| `p:only-child`          | Único filho de seu pai            |
 
-## CSS Fonts
+## Fontes CSS
 
-### Properties {.row-span-3}
+### Propriedades {.row-span-3}
 
-| Property          | Description     |
+| Propriedade       | Descrição       |
 | ----------------- | --------------- |
 | `font-family:`    | \<font> <fontN> |
 | `font-size:`      | \<size>         |
@@ -361,16 +361,16 @@ none |
 | `text-align:` | left / right<br>center / justify | | `text-transform:` | capitalize / uppercase / lowercase |
 {.left-text}
 
-See also: [Font](https://developer.mozilla.org/en-US/docs/Web/CSS/font)
+Veja também: [Fonte](https://developer.mozilla.org/en-US/docs/Web/CSS/font)
 
 ### Shorthand {.secondary .col-span-2}
 
-|         | style    | weight | size (required) |     | line-height | family            |
-| ------- | -------- | ------ | --------------- | --- | ----------- | ----------------- |
-| `font:` | `italic` | `400`  | `14px`          | `/` | `1.5`       | `sans-serif`      |
-|         | style    | weight | size (required) |     | line-height | family (required) |
+|         | estilo   | peso  | tamanho (obrigatório) |     | altura da linha | família               |
+| ------- | -------- | ----- | --------------------- | --- | --------------- | --------------------- |
+| `font:` | `italic` | `400` | `14px`                | `/` | `1.5`           | `sans-serif`          |
+|         | estilo   | peso  | tamanho (obrigatório) |     | altura da linha | família (obrigatório) |
 
-### Example
+### Exemplo
 
 ```css
 font-family: Arial, sans-serif;
@@ -378,7 +378,7 @@ font-size: 12pt;
 letter-spacing: 0.02em;
 ```
 
-### Case {.row-span-2}
+### Capitalização {.row-span-2}
 
 ```css
 /* Hello */
@@ -400,9 +400,9 @@ text-transform: lowercase;
 }
 ```
 
-## CSS Colors
+## Cores CSS
 
-### Named color
+### Cor nomeada
 
 ```css
 color: red;
@@ -411,7 +411,7 @@ color: tan;
 color: rebeccapurple;
 ```
 
-### Hexadecimal color
+### Cor hexadecimal
 
 ```css
 color: #090;
@@ -420,7 +420,7 @@ color: #090a;
 color: #009900aa;
 ```
 
-### rgb() Colors
+### Cores rgb()
 
 ```css
 color: rgb(34, 12, 64, 0.6);
@@ -431,7 +431,7 @@ color: rgb(34 12 64 / 60%);
 color: rgba(34.6 12 64 / 30%);
 ```
 
-### HSL Colors
+### Cores HSL
 
 ```css
 color: hsl(30, 100%, 50%, 0.6);
@@ -442,7 +442,7 @@ color: hsl(30 100% 50% / 60%);
 color: hsla(30.2 100% 50% / 60%);
 ```
 
-### Other
+### Outros
 
 ```css
 color: inherit;
@@ -453,28 +453,28 @@ color: transparent;
 color: currentcolor; /* keyword */
 ```
 
-## CSS Backgrounds
+## Planos de fundo CSS
 
-### Properties {.row-span-2}
+### Propriedades {.row-span-2}
 
-| Property      | Description   |
+| Propriedade   | Descrição     |
 | ------------- | ------------- |
 | `background:` | _(Shorthand)_ |
 
-| `background-color:` | See: [Colors](#css-colors) | | `background-image:` | url(...) | | `background-position:` |
+| `background-color:` | Veja: [Cores](#css-colors) | | `background-image:` | url(...) | | `background-position:` |
 left/center/right<br/>top/center/bottom | | `background-size:` | cover X Y | | `background-clip:` |
 border-box<br/>padding-box<br/>content-box | | `background-repeat:` | no-repeat<br/>repeat-x<br/>repeat-y | |
 `background-attachment:` | scroll/fixed/local | {.left-text}
 
 ### Shorthand {.secondary .col-span-2}
 
-|               | color  | image        | positionX | positionY |     | size           | repeat      | attachment |
-| ------------- | ------ | ------------ | --------- | --------- | --- | -------------- | ----------- | ---------- |
-| `background:` | `#ff0` | `url(a.jpg)` | `left`    | `top`     | `/` | `100px` `auto` | `no-repeat` | `fixed;`   |
-| `background:` | `#abc` | `url(b.png)` | `center`  | `center`  | `/` | `cover`        | `repeat-x`  | `local;`   |
-|               | color  | image        | posX      | posY      |     | size           | repeat      | attach..   |
+|               | cor    | imagem       | posX     | posY     |     | tamanho        | repetição   | fixação  |
+| ------------- | ------ | ------------ | -------- | -------- | --- | -------------- | ----------- | -------- |
+| `background:` | `#ff0` | `url(a.jpg)` | `left`   | `top`    | `/` | `100px` `auto` | `no-repeat` | `fixed;` |
+| `background:` | `#abc` | `url(b.png)` | `center` | `center` | `/` | `cover`        | `repeat-x`  | `local;` |
+|               | cor    | imagem       | posX     | posY     |     | tamanho        | repetição   | anexo..  |
 
-### Examples {.col-span-2}
+### Exemplos {.col-span-2}
 
 ```css {.wrap}
 background: url(img_man.jpg) no-repeat center;
@@ -492,9 +492,9 @@ background: linear-gradient(
 );
 ```
 
-## CSS The Box Model
+## O box model do CSS
 
-### Maximums/Minimums
+### Máximos/mínimos
 
 ```css
 .column {
@@ -503,7 +503,7 @@ background: linear-gradient(
 }
 ```
 
-See also: [max-width](https://developer.mozilla.org/en-US/docs/Web/CSS/max-width) /
+Veja também: [max-width](https://developer.mozilla.org/en-US/docs/Web/CSS/max-width) /
 [min-width](https://developer.mozilla.org/en-US/docs/Web/CSS/min-width) /
 [max-height](https://developer.mozilla.org/en-US/docs/Web/CSS/max-height) /
 [min-height](https://developer.mozilla.org/en-US/docs/Web/CSS/min-height)
@@ -517,7 +517,7 @@ See also: [max-width](https://developer.mozilla.org/en-US/docs/Web/CSS/max-width
 }
 ```
 
-See also: [Margin](https://developer.mozilla.org/en-US/docs/Web/CSS/margin) /
+Veja também: [Margin](https://developer.mozilla.org/en-US/docs/Web/CSS/margin) /
 [Padding](https://developer.mozilla.org/en-US/docs/Web/CSS/padding)
 
 ### Box-sizing
@@ -528,9 +528,9 @@ See also: [Margin](https://developer.mozilla.org/en-US/docs/Web/CSS/margin) /
 }
 ```
 
-See also: [Box-sizing](https://developer.mozilla.org/en-US/docs/Web/CSS/Box-sizing)
+Veja também: [Box-sizing](https://developer.mozilla.org/en-US/docs/Web/CSS/Box-sizing)
 
-### Visibility
+### Visibilidade
 
 ```css
 .invisible-elements {
@@ -538,9 +538,9 @@ See also: [Box-sizing](https://developer.mozilla.org/en-US/docs/Web/CSS/Box-sizi
 }
 ```
 
-See also: [Visibility](https://developer.mozilla.org/en-US/docs/Web/CSS/visibility)
+Veja também: [Visibility](https://developer.mozilla.org/en-US/docs/Web/CSS/visibility)
 
-### Auto keyword
+### Palavra-chave auto
 
 ```css
 div {
@@ -548,7 +548,7 @@ div {
 }
 ```
 
-See also: [Margin](https://developer.mozilla.org/en-US/docs/Web/CSS/margin)
+Veja também: [Margin](https://developer.mozilla.org/en-US/docs/Web/CSS/margin)
 
 ### Overflow
 
@@ -558,20 +558,20 @@ See also: [Margin](https://developer.mozilla.org/en-US/docs/Web/CSS/margin)
 }
 ```
 
-See also: [Overflow](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow)
+Veja também: [Overflow](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow)
 
-## CSS Animation {.cols-5}
+## Animação CSS {.cols-5}
 
 ### Shorthand {.col-span-5 .secondary}
 
-|              | name     | duration | timing-function | delay   | count      | direction           | fill-mode | play-state |
-| ------------ | -------- | -------- | --------------- | ------- | ---------- | ------------------- | --------- | ---------- |
-| `animation:` | `bounce` | `300ms`  | `linear`        | `100ms` | `infinite` | `alternate-reverse` | `both`    | `reverse`  |
-|              | name     | duration | timing-function | delay   | count      | direction           | fill-mode | play-state |
+|              | nome     | duração | função de timing | atraso  | contagem   | direção             | modo de preenchimento | estado de reprodução |
+| ------------ | -------- | ------- | ---------------- | ------- | ---------- | ------------------- | --------------------- | -------------------- |
+| `animation:` | `bounce` | `300ms` | `linear`         | `100ms` | `infinite` | `alternate-reverse` | `both`                | `reverse`            |
+|              | nome     | duração | função de timing | atraso  | contagem   | direção             | modo de preenchimento | estado de reprodução |
 
-### Properties {.row-span-2 .col-span-2}
+### Propriedades {.row-span-2 .col-span-2}
 
-| Property                     | Value                                                  |
+| Propriedade                  | Valor                                                  |
 | ---------------------------- | ------------------------------------------------------ |
 | `animation:`                 | _(shorthand)_                                          |
 | `animation-name:`            | \<name>                                                |
@@ -585,9 +585,9 @@ See also: [Overflow](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow)
 
 {.left-text}
 
-See also: [Animation](https://developer.mozilla.org/en-US/docs/Web/CSS/animation)
+Veja também: [Animação](https://developer.mozilla.org/en-US/docs/Web/CSS/animation)
 
-### Example {.col-span-3}
+### Exemplo {.col-span-3}
 
 ```css
 /* @keyframes duration | timing-function | delay |
@@ -607,15 +607,15 @@ animation: bounce 300ms linear infinite alternate-reverse;
 animation: bounce 300ms linear 2s infinite alternate-reverse forwards normal;
 ```
 
-### Javascript Event {.col-span-3}
+### Evento JavaScript {.col-span-3}
 
 ```js
 .one('webkitAnimationEnd oanimationend msAnimationEnd animationend')
 ```
 
-## CSS Flexbox {.cols-2}
+## Flexbox CSS {.cols-2}
 
-### Simple example
+### Exemplo simples
 
 ```css
 .container {
@@ -668,7 +668,7 @@ justify-content: space-evenly; /* [  x  x  x  ] */
 
 }
 
-### Child
+### Filho
 
 .container > div {
 
@@ -693,9 +693,9 @@ margin-left: auto; /* right */
 
 }
 
-## CSS Flexbox Tricks
+## Truques com Flexbox
 
-### Vertical center
+### Centralização vertical
 
 ```css
 .container {
@@ -709,7 +709,7 @@ margin-left: auto; /* right */
 }
 ```
 
-### Vertical center (2)
+### Centralização vertical (2)
 
 ```css
 .container {
@@ -723,7 +723,7 @@ margin-left: auto; /* right */
 }
 ```
 
-### Reordering
+### Reordenação
 
 ```css
 .container > .top {
@@ -735,7 +735,7 @@ margin-left: auto; /* right */
 }
 ```
 
-### Mobile layout
+### Layout mobile
 
 ```css
 .container {
@@ -752,9 +752,9 @@ margin-left: auto; /* right */
 }
 ```
 
-A fixed-height top bar and a dynamic-height content area.
+Uma barra superior com altura fixa e uma área de conteúdo com altura dinâmica.
 
-### Table-like {.col-span-2}
+### Semelhante a tabela {.col-span-2}
 
 ```css
 .container {
@@ -773,7 +773,7 @@ A fixed-height top bar and a dynamic-height content area.
 }
 ```
 
-This creates columns that have different widths, but size accordingly according to the circumstances.
+Isso cria colunas com larguras diferentes, que se dimensionam conforme as circunstâncias.
 
 ### Vertical
 
@@ -783,9 +783,9 @@ This creates columns that have different widths, but size accordingly according 
 }
 ```
 
-Vertically-center all items.
+Centraliza verticalmente todos os itens.
 
-### Left and right {.col-span-2}
+### Esquerda e direita {.col-span-2}
 
 ```css
 .menu > .left {
@@ -796,9 +796,9 @@ Vertically-center all items.
 }
 ```
 
-## CSS Grid Layout
+## Layout grid do CSS
 
-### Grid Template Columns
+### Colunas do template grid
 
 ```css
 #grid-container {
@@ -808,7 +808,7 @@ Vertically-center all items.
 }
 ```
 
-### fr Relative Unit
+### Unidade relativa fr
 
 ```css
 .grid {
@@ -818,7 +818,7 @@ Vertically-center all items.
 }
 ```
 
-### Grid Gap
+### Gap do grid
 
 ```css
 /*The distance between rows is 20px*/
@@ -829,7 +829,7 @@ Vertically-center all items.
 }
 ```
 
-### CSS Block Level Grid
+### Grid em nível de bloco
 
 ```css
 #grid-container {
@@ -837,13 +837,13 @@ Vertically-center all items.
 }
 ```
 
-### CSS grid-row
+### grid-row do CSS
 
-CSS syntax:
+Sintaxe CSS:
 
 - grid-row: grid-row-start / grid-row-end;
 
-#### Example
+#### Exemplo
 
 ```css
 .item {
@@ -851,7 +851,7 @@ CSS syntax:
 }
 ```
 
-### CSS Inline Level Grid
+### Grid em nível inline
 
 ```css
 #grid-container {
@@ -859,7 +859,7 @@ CSS syntax:
 }
 ```
 
-### minmax() Function
+### Função minmax()
 
 ```css {.wrap}
 .grid {
@@ -870,27 +870,27 @@ CSS syntax:
 
 ### grid-row-start & grid-row-end
 
-CSS syntax:
+Sintaxe CSS:
 
 - grid-row-start: auto|row-line;<br>
 - grid-row-end: auto|row-line|span n;
 
-#### Example
+#### Exemplo
 
 ```css
 grid-row-start: 2;
 grid-row-end: span 2;
 ```
 
-### CSS grid-row-gap
+### grid-row-gap do CSS
 
 ```css
 grid-row-gap: length;
 ```
 
-Any legal length value, like px or %. 0 is the default value
+Qualquer valor de comprimento válido, como px ou %. 0 é o valor padrão
 
-### CSS grid-area
+### grid-area do CSS
 
 ```css
 .item1 {
@@ -898,7 +898,7 @@ Any legal length value, like px or %. 0 is the default value
 }
 ```
 
-### Justify Items
+### Justificar itens
 
 ```css
 #container {
@@ -910,7 +910,7 @@ Any legal length value, like px or %. 0 is the default value
 }
 ```
 
-### CSS grid-template-areas
+### grid-template-areas do CSS
 
 ```css
 .item {
@@ -924,7 +924,7 @@ Any legal length value, like px or %. 0 is the default value
 }
 ```
 
-### Justify Self
+### Justificar item
 
 ```css
 #grid-container {
@@ -937,9 +937,9 @@ Any legal length value, like px or %. 0 is the default value
 }
 ```
 
-The grid items are positioned to the right (end) of the row.
+Os itens do grid são posicionados à direita (end) da linha.
 
-### Align Items
+### Alinhar itens
 
 ```css
 #container {
@@ -951,11 +951,11 @@ The grid items are positioned to the right (end) of the row.
 }
 ```
 
-## CSS Dynamic Content
+## Conteúdo dinâmico do CSS
 
-### Variable
+### Variável
 
-Define CSS Variable
+Defina uma variável CSS
 
 ```css
 :root {
@@ -964,7 +964,7 @@ Define CSS Variable
 }
 ```
 
-Variable Usage
+Uso da variável
 
 ```css
 #firstParagraph {
@@ -973,9 +973,9 @@ Variable Usage
 }
 ```
 
-See also: [CSS Variable](https://developer.mozilla.org/en-US/docs/Web/CSS/--*)
+Veja também: [Variável CSS](https://developer.mozilla.org/en-US/docs/Web/CSS/--*)
 
-### Counter
+### Contador
 
 ```css
 /* Set "my-counter" to 0 */
@@ -997,9 +997,9 @@ counter-increment: my-counter -1;
 counter-reset: my-counter;
 ```
 
-See also: [Counter set](https://developer.mozilla.org/en-US/docs/Web/CSS/counter-set)
+Veja também: [Counter set](https://developer.mozilla.org/en-US/docs/Web/CSS/counter-set)
 
-### Using counters
+### Usando contadores
 
 ```css
 body {
@@ -1024,9 +1024,9 @@ li::before {
 }
 ```
 
-## Css 3 tricks
+## Truques de CSS 3
 
-### Scrollbar smooth
+### Scrollbar suave
 
 ```css
 html {
@@ -1034,11 +1034,11 @@ html {
 }
 ```
 
-[Click me](#css-getting-started), the page will scroll smoothly to Getting started
+[Clique aqui](#css-getting-started), a página rolará suavemente até Primeiros passos
 
-## Modern CSS
+## CSS moderno
 
-### container queries(size)
+### container queries (size)
 
 ```css
 .element-wrap {
@@ -1052,7 +1052,7 @@ html {
 }
 ```
 
-### container qeries(style)
+### container queries (style)
 
 ```css
 .container {
@@ -1078,14 +1078,14 @@ html {
 }
 ```
 
-### container units
+### Unidades de container
 
-- The units are cqw (“container query width”),
+- As unidades são cqw (“container query width”),
 - cqh (“container query height”),
 - cqi (“container query inline”),
 - cqb (“container query block”),
-- cqmin (smaller of cqi and cqb),
-- and cqmax (larger of cqi and cqb)
+- cqmin (menor entre cqi e cqb),
+- e cqmax (maior entre cqi e cqb)
 
 ```css
 .card {
@@ -1101,7 +1101,7 @@ h2 {
 }
 ```
 
-### the :has() pseudo selector
+### O pseudo-seletor :has()
 
 ```css
 figure:has(figcaption) {
@@ -1110,7 +1110,7 @@ figure:has(figcaption) {
 }
 ```
 
-### nesting
+### Aninhamento (nesting)
 
 ```css
 .cards {
@@ -1127,7 +1127,7 @@ figure:has(figcaption) {
 
 ###
 
-### scoping
+### Escopo (scoping)
 
 ```css
 @scope {
@@ -1149,7 +1149,7 @@ figure:has(figcaption) {
 }
 ```
 
-### cascade layers
+### Camadas de cascata (cascade layers)
 
 ```css
 /* Specify the order to apply styles in cascade */
@@ -1168,7 +1168,7 @@ figure:has(figcaption) {
 }
 ```
 
-### logical properties
+### Propriedades lógicas
 
 ```css
 button {
@@ -1190,7 +1190,7 @@ button {
 }
 ```
 
-### p3 colors
+### Cores p3
 
 ```html
 <div class="container">
@@ -1254,7 +1254,7 @@ button {
 </div>
 ```
 
-### color mixing
+### Mistura de cores
 
 ```css
 .swatch {
@@ -1277,7 +1277,7 @@ button {
 }
 ```
 
-### margin trim
+### Margin trim
 
 ```css
 .container {
@@ -1291,7 +1291,7 @@ button {
 }
 ```
 
-### text wrapping
+### Quebra de texto
 
 ```css
 .balance {
@@ -1311,7 +1311,7 @@ main {
 }
 ```
 
-### subgrid
+### Subgrid
 
 ```css
 .grid {
@@ -1334,12 +1334,12 @@ main {
 }
 ```
 
-## Also see {.cols-1}
+## Veja também {.cols-1}
 
 - [frontendmasters.com ](https://frontendmasters.com/blog/what-you-need-to-know-about-modern-css-spring-2024-edition/)
-- [CSS selectors cheatsheet](https://frontend30.com/css-selectors-cheatsheet/) _(frontend30.com)_
-- [MDN: Using CSS flexbox](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Flexible_boxes)
+- [Cheat sheet de seletores CSS](https://frontend30.com/css-selectors-cheatsheet/) _(frontend30.com)_
+- [MDN: Usando flexbox no CSS](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Flexible_boxes)
 - [Ultimate flexbox cheatsheet](http://www.sketchingwithcss.com/samplechapter/cheatsheet.html)
 - [GRID: A simple visual cheatsheet](http://grid.malven.co/)
 - [CSS Tricks: A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
-- [Browser support](https://caniuse.com/#feat=css-grid)
+- [Suporte dos navegadores](https://caniuse.com/#feat=css-grid)

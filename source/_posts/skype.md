@@ -7,59 +7,59 @@ tags:
   -
   -
 categories:
-  - Keyboard Shortcuts
+  - Atalhos de Teclado
 intro: |
-  A visual cheat-sheet for the 31 keyboard shortcuts found in Skype
+  Um cheat sheet visual para os 31 atalhos de teclado do Skype
 ---
 
-## Keyboard Shortcuts {.cols-2}
+## Atalhos de Teclado {.cols-2}
 
-### General I
+### Gerais I
 
-| Shortcut            | Action                                    |
-| ------------------- | ----------------------------------------- |
-| `Ctrl` `Shift` `O`  | Open Notification panel                   |
-| `Ctrl` `,`          | Open app settings                         |
-| `Ctrl` `2`          | Launch main dial pad                      |
-| `Ctrl` `N`          | Start new conversation                    |
-| `Ctrl` `G`          | New group                                 |
-| `Ctrl` `F`          | Find in current conversation              |
-| `Shift` `Enter`     | Select next message in search results     |
-| `Enter`             | Select previous message in search results |
-| `Ctrl` `Shift` `E`  | Focus Message Composer                    |
-| `Ctrl` `Option` `S` | Search for People, Groups, and Messages   |
-| `Alt` `1`           | Navigate to recent chats                  |
-| `Ctrl` `Shift` `C`  | Open contacts                             |
-| `Ctrl` `Shift` `B`  | Open contact screen to bots               |
-| `Ctrl` `Alt` `O`    | Send feedback                             |
-| `Ctrl` `R`          | Refresh the app                           |
-| `Ctrl` `T`          | Open themes                               |
-
-{.shortcuts}
-
-### General II
-
-| Shortcut           | Action                                   |
-| ------------------ | ---------------------------------------- |
-| `Ctrl` `Shift` `T` | Toggle between light and dark mode       |
-| `Ctrl` `+/-/0`     | Zoom in, out, or actual size             |
-| `Ctrl` `Shift` `E` | Edit the last message sent               |
-| `Ctrl` `I`         | Show conversation profile                |
-| `Ctrl` `Shift` `A` | Add people to conversation or call       |
-| `Ctrl` `E`         | Hide conversation                        |
-| `Ctrl` `Shift` `U` | Mark as unread                           |
-| `Ctrl` `Shift` `K` | Start video call or toggle video on/off  |
-| `Ctrl` `Shift` `L` | Select multiple messages in conversation |
-| `Ctrl` `Shift` `R` | Start or answer audio call               |
-| `Ctrl` `Shift` `F` | Send a file                              |
-| `Ctrl` `Shift` `G` | Open gallery                             |
-| `Ctrl` `S`         | Take a snapshot                          |
-| `Ctrl` `Shift` `H` | Hang up                                  |
-| `Ctrl` `Shift` `M` | Toggle mute                              |
+| Atalho              | Ação                                                      |
+| ------------------- | --------------------------------------------------------- |
+| `Ctrl` `Shift` `O`  | Abre o painel de notificações                             |
+| `Ctrl` `,`          | Abre as configurações do app                              |
+| `Ctrl` `2`          | Abre o teclado de discagem principal                      |
+| `Ctrl` `N`          | Inicia uma nova conversa                                  |
+| `Ctrl` `G`          | Novo grupo                                                |
+| `Ctrl` `F`          | Localiza na conversa atual                                |
+| `Shift` `Enter`     | Seleciona a próxima mensagem nos resultados da pesquisa   |
+| `Enter`             | Seleciona a mensagem anterior nos resultados da pesquisa  |
+| `Ctrl` `Shift` `E`  | Foca o compositor de mensagens                            |
+| `Ctrl` `Option` `S` | Pesquisa pessoas, grupos e mensagens                      |
+| `Alt` `1`           | Navega até as conversas recentes                          |
+| `Ctrl` `Shift` `C`  | Abre os contatos                                          |
+| `Ctrl` `Shift` `B`  | Abre a tela de contatos para bots                         |
+| `Ctrl` `Alt` `O`    | Envia feedback                                            |
+| `Ctrl` `R`          | Atualiza o app                                            |
+| `Ctrl` `T`          | Abre os temas                                             |
 
 {.shortcuts}
 
-## Also see
+### Gerais II
 
-- [Keyboard shortcuts for Skype](https://support.skype.com/en/faq/FA12025/what-are-keyboard-shortcuts-and-how-do-i-use-them-in-skype)
+| Atalho             | Ação                                             |
+| ------------------ | ------------------------------------------------ |
+| `Ctrl` `Shift` `T` | Alterna entre o modo claro e o escuro            |
+| `Ctrl` `+/-/0`     | Aumenta, diminui ou volta ao tamanho real o zoom |
+| `Ctrl` `Shift` `E` | Edita a última mensagem enviada                  |
+| `Ctrl` `I`         | Mostra o perfil da conversa                      |
+| `Ctrl` `Shift` `A` | Adiciona pessoas à conversa ou à chamada         |
+| `Ctrl` `E`         | Oculta a conversa                                |
+| `Ctrl` `Shift` `U` | Marca como não lida                              |
+| `Ctrl` `Shift` `K` | Inicia chamada de vídeo ou ativa/desativa o vídeo |
+| `Ctrl` `Shift` `L` | Seleciona várias mensagens na conversa           |
+| `Ctrl` `Shift` `R` | Inicia ou atende uma chamada de áudio            |
+| `Ctrl` `Shift` `F` | Envia um arquivo                                 |
+| `Ctrl` `Shift` `G` | Abre a galeria                                   |
+| `Ctrl` `S`         | Tira um snapshot                                 |
+| `Ctrl` `Shift` `H` | Desliga                                          |
+| `Ctrl` `Shift` `M` | Ativa/desativa o mudo                            |
+
+{.shortcuts}
+
+## Veja também
+
+- [Atalhos de teclado do Skype](https://support.skype.com/en/faq/FA12025/what-are-keyboard-shortcuts-and-how-do-i-use-them-in-skype)
   _(support.skype.com)_

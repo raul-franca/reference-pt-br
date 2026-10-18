@@ -7,74 +7,74 @@ tags:
   - utility
   - port
 categories:
-  - Linux Command
+  - Comandos Linux
 intro: |
-  This quick reference cheat sheet provides various for using netstat command.
+  Este cheat sheet de referência rápida traz vários exemplos de uso do comando netstat.
 plugins:
   - copyCode
 ---
 
-## Getting Started
+## Primeiros passos
 
-### Statistics
+### Estatísticas
 
-All connections on port 80
+Todas as conexões na porta 80
 
 ```shell script
 $ netstat -anp | grep :80
 ```
 
-Netstat Help
+Ajuda do Netstat
 
 ```shell script
 $ netstat -h
 ```
 
-### Listening
+### Escuta
 
-| Option           | Example              |
-| ---------------- | -------------------- |
-| `netstat -ltunp` | All Listening ports  |
-| `netstat -ltn`   | Listening TCP ports  |
-| `netstat -lun`   | Listening UDP ports  |
-| `netstat -lx`    | Listening Unix ports |
+| Opção            | Exemplo                  |
+| ---------------- | ------------------------ |
+| `netstat -ltunp` | Todas as portas em escuta |
+| `netstat -ltn`   | Portas TCP em escuta     |
+| `netstat -lun`   | Portas UDP em escuta     |
+| `netstat -lx`    | Portas Unix em escuta    |
 
-### Connections
+### Conexões
 
-| Option        | Example             |
-| ------------- | ------------------- |
-| `netstat -a`  | All connections     |
-| `netstat -at` | All TCP connections |
-| `netstat -au` | All UDP connections |
+| Opção         | Exemplo              |
+| ------------- | -------------------- |
+| `netstat -a`  | Todas as conexões    |
+| `netstat -at` | Todas as conexões TCP |
+| `netstat -au` | Todas as conexões UDP |
 
-### Statistics
+### Estatísticas
 
-| Option        | Example                |
-| ------------- | ---------------------- |
-| `netstat -s`  | Display statistics     |
-| `netstat -st` | Display TCP statistics |
-| `netstat -su` | Display UDP statistics |
+| Opção         | Exemplo                 |
+| ------------- | ----------------------- |
+| `netstat -s`  | Exibe estatísticas      |
+| `netstat -st` | Exibe estatísticas TCP  |
+| `netstat -su` | Exibe estatísticas UDP  |
 
-### Networks
+### Redes
 
-| Option        | Example                               |
-| ------------- | ------------------------------------- |
-| `netstat -i`  | Show network interfaces               |
-| `netstat -ie` | Show network interfaces extended info |
+| Opção         | Exemplo                                     |
+| ------------- | ------------------------------------------- |
+| `netstat -i`  | Mostra as interfaces de rede                |
+| `netstat -ie` | Mostra informações estendidas das interfaces de rede |
 
-### Public IP
+### IP público
 
-Check this machine's public IP
+Verifica o IP público desta máquina
 
 ```shell script
 $ curl myip.dog
 ```
 
-More IP tools: [myip.dog](https://myip.dog/)
+Mais ferramentas de IP: [myip.dog](https://myip.dog/)
 
-### Routing
+### Roteamento
 
-| Option        | Example                                 |
-| ------------- | --------------------------------------- |
-| `netstat -r`  | Show routing table                      |
-| `netstat -rn` | Show routing table, don't resolve hosts |
+| Opção         | Exemplo                                    |
+| ------------- | ------------------------------------------ |
+| `netstat -r`  | Mostra a tabela de roteamento              |
+| `netstat -rn` | Mostra a tabela de roteamento, sem resolver hosts |

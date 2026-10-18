@@ -7,106 +7,106 @@ tags:
   -
   -
 categories:
-  - Keyboard Shortcuts
+  - Atalhos de Teclado
 intro: |
-  A visual cheat-sheet for the 65 keyboard shortcuts found in Google Chrome
+  Um cheat sheet visual com os 65 atalhos de teclado do Google Chrome
 ---
 
-## Keyboard Shortcuts {.cols-2}
+## Atalhos de teclado {.cols-2}
 
-### Tab and window
+### Abas e janelas
 
-| Shortcut             | Action                                                      |
+| Atalho               | Ação                                                        |
 | -------------------- | ----------------------------------------------------------- |
-| `Ctrl` `N`           | Open a new window                                           |
-| `Ctrl` `Shift` `N`   | Open a new window in Incognito mode                         |
-| `Ctrl` `T`           | Open a new tab, and jump to it                              |
-| `Ctrl` `Shift` `T`   | Reopen the last closed tab, and jump to it                  |
-| `Ctrl` `Tab`         | Jump to the next open tab                                   |
-| `Ctrl` `Shift` `Tab` | Jump to the previous open tab                               |
-| `Ctrl` `1-8`         | Jump to a specific tab                                      |
-| `Ctrl` `9`           | Jump to the last tab                                        |
-| `Alt` `Home`         | Open your home page in the current tab                      |
-| `Alt` `Left`         | Open the previous page from your history in the current tab |
-| `Alt` `Right`        | Open the next page from your history in the current tab     |
-| `Ctrl` `W`           | Close the current tab                                       |
-| `Ctrl` `Shift` `W`   | Close the current window                                    |
-| `Alt` `Space` `N`    | Minimize the current window                                 |
-| `Alt` `Space` `X`    | Maximize the current window                                 |
-| `Alt` `F4`           | Close the current window                                    |
-| `Ctrl` `Shift` `Q`   | Quite Google Chrome                                         |
+| `Ctrl` `N`           | Abre uma nova janela                                        |
+| `Ctrl` `Shift` `N`   | Abre uma nova janela no modo anônimo                        |
+| `Ctrl` `T`           | Abre uma nova aba e vai para ela                            |
+| `Ctrl` `Shift` `T`   | Reabre a última aba fechada e vai para ela                   |
+| `Ctrl` `Tab`         | Vai para a próxima aba aberta                               |
+| `Ctrl` `Shift` `Tab` | Vai para a aba aberta anterior                              |
+| `Ctrl` `1-8`         | Vai para uma aba específica                                 |
+| `Ctrl` `9`           | Vai para a última aba                                       |
+| `Alt` `Home`         | Abre sua página inicial na aba atual                        |
+| `Alt` `Left`         | Abre a página anterior do seu histórico na aba atual        |
+| `Alt` `Right`        | Abre a próxima página do seu histórico na aba atual         |
+| `Ctrl` `W`           | Fecha a aba atual                                           |
+| `Ctrl` `Shift` `W`   | Fecha a janela atual                                        |
+| `Alt` `Space` `N`    | Minimiza a janela atual                                     |
+| `Alt` `Space` `X`    | Maximiza a janela atual                                     |
+| `Alt` `F4`           | Fecha a janela atual                                        |
+| `Ctrl` `Shift` `Q`   | Encerra o Google Chrome                                     |
 
 {.shortcuts}
 
-### Google Chrome features
+### Recursos do Google Chrome
 
-| Shortcut                | Action                                             |
-| ----------------------- | -------------------------------------------------- |
-| `Alt` `F`               | Open the Chrome menu                               |
-| `Ctrl` `Shift` `B`      | Show or hide the Bookmarks bar                     |
-| `Ctrl` `Shift` `O`      | Open the Bookmarks manager                         |
-| `Ctrl` `H`              | Open the History page in a new tab                 |
-| `Ctrl` `J`              | Open the Downloads page in a new tab               |
-| `Shift` `Esc`           | Open the Chrome Task Manager                       |
-| `Shift` `Alt` `T`       | Set focus on the first item in the Chrome toolbar  |
-| `F10`                   | Set focus on the last item in the Chrome toolbar   |
-| `F6`                    | Switch focus to unfocused dialog (if showing)      |
-| `Ctrl` `F`              | Open the Find Bar to search the current page       |
-| `Ctrl` `G`              | Jump to the next match to your Find Bar search     |
-| `Ctrl` `Shift` `G`      | Jump to the previous match to your Find Bar search |
-| `F12`                   | Open Developer Tools                               |
-| `Ctrl` `Shift` `Delete` | Open the Clear Browsing Data options               |
-| `F1`                    | Open the Chrome Help Center in a new tab           |
-| `Ctrl` `Shift` `M`      | Log in a different user or browse as a Guest       |
-| `Alt` `Shift` `I`       | Open a feedback form                               |
+| Atalho                  | Ação                                                              |
+| ----------------------- | ----------------------------------------------------------------- |
+| `Alt` `F`               | Abre o menu do Chrome                                             |
+| `Ctrl` `Shift` `B`      | Mostra ou oculta a barra de favoritos                             |
+| `Ctrl` `Shift` `O`      | Abre o gerenciador de favoritos                                   |
+| `Ctrl` `H`              | Abre a página de histórico em uma nova aba                        |
+| `Ctrl` `J`              | Abre a página de downloads em uma nova aba                        |
+| `Shift` `Esc`           | Abre o Gerenciador de tarefas do Chrome                           |
+| `Shift` `Alt` `T`       | Coloca o foco no primeiro item da barra de ferramentas do Chrome  |
+| `F10`                   | Coloca o foco no último item da barra de ferramentas do Chrome    |
+| `F6`                    | Move o foco para a caixa de diálogo sem foco (se estiver visível) |
+| `Ctrl` `F`              | Abre a barra de localização para pesquisar na página atual        |
+| `Ctrl` `G`              | Vai para a próxima correspondência da pesquisa da barra de localização |
+| `Ctrl` `Shift` `G`      | Vai para a correspondência anterior da pesquisa da barra de localização |
+| `F12`                   | Abre as Ferramentas do desenvolvedor                              |
+| `Ctrl` `Shift` `Delete` | Abre as opções de limpar dados de navegação                       |
+| `F1`                    | Abre a Central de Ajuda do Chrome em uma nova aba                 |
+| `Ctrl` `Shift` `M`      | Entra com outro usuário ou navega como convidado                  |
+| `Alt` `Shift` `I`       | Abre um formulário de feedback                                    |
 
 {.shortcuts}
 
-### Address bar
+### Barra de endereços
 
-| Shortcut         | Action                                                        |
+| Atalho           | Ação                                                          |
 | ---------------- | ------------------------------------------------------------- |
-| `(type)` `Enter` | Search with your default search engine                        |
-| `(type)` `Tab`   | Search using a different search engine                        |
-| `Ctrl` `Enter`   | Add www. and .com to a site name, and open in the current tab |
-| `Alt` `Enter`    | Open a new tab and perform a Google search                    |
-| `Ctrl` `L`       | Jump to the address bar                                       |
-| `Ctrl` `K`       | Search from anywhere on the page                              |
-| `Shift` `Delete` | Remove predictions from your address bar                      |
+| `(type)` `Enter` | Pesquisa com seu mecanismo de busca padrão                    |
+| `(type)` `Tab`   | Pesquisa usando outro mecanismo de busca                      |
+| `Ctrl` `Enter`   | Adiciona www. e .com ao nome do site e abre na aba atual      |
+| `Alt` `Enter`    | Abre uma nova aba e faz uma pesquisa no Google                |
+| `Ctrl` `L`       | Vai para a barra de endereços                                 |
+| `Ctrl` `K`       | Pesquisa de qualquer lugar da página                          |
+| `Shift` `Delete` | Remove as previsões da barra de endereços                     |
 
 {.shortcuts}
 
-### Webpage shortcuts
+### Atalhos de página web
 
-| Shortcut                 | Action                                                             |
-| ------------------------ | ------------------------------------------------------------------ |
-| `Ctrl` `P`               | Open options to print the current page                             |
-| `Ctrl` `S`               | Open options to save the current page                              |
-| `Ctrl` `R`               | Reload the current page                                            |
-| `Ctrl` `Shift` `R`       | Reload the current page, ignoring cached content                   |
-| `Esc`                    | Stop the page loading                                              |
-| `Tab`                    | Browse clickable items moving forward                              |
-| `Shift` `Tab`            | Browse clickable items moving backward                             |
-| `Ctrl` `O`               | Open a file from your computer in Chrome                           |
-| `Ctrl` `U`               | Display non-editable HTML source code for the current page         |
-| `Ctrl` `D`               | Save your current webpage as a bookmark                            |
-| `Ctrl` `Shift` `D`       | Save all open tabs as bookmarks in a new folder                    |
-| `F11`                    | Turn full-screen mode on or off                                    |
-| `Ctrl` `+`               | Make everything on the page bigger                                 |
-| `Ctrl` `-`               | Make everything on the page smaller                                |
-| `Ctrl` `0`               | Return everything on the page to default size                      |
-| `Space`                  | Scroll down a webpage, a screen at a time                          |
-| `Shift` `Space`          | Scroll up a webpage, a screen at a time                            |
-| `Home`                   | Go to the top of the page                                          |
-| `End`                    | Go to the bottom of the page                                       |
-| `Shift` `(scroll mouse)` | Scroll horizontally on the page                                    |
-| `Ctrl` `Left`            | Move your cursor to the front of the previous word in a text field |
-| `Ctrl` `Right`           | Move your cursor to the back of the next word in a text field      |
-| `Ctrl` `Backspace`       | Delete the previous word in a text field                           |
-| `Alt` `Home`             | Open the Home page in the current tab                              |
+| Atalho                   | Ação                                                                 |
+| ------------------------ | -------------------------------------------------------------------- |
+| `Ctrl` `P`               | Abre as opções para imprimir a página atual                          |
+| `Ctrl` `S`               | Abre as opções para salvar a página atual                            |
+| `Ctrl` `R`               | Recarrega a página atual                                             |
+| `Ctrl` `Shift` `R`       | Recarrega a página atual, ignorando o conteúdo em cache              |
+| `Esc`                    | Interrompe o carregamento da página                                  |
+| `Tab`                    | Navega pelos itens clicáveis avançando                               |
+| `Shift` `Tab`            | Navega pelos itens clicáveis retrocedendo                            |
+| `Ctrl` `O`               | Abre um arquivo do seu computador no Chrome                          |
+| `Ctrl` `U`               | Exibe o código-fonte HTML não editável da página atual               |
+| `Ctrl` `D`               | Salva a página atual como favorito                                   |
+| `Ctrl` `Shift` `D`       | Salva todas as abas abertas como favoritos em uma nova pasta         |
+| `F11`                    | Ativa ou desativa o modo de tela cheia                               |
+| `Ctrl` `+`               | Aumenta tudo na página                                               |
+| `Ctrl` `-`               | Diminui tudo na página                                               |
+| `Ctrl` `0`               | Retorna tudo na página ao tamanho padrão                             |
+| `Space`                  | Rola a página para baixo, uma tela por vez                           |
+| `Shift` `Space`          | Rola a página para cima, uma tela por vez                            |
+| `Home`                   | Vai para o topo da página                                            |
+| `End`                    | Vai para o final da página                                           |
+| `Shift` `(scroll mouse)` | Rola horizontalmente na página                                       |
+| `Ctrl` `Left`            | Move o cursor para o início da palavra anterior em um campo de texto |
+| `Ctrl` `Right`           | Move o cursor para o final da próxima palavra em um campo de texto  |
+| `Ctrl` `Backspace`       | Apaga a palavra anterior em um campo de texto                        |
+| `Alt` `Home`             | Abre a página inicial na aba atual                                   |
 
 {.shortcuts}
 
-## Also see
+## Veja também
 
-- [Keyboard shortcuts for Google Chrome](https://support.google.com/chrome/answer/157179?hl=en) _(support.google.com)_
+- [Atalhos de teclado do Google Chrome](https://support.google.com/chrome/answer/157179?hl=en) _(support.google.com)_
