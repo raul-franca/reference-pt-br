@@ -76,6 +76,10 @@ db.json
 *.tgz
 *.tar.gz
 
+# Relatórios de sincronização com o upstream #
+######################
+.sync/
+
 # Segurança #
 ######################
 .npmrc

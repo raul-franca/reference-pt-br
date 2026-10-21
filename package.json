@@ -18,6 +18,8 @@
     "lint:check": "eslint themes/coo/source/js/**/*.js",
     "lint:css": "stylelint **/*.css --fix",
     "test": "run-s lint:check format:check",
+    "sync:upstream": "node scripts/sync-upstream.mjs",
+    "sync:upstream:merge": "node scripts/sync-upstream.mjs --merge",
     "audit": "pnpm audit --audit-level moderate",
     "audit:fix": "pnpm audit --fix",
     "security:check": "pnpm audit && pnpm outdated",
