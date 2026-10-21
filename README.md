@@ -397,13 +397,57 @@ recurso de verdade. Observe que o domínio principal para acessar o conteúdo ma
 Para manter a consistência, recomendamos consultar o [https://cheatsheets.zip/quickref](https://cheatsheets.zip/quickref)
 ao criar ou editar cheat sheets. Para começar a desenvolver, siga estes passos:
 
-1. Clone o repositório do GitHub `git clone https://github.com/Fechin/reference.git`
-2. Instale o gerenciador de pacotes `npm` (leia o
-   [guia de instalação](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm))
-3. Execute `npm install` na pasta raiz para instalar as dependências.
-4. Execute `npm run dev` para iniciar um servidor de desenvolvimento. Ele serve o projeto e recarrega ao vivo quando
-   qualquer arquivo é alterado; depois, visite http://127.0.0.1:4000 para visualizar.
-5. Envie um pull request e aguarde a revisão e o merge.
+1. Clone o repositório do GitHub: `git clone https://github.com/raul-franca/reference-pt-br.git`
+2. Instale o **Node.js LTS** (v20 ou superior), pelo [site oficial](https://nodejs.org/) ou com um gerenciador de
+   versões como `fnm`/`nvm`.
+3. Instale o **pnpm** — este projeto usa pnpm, e o `pnpm-lock.yaml` é o lockfile versionado. Instale com
+   `npm install -g pnpm` ou `brew install pnpm`, e confirme com `pnpm -v`.
+4. Execute `pnpm install` na pasta raiz para instalar as dependências.
+5. Execute `pnpm dev` para iniciar um servidor de desenvolvimento. Ele serve o projeto em http://127.0.0.1:4000 e
+   recarrega ao vivo quando qualquer arquivo é alterado; em paralelo, o Tailwind recompila o CSS a cada mudança.
+6. Envie um pull request e aguarde a revisão e o merge.
+
+### Scripts
+
+| Comando                    | Descrição                                                                          |
+| -------------------------- | ---------------------------------------------------------------------------------- |
+| `pnpm dev`                 | Servidor de desenvolvimento em `http://127.0.0.1:4000` com live reload e watch CSS |
+| `pnpm build`               | Build de produção: limpa, compila o CSS, gera o site e minifica em `public/`       |
+| `pnpm test`                | ESLint + Prettier em modo verificação (não há testes unitários)                    |
+| `pnpm lint`                | ESLint com `--fix` em `themes/coo/source/js/**`                                    |
+| `pnpm lint:css`            | Stylelint com `--fix`                                                              |
+| `pnpm format`              | Prettier com `--write` em todo o projeto                                           |
+| `pnpm commit`              | Assistente do Commitizen para mensagens no padrão Conventional Commits             |
+| `pnpm sync:upstream`       | Lista o que mudou no repositório original e o que falta traduzir                   |
+| `pnpm sync:upstream:merge` | Cria uma branch e inicia o merge do repositório original                           |
+
+`public/`, `db.json` e `themes/coo/source/css/style.css` são artefatos gerados e não devem ser commitados. O CSS é
+compilado a partir de `themes/coo/source/css/style.tailwindcss` (que importa `components/*.css`): edite esses arquivos,
+nunca o `style.css`.
+
+### Sincronização com o upstream
+
+O conteúdo deste site é uma tradução de [Fechin/reference](https://github.com/Fechin/reference). O remote `upstream`
+aponta para o original. Para descobrir o que mudou lá e o que falta traduzir aqui:
+
+```bash
+pnpm sync:upstream
+```
+
+O comando busca o upstream e gera `.sync/report.md` com a lista de pendências (posts novos, alterados e removidos,
+widgets, tema, assets e configuração), `.sync/diffs/` com o diff de cada arquivo e `.sync/upstream/` com o original dos
+posts novos. Ele não altera nada no site — apenas lê o upstream e escreve em `.sync/`, que é ignorado pelo git.
+
+Para trazer as mudanças para uma branch e resolver os conflitos preservando a tradução:
+
+```bash
+pnpm sync:upstream:merge
+```
+
+O merge fica em aberto (sem commit) para que cada conflito seja resolvido manualmente. Se preferir, traduza diretamente
+a partir dos arquivos em `.sync/upstream/` e dos diffs, sem fazer merge.
+
+Recomendação: rode `pnpm sync:upstream` semanalmente e trate as pendências seguindo `TRADUCAO.md`.
 
 Para criar ou editar uma cheat sheet, você precisa criar ou editar um arquivo markdown em
 `source/_posts/{filename}.md`. O arquivo deve incluir uma seção de front matter com o seguinte formato:

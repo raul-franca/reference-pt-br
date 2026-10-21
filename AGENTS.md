@@ -20,9 +20,15 @@ pnpm dev          # hexo clean + server em :4000 + watch do Tailwind (paralelo)
 pnpm build        # clean -> remove db.json -> compila CSS -> hexo generate -> gulp (minifica)
 pnpm test         # eslint --check + prettier --check (não há testes unitários)
 pnpm format       # prettier --write .
-pnpm lint         # eslint --fix
+pnpm lint         # eslint --fix (apenas themes/coo/source/js/**)
 pnpm lint:css     # stylelint --fix
+pnpm commit       # commitizen (cz): assistente para mensagem no formato Conventional Commits
+pnpm sync:upstream # lista pendências de tradução vs upstream (gera .sync/, não altera o site)
 ```
+
+Atenção: `pnpm lint`/`lint:check` só cobrem `themes/coo/source/js/**`. Os plugins em `themes/coo/scripts/`
+têm config própria no `eslint.config.js`, mas não entram no `pnpm test` — valide-os com
+`pnpm exec eslint themes/coo/scripts` quando editá-los.
 
 Verificação focada em um arquivo:
 
