@@ -1,0 +1,4 @@
+allowBuilds:
+  fsevents: true
+  hexo-util: true
+  javascript-obfuscator: true
