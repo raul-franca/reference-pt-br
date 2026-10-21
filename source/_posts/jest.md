@@ -3,12 +3,13 @@ title: Cheat sheet do Jest
 date: 2022-09-09 00:00:00
 background: bg-blue-500
 description: A complete cheat sheet on  Jest for testing React applications effectively.
-tags: React
-  Testing
-  Jest
+tags:
+  - React
+  - Testing
+  - Jest
 categories:
   - Testes
-intro:
+intro: >-
   Jest é um framework de testes JavaScript criado pelo Facebook. Funciona out of the box com
   aplicações JavaScript modernas, especialmente as construídas com React ou Node.js. Seu principal objetivo é simplificar os testes oferecendo todos os recursos necessários em um único pacote: test runner, biblioteca de asserções, mocking, spies, relatórios de cobertura e snapshot testing.
 ---
@@ -111,11 +112,11 @@ it.skip(...); // or xit()
 
 ## 🏁 Flags opcionais de CLI
 
-| Flag                  | Descrição                               |
-| --------------------- | --------------------------------------- |
-| `--coverage`          | Mostra o resumo de cobertura de testes  |
+| Flag                  | Descrição                                   |
+| --------------------- | ------------------------------------------- |
+| `--coverage`          | Mostra o resumo de cobertura de testes      |
 | `--detectOpenHandles` | Detecta handles não fechados (ex.: sockets) |
-| `--runInBand`         | Executa os testes em série (útil para CI) |
+| `--runInBand`         | Executa os testes em série (útil para CI)   |
 
 ---
 
