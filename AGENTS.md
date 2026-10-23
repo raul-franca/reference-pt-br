@@ -42,7 +42,8 @@ Nunca commite artefatos gerados: `public/`, `db.json` e `themes/coo/source/css/s
 O CSS é gerado a partir de `themes/coo/source/css/style.tailwindcss` (que importa `components/*.css`); edite o fonte,
 não o `style.css`.
 
-Não há CI no repositório; a validação é local (`pnpm test` + `pnpm build`).
+O CI (`.github/workflows/ci.yml`) roda `pnpm test` e `pnpm build` em push e pull request. Localmente, valide com
+`pnpm test` + `pnpm build`.
 
 ## Estrutura e pontos não óbvios
 
