@@ -1,6 +1,6 @@
 // CheatSheets.zip Service Worker
-const STATIC_CACHE = 'cheatsheets-static-v1';
-const DYNAMIC_CACHE = 'cheatsheets-dynamic-v1';
+const STATIC_CACHE = 'cheatsheets-static-v2';
+const DYNAMIC_CACHE = 'cheatsheets-dynamic-v2';
 
 // Static assets to cache
 const STATIC_ASSETS = [
@@ -102,20 +102,23 @@ async function handleCacheRequest(request) {
     // 3. Try network request
     const networkResponse = await fetch(request);
 
-    // 4. If network request succeeds, update cache
-    if (networkResponse.ok) {
-      const cache = await caches.open(DYNAMIC_CACHE);
-      cache.put(request, networkResponse.clone());
+    // 4. O servidor respondeu com erro (404, 500...): devolve a resposta real.
+    // Mostrar "You're Offline" aqui esconderia o problema de verdade.
+    if (!networkResponse.ok) {
       return networkResponse;
     }
 
-    // 5. Network failed, return cache (if available)
-    if (cachedResponse) {
-      return cachedResponse;
+    // 5. Rede ok: atualiza o cache (ignora respostas redirecionadas e falhas de quota)
+    if (!networkResponse.redirected) {
+      try {
+        const cache = await caches.open(DYNAMIC_CACHE);
+        await cache.put(request, networkResponse.clone());
+      } catch (error) {
+        console.warn('Service Worker: não foi possível atualizar o cache', error);
+      }
     }
 
-    // 6. Nothing available, return offline page
-    return createOfflineResponse(url.pathname);
+    return networkResponse;
   } catch (error) {
     console.error('Service Worker: Fetch failed', error);
 
