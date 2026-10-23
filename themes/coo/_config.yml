@@ -1,7 +1,3 @@
-# Exibe os botões "Estrela no GitHub", "Siga-nos no X" e "Pague um café"
-# nos posts, nas páginas e na home. Defina true para reativar.
-social_buttons: false
-
 # Limite de artigos recentes
 recent_posts_limits: 4
 
