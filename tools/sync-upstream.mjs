@@ -4,10 +4,10 @@
  * lista de pendências de tradução em `.sync/report.md`.
  *
  * Uso:
- *   node scripts/sync-upstream.mjs             # busca o upstream e gera o relatório
- *   node scripts/sync-upstream.mjs --merge     # cria branch e inicia o merge do upstream
- *   node scripts/sync-upstream.mjs --json      # saída legível por máquina
- *   node scripts/sync-upstream.mjs --clean     # remove `.sync/`
+ *   node tools/sync-upstream.mjs             # busca o upstream e gera o relatório
+ *   node tools/sync-upstream.mjs --merge     # cria branch e inicia o merge do upstream
+ *   node tools/sync-upstream.mjs --json      # saída legível por máquina
+ *   node tools/sync-upstream.mjs --clean     # remove `.sync/`
  *
  * O relatório nunca altera o conteúdo do site: apenas lê o upstream e escreve
  * os artefatos em `.sync/` (ignorado pelo git).
@@ -134,10 +134,10 @@ function printHelp() {
   console.log(`
 Sincroniza o conteúdo com o repositório original.
 
-  node scripts/sync-upstream.mjs            gera .sync/report.md com as pendências
-  node scripts/sync-upstream.mjs --merge    cria a branch sync/upstream-<data> e inicia o merge
-  node scripts/sync-upstream.mjs --json     imprime o resultado em JSON
-  node scripts/sync-upstream.mjs --clean    remove a pasta .sync/
+  node tools/sync-upstream.mjs            gera .sync/report.md com as pendências
+  node tools/sync-upstream.mjs --merge    cria a branch sync/upstream-<data> e inicia o merge
+  node tools/sync-upstream.mjs --json     imprime o resultado em JSON
+  node tools/sync-upstream.mjs --clean    remove a pasta .sync/
 
 Opções:
   --remote <nome>   remote do upstream (padrão: upstream)
