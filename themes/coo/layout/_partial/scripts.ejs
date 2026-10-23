@@ -392,30 +392,43 @@
 
 <!-- PWA Service Worker Registration -->
 <script>
-// Registra o Service Worker para a funcionalidade de PWA
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/sw.js')
-      .then(registration => {
-        console.log('Service Worker registered successfully:', registration.scope);
+// O service worker só é útil em produção. Em desenvolvimento ele intercepta as
+// páginas e, quando o servidor cai, mostra a tela "You're Offline" em vez do erro real.
+const isLocalDev = ['localhost', '127.0.0.1', '[::1]'].includes(location.hostname);
 
-        // Verifica atualizações
-        registration.addEventListener('updatefound', () => {
-          const newWorker = registration.installing;
-          if (newWorker) {
-            newWorker.addEventListener('statechange', () => {
-              if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
-                // Novo conteúdo disponível, exibe a notificação de atualização
-                showUpdateNotification();
-              }
-            });
-          }
+if ('serviceWorker' in navigator) {
+  if (isLocalDev) {
+    // Remove registros e caches deixados por versões anteriores em desenvolvimento.
+    navigator.serviceWorker.getRegistrations().then((registrations) => {
+      registrations.forEach((registration) => registration.unregister());
+    });
+    if (window.caches) {
+      caches.keys().then((keys) => keys.forEach((key) => caches.delete(key)));
+    }
+  } else {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/sw.js')
+        .then(registration => {
+          console.log('Service Worker registered successfully:', registration.scope);
+
+          // Verifica atualizações
+          registration.addEventListener('updatefound', () => {
+            const newWorker = registration.installing;
+            if (newWorker) {
+              newWorker.addEventListener('statechange', () => {
+                if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                  // Novo conteúdo disponível, exibe a notificação de atualização
+                  showUpdateNotification();
+                }
+              });
+            }
+          });
+        })
+        .catch(error => {
+          console.log('Service Worker registration failed:', error);
         });
-      })
-      .catch(error => {
-        console.log('Service Worker registration failed:', error);
-      });
-  });
+    });
+  }
 }
 
 // Exibe a notificação de atualização
