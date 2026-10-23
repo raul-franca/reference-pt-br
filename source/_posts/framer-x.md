@@ -16,13 +16,13 @@ intro: |
 
 ### Ferramentas
 
-| Atalho  | Ação        |
-| ------- | ----------- |
-| `F`     | Frame       |
-| `U`     | Arredondar  |
-| `T`     | Texto       |
-| `S`     | Stack       |
-| `L`     | Link        |
+| Atalho  | Ação         |
+| ------- | ------------ |
+| `F`     | Frame        |
+| `U`     | Arredondar   |
+| `T`     | Texto        |
+| `S`     | Stack        |
+| `L`     | Link         |
 | `Space` | Mover a tela |
 
 {.shortcuts}
@@ -43,20 +43,20 @@ intro: |
 
 ### Layout
 
-| Atalho              | Ação             |
-| ------------------- | ---------------- |
-| `Cmd` `Enter`       | Adicionar frame  |
-| `Cmd` `Opt` `Enter` | Adicionar stack  |
-| `Cmd` `Del`         | Remover wrapper  |
+| Atalho              | Ação              |
+| ------------------- | ----------------- |
+| `Cmd` `Enter`       | Adicionar frame   |
+| `Cmd` `Opt` `Enter` | Adicionar stack   |
+| `Cmd` `Del`         | Remover wrapper   |
 | `Cmd` `Opt` `Up`    | Mover para frente |
-| `Cmd` `Opt` `Down`  | Mover para trás  |
+| `Cmd` `Opt` `Down`  | Mover para trás   |
 
 {.shortcuts}
 
 ### Componentes
 
-| Atalho            | Ação                 |
-| ----------------- | -------------------- |
+| Atalho            | Ação                     |
+| ----------------- | ------------------------ |
 | `Cmd` `K`         | Criar a partir do design |
 | `Cmd` `Shift` `K` | Criar a partir do código |
 
@@ -64,53 +64,53 @@ intro: |
 
 ### Texto
 
-| Atalho    | Ação            |
-| --------- | --------------- |
-| `Cmd` `B` | Negrito         |
-| `Cmd` `I` | Itálico         |
-| `Cmd` `U` | Sublinhado      |
+| Atalho    | Ação             |
+| --------- | ---------------- |
+| `Cmd` `B` | Negrito          |
+| `Cmd` `I` | Itálico          |
+| `Cmd` `U` | Sublinhado       |
 | `Cmd` `T` | Selecionar fonte |
 
 {.shortcuts}
 
 ### Edição
 
-| Atalho                   | Ação                |
-| ------------------------ | ------------------- |
-| `Cmd` `(arrows)`         | Tamanho do objeto   |
-| `Cmd` `Shift` `(arrows)` | Tamanho do objeto em 10px |
-| `0-9`                    | Opacidade           |
-| `Opt`                    | Mostrar distância   |
-| `Cmd` `D`                | Duplicar no lugar   |
-| `Cmd` `Opt` `C`          | Copiar estilo       |
-| `Cmd` `Opt` `V`          | Colar estilo        |
-| `Ctrl` `C`               | Seletor de cores    |
+| Atalho                   | Ação                        |
+| ------------------------ | --------------------------- |
+| `Cmd` `(arrows)`         | Tamanho do objeto           |
+| `Cmd` `Shift` `(arrows)` | Tamanho do objeto em 10px   |
+| `0-9`                    | Opacidade                   |
+| `Opt`                    | Mostrar distância           |
+| `Cmd` `D`                | Duplicar no lugar           |
+| `Cmd` `Opt` `C`          | Copiar estilo               |
+| `Cmd` `Opt` `V`          | Colar estilo                |
+| `Ctrl` `C`               | Seletor de cores            |
 | `Cmd` `A`                | Selecionar todas as camadas |
-| `Cmd` `Shift` `A`        | Selecionar todos os irmãos |
-| `Cmd` `Opt` `A`          | Selecionar todos os filhos |
+| `Cmd` `Shift` `A`        | Selecionar todos os irmãos  |
+| `Cmd` `Opt` `A`          | Selecionar todos os filhos  |
 
 {.shortcuts}
 
 ### Visualização
 
-| Atalho     | Ação                  |
-| ---------- | --------------------- |
-| `Z`        | Zoom                  |
-| `Cmd` `+`  | Aumentar zoom         |
-| `Cmd` `-`  | Diminuir zoom         |
-| `Cmd` `1`  | Zoom para ajustar     |
+| Atalho     | Ação                        |
+| ---------- | --------------------------- |
+| `Z`        | Zoom                        |
+| `Cmd` `+`  | Aumentar zoom               |
+| `Cmd` `-`  | Diminuir zoom               |
+| `Cmd` `1`  | Zoom para ajustar           |
 | `Cmd` `2`  | Zoom para ajustar a seleção |
-| `Cmd` `0`  | Zoom para 100%        |
-| `Ctrl` `R` | Mostrar réguas        |
+| `Cmd` `0`  | Zoom para 100%              |
+| `Ctrl` `R` | Mostrar réguas              |
 
 {.shortcuts}
 
 ### Janela
 
-| Atalho            | Ação     |
-| ----------------- | -------- |
-| `Cmd` `M`         | Minimizar |
-| `Cmd` `Shift` `1` | Boas-vindas |
+| Atalho            | Ação           |
+| ----------------- | -------------- |
+| `Cmd` `M`         | Minimizar      |
+| `Cmd` `Shift` `1` | Boas-vindas    |
 | `Cmd` `P`         | Pré-visualizar |
 
 {.shortcuts}

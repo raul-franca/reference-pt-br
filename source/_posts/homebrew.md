@@ -32,14 +32,14 @@ Instale o Homebrew:
 
 ### Comandos
 
-|                            |                                        |
-| -------------------------- | -------------------------------------- |
-| `brew install git`         | Instala um pacote                      |
-| `brew uninstall git`       | Desinstala um pacote                   |
-| `brew upgrade git`         | Atualiza o pacote                      |
-| `brew unlink git`          | Desfaz o link                          |
-| `brew link git`            | Cria o link                            |
-| `brew list --versions git` | Lista as versões instaladas do pacote  |
+|                            |                                       |
+| -------------------------- | ------------------------------------- |
+| `brew install git`         | Instala um pacote                     |
+| `brew uninstall git`       | Desinstala um pacote                  |
+| `brew upgrade git`         | Atualiza o pacote                     |
+| `brew unlink git`          | Desfaz o link                         |
+| `brew link git`            | Cria o link                           |
+| `brew list --versions git` | Lista as versões instaladas do pacote |
 
 ### Ajuda
 

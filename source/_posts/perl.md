@@ -68,17 +68,17 @@ C:>perl -e <perl code>
 
 ### Opções de linha de comando disponíveis
 
-|    Opção     |                         Descrição |
-| :-----------: | ----------------------------------: |
-| -d[:debugger] | Executa o programa sob o depurador |
-|  -Idirectory  |   Especifica o diretório @INC/#include |
-|      -T       |           Ativa avisos de taint |
-|      -U       |            Permite operações inseguras |
-|      -w       |        Ativa vários avisos úteis |
-|      -W       |                Ativa todos os avisos |
-|      -X       |               Desativa todos os avisos |
-|  -e program   | Executa o script Perl enviado como programa |
-|     file      |  Executa o script Perl de um arquivo informado |
+|     Opção     |                                     Descrição |
+| :-----------: | --------------------------------------------: |
+| -d[:debugger] |            Executa o programa sob o depurador |
+|  -Idirectory  |          Especifica o diretório @INC/#include |
+|      -T       |                         Ativa avisos de taint |
+|      -U       |                   Permite operações inseguras |
+|      -w       |                     Ativa vários avisos úteis |
+|      -W       |                         Ativa todos os avisos |
+|      -X       |                      Desativa todos os avisos |
+|  -e program   |   Executa o script Perl enviado como programa |
+|     file      | Executa o script Perl de um arquivo informado |
 
 ### Script pela linha de comando
 
@@ -344,12 +344,12 @@ print "Max Index: $max_index\n";
 
 ### Adicionando e removendo elementos do array
 
-| types                |                                                  Descrição                                                  |
-| :------------------- | :-----------------------------------------------------------------------------------------------------------: |
-| push @ARRAY, LIST    |                           Adiciona os valores da lista ao final do array.                            |
-| pop @ARRAY           |                               Remove e retorna o último valor do array.                               |
+| types                |                                                   Descrição                                                    |
+| :------------------- | :------------------------------------------------------------------------------------------------------------: |
+| push @ARRAY, LIST    |                                Adiciona os valores da lista ao final do array.                                 |
+| pop @ARRAY           |                                   Remove e retorna o último valor do array.                                    |
 | shift @ARRAY         | Remove o primeiro valor do array e o retorna, encurtando o array em 1 e deslocando todo o restante para baixo. |
-| unshift @ARRAY, LIST |         Insere a lista no início do array e retorna o número de elementos no novo array.         |
+| unshift @ARRAY, LIST |                Insere a lista no início do array e retorna o número de elementos no novo array.                |
 
 ### Operações com arrays
 
@@ -1068,45 +1068,45 @@ print "Yesterday's date and time $datestring\n";
 
 ### Função POSIX strftime()
 
-| Specifier | Replaced by                                                                                                    |         Example          |
-| :-------- | :------------------------------------------------------------------------------------------------------------- | :----------------------: |
-| %a        | Nome abreviado do dia da semana                                                                                |           Thu            |
-| %A        | Nome completo do dia da semana                                                                                 |         Thursday         |
-| %b        | Nome abreviado do mês                                                                                          |           Aug            |
-| %B        | Nome completo do mês                                                                                           |          August          |
-| %c        | Representação de data e hora                                                                                   | Thu Aug 23 14:55:02 2001 |
-| %C        | Ano dividido por 100 e truncado para inteiro (00-99)                                                           |            20            |
-| %d        | Dia do mês, preenchido com zero (01-31)                                                                        |            23            |
-| %D        | Data curta MM/DD/YY, equivalente a %m/%d/%y                                                                    |         08/23/01         |
-| %e        | Dia do mês, preenchido com espaço ( 1-31)                                                                      |            23            |
-| %F        | Data curta YYYY-MM-DD, equivalente a %Y-%m-%d                                                                  |        2001-08-23        |
-| %g        | Ano baseado na semana, dois últimos dígitos (00-99)                                                            |            01            |
-| %G        | Ano baseado na semana                                                                                          |           2001           |
-| %h        | Nome abreviado do mês (igual a %b)                                                                             |           Aug            |
-| %H        | Hora no formato 24h (00-23)                                                                                    |            14            |
-| %I        | Hora no formato 12h (01-12)                                                                                    |            02            |
-| %j        | Dia do ano (001-366)                                                                                           |           235            |
-| %m        | Mês como número decimal (01-12)                                                                                |            08            |
-| %M        | Minuto (00-59)                                                                                                 |            55            |
-| %n        | Caractere de nova linha ('\n')                                                                                 |
-| %p        | Indicação AM ou PM                                                                                             |            PM            |
-| %r        | Hora no relógio de 12 horas                                                                                    |       02:55:02 pm        |
-| %R        | Hora HH:MM de 24 horas, equivalente a %H:%M                                                                    |          14:55           |
-| %S        | Segundo (00-61)                                                                                                |            02            |
-| %t        | Caractere de tabulação horizontal ('\t')                                                                       |
-| %T        | Formato de hora ISO 8601 (HH:MM:SS), equivalente a %H:%M:%S                                                    |          14:55           |
-| %u        | Dia da semana ISO 8601 como número, com segunda-feira como 1 (1-7)                                            |            4             |
-| %U        | Número da semana com o primeiro domingo como primeiro dia da semana um (00-53)                                |            33            |
-| %V        | Número da semana ISO 8601 (00-53)                                                                              |            34            |
-| %w        | Dia da semana como número decimal, com domingo como 0 (0-6)                                                    |            4             |
-| %W        | Número da semana com a primeira segunda-feira como primeiro dia da semana um (00-53)                          |            34            |
-| %x        | Representação de data                                                                                          |         08/23/01         |
-| %X        | Representação de hora                                                                                          |         14:55:02         |
-| %y        | Ano, dois últimos dígitos (00-99)                                                                              |            01            |
-| %Y        | Ano                                                                                                            |           2001           |
+| Specifier | Replaced by                                                                                                                            |         Example          |
+| :-------- | :------------------------------------------------------------------------------------------------------------------------------------- | :----------------------: |
+| %a        | Nome abreviado do dia da semana                                                                                                        |           Thu            |
+| %A        | Nome completo do dia da semana                                                                                                         |         Thursday         |
+| %b        | Nome abreviado do mês                                                                                                                  |           Aug            |
+| %B        | Nome completo do mês                                                                                                                   |          August          |
+| %c        | Representação de data e hora                                                                                                           | Thu Aug 23 14:55:02 2001 |
+| %C        | Ano dividido por 100 e truncado para inteiro (00-99)                                                                                   |            20            |
+| %d        | Dia do mês, preenchido com zero (01-31)                                                                                                |            23            |
+| %D        | Data curta MM/DD/YY, equivalente a %m/%d/%y                                                                                            |         08/23/01         |
+| %e        | Dia do mês, preenchido com espaço ( 1-31)                                                                                              |            23            |
+| %F        | Data curta YYYY-MM-DD, equivalente a %Y-%m-%d                                                                                          |        2001-08-23        |
+| %g        | Ano baseado na semana, dois últimos dígitos (00-99)                                                                                    |            01            |
+| %G        | Ano baseado na semana                                                                                                                  |           2001           |
+| %h        | Nome abreviado do mês (igual a %b)                                                                                                     |           Aug            |
+| %H        | Hora no formato 24h (00-23)                                                                                                            |            14            |
+| %I        | Hora no formato 12h (01-12)                                                                                                            |            02            |
+| %j        | Dia do ano (001-366)                                                                                                                   |           235            |
+| %m        | Mês como número decimal (01-12)                                                                                                        |            08            |
+| %M        | Minuto (00-59)                                                                                                                         |            55            |
+| %n        | Caractere de nova linha ('\n')                                                                                                         |
+| %p        | Indicação AM ou PM                                                                                                                     |            PM            |
+| %r        | Hora no relógio de 12 horas                                                                                                            |       02:55:02 pm        |
+| %R        | Hora HH:MM de 24 horas, equivalente a %H:%M                                                                                            |          14:55           |
+| %S        | Segundo (00-61)                                                                                                                        |            02            |
+| %t        | Caractere de tabulação horizontal ('\t')                                                                                               |
+| %T        | Formato de hora ISO 8601 (HH:MM:SS), equivalente a %H:%M:%S                                                                            |          14:55           |
+| %u        | Dia da semana ISO 8601 como número, com segunda-feira como 1 (1-7)                                                                     |            4             |
+| %U        | Número da semana com o primeiro domingo como primeiro dia da semana um (00-53)                                                         |            33            |
+| %V        | Número da semana ISO 8601 (00-53)                                                                                                      |            34            |
+| %w        | Dia da semana como número decimal, com domingo como 0 (0-6)                                                                            |            4             |
+| %W        | Número da semana com a primeira segunda-feira como primeiro dia da semana um (00-53)                                                   |            34            |
+| %x        | Representação de data                                                                                                                  |         08/23/01         |
+| %X        | Representação de hora                                                                                                                  |         14:55:02         |
+| %y        | Ano, dois últimos dígitos (00-99)                                                                                                      |            01            |
+| %Y        | Ano                                                                                                                                    |           2001           |
 | %z        | Deslocamento ISO 8601 em relação a UTC no fuso horário (1 minuto = 1, 1 hora = 100)Se o fuso não puder ser determinado, sem caracteres |           +100           |
-| %Z        | Nome ou abreviação do fuso horário Se o fuso não puder ser determinado, sem caracteres                         |           CDT            |
-| %%        | Um sinal de %                                                                                                  |            %             |
+| %Z        | Nome ou abreviação do fuso horário Se o fuso não puder ser determinado, sem caracteres                                                 |           CDT            |
+| %%        | Um sinal de %                                                                                                                          |            %             |
 
 ```perl
 #!/usr/local/bin/perl

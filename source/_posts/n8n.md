@@ -53,16 +53,16 @@ services:
 
 ### Conceitos principais
 
-| Termo          | Descrição                                            |
-| -------------- | ---------------------------------------------------- |
-| **Workflow**   | Uma coleção de nodes conectados                      |
-| **Node**       | Um único passo ou ação                               |
-| **Trigger**    | Node que inicia um workflow                          |
-| **Execution**  | Uma execução de um workflow                          |
-| **Item**       | Um único objeto de dados JSON passado entre nodes    |
-| **Connection** | Link entre dois nodes                                |
+| Termo          | Descrição                                               |
+| -------------- | ------------------------------------------------------- |
+| **Workflow**   | Uma coleção de nodes conectados                         |
+| **Node**       | Um único passo ou ação                                  |
+| **Trigger**    | Node que inicia um workflow                             |
+| **Execution**  | Uma execução de um workflow                             |
+| **Item**       | Um único objeto de dados JSON passado entre nodes       |
+| **Connection** | Link entre dois nodes                                   |
 | **Credential** | Configuração de autenticação armazenada para um serviço |
-| **Expression** | Valor dinâmico usando a sintaxe `{{ }}`              |
+| **Expression** | Valor dinâmico usando a sintaxe `{{ }}`                 |
 
 {.show-header}
 
@@ -181,16 +181,16 @@ Verifique a quantidade de itens:
 
 ### Execução e workflow {.col-span-2}
 
-| Variável               | Tipo    | Descrição                                  |
-| ---------------------- | ------- | ------------------------------------------ |
-| `$execution.id`        | string  | ID da execução atual                       |
-| `$execution.mode`      | string  | `manual`, `trigger` ou `webhook`           |
-| `$execution.resumeUrl` | string  | URL para retomar uma execução em espera    |
-| `$workflow.id`         | string  | ID do workflow                             |
-| `$workflow.name`       | string  | Nome do workflow                           |
-| `$workflow.active`     | boolean | Se o workflow está ativo                   |
-| `$runIndex`            | number  | Índice da iteração do loop (base 0)        |
-| `$itemIndex`           | number  | Índice do item atual no batch              |
+| Variável               | Tipo    | Descrição                               |
+| ---------------------- | ------- | --------------------------------------- |
+| `$execution.id`        | string  | ID da execução atual                    |
+| `$execution.mode`      | string  | `manual`, `trigger` ou `webhook`        |
+| `$execution.resumeUrl` | string  | URL para retomar uma execução em espera |
+| `$workflow.id`         | string  | ID do workflow                          |
+| `$workflow.name`       | string  | Nome do workflow                        |
+| `$workflow.active`     | boolean | Se o workflow está ativo                |
+| `$runIndex`            | number  | Índice da iteração do loop (base 0)     |
+| `$itemIndex`           | number  | Índice do item atual no batch           |
 
 {.show-header}
 
@@ -467,13 +467,13 @@ Value:       {{ $json.id }}
 
 Combina itens de duas ramificações de entrada.
 
-| Modo                | Descrição                                      |
-| ------------------- | ---------------------------------------------- |
-| Append              | Todos os itens das duas ramificações           |
-| Combine by Position | Combina item[0]+item[0], etc.                  |
+| Modo                | Descrição                                        |
+| ------------------- | ------------------------------------------------ |
+| Append              | Todos os itens das duas ramificações             |
+| Combine by Position | Combina item[0]+item[0], etc.                    |
 | Combine by Fields   | Join por uma chave compartilhada (como SQL JOIN) |
-| Keep Matches        | Inner join — apenas itens que correspondem     |
-| Keep Non-Matches    | Itens sem correspondência na outra ramificação |
+| Keep Matches        | Inner join — apenas itens que correspondem       |
+| Keep Non-Matches    | Itens sem correspondência na outra ramificação   |
 
 {.show-header}
 
@@ -577,11 +577,11 @@ return [{ json: response }];
 
 Em qualquer node → **Settings** → **On Error**
 
-| Opção                     | Comportamento                             |
-| ------------------------- | ----------------------------------------- |
-| Stop Workflow             | Padrão — interrompe em caso de erro       |
+| Opção                     | Comportamento                                              |
+| ------------------------- | ---------------------------------------------------------- |
+| Stop Workflow             | Padrão — interrompe em caso de erro                        |
 | Continue (regular output) | Passa as informações do erro como item para o próximo node |
-| Continue (error output)   | Encaminha o erro para uma ramificação separada |
+| Continue (error output)   | Encaminha o erro para uma ramificação separada             |
 
 {.show-header}
 
@@ -740,31 +740,31 @@ Muitos nodes de API têm paginação embutida. Para requests HTTP personalizados
 
 ### Ações no canvas
 
-| Atalho              | Ação                   |
-| ------------------- | ---------------------- |
-| `Ctrl` `S`          | Salvar workflow        |
-| `Ctrl` `Enter`      | Executar workflow      |
-| `Ctrl` `Z`          | Desfazer               |
-| `Ctrl` `Shift` `Z`  | Refazer                |
-| `Ctrl` `A`          | Selecionar todos os nodes |
+| Atalho              | Ação                          |
+| ------------------- | ----------------------------- |
+| `Ctrl` `S`          | Salvar workflow               |
+| `Ctrl` `Enter`      | Executar workflow             |
+| `Ctrl` `Z`          | Desfazer                      |
+| `Ctrl` `Shift` `Z`  | Refazer                       |
+| `Ctrl` `A`          | Selecionar todos os nodes     |
 | `Ctrl` `C`          | Copiar node(s) selecionado(s) |
-| `Ctrl` `V`          | Colar node(s)          |
-| `Del` / `Backspace` | Excluir node selecionado |
-| `F2`                | Renomear node          |
-| `Esc`               | Desmarcar / fechar painel |
+| `Ctrl` `V`          | Colar node(s)                 |
+| `Del` / `Backspace` | Excluir node selecionado      |
+| `F2`                | Renomear node                 |
+| `Esc`               | Desmarcar / fechar painel     |
 
 {.shortcuts}
 
 ### Navegação
 
-| Atalho             | Ação                     |
-| ------------------ | ------------------------ |
-| `Ctrl` `+`         | Aumentar o zoom          |
-| `Ctrl` `-`         | Diminuir o zoom          |
-| `Ctrl` `0`         | Redefinir o zoom para 100% |
-| `Ctrl` `Shift` `F` | Ajustar o workflow à tela |
-| `Ctrl` `F`         | Buscar / localizar node  |
+| Atalho             | Ação                            |
+| ------------------ | ------------------------------- |
+| `Ctrl` `+`         | Aumentar o zoom                 |
+| `Ctrl` `-`         | Diminuir o zoom                 |
+| `Ctrl` `0`         | Redefinir o zoom para 100%      |
+| `Ctrl` `Shift` `F` | Ajustar o workflow à tela       |
+| `Ctrl` `F`         | Buscar / localizar node         |
 | `Tab`              | Abrir o painel seletor de nodes |
-| `Space` `+` drag   | Mover o canvas           |
+| `Space` `+` drag   | Mover o canvas                  |
 
 {.shortcuts}

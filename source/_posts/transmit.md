@@ -17,7 +17,7 @@ intro: |
 ### Menu Transmit
 
 | Atalho          | Ação                               |
-| ---             | ---                                |
+| --------------- | ---------------------------------- |
 | `Cmd` `,`       | Preferências...                    |
 | `Cmd` `H`       | Ocultar Transmit                   |
 | `Cmd` `Opt` `H` | Ocultar outros                     |
@@ -29,7 +29,7 @@ intro: |
 ### Menu Arquivo {.row-span-2}
 
 | Atalho            | Ação                                       |
-| ---               | ---                                        |
+| ----------------- | ------------------------------------------ |
 | `Cmd` `N`         | Nova janela                                |
 | `Cmd` `T`         | Nova aba                                   |
 | `Cmd` `Shift` `N` | Nova pasta                                 |
@@ -52,7 +52,7 @@ intro: |
 ### Menu Editar
 
 | Atalho            | Ação                           |
-| ---               | ---                            |
+| ----------------- | ------------------------------ |
 | `Cmd` `Z`         | Desfazer                       |
 | `Cmd` `Shift` `Z` | Refazer                        |
 | `Cmd` `X`         | Recortar                       |
@@ -68,7 +68,7 @@ intro: |
 ### Menu Visualizar
 
 | Atalho              | Ação                             |
-| ---                 | ---                              |
+| ------------------- | -------------------------------- |
 | `Cmd` `L`           | Mostrar transferências           |
 | `Cmd` `Opt` `L`     | Mostrar janela de transferências |
 | `Cmd` `1`           | Ver como miniaturas              |
@@ -88,7 +88,7 @@ intro: |
 ### Menu Ir
 
 | Atalho            | Ação                               |
-| ---               | ---                                |
+| ----------------- | ---------------------------------- |
 | `Cmd` `[`         | Voltar                             |
 | `Cmd` `]`         | Avançar                            |
 | `Cmd` `Up`        | Pasta superior                     |
@@ -102,7 +102,7 @@ intro: |
 ### Menu Transferência
 
 | Atalho                  | Ação                                     |
-| ---                     | ---                                      |
+| ----------------------- | ---------------------------------------- |
 | `Cmd` `Shift` `R`       | Transferir itens selecionados            |
 | `Cmd` `Opt` `Shift` `R` | Transferir itens selecionados sem regras |
 | `Cmd` `.`               | Cancelar                                 |
@@ -112,7 +112,7 @@ intro: |
 ### Menu Servidores
 
 | Atalho            | Ação                    |
-| ---               | ---                     |
+| ----------------- | ----------------------- |
 | `Cmd` `Shift` `A` | Adicionar novo servidor |
 | `Cmd` `Shift` `F` | Mostrar conexão rápida  |
 | `Cmd` `Shift` `I` | Editar servidor         |
@@ -122,7 +122,7 @@ intro: |
 ### Menu Janela
 
 | Atalho               | Ação                    |
-| ---                  | ---                     |
+| -------------------- | ----------------------- |
 | `Cmd` `M`            | Minimizar               |
 | `Cmd` `Opt` `M`      | Minimizar tudo          |
 | `Ctrl` `Tab`         | Selecionar próxima aba  |

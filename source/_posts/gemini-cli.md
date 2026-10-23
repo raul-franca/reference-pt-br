@@ -569,11 +569,11 @@ Generate a conventional commit message for:
 O comando vira `/git:commit`. Subdiretório `/` → namespace `:`.
 
 **Placeholders:**
-| Placeholder | Significado                      |
+| Placeholder | Significado |
 | ----------- | -------------------------------- |
-| `{{args}}`  | Injeta os argumentos do usuário  |
-| `!{cmd}`    | Executa o shell e injeta a saída |
-| `@{path}`   | Incorpora o conteúdo do arquivo  |
+| `{{args}}` | Injeta os argumentos do usuário |
+| `!{cmd}` | Executa o shell e injeta a saída |
+| `@{path}` | Incorpora o conteúdo do arquivo |
 
 ## Plan Mode {.cols-3}
 

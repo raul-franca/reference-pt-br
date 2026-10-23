@@ -16,119 +16,119 @@ intro: |
 
 ### Ações
 
-| Atalho        | Ação                |
-| ------------- | ------------------- |
+| Atalho        | Ação                  |
+| ------------- | --------------------- |
 | `Cmd` `K`     | Comando do Superhuman |
-| `/`           | Pesquisar           |
-| `Z`           | Desfazer            |
-| `?`           | Atalhos             |
-| `X`           | Seleciona a conversa |
-| `Shift` `J/K` | Adiciona à seleção  |
+| `/`           | Pesquisar             |
+| `Z`           | Desfazer              |
+| `?`           | Atalhos               |
+| `X`           | Seleciona a conversa  |
+| `Shift` `J/K` | Adiciona à seleção    |
 
 {.shortcuts}
 
 ### Filtros
 
-| Atalho      | Ação      |
-| ----------- | --------- |
-| `Shift` `U` | Não lidas |
-| `Shift` `S` | Com estrela |
-| `Shift` `I` | Importantes |
+| Atalho      | Ação         |
+| ----------- | ------------ |
+| `Shift` `U` | Não lidas    |
+| `Shift` `S` | Com estrela  |
+| `Shift` `I` | Importantes  |
 | `Shift` `R` | Sem resposta |
 
 {.shortcuts}
 
 ### Mensagens
 
-| Atalho      | Ação                          |
-| ----------- | ----------------------------- |
-| `C`         | Escrever                      |
-| `Enter`     | Responder a todos             |
-| `R`         | Responder                     |
-| `F`         | Encaminhar                    |
-| `Cmd` `O`   | Abre links e anexos           |
-| `Tab`       | Alterna entre links e datas   |
-| `O`         | Expande a mensagem            |
-| `Shift` `O` | Expande todas as mensagens    |
+| Atalho      | Ação                        |
+| ----------- | --------------------------- |
+| `C`         | Escrever                    |
+| `Enter`     | Responder a todos           |
+| `R`         | Responder                   |
+| `F`         | Encaminhar                  |
+| `Cmd` `O`   | Abre links e anexos         |
+| `Tab`       | Alterna entre links e datas |
+| `O`         | Expande a mensagem          |
+| `Shift` `O` | Expande todas as mensagens  |
 
 {.shortcuts}
 
 ### Conversas
 
-| Atalho      | Ação                    |
-| ----------- | ----------------------- |
+| Atalho      | Ação                           |
+| ----------- | ------------------------------ |
 | `E`         | Marca como concluída (arquiva) |
-| `Shift` `E` | Marca como não concluída |
-| `H`         | Lembrar depois (snooze) |
-| `S`         | Adiciona estrela        |
-| `U`         | Marca como lida ou não lida |
-| `Shift` `3` | Lixeira                 |
-| `Shift` `1` | Marca como spam         |
-| `Shift` `M` | Silencia                |
-| `Cmd` `U`   | Cancela a inscrição     |
+| `Shift` `E` | Marca como não concluída       |
+| `H`         | Lembrar depois (snooze)        |
+| `S`         | Adiciona estrela               |
+| `U`         | Marca como lida ou não lida    |
+| `Shift` `3` | Lixeira                        |
+| `Shift` `1` | Marca como spam                |
+| `Shift` `M` | Silencia                       |
+| `Cmd` `U`   | Cancela a inscrição            |
 
 {.shortcuts}
 
 ### Pastas (pressione as teclas separadamente)
 
-| Atalho   | Ação                            |
-| -------- | ------------------------------- |
-| `G` `I`  | Vai para a caixa de entrada ou importantes |
-| `G` `O`  | Vai para outros                 |
-| `G` `S`  | Vai para com estrela            |
-| `G` `D`  | Vai para rascunhos              |
-| `G` `T`  | Vai para enviados               |
-| `G` `E`  | Vai para concluídos             |
-| `G` `H`  | Vai para lembretes              |
-| `G` `M`  | Vai para silenciados            |
-| `G` `;`  | Vai para snippets               |
-| `G` `!`  | Vai para spam                   |
-| `G` `#`  | Vai para a lixeira              |
-| `G` `A`  | Vai para todos os e-mails       |
-| `G` `L`  | Vai para a etiqueta             |
+| Atalho  | Ação                                       |
+| ------- | ------------------------------------------ |
+| `G` `I` | Vai para a caixa de entrada ou importantes |
+| `G` `O` | Vai para outros                            |
+| `G` `S` | Vai para com estrela                       |
+| `G` `D` | Vai para rascunhos                         |
+| `G` `T` | Vai para enviados                          |
+| `G` `E` | Vai para concluídos                        |
+| `G` `H` | Vai para lembretes                         |
+| `G` `M` | Vai para silenciados                       |
+| `G` `;` | Vai para snippets                          |
+| `G` `!` | Vai para spam                              |
+| `G` `#` | Vai para a lixeira                         |
+| `G` `A` | Vai para todos os e-mails                  |
+| `G` `L` | Vai para a etiqueta                        |
 
 {.shortcuts}
 
 ### Formatação
 
-| Atalho            | Ação            |
-| ----------------- | --------------- |
-| `Cmd` `B`         | Negrito         |
-| `Cmd` `I`         | Itálico         |
-| `Cmd` `U`         | Sublinhado      |
-| `Cmd` `K`         | Hiperlink       |
-| `Cmd` `O`         | Cor             |
-| `Cmd` `Shift` `X` | Tachado         |
-| `Cmd` `Shift` `7` | Números         |
-| `Cmd` `Shift` `8` | Marcadores      |
-| `Cmd` `Shift` `9` | Citação         |
-| `Tab`             | Recua a lista   |
+| Atalho            | Ação                    |
+| ----------------- | ----------------------- |
+| `Cmd` `B`         | Negrito                 |
+| `Cmd` `I`         | Itálico                 |
+| `Cmd` `U`         | Sublinhado              |
+| `Cmd` `K`         | Hiperlink               |
+| `Cmd` `O`         | Cor                     |
+| `Cmd` `Shift` `X` | Tachado                 |
+| `Cmd` `Shift` `7` | Números                 |
+| `Cmd` `Shift` `8` | Marcadores              |
+| `Cmd` `Shift` `9` | Citação                 |
+| `Tab`             | Recua a lista           |
 | `Shift` `Tab`     | Remove o recuo da lista |
-| `Cmd` `]`         | Aumenta o recuo |
-| `Cmd` `[`         | Diminui o recuo |
+| `Cmd` `]`         | Aumenta o recuo         |
+| `Cmd` `[`         | Diminui o recuo         |
 
 {.shortcuts}
 
 ### Etiquetas
 
-| Atalho      | Ação                    |
-| ----------- | ----------------------- |
+| Atalho      | Ação                            |
+| ----------- | ------------------------------- |
 | `L`         | Adiciona ou remove uma etiqueta |
-| `Y`         | Remove a etiqueta       |
-| `[`         | Remove a etiqueta, próxima |
-| `]`         | Remove a etiqueta, anterior |
-| `Shift` `Y` | Remove todas as etiquetas |
-| `V`         | Mover                   |
+| `Y`         | Remove a etiqueta               |
+| `[`         | Remove a etiqueta, próxima      |
+| `]`         | Remove a etiqueta, anterior     |
+| `Shift` `Y` | Remove todas as etiquetas       |
+| `V`         | Mover                           |
 
 {.shortcuts}
 
 ### Calendário
 
-| Atalho | Ação            |
-| ------ | --------------- |
+| Atalho | Ação                 |
+| ------ | -------------------- |
 | `0`    | Alterna o calendário |
-| `-`    | Dia anterior    |
-| `=`    | Próximo dia     |
+| `-`    | Dia anterior         |
+| `=`    | Próximo dia          |
 
 {.shortcuts}
 
@@ -162,37 +162,37 @@ intro: |
 
 ### Compor em janela separada
 
-| Atalho            | Ação                       |
-| ----------------- | -------------------------- |
-| `Cmd` `Shift` `P` | Traz ou tira o rascunho da janela |
-| `Shift` `R`       | Abre a resposta em janela separada |
-| `Shift` `Enter`   | Abre a resposta a todos em janela separada |
-| `Shift` `C`       | Abre uma nova mensagem em janela separada |
-| `Shift` `F`       | Abre o encaminhamento em janela separada |
+| Atalho            | Ação                                           |
+| ----------------- | ---------------------------------------------- |
+| `Cmd` `Shift` `P` | Traz ou tira o rascunho da janela              |
+| `Shift` `R`       | Abre a resposta em janela separada             |
+| `Shift` `Enter`   | Abre a resposta a todos em janela separada     |
+| `Shift` `C`       | Abre uma nova mensagem em janela separada      |
+| `Shift` `F`       | Abre o encaminhamento em janela separada       |
 | `Cmd` `/`         | Abre um rascunho em janela separada e pesquisa |
-| `Cmd` `D`         | Alterna para ou a partir de um rascunho |
+| `Cmd` `D`         | Alterna para ou a partir de um rascunho        |
 
 {.shortcuts}
 
 ### Compor
 
-| Atalho                | Ação                 |
-| --------------------- | -------------------- |
-| `Cmd` `Shift` `O`     | Para                 |
-| `Cmd` `Shift` `C`     | CC                   |
-| `Cmd` `Shift` `B`     | BCC                  |
-| `Cmd` `Shift` `F`     | De                   |
-| `Cmd` `Shift` `S`     | Edita o assunto      |
-| `Cmd` `Shift` `M`     | Edita a mensagem     |
-| `Cmd` `Shift` `A`     | Anexar               |
-| `Cmd` `Shift` `,`     | Descarta o rascunho  |
-| `Cmd` `Shift` `I`     | Move os contatos para BCC |
-| `Cmd` `Shift` `H`     | Lembrar depois       |
-| `Cmd` `Shift` `L`     | Enviar mais tarde    |
-| `Cmd` `;`             | Usa snippet          |
-| `Cmd` `Enter`         | Enviar               |
+| Atalho                | Ação                         |
+| --------------------- | ---------------------------- |
+| `Cmd` `Shift` `O`     | Para                         |
+| `Cmd` `Shift` `C`     | CC                           |
+| `Cmd` `Shift` `B`     | BCC                          |
+| `Cmd` `Shift` `F`     | De                           |
+| `Cmd` `Shift` `S`     | Edita o assunto              |
+| `Cmd` `Shift` `M`     | Edita a mensagem             |
+| `Cmd` `Shift` `A`     | Anexar                       |
+| `Cmd` `Shift` `,`     | Descarta o rascunho          |
+| `Cmd` `Shift` `I`     | Move os contatos para BCC    |
+| `Cmd` `Shift` `H`     | Lembrar depois               |
+| `Cmd` `Shift` `L`     | Enviar mais tarde            |
+| `Cmd` `;`             | Usa snippet                  |
+| `Cmd` `Enter`         | Enviar                       |
 | `Cmd` `Shift` `Enter` | Envia e marca como concluída |
-| `Cmd` `Shift` `Z`     | Envio instantâneo    |
+| `Cmd` `Shift` `Z`     | Envio instantâneo            |
 
 {.shortcuts}
 

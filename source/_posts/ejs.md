@@ -70,10 +70,10 @@ Use o EJS dentro de uma tag script.
 
 ### Variáveis
 
-|              |                                  |
-| ------------ | -------------------------------- |
-| `<%= var %>` | Imprime o valor da variável      |
-| `<%- var %>` | Imprime sem escape de HTML       |
+|              |                             |
+| ------------ | --------------------------- |
+| `<%= var %>` | Imprime o valor da variável |
+| `<%- var %>` | Imprime sem escape de HTML  |
 
 ### CLI
 

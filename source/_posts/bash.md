@@ -160,9 +160,9 @@ Veja: [Substituição de comando](http://wiki.bash-hackers.org/syntax/expansion/
 
 #### Comprimento
 
-| Expressão  | Descrição             |
-| ---------- | --------------------- |
-| `${#FOO}`  | Comprimento de `$FOO` |
+| Expressão | Descrição             |
+| --------- | --------------------- |
+| `${#FOO}` | Comprimento de `$FOO` |
 
 #### Valores padrão
 
@@ -368,31 +368,31 @@ done
 
 ### Condições de inteiros
 
-| Condição            | Descrição                                   |
-| ------------------- | ------------------------------------------- |
-| `[[ NUM -eq NUM ]]` | <yel>Ig</yel>ual                            |
-| `[[ NUM -ne NUM ]]` | <yel>N</yel>ão <yel>i</yel>gual             |
-| `[[ NUM -lt NUM ]]` | <yel>M</yel>enor <yel>q</yel>ue             |
-| `[[ NUM -le NUM ]]` | <yel>M</yel>enor ou <yel>i</yel>gual        |
-| `[[ NUM -gt NUM ]]` | <yel>M</yel>aior <yel>q</yel>ue             |
-| `[[ NUM -ge NUM ]]` | <yel>M</yel>aior ou <yel>i</yel>gual        |
-| `(( NUM < NUM ))`   | Menor que                                   |
-| `(( NUM <= NUM ))`  | Menor ou igual                              |
-| `(( NUM > NUM ))`   | Maior que                                   |
-| `(( NUM >= NUM ))`  | Maior ou igual                              |
+| Condição            | Descrição                            |
+| ------------------- | ------------------------------------ |
+| `[[ NUM -eq NUM ]]` | <yel>Ig</yel>ual                     |
+| `[[ NUM -ne NUM ]]` | <yel>N</yel>ão <yel>i</yel>gual      |
+| `[[ NUM -lt NUM ]]` | <yel>M</yel>enor <yel>q</yel>ue      |
+| `[[ NUM -le NUM ]]` | <yel>M</yel>enor ou <yel>i</yel>gual |
+| `[[ NUM -gt NUM ]]` | <yel>M</yel>aior <yel>q</yel>ue      |
+| `[[ NUM -ge NUM ]]` | <yel>M</yel>aior ou <yel>i</yel>gual |
+| `(( NUM < NUM ))`   | Menor que                            |
+| `(( NUM <= NUM ))`  | Menor ou igual                       |
+| `(( NUM > NUM ))`   | Maior que                            |
+| `(( NUM >= NUM ))`  | Maior ou igual                       |
 
 ### Condições de strings
 
-| Condição           | Descrição                   |
-| ------------------ | --------------------------- |
-| `[[ -z STR ]]`     | String vazia                |
-| `[[ -n STR ]]`     | <yel>N</yel>ão vazia        |
-| `[[ STR == STR ]]` | Igual                       |
-| `[[ STR = STR ]]`  | Igual (o mesmo acima)       |
-| `[[ STR < STR ]]`  | Menor que _(ASCII)_         |
-| `[[ STR > STR ]]`  | Maior que _(ASCII)_         |
-| `[[ STR != STR ]]` | Diferente                   |
-| `[[ STR =~ STR ]]` | Regexp                      |
+| Condição           | Descrição             |
+| ------------------ | --------------------- |
+| `[[ -z STR ]]`     | String vazia          |
+| `[[ -n STR ]]`     | <yel>N</yel>ão vazia  |
+| `[[ STR == STR ]]` | Igual                 |
+| `[[ STR = STR ]]`  | Igual (o mesmo acima) |
+| `[[ STR < STR ]]`  | Menor que _(ASCII)_   |
+| `[[ STR > STR ]]`  | Maior que _(ASCII)_   |
+| `[[ STR != STR ]]` | Diferente             |
+| `[[ STR =~ STR ]]` | Regexp                |
 
 ### Exemplo {.row-span-3}
 
@@ -466,12 +466,12 @@ fi
 
 ### Mais condições
 
-| Condição             | Descrição            |
-| -------------------- | -------------------- | ----- | --- |
+| Condição             | Descrição                     |
+| -------------------- | ----------------------------- | ----- | --- |
 | `[[ -o noclobber ]]` | Se a OPÇÃO estiver habilitada |
-| `[[ ! EXPR ]]`       | Não                  |
-| `[[ X && Y ]]`       | E                    |
-| `[[ X                |                      | Y ]]` | Ou  |
+| `[[ ! EXPR ]]`       | Não                           |
+| `[[ X && Y ]]`       | E                             |
+| `[[ X                |                               | Y ]]` | Ou  |
 
 ### E lógico, ou lógico
 
@@ -880,12 +880,12 @@ Mais ferramentas de IP: [myip.dog](https://myip.dog/)
 
 ### Variáveis especiais {.row-span-2}
 
-| Expressão  | Descrição                             |
-| ---------- | ------------------------------------- |
-| `$?`       | Status de saída da última tarefa      |
-| `$!`       | PID da última tarefa em segundo plano |
-| `$$`       | PID do shell                          |
-| `$0`       | Nome do arquivo do shell script       |
+| Expressão | Descrição                             |
+| --------- | ------------------------------------- |
+| `$?`      | Status de saída da última tarefa      |
+| `$!`      | PID da última tarefa em segundo plano |
+| `$$`      | PID do shell                          |
+| `$0`      | Nome do arquivo do shell script       |
 
 Veja [Parâmetros especiais](http://wiki.bash-hackers.org/syntax/shellvars#special_parameters_and_shell_variables).
 

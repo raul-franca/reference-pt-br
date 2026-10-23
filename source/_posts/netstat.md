@@ -32,34 +32,34 @@ $ netstat -h
 
 ### Escuta
 
-| Opção            | Exemplo                  |
-| ---------------- | ------------------------ |
+| Opção            | Exemplo                   |
+| ---------------- | ------------------------- |
 | `netstat -ltunp` | Todas as portas em escuta |
-| `netstat -ltn`   | Portas TCP em escuta     |
-| `netstat -lun`   | Portas UDP em escuta     |
-| `netstat -lx`    | Portas Unix em escuta    |
+| `netstat -ltn`   | Portas TCP em escuta      |
+| `netstat -lun`   | Portas UDP em escuta      |
+| `netstat -lx`    | Portas Unix em escuta     |
 
 ### Conexões
 
-| Opção         | Exemplo              |
-| ------------- | -------------------- |
-| `netstat -a`  | Todas as conexões    |
+| Opção         | Exemplo               |
+| ------------- | --------------------- |
+| `netstat -a`  | Todas as conexões     |
 | `netstat -at` | Todas as conexões TCP |
 | `netstat -au` | Todas as conexões UDP |
 
 ### Estatísticas
 
-| Opção         | Exemplo                 |
-| ------------- | ----------------------- |
-| `netstat -s`  | Exibe estatísticas      |
-| `netstat -st` | Exibe estatísticas TCP  |
-| `netstat -su` | Exibe estatísticas UDP  |
+| Opção         | Exemplo                |
+| ------------- | ---------------------- |
+| `netstat -s`  | Exibe estatísticas     |
+| `netstat -st` | Exibe estatísticas TCP |
+| `netstat -su` | Exibe estatísticas UDP |
 
 ### Redes
 
-| Opção         | Exemplo                                     |
-| ------------- | ------------------------------------------- |
-| `netstat -i`  | Mostra as interfaces de rede                |
+| Opção         | Exemplo                                              |
+| ------------- | ---------------------------------------------------- |
+| `netstat -i`  | Mostra as interfaces de rede                         |
 | `netstat -ie` | Mostra informações estendidas das interfaces de rede |
 
 ### IP público
@@ -74,7 +74,7 @@ Mais ferramentas de IP: [myip.dog](https://myip.dog/)
 
 ### Roteamento
 
-| Opção         | Exemplo                                    |
-| ------------- | ------------------------------------------ |
-| `netstat -r`  | Mostra a tabela de roteamento              |
+| Opção         | Exemplo                                           |
+| ------------- | ------------------------------------------------- |
+| `netstat -r`  | Mostra a tabela de roteamento                     |
 | `netstat -rn` | Mostra a tabela de roteamento, sem resolver hosts |

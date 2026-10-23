@@ -59,12 +59,12 @@ intro: |
 
 ### Seleção
 
-| Atalho        | Ação                      |
-| ------------- | ------------------------- |
-| `Esc`         | Selecionar pai            |
-| `Enter`       | Selecionar filho          |
-| `Tab`         | Selecionar próximo irmão  |
-| `Shift` `Tab` | Selecionar irmão anterior |
+| Atalho        | Ação                       |
+| ------------- | -------------------------- |
+| `Esc`         | Selecionar pai             |
+| `Enter`       | Selecionar filho           |
+| `Tab`         | Selecionar próximo irmão   |
+| `Shift` `Tab` | Selecionar irmão anterior  |
 | `Cmd` `A`     | Selecionar todos os irmãos |
 
 {.shortcuts}

@@ -47,12 +47,12 @@ $ grok --max-tool-rounds 100 "rewrite the API"
 
 ### Autenticação
 
-| Método        | Como                                               |
-| ------------- | -------------------------------------------------- |
-| Variável de ambiente | `export GROK_API_KEY=your_key`             |
-| Inline (npx)  | `GROK_API_KEY=key npx grok-cli-hurry-mode@latest` |
-| Flag da CLI   | `grok --api-key your_key`                         |
-| Arquivo de configurações | Defina `apiKey` em `~/.grok/user-settings.json` |
+| Método                   | Como                                              |
+| ------------------------ | ------------------------------------------------- |
+| Variável de ambiente     | `export GROK_API_KEY=your_key`                    |
+| Inline (npx)             | `GROK_API_KEY=key npx grok-cli-hurry-mode@latest` |
+| Flag da CLI              | `grok --api-key your_key`                         |
+| Arquivo de configurações | Defina `apiKey` em `~/.grok/user-settings.json`   |
 
 Obtenha sua API key em [console.x.ai](https://console.x.ai).
 
@@ -65,24 +65,24 @@ source ~/.zshrc
 
 ### Métodos de instalação
 
-| Método            | Comando                                                                                               |
-| ----------------- | ----------------------------------------------------------------------------------------------------- |
-| npm (recomendado) | `npm install -g grok-cli-hurry-mode@latest`                                                           |
-| npx (sem instalar) | `npx grok-cli-hurry-mode@latest`                                                                     |
-| yarn              | `yarn global add grok-cli-hurry-mode@latest`                                                          |
-| pnpm              | `pnpm add -g grok-cli-hurry-mode@latest`                                                              |
-| bun               | `bun add -g grok-cli-hurry-mode@latest`                                                               |
-| Script automático | `curl -fsSL https://raw.githubusercontent.com/hinetapora/grok-cli-hurry-mode/main/install.sh \| bash` |
+| Método             | Comando                                                                                               |
+| ------------------ | ----------------------------------------------------------------------------------------------------- |
+| npm (recomendado)  | `npm install -g grok-cli-hurry-mode@latest`                                                           |
+| npx (sem instalar) | `npx grok-cli-hurry-mode@latest`                                                                      |
+| yarn               | `yarn global add grok-cli-hurry-mode@latest`                                                          |
+| pnpm               | `pnpm add -g grok-cli-hurry-mode@latest`                                                              |
+| bun                | `bun add -g grok-cli-hurry-mode@latest`                                                               |
+| Script automático  | `curl -fsSL https://raw.githubusercontent.com/hinetapora/grok-cli-hurry-mode/main/install.sh \| bash` |
 
 **Requisitos:** Node.js (último LTS), npm/yarn/pnpm, conexão com a internet.
 
 ### Modelos de IA
 
-| Modelo             | Descrição                     |
-| ------------------ | ----------------------------- |
-| `grok-code-fast-1` | Padrão — otimizado para código |
+| Modelo             | Descrição                          |
+| ------------------ | ---------------------------------- |
+| `grok-code-fast-1` | Padrão — otimizado para código     |
 | `grok-4-latest`    | Mais recente, recursos aprimorados |
-| `grok-3-fast`      | Rápido, uso geral             |
+| `grok-3-fast`      | Rápido, uso geral                  |
 
 Substitua com `-m`, a env var `GROK_MODEL` ou `~/.grok/user-settings.json`.
 
@@ -92,23 +92,23 @@ Base URL personalizada: `-u https://api.x.ai/v1` ou `GROK_BASE_URL`.
 
 ### Todas as opções {.row-span-2}
 
-| Opção                   | Alias | Descrição                      |
-| ----------------------- | ----- | ------------------------------ |
-| `--api-key <key>`       | `-k`  | API key do Grok                |
-| `--base-url <url>`      | `-u`  | URL base da API                |
-| `--model <model>`       | `-m`  | Modelo a usar                  |
-| `--prompt <text>`       | `-p`  | Prompt do modo headless        |
-| `--directory <dir>`     | `-d`  | Define o diretório de trabalho |
+| Opção                   | Alias | Descrição                                      |
+| ----------------------- | ----- | ---------------------------------------------- |
+| `--api-key <key>`       | `-k`  | API key do Grok                                |
+| `--base-url <url>`      | `-u`  | URL base da API                                |
+| `--model <model>`       | `-m`  | Modelo a usar                                  |
+| `--prompt <text>`       | `-p`  | Prompt do modo headless                        |
+| `--directory <dir>`     | `-d`  | Define o diretório de trabalho                 |
 | `--max-tool-rounds <n>` |       | Máximo de rodadas de ferramentas (padrão: 400) |
-| `--version`             | `-V`  | Mostra a versão                |
-| `--help`                | `-h`  | Mostra a ajuda                 |
+| `--version`             | `-V`  | Mostra a versão                                |
+| `--help`                | `-h`  | Mostra a ajuda                                 |
 
 **Variáveis de ambiente:**
 
-| Variável        | Finalidade          |
-| --------------- | ------------------- |
-| `GROK_API_KEY`  | API key (obrigatória) |
-| `GROK_MODEL`    | Modelo padrão       |
+| Variável        | Finalidade                    |
+| --------------- | ----------------------------- |
+| `GROK_API_KEY`  | API key (obrigatória)         |
+| `GROK_MODEL`    | Modelo padrão                 |
 | `GROK_BASE_URL` | Endpoint personalizado da API |
 
 ### Subcomandos
@@ -133,14 +133,14 @@ $ grok mcp test <name>
 
 ### Atalhos de teclado {.row-span-2}
 
-| Tecla             | Ação                             |
-| ----------------- | -------------------------------- |
-| `Shift+Tab` twice | Entra no Plan Mode               |
-| `Shift+Tab`       | Alterna o modo de edição automática |
+| Tecla             | Ação                                           |
+| ----------------- | ---------------------------------------------- |
+| `Shift+Tab` twice | Entra no Plan Mode                             |
+| `Shift+Tab`       | Alterna o modo de edição automática            |
 | `Ctrl+I`          | Tooltip de contexto (informações do workspace) |
-| `Ctrl+C`          | Limpa a entrada atual            |
-| `Esc`             | Interrompe a operação atual      |
-| `↑` / `↓`         | Navega no histórico de entrada   |
+| `Ctrl+C`          | Limpa a entrada atual                          |
+| `Esc`             | Interrompe a operação atual                    |
+| `↑` / `↓`         | Navega no histórico de entrada                 |
 
 {.shortcuts}
 
@@ -150,31 +150,31 @@ $ grok mcp test <name>
 
 ### Slash commands
 
-| Comando              | Descrição                     |
-| -------------------- | ----------------------------- |
-| `/help`              | Mostra os comandos disponíveis |
-| `/clear`             | Limpa a tela do terminal      |
-| `/models`            | Lista os modelos disponíveis  |
-| `/exit`              | Encerra a aplicação           |
-| `/compact`           | Comprime o contexto da conversa |
-| `/commit-and-push`   | Mensagem de commit por IA e push |
-| `/init-agent`        | Inicializa a documentação do agente |
-| `/docs`              | Abre a documentação           |
-| `/readme`            | Gera o README                 |
-| `/api-docs`          | Gera a documentação da API    |
-| `/changelog`         | Gera o changelog              |
-| `/comments`          | Adiciona comentários ao código |
-| `/update-agent-docs` | Atualiza a documentação do agente |
+| Comando              | Descrição                              |
+| -------------------- | -------------------------------------- |
+| `/help`              | Mostra os comandos disponíveis         |
+| `/clear`             | Limpa a tela do terminal               |
+| `/models`            | Lista os modelos disponíveis           |
+| `/exit`              | Encerra a aplicação                    |
+| `/compact`           | Comprime o contexto da conversa        |
+| `/commit-and-push`   | Mensagem de commit por IA e push       |
+| `/init-agent`        | Inicializa a documentação do agente    |
+| `/docs`              | Abre a documentação                    |
+| `/readme`            | Gera o README                          |
+| `/api-docs`          | Gera a documentação da API             |
+| `/changelog`         | Gera o changelog                       |
+| `/comments`          | Adiciona comentários ao código         |
+| `/update-agent-docs` | Atualiza a documentação do agente      |
 | `/heal`              | Verificação de autocorreção do sistema |
-| `/guardrails`        | Mostra o status dos guardrails |
+| `/guardrails`        | Mostra o status dos guardrails         |
 
 ### Arquivos de configuração
 
-| Arquivo                      | Finalidade             |
-| ---------------------------- | ---------------------- |
-| `~/.grok/user-settings.json` | Configurações globais do usuário |
+| Arquivo                      | Finalidade                        |
+| ---------------------------- | --------------------------------- |
+| `~/.grok/user-settings.json` | Configurações globais do usuário  |
 | `.grok/settings.json`        | Configurações no nível do projeto |
-| `.grok/GROK.md`              | Contexto do projeto para a IA |
+| `.grok/GROK.md`              | Contexto do projeto para a IA     |
 
 **Exemplo de user-settings.json:**
 
@@ -198,15 +198,15 @@ $ echo "# Project Rules" > .grok/GROK.md
 
 ### Ferramentas principais {.row-span-2}
 
-| Ferramenta | Finalidade                                 |
-| ---------- | ------------------------------------------ |
-| **Read**  | Lê arquivos — texto, imagens, PDFs, notebooks |
-| **Write** | Cria ou sobrescreve arquivos               |
-| **Edit**  | Localização e substituição precisa de strings |
-| **Bash**  | Executa comandos de shell                  |
-| **Grep**  | Busca com regex via ripgrep                |
-| **Glob**  | Correspondência de padrões de arquivos     |
-| **LS**    | Listagem de diretórios                     |
+| Ferramenta | Finalidade                                    |
+| ---------- | --------------------------------------------- |
+| **Read**   | Lê arquivos — texto, imagens, PDFs, notebooks |
+| **Write**  | Cria ou sobrescreve arquivos                  |
+| **Edit**   | Localização e substituição precisa de strings |
+| **Bash**   | Executa comandos de shell                     |
+| **Grep**   | Busca com regex via ripgrep                   |
+| **Glob**   | Correspondência de padrões de arquivos        |
+| **LS**     | Listagem de diretórios                        |
 
 **Read** oferece suporte a offset/limit de linhas para arquivos grandes e exibe imagens visualmente.
 
@@ -225,13 +225,13 @@ $ echo "# Project Rules" > .grok/GROK.md
 
 ### Ferramentas avançadas
 
-| Ferramenta    | Finalidade                            |
-| ------------- | ------------------------------------- |
+| Ferramenta    | Finalidade                                       |
+| ------------- | ------------------------------------------------ |
 | **MultiEdit** | Edições atômicas em vários arquivos com rollback |
-| **WebFetch**  | Recupera e interpreta conteúdo web    |
-| **WebSearch** | Busca na web em tempo real            |
-| **Task**      | Delega para subagentes especializados |
-| **TodoWrite** | Acompanhamento de tarefas e progresso |
+| **WebFetch**  | Recupera e interpreta conteúdo web               |
+| **WebSearch** | Busca na web em tempo real                       |
+| **Task**      | Delega para subagentes especializados            |
+| **TodoWrite** | Acompanhamento de tarefas e progresso            |
 
 Operações do **MultiEdit**: create, edit, delete, rename, move — todas em uma única transação atômica.
 
@@ -245,11 +245,11 @@ Operações do **MultiEdit**: create, edit, delete, rename, move — todas em um
 
 ### Ferramentas de IDE
 
-| Ferramenta       | Finalidade                      |
-| ---------------- | ------------------------------- |
-| **NotebookEdit** | Edita células de notebooks Jupyter |
+| Ferramenta       | Finalidade                                      |
+| ---------------- | ----------------------------------------------- |
+| **NotebookEdit** | Edita células de notebooks Jupyter              |
 | **BashOutput**   | Transmite a saída de processos em segundo plano |
-| **KillBash**     | Encerra processos em segundo plano |
+| **KillBash**     | Encerra processos em segundo plano              |
 
 A IA **seleciona automaticamente** a combinação certa de ferramentas para sua solicitação — sem necessidade de invocação manual.
 
@@ -291,12 +291,12 @@ $ grok -p "check if changes follow architecture guidelines"
 
 ### Fases do Plan Mode
 
-| Fase            | Duração         | O que acontece                   |
-| --------------- | --------------- | -------------------------------- |
-| 🔍 Analysis     | 1–5 sec         | Tipo de projeto, estrutura, deps |
+| Fase            | Duração         | O que acontece                     |
+| --------------- | --------------- | ---------------------------------- |
+| 🔍 Analysis     | 1–5 sec         | Tipo de projeto, estrutura, deps   |
 | 🧠 Strategy     | 5–15 sec        | A IA gera o plano de implementação |
-| 📋 Presentation | 1–2 sec         | Formata o plano para revisão     |
-| ✅ Approval     | User-controlled | Revisa, confirma ou refina       |
+| 📋 Presentation | 1–2 sec         | Formata o plano para revisão       |
+| ✅ Approval     | User-controlled | Revisa, confirma ou refina         |
 
 {.show-header}
 
@@ -385,12 +385,12 @@ $ grok mcp remove myserver
 
 **Tipos de transporte:**
 
-| Tipo              | Quando usar               |
-| ----------------- | ------------------------- |
+| Tipo              | Quando usar                |
+| ----------------- | -------------------------- |
 | `stdio`           | Subprocesso local (padrão) |
-| `http`            | Endpoint HTTP remoto      |
-| `sse`             | Server-Sent Events        |
-| `streamable_http` | HTTP em streaming         |
+| `http`            | Endpoint HTTP remoto       |
+| `sse`             | Server-Sent Events         |
+| `streamable_http` | HTTP em streaming          |
 
 ### Opções de add server
 
@@ -448,10 +448,10 @@ $ npm install -g grok-cli-hurry-mode@latest
 
 ### Env vars úteis
 
-| Variável        | Descrição              |
-| --------------- | ---------------------- |
-| `GROK_API_KEY`  | API key (obrigatória)  |
-| `GROK_MODEL`    | Substitui o modelo padrão |
+| Variável        | Descrição                     |
+| --------------- | ----------------------------- |
+| `GROK_API_KEY`  | API key (obrigatória)         |
+| `GROK_MODEL`    | Substitui o modelo padrão     |
 | `GROK_BASE_URL` | Endpoint personalizado da API |
 
 **API endpoint padrão:** `https://api.x.ai/v1`

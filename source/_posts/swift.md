@@ -602,7 +602,7 @@ if char == "c" {
 // print: r
 ```
 
-### Use sublinhados (_)
+### Use sublinhados (\_)
 
 ```swift
 for _ in 1...3 {

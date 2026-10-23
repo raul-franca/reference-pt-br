@@ -121,15 +121,15 @@ apk add --update curl # install in alpine linux
 
 ### CURL GET/HEAD {.col-span-4 .row-span-2}
 
-| comando                                                               | descrição                            |
-| :-------------------------------------------------------------------- | :----------------------------------- |
-| `curl -I https://cheatsheets.zip`                                     | `curl` envia uma requisição          |
-| `curl -v -I https://cheatsheets.zip`                                  | requisição do `curl` com detalhes    |
+| comando                                                               | descrição                             |
+| :-------------------------------------------------------------------- | :------------------------------------ |
+| `curl -I https://cheatsheets.zip`                                     | `curl` envia uma requisição           |
+| `curl -v -I https://cheatsheets.zip`                                  | requisição do `curl` com detalhes     |
 | `curl -X GET https://cheatsheets.zip`                                 | usa método HTTP explícito para `curl` |
-| `curl --noproxy 127.0.0.1 http://www.stackoverflow.com`               | `curl` sem proxy HTTP                |
-| `curl --connect-timeout 10 -I -k https://cheatsheets.zip`             | `curl` não tem timeout por padrão    |
-| `curl --verbose --header "Host: www.mytest.com:8182" cheatsheets.zip` | `curl` obtém um header extra         |
-| `curl -k -v https://www.google.com`                                   | `curl` obtém a resposta com headers  |
+| `curl --noproxy 127.0.0.1 http://www.stackoverflow.com`               | `curl` sem proxy HTTP                 |
+| `curl --connect-timeout 10 -I -k https://cheatsheets.zip`             | `curl` não tem timeout por padrão     |
+| `curl --verbose --header "Host: www.mytest.com:8182" cheatsheets.zip` | `curl` obtém um header extra          |
+| `curl -k -v https://www.google.com`                                   | `curl` obtém a resposta com headers   |
 
 ### Upload de múltiplos arquivos {.col-span-2}
 
@@ -147,10 +147,10 @@ $ curl -XGET http://${elasticsearch_ip}:9200/_cluster/nodes | python -m json.too
 
 ### CURL POST {.col-span-4}
 
-| comando                                                                     | descrição              |
-| :-------------------------------------------------------------------------- | :--------------------- |
+| comando                                                                     | descrição               |
+| :-------------------------------------------------------------------------- | :---------------------- |
 | `curl -d "name=username&password=123456" <URL>`                             | `curl` envia requisição |
-| `curl <URL> -H "content-type: application/json" -d "{ \"woof\": \"bark\"}"` | `curl` envia JSON      |
+| `curl <URL> -H "content-type: application/json" -d "{ \"woof\": \"bark\"}"` | `curl` envia JSON       |
 
 ### Script do CURL para instalar o rvm {.col-span-2}
 
@@ -160,16 +160,16 @@ curl -sSL https://get.rvm.io | bash
 
 ### CURL avançado {.col-span-6}
 
-| comando                                                                                     | descrição                        |
-| :------------------------------------------------------------------------------------------ | :------------------------------- |
+| comando                                                                                     | descrição                          |
+| :------------------------------------------------------------------------------------------ | :--------------------------------- |
 | `curl myip.dog`                                                                             | obtém o `IP` público desta máquina |
-| `curl -L -s http://ipecho.net/plain, curl -L -s http://whatismijnip.nl`                     | obtém meu `IP` público           |
-| `curl -u $username:$password http://repo.dennyzhang.com/README.txt`                         | `curl` com credenciais           |
-| `curl -v -F key1=value1 -F upload=@localfilename <URL>`                                     | upload com `curl`                |
-| `curl -k -v --http2 https://www.google.com/`                                                | usa curl com http2               |
-| `curl -T cryptopp552.zip -u test:test ftp://10.32.99.187/`                                  | upload `ftp` com curl            |
-| `curl -u test:test ftp://10.32.99.187/cryptopp552.zip -o cryptopp552.zip`                   | download `ftp` com curl          |
-| `curl -v -u admin:admin123 --upload-file package1.zip http://mysever:8081/dir/package1.zip` | upload com credenciais `curl`    |
+| `curl -L -s http://ipecho.net/plain, curl -L -s http://whatismijnip.nl`                     | obtém meu `IP` público             |
+| `curl -u $username:$password http://repo.dennyzhang.com/README.txt`                         | `curl` com credenciais             |
+| `curl -v -F key1=value1 -F upload=@localfilename <URL>`                                     | upload com `curl`                  |
+| `curl -k -v --http2 https://www.google.com/`                                                | usa curl com http2                 |
+| `curl -T cryptopp552.zip -u test:test ftp://10.32.99.187/`                                  | upload `ftp` com curl              |
+| `curl -u test:test ftp://10.32.99.187/cryptopp552.zip -o cryptopp552.zip`                   | download `ftp` com curl            |
+| `curl -v -u admin:admin123 --upload-file package1.zip http://mysever:8081/dir/package1.zip` | upload com credenciais `curl`      |
 
 Mais ferramentas de IP: [myip.dog](https://myip.dog/)
 

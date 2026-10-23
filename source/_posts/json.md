@@ -46,15 +46,15 @@ plugins:
 
 ### Tipos
 
-| Tipo      | Descrição                                  |
-| --------- | :----------------------------------------- |
-| `Number`  | Ponto flutuante de precisão dupla           |
-| `String`  | Sequência de caracteres                     |
-| `Boolean` | `true` ou `false`                           |
-| `Array`   | Sequência ordenada de valores               |
-| `Value`   | String, Number, Boolean, null etc           |
-| `Object`  | Coleção não ordenada de pares chave/valor   |
-| `null`    | Nulo ou vazio                               |
+| Tipo      | Descrição                                 |
+| --------- | :---------------------------------------- |
+| `Number`  | Ponto flutuante de precisão dupla         |
+| `String`  | Sequência de caracteres                   |
+| `Boolean` | `true` ou `false`                         |
+| `Array`   | Sequência ordenada de valores             |
+| `Value`   | String, Number, Boolean, null etc         |
+| `Object`  | Coleção não ordenada de pares chave/valor |
+| `null`    | Nulo ou vazio                             |
 
 ### String {.row-span-3}
 
@@ -90,11 +90,11 @@ Precisa ser delimitada por aspas duplas
 
 ### Number {.row-span-2}
 
-| Tipo       | Descrição                              |
-| ---------- | :------------------------------------- |
-| `Integer`  | Dígitos 1-9, 0 e positivo ou negativo  |
-| `Fraction` | Frações como 0.3, 3.9                  |
-| `Exponent` | Expoente como e, e+, e-, E, E+, E      |
+| Tipo       | Descrição                             |
+| ---------- | :------------------------------------ |
+| `Integer`  | Dígitos 1-9, 0 e positivo ou negativo |
+| `Fraction` | Frações como 0.3, 3.9                 |
+| `Exponent` | Expoente como e, e+, e-, E, E+, E     |
 
 #### Exemplos
 

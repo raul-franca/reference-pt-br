@@ -28,43 +28,43 @@ plugins:
 
 ### Schema
 
-|                |                                       |
-| -------------- | ------------------------------------- |
-| `schema`       | Definição de schema GraphQL           |
-| `query`        | Lê e percorre dados                   |
-| `mutation`     | Modifica dados ou dispara uma ação    |
+|                |                                           |
+| -------------- | ----------------------------------------- |
+| `schema`       | Definição de schema GraphQL               |
+| `query`        | Lê e percorre dados                       |
+| `mutation`     | Modifica dados ou dispara uma ação        |
 | `subscription` | Executa uma query quando um evento ocorre |
 
 ### Tipos escalares nativos
 
-|           |                                              |
-| --------- | -------------------------------------------- |
-| `Int`     | Inteiro de 32 bits com sinal                 |
+|           |                                                      |
+| --------- | ---------------------------------------------------- |
+| `Int`     | Inteiro de 32 bits com sinal                         |
 | `Float`   | Valor de ponto flutuante de precisão dupla com sinal |
-| `String`  | Sequência de caracteres UTF-8                |
-| `Boolean` | true ou false                                |
-| `ID`      | Um identificador único                       |
+| `String`  | Sequência de caracteres UTF-8                        |
+| `Boolean` | true ou false                                        |
+| `ID`      | Um identificador único                               |
 
 ### Definições de tipo
 
-|             |                          |
-| ----------- | ------------------------ |
-| `scalar`    | Tipo escalar             |
-| `type`      | Tipo objeto              |
-| `interface` | Tipo interface           |
-| `union`     | Tipo união               |
-| `enum`      | Tipo enum                |
-| `input`     | Tipo objeto de entrada   |
+|             |                        |
+| ----------- | ---------------------- |
+| `scalar`    | Tipo escalar           |
+| `type`      | Tipo objeto            |
+| `interface` | Tipo interface         |
+| `union`     | Tipo união             |
+| `enum`      | Tipo enum              |
+| `input`     | Tipo objeto de entrada |
 
 ### Modificadores de tipo
 
-|              |                                        |
-| ------------ | -------------------------------------- |
-| `String`     | String que aceita valor nulo           |
-| `String!`    | String que não aceita valor nulo       |
-| `[String]`   | Lista de Strings que aceitam valor nulo |
+|              |                                                  |
+| ------------ | ------------------------------------------------ |
+| `String`     | String que aceita valor nulo                     |
+| `String!`    | String que não aceita valor nulo                 |
+| `[String]`   | Lista de Strings que aceitam valor nulo          |
 | `[String]!`  | Lista não nula de Strings que aceitam valor nulo |
-| `[String!]!` | Lista não nula de Strings não nulas    |
+| `[String!]!` | Lista não nula de Strings não nulas              |
 
 ### Argumentos de entrada {.row-span-2}
 

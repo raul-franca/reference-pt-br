@@ -59,23 +59,23 @@ intro: |
 
 ### Ações de Issue e Atalhos do Navegador
 
-| Atalho  | Ação                            |
-| ------- | ------------------------------- |
-| `O`     | Ver a issue selecionada         |
-| `J`     | Próxima issue                   |
-| `K`     | Issue anterior                  |
-| `U`     | Voltar ao Navegador             |
-| `[`     | Ocultar/mostrar seção esquerda  |
-| `N`     | Próxima atividade               |
-| `P`     | Atividade anterior              |
-| `F`     | Focar o campo de pesquisa       |
-| `Esc`   | Sair do campo                   |
-| `E`     | Editar issue                    |
-| `A`     | Atribuir issue                  |
-| `M`     | Comentar na issue               |
-| `L`     | Editar labels da issue          |
-| `S`     | Compartilhar issue              |
-| `.`     | Caixa de diálogo de operações   |
+| Atalho | Ação                           |
+| ------ | ------------------------------ |
+| `O`    | Ver a issue selecionada        |
+| `J`    | Próxima issue                  |
+| `K`    | Issue anterior                 |
+| `U`    | Voltar ao Navegador            |
+| `[`    | Ocultar/mostrar seção esquerda |
+| `N`    | Próxima atividade              |
+| `P`    | Atividade anterior             |
+| `F`    | Focar o campo de pesquisa      |
+| `Esc`  | Sair do campo                  |
+| `E`    | Editar issue                   |
+| `A`    | Atribuir issue                 |
+| `M`    | Comentar na issue              |
+| `L`    | Editar labels da issue         |
+| `S`    | Compartilhar issue             |
+| `.`    | Caixa de diálogo de operações  |
 
 {.shortcuts}
 

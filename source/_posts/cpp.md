@@ -56,15 +56,15 @@ std::cout << age;     // Print 25
 
 ### Tipos de dados primitivos
 
-| Tipo de dados | Tamanho        | Intervalo           |
-| ------------- | -------------- | ------------------- |
-| `int`         | 4 bytes        | -2^31^ ^a^ 2^31^-1  |
-| `float`       | 4 bytes        | _N/A_               |
-| `double`      | 8 bytes        | _N/A_               |
-| `char`        | 1 byte         | -128 ^a^ 127        |
-| `bool`        | 1 byte         | true / false        |
-| `void`        | _N/A_          | _N/A_               |
-| `wchar_t`     | 2 ^ou^ 4 bytes | 1 caractere largo   |
+| Tipo de dados | Tamanho        | Intervalo          |
+| ------------- | -------------- | ------------------ |
+| `int`         | 4 bytes        | -2^31^ ^a^ 2^31^-1 |
+| `float`       | 4 bytes        | _N/A_              |
+| `double`      | 8 bytes        | _N/A_              |
+| `char`        | 1 byte         | -128 ^a^ 127       |
+| `bool`        | 1 byte         | true / false       |
+| `void`        | _N/A_          | _N/A_              |
+| `wchar_t`     | 2 ^ou^ 4 bytes | 1 caractere largo  |
 
 {.show-header}
 
@@ -313,19 +313,19 @@ else
 
 #### Operadores relacionais
 
-|          |                              |
-| -------- | ---------------------------- |
-| `a == b` | a é igual a b                |
-| `a != b` | a NÃO é igual a b            |
-| `a < b`  | a é menor que b              |
-| `a > b`  | a é maior que b              |
-| `a <= b` | a é menor ou igual a b       |
-| `a >= b` | a é maior ou igual a b       |
+|          |                        |
+| -------- | ---------------------- |
+| `a == b` | a é igual a b          |
+| `a != b` | a NÃO é igual a b      |
+| `a < b`  | a é menor que b        |
+| `a > b`  | a é maior que b        |
+| `a <= b` | a é menor ou igual a b |
+| `a >= b` | a é maior ou igual a b |
 
 #### Operadores de atribuição
 
-| Exemplo  | Equivalente a    |
-| -------- | ---------------- |
+| Exemplo  | Equivalente a        |
+| -------- | -------------------- |
 | `a += b` | _Ou seja_ a = a + b  |
 | `a -= b` | _Ou seja_ a = a - b  |
 | `a *= b` | _Ou seja_ a = a \* b |
@@ -334,20 +334,20 @@ else
 
 #### Operadores lógicos
 
-| Exemplo                     | Significado            |
-| --------------------------- | ---------------------- |
-| `exp1 && exp2`              | Ambos são verdadeiros _(AND)_  |
+| Exemplo                     | Significado                     |
+| --------------------------- | ------------------------------- |
+| `exp1 && exp2`              | Ambos são verdadeiros _(AND)_   |
 | <code>exp1 \|\| exp2</code> | Um dos dois é verdadeiro _(OR)_ |
-| `!exp`                      | `exp` é falso _(NOT)_ |
+| `!exp`                      | `exp` é falso _(NOT)_           |
 
 #### Operadores bit a bit
 
-| Operador            | Descrição               |
-| ------------------- | ----------------------- |
-| `a & b`             | AND binário             |
-| <code>a \| b</code> | OR binário              |
-| `a ^ b`             | XOR binário             |
-| `~ a`               | Complemento de um binário |
+| Operador            | Descrição                       |
+| ------------------- | ------------------------------- |
+| `a & b`             | AND binário                     |
+| <code>a \| b</code> | OR binário                      |
+| `a ^ b`             | XOR binário                     |
+| `~ a`               | Complemento de um binário       |
 | `a << b`            | Deslocamento binário à esquerda |
 | `a >> b`            | Deslocamento binário à direita  |
 

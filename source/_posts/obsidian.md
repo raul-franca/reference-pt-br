@@ -16,32 +16,32 @@ intro: |
 
 ### Atalhos padrão
 
-| Atalho               | Ação                        |
-| -------------------- | --------------------------- |
-| `Ctrl` `S`           | Salvar um arquivo no editor |
-| `Ctrl` `N`           | Criar uma nova nota         |
-| `Ctrl` `P`           | Abrir a paleta de comandos  |
-| `Ctrl` `O`           | Abrir o seletor rápido      |
-| `Ctrl` `Shift` `F`   | Pesquisar em todos os arquivos |
-| `Ctrl` `G`           | Abrir a visualização de grafo |
-| `Ctrl` `Alt` `Left`  | Navegar para trás           |
-| `Ctrl` `Alt` `Right` | Navegar para frente         |
-| `Ctrl` `F`           | Pesquisar no arquivo atual  |
+| Atalho               | Ação                                         |
+| -------------------- | -------------------------------------------- |
+| `Ctrl` `S`           | Salvar um arquivo no editor                  |
+| `Ctrl` `N`           | Criar uma nova nota                          |
+| `Ctrl` `P`           | Abrir a paleta de comandos                   |
+| `Ctrl` `O`           | Abrir o seletor rápido                       |
+| `Ctrl` `Shift` `F`   | Pesquisar em todos os arquivos               |
+| `Ctrl` `G`           | Abrir a visualização de grafo                |
+| `Ctrl` `Alt` `Left`  | Navegar para trás                            |
+| `Ctrl` `Alt` `Right` | Navegar para frente                          |
+| `Ctrl` `F`           | Pesquisar no arquivo atual                   |
 | `Ctrl` `E`           | Alternar entre modo de edição e visualização |
-| `Ctrl` `,`           | Abrir configurações         |
+| `Ctrl` `,`           | Abrir configurações                          |
 
 {.shortcuts}
 
 ### Edição
 
-| Atalho        | Ação                            |
-| ------------- | ------------------------------- |
+| Atalho        | Ação                                  |
+| ------------- | ------------------------------------- |
 | `Ctrl` `B`    | Deixar o texto selecionado em negrito |
 | `Ctrl` `I`    | Deixar o texto selecionado em itálico |
-| `Ctrl` `K`    | Inserir um link externo         |
-| `Ctrl` `]`    | Aumentar recuo                  |
-| `Ctrl` `[`    | Diminuir recuo                  |
-| `Alt` `Enter` | Ir para o backlink selecionado  |
+| `Ctrl` `K`    | Inserir um link externo               |
+| `Ctrl` `]`    | Aumentar recuo                        |
+| `Ctrl` `[`    | Diminuir recuo                        |
+| `Alt` `Enter` | Ir para o backlink selecionado        |
 
 {.shortcuts}
 

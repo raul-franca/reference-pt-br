@@ -26,25 +26,26 @@ $ telnet [options] target [port]
 ```
 
 comunique-se pelo protocolo http
+
 ```shell script
 $ telnet example.com 80
 ```
 
 crie um arquivo de traceroute
+
 ```shell script
 $ telnet example.com 80
 ```
 
-
 ### Exemplos de opções
 
-| Opção  | Exemplo                                   | Operação                                             |
-| ------ | ----------------------------------------- | ---------------------------------------------------- |
-| `-E`   | telnet -E target port                      | Trata todos os caracteres como dados e evita cair para o comando
-| `-e`   | telnet -e '^C' host                     | Define um caractere de escape personalizado em vez do padrão ^]                   |
-| `-l`   | telnet -l alice host           |   Passa um nome de usuário para o host remoto              |
-| `-d`   | telnet -d host           |   Ativa o modo de depuração              |
-| `-l`   | telnet -n host           |   Cria um arquivo de trace              |
+| Opção | Exemplo               | Operação                                                         |
+| ----- | --------------------- | ---------------------------------------------------------------- |
+| `-E`  | telnet -E target port | Trata todos os caracteres como dados e evita cair para o comando |
+| `-e`  | telnet -e '^C' host   | Define um caractere de escape personalizado em vez do padrão ^]  |
+| `-l`  | telnet -l alice host  | Passa um nome de usuário para o host remoto                      |
+| `-d`  | telnet -d host        | Ativa o modo de depuração                                        |
+| `-l`  | telnet -n host        | Cria um arquivo de trace                                         |
 
 ## Veja também
 

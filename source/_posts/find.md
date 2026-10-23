@@ -36,16 +36,16 @@ $ find . -name "json_*"
 
 ### Exemplos de opções {.col-span-2}
 
-| Opção       | Exemplo                                    | Descrição                                   |
-| ----------- | ------------------------------------------ | ------------------------------------------- |
-| `-type`     | find . -type d                             | Localiza apenas diretórios                  |
-| `-name`     | find . -type f -name "\*.txt"              | Localiza arquivo por nome                   |
+| Opção       | Exemplo                                    | Descrição                                              |
+| ----------- | ------------------------------------------ | ------------------------------------------------------ |
+| `-type`     | find . -type d                             | Localiza apenas diretórios                             |
+| `-name`     | find . -type f -name "\*.txt"              | Localiza arquivo por nome                              |
 | `-iname`    | find . -type f -iname "hello"              | Localiza arquivo por nome (sem diferenciar maiúsculas) |
-| `-size`     | find . -size +1G                           | Localiza arquivos maiores que 1G            |
-| `-user`     | find . -type d -user jack                  | Localiza o arquivo do jack                  |
-| `-regex`    | find /var -regex '.\*/tmp/.\*[0-9]\*.file' | Usa regex com o find. Veja [regex](/regex)  |
-| `-maxdepth` | find . -maxdepth 1 -name "a.txt"           | No diretório atual e nos subdiretórios      |
-| `-mindepth` | find / -mindepth 3 -maxdepth 5 -name pass  | Entre os níveis 2 e 4 de subdiretório       |
+| `-size`     | find . -size +1G                           | Localiza arquivos maiores que 1G                       |
+| `-user`     | find . -type d -user jack                  | Localiza o arquivo do jack                             |
+| `-regex`    | find /var -regex '.\*/tmp/.\*[0-9]\*.file' | Usa regex com o find. Veja [regex](/regex)             |
+| `-maxdepth` | find . -maxdepth 1 -name "a.txt"           | No diretório atual e nos subdiretórios                 |
+| `-mindepth` | find / -mindepth 3 -maxdepth 5 -name pass  | Entre os níveis 2 e 4 de subdiretório                  |
 
 {.show-header}
 
@@ -63,13 +63,13 @@ $ find . -name "json_*"
 
 ### Tamanho
 
-|           |                           |
-| --------- | ------------------------- |
+|           |                              |
+| --------- | ---------------------------- |
 | `-size b` | Blocos de 512 bytes (padrão) |
-| `-size c` | Bytes                     |
-| `-size k` | Quilobytes                |
-| `-size M` | Megabytes                 |
-| `-size G` | Gigabytes                 |
+| `-size c` | Bytes                        |
+| `-size k` | Quilobytes                   |
+| `-size M` | Megabytes                    |
+| `-size G` | Gigabytes                    |
 | `-size T` | Terabytes _(somente BSD)_    |
 | `-size P` | Petabytes _(somente BSD)_    |
 
@@ -235,27 +235,27 @@ $ find . -type f -empty -delete
 
 ### Significados {.col-span-2}
 
-| Opção  | Descrição                                                     |
-| ------- | --------------------------------------------------------------- |
-| `atime` | tempo de acesso (última vez que o arquivo foi <yel>aberto</yel>) |
+| Opção   | Descrição                                                                             |
+| ------- | ------------------------------------------------------------------------------------- |
+| `atime` | tempo de acesso (última vez que o arquivo foi <yel>aberto</yel>)                      |
 | `mtime` | tempo de modificação (última vez que o <yel>conteúdo do arquivo foi modificado</yel>) |
-| `ctime` | tempo de alteração (última vez que o <yel>inode foi alterado</yel>)      |
+| `ctime` | tempo de alteração (última vez que o <yel>inode foi alterado</yel>)                   |
 
 #### Exemplo
 
-| Opção          | Descrição                                                |
-| --------------- | ---------------------------------------------------------- |
-| `-mtime +0`     | Modificado há mais de 24 horas                            |
-| `-mtime 0`      | Modificado entre agora e 1 dia atrás                      |
-| `-mtime -1`     | Modificado há menos de 1 dia (o mesmo que `-mtime 0`)     |
-| `-mtime 1`      | Modificado entre 24 e 48 horas atrás                      |
-| `-mtime +1`     | Modificado há mais de 48 horas                            |
-| `-mtime +1w`    | Última modificação há mais de 1 semana                    |
-| `-atime 0`      | Último acesso entre agora e 24 horas atrás                |
-| `-atime +0`     | Acessado há mais de 24 horas                              |
-| `-atime 1`      | Acessado entre 24 e 48 horas atrás                        |
-| `-atime +1`     | Acessado há mais de 48 horas                              |
-| `-atime -1`     | Acessado há menos de 24 horas (o mesmo que `-atime 0`)    |
+| Opção           | Descrição                                                   |
+| --------------- | ----------------------------------------------------------- |
+| `-mtime +0`     | Modificado há mais de 24 horas                              |
+| `-mtime 0`      | Modificado entre agora e 1 dia atrás                        |
+| `-mtime -1`     | Modificado há menos de 1 dia (o mesmo que `-mtime 0`)       |
+| `-mtime 1`      | Modificado entre 24 e 48 horas atrás                        |
+| `-mtime +1`     | Modificado há mais de 48 horas                              |
+| `-mtime +1w`    | Última modificação há mais de 1 semana                      |
+| `-atime 0`      | Último acesso entre agora e 24 horas atrás                  |
+| `-atime +0`     | Acessado há mais de 24 horas                                |
+| `-atime 1`      | Acessado entre 24 e 48 horas atrás                          |
+| `-atime +1`     | Acessado há mais de 48 horas                                |
+| `-atime -1`     | Acessado há menos de 24 horas (o mesmo que `-atime 0`)      |
 | `-ctime -6h30m` | Status do arquivo alterado nas últimas 6 horas e 30 minutos |
 
 ### Exemplos

@@ -913,15 +913,16 @@ Pesquisa científica
 ```{.wrap}
 Explain quantum computing in simple terms
 ```
+
 Artigos universitários verificados
 
-```{.wrap}
+````{.wrap}
 Get me top university research papers with verified direct links
 
 
 ```{.wrap}
 Explain rocket science like I'm five
-```
+````
 
 ### SEO
 

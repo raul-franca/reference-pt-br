@@ -25,6 +25,7 @@ model.evaluate(x_test, y_test)                      # model evaluation
 ## Tensores { .cols-1 }
 
 ### Operações básicas
+
 ```
 a = tf.constant(5) + tf.constant(3)      # tf.constant is an immutable tensor storing the fixed value
 a.numpy()                                # This will return the value, which is 8
@@ -36,7 +37,7 @@ with tf.GradientTape() as tape:          # record operations on variables for au
 ### Criação
 
 ```
-x = 
+x =
 tf.random_normal_initializer(mean, std)            # tensor with independent N(mean,stf) entries
 tf.random_uniform_initializer(min_val, max_val)    # tensor with independent Uniform(min_val, max_val) entries
 x = tf.[ones|zeros](*size)          # tensor with all 1's [or 0's]
@@ -88,6 +89,7 @@ try:
 ## Modelos de Deep Learning { .cols-1 }
 
 ### Criando modelos
+
 ```
 tf.keras.Sequential                                # stack layers in a way that the computation
                                                    # will be performed sequentially
@@ -153,6 +155,7 @@ model.fit(..., callbacks=[callback], ....)                          # update lr 
 ```
 
 ### Salvando e carregando modelos
+
 ```
 tf.keras.models.clone_model(...)         # Clone a Functional or Sequential Model instance.
 tf.keras.models.load_model(...)          # Loads a model saved via model.save().

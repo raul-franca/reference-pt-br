@@ -188,15 +188,15 @@ Console.WriteLine(name); // => John Doe
 
 ### Membros de string {.row-span-2}
 
-| Membro     | Descrição                                                                                                                                                                                          |
-| ---------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Length     | Uma propriedade que retorna o comprimento da string.                                                                                                                                                    |
-| Compare()  | Um método estático que compara duas strings.                                                                                                                                                         |
-| Contains() | Determina se a string contém uma substring específica.                                                                                                                                              |
-| Equals()   | Determina se as duas strings têm os mesmos dados de caractere.                                                                                                                                       |
-| Format()   | Formata uma string por meio da notação {0} e do uso de outros primitivos.                                                                                                                            |
+| Membro     | Descrição                                                                                                                          |
+| ---------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| Length     | Uma propriedade que retorna o comprimento da string.                                                                               |
+| Compare()  | Um método estático que compara duas strings.                                                                                       |
+| Contains() | Determina se a string contém uma substring específica.                                                                             |
+| Equals()   | Determina se as duas strings têm os mesmos dados de caractere.                                                                     |
+| Format()   | Formata uma string por meio da notação {0} e do uso de outros primitivos.                                                          |
 | Trim()     | Remove todas as ocorrências de caracteres específicos do início e do fim da string. Por padrão, remove espaços no início e no fim. |
-| Split()    | Remove o caractere fornecido e cria um array com os caracteres restantes de cada lado.                                                                                                              |
+| Split()    | Remove o caractere fornecido e cria um array com os caracteres restantes de cada lado.                                             |
 
 {.show-header}
 
@@ -221,11 +221,11 @@ lengthOfString.Contains("How"); // => true
 
 ### Termos gerais do .NET {.col-span-2}
 
-| Termo                         | Definição                                                                                                                                                                                         |
-| ----------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Runtime                       | Uma coleção de serviços necessários para executar uma determinada unidade de código compilada.                                                                                                     |
+| Termo                         | Definição                                                                                                                                                                                                                                       |
+| ----------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Runtime                       | Uma coleção de serviços necessários para executar uma determinada unidade de código compilada.                                                                                                                                                  |
 | Common Language Runtime (CLR) | Principalmente localiza, carrega e gerencia objetos .NET. O CLR também cuida do gerenciamento de memória, da hospedagem de aplicações, da coordenação de threads, da execução de verificações de segurança e de outros detalhes de baixo nível. |
-| Managed code                  | Código que compila e executa no runtime do .NET. C#/F#/VB são exemplos.                                                                                                                          |
-| Unmanaged code                | Código que compila diretamente para código de máquina e não pode ser hospedado diretamente pelo runtime do .NET. Não tem gerenciamento de memória, garbage collection etc. DLLs criadas em C/C++ são exemplos.  |
+| Managed code                  | Código que compila e executa no runtime do .NET. C#/F#/VB são exemplos.                                                                                                                                                                         |
+| Unmanaged code                | Código que compila diretamente para código de máquina e não pode ser hospedado diretamente pelo runtime do .NET. Não tem gerenciamento de memória, garbage collection etc. DLLs criadas em C/C++ são exemplos.                                  |
 
 {.show-header}

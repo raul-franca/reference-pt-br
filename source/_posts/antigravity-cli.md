@@ -51,12 +51,12 @@ $ agy --add-dir ../backend --add-dir ../frontend
 
 ### Autenticação
 
-| Método | Descrição |
-| --- | --- |
-| **Conta Google** | Execute `agy` e siga os prompts de login no navegador na primeira execução |
-| **Vertex AI (ADC)** | `gcloud auth application-default login` |
-| **Conta de serviço** | Defina `GOOGLE_APPLICATION_CREDENTIALS=/path/to/sa.json` |
-| **Seleção de projeto** | `agy --project <project-id>` ou `GOOGLE_CLOUD_PROJECT` |
+| Método                 | Descrição                                                                  |
+| ---------------------- | -------------------------------------------------------------------------- |
+| **Conta Google**       | Execute `agy` e siga os prompts de login no navegador na primeira execução |
+| **Vertex AI (ADC)**    | `gcloud auth application-default login`                                    |
+| **Conta de serviço**   | Defina `GOOGLE_APPLICATION_CREDENTIALS=/path/to/sa.json`                   |
+| **Seleção de projeto** | `agy --project <project-id>` ou `GOOGLE_CLOUD_PROJECT`                     |
 
 ### Métodos de instalação
 
@@ -76,13 +76,13 @@ $ agy changelog
 
 ### Modos de execução
 
-| Modo | Flag de comando | Descrição |
-| --- | --- | --- |
-| **Padrão** | *(padrão)* | Pede confirmação antes de modificar arquivos ou executar comandos |
-| **Aceitar edições** | `--mode accept-edits` | Aplica edições e grava arquivos automaticamente, sem pedir confirmação |
-| **Modo Plan** | `--mode plan` | Formula planos de implementação passo a passo antes de mexer no código |
-| **Sandbox** | `--sandbox` | Restringe a execução de shell a um sandbox de terminal isolado |
-| **Sem restrições** | `--dangerously-skip-permissions` | Aprova automaticamente todos os prompts de permissão de ferramentas |
+| Modo                | Flag de comando                  | Descrição                                                              |
+| ------------------- | -------------------------------- | ---------------------------------------------------------------------- |
+| **Padrão**          | _(padrão)_                       | Pede confirmação antes de modificar arquivos ou executar comandos      |
+| **Aceitar edições** | `--mode accept-edits`            | Aplica edições e grava arquivos automaticamente, sem pedir confirmação |
+| **Modo Plan**       | `--mode plan`                    | Formula planos de implementação passo a passo antes de mexer no código |
+| **Sandbox**         | `--sandbox`                      | Restringe a execução de shell a um sandbox de terminal isolado         |
+| **Sem restrições**  | `--dangerously-skip-permissions` | Aprova automaticamente todos os prompts de permissão de ferramentas    |
 
 ### Conceitos-chave
 
@@ -96,27 +96,27 @@ $ agy changelog
 
 ### Flags principais {.row-span-2}
 
-| Flag | Curta | Descrição |
-| --- | --- | --- |
-| `--print <prompt>` | `-p` | Executa o prompt de forma não interativa e imprime a resposta |
-| `--prompt-interactive <prompt>` | `-i` | Executa o prompt inicial e permanece interativo |
-| `--continue` | `-c` | Retoma a conversa mais recente |
-| `--conversation <id>` | | Retoma uma conversa específica por ID |
-| `--model <model>` | | Especifica o modelo da sessão |
-| `--effort <level>` | | Define o esforço de raciocínio (`low`, `medium`, `high`) |
-| `--mode <mode>` | | Modo do agente (`accept-edits`, `plan`) |
-| `--sandbox` | | Ativa as restrições de sandbox do terminal |
-| `--dangerously-skip-permissions` | | Aprova automaticamente todas as permissões de ferramentas |
-| `--add-dir <path>` | | Adiciona um diretório ao workspace (repetível) |
-| `--project <id>` | | ID do projeto Google Cloud / Vertex |
-| `--new-project` | | Cria um novo projeto para esta sessão |
-| `--output-format <format>` | | Formato de saída (`text`, `json`, `stream-json`) |
-| `--input-format <format>` | | Formato de entrada (`text`, `stream-json`) |
-| `--json-schema <schema>` | | Impõe um JSON schema estruturado para as saídas |
-| `--print-timeout <duration>` | | Limite de timeout para o modo print (padrão `0s`) |
-| `--log-file <path>` | | Sobrescreve o path do arquivo de log da CLI |
-| `--remote-control` | | Conecta ao daemon de controle remoto em segundo plano |
-| `--disable-slash-commands` | | Desativa a expansão de slash commands no modo print |
+| Flag                             | Curta | Descrição                                                     |
+| -------------------------------- | ----- | ------------------------------------------------------------- |
+| `--print <prompt>`               | `-p`  | Executa o prompt de forma não interativa e imprime a resposta |
+| `--prompt-interactive <prompt>`  | `-i`  | Executa o prompt inicial e permanece interativo               |
+| `--continue`                     | `-c`  | Retoma a conversa mais recente                                |
+| `--conversation <id>`            |       | Retoma uma conversa específica por ID                         |
+| `--model <model>`                |       | Especifica o modelo da sessão                                 |
+| `--effort <level>`               |       | Define o esforço de raciocínio (`low`, `medium`, `high`)      |
+| `--mode <mode>`                  |       | Modo do agente (`accept-edits`, `plan`)                       |
+| `--sandbox`                      |       | Ativa as restrições de sandbox do terminal                    |
+| `--dangerously-skip-permissions` |       | Aprova automaticamente todas as permissões de ferramentas     |
+| `--add-dir <path>`               |       | Adiciona um diretório ao workspace (repetível)                |
+| `--project <id>`                 |       | ID do projeto Google Cloud / Vertex                           |
+| `--new-project`                  |       | Cria um novo projeto para esta sessão                         |
+| `--output-format <format>`       |       | Formato de saída (`text`, `json`, `stream-json`)              |
+| `--input-format <format>`        |       | Formato de entrada (`text`, `stream-json`)                    |
+| `--json-schema <schema>`         |       | Impõe um JSON schema estruturado para as saídas               |
+| `--print-timeout <duration>`     |       | Limite de timeout para o modo print (padrão `0s`)             |
+| `--log-file <path>`              |       | Sobrescreve o path do arquivo de log da CLI                   |
+| `--remote-control`               |       | Conecta ao daemon de controle remoto em segundo plano         |
+| `--disable-slash-commands`       |       | Desativa a expansão de slash commands no modo print           |
 
 ### Subcomandos
 
@@ -186,16 +186,16 @@ $ agy --effort low
 
 ### Referência de modelos
 
-| Identificador do modelo | Nome de exibição | Uso recomendado |
-| --- | --- | --- |
-| `gemini-3.8-flash-high` | Gemini 3.8 Flash (High) | Codificação diária, turnos rápidos do agente, padrão |
-| `gemini-3.8-flash-medium` | Gemini 3.8 Flash (Medium) | Equilíbrio entre velocidade e tokens de raciocínio |
-| `gemini-3.8-flash-low` | Gemini 3.8 Flash (Low) | Menor latência, consultas leves |
-| `gemini-3.7-flash-high` | Gemini 3.7 Flash (High) | Raciocínio alto da geração anterior |
-| `gemini-3.1-pro-high` | Gemini 3.1 Pro (High) | Refatorações massivas, design entre repositórios |
-| `claude-sonnet-4-6` | Claude Sonnet 4.6 | Assistente de codificação com thinking habilitado |
-| `claude-opus-4-6-thinking` | Claude Opus 4.6 | Raciocínio profundo e complexo em várias etapas |
-| `gpt-oss-120b-medium` | GPT-OSS 120B | Camada de raciocínio com pesos abertos |
+| Identificador do modelo    | Nome de exibição          | Uso recomendado                                      |
+| -------------------------- | ------------------------- | ---------------------------------------------------- |
+| `gemini-3.8-flash-high`    | Gemini 3.8 Flash (High)   | Codificação diária, turnos rápidos do agente, padrão |
+| `gemini-3.8-flash-medium`  | Gemini 3.8 Flash (Medium) | Equilíbrio entre velocidade e tokens de raciocínio   |
+| `gemini-3.8-flash-low`     | Gemini 3.8 Flash (Low)    | Menor latência, consultas leves                      |
+| `gemini-3.7-flash-high`    | Gemini 3.7 Flash (High)   | Raciocínio alto da geração anterior                  |
+| `gemini-3.1-pro-high`      | Gemini 3.1 Pro (High)     | Refatorações massivas, design entre repositórios     |
+| `claude-sonnet-4-6`        | Claude Sonnet 4.6         | Assistente de codificação com thinking habilitado    |
+| `claude-opus-4-6-thinking` | Claude Opus 4.6           | Raciocínio profundo e complexo em várias etapas      |
+| `gpt-oss-120b-medium`      | GPT-OSS 120B              | Camada de raciocínio com pesos abertos               |
 
 ---
 
@@ -203,19 +203,19 @@ $ agy --effort low
 
 ### Slash commands `/` {.row-span-3}
 
-| Slash command | Finalidade |
-| --- | --- |
-| `/help` | Mostra os slash commands e keybindings disponíveis |
-| `/plan` | Formula um design e um plano em várias etapas antes da execução |
-| `/goal` | Modo autônomo: executa até o objetivo ser concluído |
-| `/boost` | Raciocínio profundo, exploração por vários ângulos, verificações rigorosas |
-| `/browser` | Automação web, inspeção de páginas e testes ao vivo |
-| `/grill-me` | Entrevista interativa para fechar decisões de design |
-| `/schedule` | Define um timer único ou um agendamento cron recorrente |
-| `/teamwork-preview` | Colaboração multiagente autônoma |
-| `/learn` | Persiste preferências e aprendizados do desenvolvedor |
-| `/exit` | Sai da sessão da CLI |
-| `/quit` | Alias para `/exit` |
+| Slash command       | Finalidade                                                                 |
+| ------------------- | -------------------------------------------------------------------------- |
+| `/help`             | Mostra os slash commands e keybindings disponíveis                         |
+| `/plan`             | Formula um design e um plano em várias etapas antes da execução            |
+| `/goal`             | Modo autônomo: executa até o objetivo ser concluído                        |
+| `/boost`            | Raciocínio profundo, exploração por vários ângulos, verificações rigorosas |
+| `/browser`          | Automação web, inspeção de páginas e testes ao vivo                        |
+| `/grill-me`         | Entrevista interativa para fechar decisões de design                       |
+| `/schedule`         | Define um timer único ou um agendamento cron recorrente                    |
+| `/teamwork-preview` | Colaboração multiagente autônoma                                           |
+| `/learn`            | Persiste preferências e aprendizados do desenvolvedor                      |
+| `/exit`             | Sai da sessão da CLI                                                       |
+| `/quit`             | Alias para `/exit`                                                         |
 
 ### Modos Goal e Boost
 
@@ -240,32 +240,32 @@ $ agy --effort low
 
 ### Controles gerais {.row-span-2}
 
-| Atalho | Ação |
-| --- | --- |
-| `Ctrl+D Ctrl+D` | Sai da sessão da CLI do agy |
-| `Ctrl+C` | Cancela o turno do agente em execução ou a resposta em streaming |
-| `Enter` | Envia o prompt / a mensagem |
-| `Shift+Enter` | Insere uma nova linha na entrada multilinha |
-| `Alt+Enter` | Insere uma nova linha na entrada multilinha |
+| Atalho          | Ação                                                             |
+| --------------- | ---------------------------------------------------------------- |
+| `Ctrl+D Ctrl+D` | Sai da sessão da CLI do agy                                      |
+| `Ctrl+C`        | Cancela o turno do agente em execução ou a resposta em streaming |
+| `Enter`         | Envia o prompt / a mensagem                                      |
+| `Shift+Enter`   | Insere uma nova linha na entrada multilinha                      |
+| `Alt+Enter`     | Insere uma nova linha na entrada multilinha                      |
 
 ### Navegação na entrada
 
-| Atalho | Ação |
-| --- | --- |
-| `Up` / `Down` | Navega pelo histórico de prompts |
-| `Ctrl+A` | Move o cursor para o início da linha |
-| `Ctrl+E` | Move o cursor para o fim da linha |
-| `Ctrl+U` | Apaga do cursor até o início da linha |
-| `Ctrl+K` | Apaga do cursor até o fim da linha |
-| `Ctrl+L` | Limpa a tela do terminal |
+| Atalho        | Ação                                  |
+| ------------- | ------------------------------------- |
+| `Up` / `Down` | Navega pelo histórico de prompts      |
+| `Ctrl+A`      | Move o cursor para o início da linha  |
+| `Ctrl+E`      | Move o cursor para o fim da linha     |
+| `Ctrl+U`      | Apaga do cursor até o início da linha |
+| `Ctrl+K`      | Apaga do cursor até o fim da linha    |
+| `Ctrl+L`      | Limpa a tela do terminal              |
 
 ### Controle do agente
 
-| Ação | Como |
-| --- | --- |
-| **Aceitar edição** | Pressione `Enter` ou clique em Approve no prompt da ferramenta |
-| **Rejeitar edição** | Pressione `Esc` ou digite um feedback |
-| **Interromper** | `Ctrl+C` interrompe a chamada da ferramenta imediatamente |
+| Ação                | Como                                                           |
+| ------------------- | -------------------------------------------------------------- |
+| **Aceitar edição**  | Pressione `Enter` ou clique em Approve no prompt da ferramenta |
+| **Rejeitar edição** | Pressione `Esc` ou digite um feedback                          |
+| **Interromper**     | `Ctrl+C` interrompe a chamada da ferramenta imediatamente      |
 
 ---
 
@@ -293,11 +293,11 @@ flowchart TD
 
 ### Tipos de subagente integrados
 
-| Subagente | Escopo | Finalidade |
-| --- | --- | --- |
-| `research` | Somente leitura | Busca na web, exploração da base de código, análise de documentação |
-| `self` | Todas as ferramentas | Herda as ferramentas do pai para executar edições paralelas em branches |
-| `custom` | Configurável | Definido dinamicamente via `define_subagent` |
+| Subagente  | Escopo               | Finalidade                                                              |
+| ---------- | -------------------- | ----------------------------------------------------------------------- |
+| `research` | Somente leitura      | Busca na web, exploração da base de código, análise de documentação     |
+| `self`     | Todas as ferramentas | Herda as ferramentas do pai para executar edições paralelas em branches |
+| `custom`   | Configurável         | Definido dinamicamente via `define_subagent`                            |
 
 ---
 
@@ -349,7 +349,9 @@ As regras orientam padrões de código e instruções automaticamente:
 
 ```markdown
 <!-- GEMINI.md example -->
+
 # Project Guidelines
+
 - Always use TypeScript strict mode.
 - Write tests with Vitest in tests/ directory.
 ```
@@ -428,12 +430,12 @@ my-plugin/
 
 ### Locais de configuração {.row-span-2}
 
-| Escopo | Path | Finalidade |
-| --- | --- | --- |
-| **Configurações da CLI** | `~/.gemini/antigravity-cli/settings.json` | Preferências globais da CLI, modelo padrão, raciocínio |
-| **Configuração global** | `~/.gemini/config/` | Skills, regras e plugins de todo o usuário |
-| **Configuração do workspace** | `.agents/` ou `.gemini/` | Regras e configurações de agente com escopo do projeto |
-| **Sessões e brain** | `~/.gemini/antigravity-cli/brain/<session-id>/` | Transcrições, tarefas e artefatos gerados |
+| Escopo                        | Path                                            | Finalidade                                             |
+| ----------------------------- | ----------------------------------------------- | ------------------------------------------------------ |
+| **Configurações da CLI**      | `~/.gemini/antigravity-cli/settings.json`       | Preferências globais da CLI, modelo padrão, raciocínio |
+| **Configuração global**       | `~/.gemini/config/`                             | Skills, regras e plugins de todo o usuário             |
+| **Configuração do workspace** | `.agents/` ou `.gemini/`                        | Regras e configurações de agente com escopo do projeto |
+| **Sessões e brain**           | `~/.gemini/antigravity-cli/brain/<session-id>/` | Transcrições, tarefas e artefatos gerados              |
 
 ### Exemplo de `settings.json`
 

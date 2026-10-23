@@ -430,15 +430,15 @@ Baseado no [refcard](https://yaml.org/refcard.html) do YAML.org.
 
 ### Indicadores escalares
 
-|       |                                   |
-| ----- | --------------------------------- | --------------------------------------------- | ----------- |
-| `''`  | Delimita escalar em linha sem escape |
+|       |                                        |
+| ----- | -------------------------------------- | ------------------------------------------------------ | ----------- |
+| `''`  | Delimita escalar em linha sem escape   |
 | `"`   | Delimita escalar em linha com escape   |
-| `     | `                                 | Indicador de escalar de bloco                        |
-| `>`   | Indicador de escalar folded           |
-| `-`   | Modificador de chomp strip (`           | -`or`>-`)                                     |
-| `+`   | Modificador de chomp keep (`            | +`or`>+`)                                     |
-| `1-9` | Modificador de indentação explícita (`  | 1`or`>2`). <br/> Modificadores podem ser combinados (` | 2-`, `>+1`) |
+| `     | `                                      | Indicador de escalar de bloco                          |
+| `>`   | Indicador de escalar folded            |
+| `-`   | Modificador de chomp strip (`          | -`or`>-`)                                              |
+| `+`   | Modificador de chomp keep (`           | +`or`>+`)                                              |
+| `1-9` | Modificador de indentação explícita (` | 1`or`>2`). <br/> Modificadores podem ser combinados (` | 2-`, `>+1`) |
 
 ### Propriedade de tag (geralmente não especificada) {.col-span-2}
 

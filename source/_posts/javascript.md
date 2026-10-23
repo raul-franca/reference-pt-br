@@ -61,7 +61,7 @@ console.log(a); // => undefined
 
 ```javascript
 let singleQuotes = 'Wheres my bandit hat?';
-let doubleQuotes = "Wheres my bandit hat?";
+let doubleQuotes = 'Wheres my bandit hat?';
 // this is used to embed expressions or for creating multi-line strings
 let backTicks = `Wheres my bandit hat? ${some_value}`;
 
@@ -514,11 +514,11 @@ console.log(myArray[1]); // 200
 ### Tabela de mutabilidade
 
 |           | adicionar | remover | início | fim |
-| :-------- | :-------: | :-----: | :----: | :--: |
-| `push`    |  ✔  |        |       |  ✔  |
-| `pop`     |     |   ✔    |       |  ✔  |
-| `unshift` |  ✔  |        |   ✔   |     |
-| `shift`   |     |   ✔    |   ✔   |     |
+| :-------- | :-------: | :-----: | :----: | :-: |
+| `push`    |    ✔     |         |        | ✔  |
+| `pop`     |           |   ✔    |        | ✔  |
+| `unshift` |    ✔     |         |   ✔   |     |
+| `shift`   |           |   ✔    |   ✔   |     |
 
 {.show-header}
 

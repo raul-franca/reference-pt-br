@@ -65,12 +65,12 @@ intro: |
 | `&brvbar;` | ¦       | `&#166;`   | barra vertical quebrada                 | %A6    | \\00a6    | <a href='javascript:alert(&quot;\246&quot;)'>\246</a>     |
 | `&sect;`   | §       | `&#167;`   | sinal de seção                          | %A7    | \\00a7    | <a href='javascript:alert(&quot;\247&quot;)'>\247</a>     |
 | `&uml;`    | ¨       | `&#168;`   | trema (diérese)                         | %A8    | \\00a8    | <a href='javascript:alert(&quot;\250&quot;)'>\250</a>     |
-| `&copy;`   | ©       | `&#169;`   | sinal de copyright                      | %A9    | \\00a9    | <a href='javascript:alert(&quot;\251&quot;)'>\251</a>     |
+| `&copy;`   | ©      | `&#169;`   | sinal de copyright                      | %A9    | \\00a9    | <a href='javascript:alert(&quot;\251&quot;)'>\251</a>     |
 | `&ordf;`   | ª       | `&#170;`   | indicador ordinal feminino              | %AA    | \\00aa    | <a href='javascript:alert(&quot;\252&quot;)'>\252</a>     |
 | `&laquo;`  | «       | `&#171;`   | aspas angulares à esquerda              | %AB    | \\00ab    | <a href='javascript:alert(&quot;\253&quot;)'>\253</a>     |
 | `&not;`    | ¬       | `&#172;`   | sinal de negação                        | %AC    | \\00ac    | <a href='javascript:alert(&quot;\254&quot;)'>\254</a>     |
 | `&shy;`    | ­       | `&#173;`   | hífen suave                             | %AD    | \\00ad    | <a href='javascript:alert(&quot;\255&quot;)'>\255</a>     |
-| `&reg;`    | ®       | `&#174;`   | sinal de marca registrada               | %AE    | \\00ae    | <a href='javascript:alert(&quot;\256&quot;)'>\256</a>     |
+| `&reg;`    | ®      | `&#174;`   | sinal de marca registrada               | %AE    | \\00ae    | <a href='javascript:alert(&quot;\256&quot;)'>\256</a>     |
 | `&macr;`   | ¯       | `&#175;`   | mácron                                  | %AF    | \\00af    | <a href='javascript:alert(&quot;\257&quot;)'>\257</a>     |
 | `&deg;`    | °       | `&#176;`   | sinal de grau                           | %B0    | \\00b0    | <a href='javascript:alert(&quot;\260&quot;)'>\260</a>     |
 | `&plusmn;` | ±       | `&#177;`   | sinal de mais ou menos                  | %B1    | \\00b1    | <a href='javascript:alert(&quot;\261&quot;)'>\261</a>     |
@@ -276,7 +276,7 @@ intro: |
 | `&weierp;`  | ℘       | `&#8472;` | P maiúsculo manuscrito, também conhecido como conjunto das partes ou p de Weierstrass | u+2118 ISOamso | \\2118    | <a href='javascript:alert(&quot;\u2118&quot;)'>\u2118</a> |
 | `&image;`   | ℑ       | `&#8465;` | I maiúsculo gótico, também conhecido como parte imaginária                            | u+2111 ISOamso | \\2111    | <a href='javascript:alert(&quot;\u2111&quot;)'>\u2111</a> |
 | `&real;`    | ℜ       | `&#8476;` | R maiúsculo gótico, também conhecido como símbolo da parte real                       | u+211C ISOamso | \\211C    | <a href='javascript:alert(&quot;\u211c&quot;)'>\u211c</a> |
-| `&trade;`   | ™       | `&#8482;` | sinal de marca comercial                                                              | u+2122 ISOnum  | \\2122    | <a href='javascript:alert(&quot;\u2122&quot;)'>\u2122</a> |
+| `&trade;`   | ™      | `&#8482;` | sinal de marca comercial                                                              | u+2122 ISOnum  | \\2122    | <a href='javascript:alert(&quot;\u2122&quot;)'>\u2122</a> |
 | `&alefsym;` | ℵ       | `&#8501;` | símbolo alef                                                                          | u+2135 NEW     | \\2135    | <a href='javascript:alert(&quot;\u&quot;)'>\u</a>         |
 
 {.show-header}
@@ -289,7 +289,7 @@ intro: |
 | `&uarr;`  | ↑       | `&#8593;` | seta para cima                                                               | u+2191 ISOnum  | \\2191    | <a href='javascript:alert(&quot;\u2191&quot;)'>\u2191</a> |
 | `&rarr;`  | →       | `&#8594;` | seta para a direita                                                          | u+2192 ISOnum  | \\2192    | <a href='javascript:alert(&quot;\u2192&quot;)'>\u2192</a> |
 | `&darr;`  | ↓       | `&#8595;` | seta para baixo                                                              | u+2193 ISOnum  | \\2193    | <a href='javascript:alert(&quot;\u2193&quot;)'>\u2193</a> |
-| `&harr;`  | ↔       | `&#8596;` | seta para a esquerda e direita                                               | u+2194 ISOamsa | \\2194    | <a href='javascript:alert(&quot;\u2194&quot;)'>\u2194</a> |
+| `&harr;`  | ↔      | `&#8596;` | seta para a esquerda e direita                                               | u+2194 ISOamsa | \\2194    | <a href='javascript:alert(&quot;\u2194&quot;)'>\u2194</a> |
 | `&crarr;` | ↵       | `&#8629;` | seta para baixo com canto à esquerda, também conhecida como retorno de carro | u+21B5 NEW     | \\21B5    | <a href='javascript:alert(&quot;\u21b5&quot;)'>\u21b5</a> |
 | `&lArr;`  | ⇐       | `&#8656;` | seta dupla para a esquerda, pode ser usada para “implica”                    | u+21D0 ISOtech | \\21D0    | <a href='javascript:alert(&quot;\u21d0&quot;)'>\u21d0</a> |
 | `&uArr;`  | ⇑       | `&#8657;` | seta dupla para cima                                                         | u+21D1 ISOamsa | \\21D1    | <a href='javascript:alert(&quot;\u21d1&quot;)'>\u21d1</a> |
@@ -356,8 +356,8 @@ intro: |
 | `&rceil;`  | ⌉       | `&#8969;` | teto direito                                       | u+2309 ISOamsc | \\2309    | <a href='javascript:alert(&quot;\u2309&quot;)'>\u2309</a> |
 | `&lfloor;` | ⌊       | `&#8970;` | piso esquerdo, também conhecido como downstile APL | u+230A ISOamsc | \\230A    | <a href='javascript:alert(&quot;\u230a&quot;)'>\u230a</a> |
 | `&rfloor;` | ⌋       | `&#8971;` | piso direito                                       | u+230B ISOamsc | \\230B    | <a href='javascript:alert(&quot;\u230b&quot;)'>\u230b</a> |
-| `&lang;`   | 〈       | `&#9001;` | colchete angular apontando para a esquerda         | u+2329 ISOtech | \\2329    | <a href='javascript:alert(&quot;\u2329&quot;)'>\u2329</a> |
-| `&rang;`   | 〉       | `&#9002;` | colchete angular apontando para a direita          | u+232A ISOtech | \\232A    | <a href='javascript:alert(&quot;\u232a&quot;)'>\u232a</a> |
+| `&lang;`   | 〈      | `&#9001;` | colchete angular apontando para a esquerda         | u+2329 ISOtech | \\2329    | <a href='javascript:alert(&quot;\u2329&quot;)'>\u2329</a> |
+| `&rang;`   | 〉      | `&#9002;` | colchete angular apontando para a direita          | u+232A ISOtech | \\232A    | <a href='javascript:alert(&quot;\u232a&quot;)'>\u232a</a> |
 
 {.show-header}
 
@@ -366,9 +366,9 @@ intro: |
 | HTML       | Símbolo | Numérico  | Descrição                                                        | Hex           | CSS (ISO) | JS (Octal)                                                |
 | ---------- | ------- | --------- | ---------------------------------------------------------------- | ------------- | --------- | --------------------------------------------------------- |
 | `&loz;`    | ◊       | `&#9674;` | losango                                                          | u+25CA ISOpub | \\25CA    | <a href='javascript:alert(&quot;\u25ca&quot;)'>\u25ca</a> |
-| `&spades;` | ♠       | `&#9824;` | naipe de espadas preto                                           | u+2660 ISOpub | \\2660    | <a href='javascript:alert(&quot;\u2660&quot;)'>\u2660</a> |
-| `&clubs;`  | ♣       | `&#9827;` | naipe de paus preto, também conhecido como trevo                 | u+2663 ISOpub | \\2663    | <a href='javascript:alert(&quot;\u2663&quot;)'>\u2663</a> |
-| `&hearts;` | ♥       | `&#9829;` | naipe de copas preto, também conhecido como coração de valentine | u+2665 ISOpub | \\2665    | <a href='javascript:alert(&quot;\u2665&quot;)'>\u2665</a> |
-| `&diams;`  | ♦       | `&#9830;` | naipe de ouros preto                                             | u+2666 ISOpub | \\2666    | <a href='javascript:alert(&quot;\u2666&quot;)'>\u2666</a> |
+| `&spades;` | ♠      | `&#9824;` | naipe de espadas preto                                           | u+2660 ISOpub | \\2660    | <a href='javascript:alert(&quot;\u2660&quot;)'>\u2660</a> |
+| `&clubs;`  | ♣      | `&#9827;` | naipe de paus preto, também conhecido como trevo                 | u+2663 ISOpub | \\2663    | <a href='javascript:alert(&quot;\u2663&quot;)'>\u2663</a> |
+| `&hearts;` | ♥      | `&#9829;` | naipe de copas preto, também conhecido como coração de valentine | u+2665 ISOpub | \\2665    | <a href='javascript:alert(&quot;\u2665&quot;)'>\u2665</a> |
+| `&diams;`  | ♦      | `&#9830;` | naipe de ouros preto                                             | u+2666 ISOpub | \\2666    | <a href='javascript:alert(&quot;\u2666&quot;)'>\u2666</a> |
 
 {.show-header}

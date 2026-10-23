@@ -178,7 +178,7 @@ Veja: [Funções](#awk-functions)
 | `END{print NR}`     | Total de registros                        |
 | `BEGIN{print OFMT}` | Formato de saída                          |
 | `{print NR, $0}`    | Número da linha                           |
-| `{print NR "	" $0}` | Número da linha (tab)                     |
+| `{print NR "	" $0}`  | Número da linha (tab)                     |
 | `{$1 = NR; print}`  | Substitui o 1º campo pelo número da linha |
 | `$NF > 4`           | Último campo > 4                          |
 | `NR % 2 == 0`       | Registros pares                           |

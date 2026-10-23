@@ -63,60 +63,60 @@ $ agent update
 
 ### Conceitos principais
 
-| Conceito    | Descrição                           |
-| ----------- | ----------------------------------- |
-| Agent mode  | Acesso total: ler, escrever, rodar shell |
-| Plan mode   | Análise somente leitura, sem edições |
+| Conceito    | Descrição                                            |
+| ----------- | ---------------------------------------------------- |
+| Agent mode  | Acesso total: ler, escrever, rodar shell             |
+| Plan mode   | Análise somente leitura, sem edições                 |
 | Ask mode    | Perguntas e respostas / explicações, somente leitura |
-| Cloud agent | Delega para o Cursor cloud remoto   |
-| Session     | Conversa salva com histórico        |
-| Worktree    | Ambiente de branch git isolado      |
-| ACP         | Agent Client Protocol (JSON-RPC)    |
-| MCP         | Integrações externas de ferramentas/dados |
+| Cloud agent | Delega para o Cursor cloud remoto                    |
+| Session     | Conversa salva com histórico                         |
+| Worktree    | Ambiente de branch git isolado                       |
+| ACP         | Agent Client Protocol (JSON-RPC)                     |
+| MCP         | Integrações externas de ferramentas/dados            |
 
 ## Flags da CLI {.cols-2}
 
 ### Sessão e modo {.row-span-2}
 
-| Flag                 | Descrição                             |
-| -------------------- | ------------------------------------- |
-| `--mode=plan`        | Modo plan (somente leitura, sem edições) |
+| Flag                 | Descrição                                         |
+| -------------------- | ------------------------------------------------- |
+| `--mode=plan`        | Modo plan (somente leitura, sem edições)          |
 | `--mode=ask`         | Modo ask (perguntas e respostas, somente leitura) |
-| `--plan`             | Atalho para `--mode=plan`             |
-| `-p, --print`        | Modo headless/print (não interativo)  |
-| `-c, --cloud`        | Inicia no modo cloud agent            |
-| `--continue`         | Continua a sessão anterior            |
-| `--resume [chatId]`  | Retoma uma sessão específica          |
-| `-n, --name`         | Nome da sessão                        |
-| `--workspace <path>` | Define o diretório do workspace       |
-| `--model <model>`    | Modelo a usar (ex.: `sonnet-4`)       |
-| `--list-models`      | Lista os modelos disponíveis e sai    |
+| `--plan`             | Atalho para `--mode=plan`                         |
+| `-p, --print`        | Modo headless/print (não interativo)              |
+| `-c, --cloud`        | Inicia no modo cloud agent                        |
+| `--continue`         | Continua a sessão anterior                        |
+| `--resume [chatId]`  | Retoma uma sessão específica                      |
+| `-n, --name`         | Nome da sessão                                    |
+| `--workspace <path>` | Define o diretório do workspace                   |
+| `--model <model>`    | Modelo a usar (ex.: `sonnet-4`)                   |
+| `--list-models`      | Lista os modelos disponíveis e sai                |
 
 {.bold-first}
 
 ### Worktree e sandbox
 
-| Flag                    | Descrição                             |
-| ----------------------- | ------------------------------------- |
-| `-w, --worktree [name]` | Inicia em um worktree git isolado     |
-| `--worktree-base <ref>` | Branch/ref base do worktree           |
-| `--skip-worktree-setup` | Pula os scripts de `.cursor/worktrees.json` |
-| `--sandbox <mode>`      | `enabled` ou `disabled`               |
-| `--trust`               | Confia no workspace sem perguntar     |
+| Flag                    | Descrição                                      |
+| ----------------------- | ---------------------------------------------- |
+| `-w, --worktree [name]` | Inicia em um worktree git isolado              |
+| `--worktree-base <ref>` | Branch/ref base do worktree                    |
+| `--skip-worktree-setup` | Pula os scripts de `.cursor/worktrees.json`    |
+| `--sandbox <mode>`      | `enabled` ou `disabled`                        |
+| `--trust`               | Confia no workspace sem perguntar              |
 | `--approve-mcps`        | Aprova automaticamente todos os servidores MCP |
 
 {.bold-first}
 
 ### Saída e permissões
 
-| Flag                      | Descrição                               |
-| ------------------------- | --------------------------------------- |
-| `--output-format <fmt>`   | `text` \| `json` \| `stream-json`       |
-| `--stream-partial-output` | Transmite deltas de texto (apenas stream-json) |
+| Flag                      | Descrição                                            |
+| ------------------------- | ---------------------------------------------------- |
+| `--output-format <fmt>`   | `text` \| `json` \| `stream-json`                    |
+| `--stream-partial-output` | Transmite deltas de texto (apenas stream-json)       |
 | `-f, --force`             | Permite comandos, a menos que explicitamente negados |
-| `--yolo`                  | Alias para `--force`                    |
-| `--api-key <key>`         | Chave de autenticação (ou `CURSOR_API_KEY`) |
-| `-H, --header <h>`        | Header de requisição personalizado (`Name: Value`) |
+| `--yolo`                  | Alias para `--force`                                 |
+| `--api-key <key>`         | Chave de autenticação (ou `CURSOR_API_KEY`)          |
+| `-H, --header <h>`        | Header de requisição personalizado (`Name: Value`)   |
 
 {.bold-first}
 
@@ -124,28 +124,28 @@ $ agent update
 
 ### Todos os subcomandos {.row-span-2}
 
-| Comando                             | Descrição                               |
-| ----------------------------------- | --------------------------------------- |
-| `agent [prompt]`                    | Inicia uma sessão interativa ou de print |
-| `agent ls`                          | Lista sessões para retomar              |
-| `agent resume`                      | Retoma a última sessão de chat          |
-| `agent login`                       | Autentica no Cursor                     |
-| `agent logout`                      | Sai e limpa a autenticação              |
-| `agent status`                      | Mostra o status de autenticação / whoami |
-| `agent update`                      | Atualiza para a versão mais recente     |
-| `agent about`                       | Mostra versão, sistema e informações da conta |
-| `agent models`                      | Lista os modelos disponíveis            |
-| `agent create-chat`                 | Cria um novo chat vazio e retorna o ID  |
-| `agent rule`                        | Gera uma nova regra do Cursor de forma interativa |
-| `agent mcp`                         | Gerencia servidores MCP                 |
-| `agent mcp list`                    | Lista os servidores MCP configurados    |
+| Comando                             | Descrição                                          |
+| ----------------------------------- | -------------------------------------------------- |
+| `agent [prompt]`                    | Inicia uma sessão interativa ou de print           |
+| `agent ls`                          | Lista sessões para retomar                         |
+| `agent resume`                      | Retoma a última sessão de chat                     |
+| `agent login`                       | Autentica no Cursor                                |
+| `agent logout`                      | Sai e limpa a autenticação                         |
+| `agent status`                      | Mostra o status de autenticação / whoami           |
+| `agent update`                      | Atualiza para a versão mais recente                |
+| `agent about`                       | Mostra versão, sistema e informações da conta      |
+| `agent models`                      | Lista os modelos disponíveis                       |
+| `agent create-chat`                 | Cria um novo chat vazio e retorna o ID             |
+| `agent rule`                        | Gera uma nova regra do Cursor de forma interativa  |
+| `agent mcp`                         | Gerencia servidores MCP                            |
+| `agent mcp list`                    | Lista os servidores MCP configurados               |
 | `agent mcp list-tools <id>`         | Lista as ferramentas de um servidor MCP específico |
-| `agent mcp enable <id>`             | Adiciona o servidor MCP à lista de aprovados |
-| `agent mcp disable <id>`            | Desativa um servidor MCP                |
-| `agent mcp login <id>`              | Autentica em um servidor MCP            |
-| `agent install-shell-integration`   | Instala a integração de shell em `~/.zshrc` |
-| `agent uninstall-shell-integration` | Remove a integração de shell            |
-| `agent acp`                         | Inicia o servidor ACP (JSON-RPC via stdio) |
+| `agent mcp enable <id>`             | Adiciona o servidor MCP à lista de aprovados       |
+| `agent mcp disable <id>`            | Desativa um servidor MCP                           |
+| `agent mcp login <id>`              | Autentica em um servidor MCP                       |
+| `agent install-shell-integration`   | Instala a integração de shell em `~/.zshrc`        |
+| `agent uninstall-shell-integration` | Remove a integração de shell                       |
+| `agent acp`                         | Inicia o servidor ACP (JSON-RPC via stdio)         |
 
 {.bold-first}
 
@@ -329,11 +329,11 @@ $ git status          # git operations
 
 Controles do shell:
 
-| Tecla    | Ação                         |
-| -------- | ---------------------------- |
-| `Ctrl+C` | Cancela o comando de shell atual |
+| Tecla    | Ação                                 |
+| -------- | ------------------------------------ |
+| `Ctrl+C` | Cancela o comando de shell atual     |
 | `Ctrl+O` | Expande / visualiza a saída completa |
-| `Tab`    | Adiciona o comando à allowlist |
+| `Tab`    | Adiciona o comando à allowlist       |
 
 {.shortcuts}
 
@@ -444,23 +444,23 @@ session/cancel  (optional)
 
 Resultados de permissão:
 
-| Resposta       | Efeito                   |
-| -------------- | ------------------------ |
-| `allow-once`   | Aprova apenas desta vez  |
+| Resposta       | Efeito                        |
+| -------------- | ----------------------------- |
+| `allow-once`   | Aprova apenas desta vez       |
 | `allow-always` | Aprova sempre esta ferramenta |
-| `reject-once`  | Nega apenas desta vez    |
+| `reject-once`  | Nega apenas desta vez         |
 
 ### Métodos de extensão do ACP
 
 Métodos de extensão do Cursor enviados via ACP:
 
-| Método                  | Tipo     | Finalidade             |
-| ----------------------- | -------- | ---------------------- |
-| `cursor/ask_question`   | Bloqueante | Prompt de múltipla escolha |
-| `cursor/create_plan`    | Bloqueante | Solicita aprovação do plano |
+| Método                  | Tipo        | Finalidade                            |
+| ----------------------- | ----------- | ------------------------------------- |
+| `cursor/ask_question`   | Bloqueante  | Prompt de múltipla escolha            |
+| `cursor/create_plan`    | Bloqueante  | Solicita aprovação do plano           |
 | `cursor/update_todos`   | Notificação | Atualiza o estado da lista de tarefas |
-| `cursor/task`           | Notificação | Status da tarefa do subagente |
-| `cursor/generate_image` | Notificação | Evento de geração de imagem |
+| `cursor/task`           | Notificação | Status da tarefa do subagente         |
+| `cursor/generate_image` | Notificação | Evento de geração de imagem           |
 
 {.show-header}
 
@@ -503,13 +503,13 @@ Cloud agents oferecem suporte a:
 
 Ao usar ACP ou cloud, os subagentes podem ser tipados:
 
-| Tipo                 | Descrição               |
-| -------------------- | ----------------------- |
-| `explore`            | Exploração de codebase  |
-| `browser_use`        | Automação de navegador web |
-| `computer_use`       | Ações em GUI do desktop |
-| `shell`              | Execução de comandos de shell |
-| `video_review`       | Análise de conteúdo de vídeo |
+| Tipo                 | Descrição                       |
+| -------------------- | ------------------------------- |
+| `explore`            | Exploração de codebase          |
+| `browser_use`        | Automação de navegador web      |
+| `computer_use`       | Ações em GUI do desktop         |
+| `shell`              | Execução de comandos de shell   |
+| `video_review`       | Análise de conteúdo de vídeo    |
 | `{ custom: "type" }` | Tipo de subagente personalizado |
 
 ## Veja também {.cols-1}

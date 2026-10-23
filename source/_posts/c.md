@@ -526,23 +526,23 @@ printf("%d", x > y);
 ---
 
 | Símbolo | Nome             | Exemplo  |
-| ------ | ---------------- | -------- |
-| `==`   | igual a          | x `==` y |
-| `!=`   | diferente de     | x `!=` y |
-| `>`    | maior que        | x `>` y  |
-| `<`    | menor que        | x `<` y  |
-| `>=`   | maior ou igual a | x `>=` y |
-| `<=`   | menor ou igual a | x `<=` y |
+| ------- | ---------------- | -------- |
+| `==`    | igual a          | x `==` y |
+| `!=`    | diferente de     | x `!=` y |
+| `>`     | maior que        | x `>` y  |
+| `<`     | menor que        | x `<` y  |
+| `>=`    | maior ou igual a | x `>=` y |
+| `<=`    | menor ou igual a | x `<=` y |
 
 Operadores de comparação são usados para comparar dois valores
 
 ### Operadores lógicos {.col-span-2}
 
-| Símbolo            | Nome          | Descrição                                      | Exemplo                       |
-| ----------------- | ------------- | ---------------------------------------------- | ----------------------------- |
-| `&&`              | `and` lógico  | retorna true se ambas as instruções forem true | `x < 5 && x < 10`             |
-| <code>\|\|</code> | `or` lógico   | retorna true se uma das instruções for true    | <code>x < 5 \|\| x < 4</code> |
-| `!`               | `not` lógico  | Inverte o resultado, retorna false se for true | `!(x < 5 && x < 10)`          |
+| Símbolo           | Nome         | Descrição                                      | Exemplo                       |
+| ----------------- | ------------ | ---------------------------------------------- | ----------------------------- |
+| `&&`              | `and` lógico | retorna true se ambas as instruções forem true | `x < 5 && x < 10`             |
+| <code>\|\|</code> | `or` lógico  | retorna true se uma das instruções for true    | <code>x < 5 \|\| x < 4</code> |
+| `!`               | `not` lógico | Inverte o resultado, retorna false se for true | `!(x < 5 && x < 10)`          |
 
 {.show-header}
 
@@ -570,14 +570,14 @@ printf("Line 6 -The value of c is %d\n", c);
 
 ### Operadores bit a bit {.col-span-2}
 
-| Operador        | Descrição                                                      | Instância                                             |
-| :-------------- | :-------------------------------------------------------------- | :---------------------------------------------------- |
-| `&`             | Operação AND bit a bit, "AND" por dígitos binários              | `(A & B)` retorna `12`, que é 0000 1100               |
-| <code>\|</code> | Operador OR bit a bit, "or" por dígito binário                 | <code>(A \| B)</code> retorna `61`, que é 0011 1101   |
-| `^`             | Operador XOR, realiza operação "XOR" por dígitos binários       | `(A ^ B)` retorna `49`, que é 0011 0001               |
-| `~`             | Operador de inversão, realiza operação de "inversão" bit a bit  | `(~A)` retorna `-61`, que é 1100 0011                 |
-| `<<`            | operador de deslocamento binário à esquerda                     | `A << 2` retorna `240`, que é 1111 0000               |
-| `>>`            | operador de deslocamento binário à direita                      | `A >> 2` retorna `15`, que é 0000 1111                |
+| Operador        | Descrição                                                      | Instância                                           |
+| :-------------- | :------------------------------------------------------------- | :-------------------------------------------------- |
+| `&`             | Operação AND bit a bit, "AND" por dígitos binários             | `(A & B)` retorna `12`, que é 0000 1100             |
+| <code>\|</code> | Operador OR bit a bit, "or" por dígito binário                 | <code>(A \| B)</code> retorna `61`, que é 0011 1101 |
+| `^`             | Operador XOR, realiza operação "XOR" por dígitos binários      | `(A ^ B)` retorna `49`, que é 0011 0001             |
+| `~`             | Operador de inversão, realiza operação de "inversão" bit a bit | `(~A)` retorna `-61`, que é 1100 0011               |
+| `<<`            | operador de deslocamento binário à esquerda                    | `A << 2` retorna `240`, que é 1111 0000             |
+| `>>`            | operador de deslocamento binário à direita                     | `A >> 2` retorna `15`, que é 0000 1111              |
 
 {.show-header}
 
@@ -585,23 +585,23 @@ printf("Line 6 -The value of c is %d\n", c);
 
 ### Tipos de dados básicos {.col-span-2}
 
-| Tipo de dados        | Tamanho          | Intervalo                          | Descrição                          |
-| -------------------- | ---------------- | ---------------------------------- | :---------------------------------- |
-| `char`               | 1 byte           | `−128` ~ `127`                     | caractere único/alfanumérico/ASCII |
-| `signed char`        | 1 byte           | `−128` ~ `127`                     |                                    |
-| `unsigned char`      | 1 byte           | `0` ~ `255`                        |                                    |
-| `int`                | `2` a `4` bytes  | `−32,768` ~ `32,767`               | armazena inteiros                  |
-| `signed int`         | 2 bytes          | `−32,768` ~ `32,767`               |                                    |
-| `unsigned int`       | 2 bytes          | `0` ~ `65,535`                     |                                    |
-| `short int`          | 2 bytes          | `−32,768` ~ `32,767`               |                                    |
-| `signed short int`   | 2 bytes          | `−32,768` ~ `32,767`               |                                    |
-| `unsigned short int` | 2 bytes          | `0` ~ `65,535`                     |                                    |
-| `long int`           | 4 bytes          | `-2,147,483,648` ~ `2,147,483,647` |                                    |
-| `signed long int`    | 4 bytes          | `-2,147,483,648` ~ `2,147,483,647` |                                    |
-| `unsigned long int`  | 4 bytes          | `0` ~ `4,294,967,295`              |                                    |
-| `float`              | 4 bytes          | `3.4E-38` ~ `3.4E+38`              |                                    |
-| `double`             | 8 bytes          | `1.7E-308` ~ `1.7E+308`            |                                    |
-| `long double`        | 10 bytes         | `3.4E-4932` ~ `1.1E+4932`          |                                    |
+| Tipo de dados        | Tamanho         | Intervalo                          | Descrição                          |
+| -------------------- | --------------- | ---------------------------------- | :--------------------------------- |
+| `char`               | 1 byte          | `−128` ~ `127`                     | caractere único/alfanumérico/ASCII |
+| `signed char`        | 1 byte          | `−128` ~ `127`                     |                                    |
+| `unsigned char`      | 1 byte          | `0` ~ `255`                        |                                    |
+| `int`                | `2` a `4` bytes | `−32,768` ~ `32,767`               | armazena inteiros                  |
+| `signed int`         | 2 bytes         | `−32,768` ~ `32,767`               |                                    |
+| `unsigned int`       | 2 bytes         | `0` ~ `65,535`                     |                                    |
+| `short int`          | 2 bytes         | `−32,768` ~ `32,767`               |                                    |
+| `signed short int`   | 2 bytes         | `−32,768` ~ `32,767`               |                                    |
+| `unsigned short int` | 2 bytes         | `0` ~ `65,535`                     |                                    |
+| `long int`           | 4 bytes         | `-2,147,483,648` ~ `2,147,483,647` |                                    |
+| `signed long int`    | 4 bytes         | `-2,147,483,648` ~ `2,147,483,647` |                                    |
+| `unsigned long int`  | 4 bytes         | `0` ~ `4,294,967,295`              |                                    |
+| `float`              | 4 bytes         | `3.4E-38` ~ `3.4E+38`              |                                    |
+| `double`             | 8 bytes         | `1.7E-308` ~ `1.7E+308`            |                                    |
+| `long double`        | 10 bytes        | `3.4E-4932` ~ `1.1E+4932`          |                                    |
 
 {.show-header}
 
@@ -624,30 +624,30 @@ printf("%lf\n", myDouble);
 ---
 
 | Tipo de dados | Descrição                                   |
-| :-------- | :----------------------------------- |
-| `char`    | tipo caractere                       |
-| `short`   | inteiro curto                        |
-| `int`     | tipo inteiro                         |
-| `long`    | inteiro longo                        |
-| `float`   | tipo de ponto flutuante de precisão simples |
-| `double`  | tipo de ponto flutuante de precisão dupla   |
-| `void`    | sem tipo                             |
+| :------------ | :------------------------------------------ |
+| `char`        | tipo caractere                              |
+| `short`       | inteiro curto                               |
+| `int`         | tipo inteiro                                |
+| `long`        | inteiro longo                               |
+| `float`       | tipo de ponto flutuante de precisão simples |
+| `double`      | tipo de ponto flutuante de precisão dupla   |
+| `void`        | sem tipo                                    |
 
 ### Especificadores de formato básicos
 
-| Especificador de formato | Tipo de dados                                              |
-| ---------------- | :---------------------------------------------------- |
-| `%d` ou `%i`     | `int` inteiro                                         |
-| `%f`             | `float` tipo decimal de precisão simples              |
-| `%lf`            | `double` dado ou número de ponto flutuante de alta precisão |
-| `%c`             | `char` caractere                                      |
-| `%s`             | para `strings` strings                                |
+| Especificador de formato | Tipo de dados                                               |
+| ------------------------ | :---------------------------------------------------------- |
+| `%d` ou `%i`             | `int` inteiro                                               |
+| `%f`                     | `float` tipo decimal de precisão simples                    |
+| `%lf`                    | `double` dado ou número de ponto flutuante de alta precisão |
+| `%c`                     | `char` caractere                                            |
+| `%s`                     | para `strings` strings                                      |
 
 {.show-header}
 
 ### Especificadores de formato por base
 
-| Formato      | Curto         | Inteiro     | Longo         |
+| Formato     | Curto         | Inteiro     | Longo         |
 | ----------- | ------------- | ----------- | :------------ |
 | Octal       | `%ho`         | `%o`        | `%lo`         |
 | Decimal     | `%hd`         | `%d`        | `%ld`         |
@@ -672,18 +672,18 @@ printf("%c\n", myLetter);
 ### Diretivas do pré-processador {.row-span-2}
 
 | Diretiva   | Descrição                                                          |
-| ---------- | :------------------------------------------------------------------- |
-| `#define`  | define uma macro                                                       |
-| `#include` | inclui um arquivo de código-fonte                                      |
-| `#undef`   | remove a definição da macro                                            |
-| `#ifdef`   | Retorna true se a macro estiver definida                               |
-| `#ifndef`  | Retorna true se a macro não estiver definida                           |
-| `#if`      | Compila o código a seguir se a condição informada for verdadeira       |
-| `#else`    | Alternativa ao `#if`                                                   |
-| `#elif`    | Se a condição do `#if` for falsa, a condição atual é `true`            |
-| `#endif`   | Encerra um bloco de compilação condicional `#if...#else`               |
-| `#error`   | Imprime uma mensagem de erro quando um erro padrão é encontrado        |
-| `#pragma`  | Emite comandos especiais ao compilador usando o método padronizado     |
+| ---------- | :----------------------------------------------------------------- |
+| `#define`  | define uma macro                                                   |
+| `#include` | inclui um arquivo de código-fonte                                  |
+| `#undef`   | remove a definição da macro                                        |
+| `#ifdef`   | Retorna true se a macro estiver definida                           |
+| `#ifndef`  | Retorna true se a macro não estiver definida                       |
+| `#if`      | Compila o código a seguir se a condição informada for verdadeira   |
+| `#else`    | Alternativa ao `#if`                                               |
+| `#elif`    | Se a condição do `#if` for falsa, a condição atual é `true`        |
+| `#endif`   | Encerra um bloco de compilação condicional `#if...#else`           |
+| `#error`   | Imprime uma mensagem de erro quando um erro padrão é encontrado    |
+| `#pragma`  | Emite comandos especiais ao compilador usando o método padronizado |
 
 {.show-header}
 
@@ -700,7 +700,7 @@ printf("%c\n", myLetter);
 
 ### Macros predefinidas {.row-span-2}
 
-| Macro      | Descrição                                                            |
+| Macro      | Descrição                                                             |
 | ---------- | :-------------------------------------------------------------------- |
 | `__DATE__` | A data atual, uma constante de caractere no formato "MMM DD YYYY"     |
 | `__TIME__` | A hora atual, uma constante de caractere no formato "HH:MM:SS"        |
@@ -1110,8 +1110,8 @@ printf("%d %c",
 
 ### Funções de processamento de arquivos
 
-| Função      | Descrição                                              |
-| ----------- | :----------------------------------------------------- |
+| Função      | Descrição                                               |
+| ----------- | :------------------------------------------------------ |
 | `fopen()`   | `open` (abre) um arquivo novo ou existente              |
 | `fprintf()` | grava dados em um `file` (arquivo)                      |
 | `fscanf()`  | `read` (lê) dados de um arquivo                         |
@@ -1130,20 +1130,20 @@ A biblioteca C tem muitas funções para `open`/`read`/`write`/`search` e `close
 
 ### Parâmetro de modo de abertura
 
-| Modo  | Descrição                                                                                                   |
-| ----- | :---------------------------------------------------------------------------------------------------------- |
-| `r`   | Abre um arquivo de texto no modo `read` (leitura), permitindo ler o arquivo                                 |
-| `w`   | Abre um arquivo de texto no modo `write` (escrita), permitindo escrever no arquivo                          |
+| Modo  | Descrição                                                                                                            |
+| ----- | :------------------------------------------------------------------------------------------------------------------- |
+| `r`   | Abre um arquivo de texto no modo `read` (leitura), permitindo ler o arquivo                                          |
+| `w`   | Abre um arquivo de texto no modo `write` (escrita), permitindo escrever no arquivo                                   |
 | `a`   | Abre um arquivo de texto no modo `append` (anexar)<br /><small>Se o arquivo não existir, um novo será criado</small> |
-| `r+`  | Abre um arquivo de texto no modo `read-write`, permitindo ler e escrever o arquivo                          |
-| `w+`  | Abre um arquivo de texto no modo `read-write`, permitindo ler e escrever o arquivo                          |
-| `a+`  | Abre um arquivo de texto no modo `read-write`, permitindo ler e escrever o arquivo                          |
-| `rb`  | Abre um arquivo binário no modo `read`                                                                      |
-| `wb`  | Abre arquivo binário no modo `write`                                                                        |
-| `ab`  | Abre um arquivo binário no modo `append`                                                                    |
-| `rb+` | Abre arquivo binário no modo `read-write`                                                                   |
-| `wb+` | Abre arquivo binário no modo `read-write`                                                                   |
-| `ab+` | Abre arquivo binário no modo `read-write`                                                                   |
+| `r+`  | Abre um arquivo de texto no modo `read-write`, permitindo ler e escrever o arquivo                                   |
+| `w+`  | Abre um arquivo de texto no modo `read-write`, permitindo ler e escrever o arquivo                                   |
+| `a+`  | Abre um arquivo de texto no modo `read-write`, permitindo ler e escrever o arquivo                                   |
+| `rb`  | Abre um arquivo binário no modo `read`                                                                               |
+| `wb`  | Abre arquivo binário no modo `write`                                                                                 |
+| `ab`  | Abre um arquivo binário no modo `append`                                                                             |
+| `rb+` | Abre arquivo binário no modo `read-write`                                                                            |
+| `wb+` | Abre arquivo binário no modo `read-write`                                                                            |
+| `ab+` | Abre arquivo binário no modo `read-write`                                                                            |
 
 {.show-header}
 

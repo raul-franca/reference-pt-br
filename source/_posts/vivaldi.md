@@ -17,7 +17,7 @@ intro: |
 ### Janela
 
 | Atalho                  | Ação                                     |
-| ---                     | ---                                      |
+| ----------------------- | ---------------------------------------- |
 | `Ctrl` `N`              | Nova janela                              |
 | `Ctrl` `Shift` `N`      | Nova janela privada                      |
 | `Ctrl` `Shift` `W`      | Fechar janela                            |
@@ -42,7 +42,7 @@ intro: |
 ### Visualizar
 
 | Atalho              | Ação                     |
-| ---                 | ---                      |
+| ------------------- | ------------------------ |
 | `Ctrl` `Shift` `F`  | Modo tela cheia          |
 | `Ctrl` `Shift` `B`  | Barra de favoritos       |
 | `Ctrl` `/`          | Barra de status          |
@@ -64,7 +64,7 @@ intro: |
 ### Aba
 
 | Atalho                | Ação                            |
-| ---                   | ---                             |
+| --------------------- | ------------------------------- |
 | `Ctrl` `T`            | Nova aba                        |
 | `Ctrl` `W`            | Fechar aba                      |
 | `Ctrl` `Shift` `Tab`  | Alternador de abas para trás    |
@@ -87,7 +87,7 @@ intro: |
 ### Página
 
 | Atalho             | Ação                                    |
-| ---                | ---                                     |
+| ------------------ | --------------------------------------- |
 | `Ctrl` `D`         | Criar favorito                          |
 | `Ctrl` `L`         | Focar no campo de endereço              |
 | `Ctrl` `R`         | Recarregar página                       |

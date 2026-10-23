@@ -79,26 +79,26 @@ d  rwx  r-x  r-x
 
 ### Modos de permissão {.col-span-2}
 
-| Permissão | Descrição               | Octal | Decimal   |
-| --------- | ----------------------- | ----- | --------- |
-| `---`     | Sem permissão           | 000   | 0 (0+0+0) |
-| `--x`     | Executar                | 001   | 1 (0+0+1) |
-| `-w-`     | Gravar                  | 010   | 2 (0+2+0) |
-| `-wx`     | Executar e gravar       | 011   | 3 (0+2+1) |
-| `r--`     | Ler                     | 100   | 4 (4+0+0) |
-| `r-x`     | Ler e executar          | 101   | 5 (4+0+1) |
-| `rw-`     | Ler e gravar            | 110   | 6 (4+2+0) |
-| `rwx`     | Ler, gravar e executar  | 111   | 7 (4+2+1) |
+| Permissão | Descrição              | Octal | Decimal   |
+| --------- | ---------------------- | ----- | --------- |
+| `---`     | Sem permissão          | 000   | 0 (0+0+0) |
+| `--x`     | Executar               | 001   | 1 (0+0+1) |
+| `-w-`     | Gravar                 | 010   | 2 (0+2+0) |
+| `-wx`     | Executar e gravar      | 011   | 3 (0+2+1) |
+| `r--`     | Ler                    | 100   | 4 (4+0+0) |
+| `r-x`     | Ler e executar         | 101   | 5 (4+0+1) |
+| `rw-`     | Ler e gravar           | 110   | 6 (4+2+0) |
+| `rwx`     | Ler, gravar e executar | 111   | 7 (4+2+1) |
 
 {.show-header}
 
 ### Objetos
 
-| Quem (abrev.) | Significado            |
-| ------------- | ---------------------- |
-| `u`           | `U`suário              |
-| `g`           | `G`rupo                |
-| `o`           | `O`utros               |
+| Quem (abrev.) | Significado                  |
+| ------------- | ---------------------------- |
+| `u`           | `U`suário                    |
+| `g`           | `G`rupo                      |
+| `o`           | `O`utros                     |
 | `a`           | Todos (`A`), o mesmo que ugo |
 
 {.show-header}
@@ -118,9 +118,9 @@ d  rwx  r-x  r-x
 
 | Abreviação | Tipo de arquivo  |
 | ---------- | ---------------- |
-| `d`          | `D`iretório     |
+| `d`        | `D`iretório      |
 | `-`        | Arquivo comum    |
-| `l`          | `L`ink simbólico |
+| `l`        | `L`ink simbólico |
 
 {.show-header}
 

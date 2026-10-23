@@ -16,31 +16,31 @@ intro: |
 
 ### Adição rápida de tarefa
 
-| Atalho        | Ação                                   |
-| ------------- | -------------------------------------- |
-| `@`           | Adicionar um label                     |
-| `#`           | Escolher um projeto                    |
-| `+`           | Adicionar um responsável               |
-| `p1/p2/p3/p4` | Definir um nível de prioridade         |
-| `Ctrl` `M`    | Adicionar um comentário a uma tarefa recém-criada |
-| `Alt` `Enter` | Salvar e ir para os comentários (somente Win 10) |
+| Atalho        | Ação                                                |
+| ------------- | --------------------------------------------------- |
+| `@`           | Adicionar um label                                  |
+| `#`           | Escolher um projeto                                 |
+| `+`           | Adicionar um responsável                            |
+| `p1/p2/p3/p4` | Definir um nível de prioridade                      |
+| `Ctrl` `M`    | Adicionar um comentário a uma tarefa recém-criada   |
+| `Alt` `Enter` | Salvar e ir para os comentários (somente Win 10)    |
 | `Tab`         | Abrir o editor completo de tarefas (somente Win 10) |
 
 {.shortcuts}
 
 ### Geral
 
-| Atalho         | Ação                                       |
-| -------------- | ------------------------------------------ |
-| `Ctrl` `Click` | Selecionar e alterar várias tarefas de uma vez |
-| `Q`            | Adicionar tarefa                           |
-| `A`            | Adicionar nova tarefa no fim da lista      |
-| `Shift` `A`    | Adicionar nova tarefa no topo da lista     |
-| `/`            | Abrir busca                                |
-| `U`            | Desfazer a última ação                     |
-| `F5`           | Sincronizar manualmente                    |
-| `Home`         | Navegar para a página padrão               |
-| `PgUp`         | Navegar para trás na visualização de 1 ou 2 painéis |
+| Atalho         | Ação                                                  |
+| -------------- | ----------------------------------------------------- |
+| `Ctrl` `Click` | Selecionar e alterar várias tarefas de uma vez        |
+| `Q`            | Adicionar tarefa                                      |
+| `A`            | Adicionar nova tarefa no fim da lista                 |
+| `Shift` `A`    | Adicionar nova tarefa no topo da lista                |
+| `/`            | Abrir busca                                           |
+| `U`            | Desfazer a última ação                                |
+| `F5`           | Sincronizar manualmente                               |
+| `Home`         | Navegar para a página padrão                          |
+| `PgUp`         | Navegar para trás na visualização de 1 ou 2 painéis   |
 | `PgDown`       | Navegar para frente na visualização de 1 ou 2 painéis |
 
 {.shortcuts}
@@ -60,36 +60,36 @@ intro: |
 
 ### Criar e concluir subtarefas
 
-| Atalho               | Ação                                                  |
-| -------------------- | ----------------------------------------------------- |
-| `Ctrl` `Alt` `Right` | Aumentar o recuo da tarefa                            |
-| `Ctrl` `Alt` `Left`  | Diminuir o recuo da tarefa                            |
+| Atalho               | Ação                                                     |
+| -------------------- | -------------------------------------------------------- |
+| `Ctrl` `Alt` `Right` | Aumentar o recuo da tarefa                               |
+| `Ctrl` `Alt` `Left`  | Diminuir o recuo da tarefa                               |
 | `Shift` `(click)`    | Concluir uma subtarefa ou tarefa recorrente e arquivá-la |
 
 {.shortcuts}
 
 ### Ordenar tarefas dentro de um projeto
 
-| Atalho | Ação               |
-| ------ | ------------------ |
-| `S`    | Ordenar por data   |
-| `P`    | Ordenar por prioridade |
+| Atalho | Ação                    |
+| ------ | ----------------------- |
+| `S`    | Ordenar por data        |
+| `P`    | Ordenar por prioridade  |
 | `R`    | Ordenar por responsável |
 
 {.shortcuts}
 
 ### Navegação
 
-| Atalho             | Ação                               |
-| ------------------ | ---------------------------------- |
-| `Ctrl` `1`         | Caixa de entrada                   |
+| Atalho             | Ação                                                  |
+| ------------------ | ----------------------------------------------------- |
+| `Ctrl` `1`         | Caixa de entrada                                      |
 | `Ctrl` `Shift` `1` | Caixa de entrada da equipe (somente Todoist Business) |
-| `Ctrl` `2`         | Hoje                               |
-| `Ctrl` `3`         | Próximos 7 dias                    |
-| `Ctrl` `4`         | Projetos                           |
-| `Ctrl` `5`         | Labels                             |
-| `Ctrl` `6`         | Filtros                            |
-| `Ctrl` `,`         | Configurações                      |
+| `Ctrl` `2`         | Hoje                                                  |
+| `Ctrl` `3`         | Próximos 7 dias                                       |
+| `Ctrl` `4`         | Projetos                                              |
+| `Ctrl` `5`         | Labels                                                |
+| `Ctrl` `6`         | Filtros                                               |
+| `Ctrl` `,`         | Configurações                                         |
 
 {.shortcuts}
 

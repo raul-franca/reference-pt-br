@@ -68,18 +68,18 @@ jobs:
 
 ### Descrições da sintaxe de workflow
 
-| Linha                 | Descrição                                                                                                                                                                     |
-| :-------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `name:`               | Define o nome do workflow do GitHub Actions. É um rótulo usado para identificar o workflow no repositório.                                                                   |
-| `run-name:`           | Define um nome personalizado para a execução, usando um contexto do GitHub `${{ github.actor }}` para incluir o nome do usuário que iniciou a execução.                       |
-| `on:`                 | Especifica o evento que dispara o workflow. Neste caso, o workflow é disparado em qualquer evento `push` para o repositório.                                                  |
-| `jobs:`               | Define um grupo de jobs que serão executados como parte do workflow. Cada job é executado de forma independente no workflow.                                                  |
-| `check-bats-version:` | Identificador de um job específico dentro do workflow. Este job se chama `check-bats-version`.                                                                                |
-| `runs-on:`            | Especifica o tipo de máquina em que o job será executado. Aqui, está definido para executar na versão mais recente do Ubuntu.                                                 |
-| `steps:`              | Contém uma sequência de tarefas (steps) que serão executadas como parte do job.                                                                                              |
+| Linha                 | Descrição                                                                                                                                                                                  |
+| :-------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `name:`               | Define o nome do workflow do GitHub Actions. É um rótulo usado para identificar o workflow no repositório.                                                                                 |
+| `run-name:`           | Define um nome personalizado para a execução, usando um contexto do GitHub `${{ github.actor }}` para incluir o nome do usuário que iniciou a execução.                                    |
+| `on:`                 | Especifica o evento que dispara o workflow. Neste caso, o workflow é disparado em qualquer evento `push` para o repositório.                                                               |
+| `jobs:`               | Define um grupo de jobs que serão executados como parte do workflow. Cada job é executado de forma independente no workflow.                                                               |
+| `check-bats-version:` | Identificador de um job específico dentro do workflow. Este job se chama `check-bats-version`.                                                                                             |
+| `runs-on:`            | Especifica o tipo de máquina em que o job será executado. Aqui, está definido para executar na versão mais recente do Ubuntu.                                                              |
+| `steps:`              | Contém uma sequência de tarefas (steps) que serão executadas como parte do job.                                                                                                            |
 | `uses:`               | Usado para especificar uma action a incluir como parte de um step. Por exemplo, `actions/checkout@v4` faz o checkout do repositório, e `actions/setup-node@v3` configura um ambiente Node. |
-| `with:`               | Especifica parâmetros adicionais para a action. É usado junto com `uses` para configurar a action.                                                                             |
-| `node-version:`       | Contém um parâmetro em `with`, especificando a versão do Node.js a ser configurada pela action `setup-node`. Neste caso, está definida para a versão '14'.                     |
+| `with:`               | Especifica parâmetros adicionais para a action. É usado junto com `uses` para configurar a action.                                                                                         |
+| `node-version:`       | Contém um parâmetro em `with`, especificando a versão do Node.js a ser configurada pela action `setup-node`. Neste caso, está definida para a versão '14'.                                 |
 
 ### Eventos
 
@@ -99,37 +99,37 @@ jobs:
 
 **Gatilhos de eventos**
 
-| Nome do evento                | Descrição                                       |
-| :---------------------------- | :---------------------------------------------- |
-| `push`                        | Dispara em um push para o repositório.          |
-| `pull_request`                | Dispara em eventos de pull request.             |
-| `pull_request_review`         | Dispara em eventos de review de pull request.   |
-| `pull_request_review_comment` | Dispara em comentários em reviews de pull request. |
-| `pull_request_target`         | Para workflows em repositórios com fork.        |
-| `fork`                        | Dispara quando um repositório recebe fork.      |
-| `issue_comment`               | Dispara em comentários em issues e PRs.         |
-| `issues`                      | Dispara em eventos de issue.                    |
-| `label`                       | Dispara em eventos de label.                    |
-| `milestone`                   | Dispara em eventos de milestone.                |
-| `deployment`                  | Dispara no deploy.                              |
-| `deployment_status`           | Dispara em atualizações de status de deploy.    |
+| Nome do evento                | Descrição                                                   |
+| :---------------------------- | :---------------------------------------------------------- |
+| `push`                        | Dispara em um push para o repositório.                      |
+| `pull_request`                | Dispara em eventos de pull request.                         |
+| `pull_request_review`         | Dispara em eventos de review de pull request.               |
+| `pull_request_review_comment` | Dispara em comentários em reviews de pull request.          |
+| `pull_request_target`         | Para workflows em repositórios com fork.                    |
+| `fork`                        | Dispara quando um repositório recebe fork.                  |
+| `issue_comment`               | Dispara em comentários em issues e PRs.                     |
+| `issues`                      | Dispara em eventos de issue.                                |
+| `label`                       | Dispara em eventos de label.                                |
+| `milestone`                   | Dispara em eventos de milestone.                            |
+| `deployment`                  | Dispara no deploy.                                          |
+| `deployment_status`           | Dispara em atualizações de status de deploy.                |
 | `public`                      | Dispara quando o repositório passa de privado para público. |
-| `repository_dispatch`         | Dispara em um evento personalizado do repositório. |
-| `schedule`                    | Dispara em um agendamento definido.             |
-| `workflow_dispatch`           | Permite o disparo manual do workflow.           |
-| `workflow_run`                | Dispara na conclusão de outro workflow.         |
-| `create`                      | Dispara quando um branch ou tag é criado.       |
-| `delete`                      | Dispara quando um branch ou tag é excluído.     |
-| `page_build`                  | Dispara em eventos de build do GitHub Pages.    |
-| `release`                     | Dispara em eventos de release.                  |
-| `watch`                       | Dispara quando alguém dá star no repositório.   |
-| `registry_package`            | Dispara em eventos de pacote do registry.       |
-| `status`                      | Dispara em atualizações de status de um commit Git. |
-| `project`                     | Dispara em eventos de project board.            |
-| `project_card`                | Dispara em eventos de project card.             |
-| `project_column`              | Dispara em eventos de project column.           |
-| `member`                      | Dispara em eventos de colaborador.              |
-| `gollum`                      | Dispara em atualizações de página wiki.         |
+| `repository_dispatch`         | Dispara em um evento personalizado do repositório.          |
+| `schedule`                    | Dispara em um agendamento definido.                         |
+| `workflow_dispatch`           | Permite o disparo manual do workflow.                       |
+| `workflow_run`                | Dispara na conclusão de outro workflow.                     |
+| `create`                      | Dispara quando um branch ou tag é criado.                   |
+| `delete`                      | Dispara quando um branch ou tag é excluído.                 |
+| `page_build`                  | Dispara em eventos de build do GitHub Pages.                |
+| `release`                     | Dispara em eventos de release.                              |
+| `watch`                       | Dispara quando alguém dá star no repositório.               |
+| `registry_package`            | Dispara em eventos de pacote do registry.                   |
+| `status`                      | Dispara em atualizações de status de um commit Git.         |
+| `project`                     | Dispara em eventos de project board.                        |
+| `project_card`                | Dispara em eventos de project card.                         |
+| `project_column`              | Dispara em eventos de project column.                       |
+| `member`                      | Dispara em eventos de colaborador.                          |
+| `gollum`                      | Dispara em atualizações de página wiki.                     |
 
 ### Jobs
 

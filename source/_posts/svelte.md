@@ -400,8 +400,7 @@ export const time = readable(new Date(), function start(set) {
 
 ```js
 <script>
-  let name = 'Zehan';
-  $effect(() => console.log('Name changed to', name));
+  let name = 'Zehan'; $effect(() => console.log('Name changed to', name));
 </script>
 ```
 

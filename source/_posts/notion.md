@@ -24,16 +24,16 @@ plugins:
 
 ### Criar e navegar
 
-| Ação                                  | Atalho no Mac            | Atalho no Windows/Linux   |
-| :------------------------------------ | :----------------------- | :------------------------ |
-| Criar uma nova página                 | `Cmd` `N`                | `Ctrl` `N`                |
-| Abrir uma nova janela do Notion       | `Cmd` `Shift` `N`        | `Ctrl` `Shift` `N`        |
-| Busca rápida (Search)                 | `Cmd` `P`                | `Ctrl` `P`                |
-| Voltar no histórico da página         | `Cmd` `[`                | `Ctrl` `[`                |
-| Avançar no histórico da página        | `Cmd` `]`                | `Ctrl` `]`                |
-| Ir para a página pai                  | `Cmd` `Shift` `U`        | `Ctrl` `Shift` `U`        |
-| Abrir o link da página em nova aba    | `Cmd` `Click`            | `Ctrl` `Click`            |
-| Abrir o link da página em nova janela | `Option` `Shift` `Click` | `Alt` `Shift` `Click`     |
+| Ação                                  | Atalho no Mac            | Atalho no Windows/Linux |
+| :------------------------------------ | :----------------------- | :---------------------- |
+| Criar uma nova página                 | `Cmd` `N`                | `Ctrl` `N`              |
+| Abrir uma nova janela do Notion       | `Cmd` `Shift` `N`        | `Ctrl` `Shift` `N`      |
+| Busca rápida (Search)                 | `Cmd` `P`                | `Ctrl` `P`              |
+| Voltar no histórico da página         | `Cmd` `[`                | `Ctrl` `[`              |
+| Avançar no histórico da página        | `Cmd` `]`                | `Ctrl` `]`              |
+| Ir para a página pai                  | `Cmd` `Shift` `U`        | `Ctrl` `Shift` `U`      |
+| Abrir o link da página em nova aba    | `Cmd` `Click`            | `Ctrl` `Click`          |
+| Abrir o link da página em nova janela | `Option` `Shift` `Click` | `Alt` `Shift` `Click`   |
 
 {.show-header .shortcuts}
 
@@ -102,9 +102,9 @@ Transformar em lista de tarefas | `Cmd` `Option` `4` | `Ctrl` `Alt` `4` | | Tran
 
 ### Edição
 
-| Ação                                | Atalho no Mac   | Atalho no Windows/Linux |
-| :---------------------------------- | :-------------- | :---------------------- |
-| Nova linha dentro do mesmo bloco    | `Shift` `Enter` | `Shift` `Enter`         |
+| Ação                             | Atalho no Mac   | Atalho no Windows/Linux |
+| :------------------------------- | :-------------- | :---------------------- |
+| Nova linha dentro do mesmo bloco | `Shift` `Enter` | `Shift` `Enter`         |
 
 {.show-header .shortcuts}
 
@@ -114,33 +114,33 @@ Transformar em lista de tarefas | `Cmd` `Option` `4` | `Ctrl` `Alt` `4` | | Tran
 
 ### Criação e seleção
 
-| Ação                                        | Atalho no Mac       | Atalho no Windows/Linux |
-| :------------------------------------------ | :------------------ | :---------------------- |
-| Criar novo bloco de texto abaixo            | `Enter`             | `Enter`                 |
-| Abrir o menu de comandos `/`                | `/`                 | `/`                     |
-| Selecionar o bloco atual                    | `Esc`               | `Esc`                   |
-| Selecionar o bloco pai                      | `Shift` `Esc`       | `Shift` `Esc`           |
-| Selecionar o bloco acima/abaixo             | `Up` / `Down`       | `Up` / `Down`           |
-| Selecionar vários blocos                    | `Shift` `Up`/`Down` | `Shift` `Up`/`Down`     |
-| Selecionar todos os blocos                  | `Cmd` `A`           | `Ctrl` `A`              |
+| Ação                                         | Atalho no Mac       | Atalho no Windows/Linux |
+| :------------------------------------------- | :------------------ | :---------------------- |
+| Criar novo bloco de texto abaixo             | `Enter`             | `Enter`                 |
+| Abrir o menu de comandos `/`                 | `/`                 | `/`                     |
+| Selecionar o bloco atual                     | `Esc`               | `Esc`                   |
+| Selecionar o bloco pai                       | `Shift` `Esc`       | `Shift` `Esc`           |
+| Selecionar o bloco acima/abaixo              | `Up` / `Down`       | `Up` / `Down`           |
+| Selecionar vários blocos                     | `Shift` `Up`/`Down` | `Shift` `Up`/`Down`     |
+| Selecionar todos os blocos                   | `Cmd` `A`           | `Ctrl` `A`              |
 | Editar o bloco selecionado (ou o texto dele) | `Enter`             | `Enter`                 |
 
 {.show-header .shortcuts}
 
 ### Mover e estruturar
 
-| Ação                                          | Atalho no Mac              | Atalho no Windows/Linux    |
-| :-------------------------------------------- | :------------------------- | :------------------------- |
-| Duplicar o(s) bloco(s) selecionado(s)         | `Cmd` `D`                  | `Ctrl` `D`                 |
+| Ação                                               | Atalho no Mac              | Atalho no Windows/Linux    |
+| :------------------------------------------------- | :------------------------- | :------------------------- |
+| Duplicar o(s) bloco(s) selecionado(s)              | `Cmd` `D`                  | `Ctrl` `D`                 |
 | Mover o(s) bloco(s) selecionado(s) para cima/baixo | `Cmd` `Shift` `Up`/`Down`  | `Ctrl` `Shift` `Up`/`Down` |
-| Recuar bloco (aninhar)                        | `Tab`                      | `Tab`                      |
-| Remover recuo do bloco                        | `Shift` `Tab`              | `Shift` `Tab`              |
-| Expandir/recolher lista expansível            | `Cmd` `Option` `T`         | `Ctrl` `Alt` `T`           |
-| Expandir/recolher todas as listas expansíveis | `Cmd` `Option` `Shift` `T` | `Ctrl` `Alt` `Shift` `T`   |
-| Abrir página a partir do link/bloco selecionado | `Cmd` `Enter`              | `Ctrl` `Enter`             |
-| Excluir o(s) bloco(s) selecionado(s)          | `Delete` ou `Backspace`    | `Delete` ou `Backspace`    |
-| Transformar bloco em página                   | `Cmd` `Option` `9`         | `Ctrl` `Alt` `9`           |
-| Mover bloco(s) para outra página              | `Cmd` `Option` `Shift` `M` | `Ctrl` `Alt` `Shift` `M`   |
+| Recuar bloco (aninhar)                             | `Tab`                      | `Tab`                      |
+| Remover recuo do bloco                             | `Shift` `Tab`              | `Shift` `Tab`              |
+| Expandir/recolher lista expansível                 | `Cmd` `Option` `T`         | `Ctrl` `Alt` `T`           |
+| Expandir/recolher todas as listas expansíveis      | `Cmd` `Option` `Shift` `T` | `Ctrl` `Alt` `Shift` `T`   |
+| Abrir página a partir do link/bloco selecionado    | `Cmd` `Enter`              | `Ctrl` `Enter`             |
+| Excluir o(s) bloco(s) selecionado(s)               | `Delete` ou `Backspace`    | `Delete` ou `Backspace`    |
+| Transformar bloco em página                        | `Cmd` `Option` `9`         | `Ctrl` `Alt` `9`           |
+| Mover bloco(s) para outra página                   | `Cmd` `Option` `Shift` `M` | `Ctrl` `Alt` `Shift` `M`   |
 
 {.show-header .shortcuts}
 
@@ -150,9 +150,9 @@ Transformar em lista de tarefas | `Cmd` `Option` `4` | `Ctrl` `Alt` `4` | | Tran
 
 ### Comentários
 
-| Ação                      | Atalho no Mac     | Atalho no Windows/Linux |
-| :------------------------ | :---------------- | :---------------------- |
-| Adicionar comentário à seleção | `Cmd` `Shift` `M` | `Ctrl` `Shift` `M`     |
+| Ação                           | Atalho no Mac     | Atalho no Windows/Linux |
+| :----------------------------- | :---------------- | :---------------------- |
+| Adicionar comentário à seleção | `Cmd` `Shift` `M` | `Ctrl` `Shift` `M`      |
 
 {.show-header .shortcuts}
 
@@ -167,9 +167,9 @@ Transformar em lista de tarefas | `Cmd` `Option` `4` | `Ctrl` `Alt` `4` | | Tran
 
 ### Emoji
 
-| Ação                       | Atalho no Mac          | Atalho no Windows/Linux |
-| :------------------------- | :--------------------- | :---------------------- |
-| Seletor de emoji (sistema) | `Cmd` `Ctrl` `Space`   | `Win` `.` ou `Win` `;`  |
+| Ação                       | Atalho no Mac             | Atalho no Windows/Linux   |
+| :------------------------- | :------------------------ | :------------------------ |
+| Seletor de emoji (sistema) | `Cmd` `Ctrl` `Space`      | `Win` `.` ou `Win` `;`    |
 | Seletor de emoji (Notion)  | `:` + nome do emoji + `:` | `:` + nome do emoji + `:` |
 
 {.show-header .shortcuts}
@@ -180,23 +180,23 @@ Transformar em lista de tarefas | `Cmd` `Option` `4` | `Ctrl` `Alt` `4` | | Tran
 
 ### Navegação e seleção
 
-| Ação                          | Atalho no Mac         | Atalho no Windows/Linux |
-| :---------------------------- | :-------------------- | :---------------------- |
-| Selecionar a linha acima/abaixo | `Shift` `Up`/`Down` | `Shift` `Up`/`Down`     |
-| Abrir a(s) página(s) selecionada(s) | `Cmd` `Enter`   | `Ctrl` `Enter`          |
-| Editar propriedade            | `Enter`               | `Enter`                 |
-| Mover para a célula acima/abaixo | `Shift` `Enter`    | `Shift` `Enter`         |
-| Mover para a célula à esquerda/direita | `Tab` / `Shift` `Tab` | `Tab` / `Shift` `Tab` |
-| Selecionar coluna             | `Cmd` `Shift` `K`     | `Ctrl` `Shift` `K`      |
-| Selecionar vários cartões/linhas | `Shift` `Click`    | `Shift` `Click`         |
+| Ação                                   | Atalho no Mac         | Atalho no Windows/Linux |
+| :------------------------------------- | :-------------------- | :---------------------- |
+| Selecionar a linha acima/abaixo        | `Shift` `Up`/`Down`   | `Shift` `Up`/`Down`     |
+| Abrir a(s) página(s) selecionada(s)    | `Cmd` `Enter`         | `Ctrl` `Enter`          |
+| Editar propriedade                     | `Enter`               | `Enter`                 |
+| Mover para a célula acima/abaixo       | `Shift` `Enter`       | `Shift` `Enter`         |
+| Mover para a célula à esquerda/direita | `Tab` / `Shift` `Tab` | `Tab` / `Shift` `Tab`   |
+| Selecionar coluna                      | `Cmd` `Shift` `K`     | `Ctrl` `Shift` `K`      |
+| Selecionar vários cartões/linhas       | `Shift` `Click`       | `Shift` `Click`         |
 
 {.show-header .shortcuts}
 
 ### Outros
 
-| Ação                         | Atalho no Mac     | Atalho no Windows/Linux |
-| :--------------------------- | :---------------- | :---------------------- |
-| Busca rápida no banco de dados | `Cmd` `Shift` `P` | `Ctrl` `Shift` `P`   |
+| Ação                           | Atalho no Mac     | Atalho no Windows/Linux |
+| :----------------------------- | :---------------- | :---------------------- |
+| Busca rápida no banco de dados | `Cmd` `Shift` `P` | `Ctrl` `Shift` `P`      |
 
 {.show-header .shortcuts}
 

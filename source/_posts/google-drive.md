@@ -16,17 +16,17 @@ intro: |
 
 ### Navegação e visualizações
 
-| Atalho   | Ação                                            |
-| -------- | ----------------------------------------------- |
-| `G` `N`  | Ir para o painel de navegação (lista de pastas) |
-| `G` `L`  | Ir para a visualização de itens                 |
-| `V`      | Alternar entre grade e lista na visualização de itens |
-| `G` `D`  | Ir para o painel de detalhes                    |
-| `G` `T`  | Ir para o topo do aplicativo (barra do Google)  |
-| `G` `A`  | Ir para o status de download                    |
-| `G` `U`  | Ir para o status de upload                      |
-| `D`      | Mostrar ou ocultar o painel de detalhes         |
-| `I`      | Mostrar ou ocultar o painel de atividades       |
+| Atalho  | Ação                                                  |
+| ------- | ----------------------------------------------------- |
+| `G` `N` | Ir para o painel de navegação (lista de pastas)       |
+| `G` `L` | Ir para a visualização de itens                       |
+| `V`     | Alternar entre grade e lista na visualização de itens |
+| `G` `D` | Ir para o painel de detalhes                          |
+| `G` `T` | Ir para o topo do aplicativo (barra do Google)        |
+| `G` `A` | Ir para o status de download                          |
+| `G` `U` | Ir para o status de upload                            |
+| `D`     | Mostrar ou ocultar o painel de detalhes               |
+| `I`     | Mostrar ou ocultar o painel de atividades             |
 
 {.shortcuts}
 
@@ -50,28 +50,28 @@ intro: |
 
 ### Navegar entre itens
 
-| Atalho         | Ação                                   |
-| -------------- | -------------------------------------- |
-| `Ctrl` `Down`  | Mover para baixo sem alterar a seleção |
-| `Ctrl` `Up`    | Mover para cima sem alterar a seleção  |
+| Atalho         | Ação                                        |
+| -------------- | ------------------------------------------- |
+| `Ctrl` `Down`  | Mover para baixo sem alterar a seleção      |
+| `Ctrl` `Up`    | Mover para cima sem alterar a seleção       |
 | `Ctrl` `Left`  | Mover para a esquerda sem alterar a seleção |
-| `Ctrl` `Right` | Mover para a direita sem alterar a seleção |
+| `Ctrl` `Right` | Mover para a direita sem alterar a seleção  |
 
 {.shortcuts}
 
 ### Executar ações nos itens selecionados
 
-| Atalho             | Ação                                            |
-| ------------------ | ----------------------------------------------- |
-| `Enter`            | Abrir o item selecionado                        |
-| `N`                | Renomear o item selecionado                     |
-| `.`                | Compartilhar os itens selecionados              |
-| `Z`                | Mover os itens selecionados para uma nova pasta |
+| Atalho             | Ação                                                  |
+| ------------------ | ----------------------------------------------------- |
+| `Enter`            | Abrir o item selecionado                              |
+| `N`                | Renomear o item selecionado                           |
+| `.`                | Compartilhar os itens selecionados                    |
+| `Z`                | Mover os itens selecionados para uma nova pasta       |
 | `S`                | Marcar ou desmarcar com estrela os itens selecionados |
 | `Shift` `Z`        | Adicionar os itens selecionados a uma pasta adicional |
-| `Delete`           | Remover os itens selecionados                   |
-| `Ctrl` `Z`         | Desfazer a última ação                          |
-| `Ctrl` `Shift` `Z` | Refazer a última ação desfeita                  |
+| `Delete`           | Remover os itens selecionados                         |
+| `Ctrl` `Z`         | Desfazer a última ação                                |
+| `Ctrl` `Shift` `Z` | Refazer a última ação desfeita                        |
 
 {.shortcuts}
 
@@ -90,13 +90,13 @@ intro: |
 
 ### Abrir menus
 
-| Atalho | Ação                            |
-| ------ | ------------------------------- |
-| `C`    | Menu criar                      |
-| `A`    | Menu de mais ações              |
-| `F`    | Menu de ações da pasta atual    |
-| `R`    | Menu de classificação           |
-| `T`    | Menu de configurações           |
+| Atalho | Ação                         |
+| ------ | ---------------------------- |
+| `C`    | Menu criar                   |
+| `A`    | Menu de mais ações           |
+| `F`    | Menu de ações da pasta atual |
+| `R`    | Menu de classificação        |
+| `T`    | Menu de configurações        |
 
 {.shortcuts}
 
@@ -115,12 +115,12 @@ intro: |
 
 ### Ações do modo de visualização
 
-| Atalho  | Ação             |
-| ------- | ---------------- |
-| `Esc`   | Fechar           |
+| Atalho  | Ação              |
+| ------- | ----------------- |
+| `Esc`   | Fechar            |
 | `Space` | Reproduzir/pausar |
-| `+/=`   | Aumentar o zoom  |
-| `-`     | Diminuir o zoom  |
+| `+/=`   | Aumentar o zoom   |
+| `-`     | Diminuir o zoom   |
 
 {.shortcuts}
 

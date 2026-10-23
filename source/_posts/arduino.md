@@ -16,7 +16,7 @@ intro: |
 
 ### Gerais
 
-| Atalho           | Ação                                  |
+| Atalho             | Ação                                  |
 | ------------------ | ------------------------------------- |
 | `Ctrl` `S`         | Salvar                                |
 | `Ctrl` `Shift` `S` | Salvar como                           |

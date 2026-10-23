@@ -40,13 +40,13 @@ Você também pode recuperar a afinidade de CPU de uma tarefa existente
 
 ### Opções comuns {.col-span-2}
 
-| Comando | Alternativa | Significado                                                                                                                                              |
-| ------- | ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `-a`    | --all-tasks | Define ou recupera a afinidade de CPU de todas as tarefas (threads) de um determinado PID.                                                              |
+| Comando | Alternativa | Significado                                                                                                                                                                       |
+| ------- | ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `-a`    | --all-tasks | Define ou recupera a afinidade de CPU de todas as tarefas (threads) de um determinado PID.                                                                                        |
 | `-c`    | --cpu-list  | Interpreta a máscara como uma lista numérica de processadores em vez de um bitmask.</br>Os números são separados por vírgulas e podem incluir intervalos. Por exemplo: `0,5,8-11` |
-| `-p`    | --pid       | Opera em um PID existente e não inicia uma nova tarefa.                                                                                                  |
-| `-h`    | --help      | Exibe o texto de ajuda e sai.                                                                                                                            |
-| `-v`    | --version   | Imprime a versão e sai.                                                                                                                                  |
+| `-p`    | --pid       | Opera em um PID existente e não inicia uma nova tarefa.                                                                                                                           |
+| `-h`    | --help      | Exibe o texto de ajuda e sai.                                                                                                                                                     |
+| `-v`    | --version   | Imprime a versão e sai.                                                                                                                                                           |
 
 {.show-header}
 

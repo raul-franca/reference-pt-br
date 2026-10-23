@@ -104,11 +104,11 @@ Todos os modelos: `google/<model-id>` no HuggingFace
 ### Especificações dos modelos {.col-span-2}
 
 | Modelo  | Arquitetura | Parâmetros totais | Ativos/Token | Camadas | Contexto | Modalidades      |
-| ------- | --------- | --------------- | ------------ | ------ | ------- | ---------------- |
-| E2B     | Dense+PLE | 5.1B (2.3B eff) | 2.3B         | 35     | 128K    | Text+Image+Audio |
-| E4B     | Dense+PLE | 8B (4.5B eff)   | 4.5B         | 42     | 128K    | Text+Image+Audio |
-| 31B     | Dense     | 30.7B           | 30.7B        | 60     | 256K    | Text+Image       |
-| 26B A4B | MoE       | 25.2B           | 3.8B         | 30     | 256K    | Text+Image       |
+| ------- | ----------- | ----------------- | ------------ | ------- | -------- | ---------------- |
+| E2B     | Dense+PLE   | 5.1B (2.3B eff)   | 2.3B         | 35      | 128K     | Text+Image+Audio |
+| E4B     | Dense+PLE   | 8B (4.5B eff)     | 4.5B         | 42      | 128K     | Text+Image+Audio |
+| 31B     | Dense       | 30.7B             | 30.7B        | 60      | 256K     | Text+Image       |
+| 26B A4B | MoE         | 25.2B             | 3.8B         | 30      | 256K     | Text+Image       |
 
 {.show-header}
 
@@ -211,9 +211,9 @@ OmniDocBench = distância de edição de documentos (menor é melhor).
 #### Arena AI (LMSYS ELO)
 
 | Modelo          | ELO  | Ranking aberto |
-| --------------- | ---- | --------- |
-| Gemma 4 31B     | 1452 | #3        |
-| Gemma 4 26B A4B | 1441 | #6        |
+| --------------- | ---- | -------------- |
+| Gemma 4 31B     | 1452 | #3             |
+| Gemma 4 26B A4B | 1441 | #6             |
 
 ## Modo de pensamento {.cols-2}
 
@@ -268,13 +268,13 @@ As variantes E2B/E4B ignoram completamente as tags vazias quando o pensamento es
 
 ### Tokens de controle
 
-| Token                  | Finalidade                       |
-| ---------------------- | -------------------------------- |
+| Token                  | Finalidade                          |
+| ---------------------- | ----------------------------------- |
 | `<\|think\|>`          | Ativa o pensamento no system prompt |
-| `<\|channel>thought\n` | Abre o bloco de pensamento interno |
-| `<channel\|>`          | Fecha o bloco de pensamento      |
-| `<\|turn>`             | Abre o turno da conversa         |
-| `<turn\|>`             | Fecha o turno da conversa        |
+| `<\|channel>thought\n` | Abre o bloco de pensamento interno  |
+| `<channel\|>`          | Fecha o bloco de pensamento         |
+| `<\|turn>`             | Abre o turno da conversa            |
+| `<turn\|>`             | Fecha o turno da conversa           |
 
 {.bold-first}
 
@@ -291,13 +291,13 @@ As variantes E2B/E4B ignoram completamente as tags vazias quando o pensamento es
 
 Proporção variável + **orçamento de tokens visuais** configurável:
 
-| Orçamento | Melhor para                       |
-| ------ | --------------------------------- |
-| 70     | Classificação rápida, frames de vídeo |
-| 140    | Legendas, miniaturas              |
-| 280    | Compreensão geral de imagens      |
-| 560    | Gráficos, diagramas               |
-| 1120   | OCR, parsing de PDF, detalhes finos |
+| Orçamento | Melhor para                           |
+| --------- | ------------------------------------- |
+| 70        | Classificação rápida, frames de vídeo |
+| 140       | Legendas, miniaturas                  |
+| 280       | Compreensão geral de imagens          |
+| 560       | Gráficos, diagramas                   |
+| 1120      | OCR, parsing de PDF, detalhes finos   |
 
 ```python
 # Image MUST come before text (required)
@@ -443,25 +443,25 @@ API compatível com OpenAI em `http://localhost:8000/v1`
 
 ### Cloud e API
 
-| Plataforma | Observações        |
-| ---------- | ------------------ |
-| Gemini API | `gemma-4-31b-it`   |
+| Plataforma | Observações             |
+| ---------- | ----------------------- |
+| Gemini API | `gemma-4-31b-it`        |
 | AI Studio  | Playground no navegador |
-| Vertex AI  | Endpoint personalizado |
-| Cloud Run  | Serverless GPU     |
-| GKE + vLLM | Escala automática  |
+| Vertex AI  | Endpoint personalizado  |
+| Cloud Run  | Serverless GPU          |
+| GKE + vLLM | Escala automática       |
 
 {.bold-first}
 
 ### Edge e mobile
 
-| Runtime          | Melhor para       |
-| ---------------- | ----------------- |
+| Runtime          | Melhor para             |
+| ---------------- | ----------------------- |
 | AICore (Android) | API de nível de sistema |
-| LiteRT-LM        | IoT, Raspberry Pi |
-| AI Edge Gallery  | Avaliação on-device |
-| LM Studio        | GUI para desktop  |
-| llama.cpp        | Híbrido CPU/GPU   |
+| LiteRT-LM        | IoT, Raspberry Pi       |
+| AI Edge Gallery  | Avaliação on-device     |
+| LM Studio        | GUI para desktop        |
+| llama.cpp        | Híbrido CPU/GPU         |
 
 {.bold-first}
 
@@ -517,13 +517,13 @@ Para o **26B A4B** — o fine-tuning completo quebra o roteamento de experts:
 
 ### Requisitos de dados
 
-| Requisito        | Valor                         |
-| ---------------- | ----------------------------- |
-| Proporção de dados CoT | ≥ 75% do conjunto de treino |
-| Formato de pensamento | Inclui o gatilho `<\|think\|>` |
-| Ordem multimodal | Imagens/áudio antes do texto  |
-| Chat template    | Formato ShareGPT ou OpenAI    |
-| Recompensa de RL | Resposta final verificável    |
+| Requisito              | Valor                          |
+| ---------------------- | ------------------------------ |
+| Proporção de dados CoT | ≥ 75% do conjunto de treino    |
+| Formato de pensamento  | Inclui o gatilho `<\|think\|>` |
+| Ordem multimodal       | Imagens/áudio antes do texto   |
+| Chat template          | Formato ShareGPT ou OpenAI     |
+| Recompensa de RL       | Resposta final verificável     |
 
 {.bold-first}
 
@@ -539,15 +539,15 @@ Para o **26B A4B** — o fine-tuning completo quebra o roteamento de experts:
 
 ### Modelos especialistas {.col-span-2}
 
-| Modelo        | Domínio         | Descrição                           |
-| ------------- | --------------- | ----------------------------------- |
-| MedGemma 4B   | Imagem médica   | Análise multimodal de raio-X/RM     |
-| MedGemma 27B  | Texto clínico   | Raciocínio sobre EHR + laudos médicos |
-| CodeGemma     | Programação     | Conclusão de código e refatoração   |
-| PaliGemma 2   | Visual-linguagem | VLM de granularidade fina e raciocínio visual |
-| ShieldGemma   | Segurança       | Classificador de segurança da saída do LLM |
-| DataGemma     | Dados factuais  | Fundamentado via Google Data Commons |
-| FunctionGemma | Chamada de ferramentas | Parsing de function call com poucos recursos |
+| Modelo        | Domínio                | Descrição                                     |
+| ------------- | ---------------------- | --------------------------------------------- |
+| MedGemma 4B   | Imagem médica          | Análise multimodal de raio-X/RM               |
+| MedGemma 27B  | Texto clínico          | Raciocínio sobre EHR + laudos médicos         |
+| CodeGemma     | Programação            | Conclusão de código e refatoração             |
+| PaliGemma 2   | Visual-linguagem       | VLM de granularidade fina e raciocínio visual |
+| ShieldGemma   | Segurança              | Classificador de segurança da saída do LLM    |
+| DataGemma     | Dados factuais         | Fundamentado via Google Data Commons          |
+| FunctionGemma | Chamada de ferramentas | Parsing de function call com poucos recursos  |
 
 {.show-header}
 

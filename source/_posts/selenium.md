@@ -59,21 +59,21 @@ driver.close();
 
 ### Navegação {.col-span-2}
 
-| Descrição                        | Sintaxe                                          |
-| -------------------------------- | ------------------------------------------------ |
-| `Navigate to a new URL`          | driver.navigate().to("https://www.newsite.com"); |
-| `Go forward to the next page`    | driver.navigate().forward();                     |
-| `Go back to the previous page `  | driver.navigate().back();                        |
-| `Refresh the current page`       | driver.navigate().refresh();                     |
+| Descrição                       | Sintaxe                                          |
+| ------------------------------- | ------------------------------------------------ |
+| `Navigate to a new URL`         | driver.navigate().to("https://www.newsite.com"); |
+| `Go forward to the next page`   | driver.navigate().forward();                     |
+| `Go back to the previous page ` | driver.navigate().back();                        |
+| `Refresh the current page`      | driver.navigate().refresh();                     |
 
 {.show-header .left-text}
 
 ### Manipulação de frames {.col-span-2}
 
-| Descrição                          | Sintaxe                             |
-| ---------------------------------- | ----------------------------------- |
-| `Switch to a frame`                | driver.switchTo().frame("frameId"); |
-| `Switch back to the main content`  | driver.switchTo().defaultContent(); |
+| Descrição                         | Sintaxe                             |
+| --------------------------------- | ----------------------------------- |
+| `Switch to a frame`               | driver.switchTo().frame("frameId"); |
+| `Switch back to the main content` | driver.switchTo().defaultContent(); |
 
 {.show-header .left-text}
 

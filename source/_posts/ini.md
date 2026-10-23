@@ -124,22 +124,22 @@ foo = bar
 
 ### Caractere de escape
 
-| sequência | significado                                                                                       |
-| :-------- | :------------------------------------------------------------------------------------------------ |
-| `\\`      | \ (barra invertida simples, caractere de escape de escape)                                        |
-| `\'`      | apóstrofo                                                                                         |
-| `\"`      | aspas duplas                                                                                      |
-| `\0`      | caractere nulo                                                                                    |
-| `\a`      | toque/alerta/som                                                                                  |
+| sequência | significado                                                                                        |
+| :-------- | :------------------------------------------------------------------------------------------------- |
+| `\\`      | \ (barra invertida simples, caractere de escape de escape)                                         |
+| `\'`      | apóstrofo                                                                                          |
+| `\"`      | aspas duplas                                                                                       |
+| `\0`      | caractere nulo                                                                                     |
+| `\a`      | toque/alerta/som                                                                                   |
 | `\b`      | Backspace, [Bell character] para algumas aplicações (https://en.wikipedia.org/wiki/Bell_character) |
-| `\t`      | caractere de tabulação                                                                            |
-| `\r`      | retorno de carro                                                                                  |
-| `\n`      | nova linha                                                                                        |
-| `\;`      | ponto e vírgula                                                                                   |
-| `\#`      | cerquilha                                                                                         |
-| `\=`      | sinal de igual                                                                                    |
-| `\:`      | dois-pontos                                                                                       |
-| `\x????`  | caractere Unicode para o code point hexadecimal correspondente a ????                             |
+| `\t`      | caractere de tabulação                                                                             |
+| `\r`      | retorno de carro                                                                                   |
+| `\n`      | nova linha                                                                                         |
+| `\;`      | ponto e vírgula                                                                                    |
+| `\#`      | cerquilha                                                                                          |
+| `\=`      | sinal de igual                                                                                     |
+| `\:`      | dois-pontos                                                                                        |
+| `\x????`  | caractere Unicode para o code point hexadecimal correspondente a ????                              |
 
 ### Array
 

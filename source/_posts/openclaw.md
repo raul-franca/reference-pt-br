@@ -75,13 +75,13 @@ openclaw status     # channels + gateway status
 
 ### Flags globais
 
-| Flag                 | Descrição                |
-| -------------------- | ------------------------ |
-| `--dev`              | Perfil de dev, porta 19001 |
-| `--profile <name>`   | Perfil isolado nomeado   |
+| Flag                 | Descrição                      |
+| -------------------- | ------------------------------ |
+| `--dev`              | Perfil de dev, porta 19001     |
+| `--profile <name>`   | Perfil isolado nomeado         |
 | `--container <name>` | Executa dentro de um container |
-| `--log-level <l>`    | Nível de log (silent…trace) |
-| `--no-color`         | Desativa as cores ANSI   |
+| `--log-level <l>`    | Nível de log (silent…trace)    |
+| `--no-color`         | Desativa as cores ANSI         |
 
 {.bold-first}
 
@@ -123,12 +123,12 @@ openclaw gateway run --auth token --token <t>
 
 ### Modos de hot reload
 
-| `gateway.reload.mode` | Comportamento                               |
-| --------------------- | ------------------------------------------- |
+| `gateway.reload.mode` | Comportamento                                                        |
+| --------------------- | -------------------------------------------------------------------- |
 | `hybrid` _(default)_  | Aplica alterações seguras em tempo real e reinicia quando necessário |
-| `hot`                 | Aplica apenas alterações seguras em tempo real |
-| `restart`             | Reinicia em qualquer alteração que exija reload |
-| `off`                 | Sem recarregamento de config                |
+| `hot`                 | Aplica apenas alterações seguras em tempo real                       |
+| `restart`             | Reinicia em qualquer alteração que exija reload                      |
+| `off`                 | Sem recarregamento de config                                         |
 
 {.show-header}
 
@@ -145,12 +145,12 @@ openclaw gateway run --tailscale serve
 
 ### API compatível com OpenAI
 
-| Endpoint                    | Finalidade            |
-| --------------------------- | --------------------- |
+| Endpoint                    | Finalidade                 |
+| --------------------------- | -------------------------- |
 | `GET /v1/models`            | Lista agentes como modelos |
-| `POST /v1/chat/completions` | Conversa com o agente |
-| `POST /v1/responses`        | Resposta nativa do agente |
-| `POST /v1/embeddings`       | Pipeline de embedding |
+| `POST /v1/chat/completions` | Conversa com o agente      |
+| `POST /v1/responses`        | Resposta nativa do agente  |
+| `POST /v1/embeddings`       | Pipeline de embedding      |
 
 Todos os endpoints rodam na porta principal do gateway.
 
@@ -193,18 +193,18 @@ openclaw directory groups list --channel discord
 
 #### Integrados
 
-| Canal       | Observações                      |
-| ----------- | -------------------------------- |
-| WhatsApp    | Pareamento por QR via Baileys    |
-| Telegram    | Bot API — configuração mais rápida |
+| Canal       | Observações                         |
+| ----------- | ----------------------------------- |
+| WhatsApp    | Pareamento por QR via Baileys       |
+| Telegram    | Bot API — configuração mais rápida  |
 | Discord     | Bot API + Gateway, DMs + servidores |
-| BlueBubbles | iMessage via servidor macOS      |
-| Signal      | Via signal-cli                   |
-| Slack       | Apps de workspace com Bolt SDK   |
-| Google Chat | Webhook HTTP                     |
-| IRC         | IRC clássico, DMs + canais       |
-| QQ Bot      | QQ Bot API                       |
-| WebChat     | UI de chat integrada no navegador |
+| BlueBubbles | iMessage via servidor macOS         |
+| Signal      | Via signal-cli                      |
+| Slack       | Apps de workspace com Bolt SDK      |
+| Google Chat | Webhook HTTP                        |
+| IRC         | IRC clássico, DMs + canais          |
+| QQ Bot      | QQ Bot API                          |
+| WebChat     | UI de chat integrada no navegador   |
 
 {.show-header}
 
@@ -356,16 +356,16 @@ openclaw sessions cleanup
 
 ### Prioridade de roteamento {.col-span-2}
 
-| Prioridade  | Tipo de correspondência            |
-| ----------- | ---------------------------------- |
-| 1 (mais alta) | `peer` — ID exato de DM/grupo/canal |
-| 2           | `parentPeer` — herança de thread   |
-| 3           | `guildId` + roles (Discord)        |
-| 4           | `guildId` (Discord)                |
-| 5           | `teamId` (Slack)                   |
-| 6           | `accountId` match for channel      |
-| 7           | `accountId: "*"` channel fallback  |
-| 8 (mais baixa) | Agente padrão                    |
+| Prioridade     | Tipo de correspondência             |
+| -------------- | ----------------------------------- |
+| 1 (mais alta)  | `peer` — ID exato de DM/grupo/canal |
+| 2              | `parentPeer` — herança de thread    |
+| 3              | `guildId` + roles (Discord)         |
+| 4              | `guildId` (Discord)                 |
+| 5              | `teamId` (Slack)                    |
+| 6              | `accountId` match for channel       |
+| 7              | `accountId: "*"` channel fallback   |
+| 8 (mais baixa) | Agente padrão                       |
 
 {.show-header}
 
@@ -463,29 +463,29 @@ openclaw configure
 
 ### Variáveis de ambiente
 
-| Variável                    | Descrição              |
-| --------------------------- | ---------------------- |
-| `OPENCLAW_GATEWAY_PORT`     | Porta do gateway       |
-| `OPENCLAW_GATEWAY_TOKEN`    | Token de autenticação  |
-| `OPENCLAW_GATEWAY_PASSWORD` | Senha de autenticação  |
+| Variável                    | Descrição                 |
+| --------------------------- | ------------------------- |
+| `OPENCLAW_GATEWAY_PORT`     | Porta do gateway          |
+| `OPENCLAW_GATEWAY_TOKEN`    | Token de autenticação     |
+| `OPENCLAW_GATEWAY_PASSWORD` | Senha de autenticação     |
 | `OPENCLAW_CONFIG_PATH`      | Path do arquivo de config |
-| `OPENCLAW_STATE_DIR`        | Diretório de estado    |
-| `OPENCLAW_PROFILE`          | Nome do perfil ativo   |
-| `OPENCLAW_CONTAINER`        | Nome do container padrão |
+| `OPENCLAW_STATE_DIR`        | Diretório de estado       |
+| `OPENCLAW_PROFILE`          | Nome do perfil ativo      |
+| `OPENCLAW_CONTAINER`        | Nome do container padrão  |
 
 {.bold-first}
 
 ### Paths padrão
 
-| Path                               | Descrição           |
-| ---------------------------------- | ------------------- |
-| `~/.openclaw/openclaw.json`        | Config principal    |
-| `~/.openclaw/`                     | Diretório de estado |
-| `~/.openclaw/workspace`            | Workspace do agente |
+| Path                               | Descrição                |
+| ---------------------------------- | ------------------------ |
+| `~/.openclaw/openclaw.json`        | Config principal         |
+| `~/.openclaw/`                     | Diretório de estado      |
+| `~/.openclaw/workspace`            | Workspace do agente      |
 | `~/.openclaw/agents/<id>/agent`    | Auth + modelos do agente |
-| `~/.openclaw/agents/<id>/sessions` | Store de sessões    |
-| `~/.openclaw/credentials/`         | Credenciais dos canais |
-| `~/.openclaw/skills/`              | Skills compartilhadas |
+| `~/.openclaw/agents/<id>/sessions` | Store de sessões         |
+| `~/.openclaw/credentials/`         | Credenciais dos canais   |
+| `~/.openclaw/skills/`              | Skills compartilhadas    |
 
 {.bold-first}
 

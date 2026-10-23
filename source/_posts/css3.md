@@ -272,16 +272,16 @@ Veja também: seletores [Adjacent](https://developer.mozilla.org/en-US/docs/Web/
 
 ### Seletores de atributo
 
-|                      |                                    |
-| -------------------- | ---------------------------------- | ---------------------------- |
-| `a[target]`          | Com atributo <yel>target</yel>     |
-| `a[target="_blank"]` | Abre em nova aba                   |
-| `a[href^="/index"]`  | Começa com <yel>/index</yel>       |
-| `[class              | ="chair"]`                         | Começa com <yel>chair</yel> |
-| `[class*="chair"]`   | contendo <yel>chair</yel>          |
-| `[title~="chair"]`   | Contém a palavra <yel>chair</yel>  |
-| `a[href$=".doc"]`    | Termina com <yel>.doc</yel>        |
-| `[type="button"]`    | Tipo especificado                  |
+|                      |                                   |
+| -------------------- | --------------------------------- | --------------------------- |
+| `a[target]`          | Com atributo <yel>target</yel>    |
+| `a[target="_blank"]` | Abre em nova aba                  |
+| `a[href^="/index"]`  | Começa com <yel>/index</yel>      |
+| `[class              | ="chair"]`                        | Começa com <yel>chair</yel> |
+| `[class*="chair"]`   | contendo <yel>chair</yel>         |
+| `[title~="chair"]`   | Contém a palavra <yel>chair</yel> |
+| `a[href$=".doc"]`    | Termina com <yel>.doc</yel>       |
+| `[type="button"]`    | Tipo especificado                 |
 
 Veja também: [Seletores de atributo](https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors)
 
@@ -296,19 +296,19 @@ Veja também: [Seletores de atributo](https://developer.mozilla.org/en-US/docs/W
 
 ### Pseudo-classes
 
-|                   |                                                                                         |
-| ----------------- | --------------------------------------------------------------------------------------- |
-| `p::after`        | Adiciona conteúdo depois de p                                                           |
-| `p::before`       | Adiciona conteúdo antes de p                                                            |
-| `p::first-letter` | Primeira letra de p                                                                     |
-| `p::first-line`   | Primeira linha de p                                                                     |
-| `::selection`     | Selecionado pelo usuário                                                                |
-| `::placeholder`   | atributo [Placeholder](https://developer.mozilla.org/en-US/docs/Web/CSS/::placeholder)  |
-| `:root`           | Elemento raiz do documento                                                              |
-| `:target`         | Destaca a âncora ativa                                                                  |
-| `div:empty`       | Elemento sem filhos                                                                     |
-| `p:lang(en)`      | P com atributo de idioma en                                                             |
-| `:not(span)`      | Elemento que não é um span                                                              |
+|                   |                                                                                        |
+| ----------------- | -------------------------------------------------------------------------------------- |
+| `p::after`        | Adiciona conteúdo depois de p                                                          |
+| `p::before`       | Adiciona conteúdo antes de p                                                           |
+| `p::first-letter` | Primeira letra de p                                                                    |
+| `p::first-line`   | Primeira linha de p                                                                    |
+| `::selection`     | Selecionado pelo usuário                                                               |
+| `::placeholder`   | atributo [Placeholder](https://developer.mozilla.org/en-US/docs/Web/CSS/::placeholder) |
+| `:root`           | Elemento raiz do documento                                                             |
+| `:target`         | Destaca a âncora ativa                                                                 |
+| `div:empty`       | Elemento sem filhos                                                                    |
+| `p:lang(en)`      | P com atributo de idioma en                                                            |
+| `:not(span)`      | Elemento que não é um span                                                             |
 
 ### Pseudo-classes de input
 

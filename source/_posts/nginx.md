@@ -9,6 +9,7 @@ intro: cheat sheet de referência rápida do nginx
 plugins:
   - copyCode
 ---
+
 ## Primeiros passos {.cols-3}
 
 ### Instalação e serviço
@@ -445,12 +446,12 @@ $ tail -f /var/log/nginx/error.log
 
 ### Estratégias
 
-| Diretiva      | Significado                  |
-| ------------- | ---------------------------- |
-| (padrão)      | round‑robin                  |
-| `least_conn`  | menos conexões               |
-| `ip_hash`     | sticky por IP do cliente     |
-| `hash key`    | hash por chave personalizada |
+| Diretiva     | Significado                  |
+| ------------ | ---------------------------- |
+| (padrão)     | round‑robin                  |
+| `least_conn` | menos conexões               |
+| `ip_hash`    | sticky por IP do cliente     |
+| `hash key`   | hash por chave personalizada |
 
 {.show-header}
 
@@ -476,35 +477,35 @@ proxy_next_upstream_tries 3;
 
 ### Requisição e cliente
 
-| Variável              | Descrição                    |
-| --------------------- | ---------------------------- |
-| `$host`               | Header Host / server name    |
-| `$server_name`        | server_name escolhido        |
-| `$remote_addr`        | IP do cliente                |
-| `$http_user_agent`    | User‑Agent                   |
-| `$request_method`     | GET/POST/...                 |
+| Variável           | Descrição                 |
+| ------------------ | ------------------------- |
+| `$host`            | Header Host / server name |
+| `$server_name`     | server_name escolhido     |
+| `$remote_addr`     | IP do cliente             |
+| `$http_user_agent` | User‑Agent                |
+| `$request_method`  | GET/POST/...              |
 
 {.show-header .bold-first}
 
 ### Paths e arquivos
 
-| Variável                | Descrição                  |
-| ----------------------- | -------------------------- |
-| `$document_root`        | Root atual                 |
-| `$realpath_root`        | Root resolvido por symlink |
-| `$request_uri`          | Path + query               |
-| `$uri`                  | URI normalizada            |
-| `$args`                 | Query string bruta         |
+| Variável         | Descrição                  |
+| ---------------- | -------------------------- |
+| `$document_root` | Root atual                 |
+| `$realpath_root` | Root resolvido por symlink |
+| `$request_uri`   | Path + query               |
+| `$uri`           | URI normalizada            |
+| `$args`          | Query string bruta         |
 
 {.show-header .bold-first}
 
 ### Upstream
 
-| Variável                   | Descrição             |
-| -------------------------- | --------------------- |
-| `$upstream_addr`           | Servidor(es) upstream |
-| `$upstream_status`         | Status do upstream    |
-| `$upstream_response_time`  | Tempo do upstream     |
+| Variável                  | Descrição             |
+| ------------------------- | --------------------- |
+| `$upstream_addr`          | Servidor(es) upstream |
+| `$upstream_status`        | Status do upstream    |
+| `$upstream_response_time` | Tempo do upstream     |
 
 {.show-header .bold-first}
 
@@ -584,4 +585,3 @@ proxy_set_header X-Real-IP $remote_addr;
 proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
 proxy_set_header X-Forwarded-Proto $scheme;
 ```
-

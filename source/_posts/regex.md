@@ -36,51 +36,51 @@ Este é um cheat sheet rápido para começar com expressões regulares.
 
 ### Classes de caracteres
 
-| Padrão        | Descrição                                                                  |
-| ------------- | :------------------------------------------------------------------------- |
-| `[abc]`       | Um único caractere entre: <yel>a</yel>, <yel>b</yel> ou <yel>c</yel>       |
-| `[^abc]`      | Um caractere exceto: <yel>a</yel>, <yel>b</yel> ou <yel>c</yel>            |
-| `[a-z]`       | Um caractere no intervalo: <yel>a-z</yel>                                  |
-| `[^a-z]`      | Um caractere fora do intervalo: <red>a-z</red>                             |
-| `[0-9]`       | Um dígito no intervalo: <yel>0-9</yel>                                     |
-| `[a-zA-Z]`    | Um caractere no intervalo: <yel>a-z</yel> ou <yel>A-Z</yel>                |
+| Padrão        | Descrição                                                                   |
+| ------------- | :-------------------------------------------------------------------------- |
+| `[abc]`       | Um único caractere entre: <yel>a</yel>, <yel>b</yel> ou <yel>c</yel>        |
+| `[^abc]`      | Um caractere exceto: <yel>a</yel>, <yel>b</yel> ou <yel>c</yel>             |
+| `[a-z]`       | Um caractere no intervalo: <yel>a-z</yel>                                   |
+| `[^a-z]`      | Um caractere fora do intervalo: <red>a-z</red>                              |
+| `[0-9]`       | Um dígito no intervalo: <yel>0-9</yel>                                      |
+| `[a-zA-Z]`    | Um caractere no intervalo: <yel>a-z</yel> ou <yel>A-Z</yel>                 |
 | `[a-zA-Z0-9]` | Um caractere no intervalo: <yel>a-z</yel>, <yel>A-Z</yel> ou <yel>0-9</yel> |
 
 {.style-list}
 
 ### Quantificadores
 
-| Padrão   | Descrição             |
-| -------- | :-------------------- |
-| `a?`     | Zero ou um a          |
-| `a*`     | Zero ou mais a        |
-| `a+`     | Um ou mais a          |
-| `[0-9]+` | Um ou mais de 0-9     |
-| `a{3}`   | Exatamente 3 de a     |
-| `a{3,}`  | 3 ou mais de a        |
-| `a{3,6}` | Entre 3 e 6 de a      |
-| `a*`     | Quantificador guloso  |
+| Padrão   | Descrição                |
+| -------- | :----------------------- |
+| `a?`     | Zero ou um a             |
+| `a*`     | Zero ou mais a           |
+| `a+`     | Um ou mais a             |
+| `[0-9]+` | Um ou mais de 0-9        |
+| `a{3}`   | Exatamente 3 de a        |
+| `a{3,}`  | 3 ou mais de a           |
+| `a{3,6}` | Entre 3 e 6 de a         |
+| `a*`     | Quantificador guloso     |
 | `a*?`    | Quantificador preguiçoso |
 | `a*+`    | Quantificador possessivo |
 
 ### Metacaracteres comuns
 
-| Padrão  | Descrição                                                    |
-| ------- | :----------------------------------------------------------- | -------------------------------------------- |
-| `^`     | Corresponde ao início de uma string.                         |
-| `{`     | Inicia um quantificador para o número de ocorrências.        |
-| `+`     | Corresponde a um ou mais do elemento anterior.               |
-| `<`     | Não é um metacaractere padrão de regex (usado comumente em HTML). |
-| `[`     | Inicia uma classe de caracteres.                             |
-| `*`     | Corresponde a zero ou mais do elemento anterior.              |
-| `)`     | Encerra um grupo de captura.                                  |
-| `>`     | Não é um metacaractere padrão de regex (usado comumente em HTML). |
-| `.`     | Corresponde a qualquer caractere, exceto nova linha.          |
-| `(`     | Inicia um grupo de captura.                                   |
-| `       | `                                                            | Atua como um OR lógico dentro de um padrão regex. |
-| `$`     | Corresponde ao fim de uma string.                             |
-| `\`     | Escapa um metacaractere, dando a ele significado literal.     |
-| `?`     | Corresponde a zero ou um do elemento anterior.                |
+| Padrão | Descrição                                                         |
+| ------ | :---------------------------------------------------------------- | ------------------------------------------------- |
+| `^`    | Corresponde ao início de uma string.                              |
+| `{`    | Inicia um quantificador para o número de ocorrências.             |
+| `+`    | Corresponde a um ou mais do elemento anterior.                    |
+| `<`    | Não é um metacaractere padrão de regex (usado comumente em HTML). |
+| `[`    | Inicia uma classe de caracteres.                                  |
+| `*`    | Corresponde a zero ou mais do elemento anterior.                  |
+| `)`    | Encerra um grupo de captura.                                      |
+| `>`    | Não é um metacaractere padrão de regex (usado comumente em HTML). |
+| `.`    | Corresponde a qualquer caractere, exceto nova linha.              |
+| `(`    | Inicia um grupo de captura.                                       |
+| `      | `                                                                 | Atua como um OR lógico dentro de um padrão regex. |
+| `$`    | Corresponde ao fim de uma string.                                 |
+| `\`    | Escapa um metacaractere, dando a ele significado literal.         |
+| `?`    | Corresponde a zero ou um do elemento anterior.                    |
 
 {.cols-3 .marker-none}
 
@@ -88,95 +88,95 @@ Escape estes caracteres especiais com `\`
 
 ### Metasequências {.row-span-4}
 
-| Padrão       | Descrição                                                   |
-| ------------ | :---------------------------------------------------------- |
-| `.`          | Qualquer caractere único                                    |
-| `\s`         | Qualquer caractere de espaço em branco                      |
-| `\S`         | Qualquer caractere que não seja espaço em branco            |
-| `\d`         | Qualquer dígito, o mesmo que [0-9]                          |
-| `\D`         | Qualquer não dígito, o mesmo que [^0-9]                     |
-| `\w`         | Qualquer caractere de palavra                               |
-| `\W`         | Qualquer caractere que não seja de palavra                  |
-| `\X`         | Quaisquer sequências Unicode, incluindo quebras de linha    |
-| `\C`         | Corresponde a uma unidade de dados                          |
-| `\R`         | Quebras de linha Unicode                                    |
-| `\v`         | Caractere de espaço vertical                                |
+| Padrão       | Descrição                                                        |
+| ------------ | :--------------------------------------------------------------- |
+| `.`          | Qualquer caractere único                                         |
+| `\s`         | Qualquer caractere de espaço em branco                           |
+| `\S`         | Qualquer caractere que não seja espaço em branco                 |
+| `\d`         | Qualquer dígito, o mesmo que [0-9]                               |
+| `\D`         | Qualquer não dígito, o mesmo que [^0-9]                          |
+| `\w`         | Qualquer caractere de palavra                                    |
+| `\W`         | Qualquer caractere que não seja de palavra                       |
+| `\X`         | Quaisquer sequências Unicode, incluindo quebras de linha         |
+| `\C`         | Corresponde a uma unidade de dados                               |
+| `\R`         | Quebras de linha Unicode                                         |
+| `\v`         | Caractere de espaço vertical                                     |
 | `\V`         | Negação de \v — tudo, exceto novas linhas e tabulações verticais |
-| `\h`         | Caractere de espaço horizontal                              |
-| `\H`         | Negação de \h                                               |
-| `\K`         | Redefine a correspondência                                  |
-| `\n`         | Corresponde ao n-ésimo subpadrão                            |
-| `\pX`        | Propriedade Unicode X                                       |
-| `\p{...}`    | Propriedade Unicode ou categoria de script                  |
-| `\PX`        | Negação de \pX                                              |
-| `\P{...}`    | Negação de \p                                               |
-| `\Q...\E`    | Escapa; trata como literais                                 |
-| `\k<name>`   | Corresponde ao subpadrão `name`                             |
-| `\k'name'`   | Corresponde ao subpadrão `name`                             |
-| `\k{name}`   | Corresponde ao subpadrão `name`                             |
-| `\gn`        | Corresponde ao n-ésimo subpadrão                            |
-| `\g{n}`      | Corresponde ao n-ésimo subpadrão                            |
-| `\g<n>`      | Recursa o n-ésimo grupo de captura                          |
-| `\g'n'`      | Recursa o n-ésimo grupo de captura.                         |
-| `\g{-n}`     | Corresponde ao n-ésimo subpadrão anterior relativo          |
-| `\g<+n>`     | Recursa o n-ésimo subpadrão seguinte relativo               |
-| `\g'+n'`     | Corresponde ao n-ésimo subpadrão seguinte relativo          |
-| `\g'letter'` | Recursa o grupo de captura nomeado `letter`                 |
-| `\g{letter}` | Corresponde ao grupo de captura previamente nomeado `letter` |
-| `\g<letter>` | Recursa o grupo de captura nomeado `letter`                 |
-| `\xYY`       | Caractere hexadecimal YY                                    |
-| `\x{YYYY}`   | Caractere hexadecimal YYYY                                  |
-| `\ddd`       | Caractere octal ddd                                         |
-| `\cY`        | Caractere de controle Y                                     |
-| `[\b]`       | Caractere de backspace                                      |
-| `\`          | Torna qualquer caractere literal                            |
+| `\h`         | Caractere de espaço horizontal                                   |
+| `\H`         | Negação de \h                                                    |
+| `\K`         | Redefine a correspondência                                       |
+| `\n`         | Corresponde ao n-ésimo subpadrão                                 |
+| `\pX`        | Propriedade Unicode X                                            |
+| `\p{...}`    | Propriedade Unicode ou categoria de script                       |
+| `\PX`        | Negação de \pX                                                   |
+| `\P{...}`    | Negação de \p                                                    |
+| `\Q...\E`    | Escapa; trata como literais                                      |
+| `\k<name>`   | Corresponde ao subpadrão `name`                                  |
+| `\k'name'`   | Corresponde ao subpadrão `name`                                  |
+| `\k{name}`   | Corresponde ao subpadrão `name`                                  |
+| `\gn`        | Corresponde ao n-ésimo subpadrão                                 |
+| `\g{n}`      | Corresponde ao n-ésimo subpadrão                                 |
+| `\g<n>`      | Recursa o n-ésimo grupo de captura                               |
+| `\g'n'`      | Recursa o n-ésimo grupo de captura.                              |
+| `\g{-n}`     | Corresponde ao n-ésimo subpadrão anterior relativo               |
+| `\g<+n>`     | Recursa o n-ésimo subpadrão seguinte relativo                    |
+| `\g'+n'`     | Corresponde ao n-ésimo subpadrão seguinte relativo               |
+| `\g'letter'` | Recursa o grupo de captura nomeado `letter`                      |
+| `\g{letter}` | Corresponde ao grupo de captura previamente nomeado `letter`     |
+| `\g<letter>` | Recursa o grupo de captura nomeado `letter`                      |
+| `\xYY`       | Caractere hexadecimal YY                                         |
+| `\x{YYYY}`   | Caractere hexadecimal YYYY                                       |
+| `\ddd`       | Caractere octal ddd                                              |
+| `\cY`        | Caractere de controle Y                                          |
+| `[\b]`       | Caractere de backspace                                           |
+| `\`          | Torna qualquer caractere literal                                 |
 
 ### Âncoras
 
-| Padrão  | Descrição              |
-| ------- | :--------------------- |
-| `\G`    | Início da correspondência |
-| `^`     | Início da string       |
-| `$`     | Fim da string          |
-| `\A`    | Início da string       |
-| `\Z`    | Fim da string          |
-| `\z`    | Fim absoluto da string |
-| `\b`    | Limite de palavra      |
-| `\B`    | Não é limite de palavra |
+| Padrão | Descrição                 |
+| ------ | :------------------------ |
+| `\G`   | Início da correspondência |
+| `^`    | Início da string          |
+| `$`    | Fim da string             |
+| `\A`   | Início da string          |
+| `\Z`   | Fim da string             |
+| `\z`   | Fim absoluto da string    |
+| `\b`   | Limite de palavra         |
+| `\B`   | Não é limite de palavra   |
 
 ### Substituição
 
-| Padrão     | Descrição                       |
-| ---------- | :------------------------------ |
+| Padrão     | Descrição                            |
+| ---------- | :----------------------------------- |
 | `\0`       | Conteúdo completo da correspondência |
-| `\1`       | Conteúdo do grupo de captura 1  |
-| `$1`       | Conteúdo do grupo de captura 1  |
-| `${foo}`   | Conteúdo do grupo de captura `foo` |
+| `\1`       | Conteúdo do grupo de captura 1       |
+| `$1`       | Conteúdo do grupo de captura 1       |
+| `${foo}`   | Conteúdo do grupo de captura `foo`   |
 | `\x20`     | Valores de substituição hexadecimais |
 | `\x{06fa}` | Valores de substituição hexadecimais |
-| `\t`       | Tabulação                       |
-| `\r`       | Retorno de carro                |
-| `\n`       | Nova linha                      |
-| `\f`       | Form-feed                       |
-| `\U`       | Transformação para maiúsculas   |
-| `\L`       | Transformação para minúsculas   |
-| `\E`       | Encerra qualquer transformação  |
+| `\t`       | Tabulação                            |
+| `\r`       | Retorno de carro                     |
+| `\n`       | Nova linha                           |
+| `\f`       | Form-feed                            |
+| `\U`       | Transformação para maiúsculas        |
+| `\L`       | Transformação para minúsculas        |
+| `\E`       | Encerra qualquer transformação       |
 
 ### Construções de grupo
 
-| Padrão                | Descrição                             |
-| --------------------- | :------------------------------------ |
-| `(...)`               | Captura tudo o que está entre parênteses |
-| <code>(a\|b)</code>   | Corresponde a a ou b                  |
+| Padrão                | Descrição                                                    |
+| --------------------- | :----------------------------------------------------------- |
+| `(...)`               | Captura tudo o que está entre parênteses                     |
+| <code>(a\|b)</code>   | Corresponde a a ou b                                         |
 | `(?:...)`             | Corresponde a tudo o que está entre parênteses, sem capturar |
-| `(?>...)`             | Grupo atômico (sem captura)           |
-| <code>(?\|...)</code> | Duplica o número do grupo do subpadrão |
-| `(?#...)`             | Comentário                            |
-| `(?'name'...)`        | Grupo de captura nomeado              |
-| `(?<name>...)`        | Grupo de captura nomeado              |
-| `(?P<name>...)`       | Grupo de captura nomeado              |
-| `(?imsxXU)`           | Modificadores inline                  |
-| `(?(DEFINE)...)`      | Pré-define padrões antes de usá-los   |
+| `(?>...)`             | Grupo atômico (sem captura)                                  |
+| <code>(?\|...)</code> | Duplica o número do grupo do subpadrão                       |
+| `(?#...)`             | Comentário                                                   |
+| `(?'name'...)`        | Grupo de captura nomeado                                     |
+| `(?<name>...)`        | Grupo de captura nomeado                                     |
+| `(?P<name>...)`       | Grupo de captura nomeado                                     |
+| `(?imsxXU)`           | Modificadores inline                                         |
+| `(?(DEFINE)...)`      | Pré-define padrões antes de usá-los                          |
 
 ### Asserções
 
@@ -203,69 +203,69 @@ resultado.
 
 ### Flags/modificadores
 
-| Padrão  | Descrição             |
-| ------- | :-------------------- |
-| `g`     | Global                |
-| `m`     | Multilinha            |
-| `i`     | Sem distinção de maiúsculas/minúsculas |
-| `x`     | Ignora espaços em branco |
-| `s`     | Linha única           |
-| `u`     | Unicode               |
-| `X`     | Estendido             |
-| `U`     | Não guloso            |
-| `A`     | Âncora                |
-| `J`     | Nomes de grupo duplicados |
+| Padrão | Descrição                              |
+| ------ | :------------------------------------- |
+| `g`    | Global                                 |
+| `m`    | Multilinha                             |
+| `i`    | Sem distinção de maiúsculas/minúsculas |
+| `x`    | Ignora espaços em branco               |
+| `s`    | Linha única                            |
+| `u`    | Unicode                                |
+| `X`    | Estendido                              |
+| `U`    | Não guloso                             |
+| `A`    | Âncora                                 |
+| `J`    | Nomes de grupo duplicados              |
 
 ### Recursão
 
-| -           | -                                 |
-| ----------- | :-------------------------------- |
-| `(?R)`      | Recursa o padrão inteiro          |
-| `(?1)`      | Recursa o primeiro subpadrão      |
+| -           | -                                     |
+| ----------- | :------------------------------------ |
+| `(?R)`      | Recursa o padrão inteiro              |
+| `(?1)`      | Recursa o primeiro subpadrão          |
 | `(?+1)`     | Recursa o primeiro subpadrão relativo |
-| `(?&name)`  | Recursa o subpadrão `name`        |
-| `(?P=name)` | Corresponde ao subpadrão `name`   |
-| `(?P>name)` | Recursa o subpadrão `name`        |
+| `(?&name)`  | Recursa o subpadrão `name`            |
+| `(?P=name)` | Corresponde ao subpadrão `name`       |
+| `(?P>name)` | Recursa o subpadrão `name`            |
 
 ### Classes de caracteres POSIX {.col-span-2}
 
-| Classe de caractere | Equivalente a                                     | Significado                    |
-| --------------- | -------------------------------------------------- | :----------------------------- |
-| `[[:alnum:]]`   | `[0-9A-Za-z]`                                      | Letras e dígitos               |
-| `[[:alpha:]]`   | `[A-Za-z]`                                         | Letras                         |
-| `[[:ascii:]]`   | `[\x00-\x7F]`                                      | Códigos ASCII 0-127            |
-| `[[:blank:]]`   | `[\t ]`                                            | Apenas espaço ou tabulação     |
-| `[[:cntrl:]]`   | `[\x00-\x1F\x7F]`                                  | Caracteres de controle         |
-| `[[:digit:]]`   | `[0-9]`                                            | Dígitos decimais               |
-| `[[:graph:]]`   | `[[:alnum:][:punct:]]`                             | Caracteres visíveis (sem espaço) |
-| `[[:lower:]]`   | `[a-z]`                                            | Letras minúsculas              |
-| `[[:print:]]`   | `[ -~] == [ [:graph:]]`                            | Caracteres visíveis            |
-| `[[:punct:]]`   | <code>[!"#$%&’()\*+,-./:;<=>?@[]^\_\`{\|}~]</code> | Caracteres de pontuação visíveis |
-| `[[:space:]]`   | <code>[\t\n\v\f\r ]</code>                         | Espaço em branco               |
-| `[[:upper:]]`   | `[A-Z]`                                            | Letras maiúsculas              |
-| `[[:word:]]`    | `[0-9A-Za-z_]`                                     | Caracteres de palavra          |
-| `[[:xdigit:]]`  | `[0-9A-Fa-f]`                                      | Dígitos hexadecimais           |
-| `[[:<:]]`       | `[\b(?=\w)]`                                       | Início de palavra              |
-| `[[:>:]]`       | `[\b(?<=\w)]`                                      | Fim de palavra                 |
+| Classe de caractere | Equivalente a                                      | Significado                      |
+| ------------------- | -------------------------------------------------- | :------------------------------- |
+| `[[:alnum:]]`       | `[0-9A-Za-z]`                                      | Letras e dígitos                 |
+| `[[:alpha:]]`       | `[A-Za-z]`                                         | Letras                           |
+| `[[:ascii:]]`       | `[\x00-\x7F]`                                      | Códigos ASCII 0-127              |
+| `[[:blank:]]`       | `[\t ]`                                            | Apenas espaço ou tabulação       |
+| `[[:cntrl:]]`       | `[\x00-\x1F\x7F]`                                  | Caracteres de controle           |
+| `[[:digit:]]`       | `[0-9]`                                            | Dígitos decimais                 |
+| `[[:graph:]]`       | `[[:alnum:][:punct:]]`                             | Caracteres visíveis (sem espaço) |
+| `[[:lower:]]`       | `[a-z]`                                            | Letras minúsculas                |
+| `[[:print:]]`       | `[ -~] == [ [:graph:]]`                            | Caracteres visíveis              |
+| `[[:punct:]]`       | <code>[!"#$%&’()\*+,-./:;<=>?@[]^\_\`{\|}~]</code> | Caracteres de pontuação visíveis |
+| `[[:space:]]`       | <code>[\t\n\v\f\r ]</code>                         | Espaço em branco                 |
+| `[[:upper:]]`       | `[A-Z]`                                            | Letras maiúsculas                |
+| `[[:word:]]`        | `[0-9A-Za-z_]`                                     | Caracteres de palavra            |
+| `[[:xdigit:]]`      | `[0-9A-Fa-f]`                                      | Dígitos hexadecimais             |
+| `[[:<:]]`           | `[\b(?=\w)]`                                       | Início de palavra                |
+| `[[:>:]]`           | `[\b(?<=\w)]`                                      | Fim de palavra                   |
 
 {.show-header}
 
 ### Verbos de controle
 
-| -                      | -                     |
-| ---------------------- | :-------------------- |
-| `(*ACCEPT)`            | Verbo de controle     |
-| `(*FAIL)`              | Verbo de controle     |
-| `(*MARK:NAME)`         | Verbo de controle     |
-| `(*COMMIT)`            | Verbo de controle     |
-| `(*PRUNE)`             | Verbo de controle     |
-| `(*SKIP)`              | Verbo de controle     |
-| `(*THEN)`              | Verbo de controle     |
-| `(*UTF)`               | Modificador de padrão |
-| `(*UTF8)`              | Modificador de padrão |
-| `(*UTF16)`             | Modificador de padrão |
-| `(*UTF32)`             | Modificador de padrão |
-| `(*UCP)`               | Modificador de padrão |
+| -                      | -                              |
+| ---------------------- | :----------------------------- |
+| `(*ACCEPT)`            | Verbo de controle              |
+| `(*FAIL)`              | Verbo de controle              |
+| `(*MARK:NAME)`         | Verbo de controle              |
+| `(*COMMIT)`            | Verbo de controle              |
+| `(*PRUNE)`             | Verbo de controle              |
+| `(*SKIP)`              | Verbo de controle              |
+| `(*THEN)`              | Verbo de controle              |
+| `(*UTF)`               | Modificador de padrão          |
+| `(*UTF8)`              | Modificador de padrão          |
+| `(*UTF16)`             | Modificador de padrão          |
+| `(*UTF32)`             | Modificador de padrão          |
+| `(*UCP)`               | Modificador de padrão          |
 | `(*CR)`                | Modificador de quebra de linha |
 | `(*LF)`                | Modificador de quebra de linha |
 | `(*CRLF)`              | Modificador de quebra de linha |
@@ -274,31 +274,31 @@ resultado.
 | `\R`                   | Modificador de quebra de linha |
 | `(*BSR_ANYCRLF)`       | Modificador de quebra de linha |
 | `(*BSR_UNICODE)`       | Modificador de quebra de linha |
-| `(*LIMIT_MATCH=x)`     | Modificador do motor de regex |
-| `(*LIMIT_RECURSION=d)` | Modificador do motor de regex |
-| `(*NO_AUTO_POSSESS)`   | Modificador do motor de regex |
-| `(*NO_START_OPT)`      | Modificador do motor de regex |
+| `(*LIMIT_MATCH=x)`     | Modificador do motor de regex  |
+| `(*LIMIT_RECURSION=d)` | Modificador do motor de regex  |
+| `(*NO_AUTO_POSSESS)`   | Modificador do motor de regex  |
+| `(*NO_START_OPT)`      | Modificador do motor de regex  |
 
 ## Exemplos de regex{.cols-3}
 
 ### Caracteres
 
-| Padrão         | Correspondências                                          |
-| -------------- | :-------------------------------------------------------- |
-| `ring        ` | Corresponde a <yel>ring</yel> em sp<yel>ring</yel>board etc. |
-| `.           ` | Corresponde a <yel>a</yel>, <yel>9</yel>, <yel>+</yel> etc. |
+| Padrão         | Correspondências                                                  |
+| -------------- | :---------------------------------------------------------------- |
+| `ring        ` | Corresponde a <yel>ring</yel> em sp<yel>ring</yel>board etc.      |
+| `.           ` | Corresponde a <yel>a</yel>, <yel>9</yel>, <yel>+</yel> etc.       |
 | `h.o         ` | Corresponde a <yel>hoo</yel>, <yel>h2o</yel>, <yel>h/o</yel> etc. |
-| `ring\?      ` | Corresponde a <yel>ring?</yel>                            |
-| `\(quiet\)   ` | Corresponde a <yel>(quiet)</yel>                          |
-| `c:\\windows ` | Corresponde a <yel>c:\windows</yel>                       |
+| `ring\?      ` | Corresponde a <yel>ring?</yel>                                    |
+| `\(quiet\)   ` | Corresponde a <yel>(quiet)</yel>                                  |
+| `c:\\windows ` | Corresponde a <yel>c:\windows</yel>                               |
 
 Use `\` para pesquisar estes caracteres especiais: <br> `[ \ ^ $ . | ? * + ( ) { }`
 
 ### Alternativas
 
-| Padrão                    | Correspondências                           |
-| ------------------------- | :----------------------------------------- |
-| <code>cat\|dog</code>     | Corresponde a <yel>cat</yel> ou <yel>dog</yel> |
+| Padrão                    | Correspondências                                   |
+| ------------------------- | :------------------------------------------------- |
+| <code>cat\|dog</code>     | Corresponde a <yel>cat</yel> ou <yel>dog</yel>     |
 | <code>id\|identity</code> | Corresponde a <yel>id</yel> ou <yel>id</yel>entity |
 | <code>identity\|id</code> | Corresponde a <yel>id</yel> ou <yel>identity</yel> |
 
@@ -306,104 +306,104 @@ Ordene do mais longo para o mais curto quando as alternativas se sobrepõem
 
 ### Classes de caracteres
 
-| Padrão            | Correspondências                                                      |
-| ----------------- | :--------------------------------------------------------------------- |
-| `[aeiou]`         | Corresponde a qualquer vogal                                           |
-| `[^aeiou]`        | Corresponde a uma NÃO vogal                                            |
-| `r[iau]ng`        | Corresponde a <yel>ring</yel>, w<yel>rang</yel>le, sp<yel>rung</yel>, etc. |
-| `gr[ae]y`         | Corresponde a <yel>gray</yel> ou <yel>grey</yel>                       |
-| `[a-zA-Z0-9]`     | Corresponde a qualquer letra ou dígito                                 |
+| Padrão            | Correspondências                                                                              |
+| ----------------- | :-------------------------------------------------------------------------------------------- |
+| `[aeiou]`         | Corresponde a qualquer vogal                                                                  |
+| `[^aeiou]`        | Corresponde a uma NÃO vogal                                                                   |
+| `r[iau]ng`        | Corresponde a <yel>ring</yel>, w<yel>rang</yel>le, sp<yel>rung</yel>, etc.                    |
+| `gr[ae]y`         | Corresponde a <yel>gray</yel> ou <yel>grey</yel>                                              |
+| `[a-zA-Z0-9]`     | Corresponde a qualquer letra ou dígito                                                        |
 | `[\u3a00-\ufa99]` | Corresponde a qualquer caractere [Unicode Hàn (中文)](https://unicode.org/charts/unihan.html) |
 
 Em `[ ]`, sempre escape `. \ ]` e, às vezes, `^ - .`
 
 ### Classes abreviadas
 
-| Padrão           | Significado                                           |
-| ---------------- | :---------------------------------------------------- |
-| `\w            ` | Caractere "de palavra" <br>_(letra, dígito ou sublinhado)_ |
-| `\d            ` | Dígito                                                |
+| Padrão           | Significado                                                  |
+| ---------------- | :----------------------------------------------------------- |
+| `\w            ` | Caractere "de palavra" <br>_(letra, dígito ou sublinhado)_   |
+| `\d            ` | Dígito                                                       |
 | `\s            ` | Espaço em branco <br>_(espaço, tabulação, vtab, nova linha)_ |
-| `\W, \D, or \S ` | Não é palavra, dígito nem espaço em branco            |
+| `\W, \D, or \S ` | Não é palavra, dígito nem espaço em branco                   |
 | `[\D\S]        ` | Significa não dígito ou espaço em branco; ambos correspondem |
-| `[^\d\s]       ` | Não permite dígito nem espaço em branco               |
+| `[^\d\s]       ` | Não permite dígito nem espaço em branco                      |
 
 ### Ocorrências
 
-| Padrão              | Correspondências                                                  |
-| ------------------- | :----------------------------------------------------------------- |
-| `colou?r`           | Corresponde a <yel>color</yel> ou <yel>colour</yel>                |
+| Padrão              | Correspondências                                                           |
+| ------------------- | :------------------------------------------------------------------------- |
+| `colou?r`           | Corresponde a <yel>color</yel> ou <yel>colour</yel>                        |
 | `[BW]ill[ieamy's]*` | Corresponde a <yel>Bill</yel>, <yel>Willy</yel>, <yel>William's</yel> etc. |
-| `[a-zA-Z]+`         | Corresponde a 1 ou mais letras                                     |
-| `\d{3}-\d{2}-\d{4}` | Corresponde a um SSN                                               |
-| `[a-z]\w{1,7}`      | Corresponde a um UW NetID                                          |
+| `[a-zA-Z]+`         | Corresponde a 1 ou mais letras                                             |
+| `\d{3}-\d{2}-\d{4}` | Corresponde a um SSN                                                       |
+| `[a-z]\w{1,7}`      | Corresponde a um UW NetID                                                  |
 
 ### Guloso versus preguiçoso
 
-| Padrão                   | Significado                                     |
-| ------------------------ | :------------------------------------------------------ |
-| `*  + {n,}`<br>_greedy_  | Corresponde ao máximo possível                          |
-| `<.+>   `                | Encontra 1 grande correspondência em <yel>\<b>bold\<\/b></yel> |
-| `*?  +? {n,}?`<br>_lazy_ | Corresponde ao mínimo possível                          |
+| Padrão                   | Significado                                                        |
+| ------------------------ | :----------------------------------------------------------------- |
+| `*  + {n,}`<br>_greedy_  | Corresponde ao máximo possível                                     |
+| `<.+>   `                | Encontra 1 grande correspondência em <yel>\<b>bold\<\/b></yel>     |
+| `*?  +? {n,}?`<br>_lazy_ | Corresponde ao mínimo possível                                     |
 | `<.+?>`                  | Encontra 2 correspondências em \<<yel>b</yel>>bold\<<yel>\/b</yel> |
 
 ### Escopo {.col-span-2}
 
-| Padrão             | Significado                                                                             |
-| ------------------ | :-------------------------------------------------------------------------------------- |
-| `\b              ` | Limite de "palavra" (ao lado de um caractere que não é de palavra)                      |
-| `\bring          ` | Palavra começa com "ring", ex. <yel>ringtone</yel>                                      |
-| `ring\b          ` | Palavra termina com "ring", ex. <yel>spring</yel>                                       |
+| Padrão             | Significado                                                                                       |
+| ------------------ | :------------------------------------------------------------------------------------------------ |
+| `\b              ` | Limite de "palavra" (ao lado de um caractere que não é de palavra)                                |
+| `\bring          ` | Palavra começa com "ring", ex. <yel>ringtone</yel>                                                |
+| `ring\b          ` | Palavra termina com "ring", ex. <yel>spring</yel>                                                 |
 | `\b9\b           ` | Corresponde ao dígito único <yel>9</yel>, não a <red>19</red>, <red>91</red>, <red>99</red>, etc. |
-| `\b[a-zA-Z]{6}\b ` | Corresponde a palavras de 6 letras                                                     |
-| `\B              ` | Não é limite de palavra                                                                 |
-| `\Bring\B        ` | Corresponde a <yel>springs</yel> e <yel>wringer</yel>                                   |
-| `^\d*$           ` | A string inteira deve conter apenas dígitos                                             |
-| `^[a-zA-Z]{4,20}$` | A string deve ter de 4 a 20 letras                                                     |
-| `^[A-Z]          ` | A string deve começar com letra maiúscula                                               |
-| `[\.!?"')]$      ` | A string deve terminar com pontuação final                                              |
+| `\b[a-zA-Z]{6}\b ` | Corresponde a palavras de 6 letras                                                                |
+| `\B              ` | Não é limite de palavra                                                                           |
+| `\Bring\B        ` | Corresponde a <yel>springs</yel> e <yel>wringer</yel>                                             |
+| `^\d*$           ` | A string inteira deve conter apenas dígitos                                                       |
+| `^[a-zA-Z]{4,20}$` | A string deve ter de 4 a 20 letras                                                                |
+| `^[A-Z]          ` | A string deve começar com letra maiúscula                                                         |
+| `[\.!?"')]$      ` | A string deve terminar com pontuação final                                                        |
 
 ### Modificadores
 
-| Padrão               | Significado                                              |
-| -------------------- | :------------------------------------------------------- |
-| `(?i)`[a-z]\*`(?-i)` | Ignora maiúsculas/minúsculas LIGADO / DESLIGADO          |
-| `(?s)`.\*`(?-s)`     | Corresponde a várias linhas (faz . corresponder a nova linha) |
+| Padrão               | Significado                                                             |
+| -------------------- | :---------------------------------------------------------------------- |
+| `(?i)`[a-z]\*`(?-i)` | Ignora maiúsculas/minúsculas LIGADO / DESLIGADO                         |
+| `(?s)`.\*`(?-s)`     | Corresponde a várias linhas (faz . corresponder a nova linha)           |
 | `(?m)`^.\*;$`(?-m)`  | <yel>^</yel> e <yel>$</yel> correspondem a linhas, não à string inteira |
-| `(?x)`               | #modo free-spacing, este comentário de fim de linha é ignorado |
-| `(?-x)`              | modo free-spacing DESLIGADO                              |
-| /regex/`ismx`        | Modifica o modo para a string inteira                    |
+| `(?x)`               | #modo free-spacing, este comentário de fim de linha é ignorado          |
+| `(?-x)`              | modo free-spacing DESLIGADO                                             |
+| /regex/`ismx`        | Modifica o modo para a string inteira                                   |
 
 ### Grupos
 
-| Padrão                    | Significado                                 |
-| ------------------------- | :------------------------------------------ |
+| Padrão                    | Significado                                         |
+| ------------------------- | :-------------------------------------------------- |
 | <code>(in\|out)put</code> | Corresponde a <yel>input</yel> ou <yel>output</yel> |
-| `\d{5}(-\d{4})?`          | CEP dos EUA _("+ 4" opcional)_              |
+| `\d{5}(-\d{4})?`          | CEP dos EUA _("+ 4" opcional)_                      |
 
 O parser tenta CADA alternativa se a correspondência falhar após o grupo. <br> Isso pode levar a backtracking catastrófico.
 
 ### Backreferences
 
-| Padrão                   | Correspondências                                                            |
-| ------------------------ | :-------------------------------------------------------------------------- |
-| `(to) (be) or not \1 \2` | Corresponde a <yel>to be or not to be</yel>                                 |
+| Padrão                   | Correspondências                                                                               |
+| ------------------------ | :--------------------------------------------------------------------------------------------- |
+| `(to) (be) or not \1 \2` | Corresponde a <yel>to be or not to be</yel>                                                    |
 | `([^\s])\1{2}`           | Corresponde a um não espaço, seguido de mais duas iguais &nbsp; <yel>aaa</yel>, <yel>...</yel> |
-| `\b(\w+)\s+\1\b`         | Corresponde a palavras duplicadas                                           |
+| `\b(\w+)\s+\1\b`         | Corresponde a palavras duplicadas                                                              |
 
 ### Grupo sem captura
 
-| Padrão                         | Significado                        |
-| ------------------------------ | :--------------------------------- |
+| Padrão                         | Significado                            |
+| ------------------------------ | :------------------------------------- |
 | <code>on(?:click\|load)</code> | Mais rápido que: <br>`on(click\|load)` |
 
 Use grupos sem captura ou atômicos quando possível
 
 ### Grupos atômicos
 
-| Padrão                            | Significado                                      |
-| --------------------------------- | :----------------------------------------------- |
-| <code>(?>red\|green\|blue)</code> | Mais rápido que um grupo sem captura             |
+| Padrão                            | Significado                                                |
+| --------------------------------- | :--------------------------------------------------------- |
+| <code>(?>red\|green\|blue)</code> | Mais rápido que um grupo sem captura                       |
 | <code>(?>id\|identity)\b</code>   | Corresponde a <yel>id</yel>, mas não a <red>id</red>entity |
 
 "id" corresponde, mas `\b` falha após o grupo atômico; o parser não faz backtracking para dentro do grupo para tentar 'identity'
@@ -412,17 +412,17 @@ Se as alternativas se sobrepõem, ordene da mais longa para a mais curta.
 
 ### Lookaround {.row-span-2 .col-span-2}
 
-| Padrão                  | Significado                                                           |
-| ----------------------- | :-------------------------------------------------------------------- |
-| `(?= )`                 | Lookahead, se você consegue encontrar à frente                        |
-| `(?! )`                 | Lookahead, se você não consegue encontrar à frente                    |
-| `(?<= )`                | Lookbehind, se você consegue encontrar atrás                          |
-| `(?<! )`                | Lookbehind, se você NÃO consegue encontrar atrás                      |
+| Padrão                  | Significado                                                                   |
+| ----------------------- | :---------------------------------------------------------------------------- |
+| `(?= )`                 | Lookahead, se você consegue encontrar à frente                                |
+| `(?! )`                 | Lookahead, se você não consegue encontrar à frente                            |
+| `(?<= )`                | Lookbehind, se você consegue encontrar atrás                                  |
+| `(?<! )`                | Lookbehind, se você NÃO consegue encontrar atrás                              |
 | `\b\w+?(?=ing\b)`       | Corresponde a <yel>warbl</yel>ing, <yel>str</yel>ing, <yel>fish</yel>ing, ... |
-| `\b(?!\w+ing\b)\w+\b`   | Palavras que NÃO terminam em <red>ing</red>                           |
-| `(?<=\bpre).*?\b `      | Corresponde a pre<yel>tend</yel>, pre<yel>sent</yel>, pre<yel>fix</yel>, ... |
-| `\b\w{3}(?<!pre)\w*?\b` | Palavras que NÃO começam com <red>pre</red>                           |
-| `\b\w+(?<!ing)\b`       | Corresponde a palavras que NÃO terminam em <red>ing</red>             |
+| `\b(?!\w+ing\b)\w+\b`   | Palavras que NÃO terminam em <red>ing</red>                                   |
+| `(?<=\bpre).*?\b `      | Corresponde a pre<yel>tend</yel>, pre<yel>sent</yel>, pre<yel>fix</yel>, ...  |
+| `\b\w{3}(?<!pre)\w*?\b` | Palavras que NÃO começam com <red>pre</red>                                   |
+| `\b\w+(?<!ing)\b`       | Corresponde a palavras que NÃO terminam em <red>ing</red>                     |
 
 ### If-then-else
 
@@ -504,26 +504,26 @@ False
 
 ### Funções
 
-| Função        | Descrição                                                         |
-| ------------- | :---------------------------------------------------------------- |
-| `re.findall`  | Retorna uma lista com todas as correspondências                   |
+| Função        | Descrição                                                                        |
+| ------------- | :------------------------------------------------------------------------------- |
+| `re.findall`  | Retorna uma lista com todas as correspondências                                  |
 | `re.finditer` | Retorna um iterável de objetos de correspondência (um para cada correspondência) |
-| `re.search`   | Retorna um objeto Match se houver correspondência em qualquer parte da string |
-| `re.split`    | Retorna uma lista com a string dividida em cada correspondência   |
-| `re.sub`      | Substitui uma ou várias correspondências por uma string           |
-| `re.compile`  | Compila um padrão de expressão regular para uso posterior         |
-| `re.escape`   | Retorna a string com todos os não alfanuméricos escapados com barra invertida |
+| `re.search`   | Retorna um objeto Match se houver correspondência em qualquer parte da string    |
+| `re.split`    | Retorna uma lista com a string dividida em cada correspondência                  |
+| `re.sub`      | Substitui uma ou várias correspondências por uma string                          |
+| `re.compile`  | Compila um padrão de expressão regular para uso posterior                        |
+| `re.escape`   | Retorna a string com todos os não alfanuméricos escapados com barra invertida    |
 
 ### Flags
 
-| -      | -               | -                                            |
-| ------ | --------------- | :------------------------------------------- |
-| `re.I` | `re.IGNORECASE` | Ignora maiúsculas/minúsculas                 |
-| `re.M` | `re.MULTILINE`  | Multilinha                                   |
-| `re.L` | `re.LOCALE`     | Torna `\w`,`\b`,`\s` _dependentes de locale_ |
+| -      | -               | -                                                   |
+| ------ | --------------- | :-------------------------------------------------- |
+| `re.I` | `re.IGNORECASE` | Ignora maiúsculas/minúsculas                        |
+| `re.M` | `re.MULTILINE`  | Multilinha                                          |
+| `re.L` | `re.LOCALE`     | Torna `\w`,`\b`,`\s` _dependentes de locale_        |
 | `re.S` | `re.DOTALL`     | O ponto corresponde a tudo _(incluindo nova linha)_ |
-| `re.U` | `re.UNICODE`    | Torna `\w`,`\b`,`\d`,`\s` _dependentes de Unicode_ |
-| `re.X` | `re.VERBOSE`    | Estilo legível                               |
+| `re.U` | `re.UNICODE`    | Torna `\w`,`\b`,`\d`,`\s` _dependentes de Unicode_  |
+| `re.X` | `re.VERBOSE`    | Estilo legível                                      |
 
 ## Regex no JavaScript
 
@@ -628,14 +628,14 @@ console.log(result);
 
 ### Funções {.col-span-2}
 
-| -                         | -                                                                |
-| ------------------------- | :--------------------------------------------------------------- |
-| `preg_match()`            | Executa uma correspondência de regex                             |
-| `preg_match_all()`        | Executa uma correspondência global de expressão regular          |
+| -                         | -                                                                        |
+| ------------------------- | :----------------------------------------------------------------------- |
+| `preg_match()`            | Executa uma correspondência de regex                                     |
+| `preg_match_all()`        | Executa uma correspondência global de expressão regular                  |
 | `preg_replace_callback()` | Executa uma busca e substituição de expressão regular usando um callback |
-| `preg_replace()`          | Executa uma busca e substituição de expressão regular            |
-| `preg_split()`            | Divide uma string pelo padrão de regex                           |
-| `preg_grep()`             | Retorna as entradas do array que correspondem a um padrão        |
+| `preg_replace()`          | Executa uma busca e substituição de expressão regular                    |
+| `preg_split()`            | Divide uma string pelo padrão de regex                                   |
+| `preg_grep()`             | Retorna as entradas do array que correspondem a um padrão                |
 
 ### preg_replace
 
@@ -727,15 +727,15 @@ System.out.println(s3);   // Outputs: false
 
 ### Campos de Pattern
 
-| -                  | -                               |
-| ------------------ | :------------------------------ |
-| `CANON_EQ`         | Equivalência canônica           |
+| -                  | -                                                      |
+| ------------------ | :----------------------------------------------------- |
+| `CANON_EQ`         | Equivalência canônica                                  |
 | `CASE_INSENSITIVE` | Correspondência sem distinção de maiúsculas/minúsculas |
-| `COMMENTS`         | Permite espaços em branco e comentários |
-| `DOTALL`           | Modo dotall                     |
-| `MULTILINE`        | Modo multilinha                 |
-| `UNICODE_CASE`     | Dobramento de maiúsculas/minúsculas ciente de Unicode |
-| `UNIX_LINES`       | Modo de linhas Unix             |
+| `COMMENTS`         | Permite espaços em branco e comentários                |
+| `DOTALL`           | Modo dotall                                            |
+| `MULTILINE`        | Modo multilinha                                        |
+| `UNICODE_CASE`     | Dobramento de maiúsculas/minúsculas ciente de Unicode  |
+| `UNIX_LINES`       | Modo de linhas Unix                                    |
 
 ### Métodos
 
@@ -799,13 +799,13 @@ System.out.println(matches);
 
 ### Funções
 
-| Nome               | Descrição                                                                |
-| ------------------ | :----------------------------------------------------------------------- |
-| `REGEXP          ` | Verifica se a string corresponde à regex                                 |
+| Nome               | Descrição                                                                           |
+| ------------------ | :---------------------------------------------------------------------------------- |
+| `REGEXP          ` | Verifica se a string corresponde à regex                                            |
 | `REGEXP_INSTR()  ` | Índice inicial da substring que corresponde à regex <br>_(NOTA: apenas MySQL 8.0+)_ |
-| `REGEXP_LIKE()   ` | Verifica se a string corresponde à regex <br>_(NOTA: apenas MySQL 8.0+)_ |
-| `REGEXP_REPLACE()` | Substitui substrings que correspondem à regex <br>_(NOTA: apenas MySQL 8.0+)_ |
-| `REGEXP_SUBSTR() ` | Retorna a substring que corresponde à regex <br>_(NOTA: apenas MySQL 8.0+)_ |
+| `REGEXP_LIKE()   ` | Verifica se a string corresponde à regex <br>_(NOTA: apenas MySQL 8.0+)_            |
+| `REGEXP_REPLACE()` | Substitui substrings que correspondem à regex <br>_(NOTA: apenas MySQL 8.0+)_       |
+| `REGEXP_SUBSTR() ` | Retorna a substring que corresponde à regex <br>_(NOTA: apenas MySQL 8.0+)_         |
 
 ### REGEXP
 

@@ -83,48 +83,48 @@ puts "Hello world!"  # Inline comments for code
 
 ### Palavras reservadas {.col-span-1}
 
-| Palavras reservadas | Descrição |
-| :------------------ | :--------- |
-| `__ENCODING__` | A codificação do script do arquivo atual |
-| `__LINE__`     | O número da linha desta palavra-chave no arquivo atual |
-| `__FILE__`     | O caminho do arquivo atual |
-| `BEGIN`        | O código entre { } é executado antes da execução do programa |
-| `END`          | O código entre { } é executado ao final do programa |
-| `alias`        | Cria um alias para um método, operador ou variável global existente |
-| `and`          | Operador lógico AND |
-| `begin`        | Inicia um bloco de código |
-| `break`        | Encerra um loop |
-| `case`         | Compara uma expressão com cláusulas `when` correspondentes, terminando com <br/> `end` |
-| `class`        | Define uma classe |
-| `def`          | Define uma função/método |
-| `defined?`     | Verifica se uma variável ou função existe |
-| `do`           | Inicia um bloco de código, terminado pela palavra-chave <br/> `end` |
-| `else`         | Executa o código a seguir se as condições anteriores não forem atendidas |
-| `elsif`        | Condição alternativa para expressões if |
-| `end`          | Encerra blocos de código iniciados por palavras-chave como `begin`, `class`,`def`,`do`,`if`, etc. |
-| `ensure`       | Sempre executa ao final de um bloco |
-| `false`        | Valor booleano lógico falso |
-| `for`          | Inicia um loop `for` |
-| `if`           | Executa o bloco de código `if` a condição for `true` |
-| `in`           | Usado com o loop `for` |
-| `module`       | Define um módulo |
-| `next`         | Salta para o ponto anterior à avaliação da condição do loop |
-| `nil`          | Representa nulo, inválido ou sempre falso |
-| `not`          | Operador lógico NOT |
-| `or`           | Operador lógico OR |
-| `redo`         | Volta para a avaliação da condição do loop |
-| `rescue`       | Avalia expressões depois que uma exceção é lançada |
-| `retry`        | Repete chamadas de método quando chamado fora de `rescue`; salta para o topo do bloco quando chamado dentro de `rescue` |
-| `return`       | Retorna um valor de um método ou bloco |
-| `self`         | Refere-se ao objeto atual |
-| `super`        | Chama o método de mesmo nome na superclasse |
-| `then`         | Usado como separador com`if`,`unless`,`when`,`case`,`rescue` |
-| `true`         | Valor booleano lógico verdadeiro |
-| `undef`        | Remove a definição de métodos/funções na classe atual |
-| `until`        | Executa o bloco de código até que a condição seja falsa |
-| `when`         | Inicia uma cláusula dentro de uma instrução `case` |
-| `while`        | Executa o bloco de código enquanto a condição for verdadeira |
-| `yield`        | Executa o bloco de código passado para um método |
+| Palavras reservadas | Descrição                                                                                                               |
+| :------------------ | :---------------------------------------------------------------------------------------------------------------------- |
+| `__ENCODING__`      | A codificação do script do arquivo atual                                                                                |
+| `__LINE__`          | O número da linha desta palavra-chave no arquivo atual                                                                  |
+| `__FILE__`          | O caminho do arquivo atual                                                                                              |
+| `BEGIN`             | O código entre { } é executado antes da execução do programa                                                            |
+| `END`               | O código entre { } é executado ao final do programa                                                                     |
+| `alias`             | Cria um alias para um método, operador ou variável global existente                                                     |
+| `and`               | Operador lógico AND                                                                                                     |
+| `begin`             | Inicia um bloco de código                                                                                               |
+| `break`             | Encerra um loop                                                                                                         |
+| `case`              | Compara uma expressão com cláusulas `when` correspondentes, terminando com <br/> `end`                                  |
+| `class`             | Define uma classe                                                                                                       |
+| `def`               | Define uma função/método                                                                                                |
+| `defined?`          | Verifica se uma variável ou função existe                                                                               |
+| `do`                | Inicia um bloco de código, terminado pela palavra-chave <br/> `end`                                                     |
+| `else`              | Executa o código a seguir se as condições anteriores não forem atendidas                                                |
+| `elsif`             | Condição alternativa para expressões if                                                                                 |
+| `end`               | Encerra blocos de código iniciados por palavras-chave como `begin`, `class`,`def`,`do`,`if`, etc.                       |
+| `ensure`            | Sempre executa ao final de um bloco                                                                                     |
+| `false`             | Valor booleano lógico falso                                                                                             |
+| `for`               | Inicia um loop `for`                                                                                                    |
+| `if`                | Executa o bloco de código `if` a condição for `true`                                                                    |
+| `in`                | Usado com o loop `for`                                                                                                  |
+| `module`            | Define um módulo                                                                                                        |
+| `next`              | Salta para o ponto anterior à avaliação da condição do loop                                                             |
+| `nil`               | Representa nulo, inválido ou sempre falso                                                                               |
+| `not`               | Operador lógico NOT                                                                                                     |
+| `or`                | Operador lógico OR                                                                                                      |
+| `redo`              | Volta para a avaliação da condição do loop                                                                              |
+| `rescue`            | Avalia expressões depois que uma exceção é lançada                                                                      |
+| `retry`             | Repete chamadas de método quando chamado fora de `rescue`; salta para o topo do bloco quando chamado dentro de `rescue` |
+| `return`            | Retorna um valor de um método ou bloco                                                                                  |
+| `self`              | Refere-se ao objeto atual                                                                                               |
+| `super`             | Chama o método de mesmo nome na superclasse                                                                             |
+| `then`              | Usado como separador com`if`,`unless`,`when`,`case`,`rescue`                                                            |
+| `true`              | Valor booleano lógico verdadeiro                                                                                        |
+| `undef`             | Remove a definição de métodos/funções na classe atual                                                                   |
+| `until`             | Executa o bloco de código até que a condição seja falsa                                                                 |
+| `when`              | Inicia uma cláusula dentro de uma instrução `case`                                                                      |
+| `while`             | Executa o bloco de código enquanto a condição for verdadeira                                                            |
+| `yield`             | Executa o bloco de código passado para um método                                                                        |
 
 ### Operadores {.row-span-7}
 
@@ -283,13 +283,13 @@ das de menor precedência.
 
 ### Variáveis e escopo {.col-span-2}
 
-| -              | -                     | -                             | -                                                                                                |
-| -------------- | --------------------- | ----------------------------- | :----------------------------------------------------------------------------------------------- |
-| Nome           | Escopo                | Exemplo                       | Explicação                                                                                       |
-| `[a-z]` or `_` | Local                 | `count = 10` or `_count = 10` | Variáveis locais devem ser inicializadas                                                         |
-| `@`            | Variável de instância | `@id = []`                    | Variáveis de instância têm valor "nil" antes da inicialização                                    |
-| `@@`           | Variável de classe    | `@@name = []`                 | Variáveis de classe devem ser inicializadas                                                      |
-| `$`            | Variável global       | `$version = "0.8.9"`          | Variáveis globais têm valor "nil" antes da inicialização                                         |
+| -              | -                     | -                             | -                                                                                                 |
+| -------------- | --------------------- | ----------------------------- | :------------------------------------------------------------------------------------------------ |
+| Nome           | Escopo                | Exemplo                       | Explicação                                                                                        |
+| `[a-z]` or `_` | Local                 | `count = 10` or `_count = 10` | Variáveis locais devem ser inicializadas                                                          |
+| `@`            | Variável de instância | `@id = []`                    | Variáveis de instância têm valor "nil" antes da inicialização                                     |
+| `@@`           | Variável de classe    | `@@name = []`                 | Variáveis de classe devem ser inicializadas                                                       |
+| `$`            | Variável global       | `$version = "0.8.9"`          | Variáveis globais têm valor "nil" antes da inicialização                                          |
 | `[A-Z]`        | Constante             | `PI = 3.14`                   | Variáveis constantes devem ser inicializadas; você pode alterar constantes, mas receberá um aviso |
 
 Existem cinco tipos diferentes de variáveis. O primeiro caractere determina o escopo. Para se aprofundar no assunto,
@@ -376,11 +376,11 @@ alguns métodos úteis
 
 | Nome do método | Saída                                 |
 | :------------- | :------------------------------------ |
-| `cover?`    | `(1..5).cover?(5)` => `true`          |
-| `end`       | `('a'..'z').end` => `"z"`             |
-| `first`     | `(1..5).first` => `1`                 |
-| `first(3)`  | `('A'..'Z').first(2)` => `["A", "B"]` |
-| `eql?`      | `((0..2).eql?(0..5)` => `false`       |
+| `cover?`       | `(1..5).cover?(5)` => `true`          |
+| `end`          | `('a'..'z').end` => `"z"`             |
+| `first`        | `(1..5).first` => `1`                 |
+| `first(3)`     | `('A'..'Z').first(2)` => `["A", "B"]` |
+| `eql?`         | `((0..2).eql?(0..5)` => `false`       |
 
 ### Usando `step` em Range
 
@@ -538,34 +538,34 @@ o meio ou o fim
 
 ### Métodos úteis {.col-span-3}
 
-| Nome da função                | Saída                                                                                                | Observação                                                                                                                                                                          |
-| :----------------------------- | :---------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| length or size                 | `"HELLO World".length` => `11` <br> `"HELLO World".size` => `11`                                      | Retorna o comprimento da string                                                                                                                                                     |
-| reverse                        | `"hello worlD".reverse` => `"Dlrow olleh"`                                                            | Retorna a string invertida                                                                                                                                                          |
-| include? other_str             | `"hEllo wOrlD".include? "w"` => `true`                                                                | Retorna true se a string ou o caractere existir; caso contrário, retorna false                                                                                                      |
-| gsub(pattern, replacement)     | `"hEllo wOrlD".gsub(" ", "_")` => `"hEllo_wOrlD"`                                                     | gsub ou substituição global substitui uma ou mais strings pela string fornecida                                                                                                     |
-| gsub(pattern, hash)            | `"organization".gsub("z", 'z' => 's')` => `"organisation"`                                            | gsub ou substituição global substitui uma ou mais strings pelo hash fornecido                                                                                                       |
-| gsub(pattern) {\|match\|block} | `"Price of the phone is 1000 AUD".gsub(/\d+/) {\| s\| '$'+s }`<br>`"Price of the phone is $1000 AUD"` | gsub ou substituição global substitui uma ou mais strings pelo bloco fornecido                                                                                                      |
+| Nome da função                 | Saída                                                                                                 | Observação                                                                                                                                                                              |
+| :----------------------------- | :---------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| length or size                 | `"HELLO World".length` => `11` <br> `"HELLO World".size` => `11`                                      | Retorna o comprimento da string                                                                                                                                                         |
+| reverse                        | `"hello worlD".reverse` => `"Dlrow olleh"`                                                            | Retorna a string invertida                                                                                                                                                              |
+| include? other_str             | `"hEllo wOrlD".include? "w"` => `true`                                                                | Retorna true se a string ou o caractere existir; caso contrário, retorna false                                                                                                          |
+| gsub(pattern, replacement)     | `"hEllo wOrlD".gsub(" ", "_")` => `"hEllo_wOrlD"`                                                     | gsub ou substituição global substitui uma ou mais strings pela string fornecida                                                                                                         |
+| gsub(pattern, hash)            | `"organization".gsub("z", 'z' => 's')` => `"organisation"`                                            | gsub ou substituição global substitui uma ou mais strings pelo hash fornecido                                                                                                           |
+| gsub(pattern) {\|match\|block} | `"Price of the phone is 1000 AUD".gsub(/\d+/) {\| s\| '$'+s }`<br>`"Price of the phone is $1000 AUD"` | gsub ou substituição global substitui uma ou mais strings pelo bloco fornecido                                                                                                          |
 | strip                          | `" hEllo WOrlD ".strip` <br> `"hEllo WOrlD"`                                                          | Remove (trim) caracteres no início e no fim: null ("\x00"), tabulação horizontal ("\t"), nova linha (\n), tabulação vertical ("\v"), form feed (f), retorno de carro (\r), espaço (" ") |
-| prepend                        | `a = "world" <br> a.prepend("hello ")` <br> `"hello world"`                                           | Adiciona a string antes de outra string                                                                                                                                             |
-| insert                         | `a = "hello" <br> a.insert(a.length, " world")` <br> `"hello world"`                                  | Insere a string em uma posição específica                                                                                                                                           |
-| start_with?                    | `string = "ruby programming"` <br> `string.start_with? "ruby"` <br> `true`                            | Verifica se a string começa com um prefixo específico                                                                                                                               |
-| end_with?                      | `string = "ruby programming"` <br> `string.end_with? "ruby"` <br> `false`                             | Verifica se a string termina com um sufixo específico                                                                                                                               |
-| delete_suffix                  | `string = "sausage is expensive"` <br> `string.delete_suffix(" is expensive")` <br> `"sausage"`       | Remove o sufixo da string                                                                                                                                                           |
-| delete_prefix                  | `string = "sausage is expensive"` <br> `string.delete_prefix("sausage")` <br> `" is expensive"`       | Remove o prefixo da string                                                                                                                                                          |
-| split                          | `string = "a b c d" <br> string.split` <br> `["a", "b", "c", "d"]`                                    | Converte a string em um array de caracteres                                                                                                                                         |
-| join                           | `arr = ['a', 'b', 'c'] <br> arr.join` => `"abc"`                                                      | Converte um array em uma string                                                                                                                                                     |
-| to_i                           | `a = "49" <br> a.to_i` => `49`                                                                        | Converte a string em um inteiro                                                                                                                                                     |
-| chop                           | `"abcd?".chop("?")` => `"abcd"`                                                                       | Remove o último caractere da string                                                                                                                                                 |
-| count                          | `str = "aaab" <br> str.count("a")` <br> `3`                                                           | Conta os caracteres na string                                                                                                                                                       |
-| to_f                           | `a = "49"` <br> `a.to_f` <br> `49.0`                                                                  | Converte a string em um número de ponto flutuante                                                                                                                                   |
-| to_sym                         | `a = "key"` <br> `a.to_sym` <br> `:key`                                                               | Converte a string em um symbol                                                                                                                                                      |
-| match                          | `"abcd?".match(/ab/)` => `#<MatchData "ab">`                                                          | Converte o padrão em uma expressão regular e chama seu método match na string                                                                                                       |
-| empty?                         | `"hello".empty?` => `false`                                                                           | Retorna true se o comprimento da string for zero                                                                                                                                    |
-| squeeze                        | `"Booook".squeeze` => `"Bok"`                                                                         | Retorna uma cópia da string em que sequências do mesmo caractere são substituídas por um único caractere                                                                            |
-| \*                             | `puts "Ruby " * 4` => `Ruby Ruby Ruby Ruby`                                                           | Retorna a concatenação de várias cópias de self                                                                                                                                     |
-| +                              | `"sammy " + "shark"` => `"sammyshark"`                                                                | Retorna a concatenação de self com a outra string fornecida                                                                                                                         |
-| eql?                           | `s = 'foo'` => `true` <br> `s.eql?('foo')` => `true`                                                  | Retorna true se os objetos têm o mesmo comprimento e conteúdo; caso contrário, false                                                                                                |
+| prepend                        | `a = "world" <br> a.prepend("hello ")` <br> `"hello world"`                                           | Adiciona a string antes de outra string                                                                                                                                                 |
+| insert                         | `a = "hello" <br> a.insert(a.length, " world")` <br> `"hello world"`                                  | Insere a string em uma posição específica                                                                                                                                               |
+| start_with?                    | `string = "ruby programming"` <br> `string.start_with? "ruby"` <br> `true`                            | Verifica se a string começa com um prefixo específico                                                                                                                                   |
+| end_with?                      | `string = "ruby programming"` <br> `string.end_with? "ruby"` <br> `false`                             | Verifica se a string termina com um sufixo específico                                                                                                                                   |
+| delete_suffix                  | `string = "sausage is expensive"` <br> `string.delete_suffix(" is expensive")` <br> `"sausage"`       | Remove o sufixo da string                                                                                                                                                               |
+| delete_prefix                  | `string = "sausage is expensive"` <br> `string.delete_prefix("sausage")` <br> `" is expensive"`       | Remove o prefixo da string                                                                                                                                                              |
+| split                          | `string = "a b c d" <br> string.split` <br> `["a", "b", "c", "d"]`                                    | Converte a string em um array de caracteres                                                                                                                                             |
+| join                           | `arr = ['a', 'b', 'c'] <br> arr.join` => `"abc"`                                                      | Converte um array em uma string                                                                                                                                                         |
+| to_i                           | `a = "49" <br> a.to_i` => `49`                                                                        | Converte a string em um inteiro                                                                                                                                                         |
+| chop                           | `"abcd?".chop("?")` => `"abcd"`                                                                       | Remove o último caractere da string                                                                                                                                                     |
+| count                          | `str = "aaab" <br> str.count("a")` <br> `3`                                                           | Conta os caracteres na string                                                                                                                                                           |
+| to_f                           | `a = "49"` <br> `a.to_f` <br> `49.0`                                                                  | Converte a string em um número de ponto flutuante                                                                                                                                       |
+| to_sym                         | `a = "key"` <br> `a.to_sym` <br> `:key`                                                               | Converte a string em um symbol                                                                                                                                                          |
+| match                          | `"abcd?".match(/ab/)` => `#<MatchData "ab">`                                                          | Converte o padrão em uma expressão regular e chama seu método match na string                                                                                                           |
+| empty?                         | `"hello".empty?` => `false`                                                                           | Retorna true se o comprimento da string for zero                                                                                                                                        |
+| squeeze                        | `"Booook".squeeze` => `"Bok"`                                                                         | Retorna uma cópia da string em que sequências do mesmo caractere são substituídas por um único caractere                                                                                |
+| \*                             | `puts "Ruby " * 4` => `Ruby Ruby Ruby Ruby`                                                           | Retorna a concatenação de várias cópias de self                                                                                                                                         |
+| +                              | `"sammy " + "shark"` => `"sammyshark"`                                                                | Retorna a concatenação de self com a outra string fornecida                                                                                                                             |
+| eql?                           | `s = 'foo'` => `true` <br> `s.eql?('foo')` => `true`                                                  | Retorna true se os objetos têm o mesmo comprimento e conteúdo; caso contrário, false                                                                                                    |
 
 ## Métodos
 
@@ -1813,14 +1813,14 @@ p str #=> "sixth fifth fourth third second first "
 
 ### Métodos booleanos de enumerable {.row-span-2}
 
-| Nome       | Quando usar                                                             |
-| :--------- | :---------------------------------------------------------------------- |
-| `all?`     | Quando quiser verificar se todos os elementos atendem à sua condição    |
-| `any?`     | Quando quiser verificar se pelo menos um item atende à sua condição     |
-| `one?`     | Quando quiser verificar se um elemento atende ao seu requisito          |
+| Nome       | Quando usar                                                                |
+| :--------- | :------------------------------------------------------------------------- |
+| `all?`     | Quando quiser verificar se todos os elementos atendem à sua condição       |
+| `any?`     | Quando quiser verificar se pelo menos um item atende à sua condição        |
+| `one?`     | Quando quiser verificar se um elemento atende ao seu requisito             |
 | `none?`    | Quando quiser verificar se nenhum item atende à sua condição, o oposto de? |
-| `empty?`   | Quando quiser verificar se um objeto está vazio                         |
-| `include?` | Quando quiser verificar se um elemento existe no objeto                 |
+| `empty?`   | Quando quiser verificar se um objeto está vazio                            |
+| `include?` | Quando quiser verificar se um elemento existe no objeto                    |
 
 ### all?
 

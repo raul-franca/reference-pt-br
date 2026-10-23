@@ -16,45 +16,45 @@ intro: |
 
 ### Atalhos de navegação
 
-| Atalho             | Ação                             |
-| ------------------ | -------------------------------- |
-| `Ctrl` `Alt` `1`   | Focar a barra lateral            |
-| `Ctrl` `Alt` `2`   | Focar o builder                  |
-| `Ctrl` `#`         | Focar na #ª aba                  |
-| `Ctrl` `Shift` `/` | Alternar entre abas              |
-| `Down`             | Mover para o próximo item        |
-| `Up`               | Mover para o item anterior       |
-| `Right`            | Expandir coleção/pasta           |
-| `Left`             | Recolher coleção/pasta           |
-| `Shift` `Down`     | Selecionar o item atual E o próximo |
+| Atalho             | Ação                                 |
+| ------------------ | ------------------------------------ |
+| `Ctrl` `Alt` `1`   | Focar a barra lateral                |
+| `Ctrl` `Alt` `2`   | Focar o builder                      |
+| `Ctrl` `#`         | Focar na #ª aba                      |
+| `Ctrl` `Shift` `/` | Alternar entre abas                  |
+| `Down`             | Mover para o próximo item            |
+| `Up`               | Mover para o item anterior           |
+| `Right`            | Expandir coleção/pasta               |
+| `Left`             | Recolher coleção/pasta               |
+| `Shift` `Down`     | Selecionar o item atual E o próximo  |
 | `Shift` `Up`       | Selecionar o item atual E o anterior |
-| `Ctrl` `F`         | Pesquisar na barra lateral       |
-| `Enter`            | Abrir request em uma aba         |
+| `Ctrl` `F`         | Pesquisar na barra lateral           |
+| `Enter`            | Abrir request em uma aba             |
 
 {.shortcuts}
 
 ### Atalhos de manipulação
 
-| Atalho     | Ação        |
-| ---------- | ----------- |
-| `Ctrl` `C` | Copiar      |
-| `Ctrl` `V` | Colar       |
-| `Delete`   | Excluir     |
-| `Ctrl` `D` | Duplicar    |
+| Atalho     | Ação            |
+| ---------- | --------------- |
+| `Ctrl` `C` | Copiar          |
+| `Ctrl` `V` | Colar           |
+| `Delete`   | Excluir         |
+| `Ctrl` `D` | Duplicar        |
 | `Ctrl` `E` | Editar/Renomear |
 
 {.shortcuts}
 
 ### Atalhos globais
 
-| Atalho             | Ação             |
-| ------------------ | ---------------- |
-| `Ctrl` `S`         | Salvar           |
-| `Ctrl` `Shift` `S` | Salvar como      |
-| `Ctrl` `Enter`     | Enviar request   |
+| Atalho             | Ação                   |
+| ------------------ | ---------------------- |
+| `Ctrl` `S`         | Salvar                 |
+| `Ctrl` `Shift` `S` | Salvar como            |
+| `Ctrl` `Enter`     | Enviar request         |
 | `Ctrl` `\`         | Alternar barra lateral |
-| `Ctrl` `L`         | Ir para a URL    |
-| `Ctrl` `Alt` `C`   | Abrir o console  |
+| `Ctrl` `L`         | Ir para a URL          |
+| `Ctrl` `Alt` `C`   | Abrir o console        |
 
 {.shortcuts}
 

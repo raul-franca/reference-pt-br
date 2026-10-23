@@ -233,19 +233,19 @@ Um gerador de tabelas Markdown: [tableconvert.com](https://tableconvert.com/)
 
 ### Escapes com barra invertida
 
-| Caracteres        | Escape                | Descrição              |
-| ----------------- | --------------------- | :--------------------- |
-| <code>\\</code>   | <code>\\\\</code>     | Barra invertida        |
-| <code>\`</code>   | <code>\\\`</code>     | Crase                  |
-| <code>\*</code>   | <code>\\\*</code>     | Asterisco              |
-| <code>\_</code>   | <code>\\\_</code>     | Sublinhado             |
-| <code>\{\}</code> | <code>\\\{\\\}</code> | Chaves                 |
-| <code>\[\]</code> | <code>\\\[\\\]</code> | Colchetes              |
-| <code>\(\)</code> | <code>\\\(\\\)</code> | Parênteses             |
-| <code>\#</code>   | <code>\\\#</code>     | Cerquilha              |
-| <code>\+</code>   | <code>\\\+</code>     | Sinal de mais          |
+| Caracteres        | Escape                | Descrição                |
+| ----------------- | --------------------- | :----------------------- |
+| <code>\\</code>   | <code>\\\\</code>     | Barra invertida          |
+| <code>\`</code>   | <code>\\\`</code>     | Crase                    |
+| <code>\*</code>   | <code>\\\*</code>     | Asterisco                |
+| <code>\_</code>   | <code>\\\_</code>     | Sublinhado               |
+| <code>\{\}</code> | <code>\\\{\\\}</code> | Chaves                   |
+| <code>\[\]</code> | <code>\\\[\\\]</code> | Colchetes                |
+| <code>\(\)</code> | <code>\\\(\\\)</code> | Parênteses               |
+| <code>\#</code>   | <code>\\\#</code>     | Cerquilha                |
+| <code>\+</code>   | <code>\\\+</code>     | Sinal de mais            |
 | <code>\-</code>   | <code>\\\-</code>     | Sinal de menos \(hífen\) |
-| <code>\.</code>   | <code>\\\.</code>     | Ponto                  |
-| <code>\!</code>   | <code>\\\!</code>     | Ponto de exclamação    |
+| <code>\.</code>   | <code>\\\.</code>     | Ponto                    |
+| <code>\!</code>   | <code>\\\!</code>     | Ponto de exclamação      |
 
 {.show-header}

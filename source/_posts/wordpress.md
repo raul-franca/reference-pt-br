@@ -40,25 +40,25 @@ intro: |
 
 ### Editor II
 
-| Atalho            | Ação                                |
-| ----------------- | ----------------------------------- |
-| `Alt` `Shift` `A` | Insere um link                      |
-| `Alt` `Shift` `O` | Lista ordenada                      |
-| `Alt` `Shift` `S` | Remove um link                      |
-| `Alt` `Shift` `Q` | Citação                             |
-| `Alt` `Shift` `M` | Insere uma imagem                   |
-| `Alt` `Shift` `W` | Modo de escrita sem distrações      |
-| `Alt` `Shift` `T` | Insere uma tag more                 |
-| `Alt` `Shift` `P` | Insere uma tag de quebra de página  |
-| `Alt` `Shift` `H` | Ajuda                               |
+| Atalho            | Ação                                 |
+| ----------------- | ------------------------------------ |
+| `Alt` `Shift` `A` | Insere um link                       |
+| `Alt` `Shift` `O` | Lista ordenada                       |
+| `Alt` `Shift` `S` | Remove um link                       |
+| `Alt` `Shift` `Q` | Citação                              |
+| `Alt` `Shift` `M` | Insere uma imagem                    |
+| `Alt` `Shift` `W` | Modo de escrita sem distrações       |
+| `Alt` `Shift` `T` | Insere uma tag more                  |
+| `Alt` `Shift` `P` | Insere uma tag de quebra de página   |
+| `Alt` `Shift` `H` | Ajuda                                |
 | `Alt` `Shift` `X` | Adiciona ou remove uma tag de código |
-| `Alt` `Shift` `1` | Título um                           |
-| `Alt` `Shift` `2` | Título dois                         |
-| `Alt` `Shift` `3` | Título três                         |
-| `Alt` `Shift` `4` | Título quatro                       |
-| `Alt` `Shift` `5` | Título cinco                        |
-| `Alt` `Shift` `6` | Título seis                         |
-| `Alt` `Shift` `9` | Insere um endereço                  |
+| `Alt` `Shift` `1` | Título um                            |
+| `Alt` `Shift` `2` | Título dois                          |
+| `Alt` `Shift` `3` | Título três                          |
+| `Alt` `Shift` `4` | Título quatro                        |
+| `Alt` `Shift` `5` | Título cinco                         |
+| `Alt` `Shift` `6` | Título seis                          |
+| `Alt` `Shift` `9` | Insere um endereço                   |
 
 {.shortcuts}
 

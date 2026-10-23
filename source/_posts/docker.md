@@ -48,20 +48,20 @@ $ docker run -it -p 8001:8080 --name my-nginx nginx
 
 ### Comandos gerais
 
-| Exemplo                             | Descrição                                        |
-| ----------------------------------- | ------------------------------------------------ |
-| `docker ps`                         | Lista os containers em execução                  |
-| `docker ps -a`                      | Lista todos os containers                        |
+| Exemplo                             | Descrição                                                |
+| ----------------------------------- | -------------------------------------------------------- |
+| `docker ps`                         | Lista os containers em execução                          |
+| `docker ps -a`                      | Lista todos os containers                                |
 | `docker ps -s`                      | Lista os containers em execução<br>_(com CPU / memória)_ |
-| `docker images`                     | Lista todas as imagens                           |
-| `docker exec -it <container>  bash` | Conecta ao container                             |
-| `docker logs <container>`           | Mostra o log do console do container             |
-| `docker stop <container>`           | Para um container                                |
-| `docker restart <container>`        | Reinicia um container                            |
-| `docker rm <container>`             | Remove um container                              |
-| `docker port <container>`           | Mostra o mapeamento de portas do container       |
-| `docker top <container>`            | Lista os processos                               |
-| `docker kill <container>`           | Mata um container                                |
+| `docker images`                     | Lista todas as imagens                                   |
+| `docker exec -it <container>  bash` | Conecta ao container                                     |
+| `docker logs <container>`           | Mostra o log do console do container                     |
+| `docker stop <container>`           | Para um container                                        |
+| `docker restart <container>`        | Reinicia um container                                    |
+| `docker rm <container>`             | Remove um container                                      |
+| `docker port <container>`           | Mostra o mapeamento de portas do container               |
+| `docker top <container>`            | Lista os processos                                       |
+| `docker kill <container>`           | Mata um container                                        |
 
 O parâmetro `<container>` pode ser o id ou o nome do container
 
@@ -82,16 +82,16 @@ O parâmetro `<container>` pode ser o id ou o nome do container
 
 ### Informações
 
-| Exemplo                   | Descrição                              |
-| ------------------------- | -------------------------------------- |
-| `docker ps`               | Lista os containers em execução        |
-| `docker ps -a`            | Lista todos os containers              |
-| `docker logs my-nginx`    | Logs do container                      |
-| `docker inspect my-nginx` | Inspecionando containers               |
-| `docker events my-nginx`  | Eventos de containers                  |
-| `docker port my-nginx`    | Portas públicas                        |
-| `docker top my-nginx`     | Processos em execução                  |
-| `docker stats my-nginx`   | Uso de recursos do container           |
+| Exemplo                   | Descrição                                   |
+| ------------------------- | ------------------------------------------- |
+| `docker ps`               | Lista os containers em execução             |
+| `docker ps -a`            | Lista todos os containers                   |
+| `docker logs my-nginx`    | Logs do container                           |
+| `docker inspect my-nginx` | Inspecionando containers                    |
+| `docker events my-nginx`  | Eventos de containers                       |
+| `docker port my-nginx`    | Portas públicas                             |
+| `docker top my-nginx`     | Processos em execução                       |
+| `docker stats my-nginx`   | Uso de recursos do container                |
 | `docker diff my-nginx`    | Lista as alterações feitas em um container. |
 
 ### Criando
@@ -140,17 +140,17 @@ docker update --cpu-shares 512 -m 300M my-nginx
 
 ### Manipulando
 
-| `Example`                          | Descrição                       |
-| ---------------------------------- | ------------------------------- |
-| `docker images`                    | Listando imagens                |
-| `docker rmi nginx`                 | Removendo uma imagem            |
-| `docker load < ubuntu.tar.gz`      | Carregando um repositório em tar |
-| `docker load --input ubuntu.tar`   | Carregando um repositório em tar |
+| `Example`                          | Descrição                          |
+| ---------------------------------- | ---------------------------------- |
+| `docker images`                    | Listando imagens                   |
+| `docker rmi nginx`                 | Removendo uma imagem               |
+| `docker load < ubuntu.tar.gz`      | Carregando um repositório em tar   |
+| `docker load --input ubuntu.tar`   | Carregando um repositório em tar   |
 | `docker save busybox > ubuntu.tar` | Salva uma imagem em um arquivo tar |
-| `docker history`                   | Mostra o histórico de uma imagem |
-| `docker commit nginx`              | Salva um container como imagem. |
-| `docker tag nginx eon01/nginx`     | Aplicando tag em uma imagem     |
-| `docker push eon01/nginx`          | Fazendo push de uma imagem      |
+| `docker history`                   | Mostra o histórico de uma imagem   |
+| `docker commit nginx`              | Salva um container como imagem.    |
+| `docker tag nginx eon01/nginx`     | Aplicando tag em uma imagem        |
+| `docker push eon01/nginx`          | Fazendo push de uma imagem         |
 
 ### Criando imagens
 
@@ -328,11 +328,11 @@ $ docker push eon01/nginx localhost:5000/myadmin/nginx
 
 ### Limpeza em lote
 
-| Exemplo                             | Descrição               |
-| ----------------------------------- | ----------------------- |
-| `docker stop -f $(docker ps -a -q)` | Para todos os containers |
+| Exemplo                             | Descrição                  |
+| ----------------------------------- | -------------------------- |
+| `docker stop -f $(docker ps -a -q)` | Para todos os containers   |
 | `docker rm -f $(docker ps -a -q)`   | Remove todos os containers |
-| `docker rmi -f $(docker images -q)` | Remove todas as imagens |
+| `docker rmi -f $(docker images -q)` | Remove todas as imagens    |
 
 ### Volumes
 

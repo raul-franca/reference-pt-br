@@ -16,24 +16,24 @@ intro: Uma referência completa dos comandos do Minecraft Java Edition (1.20.x).
 
 ## Seletores de alvo
 
-| Seletor | Descrição |
-| :--- | :--- |
-| `@p` | Jogador mais próximo |
-| `@r` | Jogador aleatório |
-| `@a` | Todos os jogadores |
-| `@e` | Todas as entidades (inclui mobs, itens etc.) |
-| `@s` | A entidade que executa o comando (Self) |
+| Seletor | Descrição                                    |
+| :------ | :------------------------------------------- |
+| `@p`    | Jogador mais próximo                         |
+| `@r`    | Jogador aleatório                            |
+| `@a`    | Todos os jogadores                           |
+| `@e`    | Todas as entidades (inclui mobs, itens etc.) |
+| `@s`    | A entidade que executa o comando (Self)      |
 
 ### Argumentos do seletor
 
-| Argumento | Exemplo | Descrição |
-| :--- | :--- | :--- |
-| `type` | `@e[type=skeleton]` | Seleciona entidades de um tipo específico |
-| `distance` | `@a[distance=..10]` | Seleciona dentro de um raio (10 blocos) |
-| `limit` | `@e[limit=1]` | Limita o número de alvos selecionados |
-| `sort` | `@a[sort=nearest]` | Ordena a seleção (nearest, furthest, random, arbitrary) |
-| `gamemode` | `@a[gamemode=creative]` | Seleciona jogadores em um modo de jogo específico |
-| `level` | `@a[level=30..]` | Seleciona jogadores com nível de XP 30 ou superior |
+| Argumento  | Exemplo                 | Descrição                                               |
+| :--------- | :---------------------- | :------------------------------------------------------ |
+| `type`     | `@e[type=skeleton]`     | Seleciona entidades de um tipo específico               |
+| `distance` | `@a[distance=..10]`     | Seleciona dentro de um raio (10 blocos)                 |
+| `limit`    | `@e[limit=1]`           | Limita o número de alvos selecionados                   |
+| `sort`     | `@a[sort=nearest]`      | Ordena a seleção (nearest, furthest, random, arbitrary) |
+| `gamemode` | `@a[gamemode=creative]` | Seleciona jogadores em um modo de jogo específico       |
+| `level`    | `@a[level=30..]`        | Seleciona jogadores com nível de XP 30 ou superior      |
 
 ## Comandos principais
 
@@ -154,14 +154,14 @@ Altera o clima.
 
 Define várias regras para o mundo.
 
-| Regra | Descrição |
-| :--- | :--- |
-| `keepInventory` | Se verdadeiro, os jogadores mantêm os itens ao morrer |
-| `doDaylightCycle` | Se falso, o tempo fica congelado |
-| `doMobSpawning` | Se falso, os mobs não surgem naturalmente |
-| `mobGriefing` | Se falso, creepers/endermen não destroem blocos |
-| `doWeatherCycle` | Se falso, o clima nunca muda |
-| `commandBlockOutput` | Se falso, command blocks não floodam o chat |
+| Regra                | Descrição                                             |
+| :------------------- | :---------------------------------------------------- |
+| `keepInventory`      | Se verdadeiro, os jogadores mantêm os itens ao morrer |
+| `doDaylightCycle`    | Se falso, o tempo fica congelado                      |
+| `doMobSpawning`      | Se falso, os mobs não surgem naturalmente             |
+| `mobGriefing`        | Se falso, creepers/endermen não destroem blocos       |
+| `doWeatherCycle`     | Se falso, o clima nunca muda                          |
+| `commandBlockOutput` | Se falso, command blocks não floodam o chat           |
 
 ```mcfunction
 # Enable keep inventory

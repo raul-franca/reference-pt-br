@@ -128,13 +128,13 @@ Todas as variantes mágicas suportadas pelo CheatSheets.zip
 
 ### Visão geral das seções {.secondary}
 
-| -           | -                               |
-| ----------- | ------------------------------- |
-| `{.cols-1}` | layout de uma coluna            |
-| `{.cols-2}` | layout de duas colunas          |
+| -           | -                                 |
+| ----------- | --------------------------------- |
+| `{.cols-1}` | layout de uma coluna              |
+| `{.cols-2}` | layout de duas colunas            |
 | `{.cols-3}` | layout de três colunas _(padrão)_ |
-| ...         |                                 |
-| `{.cols-6}` | layout de seis colunas          |
+| ...         |                                   |
+| `{.cols-6}` | layout de seis colunas            |
 
 ---
 
@@ -244,9 +244,9 @@ Todas as variantes mágicas suportadas pelo CheatSheets.zip
 
 #### Destaque de card (também conhecido como seção `H3`)
 
-| -              | -                                         |
-| -------------- | ----------------------------------------- |
-| `{.primary}`   | Títulos vermelhos, [Exemplo](#primary-card) |
+| -              | -                                            |
+| -------------- | -------------------------------------------- |
+| `{.primary}`   | Títulos vermelhos, [Exemplo](#primary-card)  |
 | `{.secondary}` | Títulos amarelos, [Exemplo](#secondary-card) |
 
 Um exemplo completo: [Exemplo de cards](#cards-example)
@@ -439,23 +439,23 @@ Ocupa linhas e colunas ao mesmo tempo
 
 ### Visão geral das tabelas {.secondary}
 
-| -                | -                            |
-| ---------------- | ---------------------------- |
-| `{.show-header}` | Mostra o cabeçalho da tabela |
+| -                | -                                        |
+| ---------------- | ---------------------------------------- |
+| `{.show-header}` | Mostra o cabeçalho da tabela             |
 | `{.shortcuts}`   | Renderiza no estilo de atalho de teclado |
-| `{.bold-first}`  | Deixa a primeira coluna em negrito |
-| `{.plus-first}`  | Adiciona "+" na primeira coluna |
-| `{.show-header}` | Mostra os cabeçalhos         |
-| `{.left-text}`   | Alinha a última coluna à esquerda |
-| `{.no-wrap}`     | Não quebra o texto           |
+| `{.bold-first}`  | Deixa a primeira coluna em negrito       |
+| `{.plus-first}`  | Adiciona "+" na primeira coluna          |
+| `{.show-header}` | Mostra os cabeçalhos                     |
+| `{.left-text}`   | Alinha a última coluna à esquerda        |
+| `{.no-wrap}`     | Não quebra o texto                       |
 
 ### Tabela básica
 
-| Padrão   | Descrição                  |
-| -------- | -------------------------- |
-| `[abc]`  | Corresponde a a, b ou c    |
+| Padrão   | Descrição                    |
+| -------- | ---------------------------- |
+| `[abc]`  | Corresponde a a, b ou c      |
 | `[^abc]` | Corresponde exceto a, b ou c |
-| `[a-z]`  | Corresponde de a a z       |
+| `[a-z]`  | Corresponde de a a z         |
 
 #### ↓ Código-fonte
 
@@ -489,11 +489,11 @@ Ocupa linhas e colunas ao mesmo tempo
 
 ### .show-header
 
-| Padrão   | Descrição                  |
-| -------- | -------------------------- |
-| `[abc]`  | Corresponde a a, b ou c    |
+| Padrão   | Descrição                    |
+| -------- | ---------------------------- |
+| `[abc]`  | Corresponde a a, b ou c      |
 | `[^abc]` | Corresponde exceto a, b ou c |
-| `[a-z]`  | Corresponde de a a z       |
+| `[a-z]`  | Corresponde de a a z         |
 
 {.show-header}
 
@@ -511,11 +511,11 @@ Ocupa linhas e colunas ao mesmo tempo
 
 ### .left-text
 
-| Padrão   | Descrição                  |
-| -------- | -------------------------- |
-| `[abc]`  | Corresponde a a, b ou c    |
+| Padrão   | Descrição                    |
+| -------- | ---------------------------- |
+| `[abc]`  | Corresponde a a, b ou c      |
 | `[^abc]` | Corresponde exceto a, b ou c |
-| `[a-z]`  | Corresponde de a a z       |
+| `[a-z]`  | Corresponde de a a z         |
 
 {.left-text}
 
@@ -533,11 +533,11 @@ Ocupa linhas e colunas ao mesmo tempo
 
 ### .bold-first
 
-| Padrão   | Descrição                  |
-| -------- | -------------------------- |
-| `[abc]`  | Corresponde a a, b ou c    |
+| Padrão   | Descrição                    |
+| -------- | ---------------------------- |
+| `[abc]`  | Corresponde a a, b ou c      |
 | `[^abc]` | Corresponde exceto a, b ou c |
-| `[a-z]`  | Corresponde de a a z       |
+| `[a-z]`  | Corresponde de a a z         |
 
 {.bold-first}
 
@@ -559,20 +559,20 @@ Ocupa linhas e colunas ao mesmo tempo
 
 Colunas da lista
 
-| -           | -                      |
-| ----------- | ---------------------- |
-| `{.cols-1}` | uma coluna _(padrão)_  |
-| `{.cols-2}` | duas colunas           |
-| ...         |                        |
-| `{.cols-6}` |                        |
+| -           | -                     |
+| ----------- | --------------------- |
+| `{.cols-1}` | uma coluna _(padrão)_ |
+| `{.cols-2}` | duas colunas          |
+| ...         |                       |
+| `{.cols-6}` |                       |
 
 Marcadores de lista
 
-| -                    | -                          |
-| -------------------- | -------------------------- |
-| `{.marker-none}`     | O marcador não é definido  |
+| -                    | -                                      |
+| -------------------- | -------------------------------------- |
+| `{.marker-none}`     | O marcador não é definido              |
 | `{.marker-timeline}` | Estilo de marcador como linha do tempo |
-| `{.marker-round}`    | Marcador redondo           |
+| `{.marker-round}`    | Marcador redondo                       |
 
 ### Uma coluna (padrão)
 

@@ -17,7 +17,7 @@ intro: |
 ### Geral
 
 | Atalho        | Ação           |
-| ---           | ---            |
+| ------------- | -------------- |
 | `Opt` `Enter` | Inserir patch  |
 | `Cmd` `Enter` | Inserir camada |
 | `Cmd` `/`     | Documentação   |
@@ -27,7 +27,7 @@ intro: |
 ### Patches {.row-span-3}
 
 | Atalho      | Ação                 |
-| ---         | ---                  |
+| ----------- | -------------------- |
 | `I`         | Interaction          |
 | `S`         | Switch               |
 | `A`         | Pop animation        |
@@ -60,7 +60,7 @@ intro: |
 ### Organizando patches
 
 | Atalho                  | Ação                                                  |
-| ---                     | ---                                                   |
+| ----------------------- | ----------------------------------------------------- |
 | `Shift` `Enter`         | Renomear patch                                        |
 | `Cmd` `[`               | Alinhar patches à esquerda                            |
 | `Cmd` `]`               | Alinhar patches à direita                             |
@@ -80,7 +80,7 @@ intro: |
 ### Camadas {.row-span-2}
 
 | Atalho                     | Ação                                     |
-| ---                        | ---                                      |
+| -------------------------- | ---------------------------------------- |
 | `Shift` `Enter`            | Renomear camada                          |
 | `Cmd` `Shift` `H`          | Ocultar ou mostrar camada                |
 | `Cmd` `Shift` `L`          | Bloquear ou desbloquear camada           |
@@ -104,7 +104,7 @@ intro: |
 ### Visualizador
 
 | Atalho            | Ação                       |
-| ---               | ---                        |
+| ----------------- | -------------------------- |
 | `Cmd` `R`         | Reiniciar protótipo        |
 | `Opt` `D`         | Alternar dispositivo       |
 | `Opt` `H`         | Alternar mão               |
@@ -117,7 +117,7 @@ intro: |
 ### Entradas numéricas
 
 | Atalho         | Ação                     |
-| ---            | ---                      |
+| -------------- | ------------------------ |
 | `Up`           | Aumentar o número em um  |
 | `Down`         | Diminuir o número em um  |
 | `Shift` `Up`   | Aumentar o número em 10  |

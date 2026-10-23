@@ -16,48 +16,48 @@ intro: |
 
 ### Ações
 
-| Atalho         | Ação               |
-| -------------- | ------------------ |
-| `N`            | Novo tweet         |
-| `L`            | Curtir tweet       |
-| `R`            | Responder ao tweet |
-| `T`            | Retweet            |
-| `M`            | Mensagem direta    |
-| `U`            | Silenciar conta    |
-| `B`            | Bloquear conta     |
+| Atalho         | Ação                    |
+| -------------- | ----------------------- |
+| `N`            | Novo tweet              |
+| `L`            | Curtir tweet            |
+| `R`            | Responder ao tweet      |
+| `T`            | Retweet                 |
+| `M`            | Mensagem direta         |
+| `U`            | Silenciar conta         |
+| `B`            | Bloquear conta          |
 | `Enter`        | Abrir detalhes do tweet |
-| `O`            | Expandir fotos     |
-| `/`            | Pesquisar          |
-| `Ctrl` `Enter` | Enviar tweet       |
+| `O`            | Expandir fotos          |
+| `/`            | Pesquisar               |
+| `Ctrl` `Enter` | Enviar tweet            |
 
 {.shortcuts}
 
 ### Navegação
 
-| Atalho   | Ação                |
-| -------- | ------------------- |
-| `?`      | Menu completo de teclado |
-| `J`      | Próximo tweet       |
-| `K`      | Tweet anterior      |
-| `Space`  | Descer uma página   |
-| `.`      | Carregar novos tweets |
+| Atalho  | Ação                     |
+| ------- | ------------------------ |
+| `?`     | Menu completo de teclado |
+| `J`     | Próximo tweet            |
+| `K`     | Tweet anterior           |
+| `Space` | Descer uma página        |
+| `.`     | Carregar novos tweets    |
 
 {.shortcuts}
 
 ### Timelines
 
-| Atalho  | Ação                    |
-| ------- | ----------------------- |
-| `G` `N` | Timeline inicial        |
-| `G` `O` | Moments                 |
-| `G` `N` | Aba de notificações     |
-| `G` `R` | Menções                 |
-| `G` `P` | Perfil                  |
-| `G` `L` | Aba de curtidas         |
-| `G` `I` | Aba de listas           |
-| `G` `M` | Mensagens diretas       |
+| Atalho  | Ação                        |
+| ------- | --------------------------- |
+| `G` `N` | Timeline inicial            |
+| `G` `O` | Moments                     |
+| `G` `N` | Aba de notificações         |
+| `G` `R` | Menções                     |
+| `G` `P` | Perfil                      |
+| `G` `L` | Aba de curtidas             |
+| `G` `I` | Aba de listas               |
+| `G` `M` | Mensagens diretas           |
 | `G` `S` | Configurações e privacidade |
-| `G` `U` | Ir para o perfil de alguém |
+| `G` `U` | Ir para o perfil de alguém  |
 
 {.shortcuts}
 

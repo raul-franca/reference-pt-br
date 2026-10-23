@@ -470,14 +470,14 @@ function foo($first, string ...$other){}
 
 ### Aritmética
 
-| -    | -              |
-| ---- | -------------- |
-| `+`  | Adição         |
-| `-`  | Subtração      |
-| `*`  | Multiplicação  |
-| `/`  | Divisão        |
-| `%`  | Módulo         |
-| `**` | Exponenciação  |
+| -    | -             |
+| ---- | ------------- |
+| `+`  | Adição        |
+| `-`  | Subtração     |
+| `*`  | Multiplicação |
+| `/`  | Divisão       |
+| `%`  | Módulo        |
+| `**` | Exponenciação |
 
 ### Atribuição
 
@@ -491,18 +491,18 @@ function foo($first, string ...$other){}
 
 ### Comparação {.row-span-2}
 
-| -     | -                            |
-| ----- | ---------------------------- |
-| `==`  | Igual                        |
-| `===` | Idêntico                     |
-| `!=`  | Diferente                    |
-| `<>`  | Diferente                    |
-| `!==` | Não idêntico                 |
-| `<`   | Menor que                    |
-| `>`   | Maior que                    |
-| `<=`  | Menor ou igual               |
-| `>=`  | Maior ou igual               |
-| `<=>` | Menor/igual/maior que        |
+| -     | -                     |
+| ----- | --------------------- |
+| `==`  | Igual                 |
+| `===` | Idêntico              |
+| `!=`  | Diferente             |
+| `<>`  | Diferente             |
+| `!==` | Não idêntico          |
+| `<`   | Menor que             |
+| `>`   | Maior que             |
+| `<=`  | Menor ou igual        |
+| `>=`  | Maior ou igual        |
+| `<=>` | Menor/igual/maior que |
 
 ### Lógicos
 
@@ -534,12 +534,12 @@ $num /= $float;  // Divide and assign the quotient to $num
 
 ### Bit a bit
 
-| -    | -                  |
-| ---- | ------------------ | ----------------- |
-| `&`  | E                  |
-| `    | `                  | Ou (or inclusivo) |
-| `^`  | Xor (ou exclusivo) |
-| `~`  | Não                |
+| -    | -                       |
+| ---- | ----------------------- | ----------------- |
+| `&`  | E                       |
+| `    | `                       | Ou (or inclusivo) |
+| `^`  | Xor (ou exclusivo)      |
+| `~`  | Não                     |
 | `<<` | Deslocamento à esquerda |
 | `>>` | Deslocamento à direita  |
 
@@ -916,6 +916,7 @@ class Cls implements Foo, Bar
 ## Trait do PHP
 
 ### Declaração e caso de uso de Trait {.col-span-3}
+
 ```php
 // Declare Trait allows reuse of code
 // across multiple classes for common characteristics or use cases
@@ -928,11 +929,11 @@ trait Logger {
     }
 }
 
-// Use case : 
+// Use case :
 // Call trait with "use <trait name> in Class"
 
 class User {
-    use Logger; 
+    use Logger;
 
     public function createUser() {
         // User creation logic
@@ -988,61 +989,65 @@ echo getStatusMessage($currentStatus); // Output : Your request has been approve
 ## Data e hora no PHP
 
 ### Data e hora atuais
+
 ```php
 // DateTime in PHP handles both date and time
 
 <?php
 $now = new DateTime();
-echo $now->format('Y-m-d H:i:s.u'); 
+echo $now->format('Y-m-d H:i:s.u');
 
 // Output ex: 2024-04-27 14:35:22.123456
 ```
 
-
 ### Criando objetos de data/hora específicos
+
 ```php
 <?php
 // Create a date object
 $d = new DateTime('2024-04-27');
-echo $d->format('Y-m-d'); 
+echo $d->format('Y-m-d');
 
 // Output : 2024-04-27
 
-// Create a time object 
+// Create a time object
 $t = new DateTime('15:30:45');
-echo $t->format('H:i:s'); 
+echo $t->format('H:i:s');
 
 // Output : 15:30:45
 
 // Create a datetime object
 $dt = new DateTime('2024-04-27 15:30:45');
-echo $dt->format('Y-m-d H:i:s'); 
+echo $dt->format('Y-m-d H:i:s');
 
 // Output :  2024-04-27 15:30:45
 ```
 
 ### Convertendo entre formatos de data
+
 ```php
 <?php
 // Convert a string to a DateTime object
 $date_str = "2024-04-27 14:00";
 $dt_obj = new DateTime($date_str);
-echo $dt_obj->format('Y-m-d H:i:s'); 
+echo $dt_obj->format('Y-m-d H:i:s');
 
 // Output : 2024-04-27 14:00:0027
 
 // Convert a DateTime object to a string
 $formatted_str = $dt_obj->format('d/m/Y H:i');
 echo $formatted_str;
- 
+
 // Output :  27/04/2024 14:00
 ```
+
 ### Timestamps e hora Unix {.col-span-2}
+
 ```php
 <?php
 // Get current timestamp
 $timestamp = time();
-echo $timestamp; 
+echo $timestamp;
 
 // Output ex:  1750253583
 
@@ -1053,22 +1058,22 @@ echo $dt_from_timestamp->format('Y-m-d H:i:s');
 // Output ex : 2025-06-18 13:33:03
 ```
 
-
 ### Diferença entre datas e timedelta {.col-span-1}
+
 ```php
 <?php
 $date1 = new DateTime('2024-04-27');
 $date2 = new DateTime('2024-05-01');
 
 $interval = $date1->diff($date2);
-echo $interval->days; 
+echo $interval->days;
 
 // Output : 4
 
 // Using DateInterval for date arithmetic
 $new_date = clone $date1;
 $new_date->add(new DateInterval('P10D'));
-echo $new_date->format('Y-m-d'); 
+echo $new_date->format('Y-m-d');
 
 // Output : 2024-05-07
 ```
@@ -1153,33 +1158,32 @@ Veja: [Regex em PHP](/regex#regex-in-php)
 
 ### Modos do fopen()
 
-| -    | -                        |
-| ---- | ------------------------ |
-| `r`  | Leitura                  |
-| `r+` | Leitura e escrita, prepend |
-| `w`  | Escrita, truncate        |
+| -    | -                           |
+| ---- | --------------------------- |
+| `r`  | Leitura                     |
+| `r+` | Leitura e escrita, prepend  |
+| `w`  | Escrita, truncate           |
 | `w+` | Leitura e escrita, truncate |
-| `a`  | Escrita, append          |
-| `a+` | Leitura e escrita, append |
+| `a`  | Escrita, append             |
+| `a+` | Leitura e escrita, append   |
 
 ### Super Global Variables {.col-span-2}
 
-| Variável     | Descrição                                                  |
-|--------------|:-------------------------------------------------------------|
-| `$_SERVER`   | Armazena informações sobre headers, paths e localizações de script |
-| `$_GET`      | Contém dados enviados via parâmetros de URL (query string)   |
-| `$_POST`     | Contém dados enviados pelo método HTTP POST                  |
-| `$_FILES`    | Contém informações sobre arquivos enviados                   |
-| `$_COOKIE`   | Contém dados de cookie                                       |
-| `$_SESSION`  | Armazena variáveis de sessão                                 |
-| `$_REQUEST`  | Contém dados de `$_GET`, `$_POST` e `$_COOKIE`               |
-| `$_ENV`      | Contém variáveis de ambiente                                 |
-| `$GLOBALS`   | Referencia todas as variáveis globais disponíveis no script  |
+| Variável    | Descrição                                                          |
+| ----------- | :----------------------------------------------------------------- |
+| `$_SERVER`  | Armazena informações sobre headers, paths e localizações de script |
+| `$_GET`     | Contém dados enviados via parâmetros de URL (query string)         |
+| `$_POST`    | Contém dados enviados pelo método HTTP POST                        |
+| `$_FILES`   | Contém informações sobre arquivos enviados                         |
+| `$_COOKIE`  | Contém dados de cookie                                             |
+| `$_SESSION` | Armazena variáveis de sessão                                       |
+| `$_REQUEST` | Contém dados de `$_GET`, `$_POST` e `$_COOKIE`                     |
+| `$_ENV`     | Contém variáveis de ambiente                                       |
+| `$GLOBALS`  | Referencia todas as variáveis globais disponíveis no script        |
 
 {.left-text}
 
 Super Global Variables são variáveis embutidas sempre disponíveis em todos os escopos.
-
 
 ### Constantes definidas em runtime
 

@@ -37,13 +37,13 @@ $ echo '123abc' | sed 's/[0-9]+//g'
 
 ### Exemplos de opções {.col-span-2}
 
-| Opção | Exemplo                                    | Descrição                               |
-| ------ | ------------------------------------------ | --------------------------------------- |
-| `-i`   | sed -ibak 's/On/Off/' php.ini              | Faz backup e modifica o arquivo de entrada diretamente |
-| `-E`   | sed -E 's/[0-9]+//g' input-file            | Usa expressões regulares estendidas     |
-| `-n`   | sed -n '3 p' config.conf                   | Suprime a impressão padrão do pattern space |
-| `-f`   | sed -f script.sed config.conf              | Executa o arquivo de script sed         |
-| `-e`   | sed -e 'command1' -e 'command2' input-file | Executa vários comandos sed             |
+| Opção | Exemplo                                    | Descrição                                              |
+| ----- | ------------------------------------------ | ------------------------------------------------------ |
+| `-i`  | sed -ibak 's/On/Off/' php.ini              | Faz backup e modifica o arquivo de entrada diretamente |
+| `-E`  | sed -E 's/[0-9]+//g' input-file            | Usa expressões regulares estendidas                    |
+| `-n`  | sed -n '3 p' config.conf                   | Suprime a impressão padrão do pattern space            |
+| `-f`  | sed -f script.sed config.conf              | Executa o arquivo de script sed                        |
+| `-e`  | sed -e 'command1' -e 'command2' input-file | Executa vários comandos sed                            |
 
 {.show-header}
 
@@ -83,27 +83,27 @@ Veja: [Exemplos de sed](#sed-examples)
 
 ### Comandos {.col-span-2}
 
-| Comando | Exemplo                                | Descrição                   |
-| ------- | -------------------------------------- | --------------------------- |
-| `p`     | sed -n '1,4 p' input.txt               | Imprime as linhas 1-4       |
-| `p`     | sed -n -e '1,4 p' -e '6,7 p' input.txt | Imprime as linhas 1-4 e 6-7 |
-| `d`     | sed '1,4 d' input.txt                  | Imprime as linhas exceto 1-4 |
+| Comando | Exemplo                                | Descrição                           |
+| ------- | -------------------------------------- | ----------------------------------- |
+| `p`     | sed -n '1,4 p' input.txt               | Imprime as linhas 1-4               |
+| `p`     | sed -n -e '1,4 p' -e '6,7 p' input.txt | Imprime as linhas 1-4 e 6-7         |
+| `d`     | sed '1,4 d' input.txt                  | Imprime as linhas exceto 1-4        |
 | `w`     | sed -n '1,4 w output.txt' input.txt    | Grava o pattern space em um arquivo |
-| `a`     | sed '2 a new-line' input.txt           | Anexa a linha depois        |
-| `i`     | sed '2 i new-line' input.txt           | Insere a linha antes        |
+| `a`     | sed '2 a new-line' input.txt           | Anexa a linha depois                |
+| `i`     | sed '2 i new-line' input.txt           | Insere a linha antes                |
 
 {.show-header}
 
 ### Comandos de espaço
 
-| Comando | Descrição                                                    |
-| ------- | ------------------------------------------------------------ |
-| `n`     | Imprime o pattern space, esvazia-o e lê a próxima linha       |
-| `x`     | Troca o pattern space pelo hold space                        |
-| `h`     | Copia o pattern space para o hold space                      |
-| `H`     | Anexa o pattern space ao hold space                          |
-| `g`     | Copia o hold space para o pattern space                      |
-| `G`     | Anexa o hold space ao pattern space                          |
+| Comando | Descrição                                               |
+| ------- | ------------------------------------------------------- |
+| `n`     | Imprime o pattern space, esvazia-o e lê a próxima linha |
+| `x`     | Troca o pattern space pelo hold space                   |
+| `h`     | Copia o pattern space para o hold space                 |
+| `H`     | Anexa o pattern space ao hold space                     |
+| `g`     | Copia o hold space para o pattern space                 |
+| `G`     | Anexa o hold space ao pattern space                     |
 
 Veja também: [Espaçamento de arquivo](#file-spacing)
 
@@ -115,32 +115,32 @@ $ sed 's/old/new/[flags]' [input-file]
 
 ---
 
-| Flag     | Descrição                                  |
-| -------- | ------------------------------------------ |
-| `g`      | Substituição global                        |
-| `1,2...` | Substitui a n-ésima ocorrência             |
-| `p`      | Imprime apenas a linha substituída         |
+| Flag     | Descrição                                      |
+| -------- | ---------------------------------------------- |
+| `g`      | Substituição global                            |
+| `1,2...` | Substitui a n-ésima ocorrência                 |
+| `p`      | Imprime apenas a linha substituída             |
 | `w`      | Grava apenas a linha substituída em um arquivo |
-| `I`      | Ignora maiúsculas/minúsculas na busca      |
-| `e`      | Substitui e executa na linha de comando    |
+| `I`      | Ignora maiúsculas/minúsculas na busca          |
+| `e`      | Substitui e executa na linha de comando        |
 
 ### Comandos de loop
 
-| Comando   | Descrição                                                          |
-| --------- | ------------------------------------------------------------------ |
-| `b label` | Desvia para um label (para loop)                                   |
+| Comando   | Descrição                                                               |
+| --------- | ----------------------------------------------------------------------- |
+| `b label` | Desvia para um label (para loop)                                        |
 | `t label` | Desvia para um label apenas em substituição bem-sucedida<br>(para loop) |
-| `:label`  | Label para os comandos b e t (para loop)                           |
-| `N`       | Anexa a próxima linha ao pattern space                             |
-| `P`       | Imprime a 1ª linha em multilinha                                   |
-| `D`       | Exclui a 1ª linha em multilinha                                    |
+| `:label`  | Label para os comandos b e t (para loop)                                |
+| `N`       | Anexa a próxima linha ao pattern space                                  |
+| `P`       | Imprime a 1ª linha em multilinha                                        |
+| `D`       | Exclui a 1ª linha em multilinha                                         |
 
 ### Flags diversas
 
-| Flag                      | Descrição                                                                    |
-| ------------------------- | ---------------------------------------------------------------------------- |
-| <code>/ \| ^ @ ! #</code> | O delimitador de substituição pode ser qualquer caractere                    |
-| `&`                       | Obtém o padrão correspondente                                                |
+| Flag                      | Descrição                                                                           |
+| ------------------------- | ----------------------------------------------------------------------------------- |
+| <code>/ \| ^ @ ! #</code> | O delimitador de substituição pode ser qualquer caractere                           |
+| `&`                       | Obtém o padrão correspondente                                                       |
 | `( ) \1 \2 \3`            | Agrupa usando `(` e `)`.<br>Use `\1`, `\2` na substituição para se referir ao grupo |
 
 ## Exemplos de sed

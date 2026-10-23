@@ -62,16 +62,16 @@ Lua é uma linguagem de tipagem dinâmica e, portanto, apenas os valores têm ti
 
 ### Tipos de dados {.col-span-2 .row-span-2}
 
-| Tipo de valor | Descrição                                        |
-| ------------- | ------------------------------------------------ |
-| `number`      | Representa números (de precisão dupla)           |
-| `string`      | Representa texto                                 |
-| `nil`         | Diferencia valores com e sem dados               |
-| `boolean`     | Valor verdadeiro ou falso                        |
-| `function`    | Representa uma sub-rotina                        |
-| `userdata`    | Representa dados arbitrários de C                |
-| `thread`      | Representa threads independentes de execução     |
-| `table`       | Par chave-valor, ou array.                       |
+| Tipo de valor | Descrição                                    |
+| ------------- | -------------------------------------------- |
+| `number`      | Representa números (de precisão dupla)       |
+| `string`      | Representa texto                             |
+| `nil`         | Diferencia valores com e sem dados           |
+| `boolean`     | Valor verdadeiro ou falso                    |
+| `function`    | Representa uma sub-rotina                    |
+| `userdata`    | Representa dados arbitrários de C            |
+| `thread`      | Representa threads independentes de execução |
+| `table`       | Par chave-valor, ou array.                   |
 
 Veja: [APIs de tipos de dados](#data-type-apis)
 

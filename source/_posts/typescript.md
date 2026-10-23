@@ -26,18 +26,19 @@ npm tsc
 ### Introdução
 
 TypeScript é um superset do JavaScript que adiciona **tipagem estática**, **interfaces** e **verificação de erros em tempo de compilação**. Ele compila para JavaScript puro.
+
 - [TypeScript Handbook](https://www.typescriptlang.org/docs/)
 
 ### Tipos básicos
 
 ```typescript
 let age: number = 25;
-let name: string = "Alice";
+let name: string = 'Alice';
 let isOnline: boolean = true;
-let notSure: any = "Could be anything";
+let notSure: any = 'Could be anything';
 let nothingHere: null = null;
 let notDefined: undefined = undefined;
-let symbolValue: symbol = Symbol("unique");
+let symbolValue: symbol = Symbol('unique');
 let bigIntValue: bigint = 9007199254740991n;
 ```
 
@@ -45,16 +46,16 @@ let bigIntValue: bigint = 9007199254740991n;
 
 ```typescript
 let numbers: number[] = [1, 2, 3];
-let fruits: Array<string> = ["apple", "banana"];
-let mixed: (string | number)[] = ["one", 2, "three"];
+let fruits: Array<string> = ['apple', 'banana'];
+let mixed: (string | number)[] = ['one', 2, 'three'];
 ```
 
 ### Tuplas
 
 ```typescript
 let person: [string, number];
-person = ["John", 30]; // ✅
-person = [30, "John"]; // ❌ Error
+person = ['John', 30]; // ✅
+person = [30, 'John']; // ❌ Error
 ```
 
 ### Enums
@@ -70,8 +71,8 @@ enum Direction {
 let move: Direction = Direction.Up;
 
 enum Status {
-  Success = "SUCCESS",
-  Error = "ERROR"
+  Success = 'SUCCESS',
+  Error = 'ERROR'
 }
 ```
 
@@ -94,7 +95,7 @@ interface User {
   readonly id: number; // readonly
 }
 
-const user: User = { name: "Bob", age: 25, id: 1 };
+const user: User = { name: 'Bob', age: 25, id: 1 };
 ```
 
 ### Estendendo interfaces
@@ -108,7 +109,7 @@ interface Dog extends Animal {
   breed: string;
 }
 
-const dog: Dog = { name: "Fido", breed: "Labrador" };
+const dog: Dog = { name: 'Fido', breed: 'Labrador' };
 ```
 
 ### Funções
@@ -125,7 +126,7 @@ const add = (a: number, b: number): number => a + b;
 
 ```typescript
 function log(message: string, userId?: string) {
-  console.log(message, userId ?? "Guest");
+  console.log(message, userId ?? 'Guest');
 }
 
 function multiply(a: number, b: number = 2) {
@@ -154,7 +155,7 @@ function combine(a: any, b: any): any {
 ### Tipos de união e interseção
 
 ```typescript
-type Status = "success" | "error" | "loading";
+type Status = 'success' | 'error' | 'loading';
 
 type UserInfo = { name: string };
 type AdminInfo = { admin: boolean };
@@ -165,8 +166,8 @@ type AdminUser = UserInfo & AdminInfo;
 ### Tipos literais
 
 ```typescript
-type Alignment = "left" | "center" | "right";
-let align: Alignment = "left";
+type Alignment = 'left' | 'center' | 'right';
+let align: Alignment = 'left';
 ```
 
 ### Generics
@@ -177,7 +178,7 @@ function identity<T>(value: T): T {
 }
 
 let num = identity<number>(42);
-let str = identity("Hello");
+let str = identity('Hello');
 ```
 
 ### Restrições de generics
@@ -215,7 +216,7 @@ class Person {
   }
 }
 
-const alice = new Person("Alice");
+const alice = new Person('Alice');
 alice.greet();
 ```
 
@@ -241,13 +242,13 @@ class Car {
 abstract class Animal {
   abstract makeSound(): void;
   move(): void {
-    console.log("Moving...");
+    console.log('Moving...');
   }
 }
 
 class Dog extends Animal {
   makeSound() {
-    console.log("Woof!");
+    console.log('Woof!');
   }
 }
 ```
@@ -261,7 +262,7 @@ interface Vehicle {
 
 class Bike implements Vehicle {
   start() {
-    console.log("Bike starting...");
+    console.log('Bike starting...');
   }
 }
 ```
@@ -269,7 +270,7 @@ class Bike implements Vehicle {
 ### Asserções de tipo
 
 ```typescript
-let someValue: unknown = "Hello TypeScript";
+let someValue: unknown = 'Hello TypeScript';
 let strLength: number = (someValue as string).length;
 ```
 
@@ -277,13 +278,13 @@ let strLength: number = (someValue as string).length;
 
 ```typescript
 let input: string | null = null;
-let result = input ?? "Default";
+let result = input ?? 'Default';
 ```
 
 ### Encadeamento opcional
 
 ```typescript
-const user = { profile: { name: "Alice" } };
+const user = { profile: { name: 'Alice' } };
 console.log(user.profile?.name); // Alice
 console.log(user.address?.street); // undefined
 ```
@@ -297,7 +298,7 @@ namespace Utils {
   }
 }
 
-Utils.log("Hello");
+Utils.log('Hello');
 ```
 
 ### Módulos
@@ -309,7 +310,7 @@ export function add(a: number, b: number) {
 }
 
 // app.ts
-import { add } from "./math";
+import { add } from './math';
 console.log(add(2, 3));
 ```
 
@@ -324,16 +325,16 @@ export default class Logger {
 }
 
 // main.ts
-import Logger from "./logger";
+import Logger from './logger';
 const logger = new Logger();
-logger.log("Info");
+logger.log('Info');
 ```
 
 ### Promises e async/await
 
 ```typescript
 async function fetchData(): Promise<string> {
-  return "Data loaded";
+  return 'Data loaded';
 }
 
 fetchData().then(console.log);
@@ -349,7 +350,7 @@ interface User {
 
 async function getUser(id: number): Promise<User> {
   // Simulate fetch
-  return { id, name: "User" };
+  return { id, name: 'User' };
 }
 ```
 
@@ -360,7 +361,7 @@ interface Config {
   readonly apiKey: string;
 }
 
-type Point = Record<"x" | "y", number>;
+type Point = Record<'x' | 'y', number>;
 const origin: Point = { x: 0, y: 0 };
 ```
 
@@ -370,7 +371,7 @@ const origin: Point = { x: 0, y: 0 };
 
 ```typescript
 function isString(value: any): value is string {
-  return typeof value === "string";
+  return typeof value === 'string';
 }
 
 function process(value: string | number) {
@@ -389,13 +390,13 @@ interface Dictionary {
   [key: string]: string;
 }
 
-const dict: Dictionary = { hello: "world" };
+const dict: Dictionary = { hello: 'world' };
 ```
 
 ### Tipos mapeados
 
 ```typescript
-type Flags = { [K in "option1" | "option2"]: boolean };
+type Flags = { [K in 'option1' | 'option2']: boolean };
 const flags: Flags = { option1: true, option2: false };
 ```
 
@@ -454,13 +455,15 @@ type PartialTodo = Partial<Todo>;
 type RequiredTodo = Required<PartialTodo>;
 
 // Pick
-type TodoPreview = Pick<Todo, "title" | "completed">;
+type TodoPreview = Pick<Todo, 'title' | 'completed'>;
 
 // Omit
-type TodoWithoutDesc = Omit<Todo, "description">;
+type TodoWithoutDesc = Omit<Todo, 'description'>;
 
 // ReturnType
-function f() { return { x: 10, y: 3 }; }
+function f() {
+  return { x: 10, y: 3 };
+}
 type P = ReturnType<typeof f>;
 
 // Parameters
@@ -477,7 +480,7 @@ interface Person {
 
 type PersonKeys = keyof Person; // "name" | "age"
 
-const person = { name: "Alice", age: 30 };
+const person = { name: 'Alice', age: 30 };
 type PersonType = typeof person; // { name: string; age: number }
 ```
 
@@ -494,26 +497,26 @@ type ReturnType<T> = T extends (...args: any[]) => infer R ? R : any;
 ```typescript
 const max: number = 100;
 if (max > 50) {
-  console.log("Large");
+  console.log('Large');
 }
 ```
 
 ### Operador ternário
 
 ```typescript
-const isEven: boolean = (10 % 2 === 0) ? true : false;
+const isEven: boolean = 10 % 2 === 0 ? true : false;
 ```
 
 ### Instrução switch
 
 ```typescript
-const color: string = "red";
+const color: string = 'red';
 switch (color) {
-  case "red":
-    console.log("Stop");
+  case 'red':
+    console.log('Stop');
     break;
   default:
-    console.log("Go");
+    console.log('Go');
 }
 ```
 
@@ -560,10 +563,10 @@ for (const key in obj) {
 const nums: number[] = [1, 2, 3];
 
 // Map
-const doubled: number[] = nums.map(n => n * 2);
+const doubled: number[] = nums.map((n) => n * 2);
 
 // Filter
-const evens: number[] = nums.filter(n => n % 2 === 0);
+const evens: number[] = nums.filter((n) => n % 2 === 0);
 
 // Reduce
 const sum: number = nums.reduce((acc, curr) => acc + curr, 0);
@@ -588,8 +591,8 @@ set.delete(1);
 
 ```typescript
 const map: Map<string, number> = new Map();
-map.set("one", 1);
-map.get("one"); // 1
+map.set('one', 1);
+map.get('one'); // 1
 ```
 
 ## Objetos
@@ -597,8 +600,8 @@ map.get("one"); // 1
 ### Tipos de objeto
 
 ```typescript
-const car: { type: string, mileage?: number } = {
-  type: "Toyota"
+const car: { type: string; mileage?: number } = {
+  type: 'Toyota'
 };
 ```
 
@@ -609,7 +612,7 @@ interface StringArray {
   [index: number]: string;
 }
 
-const myArray: StringArray = ["Bob", "Fred"];
+const myArray: StringArray = ['Bob', 'Fred'];
 ```
 
 ### Verificação de propriedades em excesso
@@ -643,9 +646,9 @@ namespace Geometry {
 
 // tsconfig.json
 {
-  "compilerOptions": {
-    "moduleResolution": "node"
-  }
+"compilerOptions": {
+"moduleResolution": "node"
+}
 }
 
 ## Tratamento de erros
@@ -654,7 +657,7 @@ namespace Geometry {
 
 ```typescript
 try {
-  throw new Error("Oops");
+  throw new Error('Oops');
 } catch (e: unknown) {
   if (e instanceof Error) {
     console.log(e.message);
@@ -678,7 +681,10 @@ class CustomError extends Error {
 
 ```typescript
 const [first, second]: [number, number] = [1, 2];
-const { name: userName, age }: { name: string, age: number } = { name: "Alice", age: 30 };
+const { name: userName, age }: { name: string; age: number } = {
+  name: 'Alice',
+  age: 30
+};
 ```
 
 ### Operador spread

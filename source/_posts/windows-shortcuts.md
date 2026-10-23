@@ -408,53 +408,53 @@ Ctrl + Shift + Alt + Win + L
 
 - A forma mais rápida de acessar a janela do comando Executar é usar o atalho de teclado `Windows + R`
 
-| Comando               | Descrição                                                                        |
-| --------------------- | -------------------------------------------------------------------------------- |
-| `sysdm.cpl`           | Propriedades do Windows                                                          |
-| `compmgmt.msc`        | Gerenciamento do Computador                                                      |
-| `winver`              | Versão do Windows                                                                |
-| `appwiz.cpl`          | Programas e Recursos                                                             |
-| `resmon`              | Abre a janela do Monitor de Recursos, exibindo dados de desempenho em tempo real |
-| `taskmgr`             | Gerenciador de Tarefas                                                           |
-| `explorer`            | Explorador do Windows                                                            |
-| `ncpa.cpl`            | Conexões de Rede                                                                 |
-| `Firewall.cpl`        | Firewall                                                                         |
-| `wf.msc`              | Firewall do Windows com Segurança Avançada                                       |
-| `intl.cpl`            | Opções de Data e Hora                                                            |
-| `timedate.cpl`        | Configurações de Data e Hora                                                     |
-| `mstsc`               | Área de Trabalho Remota                                                          |
-| `osk`                 | Teclado Virtual                                                                  |
-| `charmap`             | Mapa de Caracteres                                                               |
-| `devmgmt.msc`         | Gerenciamento de Dispositivos                                                    |
-| `desk.cpl`            | Resolução da Tela                                                                |
-| `dfrgui`              | programa para configurar a tarefa agendada de desfragmentação de disco           |
-| `diskmgmt.msc`        | Gerenciamento de Disco                                                           |
-| `fsmgmt.msc`          | Mostra pastas compartilhadas                                                     |
-| `inetcpl.cpl`         | Opções do Internet Explorer                                                      |
-| `logoff`              | Fazer logoff                                                                     |
-| `magnify`             | Mostra a Lupa                                                                    |
-| `mmsys.cpl`           | Configurações de som                                                             |
-| `msconfig`            | Configurações do sistema                                                         |
-| `msinfo32`            | Mostra todas as informações do sistema                                           |
-| `systeminfo`          | Mostra informações do sistema                                                    |
-| `netplwiz`            | Informações dos usuários do sistema                                              |
+| Comando               | Descrição                                                                              |
+| --------------------- | -------------------------------------------------------------------------------------- |
+| `sysdm.cpl`           | Propriedades do Windows                                                                |
+| `compmgmt.msc`        | Gerenciamento do Computador                                                            |
+| `winver`              | Versão do Windows                                                                      |
+| `appwiz.cpl`          | Programas e Recursos                                                                   |
+| `resmon`              | Abre a janela do Monitor de Recursos, exibindo dados de desempenho em tempo real       |
+| `taskmgr`             | Gerenciador de Tarefas                                                                 |
+| `explorer`            | Explorador do Windows                                                                  |
+| `ncpa.cpl`            | Conexões de Rede                                                                       |
+| `Firewall.cpl`        | Firewall                                                                               |
+| `wf.msc`              | Firewall do Windows com Segurança Avançada                                             |
+| `intl.cpl`            | Opções de Data e Hora                                                                  |
+| `timedate.cpl`        | Configurações de Data e Hora                                                           |
+| `mstsc`               | Área de Trabalho Remota                                                                |
+| `osk`                 | Teclado Virtual                                                                        |
+| `charmap`             | Mapa de Caracteres                                                                     |
+| `devmgmt.msc`         | Gerenciamento de Dispositivos                                                          |
+| `desk.cpl`            | Resolução da Tela                                                                      |
+| `dfrgui`              | programa para configurar a tarefa agendada de desfragmentação de disco                 |
+| `diskmgmt.msc`        | Gerenciamento de Disco                                                                 |
+| `fsmgmt.msc`          | Mostra pastas compartilhadas                                                           |
+| `inetcpl.cpl`         | Opções do Internet Explorer                                                            |
+| `logoff`              | Fazer logoff                                                                           |
+| `magnify`             | Mostra a Lupa                                                                          |
+| `mmsys.cpl`           | Configurações de som                                                                   |
+| `msconfig`            | Configurações do sistema                                                               |
+| `msinfo32`            | Mostra todas as informações do sistema                                                 |
+| `systeminfo`          | Mostra informações do sistema                                                          |
+| `netplwiz`            | Informações dos usuários do sistema                                                    |
 | `perfmon.msc`         | Inicia o Monitor de Confiabilidade e Desempenho do Windows em modo autônomo específico |
-| `powercfg.cpl`        | Opções de energia                                                                |
-| `services.msc`        | Serviços                                                                         |
-| `shrpubw`             | Assistente de pasta compartilhada                                                |
-| `write`               | WordPad                                                                          |
-| `control`             | Painel de Controle                                                               |
-| `Control Printers`    | Dispositivos e Impressoras                                                       |
-| `dxdiag`              | Mostra informações de hardware do sistema                                        |
-| `tracert`             | Rastrear rota                                                                    |
-| `printui /s /t2`      | Propriedades do servidor de impressão                                            |
-| `printui /s`          | Mostra drivers de impressora                                                     |
-| `PrintManagement.msc` | Gerenciamento de Impressoras, mostra todas as impressoras com drivers            |
-| `shell:appsfolder`    | Mostra a pasta de apps                                                           |
-| `shutdown /r /t 5`    | Reinicia o sistema após 5 segundos                                               |
-| `shutdown /s /t 5`    | Desliga o sistema após 5 segundos                                                |
-| `shutdown -a`         | Este comando cancela o desligamento agendado uma vez                             |
-| `shutdown /r /fw`     | Login na BIOS a partir do Windows                                                |
+| `powercfg.cpl`        | Opções de energia                                                                      |
+| `services.msc`        | Serviços                                                                               |
+| `shrpubw`             | Assistente de pasta compartilhada                                                      |
+| `write`               | WordPad                                                                                |
+| `control`             | Painel de Controle                                                                     |
+| `Control Printers`    | Dispositivos e Impressoras                                                             |
+| `dxdiag`              | Mostra informações de hardware do sistema                                              |
+| `tracert`             | Rastrear rota                                                                          |
+| `printui /s /t2`      | Propriedades do servidor de impressão                                                  |
+| `printui /s`          | Mostra drivers de impressora                                                           |
+| `PrintManagement.msc` | Gerenciamento de Impressoras, mostra todas as impressoras com drivers                  |
+| `shell:appsfolder`    | Mostra a pasta de apps                                                                 |
+| `shutdown /r /t 5`    | Reinicia o sistema após 5 segundos                                                     |
+| `shutdown /s /t 5`    | Desliga o sistema após 5 segundos                                                      |
+| `shutdown -a`         | Este comando cancela o desligamento agendado uma vez                                   |
+| `shutdown /r /fw`     | Login na BIOS a partir do Windows                                                      |
 
 # Criar pasta God Mode
 

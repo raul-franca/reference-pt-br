@@ -16,53 +16,53 @@ intro: |
 
 ### Navegação {.row-span-2}
 
-| Atalho      | Ação                          |
-| ----------- | ----------------------------- |
-| `G` `T`     | Mostrar Hoje                  |
-| `G` `A`     | Mostrar Tudo                  |
-| `G` `F`     | Mostrar Favoritos             |
-| `G` `G`     | Ir para...                    |
-| `G` `L`     | Ler mais tarde                |
-| `G` `I`     | Índice                        |
-| `G` `O`     | Organizar fontes              |
-| `Shift` `J` | Próxima fonte ou coleção      |
-| `Shift` `K` | Fonte ou coleção anterior     |
-| `R`         | Atualizar                     |
+| Atalho      | Ação                      |
+| ----------- | ------------------------- |
+| `G` `T`     | Mostrar Hoje              |
+| `G` `A`     | Mostrar Tudo              |
+| `G` `F`     | Mostrar Favoritos         |
+| `G` `G`     | Ir para...                |
+| `G` `L`     | Ler mais tarde            |
+| `G` `I`     | Índice                    |
+| `G` `O`     | Organizar fontes          |
+| `Shift` `J` | Próxima fonte ou coleção  |
+| `Shift` `K` | Fonte ou coleção anterior |
+| `R`         | Atualizar                 |
 
 {.shortcuts}
 
 ### Listas
 
-| Atalho      | Ação                        |
-| ----------- | --------------------------- |
-| `J`         | Próximo artigo inline       |
-| `K`         | Artigo anterior inline      |
-| `N`         | Selecionar o próximo artigo |
+| Atalho      | Ação                         |
+| ----------- | ---------------------------- |
+| `J`         | Próximo artigo inline        |
+| `K`         | Artigo anterior inline       |
+| `N`         | Selecionar o próximo artigo  |
 | `P`         | Selecionar o artigo anterior |
-| `Shift` `A` | Marcar todos como lidos     |
+| `Shift` `A` | Marcar todos como lidos      |
 
 {.shortcuts}
 
 ### Artigo Selecionado {.row-span-2}
 
-| Atalho      | Ação                                            |
-| ----------- | ----------------------------------------------- |
-| `O`         | Abrir inline ou fechar o artigo selecionado     |
-| `V`         | Ver o original em uma nova aba                  |
-| `M`         | Alternar marcação como lido                     |
-| `X`         | Marcar como lido e ocultar                      |
-| `S`         | Ler mais tarde                                  |
-| `T`         | Salvar no Board                                 |
-| `B`         | Salvar no Buffer                                |
-| `C`         | Recortar para o Evernote                        |
-| `Shift` `V` | Visualização                                    |
+| Atalho      | Ação                                        |
+| ----------- | ------------------------------------------- |
+| `O`         | Abrir inline ou fechar o artigo selecionado |
+| `V`         | Ver o original em uma nova aba              |
+| `M`         | Alternar marcação como lido                 |
+| `X`         | Marcar como lido e ocultar                  |
+| `S`         | Ler mais tarde                              |
+| `T`         | Salvar no Board                             |
+| `B`         | Salvar no Buffer                            |
+| `C`         | Recortar para o Evernote                    |
+| `Shift` `V` | Visualização                                |
 
 {.shortcuts}
 
 ### Ajuda
 
-| Atalho | Ação                      |
-| ------ | ------------------------- |
+| Atalho | Ação                       |
+| ------ | -------------------------- |
 | `?`    | Mostrar atalhos de teclado |
 
 {.shortcuts}

@@ -17,7 +17,7 @@ intro: |
 ### Edição {.row-span-3}
 
 | Atalho                 | Ação                                                                                    |
-| ---                    | ---                                                                                     |
+| ---------------------- | --------------------------------------------------------------------------------------- |
 | `Ctrl` `X`             | Recortar linha                                                                          |
 | `Ctrl` `Enter`         | Inserir linha depois                                                                    |
 | `Ctrl` `Shift` `Enter` | Inserir linha antes                                                                     |
@@ -49,7 +49,7 @@ intro: |
 ### Navegação
 
 | Atalho     | Ação                                 |
-| ---        | ---                                  |
+| ---------- | ------------------------------------ |
 | `Ctrl` `P` | Abrir arquivos rapidamente pelo nome |
 | `Ctrl` `R` | Ir para símbolo                      |
 | `Ctrl` `;` | Ir para palavra no arquivo atual     |
@@ -60,7 +60,7 @@ intro: |
 ### Geral
 
 | Atalho                   | Ação                              |
-| ---                      | ---                               |
+| ------------------------ | --------------------------------- |
 | `Ctrl` `Shift` `P`       | Prompt de comando                 |
 | `Ctrl` `K, B`            | Alternar barra lateral            |
 | `Ctrl` `Shift` `Alt` `P` | Mostrar escopo na barra de status |
@@ -70,7 +70,7 @@ intro: |
 ### Localizar/Substituir
 
 | Atalho             | Ação                  |
-| ---                | ---                   |
+| ------------------ | --------------------- |
 | `Ctrl` `F`         | Localizar             |
 | `Ctrl` `H`         | Substituir            |
 | `Ctrl` `Shift` `F` | Localizar em arquivos |
@@ -80,7 +80,7 @@ intro: |
 ### Dividir janela
 
 | Atalho               | Ação                                                          |
-| ---                  | ---                                                           |
+| -------------------- | ------------------------------------------------------------- |
 | `Alt` `Shift` `1`    | Reverter visualização para coluna única                       |
 | `Alt` `Shift` `2`    | Dividir visualização em duas colunas                          |
 | `Alt` `Shift` `3`    | Dividir visualização em três colunas                          |
@@ -95,7 +95,7 @@ intro: |
 ### Marcadores
 
 | Atalho              | Ação              |
-| ---                 | ---               |
+| ------------------- | ----------------- |
 | `Ctrl` `F2`         | Alternar marcador |
 | `F2`                | Próximo marcador  |
 | `Shift` `F2`        | Marcador anterior |
@@ -106,7 +106,7 @@ intro: |
 ### Manipulação de texto
 
 | Atalho        | Ação                      |
-| ---           | ---                       |
+| ------------- | ------------------------- |
 | `Ctrl` `K, U` | Transformar em maiúsculas |
 | `Ctrl` `K, L` | Transformar em minúsculas |
 

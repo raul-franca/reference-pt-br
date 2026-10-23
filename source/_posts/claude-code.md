@@ -63,15 +63,15 @@ $ claude
 
 ### Conceitos-chave {.secondary}
 
-| Conceito       | Descrição                                                    |
-| --------------- | ------------------------------------------------------------ |
-| Agent loop      | Claude lê, edita arquivos, executa comandos e repete         |
-| CLAUDE.md       | Instruções persistentes que Claude lê a cada sessão          |
-| Memória automática | Claude salva aprendizados entre sessões automaticamente   |
-| Skills          | `/commands` personalizados para workflows reutilizáveis      |
-| Hooks           | Scripts shell disparados em eventos do ciclo de vida         |
-| MCP             | Conecta o Claude a ferramentas e APIs externas               |
-| Modo de permissão | Controla o que Claude pode fazer sem perguntar             |
+| Conceito           | Descrição                                               |
+| ------------------ | ------------------------------------------------------- |
+| Agent loop         | Claude lê, edita arquivos, executa comandos e repete    |
+| CLAUDE.md          | Instruções persistentes que Claude lê a cada sessão     |
+| Memória automática | Claude salva aprendizados entre sessões automaticamente |
+| Skills             | `/commands` personalizados para workflows reutilizáveis |
+| Hooks              | Scripts shell disparados em eventos do ciclo de vida    |
+| MCP                | Conecta o Claude a ferramentas e APIs externas          |
+| Modo de permissão  | Controla o que Claude pode fazer sem perguntar          |
 
 {.bold-first}
 
@@ -92,49 +92,49 @@ $ claude
 
 ### Comandos de sessão {.row-span-3}
 
-| Comando                     | Descrição                                |
-| --------------------------- | ---------------------------------------- |
-| `claude`                    | Inicia uma sessão interativa             |
-| `claude "task"`             | Inicia com um prompt inicial             |
-| `claude -p "query"`         | Imprime a resposta e sai                 |
-| `claude -c`                 | Continua a conversa mais recente         |
-| `claude -r [name]`          | Retoma a sessão por nome ou ID           |
-| `claude -n "name"`          | Dá um nome a esta sessão                 |
-| `claude -w [name]`          | Inicia em um git worktree isolado        |
-| `claude update`             | Atualiza para a versão mais recente      |
-| `claude -v`                 | Mostra o número da versão                |
-| `claude doctor`             | Verifica a saúde da instalação           |
-| `claude auto-mode defaults` | Imprime as regras do classificador auto  |
-| `claude agents`             | Lista os subagentes configurados         |
+| Comando                     | Descrição                               |
+| --------------------------- | --------------------------------------- |
+| `claude`                    | Inicia uma sessão interativa            |
+| `claude "task"`             | Inicia com um prompt inicial            |
+| `claude -p "query"`         | Imprime a resposta e sai                |
+| `claude -c`                 | Continua a conversa mais recente        |
+| `claude -r [name]`          | Retoma a sessão por nome ou ID          |
+| `claude -n "name"`          | Dá um nome a esta sessão                |
+| `claude -w [name]`          | Inicia em um git worktree isolado       |
+| `claude update`             | Atualiza para a versão mais recente     |
+| `claude -v`                 | Mostra o número da versão               |
+| `claude doctor`             | Verifica a saúde da instalação          |
+| `claude auto-mode defaults` | Imprime as regras do classificador auto |
+| `claude agents`             | Lista os subagentes configurados        |
 
 {.show-header}
 
 #### Comandos de autenticação
 
-| Comando                       | Descrição                      |
-| ----------------------------- | ------------------------------ |
-| `claude auth login`           | Faz login na conta             |
+| Comando                       | Descrição                         |
+| ----------------------------- | --------------------------------- |
+| `claude auth login`           | Faz login na conta                |
 | `claude auth login --console` | Faz login com o Anthropic Console |
-| `claude auth logout`          | Faz logout                     |
-| `claude auth status`          | Mostra o status de autenticação |
+| `claude auth logout`          | Faz logout                        |
+| `claude auth status`          | Mostra o status de autenticação   |
 
 #### Comandos MCP
 
-| Comando                    | Descrição                    |
-| -------------------------- | ---------------------------- |
-| `claude mcp list`          | Lista os servidores configurados |
-| `claude mcp add <n> <cmd>` | Adiciona um servidor MCP stdio |
-| `claude mcp get <name>`    | Mostra os detalhes do servidor |
-| `claude mcp remove <name>` | Remove um servidor           |
+| Comando                    | Descrição                         |
+| -------------------------- | --------------------------------- |
+| `claude mcp list`          | Lista os servidores configurados  |
+| `claude mcp add <n> <cmd>` | Adiciona um servidor MCP stdio    |
+| `claude mcp get <name>`    | Mostra os detalhes do servidor    |
+| `claude mcp remove <name>` | Remove um servidor                |
 | `claude mcp serve`         | Inicia o Claude como servidor MCP |
 
 #### Comandos de plugin
 
-| Comando                        | Descrição              |
-| ------------------------------ | ---------------------- |
-| `claude plugin install <name>` | Instala um plugin      |
+| Comando                        | Descrição                   |
+| ------------------------------ | --------------------------- |
+| `claude plugin install <name>` | Instala um plugin           |
 | `claude plugin list`           | Lista os plugins instalados |
-| `claude plugin remove <name>`  | Remove um plugin       |
+| `claude plugin remove <name>`  | Remove um plugin            |
 
 ### Exemplos com pipe
 
@@ -180,22 +180,22 @@ $ claude -p "analyze for bugs" --output-format json
 
 ### Sessão e modo {.row-span-2}
 
-| Flag                    | Descrição                                 |
-| ----------------------- | ----------------------------------------- |
+| Flag                    | Descrição                                        |
+| ----------------------- | ------------------------------------------------ |
 | `--model <model>`       | Alias do modelo: `sonnet`, `opus` ou ID completo |
-| `--permission-mode <m>` | Define o modo de permissão na inicialização |
-| `-c, --continue`        | Carrega a conversa mais recente           |
-| `-r, --resume [id]`     | Retoma por ID ou nome de sessão           |
-| `-n, --name <name>`     | Dá um nome à sessão atual                 |
-| `-w, --worktree [name]` | Cria um git worktree isolado              |
-| `-p, --print`           | Modo de impressão não interativo          |
-| `--effort <level>`      | `low` `medium` `high` `max`               |
-| `--ide`                 | Conecta automaticamente à IDE ao iniciar  |
-| `--verbose`             | Mostra a saída completa turno a turno     |
-| `--debug [filter]`      | Ativa o debug (ex.: `"api,hooks"`)        |
-| `--fork-session`        | Novo ID ao retomar                        |
-| `--from-pr [num]`       | Retoma sessões vinculadas a um PR         |
-| `--version, -v`         | Imprime o número da versão                |
+| `--permission-mode <m>` | Define o modo de permissão na inicialização      |
+| `-c, --continue`        | Carrega a conversa mais recente                  |
+| `-r, --resume [id]`     | Retoma por ID ou nome de sessão                  |
+| `-n, --name <name>`     | Dá um nome à sessão atual                        |
+| `-w, --worktree [name]` | Cria um git worktree isolado                     |
+| `-p, --print`           | Modo de impressão não interativo                 |
+| `--effort <level>`      | `low` `medium` `high` `max`                      |
+| `--ide`                 | Conecta automaticamente à IDE ao iniciar         |
+| `--verbose`             | Mostra a saída completa turno a turno            |
+| `--debug [filter]`      | Ativa o debug (ex.: `"api,hooks"`)               |
+| `--fork-session`        | Novo ID ao retomar                               |
+| `--from-pr [num]`       | Retoma sessões vinculadas a um PR                |
+| `--version, -v`         | Imprime o número da versão                       |
 
 {.bold-first}
 
@@ -216,29 +216,29 @@ $ claude -p "analyze for bugs" --output-format json
 
 ### Ferramentas e acesso
 
-| Flag                                   | Descrição                      |
-| -------------------------------------- | ------------------------------ |
-| `--allowedTools <tools>`               | Pré-aprova ferramentas (sem prompt) |
-| `--disallowedTools <tools>`            | Nega ferramentas específicas   |
-| `--tools <list>`                       | Restringe as ferramentas disponíveis |
-| `--add-dir <dirs>`                     | Diretórios extras para acesso  |
-| `--dangerously-skip-permissions`       | Ignora todas as verificações de permissão |
-| `--allow-dangerously-skip-permissions` | Adiciona o bypass ao ciclo de modos |
+| Flag                                   | Descrição                                  |
+| -------------------------------------- | ------------------------------------------ |
+| `--allowedTools <tools>`               | Pré-aprova ferramentas (sem prompt)        |
+| `--disallowedTools <tools>`            | Nega ferramentas específicas               |
+| `--tools <list>`                       | Restringe as ferramentas disponíveis       |
+| `--add-dir <dirs>`                     | Diretórios extras para acesso              |
+| `--dangerously-skip-permissions`       | Ignora todas as verificações de permissão  |
+| `--allow-dangerously-skip-permissions` | Adiciona o bypass ao ciclo de modos        |
 | `--enable-auto-mode`                   | Adiciona o modo auto ao ciclo do Shift+Tab |
-| `--bare`                               | Modo mínimo (sem hooks/memória) |
-| `--mcp-config <file>`                  | Carrega a configuração MCP de um arquivo |
-| `--strict-mcp-config`                  | Usa apenas a configuração MCP da CLI |
+| `--bare`                               | Modo mínimo (sem hooks/memória)            |
+| `--mcp-config <file>`                  | Carrega a configuração MCP de um arquivo   |
+| `--strict-mcp-config`                  | Usa apenas a configuração MCP da CLI       |
 
 {.bold-first}
 
 ### Flags de system prompt
 
-| Flag                              | Comportamento                 |
-| --------------------------------- | ----------------------------- |
+| Flag                              | Comportamento                  |
+| --------------------------------- | ------------------------------ |
 | `--system-prompt <text>`          | Substitui todo o prompt padrão |
-| `--system-prompt-file <file>`     | Substitui a partir de arquivo |
-| `--append-system-prompt <text>`   | Anexa ao prompt padrão        |
-| `--append-system-prompt-file <f>` | Anexa a partir de arquivo     |
+| `--system-prompt-file <file>`     | Substitui a partir de arquivo  |
+| `--append-system-prompt <text>`   | Anexa ao prompt padrão         |
+| `--append-system-prompt-file <f>` | Anexa a partir de arquivo      |
 
 {.bold-first}
 
@@ -248,112 +248,112 @@ Prefira `--append-*` para preservar os recursos nativos do Claude. Use `--system
 
 ### Sessão e contexto {.row-span-2}
 
-| Comando            | Descrição                                    |
-| ------------------ | -------------------------------------------- |
-| `/clear`           | Limpa o histórico (aliases: `/new`, `/reset`) |
-| `/compact [focus]` | Compacta o contexto com foco opcional        |
-| `/resume [name]`   | Retoma a sessão (alias: `/continue`)         |
-| `/branch [name]`   | Faz fork da conversa (alias: `/fork`)        |
-| `/rewind`          | Desfaz até o checkpoint (alias: `/checkpoint`) |
-| `/diff`            | Visualiza alterações não commitadas de forma interativa |
-| `/export [file]`   | Exporta a conversa como texto puro           |
+| Comando            | Descrição                                                    |
+| ------------------ | ------------------------------------------------------------ |
+| `/clear`           | Limpa o histórico (aliases: `/new`, `/reset`)                |
+| `/compact [focus]` | Compacta o contexto com foco opcional                        |
+| `/resume [name]`   | Retoma a sessão (alias: `/continue`)                         |
+| `/branch [name]`   | Faz fork da conversa (alias: `/fork`)                        |
+| `/rewind`          | Desfaz até o checkpoint (alias: `/checkpoint`)               |
+| `/diff`            | Visualiza alterações não commitadas de forma interativa      |
+| `/export [file]`   | Exporta a conversa como texto puro                           |
 | `/copy [N]`        | Copia a N-ésima última resposta para a área de transferência |
-| `/cost`            | Mostra estatísticas de uso de tokens         |
-| `/usage`           | Mostra os limites do plano e o status do rate limit |
-| `/context`         | Visualiza o uso da janela de contexto        |
-| `/btw <q>`         | Pergunta paralela sem adicionar ao histórico |
+| `/cost`            | Mostra estatísticas de uso de tokens                         |
+| `/usage`           | Mostra os limites do plano e o status do rate limit          |
+| `/context`         | Visualiza o uso da janela de contexto                        |
+| `/btw <q>`         | Pergunta paralela sem adicionar ao histórico                 |
 
 {.show-header}
 
 ### Código e Git
 
-| Comando               | Descrição                                   |
-| --------------------- | ------------------------------------------- |
-| `/plan [desc]`        | Entra no modo plan (somente leitura)        |
+| Comando               | Descrição                                                   |
+| --------------------- | ----------------------------------------------------------- |
+| `/plan [desc]`        | Entra no modo plan (somente leitura)                        |
 | `/security-review`    | Audita as alterações da branch em busca de vulnerabilidades |
-| `/pr-comments [PR]`   | Busca comentários de PR do GitHub           |
-| `/install-github-app` | Configura a integração com GitHub Actions   |
-| `/install-slack-app`  | Instala a integração com Slack              |
+| `/pr-comments [PR]`   | Busca comentários de PR do GitHub                           |
+| `/install-github-app` | Configura a integração com GitHub Actions                   |
+| `/install-slack-app`  | Instala a integração com Slack                              |
 
 ### Configurações
 
-| Comando           | Descrição                                  |
-| ----------------- | ------------------------------------------ |
-| `/config`         | Abre as configurações (alias: `/settings`) |
-| `/model [model]`  | Troca o modelo de IA                       |
-| `/effort [level]` | Define o esforço: `low` `medium` `high` `max` |
+| Comando           | Descrição                                       |
+| ----------------- | ----------------------------------------------- |
+| `/config`         | Abre as configurações (alias: `/settings`)      |
+| `/model [model]`  | Troca o modelo de IA                            |
+| `/effort [level]` | Define o esforço: `low` `medium` `high` `max`   |
 | `/permissions`    | Gerencia regras de permitir / perguntar / negar |
-| `/hooks`          | Visualiza os hooks configurados            |
-| `/memory`         | Edita o CLAUDE.md e a memória automática   |
-| `/mcp`            | Gerencia as conexões com servidores MCP    |
-| `/agents`         | Gerencia as configurações de subagentes    |
-| `/skills`         | Lista as skills disponíveis                |
-| `/plugin`         | Gerencia os plugins instalados             |
-| `/keybindings`    | Abre o arquivo de configuração de keybindings |
+| `/hooks`          | Visualiza os hooks configurados                 |
+| `/memory`         | Edita o CLAUDE.md e a memória automática        |
+| `/mcp`            | Gerencia as conexões com servidores MCP         |
+| `/agents`         | Gerencia as configurações de subagentes         |
+| `/skills`         | Lista as skills disponíveis                     |
+| `/plugin`         | Gerencia os plugins instalados                  |
+| `/keybindings`    | Abre o arquivo de configuração de keybindings   |
 
 ### Exibição e UI
 
-| Comando           | Descrição                      |
-| ----------------- | ------------------------------ |
-| `/theme`          | Troca o tema de cores          |
-| `/vim`            | Ativa/desativa o modo de edição vim |
-| `/color [color]`  | Define a cor da barra de prompt |
+| Comando           | Descrição                               |
+| ----------------- | --------------------------------------- |
+| `/theme`          | Troca o tema de cores                   |
+| `/vim`            | Ativa/desativa o modo de edição vim     |
+| `/color [color]`  | Define a cor da barra de prompt         |
 | `/statusline`     | Configura a exibição da linha de status |
-| `/stats`          | Visualiza o uso diário e as sequências |
-| `/insights`       | Analisa padrões de sessão      |
-| `/fast [on\|off]` | Ativa/desativa o modo rápido   |
-| `/powerup`        | Tour interativo pelos recursos |
-| `/tasks`          | Gerencia tarefas em segundo plano |
-| `/add-dir <path>` | Adiciona um diretório de trabalho |
+| `/stats`          | Visualiza o uso diário e as sequências  |
+| `/insights`       | Analisa padrões de sessão               |
+| `/fast [on\|off]` | Ativa/desativa o modo rápido            |
+| `/powerup`        | Tour interativo pelos recursos          |
+| `/tasks`          | Gerencia tarefas em segundo plano       |
+| `/add-dir <path>` | Adiciona um diretório de trabalho       |
 
 ### Ajuda e sistema
 
-| Comando            | Descrição                            |
-| ------------------ | ------------------------------------ |
-| `/help`            | Mostra os comandos disponíveis       |
-| `/init`            | Gera o CLAUDE.md do projeto          |
-| `/doctor`          | Diagnostica a instalação             |
-| `/voice`           | Ativa/desativa o ditado por voz      |
-| `/schedule [desc]` | Cria uma tarefa agendada na nuvem    |
-| `/login`           | Faz login na conta                   |
-| `/logout`          | Faz logout                           |
-| `/feedback`        | Envia feedback (alias: `/bug`)       |
-| `/release-notes`   | Visualiza o changelog                |
+| Comando            | Descrição                                        |
+| ------------------ | ------------------------------------------------ |
+| `/help`            | Mostra os comandos disponíveis                   |
+| `/init`            | Gera o CLAUDE.md do projeto                      |
+| `/doctor`          | Diagnostica a instalação                         |
+| `/voice`           | Ativa/desativa o ditado por voz                  |
+| `/schedule [desc]` | Cria uma tarefa agendada na nuvem                |
+| `/login`           | Faz login na conta                               |
+| `/logout`          | Faz logout                                       |
+| `/feedback`        | Envia feedback (alias: `/bug`)                   |
+| `/release-notes`   | Visualiza o changelog                            |
 | `/status`          | Mostra a versão, o modelo e informações da conta |
 
 ## Atalhos de teclado {.cols-3}
 
 ### Controles gerais {.row-span-2}
 
-| Atalho      | Descrição                           |
-| ----------- | ----------------------------------- |
-| `Ctrl+C`    | Cancela a entrada ou geração atual  |
-| `Ctrl+D`    | Sai do Claude Code                  |
-| `Shift+Tab` | Alterna entre os modos de permissão |
-| `Ctrl+R`    | Busca reversa no histórico de comandos |
-| `Ctrl+G`    | Abre o prompt no editor de texto    |
-| `Ctrl+L`    | Redesenha a tela                    |
-| `Ctrl+O`    | Ativa/desativa a saída verbosa      |
-| `Ctrl+V`    | Cola uma imagem da área de transferência |
+| Atalho      | Descrição                                     |
+| ----------- | --------------------------------------------- |
+| `Ctrl+C`    | Cancela a entrada ou geração atual            |
+| `Ctrl+D`    | Sai do Claude Code                            |
+| `Shift+Tab` | Alterna entre os modos de permissão           |
+| `Ctrl+R`    | Busca reversa no histórico de comandos        |
+| `Ctrl+G`    | Abre o prompt no editor de texto              |
+| `Ctrl+L`    | Redesenha a tela                              |
+| `Ctrl+O`    | Ativa/desativa a saída verbosa                |
+| `Ctrl+V`    | Cola uma imagem da área de transferência      |
 | `Ctrl+B`    | Coloca o comando em execução em segundo plano |
 | `Ctrl+T`    | Ativa/desativa a exibição da lista de tarefas |
-| `Esc Esc`   | Rebobina ou resume a conversa       |
-| `Option+P`  | Troca o modelo (macOS)              |
+| `Esc Esc`   | Rebobina ou resume a conversa                 |
+| `Option+P`  | Troca o modelo (macOS)                        |
 | `Option+T`  | Ativa/desativa o raciocínio estendido (macOS) |
-| `Option+O`  | Ativa/desativa o modo rápido (macOS) |
+| `Option+O`  | Ativa/desativa o modo rápido (macOS)          |
 
 {.shortcuts}
 
 ### Edição de texto
 
-| Atalho  | Descrição                |
-| ------- | ------------------------ |
-| `Ctrl+K` | Apaga até o fim da linha |
-| `Ctrl+U` | Apaga até o início da linha |
-| `Ctrl+Y` | Cola o texto apagado     |
+| Atalho   | Descrição                         |
+| -------- | --------------------------------- |
+| `Ctrl+K` | Apaga até o fim da linha          |
+| `Ctrl+U` | Apaga até o início da linha       |
+| `Ctrl+Y` | Cola o texto apagado              |
 | `Alt+Y`  | Alterna pelo histórico de colagem |
-| `Alt+B`  | Move uma palavra para trás |
-| `Alt+F`  | Move uma palavra para frente |
+| `Alt+B`  | Move uma palavra para trás        |
+| `Alt+F`  | Move uma palavra para frente      |
 
 {.shortcuts}
 
@@ -361,28 +361,28 @@ Prefira `--append-*` para preservar os recursos nativos do Claude. Use `--system
 
 Ative com `/vim` ou em `/config`. `Esc` → NORMAL, `i`/`a`/`o` → INSERT.
 
-| Tecla           | Ação                          |
-| --------------- | ----------------------------- |
+| Tecla           | Ação                                          |
+| --------------- | --------------------------------------------- |
 | `h j k l`       | Move para a esquerda / baixo / cima / direita |
-| `w` / `b`       | Próxima / palavra anterior    |
-| `0` / `$`       | Início / fim da linha         |
-| `gg` / `G`      | Início / fim da entrada       |
-| `dd` / `yy`     | Apaga / yank da linha         |
-| `cc` / `p`      | Altera a linha / cola         |
-| `f{c}` / `F{c}` | Pula para o caractere         |
-| `.`             | Repete a última alteração     |
+| `w` / `b`       | Próxima / palavra anterior                    |
+| `0` / `$`       | Início / fim da linha                         |
+| `gg` / `G`      | Início / fim da entrada                       |
+| `dd` / `yy`     | Apaga / yank da linha                         |
+| `cc` / `p`      | Altera a linha / cola                         |
+| `f{c}` / `F{c}` | Pula para o caractere                         |
+| `.`             | Repete a última alteração                     |
 
 ### Múltiplas linhas e entrada
 
-| Método                    | Como                    |
-| ------------------------- | ----------------------- |
-| Múltiplas linhas (todos os terminais) | `\` e depois `Enter` |
-| Múltiplas linhas (padrão do macOS) | `Option+Enter`   |
-| Múltiplas linhas (terminais modernos) | `Shift+Enter` |
-| Executa bash diretamente  | prefixo `!`             |
-| Autocomplete de path de arquivo | prefixo `@`       |
-| Todos os comandos / skills | prefixo `/`            |
-| Atalho do seletor de sessão | `P` visualiza, `R` renomeia |
+| Método                                | Como                        |
+| ------------------------------------- | --------------------------- |
+| Múltiplas linhas (todos os terminais) | `\` e depois `Enter`        |
+| Múltiplas linhas (padrão do macOS)    | `Option+Enter`              |
+| Múltiplas linhas (terminais modernos) | `Shift+Enter`               |
+| Executa bash diretamente              | prefixo `!`                 |
+| Autocomplete de path de arquivo       | prefixo `@`                 |
+| Todos os comandos / skills            | prefixo `/`                 |
+| Atalho do seletor de sessão           | `P` visualiza, `R` renomeia |
 
 macOS: defina Option como Meta nas preferências do terminal para que os atalhos `Alt+*` funcionem.
 
@@ -390,14 +390,14 @@ macOS: defina Option como Meta nas preferências do terminal para que os atalhos
 
 ### Visão geral dos modos {.col-span-2 .row-span-2}
 
-| Modo                | O que Claude faz sem perguntar          | Melhor para                          |
-| ------------------- | --------------------------------------- | ------------------------------------ |
-| `default`           | Apenas lê arquivos                      | Primeiros passos, trabalho sensível  |
-| `acceptEdits`       | Lê + edita arquivos                     | Codificação ativa, iteração          |
-| `plan`              | Apenas leitura, grava um arquivo de plano | Exploração, planejamento antes de editar |
-| `auto`              | Todas as ações com classificador em segundo plano | Tarefas longas, menos interrupções |
-| `dontAsk`           | Apenas ferramentas pré-aprovadas        | Ambientes de CI/CD bloqueados        |
-| `bypassPermissions` | Todas as ações exceto diretórios protegidos | Apenas containers e VMs          |
+| Modo                | O que Claude faz sem perguntar                    | Melhor para                              |
+| ------------------- | ------------------------------------------------- | ---------------------------------------- |
+| `default`           | Apenas lê arquivos                                | Primeiros passos, trabalho sensível      |
+| `acceptEdits`       | Lê + edita arquivos                               | Codificação ativa, iteração              |
+| `plan`              | Apenas leitura, grava um arquivo de plano         | Exploração, planejamento antes de editar |
+| `auto`              | Todas as ações com classificador em segundo plano | Tarefas longas, menos interrupções       |
+| `dontAsk`           | Apenas ferramentas pré-aprovadas                  | Ambientes de CI/CD bloqueados            |
+| `bypassPermissions` | Todas as ações exceto diretórios protegidos       | Apenas containers e VMs                  |
 
 {.show-header}
 
@@ -463,12 +463,12 @@ Visualize e edite as regras com `/permissions`.
 
 ### Locais do CLAUDE.md {.col-span-2 .row-span-2}
 
-| Escopo            | Local                                     | Compartilhado com        |
-| ------------------ | ----------------------------------------- | ------------------------ |
-| Política gerenciada | Nível de sistema (implantada por TI/DevOps) | Todos os usuários da máquina |
-| Projeto            | `./CLAUDE.md` ou `./.claude/CLAUDE.md`    | Equipe via git           |
-| Usuário            | `~/.claude/CLAUDE.md`                     | Pessoal, todos os projetos |
-| Local              | `./CLAUDE.local.md` (adicione ao `.gitignore`) | Pessoal, neste projeto |
+| Escopo              | Local                                          | Compartilhado com            |
+| ------------------- | ---------------------------------------------- | ---------------------------- |
+| Política gerenciada | Nível de sistema (implantada por TI/DevOps)    | Todos os usuários da máquina |
+| Projeto             | `./CLAUDE.md` ou `./.claude/CLAUDE.md`         | Equipe via git               |
+| Usuário             | `~/.claude/CLAUDE.md`                          | Pessoal, todos os projetos   |
+| Local               | `./CLAUDE.local.md` (adicione ao `.gitignore`) | Pessoal, neste projeto       |
 
 {.show-header}
 
@@ -551,29 +551,29 @@ Build commands: @package.json
 
 ### Eventos de hook {.row-span-2}
 
-| Evento               | Quando dispara                        |
-| -------------------- | ------------------------------------- |
-| `SessionStart`       | A sessão começa, é retomada ou é limpa |
-| `UserPromptSubmit`   | O usuário envia um prompt             |
-| `PreToolUse`         | Antes de uma ferramenta ser executada |
-| `PermissionRequest`  | Antes de o diálogo de permissão aparecer |
+| Evento               | Quando dispara                              |
+| -------------------- | ------------------------------------------- |
+| `SessionStart`       | A sessão começa, é retomada ou é limpa      |
+| `UserPromptSubmit`   | O usuário envia um prompt                   |
+| `PreToolUse`         | Antes de uma ferramenta ser executada       |
+| `PermissionRequest`  | Antes de o diálogo de permissão aparecer    |
 | `PostToolUse`        | Depois que a ferramenta conclui com sucesso |
-| `PostToolUseFailure` | Depois que a execução da ferramenta falha |
-| `PermissionDenied`   | O classificador do modo auto nega a ação |
-| `Stop`               | Claude termina de responder           |
-| `StopFailure`        | O turno termina por erro de API        |
-| `Notification`       | Claude precisa de atenção             |
-| `SubagentStart`      | Um subagente é criado                 |
-| `SubagentStop`       | Um subagente termina                  |
-| `FileChanged`        | Um arquivo monitorado muda no disco   |
-| `PreCompact`         | Antes da compactação do contexto      |
-| `PostCompact`        | Depois da compactação do contexto     |
-| `WorktreeCreate`     | Um worktree está sendo criado         |
-| `WorktreeRemove`     | Um worktree está sendo removido       |
-| `InstructionsLoaded` | O arquivo CLAUDE.md foi carregado     |
-| `ConfigChange`       | O arquivo de configurações muda       |
-| `TaskCreated`        | Tarefa criada via TaskCreate          |
-| `TaskCompleted`      | Tarefa marcada como concluída         |
+| `PostToolUseFailure` | Depois que a execução da ferramenta falha   |
+| `PermissionDenied`   | O classificador do modo auto nega a ação    |
+| `Stop`               | Claude termina de responder                 |
+| `StopFailure`        | O turno termina por erro de API             |
+| `Notification`       | Claude precisa de atenção                   |
+| `SubagentStart`      | Um subagente é criado                       |
+| `SubagentStop`       | Um subagente termina                        |
+| `FileChanged`        | Um arquivo monitorado muda no disco         |
+| `PreCompact`         | Antes da compactação do contexto            |
+| `PostCompact`        | Depois da compactação do contexto           |
+| `WorktreeCreate`     | Um worktree está sendo criado               |
+| `WorktreeRemove`     | Um worktree está sendo removido             |
+| `InstructionsLoaded` | O arquivo CLAUDE.md foi carregado           |
+| `ConfigChange`       | O arquivo de configurações muda             |
+| `TaskCreated`        | Tarefa criada via TaskCreate                |
+| `TaskCompleted`      | Tarefa marcada como concluída               |
 
 {.show-header}
 
@@ -583,11 +583,11 @@ Use `$CLAUDE_PROJECT_DIR` para referenciar scripts de hook relativos à raiz do 
 
 ### Tipos de hook
 
-| Tipo      | Descrição                               |
-| --------- | --------------------------------------- |
-| `command` | Executa um script shell, lê JSON do stdin |
-| `http`    | Envia JSON via POST para um endpoint HTTP |
-| `prompt`  | Pede ao Claude uma decisão sim/não      |
+| Tipo      | Descrição                                        |
+| --------- | ------------------------------------------------ |
+| `command` | Executa um script shell, lê JSON do stdin        |
+| `http`    | Envia JSON via POST para um endpoint HTTP        |
+| `prompt`  | Pede ao Claude uma decisão sim/não               |
 | `agent`   | Cria um subagente com ferramentas para verificar |
 
 {.bold-first}
@@ -852,10 +852,10 @@ $ claude -r my-session -p "continue the task"
 
 #### Formatos de saída
 
-| Formato       | Caso de uso                    |
-| ------------- | ------------------------------ |
-| `text`        | Legível por humanos (padrão)   |
-| `json`        | Metadados completos + custo    |
+| Formato       | Caso de uso                     |
+| ------------- | ------------------------------- |
+| `text`        | Legível por humanos (padrão)    |
+| `json`        | Metadados completos + custo     |
 | `stream-json` | Eventos por turno em tempo real |
 
 {.bold-first}
@@ -907,12 +907,12 @@ claude-review:
       --output-format json
 ```
 
-| Opção de agendamento      | Executa em                  |
-| ------------------------- | --------------------------- |
-| Tarefas agendadas na nuvem | Infraestrutura da Anthropic |
-| Tarefas agendadas no desktop | Sua máquina local         |
-| GitHub Actions            | Pipeline de CI/CD           |
-| `/loop`                   | Apenas a sessão CLI atual   |
+| Opção de agendamento         | Executa em                  |
+| ---------------------------- | --------------------------- |
+| Tarefas agendadas na nuvem   | Infraestrutura da Anthropic |
+| Tarefas agendadas no desktop | Sua máquina local           |
+| GitHub Actions               | Pipeline de CI/CD           |
+| `/loop`                      | Apenas a sessão CLI atual   |
 
 ## Veja também {.cols-1}
 

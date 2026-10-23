@@ -21,19 +21,19 @@ plugins:
 
 Alguns verbos comuns:
 
-| Verbo   | Descrição                                         |
-| ------- | ------------------------------------------------- |
-| Get     | Usado para recuperar informações.                 |
-| Set     | Usado para configurar ou alterar definições.      |
-| New     | Usado para criar novas instâncias de objetos.     |
-| Remove  | Usado para excluir ou remover itens.              |
-| Invoke  | Usado para executar uma ação ou operação específica. |
-| Start   | Usado para iniciar um processo ou operação.       |
+| Verbo   | Descrição                                                   |
+| ------- | ----------------------------------------------------------- |
+| Get     | Usado para recuperar informações.                           |
+| Set     | Usado para configurar ou alterar definições.                |
+| New     | Usado para criar novas instâncias de objetos.               |
+| Remove  | Usado para excluir ou remover itens.                        |
+| Invoke  | Usado para executar uma ação ou operação específica.        |
+| Start   | Usado para iniciar um processo ou operação.                 |
 | Stop    | Usado para interromper ou encerrar um processo ou operação. |
-| Enable  | Usado para ativar ou habilitar um recurso.        |
-| Disable | Usado para desativar ou desabilitar um recurso.   |
-| Test    | Usado para realizar testes ou verificações.       |
-| Update  | Usado para atualizar ou recarregar dados ou configurações. |
+| Enable  | Usado para ativar ou habilitar um recurso.                  |
+| Disable | Usado para desativar ou desabilitar um recurso.             |
+| Test    | Usado para realizar testes ou verificações.                 |
+| Update  | Usado para atualizar ou recarregar dados ou configurações.  |
 
 Lista os módulos disponíveis
 

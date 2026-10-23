@@ -56,21 +56,21 @@ Mas preserve o termo quando ele for o próprio comando: “o comando `install`�
 
 ## Categorias (traduzir apenas no front matter `categories`)
 
-| Original             | pt-BR                  |
-| -------------------- | ---------------------- |
-| Keyboard Shortcuts   | Atalhos de Teclado     |
-| Programming          | Programação            |
-| Linux Command        | Comandos Linux         |
-| Other                | Outros                 |
-| Toolkit              | Ferramentas            |
-| AI                   | IA                     |
-| Database             | Banco de Dados         |
-| Operating System     | Sistema Operacional    |
-| Game                 | Jogos                  |
-| Testing              | Testes                 |
-| Productivity         | Produtividade          |
-| Software             | Software               |
-| Python               | Python                 |
+| Original           | pt-BR               |
+| ------------------ | ------------------- |
+| Keyboard Shortcuts | Atalhos de Teclado  |
+| Programming        | Programação         |
+| Linux Command      | Comandos Linux      |
+| Other              | Outros              |
+| Toolkit            | Ferramentas         |
+| AI                 | IA                  |
+| Database           | Banco de Dados      |
+| Operating System   | Sistema Operacional |
+| Game               | Jogos               |
+| Testing            | Testes              |
+| Productivity       | Produtividade       |
+| Software           | Software            |
+| Python             | Python              |
 
 `tags` permanecem como estão (são palavras-chave técnicas).
 
@@ -81,10 +81,10 @@ Antes:
 ```markdown
 ### General commands
 
-| Example             | Description             |
-| ------------------- | ----------------------- |
-| `docker ps`         | List running containers |
-| `docker images`     | List all images         |
+| Example         | Description             |
+| --------------- | ----------------------- |
+| `docker ps`     | List running containers |
+| `docker images` | List all images         |
 
 Run the container in background.
 ```
@@ -94,10 +94,10 @@ Depois:
 ```markdown
 ### Comandos gerais
 
-| Exemplo             | Descrição                     |
-| ------------------- | ----------------------------- |
-| `docker ps`         | Lista os containers em execução |
-| `docker images`     | Lista todas as imagens        |
+| Exemplo         | Descrição                       |
+| --------------- | ------------------------------- |
+| `docker ps`     | Lista os containers em execução |
+| `docker images` | Lista todas as imagens          |
 
 Execute o container em segundo plano.
 ```

@@ -16,31 +16,31 @@ intro: |
 
 ### Navegação
 
-| Atalho      | Ação                      |
-| ----------- | ------------------------- |
-| `Shift` `?` | Mostra os atalhos         |
-| `J`         | Próximo post ou comentário      |
-| `K`         | Post ou comentário anterior  |
-| `N`         | Próximo post no lightbox     |
-| `P`         | Post anterior no lightbox |
+| Atalho      | Ação                        |
+| ----------- | --------------------------- |
+| `Shift` `?` | Mostra os atalhos           |
+| `J`         | Próximo post ou comentário  |
+| `K`         | Post ou comentário anterior |
+| `N`         | Próximo post no lightbox    |
+| `P`         | Post anterior no lightbox   |
 | `Enter`     | Abre o post                 |
 | `X`         | Abre ou fecha o expando     |
-| `L`         | Vai para o link do post           |
+| `L`         | Vai para o link do post     |
 
 {.shortcuts}
 
 ### Ação
 
-| Atalho         | Ação                       |
-| -------------- | -------------------------- |
-| `A`            | Vota a favor                     |
-| `Z`            | Vota contra                   |
-| `C`            | Novo post                   |
-| `R`            | Responde aos comentários          |
-| `Ctrl` `Enter` | Envia comentário ou post     |
-| `S`            | Salva                       |
-| `H`            | Oculta                       |
-| `Q`            | Abre a navegação            |
+| Atalho         | Ação                            |
+| -------------- | ------------------------------- |
+| `A`            | Vota a favor                    |
+| `Z`            | Vota contra                     |
+| `C`            | Novo post                       |
+| `R`            | Responde aos comentários        |
+| `Ctrl` `Enter` | Envia comentário ou post        |
+| `S`            | Salva                           |
+| `H`            | Oculta                          |
+| `Q`            | Abre a navegação                |
 | `Enter`        | Recolhe ou expande o comentário |
 
 {.shortcuts}

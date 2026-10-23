@@ -331,19 +331,19 @@ terraform {
 
 ### Endereçamento de recursos
 
-| Exemplo                                           | Descrição               |
-| ------------------------------------------------- | ----------------------- |
-| `[module path][resource info`                     | Sintaxe de path de recurso |
-| `module.<MODULE_PATH>[optional] module index`     | Sintaxe de path de módulo  |
+| Exemplo                                           | Descrição                           |
+| ------------------------------------------------- | ----------------------------------- |
+| `[module path][resource info`                     | Sintaxe de path de recurso          |
+| `module.<MODULE_PATH>[optional] module index`     | Sintaxe de path de módulo           |
 | `resource_type.user_defined_name[optional index]` | Sintaxe de especificação de recurso |
-| `<RESOURCE_TYPE>.<NAME>`                          | Lista todas as imagens  |
-| `var.<NAME>`                                      | Variável de entrada     |
-| `local.<NAME>`                                    | Locals                  |
-| `module.<MODULE_NAME>`                            | Outputs de módulo filho |
-| `data.<DATA TYPE>.<NAME>`                         | Blocos data             |
-| `path.module`                                     | Localização da expressão |
-| `path.root`                                       | Localização do módulo root |
-| `terraform.workspace`                             | Workspace atual         |
+| `<RESOURCE_TYPE>.<NAME>`                          | Lista todas as imagens              |
+| `var.<NAME>`                                      | Variável de entrada                 |
+| `local.<NAME>`                                    | Locals                              |
+| `module.<MODULE_NAME>`                            | Outputs de módulo filho             |
+| `data.<DATA TYPE>.<NAME>`                         | Blocos data                         |
+| `path.module`                                     | Localização da expressão            |
+| `path.root`                                       | Localização do módulo root          |
+| `terraform.workspace`                             | Workspace atual                     |
 
 ---
 

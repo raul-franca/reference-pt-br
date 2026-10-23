@@ -16,17 +16,17 @@ intro: |
 
 ### Geral
 
-| Atalho                   | Ação                                              |
-| ------------------------ | ------------------------------------------------- |
-| `Ctrl` `S`               | Salvar tudo                                       |
-| `Ctrl` `Alt` `Y`         | Sincronizar                                       |
-| `Ctrl` `Shift` `F12`     | Minimizar ou maximizar o editor                   |
-| `Alt` `Shift` `F`        | Adicionar aos favoritos                           |
-| `Alt` `Shift` `I`        | Inspecionar o arquivo atual com o perfil atual    |
-| `Ctrl` <code>\`</code>   | Trocar rapidamente o esquema                      |
-| `Ctrl` `Alt` `S`         | Abrir o diálogo de configurações                  |
-| `Ctrl` `Alt` `Shift` `S` | Abrir o diálogo de estrutura do projeto           |
-| `Ctrl` `Tab`             | Alternar entre as abas e a janela de ferramentas  |
+| Atalho                   | Ação                                             |
+| ------------------------ | ------------------------------------------------ |
+| `Ctrl` `S`               | Salvar tudo                                      |
+| `Ctrl` `Alt` `Y`         | Sincronizar                                      |
+| `Ctrl` `Shift` `F12`     | Minimizar ou maximizar o editor                  |
+| `Alt` `Shift` `F`        | Adicionar aos favoritos                          |
+| `Alt` `Shift` `I`        | Inspecionar o arquivo atual com o perfil atual   |
+| `Ctrl` <code>\`</code>   | Trocar rapidamente o esquema                     |
+| `Ctrl` `Alt` `S`         | Abrir o diálogo de configurações                 |
+| `Ctrl` `Alt` `Shift` `S` | Abrir o diálogo de estrutura do projeto          |
+| `Ctrl` `Tab`             | Alternar entre as abas e a janela de ferramentas |
 
 {.shortcuts}
 
@@ -124,20 +124,20 @@ intro: |
 
 ### Editor de layout
 
-| Atalho            | Ação                                         |
-| ----------------- | -------------------------------------------- |
-| `B`               | Alternar entre os modos Design e Blueprint   |
-| `O`               | Alternar entre os modos Retrato e Paisagem   |
-| `D`               | Alternar dispositivos                        |
-| `R`               | Forçar atualização                           |
-| `E`               | Alternar o painel de erros de renderização   |
-| `Del`             | Excluir restrições                           |
-| `Ctrl` `+`        | Aumentar zoom                                |
-| `Ctrl` `-`        | Diminuir zoom                                |
-| `Ctrl` `0`        | Ajustar ao tamanho                           |
-| `Ctrl` `B`        | Ir para o XML                                |
-| `Ctrl` `A`        | Selecionar todos os componentes              |
-| `Shift` `(click)` | Selecionar vários componentes                |
+| Atalho            | Ação                                       |
+| ----------------- | ------------------------------------------ |
+| `B`               | Alternar entre os modos Design e Blueprint |
+| `O`               | Alternar entre os modos Retrato e Paisagem |
+| `D`               | Alternar dispositivos                      |
+| `R`               | Forçar atualização                         |
+| `E`               | Alternar o painel de erros de renderização |
+| `Del`             | Excluir restrições                         |
+| `Ctrl` `+`        | Aumentar zoom                              |
+| `Ctrl` `-`        | Diminuir zoom                              |
+| `Ctrl` `0`        | Ajustar ao tamanho                         |
+| `Ctrl` `B`        | Ir para o XML                              |
+| `Ctrl` `A`        | Selecionar todos os componentes            |
+| `Shift` `(click)` | Selecionar vários componentes              |
 
 {.shortcuts}
 

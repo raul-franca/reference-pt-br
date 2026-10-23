@@ -41,7 +41,7 @@ intro: |
 
 ### Patrocinadores {.col-span-3}
 
-| Nome             | Valor   | Mensagem                                                                                                                        |
+| Nome             | Valor   | Mensagem                                                                                                                       |
 | ---------------- | ------- | ------------------------------------------------------------------------------------------------------------------------------ |
 | Benjamin Schröer | $ 9.34  | Thanks for cheatsheets.zip!                                                                                                    |
 | Fabian Barajas   | $ 10.00 |                                                                                                                                |

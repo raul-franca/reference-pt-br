@@ -26,7 +26,7 @@ plugins:
 ### Recursos exclusivos {.col-span-2}
 
 | Recurso                                   | Descrição                                                                                             |
-| :---                                      | :---                                                                                                  |
+| :---------------------------------------- | :---------------------------------------------------------------------------------------------------- |
 | **Sincronização de várias roletas**       | Executa até 6 roletas ao mesmo tempo (por exemplo, uma para nomes, outra para prêmios).               |
 | **Aleatoriedade real**                    | Usa `crypto.getRandomValues()` em vez de `Math.random()` para imparcialidade criptográfica.           |
 | **Modo eliminação**                       | Opção de remover temporariamente um vencedor da roleta depois que ele é sorteado.                     |
@@ -41,7 +41,7 @@ plugins:
 ### Atalhos e ações
 
 | Ação      | Descrição       |
-| :---      | :---            |
+| :-------- | :-------------- |
 | `Space`   | Começar a girar |
 | `Cmd` `K` | Buscar roletas  |
 
@@ -94,12 +94,12 @@ plugins:
 
 ### vs. Concorrentes {.col-span-3}
 
-| Recurso           | GoSpinWheel             | Wheel of Names | Picker Wheel  |
-| :---              | :---:                   | :---:          | :---:         |
+| Recurso           |       GoSpinWheel       | Wheel of Names | Picker Wheel  |
+| :---------------- | :---------------------: | :------------: | :-----------: |
 | **Aleatoriedade** | **Crypto** (verificado) | Math.random()  | Math.random() |
-| **Anúncios**      | **Mínimos / nenhum**    | Alto           | Alto          |
-| **Multi-roleta**  | **Sim (sincronizado)**  | Não            | Não           |
-| **UI/UX**         | **Moderno 2024**        | Ultrapassado   | Ultrapassado  |
-| **Velocidade**    | **Rápido**              | Médio          | Médio         |
+| **Anúncios**      |  **Mínimos / nenhum**   |      Alto      |     Alto      |
+| **Multi-roleta**  | **Sim (sincronizado)**  |      Não       |      Não      |
+| **UI/UX**         |    **Moderno 2024**     |  Ultrapassado  | Ultrapassado  |
+| **Velocidade**    |       **Rápido**        |     Médio      |     Médio     |
 
 {.show-header}

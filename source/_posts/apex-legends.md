@@ -16,48 +16,48 @@ intro: |
 
 ### Movimentação
 
-| Atalho       | Ação            |
-| ------------ | --------------- |
-| `W`          | Mover para frente |
-| `S`          | Mover para trás |
+| Atalho       | Ação                  |
+| ------------ | --------------------- |
+| `W`          | Mover para frente     |
+| `S`          | Mover para trás       |
 | `A`          | Mover para a esquerda |
-| `D`          | Mover para a direita |
-| `Left Shift` | Correr          |
-| `Space`      | Pular           |
-| `C`          | Alternar agachamento |
-| `Left Ctrl`  | Segure para agachar |
+| `D`          | Mover para a direita  |
+| `Left Shift` | Correr                |
+| `Space`      | Pular                 |
+| `C`          | Alternar agachamento  |
+| `Left Ctrl`  | Segure para agachar   |
 
 {.shortcuts}
 
 ### Armas e Habilidades
 
-| Atalho | Ação                      |
-| ------ | ------------------------- |
-| `Q`    | Habilidade tática         |
-| `Z`    | Habilidade ultimate       |
-| `E`    | Interagir ou pegar item   |
-| `X`    | Interação alternativa     |
-| `Tab`  | Alternar inventário       |
-| `M`    | Alternar mapa             |
-| `B`    | Alternar modo de disparo  |
-| `V`    | Corpo a corpo             |
-| `R`    | Recarregar                |
-| `1`    | Equipar primeira arma     |
-| `2`    | Equipar segunda arma      |
-| `3`    | Guardar armas             |
-| `G`    | Equipar granada           |
+| Atalho | Ação                          |
+| ------ | ----------------------------- |
+| `Q`    | Habilidade tática             |
+| `Z`    | Habilidade ultimate           |
+| `E`    | Interagir ou pegar item       |
+| `X`    | Interação alternativa         |
+| `Tab`  | Alternar inventário           |
+| `M`    | Alternar mapa                 |
+| `B`    | Alternar modo de disparo      |
+| `V`    | Corpo a corpo                 |
+| `R`    | Recarregar                    |
+| `1`    | Equipar primeira arma         |
+| `2`    | Equipar segunda arma          |
+| `3`    | Guardar armas                 |
+| `G`    | Equipar granada               |
 | `4`    | Usar item de cura selecionado |
-| `H`    | Alternar escudo do Gibraltar |
-| `N`    | Inspecionar arma          |
+| `H`    | Alternar escudo do Gibraltar  |
+| `N`    | Inspecionar arma              |
 
 {.shortcuts}
 
 ### Comunicação
 
-| Atalho | Ação                     |
-| ------ | ------------------------ |
-| `F`    | Sinalizar inimigo aqui   |
-| `T`    | Segure para usar push to talk |
+| Atalho  | Ação                          |
+| ------- | ----------------------------- |
+| `F`     | Sinalizar inimigo aqui        |
+| `T`     | Segure para usar push to talk |
 | `Enter` | Enviar mensagem para a equipe |
 
 {.shortcuts}

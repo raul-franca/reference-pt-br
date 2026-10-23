@@ -92,12 +92,12 @@ $ tmux show-options -g
 
 ### Modo de cópia
 
-| Comando      | Descrição                  |
-| ------------ | -------------------------- |
-| `Ctrl+b` `[` | Entrar no modo de cópia    |
-| `<Space>`    | Iniciar seleção            |
-| `Enter`      | Copiar seleção             |
-| `q`          | Sair do modo de cópia      |
+| Comando      | Descrição                    |
+| ------------ | ---------------------------- |
+| `Ctrl+b` `[` | Entrar no modo de cópia      |
+| `<Space>`    | Iniciar seleção              |
+| `Enter`      | Copiar seleção               |
+| `q`          | Sair do modo de cópia        |
 | `Ctrl+b` `]` | Colar o conteúdo de buffer_0 |
 
 ---
@@ -119,8 +119,8 @@ Funciona principalmente como selecionar texto no [Vim](/vim#motions)
 
 ### Primeiros passos {.secondary}
 
-| Atalhos      | Descrição           |
-| ------------ | ------------------- |
+| Atalhos      | Descrição              |
+| ------------ | ---------------------- |
 | `Ctrl+b` `?` | Lista todos os atalhos |
 
 {.shortcuts .show-header}
@@ -137,36 +137,36 @@ $ tmux info
 
 ### Painéis (divisões) {.row-span-2}
 
-| Atalhos                | Descrição              |
-| ---------------------- | ---------------------- |
-| `Ctrl+b` `"` _/_ `%`   | Dividir horiz/vert     |
-| `Ctrl+b` `!`           | Painel -> Janela       |
-| `Ctrl+b` `x`           | Fechar painel          |
-| `Ctrl+b` <Arrow\>      | Navegar entre painéis  |
-| `Ctrl+b` <Space\>      | Alternar layouts       |
+| Atalhos                | Descrição                   |
+| ---------------------- | --------------------------- |
+| `Ctrl+b` `"` _/_ `%`   | Dividir horiz/vert          |
+| `Ctrl+b` `!`           | Painel -> Janela            |
+| `Ctrl+b` `x`           | Fechar painel               |
+| `Ctrl+b` <Arrow\>      | Navegar entre painéis       |
+| `Ctrl+b` <Space\>      | Alternar layouts            |
 | `Ctrl+b` `{` _/_ `}`   | Mover para esquerda/direita |
-| `Ctrl+b` `o`           | Ir para o próximo painel |
-| `Ctrl+b` `z`           | Alternar tela cheia    |
-| `Ctrl+b` `;`           | Alternar último painel |
-| `Ctrl+b` `q`           | Mostrar números        |
-| `Ctrl+b` `q` `0`...`9` | Ir para o painel #     |
+| `Ctrl+b` `o`           | Ir para o próximo painel    |
+| `Ctrl+b` `z`           | Alternar tela cheia         |
+| `Ctrl+b` `;`           | Alternar último painel      |
+| `Ctrl+b` `q`           | Mostrar números             |
+| `Ctrl+b` `q` `0`...`9` | Ir para o painel #          |
 
 {.shortcuts}
 
 ### Janela (abas) {.row-span-2}
 
-| -                    | -                    |
-| -------------------- | -------------------- |
-| `Ctrl+b` `c`         | Criar janela         |
+| -                    | -                       |
+| -------------------- | ----------------------- |
+| `Ctrl+b` `c`         | Criar janela            |
 | `Ctrl+b` `p` _/_ `n` | Janela anterior/próxima |
-| `Ctrl+b` `"` _/_ `%` | Dividir horiz/vert   |
-| `Ctrl+b` `w`         | Listar janelas       |
-| `Ctrl+b` `,`         | Renomear janela      |
-| `Ctrl+b` `f`         | Procurar janela      |
-| `Ctrl+b` `l`         | Última janela        |
-| `Ctrl+b` `.`         | Mover janela         |
-| `Ctrl+b` `&`         | Fechar janela        |
-| `Ctrl+b` `0`...`9`   | Ir para a janela #   |
+| `Ctrl+b` `"` _/_ `%` | Dividir horiz/vert      |
+| `Ctrl+b` `w`         | Listar janelas          |
+| `Ctrl+b` `,`         | Renomear janela         |
+| `Ctrl+b` `f`         | Procurar janela         |
+| `Ctrl+b` `l`         | Última janela           |
+| `Ctrl+b` `.`         | Mover janela            |
+| `Ctrl+b` `&`         | Fechar janela           |
+| `Ctrl+b` `0`...`9`   | Ir para a janela #      |
 
 {.shortcuts}
 
@@ -185,20 +185,20 @@ $ tmux info
 
 ### Uso {.secondary}
 
-| Comando      | Descrição              |
-| ------------ | ---------------------- |
+| Comando      | Descrição                 |
+| ------------ | ------------------------- |
 | `Ctrl+b` `:` | Entrar no modo de comando |
 
 {.shortcuts}
 
 ### Redimensionamento
 
-| Comando             | Descrição                |
-| ------------------- | ------------------------ |
-| `resize-pane -D 20` | Redimensionar para baixo |
-| `resize-pane -U 20` | Redimensionar para cima  |
+| Comando             | Descrição                   |
+| ------------------- | --------------------------- |
+| `resize-pane -D 20` | Redimensionar para baixo    |
+| `resize-pane -U 20` | Redimensionar para cima     |
 | `resize-pane -L 20` | Redimensionar para esquerda |
-| `resize-pane -R 20` | Redimensionar para direita |
+| `resize-pane -R 20` | Redimensionar para direita  |
 
 ### Listagem
 
@@ -210,29 +210,29 @@ $ tmux info
 
 ### Cópia
 
-| Comando              | Descrição            |
-| -------------------- | -------------------- |
+| Comando              | Descrição               |
+| -------------------- | ----------------------- |
 | `list-buffers`       | Listar todos os buffers |
-| `show-buffer`        | Mostrar conteúdo de #0 |
-| `capture-pane`       | Cópia do painel      |
-| `choose-buffer`      | Mostrar e colar      |
-| `save-buffer a.txt`  | Salvar em arquivo    |
-| `delete-buffer -b 1` | Excluir buffer 1     |
+| `show-buffer`        | Mostrar conteúdo de #0  |
+| `capture-pane`       | Cópia do painel         |
+| `choose-buffer`      | Mostrar e colar         |
+| `save-buffer a.txt`  | Salvar em arquivo       |
+| `delete-buffer -b 1` | Excluir buffer 1        |
 
 ### Configuração
 
-| Comando                | Descrição                  |
-| ---------------------- | -------------------------- |
+| Comando                | Descrição                     |
+| ---------------------- | ----------------------------- |
 | `set -g OPTION`        | Definir para todas as sessões |
 | `setw -g OPTION`       | Definir para todas as janelas |
-| `setw -g mode-keys vi` | Habilitar o modo vi        |
-| `set -g prefix C-a`    | Definir prefixo            |
+| `setw -g mode-keys vi` | Habilitar o modo vi           |
+| `set -g prefix C-a`    | Definir prefixo               |
 
 ### Diversos
 
-| Comando                  | Descrição              |
-| ------------------------ | ---------------------- |
-| `swap-pane -s 3 -t 1`    | Trocar painel          |
-| `swap-window -t -1`      | Mover para a esquerda  |
-| `setw synchronize-panes` | Sincronizar painéis    |
-| `join-pane -t :#`        | Juntar painel          |
+| Comando                  | Descrição             |
+| ------------------------ | --------------------- |
+| `swap-pane -s 3 -t 1`    | Trocar painel         |
+| `swap-window -t -1`      | Mover para a esquerda |
+| `setw synchronize-panes` | Sincronizar painéis   |
+| `join-pane -t :#`        | Juntar painel         |

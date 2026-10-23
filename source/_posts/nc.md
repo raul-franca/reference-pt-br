@@ -33,19 +33,19 @@ $ nc -lp port [host] [port]
 
 ### Exemplos de opções {.col-span-3 .row-span-2}
 
-| Opção | Descrição                  | Exemplo                                  |
-| ------ | -------------------------- | ---------------------------------------- |
-| `-h`   | nc -h                      | Ajuda                                    |
-| `-z`   | nc -z 192.168.1.9 1-100    | Scan de portas de um host ou endereço IP |
-| `-v`   | nc -zv 192.168.1.9 1-100   | Fornece saída verbosa                    |
-| `-n`   | nc -zn 192.168.1.9 1-100   | Scan rápido desativando a resolução DNS  |
-| `-l`   | nc -lp 8000                | Modo TCP Listen _(para conexões de entrada)_ |
-| `-w`   | nc -w 180 192.168.1.9 8000 | Define o valor de timeout                |
-| `-k`   | nc -kl 8000                | Continua escutando após a desconexão     |
-| `-u`   | nc -u 192.168.1.9 8000     | Usa UDP em vez de TCP                    |
-| `-q`   | nc -q 1 192.168.1.9 8000   | Cliente permanece ativo após o EOF       |
-| `-4`   | nc -4 -l 8000              | Apenas IPv4                              |
-| `-6`   | nc -6 -l 8000              | Apenas IPv6                              |
+| Opção | Descrição                  | Exemplo                                      |
+| ----- | -------------------------- | -------------------------------------------- |
+| `-h`  | nc -h                      | Ajuda                                        |
+| `-z`  | nc -z 192.168.1.9 1-100    | Scan de portas de um host ou endereço IP     |
+| `-v`  | nc -zv 192.168.1.9 1-100   | Fornece saída verbosa                        |
+| `-n`  | nc -zn 192.168.1.9 1-100   | Scan rápido desativando a resolução DNS      |
+| `-l`  | nc -lp 8000                | Modo TCP Listen _(para conexões de entrada)_ |
+| `-w`  | nc -w 180 192.168.1.9 8000 | Define o valor de timeout                    |
+| `-k`  | nc -kl 8000                | Continua escutando após a desconexão         |
+| `-u`  | nc -u 192.168.1.9 8000     | Usa UDP em vez de TCP                        |
+| `-q`  | nc -q 1 192.168.1.9 8000   | Cliente permanece ativo após o EOF           |
+| `-4`  | nc -4 -l 8000              | Apenas IPv4                                  |
+| `-6`  | nc -6 -l 8000              | Apenas IPv6                                  |
 
 ### Chat cliente-servidor {.col-span-2}
 

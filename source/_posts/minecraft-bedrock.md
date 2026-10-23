@@ -17,25 +17,25 @@ intro: Uma referência completa para os comandos do Minecraft Bedrock Edition (1
 
 ## Seletores de alvo
 
-| Seletor | Descrição |
-| :--- | :--- |
-| `@p` | Jogador mais próximo |
-| `@r` | Jogador aleatório |
-| `@a` | Todos os jogadores |
-| `@e` | Todas as entidades (mobs, itens etc.) |
-| `@s` | A entidade que executa o comando (ela mesma) |
-| `@c` | O agent do jogador (Education Edition/Code Builder) |
+| Seletor | Descrição                                           |
+| :------ | :-------------------------------------------------- |
+| `@p`    | Jogador mais próximo                                |
+| `@r`    | Jogador aleatório                                   |
+| `@a`    | Todos os jogadores                                  |
+| `@e`    | Todas as entidades (mobs, itens etc.)               |
+| `@s`    | A entidade que executa o comando (ela mesma)        |
+| `@c`    | O agent do jogador (Education Edition/Code Builder) |
 
 ### Argumentos do seletor
 
-| Argumento | Exemplo | Descrição |
-| :--- | :--- | :--- |
-| `type` | `@e[type=creeper]` | Seleciona entidades de um tipo específico |
-| `r` / `rm` | `@a[r=10]` | Seleciona dentro de um raio máximo (`r`) ou mínimo (`rm`) |
-| `c` | `@e[c=1]` | Limita a quantidade de alvos (do mais próximo para o mais distante) |
-| `m` | `@a[m=creative]` | Seleciona jogadores por modo de jogo |
-| `l` / `lm` | `@a[lm=30]` | Seleciona por nível máximo (`l`) ou mínimo (`lm`) |
-| `name` | `@e[name="Bob"]` | Seleciona entidades com um name tag específico |
+| Argumento  | Exemplo            | Descrição                                                           |
+| :--------- | :----------------- | :------------------------------------------------------------------ |
+| `type`     | `@e[type=creeper]` | Seleciona entidades de um tipo específico                           |
+| `r` / `rm` | `@a[r=10]`         | Seleciona dentro de um raio máximo (`r`) ou mínimo (`rm`)           |
+| `c`        | `@e[c=1]`          | Limita a quantidade de alvos (do mais próximo para o mais distante) |
+| `m`        | `@a[m=creative]`   | Seleciona jogadores por modo de jogo                                |
+| `l` / `lm` | `@a[lm=30]`        | Seleciona por nível máximo (`l`) ou mínimo (`lm`)                   |
+| `name`     | `@e[name="Bob"]`   | Seleciona entidades com um name tag específico                      |
 
 ## Comandos principais
 
@@ -148,15 +148,15 @@ Altera o clima.
 
 Define regras globais do mundo.
 
-| Regra | Descrição |
-| :--- | :--- |
-| `keepinventory` | Mantém os itens ao morrer (true/false) |
-| `dodaylightcycle` | Ativa/desativa o movimento do sol (true/false) |
-| `domobspawning` | Ativa/desativa o spawn de mobs (true/false) |
-| `mobgriefing` | Ativa/desativa a destruição por mobs (true/false) |
-| `doweathercycle` | Ativa/desativa as mudanças de clima (true/false) |
+| Regra                | Descrição                                           |
+| :------------------- | :-------------------------------------------------- |
+| `keepinventory`      | Mantém os itens ao morrer (true/false)              |
+| `dodaylightcycle`    | Ativa/desativa o movimento do sol (true/false)      |
+| `domobspawning`      | Ativa/desativa o spawn de mobs (true/false)         |
+| `mobgriefing`        | Ativa/desativa a destruição por mobs (true/false)   |
+| `doweathercycle`     | Ativa/desativa as mudanças de clima (true/false)    |
 | `commandblockoutput` | Ativa/desativa o chat do command block (true/false) |
-| `showcoordinates` | Mostra as coordenadas na tela (true/false) |
+| `showcoordinates`    | Mostra as coordenadas na tela (true/false)          |
 
 ```mcfunction
 # Enable keep inventory

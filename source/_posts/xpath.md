@@ -123,11 +123,11 @@ $x('//a[text()="XPath"]')[0].click()
 
 ### Prefixos
 
-| Prefixo | Exemplo               | Significado      |
-| ------- | --------------------- | ---------------- |
+| Prefixo | Exemplo               | Significado       |
+| ------- | --------------------- | ----------------- |
 | `//`    | `//hr[@class='edge']` | Em qualquer lugar |
-| `/`     | `/html/body/div`      | Raiz             |
-| `./`    | `./div/p`             | Relativo         |
+| `/`     | `/html/body/div`      | Raiz              |
+| `./`    | `./div/p`             | Relativo          |
 
 {.show-header}
 
@@ -325,21 +325,21 @@ verdade: você pode especificar um "eixo" diferente com `::`.
 
 ### Outros eixos {.row-span-2}
 
-| Eixo                 | Abreviação | Observações                                      |
-| -------------------- | ---------- | ------------------------------------------------ |
-| `ancestor`           |            |                                                  |
-| `ancestor-or-self`   |            |                                                  |
-| `attribute`          | `@`        | `@href` é abreviação de `attribute::href`        |
-| `child`              |            | `div` é abreviação de `child::div`               |
-| `descendant`         |            |                                                  |
+| Eixo                 | Abreviação | Observações                                         |
+| -------------------- | ---------- | --------------------------------------------------- |
+| `ancestor`           |            |                                                     |
+| `ancestor-or-self`   |            |                                                     |
+| `attribute`          | `@`        | `@href` é abreviação de `attribute::href`           |
+| `child`              |            | `div` é abreviação de `child::div`                  |
+| `descendant`         |            |                                                     |
 | `descendant-or-self` | `//`       | `//` é abreviação de `/descendant-or-self::node()/` |
-| `namespace`          |            |                                                  |
-| `self`               | `.`        | `.` é abreviação de `self::node()`               |
-| `parent`             | `..`       | `..` é abreviação de `parent::node()`            |
-| `following`          |            |                                                  |
-| `following-sibling`  |            |                                                  |
-| `preceding`          |            |                                                  |
-| `preceding-sibling`  |            |                                                  |
+| `namespace`          |            |                                                     |
+| `self`               | `.`        | `.` é abreviação de `self::node()`                  |
+| `parent`             | `..`       | `..` é abreviação de `parent::node()`               |
+| `following`          |            |                                                     |
+| `following-sibling`  |            |                                                     |
+| `preceding`          |            |                                                     |
+| `preceding-sibling`  |            |                                                     |
 
 {.headers}
 

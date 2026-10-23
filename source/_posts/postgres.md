@@ -44,28 +44,28 @@ postgres=# \!
 
 ### Comandos psql {.col-span-2}
 
-| Opção               | Exemplo                                      | Descrição                      |
-| ------------------- | -------------------------------------------- | :----------------------------- |
-| `[-d] <database>`   | psql -d mydb                                 | Conecta ao banco de dados      |
-| `-U`                | psql -U john mydb                            | Conecta como um usuário específico |
-| `-h` `-p`           | psql -h localhost -p 5432 mydb               | Conecta a um host/porta        |
-| `-U` `-h` `-p` `-d` | psql -U admin -h 192.168.1.5 -p 2506 -d mydb | Conecta a um PostgreSQL remoto |
-| `-W`                | psql -W mydb                                 | Força a senha                  |
+| Opção               | Exemplo                                      | Descrição                           |
+| ------------------- | -------------------------------------------- | :---------------------------------- |
+| `[-d] <database>`   | psql -d mydb                                 | Conecta ao banco de dados           |
+| `-U`                | psql -U john mydb                            | Conecta como um usuário específico  |
+| `-h` `-p`           | psql -h localhost -p 5432 mydb               | Conecta a um host/porta             |
+| `-U` `-h` `-p` `-d` | psql -U admin -h 192.168.1.5 -p 2506 -d mydb | Conecta a um PostgreSQL remoto      |
+| `-W`                | psql -W mydb                                 | Força a senha                       |
 | `-c`                | psql -c '\c postgres' -c '\dt'               | Executa um statement ou comando SQL |
-| `-H`                | psql -c "\l+" -H postgres > database.html    | Gera um relatório HTML         |
-| `-l`                | psql -l                                      | Lista todos os bancos de dados |
-| `-f`                | psql mydb -f file.sql                        | Executa comandos de um arquivo |
-| `-V`                | psql -V                                      | Mostra a versão do psql        |
+| `-H`                | psql -c "\l+" -H postgres > database.html    | Gera um relatório HTML              |
+| `-l`                | psql -l                                      | Lista todos os bancos de dados      |
+| `-f`                | psql mydb -f file.sql                        | Executa comandos de um arquivo      |
+| `-V`                | psql -V                                      | Mostra a versão do psql             |
 
 {.show-header}
 
 ### Obter ajuda
 
-| -           | -                              |
-| ----------- | :----------------------------- |
+| -           | -                                      |
+| ----------- | :------------------------------------- |
 | `\h`        | Ajuda sobre a sintaxe dos comandos SQL |
-| `\h` DELETE | Sintaxe do statement DELETE    |
-| `\?`        | Lista de comandos do PostgreSQL |
+| `\h` DELETE | Sintaxe do statement DELETE            |
+| `\?`        | Lista de comandos do PostgreSQL        |
 
 Execute no console do PostgreSQL
 
@@ -440,109 +440,109 @@ SELECT make_date(2021,03,25);
 
 ### Tabelas
 
-| -                | -                               |
-| ---------------- | :------------------------------ |
-| `\d <table>`     | Descreve a tabela               |
-| `\d+ <table>`    | Descreve a tabela com detalhes  |
-| `\dt`            | Lista as tabelas do schema atual |
-| `\dt *.*`        | Lista as tabelas de todos os schemas |
-| `\dt <schema>.*` | Lista as tabelas de um schema   |
+| -                | -                                          |
+| ---------------- | :----------------------------------------- |
+| `\d <table>`     | Descreve a tabela                          |
+| `\d+ <table>`    | Descreve a tabela com detalhes             |
+| `\dt`            | Lista as tabelas do schema atual           |
+| `\dt *.*`        | Lista as tabelas de todos os schemas       |
+| `\dt <schema>.*` | Lista as tabelas de um schema              |
 | `\dp`            | Lista os privilégios de acesso das tabelas |
-| `\det[+]`        | Lista as foreign tables         |
+| `\det[+]`        | Lista as foreign tables                    |
 
 ### Buffer de query
 
-| -            | -                                  |
-| ------------ | :--------------------------------- |
-| `\e [FILE]`  | Edita o buffer de query (ou o arquivo) |
-| `\ef [FUNC]` | Edita a definição da função        |
-| `\p`         | Mostra o conteúdo                  |
-| `\r`         | Reinicia (limpa) o buffer de query |
+| -            | -                                       |
+| ------------ | :-------------------------------------- |
+| `\e [FILE]`  | Edita o buffer de query (ou o arquivo)  |
+| `\ef [FUNC]` | Edita a definição da função             |
+| `\p`         | Mostra o conteúdo                       |
+| `\r`         | Reinicia (limpa) o buffer de query      |
 | `\s [FILE]`  | Exibe o histórico ou o salva em arquivo |
-| `\w FILE`    | Grava o buffer de query em arquivo |
+| `\w FILE`    | Grava o buffer de query em arquivo      |
 
 ### Informacional {.row-span-4}
 
-| -               | -                               |
-| --------------- | :------------------------------ |
-| `\l[+]`         | Lista todos os bancos de dados  |
-| `\dn[S+]`       | Lista os schemas                |
-| `\di[S+]`       | Lista os indexes                |
-| `\du[+]`        | Lista as roles                  |
-| `\ds[S+]`       | Lista as sequences              |
-| `\df[antw][S+]` | Lista as funções                |
-| `\deu[+]`       | Lista os mapeamentos de usuário |
-| `\dv[S+]`       | Lista as views                  |
-| `\dl`           | Lista os large objects          |
-| `\dT[S+]`       | Lista os tipos de dados         |
-| `\da[S]`        | Lista os aggregates             |
-| `\db[+]`        | Lista os tablespaces            |
-| `\dc[S+]`       | Lista as conversões             |
-| `\dC[+]`        | Lista os casts                  |
-| `\ddp`          | Lista os privilégios padrão     |
-| `\dd[S]`        | Mostra as descrições dos objetos |
-| `\dD[S+]`       | Lista os domains                |
-| `\des[+]`       | Lista os foreign servers        |
-| `\dew[+]`       | Lista os foreign-data wrappers  |
-| `\dF[+]`        | Lista as configurações de busca textual |
-| `\dFd[+]`       | Lista os dicionários de busca textual |
-| `\dFp[+]`       | Lista os parsers de busca textual |
-| `\dFt[+]`       | Lista os templates de busca textual |
-| `\dL[S+]`       | Lista as linguagens procedurais |
-| `\do[S]`        | Lista os operadores             |
-| `\dO[S+]`       | Lista as collations             |
+| -               | -                                                 |
+| --------------- | :------------------------------------------------ |
+| `\l[+]`         | Lista todos os bancos de dados                    |
+| `\dn[S+]`       | Lista os schemas                                  |
+| `\di[S+]`       | Lista os indexes                                  |
+| `\du[+]`        | Lista as roles                                    |
+| `\ds[S+]`       | Lista as sequences                                |
+| `\df[antw][S+]` | Lista as funções                                  |
+| `\deu[+]`       | Lista os mapeamentos de usuário                   |
+| `\dv[S+]`       | Lista as views                                    |
+| `\dl`           | Lista os large objects                            |
+| `\dT[S+]`       | Lista os tipos de dados                           |
+| `\da[S]`        | Lista os aggregates                               |
+| `\db[+]`        | Lista os tablespaces                              |
+| `\dc[S+]`       | Lista as conversões                               |
+| `\dC[+]`        | Lista os casts                                    |
+| `\ddp`          | Lista os privilégios padrão                       |
+| `\dd[S]`        | Mostra as descrições dos objetos                  |
+| `\dD[S+]`       | Lista os domains                                  |
+| `\des[+]`       | Lista os foreign servers                          |
+| `\dew[+]`       | Lista os foreign-data wrappers                    |
+| `\dF[+]`        | Lista as configurações de busca textual           |
+| `\dFd[+]`       | Lista os dicionários de busca textual             |
+| `\dFp[+]`       | Lista os parsers de busca textual                 |
+| `\dFt[+]`       | Lista os templates de busca textual               |
+| `\dL[S+]`       | Lista as linguagens procedurais                   |
+| `\do[S]`        | Lista os operadores                               |
+| `\dO[S+]`       | Lista as collations                               |
 | `\drds`         | Lista as configurações de role por banco de dados |
-| `\dx[+]`        | Lista as extensions             |
+| `\dx[+]`        | Lista as extensions                               |
 
 `S`: mostra objetos de sistema, `+`: detalhes adicionais
 
 ### Conexão
 
-| -                      | -                           |
-| ---------------------- | :-------------------------- |
-| `\c [DBNAME]`          | Conecta a um novo banco de dados |
+| -                      | -                                      |
+| ---------------------- | :------------------------------------- |
+| `\c [DBNAME]`          | Conecta a um novo banco de dados       |
 | `\encoding [ENCODING]` | Mostra ou define o encoding do cliente |
-| `\password [USER]`     | Altera a senha              |
-| `\conninfo`            | Exibe informações           |
+| `\password [USER]`     | Altera a senha                         |
+| `\conninfo`            | Exibe informações                      |
 
 ### Formatação
 
-| -                         | -                                          |
-| ------------------------- | :----------------------------------------- |
-| `\a`                      | Alterna entre não alinhado e alinhado      |
-| `\C [STRING]`             | Define o título da tabela, ou remove se vazio |
+| -                         | -                                                              |
+| ------------------------- | :------------------------------------------------------------- |
+| `\a`                      | Alterna entre não alinhado e alinhado                          |
+| `\C [STRING]`             | Define o título da tabela, ou remove se vazio                  |
 | `\f [STRING]`             | Mostra ou define o separador de campos para saída não alinhada |
-| `\H`                      | Alterna o modo de saída HTML               |
-| <code>\t [on\|off]</code> | Mostra apenas as linhas                    |
-| `\T [STRING]`             | Define ou remove os atributos da tag HTML \<table\> |
-| <code>\x [on\|off]</code> | Alterna a saída expandida                  |
+| `\H`                      | Alterna o modo de saída HTML                                   |
+| <code>\t [on\|off]</code> | Mostra apenas as linhas                                        |
+| `\T [STRING]`             | Define ou remove os atributos da tag HTML \<table\>            |
+| <code>\x [on\|off]</code> | Alterna a saída expandida                                      |
 
 ### Entrada/Saída
 
-| -                 | -                                                              |
-| ----------------- | :------------------------------------------------------------- |
+| -                 | -                                                                    |
+| ----------------- | :------------------------------------------------------------------- |
 | `\copy ...`       | Importa/exporta tabela<br> _Veja também:_ [copy](#import-export-csv) |
-| `\echo [STRING]`  | Imprime uma string                                             |
-| `\i FILE`         | Executa um arquivo                                             |
-| `\o [FILE]`       | Exporta todos os resultados para um arquivo                    |
-| `\qecho [STRING]` | String para o stream de saída                                  |
+| `\echo [STRING]`  | Imprime uma string                                                   |
+| `\i FILE`         | Executa um arquivo                                                   |
+| `\o [FILE]`       | Exporta todos os resultados para um arquivo                          |
+| `\qecho [STRING]` | String para o stream de saída                                        |
 
 ### Variáveis
 
-| -                     | -                                             |
-| --------------------- | :-------------------------------------------- |
-| `\prompt [TEXT] NAME` | Define uma variável                           |
+| -                     | -                                                               |
+| --------------------- | :-------------------------------------------------------------- |
+| `\prompt [TEXT] NAME` | Define uma variável                                             |
 | `\set [NAME [VALUE]]` | Define uma variável _(ou lista todas se não houver parâmetros)_ |
-| `\unset NAME`         | Exclui a variável                             |
+| `\unset NAME`         | Exclui a variável                                               |
 
 ### Diversos
 
-| -                              | -                    |
-| ------------------------------ | :------------------- |
-| `\cd [DIR]`                    | Muda o diretório     |
+| -                              | -                          |
+| ------------------------------ | :------------------------- |
+| `\cd [DIR]`                    | Muda o diretório           |
 | <code>\timing [on\|off]</code> | Alterna a medição de tempo |
-| `\! [COMMAND]`                 | Executa no shell     |
-| `\! ls -l`                     | Lista tudo no shell  |
+| `\! [COMMAND]`                 | Executa no shell           |
+| `\! ls -l`                     | Lista tudo no shell        |
 
 ### Large Objects
 
@@ -569,13 +569,13 @@ Use pg_dump para fazer backup de um banco de dados
 $ pg_dump -d mydb -f mydb_backup.sql
 ```
 
-| -    | -                                              |
-| ---- | :--------------------------------------------- |
-| `-a` | Despeja apenas os dados, não o schema          |
-| `-s` | Despeja apenas o schema, sem dados             |
-| `-c` | Exclui o banco de dados antes de recriá-lo     |
-| `-C` | Cria o banco de dados antes de restaurar       |
-| `-t` | Despeja apenas a(s) tabela(s) indicada(s)      |
+| -    | -                                               |
+| ---- | :---------------------------------------------- |
+| `-a` | Despeja apenas os dados, não o schema           |
+| `-s` | Despeja apenas o schema, sem dados              |
+| `-c` | Exclui o banco de dados antes de recriá-lo      |
+| `-C` | Cria o banco de dados antes de restaurar        |
+| `-t` | Despeja apenas a(s) tabela(s) indicada(s)       |
 | `-F` | Formato (`c`: custom, `d`: directory, `t`: tar) |
 
 Use `pg_dump -?` para obter a lista completa de opções
@@ -594,12 +594,12 @@ Restaure um banco de dados com pg_restore
 $ pg_restore -d mydb mydb_backup.sql -c
 ```
 
-| -    | -                                                                            |
-| ---- | :--------------------------------------------------------------------------- |
-| `-U` | Especifica um usuário do banco de dados                                      |
-| `-c` | Exclui o banco de dados antes de recriá-lo                                   |
-| `-C` | Cria o banco de dados antes de restaurar                                     |
-| `-e` | Encerra se um erro for encontrado                                            |
+| -    | -                                                                             |
+| ---- | :---------------------------------------------------------------------------- |
+| `-U` | Especifica um usuário do banco de dados                                       |
+| `-c` | Exclui o banco de dados antes de recriá-lo                                    |
+| `-C` | Cria o banco de dados antes de restaurar                                      |
+| `-e` | Encerra se um erro for encontrado                                             |
 | `-F` | Formato (`c`: custom, `d`: directory, `t`: tar, `p`: plain text sql(default)) |
 
 {.marker-none}

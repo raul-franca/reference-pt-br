@@ -13,12 +13,12 @@ intro: Um cheat sheet visual com muitos atalhos de teclado encontrados no Unreal
 
 ### Transformação na viewport
 
-| Atalho      | Ação                            |
-| ----------- | ------------------------------- |
-| `W`         | Transladar                      |
-| `E`         | Rotacionar                      |
-| `R`         | Escalar                         |
-| `Space Bar` | Alternar modo de transformação  |
+| Atalho      | Ação                                 |
+| ----------- | ------------------------------------ |
+| `W`         | Transladar                           |
+| `E`         | Rotacionar                           |
+| `R`         | Escalar                              |
+| `Space Bar` | Alternar modo de transformação       |
 | `[`         | Diminuir tamanho da grade de posição |
 | `]`         | Aumentar tamanho da grade de posição |
 | `Shift` `[` | Diminuir tamanho da grade de rotação |
@@ -43,36 +43,36 @@ intro: Um cheat sheet visual com muitos atalhos de teclado encontrados no Unreal
 
 ### Geral do editor de níveis {.row-span-2}
 
-| Atalho             | Ação                          |
-| ------------------ | ----------------------------- |
-| `Esc`              | Desmarcar tudo                |
-| `H`                | Ocultar selecionados          |
-| `Ctrl` `H`         | Mostrar tudo                  |
-| `F`                | Focar no ator                 |
-| `F9`               | Captura de tela               |
-| `F11`              | Modo imersivo                 |
-| `G`                | Visualização de jogo          |
-| `T`                | Alternar seleção translúcida  |
-| `(right click)`    | Menu de assets                |
-| `Ctrl` `E`         | Editar asset selecionado      |
-| `Ctrl` `P`         | Abrir asset                   |
-| `P`                | Alternar navmesh              |
-| `Ctrl` `Shift` `,` | Criar profile da GPU          |
-| `Ctrl` `Shift` `H` | Alternar FPS                  |
-| `~`                | Console de comandos           |
+| Atalho             | Ação                         |
+| ------------------ | ---------------------------- |
+| `Esc`              | Desmarcar tudo               |
+| `H`                | Ocultar selecionados         |
+| `Ctrl` `H`         | Mostrar tudo                 |
+| `F`                | Focar no ator                |
+| `F9`               | Captura de tela              |
+| `F11`              | Modo imersivo                |
+| `G`                | Visualização de jogo         |
+| `T`                | Alternar seleção translúcida |
+| `(right click)`    | Menu de assets               |
+| `Ctrl` `E`         | Editar asset selecionado     |
+| `Ctrl` `P`         | Abrir asset                  |
+| `P`                | Alternar navmesh             |
+| `Ctrl` `Shift` `,` | Criar profile da GPU         |
+| `Ctrl` `Shift` `H` | Alternar FPS                 |
+| `~`                | Console de comandos          |
 
 {.shortcuts}
 
 ### Navegação de câmera
 
-| Atalho       | Ação                 |
-| ------------ | -------------------- |
+| Atalho       | Ação                        |
+| ------------ | --------------------------- |
 | `Alt` `G`    | Visualização em perspectiva |
-| `Alt` `H`    | Vista frontal        |
-| `Alt` `J`    | Vista superior       |
-| `Alt` `K`    | Vista lateral        |
-| `Ctrl` `0-9` | Definir bookmark     |
-| `0-9`        | Ir para bookmark     |
+| `Alt` `H`    | Vista frontal               |
+| `Alt` `J`    | Vista superior              |
+| `Alt` `K`    | Vista lateral               |
+| `Ctrl` `0-9` | Definir bookmark            |
+| `0-9`        | Ir para bookmark            |
 
 {.shortcuts}
 
@@ -102,12 +102,12 @@ intro: Um cheat sheet visual com muitos atalhos de teclado encontrados no Unreal
 
 ### Play in Editor (PIE)
 
-| Atalho    | Ação                  |
-| --------- | --------------------- |
-| `Alt` `P` | Iniciar sessão PIE    |
-| `Pause`   | Pausar                |
-| `F8    `  | Sair do player        |
-| `Esc`     | Encerrar sessão PIE   |
+| Atalho    | Ação                |
+| --------- | ------------------- |
+| `Alt` `P` | Iniciar sessão PIE  |
+| `Pause`   | Pausar              |
+| `F8    `  | Sair do player      |
+| `Esc`     | Encerrar sessão PIE |
 
 {.shortcuts}
 
@@ -115,11 +115,11 @@ intro: Um cheat sheet visual com muitos atalhos de teclado encontrados no Unreal
 
 Nota: você precisa selecionar assets primeiro para que esses atalhos funcionem
 
-| Atalho            | Ação             |
-| ----------------- | ---------------- |
-| `Alt` `Shift` `A` | Auditar assets   |
+| Atalho            | Ação                        |
+| ----------------- | --------------------------- |
+| `Alt` `Shift` `A` | Auditar assets              |
 | `Alt` `Shift` `R` | Visualizador de referências |
-| `Alt` `Shift` `M` | Mapa de tamanho  |
+| `Alt` `Shift` `M` | Mapa de tamanho             |
 
 {.shortcuts}
 
@@ -127,21 +127,21 @@ Nota: você precisa selecionar assets primeiro para que esses atalhos funcionem
 
 ### Blueprints {.row-span-2}
 
-| Atalho              | Ação                              |
-| ------------------- | --------------------------------- |
-| `B`                 | Adicionar Branch                  |
-| `S`                 | Adicionar Sequence                |
-| `D`                 | Adicionar Delay                   |
-| `F`                 | Adicionar For Each Loop           |
-| `G`                 | Adicionar Gate                    |
-| `M`                 | Adicionar Multi Gate              |
-| `O`                 | Adicionar Do Once                 |
-| `N`                 | Adicionar Do N                    |
-| `C`                 | Adicionar comentário              |
-| `F7`                | Compilar Blueprint                |
+| Atalho              | Ação                                   |
+| ------------------- | -------------------------------------- |
+| `B`                 | Adicionar Branch                       |
+| `S`                 | Adicionar Sequence                     |
+| `D`                 | Adicionar Delay                        |
+| `F`                 | Adicionar For Each Loop                |
+| `G`                 | Adicionar Gate                         |
+| `M`                 | Adicionar Multi Gate                   |
+| `O`                 | Adicionar Do Once                      |
+| `N`                 | Adicionar Do N                         |
+| `C`                 | Adicionar comentário                   |
+| `F7`                | Compilar Blueprint                     |
 | `F9`                | Adicionar breakpoint ao nó selecionado |
-| `Ctrl` `Shift` `F9` | Remover todos os breakpoints      |
-| `Home`              | Dar zoom no nó selecionado        |
+| `Ctrl` `Shift` `F9` | Remover todos os breakpoints           |
+| `Home`              | Dar zoom no nó selecionado             |
 
 {.shortcuts}
 
@@ -149,21 +149,21 @@ Nota: você precisa selecionar assets primeiro para que esses atalhos funcionem
 
 Usado na viewport do editor de malhas, editor de materiais, editor de blueprints etc.
 
-| Atalho | Ação                    |
-| ------ | ----------------------- |
-| `I`    | Alternar ambiente       |
-| `O`    | Alternar chão           |
+| Atalho | Ação                       |
+| ------ | -------------------------- |
+| `I`    | Alternar ambiente          |
+| `O`    | Alternar chão              |
 | `P`    | Alternar pós-processamento |
 
 {.shortcuts}
 
 ### Malhas estáticas
 
-| Atalho     | Ação                          |
-| ---------- | ----------------------------- |
+| Atalho     | Ação                                |
+| ---------- | ----------------------------------- |
 | `Ctrl` `N` | Mostrar malha de fallback do Nanite |
-| `Alt` `N`  | Alternar normais              |
-| `Alt` `S`  | Alternar sockets              |
+| `Alt` `N`  | Alternar normais                    |
+| `Alt` `S`  | Alternar sockets                    |
 
 {.shortcuts}
 

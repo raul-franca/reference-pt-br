@@ -116,14 +116,14 @@ console.dir(app.locals.email);
 
 | :-              | :-                                                                                        |
 | :-------------- | :---------------------------------------------------------------------------------------- |
-| `app.locals`    | Variáveis locais na aplicação [#](http://expressjs.com/en/4x/api.html#app.locals)          |
-| `app.mountpath` | Padrão de path para montar subapps [#](http://expressjs.com/en/4x/api.html#app.mountpath)  |
+| `app.locals`    | Variáveis locais na aplicação [#](http://expressjs.com/en/4x/api.html#app.locals)         |
+| `app.mountpath` | Padrão de path para montar subapps [#](http://expressjs.com/en/4x/api.html#app.mountpath) |
 
 #### Eventos
 
-| :-      | :-                                                                                                                                                                   |
-| :------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `mount` | A aplicação filha é montada na aplicação pai, e o evento é disparado na aplicação filha [#](http://expressjs.com/en/4x/api.html#app.onmount)                          |
+| :-      | :-                                                                                                                                           |
+| :------ | :------------------------------------------------------------------------------------------------------------------------------------------- |
+| `mount` | A aplicação filha é montada na aplicação pai, e o evento é disparado na aplicação filha [#](http://expressjs.com/en/4x/api.html#app.onmount) |
 
 #### Métodos
 
@@ -178,16 +178,16 @@ console.dir(app.locals.email);
 
 #### Métodos
 
-| :-                       | :-                                                                              |
-| :----------------------- | :------------------------------------------------------------------------------ |
-| `req.accepts()`          | [#](http://expressjs.com/en/4x/api.html#req.accepts)                            |
-| `req.acceptsCharsets()`  | [#](http://expressjs.com/en/4x/api.html#req.acceptsCharsets)                    |
-| `req.acceptsEncodings()` | [#](http://expressjs.com/en/4x/api.html#req.acceptsEncodings)                   |
-| `req.acceptsLanguages()` | [#](http://expressjs.com/en/4x/api.html#req.acceptsLanguages)                   |
+| :-                       | :-                                                                                            |
+| :----------------------- | :-------------------------------------------------------------------------------------------- |
+| `req.accepts()`          | [#](http://expressjs.com/en/4x/api.html#req.accepts)                                          |
+| `req.acceptsCharsets()`  | [#](http://expressjs.com/en/4x/api.html#req.acceptsCharsets)                                  |
+| `req.acceptsEncodings()` | [#](http://expressjs.com/en/4x/api.html#req.acceptsEncodings)                                 |
+| `req.acceptsLanguages()` | [#](http://expressjs.com/en/4x/api.html#req.acceptsLanguages)                                 |
 | `req.get()`              | Obtém os campos do header da requisição HTTP [#](http://expressjs.com/en/4x/api.html#req.get) |
-| `req.is()`               | [#](http://expressjs.com/en/4x/api.html#req.is)                                 |
-| `req.param()`            | [#](http://expressjs.com/en/4x/api.html#req.param)                              |
-| `req.range()`            | [#](http://expressjs.com/en/4x/api.html#req.range)                              |
+| `req.is()`               | [#](http://expressjs.com/en/4x/api.html#req.is)                                               |
+| `req.param()`            | [#](http://expressjs.com/en/4x/api.html#req.param)                                            |
+| `req.range()`            | [#](http://expressjs.com/en/4x/api.html#req.range)                                            |
 
 ### Response
 
@@ -209,29 +209,29 @@ app.get('/', function (req, res) {
 
 #### Métodos
 
-| :-                  | :-                                                                                    |
-| :------------------ | :------------------------------------------------------------------------------------ |
-| `res.append()`      | [#](http://expressjs.com/en/4x/api.html#res.append)                                   |
-| `res.attachment()`  | [#](http://expressjs.com/en/4x/api.html#res.attachment)                               |
-| `res.cookie()`      | [#](http://expressjs.com/en/4x/api.html#res.cookie)                                   |
-| `res.clearCookie()` | [#](http://expressjs.com/en/4x/api.html#res.clearCookie)                              |
-| `res.download()`    | Sugere arquivos para download [#](http://expressjs.com/en/4x/api.html#res.download)   |
-| `res.end()`         | encerra o processo de resposta [#](http://expressjs.com/en/4x/api.html#res.end)       |
-| `res.format()`      | [#](http://expressjs.com/en/4x/api.html#res.format)                                   |
-| `res.get()`         | [#](http://expressjs.com/en/4x/api.html#res.get)                                      |
-| `res.json()`        | Envia resposta JSON [#](http://expressjs.com/en/4x/api.html#res.json)                 |
+| :-                  | :-                                                                                        |
+| :------------------ | :---------------------------------------------------------------------------------------- |
+| `res.append()`      | [#](http://expressjs.com/en/4x/api.html#res.append)                                       |
+| `res.attachment()`  | [#](http://expressjs.com/en/4x/api.html#res.attachment)                                   |
+| `res.cookie()`      | [#](http://expressjs.com/en/4x/api.html#res.cookie)                                       |
+| `res.clearCookie()` | [#](http://expressjs.com/en/4x/api.html#res.clearCookie)                                  |
+| `res.download()`    | Sugere arquivos para download [#](http://expressjs.com/en/4x/api.html#res.download)       |
+| `res.end()`         | encerra o processo de resposta [#](http://expressjs.com/en/4x/api.html#res.end)           |
+| `res.format()`      | [#](http://expressjs.com/en/4x/api.html#res.format)                                       |
+| `res.get()`         | [#](http://expressjs.com/en/4x/api.html#res.get)                                          |
+| `res.json()`        | Envia resposta JSON [#](http://expressjs.com/en/4x/api.html#res.json)                     |
 | `res.jsonp()`       | Envia uma resposta com suporte a JSONP [#](http://expressjs.com/en/4x/api.html#res.jsonp) |
-| `res.links()`       | [#](http://expressjs.com/en/4x/api.html#res.links)                                    |
-| `res.location()`    | [#](http://expressjs.com/en/4x/api.html#res.location)                                 |
-| `res.redirect()`    | Redireciona a requisição [#](http://expressjs.com/en/4x/api.html#res.redirect)        |
-| `res.render()`      | renderiza o template de view [#](http://expressjs.com/en/4x/api.html#res.render)      |
-| `res.send()`        | Envia vários tipos de resposta [#](http://expressjs.com/en/4x/api.html#res.send)      |
-| `res.sendFile()`    | Envia um arquivo como octet stream [#](http://expressjs.com/en/4x/api.html#res.sendFile) |
-| `res.sendStatus()`  | [#](http://expressjs.com/en/4x/api.html#res.sendStatus)                               |
-| `res.set()`         | [#](http://expressjs.com/en/4x/api.html#res.set)                                      |
-| `res.status()`      | [#](http://expressjs.com/en/4x/api.html#res.status)                                   |
-| `res.type()`        | [#](http://expressjs.com/en/4x/api.html#res.type)                                     |
-| `res.vary()`        | [#](http://expressjs.com/en/4x/api.html#res.vary)                                     |
+| `res.links()`       | [#](http://expressjs.com/en/4x/api.html#res.links)                                        |
+| `res.location()`    | [#](http://expressjs.com/en/4x/api.html#res.location)                                     |
+| `res.redirect()`    | Redireciona a requisição [#](http://expressjs.com/en/4x/api.html#res.redirect)            |
+| `res.render()`      | renderiza o template de view [#](http://expressjs.com/en/4x/api.html#res.render)          |
+| `res.send()`        | Envia vários tipos de resposta [#](http://expressjs.com/en/4x/api.html#res.send)          |
+| `res.sendFile()`    | Envia um arquivo como octet stream [#](http://expressjs.com/en/4x/api.html#res.sendFile)  |
+| `res.sendStatus()`  | [#](http://expressjs.com/en/4x/api.html#res.sendStatus)                                   |
+| `res.set()`         | [#](http://expressjs.com/en/4x/api.html#res.set)                                          |
+| `res.status()`      | [#](http://expressjs.com/en/4x/api.html#res.status)                                       |
+| `res.type()`        | [#](http://expressjs.com/en/4x/api.html#res.type)                                         |
+| `res.vary()`        | [#](http://expressjs.com/en/4x/api.html#res.vary)                                         |
 
 ## Exemplo
 
