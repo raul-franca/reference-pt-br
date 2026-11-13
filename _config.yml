@@ -13,8 +13,8 @@ timezone: "UTC"
 
 # URL
 ## Se o site ficar em um subdiretório, defina url como 'http://yoursite.com/child' e root como '/child/'
-url: https://cheatsheets.zip
-root: /
+url: https://raul-franca.github.io/reference-pt-br
+root: /reference-pt-br/
 permalink: :name.html
 permalink_defaults:
 pretty_urls:
